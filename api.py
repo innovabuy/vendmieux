@@ -33,6 +33,7 @@ from database import (
     create_session, complete_session, get_user_evaluations, get_user_stats,
     get_evaluation_detail, get_team_members, get_team_stats,
     COMPETENCE_KEYS, _parse_competences,
+    get_all_scenario_templates, get_scenario_from_db,
 )
 from auth import (
     hash_password, verify_password, create_token, get_current_user, get_optional_user,
@@ -123,15 +124,16 @@ def _load_scenario(scenario_id: str) -> dict:
     if scenario_id == "__default__":
         from agent import DEFAULT_SCENARIO
         return DEFAULT_SCENARIO
-    # 1. Check database scenarios
+    # 1. Check database scenarios (in-memory from scenarios_database.py)
     if scenario_id in _SCENARIOS_DB:
         return _SCENARIOS_DB[scenario_id]
-    # 2. Check user-generated JSON files
+    # 2. Check enriched JSON files on disk
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
-    if not filepath.exists():
-        raise HTTPException(404, "Scénario introuvable")
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
+    if filepath.exists():
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    # 3. Not found
+    raise HTTPException(404, "Scénario introuvable")
 
 
 # --- Health check ---
@@ -221,11 +223,52 @@ async def get_scenario_brief(scenario_id: str):
 
 
 @app.get("/api/scenarios")
-async def list_scenarios(secteur: str = "", type: str = ""):
+async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0):
     scenarios = []
+    seen_ids = set()
 
-    # 1. Scénarios de la base intégrée
+    # 1. Scénarios pré-enrichis depuis la table DB
+    templates = await get_all_scenario_templates()
+    for t in templates:
+        persona = t.get("persona_json", {})
+        if isinstance(persona, str):
+            try:
+                persona = json.loads(persona)
+            except Exception:
+                persona = {}
+        brief = t.get("brief_json", {})
+        if isinstance(brief, str):
+            try:
+                brief = json.loads(brief)
+            except Exception:
+                brief = {}
+        tags = t.get("tags", "[]")
+        if isinstance(tags, str):
+            try:
+                tags = json.loads(tags)
+            except Exception:
+                tags = []
+
+        identite = persona.get("identite", {})
+        entreprise = identite.get("entreprise", {})
+        scenarios.append({
+            "id": t["id"],
+            "name": f"{identite.get('prenom', '?')} {identite.get('nom', '?')}",
+            "poste": identite.get("poste", "?"),
+            "entreprise": entreprise.get("nom", "?"),
+            "secteur": t.get("secteur", entreprise.get("secteur", "?")),
+            "type_simulation": "prospection_telephonique",
+            "titre": brief.get("titre", ""),
+            "difficulty": t.get("difficulty_default", 2),
+            "tags": tags,
+            "source": "template",
+        })
+        seen_ids.add(t["id"])
+
+    # 2. Scénarios de la base intégrée (scenarios_database.py)
     for sid, data in _SCENARIOS_DB.items():
+        if sid in seen_ids:
+            continue
         persona = data.get("persona", {}).get("identite", {})
         sim = data.get("simulation", {})
         scenarios.append({
@@ -236,13 +279,15 @@ async def list_scenarios(secteur: str = "", type: str = ""):
             "secteur": sim.get("secteur", persona.get("entreprise", {}).get("secteur", "?")),
             "type_simulation": sim.get("type", "prospection_telephonique"),
             "titre": sim.get("titre", ""),
+            "difficulty": 2,
+            "tags": [],
             "source": "database",
         })
+        seen_ids.add(sid)
 
-    # 2. Scénarios générés par les utilisateurs (fichiers JSON)
-    db_ids = set(_SCENARIOS_DB.keys())
+    # 3. Scénarios générés par les utilisateurs (fichiers JSON)
     for f in sorted(SCENARIOS_DIR.glob("*.json")):
-        if f.stem in db_ids:
+        if f.stem in seen_ids:
             continue
         try:
             with open(f, "r", encoding="utf-8") as fh:
@@ -256,22 +301,29 @@ async def list_scenarios(secteur: str = "", type: str = ""):
                     "secteur": persona.get("entreprise", {}).get("secteur", "?"),
                     "type_simulation": "custom",
                     "titre": data.get("brief_commercial", {}).get("titre", "Scénario personnalisé"),
+                    "difficulty": data.get("metadata", {}).get("difficulte_defaut", 2),
+                    "tags": data.get("metadata", {}).get("tags", []),
                     "source": "user",
-                    "generated_at": data.get("metadata", {}).get("generated_at", "?"),
                 })
         except Exception:
             continue
 
-    # 3. Filtrage
+    # 4. Filtrage
     if secteur:
         scenarios = [s for s in scenarios if s["secteur"].lower() == secteur.lower()]
     if type:
         scenarios = [s for s in scenarios if s["type_simulation"] == type]
+    if difficulty > 0:
+        scenarios = [s for s in scenarios if s.get("difficulty") == difficulty]
+
+    # Collect all unique secteurs and types from current results + static lists
+    all_secteurs = sorted(set(get_sectors() + [s["secteur"] for s in scenarios]))
+    all_types = sorted(set(get_simulation_types() + [s["type_simulation"] for s in scenarios]))
 
     return {
         "scenarios": scenarios,
-        "secteurs": get_sectors(),
-        "types": get_simulation_types(),
+        "secteurs": all_secteurs,
+        "types": all_types,
         "total": len(scenarios),
     }
 

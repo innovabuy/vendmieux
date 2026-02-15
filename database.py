@@ -100,6 +100,22 @@ async def init_db():
             )
         """)
 
+        await db.execute("""
+            CREATE TABLE IF NOT EXISTS scenarios (
+                id TEXT PRIMARY KEY,
+                description_originale TEXT,
+                extraction_json TEXT,
+                persona_json TEXT,
+                objections_json TEXT,
+                brief_json TEXT,
+                difficulty_default INTEGER DEFAULT 2,
+                secteur TEXT,
+                tags TEXT,
+                is_template INTEGER DEFAULT 1,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+
         # ALTER evaluations for older DBs (idempotent)
         for col, coltype in [("user_id", "TEXT"), ("session_ref_id", "TEXT")]:
             try:
@@ -431,3 +447,34 @@ async def get_team_stats(entreprise_id: str) -> dict:
         "sessions_total": total_sessions,
         "score_moyen": round(sum(all_scores) / len(all_scores), 1) if all_scores else 0,
     }
+
+
+# ═══════════════════════════════════════════════════════════════
+# Scenarios templates (pre-enriched)
+# ═══════════════════════════════════════════════════════════════
+
+async def get_all_scenario_templates() -> list[dict]:
+    """Retourne tous les scénarios templates depuis la DB."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        async with db.execute("SELECT * FROM scenarios WHERE is_template = 1") as cur:
+            rows = await cur.fetchall()
+            return [dict(r) for r in rows]
+
+
+async def get_scenario_from_db(scenario_id: str) -> dict | None:
+    """Retourne un scénario complet depuis la DB, avec JSON parsés."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        async with db.execute("SELECT * FROM scenarios WHERE id = ?", (scenario_id,)) as cur:
+            row = await cur.fetchone()
+            if not row:
+                return None
+            d = dict(row)
+            for field in ("extraction_json", "persona_json", "objections_json", "brief_json", "tags"):
+                if d.get(field):
+                    try:
+                        d[field] = json.loads(d[field])
+                    except Exception:
+                        pass
+            return d

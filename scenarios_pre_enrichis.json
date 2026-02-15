@@ -1,0 +1,2438 @@
+[
+  {
+    "id": "sc_assurance_pro_tpe",
+    "metadata": {
+      "secteur": "Assurance",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 5,
+      "tags": [
+        "assurance",
+        "TPE",
+        "gérant",
+        "multirisque",
+        "courtage"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "court",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Restauration",
+        "taille_entreprise": "8 salariés",
+        "interlocuteur_principal": {
+          "poste": "Gérant",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Assurance multirisque professionnelle + RC Pro pour restaurateurs",
+        "proposition_valeur_presumee": "Économiser 20-30% sur la prime en regroupant les garanties, avec un interlocuteur unique"
+      },
+      "objectif_formation": "Convaincre un gérant de restaurant débordé de prendre 10 minutes pour comparer son contrat actuel"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Yannick",
+        "nom": "Le Goff",
+        "age": 38,
+        "poste": "Gérant",
+        "entreprise": {
+          "nom": "Le Comptoir Breton",
+          "secteur": "Restauration traditionnelle",
+          "taille": "8 salariés",
+          "ca_approximatif": "480K€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "débordé en permanence",
+          "méfiant envers les assureurs",
+          "sensible au prix"
+        ],
+        "motivations_profondes": [
+          "Payer moins d'assurance pour investir dans la cuisine",
+          "Avoir un interlocuteur qui répond quand il y a un sinistre"
+        ],
+        "peurs_freins": [
+          "Perdre du temps pour 50€ d'économie",
+          "Être moins bien couvert sans le savoir"
+        ],
+        "rapport_aux_commerciaux": "Expéditif. Il a 30 secondes à donner. Si c'est pas clair immédiatement, il raccroche.",
+        "style_communication": "expressif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Pressé, bruyant en fond (bruit de cuisine). Parle vite et fort.",
+        "signaux_interet": [
+          "Demande 'combien je paye en moins ?'",
+          "Mentionne un sinistre récent",
+          "Dit 'envoyez-moi un comparatif'"
+        ],
+        "signaux_rejet": [
+          "Dit 'j'ai pas le temps'",
+          "Parle à quelqu'un d'autre en même temps",
+          "Raccroche sans prévenir"
+        ],
+        "tics_langage": [
+          "Ouais ouais...",
+          "C'est-à-dire ?",
+          "Allez droit au but",
+          "Non mais attendez..."
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "10 secondes maximum. Coupe sans politesse."
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Dégât des eaux il y a 3 mois, remboursement encore en attente auprès de son assureur actuel (AXA via un agent local). Excédé par la lenteur. Prime multirisque : 3 200€/an. Pas fait le point depuis 4 ans.",
+        "priorites_actuelles": [
+          "Service du midi qui commence dans 1h",
+          "Obtenir le remboursement du dégât des eaux"
+        ],
+        "experience_avec_offre_similaire": "Appelé 3 fois par des courtiers ces 6 derniers mois. Aucun n'a suivi après le premier appel.",
+        "fournisseur_actuel": "AXA via agent local. Pas satisfait du traitement des sinistres mais inertie à changer.",
+        "budget_disponible": "Paie 3 200€/an, cherche pas à augmenter. Serait intéressé si économie >500€ à garanties équivalentes."
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Mentionner le dégât des eaux et le remboursement bloqué",
+          "Annoncer une économie chiffrée crédible",
+          "Proposer de gérer le transfert de dossier sinistre"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Appeler pendant le service (11h30-14h30 ou 18h-22h)",
+          "Faire un long discours sur les garanties",
+          "Ne pas connaître les spécificités restauration"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "J'ai pas le temps là, je suis en plein service.",
+          "sous_texte": "Peut-être vrai, peut-être filtrage. Tester en proposant un rappel à un créneau précis.",
+          "type": "reflexe",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Proposer immédiatement un rappel à un horaire calme (15h-17h) avec une accroche chiffrée"
+        },
+        {
+          "moment": "accroche",
+          "verbatim": "Des courtiers m'appellent toutes les semaines, c'est toujours la même chose.",
+          "sous_texte": "Lassé, besoin de se différencier immédiatement",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Se démarquer en parlant du sinistre en cours, pas de la prime"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Oui mais quand j'aurai un sinistre, vous allez me faire la même chose qu'AXA et me faire poireauter 3 mois ?",
+          "sous_texte": "Vraie douleur. C'est le levier principal, pas le prix.",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Donner le délai moyen de traitement et un engagement contractuel"
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Bon envoyez-moi un truc par mail, je regarderai quand j'aurai 5 minutes.",
+          "sous_texte": "Intéressé mais pas assez pour bloquer du temps maintenant",
+          "type": "tactique",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Accepter le mail mais proposer un rappel de 10 min mardi à 15h pour faire le comparatif ensemble"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Écoutez, je vais rester chez AXA, c'est trop de paperasse de changer.",
+        "condition_declenchement": "Si le commercial n'a pas adressé la douleur du sinistre en cours"
+      },
+      "pattern_escalade": "Pas le temps → tous pareils → sinistre mal géré → mail → inertie"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "Assur'PME",
+        "secteur": "Courtage en assurances",
+        "description": "Cabinet de courtage spécialisé dans les professionnels de la restauration et du commerce"
+      },
+      "offre": {
+        "nom": "Pack Restaurateur",
+        "description": "Contrat multirisque pro + RC sur-mesure pour restaurateurs, avec traitement de sinistre en 15 jours garanti et interlocuteur dédié.",
+        "proposition_valeur": "Économie de 400-600€/an à garanties supérieures + sinistres traités en 15 jours",
+        "prix": "À partir de 2 600€/an",
+        "references": [
+          "120 restaurants assurés"
+        ],
+        "avantages_vs_concurrence": "Traitement sinistres en 15 jours garanti, prise en charge du transfert de dossier sinistre en cours"
+      },
+      "objectif_appel": {
+        "type": "envoi_contrat",
+        "description": "Obtenir l'envoi de son contrat actuel pour faire un comparatif chiffré et un rappel de 10 min.",
+        "criteres_succes": [
+          "Obtenir le contrat actuel",
+          "Fixer un créneau de rappel"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier appel",
+        "infos_connues": "Restaurateur, dégât des eaux récent, prime AXA 3200€/an"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Assurance multirisque — Restaurateur",
+      "vous_etes": "Courtier en assurances chez Assur'PME, cabinet spécialisé dans les professionnels de la restauration et du commerce.",
+      "vous_vendez": "Un contrat multirisque pro + RC sur-mesure pour restaurateurs, avec traitement de sinistre en 15 jours garanti et interlocuteur dédié.",
+      "vous_appelez": "Yannick Le Goff, gérant du Comptoir Breton (restaurant traditionnel, 8 salariés). Premier appel.",
+      "ce_que_vous_savez": [
+        "Dégât des eaux il y a 3 mois, remboursement toujours en attente chez AXA",
+        "Prime actuelle : 3 200€/an — pas revue depuis 4 ans",
+        "Appelé par 3 courtiers ces 6 mois, aucun n'a suivi",
+        "Il est débordé — appeler entre 15h et 17h"
+      ],
+      "votre_objectif": "Obtenir l'envoi de son contrat actuel pour faire un comparatif chiffré et un rappel de 10 min.",
+      "vos_atouts": [
+        "Traitement sinistres en 15 jours garanti",
+        "Spécialiste restauration (120 restaurants assurés)",
+        "Économie moyenne de 400-600€/an à garanties supérieures",
+        "Prise en charge du transfert de dossier sinistre en cours"
+      ],
+      "conseils": "Allez droit au but — Yannick n'a pas 30 secondes à perdre. Accrochez sur le sinistre bloqué, pas sur le prix. Proposez un créneau de rappel précis.",
+      "duree_estimee": "3-5 minutes"
+    }
+  },
+  {
+    "id": "sc_batiment_isolation",
+    "metadata": {
+      "secteur": "BTP / Rénovation",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 5,
+      "tags": [
+        "BTP",
+        "isolation",
+        "syndic",
+        "copropriété",
+        "rénovation énergétique"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "long",
+        "temperature_prospect": "tiede"
+      },
+      "cible": {
+        "secteur": "Syndic de copropriété",
+        "taille_entreprise": "45 copropriétés gérées",
+        "interlocuteur_principal": {
+          "poste": "Gestionnaire de copropriété",
+          "niveau_hierarchique": "manager"
+        }
+      },
+      "offre": {
+        "produit_service": "Accompagnement rénovation énergétique des copropriétés (audit + travaux + subventions)",
+        "proposition_valeur_presumee": "Monter le dossier MaPrimeRénov' Copropriété clé en main et piloter les travaux sans charge supplémentaire pour le syndic"
+      },
+      "objectif_formation": "Vendre un accompagnement à un gestionnaire de copropriété surchargé qui voit la rénovation énergétique comme une contrainte de plus"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Sandrine",
+        "nom": "Petit",
+        "age": 42,
+        "poste": "Gestionnaire de copropriété",
+        "entreprise": {
+          "nom": "Cabinet Immobilier Anjou",
+          "secteur": "Administration de biens et syndic de copropriété",
+          "taille": "12 collaborateurs, 45 copropriétés gérées",
+          "ca_approximatif": "1.5M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "surchargée",
+          "pragmatique",
+          "orientée solution"
+        ],
+        "motivations_profondes": [
+          "Répondre à l'obligation légale DPE sans que ça lui prenne des mois",
+          "Se positionner comme un syndic proactif face à la concurrence"
+        ],
+        "peurs_freins": [
+          "Que le projet dure 2 ans et génère des AG interminables",
+          "Que les subventions promises ne se concrétisent pas"
+        ],
+        "rapport_aux_commerciaux": "Directe et efficace. Elle gère 45 copros, chaque minute compte. Si c'est concret et que ça lui enlève du travail, elle écoute.",
+        "style_communication": "directif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Pressée mais pas fermée. Elle sait qu'elle va devoir traiter le sujet tôt ou tard.",
+        "signaux_interet": [
+          "Demande le taux de subvention",
+          "Parle d'une copro spécifique",
+          "Questionne le planning"
+        ],
+        "signaux_rejet": [
+          "Dit 'les copropriétaires ne voteront jamais'",
+          "Parle de sa charge de travail",
+          "Reporte après les AG de printemps"
+        ],
+        "tics_langage": [
+          "Attendez, vous gérez aussi les AG ?",
+          "Et les copropriétaires, vous les gérez comment ?",
+          "C'est quoi le reste à charge ?"
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "15 secondes. Coupe avec une question pratique."
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "5 copropriétés classées F ou G au DPE, interdiction de location à venir. Les copropriétaires commencent à poser des questions en AG. Sandrine gère seule 15 copros et n'a pas le temps de monter les dossiers de subvention. Un concurrent syndic voisin commence à se positionner sur la rénovation énergétique comme argument commercial.",
+        "priorites_actuelles": [
+          "Préparer les AG de mars (15 AG en 6 semaines)",
+          "Répondre aux demandes DPE des copropriétaires"
+        ],
+        "experience_avec_offre_similaire": "Un bureau d'études a contacté le cabinet il y a 6 mois pour proposer des audits. Le directeur a trouvé ça intéressant mais personne n'a eu le temps de suivre.",
+        "fournisseur_actuel": "Fait appel ponctuellement à des diagnostiqueurs pour les DPE obligatoires. Pas d'accompagnement rénov.",
+        "budget_disponible": "Pas de budget syndic — ce sont les copropriétés qui paient. L'enjeu est de faire voter les travaux en AG."
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Parler des 5 copros F/G et de l'interdiction de location",
+          "Proposer de monter le dossier subvention SANS surcharge pour elle",
+          "Mentionner le concurrent syndic qui se positionne sur la rénov"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Ajouter du travail à son assiette déjà pleine",
+          "Ne pas comprendre le fonctionnement d'un vote en AG",
+          "Promettre des subventions sans connaître les critères"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "La rénovation énergétique c'est bien beau, mais les copropriétaires ne voteront jamais les travaux.",
+          "sous_texte": "Résignation basée sur l'expérience des AG. A besoin qu'on lui montre comment faire voter.",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Quand le reste à charge passe de 25K€ à 5K€ grâce aux subventions, les copropriétaires votent. On prépare la présentation AG."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "J'ai 15 copros à gérer seule, j'ai pas le temps de monter des dossiers de subvention en plus.",
+          "sous_texte": "Vraie surcharge. C'est le levier : on lui ENLÈVE du travail, on n'en ajoute pas.",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "C'est nous qui montons le dossier, pas vous. Votre seul rôle : inscrire le sujet à l'ordre du jour de l'AG."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Les subventions MaPrimeRénov', c'est joli sur le papier mais ça met 8 mois à être versé.",
+          "sous_texte": "Expérience ou rumeur. Besoin de transparence sur les délais réels.",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Donner les vrais délais actuels et expliquer le préfinancement possible"
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Recontactez-moi après les AG de mars, là c'est impossible.",
+          "sous_texte": "Report légitime mais risque de perdre le momentum",
+          "type": "tactique",
+          "difficulte": 5,
+          "reponse_efficace_indice": "OK pour un RDV en avril, mais proposer de préparer maintenant une note d'info à glisser dans la convocation AG de la copro prioritaire"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Envoyez-moi un dossier type pour que je voie à quoi ça ressemble. Si c'est vraiment clé en main, j'en parle au directeur.",
+        "condition_declenchement": "Quand Sandrine est convaincue que ça ne lui ajoutera pas de travail"
+      },
+      "pattern_escalade": "Copropriétaires refusent → pas le temps → subventions incertaines → après les AG → validation directeur"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "RénoVert",
+        "secteur": "Rénovation énergétique",
+        "description": "Bureau d'études spécialisé en rénovation énergétique des copropriétés"
+      },
+      "offre": {
+        "nom": "Accompagnement Copro Rénov'",
+        "description": "Accompagnement clé en main : audit énergétique, montage subventions MaPrimeRénov' Copropriété, pilotage travaux, présentation AG. Le syndic n'a rien à faire sauf inscrire le sujet à l'ordre du jour.",
+        "proposition_valeur": "Monter le dossier MaPrimeRénov' clé en main sans surcharge pour le syndic",
+        "prix": "Honoraires intégrés dans le montage subvention",
+        "references": [
+          "22 copropriétés accompagnées en Pays de Loire"
+        ],
+        "avantages_vs_concurrence": "Dossier subvention monté par nos soins, taux de subvention moyen 50-70%, présentation AG clé en main"
+      },
+      "objectif_appel": {
+        "type": "rdv_physique",
+        "description": "Obtenir un RDV de 30 min avec Sandrine pour identifier la copropriété prioritaire et préparer une note d'info pour l'AG de mars.",
+        "criteres_succes": [
+          "Obtenir une date de RDV",
+          "Identifier la copro prioritaire"
+        ]
+      },
+      "contexte_appel": {
+        "type": "rappel_contact",
+        "historique": "Bureau d'études ayant contacté le cabinet il y a 6 mois",
+        "infos_connues": "45 copros gérées, 5 classées F/G, AG de mars à venir"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Rénovation énergétique — Syndic de copropriété",
+      "vous_etes": "Consultant commercial chez RénoVert, bureau d'études spécialisé en rénovation énergétique des copropriétés.",
+      "vous_vendez": "Accompagnement clé en main : audit énergétique, montage subventions MaPrimeRénov' Copropriété, pilotage travaux, présentation AG. Le syndic n'a rien à faire sauf inscrire le sujet à l'ordre du jour.",
+      "vous_appelez": "Sandrine Petit, gestionnaire de copropriété au Cabinet Immobilier Anjou (45 copros gérées). Rappel suite à un contact avec le directeur du cabinet.",
+      "ce_que_vous_savez": [
+        "5 copropriétés classées F ou G au DPE — interdiction de location qui arrive",
+        "Un bureau d'études a contacté le cabinet il y a 6 mois, pas de suite (pas le temps)",
+        "AG de mars à préparer — c'est le moment d'inscrire la rénovation à l'ordre du jour",
+        "Un syndic concurrent se positionne sur la rénovation énergétique"
+      ],
+      "votre_objectif": "Obtenir un RDV de 30 min avec Sandrine pour identifier la copropriété prioritaire et préparer une note d'info pour l'AG de mars.",
+      "vos_atouts": [
+        "Dossier subvention monté par nos soins (pas par le syndic)",
+        "Taux de subvention moyen : 50-70% du coût des travaux",
+        "Présentation AG clé en main (slides + simulation reste à charge)",
+        "22 copropriétés accompagnées en Pays de Loire"
+      ],
+      "conseils": "Sandrine est surchargée. Votre pitch c'est : 'on vous enlève du travail, pas on vous en ajoute'. Soyez concret sur ce que VOUS faites vs ce qu'ELLE doit faire. Urgence : les AG de mars sont dans 4-6 semaines.",
+      "duree_estimee": "5-7 minutes"
+    }
+  },
+  {
+    "id": "sc_comptabilite_cabinet",
+    "metadata": {
+      "secteur": "Services financiers",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "comptabilité",
+        "SaaS",
+        "expert-comptable",
+        "cabinet",
+        "dématérialisation"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Expertise comptable",
+        "taille_entreprise": "18 collaborateurs",
+        "interlocuteur_principal": {
+          "poste": "Expert-Comptable associé",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Plateforme de collecte et dématérialisation automatique des pièces comptables clients",
+        "proposition_valeur_presumee": "Économiser 30% du temps de saisie en automatisant la collecte et le rapprochement des factures"
+      },
+      "objectif_formation": "Convaincre un expert-comptable conservateur que la dématérialisation va lui faire gagner du temps, pas en perdre"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Philippe",
+        "nom": "Garneau",
+        "age": 56,
+        "poste": "Expert-Comptable, associé fondateur",
+        "entreprise": {
+          "nom": "Cabinet Garneau & Associés",
+          "secteur": "Expertise comptable et commissariat aux comptes",
+          "taille": "18 collaborateurs",
+          "ca_approximatif": "1.8M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "conservateur dans ses méthodes",
+          "exigeant sur la fiabilité",
+          "surchargé pendant les clôtures"
+        ],
+        "motivations_profondes": [
+          "Garder ses clients face aux cabinets en ligne (Dougs, Indy)",
+          "Réduire les heures sup de ses collaborateurs pendant les bilans"
+        ],
+        "peurs_freins": [
+          "Que ses clients ne suivent pas (moyenne d'âge 55 ans)",
+          "Que la techno remplace la relation client"
+        ],
+        "rapport_aux_commerciaux": "Courtois mais pressé. N'achète que si un confrère recommande ou si la pression clients l'y oblige.",
+        "style_communication": "analytique"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Poli mais clairement occupé. Période de clôture annuelle.",
+        "signaux_interet": [
+          "Mentionne la pression des cabinets en ligne",
+          "Demande combien de ses confrères utilisent l'outil",
+          "Pose des questions sur la conformité FEC"
+        ],
+        "signaux_rejet": [
+          "Dit 'mes clients ne sont pas prêts'",
+          "Parle de Sage ou Cegid comme suffisants",
+          "Report après la période des bilans"
+        ],
+        "tics_langage": [
+          "Vous savez, dans notre métier...",
+          "C'est plus complexe que ça...",
+          "Il faudrait voir..."
+        ],
+        "debit_parole": "lent",
+        "tolerance_monologue_vendeur": "Écoute poliment mais décroche mentalement après 20 secondes sans substance"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "3 clients perdus l'an dernier au profit de Dougs et Indy. Les collaborateurs passent 40% de leur temps à relancer les clients pour les pièces. Période de clôture : tout le cabinet est sous l'eau. 2 collaborateurs juniors menacent de partir à cause de la surcharge.",
+        "priorites_actuelles": [
+          "Boucler les bilans avant fin mars",
+          "Retenir les 2 collaborateurs"
+        ],
+        "experience_avec_offre_similaire": "A vu une démo de Dext il y a 2 ans, trouvé intéressant mais n'a jamais franchi le pas. Un confrère à Rennes utilise Receipt Bank.",
+        "fournisseur_actuel": "Sage Coala, saisie manuelle, relance par mail des clients pour les factures",
+        "budget_disponible": "Pourrait investir 200-400€/mois si ça réduit visiblement la charge de saisie"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Citer un confrère qui utilise l'outil dans sa région",
+          "Parler de la perte de clients face aux cabinets en ligne",
+          "Montrer le calcul temps gagné en heures de saisie"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Dire que la comptabilité traditionnelle est dépassée",
+          "Ne pas connaître Sage Coala ou le format FEC",
+          "Forcer la démo pendant la période des bilans"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "Écoutez, on est en pleine clôture, c'est vraiment pas le moment.",
+          "sous_texte": "Vrai — c'est la pire période. Mais c'est aussi quand la douleur est maximale.",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Valider et proposer un rappel en avril. Mais ancrer : 'C'est justement cette période qui disparaît avec la dématérialisation.'"
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "Mes clients ont en moyenne 55 ans, ils ne vont jamais scanner leurs factures.",
+          "sous_texte": "Peur réelle que le changement pèse sur le client et détériore la relation",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Photo smartphone suffit, pas besoin de scanner. Les clients de 55 ans ont un téléphone. Et ceux qui ne veulent pas → le cabinet scanne pour eux."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "On a Sage Coala, on n'a pas besoin d'un outil en plus.",
+          "sous_texte": "Confusion entre outil comptable et outil de collecte. Sage ne fait pas la collecte.",
+          "type": "reflexe",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Sage fait la compta, notre outil fait la collecte. C'est complémentaire, pas concurrent. Intégration native."
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Je vais en parler à mon associé. Rappelez après les bilans, en mai.",
+          "sous_texte": "Report classique mais intérêt réel — il mentionne son associé, signe qu'il prend au sérieux",
+          "type": "tactique",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Proposer un RDV avec les 2 associés en avril, juste après les bilans, quand la douleur est encore fraîche"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Envoyez-moi une plaquette, je regarderai quand j'aurai la tête hors de l'eau.",
+        "condition_declenchement": "Si le commercial n'a pas fait le lien entre le temps de saisie et la perte de clients"
+      },
+      "pattern_escalade": "Période bilans → clients pas prêts → Sage suffit → associé → plaquette"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "CollectaCompta",
+        "secteur": "Éditeur SaaS comptable",
+        "description": "Éditeur français de plateforme de collecte et dématérialisation des pièces comptables"
+      },
+      "offre": {
+        "nom": "CollectaCompta",
+        "description": "Plateforme qui permet aux clients du cabinet d'envoyer leurs factures par photo/mail, avec OCR automatique et rapprochement bancaire. Intégration Sage, Cegid, ACD.",
+        "proposition_valeur": "Économiser 30% du temps de saisie",
+        "prix": "À partir de 200€/mois",
+        "references": [
+          "65 cabinets utilisateurs en Bretagne/Pays de Loire"
+        ],
+        "avantages_vs_concurrence": "Intégration native Sage Coala, OCR 98.5% de précision, essai gratuit 2 mois sur 5 dossiers"
+      },
+      "objectif_appel": {
+        "type": "rdv_demo",
+        "description": "Obtenir un RDV de 20 min en avril (après les bilans) avec les 2 associés pour une démo personnalisée.",
+        "criteres_succes": [
+          "Obtenir une date en avril",
+          "Identifier les outils actuels"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact",
+        "infos_connues": "Cabinet EC 18 collaborateurs, Sage Coala, perte de clients vs cabinets en ligne"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Dématérialisation comptable — Cabinet EC",
+      "vous_etes": "Commercial chez CollectaCompta, éditeur français de plateforme de collecte et dématérialisation des pièces comptables.",
+      "vous_vendez": "Une plateforme qui permet aux clients du cabinet d'envoyer leurs factures par photo/mail, avec OCR automatique et rapprochement bancaire. Intégration Sage, Cegid, ACD.",
+      "vous_appelez": "Philippe Garneau, expert-comptable associé fondateur du cabinet Garneau & Associés (18 collaborateurs). Premier appel.",
+      "ce_que_vous_savez": [
+        "3 clients perdus l'an dernier face à Dougs et Indy",
+        "Collaborateurs passent 40% du temps à relancer les clients pour les pièces",
+        "2 collaborateurs juniors menacent de partir (surcharge)",
+        "A vu une démo Dext il y a 2 ans sans franchir le pas"
+      ],
+      "votre_objectif": "Obtenir un RDV de 20 min en avril (après les bilans) avec les 2 associés pour une démo personnalisée.",
+      "vos_atouts": [
+        "Intégration native Sage Coala",
+        "65 cabinets utilisateurs en Bretagne/Pays de Loire",
+        "Essai gratuit 2 mois sur 5 dossiers clients",
+        "OCR 98.5% de précision — moins de saisie corrective"
+      ],
+      "conseils": "Philippe est en période de clôture — ne forcez pas la démo maintenant. Ancrez la douleur (40% du temps en saisie) et verrouillez un RDV en avril. Mentionnez des confrères de sa région.",
+      "duree_estimee": "5-7 minutes"
+    }
+  },
+  {
+    "id": "sc_ecommerce_agence",
+    "metadata": {
+      "secteur": "Digital / E-commerce",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "e-commerce",
+        "agence",
+        "directrice marketing",
+        "PME",
+        "Shopify"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Cosmétiques bio",
+        "taille_entreprise": "25 salariés",
+        "interlocuteur_principal": {
+          "poste": "Directrice Marketing et E-commerce",
+          "niveau_hierarchique": "directeur"
+        }
+      },
+      "offre": {
+        "produit_service": "Agence e-commerce spécialisée Shopify : refonte UX, optimisation conversion, SEO",
+        "proposition_valeur_presumee": "Augmenter le taux de conversion de 40% en 3 mois grâce à une refonte UX data-driven"
+      },
+      "objectif_formation": "Vendre une prestation d'agence à une directrice marketing qui a déjà été déçue par une agence précédente"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Amandine",
+        "nom": "Vasseur",
+        "age": 36,
+        "poste": "Directrice Marketing et E-commerce",
+        "entreprise": {
+          "nom": "Natur'Essentielle",
+          "secteur": "Cosmétiques bio, vente en ligne et réseau de boutiques",
+          "taille": "25 salariés, 3 boutiques + site Shopify",
+          "ca_approximatif": "3.2M€ dont 40% e-commerce"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "exigeante et informée",
+          "déçue par la dernière agence",
+          "orientée data"
+        ],
+        "motivations_profondes": [
+          "Doubler le CA e-commerce pour compenser le recul des boutiques",
+          "Prouver au DG que le digital est le bon investissement"
+        ],
+        "peurs_freins": [
+          "Se retrouver avec un site joli mais qui ne convertit pas (comme la dernière fois)",
+          "Perdre 3 mois et 30K€ pour rien"
+        ],
+        "rapport_aux_commerciaux": "Très informée, elle lit les blogs Shopify. Détecte immédiatement les bullshitters. Attend de la preuve, pas du discours.",
+        "style_communication": "analytique"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Directe, professionnelle, légèrement sur la défensive. Elle a été échaudée.",
+        "signaux_interet": [
+          "Pose des questions techniques sur Shopify (thèmes, apps)",
+          "Demande des cas dans la cosmétique bio",
+          "Partage son taux de conversion actuel"
+        ],
+        "signaux_rejet": [
+          "Compare avec ce que la dernière agence avait promis",
+          "Dit 'on peut le faire en interne'",
+          "Questionne la méthodologie sans écouter la réponse"
+        ],
+        "tics_langage": [
+          "C'est quoi votre track record ?",
+          "Montrez-moi des chiffres",
+          "Notre dernière agence nous avait dit la même chose...",
+          "OK mais concrètement..."
+        ],
+        "debit_parole": "normal",
+        "tolerance_monologue_vendeur": "Écoute si c'est structuré et basé sur des données, coupe si c'est du blabla"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Site Shopify refait il y a 18 mois par une agence parisienne (35K€). Design joli mais taux de conversion passé de 1.8% à 1.5%. Panier moyen de 45€. SEO négligé, le trafic organique baisse. Le DG met la pression pour que le e-commerce atteigne 60% du CA d'ici 2027.",
+        "priorites_actuelles": [
+          "Lancer la nouvelle gamme 'anti-âge bio' en ligne dans 6 semaines",
+          "Remonter le taux de conversion au-dessus de 2%"
+        ],
+        "experience_avec_offre_similaire": "Dernière agence (Studio Digital Paris) : promesse de +50% de conversion, résultat -15%. Budget de 35K€ dont 10K€ d'extras non prévus. Amandine a juré de ne plus travailler avec une agence parisienne.",
+        "fournisseur_actuel": "Gère en interne avec 1 webmaster/intégrateur + elle-même pour la stratégie. Publicité via un freelance Google Ads.",
+        "budget_disponible": "Budget de 20-30K€ alloué mais doit justifier chaque euro au DG. Pas de budget SEO distinct."
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Montrer un cas cosmétique bio avec avant/après taux de conversion",
+          "Proposer un audit gratuit de son site actuel avec recommandations chiffrées",
+          "Être transparent sur le pricing (pas d'extras cachés)"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Promettre +50% de conversion sans voir le site",
+          "Ne pas connaître Shopify ou ses apps",
+          "Être une agence parisienne"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "On a refait le site il y a 18 mois avec une agence, et honnêtement ça a été une catastrophe.",
+          "sous_texte": "Traumatisme récent. C'est un warning ET une opportunité si vous montrez que vous êtes différent.",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Demander ce qui s'est mal passé précisément. Montrer que votre approche est data-driven, pas design-driven."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "On peut très bien faire ça en interne, j'ai un webmaster Shopify qui se débrouille bien.",
+          "sous_texte": "Veut garder le contrôle et économiser. Mais son webmaster ne fait pas de CRO ni de SEO.",
+          "type": "tactique",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Distinguer intégration (son webmaster) et stratégie CRO/SEO (votre expertise). Complémentaire, pas concurrent."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Montrez-moi un cas dans la cosmétique bio. Pas du B2B, pas du fast fashion, de la cosmétique bio.",
+          "sous_texte": "Exigence légitime. Si vous n'avez pas de cas, c'est game over.",
+          "type": "test",
+          "difficulte": 9,
+          "reponse_efficace_indice": "Avoir un cas. Si pas exactement cosmétique bio, un cas beauté/bien-être avec les mêmes enjeux."
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Faites-moi un audit gratuit et on verra si vos recommandations tiennent la route.",
+          "sous_texte": "Signal d'intérêt fort — elle vous teste sur le livrable, pas sur le discours.",
+          "type": "test",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Accepter immédiatement. C'est votre porte d'entrée. L'audit doit être impeccable."
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Je vais y réfléchir. Envoyez-moi des cas clients et votre grille tarifaire complète, sans surprise.",
+        "condition_declenchement": "Si le commercial n'a pas de cas cosmétique/beauté crédible"
+      },
+      "pattern_escalade": "Traumatisme agence → interne suffit → preuve sectorielle → audit test → réflexion"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "WebConvert",
+        "secteur": "Agence e-commerce",
+        "description": "Agence e-commerce Shopify basée à Nantes, spécialisée en optimisation de conversion"
+      },
+      "offre": {
+        "nom": "Pack CRO + SEO",
+        "description": "Audit CRO + refonte UX data-driven + SEO technique pour boutiques Shopify. Méthodologie : audit → test A/B → implémentation → mesure.",
+        "proposition_valeur": "Augmenter le taux de conversion de 40% en 3 mois",
+        "prix": "Forfait 15-25K€ selon scope, pas d'extras cachés",
+        "references": [
+          "BioBeauté Shop (1.4% → 2.8% conversion en 3 mois)"
+        ],
+        "avantages_vs_concurrence": "Basé à Nantes pas à Paris, audit gratuit, pricing transparent, facturation au forfait"
+      },
+      "objectif_appel": {
+        "type": "audit_gratuit",
+        "description": "Obtenir l'accord pour un audit gratuit du site (2-3 jours) avec restitution des recommandations chiffrées.",
+        "criteres_succes": [
+          "Obtenir l'accord pour l'audit",
+          "Accès au Google Analytics"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact froid",
+        "infos_connues": "PME cosmétiques bio, site Shopify, taux de conversion en baisse"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Refonte e-commerce — Cosmétiques bio",
+      "vous_etes": "Consultant commercial chez WebConvert, agence e-commerce Shopify basée à Nantes, spécialisée en optimisation de conversion.",
+      "vous_vendez": "Audit CRO + refonte UX data-driven + SEO technique pour boutiques Shopify. Méthodologie : audit → test A/B → implémentation → mesure. Pas de refonte design complète, de l'optimisation ciblée.",
+      "vous_appelez": "Amandine Vasseur, Directrice Marketing de Natur'Essentielle (cosmétiques bio, 25 salariés, site Shopify). Premier contact froid.",
+      "ce_que_vous_savez": [
+        "Site refait il y a 18 mois — taux de conversion passé de 1.8% à 1.5% (échec)",
+        "Budget de 35K€ dépensé + 10K€ d'extras avec la dernière agence",
+        "Trafic organique en baisse, SEO négligé",
+        "Nouvelle gamme anti-âge à lancer dans 6 semaines"
+      ],
+      "votre_objectif": "Obtenir l'accord pour un audit gratuit du site (2-3 jours) avec restitution des recommandations chiffrées.",
+      "vos_atouts": [
+        "Cas client : BioBeauté Shop (1.4% → 2.8% conversion en 3 mois)",
+        "Basé à Nantes, pas à Paris",
+        "Audit gratuit avec recommandations actionnables",
+        "Pricing transparent, pas d'extras cachés, facturation au forfait"
+      ],
+      "conseils": "Amandine est échaudée — ne promettez rien de chiffré avant d'avoir vu le site. Proposez l'audit gratuit comme preuve de compétence. Soyez transparent sur tout, surtout les prix.",
+      "duree_estimee": "5-8 minutes"
+    }
+  },
+  {
+    "id": "sc_energie_solaire_artisan",
+    "metadata": {
+      "secteur": "Énergie / BTP",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 1,
+      "duree_estimee_min": 5,
+      "tags": [
+        "énergie",
+        "solaire",
+        "artisan",
+        "gérant",
+        "TPE",
+        "facile"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "court",
+        "temperature_prospect": "tiede"
+      },
+      "cible": {
+        "secteur": "Artisanat / BTP",
+        "taille_entreprise": "12 salariés",
+        "interlocuteur_principal": {
+          "poste": "Gérant",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Installation de panneaux solaires en autoconsommation pour bâtiments professionnels",
+        "proposition_valeur_presumee": "Réduire la facture électrique de 40-60% avec un retour sur investissement en 5 ans"
+      },
+      "objectif_formation": "Closer un prospect tiède qui a déjà montré de l'intérêt (demande de devis en ligne) mais n'a pas donné suite"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Stéphane",
+        "nom": "Moreau",
+        "age": 45,
+        "poste": "Gérant",
+        "entreprise": {
+          "nom": "Moreau Menuiseries",
+          "secteur": "Menuiserie aluminium et PVC",
+          "taille": "12 salariés",
+          "ca_approximatif": "1.1M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "concret",
+          "bon vivant",
+          "prudent avec l'argent"
+        ],
+        "motivations_profondes": [
+          "Réduire ses charges fixes qui augmentent chaque année",
+          "Montrer qu'il est un patron moderne à ses salariés"
+        ],
+        "peurs_freins": [
+          "Arnaques photovoltaïques (il a vu des reportages)",
+          "Investir 30K€ dans un truc qui ne marche pas"
+        ],
+        "rapport_aux_commerciaux": "Accessible si on est franc et qu'on ne cherche pas à l'embrouiller. Déteste les calculs truqués.",
+        "style_communication": "expressif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Plutôt accueillant — il a fait la demande de devis lui-même. Mais prudent.",
+        "signaux_interet": [
+          "Pose des questions sur la garantie et la durée de vie",
+          "Parle de sa facture EDF",
+          "Demande si des voisins artisans ont fait la même chose"
+        ],
+        "signaux_rejet": [
+          "Parle d'arnaques photovoltaïques",
+          "Dit que c'est trop cher",
+          "Reporte à 'la fin de l'année'"
+        ],
+        "tics_langage": [
+          "Ah ouais ?",
+          "Non mais concrètement...",
+          "Moi ce que je veux savoir c'est...",
+          "Sans blague ?"
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "15-20 secondes si le sujet l'intéresse"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Facture électrique passée de 8K€ à 14K€/an en 3 ans (atelier avec machines, éclairage, chauffage). A fait une demande de devis en ligne il y a 3 semaines mais n'a pas donné suite car il a eu un gros chantier. Toiture de l'atelier orientée plein sud, 200m².",
+        "priorites_actuelles": [
+          "Finir le chantier en cours pour un promoteur",
+          "Recruter un apprenti"
+        ],
+        "experience_avec_offre_similaire": "Son beau-frère a fait installer des panneaux chez lui (particulier), content du résultat. Mais il a entendu des histoires d'arnaques dans le professionnel.",
+        "fournisseur_actuel": "EDF tarif bleu pro. Pas de panneaux, pas d'autoconsommation.",
+        "budget_disponible": "Peut investir 25-35K€ si le retour sur investissement est crédible et le financement souple"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Mentionner sa demande de devis (il l'a faite, c'est un signal fort)",
+          "Citer un artisan du coin qui a installé",
+          "Parler du crédit-bail ou du financement sans apport"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Promesses irréalistes ('votre facture à zéro')",
+          "Pression pour signer vite",
+          "Ne pas pouvoir répondre aux questions techniques"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "Ah oui j'avais fait une demande, mais là j'suis sur un gros chantier, c'est pas le moment.",
+          "sous_texte": "Intérêt réel mais pas prioritaire. A besoin qu'on lui simplifie la vie.",
+          "type": "sincere",
+          "difficulte": 4,
+          "reponse_efficace_indice": "Valider le timing et proposer un RDV physique rapide sur son atelier (on vient à lui)"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "J'ai vu des reportages sur les arnaques photovoltaïques, comment je sais que c'est pas pareil ?",
+          "sous_texte": "Vraie peur, besoin de rassurance concrète (pas des mots)",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "RGE, garantie décennale, installateur local, contrat clair, pas de revente surplus obligatoire"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "30K€ c'est quand même une sacrée somme. Et si ça produit pas autant que prévu ?",
+          "sous_texte": "Prudent avec l'argent mais pas fermé. Veut être rassuré sur le risque.",
+          "type": "sincere",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Garantie de production, crédit-bail à mensualité inférieure à l'économie, pas d'apport"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Bon, envoyez-moi le devis détaillé par mail, j'en parle avec ma femme et mon comptable.",
+        "condition_declenchement": "Quand Stéphane est convaincu mais veut valider avec ses proches"
+      },
+      "pattern_escalade": "Pas le moment → arnaques → prix → validation famille/comptable"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "SolairePro Ouest",
+        "secteur": "Installation photovoltaïque",
+        "description": "Installateur photovoltaïque RGE spécialisé dans les bâtiments professionnels"
+      },
+      "offre": {
+        "nom": "AutoConso Pro",
+        "description": "Installation de panneaux solaires en autoconsommation pour ateliers et locaux pro. Étude gratuite, financement en crédit-bail sans apport, garantie 25 ans.",
+        "proposition_valeur": "Réduire la facture électrique de 40-60%",
+        "prix": "25-35K€ ou crédit-bail sans apport",
+        "references": [
+          "3 menuiseries/ateliers équipés dans le département"
+        ],
+        "avantages_vs_concurrence": "RGE QualiPV certifié + garantie décennale, crédit-bail sans apport"
+      },
+      "objectif_appel": {
+        "type": "rdv_physique",
+        "description": "Fixer un RDV sur site de 45 min pour l'étude technique gratuite (mesures toiture + simulation production).",
+        "criteres_succes": [
+          "Obtenir une date de visite",
+          "Confirmer l'intérêt"
+        ]
+      },
+      "contexte_appel": {
+        "type": "rappel_devis",
+        "historique": "Demande de devis en ligne il y a 3 semaines",
+        "infos_connues": "Artisan menuisier, 12 salariés, facture EDF en hausse"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Panneaux solaires — Artisan menuisier",
+      "vous_etes": "Commercial chez SolairePro Ouest, installateur photovoltaïque RGE spécialisé dans les bâtiments professionnels.",
+      "vous_vendez": "Installation de panneaux solaires en autoconsommation pour ateliers et locaux pro. Étude gratuite, financement en crédit-bail sans apport, garantie 25 ans.",
+      "vous_appelez": "Stéphane Moreau, gérant de Moreau Menuiseries (12 salariés). Il a fait une demande de devis en ligne il y a 3 semaines — c'est un rappel.",
+      "ce_que_vous_savez": [
+        "Demande de devis en ligne il y a 3 semaines — intérêt confirmé",
+        "Facture EDF passée de 8K€ à 14K€/an en 3 ans",
+        "Toiture atelier orientée plein sud, 200m² disponibles",
+        "Son beau-frère a des panneaux chez lui et est satisfait"
+      ],
+      "votre_objectif": "Fixer un RDV sur site de 45 min pour l'étude technique gratuite (mesures toiture + simulation production).",
+      "vos_atouts": [
+        "RGE QualiPV certifié + garantie décennale",
+        "Crédit-bail sans apport à mensualité < économie EDF",
+        "3 menuiseries/ateliers équipés dans le département",
+        "Étude technique et simulation de production gratuite"
+      ],
+      "conseils": "Stéphane est accessible et intéressé — il a fait la démarche lui-même. Ne le brusquez pas. Rassurez sur les arnaques (RGE, local, garantie). Facilitez-lui la vie en venant à lui.",
+      "duree_estimee": "4-6 minutes"
+    }
+  },
+  {
+    "id": "sc_formation_management",
+    "metadata": {
+      "secteur": "Formation",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "formation",
+        "management",
+        "logistique",
+        "RH",
+        "OPCO"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Transport et logistique",
+        "taille_entreprise": "450 salariés",
+        "interlocuteur_principal": {
+          "poste": "Responsable Formation",
+          "niveau_hierarchique": "manager"
+        }
+      },
+      "offre": {
+        "produit_service": "Formations management et communication pour managers de proximité",
+        "proposition_valeur_presumee": "Réduire le turnover des opérateurs en formant les chefs d'équipe au management humain"
+      },
+      "objectif_formation": "Vendre de la formation soft skills à un responsable formation orienté technique et réglementaire"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Nathalie",
+        "nom": "Rousseau",
+        "age": 51,
+        "poste": "Responsable Formation et Développement des Compétences",
+        "entreprise": {
+          "nom": "TransLog Express",
+          "secteur": "Transport et logistique",
+          "taille": "450 salariés, 3 plateformes logistiques",
+          "ca_approximatif": "42M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "rigoureuse",
+          "surchargée administrativement",
+          "pragmatique"
+        ],
+        "motivations_profondes": [
+          "Montrer que la formation a un impact mesurable sur le terrain",
+          "Réduire le turnover qui rend fou le DRH"
+        ],
+        "peurs_freins": [
+          "Encore un prestataire qui fait du PowerPoint pendant 2 jours et ça ne change rien",
+          "Budget formation déjà consommé à 70% sur le réglementaire"
+        ],
+        "rapport_aux_commerciaux": "Habituée aux organismes de formation, sait les filtrer. Veut du concret : Qualiopi, programme, durée, éligibilité OPCO.",
+        "style_communication": "analytique"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Professionnel, un peu lasse. Elle a déjà 3 catalogues sur son bureau.",
+        "signaux_interet": [
+          "Demande si c'est éligible OPCO AKTO",
+          "S'intéresse aux modalités (présentiel, distanciel, durée)",
+          "Mentionne le problème de turnover des caristes"
+        ],
+        "signaux_rejet": [
+          "Dit 'on a déjà notre organisme référencé'",
+          "Demande d'envoyer un catalogue",
+          "Parle de budget épuisé"
+        ],
+        "tics_langage": [
+          "C'est noté...",
+          "Il faudrait que je voie avec...",
+          "Vous êtes Qualiopi ?",
+          "On a déjà..."
+        ],
+        "debit_parole": "normal",
+        "tolerance_monologue_vendeur": "Écoute 20 secondes si le sujet est pertinent"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Turnover de 35% sur les caristes et préparateurs. Les chefs d'équipe (promus du terrain) n'ont jamais été formés au management. 3 départs le mois dernier dont 2 ont cité le management comme raison. Le DRH veut des résultats rapides.",
+        "priorites_actuelles": [
+          "Formations réglementaires CACES à renouveler (25 personnes)",
+          "Plan de développement des compétences à boucler avant mars"
+        ],
+        "experience_avec_offre_similaire": "A fait une formation management il y a 2 ans avec un organisme local. Évaluations à chaud positives, mais aucun changement visible sur le terrain.",
+        "fournisseur_actuel": "AFTRAL pour le réglementaire, pas d'organisme fixe pour les soft skills",
+        "budget_disponible": "Budget restant de 18K€ sur 2026, plus 60% de prise en charge OPCO AKTO possible"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Parler du lien turnover ↔ management de proximité avec des chiffres",
+          "Mentionner OPCO AKTO et la prise en charge",
+          "Proposer un format court (pas 2 jours pleins) compatible avec la prod"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Ne pas être Qualiopi",
+          "Proposer des formations théoriques longues",
+          "Ne pas connaître les contraintes de la logistique"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "On a déjà notre organisme de formation référencé, on ne change pas en cours d'année.",
+          "sous_texte": "Inertie administrative, mais pas fermée si le sujet est pertinent",
+          "type": "reflexe",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Distinguer réglementaire (AFTRAL) et management (complémentaire, pas concurrent)"
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "Le management ça fait partie des soft skills, et concrètement ça ne change rien sur le terrain.",
+          "sous_texte": "Échaudée par l'expérience passée. Besoin de preuves de transfert terrain.",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Parler de la méthode terrain (pas de salle) et du suivi post-formation avec indicateurs"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Mon budget formation est déjà consommé à 70% avec le réglementaire. Il me reste 18K€.",
+          "sous_texte": "Vraie contrainte mais aussi test pour voir si on rentre dans l'enveloppe",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Calculer la prise en charge OPCO (60% AKTO) et montrer que le reste à charge est faible"
+        },
+        {
+          "moment": "closing",
+          "verbatim": "C'est intéressant, mais il faudrait que j'en parle au DRH. Rappelez-moi en avril.",
+          "sous_texte": "Intérêt réel mais besoin de valider en interne",
+          "type": "sincere",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Proposer un RDV à 3 (avec le DRH) vu que le DRH est aussi demandeur sur le turnover"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Envoyez-moi votre catalogue et vos certifications, je verrai si ça peut rentrer dans le plan.",
+        "condition_declenchement": "Si le commercial n'a pas fait le lien entre turnover et management"
+      },
+      "pattern_escalade": "Organisme référencé → soft skills inefficaces → budget épuisé → décision DRH → catalogue"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "Cap-Performances",
+        "secteur": "Organisme de formation",
+        "description": "Organisme de formation spécialisé en performance commerciale et managériale. Qualiopi certifié."
+      },
+      "offre": {
+        "nom": "Management Proximité Terrain",
+        "description": "Formations management de proximité en format court (2x1 jour espacés de 3 semaines) avec suivi terrain et indicateurs de transfert.",
+        "proposition_valeur": "Réduire le turnover en formant les managers de proximité avec des résultats mesurables",
+        "prix": "À partir de 1 500€/jour",
+        "references": [
+          "6 entreprises logistique formées dont Kuehne+Nagel"
+        ],
+        "avantages_vs_concurrence": "Format court compatible production, suivi terrain à J+30 et J+90, prise en charge OPCO AKTO jusqu'à 60%"
+      },
+      "objectif_appel": {
+        "type": "rdv_decision",
+        "description": "Obtenir un RDV de 30 min avec Nathalie ET le DRH pour présenter le diagnostic et un plan de formation chiffré.",
+        "criteres_succes": [
+          "Obtenir une date avec le DRH",
+          "Valider le problème de turnover"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact",
+        "infos_connues": "ETI logistique, 450 salariés, turnover 35%"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Formation management — Logistique",
+      "vous_etes": "Consultant commercial chez Cap-Performances, organisme de formation spécialisé en performance commerciale et managériale.",
+      "vous_vendez": "Des formations management de proximité en format court (2x1 jour espacés de 3 semaines) avec suivi terrain et indicateurs de transfert. Qualiopi certifié.",
+      "vous_appelez": "Nathalie Rousseau, Responsable Formation chez TransLog Express (450 salariés, logistique). Premier contact.",
+      "ce_que_vous_savez": [
+        "Turnover de 35% sur les opérateurs — les chefs d'équipe sont promus du terrain sans formation management",
+        "3 départs récents ont cité le management comme raison",
+        "Formation management faite il y a 2 ans, aucun résultat visible",
+        "Budget restant 18K€ + prise en charge OPCO AKTO possible (60%)"
+      ],
+      "votre_objectif": "Obtenir un RDV de 30 min avec Nathalie ET le DRH pour présenter le diagnostic et un plan de formation chiffré.",
+      "vos_atouts": [
+        "Format court compatible production (2x1j)",
+        "Suivi terrain à J+30 et J+90 avec indicateurs",
+        "6 entreprises logistique formées dont Kuehne+Nagel",
+        "Prise en charge OPCO AKTO jusqu'à 60%"
+      ],
+      "conseils": "Nathalie est submergée par l'administratif. Simplifiez-lui la vie. Parlez résultats terrain pas théorie. Le DRH est l'allié — proposez de le rencontrer ensemble.",
+      "duree_estimee": "5-7 minutes"
+    }
+  },
+  {
+    "id": "sc_immobilier_promoteur",
+    "metadata": {
+      "secteur": "Immobilier",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 3,
+      "duree_estimee_min": 7,
+      "tags": [
+        "immobilier",
+        "promotion",
+        "DG",
+        "ETI",
+        "CRM",
+        "difficile"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "long",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Promotion immobilière",
+        "taille_entreprise": "35 salariés",
+        "interlocuteur_principal": {
+          "poste": "Directeur Commercial",
+          "niveau_hierarchique": "directeur"
+        }
+      },
+      "offre": {
+        "produit_service": "CRM immobilier avec suivi acquéreur et gestion des lots en temps réel",
+        "proposition_valeur_presumee": "Ne plus perdre de prospects entre le premier contact et la signature du contrat de réservation"
+      },
+      "objectif_formation": "Vendre un CRM à un directeur commercial qui utilise Excel et pense que ça suffit"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Laurent",
+        "nom": "Kervadec",
+        "age": 49,
+        "poste": "Directeur Commercial",
+        "entreprise": {
+          "nom": "Kervadec Promotion",
+          "secteur": "Promotion immobilière résidentielle, Bretagne",
+          "taille": "35 salariés, 4 programmes en cours",
+          "ca_approximatif": "22M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "terrain avant tout",
+          "résistant au changement digital",
+          "relationnel fort"
+        ],
+        "motivations_profondes": [
+          "Ne pas perdre les acquéreurs chauds qui signent ailleurs",
+          "Garder la main sur son équipe de 6 commerciaux"
+        ],
+        "peurs_freins": [
+          "Que le CRM devienne un outil de flicage",
+          "Que ses commerciaux seniors refusent de l'utiliser"
+        ],
+        "rapport_aux_commerciaux": "Directeur commercial lui-même, donc il jauge vite si le vendeur en face est bon ou mauvais.",
+        "style_communication": "directif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Frontal, teste immédiatement. 'Vous, vous vendez quoi exactement ?'",
+        "signaux_interet": [
+          "Parle de prospects perdus récemment",
+          "Pose des questions sur l'app mobile",
+          "Demande si d'autres promoteurs bretons utilisent"
+        ],
+        "signaux_rejet": [
+          "Dit 'on a Excel ça marche très bien'",
+          "Ironise sur les 'usines à gaz'",
+          "Compare avec un CRM qu'il a rejeté"
+        ],
+        "tics_langage": [
+          "Moi mes commerciaux...",
+          "Le terrain c'est pas du digital...",
+          "Concrètement vous faites quoi de différent ?"
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "Interrompt au bout de 10 secondes avec une question directe"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "4 programmes en commercialisation. 2 commerciaux gèrent leurs prospects dans leur tête et sur des post-it. Laurent a découvert la semaine dernière qu'un acquéreur chaud est allé signer chez un concurrent parce que personne ne l'avait rappelé en 10 jours.",
+        "priorites_actuelles": [
+          "Vendre les 12 derniers lots du programme Rivage (sinon le banquier s'énerve)",
+          "Recruter un commercial junior"
+        ],
+        "experience_avec_offre_similaire": "A testé Salesforce il y a 3 ans, trouvé trop compliqué et trop cher. Ses commerciaux ont arrêté de l'utiliser au bout de 2 mois.",
+        "fournisseur_actuel": "Excel + téléphone + WhatsApp. Pas de CRM.",
+        "budget_disponible": "Pas de budget fléché, mais pourrait débloquer 500-800€/mois si convaincu"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Parler du prospect perdu la semaine dernière (touche un nerf)",
+          "Montrer l'app mobile simple (pas Salesforce)",
+          "Citer un promoteur régional qui utilise"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Comparer à Salesforce",
+          "Parler de 'transformation digitale'",
+          "Ne pas comprendre le métier de promoteur"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "On a Excel, ça marche très bien depuis 15 ans.",
+          "sous_texte": "Résistance au changement, mais le prospect perdu le travaille",
+          "type": "reflexe",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Ne pas attaquer Excel. Demander comment il sait si un acquéreur a été rappelé."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "On a essayé Salesforce, mes commerciaux l'ont planté en 2 mois. C'est toujours pareil avec ces trucs.",
+          "sous_texte": "Traumatisme réel. Besoin d'un outil simple, pas d'une usine à gaz.",
+          "type": "sincere",
+          "difficulte": 9,
+          "reponse_efficace_indice": "Salesforce est fait pour des boîtes de 500 personnes. Notre outil est fait pour des équipes de 5-10 commerciaux terrain."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Mes commerciaux ont 50 ans passé, ils ne vont pas utiliser une app.",
+          "sous_texte": "Peur réelle de la résistance interne",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "L'app est aussi simple que WhatsApp. Et s'ils utilisent WhatsApp pour les clients, ils sauront utiliser ça."
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Combien ça coûte ? Parce que Salesforce c'était une fortune.",
+          "sous_texte": "Signal d'intérêt — il compare, donc il considère",
+          "type": "tactique",
+          "difficulte": 5,
+          "reponse_efficace_indice": "5 à 10x moins cher que Salesforce. Donner le prix exact (pas de 'ça dépend')."
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Mouais. Envoyez-moi un truc à montrer à mes commerciaux, si eux veulent je regarderai.",
+        "condition_declenchement": "Si le commercial n'a pas adressé l'échec Salesforce"
+      },
+      "pattern_escalade": "Excel suffit → échec Salesforce → commerciaux seniors → prix → validation équipe"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "ImmoTrack",
+        "secteur": "CRM immobilier",
+        "description": "Éditeur français de CRM conçu spécifiquement pour les promoteurs immobiliers"
+      },
+      "offre": {
+        "nom": "ImmoTrack",
+        "description": "CRM immobilier simple avec app mobile, suivi acquéreur, gestion des lots en temps réel et alertes de relance automatique. Conçu pour des équipes de 3-15 commerciaux.",
+        "proposition_valeur": "Ne plus perdre de prospects entre le premier contact et la signature",
+        "prix": "69€/mois/utilisateur",
+        "references": [
+          "15 promoteurs bretons et ligériens clients"
+        ],
+        "avantages_vs_concurrence": "App mobile aussi simple que WhatsApp, import Excel en 5 min, 5-10x moins cher que Salesforce"
+      },
+      "objectif_appel": {
+        "type": "rdv_physique",
+        "description": "Obtenir un RDV de 30 min sur site pour une démo sur les vrais lots du programme Rivage.",
+        "criteres_succes": [
+          "Obtenir une date",
+          "Montrer l'app mobile"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact froid",
+        "infos_connues": "Promoteur breton, 35 salariés, 4 programmes en cours, pas de CRM"
+      }
+    },
+    "brief_commercial": {
+      "titre": "CRM immobilier — Promoteur régional",
+      "vous_etes": "Commercial chez ImmoTrack, éditeur français de CRM conçu spécifiquement pour les promoteurs immobiliers.",
+      "vous_vendez": "Un CRM immobilier simple avec app mobile, suivi acquéreur, gestion des lots en temps réel et alertes de relance automatique. Conçu pour des équipes de 3-15 commerciaux.",
+      "vous_appelez": "Laurent Kervadec, Directeur Commercial de Kervadec Promotion (35 salariés, 4 programmes en cours, Bretagne). Premier contact froid.",
+      "ce_que_vous_savez": [
+        "Un acquéreur chaud est allé signer chez un concurrent parce que personne ne l'avait rappelé",
+        "Gestion actuelle : Excel + post-it + WhatsApp",
+        "A testé Salesforce il y a 3 ans, abandonné en 2 mois (trop compliqué)",
+        "12 lots restants sur le programme Rivage — pression du banquier"
+      ],
+      "votre_objectif": "Obtenir un RDV de 30 min sur site pour une démo sur les vrais lots du programme Rivage.",
+      "vos_atouts": [
+        "App mobile aussi simple que WhatsApp",
+        "Prix : 69€/mois/utilisateur (vs 150€+ Salesforce)",
+        "15 promoteurs bretons et ligériens clients",
+        "Import Excel des acquéreurs existants en 5 min"
+      ],
+      "conseils": "Laurent est directeur commercial — il jauge votre niveau de vente. Soyez bon. Ne dites jamais 'transformation digitale'. Parlez du prospect perdu. Comparez avec Excel, pas avec Salesforce.",
+      "duree_estimee": "5-8 minutes"
+    }
+  },
+  {
+    "id": "sc_industrie_maintenance",
+    "metadata": {
+      "secteur": "Industrie",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "industrie",
+        "maintenance",
+        "IoT",
+        "DG",
+        "PME"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Industrie mécanique",
+        "taille_entreprise": "85 salariés",
+        "interlocuteur_principal": {
+          "poste": "Directeur Général",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Capteurs IoT de maintenance prédictive industrielle",
+        "proposition_valeur_presumee": "Réduction de 60% des arrêts machines non planifiés grâce à la détection précoce des anomalies"
+      },
+      "objectif_formation": "Passer le barrage initial d'un DG industriel méfiant et créer l'urgence autour du coût des pannes"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Olivier",
+        "nom": "Bertrand",
+        "age": 52,
+        "poste": "Directeur Général",
+        "entreprise": {
+          "nom": "Mécapress Rhône-Alpes",
+          "secteur": "Usinage de précision et sous-traitance mécanique",
+          "taille": "85 salariés",
+          "ca_approximatif": "12M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "pragmatique",
+          "direct",
+          "méfiant envers les commerciaux"
+        ],
+        "motivations_profondes": [
+          "Réduire les coûts de maintenance qui explosent",
+          "Moderniser sans prendre de risque opérationnel"
+        ],
+        "peurs_freins": [
+          "Perdre du temps avec un énième vendeur de solutions miracles",
+          "Dépendance technologique envers un fournisseur"
+        ],
+        "rapport_aux_commerciaux": "Les tolère uniquement s'ils sont concrets et rapides. Déteste le blabla et les slides PowerPoint.",
+        "style_communication": "directif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Neutre-froid, pas hostile mais pas accueillant. Il est entre deux réunions.",
+        "signaux_interet": [
+          "Pose des questions techniques précises",
+          "Mentionne ses propres problèmes de pannes",
+          "Demande des références chez des sous-traitants méca"
+        ],
+        "signaux_rejet": [
+          "Soupire",
+          "Répond par monosyllabes",
+          "Dit 'Bon écoutez...'"
+        ],
+        "tics_langage": [
+          "Bon...",
+          "Concrètement ?",
+          "Et donc ?",
+          "C'est-à-dire ?"
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "Coupe au bout de 15 secondes de monologue"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "3 arrêts machines non planifiés le mois dernier, coût estimé 45K€. Le responsable maintenance est débordé. Carnet de commandes plein mais marges qui se réduisent à cause des retards.",
+        "priorites_actuelles": [
+          "Livrer les commandes en cours sans retard",
+          "Recruter 2 usineurs"
+        ],
+        "experience_avec_offre_similaire": "Un commercial IoT est passé il y a 8 mois, a fait une démo jolie mais n'a jamais rappelé. Olivier en garde un mauvais souvenir.",
+        "fournisseur_actuel": "Maintenance curative classique avec un prestataire local depuis 15 ans (Atelier Méca Services)",
+        "budget_disponible": "Pas de budget fléché innovation, mais pourrait débloquer 20-30K€ si ROI démontré en 6 mois"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Citer un cas concret dans l'usinage/sous-traitance",
+          "Chiffrer le coût de ses pannes mieux que lui",
+          "Proposer un pilote sans engagement sur 2 machines"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Pitch générique 'notre solution révolutionnaire'",
+          "Ne pas connaître son secteur",
+          "Parler d'IA ou de transformation digitale de façon abstraite"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "Écoutez, j'ai pas le temps là, envoyez-moi un mail.",
+          "sous_texte": "Filtrage automatique, il teste si le commercial abandonne facilement",
+          "type": "reflexe",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Accepter le mail mais ancrer un élément chiffré qui crée la curiosité"
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "On a déjà quelqu'un pour la maintenance, ça fait 15 ans qu'on bosse ensemble.",
+          "sous_texte": "Fidélité au prestataire actuel, mais aussi aveu que le modèle est ancien",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Ne pas attaquer le prestataire, demander si le préventif est en place ou si c'est du curatif"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Ces nouvelles technos, c'est jamais aussi simple qu'on nous le vend. Mes gars ne sont pas informaticiens.",
+          "sous_texte": "Peur du changement et de la complexité, mauvaise expérience passée avec le commercial IoT",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Parler de l'installation physique simple (capteur autocollant) et du fait que c'est le prestataire qui gère, pas ses équipes"
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Et ça coûte combien tout ce bazar ? Parce que moi mon budget maintenance c'est déjà serré.",
+          "sous_texte": "Pas contre sur le principe mais veut s'assurer que c'est proportionné à sa taille",
+          "type": "tactique",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Retourner avec le coût de ses 3 pannes (45K€) vs le coût de la solution annuelle"
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Rappelez-moi dans 6 mois quand on aura passé le rush de commandes.",
+          "sous_texte": "Report classique, mais aussi signal qu'il n'est pas fermé définitivement",
+          "type": "tactique",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Montrer que c'est justement pendant le rush que les pannes coûtent le plus cher"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Bon écoutez, j'ai une réunion. Envoyez-moi quelque chose de concret avec des chiffres, pas du commercial.",
+        "condition_declenchement": "Si le commercial n'a pas créé d'enjeu après 5 minutes"
+      },
+      "pattern_escalade": "Filtrage poli → fidélité prestataire → scepticisme techno → prix → report temporel → mail poubelle"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "IoT Predict",
+        "secteur": "Maintenance prédictive industrielle",
+        "description": "Startup française spécialisée en capteurs de maintenance prédictive pour l'industrie"
+      },
+      "offre": {
+        "nom": "PredictSense",
+        "description": "Des capteurs IoT qui détectent les anomalies machines avant la panne. Installation en 2h, sans arrêt de production. Alertes en temps réel sur smartphone.",
+        "proposition_valeur": "Réduction de 60% des arrêts machines non planifiés",
+        "prix": "À partir de 500€/mois pour 5 machines",
+        "references": [
+          "Fonderies du Rhône (-62% d'arrêts en 4 mois)",
+          "Précis'Usinage Lyon — ROI en 3 mois"
+        ],
+        "avantages_vs_concurrence": "Installation sans arrêt de production, pilote gratuit 30 jours"
+      },
+      "objectif_appel": {
+        "type": "rdv_physique",
+        "description": "Décrocher un RDV de 30 minutes sur site pour une démonstration avec le responsable maintenance.",
+        "criteres_succes": [
+          "Obtenir une date et un créneau",
+          "Identifier le décideur final",
+          "Comprendre le parc machines"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact",
+        "infos_connues": "PME industrielle Rhône-Alpes, 85 salariés, usinage de précision"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Prospection maintenance prédictive — PME industrielle",
+      "vous_etes": "Commercial chez IoT Predict, startup française spécialisée en capteurs de maintenance prédictive pour l'industrie.",
+      "vous_vendez": "Des capteurs IoT qui détectent les anomalies machines avant la panne. Installation en 2h, sans arrêt de production. Alertes en temps réel sur smartphone.",
+      "vous_appelez": "Olivier Bertrand, DG de Mécapress Rhône-Alpes (85 salariés, usinage de précision). Premier appel, contact froid.",
+      "ce_que_vous_savez": [
+        "L'entreprise a eu 3 arrêts machines non planifiés le mois dernier",
+        "Leur prestataire maintenance actuel est en curatif, pas en préventif",
+        "Un commercial IoT est passé il y a 8 mois sans convaincre",
+        "Le carnet de commandes est plein — les retards coûtent cher"
+      ],
+      "votre_objectif": "Décrocher un RDV de 30 minutes sur site pour une démonstration avec le responsable maintenance.",
+      "vos_atouts": [
+        "Référence client : Fonderies du Rhône (-62% d'arrêts en 4 mois)",
+        "Pilote gratuit 30 jours sur 2 machines",
+        "Installation sans arrêt de production",
+        "ROI démontrable en 3 mois"
+      ],
+      "conseils": "Ne pitchez pas d'entrée. Questionnez sur les pannes récentes et leur impact sur les livraisons. Chiffrez le coût de l'inaction.",
+      "duree_estimee": "5-8 minutes"
+    }
+  },
+  {
+    "id": "sc_medical_equipement",
+    "metadata": {
+      "secteur": "Santé / Médical",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 5,
+      "tags": [
+        "médical",
+        "cabinet",
+        "médecin",
+        "équipement",
+        "leasing"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "tiede"
+      },
+      "cible": {
+        "secteur": "Santé, médecine générale",
+        "taille_entreprise": "Cabinet de groupe, 4 médecins",
+        "interlocuteur_principal": {
+          "poste": "Médecin associé, gérant du SCM",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Échographe dernière génération avec sonde polyvalente, formation incluse",
+        "proposition_valeur_presumee": "Générer 30-50K€ de revenus supplémentaires par an en réalisant les échographies au cabinet au lieu de déléguer"
+      },
+      "objectif_formation": "Convaincre un médecin de passer de la prescription d'échographies à la réalisation au cabinet"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Isabelle",
+        "nom": "Morin",
+        "age": 48,
+        "poste": "Médecin généraliste, gérante de la SCM",
+        "entreprise": {
+          "nom": "Cabinet Médical des Tilleuls",
+          "secteur": "Médecine générale",
+          "taille": "4 médecins associés + 2 secrétaires",
+          "ca_approximatif": "180K€/an par médecin"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "dévouée aux patients",
+          "prudente avec les investissements",
+          "curieuse des nouvelles pratiques"
+        ],
+        "motivations_profondes": [
+          "Offrir un meilleur service aux patients (délais d'attente écho = 3 semaines)",
+          "Diversifier les revenus du cabinet"
+        ],
+        "peurs_freins": [
+          "Ne pas avoir le temps de se former correctement",
+          "Que les 3 autres associés ne soient pas d'accord"
+        ],
+        "rapport_aux_commerciaux": "Respectueuse mais n'a vraiment pas le temps. Le créneau c'est entre 12h et 14h.",
+        "style_communication": "aimable"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Bienveillant mais pressé. Entre deux consultations.",
+        "signaux_interet": [
+          "Demande le programme de formation",
+          "Parle des délais d'attente pour ses patients",
+          "Questionne le financement en leasing"
+        ],
+        "signaux_rejet": [
+          "Dit 'il faudrait que les 4 soient d'accord'",
+          "Inquiète du temps de formation",
+          "Parle du coût"
+        ],
+        "tics_langage": [
+          "Vous savez, avec nos journées...",
+          "C'est intéressant sur le principe...",
+          "Mes patients attendent..."
+        ],
+        "debit_parole": "normal",
+        "tolerance_monologue_vendeur": "Écoute patiemment mais regarde sa montre"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Délais d'attente pour échographie au centre d'imagerie : 3 semaines. Les patients se plaignent. Un cabinet voisin a commencé à faire des échographies et attire des patients. Formation DPC (Développement Professionnel Continu) éligible.",
+        "priorites_actuelles": [
+          "Recruter un 5ème médecin (difficulté zone sous-dotée)",
+          "Rénover la salle d'attente"
+        ],
+        "experience_avec_offre_similaire": "A participé à un congrès où elle a vu une démo d'échographe portable. Intéressée mais n'a pas franchi le pas.",
+        "fournisseur_actuel": "Prescrit les échographies au centre d'imagerie du coin. Pas d'équipement propre.",
+        "budget_disponible": "SCM pourrait financer 800-1200€/mois en leasing si les 4 associés votent oui"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Mentionner le congrès et la démo qu'elle a vue",
+          "Parler de la formation DPC prise en charge",
+          "Citer le cabinet voisin qui fait déjà des échos"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Appeler pendant les consultations (avant 12h ou après 14h)",
+          "Ne pas comprendre que c'est une décision collective (4 associés)",
+          "Minimiser le temps de formation nécessaire"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "C'est intéressant mais on est 4 associés, je ne peux pas décider seule.",
+          "sous_texte": "Vraie contrainte. Mais elle est la gérante, donc l'influenceuse principale.",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Proposer de venir présenter aux 4 associés lors d'une réunion de SCM"
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "Avec nos journées de 10h, quand est-ce qu'on se forme ?",
+          "sous_texte": "Vraie inquiétude temps. La formation doit être compatible avec la pratique.",
+          "type": "sincere",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Formation en 2 demi-journées + e-learning + tuteur pendant 3 mois. DPC pris en charge."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Un échographe c'est 25-40K€, c'est beaucoup pour un cabinet de médecine générale.",
+          "sous_texte": "Sensible au prix mais ne connaît pas le modèle économique (actes remboursés)",
+          "type": "sincere",
+          "difficulte": 5,
+          "reponse_efficace_indice": "Calcul : 5 échos/semaine à 56€ = 14 500€/an de revenus supplémentaires. Leasing à 900€/mois, rentable en 8 mois."
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Envoyez-moi la documentation et le programme de formation, j'en parlerai à la prochaine réunion d'associés.",
+        "condition_declenchement": "Si elle est intéressée mais ne veut pas s'engager seule"
+      },
+      "pattern_escalade": "Décision collective → temps de formation → coût → réunion d'associés"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "MedEquip France",
+        "secteur": "Équipement médical",
+        "description": "Distributeur d'équipements d'imagerie médicale pour cabinets de ville"
+      },
+      "offre": {
+        "nom": "Vscan Air (GE)",
+        "description": "Échographe Vscan Air avec sonde polyvalente, formation DPC incluse (2 demi-journées + e-learning + tuteur 3 mois), leasing à partir de 890€/mois.",
+        "proposition_valeur": "Générer 14 500€/an de revenus supplémentaires avec 5 échos/semaine",
+        "prix": "Leasing à partir de 890€/mois",
+        "references": [
+          "145 cabinets de ville équipés en France"
+        ],
+        "avantages_vs_concurrence": "Formation DPC 100% prise en charge, tuteur 3 mois, rentabilisé en 8 mois"
+      },
+      "objectif_appel": {
+        "type": "rdv_presentation",
+        "description": "Obtenir un RDV de présentation lors de la prochaine réunion des 4 associés de la SCM.",
+        "criteres_succes": [
+          "Obtenir une date de réunion SCM",
+          "Confirmer l'intérêt d'Isabelle"
+        ]
+      },
+      "contexte_appel": {
+        "type": "rappel_congres",
+        "historique": "A vu une démo lors d'un congrès",
+        "infos_connues": "Cabinet de 4 médecins, délais écho 3 semaines, cabinet voisin fait des échos"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Échographe cabinet — Médecine générale",
+      "vous_etes": "Commercial chez MedEquip France, distributeur d'équipements d'imagerie médicale pour cabinets de ville.",
+      "vous_vendez": "Échographe Vscan Air (GE) avec sonde polyvalente, formation DPC incluse (2 demi-journées + e-learning + tuteur 3 mois), leasing à partir de 890€/mois.",
+      "vous_appelez": "Dr Isabelle Morin, médecin généraliste et gérante de la SCM du Cabinet des Tilleuls (4 médecins associés). Rappel suite au congrès.",
+      "ce_que_vous_savez": [
+        "Elle a vu une démo d'échographe portable lors d'un congrès (intéressée)",
+        "Délais d'attente écho dans sa zone : 3 semaines",
+        "Un cabinet voisin fait déjà des échographies et attire ses patients",
+        "Formation DPC = prise en charge, pas de frais pour le médecin"
+      ],
+      "votre_objectif": "Obtenir un RDV de présentation lors de la prochaine réunion des 4 associés de la SCM.",
+      "vos_atouts": [
+        "Formation DPC 100% prise en charge",
+        "Leasing 890€/mois rentabilisé en 8 mois (5 échos/semaine)",
+        "145 cabinets de ville équipés en France",
+        "Tuteur disponible pendant 3 mois post-formation"
+      ],
+      "conseils": "Isabelle est bienveillante mais c'est une décision collective. L'objectif n'est PAS de la closer elle, c'est d'obtenir une place à la réunion d'associés. Parlez patients, pas business.",
+      "duree_estimee": "4-6 minutes"
+    }
+  },
+  {
+    "id": "sc_saas_cybersecurite",
+    "metadata": {
+      "secteur": "IT / Cybersécurité",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 3,
+      "duree_estimee_min": 7,
+      "tags": [
+        "IT",
+        "cybersécurité",
+        "DSI",
+        "PME",
+        "SaaS",
+        "difficile"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "long",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Industrie pharmaceutique",
+        "taille_entreprise": "150 salariés",
+        "interlocuteur_principal": {
+          "poste": "DSI",
+          "niveau_hierarchique": "directeur"
+        }
+      },
+      "offre": {
+        "produit_service": "SOC managé (Security Operations Center) pour PME et ETI",
+        "proposition_valeur_presumee": "Surveillance 24/7 des systèmes sans recruter d'expert cybersécurité en interne"
+      },
+      "objectif_formation": "Percer la carapace d'un DSI technique qui pense maîtriser la sécurité en interne"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Marc",
+        "nom": "Duvernet",
+        "age": 44,
+        "poste": "Directeur des Systèmes d'Information",
+        "entreprise": {
+          "nom": "Pharma Loire Laboratoires",
+          "secteur": "Industrie pharmaceutique, fabrication de compléments alimentaires",
+          "taille": "150 salariés, 2 sites de production",
+          "ca_approximatif": "28M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "technique et fier de l'être",
+          "méfiant envers les commerciaux non-techniques",
+          "perfectionniste"
+        ],
+        "motivations_profondes": [
+          "Protéger son périmètre et sa crédibilité de DSI",
+          "Éviter un incident cyber qui serait sa responsabilité"
+        ],
+        "peurs_freins": [
+          "Qu'un prestataire externe montre que sa sécurité interne est insuffisante",
+          "Perdre le contrôle sur l'infrastructure"
+        ],
+        "rapport_aux_commerciaux": "Teste systématiquement le niveau technique. Si le commercial ne sait pas ce qu'est un SIEM, il raccroche.",
+        "style_communication": "analytique"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Froid et technique. Pose une question piège dès les premières secondes pour tester.",
+        "signaux_interet": [
+          "Pose des questions d'architecture",
+          "Mentionne des incidents passés",
+          "Demande le modèle de tarification détaillé"
+        ],
+        "signaux_rejet": [
+          "Parle en acronymes pour perdre le commercial",
+          "Dit 'on gère en interne'",
+          "Soupire ostensiblement"
+        ],
+        "tics_langage": [
+          "Oui mais techniquement...",
+          "Dans notre contexte...",
+          "C'est pas si simple..."
+        ],
+        "debit_parole": "normal",
+        "tolerance_monologue_vendeur": "Interrompt dès qu'il détecte du bullshit technique"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Réglementation pharma impose des audits IT réguliers. Dernier audit a relevé 3 non-conformités mineures en cybersécurité. L'ANSSI a publié des recommandations sectorielles que Marc n'a pas encore toutes implémentées. Équipe IT de 4 personnes, aucun expert sécu dédié.",
+        "priorites_actuelles": [
+          "Corriger les non-conformités avant le prochain audit (4 mois)",
+          "Migrer l'ERP vers le cloud"
+        ],
+        "experience_avec_offre_similaire": "A évalué Orange Cyberdéfense il y a 1 an, trouvé trop cher et trop corporate. Utilise un antivirus + firewall + backup, se dit que ça suffit.",
+        "fournisseur_actuel": "Sophos antivirus, Fortinet firewall, backup Veeam. Pas de SOC, pas de SIEM, pas de surveillance 24/7.",
+        "budget_disponible": "Budget IT de 180K€/an, dont 15K€ pour la sécurité. Peut monter à 40K€ si la DG impose après l'audit."
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Connaître la réglementation pharma (BPF, annexe 11)",
+          "Parler du rapport d'audit et des non-conformités",
+          "Proposer une évaluation gratuite de surface d'attaque"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Dire 'vous n'êtes pas protégé' — il le prend comme une attaque personnelle",
+          "Ne pas connaître Sophos ou Fortinet",
+          "Jargon marketing sans substance technique"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "On gère la sécurité en interne, on a tout ce qu'il faut.",
+          "sous_texte": "Défense de territoire. Il ne veut pas qu'on remette en cause son travail.",
+          "type": "reflexe",
+          "difficulte": 9,
+          "reponse_efficace_indice": "Ne pas contredire. Demander s'il a une surveillance 24/7 et qui gère les alertes la nuit."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "Vous utilisez quoi comme SIEM ? Parce que si c'est du Elastic bidouillé...",
+          "sous_texte": "Test technique. Il veut voir si le commercial connaît son sujet.",
+          "type": "test",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Répondre techniquement et précisément. Mentionner le stack utilisé."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Orange Cyberdéfense m'a proposé la même chose à 80K€ par an, c'est délirant pour notre taille.",
+          "sous_texte": "Déjà prospecté, prix de référence en tête. Veut savoir si on est moins cher.",
+          "type": "tactique",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Expliquer le modèle PME (pas le même scope qu'un SOC grand compte). Donner une fourchette."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "Si je mets un prestataire externe sur notre SI, il voit tout. Niveau confidentialité pharma, c'est compliqué.",
+          "sous_texte": "Vraie préoccupation réglementaire + peur de perte de contrôle",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Parler de cloisonnement, hébergement souverain, certifications HDS si applicable"
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Je regarde ça avec mon équipe et on revient vers vous si ça nous intéresse.",
+          "sous_texte": "Report poli. Mais aussi besoin réel de consulter son équipe technique.",
+          "type": "tactique",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Proposer un scan de vulnérabilité gratuit en 48h — donne du concret à montrer à l'équipe"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Écoutez, envoyez-moi une fiche technique et un devis, je verrai si ça rentre dans le cadre de notre plan de remédiation.",
+        "condition_declenchement": "Si le commercial ne maîtrise pas le vocabulaire technique ou ne connaît pas le contexte réglementaire pharma"
+      },
+      "pattern_escalade": "On gère en interne → test technique → prix trop élevé → confidentialité → report poli"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "CyberShield France",
+        "secteur": "Cybersécurité managée",
+        "description": "Société française spécialisée en cybersécurité managée pour PME et ETI"
+      },
+      "offre": {
+        "nom": "SOC PME 24/7",
+        "description": "SOC managé 24/7 conçu pour les PME : surveillance, détection, réponse aux incidents. Hébergement souverain France.",
+        "proposition_valeur": "Surveillance 24/7 sans recruter d'expert sécu en interne",
+        "prix": "À partir de 2K€/mois",
+        "references": [
+          "3 clients pharma (BPF/annexe 11 compatibles)"
+        ],
+        "avantages_vs_concurrence": "3x moins cher qu'Orange, hébergement 100% France, conforme HDS"
+      },
+      "objectif_appel": {
+        "type": "rdv_technique",
+        "description": "Obtenir un RDV technique de 45 min avec Marc et son responsable infra pour un audit de surface d'attaque gratuit.",
+        "criteres_succes": [
+          "Obtenir une date",
+          "Identifier le stack technique"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact",
+        "infos_connues": "PME pharma, 150 salariés, non-conformités audit"
+      }
+    },
+    "brief_commercial": {
+      "titre": "SOC managé — Laboratoire pharmaceutique",
+      "vous_etes": "Commercial chez CyberShield France, société française spécialisée en cybersécurité managée pour PME et ETI.",
+      "vous_vendez": "Un SOC managé 24/7 conçu pour les PME : surveillance, détection, réponse aux incidents. Hébergement souverain France. Tarification à partir de 2K€/mois.",
+      "vous_appelez": "Marc Duvernet, DSI de Pharma Loire Laboratoires (150 salariés, 2 sites de production). Premier contact froid.",
+      "ce_que_vous_savez": [
+        "Dernier audit IT a relevé 3 non-conformités cybersécurité",
+        "Équipe IT de 4 personnes sans expert sécu dédié",
+        "Utilise Sophos + Fortinet mais pas de SIEM ni de surveillance 24/7",
+        "A évalué Orange Cyberdéfense il y a 1 an — trop cher"
+      ],
+      "votre_objectif": "Obtenir un RDV technique de 45 min avec Marc et son responsable infra pour un audit de surface d'attaque gratuit.",
+      "vos_atouts": [
+        "Scan de vulnérabilité externe gratuit en 48h",
+        "3 clients pharma (BPF/annexe 11 compatibles)",
+        "Prix PME : 3x moins cher qu'Orange",
+        "Hébergement 100% France, conforme HDS"
+      ],
+      "conseils": "Marc est technique, parlez son langage. Ne dites JAMAIS qu'il n'est pas protégé — c'est une attaque personnelle. Partez de l'audit et des non-conformités.",
+      "duree_estimee": "6-8 minutes"
+    }
+  },
+  {
+    "id": "sc_services_rh_cabinet",
+    "metadata": {
+      "secteur": "Services RH",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "RH",
+        "recrutement",
+        "DRH",
+        "ETI",
+        "SaaS"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Distribution spécialisée",
+        "taille_entreprise": "320 salariés",
+        "interlocuteur_principal": {
+          "poste": "DRH",
+          "niveau_hierarchique": "directeur"
+        }
+      },
+      "offre": {
+        "produit_service": "Plateforme SaaS de recrutement prédictif avec scoring IA des candidatures",
+        "proposition_valeur_presumee": "Diviser par 2 le temps de recrutement et réduire le turnover de 30% grâce au matching IA"
+      },
+      "objectif_formation": "Convaincre une DRH analytique qui a déjà un ATS en place de considérer une solution complémentaire"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Catherine",
+        "nom": "Lefèvre",
+        "age": 47,
+        "poste": "Directrice des Ressources Humaines",
+        "entreprise": {
+          "nom": "Distri-Ouest",
+          "secteur": "Distribution spécialisée matériaux de construction",
+          "taille": "320 salariés, 12 agences Grand Ouest",
+          "ca_approximatif": "65M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "analytique",
+          "méthodique",
+          "prudente dans les achats"
+        ],
+        "motivations_profondes": [
+          "Réduire le turnover des commerciaux terrain (28% actuellement)",
+          "Prouver la valeur ajoutée de la DRH au CODIR"
+        ],
+        "peurs_freins": [
+          "Encore un outil de plus à gérer",
+          "Que l'IA remplace le jugement humain dans le recrutement"
+        ],
+        "rapport_aux_commerciaux": "Polie mais exigeante. Attend des données, pas des promesses. Ne décide jamais sur un appel.",
+        "style_communication": "analytique"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Professionnel et courtois mais clairement pressée. Elle enchaîne les entretiens.",
+        "signaux_interet": [
+          "Demande des études de cas dans la distribution",
+          "Pose des questions sur l'intégration avec leur ATS",
+          "Note quelque chose"
+        ],
+        "signaux_rejet": [
+          "Dit 'On a déjà ce qu'il faut'",
+          "Devient monosyllabique",
+          "Ramène tout au budget"
+        ],
+        "tics_langage": [
+          "Je comprends...",
+          "Sur le papier c'est bien, mais...",
+          "Qu'est-ce que ça donne concrètement ?",
+          "En termes de..."
+        ],
+        "debit_parole": "normal",
+        "tolerance_monologue_vendeur": "Écoute poliment 20-25 secondes puis recadre"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Turnover de 28% sur les commerciaux terrain, coût estimé 15K€ par départ. 8 postes ouverts en permanence. L'ATS actuel (Flatchr) gère le flux mais ne filtre pas la qualité. Le DG pousse pour digitaliser les RH.",
+        "priorites_actuelles": [
+          "Recruter 8 commerciaux terrain avant la saison",
+          "Mettre en place des entretiens structurés"
+        ],
+        "experience_avec_offre_similaire": "A testé un outil de matching il y a 2 ans (AssessFirst), trouvé intéressant mais pas renouvelé faute de ROI démontré.",
+        "fournisseur_actuel": "Flatchr pour l'ATS, cabinets de recrutement ponctuels (coût : 18% du salaire brut)",
+        "budget_disponible": "Budget RH digital de 25K€/an, mais peut argumenter au CODIR si business case solide"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Parler de réduction du turnover avec des chiffres sectoriels",
+          "Mentionner l'intégration native avec Flatchr",
+          "Évoquer un cas dans le BTP ou la distribution"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Dire que l'IA remplace le recruteur",
+          "Ne pas connaître Flatchr ou les ATS",
+          "Être vague sur les résultats"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "On a déjà un ATS qui fonctionne très bien, on n'a pas besoin d'un outil de plus.",
+          "sous_texte": "Saturation d'outils, mais aussi aveu que l'ATS ne résout pas le problème de qualité",
+          "type": "reflexe",
+          "difficulte": 7,
+          "reponse_efficace_indice": "Distinguer ATS (flux) et scoring (qualité). Son ATS gère le flux, pas la prédiction de rétention."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "L'IA dans le recrutement, je suis assez réservée. On parle de personnes, pas de data.",
+          "sous_texte": "Vraie conviction éthique, pas juste une objection de façade",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "L'IA ne décide pas, elle pré-qualifie. Le recruteur garde le dernier mot. L'IA élimine les biais inconscients."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "On a testé AssessFirst il y a deux ans, c'était intéressant mais on n'a pas vu de résultat concret.",
+          "sous_texte": "Échaudée par une expérience passée, besoin de preuves tangibles",
+          "type": "sincere",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Demander ce qui n'a pas marché spécifiquement. Expliquer la différence d'approche (prédictif vs psychométrique)."
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Je ne suis pas décisionnaire seule, il faudrait que j'en parle au DG et au DAF.",
+          "sous_texte": "Vrai — elle doit vendre en interne. Cherche un business case tout fait.",
+          "type": "sincere",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Proposer un document ROI personnalisé avec leurs chiffres de turnover pour présenter au CODIR"
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Envoyez-moi une documentation complète avec des cas clients distribution, je regarderai quand j'aurai un moment.",
+        "condition_declenchement": "Si le commercial n'a pas quantifié le coût du turnover en termes financiers"
+      },
+      "pattern_escalade": "ATS suffisant → réserve IA → expérience passée négative → décision collective → documentation"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "TalentScore",
+        "secteur": "Recrutement prédictif",
+        "description": "Éditeur français de solutions de recrutement prédictif par IA"
+      },
+      "offre": {
+        "nom": "TalentScore",
+        "description": "Plateforme qui analyse les candidatures et prédit le taux de rétention à 12 mois. S'intègre aux ATS existants.",
+        "proposition_valeur": "Diviser par 2 le temps de recrutement et réduire le turnover de 30%",
+        "prix": "À partir de 500€/mois",
+        "references": [
+          "Réseau Pro Distribution (-35% turnover en 8 mois)"
+        ],
+        "avantages_vs_concurrence": "Intégration native Flatchr, pilote gratuit sur 3 recrutements"
+      },
+      "objectif_appel": {
+        "type": "rdv_visio",
+        "description": "Obtenir un RDV visio de 30 min pour présenter un business case personnalisé",
+        "criteres_succes": [
+          "Obtenir une date",
+          "Valider le problème de turnover"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact",
+        "infos_connues": "ETI distribution, 320 salariés, turnover élevé"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Recrutement prédictif — Distribution spécialisée",
+      "vous_etes": "Commercial chez TalentScore, éditeur français de solutions de recrutement prédictif par IA.",
+      "vous_vendez": "Une plateforme qui analyse les candidatures et prédit le taux de rétention à 12 mois. S'intègre aux ATS existants. Scoring automatique sans remplacer l'humain.",
+      "vous_appelez": "Catherine Lefèvre, DRH de Distri-Ouest (320 salariés, distribution matériaux BTP, 12 agences Grand Ouest). Premier contact.",
+      "ce_que_vous_savez": [
+        "Turnover de 28% sur les commerciaux terrain — bien au-dessus de la moyenne secteur (18%)",
+        "Ils utilisent Flatchr comme ATS",
+        "8 postes ouverts en permanence — coût estimé 120K€/an en recrutement",
+        "Ils ont testé AssessFirst il y a 2 ans sans renouveler"
+      ],
+      "votre_objectif": "Obtenir un RDV visio de 30 min pour présenter un business case personnalisé avec leurs données de turnover.",
+      "vos_atouts": [
+        "Intégration native Flatchr",
+        "Cas client : Réseau Pro Distribution (-35% turnover en 8 mois)",
+        "Pilote gratuit sur 3 recrutements",
+        "ROI Calculator personnalisé"
+      ],
+      "conseils": "Commencez par le turnover et son coût, pas par la techno. Catherine est analytique : donnez des chiffres. Ne critiquez pas AssessFirst, demandez ce qui a manqué.",
+      "duree_estimee": "5-7 minutes"
+    }
+  },
+  {
+    "id": "sc_transport_flotte",
+    "metadata": {
+      "secteur": "Transport / Logistique",
+      "type_simulation": "prospection_telephonique",
+      "difficulte_defaut": 2,
+      "duree_estimee_min": 6,
+      "tags": [
+        "transport",
+        "flotte",
+        "télématique",
+        "DG",
+        "PME"
+      ]
+    },
+    "extraction": {
+      "contexte": {
+        "type_vente": "prospection_telephonique",
+        "canal": "telephone",
+        "cycle_vente": "moyen",
+        "temperature_prospect": "froid"
+      },
+      "cible": {
+        "secteur": "Transport routier de marchandises",
+        "taille_entreprise": "55 salariés",
+        "interlocuteur_principal": {
+          "poste": "Directeur Général",
+          "niveau_hierarchique": "dirigeant"
+        }
+      },
+      "offre": {
+        "produit_service": "Solution de gestion de flotte et télématique avec optimisation des tournées",
+        "proposition_valeur_presumee": "Réduire de 15-20% la consommation de carburant et optimiser les tournées"
+      },
+      "objectif_formation": "Convaincre un transporteur traditionnel que la télématique n'est pas du flicage mais un levier de rentabilité"
+    },
+    "persona": {
+      "identite": {
+        "prenom": "Patrick",
+        "nom": "Louvel",
+        "age": 57,
+        "poste": "Directeur Général",
+        "entreprise": {
+          "nom": "Transports Louvel & Fils",
+          "secteur": "Transport routier de marchandises, Grand Ouest",
+          "taille": "55 salariés, 32 véhicules",
+          "ca_approximatif": "6.5M€"
+        }
+      },
+      "psychologie": {
+        "traits_dominants": [
+          "patron de terrain",
+          "méfiant envers la technologie",
+          "attaché à ses chauffeurs"
+        ],
+        "motivations_profondes": [
+          "Réduire le poste carburant qui plombe sa marge",
+          "Transmettre l'entreprise à son fils dans 5 ans"
+        ],
+        "peurs_freins": [
+          "Que les chauffeurs perçoivent la télématique comme du flicage",
+          "Investissement technologique qui ne tient pas ses promesses"
+        ],
+        "rapport_aux_commerciaux": "Méfiant envers les commerciaux en costume. Préfère les gens qui connaissent le transport.",
+        "style_communication": "expressif"
+      },
+      "comportement_en_rdv": {
+        "ton_initial": "Bourru mais accessible si on parle transport. Appelle tout le monde 'mon gars'.",
+        "signaux_interet": [
+          "Parle du prix du gazole",
+          "Mentionne les retards de livraison",
+          "Demande si les chauffeurs peuvent voir leurs données"
+        ],
+        "signaux_rejet": [
+          "Dit 'mes chauffeurs vont gueuler'",
+          "Parle de Big Brother",
+          "Dit 'j'ai déjà un GPS'"
+        ],
+        "tics_langage": [
+          "Mon gars...",
+          "Faut pas pousser...",
+          "Ça c'est du papier, moi je veux du concret",
+          "J'ai vu passer des commerciaux..."
+        ],
+        "debit_parole": "rapide",
+        "tolerance_monologue_vendeur": "Interrompt avec une anecdote terrain"
+      },
+      "contexte_actuel": {
+        "situation_entreprise": "Poste carburant = 38% du CA. Prix du gazole en hausse. 2 clients grands comptes ont demandé un suivi CO2 des livraisons (obligation RSE). Un chauffeur a fait un accrochage le mois dernier, pas de données pour la déclaration assurance. Le fils (30 ans, commercial) pousse pour moderniser.",
+        "priorites_actuelles": [
+          "Répondre à l'appel d'offres Leclerc qui exige du suivi CO2",
+          "Remplacer 3 véhicules vieillissants"
+        ],
+        "experience_avec_offre_similaire": "A eu un GPS traceur il y a 5 ans, les chauffeurs l'ont mal pris, ça a créé un conflit social. Retiré au bout de 6 mois.",
+        "fournisseur_actuel": "GPS Garmin standalone dans chaque camion, pas de remontée de données, pas de télématique",
+        "budget_disponible": "Pourrait investir 15-25€/véhicule/mois si retour visible sur le carburant"
+      },
+      "declencheurs": {
+        "ce_qui_ouvre_la_porte": [
+          "Parler de l'obligation RSE/CO2 de ses clients",
+          "Montrer les économies carburant chez un transporteur similaire",
+          "Expliquer que les chauffeurs peuvent voir leurs propres données (pas du flicage)"
+        ],
+        "ce_qui_ferme_instantanement": [
+          "Parler de surveillance des chauffeurs",
+          "Ne pas connaître le transport (réglementation, chronotachygraphe)",
+          "Proposer un outil compliqué"
+        ]
+      }
+    },
+    "objections": {
+      "objections": [
+        {
+          "moment": "accroche",
+          "verbatim": "Si c'est pour fliquer mes chauffeurs, c'est non direct. On a déjà eu le problème.",
+          "sous_texte": "Traumatisme du GPS traceur. C'est le point central à désamorcer.",
+          "type": "sincere",
+          "difficulte": 9,
+          "reponse_efficace_indice": "Ce n'est pas du flicage, c'est de l'aide à la conduite. Les chauffeurs voient LEURS données et s'améliorent eux-mêmes."
+        },
+        {
+          "moment": "decouverte",
+          "verbatim": "J'ai déjà des GPS Garmin dans tous les camions, ça me suffit.",
+          "sous_texte": "Confusion entre GPS navigation et télématique de gestion",
+          "type": "reflexe",
+          "difficulte": 6,
+          "reponse_efficace_indice": "Garmin dit où aller. Nous on dit combien ça coûte et comment économiser."
+        },
+        {
+          "moment": "argumentation",
+          "verbatim": "15-20% d'économie sur le carburant, c'est ce que tout le monde dit. Concrètement j'ai jamais vu ça.",
+          "sous_texte": "Scepticisme nourri par l'expérience. Veut des preuves pas des promesses.",
+          "type": "test",
+          "difficulte": 8,
+          "reponse_efficace_indice": "Citer un cas concret avec chiffres vérifiables. Proposer un pilote sur 5 véhicules pendant 2 mois."
+        },
+        {
+          "moment": "closing",
+          "verbatim": "Faut que j'en parle à mon fils, c'est lui qui gère le côté informatique.",
+          "sous_texte": "Le fils est un allié — il pousse pour moderniser. C'est un signal positif.",
+          "type": "sincere",
+          "difficulte": 4,
+          "reponse_efficace_indice": "Proposer un RDV avec le fils. C'est lui qui va vendre le projet en interne."
+        }
+      ],
+      "objection_finale": {
+        "verbatim": "Écoutez mon gars, envoyez-moi ça par mail, j'en parle à mes chauffeurs au prochain CE.",
+        "condition_declenchement": "Si le commercial n'a pas adressé le traumatisme du GPS traceur"
+      },
+      "pattern_escalade": "Flicage → GPS suffit → promesses non tenues → fils/CE"
+    },
+    "vendeur": {
+      "entreprise": {
+        "nom": "FleetOptim",
+        "secteur": "Gestion de flotte",
+        "description": "Éditeur français de solutions de gestion de flotte et télématique pour PME du transport"
+      },
+      "offre": {
+        "nom": "FleetOptim",
+        "description": "Boîtiers télématiques + plateforme web : suivi conso carburant, optimisation tournées, rapport CO2, aide à la conduite. App chauffeur incluse.",
+        "proposition_valeur": "Réduire de 15-20% la consommation de carburant",
+        "prix": "15-25€/véhicule/mois",
+        "references": [
+          "Transports Kergroas (-18% conso en 4 mois)"
+        ],
+        "avantages_vs_concurrence": "App chauffeur (ils voient LEURS données), rapport CO2 RSE, pilote 2 mois gratuit"
+      },
+      "objectif_appel": {
+        "type": "rdv_physique",
+        "description": "Obtenir un RDV de 30 min avec Patrick ET son fils pour une démo et un calcul d'économie personnalisé.",
+        "criteres_succes": [
+          "Obtenir une date avec le fils",
+          "Comprendre la flotte"
+        ]
+      },
+      "contexte_appel": {
+        "type": "appel_froid",
+        "historique": "Premier contact froid",
+        "infos_connues": "Transporteur Grand Ouest, 32 véhicules, carburant = 38% CA"
+      }
+    },
+    "brief_commercial": {
+      "titre": "Télématique flotte — Transporteur régional",
+      "vous_etes": "Commercial chez FleetOptim, éditeur français de solutions de gestion de flotte et télématique pour PME du transport.",
+      "vous_vendez": "Boîtiers télématiques + plateforme web : suivi conso carburant, optimisation tournées, rapport CO2, aide à la conduite. App chauffeur incluse.",
+      "vous_appelez": "Patrick Louvel, DG fondateur de Transports Louvel & Fils (55 salariés, 32 véhicules, Grand Ouest). Premier contact froid.",
+      "ce_que_vous_savez": [
+        "Poste carburant = 38% du CA, en hausse",
+        "2 clients grands comptes exigent un suivi CO2 (RSE)",
+        "Accrochage récent sans données pour l'assurance",
+        "Mauvaise expérience avec un GPS traceur il y a 5 ans (conflit social)"
+      ],
+      "votre_objectif": "Obtenir un RDV de 30 min avec Patrick ET son fils pour une démo et un calcul d'économie personnalisé.",
+      "vos_atouts": [
+        "App chauffeur (ils voient LEURS données, c'est valorisant)",
+        "Rapport CO2 prêt pour les appels d'offres RSE",
+        "Pilote 2 mois sur 5 véhicules gratuit",
+        "Cas client : Transports Kergroas (-18% conso en 4 mois)"
+      ],
+      "conseils": "Patrick est un patron de terrain. Parlez transport, pas technologie. Le traumatisme du GPS traceur est le verrou à ouvrir — l'app chauffeur est la clé. Le fils est votre allié interne.",
+      "duree_estimee": "5-8 minutes"
+    }
+  }
+]
