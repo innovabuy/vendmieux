@@ -7,6 +7,9 @@ Endpoints :
 4. POST /api/evaluate — Évaluation FORCE 3D post-appel
 5. POST /api/demo/create — Créer un lien démo école
 6. GET /demo/{token} — Page démo standalone
+7. Auth (register, login, me)
+8. Dashboard commercial (stats, historique, session, radar)
+9. Dashboard manager (equipe, stats, commercial)
 """
 
 import json
@@ -17,14 +20,23 @@ from pathlib import Path
 
 import anthropic
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel
 from livekit.api import AccessToken, VideoGrants
 
-from database import init_db, create_demo, get_demo, use_demo_session, save_evaluation, save_demo_session
+from database import (
+    init_db, create_demo, get_demo, use_demo_session, save_evaluation, save_demo_session,
+    create_entreprise, create_user, get_user_by_email, update_last_login,
+    create_session, complete_session, get_user_evaluations, get_user_stats,
+    get_evaluation_detail, get_team_members, get_team_stats,
+    COMPETENCE_KEYS, _parse_competences,
+)
+from auth import (
+    hash_password, verify_password, create_token, get_current_user, get_optional_user,
+)
 from scenarios_database import load_scenarios_database, get_sectors, get_simulation_types
 
 load_dotenv()
@@ -43,6 +55,8 @@ SCENARIOS_DIR = Path(__file__).parent / "scenarios"
 SCENARIOS_DIR.mkdir(exist_ok=True)
 STATIC_DIR = Path(__file__).parent / "static"
 STATIC_DIR.mkdir(exist_ok=True)
+
+_SPA_NO_CACHE = {"Cache-Control": "no-cache, no-store, must-revalidate"}
 
 
 # --- Pydantic models ---
@@ -67,6 +81,8 @@ class EvaluateRequest(BaseModel):
     scenario_id: str = "__default__"
     difficulty: int = 2
     duration_s: int = 0
+    user_id: str | None = None
+    session_db_id: str | None = None
 
 class DemoCreateRequest(BaseModel):
     nom_ecole: str
@@ -75,6 +91,17 @@ class DemoCreateRequest(BaseModel):
     difficulty: int = 2
     expire_days: int = 7
     contact_email: str | None = None
+
+class RegisterRequest(BaseModel):
+    email: str
+    password: str
+    nom: str
+    prenom: str
+    entreprise_nom: str = ""
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
 
 
 # --- Scenarios database (cached) ---
@@ -126,7 +153,7 @@ async def serve_frontend():
 
 
 @app.post("/api/token")
-async def get_token(req: TokenRequest):
+async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_user)):
     api_key = os.environ.get("LIVEKIT_API_KEY")
     api_secret = os.environ.get("LIVEKIT_API_SECRET")
     livekit_url = os.environ.get("LIVEKIT_URL")
@@ -137,10 +164,24 @@ async def get_token(req: TokenRequest):
     room_name = f"vm-{uuid.uuid4().hex[:8]}"
     identity = f"user-{uuid.uuid4().hex[:6]}"
 
-    # Room metadata now carries JSON with scenario_id + difficulty
+    # If authenticated, create a DB session
+    session_db_id = None
+    user_id = None
+    if user:
+        user_id = user["id"]
+        session_db_id = await create_session(
+            user_id=user_id,
+            scenario_id=req.scenario_id or "__default__",
+            difficulty=req.difficulty,
+            livekit_room_id=room_name,
+        )
+
+    # Room metadata now carries JSON with scenario_id + difficulty + optional user info
     room_metadata = json.dumps({
         "scenario_id": req.scenario_id or "__default__",
         "difficulty": req.difficulty,
+        "user_id": user_id,
+        "session_db_id": session_db_id,
     })
 
     token = (
@@ -378,7 +419,13 @@ async def evaluate(req: EvaluateRequest):
         transcript=transcript_str,
         evaluation_json=json.dumps(evaluation, ensure_ascii=False),
         score_global=score,
+        user_id=req.user_id,
+        session_ref_id=req.session_db_id,
     )
+
+    # Complete the session if we have one
+    if req.session_db_id:
+        await complete_session(req.session_db_id, req.duration_s)
 
     return evaluation
 
@@ -471,6 +518,205 @@ async def save_demo_session_endpoint(token: str, data: dict):
         score_global=data.get("score_global", 0),
     )
     return {"ok": True, "session_id": session_id}
+
+
+# ═══════════════════════════════════════════════════════════════
+# AUTH ENDPOINTS
+# ═══════════════════════════════════════════════════════════════
+
+def _user_public(u: dict) -> dict:
+    return {k: u[k] for k in ("id", "email", "nom", "prenom", "role", "entreprise_id") if k in u}
+
+
+@app.post("/api/auth/register")
+async def register(req: RegisterRequest):
+    if not req.email or not req.password or len(req.password) < 6:
+        raise HTTPException(400, "Email et mot de passe (6+ caractères) requis")
+
+    existing = await get_user_by_email(req.email)
+    if existing:
+        raise HTTPException(409, "Cet email est déjà utilisé")
+
+    # Create entreprise if provided
+    entreprise_id = None
+    if req.entreprise_nom.strip():
+        ent = await create_entreprise(req.entreprise_nom.strip())
+        entreprise_id = ent["id"]
+
+    # First user of an entreprise becomes manager
+    role = "manager" if entreprise_id else "commercial"
+
+    pwd_hash = hash_password(req.password)
+    user = await create_user(
+        email=req.email, nom=req.nom, prenom=req.prenom,
+        password_hash=pwd_hash, role=role, entreprise_id=entreprise_id,
+    )
+
+    token = create_token(user["id"], user["email"], user["role"])
+    return {"token": token, "user": _user_public(user)}
+
+
+@app.post("/api/auth/login")
+async def login(req: LoginRequest):
+    user = await get_user_by_email(req.email)
+    if not user:
+        raise HTTPException(401, "Email ou mot de passe incorrect")
+
+    if not verify_password(req.password, user["password_hash"]):
+        raise HTTPException(401, "Email ou mot de passe incorrect")
+
+    await update_last_login(user["id"])
+    token = create_token(user["id"], user["email"], user["role"])
+    return {"token": token, "user": _user_public(user)}
+
+
+@app.get("/api/auth/me")
+async def me(user: dict = Depends(get_current_user)):
+    return _user_public(user)
+
+
+# ═══════════════════════════════════════════════════════════════
+# DASHBOARD COMMERCIAL
+# ═══════════════════════════════════════════════════════════════
+
+@app.get("/api/dashboard/stats")
+async def dashboard_stats(user: dict = Depends(get_current_user)):
+    return await get_user_stats(user["id"])
+
+
+@app.get("/api/dashboard/historique")
+async def dashboard_historique(limit: int = 20, user: dict = Depends(get_current_user)):
+    evals = await get_user_evaluations(user["id"], limit=limit)
+    result = []
+    for e in evals:
+        result.append({
+            "id": e["id"],
+            "scenario_id": e["scenario_id"],
+            "difficulty": e["difficulty"],
+            "score_global": e["score_global"],
+            "created_at": e["created_at"],
+        })
+    return result
+
+
+@app.get("/api/dashboard/session/{eval_id}")
+async def dashboard_session(eval_id: int, user: dict = Depends(get_current_user)):
+    ev = await get_evaluation_detail(eval_id, user_id=user["id"])
+    if not ev:
+        raise HTTPException(404, "Session introuvable")
+
+    # Parse evaluation_json and transcript
+    evaluation = {}
+    try:
+        evaluation = json.loads(ev["evaluation_json"]) if ev.get("evaluation_json") else {}
+    except Exception:
+        pass
+
+    transcript = []
+    try:
+        raw = ev.get("transcript", "")
+        parsed = json.loads(raw)
+        if isinstance(parsed, list):
+            transcript = parsed
+    except Exception:
+        # It's a text transcript, split into lines
+        if ev.get("transcript"):
+            for line in ev["transcript"].split("\n"):
+                line = line.strip()
+                if line.startswith("VENDEUR:"):
+                    transcript.append({"role": "vendeur", "text": line[8:].strip()})
+                elif line.startswith("PROSPECT:"):
+                    transcript.append({"role": "prospect", "text": line[9:].strip()})
+
+    # Load scenario brief if available
+    brief = None
+    try:
+        scenario = _load_scenario(ev["scenario_id"])
+        brief = scenario.get("brief_commercial")
+    except Exception:
+        pass
+
+    return {
+        "id": ev["id"],
+        "scenario_id": ev["scenario_id"],
+        "difficulty": ev["difficulty"],
+        "score_global": ev["score_global"],
+        "created_at": ev["created_at"],
+        "evaluation": evaluation,
+        "transcript": transcript,
+        "brief": brief,
+    }
+
+
+@app.get("/api/dashboard/radar")
+async def dashboard_radar(user: dict = Depends(get_current_user)):
+    from datetime import timedelta as td
+    evals = await get_user_evaluations(user["id"], limit=100)
+    cutoff = (datetime.utcnow() - td(days=30)).isoformat()
+
+    current = {k: [] for k in COMPETENCE_KEYS}
+    old = {k: [] for k in COMPETENCE_KEYS}
+    for e in evals:
+        cs = _parse_competences(e.get("evaluation_json", "{}"))
+        target = current if (e.get("created_at") or "") >= cutoff else old
+        for k in COMPETENCE_KEYS:
+            if cs[k] > 0:
+                target[k].append(cs[k])
+
+    def avg(lst): return round(sum(lst) / len(lst), 1) if lst else 0
+
+    return {
+        "current": {k: avg(current[k]) for k in COMPETENCE_KEYS},
+        "previous": {k: avg(old[k]) for k in COMPETENCE_KEYS},
+    }
+
+
+# ═══════════════════════════════════════════════════════════════
+# DASHBOARD MANAGER
+# ═══════════════════════════════════════════════════════════════
+
+def _require_manager(user: dict):
+    if user.get("role") not in ("manager", "admin"):
+        raise HTTPException(403, "Accès réservé aux managers")
+
+
+@app.get("/api/manager/equipe")
+async def manager_equipe(user: dict = Depends(get_current_user)):
+    _require_manager(user)
+    members = await get_team_members(user["entreprise_id"])
+    result = []
+    for m in members:
+        stats = await get_user_stats(m["id"])
+        result.append({**m, "stats": stats})
+    return result
+
+
+@app.get("/api/manager/stats")
+async def manager_stats(user: dict = Depends(get_current_user)):
+    _require_manager(user)
+    return await get_team_stats(user["entreprise_id"])
+
+
+@app.get("/api/manager/commercial/{uid}")
+async def manager_commercial(uid: str, user: dict = Depends(get_current_user)):
+    _require_manager(user)
+    # Verify the user belongs to the same entreprise
+    from database import get_user_by_id
+    target = await get_user_by_id(uid)
+    if not target or target.get("entreprise_id") != user.get("entreprise_id"):
+        raise HTTPException(404, "Commercial introuvable")
+    stats = await get_user_stats(uid)
+    evals = await get_user_evaluations(uid, limit=20)
+    return {"user": _user_public(target), "stats": stats, "historique": evals}
+
+
+# ═══════════════════════════════════════════════════════════════
+# SPA ROUTE /app/*
+# ═══════════════════════════════════════════════════════════════
+
+@app.get("/app/{path:path}")
+async def spa_app(path: str = ""):
+    return FileResponse(STATIC_DIR / "index.html", headers=_SPA_NO_CACHE)
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -835,7 +1081,6 @@ async def serve_favicon():
 
 
 # --- SPA frontend routes (serve index.html for client-side routing) ---
-_SPA_NO_CACHE = {"Cache-Control": "no-cache, no-store, must-revalidate"}
 
 @app.get("/produit")
 @app.get("/tarifs")

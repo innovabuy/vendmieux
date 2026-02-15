@@ -366,11 +366,16 @@ async def entrypoint(ctx: JobContext):
     difficulty = 2
     raw_meta = ctx.room.metadata or ""
 
+    meta_user_id = None
+    meta_session_db_id = None
+
     if raw_meta:
         try:
             meta = json.loads(raw_meta)
             scenario_id = meta.get("scenario_id")
             difficulty = int(meta.get("difficulty", 2))
+            meta_user_id = meta.get("user_id")
+            meta_session_db_id = meta.get("session_db_id")
         except (json.JSONDecodeError, ValueError):
             # Legacy: metadata is just a scenario_id string
             scenario_id = raw_meta if raw_meta else None
@@ -435,6 +440,8 @@ async def entrypoint(ctx: JobContext):
                     "difficulty": difficulty,
                     "duration_s": duration_s,
                     "transcript": transcript_entries,
+                    "user_id": meta_user_id,
+                    "session_db_id": meta_session_db_id,
                 }
                 resp = await client.post(
                     "http://127.0.0.1:8000/api/evaluate",
