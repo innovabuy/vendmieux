@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles — Admin VendMieux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08080d;--bg-2:#0f0f18;--bg-card:#161622;--bg-card-hover:#1c1c2d;--border:#232336;--text-1:#eaeaf2;--text-2:#94a3b8;--text-3:#64748b;--accent:#ff6b35;--accent-hover:#ff8c5a;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--font:'Outfit',sans-serif;--mono:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg);color:var(--text-1);min-height:100vh}
+.admin-header{background:rgba(8,8,13,0.9);backdrop-filter:blur(24px);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+.admin-header .logo{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--accent);text-decoration:none}
+.admin-header .logo span{color:var(--text-3);font-weight:400;margin-left:8px}
+.admin-header nav{display:flex;gap:20px;align-items:center}
+.admin-header nav a{font-size:13px;color:var(--text-2);text-decoration:none;transition:color .2s}
+.admin-header nav a:hover,.admin-header nav a.active{color:var(--text-1)}
+.container{max-width:1000px;margin:0 auto;padding:28px 24px}
+.page-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.page-title h1{font-size:20px;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;border:none;cursor:pointer;transition:all .2s;font-family:var(--font)}
+.btn-primary{background:var(--accent);color:white}.btn-primary:hover{background:var(--accent-hover)}
+.btn-sm{padding:5px 10px;font-size:11px}
+.btn-outline{background:none;border:1px solid var(--border);color:var(--text-2)}.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-danger{background:none;border:1px solid rgba(239,68,68,.2);color:var(--red)}.btn-danger:hover{background:rgba(239,68,68,.1)}
+.articles-table{width:100%;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.articles-table table{width:100%;border-collapse:collapse}
+.articles-table th{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-3);text-align:left;padding:12px 14px;border-bottom:1px solid var(--border)}
+.articles-table td{padding:12px 14px;border-bottom:1px solid rgba(35,35,54,.5);font-size:13px;vertical-align:middle}
+.articles-table tr:last-child td{border-bottom:none}
+.articles-table tr:hover{background:var(--bg-card-hover)}
+.status-badge{font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600}
+.status-published{background:rgba(34,197,94,.15);color:var(--green)}
+.status-draft{background:rgba(245,158,11,.15);color:var(--amber)}
+.article-title-cell{font-weight:600}
+.article-title-cell small{display:block;font-weight:400;color:var(--text-3);font-family:var(--mono);font-size:10px;margin-top:2px}
+.actions{display:flex;gap:6px}
+.toast{position:fixed;bottom:24px;right:24px;padding:12px 20px;border-radius:8px;font-size:13px;font-weight:500;color:white;z-index:100;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}.toast.success{background:var(--green)}.toast.error{background:var(--red)}
+.empty-state{text-align:center;padding:48px;color:var(--text-3)}
+.empty-state a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="admin-header">
+    <a href="/admin/" class="logo">VM<span>Admin</span></a>
+    <nav>
+        <a href="/admin/">Dashboard</a>
+        <a href="/admin/articles" class="active">Articles</a>
+        <a href="/admin/article-edit">+ Nouvel article</a>
+        <a href="/" target="_blank">Voir le site</a>
+        <a href="/blog/" target="_blank">Blog</a>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="page-title">
+        <h1>Articles (<span id="articleCount">0</span>)</h1>
+        <a href="/admin/article-edit" class="btn btn-primary">+ Nouvel article</a>
+    </div>
+
+    <div class="articles-table">
+        <table>
+            <thead><tr><th>Article</th><th>Catégorie</th><th>Date</th><th>Lecture</th><th>Statut</th><th>Actions</th></tr></thead>
+            <tbody id="articlesBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+function showToast(msg, type='success') {
+    const t = document.getElementById('toast');
+    t.textContent = msg; t.className = 'toast show ' + type;
+    setTimeout(() => t.className = 'toast', 3000);
+}
+function escHtml(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+async function loadArticles() {
+    const articles = await (await fetch('/api/blog/articles')).json();
+    articles.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    document.getElementById('articleCount').textContent = articles.length;
+    const tbody = document.getElementById('articlesBody');
+
+    if (!articles.length) {
+        tbody.innerHTML = '<tr><td colspan="6"><div class="empty-state">Aucun article. <a href="/admin/article-edit">Créer le premier</a></div></td></tr>';
+        return;
+    }
+
+    tbody.innerHTML = articles.map(a => `<tr id="row-${a.slug}">
+        <td class="article-title-cell">${escHtml(a.title)}<small>/blog/${escHtml(a.slug)}</small></td>
+        <td style="font-size:12px;color:var(--text-2)">${escHtml(a.category||'')}</td>
+        <td style="font-family:var(--mono);font-size:11px;color:var(--text-3)">${a.date||''}</td>
+        <td style="font-family:var(--mono);font-size:11px;color:var(--text-3)">${a.read_time||''} min</td>
+        <td><span class="status-badge status-${a.status==='published'?'published':'draft'}">${a.status==='published'?'Publié':'Brouillon'}</span></td>
+        <td class="actions">
+            <a href="/admin/article-edit?slug=${encodeURIComponent(a.slug)}" class="btn btn-sm btn-outline">Modifier</a>
+            ${a.status==='published'?'<a href="/blog/'+a.slug+'" target="_blank" class="btn btn-sm btn-outline">Voir</a>':''}
+            <button onclick="deleteArticle('${a.slug}')" class="btn btn-sm btn-danger">Supprimer</button>
+        </td>
+    </tr>`).join('');
+}
+
+async function deleteArticle(slug) {
+    if (!confirm('Supprimer "' + slug + '" ?')) return;
+    try {
+        const r = await fetch('/api/blog/articles?slug=' + encodeURIComponent(slug), {method: 'DELETE'});
+        const data = await r.json();
+        if (data.ok) {
+            const row = document.getElementById('row-' + slug);
+            if (row) row.remove();
+            showToast('Article supprimé');
+            // Update count
+            const count = document.getElementById('articlesBody').querySelectorAll('tr').length;
+            document.getElementById('articleCount').textContent = count;
+        } else {
+            showToast(data.error || 'Erreur', 'error');
+        }
+    } catch(e) { showToast('Erreur réseau', 'error'); }
+}
+
+document.addEventListener('DOMContentLoaded', loadArticles);
+</script>
+</body>
+</html>

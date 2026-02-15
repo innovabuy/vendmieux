@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Formation commerciale, prospection et vente B2B | VendMieux</title>
+    <meta name="description" content="Articles pratiques sur la prospection téléphonique, la négociation B2B, le traitement des objections et le coaching commercial par IA. Pas de théorie — du terrain.">
+    <link rel="canonical" href="https://vendmieux.fr/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog VendMieux — Formation commerciale B2B">
+    <meta property="og:description" content="Articles pratiques sur la prospection, la négociation et le coaching commercial par IA.">
+    <meta property="og:url" content="https://vendmieux.fr/blog/">
+    <meta property="og:site_name" content="VendMieux">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-primary: #08080d;
+            --bg-secondary: #0f0f18;
+            --bg-card: #161622;
+            --border: #232336;
+            --border-hover: #2f2f4a;
+            --text-1: #f1f5f9;
+            --text-2: #94a3b8;
+            --text-3: #64748b;
+            --accent: #22d3ee;
+            --accent-glow: rgba(34,211,238,.06);
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --cat-prosp: #22d3ee; --cat-prosp-bg: rgba(34,211,238,.06); --cat-prosp-border: rgba(34,211,238,.15);
+            --cat-nego: #a78bfa; --cat-nego-bg: rgba(167,139,250,.06); --cat-nego-border: rgba(167,139,250,.15);
+            --cat-obj: #4ade80; --cat-obj-bg: rgba(74,222,128,.06); --cat-obj-border: rgba(74,222,128,.15);
+            --cat-meth: #fbbf24; --cat-meth-bg: rgba(251,191,36,.06); --cat-meth-border: rgba(251,191,36,.15);
+            --cat-form: #fb7185; --cat-form-bg: rgba(251,113,133,.06); --cat-form-border: rgba(251,113,133,.15);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-display); background: var(--bg-primary); color: var(--text-1); line-height: 1.6; }
+        a { color: var(--accent); text-decoration: none; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 24px; background: rgba(8,8,13,.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-size: 20px; font-weight: 800; letter-spacing: -.03em; color: var(--text-1); }
+        .nav-logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { font-size: 13px; color: var(--text-2); transition: color .2s; }
+        .nav-links a:hover { color: var(--text-1); }
+        .btn-primary { display: inline-block; padding: 10px 20px; background: var(--accent); color: #08080d; font-weight: 700; font-size: 13px; border-radius: 8px; transition: all .2s; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #06b6d4; transform: translateY(-1px); }
+
+        .blog { max-width: 900px; margin: 0 auto; padding: 100px 24px 80px; }
+        .blog-hero { margin-bottom: 40px; }
+        .blog-label { font-family: var(--font-mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .15em; margin-bottom: 12px; }
+        .blog h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.1; letter-spacing: -.03em; margin-bottom: 8px; }
+        .blog-sub { font-size: 15px; color: var(--text-2); line-height: 1.6; max-width: 600px; }
+
+        .blog-toolbar { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; align-items: center; }
+        .blog-search { flex: 1; min-width: 200px; position: relative; }
+        .blog-search input { width: 100%; padding: 10px 14px 10px 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-1); font-family: var(--font-display); font-size: 13px; outline: none; transition: border-color .2s; }
+        .blog-search input:focus { border-color: var(--accent); }
+        .blog-search input::placeholder { color: var(--text-3); }
+        .blog-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-3); font-size: 14px; pointer-events: none; }
+        .blog-sort { font-family: var(--font-mono); font-size: 11px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-2); cursor: pointer; outline: none; -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4 4L7 1' stroke='%2322d3ee' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
+
+        .blog-filters { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 24px; }
+        .blog-filter { font-family: var(--font-mono); font-size: 10px; padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--text-3); cursor: pointer; transition: all .2s; letter-spacing: .03em; text-transform: uppercase; }
+        .blog-filter:hover { color: var(--text-2); border-color: var(--border-hover); }
+        .blog-filter.active { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+        .blog-filter[data-cat="prosp"].active { border-color: var(--cat-prosp); color: var(--cat-prosp); background: var(--cat-prosp-bg); }
+        .blog-filter[data-cat="nego"].active { border-color: var(--cat-nego); color: var(--cat-nego); background: var(--cat-nego-bg); }
+        .blog-filter[data-cat="obj"].active { border-color: var(--cat-obj); color: var(--cat-obj); background: var(--cat-obj-bg); }
+        .blog-filter[data-cat="meth"].active { border-color: var(--cat-meth); color: var(--cat-meth); background: var(--cat-meth-bg); }
+        .blog-filter[data-cat="form"].active { border-color: var(--cat-form); color: var(--cat-form); background: var(--cat-form-bg); }
+
+        .blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        @media(max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
+
+        .blog-card { display: block; padding: 20px; border-radius: 12px; border: 1.5px solid var(--border); background: transparent; text-decoration: none; transition: all .25s; position: relative; overflow: hidden; }
+        .blog-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; border-radius: 2px 0 0 2px; }
+        .blog-card:hover { transform: translateY(-2px); border-color: var(--border-hover); }
+
+        .blog-card[data-cat="prosp"] { border-color: var(--cat-prosp-border); background: var(--cat-prosp-bg); }
+        .blog-card[data-cat="prosp"]::before { background: var(--cat-prosp); }
+        .blog-card[data-cat="prosp"]:hover { border-color: var(--cat-prosp); }
+        .blog-card[data-cat="prosp"] .blog-card-cat { color: var(--cat-prosp); }
+        .blog-card[data-cat="prosp"] .blog-card-icon { color: var(--cat-prosp); border-color: var(--cat-prosp-border); background: var(--cat-prosp-bg); }
+        .blog-card[data-cat="nego"] { border-color: var(--cat-nego-border); background: var(--cat-nego-bg); }
+        .blog-card[data-cat="nego"]::before { background: var(--cat-nego); }
+        .blog-card[data-cat="nego"]:hover { border-color: var(--cat-nego); }
+        .blog-card[data-cat="nego"] .blog-card-cat { color: var(--cat-nego); }
+        .blog-card[data-cat="nego"] .blog-card-icon { color: var(--cat-nego); border-color: var(--cat-nego-border); background: var(--cat-nego-bg); }
+        .blog-card[data-cat="obj"] { border-color: var(--cat-obj-border); background: var(--cat-obj-bg); }
+        .blog-card[data-cat="obj"]::before { background: var(--cat-obj); }
+        .blog-card[data-cat="obj"]:hover { border-color: var(--cat-obj); }
+        .blog-card[data-cat="obj"] .blog-card-cat { color: var(--cat-obj); }
+        .blog-card[data-cat="obj"] .blog-card-icon { color: var(--cat-obj); border-color: var(--cat-obj-border); background: var(--cat-obj-bg); }
+        .blog-card[data-cat="meth"] { border-color: var(--cat-meth-border); background: var(--cat-meth-bg); }
+        .blog-card[data-cat="meth"]::before { background: var(--cat-meth); }
+        .blog-card[data-cat="meth"]:hover { border-color: var(--cat-meth); }
+        .blog-card[data-cat="meth"] .blog-card-cat { color: var(--cat-meth); }
+        .blog-card[data-cat="meth"] .blog-card-icon { color: var(--cat-meth); border-color: var(--cat-meth-border); background: var(--cat-meth-bg); }
+        .blog-card[data-cat="form"] { border-color: var(--cat-form-border); background: var(--cat-form-bg); }
+        .blog-card[data-cat="form"]::before { background: var(--cat-form); }
+        .blog-card[data-cat="form"]:hover { border-color: var(--cat-form); }
+        .blog-card[data-cat="form"] .blog-card-cat { color: var(--cat-form); }
+        .blog-card[data-cat="form"] .blog-card-icon { color: var(--cat-form); border-color: var(--cat-form-border); background: var(--cat-form-bg); }
+
+        .blog-card-img { width: calc(100% + 40px); aspect-ratio: 1200/630; object-fit: cover; border-radius: 10px 10px 0 0; margin: -20px -20px 14px -20px; display: block; }
+        .blog-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .blog-card-cat { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+        .blog-card-icon { width: 28px; height: 28px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1px solid var(--border); flex-shrink: 0; }
+        .blog-card-title { font-size: 16px; font-weight: 700; line-height: 1.3; letter-spacing: -.02em; margin-bottom: 6px; color: var(--text-1); }
+        .blog-card-desc { font-size: 12.5px; color: var(--text-2); line-height: 1.55; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .blog-card-bottom { display: flex; justify-content: space-between; align-items: center; }
+        .blog-card-date { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); }
+        .blog-card-read { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); }
+        .blog-card-tags { display: flex; gap: 4px; margin-top: 10px; flex-wrap: wrap; }
+        .blog-card-tags span { font-family: var(--font-mono); font-size: 8px; padding: 2px 5px; border-radius: 3px; border: 1px solid var(--border); color: var(--text-3); }
+        .blog-empty { text-align: center; padding: 60px 0; color: var(--text-3); font-family: var(--font-mono); font-size: 13px; }
+        .blog-card.hidden { display: none; }
+
+        .footer { text-align: center; padding: 40px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-3); }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="/" class="nav-logo">Vend<span>Mieux</span></a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/">Simulateur</a>
+            <a href="/demo" class="btn-primary">Essayer gratuitement</a>
+        </div>
+    </nav>
+
+    <div class="blog">
+        <div class="blog-hero">
+            <div class="blog-label">// Blog</div>
+            <h1>Formation commerciale, prospection & vente B2B</h1>
+            <p class="blog-sub">Des articles concrets pour les dirigeants et responsables commerciaux. Pas de buzzwords — du terrain, des techniques, des résultats mesurables.</p>
+        </div>
+
+        <div class="blog-toolbar">
+            <div class="blog-search">
+                <span class="blog-search-icon">&#x2315;</span>
+                <input type="text" placeholder="Rechercher un article..." id="blogSearch">
+            </div>
+            <select class="blog-sort" id="blogSort">
+                <option value="recent">Plus récents</option>
+                <option value="oldest">Plus anciens</option>
+                <option value="alpha">A &rarr; Z</option>
+            </select>
+        </div>
+
+        <div class="blog-filters" id="blogFilters">
+            <button class="blog-filter active" data-cat="all">Tous</button>
+            {{filter_buttons}}
+        </div>
+
+        {{articles_grid}}
+
+        <p class="blog-empty" id="blogEmpty" style="{{empty_display}}">Aucun article publié pour le moment.</p>
+    </div>
+
+    <footer class="footer">
+        &copy; {{year}} VendMieux — Simulateur d'entraînement commercial IA
+    </footer>
+
+    <script>
+    document.querySelectorAll('.blog-filter').forEach(btn => {
+        btn.onclick = () => {
+            document.querySelectorAll('.blog-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            blogFilter();
+        };
+    });
+    const blogSearchInput = document.getElementById('blogSearch');
+    if (blogSearchInput) blogSearchInput.addEventListener('input', blogFilter);
+    const blogSortSelect = document.getElementById('blogSort');
+    if (blogSortSelect) blogSortSelect.addEventListener('change', blogSort);
+
+    function blogFilter() {
+        const cat = document.querySelector('.blog-filter.active')?.dataset.cat || 'all';
+        const q = (document.getElementById('blogSearch')?.value || '').toLowerCase();
+        const cards = document.querySelectorAll('.blog-card');
+        let visible = 0;
+        cards.forEach(card => {
+            const matchCat = cat === 'all' || card.dataset.cat === cat;
+            const matchSearch = !q || card.textContent.toLowerCase().includes(q);
+            const show = matchCat && matchSearch;
+            card.classList.toggle('hidden', !show);
+            if (show) visible++;
+        });
+        const empty = document.getElementById('blogEmpty');
+        if (empty) empty.style.display = visible === 0 ? '' : 'none';
+    }
+
+    function blogSort() {
+        const sort = document.getElementById('blogSort')?.value;
+        const grid = document.getElementById('blogGrid');
+        if (!grid) return;
+        const cards = [...grid.querySelectorAll('.blog-card')];
+        cards.sort((a, b) => {
+            if (sort === 'recent') return b.dataset.date.localeCompare(a.dataset.date);
+            if (sort === 'oldest') return a.dataset.date.localeCompare(b.dataset.date);
+            if (sort === 'alpha') return a.dataset.title.localeCompare(b.dataset.title);
+            return 0;
+        });
+        cards.forEach(c => grid.appendChild(c));
+    }
+    </script>
+</body>
+</html>

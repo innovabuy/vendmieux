@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Éditeur — Admin VendMieux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08080d;--bg-2:#0f0f18;--bg-card:#161622;--border:#232336;--text-1:#eaeaf2;--text-2:#94a3b8;--text-3:#64748b;--accent:#ff6b35;--accent-hover:#ff8c5a;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--font:'Outfit',sans-serif;--mono:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg);color:var(--text-1);min-height:100vh}
+.admin-header{background:rgba(8,8,13,0.9);backdrop-filter:blur(24px);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+.admin-header .logo{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--accent);text-decoration:none}
+.admin-header .logo span{color:var(--text-3);font-weight:400;margin-left:8px}
+.admin-header nav{display:flex;gap:16px;align-items:center}
+.admin-header nav a{font-size:12px;color:var(--text-2);text-decoration:none}.admin-header nav a:hover{color:var(--text-1)}
+.header-actions{display:flex;gap:6px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;border:none;cursor:pointer;transition:all .2s;font-family:var(--font)}
+.btn-primary{background:var(--accent);color:white}.btn-primary:hover{background:var(--accent-hover)}
+.btn-success{background:var(--green);color:white}
+.btn-outline{background:none;border:1px solid var(--border);color:var(--text-2)}.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:5px 10px;font-size:11px}
+.btn-optimize{background:#059669;color:white}.btn-optimize:hover{background:#047857}
+.btn-optimize:disabled,.btn-generate-ai:disabled{opacity:.5;cursor:wait}
+.btn-generate-ai{background:#7c3aed;color:white}.btn-generate-ai:hover{background:#6d28d9}
+
+.editor-layout{display:grid;grid-template-columns:1fr 1fr;height:calc(100vh - 48px)}
+.editor-left{display:flex;flex-direction:column;border-right:1px solid var(--border);overflow:hidden}
+.editor-right{overflow-y:auto;background:var(--bg)}
+
+/* Meta panel */
+.meta-panel{padding:14px 18px;border-bottom:1px solid var(--border);background:var(--bg-card);display:flex;flex-direction:column;gap:10px}
+.meta-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.meta-row.full{grid-template-columns:1fr}
+.field{display:flex;flex-direction:column;gap:3px}
+.field label{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-3);font-weight:500}
+.field input,.field select,.field textarea{padding:7px 10px;border:1px solid var(--border);border-radius:5px;font-size:13px;font-family:var(--font);background:var(--bg-2);color:var(--text-1);transition:border-color .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.field textarea{resize:vertical;min-height:40px}
+.field .char-count{font-family:var(--mono);font-size:10px;color:var(--text-3);text-align:right;margin-top:1px}
+.field .char-count.warn{color:var(--amber)}.field .char-count.over{color:var(--red)}
+.meta-progress{height:3px;border-radius:2px;background:var(--bg-2);margin-top:3px;overflow:hidden}
+.meta-progress-fill{height:100%;border-radius:2px;transition:width .2s,background .2s}
+.meta-progress-fill.short{background:var(--amber)}.meta-progress-fill.good{background:var(--green)}.meta-progress-fill.long{background:var(--amber)}.meta-progress-fill.over{background:var(--red)}
+
+/* Tags */
+.tags-input{display:flex;flex-wrap:wrap;gap:4px;padding:5px 8px;border:1px solid var(--border);border-radius:5px;background:var(--bg-2);min-height:32px;align-items:center;cursor:text}
+.tags-input:focus-within{border-color:var(--accent)}
+.tags-input .tag{display:flex;align-items:center;gap:3px;padding:2px 6px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;font-size:11px;font-family:var(--mono);color:var(--text-2)}
+.tags-input .tag button{background:none;border:none;color:var(--text-3);cursor:pointer;font-size:12px;padding:0 2px}
+.tags-input .tag button:hover{color:var(--red)}
+.tags-input input{border:none;outline:none;font-size:12px;font-family:var(--font);background:transparent;color:var(--text-1);flex:1;min-width:80px;padding:2px}
+
+/* Status toggle */
+.status-toggle{display:flex;gap:0;border:1px solid var(--border);border-radius:5px;overflow:hidden}
+.status-toggle button{padding:6px 14px;font-size:12px;font-weight:500;border:none;cursor:pointer;background:var(--bg-2);color:var(--text-2);font-family:var(--font);transition:all .2s}
+.status-toggle button.active-draft{background:rgba(245,158,11,.15);color:var(--amber)}
+.status-toggle button.active-published{background:rgba(34,197,94,.15);color:var(--green)}
+
+/* Editor */
+.editor-area{flex:1;overflow:hidden}
+.editor-area textarea{width:100%;height:100%;padding:18px;border:none;resize:none;font-family:var(--mono);font-size:13px;line-height:1.7;background:var(--bg-2);color:var(--text-1);tab-size:2}
+.editor-area textarea:focus{outline:none}
+
+/* Preview */
+.preview{padding:28px 24px;max-width:700px}
+.preview h1{font-size:1.8rem;font-weight:800;line-height:1.15;letter-spacing:-.03em;margin-bottom:12px}
+.preview h2{font-size:1.3rem;font-weight:700;line-height:1.2;margin:24px 0 10px;padding-top:14px;border-top:1px solid var(--border)}
+.preview h3{font-size:1.05rem;font-weight:600;margin:16px 0 8px}
+.preview p{font-size:14px;color:var(--text-2);line-height:1.8;margin-bottom:12px}
+.preview strong{color:var(--text-1);font-weight:600}
+.preview a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(255,107,53,.2)}
+.preview ul{margin:8px 0 16px 20px}
+.preview li{font-size:14px;color:var(--text-2);line-height:1.7;margin-bottom:4px}
+.preview code{font-family:var(--mono);font-size:12px;background:var(--bg-card);padding:2px 5px;border-radius:3px}
+.preview pre{background:#1e293b;color:#e2e8f0;padding:14px;border-radius:8px;overflow-x:auto;margin:12px 0}
+.preview pre code{background:none;color:inherit;padding:0}
+.preview-label{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-3);padding:10px 24px 0}
+
+/* SEO Panel */
+.seo-panel{margin:20px 24px 28px;padding:18px;border-radius:10px;border:1px solid var(--border);background:var(--bg-card)}
+.seo-panel-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;cursor:pointer;user-select:none}
+.seo-panel-header h3{font-family:var(--mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.12em}
+.seo-panel-header .toggle-arrow{font-size:12px;color:var(--text-3);transition:transform .2s}
+.seo-panel-header .toggle-arrow.collapsed{transform:rotate(-90deg)}
+.seo-row{display:flex;align-items:center;gap:10px;margin-bottom:6px;font-size:12px}
+.seo-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.seo-dot.ok{background:var(--green)}.seo-dot.warn{background:var(--amber)}.seo-dot.fail{background:var(--red)}
+.seo-label{color:var(--text-2);flex:1}
+.seo-val{font-family:var(--mono);font-size:11px;color:var(--text-3);white-space:nowrap}
+.seo-score-total{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.seo-score-total span:first-child{font-size:12px;font-weight:600}
+.seo-score-badge{font-family:var(--mono);font-size:13px;font-weight:700;padding:4px 12px;border-radius:6px}
+.seo-score-badge.good{color:var(--green);background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.2)}
+.seo-score-badge.ok{color:var(--amber);background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.2)}
+.seo-score-badge.bad{color:var(--red);background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.2)}
+
+/* Optimize report */
+.optimize-report{margin:0;padding:14px;border-radius:8px;border:1px solid var(--border);background:var(--bg-2);animation:slideDown .3s ease}
+.optimize-report-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.optimize-report-title{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+.optimize-report-title.bad{color:var(--red)}.optimize-report-title.mixed{color:var(--amber)}
+.optimize-score-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:15px;font-weight:700;flex-shrink:0}
+.check-item{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid rgba(35,35,54,.3);font-size:12px}
+.check-item:last-child{border-bottom:none}
+.check-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.check-dot.ok{background:var(--green)}.check-dot.warning{background:var(--amber)}.check-dot.error{background:var(--red)}
+.check-label{flex:1;color:var(--text-2)}
+.check-val{font-family:var(--mono);font-size:10px;color:var(--text-3);white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis}
+.check-score{font-family:var(--mono);font-size:10px;font-weight:600;min-width:24px;text-align:right}
+.check-score.high{color:var(--green)}.check-score.mid{color:var(--amber)}.check-score.low{color:var(--red)}
+.btn-fix{font-family:var(--mono);font-size:9px;color:var(--accent);background:none;border:1px solid rgba(255,107,53,.2);cursor:pointer;padding:2px 8px;border-radius:3px;white-space:nowrap;transition:all .15s;flex-shrink:0}
+.btn-fix:hover{background:rgba(255,107,53,.1);border-color:var(--accent)}
+.btn-fix.applied{color:var(--green);border-color:rgba(34,197,94,.2);background:rgba(34,197,94,.05);cursor:default}
+.btn-fix-all{font-family:var(--mono);font-size:10px;padding:5px 12px;border-radius:4px;border:1px solid rgba(34,197,94,.3);background:rgba(34,197,94,.1);color:var(--green);cursor:pointer;font-weight:600;margin-bottom:10px}
+.btn-fix-all:hover{background:rgba(34,197,94,.2)}
+
+.toast{position:fixed;bottom:24px;right:24px;padding:12px 20px;border-radius:8px;font-size:13px;font-weight:500;color:white;z-index:100;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}.toast.success{background:var(--green)}.toast.error{background:var(--red)}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Internal links panel */
+.seo-links-panel{margin:4px 0 6px 18px;padding:8px;background:var(--bg-2);border-radius:6px;border:1px solid var(--border);max-height:160px;overflow-y:auto}
+.seo-link-item{display:flex;align-items:center;justify-content:space-between;padding:3px 6px;border-radius:4px;font-size:11px}
+.seo-link-item:hover{background:var(--bg-card)}
+.seo-link-item span{color:var(--text-2);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seo-link-item code{font-family:var(--mono);font-size:9px;color:var(--text-3);margin-left:6px}
+.seo-link-insert{font-family:var(--mono);font-size:9px;color:var(--accent);background:none;border:1px solid rgba(255,107,53,.2);cursor:pointer;padding:2px 8px;border-radius:3px;flex-shrink:0;margin-left:6px}
+.seo-link-insert:hover{background:rgba(255,107,53,.1)}
+.seo-detail{font-size:11px;color:var(--text-2);margin:2px 0 6px 18px;padding:6px 8px;background:var(--bg-2);border-radius:6px;border:1px solid var(--border);line-height:1.6}
+.seo-action{font-family:var(--mono);font-size:10px;color:var(--accent);background:none;border:none;cursor:pointer;padding:1px 6px;border-radius:3px}
+.seo-action:hover{background:rgba(255,107,53,.1)}
+</style>
+</head>
+<body>
+<div class="admin-header">
+    <a href="/admin/" class="logo">VM<span>Admin</span></a>
+    <nav>
+        <a href="/admin/">Dashboard</a>
+        <a href="/admin/articles">Articles</a>
+    </nav>
+    <div class="header-actions">
+        <span id="saveStatus" style="font-family:var(--mono);font-size:11px;color:var(--text-3)"></span>
+        <button onclick="runOptimizeSeo()" class="btn btn-sm btn-optimize" id="btnOptimize">🔧 Optimiser SEO</button>
+        <button onclick="runGenerateAI()" class="btn btn-sm btn-generate-ai" id="btnGenerate">⚡ Générer IA</button>
+        <button onclick="saveArticle('draft')" class="btn btn-sm btn-outline">Brouillon</button>
+        <button onclick="saveArticle('published')" class="btn btn-sm btn-primary">Publier</button>
+    </div>
+</div>
+
+<div class="editor-layout">
+    <div class="editor-left">
+        <div class="meta-panel">
+            <div class="meta-row">
+                <div class="field"><label>Titre</label><input type="text" id="title" placeholder="Titre de l'article" oninput="onTitleChange();updateSeoScore()"></div>
+                <div class="field"><label>Slug</label><input type="text" id="slug" placeholder="slug-article" oninput="updateSeoScore()"></div>
+            </div>
+            <div class="meta-row">
+                <div class="field"><label>Catégorie</label>
+                    <select id="category" onchange="updateSeoScore()">
+                        <option value="">— Choisir —</option>
+                        <option value="Prospection & Prise de RDV">Prospection & Prise de RDV</option>
+                        <option value="Négociation & Closing">Négociation & Closing</option>
+                        <option value="Traitement des Objections">Traitement des Objections</option>
+                        <option value="Méthodes & Techniques de Vente">Méthodes & Techniques de Vente</option>
+                        <option value="Formation & Coaching Commercial">Formation & Coaching Commercial</option>
+                    </select>
+                </div>
+                <div class="field"><label>Date</label><input type="date" id="date"></div>
+            </div>
+            <div class="meta-row full">
+                <div class="field"><label>Meta description</label>
+                    <textarea id="metaDesc" rows="2" maxlength="300" oninput="updateCharCount();updateSeoScore()" placeholder="Description SEO (120-160 car.)"></textarea>
+                    <div class="meta-progress"><div class="meta-progress-fill" id="metaProgressFill"></div></div>
+                    <div class="char-count" id="metaDescCount">0/160</div>
+                </div>
+            </div>
+            <div class="meta-row">
+                <div class="field"><label>Tags</label>
+                    <div class="tags-input" id="tagsContainer" onclick="document.getElementById('tagInput').focus()">
+                        <input type="text" id="tagInput" placeholder="Ajouter un tag..." onkeydown="onTagKey(event)">
+                    </div>
+                </div>
+                <div class="field"><label>Statut</label>
+                    <div class="status-toggle">
+                        <button id="btnDraft" onclick="setStatus('draft')" class="active-draft">Brouillon</button>
+                        <button id="btnPublished" onclick="setStatus('published')">Publié</button>
+                    </div>
+                </div>
+            </div>
+            <div id="optimizeReport"></div>
+        </div>
+        <div class="editor-area">
+            <textarea id="mdEditor" placeholder="Écrivez en Markdown..." spellcheck="true" oninput="updatePreview();updateSeoScore()"></textarea>
+        </div>
+    </div>
+    <div class="editor-right">
+        <p class="preview-label">Aperçu</p>
+        <div class="preview" id="preview"></div>
+        <div class="seo-panel" id="seoPanel">
+            <div class="seo-panel-header" onclick="toggleSeoPanel()">
+                <h3>Score SEO</h3>
+                <span class="toggle-arrow" id="seoArrow">&#9660;</span>
+            </div>
+            <div id="seoBody">
+                <div id="seoChecks"></div>
+                <div class="seo-score-total">
+                    <span>Score global</span>
+                    <span class="seo-score-badge" id="seoTotal">—</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let currentStatus = 'draft';
+let currentTags = [];
+let slugManual = false;
+let allArticles = [];
+
+function showToast(msg, type='success') { const t=document.getElementById('toast');t.textContent=msg;t.className='toast show '+type;setTimeout(()=>t.className='toast',3000); }
+function escHtml(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// Init
+document.addEventListener('DOMContentLoaded', async () => {
+    document.getElementById('date').value = new Date().toISOString().split('T')[0];
+
+    // Load all articles for link suggestions
+    try { allArticles = await (await fetch('/api/blog/articles')).json(); } catch(e) {}
+
+    // Load from URL params (slug or suggestion data)
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('slug')) {
+        await loadArticle(params.get('slug'));
+    } else {
+        if (params.get('title')) { document.getElementById('title').value = params.get('title'); onTitleChange(); }
+        if (params.get('category')) { document.getElementById('category').value = params.get('category'); }
+        if (params.get('meta')) { document.getElementById('metaDesc').value = params.get('meta'); updateCharCount(); }
+        if (params.get('tags')) { params.get('tags').split(',').forEach(t => { t=t.trim(); if(t&&!currentTags.includes(t)) currentTags.push(t); }); renderTags(); }
+        if (params.get('keyword')) window._suggestedKeyword = params.get('keyword');
+    }
+
+    updatePreview();
+    updateSeoScore();
+
+    // Ctrl+S
+    document.addEventListener('keydown', e => { if((e.ctrlKey||e.metaKey)&&e.key==='s'){e.preventDefault();saveArticle(currentStatus);} });
+    // Tab in editor
+    document.getElementById('mdEditor').addEventListener('keydown', e => {
+        if(e.key==='Tab'){e.preventDefault();const t=e.target,s=t.selectionStart;t.value=t.value.substring(0,s)+'  '+t.value.substring(t.selectionEnd);t.selectionStart=t.selectionEnd=s+2;updatePreview();}
+    });
+
+    // Auto-generate if param
+    if (params.get('generate') === '1' && document.getElementById('title').value) {
+        setTimeout(() => runGenerateAI(), 500);
+    }
+});
+
+async function loadArticle(slug) {
+    try {
+        const art = await (await fetch('/api/blog/articles?slug=' + encodeURIComponent(slug))).json();
+        if (art.error) { showToast('Article non trouvé', 'error'); return; }
+        document.getElementById('title').value = art.title || '';
+        document.getElementById('slug').value = art.slug || '';
+        document.getElementById('category').value = art.category || '';
+        document.getElementById('date').value = art.date || '';
+        document.getElementById('metaDesc').value = art.meta_description || '';
+        document.getElementById('mdEditor').value = art.content || '';
+        currentTags = art.tags || [];
+        currentStatus = art.status || 'draft';
+        slugManual = true;
+        renderTags();
+        setStatus(currentStatus);
+        updateCharCount();
+        updatePreview();
+    } catch(e) { showToast('Erreur chargement', 'error'); }
+}
+
+// Slug
+function onTitleChange() {
+    if (slugManual) return;
+    const t = document.getElementById('title').value;
+    document.getElementById('slug').value = t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s-]/g,'').replace(/[\s]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'').substring(0,80);
+}
+document.getElementById('slug').addEventListener('input', () => { slugManual = true; });
+
+// Tags
+function renderTags() {
+    const c = document.getElementById('tagsContainer'), inp = document.getElementById('tagInput');
+    c.querySelectorAll('.tag').forEach(t => t.remove());
+    currentTags.forEach(tag => { const s=document.createElement('span');s.className='tag';s.innerHTML=escHtml(tag)+'<button onclick="removeTag(\''+tag.replace(/'/g,"\\'")+'\')">&times;</button>';c.insertBefore(s,inp); });
+}
+function onTagKey(e) {
+    if(e.key==='Enter'||e.key===','){e.preventDefault();const v=e.target.value.trim().replace(/,/g,'');if(v&&!currentTags.includes(v)){currentTags.push(v);renderTags();updateSeoScore();}e.target.value='';}
+    if(e.key==='Backspace'&&!e.target.value&&currentTags.length){currentTags.pop();renderTags();updateSeoScore();}
+}
+function removeTag(tag) { currentTags=currentTags.filter(t=>t!==tag);renderTags();updateSeoScore(); }
+
+// Status
+function setStatus(s) {
+    currentStatus = s;
+    document.getElementById('btnDraft').className = s==='draft'?'active-draft':'';
+    document.getElementById('btnPublished').className = s==='published'?'active-published':'';
+}
+
+// Char count
+function updateCharCount() {
+    const len=document.getElementById('metaDesc').value.length, el=document.getElementById('metaDescCount');
+    el.textContent=len+'/160'; el.className='char-count'+(len>160?' over':len>140?' warn':'');
+    const fill=document.getElementById('metaProgressFill'), pct=Math.min(100,len/200*100);
+    fill.style.width=pct+'%'; fill.className='meta-progress-fill '+(len<120?'short':len<=155?'good':len<=200?'long':'over');
+}
+
+// Preview
+function updatePreview() { document.getElementById('preview').innerHTML = mdToHtml(document.getElementById('mdEditor').value); }
+
+function mdToHtml(md) {
+    let html=''; const lines=md.split('\n'); let inList=false,inP=false,inCode=false;
+    for(const line of lines){const t=line.trim();if(t==='---')continue;
+        if(/^```/.test(t)){if(inCode){html+='</code></pre>';inCode=false;}else{if(inP){html+='</p>';inP=false;}if(inList){html+='</ul>';inList=false;}html+='<pre><code>';inCode=true;}continue;}
+        if(inCode){html+=escHtml(line)+'\n';continue;}
+        const hm=t.match(/^(#{1,6})\s(.+)/);if(hm){if(inP){html+='</p>';inP=false;}if(inList){html+='</ul>';inList=false;}html+='<h'+hm[1].length+'>'+inlineMd(hm[2])+'</h'+hm[1].length+'>';continue;}
+        const lm=t.match(/^[-*]\s(.+)/);if(lm){if(inP){html+='</p>';inP=false;}if(!inList){html+='<ul>';inList=true;}html+='<li>'+inlineMd(lm[1])+'</li>';continue;}
+        if(inList&&!/^[-*]\s/.test(t)){html+='</ul>';inList=false;}if(!t){if(inP){html+='</p>';inP=false;}continue;}
+        if(!inP){html+='<p>';inP=true;}else html+=' ';html+=inlineMd(t);
+    }
+    if(inP)html+='</p>';if(inList)html+='</ul>';if(inCode)html+='</code></pre>';return html;
+}
+function inlineMd(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\[(.+?)\]\((.+?)\)/g,'<a href="$2">$1</a>').replace(/`(.+?)`/g,'<code>$1</code>');}
+
+// Save
+async function saveArticle(status) {
+    if(status) setStatus(status);
+    const payload = {
+        title: document.getElementById('title').value,
+        slug: document.getElementById('slug').value,
+        category: document.getElementById('category').value,
+        date: document.getElementById('date').value,
+        meta_description: document.getElementById('metaDesc').value,
+        tags: currentTags, status: currentStatus,
+        content: document.getElementById('mdEditor').value
+    };
+    if(!payload.title||!payload.slug){showToast('Titre et slug requis','error');return;}
+    document.getElementById('saveStatus').textContent='Sauvegarde...';
+    try{
+        const r=await fetch('/api/blog/articles',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        const data=await r.json();
+        if(data.ok){
+            showToast(currentStatus==='published'?'Article publié !':'Brouillon sauvegardé');
+            document.getElementById('saveStatus').textContent='Sauvegardé';
+            slugManual=true;
+            if(!window.location.search.includes('slug=')) history.replaceState(null,'','/admin/article-edit?slug='+encodeURIComponent(payload.slug));
+        }else{showToast(data.error||'Erreur','error');document.getElementById('saveStatus').textContent='Erreur';}
+    }catch(e){showToast('Erreur réseau','error');document.getElementById('saveStatus').textContent='Erreur';}
+    setTimeout(()=>document.getElementById('saveStatus').textContent='',3000);
+}
+
+// SEO Score
+function normalizeSeo(s){return s.toLowerCase().replace(/[-–—_]/g,' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();}
+function frenchStem(w){if(w.length<4)return w;const suf=['isation','issement','ement','ation','ition','ment','ence','ance','iste','isme','ient','ent','ant','ion','eur','eux','ise','ees','ers','es','ee','er','ez','ir','is','it','ie','ai','e','s'];for(const s of suf){if(w.length>s.length+3&&w.endsWith(s))return w.slice(0,-s.length);}return w;}
+function countKw(text,kw){const nt=normalizeSeo(text),nk=normalizeSeo(kw);if(!nk)return 0;const exact=nt.split(nk).length-1;if(exact>0)return exact;const stem=frenchStem(nk);if(stem.length<3)return 0;return nt.split(/[\s\p{P}]+/u).filter(w=>w.length>0).filter(w=>{const ws=frenchStem(w);return ws===stem||(stem.length>=4&&ws.startsWith(stem))||(ws.length>=4&&stem.startsWith(ws));}).length;}
+function hasKw(text,kw){return countKw(text,kw)>0;}
+function extractKeyword(title){const words=normalizeSeo(title).replace(/[^a-z0-9\s-]/g,' ').split(/\s+/).filter(w=>w.length>3);return words[0]||'';}
+
+function updateSeoScore() {
+    const title=document.getElementById('title').value, slug=document.getElementById('slug').value;
+    const meta=document.getElementById('metaDesc').value, cat=document.getElementById('category').value;
+    const md=document.getElementById('mdEditor').value, lines=md.split('\n');
+    const h1s=lines.filter(l=>/^#\s/.test(l.trim())), h2s=lines.filter(l=>/^##\s/.test(l.trim())&&!/^###/.test(l.trim()));
+    const plain=md.replace(/[#*\[\]()!`>_~-]/g,' ').replace(/\s+/g,' ').trim();
+    const words=plain.split(/\s+/).filter(w=>w.length>0), wc=words.length;
+    const kw=window._suggestedKeyword?normalizeSeo(window._suggestedKeyword):extractKeyword(title);
+    const kwRaw=window._suggestedKeyword||extractKeyword(title);
+    const kwCount=kw?countKw(plain,kwRaw):0, kwDens=wc>0?(kwCount/wc*100):0;
+    const intLinks=(md.match(/\[.+?\]\(\/.+?\)/g)||[]).length;
+    const crossLinks=(md.match(/cap-performances\.fr/g)||[]).length;
+
+    const checks=[];let score=0;
+    // 1. Title
+    const tOk=title.length>0&&title.length<=60,tW=title.length>60&&title.length<=70;
+    checks.push(['Title (< 60 car.)',tOk?'ok':tW?'warn':'fail',title.length?title.length+'/60':'—',tOk?8:tW?4:0]);score+=tOk?8:tW?4:0;
+    // 2. Meta
+    const mOk=meta.length>=120&&meta.length<=155,mW=(meta.length>=80&&meta.length<120)||(meta.length>155&&meta.length<=200);
+    checks.push(['Meta (120-155 car.)',mOk?'ok':mW?'warn':'fail',meta.length?meta.length+'/155':'—',mOk?8:mW?4:0]);score+=mOk?8:mW?4:0;
+    // 3. No H1
+    const h1ok=title.length>0&&h1s.length===0;
+    checks.push(['H1 = titre (pas dans md)',h1ok?'ok':'fail',h1s.length?h1s.length+' H1 en doublon':'✓',h1ok?7:0]);score+=h1ok?7:0;
+    // 4. H2 >= 3
+    const h2ok=h2s.length>=3;
+    checks.push(['H2 ≥ 3',h2ok?'ok':h2s.length>=1?'warn':'fail',h2s.length+' H2',h2ok?7:h2s.length>=1?3:0]);score+=h2ok?7:h2s.length>=1?3:0;
+    // 5. Keyword in title
+    const kwT=kw&&hasKw(title,kwRaw);
+    checks.push(['Mot-clé dans titre',kwT?'ok':'fail',kw?'"'+kw+'"':'—',kwT?7:0]);score+=kwT?7:0;
+    // 6. Keyword in first 100 words
+    const kw100=kw&&hasKw(words.slice(0,100).join(' '),kwRaw);
+    checks.push(['Mot-clé dans intro',kw100?'ok':kw?'warn':'fail',kw100?'✓':'✗',kw100?6:0]);score+=kw100?6:0;
+    // 7. Word count >= 1000
+    const wcOk=wc>=1000,wcW=wc>=500&&wc<1000;
+    checks.push(['≥ 1000 mots',wcOk?'ok':wcW?'warn':'fail',wc.toLocaleString('fr'),wcOk?10:wcW?5:0]);score+=wcOk?10:wcW?5:0;
+    // 8. Density 1-3%
+    const dOk=kwDens>=1&&kwDens<=3,dW=(kwDens>=0.5&&kwDens<1)||(kwDens>3&&kwDens<=4);
+    checks.push(['Densité 1-3%',dOk?'ok':dW?'warn':'fail',kwDens.toFixed(1)+'%',dOk?6:dW?3:0]);score+=dOk?6:dW?3:0;
+    // 9. Internal links >= 2
+    const ilOk=intLinks>=2;
+    checks.push(['Liens internes ≥ 2',ilOk?'ok':intLinks===1?'warn':'fail',intLinks+' lien'+(intLinks>1?'s':''),ilOk?7:intLinks===1?3:0]);score+=ilOk?7:intLinks===1?3:0;
+    // 10. URL propre
+    const slugOk=/^[a-z0-9-]+$/.test(slug)&&slug.length>5;
+    checks.push(['URL propre',slugOk?'ok':'fail',slug?'/blog/'+slug:'—',slugOk?5:0]);score+=slugOk?5:0;
+    // 11. Category
+    checks.push(['Catégorie',cat?'ok':'fail',cat||'—',cat?5:0]);score+=cat?5:0;
+    // 12. Tags >= 2
+    const tgOk=currentTags.length>=2;
+    checks.push(['Tags ≥ 2',tgOk?'ok':currentTags.length===1?'warn':'fail',currentTags.length+' tag'+(currentTags.length>1?'s':''),tgOk?5:currentTags.length===1?2:0]);score+=tgOk?5:currentTags.length===1?2:0;
+    // 13. Cross-site
+    checks.push(['Lien cross-site',crossLinks>=1?'ok':'warn',crossLinks+' lien'+(crossLinks>1?'s':''),crossLinks>=1?5:0]);score+=crossLinks>=1?5:0;
+    // 14. OG image bonus
+    checks.push(['Image OG','ok','auto',4]);score+=4;
+
+    // Render
+    const container=document.getElementById('seoChecks');
+    let linksPanel = '';
+    if (intLinks < 2) {
+        linksPanel = '<div class="seo-links-panel">';
+        allArticles.filter(a => a.slug !== slug).slice(0, 10).forEach(a => {
+            linksPanel += `<div class="seo-link-item"><span>${escHtml(a.title)}</span><code>/blog/${a.slug}</code><button class="seo-link-insert" onclick="insertLink('${escHtml(a.title).replace(/'/g,"\\'")}','/blog/${a.slug}')">Insérer</button></div>`;
+        });
+        linksPanel += '</div>';
+    }
+
+    container.innerHTML=checks.map(([label,status,val,pts],i)=>
+        '<div class="seo-row"><div class="seo-dot '+status+'"></div><span class="seo-label">'+label+'</span><span class="seo-val">'+val+'</span></div>' +
+        (i === 8 && intLinks < 2 ? linksPanel : '')
+    ).join('');
+
+    const badge=document.getElementById('seoTotal');badge.textContent=score+'/100';
+    badge.className='seo-score-badge '+(score>=75?'good':score>=50?'ok':'bad');
+}
+
+function toggleSeoPanel(){const b=document.getElementById('seoBody'),a=document.getElementById('seoArrow');const h=b.style.display==='none';b.style.display=h?'':'none';a.classList.toggle('collapsed',!h);}
+
+function insertLink(label,url){const ed=document.getElementById('mdEditor'),s=ed.selectionStart;ed.value=ed.value.substring(0,s)+'['+label+']('+url+')'+ed.value.substring(ed.selectionEnd);ed.selectionStart=ed.selectionEnd=s+label.length+url.length+4;ed.focus();updatePreview();updateSeoScore();showToast('Lien inséré');}
+
+// Optimize SEO
+async function runOptimizeSeo(fixTarget) {
+    const btn=document.getElementById('btnOptimize'),content=document.getElementById('mdEditor').value;
+    if(!content.trim()){showToast('Contenu vide','error');return;}
+    btn.disabled=true;btn.textContent=fixTarget?'🔧 Correction...':'🔧 Analyse...';
+    try{
+        const r=await fetch('/api/blog/optimize-seo',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+            title:document.getElementById('title').value,slug:document.getElementById('slug').value,
+            meta_description:document.getElementById('metaDesc').value,
+            keyword:window._suggestedKeyword||extractKeyword(document.getElementById('title').value),
+            content:content,category:document.getElementById('category').value,tags:currentTags,fix:fixTarget||null
+        })});
+        const data=await r.json();
+        if(!data.ok){showToast('Erreur : '+data.error,'error');return;}
+        if(fixTarget){
+            const opt=data.optimized||{};
+            if(opt.content&&opt.content!==content){document.getElementById('mdEditor').value=opt.content;updatePreview();}
+            if(opt.title) document.getElementById('title').value=opt.title;
+            if(opt.meta_description){document.getElementById('metaDesc').value=opt.meta_description;updateCharCount();}
+            updateSeoScore();
+            const fc=(data.checks||[]).filter(c=>c.fix_applied).length;
+            showToast(fc>0?fc+' correction(s)':'Aucune correction');
+        }else{showToast('Score : '+(data.global_score||'?')+'/100');}
+        renderOptimizeReport(data);
+    }catch(e){showToast('Erreur : '+e.message,'error');}
+    finally{btn.disabled=false;btn.textContent='🔧 Optimiser SEO';}
+}
+
+function renderOptimizeReport(data) {
+    const container=document.getElementById('optimizeReport'),checks=data.checks||[],score=data.global_score||0;
+    const errC=checks.filter(c=>c.status==='error').length,warnC=checks.filter(c=>c.status==='warning').length;
+    const fixable=checks.filter(c=>c.fix_available&&!c.fix_applied).length;
+    const sc=score>=75?'var(--green)':score>=50?'var(--amber)':'var(--red)';
+    let html='<div class="optimize-report"><div class="optimize-report-header"><div><div class="optimize-report-title '+(errC>0?'bad':warnC>0?'mixed':'')+'">'+(errC>0?'⚠':'✓')+' '+escHtml(data.summary||'Analyse terminée')+'</div></div>';
+    html+='<div class="optimize-score-circle" style="border:3px solid '+sc+';color:'+sc+'">'+score+'</div></div>';
+    if(fixable>0) html+='<button class="btn-fix-all" onclick="runOptimizeSeo(\'all\')">Tout corriger ('+fixable+')</button>';
+    checks.forEach(c=>{
+        const cs=c.score>=80?'high':c.score>=50?'mid':'low';
+        html+='<div class="check-item"><div class="check-dot '+c.status+'"></div><span class="check-label">'+escHtml(c.label)+'</span><span class="check-val">'+escHtml(c.current)+'</span><span class="check-score '+cs+'">'+c.score+'</span>';
+        if(c.fix_applied) html+='<span class="btn-fix applied">Corrigé</span>';
+        else if(c.fix_available) html+='<button class="btn-fix" onclick="runOptimizeSeo(\''+c.id+'\')">Corriger</button>';
+        html+='</div>';
+    });
+    html+='</div>';container.innerHTML=html;
+}
+
+// Generate AI
+async function runGenerateAI() {
+    const title=document.getElementById('title').value,cat=document.getElementById('category').value;
+    if(!title){showToast('Titre requis','error');return;}
+    if(!cat){showToast('Catégorie requise','error');return;}
+    const content=document.getElementById('mdEditor').value;
+    if(content.trim().length>200&&!confirm('Le contenu sera remplacé. Continuer ?')) return;
+    const btn=document.getElementById('btnGenerate');btn.disabled=true;btn.textContent='⚡ Génération...';
+    document.getElementById('saveStatus').textContent='Génération IA (~20s)...';
+    try{
+        const r=await fetch('/api/blog/generate-article',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+            title:title,slug:document.getElementById('slug').value,keyword:window._suggestedKeyword||extractKeyword(title),
+            category:cat,meta_description:document.getElementById('metaDesc').value,tags:currentTags,internal_links:[]
+        })});
+        const data=await r.json();
+        if(!data.ok){showToast('Erreur : '+data.error,'error');return;}
+        if(data.content){document.getElementById('mdEditor').value=data.content;updatePreview();}
+        if(data.meta_description){document.getElementById('metaDesc').value=data.meta_description;updateCharCount();}
+        if(data.slug&&!document.getElementById('slug').value){document.getElementById('slug').value=data.slug;slugManual=true;}
+        updateSeoScore();
+        setTimeout(()=>runOptimizeSeo(null),500);
+        showToast(data.og_image?'Article généré + image OG':'Article généré');
+        document.getElementById('saveStatus').textContent='Généré ✓';
+    }catch(e){showToast('Erreur : '+e.message,'error');}
+    finally{btn.disabled=false;btn.textContent='⚡ Générer IA';setTimeout(()=>document.getElementById('saveStatus').textContent='',5000);}
+}
+</script>
+</body>
+</html>

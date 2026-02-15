@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VendMieux — Démo FORCE 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #08080d;
+            --bg-secondary: #0f0f18;
+            --bg-card: #161622;
+            --bg-card-hover: #1c1c2d;
+            --bg-input: #111119;
+            --border: #232336;
+            --border-hover: #2f2f4a;
+            --text-primary: #eaeaf2;
+            --text-secondary: #7c7c9a;
+            --text-muted: #4a4a64;
+            --brand: #ff6b35;
+            --brand-light: #ff8c5a;
+            --brand-glow: rgba(255,107,53,0.25);
+            --brand-subtle: rgba(255,107,53,0.08);
+            --accent-blue: #3b82f6;
+            --success: #22c55e;
+            --success-glow: rgba(34,197,94,0.15);
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --gradient-brand: linear-gradient(135deg, #ff6b35 0%, #ff3d00 100%);
+            --radius: 14px;
+            --radius-sm: 10px;
+            --radius-xs: 6px;
+            --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
+            --font: 'Outfit', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 15% -10%, rgba(255,107,53,0.07) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 110%, rgba(59,130,246,0.04) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        .demo-app { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 32px 24px; }
+
+        /* Header */
+        .demo-header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .demo-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .demo-logo-mark {
+            width: 40px; height: 40px;
+            background: var(--gradient-brand);
+            border-radius: 10px;
+            display: grid; place-items: center;
+            font-weight: 800; font-size: 16px; color: white;
+            box-shadow: 0 2px 16px var(--brand-glow);
+        }
+
+        .demo-logo-name {
+            font-size: 20px; font-weight: 700; letter-spacing: -0.5px;
+        }
+
+        .demo-logo-name em { font-style: normal; color: var(--brand); }
+
+        .demo-welcome {
+            font-size: 24px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.3px;
+        }
+
+        .demo-subtitle {
+            color: var(--text-secondary); font-size: 14px;
+        }
+
+        .demo-sessions {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px; font-weight: 600;
+            background: var(--brand-subtle);
+            border: 1px solid rgba(255,107,53,0.2);
+            color: var(--brand);
+            margin-top: 12px;
+        }
+
+        /* Panels */
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        .hidden { display: none !important; }
+
+        /* Briefing */
+        .brief-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+
+        .brief-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+        }
+
+        .brief-card.full-width { grid-column: 1 / -1; }
+
+        .brief-card-title {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--text-muted); margin-bottom: 10px;
+            display: flex; align-items: center; gap: 6px;
+        }
+
+        .brief-card-body {
+            font-size: 13.5px; line-height: 1.6; color: var(--text-secondary);
+        }
+
+        .brief-card-body strong { color: var(--text-primary); font-weight: 600; }
+
+        .brief-objections { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+        .brief-objection {
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xs);
+            padding: 10px 12px;
+            font-size: 13px; line-height: 1.5;
+        }
+
+        .brief-objection .moment {
+            font-size: 10px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.8px; color: var(--brand); margin-right: 8px;
+        }
+
+        .brief-objection .difficulty {
+            float: right; font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);
+        }
+
+        .brief-objection .verbatim { color: var(--text-primary); font-style: italic; }
+
+        .actions { display: flex; gap: 12px; justify-content: center; margin-top: 28px; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 7px;
+            padding: 12px 24px; border-radius: var(--radius-xs); border: none;
+            font-family: var(--font); font-size: 14px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+        }
+
+        .btn-brand {
+            background: var(--gradient-brand); color: white;
+            box-shadow: 0 4px 16px var(--brand-glow);
+        }
+        .btn-brand:hover { transform: translateY(-1px); box-shadow: 0 6px 24px var(--brand-glow); }
+        .btn-brand:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+
+        .btn-ghost {
+            background: var(--bg-input); color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        .btn-ghost:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
+
+        /* Call UI */
+        .call-wrap { text-align: center; max-width: 560px; margin: 0 auto; }
+
+        .call-avatar {
+            width: 110px; height: 110px; border-radius: 50%;
+            background: var(--bg-card); border: 3px solid var(--border);
+            display: grid; place-items: center; margin: 0 auto 22px;
+            font-size: 44px; transition: all 0.3s;
+        }
+
+        .call-avatar.live {
+            border-color: var(--brand);
+            box-shadow: 0 0 40px var(--brand-glow);
+            animation: glow 1.8s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%,100% { box-shadow: 0 0 40px var(--brand-glow); }
+            50% { box-shadow: 0 0 60px var(--brand-glow), 0 0 90px rgba(255,107,53,0.08); }
+        }
+
+        .call-name { font-size: 22px; font-weight: 700; margin-bottom: 3px; letter-spacing: -0.3px; }
+        .call-role { color: var(--text-secondary); font-size: 13px; margin-bottom: 28px; }
+
+        .viz { display: flex; align-items: center; justify-content: center; gap: 3px; height: 36px; margin-bottom: 20px; }
+        .viz-bar { width: 3.5px; background: var(--brand); border-radius: 2px; height: 3px; transition: height .1s; }
+        .viz.on .viz-bar { animation: bar .75s ease-in-out infinite; }
+        .viz.on .viz-bar:nth-child(1){animation-delay:0s}
+        .viz.on .viz-bar:nth-child(2){animation-delay:.12s}
+        .viz.on .viz-bar:nth-child(3){animation-delay:.22s}
+        .viz.on .viz-bar:nth-child(4){animation-delay:.08s}
+        .viz.on .viz-bar:nth-child(5){animation-delay:.18s}
+        .viz.on .viz-bar:nth-child(6){animation-delay:.28s}
+        .viz.on .viz-bar:nth-child(7){animation-delay:.05s}
+        @keyframes bar { 0%,100%{height:3px} 50%{height:28px} }
+
+        .call-status {
+            font-family: var(--font-mono); font-size: 12px;
+            color: var(--text-secondary); margin-bottom: 20px; min-height: 18px;
+        }
+        .call-status.ok { color: var(--success); }
+        .call-status.err { color: var(--danger); }
+
+        .call-timer {
+            font-family: var(--font-mono); font-size: 32px; font-weight: 300;
+            color: var(--text-primary); margin-bottom: 28px; letter-spacing: 3px;
+        }
+
+        .call-btns { display: flex; gap: 14px; justify-content: center; }
+
+        .cbtn {
+            width: 58px; height: 58px; border-radius: 50%; border: none;
+            display: grid; place-items: center; font-size: 22px; cursor: pointer; transition: all .15s;
+        }
+        .cbtn-go { background: var(--success); color: white; box-shadow: 0 4px 20px rgba(34,197,94,0.3); }
+        .cbtn-go:hover { transform: scale(1.1); }
+        .cbtn-stop { background: var(--danger); color: white; box-shadow: 0 4px 20px rgba(239,68,68,0.3); }
+        .cbtn-stop:hover { transform: scale(1.1); }
+        .cbtn-mute { background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border); }
+        .cbtn-muted { background: var(--danger) !important; color: white !important; border-color: var(--danger) !important; }
+
+        .transcript {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 16px; margin-top: 24px; max-height: 180px; overflow-y: auto; display: none;
+        }
+        .t-line { padding: 5px 0; font-size: 12.5px; line-height: 1.5; border-bottom: 1px solid rgba(35,35,54,0.5); }
+        .t-line:last-child { border: none; }
+        .t-who { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .5px; margin-right: 6px; }
+        .t-who.you { color: var(--accent-blue); }
+        .t-who.ai { color: var(--brand); }
+        .t-pending { font-style: italic; opacity: 0.6; }
+
+        /* Post-call stats */
+        .post-stats {
+            display: flex; gap: 16px; justify-content: center; margin-bottom: 28px;
+        }
+        .post-stat {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); padding: 16px 24px; text-align: center; min-width: 120px;
+        }
+        .post-stat-value { font-size: 24px; font-weight: 700; font-family: var(--font-mono); margin-bottom: 4px; }
+        .post-stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+
+        /* Post transcript */
+        .post-transcript {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 20px; max-height: 400px; overflow-y: auto; margin-bottom: 24px;
+        }
+        .post-transcript-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 14px; }
+        .pt-line { padding: 8px 0; font-size: 13px; line-height: 1.55; border-bottom: 1px solid rgba(35,35,54,0.4); display: flex; gap: 10px; }
+        .pt-line:last-child { border: none; }
+        .pt-time { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); flex-shrink: 0; min-width: 42px; padding-top: 2px; }
+        .pt-who { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; min-width: 70px; padding-top: 2px; }
+        .pt-who.you { color: var(--accent-blue); }
+        .pt-who.ai { color: var(--brand); }
+        .pt-text { color: var(--text-secondary); }
+
+        /* Evaluation */
+        .eval-loading { text-align: center; padding: 48px 20px; color: var(--text-secondary); }
+
+        .spinner-lg {
+            display: inline-block; width: 36px; height: 36px;
+            border: 3px solid var(--border); border-top-color: var(--brand);
+            border-radius: 50%; animation: spin 0.6s linear infinite; margin-bottom: 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .eval-score-hero {
+            text-align: center; margin-bottom: 32px; padding: 28px;
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+        }
+        .eval-score-number { font-size: 56px; font-weight: 800; font-family: var(--font-mono); letter-spacing: -2px; line-height: 1; }
+        .eval-score-max { font-size: 20px; color: var(--text-muted); font-weight: 400; }
+        .eval-grade { display: inline-block; padding: 4px 16px; border-radius: 20px; font-size: 18px; font-weight: 800; margin-top: 10px; }
+        .grade-A { background: rgba(34,197,94,0.15); color: var(--success); }
+        .grade-B { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+        .grade-C { background: rgba(245,158,11,0.15); color: var(--warning); }
+        .grade-D { background: rgba(239,68,68,0.15); color: var(--danger); }
+        .grade-E { background: rgba(239,68,68,0.25); color: var(--danger); }
+        .eval-result-tag { margin-top: 10px; font-size: 12px; color: var(--text-secondary); }
+
+        .eval-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+        .eval-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px; }
+        .eval-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .eval-card-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); }
+        .eval-card-score { font-size: 16px; font-weight: 800; font-family: var(--font-mono); }
+        .eval-bar { height: 6px; background: var(--bg-input); border-radius: 3px; margin-bottom: 12px; overflow: hidden; }
+        .eval-bar-fill { height: 100%; border-radius: 3px; transition: width 0.6s ease; }
+        .eval-bar-fill.bar-high { background: var(--success); }
+        .eval-bar-fill.bar-mid { background: var(--warning); }
+        .eval-bar-fill.bar-low { background: var(--danger); }
+        .eval-section { font-size: 12px; line-height: 1.55; margin-bottom: 8px; }
+        .eval-section-label { font-weight: 700; color: var(--text-muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 3px; }
+        .eval-section-content { color: var(--text-secondary); }
+        .eval-conseil { font-style: italic; color: var(--brand-light); font-size: 12px; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border); }
+
+        .eval-synthese { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; }
+        .eval-synthese-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 10px; }
+        .eval-synthese-text { font-size: 14px; line-height: 1.65; color: var(--text-secondary); }
+
+        .eval-priority {
+            background: var(--brand-subtle); border: 1px solid rgba(255,107,53,0.25);
+            border-radius: var(--radius-sm); padding: 16px 20px; margin-bottom: 24px;
+        }
+        .eval-priority-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--brand); margin-bottom: 6px; }
+        .eval-priority-text { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+
+        /* Footer CTA */
+        .demo-footer {
+            text-align: center; padding: 40px 20px;
+            border-top: 1px solid var(--border); margin-top: 40px;
+        }
+        .demo-footer-text { color: var(--text-secondary); font-size: 14px; margin-bottom: 12px; }
+        .demo-footer-cta { color: var(--brand); font-size: 16px; font-weight: 700; }
+
+        /* Error page */
+        .demo-error { text-align: center; padding: 80px 20px; }
+        .demo-error-icon { font-size: 48px; margin-bottom: 16px; }
+        .demo-error-text { font-size: 16px; color: var(--text-secondary); }
+
+        @media (max-width: 800px) {
+            .brief-grid { grid-template-columns: 1fr; }
+            .eval-grid { grid-template-columns: 1fr; }
+            .post-stats { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+<div class="demo-app">
+
+    <!-- HEADER -->
+    <div class="demo-header">
+        <div class="demo-logo">
+            <div class="demo-logo-mark">VM</div>
+            <div class="demo-logo-name">Vend<em>Mieux</em></div>
+        </div>
+        <div class="demo-welcome" id="d-welcome">Chargement...</div>
+        <div class="demo-subtitle">Simulation FORCE 3D — Entraînement commercial par IA</div>
+        <div class="demo-sessions" id="d-sessions"></div>
+    </div>
+
+    <!-- ERROR -->
+    <div id="panel-error" class="panel">
+        <div class="demo-error">
+            <div class="demo-error-icon">⚠️</div>
+            <div class="demo-error-text" id="d-error-text">Lien invalide ou expiré.</div>
+        </div>
+    </div>
+
+    <!-- BRIEFING -->
+    <div id="panel-briefing" class="panel">
+        <div class="brief-grid">
+            <div class="brief-card">
+                <div class="brief-card-title">👤 Profil</div>
+                <div class="brief-card-body" id="d-profil"></div>
+            </div>
+            <div class="brief-card">
+                <div class="brief-card-title">🧠 Psychologie</div>
+                <div class="brief-card-body" id="d-psycho"></div>
+            </div>
+            <div class="brief-card full-width">
+                <div class="brief-card-title">📋 Contexte</div>
+                <div class="brief-card-body" id="d-contexte"></div>
+            </div>
+            <div class="brief-card full-width">
+                <div class="brief-card-title">⚡ Objections à anticiper</div>
+                <div class="brief-card-body" id="d-objections"></div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="btn btn-brand" onclick="launchSim()">🎙️ Lancer la simulation</button>
+        </div>
+    </div>
+
+    <!-- CALL -->
+    <div id="panel-call" class="panel">
+        <div class="call-wrap">
+            <div class="call-avatar" id="c-avatar">👤</div>
+            <div class="call-name" id="c-name"></div>
+            <div class="call-role" id="c-role"></div>
+            <div class="viz" id="viz"><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div></div>
+            <div class="call-status" id="c-status">Prêt à appeler</div>
+            <div class="call-timer" id="c-timer">00:00</div>
+            <div class="call-btns">
+                <button class="cbtn cbtn-go" id="b-go" onclick="startCall()">📞</button>
+                <button class="cbtn cbtn-mute" id="b-mute" onclick="toggleMute()" style="display:none">🎙️</button>
+                <button class="cbtn cbtn-stop" id="b-stop" onclick="endCall()" style="display:none">✕</button>
+            </div>
+            <div class="transcript" id="transcript"></div>
+        </div>
+    </div>
+
+    <!-- POST-CALL -->
+    <div id="panel-postcall" class="panel">
+        <div style="text-align:center;margin-bottom:28px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:6px;">Appel terminé</div>
+            <div style="color:var(--text-secondary);font-size:14px;" id="pc-prospect"></div>
+        </div>
+        <div class="post-stats">
+            <div class="post-stat">
+                <div class="post-stat-value" id="pc-duration">00:00</div>
+                <div class="post-stat-label">Durée</div>
+            </div>
+            <div class="post-stat">
+                <div class="post-stat-value" id="pc-exchanges">0</div>
+                <div class="post-stat-label">Échanges</div>
+            </div>
+            <div class="post-stat">
+                <div class="post-stat-value" id="pc-words">0</div>
+                <div class="post-stat-label">Mots</div>
+            </div>
+        </div>
+
+        <!-- Evaluation -->
+        <div id="eval-container">
+            <div id="eval-loading" class="eval-loading">
+                <div class="spinner-lg"></div>
+                <div style="font-size:15px;font-weight:600;margin-bottom:4px;">Évaluation FORCE 3D en cours...</div>
+                <div style="font-size:12px;color:var(--text-muted);">Claude analyse votre performance commerciale</div>
+            </div>
+            <div id="eval-results" class="hidden"></div>
+        </div>
+
+        <div class="post-transcript">
+            <div class="post-transcript-title">Transcript complet</div>
+            <div id="pc-transcript"></div>
+        </div>
+        <div class="actions">
+            <button class="btn btn-brand" onclick="restartDemo()">🔄 Nouvelle session</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="demo-footer">
+        <div class="demo-footer-text">Cette simulation est propulsée par l'IA VendMieux</div>
+        <div class="demo-footer-cta">Vous voulez ça pour vos étudiants ? Contactez-nous</div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/livekit-client@2/dist/livekit-client.umd.js"></script>
+<script>
+const API = window.location.origin;
+const DEMO_TOKEN = window.location.pathname.split('/demo/')[1];
+
+let demoInfo = null;
+let room = null, tmr = null, t0 = null, muted = false;
+let localIdentity = null;
+let transcriptEntries = [];
+let pendingSegments = {};
+
+// === UTILS ===
+function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+}
+
+function formatTime(ms) {
+    const s = Math.floor(ms / 1000);
+    return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
+}
+
+function showPanel(id) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('panel-' + id).classList.add('active');
+}
+
+// === INIT ===
+async function initDemo() {
+    try {
+        const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/info');
+        if (!r.ok) {
+            const err = await r.json().catch(() => ({}));
+            throw new Error(err.detail || 'Lien invalide');
+        }
+        demoInfo = await r.json();
+
+        // Header
+        document.getElementById('d-welcome').textContent = 'Bienvenue ' + demoInfo.nom_ecole;
+        document.getElementById('d-sessions').textContent =
+            'Session ' + (demoInfo.sessions_used + 1) + '/' + demoInfo.sessions_max;
+
+        // Briefing
+        renderBriefing(demoInfo.scenario);
+
+        // Call info
+        const p = demoInfo.scenario.persona.identite;
+        document.getElementById('c-name').textContent = p.prenom + ' ' + p.nom;
+        document.getElementById('c-role').textContent = p.poste + ' — ' + p.entreprise.nom;
+
+        showPanel('briefing');
+    } catch (e) {
+        document.getElementById('d-error-text').textContent = e.message;
+        showPanel('error');
+    }
+}
+
+function renderBriefing(data) {
+    const p = data.persona;
+    const id = p.identite;
+    const ent = id.entreprise;
+    const psy = p.psychologie;
+    const ctx = p.contexte_actuel;
+    const obj = data.objections;
+
+    document.getElementById('d-profil').innerHTML =
+        `<strong>${escapeHtml(id.prenom)} ${escapeHtml(id.nom)}</strong>, ${escapeHtml(String(id.age || '?'))} ans<br>` +
+        `${escapeHtml(id.poste)} chez <strong>${escapeHtml(ent.nom)}</strong><br>` +
+        `${escapeHtml(ent.secteur)} — ${escapeHtml(ent.taille || '?')} — CA ${escapeHtml(ent.ca_approximatif || '?')}`;
+
+    document.getElementById('d-psycho').innerHTML =
+        `<strong>Traits :</strong> ${escapeHtml(psy.traits_dominants.join(', '))}<br>` +
+        `<strong>Style :</strong> ${escapeHtml(psy.style_communication)}<br>` +
+        `<strong>Rapport aux commerciaux :</strong> ${escapeHtml(psy.rapport_aux_commerciaux || '?')}`;
+
+    document.getElementById('d-contexte').innerHTML =
+        `<strong>Situation :</strong> ${escapeHtml(ctx.situation_entreprise)}<br>` +
+        `<strong>Priorités :</strong> ${escapeHtml((ctx.priorites_actuelles || []).join(', '))}<br>` +
+        `<strong>Fournisseur actuel :</strong> ${escapeHtml(ctx.fournisseur_actuel || 'Aucun')}<br>` +
+        `<strong>Budget :</strong> ${escapeHtml(ctx.budget_disponible || '?')}`;
+
+    const objList = (obj.objections || []).slice(0, 6);
+    if (objList.length) {
+        document.getElementById('d-objections').innerHTML = '<ul class="brief-objections">' +
+            objList.map(o =>
+                `<li class="brief-objection"><span class="moment">${escapeHtml(o.moment)}</span><span class="difficulty">diff: ${o.difficulte}/5</span><br><span class="verbatim">"${escapeHtml(o.verbatim)}"</span></li>`
+            ).join('') + '</ul>';
+    } else {
+        document.getElementById('d-objections').textContent = 'Aucune objection définie.';
+    }
+}
+
+// === LAUNCH SIM ===
+async function launchSim() {
+    // Consume a session
+    try {
+        const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/use', { method: 'POST' });
+        if (!r.ok) {
+            const err = await r.json().catch(() => ({}));
+            alert(err.detail || 'Plus de sessions disponibles');
+            return;
+        }
+        const data = await r.json();
+        document.getElementById('d-sessions').textContent =
+            'Session ' + data.sessions_used + '/' + data.sessions_max;
+    } catch (e) {
+        alert('Erreur : ' + e.message);
+        return;
+    }
+
+    showPanel('call');
+    transcriptEntries = [];
+    pendingSegments = {};
+    muted = false;
+    t0 = null;
+}
+
+// === CALL ===
+async function startCall() {
+    const st = document.getElementById('c-status');
+    st.textContent = 'Obtention du token...';
+
+    try {
+        const r = await fetch(API + '/api/token', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                scenario_id: demoInfo.scenario_id !== '__default__' ? demoInfo.scenario_id : null,
+                difficulty: demoInfo.difficulty,
+                user_name: 'Étudiant'
+            })
+        });
+        if (!r.ok) throw new Error('Erreur serveur (token)');
+        const tk = await r.json();
+        localIdentity = tk.identity;
+
+        st.textContent = 'Connexion à la room...';
+        room = new LivekitClient.Room({ adaptiveStream: true, dynacast: true });
+
+        room.on(LivekitClient.RoomEvent.TrackSubscribed, (track) => {
+            if (track.kind === 'audio') {
+                document.body.appendChild(track.attach());
+                document.getElementById('viz').classList.add('on');
+            }
+        });
+        room.on(LivekitClient.RoomEvent.Disconnected, () => endCall());
+        room.on(LivekitClient.RoomEvent.TranscriptionReceived, (segments, participant) => {
+            handleTranscription(segments, participant);
+        });
+
+        await room.connect(tk.url, tk.token);
+
+        st.textContent = 'Activation du micro...';
+        await room.localParticipant.setMicrophoneEnabled(true);
+
+        st.textContent = 'En attente du prospect...';
+
+        const hasAgent = Array.from(room.remoteParticipants.values()).length > 0;
+        if (hasAgent) {
+            st.textContent = 'En communication';
+            st.className = 'call-status ok';
+        } else {
+            room.on(LivekitClient.RoomEvent.ParticipantConnected, () => {
+                st.textContent = 'En communication';
+                st.className = 'call-status ok';
+            });
+        }
+
+        document.getElementById('c-avatar').classList.add('live');
+        document.getElementById('b-go').style.display = 'none';
+        document.getElementById('b-mute').style.display = 'grid';
+        document.getElementById('b-stop').style.display = 'grid';
+        document.getElementById('transcript').style.display = 'block';
+        t0 = Date.now();
+        tmr = setInterval(tick, 1000);
+
+    } catch (e) {
+        st.textContent = 'Erreur : ' + e.message;
+        st.className = 'call-status err';
+    }
+}
+
+function endCall() {
+    const duration = t0 ? Date.now() - t0 : 0;
+    const hadTranscript = transcriptEntries.length > 0;
+    const longEnough = duration > 3000;
+
+    if (room) { room.disconnect(); room = null; }
+    if (tmr) { clearInterval(tmr); tmr = null; }
+    document.querySelectorAll('audio').forEach(e => e.remove());
+
+    if (hadTranscript && longEnough) {
+        showPostCall(duration);
+    } else {
+        document.getElementById('c-status').textContent = 'Appel terminé';
+        document.getElementById('c-avatar').classList.remove('live');
+        document.getElementById('viz').classList.remove('on');
+        document.getElementById('b-go').style.display = 'grid';
+        document.getElementById('b-mute').style.display = 'none';
+        document.getElementById('b-stop').style.display = 'none';
+    }
+}
+
+// === TRANSCRIPT ===
+function renderTranscript() {
+    const el = document.getElementById('transcript');
+    let html = '';
+    for (const e of transcriptEntries) {
+        const whoClass = e.who === 'user' ? 'you' : 'ai';
+        const whoLabel = e.who === 'user' ? 'Vous' : 'Prospect';
+        html += `<div class="t-line"><span class="t-who ${whoClass}">${whoLabel}</span>${escapeHtml(e.text)}</div>`;
+    }
+    for (const [sid, seg] of Object.entries(pendingSegments)) {
+        const whoClass = seg.who === 'user' ? 'you' : 'ai';
+        const whoLabel = seg.who === 'user' ? 'Vous' : 'Prospect';
+        html += `<div class="t-line t-pending"><span class="t-who ${whoClass}">${whoLabel}</span>${escapeHtml(seg.text)}</div>`;
+    }
+    el.innerHTML = html;
+    el.scrollTop = el.scrollHeight;
+}
+
+function handleTranscription(segments, participant) {
+    if (!segments || !segments.length) return;
+    const isAgent = participant && participant.identity !== localIdentity;
+    const who = isAgent ? 'agent' : 'user';
+
+    for (const seg of segments) {
+        const text = seg.text || seg.final || '';
+        if (!text.trim()) continue;
+        const segId = seg.id || seg.sid || (who + '-' + Date.now());
+
+        if (seg.final !== undefined ? seg.final : seg.isFinal) {
+            delete pendingSegments[segId];
+            transcriptEntries.push({ who, text: text.trim(), time: t0 ? Date.now() - t0 : 0 });
+        } else {
+            pendingSegments[segId] = { who, text: text.trim() };
+        }
+    }
+    renderTranscript();
+}
+
+function toggleMute() {
+    if (!room) return;
+    muted = !muted;
+    room.localParticipant.setMicrophoneEnabled(!muted);
+    const btn = document.getElementById('b-mute');
+    btn.className = muted ? 'cbtn cbtn-muted' : 'cbtn cbtn-mute';
+    btn.textContent = muted ? '🔇' : '🎙️';
+}
+
+function tick() {
+    if (!t0) return;
+    const s = Math.floor((Date.now() - t0) / 1000);
+    document.getElementById('c-timer').textContent =
+        String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
+}
+
+// === POST-CALL ===
+function showPostCall(duration) {
+    showPanel('postcall');
+
+    const p = demoInfo.scenario.persona.identite;
+    document.getElementById('pc-prospect').textContent =
+        p.prenom + ' ' + p.nom + ' — ' + p.poste + ', ' + p.entreprise.nom;
+
+    document.getElementById('pc-duration').textContent = formatTime(duration);
+
+    let exchanges = 0, lastWho = null;
+    for (const e of transcriptEntries) { if (e.who !== lastWho) { exchanges++; lastWho = e.who; } }
+    document.getElementById('pc-exchanges').textContent = exchanges;
+
+    const totalWords = transcriptEntries.reduce((acc, e) => acc + e.text.split(/\s+/).filter(w => w).length, 0);
+    document.getElementById('pc-words').textContent = totalWords;
+
+    const tcEl = document.getElementById('pc-transcript');
+    tcEl.innerHTML = transcriptEntries.map(e => {
+        const whoClass = e.who === 'user' ? 'you' : 'ai';
+        const whoLabel = e.who === 'user' ? 'Vous' : 'Prospect';
+        return `<div class="pt-line"><span class="pt-time">${formatTime(e.time)}</span><span class="pt-who ${whoClass}">${whoLabel}</span><span class="pt-text">${escapeHtml(e.text)}</span></div>`;
+    }).join('');
+
+    runEvaluation(duration);
+}
+
+async function runEvaluation(duration) {
+    const evalLoading = document.getElementById('eval-loading');
+    const evalResults = document.getElementById('eval-results');
+    evalLoading.classList.remove('hidden');
+    evalResults.classList.add('hidden');
+
+    if (transcriptEntries.length < 3) {
+        evalLoading.innerHTML = '<div style="color:var(--text-muted);font-size:15px;">Appel trop court pour être évalué<br><span style="font-size:12px;opacity:.7;">Minimum 3 échanges requis</span></div>';
+        return;
+    }
+
+    const transcriptArray = transcriptEntries.map(e => ({
+        role: e.who === 'user' ? 'vendeur' : 'prospect',
+        text: e.text,
+        timestamp: e.time / 1000,
+    }));
+
+    try {
+        const r = await fetch(API + '/api/evaluate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                session_id: 'demo-' + DEMO_TOKEN + '-' + Date.now(),
+                transcript: transcriptArray,
+                scenario_id: demoInfo.scenario_id,
+                difficulty: demoInfo.difficulty,
+                duration_s: Math.floor(duration / 1000),
+            })
+        });
+
+        if (!r.ok) {
+            const err = await r.json().catch(() => ({}));
+            throw new Error(err.detail || 'Erreur serveur');
+        }
+
+        const evaluation = await r.json();
+        evalLoading.classList.add('hidden');
+        evalResults.classList.remove('hidden');
+        renderEvaluation(evaluation);
+
+        // Save demo session
+        fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/save-session', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                duration_s: Math.floor(duration / 1000),
+                transcript: transcriptEntries,
+                evaluation: evaluation,
+                score_global: evaluation.score_global || 0,
+            })
+        }).catch(() => {});
+
+    } catch (e) {
+        evalLoading.innerHTML = `<div style="color:var(--danger)">Erreur évaluation : ${escapeHtml(e.message)}</div>`;
+    }
+}
+
+function renderEvaluation(ev) {
+    const container = document.getElementById('eval-results');
+    const gradeClass = 'grade-' + (ev.note_lettre || 'C');
+    const scoreColor = ev.score_global >= 14 ? 'var(--success)' : ev.score_global >= 10 ? 'var(--warning)' : 'var(--danger)';
+
+    const COMP_KEYS = ['accroche', 'decouverte', 'creation_enjeu', 'argumentation', 'traitement_objections', 'engagement'];
+    const COMP_LABELS = {
+        accroche: 'Accroche',
+        decouverte: 'Découverte',
+        creation_enjeu: "Création d'enjeu",
+        argumentation: 'Argumentation',
+        traitement_objections: 'Objections',
+        engagement: 'Engagement',
+    };
+
+    const RESULT_LABELS = {
+        rdv_obtenu: 'RDV obtenu',
+        mail_envoi: 'Mail à envoyer',
+        rappel_prevu: 'Rappel prévu',
+        echec_poli: 'Échec poli',
+        echec_dur: 'Échec',
+    };
+
+    const RESULT_COLORS = {
+        rdv_obtenu: 'var(--success)',
+        mail_envoi: 'var(--accent-blue)',
+        rappel_prevu: 'var(--warning)',
+        echec_poli: 'var(--warning)',
+        echec_dur: 'var(--danger)',
+    };
+
+    let cardsHtml = '';
+    const comps = ev.competences || {};
+    for (const key of COMP_KEYS) {
+        const label = COMP_LABELS[key];
+        const c = comps[key] || { score: 0, points_forts: [], points_progres: [], conseil: '' };
+        const pct = (c.score / 20 * 100).toFixed(0);
+        const barClass = c.score >= 14 ? 'bar-high' : c.score >= 8 ? 'bar-mid' : 'bar-low';
+        const scoreCol = c.score >= 14 ? 'var(--success)' : c.score >= 8 ? 'var(--warning)' : 'var(--danger)';
+
+        const forts = (c.points_forts || []).map(p => `<div style="margin-bottom:3px;">+ ${escapeHtml(p)}</div>`).join('');
+        const progres = (c.points_progres || []).map(p => `<div style="margin-bottom:3px;">- ${escapeHtml(p)}</div>`).join('');
+
+        cardsHtml += `
+            <div class="eval-card">
+                <div class="eval-card-head">
+                    <div class="eval-card-title">${escapeHtml(label)}</div>
+                    <div class="eval-card-score" style="color:${scoreCol}">${c.score}/20</div>
+                </div>
+                <div class="eval-bar"><div class="eval-bar-fill ${barClass}" style="width:${pct}%"></div></div>
+                ${forts ? `<div class="eval-section"><div class="eval-section-label">Points forts</div><div class="eval-section-content" style="color:var(--success)">${forts}</div></div>` : ''}
+                ${progres ? `<div class="eval-section"><div class="eval-section-label">Points de progrès</div><div class="eval-section-content" style="color:var(--warning)">${progres}</div></div>` : ''}
+                ${c.conseil ? `<div class="eval-conseil">${escapeHtml(c.conseil)}</div>` : ''}
+            </div>`;
+    }
+
+    const resultColor = RESULT_COLORS[ev.resultat_appel] || 'var(--text-secondary)';
+
+    container.innerHTML = `
+        <div class="eval-score-hero">
+            <div class="eval-score-number" style="color:${scoreColor}">${ev.score_global}<span class="eval-score-max">/20</span></div>
+            <div class="eval-grade ${gradeClass}">${ev.note_lettre || '?'}</div>
+            <div class="eval-result-tag" style="color:${resultColor};font-weight:600;">${escapeHtml(RESULT_LABELS[ev.resultat_appel] || ev.resultat_appel || '')}</div>
+        </div>
+        <div style="display:flex;justify-content:center;margin-bottom:32px;">
+            <canvas id="radar-chart" width="340" height="340"></canvas>
+        </div>
+        <div class="eval-grid">${cardsHtml}</div>
+        <div class="eval-synthese">
+            <div class="eval-synthese-title">Synthèse</div>
+            <div class="eval-synthese-text">${escapeHtml(ev.synthese || '')}</div>
+        </div>
+        <div class="eval-priority">
+            <div class="eval-priority-label">Conseil prioritaire</div>
+            <div class="eval-priority-text">${escapeHtml(ev.conseil_prioritaire || '')}</div>
+        </div>
+    `;
+
+    drawRadarChart(ev.competences || {});
+}
+
+function drawRadarChart(competences) {
+    const canvas = document.getElementById('radar-chart');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = 340 * dpr;
+    canvas.height = 340 * dpr;
+    canvas.style.width = '340px';
+    canvas.style.height = '340px';
+    ctx.scale(dpr, dpr);
+
+    const cx = 170, cy = 170, maxR = 130;
+    const labels = ['Accroche', 'Découverte', "Création\nd'enjeu", 'Argumentation', 'Objections', 'Engagement'];
+    const keys = ['accroche', 'decouverte', 'creation_enjeu', 'argumentation', 'traitement_objections', 'engagement'];
+    const n = 6;
+    const scores = keys.map(k => (competences[k] || {}).score || 0);
+
+    ctx.strokeStyle = 'rgba(35,35,54,0.6)';
+    ctx.lineWidth = 1;
+    for (let ring = 1; ring <= 4; ring++) {
+        const r = (ring / 4) * maxR;
+        ctx.beginPath();
+        for (let i = 0; i <= n; i++) {
+            const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+            const x = cx + r * Math.cos(angle);
+            const y = cy + r * Math.sin(angle);
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.stroke();
+    }
+
+    ctx.strokeStyle = 'rgba(35,35,54,0.4)';
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(cx + maxR * Math.cos(angle), cy + maxR * Math.sin(angle));
+        ctx.stroke();
+    }
+
+    ctx.beginPath();
+    for (let i = 0; i <= n; i++) {
+        const idx = i % n;
+        const angle = (Math.PI * 2 * idx / n) - Math.PI / 2;
+        const r = (scores[idx] / 20) * maxR;
+        const x = cx + r * Math.cos(angle);
+        const y = cy + r * Math.sin(angle);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(255,107,53,0.15)';
+    ctx.fill();
+    ctx.strokeStyle = '#ff6b35';
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        const r = (scores[i] / 20) * maxR;
+        const x = cx + r * Math.cos(angle);
+        const y = cy + r * Math.sin(angle);
+        ctx.beginPath();
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
+        const dotColor = scores[i] >= 14 ? '#22c55e' : scores[i] >= 8 ? '#f59e0b' : '#ef4444';
+        ctx.fillStyle = dotColor;
+        ctx.fill();
+        ctx.strokeStyle = '#08080d';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+    }
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#7c7c9a';
+    ctx.font = '11px Outfit, sans-serif';
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        const lr = maxR + 22;
+        let x = cx + lr * Math.cos(angle);
+        let y = cy + lr * Math.sin(angle);
+        const lines = labels[i].split('\n');
+        lines.forEach((line, li) => {
+            ctx.fillText(line, x, y + (li - (lines.length - 1) / 2) * 13);
+        });
+        ctx.fillStyle = scores[i] >= 14 ? '#22c55e' : scores[i] >= 8 ? '#f59e0b' : '#ef4444';
+        ctx.font = 'bold 11px JetBrains Mono, monospace';
+        ctx.fillText(scores[i] + '/20', x, y + lines.length * 13);
+        ctx.fillStyle = '#7c7c9a';
+        ctx.font = '11px Outfit, sans-serif';
+    }
+}
+
+function restartDemo() {
+    // Check if sessions remaining
+    if (demoInfo && demoInfo.sessions_used >= demoInfo.sessions_max) {
+        alert('Toutes les sessions ont été utilisées.');
+        return;
+    }
+    // Reload to refresh state
+    window.location.reload();
+}
+
+// === BOOT ===
+document.addEventListener('DOMContentLoaded', initDemo);
+</script>
+</body>
+</html>

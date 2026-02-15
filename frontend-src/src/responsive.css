@@ -1,0 +1,245 @@
+/* ============================================
+   VENDMIEUX — RESPONSIVE GLOBAL STYLES
+   ============================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  background: #0C0E13; 
+  color: #E8E6E1; 
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; }
+img { max-width: 100%; }
+
+/* Animations */
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+@keyframes toastSlideUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+/* ============================================
+   NAV — MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-nav {
+    padding: 12px 16px !important;
+  }
+  .vm-nav-links {
+    display: none !important;
+  }
+  .vm-nav-mobile {
+    display: flex !important;
+  }
+  .vm-nav .vm-cta-btn {
+    padding: 7px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .vm-nav-mobile {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   GRIDS — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-grid-4 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .vm-grid-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-grid-compare {
+    grid-template-columns: 120px 1fr 1fr !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .vm-grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-grid-compare {
+    grid-template-columns: 90px 1fr 1fr !important;
+    font-size: 10px !important;
+  }
+}
+
+/* ============================================
+   TYPOGRAPHY — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-h1 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+  }
+  .vm-h1 br { display: none; }
+  .vm-h2 {
+    font-size: 22px !important;
+  }
+  .vm-subtitle {
+    font-size: 14px !important;
+  }
+  .vm-score-big {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .vm-h1 {
+    font-size: 22px !important;
+  }
+  .vm-h2 {
+    font-size: 20px !important;
+  }
+}
+
+/* ============================================
+   SECTIONS — RESPONSIVE PADDING
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-section {
+    padding: 40px 16px !important;
+  }
+  .vm-hero {
+    padding: 40px 16px 24px !important;
+  }
+  .vm-container {
+    padding: 0 16px !important;
+  }
+}
+
+/* ============================================
+   CARDS — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-card-horizontal {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-card-horizontal-reverse {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================
+   BUTTONS — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-btn-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .vm-btn-row > * {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* ============================================
+   FILTERS (Scenarios) — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-filter-tags {
+    max-height: 80px;
+    overflow-y: auto;
+  }
+}
+
+/* ============================================
+   PRICING CARDS — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-pricing-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ============================================
+   FOOTER — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-footer-grid {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .vm-footer-links {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+}
+
+/* ============================================
+   ONBOARDING STEPS — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-steps-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .vm-step-connector {
+    width: 2px !important;
+    height: 24px !important;
+  }
+}
+
+/* ============================================
+   CONTACT PAGE — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-contact-form-row {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-contact-iframe {
+    height: 500px !important;
+  }
+}
+
+/* ============================================
+   THEME TOAST — RESPONSIVE
+   ============================================ */
+@media (max-width: 480px) {
+  .vm-theme-toast {
+    bottom: 12px !important;
+    right: 12px !important;
+    left: 12px !important;
+    max-width: none !important;
+  }
+}
+
+/* ============================================
+   DASHBOARD — RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .vm-dash-kpi-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .vm-dash-main-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 480px) {
+  .vm-dash-kpi-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ============================================
+   SCROLL UTILITY
+   ============================================ */
+.vm-hide-scrollbar::-webkit-scrollbar { display: none; }
+.vm-hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
