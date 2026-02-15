@@ -107,6 +107,13 @@ def _load_scenario(scenario_id: str) -> dict:
         return json.load(f)
 
 
+# --- Health check ---
+
+@app.get("/api/health")
+async def health():
+    return {"status": "ok", "service": "vendmieux-api"}
+
+
 # --- Existing endpoints ---
 
 @app.get("/")
@@ -840,6 +847,11 @@ _SPA_NO_CACHE = {"Cache-Control": "no-cache, no-store, must-revalidate"}
 @app.get("/dashboard")
 async def spa_page():
     return FileResponse(STATIC_DIR / "index.html", headers=_SPA_NO_CACHE)
+
+
+@app.get("/demo.html")
+async def serve_demo_html():
+    return FileResponse(STATIC_DIR / "demo.html")
 
 
 # Static files must be mounted LAST (catch-all)

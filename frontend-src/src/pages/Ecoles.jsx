@@ -69,7 +69,7 @@ function Solution(){
       </div>
       <div style={ { display:"flex",flexDirection:"column",gap:20 } }>
         { pillars.map((p,i)=>(
-          <div key={ i } style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,padding:"28px 28px",className:"vm-grid-sidebar",display:"grid",gridTemplateColumns:"1fr 280px",gap:24,alignItems:"center" } }>
+          <div key={ i } className="vm-grid-sidebar" style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,padding:"28px 28px",display:"grid",gridTemplateColumns:"1fr 280px",gap:24,alignItems:"center" } }>
             <div>
               <div style={ { display:"flex",alignItems:"center",gap:12,marginBottom:14 } }>
                 <span style={ { fontSize:24 } }>{ p.icon }</span>
@@ -216,16 +216,16 @@ function Comparison(){
         <h2 className="vm-h2" style={ { fontSize:28,fontWeight:300,margin:0 } }>Ce qui change <span style={ { fontWeight:700,color:C.ac } }>concrètement</span></h2>
       </div>
       <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,overflow:"hidden" } }>
-        <div className="vm-grid-compare" style={ { display:"grid",gridTemplateColumns:"200px 1fr 1fr",borderBottom:`1px solid ${ C.bd }` } }>
+        <div className="vm-grid-compare vm-compare-header" style={ { display:"grid",gridTemplateColumns:"200px 1fr 1fr",borderBottom:`1px solid ${ C.bd }` } }>
           <div style={ { padding:"12px 18px" } }/>
           <div style={ { padding:"12px 18px",fontSize:11,fontWeight:700,letterSpacing:0.8,textTransform:"uppercase",color:C.dn } }>Jeux de rôle classiques</div>
           <div style={ { padding:"12px 18px",fontSize:11,fontWeight:700,letterSpacing:0.8,textTransform:"uppercase",color:C.ok,background:C.okD } }>Avec VendMieux</div>
         </div>
         { rows.map((r,i)=>(
-          <div key={ i } className="vm-grid-compare" style={ { display:"grid",gridTemplateColumns:"200px 1fr 1fr",borderBottom:i<rows.length-1?`1px solid ${ C.bd }10`:"none" } }>
+          <div key={ i } className="vm-grid-compare vm-compare-row" style={ { display:"grid",gridTemplateColumns:"200px 1fr 1fr",borderBottom:i<rows.length-1?`1px solid ${ C.bd }10`:"none" } }>
             <div style={ { padding:"10px 18px",fontSize:12,fontWeight:600 } }>{ r.feature }</div>
-            <div style={ { padding:"10px 18px",fontSize:12,color:C.dm } }>{ r.old }</div>
-            <div style={ { padding:"10px 18px",fontSize:12,color:C.ok,fontWeight:500,background:"rgba(61,176,107,0.03)" } }>{ r.nw }</div>
+            <div className="vm-compare-old" style={ { padding:"10px 18px",fontSize:12,color:C.dm } }><span className="vm-compare-label" style={ { display:"none" } }>Avant : </span>{ r.old }</div>
+            <div className="vm-compare-new" style={ { padding:"10px 18px",fontSize:12,color:C.ok,fontWeight:500,background:"rgba(61,176,107,0.03)" } }><span className="vm-compare-label" style={ { display:"none" } }>VendMieux : </span>{ r.nw }</div>
           </div>
         )) }
       </div>

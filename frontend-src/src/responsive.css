@@ -69,8 +69,28 @@ img { max-width: 100%; }
     grid-template-columns: 1fr !important;
   }
   .vm-grid-compare {
-    grid-template-columns: 90px 1fr 1fr !important;
-    font-size: 10px !important;
+    grid-template-columns: 1fr !important;
+    font-size: 12px !important;
+  }
+  .vm-grid-compare > div {
+    padding: 8px 16px !important;
+  }
+  .vm-compare-header {
+    display: none !important;
+  }
+  .vm-compare-row {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  }
+  .vm-compare-row > div {
+    padding: 3px 0 !important;
+  }
+  .vm-compare-label {
+    display: inline !important;
+    font-weight: 600;
+    opacity: 0.6;
   }
 }
 
