@@ -132,13 +132,18 @@ export function Footer(){
             {[{l:"Comment ça marche",to:"/produit"},{l:"Tarifs",to:"/tarifs"},{l:"Scénarios",to:"/scenarios"},{l:"Écoles",to:"/ecoles"}].map(x=><Link key={x.to} to={x.to} style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>{x.l}</Link>)}
           </div>
           <div>
+            <div style={{fontSize:10,fontWeight:700,letterSpacing:1,color:c.mt,textTransform:"uppercase",marginBottom:12}}>Nos marques</div>
+            <a href="https://www.cap-performances.fr" target="_blank" rel="noopener noreferrer" style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>Cap Performances</a>
+            <a href="https://www.cap-numerik.fr" target="_blank" rel="noopener noreferrer" style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>Cap Numerik</a>
+          </div>
+          <div>
             <div style={{fontSize:10,fontWeight:700,letterSpacing:1,color:c.mt,textTransform:"uppercase",marginBottom:12}}>Ressources</div>
             {[{l:"Contact",to:"/contact"},{l:"Mentions légales",to:"/mentions-legales"},{l:"Confidentialité",to:"/confidentialite"}].map(x=><Link key={x.l} to={x.to} style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>{x.l}</Link>)}
           </div>
         </div>
       </div>
       <div style={{borderTop:`1px solid ${c.bd}`,marginTop:24,paddingTop:20,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
-        <span style={{fontSize:11,color:c.dm}}>© 2026 VendMieux — SASU INNOVABUY (Cap Performances)</span>
+        <span style={{fontSize:11,color:c.dm}}>© 2026 VendMieux — SASU INNOVABUY</span>
         <span style={{fontSize:11,color:c.dm}}>Hébergé en France 🇫🇷</span>
       </div>
     </div>
