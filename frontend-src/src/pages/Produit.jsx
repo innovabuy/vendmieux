@@ -404,7 +404,6 @@ function FinalCTA(){
 export default function Produit(){
   const C = useColors(); return(
     <div style={ { minHeight:"100vh",background:C.bg,color:C.tx,fontFamily:"'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif",overflowX:"hidden" } }>
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
       <Nav active="Produit"/>
       <ProductHero/>
       <StepDetail num="01" color={ C.bl } colorD={ C.blD } title="Briefing" subtitle="Préparez votre appel en 30 secondes" 

@@ -156,7 +156,6 @@ export default function Dashboard(){
 
   return(
     <div style={ { minHeight:"100vh",background:C.bg,color:C.tx,fontFamily:"'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif",overflowX:"hidden" } }>
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 
       { /* NAV */ }
       <div style={ { display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 20px",borderBottom:`1px solid ${ C.bd }`,background:`${ C.bg }E0`,backdropFilter:"blur(12px)",position:"sticky",top:0,zIndex:100 } }>

@@ -188,20 +188,25 @@ function Temoignage(){
 function DevisForm(){
   const C=useColors();
   const formRef=useRef(null);
-  const [form,setForm]=useState({nom:"",prenom:"",email:"",telephone:"",etablissement:"",type:"",nb_apprenants:"",message:""});
+  const [form,setForm]=useState({nom:"",prenom:"",email:"",telephone:"",etablissement:"",type:"",nb_apprenants:"",message:"",website:""});
   const [sent,setSent]=useState(false);
+  const [error,setError]=useState("");
+  const [sending,setSending]=useState(false);
 
   const inputStyle={width:"100%",padding:"12px 14px",borderRadius:8,border:`1px solid #353A48`,background:"#1A1E28",color:C.tx,fontSize:13,fontFamily:"inherit",outline:"none"};
   const labelStyle={fontSize:12,fontWeight:600,color:C.mt,marginBottom:6,display:"block"};
 
-  const handleSubmit=(e)=>{
+  const handleSubmit=async(e)=>{
     e.preventDefault();
-    const subject=encodeURIComponent(`Demande de devis école — ${form.etablissement}`);
-    const body=encodeURIComponent(
-      `Nom : ${form.nom}\nPrénom : ${form.prenom}\nEmail : ${form.email}\nTéléphone : ${form.telephone}\nÉtablissement : ${form.etablissement}\nType : ${form.type}\nNombre d'apprenants : ${form.nb_apprenants}\n\nMessage :\n${form.message}`
-    );
-    window.location.href=`mailto:jeff@cap-performances.fr?subject=${subject}&body=${body}`;
-    setSent(true);
+    setError("");
+    setSending(true);
+    try {
+      const res=await fetch("/api/contact-ecole",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(form)});
+      if(res.status===429){setError("Trop de demandes. Réessayez dans quelques instants.");setSending(false);return;}
+      if(!res.ok){setError("Erreur lors de l'envoi. Réessayez.");setSending(false);return;}
+      setSent(true);
+    } catch { setError("Erreur réseau. Réessayez."); }
+    setSending(false);
   };
 
   const update=(k,v)=>setForm(f=>({...f,[k]:v}));
@@ -214,9 +219,9 @@ function DevisForm(){
       </div>
       {sent?(
         <div style={{background:C.bgC,border:`1px solid ${C.bd}`,borderRadius:16,padding:"32px 24px",textAlign:"center"}}>
-          <div style={{fontSize:36,marginBottom:12}}>✉️</div>
-          <h3 style={{fontSize:18,fontWeight:600,marginBottom:8}}>Votre client email va s'ouvrir</h3>
-          <p style={{fontSize:13,color:C.mt,lineHeight:1.6}}>Envoyez le mail pré-rempli à jeff@cap-performances.fr.<br/>Réponse garantie sous 24h ouvrées.</p>
+          <div style={{fontSize:36,marginBottom:12}}>✅</div>
+          <h3 style={{fontSize:18,fontWeight:600,marginBottom:8}}>Demande envoyée</h3>
+          <p style={{fontSize:13,color:C.mt,lineHeight:1.6}}>Nous avons bien reçu votre demande de devis.<br/>Réponse garantie sous 24h ouvrées.</p>
         </div>
       ):(
         <form onSubmit={handleSubmit} style={{background:C.bgC,border:`1px solid ${C.bd}`,borderRadius:16,padding:"28px 24px"}}>
@@ -271,8 +276,10 @@ function DevisForm(){
             <label style={labelStyle}>Message</label>
             <textarea value={form.message} onChange={e=>update("message",e.target.value)} placeholder="Décrivez vos besoins ou posez vos questions" rows={3} style={{...inputStyle,resize:"vertical"}}/>
           </div>
-          <button type="submit" style={{width:"100%",padding:"14px 20px",background:`linear-gradient(135deg,${C.ac},${C.acL})`,border:"none",borderRadius:10,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)"}}>
-            Recevoir mon devis sous 24h
+          <input type="text" name="website" value={form.website} onChange={e=>update("website",e.target.value)} style={{position:"absolute",left:"-9999px",opacity:0}} tabIndex={-1} autoComplete="off"/>
+          {error&&<div style={{padding:"10px 14px",background:"rgba(212,90,90,0.1)",border:"1px solid rgba(212,90,90,0.2)",borderRadius:8,marginBottom:14,fontSize:13,color:C.dn}}>{error}</div>}
+          <button type="submit" disabled={sending} style={{width:"100%",padding:"14px 20px",background:`linear-gradient(135deg,${C.ac},${C.acL})`,border:"none",borderRadius:10,color:"#fff",fontSize:15,fontWeight:600,cursor:sending?"wait":"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)",opacity:sending?0.7:1}}>
+            {sending?"Envoi en cours...":"Recevoir mon devis sous 24h"}
           </button>
           <p style={{fontSize:12,color:C.dm,textAlign:"center",marginTop:12,lineHeight:1.5}}>
             Réponse garantie sous 24h ouvrées. Devis personnalisé. Sans engagement.

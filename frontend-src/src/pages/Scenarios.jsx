@@ -248,7 +248,6 @@ export default function Scenarios(){
 
   return(
     <div style={ { minHeight:"100vh",background:C.bg,color:C.tx,fontFamily:"'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif",overflowX:"hidden" } }>
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
       <Nav active="Scénarios"/>
 
       { /* Hero */ }

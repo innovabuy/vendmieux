@@ -26,11 +26,11 @@ export function WaveformAnim(){
   const [f,setF]=useState(0);
   useEffect(()=>{const id=setInterval(()=>setF(v=>v+1),60);return()=>clearInterval(id);},[]);
   return(
-    <div style={{display:"flex",alignItems:"center",gap:2,height:40}}>
+    <div style={{display:"flex",alignItems:"flex-end",gap:2,height:40}}>
       {Array.from({length:32}).map((_,i)=>{
         const n=Math.sin(f*0.08+i*0.5)*0.5+Math.sin(f*0.04+i*0.8)*0.3+0.4;
-        const h=Math.max(4,Math.abs(n)*40);
-        return <div key={i} style={{width:3,height:h,borderRadius:2,background:c.ac,opacity:0.5+Math.abs(n)*0.5,transition:"height 0.1s"}}/>
+        const scale=Math.max(0.1,Math.abs(n));
+        return <div key={i} style={{width:3,height:40,borderRadius:2,background:c.ac,opacity:0.5+Math.abs(n)*0.5,transform:`scaleY(${scale})`,transformOrigin:"bottom",willChange:"transform"}}/>
       })}
     </div>
   );
@@ -75,7 +75,7 @@ export function Nav({active=""}){
   ];
   return(
     <>
-      <div className="vm-nav" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 24px",borderBottom:`1px solid ${c.bd}`,background:`${c.bg}E0`,backdropFilter:"blur(12px)",position:"sticky",top:0,zIndex:100,transition:"background 0.3s"}}>
+      <nav aria-label="Navigation principale" className="vm-nav" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 24px",borderBottom:`1px solid ${c.bd}`,background:`${c.bg}E0`,backdropFilter:"blur(12px)",position:"sticky",top:0,zIndex:100,transition:"background 0.3s"}}>
         <Link to="/" style={{display:"flex",alignItems:"center",gap:10,textDecoration:"none",color:c.tx}}>
           <div style={{width:32,height:32,borderRadius:8,background:`linear-gradient(135deg,${c.ac},${c.acL})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:14,fontWeight:800,color:"#fff"}}>V</div>
           <span style={{fontSize:16,fontWeight:600,letterSpacing:-0.3}}>Vend<span style={{color:c.ac}}>Mieux</span></span>
@@ -91,13 +91,13 @@ export function Nav({active=""}){
         {/* Mobile burger */}
         <div className="vm-nav-mobile" style={{display:"none",alignItems:"center",gap:10}}>
           <ThemeToggle/>
-          <button onClick={()=>setMenuOpen(!menuOpen)} style={{width:36,height:36,borderRadius:8,border:`1px solid ${c.bd}`,background:c.bgE,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",flexDirection:"column",gap:4,padding:8}}>
+          <button onClick={()=>setMenuOpen(!menuOpen)} aria-label="Ouvrir le menu de navigation" aria-expanded={menuOpen} style={{width:36,height:36,borderRadius:8,border:`1px solid ${c.bd}`,background:c.bgE,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",flexDirection:"column",gap:4,padding:8}}>
             <div style={{width:16,height:2,background:c.tx,borderRadius:1,transition:"all 0.2s",transform:menuOpen?"rotate(45deg) translateY(3px)":"none"}}/>
             <div style={{width:16,height:2,background:c.tx,borderRadius:1,transition:"all 0.2s",opacity:menuOpen?0:1}}/>
             <div style={{width:16,height:2,background:c.tx,borderRadius:1,transition:"all 0.2s",transform:menuOpen?"rotate(-45deg) translateY(-3px)":"none"}}/>
           </button>
         </div>
-      </div>
+      </nav>
       {/* Mobile menu dropdown */}
       {menuOpen&&(
         <div style={{position:"fixed",top:60,left:0,right:0,bottom:0,background:`${c.bg}F5`,backdropFilter:"blur(16px)",zIndex:99,padding:"24px",display:"flex",flexDirection:"column",gap:4}}>
@@ -116,7 +116,7 @@ export function Nav({active=""}){
 export function Footer(){
   const c=useColors();
   return(
-    <div style={{borderTop:`1px solid ${c.bd}`,padding:"32px 24px",maxWidth:1100,margin:"0 auto"}}>
+    <footer style={{borderTop:`1px solid ${c.bd}`,padding:"32px 24px",maxWidth:1100,margin:"0 auto"}}>
       <div className="vm-footer-grid" style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",flexWrap:"wrap",gap:32}}>
         <div>
           <Link to="/" style={{display:"flex",alignItems:"center",gap:10,marginBottom:12,textDecoration:"none",color:c.tx}}>
@@ -146,6 +146,6 @@ export function Footer(){
         <span style={{fontSize:11,color:c.dm}}>© 2026 VendMieux — SASU INNOVABUY</span>
         <span style={{fontSize:11,color:c.dm}}>Hébergé en France 🇫🇷</span>
       </div>
-    </div>
+    </footer>
   );
 }

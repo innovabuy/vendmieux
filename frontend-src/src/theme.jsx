@@ -4,7 +4,7 @@ const ThemeContext = createContext();
 
 export const darkColors = {
   bg:"#0C0E13",bgC:"#14171E",bgE:"#1C2029",
-  bd:"#2A2E3A",tx:"#E8E6E1",mt:"#8B8D95",dm:"#5C5E66",
+  bd:"#2A2E3A",tx:"#E8E6E1",mt:"#8B8D95",dm:"#84868E",
   ac:"#D4854A",acL:"#E89B5E",acD:"rgba(212,133,74,0.15)",
   ok:"#3DB06B",okD:"rgba(61,176,107,0.15)",
   bl:"#4A7FD4",blD:"rgba(74,127,212,0.12)",

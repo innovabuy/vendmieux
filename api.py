@@ -20,7 +20,7 @@ from pathlib import Path
 
 import anthropic
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, HTMLResponse
@@ -46,11 +46,53 @@ app = FastAPI(title="VendMieux API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://vendmieux.fr"],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
+
+
+# --- Security + Cache headers middleware ---
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request as StarletteRequest
+
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: StarletteRequest, call_next):
+        response = await call_next(request)
+        # Security headers
+        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+        response.headers["X-Frame-Options"] = "SAMEORIGIN"
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        response.headers["Cross-Origin-Opener-Policy"] = "same-origin"
+        response.headers["Permissions-Policy"] = "geolocation=()"
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'self'; "
+            "script-src 'self' 'unsafe-inline'; "
+            "style-src 'self' 'unsafe-inline'; "
+            "font-src 'self' data:; "
+            "img-src 'self' data:; "
+            "connect-src 'self' https://vendmieux.fr wss://*.livekit.cloud; "
+            "media-src 'self' blob:; "
+            "worker-src 'self' blob:"
+        )
+        # Cache: immutable for hashed assets, short for HTML
+        path = request.url.path
+        if path.startswith("/assets/"):
+            response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+        return response
+
+app.add_middleware(SecurityHeadersMiddleware)
+
+# --- Rate limiting ---
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 SCENARIOS_DIR = Path(__file__).parent / "scenarios"
 SCENARIOS_DIR.mkdir(exist_ok=True)
@@ -1130,6 +1172,54 @@ async def admin_article_edit():
 async def serve_favicon():
     return FileResponse(STATIC_DIR / "favicon.svg", media_type="image/svg+xml",
                         headers={"Cache-Control": "public, max-age=31536000, immutable"})
+
+
+# --- Contact école endpoint ---
+
+class ContactEcoleRequest(BaseModel):
+    nom: str
+    prenom: str
+    email: str
+    telephone: str = ""
+    etablissement: str
+    type: str
+    nb_apprenants: str
+    message: str = ""
+    website: str = ""  # honeypot
+
+@app.post("/api/contact-ecole")
+@limiter.limit("3/minute")
+async def contact_ecole(request: Request, data: ContactEcoleRequest):
+    # Anti-bot: honeypot field
+    if data.website:
+        return {"status": "ok"}
+    # Validate required fields
+    if not data.nom or not data.prenom or not data.email or not data.etablissement or not data.type or not data.nb_apprenants:
+        raise HTTPException(status_code=422, detail="Champs obligatoires manquants")
+    if len(data.nom) > 100 or len(data.prenom) > 100 or len(data.email) > 200:
+        raise HTTPException(status_code=422, detail="Champ trop long")
+    if len(data.message) > 2000:
+        raise HTTPException(status_code=422, detail="Message trop long (max 2000 caractères)")
+    # Store in a simple JSON log
+    log_path = Path(__file__).parent / "contact_ecole_log.json"
+    entry = {
+        "timestamp": datetime.now().isoformat(),
+        "nom": data.nom,
+        "prenom": data.prenom,
+        "email": data.email,
+        "telephone": data.telephone,
+        "etablissement": data.etablissement,
+        "type": data.type,
+        "nb_apprenants": data.nb_apprenants,
+        "message": data.message,
+    }
+    try:
+        existing = json.loads(log_path.read_text()) if log_path.exists() else []
+    except Exception:
+        existing = []
+    existing.append(entry)
+    log_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2))
+    return {"status": "ok", "message": "Demande enregistrée. Réponse sous 24h."}
 
 
 # --- SPA frontend routes (serve index.html for client-side routing) ---
