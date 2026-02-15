@@ -9,6 +9,7 @@ import Produit from "./pages/Produit";
 import Tarifs from "./pages/Tarifs";
 import Scenarios from "./pages/Scenarios";
 import Ecoles from "./pages/Ecoles";
+import EcolesTarifs from "./pages/EcolesTarifs";
 import Contact from "./pages/Contact";
 import MentionsLegales from "./pages/MentionsLegales";
 import Confidentialite from "./pages/Confidentialite";
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/tarifs" element={<Tarifs/>}/>
           <Route path="/scenarios" element={<Scenarios/>}/>
           <Route path="/ecoles" element={<Ecoles/>}/>
+          <Route path="/ecoles-tarifs" element={<EcolesTarifs/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/mentions-legales" element={<MentionsLegales/>}/>
           <Route path="/confidentialite" element={<Confidentialite/>}/>

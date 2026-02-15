@@ -129,6 +129,17 @@ export default function Tarifs(){
         ))}
       </div>
 
+      {/* ÉCOLE CALLOUT */}
+      <div style={{maxWidth:560,margin:"48px auto 0",padding:"0 20px"}}>
+        <div style={{background:C.bgC,border:`1px solid ${C.bd}`,borderRadius:14,padding:"22px 24px",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:16}}>
+          <div>
+            <div style={{fontSize:14,fontWeight:600,marginBottom:4}}>École ou organisme de formation ?</div>
+            <div style={{fontSize:12,color:C.mt}}>Tarifs adaptés à vos volumes et contraintes pédagogiques.</div>
+          </div>
+          <Link to="/ecoles-tarifs" style={{padding:"10px 22px",borderRadius:8,background:C.bgE,border:`1px solid ${C.bd}`,color:C.tx,fontSize:13,fontWeight:600,textDecoration:"none",whiteSpace:"nowrap"}}>Voir les tarifs écoles →</Link>
+        </div>
+      </div>
+
       {/* CTA FINAL */}
       <div style={{textAlign:"center",padding:"56px 20px 72px"}}>
         <h2 style={{fontSize:26,fontWeight:300,marginBottom:10}}>

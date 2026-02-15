@@ -129,7 +129,7 @@ export function Footer(){
         <div className="vm-footer-links" style={{display:"flex",gap:40}}>
           <div>
             <div style={{fontSize:10,fontWeight:700,letterSpacing:1,color:c.mt,textTransform:"uppercase",marginBottom:12}}>Produit</div>
-            {[{l:"Comment ça marche",to:"/produit"},{l:"Tarifs",to:"/tarifs"},{l:"Scénarios",to:"/scenarios"},{l:"Écoles",to:"/ecoles"}].map(x=><Link key={x.to} to={x.to} style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>{x.l}</Link>)}
+            {[{l:"Comment ça marche",to:"/produit"},{l:"Tarifs",to:"/tarifs"},{l:"Tarifs Écoles",to:"/ecoles-tarifs"},{l:"Scénarios",to:"/scenarios"},{l:"Écoles",to:"/ecoles"}].map(x=><Link key={x.to} to={x.to} style={{display:"block",fontSize:12,color:c.dm,textDecoration:"none",marginBottom:8}}>{x.l}</Link>)}
           </div>
           <div>
             <div style={{fontSize:10,fontWeight:700,letterSpacing:1,color:c.mt,textTransform:"uppercase",marginBottom:12}}>Nos marques</div>

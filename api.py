@@ -1138,6 +1138,7 @@ async def serve_favicon():
 @app.get("/tarifs")
 @app.get("/scenarios")
 @app.get("/ecoles")
+@app.get("/ecoles-tarifs")
 @app.get("/contact")
 @app.get("/mentions-legales")
 @app.get("/confidentialite")
