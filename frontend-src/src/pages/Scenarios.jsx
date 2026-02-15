@@ -163,9 +163,9 @@ function ScenarioModal({ s,onClose }){
           </div>
         </div>
 
-        <button onClick={ () => { window.location.href = `/?scenario=${s.id}`; } } style={ { width:"100%",padding:"14px 24px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)" } }>
+        <a href={`/simulation?scenario=${s.id}`} style={ { display:"block",width:"100%",padding:"14px 24px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)",textAlign:"center",textDecoration:"none" } }>
           Lancer cette simulation →
-        </button>
+        </a>
         <div style={ { textAlign:"center",fontSize:11,color:C.dm,marginTop:8 } }>Durée estimée : 5-8 minutes</div>
       </div>
     </div>

@@ -470,6 +470,8 @@
 <script>
 const API = window.location.origin;
 const DEMO_TOKEN = window.location.pathname.split('/demo/')[1];
+const FREE_SCENARIO_ID = new URLSearchParams(window.location.search).get('scenario');
+const IS_FREE_MODE = !!FREE_SCENARIO_ID && !DEMO_TOKEN;
 
 let demoInfo = null;
 let room = null, tmr = null, t0 = null, muted = false;
@@ -497,17 +499,40 @@ function showPanel(id) {
 // === INIT ===
 async function initDemo() {
     try {
-        const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/info');
-        if (!r.ok) {
-            const err = await r.json().catch(() => ({}));
-            throw new Error(err.detail || 'Lien invalide');
-        }
-        demoInfo = await r.json();
+        if (IS_FREE_MODE) {
+            // Free mode: load scenario directly from API
+            const r = await fetch(API + '/api/scenarios/' + encodeURIComponent(FREE_SCENARIO_ID));
+            if (!r.ok) {
+                const err = await r.json().catch(() => ({}));
+                throw new Error(err.detail || 'Scénario introuvable');
+            }
+            const scenario = await r.json();
+            demoInfo = {
+                scenario_id: FREE_SCENARIO_ID,
+                scenario: scenario,
+                difficulty: scenario.metadata ? scenario.metadata.difficulte_defaut || 2 : 2,
+                nom_ecole: null,
+                sessions_used: 0,
+                sessions_max: 999,
+            };
 
-        // Header
-        document.getElementById('d-welcome').textContent = 'Bienvenue ' + demoInfo.nom_ecole;
-        document.getElementById('d-sessions').textContent =
-            'Session ' + (demoInfo.sessions_used + 1) + '/' + demoInfo.sessions_max;
+            // Header
+            const brief = scenario.brief_commercial || {};
+            document.getElementById('d-welcome').textContent = brief.titre || 'Simulation libre';
+            document.getElementById('d-sessions').textContent = 'Mode libre';
+        } else {
+            // Demo token mode (original)
+            const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/info');
+            if (!r.ok) {
+                const err = await r.json().catch(() => ({}));
+                throw new Error(err.detail || 'Lien invalide');
+            }
+            demoInfo = await r.json();
+
+            document.getElementById('d-welcome').textContent = 'Bienvenue ' + demoInfo.nom_ecole;
+            document.getElementById('d-sessions').textContent =
+                'Session ' + (demoInfo.sessions_used + 1) + '/' + demoInfo.sessions_max;
+        }
 
         // Briefing
         renderBriefing(demoInfo.scenario);
@@ -561,20 +586,22 @@ function renderBriefing(data) {
 
 // === LAUNCH SIM ===
 async function launchSim() {
-    // Consume a session
-    try {
-        const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/use', { method: 'POST' });
-        if (!r.ok) {
-            const err = await r.json().catch(() => ({}));
-            alert(err.detail || 'Plus de sessions disponibles');
+    // Consume a demo session (skip in free mode)
+    if (!IS_FREE_MODE) {
+        try {
+            const r = await fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/use', { method: 'POST' });
+            if (!r.ok) {
+                const err = await r.json().catch(() => ({}));
+                alert(err.detail || 'Plus de sessions disponibles');
+                return;
+            }
+            const data = await r.json();
+            document.getElementById('d-sessions').textContent =
+                'Session ' + data.sessions_used + '/' + data.sessions_max;
+        } catch (e) {
+            alert('Erreur : ' + e.message);
             return;
         }
-        const data = await r.json();
-        document.getElementById('d-sessions').textContent =
-            'Session ' + data.sessions_used + '/' + data.sessions_max;
-    } catch (e) {
-        alert('Erreur : ' + e.message);
-        return;
     }
 
     showPanel('call');
@@ -595,7 +622,7 @@ async function startCall() {
             body: JSON.stringify({
                 scenario_id: demoInfo.scenario_id !== '__default__' ? demoInfo.scenario_id : null,
                 difficulty: demoInfo.difficulty,
-                user_name: 'Étudiant'
+                user_name: IS_FREE_MODE ? 'Commercial' : 'Étudiant'
             })
         });
         if (!r.ok) throw new Error('Erreur serveur (token)');
@@ -772,7 +799,7 @@ async function runEvaluation(duration) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                session_id: 'demo-' + DEMO_TOKEN + '-' + Date.now(),
+                session_id: IS_FREE_MODE ? 'free-' + FREE_SCENARIO_ID + '-' + Date.now() : 'demo-' + DEMO_TOKEN + '-' + Date.now(),
                 transcript: transcriptArray,
                 scenario_id: demoInfo.scenario_id,
                 difficulty: demoInfo.difficulty,
@@ -790,17 +817,19 @@ async function runEvaluation(duration) {
         evalResults.classList.remove('hidden');
         renderEvaluation(evaluation);
 
-        // Save demo session
-        fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/save-session', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                duration_s: Math.floor(duration / 1000),
-                transcript: transcriptEntries,
-                evaluation: evaluation,
-                score_global: evaluation.score_global || 0,
-            })
-        }).catch(() => {});
+        // Save demo session (only in demo token mode)
+        if (!IS_FREE_MODE) {
+            fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/save-session', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    duration_s: Math.floor(duration / 1000),
+                    transcript: transcriptEntries,
+                    evaluation: evaluation,
+                    score_global: evaluation.score_global || 0,
+                })
+            }).catch(() => {});
+        }
 
     } catch (e) {
         evalLoading.innerHTML = `<div style="color:var(--danger)">Erreur évaluation : ${escapeHtml(e.message)}</div>`;
@@ -982,10 +1011,12 @@ function drawRadarChart(competences) {
 }
 
 function restartDemo() {
-    // Check if sessions remaining
-    if (demoInfo && demoInfo.sessions_used >= demoInfo.sessions_max) {
-        alert('Toutes les sessions ont été utilisées.');
-        return;
+    if (!IS_FREE_MODE) {
+        // Check if sessions remaining
+        if (demoInfo && demoInfo.sessions_used >= demoInfo.sessions_max) {
+            alert('Toutes les sessions ont été utilisées.');
+            return;
+        }
     }
     // Reload to refresh state
     window.location.reload();

@@ -1151,6 +1151,12 @@ async def serve_demo_html():
     return FileResponse(STATIC_DIR / "demo.html")
 
 
+@app.get("/simulation")
+async def serve_simulation():
+    """Sert demo.html en mode libre (avec ?scenario=ID)."""
+    return FileResponse(STATIC_DIR / "demo.html", headers=_SPA_NO_CACHE)
+
+
 # Static files must be mounted LAST (catch-all)
 app.mount("/assets", StaticFiles(directory=str(STATIC_DIR / "assets")), name="assets")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
