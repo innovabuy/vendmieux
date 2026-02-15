@@ -1,0 +1,69 @@
+{
+  "id": "sc_immobilier_promoteur",
+  "metadata": {"secteur": "Immobilier", "type_simulation": "prospection_telephonique", "difficulte_defaut": 3, "duree_estimee_min": 7, "tags": ["immobilier", "promotion", "DG", "ETI", "CRM", "difficile"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "long", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Promotion immobilière", "taille_entreprise": "35 salariés", "interlocuteur_principal": {"poste": "Directeur Commercial", "niveau_hierarchique": "directeur"}},
+    "offre": {"produit_service": "CRM immobilier avec suivi acquéreur et gestion des lots en temps réel", "proposition_valeur_presumee": "Ne plus perdre de prospects entre le premier contact et la signature du contrat de réservation"},
+    "objectif_formation": "Vendre un CRM à un directeur commercial qui utilise Excel et pense que ça suffit"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent", "nom": "Kervadec", "age": 49, "poste": "Directeur Commercial",
+      "entreprise": {"nom": "Kervadec Promotion", "secteur": "Promotion immobilière résidentielle, Bretagne", "taille": "35 salariés, 4 programmes en cours", "ca_approximatif": "22M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["terrain avant tout", "résistant au changement digital", "relationnel fort"],
+      "motivations_profondes": ["Ne pas perdre les acquéreurs chauds qui signent ailleurs", "Garder la main sur son équipe de 6 commerciaux"],
+      "peurs_freins": ["Que le CRM devienne un outil de flicage", "Que ses commerciaux seniors refusent de l'utiliser"],
+      "rapport_aux_commerciaux": "Directeur commercial lui-même, donc il jauge vite si le vendeur en face est bon ou mauvais.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Frontal, teste immédiatement. 'Vous, vous vendez quoi exactement ?'",
+      "signaux_interet": ["Parle de prospects perdus récemment", "Pose des questions sur l'app mobile", "Demande si d'autres promoteurs bretons utilisent"],
+      "signaux_rejet": ["Dit 'on a Excel ça marche très bien'", "Ironise sur les 'usines à gaz'", "Compare avec un CRM qu'il a rejeté"],
+      "tics_langage": ["Moi mes commerciaux...", "Le terrain c'est pas du digital...", "Concrètement vous faites quoi de différent ?"],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Interrompt au bout de 10 secondes avec une question directe"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "4 programmes en commercialisation. 2 commerciaux gèrent leurs prospects dans leur tête et sur des post-it. Laurent a découvert la semaine dernière qu'un acquéreur chaud est allé signer chez un concurrent parce que personne ne l'avait rappelé en 10 jours.",
+      "priorites_actuelles": ["Vendre les 12 derniers lots du programme Rivage (sinon le banquier s'énerve)", "Recruter un commercial junior"],
+      "experience_avec_offre_similaire": "A testé Salesforce il y a 3 ans, trouvé trop compliqué et trop cher. Ses commerciaux ont arrêté de l'utiliser au bout de 2 mois.",
+      "fournisseur_actuel": "Excel + téléphone + WhatsApp. Pas de CRM.",
+      "budget_disponible": "Pas de budget fléché, mais pourrait débloquer 500-800€/mois si convaincu"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Parler du prospect perdu la semaine dernière (touche un nerf)", "Montrer l'app mobile simple (pas Salesforce)", "Citer un promoteur régional qui utilise"],
+      "ce_qui_ferme_instantanement": ["Comparer à Salesforce", "Parler de 'transformation digitale'", "Ne pas comprendre le métier de promoteur"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "On a Excel, ça marche très bien depuis 15 ans.", "sous_texte": "Résistance au changement, mais le prospect perdu le travaille", "type": "reflexe", "difficulte": 8, "reponse_efficace_indice": "Ne pas attaquer Excel. Demander comment il sait si un acquéreur a été rappelé."},
+      {"moment": "decouverte", "verbatim": "On a essayé Salesforce, mes commerciaux l'ont planté en 2 mois. C'est toujours pareil avec ces trucs.", "sous_texte": "Traumatisme réel. Besoin d'un outil simple, pas d'une usine à gaz.", "type": "sincere", "difficulte": 9, "reponse_efficace_indice": "Salesforce est fait pour des boîtes de 500 personnes. Notre outil est fait pour des équipes de 5-10 commerciaux terrain."},
+      {"moment": "argumentation", "verbatim": "Mes commerciaux ont 50 ans passé, ils ne vont pas utiliser une app.", "sous_texte": "Peur réelle de la résistance interne", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "L'app est aussi simple que WhatsApp. Et s'ils utilisent WhatsApp pour les clients, ils sauront utiliser ça."},
+      {"moment": "closing", "verbatim": "Combien ça coûte ? Parce que Salesforce c'était une fortune.", "sous_texte": "Signal d'intérêt — il compare, donc il considère", "type": "tactique", "difficulte": 5, "reponse_efficace_indice": "5 à 10x moins cher que Salesforce. Donner le prix exact (pas de 'ça dépend')."}
+    ],
+    "objection_finale": {"verbatim": "Mouais. Envoyez-moi un truc à montrer à mes commerciaux, si eux veulent je regarderai.", "condition_declenchement": "Si le commercial n'a pas adressé l'échec Salesforce"},
+    "pattern_escalade": "Excel suffit → échec Salesforce → commerciaux seniors → prix → validation équipe"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "ImmoTrack", "secteur": "CRM immobilier", "description": "Éditeur français de CRM conçu spécifiquement pour les promoteurs immobiliers"},
+    "offre": {"nom": "ImmoTrack", "description": "CRM immobilier simple avec app mobile, suivi acquéreur, gestion des lots en temps réel et alertes de relance automatique. Conçu pour des équipes de 3-15 commerciaux.", "proposition_valeur": "Ne plus perdre de prospects entre le premier contact et la signature", "prix": "69€/mois/utilisateur", "references": ["15 promoteurs bretons et ligériens clients"], "avantages_vs_concurrence": "App mobile aussi simple que WhatsApp, import Excel en 5 min, 5-10x moins cher que Salesforce"},
+    "objectif_appel": {"type": "rdv_physique", "description": "Obtenir un RDV de 30 min sur site pour une démo sur les vrais lots du programme Rivage.", "criteres_succes": ["Obtenir une date", "Montrer l'app mobile"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier contact froid", "infos_connues": "Promoteur breton, 35 salariés, 4 programmes en cours, pas de CRM"}
+  },
+  "brief_commercial": {
+    "titre": "CRM immobilier — Promoteur régional",
+    "vous_etes": "Commercial chez ImmoTrack, éditeur français de CRM conçu spécifiquement pour les promoteurs immobiliers.",
+    "vous_vendez": "Un CRM immobilier simple avec app mobile, suivi acquéreur, gestion des lots en temps réel et alertes de relance automatique. Conçu pour des équipes de 3-15 commerciaux.",
+    "vous_appelez": "Laurent Kervadec, Directeur Commercial de Kervadec Promotion (35 salariés, 4 programmes en cours, Bretagne). Premier contact froid.",
+    "ce_que_vous_savez": ["Un acquéreur chaud est allé signer chez un concurrent parce que personne ne l'avait rappelé", "Gestion actuelle : Excel + post-it + WhatsApp", "A testé Salesforce il y a 3 ans, abandonné en 2 mois (trop compliqué)", "12 lots restants sur le programme Rivage — pression du banquier"],
+    "votre_objectif": "Obtenir un RDV de 30 min sur site pour une démo sur les vrais lots du programme Rivage.",
+    "vos_atouts": ["App mobile aussi simple que WhatsApp", "Prix : 69€/mois/utilisateur (vs 150€+ Salesforce)", "15 promoteurs bretons et ligériens clients", "Import Excel des acquéreurs existants en 5 min"],
+    "conseils": "Laurent est directeur commercial — il jauge votre niveau de vente. Soyez bon. Ne dites jamais 'transformation digitale'. Parlez du prospect perdu. Comparez avec Excel, pas avec Salesforce.",
+    "duree_estimee": "5-8 minutes"
+  }
+}

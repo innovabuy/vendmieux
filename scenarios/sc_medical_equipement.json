@@ -1,0 +1,68 @@
+{
+  "id": "sc_medical_equipement",
+  "metadata": {"secteur": "Santé / Médical", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 5, "tags": ["médical", "cabinet", "médecin", "équipement", "leasing"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "moyen", "temperature_prospect": "tiede"},
+    "cible": {"secteur": "Santé, médecine générale", "taille_entreprise": "Cabinet de groupe, 4 médecins", "interlocuteur_principal": {"poste": "Médecin associé, gérant du SCM", "niveau_hierarchique": "dirigeant"}},
+    "offre": {"produit_service": "Échographe dernière génération avec sonde polyvalente, formation incluse", "proposition_valeur_presumee": "Générer 30-50K€ de revenus supplémentaires par an en réalisant les échographies au cabinet au lieu de déléguer"},
+    "objectif_formation": "Convaincre un médecin de passer de la prescription d'échographies à la réalisation au cabinet"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Isabelle", "nom": "Morin", "age": 48, "poste": "Médecin généraliste, gérante de la SCM",
+      "entreprise": {"nom": "Cabinet Médical des Tilleuls", "secteur": "Médecine générale", "taille": "4 médecins associés + 2 secrétaires", "ca_approximatif": "180K€/an par médecin"}
+    },
+    "psychologie": {
+      "traits_dominants": ["dévouée aux patients", "prudente avec les investissements", "curieuse des nouvelles pratiques"],
+      "motivations_profondes": ["Offrir un meilleur service aux patients (délais d'attente écho = 3 semaines)", "Diversifier les revenus du cabinet"],
+      "peurs_freins": ["Ne pas avoir le temps de se former correctement", "Que les 3 autres associés ne soient pas d'accord"],
+      "rapport_aux_commerciaux": "Respectueuse mais n'a vraiment pas le temps. Le créneau c'est entre 12h et 14h.",
+      "style_communication": "aimable"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Bienveillant mais pressé. Entre deux consultations.",
+      "signaux_interet": ["Demande le programme de formation", "Parle des délais d'attente pour ses patients", "Questionne le financement en leasing"],
+      "signaux_rejet": ["Dit 'il faudrait que les 4 soient d'accord'", "Inquiète du temps de formation", "Parle du coût"],
+      "tics_langage": ["Vous savez, avec nos journées...", "C'est intéressant sur le principe...", "Mes patients attendent..."],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Écoute patiemment mais regarde sa montre"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Délais d'attente pour échographie au centre d'imagerie : 3 semaines. Les patients se plaignent. Un cabinet voisin a commencé à faire des échographies et attire des patients. Formation DPC (Développement Professionnel Continu) éligible.",
+      "priorites_actuelles": ["Recruter un 5ème médecin (difficulté zone sous-dotée)", "Rénover la salle d'attente"],
+      "experience_avec_offre_similaire": "A participé à un congrès où elle a vu une démo d'échographe portable. Intéressée mais n'a pas franchi le pas.",
+      "fournisseur_actuel": "Prescrit les échographies au centre d'imagerie du coin. Pas d'équipement propre.",
+      "budget_disponible": "SCM pourrait financer 800-1200€/mois en leasing si les 4 associés votent oui"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Mentionner le congrès et la démo qu'elle a vue", "Parler de la formation DPC prise en charge", "Citer le cabinet voisin qui fait déjà des échos"],
+      "ce_qui_ferme_instantanement": ["Appeler pendant les consultations (avant 12h ou après 14h)", "Ne pas comprendre que c'est une décision collective (4 associés)", "Minimiser le temps de formation nécessaire"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "C'est intéressant mais on est 4 associés, je ne peux pas décider seule.", "sous_texte": "Vraie contrainte. Mais elle est la gérante, donc l'influenceuse principale.", "type": "sincere", "difficulte": 6, "reponse_efficace_indice": "Proposer de venir présenter aux 4 associés lors d'une réunion de SCM"},
+      {"moment": "decouverte", "verbatim": "Avec nos journées de 10h, quand est-ce qu'on se forme ?", "sous_texte": "Vraie inquiétude temps. La formation doit être compatible avec la pratique.", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "Formation en 2 demi-journées + e-learning + tuteur pendant 3 mois. DPC pris en charge."},
+      {"moment": "argumentation", "verbatim": "Un échographe c'est 25-40K€, c'est beaucoup pour un cabinet de médecine générale.", "sous_texte": "Sensible au prix mais ne connaît pas le modèle économique (actes remboursés)", "type": "sincere", "difficulte": 5, "reponse_efficace_indice": "Calcul : 5 échos/semaine à 56€ = 14 500€/an de revenus supplémentaires. Leasing à 900€/mois, rentable en 8 mois."}
+    ],
+    "objection_finale": {"verbatim": "Envoyez-moi la documentation et le programme de formation, j'en parlerai à la prochaine réunion d'associés.", "condition_declenchement": "Si elle est intéressée mais ne veut pas s'engager seule"},
+    "pattern_escalade": "Décision collective → temps de formation → coût → réunion d'associés"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "MedEquip France", "secteur": "Équipement médical", "description": "Distributeur d'équipements d'imagerie médicale pour cabinets de ville"},
+    "offre": {"nom": "Vscan Air (GE)", "description": "Échographe Vscan Air avec sonde polyvalente, formation DPC incluse (2 demi-journées + e-learning + tuteur 3 mois), leasing à partir de 890€/mois.", "proposition_valeur": "Générer 14 500€/an de revenus supplémentaires avec 5 échos/semaine", "prix": "Leasing à partir de 890€/mois", "references": ["145 cabinets de ville équipés en France"], "avantages_vs_concurrence": "Formation DPC 100% prise en charge, tuteur 3 mois, rentabilisé en 8 mois"},
+    "objectif_appel": {"type": "rdv_presentation", "description": "Obtenir un RDV de présentation lors de la prochaine réunion des 4 associés de la SCM.", "criteres_succes": ["Obtenir une date de réunion SCM", "Confirmer l'intérêt d'Isabelle"]},
+    "contexte_appel": {"type": "rappel_congres", "historique": "A vu une démo lors d'un congrès", "infos_connues": "Cabinet de 4 médecins, délais écho 3 semaines, cabinet voisin fait des échos"}
+  },
+  "brief_commercial": {
+    "titre": "Échographe cabinet — Médecine générale",
+    "vous_etes": "Commercial chez MedEquip France, distributeur d'équipements d'imagerie médicale pour cabinets de ville.",
+    "vous_vendez": "Échographe Vscan Air (GE) avec sonde polyvalente, formation DPC incluse (2 demi-journées + e-learning + tuteur 3 mois), leasing à partir de 890€/mois.",
+    "vous_appelez": "Dr Isabelle Morin, médecin généraliste et gérante de la SCM du Cabinet des Tilleuls (4 médecins associés). Rappel suite au congrès.",
+    "ce_que_vous_savez": ["Elle a vu une démo d'échographe portable lors d'un congrès (intéressée)", "Délais d'attente écho dans sa zone : 3 semaines", "Un cabinet voisin fait déjà des échographies et attire ses patients", "Formation DPC = prise en charge, pas de frais pour le médecin"],
+    "votre_objectif": "Obtenir un RDV de présentation lors de la prochaine réunion des 4 associés de la SCM.",
+    "vos_atouts": ["Formation DPC 100% prise en charge", "Leasing 890€/mois rentabilisé en 8 mois (5 échos/semaine)", "145 cabinets de ville équipés en France", "Tuteur disponible pendant 3 mois post-formation"],
+    "conseils": "Isabelle est bienveillante mais c'est une décision collective. L'objectif n'est PAS de la closer elle, c'est d'obtenir une place à la réunion d'associés. Parlez patients, pas business.",
+    "duree_estimee": "4-6 minutes"
+  }
+}

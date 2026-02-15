@@ -1,0 +1,69 @@
+{
+  "id": "sc_transport_flotte",
+  "metadata": {"secteur": "Transport / Logistique", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 6, "tags": ["transport", "flotte", "télématique", "DG", "PME"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "moyen", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Transport routier de marchandises", "taille_entreprise": "55 salariés", "interlocuteur_principal": {"poste": "Directeur Général", "niveau_hierarchique": "dirigeant"}},
+    "offre": {"produit_service": "Solution de gestion de flotte et télématique avec optimisation des tournées", "proposition_valeur_presumee": "Réduire de 15-20% la consommation de carburant et optimiser les tournées"},
+    "objectif_formation": "Convaincre un transporteur traditionnel que la télématique n'est pas du flicage mais un levier de rentabilité"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick", "nom": "Louvel", "age": 57, "poste": "Directeur Général",
+      "entreprise": {"nom": "Transports Louvel & Fils", "secteur": "Transport routier de marchandises, Grand Ouest", "taille": "55 salariés, 32 véhicules", "ca_approximatif": "6.5M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["patron de terrain", "méfiant envers la technologie", "attaché à ses chauffeurs"],
+      "motivations_profondes": ["Réduire le poste carburant qui plombe sa marge", "Transmettre l'entreprise à son fils dans 5 ans"],
+      "peurs_freins": ["Que les chauffeurs perçoivent la télématique comme du flicage", "Investissement technologique qui ne tient pas ses promesses"],
+      "rapport_aux_commerciaux": "Méfiant envers les commerciaux en costume. Préfère les gens qui connaissent le transport.",
+      "style_communication": "expressif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Bourru mais accessible si on parle transport. Appelle tout le monde 'mon gars'.",
+      "signaux_interet": ["Parle du prix du gazole", "Mentionne les retards de livraison", "Demande si les chauffeurs peuvent voir leurs données"],
+      "signaux_rejet": ["Dit 'mes chauffeurs vont gueuler'", "Parle de Big Brother", "Dit 'j'ai déjà un GPS'"],
+      "tics_langage": ["Mon gars...", "Faut pas pousser...", "Ça c'est du papier, moi je veux du concret", "J'ai vu passer des commerciaux..."],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Interrompt avec une anecdote terrain"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Poste carburant = 38% du CA. Prix du gazole en hausse. 2 clients grands comptes ont demandé un suivi CO2 des livraisons (obligation RSE). Un chauffeur a fait un accrochage le mois dernier, pas de données pour la déclaration assurance. Le fils (30 ans, commercial) pousse pour moderniser.",
+      "priorites_actuelles": ["Répondre à l'appel d'offres Leclerc qui exige du suivi CO2", "Remplacer 3 véhicules vieillissants"],
+      "experience_avec_offre_similaire": "A eu un GPS traceur il y a 5 ans, les chauffeurs l'ont mal pris, ça a créé un conflit social. Retiré au bout de 6 mois.",
+      "fournisseur_actuel": "GPS Garmin standalone dans chaque camion, pas de remontée de données, pas de télématique",
+      "budget_disponible": "Pourrait investir 15-25€/véhicule/mois si retour visible sur le carburant"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Parler de l'obligation RSE/CO2 de ses clients", "Montrer les économies carburant chez un transporteur similaire", "Expliquer que les chauffeurs peuvent voir leurs propres données (pas du flicage)"],
+      "ce_qui_ferme_instantanement": ["Parler de surveillance des chauffeurs", "Ne pas connaître le transport (réglementation, chronotachygraphe)", "Proposer un outil compliqué"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "Si c'est pour fliquer mes chauffeurs, c'est non direct. On a déjà eu le problème.", "sous_texte": "Traumatisme du GPS traceur. C'est le point central à désamorcer.", "type": "sincere", "difficulte": 9, "reponse_efficace_indice": "Ce n'est pas du flicage, c'est de l'aide à la conduite. Les chauffeurs voient LEURS données et s'améliorent eux-mêmes."},
+      {"moment": "decouverte", "verbatim": "J'ai déjà des GPS Garmin dans tous les camions, ça me suffit.", "sous_texte": "Confusion entre GPS navigation et télématique de gestion", "type": "reflexe", "difficulte": 6, "reponse_efficace_indice": "Garmin dit où aller. Nous on dit combien ça coûte et comment économiser."},
+      {"moment": "argumentation", "verbatim": "15-20% d'économie sur le carburant, c'est ce que tout le monde dit. Concrètement j'ai jamais vu ça.", "sous_texte": "Scepticisme nourri par l'expérience. Veut des preuves pas des promesses.", "type": "test", "difficulte": 8, "reponse_efficace_indice": "Citer un cas concret avec chiffres vérifiables. Proposer un pilote sur 5 véhicules pendant 2 mois."},
+      {"moment": "closing", "verbatim": "Faut que j'en parle à mon fils, c'est lui qui gère le côté informatique.", "sous_texte": "Le fils est un allié — il pousse pour moderniser. C'est un signal positif.", "type": "sincere", "difficulte": 4, "reponse_efficace_indice": "Proposer un RDV avec le fils. C'est lui qui va vendre le projet en interne."}
+    ],
+    "objection_finale": {"verbatim": "Écoutez mon gars, envoyez-moi ça par mail, j'en parle à mes chauffeurs au prochain CE.", "condition_declenchement": "Si le commercial n'a pas adressé le traumatisme du GPS traceur"},
+    "pattern_escalade": "Flicage → GPS suffit → promesses non tenues → fils/CE"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "FleetOptim", "secteur": "Gestion de flotte", "description": "Éditeur français de solutions de gestion de flotte et télématique pour PME du transport"},
+    "offre": {"nom": "FleetOptim", "description": "Boîtiers télématiques + plateforme web : suivi conso carburant, optimisation tournées, rapport CO2, aide à la conduite. App chauffeur incluse.", "proposition_valeur": "Réduire de 15-20% la consommation de carburant", "prix": "15-25€/véhicule/mois", "references": ["Transports Kergroas (-18% conso en 4 mois)"], "avantages_vs_concurrence": "App chauffeur (ils voient LEURS données), rapport CO2 RSE, pilote 2 mois gratuit"},
+    "objectif_appel": {"type": "rdv_physique", "description": "Obtenir un RDV de 30 min avec Patrick ET son fils pour une démo et un calcul d'économie personnalisé.", "criteres_succes": ["Obtenir une date avec le fils", "Comprendre la flotte"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier contact froid", "infos_connues": "Transporteur Grand Ouest, 32 véhicules, carburant = 38% CA"}
+  },
+  "brief_commercial": {
+    "titre": "Télématique flotte — Transporteur régional",
+    "vous_etes": "Commercial chez FleetOptim, éditeur français de solutions de gestion de flotte et télématique pour PME du transport.",
+    "vous_vendez": "Boîtiers télématiques + plateforme web : suivi conso carburant, optimisation tournées, rapport CO2, aide à la conduite. App chauffeur incluse.",
+    "vous_appelez": "Patrick Louvel, DG fondateur de Transports Louvel & Fils (55 salariés, 32 véhicules, Grand Ouest). Premier contact froid.",
+    "ce_que_vous_savez": ["Poste carburant = 38% du CA, en hausse", "2 clients grands comptes exigent un suivi CO2 (RSE)", "Accrochage récent sans données pour l'assurance", "Mauvaise expérience avec un GPS traceur il y a 5 ans (conflit social)"],
+    "votre_objectif": "Obtenir un RDV de 30 min avec Patrick ET son fils pour une démo et un calcul d'économie personnalisé.",
+    "vos_atouts": ["App chauffeur (ils voient LEURS données, c'est valorisant)", "Rapport CO2 prêt pour les appels d'offres RSE", "Pilote 2 mois sur 5 véhicules gratuit", "Cas client : Transports Kergroas (-18% conso en 4 mois)"],
+    "conseils": "Patrick est un patron de terrain. Parlez transport, pas technologie. Le traumatisme du GPS traceur est le verrou à ouvrir — l'app chauffeur est la clé. Le fils est votre allié interne.",
+    "duree_estimee": "5-8 minutes"
+  }
+}

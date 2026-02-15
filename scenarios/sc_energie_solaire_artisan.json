@@ -1,0 +1,68 @@
+{
+  "id": "sc_energie_solaire_artisan",
+  "metadata": {"secteur": "Énergie / BTP", "type_simulation": "prospection_telephonique", "difficulte_defaut": 1, "duree_estimee_min": 5, "tags": ["énergie", "solaire", "artisan", "gérant", "TPE", "facile"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "court", "temperature_prospect": "tiede"},
+    "cible": {"secteur": "Artisanat / BTP", "taille_entreprise": "12 salariés", "interlocuteur_principal": {"poste": "Gérant", "niveau_hierarchique": "dirigeant"}},
+    "offre": {"produit_service": "Installation de panneaux solaires en autoconsommation pour bâtiments professionnels", "proposition_valeur_presumee": "Réduire la facture électrique de 40-60% avec un retour sur investissement en 5 ans"},
+    "objectif_formation": "Closer un prospect tiède qui a déjà montré de l'intérêt (demande de devis en ligne) mais n'a pas donné suite"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane", "nom": "Moreau", "age": 45, "poste": "Gérant",
+      "entreprise": {"nom": "Moreau Menuiseries", "secteur": "Menuiserie aluminium et PVC", "taille": "12 salariés", "ca_approximatif": "1.1M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["concret", "bon vivant", "prudent avec l'argent"],
+      "motivations_profondes": ["Réduire ses charges fixes qui augmentent chaque année", "Montrer qu'il est un patron moderne à ses salariés"],
+      "peurs_freins": ["Arnaques photovoltaïques (il a vu des reportages)", "Investir 30K€ dans un truc qui ne marche pas"],
+      "rapport_aux_commerciaux": "Accessible si on est franc et qu'on ne cherche pas à l'embrouiller. Déteste les calculs truqués.",
+      "style_communication": "expressif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Plutôt accueillant — il a fait la demande de devis lui-même. Mais prudent.",
+      "signaux_interet": ["Pose des questions sur la garantie et la durée de vie", "Parle de sa facture EDF", "Demande si des voisins artisans ont fait la même chose"],
+      "signaux_rejet": ["Parle d'arnaques photovoltaïques", "Dit que c'est trop cher", "Reporte à 'la fin de l'année'"],
+      "tics_langage": ["Ah ouais ?", "Non mais concrètement...", "Moi ce que je veux savoir c'est...", "Sans blague ?"],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes si le sujet l'intéresse"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Facture électrique passée de 8K€ à 14K€/an en 3 ans (atelier avec machines, éclairage, chauffage). A fait une demande de devis en ligne il y a 3 semaines mais n'a pas donné suite car il a eu un gros chantier. Toiture de l'atelier orientée plein sud, 200m².",
+      "priorites_actuelles": ["Finir le chantier en cours pour un promoteur", "Recruter un apprenti"],
+      "experience_avec_offre_similaire": "Son beau-frère a fait installer des panneaux chez lui (particulier), content du résultat. Mais il a entendu des histoires d'arnaques dans le professionnel.",
+      "fournisseur_actuel": "EDF tarif bleu pro. Pas de panneaux, pas d'autoconsommation.",
+      "budget_disponible": "Peut investir 25-35K€ si le retour sur investissement est crédible et le financement souple"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Mentionner sa demande de devis (il l'a faite, c'est un signal fort)", "Citer un artisan du coin qui a installé", "Parler du crédit-bail ou du financement sans apport"],
+      "ce_qui_ferme_instantanement": ["Promesses irréalistes ('votre facture à zéro')", "Pression pour signer vite", "Ne pas pouvoir répondre aux questions techniques"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "Ah oui j'avais fait une demande, mais là j'suis sur un gros chantier, c'est pas le moment.", "sous_texte": "Intérêt réel mais pas prioritaire. A besoin qu'on lui simplifie la vie.", "type": "sincere", "difficulte": 4, "reponse_efficace_indice": "Valider le timing et proposer un RDV physique rapide sur son atelier (on vient à lui)"},
+      {"moment": "argumentation", "verbatim": "J'ai vu des reportages sur les arnaques photovoltaïques, comment je sais que c'est pas pareil ?", "sous_texte": "Vraie peur, besoin de rassurance concrète (pas des mots)", "type": "sincere", "difficulte": 6, "reponse_efficace_indice": "RGE, garantie décennale, installateur local, contrat clair, pas de revente surplus obligatoire"},
+      {"moment": "argumentation", "verbatim": "30K€ c'est quand même une sacrée somme. Et si ça produit pas autant que prévu ?", "sous_texte": "Prudent avec l'argent mais pas fermé. Veut être rassuré sur le risque.", "type": "sincere", "difficulte": 5, "reponse_efficace_indice": "Garantie de production, crédit-bail à mensualité inférieure à l'économie, pas d'apport"}
+    ],
+    "objection_finale": {"verbatim": "Bon, envoyez-moi le devis détaillé par mail, j'en parle avec ma femme et mon comptable.", "condition_declenchement": "Quand Stéphane est convaincu mais veut valider avec ses proches"},
+    "pattern_escalade": "Pas le moment → arnaques → prix → validation famille/comptable"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "SolairePro Ouest", "secteur": "Installation photovoltaïque", "description": "Installateur photovoltaïque RGE spécialisé dans les bâtiments professionnels"},
+    "offre": {"nom": "AutoConso Pro", "description": "Installation de panneaux solaires en autoconsommation pour ateliers et locaux pro. Étude gratuite, financement en crédit-bail sans apport, garantie 25 ans.", "proposition_valeur": "Réduire la facture électrique de 40-60%", "prix": "25-35K€ ou crédit-bail sans apport", "references": ["3 menuiseries/ateliers équipés dans le département"], "avantages_vs_concurrence": "RGE QualiPV certifié + garantie décennale, crédit-bail sans apport"},
+    "objectif_appel": {"type": "rdv_physique", "description": "Fixer un RDV sur site de 45 min pour l'étude technique gratuite (mesures toiture + simulation production).", "criteres_succes": ["Obtenir une date de visite", "Confirmer l'intérêt"]},
+    "contexte_appel": {"type": "rappel_devis", "historique": "Demande de devis en ligne il y a 3 semaines", "infos_connues": "Artisan menuisier, 12 salariés, facture EDF en hausse"}
+  },
+  "brief_commercial": {
+    "titre": "Panneaux solaires — Artisan menuisier",
+    "vous_etes": "Commercial chez SolairePro Ouest, installateur photovoltaïque RGE spécialisé dans les bâtiments professionnels.",
+    "vous_vendez": "Installation de panneaux solaires en autoconsommation pour ateliers et locaux pro. Étude gratuite, financement en crédit-bail sans apport, garantie 25 ans.",
+    "vous_appelez": "Stéphane Moreau, gérant de Moreau Menuiseries (12 salariés). Il a fait une demande de devis en ligne il y a 3 semaines — c'est un rappel.",
+    "ce_que_vous_savez": ["Demande de devis en ligne il y a 3 semaines — intérêt confirmé", "Facture EDF passée de 8K€ à 14K€/an en 3 ans", "Toiture atelier orientée plein sud, 200m² disponibles", "Son beau-frère a des panneaux chez lui et est satisfait"],
+    "votre_objectif": "Fixer un RDV sur site de 45 min pour l'étude technique gratuite (mesures toiture + simulation production).",
+    "vos_atouts": ["RGE QualiPV certifié + garantie décennale", "Crédit-bail sans apport à mensualité < économie EDF", "3 menuiseries/ateliers équipés dans le département", "Étude technique et simulation de production gratuite"],
+    "conseils": "Stéphane est accessible et intéressé — il a fait la démarche lui-même. Ne le brusquez pas. Rassurez sur les arnaques (RGE, local, garantie). Facilitez-lui la vie en venant à lui.",
+    "duree_estimee": "4-6 minutes"
+  }
+}

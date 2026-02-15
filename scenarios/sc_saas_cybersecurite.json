@@ -1,0 +1,70 @@
+{
+  "id": "sc_saas_cybersecurite",
+  "metadata": {"secteur": "IT / Cybersécurité", "type_simulation": "prospection_telephonique", "difficulte_defaut": 3, "duree_estimee_min": 7, "tags": ["IT", "cybersécurité", "DSI", "PME", "SaaS", "difficile"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "long", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Industrie pharmaceutique", "taille_entreprise": "150 salariés", "interlocuteur_principal": {"poste": "DSI", "niveau_hierarchique": "directeur"}},
+    "offre": {"produit_service": "SOC managé (Security Operations Center) pour PME et ETI", "proposition_valeur_presumee": "Surveillance 24/7 des systèmes sans recruter d'expert cybersécurité en interne"},
+    "objectif_formation": "Percer la carapace d'un DSI technique qui pense maîtriser la sécurité en interne"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marc", "nom": "Duvernet", "age": 44, "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {"nom": "Pharma Loire Laboratoires", "secteur": "Industrie pharmaceutique, fabrication de compléments alimentaires", "taille": "150 salariés, 2 sites de production", "ca_approximatif": "28M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["technique et fier de l'être", "méfiant envers les commerciaux non-techniques", "perfectionniste"],
+      "motivations_profondes": ["Protéger son périmètre et sa crédibilité de DSI", "Éviter un incident cyber qui serait sa responsabilité"],
+      "peurs_freins": ["Qu'un prestataire externe montre que sa sécurité interne est insuffisante", "Perdre le contrôle sur l'infrastructure"],
+      "rapport_aux_commerciaux": "Teste systématiquement le niveau technique. Si le commercial ne sait pas ce qu'est un SIEM, il raccroche.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid et technique. Pose une question piège dès les premières secondes pour tester.",
+      "signaux_interet": ["Pose des questions d'architecture", "Mentionne des incidents passés", "Demande le modèle de tarification détaillé"],
+      "signaux_rejet": ["Parle en acronymes pour perdre le commercial", "Dit 'on gère en interne'", "Soupire ostensiblement"],
+      "tics_langage": ["Oui mais techniquement...", "Dans notre contexte...", "C'est pas si simple..."],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Interrompt dès qu'il détecte du bullshit technique"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Réglementation pharma impose des audits IT réguliers. Dernier audit a relevé 3 non-conformités mineures en cybersécurité. L'ANSSI a publié des recommandations sectorielles que Marc n'a pas encore toutes implémentées. Équipe IT de 4 personnes, aucun expert sécu dédié.",
+      "priorites_actuelles": ["Corriger les non-conformités avant le prochain audit (4 mois)", "Migrer l'ERP vers le cloud"],
+      "experience_avec_offre_similaire": "A évalué Orange Cyberdéfense il y a 1 an, trouvé trop cher et trop corporate. Utilise un antivirus + firewall + backup, se dit que ça suffit.",
+      "fournisseur_actuel": "Sophos antivirus, Fortinet firewall, backup Veeam. Pas de SOC, pas de SIEM, pas de surveillance 24/7.",
+      "budget_disponible": "Budget IT de 180K€/an, dont 15K€ pour la sécurité. Peut monter à 40K€ si la DG impose après l'audit."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Connaître la réglementation pharma (BPF, annexe 11)", "Parler du rapport d'audit et des non-conformités", "Proposer une évaluation gratuite de surface d'attaque"],
+      "ce_qui_ferme_instantanement": ["Dire 'vous n'êtes pas protégé' — il le prend comme une attaque personnelle", "Ne pas connaître Sophos ou Fortinet", "Jargon marketing sans substance technique"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "On gère la sécurité en interne, on a tout ce qu'il faut.", "sous_texte": "Défense de territoire. Il ne veut pas qu'on remette en cause son travail.", "type": "reflexe", "difficulte": 9, "reponse_efficace_indice": "Ne pas contredire. Demander s'il a une surveillance 24/7 et qui gère les alertes la nuit."},
+      {"moment": "decouverte", "verbatim": "Vous utilisez quoi comme SIEM ? Parce que si c'est du Elastic bidouillé...", "sous_texte": "Test technique. Il veut voir si le commercial connaît son sujet.", "type": "test", "difficulte": 8, "reponse_efficace_indice": "Répondre techniquement et précisément. Mentionner le stack utilisé."},
+      {"moment": "argumentation", "verbatim": "Orange Cyberdéfense m'a proposé la même chose à 80K€ par an, c'est délirant pour notre taille.", "sous_texte": "Déjà prospecté, prix de référence en tête. Veut savoir si on est moins cher.", "type": "tactique", "difficulte": 7, "reponse_efficace_indice": "Expliquer le modèle PME (pas le même scope qu'un SOC grand compte). Donner une fourchette."},
+      {"moment": "argumentation", "verbatim": "Si je mets un prestataire externe sur notre SI, il voit tout. Niveau confidentialité pharma, c'est compliqué.", "sous_texte": "Vraie préoccupation réglementaire + peur de perte de contrôle", "type": "sincere", "difficulte": 8, "reponse_efficace_indice": "Parler de cloisonnement, hébergement souverain, certifications HDS si applicable"},
+      {"moment": "closing", "verbatim": "Je regarde ça avec mon équipe et on revient vers vous si ça nous intéresse.", "sous_texte": "Report poli. Mais aussi besoin réel de consulter son équipe technique.", "type": "tactique", "difficulte": 6, "reponse_efficace_indice": "Proposer un scan de vulnérabilité gratuit en 48h — donne du concret à montrer à l'équipe"}
+    ],
+    "objection_finale": {"verbatim": "Écoutez, envoyez-moi une fiche technique et un devis, je verrai si ça rentre dans le cadre de notre plan de remédiation.", "condition_declenchement": "Si le commercial ne maîtrise pas le vocabulaire technique ou ne connaît pas le contexte réglementaire pharma"},
+    "pattern_escalade": "On gère en interne → test technique → prix trop élevé → confidentialité → report poli"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "CyberShield France", "secteur": "Cybersécurité managée", "description": "Société française spécialisée en cybersécurité managée pour PME et ETI"},
+    "offre": {"nom": "SOC PME 24/7", "description": "SOC managé 24/7 conçu pour les PME : surveillance, détection, réponse aux incidents. Hébergement souverain France.", "proposition_valeur": "Surveillance 24/7 sans recruter d'expert sécu en interne", "prix": "À partir de 2K€/mois", "references": ["3 clients pharma (BPF/annexe 11 compatibles)"], "avantages_vs_concurrence": "3x moins cher qu'Orange, hébergement 100% France, conforme HDS"},
+    "objectif_appel": {"type": "rdv_technique", "description": "Obtenir un RDV technique de 45 min avec Marc et son responsable infra pour un audit de surface d'attaque gratuit.", "criteres_succes": ["Obtenir une date", "Identifier le stack technique"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier contact", "infos_connues": "PME pharma, 150 salariés, non-conformités audit"}
+  },
+  "brief_commercial": {
+    "titre": "SOC managé — Laboratoire pharmaceutique",
+    "vous_etes": "Commercial chez CyberShield France, société française spécialisée en cybersécurité managée pour PME et ETI.",
+    "vous_vendez": "Un SOC managé 24/7 conçu pour les PME : surveillance, détection, réponse aux incidents. Hébergement souverain France. Tarification à partir de 2K€/mois.",
+    "vous_appelez": "Marc Duvernet, DSI de Pharma Loire Laboratoires (150 salariés, 2 sites de production). Premier contact froid.",
+    "ce_que_vous_savez": ["Dernier audit IT a relevé 3 non-conformités cybersécurité", "Équipe IT de 4 personnes sans expert sécu dédié", "Utilise Sophos + Fortinet mais pas de SIEM ni de surveillance 24/7", "A évalué Orange Cyberdéfense il y a 1 an — trop cher"],
+    "votre_objectif": "Obtenir un RDV technique de 45 min avec Marc et son responsable infra pour un audit de surface d'attaque gratuit.",
+    "vos_atouts": ["Scan de vulnérabilité externe gratuit en 48h", "3 clients pharma (BPF/annexe 11 compatibles)", "Prix PME : 3x moins cher qu'Orange", "Hébergement 100% France, conforme HDS"],
+    "conseils": "Marc est technique, parlez son langage. Ne dites JAMAIS qu'il n'est pas protégé — c'est une attaque personnelle. Partez de l'audit et des non-conformités.",
+    "duree_estimee": "6-8 minutes"
+  }
+}

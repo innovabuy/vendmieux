@@ -1,0 +1,158 @@
+{
+  "id": "sc_industrie_maintenance",
+  "metadata": {
+    "secteur": "Industrie",
+    "type_simulation": "prospection_telephonique",
+    "difficulte_defaut": 2,
+    "duree_estimee_min": 6,
+    "tags": ["industrie", "maintenance", "IoT", "DG", "PME"]
+  },
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "Industrie mécanique",
+      "taille_entreprise": "85 salariés",
+      "interlocuteur_principal": { "poste": "Directeur Général", "niveau_hierarchique": "dirigeant" }
+    },
+    "offre": {
+      "produit_service": "Capteurs IoT de maintenance prédictive industrielle",
+      "proposition_valeur_presumee": "Réduction de 60% des arrêts machines non planifiés grâce à la détection précoce des anomalies"
+    },
+    "objectif_formation": "Passer le barrage initial d'un DG industriel méfiant et créer l'urgence autour du coût des pannes"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Olivier",
+      "nom": "Bertrand",
+      "age": 52,
+      "poste": "Directeur Général",
+      "entreprise": {
+        "nom": "Mécapress Rhône-Alpes",
+        "secteur": "Usinage de précision et sous-traitance mécanique",
+        "taille": "85 salariés",
+        "ca_approximatif": "12M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": ["pragmatique", "direct", "méfiant envers les commerciaux"],
+      "motivations_profondes": ["Réduire les coûts de maintenance qui explosent", "Moderniser sans prendre de risque opérationnel"],
+      "peurs_freins": ["Perdre du temps avec un énième vendeur de solutions miracles", "Dépendance technologique envers un fournisseur"],
+      "rapport_aux_commerciaux": "Les tolère uniquement s'ils sont concrets et rapides. Déteste le blabla et les slides PowerPoint.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Neutre-froid, pas hostile mais pas accueillant. Il est entre deux réunions.",
+      "signaux_interet": ["Pose des questions techniques précises", "Mentionne ses propres problèmes de pannes", "Demande des références chez des sous-traitants méca"],
+      "signaux_rejet": ["Soupire", "Répond par monosyllabes", "Dit 'Bon écoutez...'"],
+      "tics_langage": ["Bon...", "Concrètement ?", "Et donc ?", "C'est-à-dire ?"],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Coupe au bout de 15 secondes de monologue"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 arrêts machines non planifiés le mois dernier, coût estimé 45K€. Le responsable maintenance est débordé. Carnet de commandes plein mais marges qui se réduisent à cause des retards.",
+      "priorites_actuelles": ["Livrer les commandes en cours sans retard", "Recruter 2 usineurs"],
+      "experience_avec_offre_similaire": "Un commercial IoT est passé il y a 8 mois, a fait une démo jolie mais n'a jamais rappelé. Olivier en garde un mauvais souvenir.",
+      "fournisseur_actuel": "Maintenance curative classique avec un prestataire local depuis 15 ans (Atelier Méca Services)",
+      "budget_disponible": "Pas de budget fléché innovation, mais pourrait débloquer 20-30K€ si ROI démontré en 6 mois"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Citer un cas concret dans l'usinage/sous-traitance", "Chiffrer le coût de ses pannes mieux que lui", "Proposer un pilote sans engagement sur 2 machines"],
+      "ce_qui_ferme_instantanement": ["Pitch générique 'notre solution révolutionnaire'", "Ne pas connaître son secteur", "Parler d'IA ou de transformation digitale de façon abstraite"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai pas le temps là, envoyez-moi un mail.",
+        "sous_texte": "Filtrage automatique, il teste si le commercial abandonne facilement",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Accepter le mail mais ancrer un élément chiffré qui crée la curiosité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà quelqu'un pour la maintenance, ça fait 15 ans qu'on bosse ensemble.",
+        "sous_texte": "Fidélité au prestataire actuel, mais aussi aveu que le modèle est ancien",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas attaquer le prestataire, demander si le préventif est en place ou si c'est du curatif"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ces nouvelles technos, c'est jamais aussi simple qu'on nous le vend. Mes gars ne sont pas informaticiens.",
+        "sous_texte": "Peur du changement et de la complexité, mauvaise expérience passée avec le commercial IoT",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Parler de l'installation physique simple (capteur autocollant) et du fait que c'est le prestataire qui gère, pas ses équipes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien tout ce bazar ? Parce que moi mon budget maintenance c'est déjà serré.",
+        "sous_texte": "Pas contre sur le principe mais veut s'assurer que c'est proportionné à sa taille",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Retourner avec le coût de ses 3 pannes (45K€) vs le coût de la solution annuelle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Rappelez-moi dans 6 mois quand on aura passé le rush de commandes.",
+        "sous_texte": "Report classique, mais aussi signal qu'il n'est pas fermé définitivement",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Montrer que c'est justement pendant le rush que les pannes coûtent le plus cher"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai une réunion. Envoyez-moi quelque chose de concret avec des chiffres, pas du commercial.",
+      "condition_declenchement": "Si le commercial n'a pas créé d'enjeu après 5 minutes"
+    },
+    "pattern_escalade": "Filtrage poli → fidélité prestataire → scepticisme techno → prix → report temporel → mail poubelle"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "IoT Predict",
+      "secteur": "Maintenance prédictive industrielle",
+      "description": "Startup française spécialisée en capteurs de maintenance prédictive pour l'industrie"
+    },
+    "offre": {
+      "nom": "PredictSense",
+      "description": "Des capteurs IoT qui détectent les anomalies machines avant la panne. Installation en 2h, sans arrêt de production. Alertes en temps réel sur smartphone.",
+      "proposition_valeur": "Réduction de 60% des arrêts machines non planifiés",
+      "prix": "À partir de 500€/mois pour 5 machines",
+      "references": ["Fonderies du Rhône (-62% d'arrêts en 4 mois)", "Précis'Usinage Lyon — ROI en 3 mois"],
+      "avantages_vs_concurrence": "Installation sans arrêt de production, pilote gratuit 30 jours"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Décrocher un RDV de 30 minutes sur site pour une démonstration avec le responsable maintenance.",
+      "criteres_succes": ["Obtenir une date et un créneau", "Identifier le décideur final", "Comprendre le parc machines"]
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": "PME industrielle Rhône-Alpes, 85 salariés, usinage de précision"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection maintenance prédictive — PME industrielle",
+    "vous_etes": "Commercial chez IoT Predict, startup française spécialisée en capteurs de maintenance prédictive pour l'industrie.",
+    "vous_vendez": "Des capteurs IoT qui détectent les anomalies machines avant la panne. Installation en 2h, sans arrêt de production. Alertes en temps réel sur smartphone.",
+    "vous_appelez": "Olivier Bertrand, DG de Mécapress Rhône-Alpes (85 salariés, usinage de précision). Premier appel, contact froid.",
+    "ce_que_vous_savez": [
+      "L'entreprise a eu 3 arrêts machines non planifiés le mois dernier",
+      "Leur prestataire maintenance actuel est en curatif, pas en préventif",
+      "Un commercial IoT est passé il y a 8 mois sans convaincre",
+      "Le carnet de commandes est plein — les retards coûtent cher"
+    ],
+    "votre_objectif": "Décrocher un RDV de 30 minutes sur site pour une démonstration avec le responsable maintenance.",
+    "vos_atouts": ["Référence client : Fonderies du Rhône (-62% d'arrêts en 4 mois)", "Pilote gratuit 30 jours sur 2 machines", "Installation sans arrêt de production", "ROI démontrable en 3 mois"],
+    "conseils": "Ne pitchez pas d'entrée. Questionnez sur les pannes récentes et leur impact sur les livraisons. Chiffrez le coût de l'inaction.",
+    "duree_estimee": "5-8 minutes"
+  }
+}

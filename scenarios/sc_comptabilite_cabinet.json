@@ -1,0 +1,69 @@
+{
+  "id": "sc_comptabilite_cabinet",
+  "metadata": {"secteur": "Services financiers", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 6, "tags": ["comptabilité", "SaaS", "expert-comptable", "cabinet", "dématérialisation"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "moyen", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Expertise comptable", "taille_entreprise": "18 collaborateurs", "interlocuteur_principal": {"poste": "Expert-Comptable associé", "niveau_hierarchique": "dirigeant"}},
+    "offre": {"produit_service": "Plateforme de collecte et dématérialisation automatique des pièces comptables clients", "proposition_valeur_presumee": "Économiser 30% du temps de saisie en automatisant la collecte et le rapprochement des factures"},
+    "objectif_formation": "Convaincre un expert-comptable conservateur que la dématérialisation va lui faire gagner du temps, pas en perdre"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe", "nom": "Garneau", "age": 56, "poste": "Expert-Comptable, associé fondateur",
+      "entreprise": {"nom": "Cabinet Garneau & Associés", "secteur": "Expertise comptable et commissariat aux comptes", "taille": "18 collaborateurs", "ca_approximatif": "1.8M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["conservateur dans ses méthodes", "exigeant sur la fiabilité", "surchargé pendant les clôtures"],
+      "motivations_profondes": ["Garder ses clients face aux cabinets en ligne (Dougs, Indy)", "Réduire les heures sup de ses collaborateurs pendant les bilans"],
+      "peurs_freins": ["Que ses clients ne suivent pas (moyenne d'âge 55 ans)", "Que la techno remplace la relation client"],
+      "rapport_aux_commerciaux": "Courtois mais pressé. N'achète que si un confrère recommande ou si la pression clients l'y oblige.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Poli mais clairement occupé. Période de clôture annuelle.",
+      "signaux_interet": ["Mentionne la pression des cabinets en ligne", "Demande combien de ses confrères utilisent l'outil", "Pose des questions sur la conformité FEC"],
+      "signaux_rejet": ["Dit 'mes clients ne sont pas prêts'", "Parle de Sage ou Cegid comme suffisants", "Report après la période des bilans"],
+      "tics_langage": ["Vous savez, dans notre métier...", "C'est plus complexe que ça...", "Il faudrait voir..."],
+      "debit_parole": "lent",
+      "tolerance_monologue_vendeur": "Écoute poliment mais décroche mentalement après 20 secondes sans substance"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 clients perdus l'an dernier au profit de Dougs et Indy. Les collaborateurs passent 40% de leur temps à relancer les clients pour les pièces. Période de clôture : tout le cabinet est sous l'eau. 2 collaborateurs juniors menacent de partir à cause de la surcharge.",
+      "priorites_actuelles": ["Boucler les bilans avant fin mars", "Retenir les 2 collaborateurs"],
+      "experience_avec_offre_similaire": "A vu une démo de Dext il y a 2 ans, trouvé intéressant mais n'a jamais franchi le pas. Un confrère à Rennes utilise Receipt Bank.",
+      "fournisseur_actuel": "Sage Coala, saisie manuelle, relance par mail des clients pour les factures",
+      "budget_disponible": "Pourrait investir 200-400€/mois si ça réduit visiblement la charge de saisie"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Citer un confrère qui utilise l'outil dans sa région", "Parler de la perte de clients face aux cabinets en ligne", "Montrer le calcul temps gagné en heures de saisie"],
+      "ce_qui_ferme_instantanement": ["Dire que la comptabilité traditionnelle est dépassée", "Ne pas connaître Sage Coala ou le format FEC", "Forcer la démo pendant la période des bilans"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "Écoutez, on est en pleine clôture, c'est vraiment pas le moment.", "sous_texte": "Vrai — c'est la pire période. Mais c'est aussi quand la douleur est maximale.", "type": "sincere", "difficulte": 6, "reponse_efficace_indice": "Valider et proposer un rappel en avril. Mais ancrer : 'C'est justement cette période qui disparaît avec la dématérialisation.'"},
+      {"moment": "decouverte", "verbatim": "Mes clients ont en moyenne 55 ans, ils ne vont jamais scanner leurs factures.", "sous_texte": "Peur réelle que le changement pèse sur le client et détériore la relation", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "Photo smartphone suffit, pas besoin de scanner. Les clients de 55 ans ont un téléphone. Et ceux qui ne veulent pas → le cabinet scanne pour eux."},
+      {"moment": "argumentation", "verbatim": "On a Sage Coala, on n'a pas besoin d'un outil en plus.", "sous_texte": "Confusion entre outil comptable et outil de collecte. Sage ne fait pas la collecte.", "type": "reflexe", "difficulte": 6, "reponse_efficace_indice": "Sage fait la compta, notre outil fait la collecte. C'est complémentaire, pas concurrent. Intégration native."},
+      {"moment": "closing", "verbatim": "Je vais en parler à mon associé. Rappelez après les bilans, en mai.", "sous_texte": "Report classique mais intérêt réel — il mentionne son associé, signe qu'il prend au sérieux", "type": "tactique", "difficulte": 5, "reponse_efficace_indice": "Proposer un RDV avec les 2 associés en avril, juste après les bilans, quand la douleur est encore fraîche"}
+    ],
+    "objection_finale": {"verbatim": "Envoyez-moi une plaquette, je regarderai quand j'aurai la tête hors de l'eau.", "condition_declenchement": "Si le commercial n'a pas fait le lien entre le temps de saisie et la perte de clients"},
+    "pattern_escalade": "Période bilans → clients pas prêts → Sage suffit → associé → plaquette"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "CollectaCompta", "secteur": "Éditeur SaaS comptable", "description": "Éditeur français de plateforme de collecte et dématérialisation des pièces comptables"},
+    "offre": {"nom": "CollectaCompta", "description": "Plateforme qui permet aux clients du cabinet d'envoyer leurs factures par photo/mail, avec OCR automatique et rapprochement bancaire. Intégration Sage, Cegid, ACD.", "proposition_valeur": "Économiser 30% du temps de saisie", "prix": "À partir de 200€/mois", "references": ["65 cabinets utilisateurs en Bretagne/Pays de Loire"], "avantages_vs_concurrence": "Intégration native Sage Coala, OCR 98.5% de précision, essai gratuit 2 mois sur 5 dossiers"},
+    "objectif_appel": {"type": "rdv_demo", "description": "Obtenir un RDV de 20 min en avril (après les bilans) avec les 2 associés pour une démo personnalisée.", "criteres_succes": ["Obtenir une date en avril", "Identifier les outils actuels"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier contact", "infos_connues": "Cabinet EC 18 collaborateurs, Sage Coala, perte de clients vs cabinets en ligne"}
+  },
+  "brief_commercial": {
+    "titre": "Dématérialisation comptable — Cabinet EC",
+    "vous_etes": "Commercial chez CollectaCompta, éditeur français de plateforme de collecte et dématérialisation des pièces comptables.",
+    "vous_vendez": "Une plateforme qui permet aux clients du cabinet d'envoyer leurs factures par photo/mail, avec OCR automatique et rapprochement bancaire. Intégration Sage, Cegid, ACD.",
+    "vous_appelez": "Philippe Garneau, expert-comptable associé fondateur du cabinet Garneau & Associés (18 collaborateurs). Premier appel.",
+    "ce_que_vous_savez": ["3 clients perdus l'an dernier face à Dougs et Indy", "Collaborateurs passent 40% du temps à relancer les clients pour les pièces", "2 collaborateurs juniors menacent de partir (surcharge)", "A vu une démo Dext il y a 2 ans sans franchir le pas"],
+    "votre_objectif": "Obtenir un RDV de 20 min en avril (après les bilans) avec les 2 associés pour une démo personnalisée.",
+    "vos_atouts": ["Intégration native Sage Coala", "65 cabinets utilisateurs en Bretagne/Pays de Loire", "Essai gratuit 2 mois sur 5 dossiers clients", "OCR 98.5% de précision — moins de saisie corrective"],
+    "conseils": "Philippe est en période de clôture — ne forcez pas la démo maintenant. Ancrez la douleur (40% du temps en saisie) et verrouillez un RDV en avril. Mentionnez des confrères de sa région.",
+    "duree_estimee": "5-7 minutes"
+  }
+}

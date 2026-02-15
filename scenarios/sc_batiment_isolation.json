@@ -1,0 +1,69 @@
+{
+  "id": "sc_batiment_isolation",
+  "metadata": {"secteur": "BTP / Rénovation", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 5, "tags": ["BTP", "isolation", "syndic", "copropriété", "rénovation énergétique"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "long", "temperature_prospect": "tiede"},
+    "cible": {"secteur": "Syndic de copropriété", "taille_entreprise": "45 copropriétés gérées", "interlocuteur_principal": {"poste": "Gestionnaire de copropriété", "niveau_hierarchique": "manager"}},
+    "offre": {"produit_service": "Accompagnement rénovation énergétique des copropriétés (audit + travaux + subventions)", "proposition_valeur_presumee": "Monter le dossier MaPrimeRénov' Copropriété clé en main et piloter les travaux sans charge supplémentaire pour le syndic"},
+    "objectif_formation": "Vendre un accompagnement à un gestionnaire de copropriété surchargé qui voit la rénovation énergétique comme une contrainte de plus"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Sandrine", "nom": "Petit", "age": 42, "poste": "Gestionnaire de copropriété",
+      "entreprise": {"nom": "Cabinet Immobilier Anjou", "secteur": "Administration de biens et syndic de copropriété", "taille": "12 collaborateurs, 45 copropriétés gérées", "ca_approximatif": "1.5M€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["surchargée", "pragmatique", "orientée solution"],
+      "motivations_profondes": ["Répondre à l'obligation légale DPE sans que ça lui prenne des mois", "Se positionner comme un syndic proactif face à la concurrence"],
+      "peurs_freins": ["Que le projet dure 2 ans et génère des AG interminables", "Que les subventions promises ne se concrétisent pas"],
+      "rapport_aux_commerciaux": "Directe et efficace. Elle gère 45 copros, chaque minute compte. Si c'est concret et que ça lui enlève du travail, elle écoute.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Pressée mais pas fermée. Elle sait qu'elle va devoir traiter le sujet tôt ou tard.",
+      "signaux_interet": ["Demande le taux de subvention", "Parle d'une copro spécifique", "Questionne le planning"],
+      "signaux_rejet": ["Dit 'les copropriétaires ne voteront jamais'", "Parle de sa charge de travail", "Reporte après les AG de printemps"],
+      "tics_langage": ["Attendez, vous gérez aussi les AG ?", "Et les copropriétaires, vous les gérez comment ?", "C'est quoi le reste à charge ?"],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes. Coupe avec une question pratique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "5 copropriétés classées F ou G au DPE, interdiction de location à venir. Les copropriétaires commencent à poser des questions en AG. Sandrine gère seule 15 copros et n'a pas le temps de monter les dossiers de subvention. Un concurrent syndic voisin commence à se positionner sur la rénovation énergétique comme argument commercial.",
+      "priorites_actuelles": ["Préparer les AG de mars (15 AG en 6 semaines)", "Répondre aux demandes DPE des copropriétaires"],
+      "experience_avec_offre_similaire": "Un bureau d'études a contacté le cabinet il y a 6 mois pour proposer des audits. Le directeur a trouvé ça intéressant mais personne n'a eu le temps de suivre.",
+      "fournisseur_actuel": "Fait appel ponctuellement à des diagnostiqueurs pour les DPE obligatoires. Pas d'accompagnement rénov.",
+      "budget_disponible": "Pas de budget syndic — ce sont les copropriétés qui paient. L'enjeu est de faire voter les travaux en AG."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Parler des 5 copros F/G et de l'interdiction de location", "Proposer de monter le dossier subvention SANS surcharge pour elle", "Mentionner le concurrent syndic qui se positionne sur la rénov"],
+      "ce_qui_ferme_instantanement": ["Ajouter du travail à son assiette déjà pleine", "Ne pas comprendre le fonctionnement d'un vote en AG", "Promettre des subventions sans connaître les critères"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "La rénovation énergétique c'est bien beau, mais les copropriétaires ne voteront jamais les travaux.", "sous_texte": "Résignation basée sur l'expérience des AG. A besoin qu'on lui montre comment faire voter.", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "Quand le reste à charge passe de 25K€ à 5K€ grâce aux subventions, les copropriétaires votent. On prépare la présentation AG."},
+      {"moment": "decouverte", "verbatim": "J'ai 15 copros à gérer seule, j'ai pas le temps de monter des dossiers de subvention en plus.", "sous_texte": "Vraie surcharge. C'est le levier : on lui ENLÈVE du travail, on n'en ajoute pas.", "type": "sincere", "difficulte": 6, "reponse_efficace_indice": "C'est nous qui montons le dossier, pas vous. Votre seul rôle : inscrire le sujet à l'ordre du jour de l'AG."},
+      {"moment": "argumentation", "verbatim": "Les subventions MaPrimeRénov', c'est joli sur le papier mais ça met 8 mois à être versé.", "sous_texte": "Expérience ou rumeur. Besoin de transparence sur les délais réels.", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "Donner les vrais délais actuels et expliquer le préfinancement possible"},
+      {"moment": "closing", "verbatim": "Recontactez-moi après les AG de mars, là c'est impossible.", "sous_texte": "Report légitime mais risque de perdre le momentum", "type": "tactique", "difficulte": 5, "reponse_efficace_indice": "OK pour un RDV en avril, mais proposer de préparer maintenant une note d'info à glisser dans la convocation AG de la copro prioritaire"}
+    ],
+    "objection_finale": {"verbatim": "Envoyez-moi un dossier type pour que je voie à quoi ça ressemble. Si c'est vraiment clé en main, j'en parle au directeur.", "condition_declenchement": "Quand Sandrine est convaincue que ça ne lui ajoutera pas de travail"},
+    "pattern_escalade": "Copropriétaires refusent → pas le temps → subventions incertaines → après les AG → validation directeur"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "RénoVert", "secteur": "Rénovation énergétique", "description": "Bureau d'études spécialisé en rénovation énergétique des copropriétés"},
+    "offre": {"nom": "Accompagnement Copro Rénov'", "description": "Accompagnement clé en main : audit énergétique, montage subventions MaPrimeRénov' Copropriété, pilotage travaux, présentation AG. Le syndic n'a rien à faire sauf inscrire le sujet à l'ordre du jour.", "proposition_valeur": "Monter le dossier MaPrimeRénov' clé en main sans surcharge pour le syndic", "prix": "Honoraires intégrés dans le montage subvention", "references": ["22 copropriétés accompagnées en Pays de Loire"], "avantages_vs_concurrence": "Dossier subvention monté par nos soins, taux de subvention moyen 50-70%, présentation AG clé en main"},
+    "objectif_appel": {"type": "rdv_physique", "description": "Obtenir un RDV de 30 min avec Sandrine pour identifier la copropriété prioritaire et préparer une note d'info pour l'AG de mars.", "criteres_succes": ["Obtenir une date de RDV", "Identifier la copro prioritaire"]},
+    "contexte_appel": {"type": "rappel_contact", "historique": "Bureau d'études ayant contacté le cabinet il y a 6 mois", "infos_connues": "45 copros gérées, 5 classées F/G, AG de mars à venir"}
+  },
+  "brief_commercial": {
+    "titre": "Rénovation énergétique — Syndic de copropriété",
+    "vous_etes": "Consultant commercial chez RénoVert, bureau d'études spécialisé en rénovation énergétique des copropriétés.",
+    "vous_vendez": "Accompagnement clé en main : audit énergétique, montage subventions MaPrimeRénov' Copropriété, pilotage travaux, présentation AG. Le syndic n'a rien à faire sauf inscrire le sujet à l'ordre du jour.",
+    "vous_appelez": "Sandrine Petit, gestionnaire de copropriété au Cabinet Immobilier Anjou (45 copros gérées). Rappel suite à un contact avec le directeur du cabinet.",
+    "ce_que_vous_savez": ["5 copropriétés classées F ou G au DPE — interdiction de location qui arrive", "Un bureau d'études a contacté le cabinet il y a 6 mois, pas de suite (pas le temps)", "AG de mars à préparer — c'est le moment d'inscrire la rénovation à l'ordre du jour", "Un syndic concurrent se positionne sur la rénovation énergétique"],
+    "votre_objectif": "Obtenir un RDV de 30 min avec Sandrine pour identifier la copropriété prioritaire et préparer une note d'info pour l'AG de mars.",
+    "vos_atouts": ["Dossier subvention monté par nos soins (pas par le syndic)", "Taux de subvention moyen : 50-70% du coût des travaux", "Présentation AG clé en main (slides + simulation reste à charge)", "22 copropriétés accompagnées en Pays de Loire"],
+    "conseils": "Sandrine est surchargée. Votre pitch c'est : 'on vous enlève du travail, pas on vous en ajoute'. Soyez concret sur ce que VOUS faites vs ce qu'ELLE doit faire. Urgence : les AG de mars sont dans 4-6 semaines.",
+    "duree_estimee": "5-7 minutes"
+  }
+}

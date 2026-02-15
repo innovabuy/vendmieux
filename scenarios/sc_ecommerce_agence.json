@@ -1,0 +1,69 @@
+{
+  "id": "sc_ecommerce_agence",
+  "metadata": {"secteur": "Digital / E-commerce", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 6, "tags": ["e-commerce", "agence", "directrice marketing", "PME", "Shopify"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "moyen", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Cosmétiques bio", "taille_entreprise": "25 salariés", "interlocuteur_principal": {"poste": "Directrice Marketing et E-commerce", "niveau_hierarchique": "directeur"}},
+    "offre": {"produit_service": "Agence e-commerce spécialisée Shopify : refonte UX, optimisation conversion, SEO", "proposition_valeur_presumee": "Augmenter le taux de conversion de 40% en 3 mois grâce à une refonte UX data-driven"},
+    "objectif_formation": "Vendre une prestation d'agence à une directrice marketing qui a déjà été déçue par une agence précédente"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Amandine", "nom": "Vasseur", "age": 36, "poste": "Directrice Marketing et E-commerce",
+      "entreprise": {"nom": "Natur'Essentielle", "secteur": "Cosmétiques bio, vente en ligne et réseau de boutiques", "taille": "25 salariés, 3 boutiques + site Shopify", "ca_approximatif": "3.2M€ dont 40% e-commerce"}
+    },
+    "psychologie": {
+      "traits_dominants": ["exigeante et informée", "déçue par la dernière agence", "orientée data"],
+      "motivations_profondes": ["Doubler le CA e-commerce pour compenser le recul des boutiques", "Prouver au DG que le digital est le bon investissement"],
+      "peurs_freins": ["Se retrouver avec un site joli mais qui ne convertit pas (comme la dernière fois)", "Perdre 3 mois et 30K€ pour rien"],
+      "rapport_aux_commerciaux": "Très informée, elle lit les blogs Shopify. Détecte immédiatement les bullshitters. Attend de la preuve, pas du discours.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Directe, professionnelle, légèrement sur la défensive. Elle a été échaudée.",
+      "signaux_interet": ["Pose des questions techniques sur Shopify (thèmes, apps)", "Demande des cas dans la cosmétique bio", "Partage son taux de conversion actuel"],
+      "signaux_rejet": ["Compare avec ce que la dernière agence avait promis", "Dit 'on peut le faire en interne'", "Questionne la méthodologie sans écouter la réponse"],
+      "tics_langage": ["C'est quoi votre track record ?", "Montrez-moi des chiffres", "Notre dernière agence nous avait dit la même chose...", "OK mais concrètement..."],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Écoute si c'est structuré et basé sur des données, coupe si c'est du blabla"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Site Shopify refait il y a 18 mois par une agence parisienne (35K€). Design joli mais taux de conversion passé de 1.8% à 1.5%. Panier moyen de 45€. SEO négligé, le trafic organique baisse. Le DG met la pression pour que le e-commerce atteigne 60% du CA d'ici 2027.",
+      "priorites_actuelles": ["Lancer la nouvelle gamme 'anti-âge bio' en ligne dans 6 semaines", "Remonter le taux de conversion au-dessus de 2%"],
+      "experience_avec_offre_similaire": "Dernière agence (Studio Digital Paris) : promesse de +50% de conversion, résultat -15%. Budget de 35K€ dont 10K€ d'extras non prévus. Amandine a juré de ne plus travailler avec une agence parisienne.",
+      "fournisseur_actuel": "Gère en interne avec 1 webmaster/intégrateur + elle-même pour la stratégie. Publicité via un freelance Google Ads.",
+      "budget_disponible": "Budget de 20-30K€ alloué mais doit justifier chaque euro au DG. Pas de budget SEO distinct."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Montrer un cas cosmétique bio avec avant/après taux de conversion", "Proposer un audit gratuit de son site actuel avec recommandations chiffrées", "Être transparent sur le pricing (pas d'extras cachés)"],
+      "ce_qui_ferme_instantanement": ["Promettre +50% de conversion sans voir le site", "Ne pas connaître Shopify ou ses apps", "Être une agence parisienne"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "On a refait le site il y a 18 mois avec une agence, et honnêtement ça a été une catastrophe.", "sous_texte": "Traumatisme récent. C'est un warning ET une opportunité si vous montrez que vous êtes différent.", "type": "sincere", "difficulte": 8, "reponse_efficace_indice": "Demander ce qui s'est mal passé précisément. Montrer que votre approche est data-driven, pas design-driven."},
+      {"moment": "decouverte", "verbatim": "On peut très bien faire ça en interne, j'ai un webmaster Shopify qui se débrouille bien.", "sous_texte": "Veut garder le contrôle et économiser. Mais son webmaster ne fait pas de CRO ni de SEO.", "type": "tactique", "difficulte": 7, "reponse_efficace_indice": "Distinguer intégration (son webmaster) et stratégie CRO/SEO (votre expertise). Complémentaire, pas concurrent."},
+      {"moment": "argumentation", "verbatim": "Montrez-moi un cas dans la cosmétique bio. Pas du B2B, pas du fast fashion, de la cosmétique bio.", "sous_texte": "Exigence légitime. Si vous n'avez pas de cas, c'est game over.", "type": "test", "difficulte": 9, "reponse_efficace_indice": "Avoir un cas. Si pas exactement cosmétique bio, un cas beauté/bien-être avec les mêmes enjeux."},
+      {"moment": "closing", "verbatim": "Faites-moi un audit gratuit et on verra si vos recommandations tiennent la route.", "sous_texte": "Signal d'intérêt fort — elle vous teste sur le livrable, pas sur le discours.", "type": "test", "difficulte": 5, "reponse_efficace_indice": "Accepter immédiatement. C'est votre porte d'entrée. L'audit doit être impeccable."}
+    ],
+    "objection_finale": {"verbatim": "Je vais y réfléchir. Envoyez-moi des cas clients et votre grille tarifaire complète, sans surprise.", "condition_declenchement": "Si le commercial n'a pas de cas cosmétique/beauté crédible"},
+    "pattern_escalade": "Traumatisme agence → interne suffit → preuve sectorielle → audit test → réflexion"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "WebConvert", "secteur": "Agence e-commerce", "description": "Agence e-commerce Shopify basée à Nantes, spécialisée en optimisation de conversion"},
+    "offre": {"nom": "Pack CRO + SEO", "description": "Audit CRO + refonte UX data-driven + SEO technique pour boutiques Shopify. Méthodologie : audit → test A/B → implémentation → mesure.", "proposition_valeur": "Augmenter le taux de conversion de 40% en 3 mois", "prix": "Forfait 15-25K€ selon scope, pas d'extras cachés", "references": ["BioBeauté Shop (1.4% → 2.8% conversion en 3 mois)"], "avantages_vs_concurrence": "Basé à Nantes pas à Paris, audit gratuit, pricing transparent, facturation au forfait"},
+    "objectif_appel": {"type": "audit_gratuit", "description": "Obtenir l'accord pour un audit gratuit du site (2-3 jours) avec restitution des recommandations chiffrées.", "criteres_succes": ["Obtenir l'accord pour l'audit", "Accès au Google Analytics"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier contact froid", "infos_connues": "PME cosmétiques bio, site Shopify, taux de conversion en baisse"}
+  },
+  "brief_commercial": {
+    "titre": "Refonte e-commerce — Cosmétiques bio",
+    "vous_etes": "Consultant commercial chez WebConvert, agence e-commerce Shopify basée à Nantes, spécialisée en optimisation de conversion.",
+    "vous_vendez": "Audit CRO + refonte UX data-driven + SEO technique pour boutiques Shopify. Méthodologie : audit → test A/B → implémentation → mesure. Pas de refonte design complète, de l'optimisation ciblée.",
+    "vous_appelez": "Amandine Vasseur, Directrice Marketing de Natur'Essentielle (cosmétiques bio, 25 salariés, site Shopify). Premier contact froid.",
+    "ce_que_vous_savez": ["Site refait il y a 18 mois — taux de conversion passé de 1.8% à 1.5% (échec)", "Budget de 35K€ dépensé + 10K€ d'extras avec la dernière agence", "Trafic organique en baisse, SEO négligé", "Nouvelle gamme anti-âge à lancer dans 6 semaines"],
+    "votre_objectif": "Obtenir l'accord pour un audit gratuit du site (2-3 jours) avec restitution des recommandations chiffrées.",
+    "vos_atouts": ["Cas client : BioBeauté Shop (1.4% → 2.8% conversion en 3 mois)", "Basé à Nantes, pas à Paris", "Audit gratuit avec recommandations actionnables", "Pricing transparent, pas d'extras cachés, facturation au forfait"],
+    "conseils": "Amandine est échaudée — ne promettez rien de chiffré avant d'avoir vu le site. Proposez l'audit gratuit comme preuve de compétence. Soyez transparent sur tout, surtout les prix.",
+    "duree_estimee": "5-8 minutes"
+  }
+}

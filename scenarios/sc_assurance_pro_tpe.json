@@ -1,0 +1,69 @@
+{
+  "id": "sc_assurance_pro_tpe",
+  "metadata": {"secteur": "Assurance", "type_simulation": "prospection_telephonique", "difficulte_defaut": 2, "duree_estimee_min": 5, "tags": ["assurance", "TPE", "gérant", "multirisque", "courtage"]},
+  "extraction": {
+    "contexte": {"type_vente": "prospection_telephonique", "canal": "telephone", "cycle_vente": "court", "temperature_prospect": "froid"},
+    "cible": {"secteur": "Restauration", "taille_entreprise": "8 salariés", "interlocuteur_principal": {"poste": "Gérant", "niveau_hierarchique": "dirigeant"}},
+    "offre": {"produit_service": "Assurance multirisque professionnelle + RC Pro pour restaurateurs", "proposition_valeur_presumee": "Économiser 20-30% sur la prime en regroupant les garanties, avec un interlocuteur unique"},
+    "objectif_formation": "Convaincre un gérant de restaurant débordé de prendre 10 minutes pour comparer son contrat actuel"
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Yannick", "nom": "Le Goff", "age": 38, "poste": "Gérant",
+      "entreprise": {"nom": "Le Comptoir Breton", "secteur": "Restauration traditionnelle", "taille": "8 salariés", "ca_approximatif": "480K€"}
+    },
+    "psychologie": {
+      "traits_dominants": ["débordé en permanence", "méfiant envers les assureurs", "sensible au prix"],
+      "motivations_profondes": ["Payer moins d'assurance pour investir dans la cuisine", "Avoir un interlocuteur qui répond quand il y a un sinistre"],
+      "peurs_freins": ["Perdre du temps pour 50€ d'économie", "Être moins bien couvert sans le savoir"],
+      "rapport_aux_commerciaux": "Expéditif. Il a 30 secondes à donner. Si c'est pas clair immédiatement, il raccroche.",
+      "style_communication": "expressif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Pressé, bruyant en fond (bruit de cuisine). Parle vite et fort.",
+      "signaux_interet": ["Demande 'combien je paye en moins ?'", "Mentionne un sinistre récent", "Dit 'envoyez-moi un comparatif'"],
+      "signaux_rejet": ["Dit 'j'ai pas le temps'", "Parle à quelqu'un d'autre en même temps", "Raccroche sans prévenir"],
+      "tics_langage": ["Ouais ouais...", "C'est-à-dire ?", "Allez droit au but", "Non mais attendez..."],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "10 secondes maximum. Coupe sans politesse."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Dégât des eaux il y a 3 mois, remboursement encore en attente auprès de son assureur actuel (AXA via un agent local). Excédé par la lenteur. Prime multirisque : 3 200€/an. Pas fait le point depuis 4 ans.",
+      "priorites_actuelles": ["Service du midi qui commence dans 1h", "Obtenir le remboursement du dégât des eaux"],
+      "experience_avec_offre_similaire": "Appelé 3 fois par des courtiers ces 6 derniers mois. Aucun n'a suivi après le premier appel.",
+      "fournisseur_actuel": "AXA via agent local. Pas satisfait du traitement des sinistres mais inertie à changer.",
+      "budget_disponible": "Paie 3 200€/an, cherche pas à augmenter. Serait intéressé si économie >500€ à garanties équivalentes."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": ["Mentionner le dégât des eaux et le remboursement bloqué", "Annoncer une économie chiffrée crédible", "Proposer de gérer le transfert de dossier sinistre"],
+      "ce_qui_ferme_instantanement": ["Appeler pendant le service (11h30-14h30 ou 18h-22h)", "Faire un long discours sur les garanties", "Ne pas connaître les spécificités restauration"]
+    }
+  },
+  "objections": {
+    "objections": [
+      {"moment": "accroche", "verbatim": "J'ai pas le temps là, je suis en plein service.", "sous_texte": "Peut-être vrai, peut-être filtrage. Tester en proposant un rappel à un créneau précis.", "type": "reflexe", "difficulte": 5, "reponse_efficace_indice": "Proposer immédiatement un rappel à un horaire calme (15h-17h) avec une accroche chiffrée"},
+      {"moment": "accroche", "verbatim": "Des courtiers m'appellent toutes les semaines, c'est toujours la même chose.", "sous_texte": "Lassé, besoin de se différencier immédiatement", "type": "sincere", "difficulte": 7, "reponse_efficace_indice": "Se démarquer en parlant du sinistre en cours, pas de la prime"},
+      {"moment": "argumentation", "verbatim": "Oui mais quand j'aurai un sinistre, vous allez me faire la même chose qu'AXA et me faire poireauter 3 mois ?", "sous_texte": "Vraie douleur. C'est le levier principal, pas le prix.", "type": "sincere", "difficulte": 6, "reponse_efficace_indice": "Donner le délai moyen de traitement et un engagement contractuel"},
+      {"moment": "closing", "verbatim": "Bon envoyez-moi un truc par mail, je regarderai quand j'aurai 5 minutes.", "sous_texte": "Intéressé mais pas assez pour bloquer du temps maintenant", "type": "tactique", "difficulte": 5, "reponse_efficace_indice": "Accepter le mail mais proposer un rappel de 10 min mardi à 15h pour faire le comparatif ensemble"}
+    ],
+    "objection_finale": {"verbatim": "Écoutez, je vais rester chez AXA, c'est trop de paperasse de changer.", "condition_declenchement": "Si le commercial n'a pas adressé la douleur du sinistre en cours"},
+    "pattern_escalade": "Pas le temps → tous pareils → sinistre mal géré → mail → inertie"
+  },
+  "vendeur": {
+    "entreprise": {"nom": "Assur'PME", "secteur": "Courtage en assurances", "description": "Cabinet de courtage spécialisé dans les professionnels de la restauration et du commerce"},
+    "offre": {"nom": "Pack Restaurateur", "description": "Contrat multirisque pro + RC sur-mesure pour restaurateurs, avec traitement de sinistre en 15 jours garanti et interlocuteur dédié.", "proposition_valeur": "Économie de 400-600€/an à garanties supérieures + sinistres traités en 15 jours", "prix": "À partir de 2 600€/an", "references": ["120 restaurants assurés"], "avantages_vs_concurrence": "Traitement sinistres en 15 jours garanti, prise en charge du transfert de dossier sinistre en cours"},
+    "objectif_appel": {"type": "envoi_contrat", "description": "Obtenir l'envoi de son contrat actuel pour faire un comparatif chiffré et un rappel de 10 min.", "criteres_succes": ["Obtenir le contrat actuel", "Fixer un créneau de rappel"]},
+    "contexte_appel": {"type": "appel_froid", "historique": "Premier appel", "infos_connues": "Restaurateur, dégât des eaux récent, prime AXA 3200€/an"}
+  },
+  "brief_commercial": {
+    "titre": "Assurance multirisque — Restaurateur",
+    "vous_etes": "Courtier en assurances chez Assur'PME, cabinet spécialisé dans les professionnels de la restauration et du commerce.",
+    "vous_vendez": "Un contrat multirisque pro + RC sur-mesure pour restaurateurs, avec traitement de sinistre en 15 jours garanti et interlocuteur dédié.",
+    "vous_appelez": "Yannick Le Goff, gérant du Comptoir Breton (restaurant traditionnel, 8 salariés). Premier appel.",
+    "ce_que_vous_savez": ["Dégât des eaux il y a 3 mois, remboursement toujours en attente chez AXA", "Prime actuelle : 3 200€/an — pas revue depuis 4 ans", "Appelé par 3 courtiers ces 6 mois, aucun n'a suivi", "Il est débordé — appeler entre 15h et 17h"],
+    "votre_objectif": "Obtenir l'envoi de son contrat actuel pour faire un comparatif chiffré et un rappel de 10 min.",
+    "vos_atouts": ["Traitement sinistres en 15 jours garanti", "Spécialiste restauration (120 restaurants assurés)", "Économie moyenne de 400-600€/an à garanties supérieures", "Prise en charge du transfert de dossier sinistre en cours"],
+    "conseils": "Allez droit au but — Yannick n'a pas 30 secondes à perdre. Accrochez sur le sinistre bloqué, pas sur le prix. Proposez un créneau de rappel précis.",
+    "duree_estimee": "3-5 minutes"
+  }
+}
