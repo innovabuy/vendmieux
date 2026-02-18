@@ -9,15 +9,17 @@ L'agent joue le rôle d'un prospect français réaliste,
 généré dynamiquement à partir d'un scénario FORCE 3D.
 """
 
+import asyncio
 import json
 import os
 import time
 import logging
+from collections.abc import AsyncIterable
 from pathlib import Path
 from dotenv import load_dotenv
 import httpx
 
-from livekit import agents
+from livekit import agents, rtc
 from livekit.agents import (
     Agent,
     AgentSession,
@@ -27,8 +29,11 @@ from livekit.agents import (
     RunContext,
     function_tool,
 )
+from livekit.agents.voice.agent import ModelSettings
 from livekit.plugins import deepgram, silero, anthropic
 from livekit.plugins import google as google_tts
+
+from tts_utils import normalize_tts_stream
 
 
 load_dotenv()
@@ -63,6 +68,16 @@ class VendMieuxProspect(Agent):
         )
         self.scenario_name = scenario_name
         logger.info(f"🎭 Prospect VendMieux initialisé : {scenario_name}")
+
+    async def tts_node(
+        self,
+        text: AsyncIterable[str],
+        model_settings: ModelSettings,
+    ) -> AsyncIterable[rtc.AudioFrame]:
+        """Override pour normaliser le texte avant envoi au TTS Google."""
+        normalized_text = normalize_tts_stream(text)
+        async for frame in super().tts_node(normalized_text, model_settings):
+            yield frame
 
 
 # --- Scénario par défaut (hardcodé pour le premier test) ---
@@ -234,7 +249,16 @@ DEFAULT_SCENARIO = {
 }
 
 
-def build_system_prompt(scenario: dict, difficulty: int = 2) -> str:
+LANGUAGE_INFO = {
+    "fr": {"name": "français", "nationality": "français(e)", "country": "la France"},
+    "en": {"name": "English", "nationality": "British", "country": "the UK"},
+    "es": {"name": "español", "nationality": "español(a)", "country": "España"},
+    "de": {"name": "Deutsch", "nationality": "deutsch", "country": "Deutschland"},
+    "it": {"name": "italiano", "nationality": "italiano/a", "country": "l'Italia"},
+}
+
+
+def build_system_prompt(scenario: dict, difficulty: int = 2, language: str = "fr") -> str:
     persona = scenario["persona"]
     objections = scenario["objections"]
     vendeur = scenario.get("vendeur", {})
@@ -290,6 +314,18 @@ TU RÉAGIS À CETTE OFFRE SPÉCIFIQUE :
         3: "DIFFICULTÉ : Expert. Tu es redoutable. Tu interromps, tu challenges tout, tu exiges des preuves. Tu ne lâches rien sans ROI chiffré et références vérifiables. Tu raccroches si le vendeur perd ton temps après 3 minutes."
     }
 
+    # Language block for non-French simulations
+    lang_block = ""
+    if language != "fr":
+        li = LANGUAGE_INFO.get(language, LANGUAGE_INFO["en"])
+        lang_block = f"""
+LANGUE DE SIMULATION : {li['name']}
+Tu es un prospect {li['nationality']} et tu parles UNIQUEMENT en {li['name']}.
+Tu ne comprends pas le français. Si le commercial te parle en français,
+tu réponds poliment en {li['name']} que tu ne parles pas français.
+Adapte tes expressions, ton style et tes références culturelles au marché {li['country']}.
+"""
+
     prompt = f"""Tu es {prenom} {nom}, {poste} chez {entreprise} ({secteur}).
 
 PERSONNALITÉ : {traits} | Style : {style}
@@ -305,7 +341,7 @@ TES PEURS : {peurs}
 {vendeur_block}
 
 {DIFF.get(difficulty, DIFF[2])}
-
+{lang_block}
 COMMENT TU FONCTIONNES :
 
 1. TON ÉTAT INTERNE : Ton intérêt commence à 2/10.
@@ -332,6 +368,7 @@ COMMENT TU FONCTIONNES :
    - Tu peux couper si le vendeur monologue >15s
    - Tu vouvoies TOUJOURS, même si le vendeur te tutoie
    - Tu ne sors JAMAIS du personnage
+   - IMPORTANT : Tu ne dois JAMAIS utiliser d'abréviations dans tes réponses orales. Écris toujours les mots en entier : "rendez-vous" et non "rdv", "mille euros" et non "k€", "quatorze heures" et non "14h", "chiffre d'affaires" et non "CA". Tu parles, tu n'écris pas un SMS.
 
 OBJECTIONS DISPONIBLES (utilise quand c'est PERTINENT, pas dans l'ordre) :
 {objections_str}
@@ -368,6 +405,7 @@ async def entrypoint(ctx: JobContext):
 
     meta_user_id = None
     meta_session_db_id = None
+    meta_language = "fr"
 
     if raw_meta:
         try:
@@ -376,6 +414,7 @@ async def entrypoint(ctx: JobContext):
             difficulty = int(meta.get("difficulty", 2))
             meta_user_id = meta.get("user_id")
             meta_session_db_id = meta.get("session_db_id")
+            meta_language = meta.get("language", "fr")
         except (json.JSONDecodeError, ValueError):
             # Legacy: metadata is just a scenario_id string
             scenario_id = raw_meta if raw_meta else None
@@ -394,8 +433,8 @@ async def entrypoint(ctx: JobContext):
         difficulty = scenario.get("simulation", {}).get("difficulte", 2)
 
     # Construire le prompt avec intelligence situationnelle
-    system_prompt = build_system_prompt(scenario, difficulty)
-    logger.info(f"📝 System prompt (diff={difficulty}) : {len(system_prompt)} caractères")
+    system_prompt = build_system_prompt(scenario, difficulty, language=meta_language)
+    logger.info(f"📝 System prompt (diff={difficulty}, lang={meta_language}) : {len(system_prompt)} caractères")
 
     # Créer l'agent prospect
     prospect = VendMieuxProspect(
@@ -423,8 +462,8 @@ async def entrypoint(ctx: JobContext):
         })
         logger.info(f"📝 [{role}] {text.strip()[:80]}")
 
-    async def on_close(ev):
-        """À la fermeture de session, envoyer le transcript pour évaluation."""
+    async def _do_close_evaluation():
+        """Coroutine d'évaluation post-session."""
         duration_s = int(time.time() - session_start)
         nb = len(transcript_entries)
         logger.info(f"📊 Session terminée — {nb} entrées, {duration_s}s")
@@ -442,6 +481,7 @@ async def entrypoint(ctx: JobContext):
                     "transcript": transcript_entries,
                     "user_id": meta_user_id,
                     "session_db_id": meta_session_db_id,
+                    "language": meta_language,
                 }
                 resp = await client.post(
                     "http://127.0.0.1:8000/api/evaluate",
@@ -455,19 +495,37 @@ async def entrypoint(ctx: JobContext):
         except Exception as e:
             logger.error(f"❌ Erreur envoi évaluation: {e}")
 
+    def on_close(ev):
+        """Sync callback — lance l'évaluation async via create_task."""
+        asyncio.create_task(_do_close_evaluation())
+
+    # Multi-language voice/STT configuration
+    VOICE_MAP = {
+        "fr": {"voice": "fr-FR-Chirp3-HD-Charon", "language_code": "fr-FR"},
+        "en": {"voice": "en-GB-Chirp3-HD-Charon", "language_code": "en-GB"},
+        "es": {"voice": "es-ES-Chirp3-HD-Charon", "language_code": "es-ES"},
+        "de": {"voice": "de-DE-Chirp3-HD-Charon", "language_code": "de-DE"},
+        "it": {"voice": "it-IT-Chirp3-HD-Charon", "language_code": "it-IT"},
+    }
+    STT_LANG_MAP = {
+        "fr": "fr", "en": "en", "es": "es", "de": "de", "it": "it",
+    }
+    voice_cfg = VOICE_MAP.get(meta_language, VOICE_MAP["fr"])
+    stt_lang = STT_LANG_MAP.get(meta_language, "fr")
+
     # Créer la session avec le pipeline STT → LLM → TTS
     session = AgentSession(
         vad=silero.VAD.load(),
         stt=deepgram.STT(
             model="nova-3",
-            language="fr",
+            language=stt_lang,
         ),
         llm=anthropic.LLM(
             model="claude-haiku-4-5-20251001",
         ),
         tts=google_tts.TTS(
-            voice_name="fr-FR-Chirp-HD-D",
-            language="fr-FR",
+            voice_name=voice_cfg["voice"],
+            language=voice_cfg["language_code"],
             speaking_rate=1.0,
         ),
     )

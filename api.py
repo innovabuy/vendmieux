@@ -69,11 +69,11 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["Permissions-Policy"] = "geolocation=()"
         response.headers["Content-Security-Policy"] = (
             "default-src 'self'; "
-            "script-src 'self' 'unsafe-inline'; "
-            "style-src 'self' 'unsafe-inline'; "
-            "font-src 'self' data:; "
+            "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; "
+            "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+            "font-src 'self' data: https://fonts.gstatic.com; "
             "img-src 'self' data:; "
-            "connect-src 'self' https://vendmieux.fr wss://*.livekit.cloud; "
+            "connect-src 'self' https://vendmieux.fr wss://*.livekit.cloud https://*.livekit.cloud https://cdn.jsdelivr.net; "
             "media-src 'self' blob:; "
             "worker-src 'self' blob:"
         )
@@ -108,6 +108,7 @@ class TokenRequest(BaseModel):
     scenario_id: str | None = None
     difficulty: int = 2
     user_name: str = "Commercial"
+    language: str = "fr"
 
 class ScenarioRequest(BaseModel):
     description: str
@@ -126,6 +127,7 @@ class EvaluateRequest(BaseModel):
     duration_s: int = 0
     user_id: str | None = None
     session_db_id: str | None = None
+    language: str = "fr"
 
 class DemoCreateRequest(BaseModel):
     nom_ecole: str
@@ -218,6 +220,7 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
             scenario_id=req.scenario_id or "__default__",
             difficulty=req.difficulty,
             livekit_room_id=room_name,
+            language=req.language,
         )
 
     # Room metadata now carries JSON with scenario_id + difficulty + optional user info
@@ -226,6 +229,7 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
         "difficulty": req.difficulty,
         "user_id": user_id,
         "session_db_id": session_db_id,
+        "language": req.language,
     })
 
     token = (
@@ -246,6 +250,7 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
         "url": livekit_url,
         "room": room_name,
         "identity": identity,
+        "session_db_id": session_db_id,
     }
 
 
@@ -402,13 +407,26 @@ def _format_transcript(transcript) -> str:
     return "\n".join(lines)
 
 
-def _build_evaluation_prompt(scenario: dict, transcript_text: str, difficulty: int, duration_s: int) -> str:
+EVAL_LANG_CONFIG = {
+    "fr": {"instruction": "", "language_name": "français"},
+    "en": {"instruction": "IMPORTANT: Write your ENTIRE evaluation in English. All field values (synthese, conseil, points_forts, points_progres, moment_cle) must be in English.", "language_name": "English"},
+    "es": {"instruction": "IMPORTANTE: Escribe TODA tu evaluación en español. Todos los valores (synthese, conseil, points_forts, points_progres, moment_cle) deben estar en español.", "language_name": "español"},
+    "de": {"instruction": "WICHTIG: Schreibe deine GESAMTE Bewertung auf Deutsch. Alle Feldwerte (synthese, conseil, points_forts, points_progres, moment_cle) müssen auf Deutsch sein.", "language_name": "Deutsch"},
+    "it": {"instruction": "IMPORTANTE: Scrivi TUTTA la tua valutazione in italiano. Tutti i valori (synthese, conseil, points_forts, points_progres, moment_cle) devono essere in italiano.", "language_name": "italiano"},
+}
+
+
+def _build_evaluation_prompt(scenario: dict, transcript_text: str, difficulty: int, duration_s: int, language: str = "fr") -> str:
     """Prompt d'évaluation FORCE 3D envoyé à Claude Sonnet."""
     persona = scenario["persona"]
     p = persona["identite"]
     ent = p.get("entreprise", {})
 
+    lang_cfg = EVAL_LANG_CONFIG.get(language, EVAL_LANG_CONFIG["fr"])
+    lang_instruction = f"\n{lang_cfg['instruction']}\n" if lang_cfg["instruction"] else ""
+
     return f"""Tu es un expert en évaluation de compétences commerciales selon la méthode FORCE 3D.
+{lang_instruction}
 
 CONTEXTE DE LA SIMULATION :
 - Prospect : {p.get("prenom", "?")} {p.get("nom", "?")}, {p.get("poste", "?")} chez {ent.get("nom", "?")}
@@ -435,6 +453,10 @@ TRAITEMENT D'OBJECTIONS : A-t-il questionné l'objection plutôt que justifié ?
 
 ENGAGEMENT : Next step concret proposé ? Engagement obtenu ? Verrouillage (date, heure) ?
 
+MOMENT CLÉ : Identifie LE moment de l'appel qui a fait basculer la conversation. C'est soit le moment où le commercial a perdu le prospect (erreur), soit le moment où il l'a convaincu (réussite). Cite les verbatims EXACTS des deux parties à ce moment précis.
+
+POINTS DE PROGRÈS : Pour chaque point de progrès dans une compétence, tu dois OBLIGATOIREMENT fournir le verbatim exact du commercial ET la version améliorée. Le commercial doit voir côte à côte ce qu'il a dit et ce qu'il aurait dû dire. C'est la clé de la progression.
+
 Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
 
 {{
@@ -444,9 +466,15 @@ Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
     "competences": {{
         "accroche": {{
             "score": 0,
-            "points_forts": ["string avec verbatim"],
-            "points_progres": ["string avec verbatim + ce qu'il aurait dû dire"],
-            "conseil": "string"
+            "points_forts": ["Verbatim exact du commercial entre guillemets montrant ce qu'il a bien fait"],
+            "points_progres": [
+                {{
+                    "ce_que_vous_avez_dit": "Verbatim exact du commercial",
+                    "ce_qui_aurait_ete_mieux": "La formulation idéale à utiliser",
+                    "pourquoi": "Explication courte de la différence d'impact"
+                }}
+            ],
+            "conseil": "Conseil actionnable en 1 phrase"
         }},
         "decouverte": {{ "score": 0, "points_forts": [], "points_progres": [], "conseil": "" }},
         "creation_enjeu": {{ "score": 0, "points_forts": [], "points_progres": [], "conseil": "" }},
@@ -455,7 +483,13 @@ Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
         "engagement": {{ "score": 0, "points_forts": [], "points_progres": [], "conseil": "" }}
     }},
     "synthese": "2-3 phrases",
-    "conseil_prioritaire": "LA chose à travailler en 1 phrase"
+    "conseil_prioritaire": "LA chose à travailler en 1 phrase",
+    "moment_cle": {{
+        "quand": "Le contexte précis du moment (ex: Quand le prospect a dit qu'il n'avait pas le temps)",
+        "ce_que_vous_avez_dit": "Verbatim EXACT du commercial à ce moment",
+        "ce_qui_aurait_ete_ideal": "La réponse idéale formulée comme un exemple à suivre",
+        "pourquoi": "Explication en 1-2 phrases de pourquoi c'est le moment décisif"
+    }}
 }}
 
 RÈGLES :
@@ -463,12 +497,18 @@ RÈGLES :
 - Note en fonction du niveau de difficulté : un 12/20 en difficulté 3 vaut mieux qu'un 16/20 en difficulté 1.
 - Les verbatims doivent être EXACTS (copiés du transcript).
 - Si le commercial n'a pas du tout couvert une compétence, note 2/20 max.
-- Le conseil prioritaire doit être concret et actionnable."""
+- Le conseil prioritaire doit être concret et actionnable.
+- Chaque point_progres est un objet avec ce_que_vous_avez_dit, ce_qui_aurait_ete_mieux et pourquoi.
+- Le moment_cle est LE moment décisif qui a fait basculer l'appel (en bien ou en mal)."""
 
 
 @app.post("/api/evaluate")
-async def evaluate(req: EvaluateRequest):
+async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optional_user)):
     """Évalue un appel commercial via Claude Sonnet (FORCE 3D)."""
+    # Resolve user_id: explicit body > JWT auth
+    if not req.user_id and user:
+        req.user_id = user["id"]
+
     # Formater le transcript
     transcript_text = _format_transcript(req.transcript)
     if not transcript_text.strip():
@@ -480,7 +520,7 @@ async def evaluate(req: EvaluateRequest):
         raise HTTPException(400, "Appel trop court pour être évalué (minimum 3 échanges)")
 
     scenario = _load_scenario(req.scenario_id)
-    prompt = _build_evaluation_prompt(scenario, transcript_text, req.difficulty, req.duration_s)
+    prompt = _build_evaluation_prompt(scenario, transcript_text, req.difficulty, req.duration_s, language=req.language)
 
     try:
         client = anthropic.Anthropic()
@@ -515,6 +555,7 @@ async def evaluate(req: EvaluateRequest):
         score_global=score,
         user_id=req.user_id,
         session_ref_id=req.session_db_id,
+        language=req.language,
     )
 
     # Complete the session if we have one
@@ -1016,6 +1057,22 @@ async def sitemap_blog():
 @app.get("/robots.txt")
 async def robots_txt():
     f = Path(__file__).parent / "robots.txt"
+    if f.exists():
+        return FileResponse(str(f), media_type="text/plain")
+    raise HTTPException(404)
+
+
+@app.get("/llms.txt")
+async def llms_txt():
+    f = Path(__file__).parent / "llms.txt"
+    if f.exists():
+        return FileResponse(str(f), media_type="text/plain")
+    raise HTTPException(404)
+
+
+@app.get("/llms-full.txt")
+async def llms_full_txt():
+    f = Path(__file__).parent / "llms-full.txt"
     if f.exists():
         return FileResponse(str(f), media_type="text/plain")
     raise HTTPException(404)

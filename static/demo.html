@@ -164,6 +164,29 @@
 
         .brief-objection .verbatim { color: var(--text-primary); font-style: italic; }
 
+        /* Language selector */
+        .lang-selector { margin-bottom: 24px; }
+        .lang-selector-label {
+            font-size: 11px; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; color: var(--text-muted);
+            margin-bottom: 10px; text-align: center;
+        }
+        .lang-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+        .lang-pill {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px; border-radius: 20px;
+            font-family: var(--font); font-size: 13px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+            background: transparent; border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .lang-pill:hover { border-color: var(--border-hover); color: var(--text-primary); }
+        .lang-pill.selected {
+            background: var(--brand-subtle); border-color: var(--brand);
+            color: var(--brand); box-shadow: 0 0 12px rgba(255,107,53,0.15);
+        }
+        .lang-pill-flag { font-size: 18px; line-height: 1; }
+
         .actions { display: flex; gap: 12px; justify-content: center; margin-top: 28px; }
 
         .btn {
@@ -333,6 +356,48 @@
         .eval-priority-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--brand); margin-bottom: 6px; }
         .eval-priority-text { font-size: 14px; color: var(--text-primary); font-weight: 500; }
 
+        /* Moment clé */
+        .eval-moment {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-left: 4px solid var(--warning); border-radius: var(--radius-sm);
+            padding: 20px; margin-bottom: 24px;
+        }
+        .eval-moment-title { font-size: 16px; font-weight: 700; margin-bottom: 14px; color: var(--text-primary); }
+        .eval-moment-sub { margin-bottom: 12px; }
+        .eval-moment-sub-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+        .eval-moment-sub-label.ctx { color: var(--text-muted); }
+        .eval-moment-sub-label.said { color: var(--danger); }
+        .eval-moment-sub-label.ideal { color: var(--success); }
+        .eval-moment-sub-label.why { color: var(--text-muted); }
+        .eval-moment-sub-text { font-size: 13.5px; line-height: 1.55; }
+        .eval-moment-sub-text.said { color: var(--danger); background: rgba(239,68,68,0.08); padding: 8px 12px; border-radius: var(--radius-xs); }
+        .eval-moment-sub-text.ideal { color: var(--success); background: rgba(34,197,94,0.08); padding: 8px 12px; border-radius: var(--radius-xs); }
+        .eval-moment-sub-text.why { color: var(--text-secondary); font-style: italic; }
+
+        /* Verbatim before/after in competence cards */
+        .eval-progres-item { margin-bottom: 10px; padding: 10px; background: var(--bg-input); border-radius: var(--radius-xs); border: 1px solid var(--border); }
+        .eval-progres-said { font-size: 12px; line-height: 1.5; color: var(--danger); margin-bottom: 6px; }
+        .eval-progres-better { font-size: 12px; line-height: 1.5; color: var(--success); margin-bottom: 4px; }
+        .eval-progres-why { font-size: 11px; line-height: 1.4; color: var(--text-muted); font-style: italic; }
+        .eval-progres-icon { font-size: 11px; margin-right: 4px; }
+
+        /* Transcript toggle */
+        .transcript-toggle-btn {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            width: 100%; padding: 14px; border-radius: var(--radius-sm);
+            background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text-secondary); font-family: var(--font); font-size: 14px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s; margin-bottom: 16px;
+        }
+        .transcript-toggle-btn:hover { background: var(--bg-card-hover); border-color: var(--border-hover); color: var(--text-primary); }
+        .transcript-chat { max-height: 400px; overflow-y: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 24px; }
+        .tc-msg { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(35,35,54,0.3); }
+        .tc-msg:last-child { border: none; }
+        .tc-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; min-width: 70px; padding-top: 2px; }
+        .tc-label.vous { color: var(--accent-blue); }
+        .tc-label.prospect { color: var(--brand); }
+        .tc-text { font-size: 13px; line-height: 1.55; color: var(--text-secondary); }
+
         /* Footer CTA */
         .demo-footer {
             text-align: center; padding: 40px 20px;
@@ -395,6 +460,18 @@
                 <div class="brief-card-body" id="d-objections"></div>
             </div>
         </div>
+        <!-- Language selector -->
+        <div class="lang-selector">
+            <div class="lang-selector-label">Langue de la simulation</div>
+            <div class="lang-pills">
+                <button class="lang-pill selected" data-lang="fr" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EB;&#x1F1F7;</span> Français</button>
+                <button class="lang-pill" data-lang="en" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EC;&#x1F1E7;</span> English</button>
+                <button class="lang-pill" data-lang="es" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EA;&#x1F1F8;</span> Español</button>
+                <button class="lang-pill" data-lang="de" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1E9;&#x1F1EA;</span> Deutsch</button>
+                <button class="lang-pill" data-lang="it" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EE;&#x1F1F9;</span> Italiano</button>
+            </div>
+        </div>
+
         <div class="actions">
             <button class="btn btn-brand" onclick="launchSim()">🎙️ Lancer la simulation</button>
         </div>
@@ -449,10 +526,6 @@
             <div id="eval-results" class="hidden"></div>
         </div>
 
-        <div class="post-transcript">
-            <div class="post-transcript-title">Transcript complet</div>
-            <div id="pc-transcript"></div>
-        </div>
         <div class="actions">
             <button class="btn btn-brand" onclick="restartDemo()">🔄 Nouvelle session</button>
         </div>
@@ -470,7 +543,11 @@
 <script>
 const API = window.location.origin;
 const DEMO_TOKEN = window.location.pathname.split('/demo/')[1];
-const FREE_SCENARIO_ID = new URLSearchParams(window.location.search).get('scenario');
+let FREE_SCENARIO_ID = new URLSearchParams(window.location.search).get('scenario');
+// If accessed via /simulation without ?scenario=, default to __default__
+if (!FREE_SCENARIO_ID && !DEMO_TOKEN && window.location.pathname.startsWith('/simulation')) {
+    FREE_SCENARIO_ID = '__default__';
+}
 const IS_FREE_MODE = !!FREE_SCENARIO_ID && !DEMO_TOKEN;
 
 let demoInfo = null;
@@ -478,6 +555,14 @@ let room = null, tmr = null, t0 = null, muted = false;
 let localIdentity = null;
 let transcriptEntries = [];
 let pendingSegments = {};
+let currentSessionDbId = null;
+let selectedLanguage = 'fr';
+
+function selectLang(btn) {
+    document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('selected'));
+    btn.classList.add('selected');
+    selectedLanguage = btn.dataset.lang;
+}
 
 // === UTILS ===
 function escapeHtml(str) {
@@ -617,17 +702,23 @@ async function startCall() {
     st.textContent = 'Obtention du token...';
 
     try {
+        const authToken = localStorage.getItem('vm-token');
+        const tokenHeaders = { 'Content-Type': 'application/json' };
+        if (authToken) tokenHeaders['Authorization'] = 'Bearer ' + authToken;
+
         const r = await fetch(API + '/api/token', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            method: 'POST', headers: tokenHeaders,
             body: JSON.stringify({
                 scenario_id: demoInfo.scenario_id !== '__default__' ? demoInfo.scenario_id : null,
                 difficulty: demoInfo.difficulty,
-                user_name: IS_FREE_MODE ? 'Commercial' : 'Étudiant'
+                user_name: IS_FREE_MODE ? 'Commercial' : 'Étudiant',
+                language: selectedLanguage
             })
         });
         if (!r.ok) throw new Error('Erreur serveur (token)');
         const tk = await r.json();
         localIdentity = tk.identity;
+        currentSessionDbId = tk.session_db_id || null;
 
         st.textContent = 'Connexion à la room...';
         room = new LivekitClient.Room({ adaptiveStream: true, dynacast: true });
@@ -767,13 +858,6 @@ function showPostCall(duration) {
     const totalWords = transcriptEntries.reduce((acc, e) => acc + e.text.split(/\s+/).filter(w => w).length, 0);
     document.getElementById('pc-words').textContent = totalWords;
 
-    const tcEl = document.getElementById('pc-transcript');
-    tcEl.innerHTML = transcriptEntries.map(e => {
-        const whoClass = e.who === 'user' ? 'you' : 'ai';
-        const whoLabel = e.who === 'user' ? 'Vous' : 'Prospect';
-        return `<div class="pt-line"><span class="pt-time">${formatTime(e.time)}</span><span class="pt-who ${whoClass}">${whoLabel}</span><span class="pt-text">${escapeHtml(e.text)}</span></div>`;
-    }).join('');
-
     runEvaluation(duration);
 }
 
@@ -795,15 +879,21 @@ async function runEvaluation(duration) {
     }));
 
     try {
+        const evalAuthToken = localStorage.getItem('vm-token');
+        const evalHeaders = { 'Content-Type': 'application/json' };
+        if (evalAuthToken) evalHeaders['Authorization'] = 'Bearer ' + evalAuthToken;
+
         const r = await fetch(API + '/api/evaluate', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: evalHeaders,
             body: JSON.stringify({
                 session_id: IS_FREE_MODE ? 'free-' + FREE_SCENARIO_ID + '-' + Date.now() : 'demo-' + DEMO_TOKEN + '-' + Date.now(),
                 transcript: transcriptArray,
                 scenario_id: demoInfo.scenario_id,
                 difficulty: demoInfo.difficulty,
                 duration_s: Math.floor(duration / 1000),
+                session_db_id: currentSessionDbId,
+                language: selectedLanguage,
             })
         });
 
@@ -877,7 +967,22 @@ function renderEvaluation(ev) {
         const scoreCol = c.score >= 14 ? 'var(--success)' : c.score >= 8 ? 'var(--warning)' : 'var(--danger)';
 
         const forts = (c.points_forts || []).map(p => `<div style="margin-bottom:3px;">+ ${escapeHtml(p)}</div>`).join('');
-        const progres = (c.points_progres || []).map(p => `<div style="margin-bottom:3px;">- ${escapeHtml(p)}</div>`).join('');
+
+        // Points de progrès : supporte l'ancien format (string) et le nouveau (objet)
+        let progresHtml = '';
+        for (const p of (c.points_progres || [])) {
+            if (typeof p === 'string') {
+                // Ancien format
+                progresHtml += `<div style="margin-bottom:3px;">- ${escapeHtml(p)}</div>`;
+            } else {
+                // Nouveau format structuré
+                progresHtml += `<div class="eval-progres-item">
+                    <div class="eval-progres-said"><span class="eval-progres-icon">&#10060;</span> Ce que vous avez dit : "${escapeHtml(p.ce_que_vous_avez_dit || '')}"</div>
+                    <div class="eval-progres-better"><span class="eval-progres-icon">&#9989;</span> Version améliorée : "${escapeHtml(p.ce_qui_aurait_ete_mieux || '')}"</div>
+                    ${p.pourquoi ? `<div class="eval-progres-why"><span class="eval-progres-icon">&#128161;</span> ${escapeHtml(p.pourquoi)}</div>` : ''}
+                </div>`;
+            }
+        }
 
         cardsHtml += `
             <div class="eval-card">
@@ -887,12 +992,51 @@ function renderEvaluation(ev) {
                 </div>
                 <div class="eval-bar"><div class="eval-bar-fill ${barClass}" style="width:${pct}%"></div></div>
                 ${forts ? `<div class="eval-section"><div class="eval-section-label">Points forts</div><div class="eval-section-content" style="color:var(--success)">${forts}</div></div>` : ''}
-                ${progres ? `<div class="eval-section"><div class="eval-section-label">Points de progrès</div><div class="eval-section-content" style="color:var(--warning)">${progres}</div></div>` : ''}
+                ${progresHtml ? `<div class="eval-section"><div class="eval-section-label">Points de progrès</div><div class="eval-section-content">${progresHtml}</div></div>` : ''}
                 ${c.conseil ? `<div class="eval-conseil">${escapeHtml(c.conseil)}</div>` : ''}
             </div>`;
     }
 
     const resultColor = RESULT_COLORS[ev.resultat_appel] || 'var(--text-secondary)';
+
+    // Moment clé HTML
+    let momentHtml = '';
+    const mk = ev.moment_cle;
+    if (mk && mk.quand) {
+        momentHtml = `
+        <div class="eval-moment">
+            <div class="eval-moment-title">&#9889; Le moment décisif de votre appel</div>
+            <div class="eval-moment-sub">
+                <div class="eval-moment-sub-label ctx">Contexte</div>
+                <div class="eval-moment-sub-text">${escapeHtml(mk.quand)}</div>
+            </div>
+            <div class="eval-moment-sub">
+                <div class="eval-moment-sub-label said">Ce que vous avez dit</div>
+                <div class="eval-moment-sub-text said">"${escapeHtml(mk.ce_que_vous_avez_dit || '')}"</div>
+            </div>
+            <div class="eval-moment-sub">
+                <div class="eval-moment-sub-label ideal">Ce qu'il aurait fallu dire</div>
+                <div class="eval-moment-sub-text ideal">"${escapeHtml(mk.ce_qui_aurait_ete_ideal || '')}"</div>
+            </div>
+            <div class="eval-moment-sub">
+                <div class="eval-moment-sub-label why">Pourquoi</div>
+                <div class="eval-moment-sub-text why">${escapeHtml(mk.pourquoi || '')}</div>
+            </div>
+        </div>`;
+    }
+
+    // Transcript chat HTML
+    let transcriptChatHtml = '';
+    if (transcriptEntries.length > 0) {
+        const msgs = transcriptEntries.map(e => {
+            const cls = e.who === 'user' ? 'vous' : 'prospect';
+            const lbl = e.who === 'user' ? 'Vous' : 'Prospect';
+            return `<div class="tc-msg"><span class="tc-label ${cls}">${lbl}</span><span class="tc-text">${escapeHtml(e.text)}</span></div>`;
+        }).join('');
+        transcriptChatHtml = `
+        <button class="transcript-toggle-btn" onclick="toggleTranscriptChat()">&#128221; Relire l'échange complet</button>
+        <div id="transcript-chat" class="transcript-chat hidden">${msgs}</div>`;
+    }
 
     container.innerHTML = `
         <div class="eval-score-hero">
@@ -912,6 +1056,8 @@ function renderEvaluation(ev) {
             <div class="eval-priority-label">Conseil prioritaire</div>
             <div class="eval-priority-text">${escapeHtml(ev.conseil_prioritaire || '')}</div>
         </div>
+        ${momentHtml}
+        ${transcriptChatHtml}
     `;
 
     drawRadarChart(ev.competences || {});
@@ -1007,6 +1153,15 @@ function drawRadarChart(competences) {
         ctx.fillText(scores[i] + '/20', x, y + lines.length * 13);
         ctx.fillStyle = '#7c7c9a';
         ctx.font = '11px Outfit, sans-serif';
+    }
+}
+
+function toggleTranscriptChat() {
+    const el = document.getElementById('transcript-chat');
+    if (!el) return;
+    el.classList.toggle('hidden');
+    if (!el.classList.contains('hidden')) {
+        el.scrollTop = 0;
     }
 }
 

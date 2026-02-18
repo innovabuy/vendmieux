@@ -123,6 +123,17 @@ async def init_db():
             except Exception:
                 pass
 
+        # Sprint Persistance — language columns
+        for table, col, coltype, default in [
+            ("sessions", "language", "TEXT", "'fr'"),
+            ("evaluations", "language", "TEXT", "'fr'"),
+            ("scenarios", "language", "TEXT", "'fr'"),
+        ]:
+            try:
+                await db.execute(f"ALTER TABLE {table} ADD COLUMN {col} {coltype} DEFAULT {default}")
+            except Exception:
+                pass
+
         await db.commit()
 
 
@@ -217,13 +228,31 @@ async def save_evaluation(
     score_global: float,
     user_id: str | None = None,
     session_ref_id: str | None = None,
+    language: str = "fr",
 ) -> int:
-    """Sauvegarde une évaluation (sessions régulières ou démo)."""
+    """Sauvegarde une évaluation. Dédoublonnage : si session_ref_id existe déjà, UPDATE."""
     async with aiosqlite.connect(DB_PATH) as db:
+        # Deduplication: if an evaluation already exists for this session_ref_id, update it
+        if session_ref_id:
+            db.row_factory = aiosqlite.Row
+            async with db.execute(
+                "SELECT id FROM evaluations WHERE session_ref_id = ?", (session_ref_id,)
+            ) as cur:
+                existing = await cur.fetchone()
+            if existing:
+                await db.execute(
+                    """UPDATE evaluations SET transcript = ?, evaluation_json = ?, score_global = ?,
+                       user_id = COALESCE(?, user_id), language = ?
+                       WHERE session_ref_id = ?""",
+                    (transcript, evaluation_json, score_global, user_id, language, session_ref_id),
+                )
+                await db.commit()
+                return existing["id"]
+
         cursor = await db.execute(
-            """INSERT INTO evaluations (session_id, scenario_id, difficulty, transcript, evaluation_json, score_global, user_id, session_ref_id)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-            (session_id, scenario_id, difficulty, transcript, evaluation_json, score_global, user_id, session_ref_id),
+            """INSERT INTO evaluations (session_id, scenario_id, difficulty, transcript, evaluation_json, score_global, user_id, session_ref_id, language)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (session_id, scenario_id, difficulty, transcript, evaluation_json, score_global, user_id, session_ref_id, language),
         )
         await db.commit()
         return cursor.lastrowid
@@ -286,13 +315,14 @@ async def update_last_login(user_id: str):
 
 async def create_session(
     user_id: str, scenario_id: str, difficulty: int = 2, livekit_room_id: str = "",
+    language: str = "fr",
 ) -> str:
     sid = _gen_id()
     async with aiosqlite.connect(DB_PATH) as db:
         await db.execute(
-            """INSERT INTO sessions (id, user_id, scenario_id, difficulty, livekit_room_id)
-               VALUES (?, ?, ?, ?, ?)""",
-            (sid, user_id, scenario_id, difficulty, livekit_room_id),
+            """INSERT INTO sessions (id, user_id, scenario_id, difficulty, livekit_room_id, language)
+               VALUES (?, ?, ?, ?, ?, ?)""",
+            (sid, user_id, scenario_id, difficulty, livekit_room_id, language),
         )
         await db.commit()
     return sid
