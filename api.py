@@ -1393,7 +1393,7 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
         raise HTTPException(status_code=422, detail="Champ trop long")
     if len(data.message) > 2000:
         raise HTTPException(status_code=422, detail="Message trop long (max 2000 caractères)")
-    # Store in a simple JSON log
+    # Store in a simple JSON log (always, as backup)
     log_path = Path(__file__).parent / "contact_ecole_log.json"
     entry = {
         "timestamp": datetime.now().isoformat(),
@@ -1412,6 +1412,55 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
         existing = []
     existing.append(entry)
     log_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2))
+
+    # Send email via Brevo if API key is configured
+    brevo_key = os.getenv("BREVO_API_KEY")
+    if brevo_key:
+        import httpx as _httpx
+        try:
+            async with _httpx.AsyncClient(timeout=10) as client:
+                # Send notification email to Jeff
+                await client.post(
+                    "https://api.brevo.com/v3/smtp/email",
+                    headers={"api-key": brevo_key, "Content-Type": "application/json"},
+                    json={
+                        "sender": {"name": "VendMieux", "email": "noreply@vendmieux.fr"},
+                        "to": [{"email": "jfperrin@cap-performances.fr"}],
+                        "subject": f"Demande de devis école — {data.etablissement}",
+                        "htmlContent": (
+                            "<h2>Nouvelle demande de devis école</h2>"
+                            f"<p><b>Établissement :</b> {data.etablissement}</p>"
+                            f"<p><b>Type :</b> {data.type}</p>"
+                            f"<p><b>Contact :</b> {data.prenom} {data.nom}</p>"
+                            f"<p><b>Email :</b> {data.email}</p>"
+                            f"<p><b>Tél :</b> {data.telephone or 'Non renseigné'}</p>"
+                            f"<p><b>Apprenants :</b> {data.nb_apprenants}</p>"
+                            f"<p><b>Message :</b> {data.message or 'Aucun'}</p>"
+                        ),
+                    },
+                )
+                # Add contact to Brevo CRM
+                try:
+                    await client.post(
+                        "https://api.brevo.com/v3/contacts",
+                        headers={"api-key": brevo_key, "Content-Type": "application/json"},
+                        json={
+                            "email": data.email,
+                            "attributes": {
+                                "NOM": data.nom,
+                                "PRENOM": data.prenom,
+                                "ETABLISSEMENT": data.etablissement,
+                            },
+                            "updateEnabled": True,
+                        },
+                    )
+                except Exception:
+                    pass  # Don't block if contact creation fails
+        except Exception as exc:
+            # Log error but don't fail the request
+            import traceback
+            traceback.print_exc()
+
     return {"status": "ok", "message": "Demande enregistrée. Réponse sous 24h."}
 
 

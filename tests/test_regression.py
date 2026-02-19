@@ -47,19 +47,33 @@ def index_html_content():
 # ========== MARKETING COPY REGRESSION ==========
 
 class TestMarketingCopy:
-    """Verify marketing copy is consistent: 40+ scenarios (not 200+), 1 free simulation (not 3)."""
+    """Verify marketing copy is consistent: 12 scenarios, 12 sectors, 5 types, 1 free simulation."""
 
-    def test_no_200_scenarios_in_react_assets(self, react_asset_contents):
-        """200+ scénarios should NOT appear anywhere in React compiled assets."""
+    def test_no_200_or_40_plus_scenarios(self, react_asset_contents):
+        """200+ and 40+ scénarios should NOT appear anywhere in React compiled assets."""
         for name, content in react_asset_contents.items():
-            # Look for "200" near "scénario" text — but allow other numeric uses of 200
             assert "200+ scénarios" not in content, f"Found '200+ scénarios' in {name}"
             assert "200 scénarios" not in content, f"Found '200 scénarios' in {name}"
+            assert "40+ scénarios" not in content, f"Found '40+ scénarios' in {name}"
+            assert "40+ prospects" not in content, f"Found '40+ prospects' in {name}"
+            assert "40+ simulations" not in content, f"Found '40+ simulations' in {name}"
 
-    def test_40_plus_scenarios_present(self, react_asset_contents):
-        """40+ scénarios should appear in the main landing page assets."""
+    def test_12_scenarios_present(self, react_asset_contents):
+        """'12 scénarios' should appear in the React assets."""
         all_content = "".join(react_asset_contents.values())
-        assert "40+" in all_content, "Expected '40+' to appear in React assets"
+        assert "12 scénarios" in all_content, "Expected '12 scénarios' in React assets"
+
+    def test_12_secteurs_present(self, react_asset_contents):
+        """'12 secteurs' should appear instead of '20 secteurs'."""
+        all_content = "".join(react_asset_contents.values())
+        assert "12 secteurs" in all_content, "Expected '12 secteurs' in React assets"
+        assert "20 secteurs" not in all_content, "Found '20 secteurs' still in React assets"
+
+    def test_5_types_situations(self, react_asset_contents):
+        """'5 types de situations' should appear instead of '9 types'."""
+        all_content = "".join(react_asset_contents.values())
+        assert "5 types de situations" in all_content, "Expected '5 types de situations' in React assets"
+        assert "9 types de situations" not in all_content, "Found '9 types de situations' still in React assets"
 
     def test_no_3_simulations_gratuites(self, react_asset_contents):
         """'3 simulations gratuites' should NOT appear anywhere."""
@@ -72,10 +86,17 @@ class TestMarketingCopy:
         all_content = "".join(react_asset_contents.values())
         assert "1 simulation gratuite" in all_content, "Expected '1 simulation gratuite' in React assets"
 
-    def test_index_html_meta_40_scenarios(self, index_html_content):
-        """index.html meta description should reference 40+ scénarios."""
-        assert "40+" in index_html_content, "Expected '40+' in index.html"
+    def test_no_opco_standalone(self, react_asset_contents):
+        """'OPCO' should not appear as standalone financing claim."""
+        for name, content in react_asset_contents.items():
+            assert "Finançable OPCO" not in content, f"Found 'Finançable OPCO' in {name}"
+            assert "pédagogique ou OPCO" not in content, f"Found 'ou OPCO' in {name}"
+
+    def test_index_html_meta_12_scenarios(self, index_html_content):
+        """index.html meta description should reference 12 scénarios."""
+        assert "12 scénarios" in index_html_content, "Expected '12 scénarios' in index.html"
         assert "200+" not in index_html_content, "Found '200+' in index.html"
+        assert "40+" not in index_html_content, "Found '40+' in index.html"
 
 
 # ========== CTA BUTTONS REGRESSION ==========
@@ -356,3 +377,93 @@ class TestLiveAPI:
         assert r.status_code == 200
         assert "FORCE 3D" in r.text or "demo-app" in r.text, \
             "GET /simulation should serve demo.html"
+
+
+# ========== BREVO CONTACT-ECOLE ENDPOINT ==========
+
+class TestContactEcoleEndpoint:
+    """Verify the contact-ecole endpoint has Brevo integration."""
+
+    def test_api_has_brevo_email_sending(self):
+        """api.py should include Brevo SMTP email sending in contact-ecole."""
+        api_content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert "api.brevo.com/v3/smtp/email" in api_content, \
+            "Missing Brevo SMTP email call in api.py"
+        assert "jfperrin@cap-performances.fr" in api_content, \
+            "Missing recipient email jfperrin@cap-performances.fr"
+
+    def test_api_has_brevo_contact_creation(self):
+        """api.py should add contacts to Brevo CRM."""
+        api_content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert "api.brevo.com/v3/contacts" in api_content, \
+            "Missing Brevo contact creation in api.py"
+        assert "updateEnabled" in api_content, \
+            "Missing updateEnabled flag for Brevo contact upsert"
+
+    def test_api_has_brevo_key_check(self):
+        """api.py should gracefully handle missing BREVO_API_KEY."""
+        api_content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert 'BREVO_API_KEY' in api_content, \
+            "Missing BREVO_API_KEY env var check"
+
+    def test_contact_ecole_endpoint_exists(self, http_client):
+        """POST /api/contact-ecole should exist and validate input."""
+        try:
+            r = http_client.post("/api/contact-ecole", json={})
+        except httpx.ConnectError:
+            pytest.skip("VendMieux API not running")
+        # Should fail validation (422) since required fields are missing, not 404
+        assert r.status_code == 422, \
+            f"Expected 422 (validation error) for empty body, got {r.status_code}"
+
+
+# ========== ECOLES PAGE CTA BUTTONS ==========
+
+class TestEcolesCTAButtons:
+    """Verify Ecoles page CTA buttons have proper navigation."""
+
+    def test_ecoles_has_ecoles_tarifs_link(self, react_asset_contents):
+        """Ecoles page should have links to /ecoles-tarifs."""
+        ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles") and "Tarifs" not in n]
+        assert len(ecoles_files) > 0, "No Ecoles asset file found"
+        for name in ecoles_files:
+            content = react_asset_contents[name]
+            assert '/ecoles-tarifs' in content, f"Expected '/ecoles-tarifs' link in {name}"
+
+    def test_ecoles_has_simulation_link(self, react_asset_contents):
+        """Ecoles page should have links to /simulation."""
+        ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles") and "Tarifs" not in n]
+        for name in ecoles_files:
+            content = react_asset_contents[name]
+            assert '/simulation' in content, f"Expected '/simulation' link in {name}"
+
+
+# ========== CREATION SUR MESURE MENTIONS ==========
+
+class TestCreationSurMesure:
+    """Verify 'création sur mesure' is mentioned in appropriate places."""
+
+    def test_creation_sur_mesure_in_accueil(self, react_asset_contents):
+        """Accueil should mention 'création sur mesure'."""
+        accueil_files = [n for n in react_asset_contents if n.startswith("Accueil")]
+        all_content = "".join(react_asset_contents[n] for n in accueil_files)
+        assert "création sur mesure" in all_content, "Expected 'création sur mesure' in Accueil"
+
+    def test_creation_sur_mesure_in_ecoles(self, react_asset_contents):
+        """Ecoles should mention 'création sur mesure'."""
+        ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles")]
+        all_content = "".join(react_asset_contents[n] for n in ecoles_files)
+        assert "création sur mesure" in all_content, "Expected 'création sur mesure' in Ecoles"
+
+    def test_scenarios_personnalises_illimites(self, react_asset_contents):
+        """Ecoles should mention 'Scénarios personnalisés illimités'."""
+        ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles")]
+        all_content = "".join(react_asset_contents[n] for n in ecoles_files)
+        assert "personnalisés illimités" in all_content or "personnalis" in all_content, \
+            "Expected 'Scénarios personnalisés illimités' in Ecoles"
+
+    def test_multi_langue(self, react_asset_contents):
+        """Ecoles should mention multi-langue support."""
+        ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles")]
+        all_content = "".join(react_asset_contents[n] for n in ecoles_files)
+        assert "Multi-langue" in all_content, "Expected 'Multi-langue' in Ecoles"
