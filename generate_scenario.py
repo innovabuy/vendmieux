@@ -195,7 +195,7 @@ def call_claude(system: str, user_msg: str) -> dict:
     start = time.time()
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=4096,
+        max_tokens=8192,
         system=system,
         messages=[{"role": "user", "content": user_msg}],
     )
