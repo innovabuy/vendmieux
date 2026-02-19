@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useColors, Badge, Avatar, WaveformAnim, CountUp, MiniSparkline, Nav, Footer } from "../shared";
 
 /* ======== HERO PRODUIT ======== */
@@ -184,7 +185,7 @@ function SimModes(){
   return(
     <div style={ { padding:"72px 24px",maxWidth:960,margin:"0 auto" } }>
       <div style={ { textAlign:"center",marginBottom:48 } }>
-        <div style={ { fontSize:10,fontWeight:700,letterSpacing:1.5,textTransform:"uppercase",color:C.mt,marginBottom:12 } }>9 types de situations</div>
+        <div style={ { fontSize:10,fontWeight:700,letterSpacing:1.5,textTransform:"uppercase",color:C.mt,marginBottom:12 } }>5 types de situations</div>
         <h2 className="vm-h2" style={ { fontSize:30,fontWeight:300,margin:0 } }>Chaque appel est <span style={ { fontWeight:700,color:C.ac } }>un terrain différent</span></h2>
       </div>
       <div style={ { display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",gap:12 } }>
@@ -327,7 +328,7 @@ function ForWho(){
     { icon:"👔",title:"Dirigeant de PME",need:"Vos commerciaux montent en compétence sans mobiliser un formateur. Vous mesurez le ROI.",highlight:"Dashboard manager + suivi progression" },
     { icon:"📊",title:"Directeur commercial",need:"Identifiez les faiblesses de chaque vendeur. Assignez des exercices ciblés. Comparez les performances.",highlight:"Classement équipe + radar FORCE 3D" },
     { icon:"🎯",title:"Commercial terrain",need:"Entraînez-vous avant chaque vrai RDV. Progressez sur vos points faibles. Gagnez en confiance.",highlight:"Mode préparation RDV réel" },
-    { icon:"🎓",title:"École de commerce",need:"200+ scénarios réalistes pour vos étudiants. Évaluation automatique. Export des notes par promotion.",highlight:"Scénarios pédagogiques personnalisés" },
+    { icon:"🎓",title:"École de commerce",need:"12 scénarios réalistes pour vos étudiants. Évaluation automatique. Export des notes par promotion.",highlight:"Scénarios pédagogiques personnalisés" },
   ];
   return(
     <div style={ { padding:"72px 24px",maxWidth:960,margin:"0 auto" } }>
@@ -358,7 +359,7 @@ function TechSpecs(){
     { icon:"⚡",label:"Latence",value:"< 800ms",detail:"Réponse quasi-instantanée, conversation fluide" },
     { icon:"🔒",label:"Données",value:"Serveurs France",detail:"RGPD, pas de stockage audio, transcripts chiffrés" },
     { icon:"📱",label:"Accès",value:"Navigateur web",detail:"Aucune installation, fonctionne sur mobile et desktop" },
-    { icon:"💰",label:"Coût/session",value:"~0.20€",detail:"IA + voix + évaluation inclus" },
+    { icon:"🇫🇷",label:"Hébergement",value:"France",detail:"RGPD natif, données chiffrées" },
   ];
   return(
     <div style={ { padding:"72px 24px",maxWidth:960,margin:"0 auto" } }>
@@ -385,15 +386,15 @@ function TechSpecs(){
 
 /* ======== CTA ======== */
 function FinalCTA(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div style={ { padding:"72px 24px 88px",textAlign:"center",position:"relative",overflow:"hidden" } }>
       <div style={ { position:"absolute",bottom:"-30%",left:"50%",transform:"translateX(-50%)",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle,rgba(212,133,74,0.05) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative" } }>
         <h2 style={ { fontSize:32,fontWeight:300,margin:"0 0 12px" } }>Testez <span style={ { fontWeight:700,color:C.ac } }>maintenant</span>. Jugez par vous-même.</h2>
-        <p style={ { fontSize:15,color:C.mt,maxWidth:460,margin:"0 auto 32px" } }>3 simulations gratuites. Pas de carte bancaire. Débriefing FORCE 3D complet dès le premier appel.</p>
+        <p style={ { fontSize:15,color:C.mt,maxWidth:460,margin:"0 auto 32px" } }>1 simulation gratuite. Pas de carte bancaire. Débriefing FORCE 3D complet dès le premier appel.</p>
         <div className="vm-btn-row" style={ { display:"flex",gap:14,justifyContent:"center",flexWrap:"wrap" } }>
-          <button style={ { padding:"16px 40px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>Lancer ma première simulation →</button>
-          <button style={ { padding:"16px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:14,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>Voir les tarifs</button>
+          <button onClick={ ()=>navigate("/simulation") } style={ { padding:"16px 40px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>Lancer ma première simulation →</button>
+          <button onClick={ ()=>navigate("/tarifs") } style={ { padding:"16px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:14,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>Voir les tarifs</button>
         </div>
         <div style={ { fontSize:12,color:C.dm,marginTop:14 } }>Gratuit · Sans inscription · 5 minutes</div>
       </div>

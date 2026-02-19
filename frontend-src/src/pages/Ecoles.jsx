@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useColors, Badge, Avatar, WaveformAnim, CountUp, MiniSparkline, Nav, Footer } from "../shared";
 
 /* ======== HERO ======== */
 function Hero(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div className="vm-hero" style={ { textAlign:"center",padding:"72px 24px 56px",position:"relative",overflow:"hidden" } }>
       <div style={ { position:"absolute",top:"-20%",left:"50%",transform:"translateX(-50%)",width:600,height:600,borderRadius:"50%",background:"radial-gradient(circle,rgba(139,94,207,0.04) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative" } }>
@@ -11,17 +12,17 @@ function Hero(){
           🎓 Offre Écoles de Commerce & Universités
         </div>
         <h1 className="vm-h1" style={ { fontSize:42,fontWeight:300,margin:"0 0 18px",letterSpacing:-0.8,lineHeight:1.15 } }>
-          Vos étudiants s'entraînent sur<br/><span style={ { fontWeight:700,color:C.ac } }>200 prospects IA réalistes</span>
+          Vos étudiants s'entraînent sur<br/><span style={ { fontWeight:700,color:C.ac } }>12 prospects IA réalistes</span>
         </h1>
         <p style={ { fontSize:17,color:C.mt,maxWidth:560,margin:"0 auto 36px",lineHeight:1.65 } }>
           Simulation vocale. Évaluation automatique par compétences. Export des notes par promotion. 
           Le simulateur de vente qui remplace les jeux de rôle entre étudiants.
         </p>
         <div className="vm-btn-row" style={ { display:"flex",gap:14,justifyContent:"center",flexWrap:"wrap",marginBottom:20 } }>
-          <button style={ { padding:"15px 32px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 24px rgba(212,133,74,0.3)" } }>
+          <button onClick={ ()=>navigate("/ecoles-tarifs") } style={ { padding:"15px 32px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 24px rgba(212,133,74,0.3)" } }>
             Demander un devis école →
           </button>
-          <button style={ { padding:"15px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:12,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>
+          <button onClick={ ()=>navigate("/simulation") } style={ { padding:"15px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:12,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>
             Tester en tant que professeur
           </button>
         </div>
@@ -57,7 +58,7 @@ function SchoolProblem(){
 /* ======== SOLUTION 3 PILIERS ======== */
 function Solution(){
   const C = useColors(); const pillars=[
-    { icon:"🗣️",color:C.ac,title:"Simulation vocale réaliste",desc:"Chaque étudiant parle à un prospect IA avec sa propre personnalité, ses objections, ses réactions. 200 scénarios dans 20 secteurs. Pas de script, pas de chatbot.",features:["Conversation vocale temps réel","Prospect qui peut être convaincu","8 voix françaises différentes"] },
+    { icon:"🗣️",color:C.ac,title:"Simulation vocale réaliste",desc:"Chaque étudiant parle à un prospect IA avec sa propre personnalité, ses objections, ses réactions. 12 scénarios dans 12 secteurs. Pas de script, pas de chatbot.",features:["Conversation vocale temps réel","Prospect qui peut être convaincu","8 voix françaises différentes"] },
     { icon:"📋",color:C.ok,title:"Évaluation automatique FORCE 3D",desc:"6 compétences évaluées sur 3 dimensions (technique, relationnel, stratégique). Score sur 20, radar visuel, verbatims, conseil prioritaire. La même grille pour tout le monde.",features:["Score reproductible et objectif","6 compétences commerciales","Feedback immédiat post-appel"] },
     { icon:"📊",color:C.bl,title:"Dashboard professeur",desc:"Suivez toute la promotion en temps réel. Classement, progression, alertes. Exportez les notes en CSV pour intégration dans votre système de notation.",features:["Vue par promotion / groupe","Export CSV des notes","Comparaison entre groupes"] },
   ];
@@ -148,7 +149,7 @@ function Solution(){
 /* ======== CHIFFRES ======== */
 function Numbers(){
   const C = useColors(); const stats=[
-    { value:200,suffix:"+",label:"Scénarios réels",sub:"20 secteurs PME françaises" },
+    { value:12,suffix:"",label:"Scénarios réels",sub:"12 secteurs PME françaises" },
     { value:30,suffix:"",label:"Étudiants simultanés",sub:"Chacun avec son propre prospect IA" },
     { value:6,suffix:"",label:"Compétences évaluées",sub:"Grille FORCE 3D standardisée" },
     { value:5,suffix:" min",label:"Pour un résultat",sub:"Simulation + débriefing complet" },
@@ -172,7 +173,7 @@ function Numbers(){
 /* ======== CAS USAGE PÉDAGOGIQUE ======== */
 function UseCases(){
   const C = useColors(); const cases=[
-    { icon:"📝",title:"TD de négociation commerciale",desc:"Remplacez les jeux de rôle par 200 simulations individuelles. Chaque étudiant reçoit un score objectif. Comparez les performances entre groupes.",semester:"S1–S2 · Licence / Master" },
+    { icon:"📝",title:"TD de négociation commerciale",desc:"Remplacez les jeux de rôle par des simulations individuelles. Chaque étudiant reçoit un score objectif. Comparez les performances entre groupes.",semester:"S1–S2 · Licence / Master" },
     { icon:"🏆",title:"Challenge inter-promotions",desc:"Organisez un concours de vente entre Master 1 et Master 2. Classement en temps réel, meilleur score, meilleure progression.",semester:"Événement ponctuel" },
     { icon:"📈",title:"Suivi de progression semestriel",desc:"Assignez 3 simulations par mois. Mesurez la progression de chaque étudiant sur 6 compétences. Export des notes en fin de semestre.",semester:"Toute l'année" },
     { icon:"🎯",title:"Préparation aux entretiens",desc:"Les étudiants en stage s'entraînent à vendre à de vrais prospects IA dans le secteur de leur entreprise d'accueil.",semester:"Avant stage · Alternance" },
@@ -205,7 +206,7 @@ function Comparison(){
     { feature:"Réalisme du prospect",old:"Étudiant qui joue mal",nw:"IA vocale avec vraie personnalité" },
     { feature:"Évaluation",old:"Subjective, variable",nw:"Score /20 standardisé FORCE 3D" },
     { feature:"Feedback",old:"Général, oral, oublié",nw:"Écrit, par compétence, immédiat" },
-    { feature:"Préparation professeur",old:"Rédiger des cas, briefer",nw:"200 scénarios prêts à l'emploi" },
+    { feature:"Préparation professeur",old:"Rédiger des cas, briefer",nw:"12 scénarios prêts à l'emploi" },
     { feature:"Suivi progression",old:"Carnet de notes Excel",nw:"Dashboard temps réel + export CSV" },
     { feature:"Scalabilité",old:"1 prof = 15 étudiants max",nw:"30 étudiants en même temps" },
   ];
@@ -266,7 +267,7 @@ function Testimonials(){
 
 /* ======== PRICING ÉCOLE ======== */
 function SchoolPricing(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div className="vm-section" style={ { padding:"56px 24px",maxWidth:720,margin:"0 auto" } }>
       <div style={ { textAlign:"center",marginBottom:40 } }>
         <div style={ { fontSize:10,fontWeight:700,letterSpacing:1.5,textTransform:"uppercase",color:C.mt,marginBottom:12 } }>Tarification école</div>
@@ -280,13 +281,13 @@ function SchoolPricing(){
             <h3 style={ { fontSize:22,fontWeight:600,margin:"12px 0 4px" } }>Sur devis</h3>
             <div style={ { fontSize:13,color:C.mt } }>Adapté à la taille de votre école et de vos promotions</div>
           </div>
-          <button style={ { padding:"12px 28px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:10,color:"#fff",fontSize:14,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)" } }>
+          <button onClick={ ()=>navigate("/ecoles-tarifs") } style={ { padding:"12px 28px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:10,color:"#fff",fontSize:14,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)" } }>
             Demander un devis →
           </button>
         </div>
         <div className="vm-grid-2" style={ { display:"grid",gridTemplateColumns:"1fr 1fr",gap:12 } }>
           { [
-            { icon:"✓",text:"200+ scénarios catalogue",color:C.ok },
+            { icon:"✓",text:"12 scénarios catalogue",color:C.ok },
             { icon:"✓",text:"Scénarios sur mesure",color:C.ok },
             { icon:"✓",text:"Simulations illimitées",color:C.ok },
             { icon:"✓",text:"Débriefing FORCE 3D complet",color:C.ok },
@@ -296,6 +297,8 @@ function SchoolPricing(){
             { icon:"✓",text:"Support dédié",color:C.ok },
             { icon:"✓",text:"Comparaison inter-groupes",color:C.ok },
             { icon:"✓",text:"Accès 24/7 pour les étudiants",color:C.ok },
+            { icon:"✓",text:"Création sur mesure de scénarios",color:C.ok },
+            { icon:"✓",text:"Multi-langue (français natif)",color:C.ok },
           ].map((f,i)=>(
             <div key={ i } style={ { display:"flex",gap:8,alignItems:"center" } }>
               <div style={ { width:18,height:18,borderRadius:5,background:C.okD,display:"flex",alignItems:"center",justifyContent:"center",fontSize:9,color:C.ok,fontWeight:700 } }>{ f.icon }</div>
@@ -306,7 +309,7 @@ function SchoolPricing(){
         <div style={ { marginTop:24,padding:"14px 18px",background:C.bgE,borderRadius:12,display:"flex",alignItems:"center",gap:12 } }>
           <span style={ { fontSize:20 } }>💡</span>
           <div>
-            <div style={ { fontSize:13,fontWeight:600 } }>Finançable par votre budget pédagogique ou OPCO</div>
+            <div style={ { fontSize:13,fontWeight:600 } }>Conforme RGPD · Hébergé en France</div>
             <div style={ { fontSize:12,color:C.dm } }>Nous vous fournissons le devis et les documents nécessaires</div>
           </div>
         </div>
@@ -346,7 +349,7 @@ function Onboarding(){
 
 /* ======== CTA ======== */
 function FinalCTA(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div style={ { padding:"64px 24px 80px",textAlign:"center",position:"relative",overflow:"hidden" } }>
       <div style={ { position:"absolute",bottom:"-30%",left:"50%",transform:"translateX(-50%)",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle,rgba(139,94,207,0.04) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative" } }>
@@ -357,10 +360,10 @@ function FinalCTA(){
           Démo gratuite pour les enseignants. Testez avec votre propre promotion. Aucun engagement.
         </p>
         <div className="vm-btn-row" style={ { display:"flex",gap:14,justifyContent:"center",flexWrap:"wrap" } }>
-          <button style={ { padding:"16px 36px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>Demander un devis école →</button>
-          <button style={ { padding:"16px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:14,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>Tester gratuitement</button>
+          <button onClick={ ()=>navigate("/ecoles-tarifs") } style={ { padding:"16px 36px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>Demander un devis école →</button>
+          <button onClick={ ()=>navigate("/simulation") } style={ { padding:"16px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:14,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>Tester gratuitement</button>
         </div>
-        <div style={ { fontSize:12,color:C.dm,marginTop:14 } }>Réponse sous 24h · Devis personnalisé · Finançable OPCO</div>
+        <div style={ { fontSize:12,color:C.dm,marginTop:14 } }>Réponse sous 24h · Devis personnalisé</div>
       </div>
     </div>
   ); }

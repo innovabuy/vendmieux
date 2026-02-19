@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useColors, Badge, Avatar, WaveformAnim, CountUp, MiniSparkline, Nav, Footer } from "../shared";
 
 /* ======== HERO ======== */
 function Hero(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div style={ { position:"relative",overflow:"hidden",padding:"80px 24px 72px",textAlign:"center" } }>
       <div style={ { position:"absolute",top:"-20%",left:"50%",transform:"translateX(-50%)",width:600,height:600,borderRadius:"50%",background:"radial-gradient(circle,rgba(212,133,74,0.06) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative",maxWidth:720,margin:"0 auto" } }>
@@ -16,17 +16,17 @@ function Hero(){
           Vos commerciaux s'entraînent<br/>sur <span style={ { fontWeight:700,color:C.ac } }>de vrais prospects IA</span>
         </h1>
         <p style={ { fontSize:17,color:C.mt,maxWidth:540,margin:"0 auto 36px",lineHeight:1.65 } }>
-          Simulation vocale réaliste. Débriefing instantané. Progression mesurable. 200+ scénarios conçus pour les PME françaises.
+          Simulation vocale réaliste. Débriefing instantané. Progression mesurable. 12 scénarios conçus pour les PME françaises.
         </p>
         <div className="vm-btn-row" style={ { display:"flex",gap:14,justifyContent:"center",flexWrap:"wrap",marginBottom:48 } }>
-          <button style={ { padding:"15px 32px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 24px rgba(212,133,74,0.3)" } }>
+          <button onClick={ ()=>navigate("/simulation") } style={ { padding:"15px 32px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 24px rgba(212,133,74,0.3)" } }>
             Essayez gratuitement →
           </button>
-          <button style={ { padding:"15px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:12,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>
+          <button onClick={ ()=>navigate("/produit") } style={ { padding:"15px 32px",background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:12,color:C.tx,fontSize:15,fontWeight:500,cursor:"pointer" } }>
             Voir comment ça marche
           </button>
         </div>
-        <div style={ { fontSize:12,color:C.dm,marginBottom:40 } }>Sans carte bancaire · 3 simulations gratuites · Résultat immédiat</div>
+        <div style={ { fontSize:12,color:C.dm,marginBottom:40 } }>Sans carte bancaire · 1 simulation gratuite · Résultat immédiat</div>
 
         { /* Mini call preview */ }
         <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:20,padding:"32px 28px",maxWidth:480,margin:"0 auto" } }>
@@ -165,8 +165,8 @@ function HowItWorks(){
 /* ======== NUMBERS ======== */
 function Numbers(){
   const C = useColors(); const stats=[
-    { value:200,suffix:"+",label:"Scénarios réels",sub:"20 secteurs PME françaises" },
-    { value:9,suffix:"",label:"Types de situations",sub:"Prospection, négociation, réclamation..." },
+    { value:12,suffix:"",label:"Scénarios réels",sub:"12 secteurs PME françaises" },
+    { value:5,suffix:"",label:"Types de situations",sub:"Prospection, négociation, réclamation..." },
     { value:6,suffix:"",label:"Compétences évaluées",sub:"Méthode FORCE 3D exclusive" },
     { value:49,suffix:"€",label:"Par commercial / mois",sub:"100x moins cher qu'un formateur" },
   ];
@@ -432,7 +432,7 @@ function WhyVendMieux(){
   const C = useColors(); const diffs=[
     { icon:"🇫🇷",title:"Méthode française, pas un framework US",desc:"FORCE 3D : 30 ans de direction commerciale en PME industrielle. Pas du BANT, pas du MEDDIC." },
     { icon:"🗣️",title:"De la voix, pas du chatbot",desc:"Vos commerciaux vendent en parlant. VendMieux est un simulateur vocal, pas un chatbot texte." },
-    { icon:"🏭",title:"Conçu pour les PME, pas les licornes",desc:"200+ scénarios dans 20 secteurs PME : industrie, BTP, santé, commerce, immobilier..." },
+    { icon:"🏭",title:"Conçu pour les PME, pas les licornes",desc:"12 scénarios dans 12 secteurs PME : industrie, BTP, santé, commerce, immobilier... et création sur mesure de vos propres scénarios." },
     { icon:"💰",title:"49€/mois, pas 'contactez-nous'",desc:"Prix transparent. Pas de devis opaque. Vous testez, vous décidez." },
   ];
   return(
@@ -457,10 +457,10 @@ function WhyVendMieux(){
 
 /* ======== SECTORS ======== */
 function Sectors(){
-  const C = useColors(); const s=["Industrie","BTP","Santé","Tech / SaaS","Commerce","Immobilier","Transport","Énergie","Formation","Juridique","Automobile","Beauté","Assurance","Artisanat","Sécurité","Événementiel","Restauration","Agriculture","Propreté","Services"];
+  const C = useColors(); const s=["Industrie","BTP","Santé","Tech / SaaS","Commerce","Immobilier","Transport","Énergie","Formation","Juridique","Automobile","Services"];
   return(
     <div style={ { padding:"48px 24px 72px",maxWidth:960,margin:"0 auto",textAlign:"center" } }>
-      <div style={ { fontSize:10,fontWeight:700,letterSpacing:1.5,textTransform:"uppercase",color:C.mt,marginBottom:16 } }>20 secteurs couverts</div>
+      <div style={ { fontSize:10,fontWeight:700,letterSpacing:1.5,textTransform:"uppercase",color:C.mt,marginBottom:16 } }>12 secteurs couverts</div>
       <div style={ { display:"flex",flexWrap:"wrap",gap:8,justifyContent:"center" } }>
         { s.map(x=><span key={ x } style={ { padding:"6px 14px",borderRadius:8,background:C.bgC,border:`1px solid ${ C.bd }`,fontSize:12,color:C.mt,fontWeight:500 } }>{ x }</span>) }
       </div>
@@ -469,13 +469,13 @@ function Sectors(){
 
 /* ======== FINAL CTA ======== */
 function FinalCTA(){
-  const C = useColors(); return(
+  const C = useColors(); const navigate = useNavigate(); return(
     <div style={ { padding:"72px 24px 88px",textAlign:"center",position:"relative",overflow:"hidden" } }>
       <div style={ { position:"absolute",bottom:"-30%",left:"50%",transform:"translateX(-50%)",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle,rgba(212,133,74,0.05) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative" } }>
         <h2 style={ { fontSize:32,fontWeight:300,margin:"0 0 12px" } }>Testez avec un <span style={ { fontWeight:700,color:C.ac } }>vrai prospect IA</span>. Maintenant.</h2>
         <p style={ { fontSize:15,color:C.mt,maxWidth:460,margin:"0 auto 32px" } }>Pas de démo commerciale. Pas de formulaire. Vous parlez à un prospect IA et recevez votre évaluation en 5 minutes.</p>
-        <button style={ { padding:"16px 40px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>
+        <button onClick={ ()=>navigate("/simulation") } style={ { padding:"16px 40px",background:`linear-gradient(135deg,${ C.ac },${ C.acL })`,border:"none",borderRadius:14,color:"#fff",fontSize:16,fontWeight:600,cursor:"pointer",boxShadow:"0 6px 32px rgba(212,133,74,0.3)" } }>
           Lancer ma première simulation →
         </button>
         <div style={ { fontSize:12,color:C.dm,marginTop:14 } }>Gratuit · Sans inscription · 5 minutes</div>

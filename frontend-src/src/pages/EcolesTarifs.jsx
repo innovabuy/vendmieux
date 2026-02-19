@@ -41,7 +41,7 @@ function Inclus(){
   const cards=[
     { icon:"🗣️",title:"Accès Simulateur",color:C.ac,items:[
       "Séances d'entraînement vocal face à un prospect IA",
-      "200 scénarios sectoriels disponibles",
+      "12 scénarios sectoriels disponibles",
       "3 niveaux de difficulté (débutant, intermédiaire, expert)",
       "Évaluation FORCE 3D après chaque séance",
       "Voix française HD ultra-réaliste",

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { ThemeProvider } from "./theme";
 import { AuthProvider } from "./auth";
+import Head from "./components/Head";
 import "./responsive.css";
 import "@fontsource/dm-sans/latin-200.css";
 import "@fontsource/dm-sans/latin-300.css";
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <AuthProvider>
       <ThemeProvider>
         <ScrollToTop/>
+        <Head/>
         <Suspense fallback={<div style={{minHeight:"100vh",background:"#0C0E13"}}></div>}>
           <Routes>
             <Route path="/" element={<Accueil/>}/>

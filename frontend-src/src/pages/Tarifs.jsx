@@ -8,7 +8,7 @@ function Ck(){
 }
 
 const FEATURES = [
-  "Tous les scénarios sectoriels (200+ disponibles)",
+  "Tous les scénarios sectoriels (12 disponibles)",
   "3 niveaux de difficulté",
   "Évaluation FORCE 3D après chaque séance",
   "Dashboard de progression individuel",
@@ -74,7 +74,7 @@ export default function Tarifs(){
             <p style={{fontSize:13,color:C.mt,margin:"8px 0 4px"}}>{priceSub}</p>
             <p style={{fontSize:14,color:C.ac,fontWeight:600,margin:"12px 0 28px"}}>20 séances d'entraînement incluses</p>
             <Link to="/contact" style={{display:"block",width:"100%",padding:"14px 20px",background:`linear-gradient(135deg,${C.ac},${C.acL})`,border:"none",borderRadius:10,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)",textDecoration:"none",textAlign:"center"}}>Démarrer l'essai gratuit</Link>
-            <p style={{fontSize:12,color:C.mt,marginTop:12}}>3 séances offertes · Sans carte bancaire</p>
+            <p style={{fontSize:12,color:C.mt,marginTop:12}}>1 simulation gratuite · Sans carte bancaire</p>
           </div>
           <div style={{borderTop:`1px solid ${C.bd}`,padding:"24px 28px 28px"}}>
             {FEATURES.map((f,i)=>(
@@ -145,7 +145,7 @@ export default function Tarifs(){
         <h2 style={{fontSize:26,fontWeight:300,marginBottom:10}}>
           Prêt à former vos commerciaux <span style={{color:C.ac,fontWeight:600}}>autrement</span> ?
         </h2>
-        <p style={{fontSize:14,color:C.mt,marginBottom:24}}>3 séances offertes. Pas de carte bancaire.</p>
+        <p style={{fontSize:14,color:C.mt,marginBottom:24}}>1 simulation gratuite. Pas de carte bancaire.</p>
         <Link to="/contact" style={{display:"inline-block",padding:"14px 36px",background:`linear-gradient(135deg,${C.ac},${C.acL})`,border:"none",borderRadius:12,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 24px rgba(212,133,74,0.3)",textDecoration:"none"}}>
           Réserver une démo →
         </Link>

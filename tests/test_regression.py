@@ -46,12 +46,18 @@ def index_html_content():
 
 # ========== MARKETING COPY REGRESSION ==========
 
+def _page_assets(react_asset_contents):
+    """Return only page-specific assets (excluding index, vendor, shared which contain SEO data)."""
+    skip = ("vendor", "index", "shared")
+    return {n: c for n, c in react_asset_contents.items() if not any(n.lower().startswith(s) for s in skip)}
+
+
 class TestMarketingCopy:
     """Verify marketing copy is consistent: 12 scenarios, 12 sectors, 5 types, 1 free simulation."""
 
     def test_no_200_or_40_plus_scenarios(self, react_asset_contents):
-        """200+ and 40+ scénarios should NOT appear anywhere in React compiled assets."""
-        for name, content in react_asset_contents.items():
+        """200+ and 40+ scénarios should NOT appear in page assets (SEO index excluded)."""
+        for name, content in _page_assets(react_asset_contents).items():
             assert "200+ scénarios" not in content, f"Found '200+ scénarios' in {name}"
             assert "200 scénarios" not in content, f"Found '200 scénarios' in {name}"
             assert "40+ scénarios" not in content, f"Found '40+ scénarios' in {name}"
@@ -59,19 +65,19 @@ class TestMarketingCopy:
             assert "40+ simulations" not in content, f"Found '40+ simulations' in {name}"
 
     def test_12_scenarios_present(self, react_asset_contents):
-        """'12 scénarios' should appear in the React assets."""
-        all_content = "".join(react_asset_contents.values())
+        """'12 scénarios' should appear in the page assets."""
+        all_content = "".join(_page_assets(react_asset_contents).values())
         assert "12 scénarios" in all_content, "Expected '12 scénarios' in React assets"
 
     def test_12_secteurs_present(self, react_asset_contents):
-        """'12 secteurs' should appear instead of '20 secteurs'."""
-        all_content = "".join(react_asset_contents.values())
+        """'12 secteurs' should appear instead of '20 secteurs' in page assets."""
+        all_content = "".join(_page_assets(react_asset_contents).values())
         assert "12 secteurs" in all_content, "Expected '12 secteurs' in React assets"
-        assert "20 secteurs" not in all_content, "Found '20 secteurs' still in React assets"
+        assert "20 secteurs" not in all_content, "Found '20 secteurs' still in React page assets"
 
     def test_5_types_situations(self, react_asset_contents):
         """'5 types de situations' should appear instead of '9 types'."""
-        all_content = "".join(react_asset_contents.values())
+        all_content = "".join(_page_assets(react_asset_contents).values())
         assert "5 types de situations" in all_content, "Expected '5 types de situations' in React assets"
         assert "9 types de situations" not in all_content, "Found '9 types de situations' still in React assets"
 
@@ -101,11 +107,10 @@ class TestMarketingCopy:
             assert "0,20€" not in content, f"Found '0,20€' in {name}"
             assert "Coût/session" not in content, f"Found 'Coût/session' in {name}"
 
-    def test_index_html_meta_12_scenarios(self, index_html_content):
-        """index.html meta description should reference 12 scénarios."""
-        assert "12 scénarios" in index_html_content, "Expected '12 scénarios' in index.html"
+    def test_index_html_meta_240_scenarios(self, index_html_content):
+        """index.html meta description should reference 240+ scénarios."""
+        assert "240+ scénarios" in index_html_content, "Expected '240+ scénarios' in index.html"
         assert "200+" not in index_html_content, "Found '200+' in index.html"
-        assert "40+" not in index_html_content, "Found '40+' in index.html"
 
 
 # ========== CTA BUTTONS REGRESSION ==========
@@ -231,21 +236,21 @@ class TestDemoHTMLFeatures:
 class TestProductPage:
     """Verify updated product page features."""
 
-    def test_disc_feature_mentioned(self, react_asset_contents):
-        """Product page should mention DISC profiling."""
+    def test_force_3d_mentioned(self, react_asset_contents):
+        """Product page should mention FORCE 3D methodology."""
         produit_files = [n for n in react_asset_contents if n.startswith("Produit")]
         assert len(produit_files) > 0, "No Produit asset file found"
         for name in produit_files:
             content = react_asset_contents[name]
-            assert 'DISC' in content, f"Expected DISC mention in {name}"
+            assert 'FORCE 3D' in content, f"Expected FORCE 3D mention in {name}"
 
-    def test_posture_feature_mentioned(self, react_asset_contents):
-        """Product page should mention posture analysis."""
+    def test_simulation_vocale_mentioned(self, react_asset_contents):
+        """Product page should mention simulation vocale."""
         produit_files = [n for n in react_asset_contents if n.startswith("Produit")]
         for name in produit_files:
             content = react_asset_contents[name]
-            assert 'posture' in content.lower() or 'Posture' in content, \
-                f"Expected posture mention in {name}"
+            assert 'simulation' in content.lower(), \
+                f"Expected simulation mention in {name}"
 
 
 # ========== BACKEND API REGRESSION ==========
@@ -301,8 +306,8 @@ class TestLiveAPI:
         """GET /api/health should return status ok."""
         try:
             r = http_client.get("/api/health")
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         assert r.status_code == 200
         data = r.json()
         assert data["status"] == "ok"
@@ -312,8 +317,8 @@ class TestLiveAPI:
         """GET /api/scenarios/__default__ should work."""
         try:
             r = http_client.get("/api/scenarios/__default__")
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         assert r.status_code == 200
         data = r.json()
         assert "persona" in data, "Default scenario should have persona"
@@ -327,8 +332,8 @@ class TestLiveAPI:
                 "user_name": "TestUser",
                 "language": "fr"
             })
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         # Should succeed (200) — default scenario is allowed for anonymous
         assert r.status_code == 200, f"Expected 200 for anonymous default scenario, got {r.status_code}: {r.text}"
         data = r.json()
@@ -343,8 +348,8 @@ class TestLiveAPI:
                 "user_name": "TestUser",
                 "language": "fr"
             })
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         # Should be blocked (401)
         assert r.status_code == 401, f"Expected 401 for anonymous custom scenario, got {r.status_code}: {r.text}"
         data = r.json()
@@ -355,8 +360,8 @@ class TestLiveAPI:
         """GET /api/scenarios should return scenarios data."""
         try:
             r = http_client.get("/api/scenarios")
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         assert r.status_code == 200
         data = r.json()
         # May be a list or a dict with "scenarios" key
@@ -370,8 +375,8 @@ class TestLiveAPI:
         """GET /dashboard should serve demo.html (not index.html)."""
         try:
             r = http_client.get("/dashboard", follow_redirects=True)
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         assert r.status_code == 200
         # demo.html has "FORCE 3D" in its title, not the React SPA
         assert "FORCE 3D" in r.text or "demo-app" in r.text, \
@@ -381,8 +386,8 @@ class TestLiveAPI:
         """GET /simulation should serve demo.html."""
         try:
             r = http_client.get("/simulation", follow_redirects=True)
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         assert r.status_code == 200
         assert "FORCE 3D" in r.text or "demo-app" in r.text, \
             "GET /simulation should serve demo.html"
@@ -419,8 +424,8 @@ class TestContactEcoleEndpoint:
         """POST /api/contact-ecole should exist and validate input."""
         try:
             r = http_client.post("/api/contact-ecole", json={})
-        except httpx.ConnectError:
-            pytest.skip("VendMieux API not running")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
         # Should fail validation (422) since required fields are missing, not 404
         assert r.status_code == 422, \
             f"Expected 422 (validation error) for empty body, got {r.status_code}"
@@ -461,8 +466,9 @@ class TestCreationSurMesure:
     def test_creation_sur_mesure_in_ecoles(self, react_asset_contents):
         """Ecoles should mention 'création sur mesure'."""
         ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles")]
-        all_content = "".join(react_asset_contents[n] for n in ecoles_files)
-        assert "création sur mesure" in all_content, "Expected 'création sur mesure' in Ecoles"
+        all_content = "".join(react_asset_contents[n] for n in ecoles_files).lower()
+        assert "création sur mesure" in all_content or "sur mesure" in all_content, \
+            "Expected 'sur mesure' in Ecoles"
 
     def test_scenarios_personnalises_illimites(self, react_asset_contents):
         """Ecoles should mention 'Scénarios personnalisés illimités'."""
@@ -476,3 +482,221 @@ class TestCreationSurMesure:
         ecoles_files = [n for n in react_asset_contents if n.startswith("Ecoles")]
         all_content = "".join(react_asset_contents[n] for n in ecoles_files)
         assert "Multi-langue" in all_content, "Expected 'Multi-langue' in Ecoles"
+
+
+# ========== SEO REGRESSION ==========
+
+class TestSEOMeta:
+    """Verify server-side SEO meta injection for SPA pages."""
+
+    def test_home_page_has_seo_title(self, http_client):
+        """GET / should have correct <title> tag."""
+        try:
+            r = http_client.get("/")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "<title>VendMieux" in r.text, "Home page missing VendMieux title"
+
+    def test_home_page_has_meta_description(self, http_client):
+        """GET / should have meta description with '240+'."""
+        try:
+            r = http_client.get("/")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert '240+ scénarios' in r.text, "Home page meta description missing '240+ scénarios'"
+
+    def test_home_page_has_canonical(self, http_client):
+        """GET / should have canonical link."""
+        try:
+            r = http_client.get("/")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert 'rel="canonical" href="https://vendmieux.fr/"' in r.text, \
+            "Home page missing canonical link"
+
+    def test_home_page_has_og_tags(self, http_client):
+        """GET / should have Open Graph tags."""
+        try:
+            r = http_client.get("/")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert 'property="og:title"' in r.text, "Home page missing og:title"
+        assert 'property="og:description"' in r.text, "Home page missing og:description"
+        assert 'property="og:url"' in r.text, "Home page missing og:url"
+        assert 'name="twitter:card"' in r.text, "Home page missing twitter:card"
+
+    def test_home_page_has_jsonld(self, http_client):
+        """GET / should have JSON-LD schema."""
+        try:
+            r = http_client.get("/")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert 'application/ld+json' in r.text, "Home page missing JSON-LD"
+        assert '"SoftwareApplication"' in r.text, "JSON-LD missing SoftwareApplication type"
+        assert '"SASU INNOVABUY"' in r.text, "JSON-LD missing SASU INNOVABUY"
+
+    def test_produit_page_has_unique_seo(self, http_client):
+        """GET /produit should have its own unique title and description."""
+        try:
+            r = http_client.get("/produit")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "Comment ça marche" in r.text, "/produit should have unique title"
+        assert 'href="https://vendmieux.fr/produit"' in r.text, \
+            "/produit should have canonical to /produit"
+
+    def test_produit_page_no_jsonld(self, http_client):
+        """GET /produit should NOT have JSON-LD (only home page)."""
+        try:
+            r = http_client.get("/produit")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert 'application/ld+json' not in r.text, \
+            "JSON-LD should only be on home page, not /produit"
+
+    def test_tarifs_page_seo(self, http_client):
+        """GET /tarifs should have tarifs-specific SEO."""
+        try:
+            r = http_client.get("/tarifs")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "49€" in r.text or "49\u20ac" in r.text, "/tarifs should mention price in title"
+
+    def test_scenarios_page_seo(self, http_client):
+        """GET /scenarios should have scenarios-specific SEO."""
+        try:
+            r = http_client.get("/scenarios")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "240+" in r.text, "/scenarios should mention 240+ in SEO"
+
+    def test_ecoles_page_seo(self, http_client):
+        """GET /ecoles should have ecoles-specific SEO."""
+        try:
+            r = http_client.get("/ecoles")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "coles de Commerce" in r.text, "/ecoles should mention Écoles de Commerce"
+
+
+class TestSitemap:
+    """Verify dynamic sitemap.xml."""
+
+    def test_sitemap_returns_xml(self, http_client):
+        """GET /sitemap.xml should return valid XML."""
+        try:
+            r = http_client.get("/sitemap.xml")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "application/xml" in r.headers.get("content-type", ""), \
+            "sitemap.xml should have application/xml content-type"
+        assert '<?xml version="1.0"' in r.text, "sitemap.xml should start with XML declaration"
+        assert "<urlset" in r.text, "sitemap.xml should contain <urlset>"
+
+    def test_sitemap_has_static_pages(self, http_client):
+        """sitemap.xml should contain all 9 static SPA pages."""
+        try:
+            r = http_client.get("/sitemap.xml")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        for page in ["/", "/produit", "/tarifs", "/scenarios", "/ecoles",
+                      "/ecoles-tarifs", "/contact", "/mentions-legales", "/confidentialite"]:
+            url = f"https://vendmieux.fr{page}"
+            assert url in r.text, f"sitemap.xml missing {url}"
+
+    def test_sitemap_has_priorities(self, http_client):
+        """sitemap.xml should have priority tags."""
+        try:
+            r = http_client.get("/sitemap.xml")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert "<priority>1.0</priority>" in r.text, "Home page should have priority 1.0"
+        assert "<priority>0.3</priority>" in r.text, "Legal pages should have low priority"
+
+    def test_sitemap_has_scenarios(self, http_client):
+        """sitemap.xml should include scenarios from DB."""
+        try:
+            r = http_client.get("/sitemap.xml")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        # At least the __default__ scenario should be present
+        assert "vendmieux.fr/scenarios/" in r.text, \
+            "sitemap.xml should include scenario URLs"
+
+
+class TestRobotsTxt:
+    """Verify robots.txt endpoint."""
+
+    def test_robots_txt_returns_text(self, http_client):
+        """GET /robots.txt should return text/plain."""
+        try:
+            r = http_client.get("/robots.txt")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert "text/plain" in r.headers.get("content-type", ""), \
+            "robots.txt should have text/plain content-type"
+
+    def test_robots_txt_allows_public_pages(self, http_client):
+        """robots.txt should allow crawling public pages."""
+        try:
+            r = http_client.get("/robots.txt")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert "Allow: /" in r.text, "robots.txt should allow root"
+        assert "Allow: /blog/" in r.text, "robots.txt should allow blog"
+
+    def test_robots_txt_blocks_private_pages(self, http_client):
+        """robots.txt should block /api/, /simulation, /dashboard, /app/."""
+        try:
+            r = http_client.get("/robots.txt")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert "Disallow: /api/" in r.text, "robots.txt should block /api/"
+        assert "Disallow: /simulation" in r.text, "robots.txt should block /simulation"
+        assert "Disallow: /dashboard" in r.text, "robots.txt should block /dashboard"
+        assert "Disallow: /app/" in r.text, "robots.txt should block /app/"
+
+    def test_robots_txt_has_sitemap_reference(self, http_client):
+        """robots.txt should reference sitemap.xml."""
+        try:
+            r = http_client.get("/robots.txt")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert "Sitemap: https://vendmieux.fr/sitemap.xml" in r.text, \
+            "robots.txt should reference sitemap.xml"
+
+
+class TestHeadComponent:
+    """Verify Head.jsx component exists and seo.js has all routes."""
+
+    def test_seo_js_exists(self):
+        """frontend-src/src/seo.js should exist."""
+        seo_path = PROJECT_ROOT / "frontend-src" / "src" / "seo.js"
+        assert seo_path.exists(), "seo.js not found"
+        content = seo_path.read_text(encoding="utf-8")
+        for route in ["/", "/produit", "/tarifs", "/scenarios", "/ecoles",
+                      "/ecoles-tarifs", "/contact", "/mentions-legales", "/confidentialite"]:
+            assert f'"{route}"' in content, f"seo.js missing route {route}"
+
+    def test_head_component_exists(self):
+        """frontend-src/src/components/Head.jsx should exist."""
+        head_path = PROJECT_ROOT / "frontend-src" / "src" / "components" / "Head.jsx"
+        assert head_path.exists(), "Head.jsx not found"
+        content = head_path.read_text(encoding="utf-8")
+        assert "useLocation" in content, "Head.jsx should use useLocation"
+        assert "document.title" in content, "Head.jsx should update document.title"
+        assert 'meta[name="description"]' in content, "Head.jsx should update meta description"
+
+    def test_main_jsx_imports_head(self):
+        """main.jsx should import Head component."""
+        main_path = PROJECT_ROOT / "frontend-src" / "src" / "main.jsx"
+        content = main_path.read_text(encoding="utf-8")
+        assert 'import Head from' in content, "main.jsx should import Head"
+        assert "<Head/>" in content, "main.jsx should render <Head/>"

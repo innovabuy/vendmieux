@@ -137,10 +137,10 @@ export default function Contact(){
             <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:16,padding:22 } }>
               <div style={ { fontSize:12,fontWeight:700,letterSpacing:0.8,textTransform:"uppercase",color:C.mt,marginBottom:14 } }>Réponses rapides</div>
               { [
-                { q:"Combien ça coûte ?",a:"49€/user/mois sans engagement. 3 simulations gratuites." },
-                { q:"Je peux tester ?",a:"Oui, 3 simulations gratuites sans carte bancaire." },
+                { q:"Combien ça coûte ?",a:"49€/user/mois sans engagement. 1 simulation gratuite." },
+                { q:"Je peux tester ?",a:"Oui, 1 simulation gratuite sans carte bancaire." },
                 { q:"Délai pour démarrer ?",a:"5 minutes. Compte, scénario, simulation." },
-                { q:"Adapté à mon secteur ?",a:"200+ scénarios dans 20 secteurs. Et créez les vôtres." },
+                { q:"Adapté à mon secteur ?",a:"12 scénarios dans 12 secteurs. Et créez les vôtres." },
               ].map((q,i)=>(
                 <div key={ i } style={ { marginBottom:i<3?12:0 } }>
                   <div style={ { fontSize:12,fontWeight:600,marginBottom:3 } }>{ q.q }</div>

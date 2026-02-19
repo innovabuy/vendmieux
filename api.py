@@ -193,12 +193,10 @@ async def health():
 # --- Existing endpoints ---
 
 @app.get("/")
-async def serve_frontend():
-    return FileResponse(STATIC_DIR / "index.html", headers={
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        "Pragma": "no-cache",
-        "Expires": "0",
-    })
+async def serve_frontend(request: Request):
+    html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    html = _inject_seo_meta(html, request.url.path)
+    return HTMLResponse(content=html, headers=_SPA_NO_CACHE)
 
 
 @app.post("/api/token")
@@ -1176,10 +1174,51 @@ async def blog_images(path: str):
 
 @app.get("/sitemap.xml")
 async def sitemap():
-    f = Path(__file__).parent / "sitemap.xml"
-    if f.exists():
-        return FileResponse(str(f), media_type="application/xml")
-    raise HTTPException(404)
+    """Dynamic sitemap: static pages + scenarios from DB + blog articles."""
+    from fastapi.responses import Response
+    import sqlite3, glob as _glob
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    urls = []
+
+    # Static SPA pages
+    static_pages = [
+        ("https://vendmieux.fr/", "weekly", "1.0"),
+        ("https://vendmieux.fr/produit", "monthly", "0.9"),
+        ("https://vendmieux.fr/tarifs", "monthly", "0.9"),
+        ("https://vendmieux.fr/scenarios", "weekly", "0.8"),
+        ("https://vendmieux.fr/ecoles", "monthly", "0.8"),
+        ("https://vendmieux.fr/ecoles-tarifs", "monthly", "0.7"),
+        ("https://vendmieux.fr/contact", "monthly", "0.7"),
+        ("https://vendmieux.fr/mentions-legales", "yearly", "0.3"),
+        ("https://vendmieux.fr/confidentialite", "yearly", "0.3"),
+    ]
+    for loc, freq, prio in static_pages:
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{prio}</priority>\n  </url>")
+
+    # Scenarios from DB
+    try:
+        db = sqlite3.connect(str(Path(__file__).parent / "vendmieux.db"))
+        scenarios = db.execute("SELECT id FROM scenarios WHERE is_template = 1 OR is_template IS NULL").fetchall()
+        for (sc_id,) in scenarios:
+            urls.append(f"  <url>\n    <loc>https://vendmieux.fr/scenarios/{sc_id}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>")
+        db.close()
+    except Exception:
+        pass
+
+    # Blog articles from data files
+    blog_data_dir = Path(__file__).parent / "blog" / "data" / "articles"
+    if blog_data_dir.exists():
+        urls.append(f"  <url>\n    <loc>https://vendmieux.fr/blog</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>")
+        for f in sorted(blog_data_dir.glob("*.md")):
+            slug = f.stem
+            urls.append(f"  <url>\n    <loc>https://vendmieux.fr/blog/{slug}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>")
+
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>"""
+    return Response(content=xml, media_type="application/xml")
 
 
 @app.get("/sitemap-blog.xml")
@@ -1192,10 +1231,18 @@ async def sitemap_blog():
 
 @app.get("/robots.txt")
 async def robots_txt():
-    f = Path(__file__).parent / "robots.txt"
-    if f.exists():
-        return FileResponse(str(f), media_type="text/plain")
-    raise HTTPException(404)
+    from fastapi.responses import Response
+    content = """User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /scenarios/
+Disallow: /api/
+Disallow: /simulation
+Disallow: /dashboard
+Disallow: /app/
+
+Sitemap: https://vendmieux.fr/sitemap.xml"""
+    return Response(content=content, media_type="text/plain")
 
 
 @app.get("/llms.txt")
@@ -1464,6 +1511,104 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
     return {"status": "ok", "message": "Demande enregistrée. Réponse sous 24h."}
 
 
+# --- SEO meta data per route ---
+
+_SEO_DATA = {
+    "/": {
+        "title": "VendMieux — Simulateur vocal IA de formation commerciale",
+        "description": "Entraînez vos commerciaux avec des prospects IA réalistes. 240+ scénarios, méthode FORCE 3D, évaluation instantanée. Conçu pour les PME françaises.",
+        "canonical": "https://vendmieux.fr/",
+    },
+    "/produit": {
+        "title": "Comment ça marche — VendMieux | Briefing, Simulation vocale, Débriefing FORCE 3D",
+        "description": "Découvrez le fonctionnement de VendMieux : briefing commercial, simulation vocale avec un prospect IA, débriefing FORCE 3D avec analyse DISC et posture.",
+        "canonical": "https://vendmieux.fr/produit",
+    },
+    "/tarifs": {
+        "title": "Tarifs VendMieux — 49€/mois par commercial | Formation commerciale IA",
+        "description": "49€ HT/mois par commercial, 20 sessions incluses. Sans engagement. 240+ scénarios sectoriels + création illimitée sur mesure. Dashboard de progression.",
+        "canonical": "https://vendmieux.fr/tarifs",
+    },
+    "/scenarios": {
+        "title": "Scénarios de simulation — VendMieux | 240+ situations commerciales réalistes",
+        "description": "240+ scénarios de vente couvrant 20 secteurs, 6 types d'appel, 2 niveaux. Prospection, négociation, réclamation, upsell, multi-interlocuteurs.",
+        "canonical": "https://vendmieux.fr/scenarios",
+    },
+    "/ecoles": {
+        "title": "VendMieux pour les Écoles de Commerce et BTS | Simulateur de vente IA",
+        "description": "Remplacez les jeux de rôle entre étudiants par des simulations IA. Évaluation FORCE 3D standardisée, multi-langue, dashboard professeur.",
+        "canonical": "https://vendmieux.fr/ecoles",
+    },
+    "/ecoles-tarifs": {
+        "title": "Tarifs Écoles — VendMieux | Simulateur IA pour enseignement commercial",
+        "description": "Tarifs sur devis pour écoles de commerce, BTS, universités. Scénarios personnalisés illimités, multi-langue, dashboard professeur.",
+        "canonical": "https://vendmieux.fr/ecoles-tarifs",
+    },
+    "/contact": {
+        "title": "Contact VendMieux — Réservez une démo ou demandez un devis",
+        "description": "Contactez l'équipe VendMieux pour une démo gratuite, un devis école, ou toute question. Réponse sous 24h.",
+        "canonical": "https://vendmieux.fr/contact",
+    },
+    "/mentions-legales": {
+        "title": "Mentions légales — VendMieux | SASU INNOVABUY",
+        "description": "Mentions légales du site vendmieux.fr édité par SASU INNOVABUY.",
+        "canonical": "https://vendmieux.fr/mentions-legales",
+    },
+    "/confidentialite": {
+        "title": "Politique de confidentialité — VendMieux | RGPD",
+        "description": "Politique de confidentialité et protection des données personnelles de VendMieux. Conforme RGPD.",
+        "canonical": "https://vendmieux.fr/confidentialite",
+    },
+}
+
+def _inject_seo_meta(html: str, path: str) -> str:
+    """Inject per-route SEO meta tags into the SPA HTML."""
+    seo = _SEO_DATA.get(path, _SEO_DATA["/"])
+    import re
+    # Replace <title>
+    html = re.sub(r"<title>[^<]*</title>", f"<title>{seo['title']}</title>", html)
+    # Replace meta description
+    html = re.sub(
+        r'<meta name="description" content="[^"]*"',
+        f'<meta name="description" content="{seo["description"]}"',
+        html,
+    )
+    # Add canonical + OG tags before </head>
+    og_tags = f"""    <link rel="canonical" href="{seo['canonical']}" />
+    <meta property="og:title" content="{seo['title']}" />
+    <meta property="og:description" content="{seo['description']}" />
+    <meta property="og:url" content="{seo['canonical']}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VendMieux" />
+    <meta property="og:image" content="https://vendmieux.fr/og-home.png" />
+    <meta name="twitter:card" content="summary_large_image" />"""
+    html = html.replace("</head>", f"{og_tags}\n  </head>")
+    # JSON-LD schema on home page only
+    if path == "/":
+        jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "VendMieux",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": seo["description"],
+            "url": "https://vendmieux.fr/",
+            "offers": {
+                "@type": "Offer",
+                "price": "49",
+                "priceCurrency": "EUR",
+                "priceValidUntil": "2027-12-31",
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "SASU INNOVABUY",
+                "url": "https://vendmieux.fr/",
+            },
+        }, ensure_ascii=False)
+        html = html.replace("</head>", f'    <script type="application/ld+json">{jsonld}</script>\n  </head>')
+    return html
+
+
 # --- SPA frontend routes (serve index.html for client-side routing) ---
 
 @app.get("/produit")
@@ -1474,8 +1619,10 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
 @app.get("/contact")
 @app.get("/mentions-legales")
 @app.get("/confidentialite")
-async def spa_page():
-    return FileResponse(STATIC_DIR / "index.html", headers=_SPA_NO_CACHE)
+async def spa_page(request: Request):
+    html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    html = _inject_seo_meta(html, request.url.path)
+    return HTMLResponse(content=html, headers=_SPA_NO_CACHE)
 
 
 @app.get("/dashboard")
