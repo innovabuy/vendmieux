@@ -187,6 +187,39 @@
         }
         .lang-pill-flag { font-size: 18px; line-height: 1; }
 
+        /* Difficulty selector */
+        .diff-selector { margin-bottom: 24px; }
+        .diff-selector-label {
+            font-size: 11px; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; color: var(--text-muted);
+            margin-bottom: 10px; text-align: center;
+        }
+        .diff-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+        .diff-pill {
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+            padding: 10px 18px; border-radius: 20px;
+            font-family: var(--font); font-size: 13px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+            background: transparent; border: 1px solid var(--border);
+            color: var(--text-secondary); text-align: center;
+        }
+        .diff-pill:hover { border-color: var(--border-hover); color: var(--text-primary); }
+        .diff-pill .diff-pill-label { font-size: 13px; font-weight: 600; }
+        .diff-pill .diff-pill-desc { font-size: 10px; font-weight: 400; color: var(--text-muted); max-width: 170px; line-height: 1.3; }
+        .diff-pill.selected .diff-pill-desc { color: inherit; opacity: 0.8; }
+        .diff-pill[data-diff="1"].selected {
+            background: rgba(34,197,94,0.1); border-color: var(--success);
+            color: var(--success); box-shadow: 0 0 12px rgba(34,197,94,0.15);
+        }
+        .diff-pill[data-diff="2"].selected {
+            background: rgba(245,158,11,0.1); border-color: var(--warning);
+            color: var(--warning); box-shadow: 0 0 12px rgba(245,158,11,0.15);
+        }
+        .diff-pill[data-diff="3"].selected {
+            background: rgba(239,68,68,0.1); border-color: var(--danger);
+            color: var(--danger); box-shadow: 0 0 12px rgba(239,68,68,0.15);
+        }
+
         .actions { display: flex; gap: 12px; justify-content: center; margin-top: 28px; }
 
         .btn {
@@ -374,6 +407,120 @@
         .eval-moment-sub-text.ideal { color: var(--success); background: rgba(34,197,94,0.08); padding: 8px 12px; border-radius: var(--radius-xs); }
         .eval-moment-sub-text.why { color: var(--text-secondary); font-style: italic; }
 
+        /* Posture Commerciale */
+        .posture-section { margin-bottom: 28px; }
+        .posture-title {
+            font-size: 18px; font-weight: 700; margin-bottom: 18px; color: var(--text-primary);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .posture-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 16px; }
+        .posture-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); padding: 18px;
+        }
+        .posture-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .posture-card-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); }
+        .posture-card-score { font-size: 16px; font-weight: 800; font-family: var(--font-mono); }
+        .posture-desc { font-size: 13px; color: var(--text-secondary); margin-bottom: 10px; font-style: italic; }
+        .posture-positif { font-size: 12px; color: var(--success); margin-bottom: 3px; }
+        .posture-ameliorer-item {
+            margin-bottom: 10px; padding: 10px; background: var(--bg-input);
+            border-radius: var(--radius-xs); border: 1px solid var(--border);
+        }
+        .posture-score-global {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm);
+            padding: 18px; text-align: center; margin-bottom: 12px;
+        }
+        .posture-score-value { font-size: 28px; font-weight: 800; font-family: var(--font-mono); }
+        .posture-score-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-top: 4px; }
+        .posture-conseil {
+            background: var(--brand-subtle); border: 1px solid rgba(255,107,53,0.25);
+            border-radius: var(--radius-sm); padding: 14px 18px; margin-top: 12px;
+        }
+        .posture-conseil-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--brand); margin-bottom: 4px; }
+        .posture-conseil-text { font-size: 13px; color: var(--text-primary); font-weight: 500; }
+
+        /* DISC Analysis */
+        .disc-section { margin-bottom: 28px; }
+        .disc-title {
+            font-size: 18px; font-weight: 700; margin-bottom: 18px; color: var(--text-primary);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .disc-visual {
+            display: flex; justify-content: center; gap: 16px; margin-bottom: 20px;
+        }
+        .disc-letter {
+            width: 64px; height: 64px; border-radius: 16px;
+            display: grid; place-items: center; font-size: 28px; font-weight: 800;
+            font-family: var(--font-mono); transition: all 0.3s;
+            border: 2px solid var(--border); color: var(--text-muted);
+            background: var(--bg-card); opacity: 0.35;
+        }
+        .disc-letter.active {
+            opacity: 1;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transform: scale(1.1);
+        }
+        .disc-letter.secondary {
+            opacity: 0.75;
+            transform: scale(1.0);
+        }
+        .disc-letter[data-disc="D"] { --disc-color: #ef4444; }
+        .disc-letter[data-disc="I"] { --disc-color: #eab308; }
+        .disc-letter[data-disc="S"] { --disc-color: #22c55e; }
+        .disc-letter[data-disc="C"] { --disc-color: #3b82f6; }
+        .disc-letter.active, .disc-letter.secondary {
+            border-color: var(--disc-color);
+            color: var(--disc-color);
+            background: color-mix(in srgb, var(--disc-color) 8%, var(--bg-card));
+        }
+        .disc-letter.active {
+            box-shadow: 0 4px 20px color-mix(in srgb, var(--disc-color) 30%, transparent);
+        }
+        .disc-letter-label {
+            font-size: 9px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.5px; margin-top: 4px; text-align: center;
+            color: var(--text-muted);
+        }
+        .disc-letter-wrap { display: flex; flex-direction: column; align-items: center; }
+        .disc-letter.active + .disc-letter-label, .disc-letter-wrap.active-wrap .disc-letter-label { color: var(--disc-color); }
+        .disc-profile {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); padding: 18px; margin-bottom: 14px;
+        }
+        .disc-profile-desc { font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 12px; }
+        .disc-indices { list-style: none; }
+        .disc-indices li {
+            font-size: 12px; color: var(--text-secondary); padding: 4px 0;
+            border-bottom: 1px solid rgba(35,35,54,0.3);
+        }
+        .disc-indices li:last-child { border: none; }
+        .disc-adaptation {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); padding: 18px;
+        }
+        .disc-adaptation-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .disc-adaptation-title { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+        .disc-adaptation-score { font-size: 16px; font-weight: 800; font-family: var(--font-mono); }
+        .disc-marche-item {
+            font-size: 12px; padding: 8px 10px; margin-bottom: 6px;
+            background: rgba(34,197,94,0.06); border-radius: var(--radius-xs);
+            border-left: 3px solid var(--success);
+        }
+        .disc-marche-verbatim { color: var(--success); font-weight: 600; margin-bottom: 2px; }
+        .disc-marche-why { color: var(--text-secondary); font-style: italic; }
+        .disc-fail-item {
+            margin-bottom: 10px; padding: 10px; background: var(--bg-input);
+            border-radius: var(--radius-xs); border: 1px solid var(--border);
+        }
+        .disc-strategie {
+            background: color-mix(in srgb, var(--accent-blue) 6%, var(--bg-card));
+            border: 1px solid color-mix(in srgb, var(--accent-blue) 25%, var(--border));
+            border-radius: var(--radius-sm); padding: 16px 18px; margin-top: 14px;
+        }
+        .disc-strategie-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-blue); margin-bottom: 6px; }
+        .disc-strategie-text { font-size: 13px; line-height: 1.6; color: var(--text-primary); }
+
         /* Verbatim before/after in competence cards */
         .eval-progres-item { margin-bottom: 10px; padding: 10px; background: var(--bg-input); border-radius: var(--radius-xs); border: 1px solid var(--border); }
         .eval-progres-said { font-size: 12px; line-height: 1.5; color: var(--danger); margin-bottom: 6px; }
@@ -411,10 +558,159 @@
         .demo-error-icon { font-size: 48px; margin-bottom: 16px; }
         .demo-error-text { font-size: 16px; color: var(--text-secondary); }
 
+        /* Scenario Creator */
+        .creator-intro { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+        .creator-textarea {
+            width: 100%; padding: 16px; border-radius: var(--radius-sm);
+            background: var(--bg-input); border: 1px solid var(--border);
+            color: var(--text-primary); font-family: var(--font); font-size: 14px;
+            line-height: 1.6; resize: vertical; transition: border-color 0.15s;
+        }
+        .creator-textarea:focus { outline: none; border-color: var(--brand); }
+        .creator-textarea::placeholder { color: var(--text-muted); font-size: 13px; }
+        .creator-options { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
+        .creator-options label {
+            font-size: 11px; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; display: block;
+        }
+        .creator-options select {
+            width: 100%; padding: 10px 14px; border-radius: var(--radius-xs);
+            background: var(--bg-input); border: 1px solid var(--border);
+            color: var(--text-primary); font-family: var(--font); font-size: 13px;
+            cursor: pointer;
+        }
+        .creator-options select:focus { outline: none; border-color: var(--brand); }
+        .gen-status { text-align: center; padding: 32px 20px; }
+        .gen-status .spinner-lg { margin-bottom: 16px; }
+        .gen-step { font-size: 13px; color: var(--brand); font-weight: 600; margin-top: 8px; }
+        .generated-card {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 24px; margin-top: 20px;
+        }
+        .generated-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; color: var(--success); }
+        .generated-summary { display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; }
+        .generated-summary strong { color: var(--text-primary); }
+        .generated-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-secondary {
+            display: inline-flex; align-items: center; gap: 7px;
+            padding: 12px 24px; border-radius: var(--radius-xs); border: 1px solid var(--border);
+            font-family: var(--font); font-size: 14px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+            background: var(--bg-input); color: var(--text-primary);
+        }
+        .btn-secondary:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
+        .create-scenario-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px; border-radius: 20px;
+            font-family: var(--font); font-size: 12px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+            background: transparent; border: 1px solid var(--brand);
+            color: var(--brand); margin-top: 8px;
+        }
+        .create-scenario-btn:hover { background: var(--brand-subtle); }
+
+        /* Dashboard */
+        .dash-hero { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 28px; }
+        .dash-stat {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-sm); padding: 20px; text-align: center;
+        }
+        .dash-stat-value { font-size: 32px; font-weight: 800; font-family: var(--font-mono); margin-bottom: 4px; }
+        .dash-stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+        .dash-section { margin-bottom: 28px; }
+        .dash-section-title {
+            font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            color: var(--text-muted); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+        }
+        .dash-table {
+            width: 100%; border-collapse: collapse; background: var(--bg-card);
+            border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden;
+        }
+        .dash-table th {
+            text-align: left; padding: 12px 16px; font-size: 10px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);
+            background: var(--bg-input); border-bottom: 1px solid var(--border);
+        }
+        .dash-table td {
+            padding: 12px 16px; font-size: 13px; color: var(--text-secondary);
+            border-bottom: 1px solid rgba(35,35,54,0.4);
+        }
+        .dash-table tr:last-child td { border-bottom: none; }
+        .dash-table tr:hover td { background: var(--bg-card-hover); }
+        .dash-score { font-weight: 700; font-family: var(--font-mono); }
+        .dash-nav {
+            display: flex; gap: 8px; justify-content: center; margin-bottom: 24px;
+        }
+        .dash-nav-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px; border-radius: 20px;
+            font-family: var(--font); font-size: 13px; font-weight: 600;
+            cursor: pointer; transition: all 0.15s;
+            background: transparent; border: 1px solid var(--border); color: var(--text-secondary);
+        }
+        .dash-nav-btn:hover { border-color: var(--border-hover); color: var(--text-primary); }
+        .dash-nav-btn.active {
+            background: var(--brand-subtle); border-color: var(--brand);
+            color: var(--brand); box-shadow: 0 0 12px rgba(255,107,53,0.15);
+        }
+        .dash-empty { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 15px; }
+        .dash-login { text-align: center; padding: 60px 20px; }
+        .dash-login-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .dash-login-sub { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; }
+        .dash-login-form { max-width: 340px; margin: 0 auto; }
+        .dash-login-form input {
+            width: 100%; padding: 12px 16px; border-radius: var(--radius-xs); margin-bottom: 12px;
+            background: var(--bg-input); border: 1px solid var(--border);
+            color: var(--text-primary); font-family: var(--font); font-size: 14px;
+        }
+        .dash-login-form input:focus { outline: none; border-color: var(--brand); }
+
+        /* Signup modal */
+        .modal-overlay {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.25s;
+        }
+        .modal-overlay.visible { opacity: 1; pointer-events: auto; }
+        .modal-box {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 18px; padding: 36px 32px; max-width: 440px; width: 90%;
+            text-align: center; box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+        }
+        .modal-icon { font-size: 44px; margin-bottom: 16px; }
+        .modal-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .modal-text { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px; }
+        .modal-actions { display: flex; flex-direction: column; gap: 10px; }
+        .modal-actions .btn { width: 100%; }
+        .modal-close {
+            position: absolute; top: 16px; right: 16px; background: none; border: none;
+            color: var(--text-muted); font-size: 20px; cursor: pointer;
+        }
+
+        /* Post-debrief CTA for anonymous users */
+        .anon-cta {
+            background: linear-gradient(135deg, var(--brand-subtle), rgba(255,107,53,0.03));
+            border: 1px solid rgba(255,107,53,0.25); border-radius: var(--radius);
+            padding: 28px 24px; text-align: center; margin-top: 28px;
+        }
+        .anon-cta-title { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+        .anon-cta-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; }
+        .anon-cta-features {
+            display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;
+        }
+        .anon-cta-feat {
+            font-size: 12px; color: var(--text-secondary);
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 8px; padding: 8px 14px;
+        }
+
         @media (max-width: 800px) {
             .brief-grid { grid-template-columns: 1fr; }
             .eval-grid { grid-template-columns: 1fr; }
             .post-stats { flex-direction: column; align-items: center; }
+            .creator-options { grid-template-columns: 1fr; }
+            .dash-hero { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -430,6 +726,10 @@
         <div class="demo-welcome" id="d-welcome">Chargement...</div>
         <div class="demo-subtitle">Simulation FORCE 3D — Entraînement commercial par IA</div>
         <div class="demo-sessions" id="d-sessions"></div>
+        <div id="header-nav" style="display:none; margin-top: 12px;">
+            <button class="create-scenario-btn" onclick="showCreator()">+ Créer un scénario</button>
+            <button class="create-scenario-btn" onclick="showDashboard()" style="margin-left:6px">📊 Dashboard</button>
+        </div>
     </div>
 
     <!-- ERROR -->
@@ -437,6 +737,68 @@
         <div class="demo-error">
             <div class="demo-error-icon">⚠️</div>
             <div class="demo-error-text" id="d-error-text">Lien invalide ou expiré.</div>
+        </div>
+    </div>
+
+    <!-- SCENARIO CREATOR -->
+    <div id="panel-creator" class="panel">
+        <h2 style="text-align:center;font-size:22px;font-weight:700;margin-bottom:8px;">Créez votre scénario de simulation</h2>
+        <p class="creator-intro">Décrivez la situation commerciale que vous voulez entraîner. L'IA génère tout automatiquement : le prospect, ses objections et le brief commercial.</p>
+
+        <label style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;display:block;">Décrivez votre situation commerciale</label>
+        <textarea id="scenario-description" class="creator-textarea" rows="6" placeholder="Ex: Je vends des logiciels de comptabilité aux cabinets comptables de 5-20 personnes. Mon principal problème c'est qu'ils sont déjà équipés chez un concurrent et ne veulent pas changer. Je dois convaincre le dirigeant du cabinet de me recevoir pour une démo.
+
+Ou : Mon commercial doit appeler le DRH d'une PME industrielle de 150 personnes pour proposer notre solution de formation en ligne. Le DRH est débordé et n'a pas de budget prévu cette année."></textarea>
+
+        <div class="creator-options">
+            <div>
+                <label>Secteur (optionnel)</label>
+                <select id="scenario-sector">
+                    <option value="">Détection automatique</option>
+                    <option value="industrie">Industrie / Manufacturing</option>
+                    <option value="services">Services aux entreprises</option>
+                    <option value="tech">Tech / SaaS / Digital</option>
+                    <option value="commerce">Commerce / Distribution</option>
+                    <option value="sante">Santé / Médical</option>
+                    <option value="batiment">BTP / Bâtiment</option>
+                    <option value="finance">Finance / Assurance / Banque</option>
+                    <option value="formation">Formation / Éducation</option>
+                    <option value="immobilier">Immobilier</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div>
+                <label>Type d'appel</label>
+                <select id="scenario-type">
+                    <option value="prospection">Prospection à froid</option>
+                    <option value="relance">Relance / Suivi</option>
+                    <option value="negociation">Négociation</option>
+                    <option value="reclamation">Réclamation client</option>
+                    <option value="upsell">Upsell / Cross-sell</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-brand" id="generate-scenario-btn" onclick="generateScenario()">Générer le scénario</button>
+            <button class="btn-secondary" onclick="backToBriefing()">Retour</button>
+        </div>
+
+        <div id="generation-status" class="gen-status" style="display:none">
+            <div class="spinner-lg"></div>
+            <div style="font-size:15px;font-weight:600;margin-bottom:4px;">Génération en cours...</div>
+            <div style="font-size:12px;color:var(--text-muted);">L'IA crée votre prospect, ses objections et le brief commercial.</div>
+            <div class="gen-step" id="gen-step">Étape 1/4 : Analyse de votre situation...</div>
+        </div>
+
+        <div id="scenario-result" style="display:none"></div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="panel-dashboard" class="panel">
+        <div id="dash-content"></div>
+        <div class="actions" style="margin-top:20px;">
+            <button class="btn-secondary" onclick="backToBriefing()">Retour à la simulation</button>
         </div>
     </div>
 
@@ -469,6 +831,25 @@
                 <button class="lang-pill" data-lang="es" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EA;&#x1F1F8;</span> Español</button>
                 <button class="lang-pill" data-lang="de" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1E9;&#x1F1EA;</span> Deutsch</button>
                 <button class="lang-pill" data-lang="it" onclick="selectLang(this)"><span class="lang-pill-flag">&#x1F1EE;&#x1F1F9;</span> Italiano</button>
+            </div>
+        </div>
+
+        <!-- Difficulty selector -->
+        <div class="diff-selector">
+            <div class="diff-selector-label">Niveau de difficulté</div>
+            <div class="diff-pills">
+                <button class="diff-pill" data-diff="1" onclick="selectDifficulty(this)">
+                    <span class="diff-pill-label">🟢 Facile</span>
+                    <span class="diff-pill-desc">Prospect ouvert, peu d'objections</span>
+                </button>
+                <button class="diff-pill selected" data-diff="2" onclick="selectDifficulty(this)">
+                    <span class="diff-pill-label">🟡 Intermédiaire</span>
+                    <span class="diff-pill-desc">Prospect méfiant, objections classiques</span>
+                </button>
+                <button class="diff-pill" data-diff="3" onclick="selectDifficulty(this)">
+                    <span class="diff-pill-label">🔴 Difficile</span>
+                    <span class="diff-pill-desc">Prospect hostile, objections dures, temps limité</span>
+                </button>
             </div>
         </div>
 
@@ -539,6 +920,23 @@
 
 </div>
 
+<!-- Signup wall modal -->
+<div id="signup-modal" class="modal-overlay" onclick="if(event.target===this)closeSignupModal()">
+    <div class="modal-box" style="position:relative;">
+        <button class="modal-close" onclick="closeSignupModal()">&times;</button>
+        <div class="modal-icon">🚀</div>
+        <div class="modal-title">Impressionné par votre simulation ?</div>
+        <div class="modal-text">
+            Vous avez utilisé votre simulation gratuite.<br>
+            Créez un compte pour accéder à <strong>40+ scénarios</strong>, tous les niveaux de difficulté, et suivre votre progression.
+        </div>
+        <div class="modal-actions">
+            <a href="/contact" class="btn btn-brand" style="text-decoration:none;text-align:center;display:block;padding:14px 20px;">Créer mon compte gratuitement</a>
+            <button class="btn-secondary" onclick="showLoginFromModal()" style="padding:12px 20px;">J'ai déjà un compte — Se connecter</button>
+        </div>
+    </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/livekit-client@2/dist/livekit-client.umd.js"></script>
 <script>
 const API = window.location.origin;
@@ -549,6 +947,7 @@ if (!FREE_SCENARIO_ID && !DEMO_TOKEN && window.location.pathname.startsWith('/si
     FREE_SCENARIO_ID = '__default__';
 }
 const IS_FREE_MODE = !!FREE_SCENARIO_ID && !DEMO_TOKEN;
+const IS_DASHBOARD_MODE = window.location.pathname === '/dashboard';
 
 let demoInfo = null;
 let room = null, tmr = null, t0 = null, muted = false;
@@ -557,11 +956,19 @@ let transcriptEntries = [];
 let pendingSegments = {};
 let currentSessionDbId = null;
 let selectedLanguage = 'fr';
+let selectedDifficulty = 2;
 
 function selectLang(btn) {
     document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('selected'));
     btn.classList.add('selected');
     selectedLanguage = btn.dataset.lang;
+}
+
+function selectDifficulty(btn) {
+    document.querySelectorAll('.diff-pill').forEach(p => p.classList.remove('selected'));
+    btn.classList.add('selected');
+    selectedDifficulty = parseInt(btn.dataset.diff);
+    if (demoInfo) demoInfo.difficulty = selectedDifficulty;
 }
 
 // === UTILS ===
@@ -584,6 +991,16 @@ function showPanel(id) {
 // === INIT ===
 async function initDemo() {
     try {
+        // Dashboard-only mode
+        if (IS_DASHBOARD_MODE) {
+            document.getElementById('d-welcome').textContent = 'Tableau de bord';
+            document.getElementById('d-sessions').textContent = '';
+            document.getElementById('header-nav').style.display = 'block';
+            showPanel('dashboard');
+            loadDashboard();
+            return;
+        }
+
         if (IS_FREE_MODE) {
             // Free mode: load scenario directly from API
             const r = await fetch(API + '/api/scenarios/' + encodeURIComponent(FREE_SCENARIO_ID));
@@ -626,6 +1043,16 @@ async function initDemo() {
         const p = demoInfo.scenario.persona.identite;
         document.getElementById('c-name').textContent = p.prenom + ' ' + p.nom;
         document.getElementById('c-role').textContent = p.poste + ' — ' + p.entreprise.nom;
+
+        // Show nav buttons (create scenario + dashboard)
+        document.getElementById('header-nav').style.display = 'block';
+
+        // Check if we should show dashboard
+        if (window.location.pathname === '/dashboard') {
+            showPanel('dashboard');
+            loadDashboard();
+            return;
+        }
 
         showPanel('briefing');
     } catch (e) {
@@ -671,6 +1098,14 @@ function renderBriefing(data) {
 
 // === LAUNCH SIM ===
 async function launchSim() {
+    // Anonymous user: check if free simulation already used
+    if (IS_FREE_MODE && !localStorage.getItem('vm-token')) {
+        if (localStorage.getItem('vm-free-used') === 'true') {
+            openSignupModal();
+            return;
+        }
+    }
+
     // Consume a demo session (skip in free mode)
     if (!IS_FREE_MODE) {
         try {
@@ -907,6 +1342,11 @@ async function runEvaluation(duration) {
         evalResults.classList.remove('hidden');
         renderEvaluation(evaluation);
 
+        // Mark free simulation as used for anonymous users
+        if (IS_FREE_MODE && !localStorage.getItem('vm-token')) {
+            localStorage.setItem('vm-free-used', 'true');
+        }
+
         // Save demo session (only in demo token mode)
         if (!IS_FREE_MODE) {
             fetch(API + '/api/demo/' + encodeURIComponent(DEMO_TOKEN) + '/save-session', {
@@ -1038,6 +1478,187 @@ function renderEvaluation(ev) {
         <div id="transcript-chat" class="transcript-chat hidden">${msgs}</div>`;
     }
 
+    // Posture commerciale HTML
+    let postureHtml = '';
+    const pc = ev.posture_commerciale;
+    if (pc) {
+        const renderPostureBar = (score) => {
+            const pct = (score / 20 * 100).toFixed(0);
+            const cls = score >= 14 ? 'bar-high' : score >= 8 ? 'bar-mid' : 'bar-low';
+            const col = score >= 14 ? 'var(--success)' : score >= 8 ? 'var(--warning)' : 'var(--danger)';
+            return { pct, cls, col };
+        };
+
+        // Ton
+        const ton = pc.ton_general || {};
+        const tonBar = renderPostureBar(ton.note || 0);
+        const tonPositifs = (ton.moments_positifs || []).map(p => `<div class="posture-positif">&#9989; ${escapeHtml(p)}</div>`).join('');
+        let tonAmeliorer = '';
+        for (const m of (ton.moments_a_ameliorer || [])) {
+            tonAmeliorer += `<div class="posture-ameliorer-item">
+                <div class="eval-progres-said"><span class="eval-progres-icon">&#10060;</span> "${escapeHtml(m.ce_que_vous_avez_dit || '')}"</div>
+                <div class="eval-progres-why"><span class="eval-progres-icon">&#128161;</span> ${escapeHtml(m.probleme || '')}</div>
+                <div class="eval-progres-better"><span class="eval-progres-icon">&#9989;</span> "${escapeHtml(m.version_amelioree || '')}"</div>
+                ${m.conseil ? `<div style="font-size:11px;color:var(--brand-light);font-style:italic;margin-top:4px;">${escapeHtml(m.conseil)}</div>` : ''}
+            </div>`;
+        }
+
+        // Assurance
+        const ass = pc.assurance || {};
+        const assBar = renderPostureBar(ass.note || 0);
+        const assConfiance = (ass.marqueurs_confiance || []).map(p => `<div class="posture-positif">&#9989; ${escapeHtml(p)}</div>`).join('');
+        let assHesitation = '';
+        for (const m of (ass.marqueurs_hesitation || [])) {
+            assHesitation += `<div class="posture-ameliorer-item">
+                <div class="eval-progres-said"><span class="eval-progres-icon">&#10060;</span> "${escapeHtml(m.verbatim || '')}"</div>
+                <div class="eval-progres-why"><span class="eval-progres-icon">&#128161;</span> ${escapeHtml(m.indice || '')}</div>
+                <div class="eval-progres-better"><span class="eval-progres-icon">&#9989;</span> "${escapeHtml(m.reformulation || '')}"</div>
+            </div>`;
+        }
+
+        // Formulation
+        const form = pc.formulation || {};
+        const formBar = renderPostureBar(form.note || 0);
+        const formForts = (form.points_forts || []).map(p => `<div class="posture-positif">&#9989; ${escapeHtml(p)}</div>`).join('');
+        let formAmeliorer = '';
+        for (const m of (form.points_a_ameliorer || [])) {
+            formAmeliorer += `<div class="posture-ameliorer-item">
+                <div class="eval-progres-said"><span class="eval-progres-icon">&#10060;</span> "${escapeHtml(m.ce_que_vous_avez_dit || '')}"</div>
+                <div class="eval-progres-why"><span class="eval-progres-icon">&#128161;</span> ${escapeHtml(m.probleme || '')}</div>
+                <div class="eval-progres-better"><span class="eval-progres-icon">&#9989;</span> "${escapeHtml(m.version_amelioree || '')}"</div>
+                ${m.principe ? `<div style="font-size:11px;color:var(--brand-light);font-style:italic;margin-top:4px;">${escapeHtml(m.principe)}</div>` : ''}
+            </div>`;
+        }
+
+        const scorePosture = pc.score_posture || 0;
+        const spBar = renderPostureBar(scorePosture);
+
+        postureHtml = `
+        <div class="posture-section">
+            <div class="posture-title">&#127908; Votre posture commerciale</div>
+            <div class="posture-score-global">
+                <div class="posture-score-value" style="color:${spBar.col}">${scorePosture}<span style="font-size:14px;color:var(--text-muted);font-weight:400">/20</span></div>
+                <div class="eval-bar"><div class="eval-bar-fill ${spBar.cls}" style="width:${spBar.pct}%"></div></div>
+                <div class="posture-score-label">Score posture globale</div>
+            </div>
+            <div class="posture-grid">
+                <div class="posture-card">
+                    <div class="posture-card-head">
+                        <div class="posture-card-title">&#127908; Ton</div>
+                        <div class="posture-card-score" style="color:${tonBar.col}">${ton.note || 0}/20</div>
+                    </div>
+                    <div class="eval-bar"><div class="eval-bar-fill ${tonBar.cls}" style="width:${tonBar.pct}%"></div></div>
+                    <div class="posture-desc">${escapeHtml(ton.description || '')}</div>
+                    ${tonPositifs ? `<div class="eval-section"><div class="eval-section-label">Moments positifs</div>${tonPositifs}</div>` : ''}
+                    ${tonAmeliorer ? `<div class="eval-section"><div class="eval-section-label">À améliorer</div>${tonAmeliorer}</div>` : ''}
+                </div>
+                <div class="posture-card">
+                    <div class="posture-card-head">
+                        <div class="posture-card-title">&#128170; Assurance</div>
+                        <div class="posture-card-score" style="color:${assBar.col}">${ass.note || 0}/20</div>
+                    </div>
+                    <div class="eval-bar"><div class="eval-bar-fill ${assBar.cls}" style="width:${assBar.pct}%"></div></div>
+                    <div class="posture-desc">${escapeHtml(ass.description || '')}</div>
+                    ${assConfiance ? `<div class="eval-section"><div class="eval-section-label">Marqueurs de confiance</div>${assConfiance}</div>` : ''}
+                    ${assHesitation ? `<div class="eval-section"><div class="eval-section-label">Marqueurs d'hésitation</div>${assHesitation}</div>` : ''}
+                </div>
+                <div class="posture-card">
+                    <div class="posture-card-head">
+                        <div class="posture-card-title">&#9999;&#65039; Formulation</div>
+                        <div class="posture-card-score" style="color:${formBar.col}">${form.note || 0}/20</div>
+                    </div>
+                    <div class="eval-bar"><div class="eval-bar-fill ${formBar.cls}" style="width:${formBar.pct}%"></div></div>
+                    <div class="posture-desc">${escapeHtml(form.description || '')}</div>
+                    ${formForts ? `<div class="eval-section"><div class="eval-section-label">Points forts</div>${formForts}</div>` : ''}
+                    ${formAmeliorer ? `<div class="eval-section"><div class="eval-section-label">À améliorer</div>${formAmeliorer}</div>` : ''}
+                </div>
+            </div>
+            ${pc.conseil_posture ? `<div class="posture-conseil"><div class="posture-conseil-label">Conseil posture</div><div class="posture-conseil-text">${escapeHtml(pc.conseil_posture)}</div></div>` : ''}
+        </div>`;
+    }
+
+    // DISC Analysis HTML
+    let discHtml = '';
+    const disc = ev.analyse_disc;
+    if (disc) {
+        const profil = disc.profil_prospect || {};
+        const adapt = disc.adaptation_commerciale || {};
+        const principal = (profil.type_principal || '').toUpperCase();
+        const secondaire = profil.type_secondaire ? profil.type_secondaire.toUpperCase() : null;
+
+        const DISC_LABELS = { D: 'Dominance', I: 'Influence', S: 'Stabilité', C: 'Conformité' };
+        const discLetters = ['D', 'I', 'S', 'C'].map(l => {
+            let cls = 'disc-letter';
+            cls += ` `;
+            if (l === principal) cls += ' active';
+            else if (l === secondaire) cls += ' secondary';
+            return `<div class="disc-letter-wrap${l === principal ? ' active-wrap' : ''}"><div class="${cls}" data-disc="${l}">${l}</div><div class="disc-letter-label">${DISC_LABELS[l]}</div></div>`;
+        }).join('');
+
+        const indices = (profil.indices_detectes || []).map(i => `<li>&#128270; ${escapeHtml(i)}</li>`).join('');
+
+        const adaptScore = adapt.score_adaptation || 0;
+        const adaptBar = adaptScore >= 14 ? 'bar-high' : adaptScore >= 8 ? 'bar-mid' : 'bar-low';
+        const adaptCol = adaptScore >= 14 ? 'var(--success)' : adaptScore >= 8 ? 'var(--warning)' : 'var(--danger)';
+        const adaptPct = (adaptScore / 20 * 100).toFixed(0);
+
+        let marcheHtml = '';
+        for (const m of (adapt.ce_qui_a_marche || [])) {
+            marcheHtml += `<div class="disc-marche-item">
+                <div class="disc-marche-verbatim">"${escapeHtml(m.verbatim || '')}"</div>
+                <div class="disc-marche-why">${escapeHtml(m.pourquoi_adapte || '')}</div>
+            </div>`;
+        }
+
+        let failHtml = '';
+        for (const m of (adapt.ce_qui_na_pas_marche || [])) {
+            failHtml += `<div class="disc-fail-item">
+                <div class="eval-progres-said"><span class="eval-progres-icon">&#10060;</span> "${escapeHtml(m.verbatim || '')}"</div>
+                <div class="eval-progres-why"><span class="eval-progres-icon">&#128161;</span> ${escapeHtml(m.pourquoi_inadapte || '')}</div>
+                <div class="eval-progres-better"><span class="eval-progres-icon">&#9989;</span> "${escapeHtml(m.ce_quil_aurait_fallu_dire || '')}"</div>
+                ${m.principe_disc ? `<div style="font-size:11px;color:var(--accent-blue);font-style:italic;margin-top:4px;">${escapeHtml(m.principe_disc)}</div>` : ''}
+            </div>`;
+        }
+
+        discHtml = `
+        <div class="disc-section">
+            <div class="disc-title">&#129504; Profil DISC de votre interlocuteur</div>
+            <div class="disc-visual">${discLetters}</div>
+            <div class="disc-profile">
+                <div class="disc-profile-desc">${escapeHtml(profil.description || '')}</div>
+                ${indices ? `<div class="eval-section"><div class="eval-section-label">Indices détectés</div><ul class="disc-indices">${indices}</ul></div>` : ''}
+            </div>
+            <div class="disc-adaptation">
+                <div class="disc-adaptation-head">
+                    <div class="disc-adaptation-title">Votre adaptation à ce profil</div>
+                    <div class="disc-adaptation-score" style="color:${adaptCol}">${adaptScore}/20</div>
+                </div>
+                <div class="eval-bar"><div class="eval-bar-fill ${adaptBar}" style="width:${adaptPct}%"></div></div>
+                ${marcheHtml ? `<div class="eval-section"><div class="eval-section-label" style="color:var(--success)">Ce qui a marché</div>${marcheHtml}</div>` : ''}
+                ${failHtml ? `<div class="eval-section"><div class="eval-section-label" style="color:var(--warning)">Ce qui n'a pas marché</div>${failHtml}</div>` : ''}
+            </div>
+            ${adapt.strategie_ideale ? `<div class="disc-strategie"><div class="disc-strategie-label">&#127919; Stratégie idéale pour ce profil</div><div class="disc-strategie-text">${escapeHtml(adapt.strategie_ideale)}</div></div>` : ''}
+        </div>`;
+    }
+
+    // Post-debrief CTA for anonymous users
+    let anonCtaHtml = '';
+    if (IS_FREE_MODE && !localStorage.getItem('vm-token')) {
+        anonCtaHtml = `
+        <div class="anon-cta">
+            <div class="anon-cta-title">Impressionné ? Ce n'est que le début.</div>
+            <div class="anon-cta-text">Cette simulation gratuite ne montre qu'un seul scénario. Créez votre compte pour débloquer toute la plateforme.</div>
+            <div class="anon-cta-features">
+                <div class="anon-cta-feat">✓ 40+ scénarios sectoriels</div>
+                <div class="anon-cta-feat">✓ 3 niveaux de difficulté</div>
+                <div class="anon-cta-feat">✓ Dashboard de progression</div>
+                <div class="anon-cta-feat">✓ Scénarios sur mesure</div>
+            </div>
+            <a href="/contact" class="btn btn-brand" style="display:inline-block;padding:14px 32px;text-decoration:none;text-align:center;">Créer mon compte — 49€/mois</a>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:10px;">Sans engagement · Annulable à tout moment</div>
+        </div>`;
+    }
+
     container.innerHTML = `
         <div class="eval-score-hero">
             <div class="eval-score-number" style="color:${scoreColor}">${ev.score_global}<span class="eval-score-max">/20</span></div>
@@ -1048,6 +1669,8 @@ function renderEvaluation(ev) {
             <canvas id="radar-chart" width="340" height="340"></canvas>
         </div>
         <div class="eval-grid">${cardsHtml}</div>
+        ${postureHtml}
+        ${discHtml}
         <div class="eval-synthese">
             <div class="eval-synthese-title">Synthèse</div>
             <div class="eval-synthese-text">${escapeHtml(ev.synthese || '')}</div>
@@ -1058,6 +1681,7 @@ function renderEvaluation(ev) {
         </div>
         ${momentHtml}
         ${transcriptChatHtml}
+        ${anonCtaHtml}
     `;
 
     drawRadarChart(ev.competences || {});
@@ -1175,6 +1799,506 @@ function restartDemo() {
     }
     // Reload to refresh state
     window.location.reload();
+}
+
+// === SIGNUP MODAL ===
+function openSignupModal() {
+    document.getElementById('signup-modal').classList.add('visible');
+}
+
+function closeSignupModal() {
+    document.getElementById('signup-modal').classList.remove('visible');
+}
+
+function showLoginFromModal() {
+    closeSignupModal();
+    showPanel('dashboard');
+    loadDashboard();
+}
+
+// === SCENARIO CREATOR ===
+function showCreator() {
+    // Require login for scenario creation
+    if (!localStorage.getItem('vm-token')) {
+        openSignupModal();
+        return;
+    }
+    showPanel('creator');
+}
+
+function backToBriefing() {
+    if (IS_DASHBOARD_MODE) {
+        window.location.href = '/simulation';
+        return;
+    }
+    if (demoInfo && demoInfo.scenario) {
+        showPanel('briefing');
+    } else {
+        window.location.reload();
+    }
+}
+
+async function generateScenario() {
+    const description = document.getElementById('scenario-description').value;
+    if (!description || description.length < 30) {
+        alert('Décrivez votre situation en au moins quelques phrases (30 caractères minimum).');
+        return;
+    }
+
+    document.getElementById('generation-status').style.display = 'block';
+    document.getElementById('generate-scenario-btn').disabled = true;
+    document.getElementById('scenario-result').style.display = 'none';
+
+    const steps = [
+        'Étape 1/4 : Analyse de votre situation...',
+        'Étape 2/4 : Création du prospect...',
+        'Étape 3/4 : Génération des objections...',
+        'Étape 4/4 : Préparation du brief commercial...'
+    ];
+
+    let stepIdx = 0;
+    const stepInterval = setInterval(() => {
+        stepIdx = Math.min(stepIdx + 1, steps.length - 1);
+        document.getElementById('gen-step').textContent = steps[stepIdx];
+    }, 4000);
+
+    try {
+        const headers = { 'Content-Type': 'application/json' };
+        const authToken = localStorage.getItem('vm-token');
+        if (authToken) headers['Authorization'] = 'Bearer ' + authToken;
+
+        const response = await fetch(API + '/api/scenarios/generate', {
+            method: 'POST',
+            headers,
+            body: JSON.stringify({
+                description,
+                sector: document.getElementById('scenario-sector').value || null,
+                type: document.getElementById('scenario-type').value || 'prospection',
+                language: selectedLanguage
+            })
+        });
+
+        clearInterval(stepInterval);
+        const scenario = await response.json();
+
+        if (!response.ok) {
+            throw new Error(scenario.detail || scenario.error || 'Erreur serveur');
+        }
+
+        document.getElementById('generation-status').style.display = 'none';
+        showGeneratedScenario(scenario);
+
+    } catch (error) {
+        clearInterval(stepInterval);
+        document.getElementById('generation-status').style.display = 'none';
+        document.getElementById('generate-scenario-btn').disabled = false;
+        alert('Erreur lors de la génération : ' + error.message);
+    }
+}
+
+function showGeneratedScenario(scenario) {
+    const resultDiv = document.getElementById('scenario-result');
+    const persona = scenario.persona?.identite || scenario.persona || {};
+    const brief = scenario.brief_commercial || {};
+    const objCount = scenario.objections?.objections?.length || '?';
+
+    resultDiv.innerHTML = `
+        <div class="generated-card">
+            <h3>Scénario généré avec succès</h3>
+            <div class="generated-summary">
+                <div><strong>Prospect :</strong> ${escapeHtml((persona.prenom || '') + ' ' + (persona.nom || ''))}, ${escapeHtml(persona.poste || '')}</div>
+                <div><strong>Entreprise :</strong> ${escapeHtml(persona.entreprise?.nom || 'N/A')} — ${escapeHtml(persona.entreprise?.secteur || 'N/A')}</div>
+                <div><strong>Titre :</strong> ${escapeHtml(brief.titre || 'Scénario personnalisé')}</div>
+                <div><strong>Objections :</strong> ${objCount} objections générées</div>
+            </div>
+            <div class="generated-actions">
+                <button class="btn btn-brand" onclick="launchGeneratedScenario('${escapeHtml(scenario.id || scenario.scenario_id)}')">Lancer la simulation</button>
+                <button class="btn-secondary" onclick="resetCreator()">Modifier et régénérer</button>
+            </div>
+        </div>
+    `;
+    resultDiv.style.display = 'block';
+}
+
+function resetCreator() {
+    document.getElementById('scenario-result').style.display = 'none';
+    document.getElementById('generate-scenario-btn').disabled = false;
+}
+
+function launchGeneratedScenario(scenarioId) {
+    window.location.href = '/simulation?scenario=' + encodeURIComponent(scenarioId);
+}
+
+// === DASHBOARD ===
+function showDashboard() {
+    showPanel('dashboard');
+    loadDashboard();
+}
+
+async function loadDashboard() {
+    const dashContent = document.getElementById('dash-content');
+    const authToken = localStorage.getItem('vm-token');
+
+    if (!authToken) {
+        dashContent.innerHTML = `
+            <div class="dash-login">
+                <div class="dash-login-title">Connexion requise</div>
+                <div class="dash-login-sub">Connectez-vous pour accéder à votre tableau de bord.</div>
+                <div class="dash-login-form">
+                    <input type="email" id="dash-email" placeholder="Email" />
+                    <input type="password" id="dash-password" placeholder="Mot de passe" />
+                    <button class="btn btn-brand" style="width:100%" onclick="dashLogin()">Se connecter</button>
+                </div>
+            </div>
+        `;
+        return;
+    }
+
+    dashContent.innerHTML = '<div class="gen-status"><div class="spinner-lg"></div><div style="font-size:14px;color:var(--text-secondary);">Chargement du dashboard...</div></div>';
+
+    try {
+        const headers = { 'Authorization': 'Bearer ' + authToken };
+        const [statsRes, histRes, radarRes] = await Promise.all([
+            fetch(API + '/api/dashboard/stats', { headers }),
+            fetch(API + '/api/dashboard/historique?limit=20', { headers }),
+            fetch(API + '/api/dashboard/radar', { headers }),
+        ]);
+
+        if (!statsRes.ok) throw new Error('Non autorisé');
+
+        const stats = await statsRes.json();
+        const historique = await histRes.json();
+        const radar = await radarRes.json();
+
+        renderDashboard(stats, historique, radar);
+    } catch (e) {
+        if (e.message === 'Non autorisé') {
+            localStorage.removeItem('vm-token');
+            loadDashboard();
+        } else {
+            dashContent.innerHTML = `<div class="dash-empty">Erreur : ${escapeHtml(e.message)}</div>`;
+        }
+    }
+}
+
+async function dashLogin() {
+    const email = document.getElementById('dash-email').value;
+    const password = document.getElementById('dash-password').value;
+    if (!email || !password) { alert('Remplissez email et mot de passe.'); return; }
+
+    try {
+        const r = await fetch(API + '/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        });
+        if (!r.ok) {
+            const err = await r.json().catch(() => ({}));
+            throw new Error(err.detail || 'Identifiants incorrects');
+        }
+        const data = await r.json();
+        localStorage.setItem('vm-token', data.token);
+        loadDashboard();
+    } catch (e) {
+        alert(e.message);
+    }
+}
+
+function renderDashboard(stats, historique, radar) {
+    const dashContent = document.getElementById('dash-content');
+    const scoreColor = (stats.score_moyen || 0) >= 14 ? 'var(--success)' : (stats.score_moyen || 0) >= 10 ? 'var(--warning)' : 'var(--danger)';
+    const letterGrade = (stats.score_moyen || 0) >= 16 ? 'A' : (stats.score_moyen || 0) >= 14 ? 'B' : (stats.score_moyen || 0) >= 10 ? 'C' : (stats.score_moyen || 0) >= 6 ? 'D' : 'E';
+
+    // Hero stats
+    let html = `
+        <div class="dash-hero">
+            <div class="dash-stat">
+                <div class="dash-stat-value" style="color:${scoreColor}">${(stats.score_moyen || 0).toFixed(1)}<span style="font-size:14px;color:var(--text-muted)">/20</span></div>
+                <div class="dash-stat-label">Score moyen</div>
+            </div>
+            <div class="dash-stat">
+                <div class="dash-stat-value">${stats.nb_sessions || 0}</div>
+                <div class="dash-stat-label">Sessions</div>
+            </div>
+            <div class="dash-stat">
+                <div class="dash-stat-value" style="color:${(stats.progression_30j || 0) >= 0 ? 'var(--success)' : 'var(--danger)'}">${(stats.progression_30j || 0) > 0 ? '+' : ''}${(stats.progression_30j || 0).toFixed(1)}</div>
+                <div class="dash-stat-label">Progression 30j</div>
+            </div>
+            <div class="dash-stat">
+                <div class="dash-stat-value" style="font-size:18px;color:var(--brand)">${escapeHtml(stats.prioritaire || '-')}</div>
+                <div class="dash-stat-label">Priorité</div>
+            </div>
+        </div>
+    `;
+
+    // Radar chart
+    html += `
+        <div class="dash-section">
+            <div class="dash-section-title">Compétences FORCE 3D</div>
+            <div style="display:flex;justify-content:center;">
+                <canvas id="dash-radar" width="340" height="340"></canvas>
+            </div>
+        </div>
+    `;
+
+    // History table
+    html += `<div class="dash-section"><div class="dash-section-title">Historique des sessions</div>`;
+    if (historique.length === 0) {
+        html += '<div class="dash-empty">Aucune session enregistrée.</div>';
+    } else {
+        html += `<table class="dash-table"><thead><tr>
+            <th>Date</th><th>Scénario</th><th>Difficulté</th><th>Score</th>
+        </tr></thead><tbody>`;
+        for (const h of historique) {
+            const date = h.created_at ? new Date(h.created_at).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '-';
+            const diffLabel = h.difficulty === 1 ? '🟢' : h.difficulty === 3 ? '🔴' : '🟡';
+            const sc = (h.score_global || 0);
+            const scColor = sc >= 14 ? 'var(--success)' : sc >= 10 ? 'var(--warning)' : 'var(--danger)';
+            html += `<tr onclick="viewSession(${h.id})" style="cursor:pointer">
+                <td>${date}</td>
+                <td>${escapeHtml(h.scenario_id || '-')}</td>
+                <td>${diffLabel} ${h.difficulty || 2}/3</td>
+                <td><span class="dash-score" style="color:${scColor}">${sc}/20</span></td>
+            </tr>`;
+        }
+        html += '</tbody></table>';
+    }
+    html += '</div>';
+
+    // Progression chart
+    if (historique.length >= 2) {
+        html += `
+            <div class="dash-section">
+                <div class="dash-section-title">Courbe de progression</div>
+                <div style="display:flex;justify-content:center;">
+                    <canvas id="dash-progression" width="800" height="250"></canvas>
+                </div>
+            </div>
+        `;
+    }
+
+    dashContent.innerHTML = html;
+
+    // Draw radar
+    drawDashRadar(radar);
+
+    // Draw progression
+    if (historique.length >= 2) {
+        drawProgressionChart(historique);
+    }
+}
+
+function drawDashRadar(radar) {
+    const canvas = document.getElementById('dash-radar');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = 340 * dpr;
+    canvas.height = 340 * dpr;
+    canvas.style.width = '340px';
+    canvas.style.height = '340px';
+    ctx.scale(dpr, dpr);
+
+    const cx = 170, cy = 170, maxR = 130;
+    const labels = ['Accroche', 'Découverte', "Création\nd'enjeu", 'Argumentation', 'Objections', 'Engagement'];
+    const keys = ['accroche', 'decouverte', 'creation_enjeu', 'argumentation', 'traitement_objections', 'engagement'];
+    const n = 6;
+    const currentScores = keys.map(k => (radar.current || {})[k] || 0);
+    const prevScores = keys.map(k => (radar.previous || {})[k] || 0);
+
+    // Grid
+    ctx.strokeStyle = 'rgba(35,35,54,0.6)';
+    ctx.lineWidth = 1;
+    for (let ring = 1; ring <= 4; ring++) {
+        const r = (ring / 4) * maxR;
+        ctx.beginPath();
+        for (let i = 0; i <= n; i++) {
+            const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+            const x = cx + r * Math.cos(angle);
+            const y = cy + r * Math.sin(angle);
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.closePath(); ctx.stroke();
+    }
+
+    ctx.strokeStyle = 'rgba(35,35,54,0.4)';
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        ctx.beginPath(); ctx.moveTo(cx, cy);
+        ctx.lineTo(cx + maxR * Math.cos(angle), cy + maxR * Math.sin(angle));
+        ctx.stroke();
+    }
+
+    // Previous (faded)
+    if (prevScores.some(s => s > 0)) {
+        ctx.beginPath();
+        for (let i = 0; i <= n; i++) {
+            const idx = i % n; const angle = (Math.PI * 2 * idx / n) - Math.PI / 2;
+            const r = (prevScores[idx] / 20) * maxR;
+            i === 0 ? ctx.moveTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle)) : ctx.lineTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle));
+        }
+        ctx.closePath(); ctx.fillStyle = 'rgba(59,130,246,0.08)'; ctx.fill();
+        ctx.strokeStyle = 'rgba(59,130,246,0.3)'; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+
+    // Current
+    ctx.beginPath();
+    for (let i = 0; i <= n; i++) {
+        const idx = i % n; const angle = (Math.PI * 2 * idx / n) - Math.PI / 2;
+        const r = (currentScores[idx] / 20) * maxR;
+        i === 0 ? ctx.moveTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle)) : ctx.lineTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle));
+    }
+    ctx.closePath(); ctx.fillStyle = 'rgba(255,107,53,0.15)'; ctx.fill();
+    ctx.strokeStyle = '#ff6b35'; ctx.lineWidth = 2.5; ctx.stroke();
+
+    // Dots
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        const r = (currentScores[i] / 20) * maxR;
+        ctx.beginPath(); ctx.arc(cx + r * Math.cos(angle), cy + r * Math.sin(angle), 4, 0, Math.PI * 2);
+        ctx.fillStyle = currentScores[i] >= 14 ? '#22c55e' : currentScores[i] >= 8 ? '#f59e0b' : '#ef4444';
+        ctx.fill(); ctx.strokeStyle = '#08080d'; ctx.lineWidth = 2; ctx.stroke();
+    }
+
+    // Labels
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#7c7c9a'; ctx.font = '11px Outfit, sans-serif';
+    for (let i = 0; i < n; i++) {
+        const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+        const lr = maxR + 22;
+        const x = cx + lr * Math.cos(angle), y = cy + lr * Math.sin(angle);
+        const lines = labels[i].split('\n');
+        lines.forEach((line, li) => ctx.fillText(line, x, y + (li - (lines.length - 1) / 2) * 13));
+        ctx.fillStyle = currentScores[i] >= 14 ? '#22c55e' : currentScores[i] >= 8 ? '#f59e0b' : '#ef4444';
+        ctx.font = 'bold 11px JetBrains Mono, monospace';
+        ctx.fillText(currentScores[i].toFixed(1) + '/20', x, y + lines.length * 13);
+        ctx.fillStyle = '#7c7c9a'; ctx.font = '11px Outfit, sans-serif';
+    }
+}
+
+function drawProgressionChart(historique) {
+    const canvas = document.getElementById('dash-progression');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const W = 800, H = 250;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.scale(dpr, dpr);
+
+    const sorted = [...historique].reverse();
+    const scores = sorted.map(h => h.score_global || 0);
+    const n = scores.length;
+    const padL = 50, padR = 20, padT = 20, padB = 40;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+
+    // Grid
+    ctx.strokeStyle = 'rgba(35,35,54,0.5)'; ctx.lineWidth = 1;
+    for (let v = 0; v <= 20; v += 5) {
+        const y = padT + plotH - (v / 20) * plotH;
+        ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
+        ctx.fillStyle = '#4a4a64'; ctx.font = '11px JetBrains Mono, monospace';
+        ctx.textAlign = 'right'; ctx.fillText(v + '', padL - 8, y + 4);
+    }
+
+    // Line
+    ctx.beginPath();
+    ctx.strokeStyle = '#ff6b35'; ctx.lineWidth = 2.5;
+    for (let i = 0; i < n; i++) {
+        const x = padL + (i / Math.max(n - 1, 1)) * plotW;
+        const y = padT + plotH - (scores[i] / 20) * plotH;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Fill
+    ctx.lineTo(padL + plotW, padT + plotH); ctx.lineTo(padL, padT + plotH); ctx.closePath();
+    ctx.fillStyle = 'rgba(255,107,53,0.08)'; ctx.fill();
+
+    // Dots
+    for (let i = 0; i < n; i++) {
+        const x = padL + (i / Math.max(n - 1, 1)) * plotW;
+        const y = padT + plotH - (scores[i] / 20) * plotH;
+        ctx.beginPath(); ctx.arc(x, y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = scores[i] >= 14 ? '#22c55e' : scores[i] >= 10 ? '#f59e0b' : '#ef4444';
+        ctx.fill(); ctx.strokeStyle = '#08080d'; ctx.lineWidth = 2; ctx.stroke();
+    }
+
+    // Date labels (first, middle, last)
+    ctx.fillStyle = '#4a4a64'; ctx.font = '10px Outfit, sans-serif'; ctx.textAlign = 'center';
+    const labelIdxs = n <= 3 ? sorted.map((_, i) => i) : [0, Math.floor(n / 2), n - 1];
+    for (const i of labelIdxs) {
+        const x = padL + (i / Math.max(n - 1, 1)) * plotW;
+        const d = sorted[i].created_at ? new Date(sorted[i].created_at).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' }) : '';
+        ctx.fillText(d, x, H - 10);
+    }
+}
+
+async function viewSession(evalId) {
+    const authToken = localStorage.getItem('vm-token');
+    if (!authToken) return;
+
+    const dashContent = document.getElementById('dash-content');
+    dashContent.innerHTML = '<div class="gen-status"><div class="spinner-lg"></div><div style="font-size:14px;color:var(--text-secondary);">Chargement de la session...</div></div>';
+
+    try {
+        const r = await fetch(API + '/api/dashboard/session/' + evalId, {
+            headers: { 'Authorization': 'Bearer ' + authToken }
+        });
+        if (!r.ok) throw new Error('Session introuvable');
+        const session = await r.json();
+
+        const sc = session.score_global || 0;
+        const scColor = sc >= 14 ? 'var(--success)' : sc >= 10 ? 'var(--warning)' : 'var(--danger)';
+        const date = session.created_at ? new Date(session.created_at).toLocaleDateString('fr-FR') : '-';
+        const diffLabel = session.difficulty === 1 ? '🟢 Facile' : session.difficulty === 3 ? '🔴 Difficile' : '🟡 Intermédiaire';
+
+        let html = `
+            <div style="margin-bottom:20px;">
+                <button class="btn-secondary" onclick="loadDashboard()" style="margin-bottom:16px">← Retour au dashboard</button>
+            </div>
+            <div class="eval-score-hero">
+                <div class="eval-score-number" style="color:${scColor}">${sc}<span class="eval-score-max">/20</span></div>
+                <div style="font-size:13px;color:var(--text-muted);margin-top:8px;">${date} — ${escapeHtml(session.scenario_id || '')} — ${diffLabel}</div>
+            </div>
+        `;
+
+        // Render evaluation if available
+        if (session.evaluation && Object.keys(session.evaluation).length > 0) {
+            const ev = session.evaluation;
+            const COMP_KEYS = ['accroche', 'decouverte', 'creation_enjeu', 'argumentation', 'traitement_objections', 'engagement'];
+            const COMP_LABELS = { accroche: 'Accroche', decouverte: 'Découverte', creation_enjeu: "Création d'enjeu", argumentation: 'Argumentation', traitement_objections: 'Objections', engagement: 'Engagement' };
+            const comps = ev.competences || {};
+
+            html += '<div class="eval-grid">';
+            for (const key of COMP_KEYS) {
+                const c = comps[key] || { score: 0 };
+                const pct = (c.score / 20 * 100).toFixed(0);
+                const barClass = c.score >= 14 ? 'bar-high' : c.score >= 8 ? 'bar-mid' : 'bar-low';
+                const col = c.score >= 14 ? 'var(--success)' : c.score >= 8 ? 'var(--warning)' : 'var(--danger)';
+                html += `<div class="eval-card"><div class="eval-card-head"><div class="eval-card-title">${COMP_LABELS[key]}</div><div class="eval-card-score" style="color:${col}">${c.score}/20</div></div><div class="eval-bar"><div class="eval-bar-fill ${barClass}" style="width:${pct}%"></div></div></div>`;
+            }
+            html += '</div>';
+
+            if (ev.synthese) {
+                html += `<div class="eval-synthese"><div class="eval-synthese-title">Synthèse</div><div class="eval-synthese-text">${escapeHtml(ev.synthese)}</div></div>`;
+            }
+        }
+
+        // Transcript
+        if (session.transcript && session.transcript.length > 0) {
+            html += '<div class="dash-section"><div class="dash-section-title">Transcript</div><div class="transcript-chat" style="display:block;max-height:none;">';
+            for (const t of session.transcript) {
+                const cls = t.role === 'vendeur' ? 'vous' : 'prospect';
+                const lbl = t.role === 'vendeur' ? 'Vous' : 'Prospect';
+                html += `<div class="tc-msg"><span class="tc-label ${cls}">${lbl}</span><span class="tc-text">${escapeHtml(t.text || '')}</span></div>`;
+            }
+            html += '</div></div>';
+        }
+
+        dashContent.innerHTML = html;
+    } catch (e) {
+        dashContent.innerHTML = `<div class="dash-empty">Erreur : ${escapeHtml(e.message)}</div>`;
+    }
 }
 
 // === BOOT ===

@@ -33,7 +33,7 @@ from database import (
     create_session, complete_session, get_user_evaluations, get_user_stats,
     get_evaluation_detail, get_team_members, get_team_stats,
     COMPETENCE_KEYS, _parse_competences,
-    get_all_scenario_templates, get_scenario_from_db,
+    get_all_scenario_templates, get_scenario_from_db, save_scenario_to_db,
 )
 from auth import (
     hash_password, verify_password, create_token, get_current_user, get_optional_user,
@@ -113,6 +113,9 @@ class TokenRequest(BaseModel):
 class ScenarioRequest(BaseModel):
     description: str
     scenario_id: str | None = None
+    sector: str | None = None
+    type: str | None = None
+    language: str = "fr"
 
 class TranscriptEntry(BaseModel):
     role: str
@@ -206,6 +209,14 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
 
     if not api_key or not api_secret:
         raise HTTPException(500, "LiveKit credentials not configured")
+
+    # Anonymous users can only use __default__ scenario
+    effective_scenario = req.scenario_id or "__default__"
+    if not user and effective_scenario != "__default__":
+        raise HTTPException(
+            401,
+            "Inscription requise pour accéder aux scénarios avancés. Créez votre compte gratuitement."
+        )
 
     room_name = f"vm-{uuid.uuid4().hex[:8]}"
     identity = f"user-{uuid.uuid4().hex[:6]}"
@@ -382,13 +393,28 @@ async def generate_scenario_endpoint(req: ScenarioRequest):
 
     try:
         from generate_scenario import generate_scenario as gen
-        scenario = gen(req.description, req.scenario_id)
+        # Enrich description with sector/type context if provided
+        enriched = req.description
+        if req.sector:
+            enriched += f"\n[Secteur : {req.sector}]"
+        if req.type:
+            enriched += f"\n[Type d'appel : {req.type}]"
+
+        scenario = gen(enriched, req.scenario_id)
+
+        # Save to DB
+        await save_scenario_to_db(scenario, language=req.language)
+
         return {
             "success": True,
+            "id": scenario["id"],
             "scenario_id": scenario["id"],
-            "persona": f"{scenario['persona']['identite']['prenom']} {scenario['persona']['identite']['nom']}",
-            "poste": scenario["persona"]["identite"]["poste"],
-            "entreprise": scenario["persona"]["identite"]["entreprise"]["nom"],
+            "persona": scenario.get("persona", {}),
+            "objections": scenario.get("objections", {}),
+            "brief_commercial": scenario.get("brief_commercial", {}),
+            "vendeur": scenario.get("vendeur", {}),
+            "difficulty": 2,
+            "metadata": scenario.get("metadata", {}),
         }
     except Exception as e:
         raise HTTPException(500, f"Erreur génération : {str(e)}")
@@ -409,10 +435,10 @@ def _format_transcript(transcript) -> str:
 
 EVAL_LANG_CONFIG = {
     "fr": {"instruction": "", "language_name": "français"},
-    "en": {"instruction": "IMPORTANT: Write your ENTIRE evaluation in English. All field values (synthese, conseil, points_forts, points_progres, moment_cle) must be in English.", "language_name": "English"},
-    "es": {"instruction": "IMPORTANTE: Escribe TODA tu evaluación en español. Todos los valores (synthese, conseil, points_forts, points_progres, moment_cle) deben estar en español.", "language_name": "español"},
-    "de": {"instruction": "WICHTIG: Schreibe deine GESAMTE Bewertung auf Deutsch. Alle Feldwerte (synthese, conseil, points_forts, points_progres, moment_cle) müssen auf Deutsch sein.", "language_name": "Deutsch"},
-    "it": {"instruction": "IMPORTANTE: Scrivi TUTTA la tua valutazione in italiano. Tutti i valori (synthese, conseil, points_forts, points_progres, moment_cle) devono essere in italiano.", "language_name": "italiano"},
+    "en": {"instruction": "IMPORTANT: Write your ENTIRE evaluation in English. All field values (synthese, conseil, points_forts, points_progres, moment_cle, posture_commerciale, analyse_disc) must be in English.", "language_name": "English"},
+    "es": {"instruction": "IMPORTANTE: Escribe TODA tu evaluación en español. Todos los valores (synthese, conseil, points_forts, points_progres, moment_cle, posture_commerciale, analyse_disc) deben estar en español.", "language_name": "español"},
+    "de": {"instruction": "WICHTIG: Schreibe deine GESAMTE Bewertung auf Deutsch. Alle Feldwerte (synthese, conseil, points_forts, points_progres, moment_cle, posture_commerciale, analyse_disc) müssen auf Deutsch sein.", "language_name": "Deutsch"},
+    "it": {"instruction": "IMPORTANTE: Scrivi TUTTA la tua valutazione in italiano. Tutti i valori (synthese, conseil, points_forts, points_progres, moment_cle, posture_commerciale, analyse_disc) devono essere in italiano.", "language_name": "italiano"},
 }
 
 
@@ -457,6 +483,42 @@ MOMENT CLÉ : Identifie LE moment de l'appel qui a fait basculer la conversation
 
 POINTS DE PROGRÈS : Pour chaque point de progrès dans une compétence, tu dois OBLIGATOIREMENT fournir le verbatim exact du commercial ET la version améliorée. Le commercial doit voir côte à côte ce qu'il a dit et ce qu'il aurait dû dire. C'est la clé de la progression.
 
+POSTURE COMMERCIALE :
+Évalue le TON, L'ASSURANCE et la FORMULATION du commercial. Ce n'est pas ce qu'il dit, c'est COMMENT il le dit.
+
+TON (/20) :
+- Le commercial a-t-il un ton engageant, dynamique, professionnel ?
+- Repère les moments où le ton est descendant (fin de phrase qui tombe = manque de conviction)
+- Repère les moments où le ton est trop agressif ou trop mou
+- Le rythme est-il adapté (pas trop rapide, pas trop lent) ?
+
+ASSURANCE (/20) :
+- Le commercial utilise-t-il des mots parasites qui trahissent le doute ? ("peut-être", "je pense", "éventuellement", "un petit peu", "en quelque sorte", "voilà")
+- Ses phrases sont-elles affirmatives ou interrogatives quand elles ne devraient pas l'être ?
+- Face aux objections, garde-t-il sa posture ou se dégonfle-t-il ?
+- Laisse-t-il des silences de confiance ou comble-t-il les blancs nerveusement ?
+
+FORMULATION (/20) :
+- Les phrases sont-elles concises et percutantes ?
+- Le vocabulaire est-il adapté au niveau du prospect (pas trop technique, pas trop vague) ?
+- Utilise-t-il des questions fermées de validation ("Ça fait sens pour vous ?", "Vous voyez ce que je veux dire ?") ?
+- Évite-t-il le jargon et les phrases creuses ("solution innovante", "accompagnement sur mesure") ?
+
+ANALYSE DISC DU PROSPECT :
+À partir du transcript, identifie le profil DISC du prospect :
+- D (Dominance) : direct, impatient, orienté résultats, coupe la parole, veut des faits pas des sentiments
+- I (Influence) : bavard, enthousiaste, aime la relation, digresse, réagit aux histoires et témoignages
+- S (Stabilité) : prudent, posé, n'aime pas le changement, a besoin de réassurance, demande du temps
+- C (Conformité) : analytique, demande des détails, des preuves, des chiffres, méfiant envers les promesses
+
+Identifie le type principal et secondaire du prospect à partir de SES répliques (pas celles du commercial).
+Puis évalue si le commercial a adapté son approche au profil DISC détecté.
+
+Un commercial qui pitch 5 minutes de features à un profil D a tout faux.
+Un commercial qui balance des chiffres secs à un profil I perd le lien.
+Un commercial qui pousse à décider vite un profil S le braque.
+Un commercial qui reste vague avec un profil C perd toute crédibilité.
+
 Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
 
 {{
@@ -485,10 +547,81 @@ Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
     "synthese": "2-3 phrases",
     "conseil_prioritaire": "LA chose à travailler en 1 phrase",
     "moment_cle": {{
-        "quand": "Le contexte précis du moment (ex: Quand le prospect a dit qu'il n'avait pas le temps)",
+        "quand": "Le contexte précis du moment",
         "ce_que_vous_avez_dit": "Verbatim EXACT du commercial à ce moment",
         "ce_qui_aurait_ete_ideal": "La réponse idéale formulée comme un exemple à suivre",
         "pourquoi": "Explication en 1-2 phrases de pourquoi c'est le moment décisif"
+    }},
+    "posture_commerciale": {{
+        "ton_general": {{
+            "note": 0,
+            "description": "Ex: Ton hésitant et monotone, manque d'énergie",
+            "moments_positifs": ["Verbatim exact où le ton était bon + pourquoi"],
+            "moments_a_ameliorer": [
+                {{
+                    "ce_que_vous_avez_dit": "Verbatim exact",
+                    "probleme": "Ex: Voix descendante en fin de phrase",
+                    "version_amelioree": "La même phrase reformulée avec le bon ton/énergie",
+                    "conseil": "Conseil concret sur le ton à adopter"
+                }}
+            ]
+        }},
+        "assurance": {{
+            "note": 0,
+            "description": "Ex: Le commercial semble sûr de lui sur le produit mais perd confiance face aux objections",
+            "marqueurs_confiance": ["Verbatims montrant de l'assurance"],
+            "marqueurs_hesitation": [
+                {{
+                    "verbatim": "Verbatim exact montrant l'hésitation",
+                    "indice": "Ex: utilisation de 'peut-être', phrases inachevées",
+                    "reformulation": "Comment formuler la même idée avec assurance"
+                }}
+            ]
+        }},
+        "formulation": {{
+            "note": 0,
+            "description": "Ex: Trop de jargon technique, phrases trop longues",
+            "points_forts": ["Formulations efficaces avec verbatim"],
+            "points_a_ameliorer": [
+                {{
+                    "ce_que_vous_avez_dit": "Verbatim exact",
+                    "probleme": "Ex: Phrase de 40 mots sans pause",
+                    "version_amelioree": "Reformulation plus percutante et concise",
+                    "principe": "Ex: Règle des 15 mots max par idée"
+                }}
+            ]
+        }},
+        "score_posture": 0,
+        "conseil_posture": "Le conseil #1 pour améliorer sa posture globale"
+    }},
+    "analyse_disc": {{
+        "profil_prospect": {{
+            "type_principal": "D|I|S|C",
+            "type_secondaire": null,
+            "description": "Ex: Dominance forte avec composante Conformité",
+            "indices_detectes": [
+                "Ex: Coupe la parole après 10 secondes → Dominance",
+                "Ex: Demande des chiffres concrets → Conformité"
+            ]
+        }},
+        "adaptation_commerciale": {{
+            "score_adaptation": 0,
+            "ce_qui_a_marche": [
+                {{
+                    "verbatim": "Ce que le commercial a dit",
+                    "pourquoi_adapte": "En quoi c'était adapté au profil DISC du prospect"
+                }}
+            ],
+            "ce_qui_na_pas_marche": [
+                {{
+                    "verbatim": "Ce que le commercial a dit",
+                    "pourquoi_inadapte": "En quoi c'était inadapté au profil DISC",
+                    "ce_quil_aurait_fallu_dire": "Reformulation adaptée au profil DISC du prospect",
+                    "principe_disc": "Ex: Avec un D, allez droit au but."
+                }}
+            ],
+            "strategie_ideale": "En 3-4 phrases : comment ce prospect aurait dû être abordé selon son profil DISC."
+        }}
     }}
 }}
 
@@ -499,7 +632,10 @@ RÈGLES :
 - Si le commercial n'a pas du tout couvert une compétence, note 2/20 max.
 - Le conseil prioritaire doit être concret et actionnable.
 - Chaque point_progres est un objet avec ce_que_vous_avez_dit, ce_qui_aurait_ete_mieux et pourquoi.
-- Le moment_cle est LE moment décisif qui a fait basculer l'appel (en bien ou en mal)."""
+- Le moment_cle est LE moment décisif qui a fait basculer l'appel (en bien ou en mal).
+- score_posture est la moyenne arrondie des 3 notes de posture (ton, assurance, formulation).
+- analyse_disc.profil_prospect.type_secondaire est null si un seul profil DISC est détecté.
+- score_adaptation (/20) mesure à quel point le commercial a adapté son style au profil DISC détecté."""
 
 
 @app.post("/api/evaluate")
@@ -526,7 +662,7 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
         client = anthropic.Anthropic()
         response = client.messages.create(
             model="claude-sonnet-4-5-20250929",
-            max_tokens=4096,
+            max_tokens=8192,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text.strip()
@@ -1289,9 +1425,14 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
 @app.get("/contact")
 @app.get("/mentions-legales")
 @app.get("/confidentialite")
-@app.get("/dashboard")
 async def spa_page():
     return FileResponse(STATIC_DIR / "index.html", headers=_SPA_NO_CACHE)
+
+
+@app.get("/dashboard")
+async def serve_dashboard():
+    """Sert demo.html en mode dashboard."""
+    return FileResponse(STATIC_DIR / "demo.html", headers=_SPA_NO_CACHE)
 
 
 @app.get("/demo.html")

@@ -508,3 +508,35 @@ async def get_scenario_from_db(scenario_id: str) -> dict | None:
                     except Exception:
                         pass
             return d
+
+
+async def save_scenario_to_db(scenario: dict, language: str = "fr") -> str:
+    """Sauvegarde un scénario généré dans la DB et retourne son ID."""
+    scenario_id = scenario.get("id", f"custom_{int(datetime.utcnow().timestamp())}")
+    extraction = scenario.get("extraction", {})
+    persona = scenario.get("persona", {})
+    objections = scenario.get("objections", {})
+    brief = scenario.get("brief_commercial", {})
+    description = scenario.get("description_originale", "")
+    secteur = extraction.get("cible", {}).get("secteur", "")
+
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            """INSERT OR REPLACE INTO scenarios
+               (id, description_originale, extraction_json, persona_json, objections_json, brief_json,
+                difficulty_default, secteur, is_template, language)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?)""",
+            (
+                scenario_id,
+                description,
+                json.dumps(extraction, ensure_ascii=False),
+                json.dumps(persona, ensure_ascii=False),
+                json.dumps(objections, ensure_ascii=False),
+                json.dumps(brief, ensure_ascii=False),
+                2,
+                secteur if secteur != "NON_SPECIFIE" else "",
+                language,
+            ),
+        )
+        await db.commit()
+    return scenario_id
