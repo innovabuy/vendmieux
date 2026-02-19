@@ -92,6 +92,15 @@ class TestMarketingCopy:
             assert "Finançable OPCO" not in content, f"Found 'Finançable OPCO' in {name}"
             assert "pédagogique ou OPCO" not in content, f"Found 'ou OPCO' in {name}"
 
+    def test_no_cost_per_session(self, react_asset_contents):
+        """No cost per session (0.20€) should appear in assets."""
+        for name, content in react_asset_contents.items():
+            if "vendor" in name.lower():
+                continue
+            assert "0.20€" not in content, f"Found '0.20€' in {name}"
+            assert "0,20€" not in content, f"Found '0,20€' in {name}"
+            assert "Coût/session" not in content, f"Found 'Coût/session' in {name}"
+
     def test_index_html_meta_12_scenarios(self, index_html_content):
         """index.html meta description should reference 12 scénarios."""
         assert "12 scénarios" in index_html_content, "Expected '12 scénarios' in index.html"
