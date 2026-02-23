@@ -123,6 +123,42 @@ SCENARIOS_DATABASE = [
         }
     },
 
+    {
+        "id": "IND-05",
+        "secteur": "Industrie",
+        "type_simulation": "rdv_physique",
+        "titre": "Maintenance prédictive — RDV physique DG industriel",
+        "intro_assistante": {
+            "accueil": "Bonjour, vous avez rendez-vous avec monsieur Bertrand ? Un instant je vous prie.",
+            "introduction": "Monsieur Bertrand vous reçoit, installez-vous."
+        },
+        "vendeur": {
+            "entreprise": {"nom": "TechMaint Solutions", "secteur": "Maintenance prédictive industrielle", "description": "Éditeur de solutions IoT de surveillance machines en temps réel"},
+            "offre": {"nom": "PredictLine", "description": "Capteurs IoT + IA qui détecte les pannes 48h avant", "proposition_valeur": "Réduction de 70% des arrêts non planifiés, ROI en 6 mois", "prix": "À partir de 800€/mois pour 10 machines", "references": ["Fonderies du Rhône (72 sal.) — 3 pannes évitées en 6 mois", "Précis'Usinage Lyon — ROI en 4 mois"], "avantages_vs_concurrence": "Seule solution IA certifiée usinage CN, installation en 1 jour sans arrêt"},
+            "objectif_appel": {"type": "rdv_physique", "description": "Convaincre Bertrand de lancer un pilote PredictLine sur 5 machines pendant 3 mois", "criteres_succes": ["Valider le pilote 3 mois", "Identifier les 5 machines cibles", "Obtenir l'accord du responsable maintenance"]},
+            "contexte_appel": {"type": "rdv_obtenu", "historique": "Suite à un appel de prospection réussi, RDV de 30 min obtenu sur site", "infos_connues": "PME Rhône-Alpes, 85 sal., mécanique de précision, 2 pannes majeures récentes (coût 45K€)"}
+        },
+        "prospect": {
+            "prenom": "Olivier", "nom": "Bertrand", "genre": "M", "age": 52,
+            "poste": "Directeur Général",
+            "entreprise": {"nom": "MécaPress Rhône-Alpes", "secteur": "Mécanique de précision", "taille": "85 salariés", "ca": "12M€"},
+            "traits": ["pragmatique", "direct", "méfiant envers les commerciaux", "fidèle à ses prestataires"],
+            "style_communication": "Direct et factuel, pas de small talk",
+            "motivations": ["réduire les coûts d'arrêt", "moderniser sans risque"],
+            "peurs": ["investir dans une techno gadget", "dépendance à un fournisseur", "complexité de déploiement"],
+            "situation": "2 pannes majeures le mois dernier (coût 45K€). Prestataire maintenance actuel depuis 15 ans. A accepté un RDV de 30 min suite à un premier appel téléphonique convaincant.",
+            "priorites": ["fiabilité production", "livrer les commandes en retard"],
+            "tics_langage": ["Bon...", "Concrètement ?", "Venez-en au fait", "Montrez-moi les chiffres"],
+            "objections": [
+                {"verbatim": "Votre démo par téléphone c'était bien, mais concrètement sur mes machines ça donne quoi ?", "type": "sincere"},
+                {"verbatim": "800€ par mois c'est un budget, mon prestataire actuel me coûte moitié moins", "type": "sincere"},
+                {"verbatim": "Mes gars à l'atelier, ils ont pas le temps de se former sur un nouvel outil", "type": "sincere"},
+                {"verbatim": "3 mois de pilote ? C'est long. En 1 mois on doit voir des résultats", "type": "negociation"},
+                {"verbatim": "Je veux des garanties écrites sur les résultats", "type": "negociation"}
+            ]
+        }
+    },
+
     # ══════════════════════════════════════════════════════════════
     # SECTEUR 2 — SERVICES / CONSEIL
     # ══════════════════════════════════════════════════════════════
@@ -1533,6 +1569,7 @@ def _build_brief(scenario: dict, prospect: dict, vendeur: dict) -> dict:
     diff_map = {
         "prospection_telephonique": "Intermédiaire",
         "rdv_one_to_one": "Intermédiaire",
+        "rdv_physique": "Intermédiaire",
         "barrage_secretaire": "Expert",
         "multi_interlocuteurs": "Expert",
         "negociation": "Expert",
@@ -1544,6 +1581,7 @@ def _build_brief(scenario: dict, prospect: dict, vendeur: dict) -> dict:
     duree_map = {
         "prospection_telephonique": "5-8 minutes",
         "rdv_one_to_one": "10-15 minutes",
+        "rdv_physique": "10-15 minutes",
         "barrage_secretaire": "5-10 minutes",
         "multi_interlocuteurs": "10-15 minutes",
         "negociation": "10-15 minutes",
@@ -1615,6 +1653,7 @@ def convert_to_agent_format(scenario: dict) -> dict:
         "identite": {
             "prenom": prospect.get("prenom", "Inconnu"),
             "nom": prospect.get("nom", ""),
+            "genre": prospect.get("genre", "M"),
             "age": prospect.get("age", 45),
             "poste": prospect.get("poste", "Dirigeant"),
             "entreprise": {
@@ -1669,6 +1708,7 @@ def convert_to_agent_format(scenario: dict) -> dict:
     diff_map = {
         "prospection_telephonique": 2,
         "rdv_one_to_one": 2,
+        "rdv_physique": 2,
         "barrage_secretaire": 3,
         "multi_interlocuteurs": 3,
         "negociation": 3,
@@ -1709,6 +1749,10 @@ def convert_to_agent_format(scenario: dict) -> dict:
     # Ajouter description de situation si présente
     if "description_situation" in scenario:
         result["simulation"]["description_situation"] = scenario["description_situation"]
+
+    # Ajouter intro assistante pour scénarios RDV physique
+    if "intro_assistante" in scenario:
+        result["intro_assistante"] = scenario["intro_assistante"]
 
     return result
 

@@ -12,6 +12,8 @@ Endpoints :
 9. Dashboard manager (equipe, stats, commercial)
 """
 
+import asyncio
+import hashlib as _hashlib_mod
 import json
 import os
 import uuid
@@ -23,7 +25,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
 from livekit.api import AccessToken, VideoGrants
 
@@ -94,6 +96,25 @@ limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
+import hashlib
+import time as _time
+
+# --- Demo rate limiting (in-memory) ---
+_demo_rate: dict[str, list[float]] = {}
+
+def _hash_ip(ip: str) -> str:
+    return hashlib.sha256(ip.encode()).hexdigest()[:16]
+
+def _check_demo_rate_limit(ip: str) -> bool:
+    h = _hash_ip(ip)
+    now = _time.time()
+    _demo_rate[h] = [t for t in _demo_rate.get(h, []) if now - t < 86400]
+    if len(_demo_rate.get(h, [])) >= 3:
+        return False
+    _demo_rate.setdefault(h, []).append(now)
+    return True
+
+
 SCENARIOS_DIR = Path(__file__).parent / "scenarios"
 SCENARIOS_DIR.mkdir(exist_ok=True)
 STATIC_DIR = Path(__file__).parent / "static"
@@ -109,6 +130,7 @@ class TokenRequest(BaseModel):
     difficulty: int = 2
     user_name: str = "Commercial"
     language: str = "fr"
+    demo: bool = False
 
 class ScenarioRequest(BaseModel):
     description: str
@@ -151,6 +173,12 @@ class LoginRequest(BaseModel):
     email: str
     password: str
 
+class TTSIntroRequest(BaseModel):
+    text: str
+    voice: str = "fr-FR-Wavenet-C"
+    language_code: str = "fr-FR"
+    speaking_rate: float = 1.0
+
 
 # --- Scenarios database (cached) ---
 _SCENARIOS_DB: dict[str, dict] = {}
@@ -163,6 +191,7 @@ async def startup():
     global _SCENARIOS_DB
     await init_db()
     _SCENARIOS_DB = load_scenarios_database()
+    (STATIC_DIR / "sounds" / "tts_cache").mkdir(parents=True, exist_ok=True)
 
 
 # --- Helper: load scenario ---
@@ -190,17 +219,56 @@ async def health():
     return {"status": "ok", "service": "vendmieux-api"}
 
 
+# --- TTS Intro (immersion RDV physique) ---
+
+@app.post("/api/tts/intro")
+@limiter.limit("10/minute")
+async def tts_intro(req: TTSIntroRequest, request: Request):
+    """Synthesize short TTS clip for office intro sequence. Returns cached URL."""
+    if len(req.text) > 200:
+        raise HTTPException(400, "Texte trop long (max 200 caractères)")
+
+    cache_key = _hashlib_mod.md5(
+        f"{req.text}|{req.voice}|{req.language_code}|{req.speaking_rate}".encode()
+    ).hexdigest()
+    cache_path = STATIC_DIR / "sounds" / "tts_cache" / f"{cache_key}.mp3"
+    url = f"/static/sounds/tts_cache/{cache_key}.mp3"
+
+    if cache_path.exists():
+        return {"url": url}
+
+    from google.cloud import texttospeech
+
+    def _synthesize():
+        client = texttospeech.TextToSpeechClient()
+        synthesis_input = texttospeech.SynthesisInput(text=req.text)
+        voice = texttospeech.VoiceSelectionParams(
+            language_code=req.language_code, name=req.voice
+        )
+        audio_config = texttospeech.AudioConfig(
+            audio_encoding=texttospeech.AudioEncoding.MP3,
+            speaking_rate=req.speaking_rate,
+        )
+        return client.synthesize_speech(
+            input=synthesis_input, voice=voice, audio_config=audio_config
+        )
+
+    response = await asyncio.to_thread(_synthesize)
+    cache_path.write_bytes(response.audio_content)
+    return {"url": url}
+
+
 # --- Existing endpoints ---
 
 @app.get("/")
 async def serve_frontend(request: Request):
-    html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    html = _load_prerendered_or_fallback("/")
     html = _inject_seo_meta(html, request.url.path)
     return HTMLResponse(content=html, headers=_SPA_NO_CACHE)
 
 
 @app.post("/api/token")
-async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_user)):
+async def get_token(req: TokenRequest, request: Request, user: dict | None = Depends(get_optional_user)):
     api_key = os.environ.get("LIVEKIT_API_KEY")
     api_secret = os.environ.get("LIVEKIT_API_SECRET")
     livekit_url = os.environ.get("LIVEKIT_URL")
@@ -208,22 +276,40 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
     if not api_key or not api_secret:
         raise HTTPException(500, "LiveKit credentials not configured")
 
-    # Anonymous users can only use __default__ scenario
-    effective_scenario = req.scenario_id or "__default__"
-    if not user and effective_scenario != "__default__":
-        raise HTTPException(
-            401,
-            "Inscription requise pour accéder aux scénarios avancés. Créez votre compte gratuitement."
-        )
+    is_demo = req.demo
+    client_ip = request.client.host if request.client else "unknown"
+
+    if is_demo:
+        # Demo mode: rate limit by IP (3 per 24h), no auth required
+        if not _check_demo_rate_limit(client_ip):
+            raise HTTPException(429, "Limite de démos atteinte (3 par 24h). Créez un compte pour continuer.")
+        user_id = None
+    else:
+        # Normal mode: anonymous users can only use __default__ scenario
+        effective_scenario = req.scenario_id or "__default__"
+        if not user and effective_scenario != "__default__":
+            raise HTTPException(
+                401,
+                "Inscription requise pour accéder aux scénarios avancés. Créez votre compte gratuitement."
+            )
+        user_id = user["id"] if user else None
 
     room_name = f"vm-{uuid.uuid4().hex[:8]}"
     identity = f"user-{uuid.uuid4().hex[:6]}"
 
-    # If authenticated, create a DB session
+    # Create a DB session
     session_db_id = None
-    user_id = None
-    if user:
-        user_id = user["id"]
+    if is_demo:
+        session_db_id = await create_session(
+            user_id=None,
+            scenario_id=req.scenario_id or "demo_bertrand_prospection_froide_v1",
+            difficulty=req.difficulty,
+            livekit_room_id=room_name,
+            language=req.language,
+            is_demo=True,
+            ip_hash=_hash_ip(client_ip),
+        )
+    elif user:
         session_db_id = await create_session(
             user_id=user_id,
             scenario_id=req.scenario_id or "__default__",
@@ -234,7 +320,7 @@ async def get_token(req: TokenRequest, user: dict | None = Depends(get_optional_
 
     # Room metadata now carries JSON with scenario_id + difficulty + optional user info
     room_metadata = json.dumps({
-        "scenario_id": req.scenario_id or "__default__",
+        "scenario_id": req.scenario_id or ("demo_bertrand_prospection_froide_v1" if is_demo else "__default__"),
         "difficulty": req.difficulty,
         "user_id": user_id,
         "session_db_id": session_db_id,
@@ -398,7 +484,7 @@ async def generate_scenario_endpoint(req: ScenarioRequest):
         if req.type:
             enriched += f"\n[Type d'appel : {req.type}]"
 
-        scenario = gen(enriched, req.scenario_id)
+        scenario = await asyncio.to_thread(gen, enriched, req.scenario_id)
 
         # Save to DB
         await save_scenario_to_db(scenario, language=req.language)
@@ -659,8 +745,8 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
     try:
         client = anthropic.Anthropic()
         response = client.messages.create(
-            model="claude-sonnet-4-5-20250929",
-            max_tokens=8192,
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1500,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text.strip()
@@ -697,6 +783,82 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
         await complete_session(req.session_db_id, req.duration_s)
 
     return evaluation
+
+
+# --- Streaming evaluation endpoint ---
+
+@app.post("/api/evaluate/stream")
+async def evaluate_stream(req: EvaluateRequest, user: dict | None = Depends(get_optional_user)):
+    """Évalue un appel commercial via Claude Haiku en streaming SSE (FORCE 3D)."""
+    # Resolve user_id: explicit body > JWT auth
+    if not req.user_id and user:
+        req.user_id = user["id"]
+
+    # Formater le transcript
+    transcript_text = _format_transcript(req.transcript)
+    if not transcript_text.strip():
+        raise HTTPException(400, "Transcript vide")
+
+    # Vérifier minimum d'échanges (3 lignes)
+    lines = [l for l in transcript_text.strip().split("\n") if l.strip()]
+    if len(lines) < 3:
+        raise HTTPException(400, "Appel trop court pour être évalué (minimum 3 échanges)")
+
+    scenario = _load_scenario(req.scenario_id)
+    prompt = _build_evaluation_prompt(scenario, transcript_text, req.difficulty, req.duration_s, language=req.language)
+
+    async def event_generator():
+        accumulated = ""
+        try:
+            client = anthropic.AsyncAnthropic()
+            async with client.messages.stream(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=1500,
+                messages=[{"role": "user", "content": prompt}],
+            ) as stream:
+                async for text_chunk in stream.text_stream:
+                    accumulated += text_chunk
+                    yield f"data: {json.dumps({'type': 'chunk', 'text': text_chunk}, ensure_ascii=False)}\n\n"
+
+            # Stream finished — parse full JSON
+            raw = accumulated.strip()
+            if raw.startswith("```"):
+                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            evaluation = json.loads(raw)
+
+            # Save to DB
+            score = evaluation.get("score_global", 0)
+            transcript_str = transcript_text if isinstance(req.transcript, str) else json.dumps(
+                [e.model_dump() for e in req.transcript], ensure_ascii=False
+            )
+            await save_evaluation(
+                session_id=req.session_id or f"eval-{uuid.uuid4().hex[:8]}",
+                scenario_id=req.scenario_id,
+                difficulty=req.difficulty,
+                transcript=transcript_str,
+                evaluation_json=json.dumps(evaluation, ensure_ascii=False),
+                score_global=score,
+                user_id=req.user_id,
+                session_ref_id=req.session_db_id,
+                language=req.language,
+            )
+
+            # Complete session if we have one
+            if req.session_db_id:
+                await complete_session(req.session_db_id, req.duration_s)
+
+            yield f"event: done\ndata: {json.dumps(evaluation, ensure_ascii=False)}\n\n"
+
+        except json.JSONDecodeError:
+            yield f"event: error\ndata: {json.dumps({'error': 'Erreur parsing évaluation (JSON invalide)'})}\n\n"
+        except Exception as e:
+            yield f"event: error\ndata: {json.dumps({'error': f'Erreur évaluation : {str(e)}'})}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={"X-Accel-Buffering": "no", "Cache-Control": "no-cache"},
+    )
 
 
 # --- NEW: Demo endpoints ---
@@ -1511,6 +1673,21 @@ async def contact_ecole(request: Request, data: ContactEcoleRequest):
     return {"status": "ok", "message": "Demande enregistrée. Réponse sous 24h."}
 
 
+# --- SSG: serve pre-rendered HTML when available ---
+
+def _load_prerendered_or_fallback(path: str) -> str:
+    """Load pre-rendered HTML for a route, or fall back to index.html."""
+    if path == "/":
+        # Home page: pre-rendered as static/index.html (replaced during deploy)
+        return (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    # e.g. /produit → static/produit/index.html
+    prerendered = STATIC_DIR / path.lstrip("/") / "index.html"
+    if prerendered.exists():
+        return prerendered.read_text(encoding="utf-8")
+    # Fallback to SPA index.html
+    return (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+
+
 # --- SEO meta data per route ---
 
 _SEO_DATA = {
@@ -1609,7 +1786,7 @@ def _inject_seo_meta(html: str, path: str) -> str:
     return html
 
 
-# --- SPA frontend routes (serve index.html for client-side routing) ---
+# --- SPA frontend routes (serve pre-rendered HTML or fallback to index.html) ---
 
 @app.get("/produit")
 @app.get("/tarifs")
@@ -1620,7 +1797,7 @@ def _inject_seo_meta(html: str, path: str) -> str:
 @app.get("/mentions-legales")
 @app.get("/confidentialite")
 async def spa_page(request: Request):
-    html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    html = _load_prerendered_or_fallback(request.url.path)
     html = _inject_seo_meta(html, request.url.path)
     return HTMLResponse(content=html, headers=_SPA_NO_CACHE)
 
@@ -1638,8 +1815,22 @@ async def serve_demo_html():
 
 @app.get("/simulation")
 async def serve_simulation():
-    """Sert demo.html en mode libre (avec ?scenario=ID)."""
-    return FileResponse(STATIC_DIR / "demo.html", headers=_SPA_NO_CACHE)
+    """Sert la SPA React (avec ?scenario=ID)."""
+    return FileResponse(STATIC_DIR / "index.html", headers=_SPA_NO_CACHE)
+
+
+@app.get("/demo")
+async def serve_demo_page(request: Request):
+    """Page de démo libre d'accès — sans authentification."""
+    html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+    import re
+    html = re.sub(r"<title>[^<]*</title>", "<title>Démo gratuite — VendMieux | Simulation commerciale IA</title>", html)
+    html = re.sub(
+        r'<meta name="description" content="[^"]*"',
+        '<meta name="description" content="Vivez une simulation commerciale IA en 5 minutes. Sans inscription. Appelez un prospect virtuel et recevez votre évaluation FORCE 3D."',
+        html,
+    )
+    return HTMLResponse(content=html, headers=_SPA_NO_CACHE)
 
 
 # Static files must be mounted LAST (catch-all)
