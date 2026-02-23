@@ -8,6 +8,7 @@ export function useLiveKit() {
   const timerRef = useRef(null);
   const t0Ref = useRef(null);
   const localIdentityRef = useRef(null);
+  const intentionalDisconnectRef = useRef(false);
 
   const [status, setStatus] = useState('idle'); // idle | connecting | ringing | connected | error
   const [statusMsg, setStatusMsg] = useState('');
@@ -67,6 +68,7 @@ export function useLiveKit() {
   }, []);
 
   const connect = useCallback(async ({ tokenUrl, scenarioId, difficulty, userName, language, authToken, onPickup, prefetchedToken }) => {
+    intentionalDisconnectRef.current = false;
     setStatus('connecting');
     setStatusMsg('Appel en cours...');
     setTranscriptEntries([]);
@@ -116,7 +118,23 @@ export function useLiveKit() {
         }
       });
 
-      room.on(LivekitClient.RoomEvent.Disconnected, () => {
+      room.on(LivekitClient.RoomEvent.Reconnecting, () => {
+        setStatus('connecting');
+        setStatusMsg('Reconnexion...');
+      });
+
+      room.on(LivekitClient.RoomEvent.Reconnected, () => {
+        setStatus('connected');
+        setStatusMsg('En communication');
+      });
+
+      room.on(LivekitClient.RoomEvent.Disconnected, (reason) => {
+        if (!intentionalDisconnectRef.current) {
+          // Disconnect transitoire — ne pas tout détruire
+          setStatus('error');
+          setStatusMsg('Connexion perdue');
+          return;
+        }
         disconnect();
       });
 
@@ -160,6 +178,7 @@ export function useLiveKit() {
 
   const disconnect = useCallback(() => {
     const duration = t0Ref.current ? Date.now() - t0Ref.current : 0;
+    intentionalDisconnectRef.current = true;
     if (roomRef.current) {
       roomRef.current.disconnect();
       roomRef.current = null;

@@ -17,7 +17,7 @@ import hashlib as _hashlib_mod
 import json
 import os
 import uuid
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import anthropic
@@ -338,6 +338,7 @@ async def get_token(req: TokenRequest, request: Request, user: dict | None = Dep
             )
         )
         .with_metadata(room_metadata)
+        .with_ttl(timedelta(minutes=10))
     )
 
     return {

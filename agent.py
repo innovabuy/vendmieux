@@ -12,8 +12,10 @@ généré dynamiquement à partir d'un scénario FORCE 3D.
 import asyncio
 import json
 import os
+import random
 import time
 import logging
+import threading
 from collections.abc import AsyncIterable
 from pathlib import Path
 from dotenv import load_dotenv
@@ -44,18 +46,61 @@ logger.setLevel(logging.INFO)
 SCENARIOS_DIR = Path(__file__).parent / "scenarios"
 
 
+# --- Cache scénarios en mémoire (évite re-conversion à chaque session) ---
+_scenarios_cache: dict[str, dict] = {}
+_scenarios_db_loaded = False
+
+# Historique conversation par room pour résilience reconnexion
+_room_history: dict[str, dict] = {}
+_room_history_lock = threading.Lock()
+_ROOM_HISTORY_TTL = 900  # 15 min
+
+
+def _save_room_history(room_name: str, session: AgentSession):
+    """Sauvegarde l'historique de conversation pour reconnexion."""
+    with _room_history_lock:
+        _room_history[room_name] = {
+            "history": session.history.to_dict(),
+            "ts": time.time(),
+        }
+        # Purger les entrées périmées
+        cutoff = time.time() - _ROOM_HISTORY_TTL
+        stale = [k for k, v in _room_history.items() if v["ts"] < cutoff]
+        for k in stale:
+            del _room_history[k]
+
+
+def _pop_room_history(room_name: str) -> dict | None:
+    """Récupère et supprime l'historique stocké. None si absent/expiré."""
+    with _room_history_lock:
+        entry = _room_history.pop(room_name, None)
+        if entry and (time.time() - entry["ts"]) < _ROOM_HISTORY_TTL:
+            return entry["history"]
+        return None
+
+
+def _ensure_scenarios_db():
+    """Charge la base de scénarios en cache une seule fois."""
+    global _scenarios_db_loaded
+    if not _scenarios_db_loaded:
+        from scenarios_database import load_scenarios_database
+        _scenarios_cache.update(load_scenarios_database())
+        _scenarios_db_loaded = True
+        logger.info(f"📦 Cache scénarios initialisé : {len(_scenarios_cache)} scénarios")
+
+
 def load_scenario(scenario_id: str) -> dict | None:
-    """Charge un scénario depuis la base intégrée ou le dossier scenarios/"""
-    # 1. Vérifier la base de scénarios intégrée
-    from scenarios_database import load_scenarios_database
-    db = load_scenarios_database()
-    if scenario_id in db:
-        return db[scenario_id]
-    # 2. Fallback sur les fichiers JSON (scénarios générés)
+    """Charge un scénario depuis le cache mémoire ou le dossier scenarios/"""
+    _ensure_scenarios_db()
+    if scenario_id in _scenarios_cache:
+        return _scenarios_cache[scenario_id]
+    # Fallback sur les fichiers JSON (scénarios générés par l'utilisateur)
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
     if filepath.exists():
         with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
+            scenario = json.load(f)
+        _scenarios_cache[scenario_id] = scenario  # Cache pour prochaine utilisation
+        return scenario
     return None
 
 
@@ -257,6 +302,50 @@ LANGUAGE_INFO = {
     "it": {"name": "italiano", "nationality": "italiano/a", "country": "l'Italia"},
 }
 
+# --- Greetings pré-scriptés (bypass LLM pour la 1ère réplique) ---
+GREETINGS = {
+    "fr": [
+        "Oui allô ?",
+        "Allô, oui ?",
+        "{prenom} {nom}, j'écoute.",
+        "Oui bonjour ?",
+        "{entreprise}, bonjour.",
+    ],
+    "en": [
+        "Hello?",
+        "Yes, hello?",
+        "{prenom} {nom} speaking.",
+        "Hello, who's calling?",
+    ],
+    "es": [
+        "¿Sí, dígame?",
+        "¿Hola?",
+        "{prenom} {nom}, dígame.",
+    ],
+    "de": [
+        "Ja, hallo?",
+        "{nom}, guten Tag.",
+        "Hallo, wer spricht?",
+    ],
+    "it": [
+        "Pronto?",
+        "Sì, pronto?",
+        "{prenom} {nom}, mi dica.",
+    ],
+}
+
+
+def get_greeting(language: str, persona: dict) -> str:
+    """Génère une phrase d'accueil pré-scriptée (bypass LLM, gain ~2-3s)."""
+    templates = GREETINGS.get(language, GREETINGS["fr"])
+    template = random.choice(templates)
+    identite = persona.get("identite", {})
+    return template.format(
+        prenom=identite.get("prenom", ""),
+        nom=identite.get("nom", ""),
+        entreprise=identite.get("entreprise", {}).get("nom", ""),
+    )
+
 
 def build_system_prompt(scenario: dict, difficulty: int = 2, language: str = "fr") -> str:
     persona = scenario["persona"]
@@ -373,7 +462,7 @@ COMMENT TU FONCTIONNES :
 OBJECTIONS DISPONIBLES (utilise quand c'est PERTINENT, pas dans l'ordre) :
 {objections_str}
 
-DÉBUT : Le téléphone sonne. Tu décroches avec une phrase courte et naturelle. Ex: "Oui {nom}, j'écoute ?" ou "{entreprise} bonjour ?"
+DÉBUT : Tu as déjà décroché le téléphone. Le vendeur va parler. Tu attends sa première phrase pour répondre.
 
 FIN :
 - Intérêt >= 7 et next step proposé : accepte naturellement
@@ -383,9 +472,10 @@ FIN :
     return prompt
 
 
-# --- Preload VAD ---
+# --- Preload VAD + scenarios cache ---
 def prewarm(proc: JobProcess):
     proc.userdata["vad"] = silero.VAD.load()
+    _ensure_scenarios_db()  # Pre-populate scenario cache in worker process
 
 
 # --- Entrypoint ---
@@ -394,9 +484,12 @@ server = AgentServer()
 
 @server.rtc_session()
 async def entrypoint(ctx: JobContext):
+    t_entry = time.time()
     logger.info("🎯 Nouvelle session VendMieux")
 
     await ctx.connect()
+    t_connected = time.time()
+    logger.info(f"⏱️ [latency] connect: {(t_connected - t_entry)*1000:.0f}ms")
 
     # Charger le scénario et la difficulté depuis metadata (JSON ou string legacy)
     scenario_id = None
@@ -428,6 +521,9 @@ async def entrypoint(ctx: JobContext):
         scenario = DEFAULT_SCENARIO
         logger.info("📋 Scénario par défaut (Olivier Bertrand, industrie)")
 
+    t_scenario = time.time()
+    logger.info(f"⏱️ [latency] scenario loaded: {(t_scenario - t_entry)*1000:.0f}ms")
+
     # Fallback difficulté depuis le scénario si pas dans la metadata
     if difficulty == 2 and not raw_meta:
         difficulty = scenario.get("simulation", {}).get("difficulte", 2)
@@ -436,6 +532,10 @@ async def entrypoint(ctx: JobContext):
     system_prompt = build_system_prompt(scenario, difficulty, language=meta_language)
     logger.info(f"📝 System prompt (diff={difficulty}, lang={meta_language}) : {len(system_prompt)} caractères")
 
+    # Préparer le greeting pré-scripté (bypass LLM)
+    greeting = get_greeting(meta_language, scenario["persona"])
+    logger.info(f"👋 Greeting pré-scripté : \"{greeting}\"")
+
     # Créer l'agent prospect
     prospect = VendMieuxProspect(
         system_prompt=system_prompt,
@@ -443,6 +543,9 @@ async def entrypoint(ctx: JobContext):
         + " "
         + scenario["persona"]["identite"]["nom"],
     )
+
+    t_agent = time.time()
+    logger.info(f"⏱️ [latency] agent created: {(t_agent - t_entry)*1000:.0f}ms")
 
     # --- Transcript capture côté serveur ---
     transcript_entries = []
@@ -461,6 +564,7 @@ async def entrypoint(ctx: JobContext):
             "timestamp": time.time(),
         })
         logger.info(f"📝 [{role}] {text.strip()[:80]}")
+        _save_room_history(ctx.room.name, session)
 
     async def _do_close_evaluation():
         """Coroutine d'évaluation post-session."""
@@ -496,7 +600,8 @@ async def entrypoint(ctx: JobContext):
             logger.error(f"❌ Erreur envoi évaluation: {e}")
 
     def on_close(ev):
-        """Sync callback — lance l'évaluation async via create_task."""
+        """Sync callback — sauvegarde historique puis lance l'évaluation."""
+        _save_room_history(ctx.room.name, session)
         asyncio.create_task(_do_close_evaluation())
 
     # Multi-language voice/STT configuration
@@ -539,10 +644,27 @@ async def entrypoint(ctx: JobContext):
         agent=prospect,
     )
 
-    # Le prospect décroche — première réplique
-    await session.generate_reply(
-        instructions="Le téléphone sonne. Tu décroches. Dis une courte phrase d'accueil naturelle comme un DG qui reçoit un appel. Maximum 5 mots."
-    )
+    t_session_started = time.time()
+    logger.info(f"⏱️ [latency] session started: {(t_session_started - t_entry)*1000:.0f}ms")
+
+    # Vérifier si c'est une reconnexion (historique existant pour cette room)
+    room_name = ctx.room.name
+    prev_history = _pop_room_history(room_name)
+
+    if prev_history is not None:
+        from livekit.agents.llm import ChatContext
+        restored = ChatContext.from_dict(prev_history)
+        session.history.merge(restored)
+        nb_restored = len(restored.items)
+        logger.info(f"🔄 Reconnexion — {nb_restored} items restaurés pour room {room_name}")
+        session.say("Excusez-moi, on en était où ?", allow_interruptions=True)
+    else:
+        # Le prospect décroche — greeting pré-scripté (bypass LLM → TTS direct, gain ~2-3s)
+        session.say(greeting, allow_interruptions=False)
+
+    t_greeting_sent = time.time()
+    logger.info(f"⏱️ [latency] greeting sent to TTS: {(t_greeting_sent - t_entry)*1000:.0f}ms")
+    logger.info(f"⏱️ [latency] TOTAL entrypoint→greeting: {(t_greeting_sent - t_entry)*1000:.0f}ms")
 
 
 if __name__ == "__main__":
