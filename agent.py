@@ -842,6 +842,7 @@ async def entrypoint(ctx: JobContext):
         difficulty = scenario.get("simulation", {}).get("difficulte", 2)
 
     # Construire le prompt avec intelligence situationnelle
+    logger.info(f"[DIFFICULTY] difficulty_override={difficulty} (from metadata)")
     system_prompt = build_system_prompt(scenario, difficulty, language=meta_language)
     logger.info(f"📝 System prompt (diff={difficulty}, lang={meta_language}) : {len(system_prompt)} caractères")
 

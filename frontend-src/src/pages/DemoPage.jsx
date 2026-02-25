@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useColors } from '../shared';
 import { useRingTone } from '../components/simulation/useRingTone';
 import { useLiveKit } from '../components/simulation/useLiveKit';
@@ -209,8 +209,9 @@ const DEMO_LANGS = {
 
 const LANG_KEYS = Object.keys(DEMO_LANGS);
 
-// Detect browser language
-function detectLang() {
+// Detect language: URL param > browser language > fr
+function detectLang(urlLang) {
+  if (urlLang && DEMO_LANGS[urlLang]) return urlLang;
   const bl = (navigator.language || 'fr').slice(0, 2).toLowerCase();
   return DEMO_LANGS[bl] ? bl : 'fr';
 }
@@ -218,7 +219,11 @@ function detectLang() {
 export default function DemoPage() {
   const c = useColors();
   const navigate = useNavigate();
-  const [lang, setLang] = useState(detectLang);
+  const [searchParams] = useSearchParams();
+  const urlLang = searchParams.get('lang');
+  const urlDiff = parseInt(searchParams.get('difficulty'), 10);
+  const demoDifficulty = [1, 2, 3].includes(urlDiff) ? urlDiff : 2;
+  const [lang, setLang] = useState(() => detectLang(urlLang));
   const [phase, setPhase] = useState('landing');
   // landing | brief | simulation | postcall | error
 
@@ -251,7 +256,7 @@ export default function DemoPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           scenario_id: cfg.scenario_id,
-          difficulty: 2,
+          difficulty: demoDifficulty,
           user_name: 'Commercial',
           language: lang,
           demo: true,
@@ -292,7 +297,7 @@ export default function DemoPage() {
       const result = await liveKit.connect({
         tokenUrl: '/api/token',
         scenarioId: cfg.scenario_id,
-        difficulty: 2,
+        difficulty: demoDifficulty,
         userName: 'Commercial',
         language: lang,
         authToken: null,
@@ -421,7 +426,7 @@ export default function DemoPage() {
           session_id: 'demo-' + Date.now(),
           transcript: transcriptArray,
           scenario_id: cfg.scenario_id,
-          difficulty: 2,
+          difficulty: demoDifficulty,
           duration_s: Math.floor(duration / 1000),
           session_db_id: sessionDbId,
           language: lang,
