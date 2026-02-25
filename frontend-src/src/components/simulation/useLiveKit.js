@@ -67,7 +67,7 @@ export function useLiveKit() {
     }
   }, []);
 
-  const connect = useCallback(async ({ tokenUrl, scenarioId, difficulty, userName, language, authToken, onPickup, prefetchedToken }) => {
+  const connect = useCallback(async ({ tokenUrl, scenarioId, difficulty, userName, language, authToken, onPickup, prefetchedToken, demo, on429 }) => {
     intentionalDisconnectRef.current = false;
     setStatus('connecting');
     setStatusMsg('Appel en cours...');
@@ -90,8 +90,10 @@ export function useLiveKit() {
                 difficulty,
                 user_name: userName,
                 language,
+                ...(demo ? { demo: true } : {}),
               }),
             });
+            if (r.status === 429 && on429) { on429(); throw new Error('429'); }
             if (!r.ok) throw new Error('Erreur serveur (token)');
             return r.json();
           })();

@@ -242,55 +242,23 @@ export default function DemoPage() {
 
   const ringTone = useRingTone();
   const liveKit = useLiveKit();
-  const prefetchedTokenRef = useRef(null);
 
   const cfg = DEMO_LANGS[lang];
   const ui = cfg.ui;
   const persona = cfg.persona;
 
-  // Pre-fetch LiveKit token for demo
-  async function prefetchToken() {
-    try {
-      const r = await fetch('/api/token', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          scenario_id: cfg.scenario_id,
-          difficulty: demoDifficulty,
-          user_name: 'Commercial',
-          language: lang,
-          demo: true,
-        }),
-      });
-      if (r.status === 429) {
-        setApiError(ui.rate_limit);
-        return false;
-      }
-      if (r.ok) {
-        prefetchedTokenRef.current = await r.json();
-        return true;
-      }
-    } catch (_) {}
-    return false;
-  }
-
-  // Launch: landing -> brief
+  // Launch: landing -> brief (no API call)
   function handleLaunch() {
     setPhase('brief');
   }
 
-  // Start simulation: brief -> simulation
-  async function handleStartSimulation() {
+  // Start simulation: brief -> simulation (no API call yet)
+  function handleStartSimulation() {
     setApiError('');
-    const ok = await prefetchToken();
-    if (!ok && !prefetchedTokenRef.current) {
-      if (!apiError) setApiError(ui.connection_error);
-      return;
-    }
     setPhase('simulation');
   }
 
-  // Start call (when user clicks the phone button in SimCall)
+  // Start call — SINGLE /api/token call happens here only
   async function handleStartCall() {
     await ringTone.play();
     try {
@@ -301,14 +269,15 @@ export default function DemoPage() {
         userName: 'Commercial',
         language: lang,
         authToken: null,
-        prefetchedToken: prefetchedTokenRef.current,
+        demo: true,
         onPickup: () => ringTone.stop(),
+        on429: () => setApiError(ui.rate_limit),
       });
-      prefetchedTokenRef.current = null;
       setSessionDbId(result.sessionDbId);
     } catch (e) {
-      prefetchedTokenRef.current = null;
       ringTone.stop();
+      if (!apiError) setApiError(ui.connection_error);
+      setPhase('brief');
     }
   }
 
