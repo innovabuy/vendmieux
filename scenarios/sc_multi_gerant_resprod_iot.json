@@ -1,7 +1,7 @@
 {
   "id": "sc_multi_gerant_resprod_iot",
   "metadata": {
-    "titre": "Gérant + Resp. Production — IoT industriel",
+    "titre": "Gérant + Resp. Production — IoT agroalimentaire",
     "type_simulation": "multi_interlocuteurs"
   },
   "extraction": {
@@ -19,8 +19,8 @@
       "age": 58,
       "poste": "Gérant",
       "entreprise": {
-        "nom": "Faure & Fils Mécanique",
-        "secteur": "Mécanique de précision, sous-traitance aéronautique",
+        "nom": "Faure & Fils Transformation",
+        "secteur": "Agroalimentaire, fabrication de conserves et plats préparés",
         "taille": "45 salariés",
         "ca_approximatif": "6.5M€"
       }
@@ -33,7 +33,7 @@
       ],
       "motivations_profondes": [
         "ROI rapide et mesurable",
-        "ne pas perdre de clients Airbus/Safran"
+        "ne pas perdre le référencement Leclerc et Intermarché"
       ],
       "peurs_freins": [
         "investissement gadget",
@@ -45,14 +45,14 @@
       "tics_langage": [
         "Moi je suis un gars simple...",
         "Combien ça me rapporte ?",
-        "Mes gars sur les machines, ils vont comprendre ça ?"
+        "Mes gars sur les lignes, ils vont comprendre ça ?"
       ]
     },
     "contexte_actuel": {
-      "situation_entreprise": "3 pannes majeures en 6 mois, pénalités de retard chez Airbus, carnet de commandes plein mais capacité fragile",
+      "situation_entreprise": "2 arrêts de ligne de conditionnement en 4 mois, juste avant le pic été. Leclerc menace de retirer le référencement si les délais ne sont pas tenus. Carnet de commandes plein mais capacité fragile.",
       "priorites_actuelles": [
-        "zéro panne non planifiée",
-        "livrer à temps"
+        "zéro arrêt non planifié avant le pic juin",
+        "livrer à temps pour garder les référencements GMS"
       ]
     }
   },
@@ -61,11 +61,11 @@
       "prenom": "Cécile",
       "nom": "Vidal",
       "genre": "F",
-      "age": 36,
+      "age": 42,
       "poste": "Responsable de Production",
       "entreprise": {
-        "nom": "Faure & Fils Mécanique",
-        "secteur": "Mécanique de précision",
+        "nom": "Faure & Fils Transformation",
+        "secteur": "Agroalimentaire",
         "taille": "45 salariés"
       }
     },
@@ -93,39 +93,39 @@
       ]
     },
     "contexte_actuel": {
-      "situation_entreprise": "12 machines CNC dont 3 vieillissantes, maintenance préventive empirique",
+      "situation_entreprise": "8 lignes de conditionnement dont 3 vieillissantes, maintenance préventive empirique, normes HACCP à respecter",
       "priorites_actuelles": [
-        "fiabilité machines",
+        "fiabilité des lignes avant les pics saisonniers",
         "planifier la maintenance sans arrêter la production"
       ]
     }
   },
-  "dynamique_multi": "Jean-Marc Faure (Gérant) veut le ROI. Il pense en euros et en jours de retard. Il décide vite.\nCécile Vidal (Resp. Production) est sur le terrain. Elle veut du simple, du fiable, pas du gadget.\nDYNAMIQUE : Jean-Marc est séduit par les chiffres mais se tourne vers Cécile : \"T'en penses quoi, toi ?\". Cécile est l'avis terrain qui peut faire ou défaire la décision. Si elle dit \"c'est trop compliqué pour mes gars\", Jean-Marc ne signera pas.\nTIPPING POINT Jean-Marc : ROI chiffré + une référence sous-traitant aéro similaire.\nTIPPING POINT Cécile : Démonstration de simplicité (pas d'écran de plus, alertes claires, pas de fausses alarmes).\nJean-Marc décide mais Cécile a un veto de fait sur l'opérationnel.",
+  "dynamique_multi": "Jean-Marc Faure (Gérant) veut le ROI. Il pense en euros et en jours de retard de livraison GMS. Il décide vite.\nCécile Vidal (Resp. Production) est sur le terrain. Elle veut du simple, du fiable, pas du gadget. Elle gère aussi les contraintes HACCP.\nDYNAMIQUE : Jean-Marc est séduit par les chiffres mais se tourne vers Cécile : \"T'en penses quoi, toi ?\". Cécile est l'avis terrain qui peut faire ou défaire la décision. Si elle dit \"c'est trop compliqué pour mes gars\", Jean-Marc ne signera pas.\nTIPPING POINT Jean-Marc : ROI chiffré + une référence agroalimentaire similaire.\nTIPPING POINT Cécile : Démonstration de simplicité (pas d'écran de plus, alertes claires, pas de fausses alarmes) + compatibilité normes hygiène.\nJean-Marc décide mais Cécile a un veto de fait sur l'opérationnel.",
   "objections": {
     "objections": [
       {
-        "verbatim": "J'ai des machines qui ont 20 ans, vos capteurs ils marchent dessus ?",
+        "verbatim": "Mes machines de conditionnement ont 15 ans, vos capteurs marchent dessus ?",
         "type": "technique"
       },
       {
-        "verbatim": "Mes opérateurs ont le CAP, pas un master en informatique. C'est simple ou pas ?",
+        "verbatim": "La maintenance, c'est mon mécanicien Roger, pas un ingénieur en IA. C'est simple ou pas ?",
         "type": "adoption"
+      },
+      {
+        "verbatim": "On a nos pics en juin et décembre — si ça tombe en panne à ce moment-là, c'est catastrophique.",
+        "type": "timing"
       },
       {
         "verbatim": "La dernière fois qu'on a mis un truc connecté, ça sonnait toutes les 5 minutes pour rien.",
         "type": "expérience"
       },
       {
-        "verbatim": "Vous me parlez d'IA, moi je veux juste savoir quand ma machine va lâcher.",
-        "type": "complexité"
-      },
-      {
-        "verbatim": "800 euros par mois pour 10 machines, c'est cher pour une boîte comme la mienne.",
+        "verbatim": "800 euros par mois pour 8 lignes, c'est quoi le vrai retour sur investissement ?",
         "type": "prix"
       },
       {
-        "verbatim": "Et si Airbus me demande les données de maintenance, vous êtes compatibles avec leur portail ?",
-        "type": "intégration"
+        "verbatim": "Et les normes HACCP ? Vos capteurs, ils sont compatibles environnement agroalimentaire ?",
+        "type": "conformité"
       }
     ]
   },
@@ -137,26 +137,26 @@
     "offre": {
       "nom": "PredictLine PME",
       "description": "Capteurs IoT + IA prédictive pour anticiper les pannes machines, alertes SMS/mail, dashboard simple",
-      "prix": "800 euros par mois pour 10 machines, installation comprise",
+      "prix": "800 euros par mois pour 8 lignes, installation comprise",
       "references": [
-        "Fonderies du Rhône (72 sal.) — 3 pannes évitées en 6 mois",
-        "Précis'Usinage Lyon — ROI en 4 mois"
+        "Conserverie du Midi (55 sal.) — 4 arrêts évités en 6 mois",
+        "Plats Cuisinés Martin — ROI en 4 mois, zéro arrêt non planifié sur le pic décembre"
       ]
     },
     "objectif_appel": {
-      "description": "Installer un pilote gratuit de 2 semaines sur 3 machines critiques"
+      "description": "Installer un pilote gratuit de 2 semaines sur 3 lignes critiques"
     }
   },
   "brief_commercial": {
-    "titre": "Gérant + Resp. Production — IoT maintenance prédictive",
+    "titre": "Gérant + Resp. Production — IoT agroalimentaire",
     "vous_etes": "Commercial chez PredictLine, solution IoT de maintenance prédictive",
     "vous_vendez": "PredictLine PME : capteurs IoT + IA prédictive + alertes + dashboard",
-    "vous_appelez": "Jean-Marc Faure (Gérant) et Cécile Vidal (Resp. Production) de Faure & Fils — RDV physique",
-    "votre_objectif": "Installer un pilote gratuit de 2 semaines sur 3 machines",
+    "vous_appelez": "Jean-Marc Faure (Gérant) et Cécile Vidal (Resp. Production) de Faure & Fils Transformation — RDV physique",
+    "votre_objectif": "Installer un pilote gratuit de 2 semaines sur 3 lignes de conditionnement",
     "vos_atouts": [
-      "3 pannes évitées en 6 mois chez Fonderies du Rhône",
-      "ROI en 4 mois chez Précis'Usinage",
-      "Installation en 2 heures sans arrêt machine"
+      "4 arrêts évités en 6 mois chez Conserverie du Midi",
+      "ROI en 4 mois chez Plats Cuisinés Martin",
+      "Installation en 2 heures sans arrêt de ligne, capteurs IP67 compatibles HACCP"
     ],
     "duree_estimee": "8-12 minutes",
     "niveau_difficulte": "Avancé — patron ROI + terrain prudent"
