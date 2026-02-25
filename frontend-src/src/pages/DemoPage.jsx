@@ -514,10 +514,12 @@ export default function DemoPage() {
             style={{
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               width: 48, height: 48, borderRadius: 12, cursor: 'pointer',
-              fontSize: 24, border: active ? `2px solid ${c.ac}` : `1px solid ${c.bd}`,
-              background: active ? `${c.ac}15` : 'transparent',
+              fontSize: 24,
+              border: active ? `2px solid ${c.ac}` : '1px solid rgba(255,255,255,0.18)',
+              background: active ? `${c.ac}15` : 'rgba(255,255,255,0.08)',
               boxShadow: active ? `0 0 12px ${c.ac}25` : 'none',
               transition: 'all 0.15s',
+              fontFamily: 'inherit',
             }}
             title={DEMO_LANGS[k].label}
           >
