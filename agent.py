@@ -210,21 +210,30 @@ def _load_scenario_from_sqlite(scenario_id: str) -> dict | None:
 
 
 def load_scenario(scenario_id: str) -> dict | None:
-    """Charge un scénario depuis le cache, la DB SQLite ou les fichiers JSON."""
+    """Charge un scénario depuis le cache, SQLite ou les fichiers JSON."""
     _ensure_scenarios_db()
     if scenario_id in _scenarios_cache:
         return _scenarios_cache[scenario_id]
-    # Essayer SQLite (scénarios générés et diversifiés)
+    # Multi-interlocuteurs (sc_multi_*) : les fichiers JSON contiennent persona_2/dynamique_multi
+    # qui ne sont pas dans le schéma SQLite → prioriser le fichier JSON
+    if scenario_id.startswith("sc_multi_"):
+        filepath = SCENARIOS_DIR / f"{scenario_id}.json"
+        if filepath.exists():
+            with open(filepath, "r", encoding="utf-8") as f:
+                scenario = json.load(f)
+            _scenarios_cache[scenario_id] = scenario
+            return scenario
+    # SQLite (scénarios diversifiés avec persona_json mis à jour)
     scenario = _load_scenario_from_sqlite(scenario_id)
     if scenario:
         _scenarios_cache[scenario_id] = scenario
         return scenario
-    # Fallback sur les fichiers JSON (scénarios générés par l'utilisateur)
+    # Fallback fichiers JSON (scénarios générés par l'utilisateur, démo, etc.)
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
     if filepath.exists():
         with open(filepath, "r", encoding="utf-8") as f:
             scenario = json.load(f)
-        _scenarios_cache[scenario_id] = scenario  # Cache pour prochaine utilisation
+        _scenarios_cache[scenario_id] = scenario
         return scenario
     return None
 
@@ -557,6 +566,12 @@ Si le commercial répond vaguement → tu passes à une autre question. Tu ne bl
 Si le commercial cite une référence → tu peux demander UN seul détail concret (résultat, délai, taille d'entreprise).
 Après cet échange → tu passes obligatoirement à un autre sujet (prix, délai, mise en place, fonctionnement).
 La question des références ne doit JAMAIS dépasser 2 échanges dans la conversation.
+
+PREMIÈRE RÉPONSE — INTERDIT :
+Tu ne dis JAMAIS "Que voulez-vous ?", "Que puis-je pour vous ?", "Quel est l'objet de votre appel ?", "En quoi puis-je vous aider ?" comme première réponse.
+Au téléphone : tu décroches avec "Allô ?" ou "[Ton prénom] [Ton nom], bonjour." puis tu laisses le commercial se présenter.
+En RDV physique : tu dis "Bonjour, asseyez-vous." ou "Bonjour, installez-vous." puis tu laisses le commercial ouvrir la conversation.
+Tu ne prends JAMAIS l'initiative de demander l'objet de la visite ou de l'appel. Tu attends que le commercial s'explique.
 
 """
 
