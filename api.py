@@ -43,6 +43,7 @@ from auth import (
     hash_password, verify_password, create_token, get_current_user, get_optional_user,
 )
 from scenarios_database import load_scenarios_database, get_sectors, get_simulation_types
+from scenario_builder import scenario_builder
 
 load_dotenv()
 
@@ -304,19 +305,19 @@ def _load_scenario_from_sqlite(scenario_id: str) -> dict | None:
 def _load_scenario(scenario_id: str) -> dict:
     if scenario_id == "__default__":
         from agent import DEFAULT_SCENARIO
-        return DEFAULT_SCENARIO
+        return scenario_builder.build(DEFAULT_SCENARIO)
     # 1. Check database scenarios (in-memory from scenarios_database.py)
     if scenario_id in _SCENARIOS_DB:
-        return _SCENARIOS_DB[scenario_id]
+        return scenario_builder.build(_SCENARIOS_DB[scenario_id])
     # 2. Check SQLite (diversified/generated scenarios)
-    scenario = _load_scenario_from_sqlite(scenario_id)
-    if scenario:
-        return scenario
+    raw = _load_scenario_from_sqlite(scenario_id)
+    if raw:
+        return scenario_builder.build(raw)
     # 3. Check enriched JSON files on disk
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
     if filepath.exists():
         with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
+            return scenario_builder.build(json.load(f))
     # 4. Not found
     raise HTTPException(404, "Scénario introuvable")
 
@@ -872,6 +873,9 @@ async def generate_scenario_endpoint(req: ScenarioRequest):
             enriched += f"\n[Type d'appel : {req.type}]"
 
         scenario = await asyncio.to_thread(gen, enriched, req.scenario_id)
+
+        # Normaliser via ScenarioBuilder (genre, voix, difficulté)
+        scenario = scenario_builder.build(scenario)
 
         # Save to DB
         await save_scenario_to_db(scenario, language=req.language)

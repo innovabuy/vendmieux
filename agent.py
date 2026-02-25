@@ -35,100 +35,13 @@ from livekit.agents.voice.agent import ModelSettings
 from livekit.agents import llm
 from livekit.plugins import deepgram, silero, anthropic
 from livekit.plugins import google as google_tts
-import anthropic as anthropic_sdk
-
 from tts_utils import normalize_tts_stream
+from scenario_builder import scenario_builder, VOIX_FEMININES, VOIX_MASCULINES
 
 
 load_dotenv()
 logger = logging.getLogger("vendmieux")
 logger.setLevel(logging.INFO)
-
-# --- Client Anthropic pour détection de genre ---
-_anthropic_client = anthropic_sdk.Anthropic()
-
-# --- Voix TTS par genre (Google Cloud TTS — Chirp3-HD) ---
-VOIX_FEMININES = [
-    'fr-FR-Chirp3-HD-Kore',          # Naturelle, claire
-    'fr-FR-Chirp3-HD-Aoede',         # Alternative
-    'fr-FR-Chirp3-HD-Leda',          # Alternative 2
-]
-VOIX_MASCULINES = [
-    'fr-FR-Chirp3-HD-Charon',        # Naturel, posé
-    'fr-FR-Chirp3-HD-Orus',          # Alternative
-    'fr-FR-Chirp3-HD-Puck',          # Alternative 2
-]
-
-# --- Cache genre par scenario_id (évite appels Claude répétés) ---
-_gender_cache: dict[str, str] = {}
-
-
-# Prénoms français avec genre connu (évite un appel LLM inutile)
-_PRENOMS_M = {
-    "laurent", "marc", "jean", "pierre", "thomas", "michel", "philippe", "stéphane",
-    "stephane", "frédéric", "frederic", "olivier", "nicolas", "christophe", "david",
-    "patrick", "alain", "éric", "eric", "thierry", "bernard", "françois", "francois",
-    "yves", "jacques", "gilles", "rémi", "remi", "mathieu", "julien", "antoine",
-    "bruno", "vincent", "sébastien", "sebastien", "mehdi", "karim", "yannick",
-    "guillaume", "fabrice", "jérôme", "jerome", "pascal", "hervé", "herve",
-    "arnaud", "didier", "serge", "denis", "emmanuel", "raphaël", "raphael",
-    "maxime", "benjamin", "alexandre", "paul", "louis", "hugo", "lucas", "léo",
-    "arthur", "adam", "gabriel", "nathan", "théo", "ethan", "noah",
-    "franck", "matthieu", "bertrand", "sylvain", "étienne", "rachid", "gérard",
-    "gerard", "jean-marc", "jean-pierre", "jean-luc", "jean-paul", "jean-françois",
-}
-_PRENOMS_F = {
-    "marie", "nathalie", "isabelle", "sophie", "catherine", "sandrine", "valérie",
-    "valerie", "christine", "céline", "celine", "amandine", "aurélie", "aurelie",
-    "caroline", "anne", "claire", "julie", "laura", "émilie", "emilie", "marine",
-    "elodie", "élodie", "virginie", "delphine", "patricia", "sylvie", "martine",
-    "françoise", "francoise", "monique", "nicole", "florence", "béatrice", "beatrice",
-    "agathe", "léa", "manon", "chloé", "chloe", "emma", "jade", "alice", "lina",
-    "sarah", "fatima", "aïcha", "aicha", "mélanie", "melanie",
-    "véronique", "veronique", "corinne", "mathilde", "cécile", "cecile",
-}
-
-
-def detect_gender_from_persona(prompt_persona: str) -> str:
-    """
-    Détecte le genre du persona : d'abord par lookup prénom,
-    puis fallback Claude Haiku si prénom inconnu.
-    """
-    # Tenter extraction du prénom depuis "Tu es {Prénom}" ou "INTERLOCUTEUR 1 : {Prénom}"
-    import re
-    m = re.search(r'(?:Tu es|INTERLOCUTEUR 1 : )([\w-]+)', prompt_persona)
-    if m:
-        prenom = m.group(1).lower()
-        if prenom in _PRENOMS_M:
-            return 'M'
-        if prenom in _PRENOMS_F:
-            return 'F'
-
-    # Fallback LLM pour prénoms ambigus (Dominique, Camille, Claude...)
-    try:
-        response = _anthropic_client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=10,
-            messages=[{
-                "role": "user",
-                "content": f"""Ce persona est-il masculin ou féminin ?
-Réponds UNIQUEMENT par 'M' ou 'F'.
-Persona : {prompt_persona[:300]}"""
-            }]
-        )
-        gender = response.content[0].text.strip().upper()
-        return 'F' if gender == 'F' else 'M'
-    except Exception as e:
-        logger.warning(f"⚠️ Détection genre échouée, fallback M: {e}")
-        return 'M'
-
-
-def get_cached_gender(scenario_id: str, prompt_persona: str) -> str:
-    """Retourne le genre détecté, avec cache par scenario_id."""
-    if scenario_id not in _gender_cache:
-        _gender_cache[scenario_id] = detect_gender_from_persona(prompt_persona)
-        logger.info(f"🔍 Genre détecté pour {scenario_id}: {_gender_cache[scenario_id]}")
-    return _gender_cache[scenario_id]
 
 # --- Répertoire des scénarios ---
 SCENARIOS_DIR = Path(__file__).parent / "scenarios"
@@ -210,32 +123,40 @@ def _load_scenario_from_sqlite(scenario_id: str) -> dict | None:
 
 
 def load_scenario(scenario_id: str) -> dict | None:
-    """Charge un scénario depuis le cache, SQLite ou les fichiers JSON."""
+    """Charge un scénario depuis le cache, SQLite ou les fichiers JSON,
+    puis normalise via scenario_builder.build()."""
     _ensure_scenarios_db()
     if scenario_id in _scenarios_cache:
         return _scenarios_cache[scenario_id]
+
+    raw = None
+
     # Multi-interlocuteurs (sc_multi_*) : les fichiers JSON contiennent persona_2/dynamique_multi
     # qui ne sont pas dans le schéma SQLite → prioriser le fichier JSON
     if scenario_id.startswith("sc_multi_"):
         filepath = SCENARIOS_DIR / f"{scenario_id}.json"
         if filepath.exists():
             with open(filepath, "r", encoding="utf-8") as f:
-                scenario = json.load(f)
-            _scenarios_cache[scenario_id] = scenario
-            return scenario
+                raw = json.load(f)
+
     # SQLite (scénarios diversifiés avec persona_json mis à jour)
-    scenario = _load_scenario_from_sqlite(scenario_id)
-    if scenario:
-        _scenarios_cache[scenario_id] = scenario
-        return scenario
+    if raw is None:
+        raw = _load_scenario_from_sqlite(scenario_id)
+
     # Fallback fichiers JSON (scénarios générés par l'utilisateur, démo, etc.)
-    filepath = SCENARIOS_DIR / f"{scenario_id}.json"
-    if filepath.exists():
-        with open(filepath, "r", encoding="utf-8") as f:
-            scenario = json.load(f)
-        _scenarios_cache[scenario_id] = scenario
-        return scenario
-    return None
+    if raw is None:
+        filepath = SCENARIOS_DIR / f"{scenario_id}.json"
+        if filepath.exists():
+            with open(filepath, "r", encoding="utf-8") as f:
+                raw = json.load(f)
+
+    if raw is None:
+        return None
+
+    # Normaliser via ScenarioBuilder (genre, voix, difficulté, type)
+    scenario = scenario_builder.build(raw)
+    _scenarios_cache[scenario_id] = scenario
+    return scenario
 
 
 MAX_CONTEXT_ITEMS = 40  # ~20 échanges (user + assistant) — au-delà, troncature
@@ -723,36 +644,8 @@ TU RÉAGIS À CETTE OFFRE SPÉCIFIQUE :
 - Tu ne poses PAS plus d'une question sur les références — après, tu passes à autre chose (prix, délai, mise en place)
 """
 
-    # Blocs difficulté — instructions comportementales détaillées
-    DIFF = {
-        1: """NIVEAU DÉBUTANT — Prospect accessible :
-- Tu es de bonne humeur, disponible, poli
-- Tu laisses le commercial finir ses phrases
-- Tes objections sont simples et classiques : prix, délai, besoin de réfléchir
-- Tu acceptes un RDV après 2-3 échanges convaincants
-- Tu ne coupes pas la parole
-- Tu donnes des indices clairs sur ta douleur
-- Si le commercial fait une bonne accroche, tu deviens rapidement réceptif
-- Tu peux être convaincu en 3-4 minutes""",
-        2: """NIVEAU INTERMÉDIAIRE — Prospect neutre :
-- Tu es occupé mais pas hostile
-- Tu laisses le commercial parler mais tu poses des questions précises
-- 2-3 objections réelles que tu maintiens jusqu'à preuve convaincante
-- Tu demandes des références ou des chiffres avant de t'engager
-- Tu peux raccrocher si l'accroche est nulle
-- Ta douleur cachée n'émerge qu'après au moins 3 bonnes questions de découverte
-- Tu peux être convaincu en 6-8 minutes avec les bons arguments""",
-        3: """NIVEAU AVANCÉ — Prospect difficile :
-- Tu es méfiant, pressé, sceptique
-- Tu coupes la parole si c'est trop long
-- Tes objections sont dures et enchaînées : tu ne lâches pas facilement
-- Tu demandes des cas chiffrés PRÉCIS dans TON secteur — tu refuses le générique
-- Tu peux raccrocher sans prévenir après 2 minutes si pas d'accroche
-- Ta douleur cachée est profondément enfouie, elle n'émerge QUE si le commercial creuse avec au moins 4-5 bonnes questions
-- Tu as un préjugé négatif sur les commerciaux ('encore un qui veut me vendre quelque chose')
-- Tipping point difficile : nécessite une preuve concrète + un engagement de résultat
-- Tu peux être convaincu mais ça prend 10-15 minutes de travail sérieux"""
-    }
+    # Difficulté — depuis scenario_builder (source unique)
+    from scenario_builder import DIFFICULTY_INSTRUCTIONS as DIFF
 
     # Language block for non-French simulations
     lang_block = ""
@@ -881,7 +774,7 @@ async def entrypoint(ctx: JobContext):
         logger.info(f"📋 Scénario chargé : {scenario_id}")
 
     if not scenario:
-        scenario = DEFAULT_SCENARIO
+        scenario = scenario_builder.build(DEFAULT_SCENARIO)
         logger.info("📋 Scénario par défaut (Olivier Bertrand, industrie)")
 
     t_scenario = time.time()
@@ -990,14 +883,10 @@ async def entrypoint(ctx: JobContext):
     voice_cfg = VOICE_MAP.get(meta_language, VOICE_MAP["fr"])
     stt_lang = STT_LANG_MAP.get(meta_language, "fr")
 
-    # Détection genre via Claude pour sélection voix TTS
-    persona_desc = system_prompt[:200]  # Début du prompt contient l'identité
-    sid = scenario_id or "__default__"
-    gender = get_cached_gender(sid, persona_desc)
-
+    # Voix TTS — pré-calculée par scenario_builder.build()
+    gender = scenario.get('persona', {}).get('identite', {}).get('genre', 'M')
     if meta_language == "fr":
-        # FR : voix Chirp3-HD genrées (haute qualité)
-        tts_voice = VOIX_FEMININES[0] if gender == 'F' else VOIX_MASCULINES[0]
+        tts_voice = scenario.get('_tts_voice_1') or (VOIX_FEMININES[0] if gender == 'F' else VOIX_MASCULINES[0])
         voice_cfg["voice"] = tts_voice
     logger.info(f"🎙️ Voix TTS sélectionnée : {voice_cfg['voice']} (genre={gender})")
 
