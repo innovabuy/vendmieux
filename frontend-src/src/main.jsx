@@ -39,7 +39,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Suspense fallback={<div style={{minHeight:"100vh",background:"#0C0E13"}}></div>}>
           <Routes>
             <Route path="/simulation" element={<Simulation/>}/>
+            <Route path="/app/simulation" element={<Simulation/>}/>
             <Route path="/demo" element={<DemoPage/>}/>
+            <Route path="/app/demo" element={<DemoPage/>}/>
             <Route path="/app/dashboard-preview" element={<DashboardPreview/>}/>
             <Route path="/app" element={<Navigate to="/home" replace/>}/>
             <Route path="/app/login" element={<Navigate to="/login" replace/>}/>
