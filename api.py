@@ -466,11 +466,16 @@ async def get_scenario(scenario_id: str):
 
 @app.get("/api/scenarios/{scenario_id}/brief")
 async def get_scenario_brief(scenario_id: str):
-    """Retourne le brief commercial d'un scénario."""
+    """Retourne le brief commercial d'un scénario enrichi avec le niveau de difficulté."""
     scenario = _load_scenario(scenario_id)
     brief = scenario.get("brief_commercial")
     if not brief:
         raise HTTPException(404, "Pas de brief commercial pour ce scénario")
+    # Enrichir avec difficulté
+    diff = scenario.get("simulation", {}).get("difficulte", 2)
+    type_sim = scenario.get("simulation", {}).get("type", scenario.get("metadata", {}).get("type_simulation", ""))
+    diff = _auto_difficulty(type_sim, diff)
+    brief["difficulte"] = _difficulty_info(diff)
     return brief
 
 
@@ -483,6 +488,19 @@ def _auto_difficulty(type_sim: str, default: int = 2) -> int:
     if type_sim in easy:
         return 1
     return default
+
+
+DIFFICULTY_LABELS = {
+    1: {"emoji": "\U0001f49a", "label": "Prospect accessible", "conseil": "Il sera coopératif si votre accroche est claire."},
+    2: {"emoji": "\U0001f7e1", "label": "Prospect réaliste", "conseil": "Il demande des preuves et peut raccrocher."},
+    3: {"emoji": "\U0001f534", "label": "Prospect difficile", "conseil": "Il coupe la parole, doute de tout, et peut raccrocher à tout moment."},
+}
+
+
+def _difficulty_info(level: int) -> dict:
+    """Return difficulty label/emoji/conseil for a given level."""
+    info = DIFFICULTY_LABELS.get(level, DIFFICULTY_LABELS[2])
+    return {"niveau": level, **info}
 
 
 def _infer_disc_from_style(style: str, traits: list) -> dict:
@@ -613,6 +631,7 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
             "type_simulation": type_sim,
             "titre": brief.get("titre", ""),
             "difficulty": _auto_difficulty(type_sim, t.get("difficulty_default", 2)),
+            "difficulty_label": _difficulty_info(_auto_difficulty(type_sim, t.get("difficulty_default", 2))),
             "tags": tags,
             "source": "template",
             "gender": identite.get("genre", "M"),
@@ -643,6 +662,7 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
             "type_simulation": sim.get("type", "prospection_telephonique"),
             "titre": sim.get("titre", ""),
             "difficulty": sim.get("difficulte", 2),
+            "difficulty_label": _difficulty_info(sim.get("difficulte", 2)),
             "tags": [],
             "source": "database",
             **preview,
@@ -690,6 +710,7 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
                     "type_simulation": type_sim,
                     "titre": titre,
                     "difficulty": _auto_difficulty(type_sim, data.get("metadata", {}).get("difficulte_defaut", 2)),
+                    "difficulty_label": _difficulty_info(_auto_difficulty(type_sim, data.get("metadata", {}).get("difficulte_defaut", 2))),
                     "tags": data.get("metadata", {}).get("tags", []),
                     "source": "user",
                     "gender": identite.get("genre", "M"),

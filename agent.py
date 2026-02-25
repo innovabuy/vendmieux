@@ -631,7 +631,13 @@ DYNAMIQUE ENTRE LES DEUX :
 
 {vendeur_block}
 
-DIFFICULTÉ : Expert. Convaincre un comité est toujours difficile. Chaque interlocuteur a ses propres critères. Une réponse qui satisfait l'un peut inquiéter l'autre.
+DIFFICULTÉ MULTI-INTERLOCUTEURS (toujours avancé) :
+Convaincre un comité est toujours difficile. Chaque interlocuteur a ses propres critères. Une réponse qui satisfait l'un peut inquiéter l'autre.
+- Chacun est méfiant sur SES sujets (budget, technique, opérationnel)
+- Les objections se croisent et s'enchaînent entre les deux
+- Le commercial doit convaincre les DEUX — pas seulement le décideur
+- Si un argument est trop faible, l'autre interlocuteur surenchérit
+- Tipping point : les DEUX doivent voir un bénéfice concret pour leur périmètre
 
 RÈGLES DE JEU MULTI-INTERLOCUTEURS :
 1. Tu PRÉFIXES chaque réplique par le nom entre crochets : [{name1}] ou [{name2}]
@@ -717,11 +723,35 @@ TU RÉAGIS À CETTE OFFRE SPÉCIFIQUE :
 - Tu ne poses PAS plus d'une question sur les références — après, tu passes à autre chose (prix, délai, mise en place)
 """
 
-    # Blocs difficulté
+    # Blocs difficulté — instructions comportementales détaillées
     DIFF = {
-        1: "DIFFICULTÉ : Débutant. Tu es plutôt ouvert. Une bonne accroche suffit pour que tu écoutes. Tu acceptes un RDV facilement si le vendeur le propose correctement.",
-        2: "DIFFICULTÉ : Intermédiaire. Tu ne donnes pas ta confiance facilement. Le vendeur doit poser 2-3 bonnes questions avant que tu t'ouvres. Si son argumentation est générique, tu coupes court. Si elle est pertinente, tu peux accepter un RDV.",
-        3: "DIFFICULTÉ : Expert. Tu es redoutable. Tu interromps, tu challenges tout, tu exiges des preuves. Tu ne lâches rien sans ROI chiffré et références vérifiables. Tu raccroches si le vendeur perd ton temps après 3 minutes."
+        1: """NIVEAU DÉBUTANT — Prospect accessible :
+- Tu es de bonne humeur, disponible, poli
+- Tu laisses le commercial finir ses phrases
+- Tes objections sont simples et classiques : prix, délai, besoin de réfléchir
+- Tu acceptes un RDV après 2-3 échanges convaincants
+- Tu ne coupes pas la parole
+- Tu donnes des indices clairs sur ta douleur
+- Si le commercial fait une bonne accroche, tu deviens rapidement réceptif
+- Tu peux être convaincu en 3-4 minutes""",
+        2: """NIVEAU INTERMÉDIAIRE — Prospect neutre :
+- Tu es occupé mais pas hostile
+- Tu laisses le commercial parler mais tu poses des questions précises
+- 2-3 objections réelles que tu maintiens jusqu'à preuve convaincante
+- Tu demandes des références ou des chiffres avant de t'engager
+- Tu peux raccrocher si l'accroche est nulle
+- Ta douleur cachée n'émerge qu'après au moins 3 bonnes questions de découverte
+- Tu peux être convaincu en 6-8 minutes avec les bons arguments""",
+        3: """NIVEAU AVANCÉ — Prospect difficile :
+- Tu es méfiant, pressé, sceptique
+- Tu coupes la parole si c'est trop long
+- Tes objections sont dures et enchaînées : tu ne lâches pas facilement
+- Tu demandes des cas chiffrés PRÉCIS dans TON secteur — tu refuses le générique
+- Tu peux raccrocher sans prévenir après 2 minutes si pas d'accroche
+- Ta douleur cachée est profondément enfouie, elle n'émerge QUE si le commercial creuse avec au moins 4-5 bonnes questions
+- Tu as un préjugé négatif sur les commerciaux ('encore un qui veut me vendre quelque chose')
+- Tipping point difficile : nécessite une preuve concrète + un engagement de résultat
+- Tu peux être convaincu mais ça prend 10-15 minutes de travail sérieux"""
     }
 
     # Language block for non-French simulations
