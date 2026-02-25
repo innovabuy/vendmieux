@@ -180,12 +180,18 @@ def _make_silence_frame(duration_ms: int = TTS_SILENCE_PREFIX_MS,
 class VendMieuxProspect(Agent):
     """Agent qui joue le rôle d'un prospect pour VendMieux"""
 
-    def __init__(self, system_prompt: str, scenario_name: str = ""):
+    def __init__(self, system_prompt: str, scenario_name: str = "",
+                 multi_voices: dict[str, str] | None = None,
+                 voice_language: str = "fr-FR"):
         super().__init__(
             instructions=system_prompt,
         )
         self.scenario_name = scenario_name
-        logger.info(f"🎭 Prospect VendMieux initialisé : {scenario_name}")
+        # multi_voices: {"Pierre": "fr-FR-Chirp3-HD-Charon", "Marie": "fr-FR-Chirp3-HD-Kore"}
+        self._multi_voices = multi_voices
+        self._voice_language = voice_language
+        logger.info(f"🎭 Prospect VendMieux initialisé : {scenario_name}"
+                     + (f" (multi-voix: {list(multi_voices.keys())})" if multi_voices else ""))
 
     def llm_node(
         self,
@@ -197,15 +203,66 @@ class VendMieuxProspect(Agent):
         chat_ctx.truncate(max_items=MAX_CONTEXT_ITEMS)
         return super().llm_node(chat_ctx, tools, model_settings)
 
+    def _detect_speaker_voice(self, text: str) -> str | None:
+        """Pour les multi-interlocuteurs, détecte [Prénom ...] et retourne la voix correspondante."""
+        if not self._multi_voices or not text:
+            return None
+        # Le LLM préfixe par [Prénom Nom] ou [Prénom]
+        import re
+        m = re.match(r'\[([^\]]+)\]', text)
+        if m:
+            speaker = m.group(1).strip()
+            prenom = speaker.split()[0]
+            if prenom in self._multi_voices:
+                return self._multi_voices[prenom]
+        return None
+
     async def tts_node(
         self,
         text: AsyncIterable[str],
         model_settings: ModelSettings,
     ) -> AsyncIterable[rtc.AudioFrame]:
-        """Override : silence de 300ms + normalisation avant TTS Google."""
+        """Override : silence + normalisation + voix multi-interlocuteurs."""
         normalized_text = normalize_tts_stream(text)
+
+        if not self._multi_voices:
+            # Mono-interlocuteur : flux normal
+            first = True
+            async for frame in super().tts_node(normalized_text, model_settings):
+                if first:
+                    yield _make_silence_frame()
+                    first = False
+                yield frame
+            return
+
+        # Multi-interlocuteurs : buffer le texte pour détecter le speaker
+        buffered = []
+        async for chunk in normalized_text:
+            buffered.append(chunk)
+        full_text = "".join(buffered)
+
+        voice = self._detect_speaker_voice(full_text)
+        if voice:
+            # Synthèse directe avec la voix du speaker détecté
+            alt_tts = google_tts.TTS(
+                voice_name=voice,
+                language=self._voice_language,
+                speaking_rate=1.0,
+            )
+            logger.info(f"🎙️ Multi-voix: {voice} pour «{full_text[:60]}»")
+            yield _make_silence_frame()
+            stream = alt_tts.synthesize(full_text)
+            async for ev in stream:
+                if ev.frame:
+                    yield ev.frame
+            return
+
+        # Pas de préfixe détecté → voix par défaut via pipeline normal
+        async def _reyield():
+            yield full_text
+
         first = True
-        async for frame in super().tts_node(normalized_text, model_settings):
+        async for frame in super().tts_node(_reyield(), model_settings):
             if first:
                 yield _make_silence_frame()
                 first = False
@@ -792,12 +849,24 @@ async def entrypoint(ctx: JobContext):
     greeting = get_greeting(meta_language, scenario["persona"], scenario.get("persona_2"))
     logger.info(f"👋 Greeting pré-scripté : \"{greeting}\"")
 
+    # Préparer les voix multi-interlocuteurs (si applicable)
+    multi_voices = None
+    if scenario.get('_is_multi') and scenario.get('_tts_voice_2'):
+        p1 = scenario["persona"]["identite"]
+        p2 = scenario["persona_2"]["identite"]
+        multi_voices = {
+            p1["prenom"]: scenario["_tts_voice_1"],
+            p2["prenom"]: scenario["_tts_voice_2"],
+        }
+
     # Créer l'agent prospect
     prospect = VendMieuxProspect(
         system_prompt=system_prompt,
         scenario_name=scenario["persona"]["identite"]["prenom"]
         + " "
         + scenario["persona"]["identite"]["nom"],
+        multi_voices=multi_voices,
+        voice_language=voice_cfg["language_code"],
     )
 
     t_agent = time.time()

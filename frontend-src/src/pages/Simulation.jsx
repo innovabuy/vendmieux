@@ -115,8 +115,9 @@ export default function Simulation() {
     }
   }, [phase, evaluation, evalLoading, token]);
 
-  // Detect rdv_physique scenario type
-  const isRdvPhysique = scenario?.simulation?.type === 'rdv_physique'
+  // Detect physical scenario type (rdv_physique, multi_interlocuteurs, negociation, etc.)
+  const isRdvPhysique = scenario?._is_physical
+    || scenario?.simulation?.type === 'rdv_physique'
     || scenario?.scenario_type === 'rdv_physique';
 
   // Start call (when user clicks the phone/start button)

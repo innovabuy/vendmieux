@@ -154,6 +154,7 @@ class ScenarioBuilder:
         type_sim = (
             scenario.get('simulation', {}).get('type')
             or scenario_raw.get('type_simulation', '')
+            or scenario_raw.get('metadata', {}).get('type_simulation', '')
         )
         scenario['_is_phone'] = type_sim in _PHONE_TYPES
         scenario['_is_physical'] = type_sim in _PHYSICAL_TYPES
@@ -176,6 +177,7 @@ class ScenarioBuilder:
         diff = (
             scenario.get('simulation', {}).get('difficulte')
             or scenario_raw.get('difficulty_default')
+            or scenario_raw.get('metadata', {}).get('difficulte_defaut')
             or 2
         )
         scenario['_difficulty'] = max(1, min(3, int(diff)))

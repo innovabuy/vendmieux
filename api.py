@@ -306,6 +306,12 @@ def _load_scenario(scenario_id: str) -> dict:
     if scenario_id == "__default__":
         from agent import DEFAULT_SCENARIO
         return scenario_builder.build(DEFAULT_SCENARIO)
+    # Multi-interlocuteurs : prioriser le fichier JSON (contient persona_2)
+    if scenario_id.startswith("sc_multi_") or scenario_id.startswith("COMITE-") or scenario_id.startswith("TECH-"):
+        filepath = SCENARIOS_DIR / f"{scenario_id}.json"
+        if filepath.exists():
+            with open(filepath, "r", encoding="utf-8") as f:
+                return scenario_builder.build(json.load(f))
     # 1. Check database scenarios (in-memory from scenarios_database.py)
     if scenario_id in _SCENARIOS_DB:
         return scenario_builder.build(_SCENARIOS_DB[scenario_id])
@@ -462,7 +468,12 @@ async def get_token(req: TokenRequest, request: Request, user: dict | None = Dep
 
 @app.get("/api/scenarios/{scenario_id}")
 async def get_scenario(scenario_id: str):
-    return _load_scenario(scenario_id)
+    scenario = _load_scenario(scenario_id)
+    # Expose builder metadata to frontend (without _ prefix)
+    scenario["_is_phone"] = scenario.get("_is_phone", False)
+    scenario["_is_physical"] = scenario.get("_is_physical", False)
+    scenario["_start_sound"] = scenario.get("_start_sound")
+    return scenario
 
 
 @app.get("/api/scenarios/{scenario_id}/brief")

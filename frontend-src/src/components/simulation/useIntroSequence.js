@@ -101,7 +101,7 @@ export function useIntroSequence() {
       if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
 
       // 1. Start office ambiance (loop, low volume)
-      const ambiance = new Audio('/static/sounds/office_ambiance.mp3');
+      const ambiance = new Audio('/static/sounds/office-ambiance.mp3');
       ambiance.loop = true;
       ambiance.volume = 0.15;
       ambianceRef.current = ambiance;
