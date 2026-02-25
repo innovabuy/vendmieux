@@ -177,11 +177,48 @@ def _ensure_scenarios_db():
         logger.info(f"📦 Cache scénarios initialisé : {len(_scenarios_cache)} scénarios")
 
 
+def _load_scenario_from_sqlite(scenario_id: str) -> dict | None:
+    """Charge un scénario depuis SQLite et reconstitue le format agent."""
+    import sqlite3 as _sqlite3
+    db_path = Path(__file__).parent / "vendmieux.db"
+    if not db_path.exists():
+        return None
+    try:
+        conn = _sqlite3.connect(str(db_path))
+        conn.row_factory = _sqlite3.Row
+        row = conn.execute("SELECT * FROM scenarios WHERE id = ?", (scenario_id,)).fetchone()
+        conn.close()
+        if not row:
+            return None
+        persona = json.loads(row["persona_json"]) if row["persona_json"] else {}
+        objections = json.loads(row["objections_json"]) if row["objections_json"] else {}
+        brief = json.loads(row["brief_json"]) if row["brief_json"] else {}
+        vendeur = json.loads(row["extraction_json"]) if row["extraction_json"] else {}
+        return {
+            "persona": persona,
+            "objections": objections,
+            "brief_commercial": brief,
+            "vendeur": vendeur,
+            "simulation": {
+                "type": row["type_simulation"] or "prospection_telephonique",
+                "difficulte": row["difficulty_default"] or 2,
+            },
+        }
+    except Exception as e:
+        logger.warning(f"⚠️ SQLite load failed for {scenario_id}: {e}")
+        return None
+
+
 def load_scenario(scenario_id: str) -> dict | None:
-    """Charge un scénario depuis le cache mémoire ou le dossier scenarios/"""
+    """Charge un scénario depuis le cache, la DB SQLite ou les fichiers JSON."""
     _ensure_scenarios_db()
     if scenario_id in _scenarios_cache:
         return _scenarios_cache[scenario_id]
+    # Essayer SQLite (scénarios générés et diversifiés)
+    scenario = _load_scenario_from_sqlite(scenario_id)
+    if scenario:
+        _scenarios_cache[scenario_id] = scenario
+        return scenario
     # Fallback sur les fichiers JSON (scénarios générés par l'utilisateur)
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
     if filepath.exists():

@@ -270,6 +270,37 @@ async def _get_scenario_types_from_db() -> dict[str, str]:
 
 # --- Helper: load scenario ---
 
+def _load_scenario_from_sqlite(scenario_id: str) -> dict | None:
+    """Charge un scénario depuis SQLite et reconstitue le format agent."""
+    import sqlite3 as _sqlite3
+    db_path = Path(__file__).parent / "vendmieux.db"
+    if not db_path.exists():
+        return None
+    try:
+        conn = _sqlite3.connect(str(db_path))
+        conn.row_factory = _sqlite3.Row
+        row = conn.execute("SELECT * FROM scenarios WHERE id = ?", (scenario_id,)).fetchone()
+        conn.close()
+        if not row:
+            return None
+        persona = json.loads(row["persona_json"]) if row["persona_json"] else {}
+        objections = json.loads(row["objections_json"]) if row["objections_json"] else {}
+        brief = json.loads(row["brief_json"]) if row["brief_json"] else {}
+        vendeur = json.loads(row["extraction_json"]) if row["extraction_json"] else {}
+        return {
+            "persona": persona,
+            "objections": objections,
+            "brief_commercial": brief,
+            "vendeur": vendeur,
+            "simulation": {
+                "type": row["type_simulation"] or "prospection_telephonique",
+                "difficulte": row["difficulty_default"] or 2,
+            },
+        }
+    except Exception:
+        return None
+
+
 def _load_scenario(scenario_id: str) -> dict:
     if scenario_id == "__default__":
         from agent import DEFAULT_SCENARIO
@@ -277,12 +308,16 @@ def _load_scenario(scenario_id: str) -> dict:
     # 1. Check database scenarios (in-memory from scenarios_database.py)
     if scenario_id in _SCENARIOS_DB:
         return _SCENARIOS_DB[scenario_id]
-    # 2. Check enriched JSON files on disk
+    # 2. Check SQLite (diversified/generated scenarios)
+    scenario = _load_scenario_from_sqlite(scenario_id)
+    if scenario:
+        return scenario
+    # 3. Check enriched JSON files on disk
     filepath = SCENARIOS_DIR / f"{scenario_id}.json"
     if filepath.exists():
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
-    # 3. Not found
+    # 4. Not found
     raise HTTPException(404, "Scénario introuvable")
 
 
