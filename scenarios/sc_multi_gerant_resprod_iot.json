@@ -1,0 +1,164 @@
+{
+  "id": "sc_multi_gerant_resprod_iot",
+  "metadata": {
+    "titre": "Gérant + Resp. Production — IoT industriel",
+    "type_simulation": "multi_interlocuteurs"
+  },
+  "extraction": {
+    "contexte": {
+      "type_vente": "rdv_physique",
+      "canal": "presentiel",
+      "temperature_prospect": "tiede"
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Jean-Marc",
+      "nom": "Faure",
+      "genre": "M",
+      "age": 58,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Faure & Fils Mécanique",
+        "secteur": "Mécanique de précision, sous-traitance aéronautique",
+        "taille": "45 salariés",
+        "ca_approximatif": "6.5M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Patron de terrain",
+        "Direct",
+        "ROI obsédé"
+      ],
+      "motivations_profondes": [
+        "ROI rapide et mesurable",
+        "ne pas perdre de clients Airbus/Safran"
+      ],
+      "peurs_freins": [
+        "investissement gadget",
+        "complexité pour les opérateurs"
+      ],
+      "style_communication": "Franc, parle avec les mains, veut du concret pas du PowerPoint"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Moi je suis un gars simple...",
+        "Combien ça me rapporte ?",
+        "Mes gars sur les machines, ils vont comprendre ça ?"
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 pannes majeures en 6 mois, pénalités de retard chez Airbus, carnet de commandes plein mais capacité fragile",
+      "priorites_actuelles": [
+        "zéro panne non planifiée",
+        "livrer à temps"
+      ]
+    }
+  },
+  "persona_2": {
+    "identite": {
+      "prenom": "Cécile",
+      "nom": "Vidal",
+      "genre": "F",
+      "age": 36,
+      "poste": "Responsable de Production",
+      "entreprise": {
+        "nom": "Faure & Fils Mécanique",
+        "secteur": "Mécanique de précision",
+        "taille": "45 salariés"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Terrain",
+        "Prudente",
+        "Pratique"
+      ],
+      "motivations_profondes": [
+        "simplifier le quotidien des opérateurs",
+        "anticiper les pannes sans surcharger l'équipe"
+      ],
+      "peurs_freins": [
+        "un outil de plus à gérer",
+        "fausses alertes qui paniquent l'équipe"
+      ],
+      "style_communication": "Concrète, parle du terrain, méfiante envers le jargon tech"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Sur le terrain, ça se passe comment ?",
+        "Et quand ça sonne une fausse alerte, on fait quoi ?",
+        "Mes opérateurs, ils ont déjà assez de choses à gérer..."
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "12 machines CNC dont 3 vieillissantes, maintenance préventive empirique",
+      "priorites_actuelles": [
+        "fiabilité machines",
+        "planifier la maintenance sans arrêter la production"
+      ]
+    }
+  },
+  "dynamique_multi": "Jean-Marc Faure (Gérant) veut le ROI. Il pense en euros et en jours de retard. Il décide vite.\nCécile Vidal (Resp. Production) est sur le terrain. Elle veut du simple, du fiable, pas du gadget.\nDYNAMIQUE : Jean-Marc est séduit par les chiffres mais se tourne vers Cécile : \"T'en penses quoi, toi ?\". Cécile est l'avis terrain qui peut faire ou défaire la décision. Si elle dit \"c'est trop compliqué pour mes gars\", Jean-Marc ne signera pas.\nTIPPING POINT Jean-Marc : ROI chiffré + une référence sous-traitant aéro similaire.\nTIPPING POINT Cécile : Démonstration de simplicité (pas d'écran de plus, alertes claires, pas de fausses alarmes).\nJean-Marc décide mais Cécile a un veto de fait sur l'opérationnel.",
+  "objections": {
+    "objections": [
+      {
+        "verbatim": "J'ai des machines qui ont 20 ans, vos capteurs ils marchent dessus ?",
+        "type": "technique"
+      },
+      {
+        "verbatim": "Mes opérateurs ont le CAP, pas un master en informatique. C'est simple ou pas ?",
+        "type": "adoption"
+      },
+      {
+        "verbatim": "La dernière fois qu'on a mis un truc connecté, ça sonnait toutes les 5 minutes pour rien.",
+        "type": "expérience"
+      },
+      {
+        "verbatim": "Vous me parlez d'IA, moi je veux juste savoir quand ma machine va lâcher.",
+        "type": "complexité"
+      },
+      {
+        "verbatim": "800 euros par mois pour 10 machines, c'est cher pour une boîte comme la mienne.",
+        "type": "prix"
+      },
+      {
+        "verbatim": "Et si Airbus me demande les données de maintenance, vous êtes compatibles avec leur portail ?",
+        "type": "intégration"
+      }
+    ]
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "PredictLine",
+      "secteur": "IoT industriel / maintenance prédictive"
+    },
+    "offre": {
+      "nom": "PredictLine PME",
+      "description": "Capteurs IoT + IA prédictive pour anticiper les pannes machines, alertes SMS/mail, dashboard simple",
+      "prix": "800 euros par mois pour 10 machines, installation comprise",
+      "references": [
+        "Fonderies du Rhône (72 sal.) — 3 pannes évitées en 6 mois",
+        "Précis'Usinage Lyon — ROI en 4 mois"
+      ]
+    },
+    "objectif_appel": {
+      "description": "Installer un pilote gratuit de 2 semaines sur 3 machines critiques"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gérant + Resp. Production — IoT maintenance prédictive",
+    "vous_etes": "Commercial chez PredictLine, solution IoT de maintenance prédictive",
+    "vous_vendez": "PredictLine PME : capteurs IoT + IA prédictive + alertes + dashboard",
+    "vous_appelez": "Jean-Marc Faure (Gérant) et Cécile Vidal (Resp. Production) de Faure & Fils — RDV physique",
+    "votre_objectif": "Installer un pilote gratuit de 2 semaines sur 3 machines",
+    "vos_atouts": [
+      "3 pannes évitées en 6 mois chez Fonderies du Rhône",
+      "ROI en 4 mois chez Précis'Usinage",
+      "Installation en 2 heures sans arrêt machine"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Avancé — patron ROI + terrain prudent"
+  }
+}

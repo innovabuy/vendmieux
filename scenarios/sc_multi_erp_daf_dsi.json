@@ -1,0 +1,165 @@
+{
+  "id": "sc_multi_erp_daf_dsi",
+  "metadata": {
+    "titre": "Comité DAF + DSI — ERP industriel",
+    "type_simulation": "multi_interlocuteurs"
+  },
+  "extraction": {
+    "contexte": {
+      "type_vente": "rdv_physique",
+      "canal": "presentiel",
+      "temperature_prospect": "tiede"
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marc",
+      "nom": "Tessier",
+      "genre": "M",
+      "age": 52,
+      "poste": "Directeur Administratif et Financier",
+      "entreprise": {
+        "nom": "Métallux Industries",
+        "secteur": "Métallurgie industrielle, pièces de précision",
+        "taille": "180 salariés, 2 sites",
+        "ca_approximatif": "28M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Direct",
+        "Orienté chiffres",
+        "Impatient"
+      ],
+      "motivations_profondes": [
+        "ROI rapide",
+        "réduction des coûts"
+      ],
+      "peurs_freins": [
+        "investissement sans retour",
+        "projet qui dérape en budget"
+      ],
+      "style_communication": "Direct et factuel"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Bon, concrètement...",
+        "Ça coûte combien ?",
+        "En résumé..."
+      ],
+      "ton_initial": "Pressé, va droit au but"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "ERP vieillissant (Sage X3), coûts de maintenance en hausse, besoin de modernisation",
+      "priorites_actuelles": [
+        "réduire les coûts IT de 15%",
+        "fiabiliser la production"
+      ]
+    }
+  },
+  "persona_2": {
+    "identite": {
+      "prenom": "Nathalie",
+      "nom": "Roux",
+      "genre": "F",
+      "age": 45,
+      "poste": "Directrice des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Métallux Industries",
+        "secteur": "Métallurgie industrielle",
+        "taille": "180 salariés"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique",
+        "Prudente",
+        "Technique"
+      ],
+      "motivations_profondes": [
+        "intégration propre avec l'existant",
+        "pas de dette technique"
+      ],
+      "peurs_freins": [
+        "migration ratée",
+        "perte de données"
+      ],
+      "style_communication": "Méthodique, pose beaucoup de questions techniques"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Techniquement parlant...",
+        "Comment ça s'intègre avec...",
+        "Et en termes de migration..."
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Infrastructure mixte cloud/on-premise, équipe IT de 6 personnes",
+      "priorites_actuelles": [
+        "stabilité système",
+        "cybersécurité"
+      ]
+    }
+  },
+  "dynamique_multi": "Marc Tessier (DAF) mène la réunion. Il veut des chiffres et un ROI clair. Il coupe court aux détails techniques.\nNathalie Roux (DSI) est la gardienne technique. Elle challenge chaque affirmation sur l'intégration et la migration.\nDYNAMIQUE : Marc s'impatiente quand Nathalie pose trop de questions techniques. Nathalie freine quand Marc veut aller trop vite.\nTIPPING POINT Marc : ROI chiffré < 18 mois avec benchmark secteur.\nTIPPING POINT Nathalie : Plan de migration détaillé + garantie de réversibilité.\nSi le vendeur ne s'adresse qu'au DAF, la DSI bloque. S'il ne parle que technique, le DAF décroche.",
+  "objections": {
+    "objections": [
+      {
+        "verbatim": "On a déjà dépensé 200 mille euros sur Sage, on ne va pas tout jeter.",
+        "type": "budget"
+      },
+      {
+        "verbatim": "Techniquement, comment vous gérez la reprise de 15 ans d'historique ?",
+        "type": "technique"
+      },
+      {
+        "verbatim": "Votre solution tourne sur quel cloud ? On a des contraintes RGPD.",
+        "type": "technique"
+      },
+      {
+        "verbatim": "Combien de temps d'arrêt de production pendant la migration ?",
+        "type": "risque"
+      },
+      {
+        "verbatim": "Vos concurrents proposent la même chose 30% moins cher.",
+        "type": "prix"
+      },
+      {
+        "verbatim": "Mon équipe IT de 6 personnes ne peut pas gérer un projet de cette envergure en plus du quotidien.",
+        "type": "ressources"
+      }
+    ]
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "InduSoft",
+      "secteur": "Éditeur ERP"
+    },
+    "offre": {
+      "nom": "InduSoft One",
+      "description": "ERP cloud pour l'industrie, modules production + finance + supply chain",
+      "prix": "À partir de 2 500 euros par mois, 50 utilisateurs",
+      "references": [
+        "Fonderies du Rhône — ROI en 14 mois",
+        "Aéronautic PME — migration en 8 semaines"
+      ]
+    },
+    "objectif_appel": {
+      "description": "Obtenir l'accord de principe pour une démonstration sur site avec les équipes métier"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Comité décisionnel DAF + DSI — ERP industriel",
+    "vous_etes": "Commercial chez InduSoft, éditeur ERP cloud pour l'industrie",
+    "vous_vendez": "InduSoft One : ERP cloud modulaire (production, finance, supply chain)",
+    "vous_appelez": "Marc Tessier (DAF) et Nathalie Roux (DSI) de Métallux Industries — rendez-vous physique",
+    "votre_objectif": "Obtenir l'accord pour une démo sur site avec les équipes métier",
+    "vos_atouts": [
+      "ROI prouvé en 14 mois chez Fonderies du Rhône",
+      "Migration Sage X3 en 8 semaines (cas Aéronautic PME)",
+      "Module production certifié industrie"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Avancé — 2 décideurs aux priorités opposées"
+  }
+}

@@ -75,7 +75,7 @@ _PRENOMS_M = {
     "maxime", "benjamin", "alexandre", "paul", "louis", "hugo", "lucas", "léo",
     "arthur", "adam", "gabriel", "nathan", "théo", "ethan", "noah",
     "franck", "matthieu", "bertrand", "sylvain", "étienne", "rachid", "gérard",
-    "gerard",
+    "gerard", "jean-marc", "jean-pierre", "jean-luc", "jean-paul", "jean-françois",
 }
 _PRENOMS_F = {
     "marie", "nathalie", "isabelle", "sophie", "catherine", "sandrine", "valérie",
@@ -85,7 +85,7 @@ _PRENOMS_F = {
     "françoise", "francoise", "monique", "nicole", "florence", "béatrice", "beatrice",
     "agathe", "léa", "manon", "chloé", "chloe", "emma", "jade", "alice", "lina",
     "sarah", "fatima", "aïcha", "aicha", "mélanie", "melanie",
-    "véronique", "veronique", "corinne", "mathilde",
+    "véronique", "veronique", "corinne", "mathilde", "cécile", "cecile",
 }
 
 
@@ -94,9 +94,9 @@ def detect_gender_from_persona(prompt_persona: str) -> str:
     Détecte le genre du persona : d'abord par lookup prénom,
     puis fallback Claude Haiku si prénom inconnu.
     """
-    # Tenter extraction du prénom depuis "Tu es {Prénom} {Nom}"
+    # Tenter extraction du prénom depuis "Tu es {Prénom}" ou "INTERLOCUTEUR 1 : {Prénom}"
     import re
-    m = re.search(r'Tu es (\w+)', prompt_persona)
+    m = re.search(r'(?:Tu es|INTERLOCUTEUR 1 : )([\w-]+)', prompt_persona)
     if m:
         prenom = m.group(1).lower()
         if prenom in _PRENOMS_M:
@@ -459,8 +459,42 @@ GREETINGS = {
 }
 
 
-def get_greeting(language: str, persona: dict) -> str:
+GREETINGS_MULTI = {
+    "fr": [
+        "[{prenom1}] Bonjour, entrez. Asseyez-vous. Je vous présente {prenom2} {nom2}, {poste2}.",
+        "[{prenom1}] Bonjour. Installez-vous. Vous connaissez {prenom2} {nom2}, notre {poste2} ?",
+        "[{prenom1}] Bienvenue. On est tous les deux là, {prenom2} et moi. On vous écoute.",
+    ],
+    "en": [
+        "[{prenom1}] Hello, come in. Let me introduce {prenom2} {nom2}, our {poste2}.",
+        "[{prenom1}] Hi there. Have a seat. You know {prenom2} {nom2}?",
+    ],
+    "es": [
+        "[{prenom1}] Buenos días, pasen. Les presento a {prenom2} {nom2}, {poste2}.",
+    ],
+    "de": [
+        "[{prenom1}] Guten Tag, kommen Sie rein. Das ist {prenom2} {nom2}, unser {poste2}.",
+    ],
+    "it": [
+        "[{prenom1}] Buongiorno, si accomodi. Le presento {prenom2} {nom2}, {poste2}.",
+    ],
+}
+
+
+def get_greeting(language: str, persona: dict, persona_2: dict = None) -> str:
     """Génère une phrase d'accueil pré-scriptée (bypass LLM, gain ~2-3s)."""
+    if persona_2:
+        templates = GREETINGS_MULTI.get(language, GREETINGS_MULTI["fr"])
+        template = random.choice(templates)
+        id1 = persona.get("identite", {})
+        id2 = persona_2.get("identite", {})
+        return template.format(
+            prenom1=id1.get("prenom", ""),
+            nom1=id1.get("nom", ""),
+            prenom2=id2.get("prenom", ""),
+            nom2=id2.get("nom", ""),
+            poste2=id2.get("poste", ""),
+        )
     templates = GREETINGS.get(language, GREETINGS["fr"])
     template = random.choice(templates)
     identite = persona.get("identite", {})
@@ -490,10 +524,101 @@ La question des références ne doit JAMAIS dépasser 2 échanges dans la conver
 """
 
 
+def _build_multi_prompt(scenario: dict, difficulty: int = 2, language: str = "fr") -> str:
+    """Construit le prompt pour un scénario multi-interlocuteurs (2 personas)."""
+    p1 = scenario["persona"]
+    p2 = scenario["persona_2"]
+    objections = scenario["objections"]
+    vendeur = scenario.get("vendeur", {})
+    dynamique = scenario.get("dynamique_multi", "")
+
+    id1 = p1["identite"]
+    id2 = p2["identite"]
+    name1 = f"{id1['prenom']} {id1['nom']}"
+    name2 = f"{id2['prenom']} {id2['nom']}"
+
+    traits1 = ", ".join(p1["psychologie"]["traits_dominants"])
+    traits2 = ", ".join(p2["psychologie"]["traits_dominants"])
+
+    tics1 = ", ".join(p1["comportement_en_rdv"].get("tics_langage", [])[:3]) or '"Bon...", "Concrètement ?"'
+    tics2 = ", ".join(p2["comportement_en_rdv"].get("tics_langage", [])[:3]) or '"Écoutez...", "On verra..."'
+
+    ctx1 = p1["contexte_actuel"]
+    ctx2 = p2.get("contexte_actuel", ctx1)
+
+    obj_list = objections.get("objections", [])[:6]
+    objections_str = "\n".join([f'- "{o["verbatim"]}"' for o in obj_list])
+
+    vendeur_block = ""
+    if vendeur.get("offre"):
+        v = vendeur
+        vendeur_block = f"""
+CE QUE LE VENDEUR VA PROPOSER :
+Il représente {v['entreprise']['nom']} et vend {v['offre']['nom']} : {v['offre']['description']}.
+Prix : {v['offre'].get('prix', 'non communiqué')}.
+"""
+
+    return PROMPT_CONSTRAINTS + f"""SCÉNARIO MULTI-INTERLOCUTEURS — Tu joues 2 rôles simultanément.
+
+INTERLOCUTEUR 1 : {name1}, {id1['poste']} chez {id1['entreprise']['nom']} ({id1['entreprise'].get('secteur', '')})
+PERSONNALITÉ : {traits1}
+TICS : {tics1}
+FOCUS : {p1['psychologie'].get('motivations_profondes', ['efficacité'])[0] if p1['psychologie'].get('motivations_profondes') else 'efficacité'}
+
+INTERLOCUTEUR 2 : {name2}, {id2['poste']} chez {id2['entreprise']['nom']}
+PERSONNALITÉ : {traits2}
+TICS : {tics2}
+FOCUS : {p2['psychologie'].get('motivations_profondes', ['rigueur'])[0] if p2['psychologie'].get('motivations_profondes') else 'rigueur'}
+
+CONTEXTE :
+- Situation : {ctx1['situation_entreprise']}
+- Priorités : {', '.join(ctx1.get('priorites_actuelles', ['croissance'])[:2])}
+
+DYNAMIQUE ENTRE LES DEUX :
+{dynamique}
+
+{vendeur_block}
+
+DIFFICULTÉ : Expert. Convaincre un comité est toujours difficile. Chaque interlocuteur a ses propres critères. Une réponse qui satisfait l'un peut inquiéter l'autre.
+
+RÈGLES DE JEU MULTI-INTERLOCUTEURS :
+1. Tu PRÉFIXES chaque réplique par le nom entre crochets : [{name1}] ou [{name2}]
+2. Un seul interlocuteur parle par réplique. Tu alternes naturellement.
+3. {name1} parle en premier (c'est lui/elle qui a organisé le rendez-vous).
+4. Quand le vendeur répond à l'un, l'autre peut réagir ENSUITE (pas les deux en même temps).
+5. Ils peuvent se contredire entre eux, ou l'un peut appuyer l'autre.
+6. Si le vendeur ne s'adresse qu'à un seul, l'autre finit par intervenir : "Excusez-moi, mais..."
+7. La décision finale requiert l'accord des DEUX.
+8. Chaque interlocuteur a son propre niveau d'intérêt (commence à 2/10 chacun).
+
+CONVERSATION NATURELLE :
+- Phrases courtes, oral français naturel. 1-3 phrases max par réplique.
+- Tu ne fais JAMAIS de bruits type "hm", "hmm", "mmh"
+- Tu vouvoies TOUJOURS. Tu ne sors JAMAIS du personnage.
+- IMPORTANT : Pas d'abréviations orales. "rendez-vous" et non "rdv", "mille euros" et non "k€".
+
+OBJECTIONS DISPONIBLES (réparties entre les deux) :
+{objections_str}
+
+COMPLÉMENTS ANTI-INVENTION :
+Vous découvrez le commercial pour la première fois. Aucun document reçu avant ce rendez-vous.
+
+FIN :
+- Les DEUX intéressés + next step → accord
+- Un seul convaincu → "Il faut qu'on en reparle en interne"
+- Aucun convaincu après 5 min → fin polie
+"""
+
+
 def build_system_prompt(scenario: dict, difficulty: int = 2, language: str = "fr") -> str:
     persona = scenario["persona"]
     objections = scenario["objections"]
     vendeur = scenario.get("vendeur", {})
+
+    # --- Multi-interlocuteurs : prompt spécifique ---
+    persona2 = scenario.get("persona_2")
+    if persona2:
+        return _build_multi_prompt(scenario, difficulty, language)
 
     # Identité prospect
     p = persona["identite"]
@@ -689,7 +814,7 @@ async def entrypoint(ctx: JobContext):
     logger.info(f"📝 System prompt (diff={difficulty}, lang={meta_language}) : {len(system_prompt)} caractères")
 
     # Préparer le greeting pré-scripté (bypass LLM)
-    greeting = get_greeting(meta_language, scenario["persona"])
+    greeting = get_greeting(meta_language, scenario["persona"], scenario.get("persona_2"))
     logger.info(f"👋 Greeting pré-scripté : \"{greeting}\"")
 
     # Créer l'agent prospect

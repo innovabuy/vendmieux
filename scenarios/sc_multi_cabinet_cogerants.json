@@ -1,0 +1,160 @@
+{
+  "id": "sc_multi_cabinet_cogerants",
+  "metadata": {
+    "titre": "Co-gérants — SaaS comptabilité cabinet",
+    "type_simulation": "multi_interlocuteurs"
+  },
+  "extraction": {
+    "contexte": {
+      "type_vente": "rdv_physique",
+      "canal": "presentiel",
+      "temperature_prospect": "tiede"
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Pierre",
+      "nom": "Leblanc",
+      "genre": "M",
+      "age": 55,
+      "poste": "Co-gérant, Expert-Comptable",
+      "entreprise": {
+        "nom": "Cabinet Leblanc & Martin",
+        "secteur": "Expertise comptable, 350 dossiers clients",
+        "taille": "22 collaborateurs",
+        "ca_approximatif": "2.8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Décisionnaire",
+        "Pressé",
+        "Orienté résultats"
+      ],
+      "motivations_profondes": [
+        "gagner du temps",
+        "automatiser les tâches répétitives"
+      ],
+      "peurs_freins": [
+        "perte de productivité pendant la transition",
+        "outil trop complexe pour les collaborateurs"
+      ],
+      "style_communication": "Direct, parle vite, n'aime pas les fioritures"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Allez, au fait...",
+        "Combien de temps pour être opérationnel ?",
+        "Mes collaborateurs, ils vont s'en sortir ?"
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Logiciel actuel (Cegid) en fin de contrat dans 4 mois, fenêtre de décision courte",
+      "priorites_actuelles": [
+        "réduire le temps de saisie",
+        "dématérialisation complète"
+      ]
+    }
+  },
+  "persona_2": {
+    "identite": {
+      "prenom": "Sophie",
+      "nom": "Martin",
+      "genre": "F",
+      "age": 48,
+      "poste": "Co-gérante, Expert-Comptable",
+      "entreprise": {
+        "nom": "Cabinet Leblanc & Martin",
+        "secteur": "Expertise comptable",
+        "taille": "22 collaborateurs"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudente",
+        "Consensuelle",
+        "Empathique"
+      ],
+      "motivations_profondes": [
+        "bien-être des collaborateurs",
+        "transition en douceur"
+      ],
+      "peurs_freins": [
+        "burn-out de l'équipe pendant la migration",
+        "perdre des clients pendant le changement"
+      ],
+      "style_communication": "Réfléchie, pose des questions sur l'humain"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Et pour l'équipe, concrètement...",
+        "On ne peut pas se permettre de...",
+        "Il faut que tout le monde suive..."
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Équipe jeune mais habituée à Cegid depuis 8 ans",
+      "priorites_actuelles": [
+        "cohésion d'équipe",
+        "formation"
+      ]
+    }
+  },
+  "dynamique_multi": "Pierre Leblanc est le moteur du changement. Il veut aller vite, décider aujourd'hui.\nSophie Martin est le frein bienveillant. Elle veut s'assurer que l'équipe ne souffrira pas.\nDYNAMIQUE : Pierre pousse pour signer, Sophie temporise. Ils se respectent mais se contredisent ouvertement.\nTIPPING POINT Pierre : Démonstration que le gain de temps est > 30% avec un planning serré.\nTIPPING POINT Sophie : Plan de formation concret + accompagnement humain garanti.\nSi le vendeur ne convainc que Pierre, Sophie dira \"on en reparle entre nous\". Il faut les deux.",
+  "objections": {
+    "objections": [
+      {
+        "verbatim": "On est en pleine période fiscale dans 4 mois, c'est le pire moment pour changer.",
+        "type": "timing"
+      },
+      {
+        "verbatim": "Mes collaboratrices ont 50 ans en moyenne, elles ne sont pas à l'aise avec les outils modernes.",
+        "type": "adoption"
+      },
+      {
+        "verbatim": "Cegid nous propose un rabais de 20% pour rester, pourquoi on changerait ?",
+        "type": "concurrence"
+      },
+      {
+        "verbatim": "Si on perd ne serait-ce qu'un client pendant la transition, c'est votre faute.",
+        "type": "risque"
+      },
+      {
+        "verbatim": "Combien ça coûte VRAIMENT, tout compris, migration, formation, le tout ?",
+        "type": "prix"
+      }
+    ]
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "ComptaCloud",
+      "secteur": "SaaS comptabilité"
+    },
+    "offre": {
+      "nom": "ComptaCloud Pro",
+      "description": "Plateforme cloud de production comptable avec IA de saisie automatique",
+      "prix": "890 euros par mois pour 22 utilisateurs, migration incluse",
+      "references": [
+        "Cabinet Moreau (18 collab.) — migration en 3 semaines",
+        "Cabinet Garnier — gain de 35% sur la saisie"
+      ]
+    },
+    "objectif_appel": {
+      "description": "Obtenir un accord de principe pour un test pilote sur 5 dossiers clients"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Co-gérants cabinet comptable — SaaS de production",
+    "vous_etes": "Commercial chez ComptaCloud, plateforme de production comptable cloud",
+    "vous_vendez": "ComptaCloud Pro : production comptable cloud + IA de saisie automatique",
+    "vous_appelez": "Pierre Leblanc et Sophie Martin, co-gérants du Cabinet Leblanc & Martin — RDV physique",
+    "votre_objectif": "Obtenir un accord pour un test pilote sur 5 dossiers",
+    "vos_atouts": [
+      "Migration en 3 semaines (cas Cabinet Moreau)",
+      "Gain de 35% sur temps de saisie",
+      "Formation incluse avec accompagnement dédié"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Avancé — décision conjointe, profils opposés"
+  }
+}

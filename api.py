@@ -502,7 +502,7 @@ def _extract_preview_fields(full_data: dict) -> dict:
     duree = brief.get("duree_estimee", "5-8 minutes")
 
     # Nb interlocuteurs
-    is_multi = sim.get("type", "") == "multi_interlocuteurs" or "prospect_2" in full_data
+    is_multi = sim.get("type", "") == "multi_interlocuteurs" or "persona_2" in full_data
     nb_inter = "multi" if is_multi else "mono"
 
     # Gender

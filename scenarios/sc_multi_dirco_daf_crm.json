@@ -1,0 +1,160 @@
+{
+  "id": "sc_multi_dirco_daf_crm",
+  "metadata": {
+    "titre": "Dir. Commercial + DAF — CRM PME tech",
+    "type_simulation": "multi_interlocuteurs"
+  },
+  "extraction": {
+    "contexte": {
+      "type_vente": "rdv_physique",
+      "canal": "presentiel",
+      "temperature_prospect": "tiede"
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thomas",
+      "nom": "Girard",
+      "genre": "M",
+      "age": 38,
+      "poste": "Directeur Commercial",
+      "entreprise": {
+        "nom": "DataPulse",
+        "secteur": "Éditeur SaaS B2B, analytics marketing",
+        "taille": "85 salariés",
+        "ca_approximatif": "12M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Enthousiaste",
+        "Orienté features",
+        "Impatient"
+      ],
+      "motivations_profondes": [
+        "booster le pipe commercial",
+        "automatiser les relances"
+      ],
+      "peurs_freins": [
+        "outil trop rigide",
+        "adoption faible chez ses commerciaux"
+      ],
+      "style_communication": "Dynamique, veut voir des démos, parle vite"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Ça c'est top !",
+        "Et l'intégration avec HubSpot ?",
+        "Mes commerciaux, ils veulent du simple..."
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pipe commercial géré sur Excel + HubSpot gratuit, perte de deals par manque de suivi",
+      "priorites_actuelles": [
+        "structurer le pipe",
+        "closing rate +20%"
+      ]
+    }
+  },
+  "persona_2": {
+    "identite": {
+      "prenom": "Anne",
+      "nom": "Dupuis",
+      "genre": "F",
+      "age": 44,
+      "poste": "Directrice Administrative et Financière",
+      "entreprise": {
+        "nom": "DataPulse",
+        "secteur": "SaaS B2B",
+        "taille": "85 salariés"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Rigoureuse",
+        "Analytique",
+        "Focus TCO"
+      ],
+      "motivations_profondes": [
+        "maîtrise du coût total",
+        "pas de surprises en facture"
+      ],
+      "peurs_freins": [
+        "coûts cachés",
+        "licences qui explosent avec la croissance"
+      ],
+      "style_communication": "Posée, demande les détails financiers, lit les petites lignes"
+    },
+    "comportement_en_rdv": {
+      "tics_langage": [
+        "Et à combien ça revient par tête ?",
+        "Il y a des coûts cachés ?",
+        "Sur 3 ans, le TCO c'est quoi exactement ?"
+      ]
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance rapide, besoin de maîtriser les dépenses SaaS (déjà 15 outils)",
+      "priorites_actuelles": [
+        "rationaliser la stack SaaS",
+        "prévisibilité budgétaire"
+      ]
+    }
+  },
+  "dynamique_multi": "Thomas Girard (Dir. Co) est le sponsor interne. Il a poussé ce rendez-vous. Il veut des fonctionnalités.\nAnne Dupuis (DAF) est là pour valider le budget. Elle veut comprendre le coût total sur 3 ans.\nDYNAMIQUE : Thomas dit \"on le prend !\" et Anne répond \"pas si vite, combien ça coûte vraiment ?\". Thomas s'agace quand Anne pinaille sur les coûts. Anne s'inquiète quand Thomas veut des options premium.\nTIPPING POINT Thomas : Démo convaincante des automatisations + intégration HubSpot native.\nTIPPING POINT Anne : TCO clair sur 3 ans, pas de coûts cachés, tarif par utilisateur dégressif.\nThomas peut dire oui seul pour un pilote. Anne a un droit de veto sur le budget annuel.",
+  "objections": {
+    "objections": [
+      {
+        "verbatim": "On utilise déjà HubSpot gratuit, pourquoi payer pour un autre CRM ?",
+        "type": "concurrence"
+      },
+      {
+        "verbatim": "Sur 3 ans avec 85 utilisateurs, on est à combien tout compris ?",
+        "type": "prix"
+      },
+      {
+        "verbatim": "Mes commerciaux n'utiliseront jamais un outil de plus s'il ne s'intègre pas avec ce qu'ils ont déjà.",
+        "type": "adoption"
+      },
+      {
+        "verbatim": "On est passé de 40 à 85 en 2 ans, votre pricing suit comment ?",
+        "type": "scalabilité"
+      },
+      {
+        "verbatim": "On a 15 outils SaaS, je ne vais pas en rajouter un 16ème sans en supprimer un.",
+        "type": "rationalisation"
+      }
+    ]
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "PipeDrive Solutions",
+      "secteur": "CRM SaaS"
+    },
+    "offre": {
+      "nom": "PipeDrive Business",
+      "description": "CRM avec pipeline visuel, automatisations, intégration native HubSpot/Slack/Gmail",
+      "prix": "49 euros par utilisateur par mois (85 users = 4 165 euros par mois)",
+      "references": [
+        "Sewan — closing rate +22% en 6 mois",
+        "Sendinblue — déploiement 2 semaines"
+      ]
+    },
+    "objectif_appel": {
+      "description": "Obtenir un pilote de 1 mois pour l'équipe commerciale (15 personnes)"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Dir. Commercial + DAF — CRM pour scale-up tech",
+    "vous_etes": "Commercial chez PipeDrive Solutions",
+    "vous_vendez": "PipeDrive Business : CRM avec pipeline visuel + automatisations",
+    "vous_appelez": "Thomas Girard (Dir. Commercial) et Anne Dupuis (DAF) de DataPulse — RDV physique",
+    "votre_objectif": "Obtenir un pilote de 1 mois sur 15 commerciaux",
+    "vos_atouts": [
+      "Closing rate +22% chez Sewan en 6 mois",
+      "Intégration native HubSpot (migration transparente)",
+      "Tarif dégressif à la croissance"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Avancé — sponsor enthousiaste vs DAF qui compte"
+  }
+}
