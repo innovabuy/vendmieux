@@ -32,8 +32,10 @@ from livekit.agents import (
     function_tool,
 )
 from livekit.agents.voice.agent import ModelSettings
+from livekit.agents import llm
 from livekit.plugins import deepgram, silero, anthropic
 from livekit.plugins import google as google_tts
+import anthropic as anthropic_sdk
 
 from tts_utils import normalize_tts_stream
 
@@ -41,6 +43,92 @@ from tts_utils import normalize_tts_stream
 load_dotenv()
 logger = logging.getLogger("vendmieux")
 logger.setLevel(logging.INFO)
+
+# --- Client Anthropic pour détection de genre ---
+_anthropic_client = anthropic_sdk.Anthropic()
+
+# --- Voix TTS par genre (Google Cloud TTS — Chirp3-HD) ---
+VOIX_FEMININES = [
+    'fr-FR-Chirp3-HD-Kore',          # Naturelle, claire
+    'fr-FR-Chirp3-HD-Aoede',         # Alternative
+    'fr-FR-Chirp3-HD-Leda',          # Alternative 2
+]
+VOIX_MASCULINES = [
+    'fr-FR-Chirp3-HD-Charon',        # Naturel, posé
+    'fr-FR-Chirp3-HD-Orus',          # Alternative
+    'fr-FR-Chirp3-HD-Puck',          # Alternative 2
+]
+
+# --- Cache genre par scenario_id (évite appels Claude répétés) ---
+_gender_cache: dict[str, str] = {}
+
+
+# Prénoms français avec genre connu (évite un appel LLM inutile)
+_PRENOMS_M = {
+    "laurent", "marc", "jean", "pierre", "thomas", "michel", "philippe", "stéphane",
+    "stephane", "frédéric", "frederic", "olivier", "nicolas", "christophe", "david",
+    "patrick", "alain", "éric", "eric", "thierry", "bernard", "françois", "francois",
+    "yves", "jacques", "gilles", "rémi", "remi", "mathieu", "julien", "antoine",
+    "bruno", "vincent", "sébastien", "sebastien", "mehdi", "karim", "yannick",
+    "guillaume", "fabrice", "jérôme", "jerome", "pascal", "hervé", "herve",
+    "arnaud", "didier", "serge", "denis", "emmanuel", "raphaël", "raphael",
+    "maxime", "benjamin", "alexandre", "paul", "louis", "hugo", "lucas", "léo",
+    "arthur", "adam", "gabriel", "nathan", "théo", "ethan", "noah",
+    "franck", "matthieu", "bertrand", "sylvain", "étienne", "rachid", "gérard",
+    "gerard",
+}
+_PRENOMS_F = {
+    "marie", "nathalie", "isabelle", "sophie", "catherine", "sandrine", "valérie",
+    "valerie", "christine", "céline", "celine", "amandine", "aurélie", "aurelie",
+    "caroline", "anne", "claire", "julie", "laura", "émilie", "emilie", "marine",
+    "elodie", "élodie", "virginie", "delphine", "patricia", "sylvie", "martine",
+    "françoise", "francoise", "monique", "nicole", "florence", "béatrice", "beatrice",
+    "agathe", "léa", "manon", "chloé", "chloe", "emma", "jade", "alice", "lina",
+    "sarah", "fatima", "aïcha", "aicha", "mélanie", "melanie",
+    "véronique", "veronique", "corinne", "mathilde",
+}
+
+
+def detect_gender_from_persona(prompt_persona: str) -> str:
+    """
+    Détecte le genre du persona : d'abord par lookup prénom,
+    puis fallback Claude Haiku si prénom inconnu.
+    """
+    # Tenter extraction du prénom depuis "Tu es {Prénom} {Nom}"
+    import re
+    m = re.search(r'Tu es (\w+)', prompt_persona)
+    if m:
+        prenom = m.group(1).lower()
+        if prenom in _PRENOMS_M:
+            return 'M'
+        if prenom in _PRENOMS_F:
+            return 'F'
+
+    # Fallback LLM pour prénoms ambigus (Dominique, Camille, Claude...)
+    try:
+        response = _anthropic_client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=10,
+            messages=[{
+                "role": "user",
+                "content": f"""Ce persona est-il masculin ou féminin ?
+Réponds UNIQUEMENT par 'M' ou 'F'.
+Persona : {prompt_persona[:300]}"""
+            }]
+        )
+        gender = response.content[0].text.strip().upper()
+        return 'F' if gender == 'F' else 'M'
+    except Exception as e:
+        logger.warning(f"⚠️ Détection genre échouée, fallback M: {e}")
+        return 'M'
+
+
+def get_cached_gender(scenario_id: str, prompt_persona: str) -> str:
+    """Retourne le genre détecté, avec cache par scenario_id."""
+    if scenario_id not in _gender_cache:
+        _gender_cache[scenario_id] = detect_gender_from_persona(prompt_persona)
+        logger.info(f"🔍 Genre détecté pour {scenario_id}: {_gender_cache[scenario_id]}")
+    return _gender_cache[scenario_id]
 
 # --- Répertoire des scénarios ---
 SCENARIOS_DIR = Path(__file__).parent / "scenarios"
@@ -104,6 +192,24 @@ def load_scenario(scenario_id: str) -> dict | None:
     return None
 
 
+MAX_CONTEXT_ITEMS = 40  # ~20 échanges (user + assistant) — au-delà, troncature
+TTS_SILENCE_PREFIX_MS = 150  # Silence avant chaque réponse TTS pour éviter le premier mot coupé
+TTS_SAMPLE_RATE = 24000
+
+
+def _make_silence_frame(duration_ms: int = TTS_SILENCE_PREFIX_MS,
+                        sample_rate: int = TTS_SAMPLE_RATE) -> rtc.AudioFrame:
+    """Crée un AudioFrame de silence (int16 zeros)."""
+    num_samples = int(sample_rate * duration_ms / 1000)
+    silence_data = bytes(num_samples * 2)  # 2 bytes per int16 sample, all zeros
+    return rtc.AudioFrame(
+        data=silence_data,
+        sample_rate=sample_rate,
+        num_channels=1,
+        samples_per_channel=num_samples,
+    )
+
+
 class VendMieuxProspect(Agent):
     """Agent qui joue le rôle d'un prospect pour VendMieux"""
 
@@ -114,14 +220,28 @@ class VendMieuxProspect(Agent):
         self.scenario_name = scenario_name
         logger.info(f"🎭 Prospect VendMieux initialisé : {scenario_name}")
 
+    def llm_node(
+        self,
+        chat_ctx: llm.ChatContext,
+        tools: list[llm.Tool],
+        model_settings: ModelSettings,
+    ):
+        """Tronque le contexte avant envoi au LLM pour éviter la latence sur longues sessions."""
+        chat_ctx.truncate(max_items=MAX_CONTEXT_ITEMS)
+        return super().llm_node(chat_ctx, tools, model_settings)
+
     async def tts_node(
         self,
         text: AsyncIterable[str],
         model_settings: ModelSettings,
     ) -> AsyncIterable[rtc.AudioFrame]:
-        """Override pour normaliser le texte avant envoi au TTS Google."""
+        """Override : silence de 300ms + normalisation avant TTS Google."""
         normalized_text = normalize_tts_stream(text)
+        first = True
         async for frame in super().tts_node(normalized_text, model_settings):
+            if first:
+                yield _make_silence_frame()
+                first = False
             yield frame
 
 
@@ -316,21 +436,25 @@ GREETINGS = {
         "Yes, hello?",
         "{prenom} {nom} speaking.",
         "Hello, who's calling?",
+        "Yes? {nom}.",
     ],
     "es": [
         "¿Sí, dígame?",
         "¿Hola?",
         "{prenom} {nom}, dígame.",
+        "Dígame.",
     ],
     "de": [
         "Ja, hallo?",
         "{nom}, guten Tag.",
         "Hallo, wer spricht?",
+        "{nom}.",
     ],
     "it": [
         "Pronto?",
         "Sì, pronto?",
         "{prenom} {nom}, mi dica.",
+        "Pronto, {nom}.",
     ],
 }
 
@@ -345,6 +469,25 @@ def get_greeting(language: str, persona: dict) -> str:
         nom=identite.get("nom", ""),
         entreprise=identite.get("entreprise", {}).get("nom", ""),
     )
+
+
+PROMPT_CONSTRAINTS = """CONTRAINTE ABSOLUE PRIORITÉ MAXIMALE :
+Tu ne peux JAMAIS affirmer avoir entendu quelque chose que le commercial n'a pas dit dans CETTE conversation.
+Tu ne mentionnes JAMAIS de tarifs, chiffres, documents ou échanges antérieurs que le commercial n'a pas cités explicitement.
+Si contesté sur des paroles : "Ah, peut-être que j'ai mal compris" — jamais "Non vous l'avez dit."
+Tu ne connais PAS les références clients du commercial — tu poses des questions dessus, tu ne complètes jamais.
+Tu ne répètes JAMAIS la même objection plus de 2 fois. Après 2 fois : nuancer, poser une question, révéler ta douleur cachée, ou mettre fin à l'appel.
+Tu ne restes JAMAIS bloqué en boucle sur la même réponse.
+Tes réponses sont courtes — maximum 2-3 phrases. Tu es un prospect réel, pas un assistant.
+
+RÈGLE SUR LES RÉFÉRENCES CLIENTS :
+Tu peux demander UNE FOIS si le commercial a des références dans ton secteur.
+Si le commercial répond vaguement → tu passes à une autre question. Tu ne bloques JAMAIS sur ce point plus d'un échange.
+Si le commercial cite une référence → tu peux demander UN seul détail concret (résultat, délai, taille d'entreprise).
+Après cet échange → tu passes obligatoirement à un autre sujet (prix, délai, mise en place, fonctionnement).
+La question des références ne doit JAMAIS dépasser 2 échanges dans la conversation.
+
+"""
 
 
 def build_system_prompt(scenario: dict, difficulty: int = 2, language: str = "fr") -> str:
@@ -391,9 +534,10 @@ Son objectif probable : {v['objectif_appel']['description']}.
 Ses références : {', '.join(v['offre'].get('references', []))}.
 
 TU RÉAGIS À CETTE OFFRE SPÉCIFIQUE :
-- Si les références sont dans ton secteur, ça t'intéresse un peu plus
+- Si les références sont dans ton secteur, ça t'intéresse un peu plus (mais tu ne bloques pas dessus)
 - Si la proposition résout un problème que tu VIS, tu ne peux pas l'ignorer
 - Si c'est générique et pas adapté à ton métier, tu coupes court
+- Tu ne poses PAS plus d'une question sur les références — après, tu passes à autre chose (prix, délai, mise en place)
 """
 
     # Blocs difficulté
@@ -415,7 +559,7 @@ tu réponds poliment en {li['name']} que tu ne parles pas français.
 Adapte tes expressions, ton style et tes références culturelles au marché {li['country']}.
 """
 
-    prompt = f"""Tu es {prenom} {nom}, {poste} chez {entreprise} ({secteur}).
+    prompt = PROMPT_CONSTRAINTS + f"""Tu es {prenom} {nom}, {poste} chez {entreprise} ({secteur}).
 
 PERSONNALITÉ : {traits} | Style : {style}
 TICS DE LANGAGE : {tics_str}
@@ -462,6 +606,12 @@ COMMENT TU FONCTIONNES :
 OBJECTIONS DISPONIBLES (utilise quand c'est PERTINENT, pas dans l'ordre) :
 {objections_str}
 
+COMPLÉMENTS ANTI-INVENTION :
+Tu découvres le commercial pour la première fois. Tu n'as reçu aucun document avant cet appel.
+Si le commercial mentionne un document envoyé : "Je ne me souviens pas d'avoir reçu quelque chose." — jamais tu n'inventes un contenu.
+Tu ne confirmes JAMAIS avoir vu, lu ou reçu quoi que ce soit que ton brief ne mentionne pas.
+Si le commercial cite un tarif : tu réagis UNIQUEMENT à CE tarif. Tu n'en inventes jamais un autre.
+
 DÉBUT : Tu as déjà décroché le téléphone. Le vendeur va parler. Tu attends sa première phrase pour répondre.
 
 FIN :
@@ -491,10 +641,16 @@ async def entrypoint(ctx: JobContext):
     t_connected = time.time()
     logger.info(f"⏱️ [latency] connect: {(t_connected - t_entry)*1000:.0f}ms")
 
-    # Charger le scénario et la difficulté depuis metadata (JSON ou string legacy)
+    # Wait for the user participant to get their metadata
+    participant = await ctx.wait_for_participant()
+    t_participant = time.time()
+    logger.info(f"⏱️ [latency] participant joined: {(t_participant - t_entry)*1000:.0f}ms")
+
+    # Load scenario and settings from participant metadata (set via access token)
     scenario_id = None
     difficulty = 2
-    raw_meta = ctx.room.metadata or ""
+    raw_meta = participant.metadata or ctx.room.metadata or ""
+    logger.info(f"📦 Raw metadata: {raw_meta[:200] if raw_meta else '(empty)'}")
 
     meta_user_id = None
     meta_session_db_id = None
@@ -566,8 +722,16 @@ async def entrypoint(ctx: JobContext):
         logger.info(f"📝 [{role}] {text.strip()[:80]}")
         _save_room_history(ctx.room.name, session)
 
+    _evaluation_sent = False
+
     async def _do_close_evaluation():
         """Coroutine d'évaluation post-session."""
+        nonlocal _evaluation_sent
+        if _evaluation_sent:
+            logger.info("⏭️ Évaluation déjà envoyée, skip doublon")
+            return
+        _evaluation_sent = True
+
         duration_s = int(time.time() - session_start)
         nb = len(transcript_entries)
         logger.info(f"📊 Session terminée — {nb} entrées, {duration_s}s")
@@ -605,8 +769,9 @@ async def entrypoint(ctx: JobContext):
         asyncio.create_task(_do_close_evaluation())
 
     # Multi-language voice/STT configuration
+    # Voix par défaut (masculines) — utilisées comme fallback pour les langues non-FR
     VOICE_MAP = {
-        "fr": {"voice": "fr-FR-Chirp3-HD-Charon", "language_code": "fr-FR"},
+        "fr": {"language_code": "fr-FR"},
         "en": {"voice": "en-GB-Chirp3-HD-Charon", "language_code": "en-GB"},
         "es": {"voice": "es-ES-Chirp3-HD-Charon", "language_code": "es-ES"},
         "de": {"voice": "de-DE-Chirp3-HD-Charon", "language_code": "de-DE"},
@@ -618,6 +783,17 @@ async def entrypoint(ctx: JobContext):
     voice_cfg = VOICE_MAP.get(meta_language, VOICE_MAP["fr"])
     stt_lang = STT_LANG_MAP.get(meta_language, "fr")
 
+    # Détection genre via Claude pour sélection voix TTS
+    persona_desc = system_prompt[:200]  # Début du prompt contient l'identité
+    sid = scenario_id or "__default__"
+    gender = get_cached_gender(sid, persona_desc)
+
+    if meta_language == "fr":
+        # FR : voix Chirp3-HD genrées (haute qualité)
+        tts_voice = VOIX_FEMININES[0] if gender == 'F' else VOIX_MASCULINES[0]
+        voice_cfg["voice"] = tts_voice
+    logger.info(f"🎙️ Voix TTS sélectionnée : {voice_cfg['voice']} (genre={gender})")
+
     # Créer la session avec le pipeline STT → LLM → TTS
     session = AgentSession(
         vad=silero.VAD.load(),
@@ -627,6 +803,8 @@ async def entrypoint(ctx: JobContext):
         ),
         llm=anthropic.LLM(
             model="claude-haiku-4-5-20251001",
+            temperature=0.2,
+            max_tokens=150,
         ),
         tts=google_tts.TTS(
             voice_name=voice_cfg["voice"],
