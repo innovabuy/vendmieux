@@ -1,0 +1,342 @@
+{
+  "id": "scenario_1771518580",
+  "description_originale": "Le directeur des achats groupe ou directeur après-vente d'une groupe de concessions multi-marques ou équipementier de 200+ salariés veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : automobile]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats groupe ou directeur après-vente",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour concessions automobiles ou équipementiers automobiles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect veut renégocier les conditions avant signature",
+        "Mise en concurrence active avec 2 autres fournisseurs",
+        "Difficulté à closer la vente"
+      ],
+      "implicites": [
+        "Les commerciaux défendent mal la valeur de leur offre face à la pression prix",
+        "Manque de techniques de découverte des vrais critères de décision",
+        "Faiblesse dans la gestion de la pression concurrentielle",
+        "Capitulation trop rapide sur les conditions commerciales"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas les techniques de négociation pour défendre leur valeur face à un acheteur professionnel utilisant le levier concurrentiel"
+    },
+    "objections_mentionnees": [
+      "Demande de renégociation des conditions",
+      "Mise en concurrence avec d'autres fournisseurs"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre la valeur de leur offre, identifier les vrais critères de décision cachés derrière la pression prix, et closer efficacement face à un acheteur professionnel qui utilise le levier concurrentiel",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur secteur automobile",
+      "entreprise_description": "Fournisseur BtoB pour groupes de concessions automobiles multi-marques ou équipementiers automobiles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux groupes de concessions automobiles ou équipementiers",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'entreprise cliente",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Montant ou fourchette de prix de la transaction",
+        "Proposition de valeur différenciante du vendeur",
+        "Identité des concurrents",
+        "Historique de la relation commerciale",
+        "Éléments de contexte sur les conditions actuellement négociées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Masdeboeuf",
+      "age": 51,
+      "poste": "Directeur des Achats et Services Groupe",
+      "entreprise": {
+        "nom": "Groupe Horizon Auto",
+        "secteur": "Distribution automobile multi-marques",
+        "taille": "340 salariés répartis sur 14 concessions",
+        "ca_approximatif": "185 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Calculateur et méfiant par déformation professionnelle",
+        "Obsédé par la comparabilité et les benchmarks",
+        "Joueur d'échecs : anticipe 3 coups à l'avance"
+      ],
+      "motivations_profondes": [
+        "Démontrer à sa direction qu'il optimise chaque euro dépensé",
+        "Être reconnu comme l'acheteur le plus redoutable du secteur",
+        "Négocier pour négocier, même quand le prix est déjà bon",
+        "Prouver que personne ne lui fait porter le chapeau d'un mauvais deal"
+      ],
+      "peurs_freins": [
+        "Passer pour un pigeon qui a payé plus cher que le concurrent d'à côté",
+        "Se faire court-circuiter par sa direction générale",
+        "Être dépendant d'un fournisseur unique",
+        "Que ses homologues d'autres groupes apprennent qu'il a mal négocié"
+      ],
+      "rapport_aux_commerciaux": "Considère 90% des commerciaux comme des menteurs sympathiques. Respecte ceux qui tiennent tête avec des arguments chiffrés. Méprise ceux qui lâchent trop vite.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant. Tutoiement rapide pour créer une fausse proximité qui cache le rapport de force. 'Alors mon petit gars, on va voir ce que tu as dans le ventre'",
+      "signaux_interet": [
+        "Commence à prendre des notes manuscrites sur un Moleskine noir",
+        "Demande des précisions ultra-techniques sur les délais de livraison",
+        "Mentionne 'ses contraintes budgétaires' plutôt que 'c'est trop cher'",
+        "Évoque subtilement un problème actuel avec le fournisseur en place",
+        "Teste des configurations ou volumes différents pour voir la flexibilité tarifaire"
+      ],
+      "signaux_rejet": [
+        "Soupir appuyé suivi de 'Écoute...'",
+        "Regarde ostensiblement sa montre Seiko",
+        "Sort la phrase assassine : 'Je vais être transparent avec toi'",
+        "Compare à voix haute avec 'ce que proposent les deux autres'",
+        "Pose des questions pièges sur des clauses contractuelles improbables"
+      ],
+      "tics_langage": [
+        "Abuse du 'franchement' pour créer une fausse complicité",
+        "Utilise 'on va pas se mentir' avant de mentir sur ses vrais critères",
+        "Dit 'je te fais confiance' pour mieux te mettre la pression ensuite",
+        "Expressions : 'Soyons factuels', 'Les chiffres sont les chiffres', 'C'est du win-win ou rien'",
+        "Ponctue de 'hein ?' pour forcer l'acquiescement"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant de couper avec une question déstabilisante. Déteste les présentations PowerPoint de plus de 5 slides. Apprécie les échanges ping-pong où il garde le contrôle du tempo."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Le groupe vient de racheter 3 nouvelles concessions. La direction exige une réduction de 8% des coûts d'exploitation sur 18 mois. Thierry doit renégocier TOUS les contrats fournisseurs pour montrer des quick-wins. Le DAF surveille de près.",
+      "priorites_actuelles": [
+        "Standardiser les achats sur les 14 sites pour mutualiser",
+        "Réduire le nombre de fournisseurs de 40%",
+        "Sécuriser les approvisionnements face aux tensions sectorielles",
+        "Montrer un reporting d'économies réalisées au CODIR mensuel",
+        "Renégocier le contrat actuel avant la date anniversaire dans 6 semaines"
+      ],
+      "experience_avec_offre_similaire": "Travaille depuis 4 ans avec le fournisseur actuel. Relation correcte mais pas d'exclusivité. A déjà testé 2 autres solutions il y a 18 mois mais n'a pas switché à cause du coût de changement. Connaît parfaitement le marché.",
+      "fournisseur_actuel": "Sous contrat avec Automotive Solutions France. Satisfait à 70% mais persuadé qu'il paie 15% trop cher. A identifié 3 irritants opérationnels qu'il utilise comme levier de négociation.",
+      "budget_disponible": "Entre 180K€ et 240K€ annuels selon le périmètre. Budget validé mais avec obligation de justifier tout dépassement de 190K€. A une enveloppe 'investissement' de 45K€ séparée si ROI <24 mois démontré."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Présenter un benchmark précis du marché avec sources vérifiables",
+        "Proposer une phase pilote sur 2-3 concessions avec KPIs mesurables",
+        "Chiffrer précisément les coûts de non-qualité du fournisseur actuel",
+        "Montrer une clause de sortie facile (rassure sur le risque d'engagement)",
+        "Évoquer d'autres groupes de concessions clients sans les nommer",
+        "Accepter un paiement étalé aligné sur les économies générées",
+        "Proposer un audit gratuit qui révèle des gaspillages cachés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Critiquer directement le fournisseur actuel (il l'a choisi, donc tu le critiques lui)",
+        "Refuser de donner une fourchette de prix dès le premier échange",
+        "Être trop rigide sur les conditions commerciales standards",
+        "Utiliser un jargon marketing creux sans chiffres derrière",
+        "Ne pas connaître les spécificités du secteur automobile",
+        "Donner l'impression qu'on est désespéré de signer",
+        "Mentionner qu'on n'a jamais travaillé avec des groupes de concessions",
+        "Proposer un contrat de plus de 3 ans sans clause de renégociation"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, franchement, je vais être transparent avec toi : on est déjà en discussion avancée avec deux autres fournisseurs. Je te laisse 10 minutes, mais faut que tu me dises direct ce qui te différencie, hein ?",
+        "sous_texte": "Je te mets la pression d'emblée pour que tu balances ton meilleur prix tout de suite. Je teste aussi si tu paniques ou si tu tiens la route.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas paniquer ni dévoiler son prix. Poser une question sur les critères de sélection au-delà du prix pour reprendre le contrôle."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Automotive Solutions nous accompagne depuis 4 ans, on a pas à se plaindre... Enfin bon, on réévalue tout actuellement, c'est la procédure.",
+        "sous_texte": "Je minimise les irritants pour ne pas montrer mon jeu. Je veux voir si tu vas creuser ou si tu te contentera de cette version lisse.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la relation existante puis questionner finement sur les zones d'amélioration souhaitées sans attaquer frontalement le concurrent."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Soyons factuels : qu'est-ce qui me garantit que tu seras 15% moins cher qu'eux ? Parce que franchement, si c'est pour payer pareil, je vais pas me fatiguer à changer de fournisseur.",
+        "sous_texte": "Je fixe un objectif de réduction arbitraire pour tester ta réaction. Je veux voir si tu vas céder sur le prix ou argumenter sur la valeur.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter le 15% comme référence. Questionner d'abord les vrais coûts cachés et critères de décision avant de parler prix."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Les chiffres sont les chiffres : on doit réduire nos coûts d'exploitation de 8% sur 18 mois. C'est pas négociable, c'est la direction générale qui l'exige. Donc ta proposition, elle doit s'inscrire là-dedans.",
+        "sous_texte": "Je te donne une info vraie mais je l'utilise comme levier. Je veux que tu t'alignes sur MA contrainte sans que je révèle mon vrai budget.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser comment cette réduction sera mesurée et sur quels postes, pour identifier où créer de la valeur au-delà du seul prix d'achat."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, tu me poses beaucoup de questions là... On va pas se mentir, j'ai pas trois heures devant moi. Tu as un benchmark du marché à me montrer ou pas ?",
+        "sous_texte": "Ta découverte m'agace parce qu'elle retarde le moment où je pourrai comparer les prix. Je teste si tu vas capituler et passer en mode présentation.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser justement l'importance des questions pour éviter une proposition à côté de la plaque. Donner un timing précis de l'échange."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien tout ça, mais concrètement, les deux autres me proposent une phase pilote sur 3 concessions. Vous, vous me parlez d'un déploiement groupe direct. Franchement, c'est risqué pour moi, hein ?",
+        "sous_texte": "Je teste ta flexibilité commerciale. Je veux voir si tu peux t'adapter ou si ton offre est rigide. Je commence aussi à mettre les concurrents en avant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'idée du pilote mais structurer les conditions (périmètre, KPIs, durée) pour éviter un pilote qui s'éternise sans décision."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ton ROI à 24 mois, c'est sur la base de quelles hypothèses exactement ? Parce que je te fais confiance, mais le DAF va me démonter si c'est du pipeau.",
+        "sous_texte": "Je veux des chiffres vérifiables. Je teste aussi la solidité de ton argumentaire financier. Si tu flottes, je vais négocier encore plus dur.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler les hypothèses avec transparence, proposer de co-construire le calcul avec ses propres données pour ancrer la crédibilité."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, soyons pragmatiques : Automotive Solutions m'a envoyé leur contre-proposition hier. Ils s'alignent sur 12% de réduction et ils rajoutent un accompagnement formation. Comment tu te positionnes par rapport à ça ?",
+        "sous_texte": "Je monte la pression concurrentielle. Cette contre-offre existe peut-être... ou pas. Je veux que tu t'alignes ou que tu baisses encore ton prix.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas entrer dans la surenchère. Recentrer sur les critères de décision au-delà du prix et questionner la qualité réelle de cette contre-offre."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vois que tu connais ton sujet, mais franchement, tu m'as toujours pas donné de fourchette de prix. On va pas y passer la journée, les chiffres sont les chiffres.",
+        "sous_texte": "Je perds patience ou je joue l'impatience. Je veux le prix MAINTENANT pour pouvoir comparer et négocier. Je teste ta résistance.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette large conditionnée au périmètre exact, puis continuer la découverte pour affiner avant de chiffrer précisément."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, ton offre est intéressante, je dis pas le contraire. Mais là, on va pas se mentir, je peux pas valider à ce prix-là. Il me faut 10% de mieux, sinon ça passe pas en CODIR.",
+        "sous_texte": "J'aime ton offre mais je DOIS négocier pour prouver que je fais mon job. Le CODIR est un alibi commode. Je teste ta dernière marge de manœuvre.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas céder directement. Proposer des contreparties (engagement volume, durée, référence) ou des options de valeur ajoutée plutôt qu'une baisse sèche."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème, c'est votre clause d'engagement sur 3 ans. Franchement, dans le contexte actuel, je peux pas me permettre de me bloquer aussi longtemps. Les deux autres proposent du annuel reconductible.",
+        "sous_texte": "C'est une vraie préoccupation de flexibilité. Mais je l'utilise aussi comme levier pour obtenir un meilleur prix sur une durée plus courte.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une clause de renégociation annuelle indexée sur des KPIs plutôt qu'un engagement annuel qui empêche de valoriser une relation long terme."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, soyons clairs : j'ai ma réunion d'arbitrage dans 8 jours. Il me faut ta meilleure offre finale d'ici 48h maximum, sinon je vais devoir avancer avec un des deux autres. C'est comme ça, hein ?",
+        "sous_texte": "Je crée une urgence artificielle pour te faire lâcher ta dernière marge. La deadline existe peut-être, mais les 48h sont un test de ta flexibilité.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter le timing mais conditionner la meilleure offre à une réponse ferme de sa part dans le même délai. Inverser la pression."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je te sens tendu sur les conditions de paiement. On peut pas faire du 60 jours fin de mois ? C'est notre standard groupe, tous nos fournisseurs acceptent ça.",
+        "sous_texte": "Je teste ton seuil de tolérance sur les conditions. Je sais que c'est un levier négociation puissant. Je veux voir ce que tu es prêt à lâcher.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Comprendre l'enjeu trésorerie mais négocier une contrepartie (escompte, engagement, etc.) plutôt que de céder cette marge cachée."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être transparent avec toi : ton offre est dans le trio de tête, mais à ce stade, vous êtes 15K€ au-dessus des deux autres sur l'année. C'est du win-win ou rien pour moi.",
+        "sous_texte": "Je révèle un écart (vrai ou gonflé) pour te forcer à t'aligner. J'utilise le 'win-win' pour masquer que je cherche surtout MON win.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Questionner les éléments comparés (même périmètre ? mêmes services ?) et revaloriser les différenciateurs plutôt que s'aligner aveuglément."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute, j'apprécie la discussion qu'on a eue, franchement. Mais là, concrètement, je peux pas défendre ton offre en l'état devant ma direction. Il me faut soit une réduction supplémentaire de 12K€ sur l'année, soit tu me rajoutes le module formation dans le package sans surcoût. Sinon, on va pas se mentir, je vais devoir partir sur un des deux autres. C'est les chiffres qui parlent, hein ? Qu'est-ce que tu peux faire pour moi ?",
+      "condition_declenchement": "Après une négociation déjà serrée, quand le commercial pense avoir donné son meilleur prix. Thierry sort cette dernière salve pour arracher un ultime geste commercial."
+    },
+    "pattern_escalade": "Thierry commence cordial et curieux en accroche. En découverte, il teste la solidité du commercial avec des questions pièges et des références aux concurrents. En argumentation, il monte progressivement la pression concurrentielle et les contraintes budgétaires. Au closing, il combine urgence artificielle + écart de prix + demande de geste final. Si le commercial tient bon sur la valeur, il finit par révéler ses vrais critères de décision. S'il sent une faiblesse, il enfonce le clou jusqu'à obtenir le maximum de concessions.",
+    "piege_classique": "Thierry donne l'impression d'être uniquement focus prix pour faire baisser les tarifs, mais ses vrais critères sont : 1) Sécurité d'approvisionnement sur 14 sites, 2) Réactivité opérationnelle (a des irritants avec le fournisseur actuel qu'il ne révèle pas d'emblée), 3) Capacité à montrer des quick-wins mesurables à sa direction. Le commercial qui rentre dans la guerre des prix sans découvrir ces critères cachés perd la vente ou la gagne avec une marge massacrée. L'autre piège : Thierry respecte les commerciaux qui lui tiennent tête avec des arguments factuels, mais méprise ceux qui cèdent trop vite, ce qui paradoxalement tue la relation future même si le contrat est signé."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur secteur automobile",
+      "description": "Fournisseur BtoB pour groupes de concessions automobiles multi-marques ou équipementiers automobiles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux groupes de concessions automobiles ou équipementiers",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'entreprise cliente",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre la valeur de leur offre, identifier les vrais critères de décision cachés derrière la pression prix, et closer efficacement face à un acheteur professionnel qui utilise le levier concurrentiel",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Directeur Achats Groupe Automobile",
+    "vous_etes": "Commercial senior chez FleetConnect Solutions, spécialiste des solutions de gestion d'atelier pour groupes de concessions automobiles.",
+    "vous_vendez": "Solution SaaS de pilotage atelier multi-sites (planning techniciens, gestion pièces, facturation) — 220K€/an pour 14 concessions.",
+    "vous_appelez": "Thierry Masdeboeuf, 51 ans, Directeur des Achats et Services du Groupe Horizon Auto (14 concessions, 340 salariés). Acheteur professionnel redoutable, obsédé par les benchmarks, qui négocie pour négocier. Vous met en concurrence avec 2 autres fournisseurs.",
+    "ce_que_vous_savez": [
+      "Thierry doit réduire les coûts de 8% sous 18 mois suite au rachat de 3 nouvelles concessions",
+      "Il travaille depuis 4 ans avec Automotive Solutions France mais pense payer 15% trop cher",
+      "Le contrat actuel arrive à échéance dans 6 semaines — il DOIT décider maintenant",
+      "Il a un budget validé entre 180K€ et 240K€, avec une enveloppe investissement de 45K€ si ROI <24 mois",
+      "Votre offre à 220K€ est 12% plus chère que le fournisseur actuel, mais élimine 58K€ de coûts cachés annuels"
+    ],
+    "votre_objectif": "Closer la signature aujourd'hui en défendant votre valeur face à la pression prix, sans céder sur les conditions commerciales.",
+    "vos_atouts": [
+      "ROI démontré à 16 mois chez 3 groupes de concessions comparables (Groupe Atlantique Auto, Réseau Grand Ouest)",
+      "Interface unique qui élimine 8h/semaine de double-saisie par concession = 43K€ économisés/an",
+      "Module de prévision de charge atelier qui réduit les heures creuses de 23% (cas client Groupe Véhicules Premium)",
+      "Clause de sortie à 3 mois après la première année — risque limité pour Thierry"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:29:40Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15374,
+    "total_time_s": 140.3
+  }
+}

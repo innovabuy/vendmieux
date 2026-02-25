@@ -1,0 +1,368 @@
+{
+  "id": "scenario_1771522510",
+  "description_originale": "Le gérant / directeur d'agence d'une cabinet de courtage ou agence d'assurance de 10-30 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : finance_assurance]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme (nature exacte non spécifiée)",
+      "proposition_valeur_presumee": "Valeur ajoutée supérieure par rapport à l'offre actuelle, amélioration de la solution existante",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée du service complémentaire"
+      ],
+      "implicites": [
+        "Justifier un investissement supplémentaire alors que le client est déjà satisfait",
+        "Éviter que le client perçoive l'appel comme purement commercial",
+        "Transformer la satisfaction actuelle en besoin d'amélioration",
+        "Risque de commoditisation de l'offre actuelle"
+      ],
+      "probleme_racine": "Difficulté à créer un besoin ou une urgence chez un client satisfait de la solution actuelle"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à réaliser des ventes additionnelles (upsell) auprès de clients existants satisfaits en faisant percevoir la valeur ajoutée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B destinés aux cabinets de courtage et agences d'assurance",
+      "entreprise_description": "Entreprise fournissant des solutions/services aux professionnels de l'assurance, ayant une base client établie depuis au moins 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou version premium d'une offre existante déjà utilisée par le client depuis 1 an",
+      "proposition_valeur": "Amélioration des performances, optimisation ou extension des capacités de la solution actuelle déjà appréciée",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Le client lui-même utilise déjà la solution de base depuis 1 an avec satisfaction"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance des besoins client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service vendu initialement",
+        "Nature du service complémentaire/montée en gamme proposé",
+        "Fourchette de prix",
+        "Objections typiques rencontrées",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delorme",
+      "age": 52,
+      "poste": "Gérant - Directeur d'agence",
+      "entreprise": {
+        "nom": "Delorme Courtage & Patrimoine",
+        "secteur": "Courtage en assurances et gestion de patrimoine",
+        "taille": "17 salariés (12 conseillers, 3 gestionnaires, 2 assistantes)",
+        "ca_approximatif": "1,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers le 'bullshit commercial'",
+        "Fidèle mais calculateur sur le ROI"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa réputation locale irréprochable",
+        "Prouver qu'une PME familiale peut rivaliser avec les réseaux",
+        "Transmettre une entreprise saine à son fils dans 8-10 ans",
+        "Ne pas se faire avoir comme avec son ancien prestataire télécom"
+      ],
+      "peurs_freins": [
+        "Payer pour des fonctionnalités qu'il n'utilisera jamais",
+        "Être perçu par ses équipes comme 'celui qui dépense n'importe comment'",
+        "Déstabiliser une organisation qui tourne bien",
+        "Dépendance excessive à un fournisseur unique"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Déteste qu'on le tutoie. Apprécie la franchise brutale plutôt que le discours lissé. A horreur des 'j'vous rappelle la semaine prochaine' qui n'aboutissent jamais",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Poli mais pressé. 'Oui bonjour, je vous écoute mais j'ai un client dans 20 minutes'",
+      "signaux_interet": [
+        "Pose des questions chiffrées précises sur le ROI",
+        "Mentionne spontanément un problème opérationnel actuel",
+        "Demande 'Combien de mes confrères l'ont pris ?'",
+        "Silence attentif de 3-4 secondes (= il calcule)"
+      ],
+      "signaux_rejet": [
+        "Commence ses phrases par 'Écoutez hein...'",
+        "Soupir audible avant de répondre",
+        "Coupe la parole avec 'Ouais ouais j'ai compris'",
+        "Utilise le 'vous' de distanciation : 'C'est bien ce que VOUS proposez mais...'",
+        "Phrase fatale : 'J'vais y réfléchir' (= non définitif)"
+      ],
+      "tics_langage": [
+        "'Franchement' (à chaque début de phrase critique)",
+        "'On va pas se mentir'",
+        "'Dans les faits' (pour contredire)",
+        "Abuse du 'hein' en fin de phrase",
+        "'C'est du vécu' (quand il évoque une mauvaise expérience)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper. Au-delà, décroche mentalement et consulte ses mails"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable +8% sur 2024. Vient de recruter 2 conseillers juniors qui rament sur les outils. Pression concurrentielle accrue d'un réseau national qui s'est implanté à 3km. Objectif 2025 : digitaliser le parcours client sans perdre la touche humaine",
+      "priorites_actuelles": [
+        "Former rapidement les 2 nouvelles recrues",
+        "Automatiser la gestion administrative chronophage",
+        "Conserver ses gros clients face à la concurrence",
+        "Préparer la certification ORIAS renforcée 2025"
+      ],
+      "experience_avec_offre_similaire": "Utilise l'offre de base depuis 13 mois. Globalement satisfait ('ça fait le job'). A eu 2 bugs mineurs résolus rapidement. Apprécie le support technique réactif. N'utilise que 60% des fonctionnalités disponibles par méconnaissance",
+      "fournisseur_actuel": "Votre entreprise pour la solution de base + un CRM historique (qu'il trouve 'usine à gaz') + un prestataire compta externe",
+      "budget_disponible": "Entre 3 000€ et 8 000€ d'investissement supplémentaire envisageable si ROI démontré sous 6-9 mois. Budget formation quasi nul (compte sur la prise en main intuitive)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner concrètement le gain de temps chiffré en heures/semaine",
+        "Évoquer ce que font 'les confrères de sa taille' qui ont sauté le pas",
+        "Pointer un risque concurrentiel ou réglementaire précis qu'il n'a pas anticipé",
+        "Proposer un test gratuit de 15 jours avec ses vrais dossiers",
+        "Reconnaître franchement les limites de l'offre premium ('C'est pas pour tout le monde')",
+        "Parler formation des juniors et courbe d'apprentissage raccourcie"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Critiquer l'offre actuelle qu'il utilise déjà (= critiquer son choix)",
+        "Discours générique sur 'la transformation digitale' sans ancrage concret",
+        "Surpression commerciale type 'offre valable jusqu'à vendredi'",
+        "Comparer son agence à des structures de 100+ salariés",
+        "Minimiser ses objections budgétaires ('C'est rien 5 000€ pour vous')",
+        "Jargon technique non traduit en bénéfice métier",
+        "Sous-entendre que ses équipes sont incompétentes avec les outils actuels"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en rdv client dans 15 minutes là, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis occupé et je veux savoir si ça vaut le coup d'écouter ou si je peux couper court poliment",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Annoncer immédiatement un bénéfice chiffré concret + durée de l'échange (max 8 min)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, votre solution de base je l'utilise déjà et ça fait le job hein. Pourquoi vous m'appelez ?",
+        "sous_texte": "Je suis satisfait, je détecte une tentative de vente additionnelle, prouvez-moi que ce n'est pas juste du commercial",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa satisfaction + pointer un angle mort qu'il n'a pas identifié (nouvelles recrues, conformité 2025, concurrence locale)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attendez, j'utilise même pas tout ce qu'il y a dans l'offre actuelle. Pourquoi j'irais prendre plus ?",
+        "sous_texte": "Je ne veux pas payer pour des fonctionnalités inutilisées. Prouvez-moi que je ne jette pas l'argent par les fenêtres",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître ce fait + expliquer que le premium cible un problème DIFFÉRENT (pas 'plus de fonctionnalités' mais 'autre usage')"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Dans les faits, mes deux nouvelles recrues rament déjà sur l'outil actuel. Vous voulez que je leur en rajoute une couche ?",
+        "sous_texte": "J'ai un vrai problème de montée en compétence, votre offre va compliquer les choses plutôt que les simplifier",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Retourner l'objection : l'offre premium RÉDUIT la courbe d'apprentissage grâce à l'automatisation/simplification"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On va pas se mentir, j'ai eu un prestataire télécom qui m'a vendu un truc premium y'a 3 ans, j'ai jamais vu la différence. C'est du vécu.",
+        "sous_texte": "J'ai été échaudé, je suis méfiant sur les promesses de montée en gamme. Prouvez-moi que ce n'est pas du vent",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie + demander ce qui n'avait pas fonctionné précisément + démontrer la différence MESURABLE avec test gratuit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien ce que VOUS proposez mais franchement, combien de mes confrères de ma taille l'ont vraiment pris ?",
+        "sous_texte": "Je veux une preuve sociale. Si peu de mes pairs l'ont adopté, c'est peut-être que ce n'est pas pertinent pour ma taille",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un chiffre précis + profil similaire + témoignage concret avec gain mesuré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de gain de temps, mais concrètement on parle de combien d'heures par semaine ? Parce que là j'ai besoin de chiffres.",
+        "sous_texte": "Je suis intéressé mais je calcule le ROI. Donnez-moi du concret ou je décroche",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner un chiffre réaliste et vérifiable (ex: 4-6h/semaine sur telle tâche) + méthode de calcul"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais j'ai compris, mais avec le réseau [concurrent] qui s'est installé à 3 bornes, je dois faire gaffe à chaque euro qui sort hein.",
+        "sous_texte": "Je suis sous pression concurrentielle, j'ai peur d'investir au mauvais endroit. Montrez-moi comment ça m'aide face à cette menace",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Retourner l'objection : l'offre premium est justement un avantage compétitif face aux réseaux (différenciation service)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez hein, si je prends ça, mes équipes vont penser que je dépense n'importe comment. Il faut que je justifie auprès d'eux.",
+        "sous_texte": "J'ai besoin de légitimer cette décision en interne. Donnez-moi des arguments pour mes collaborateurs",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Fournir un 'kit de communication interne' : bénéfices pour EUX (facilité au quotidien, moins de tâches ingrates)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau formation, parce que là j'ai pas de budget formation, ça demande combien de temps de prise en main ?",
+        "sous_texte": "Je veux que ce soit immédiatement opérationnel sans coût caché de formation",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rassurer : formation incluse + interface intuitive + support dédié 2 premiers mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans les faits, je dépends déjà pas mal de vous pour la solution de base. Si je prends le premium, je me mets encore plus dans vos mains non ?",
+        "sous_texte": "Je crains la dépendance excessive à un fournisseur unique. Que se passe-t-il si vous augmentez les prix ou si ça se passe mal ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la question légitime + garanties contractuelles + réversibilité possible + track record de stabilité tarifaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, votre truc il est bien pour les grosses structures, mais nous on est une PME familiale. C'est pas dimensionné pour nous.",
+        "sous_texte": "Je veux être sûr que ce n'est pas surdimensionné par rapport à mes besoins réels",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Contrer avec des références précises de PME 10-25 salariés + version adaptée aux structures comme la sienne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant mais là je dois filer. J'vais y réfléchir et je vous rappelle.",
+        "sous_texte": "Je veux me débarrasser poliment de vous. 'J'y réfléchis' = non définitif dans 80% des cas",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS accepter ce faux-fuyant. Demander : 'Christophe, on va pas se mentir, qu'est-ce qui vous bloque vraiment ?' (utiliser son propre langage)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais combien ça coûte exactement ? Parce que si c'est pour me dire 'ça dépend', je perds mon temps.",
+        "sous_texte": "Je veux un chiffre clair immédiatement. Si vous bottez en touche, je considère que c'est trop cher",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette précise immédiatement + lier au ROI déjà évoqué (X€ pour X heures gagnées = Y€ économisés)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, entre 3 et 8 000 balles d'investissement supplémentaire, il faut que je sois SÛR du retour. Vous me garantissez quoi ?",
+        "sous_texte": "Je suis presque convaincu mais j'ai besoin d'une sécurité, d'un filet. Réduisez mon risque perçu",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer test gratuit 15 jours avec ses vrais dossiers + engagement de résultat chiffré sur 6 mois ou remboursement partiel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, si je prends ça aujourd'hui, vous m'faites pas une remise quand même ? Y'a bien un geste commercial possible.",
+        "sous_texte": "Je suis preneur MAIS je teste votre marge de manœuvre. Tout bon acheteur négocie. C'est aussi une question de principe",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas brader. Proposer valeur ajoutée (formation extended, accompagnement perso) plutôt que remise sèche"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, la certification ORIAS 2025 qui arrive, votre offre premium elle couvre bien cet aspect réglementaire ? Parce que sinon...",
+        "sous_texte": "Je découvre un bénéfice supplémentaire potentiel. Si vous confirmez, c'est un argument décisif pour moi",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Confirmer fermement + détailler comment le premium facilite la mise en conformité (traçabilité, reporting...)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, j'suis pas contre mais je veux qu'on fasse un point dans 3 mois pour voir si ça vaut vraiment le coup. C'est possible ça ?",
+        "sous_texte": "Je suis prêt à signer MAIS je veux garder le contrôle et avoir une porte de sortie ou ajustement",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accepter et formaliser : RDV bilan à 3 mois prévu dès maintenant + KPI à suivre ensemble"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, franchement c'est intéressant tout ça, mais là avec la fin d'année qui approche, les budgets 2025 à boucler, et tout le bazar, je préfère qu'on revoie ça en janvier quand ce sera plus calme. Vous me rappelez début d'année hein.",
+      "condition_declenchement": "Apparaît si le vendeur n'a pas su créer d'urgence ou pointer un risque d'attendre (hausse tarifaire, place limitée, avantage concurrentiel immédiat). Le prospect botte en touche avec une excuse calendaire légitime."
+    },
+    "pattern_escalade": "Christophe commence poli mais pressé (phase test). Si le vendeur résiste aux premières objections réflexes avec des arguments concrets chiffrés, il s'ouvre progressivement et pose des questions sincères précises (phase intérêt). Si le vendeur fait du baratin ou généralise, il durcit le ton avec des 'Écoutez hein...' et coupe court. Si le vendeur parle ROI + pairs + risque concurrentiel, il passe en mode calculateur ('combien exactement ?'). L'escalade positive suit cette séquence : méfiance initiale → questions chiffrées → demande preuve sociale → négociation finale → accord conditionnel à un test ou un suivi. L'escalade négative : méfiance → impatience → soupirs → phrase fatale 'j'vais y réfléchir' = fin de l'échange.",
+    "piege_classique": "Le vendeur croit avoir gagné quand Christophe dit 'Oui c'est intéressant'. ERREUR : c'est juste de la politesse. Le vrai signal d'achat c'est quand il pose des questions opérationnelles concrètes type 'Ça se met en place en combien de temps ?' ou 'Qui serait mon interlocuteur dédié ?'. Autre piège : accepter le 'je vous rappelle' sans creuser la vraie objection. Christophe ne rappellera JAMAIS. Il faut le confronter directement avec son propre langage : 'Christophe, on va pas se mentir, qu'est-ce qui coince vraiment ?'"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B destinés aux cabinets de courtage et agences d'assurance",
+      "description": "Entreprise fournissant des solutions/services aux professionnels de l'assurance, ayant une base client établie depuis au moins 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou version premium d'une offre existante déjà utilisée par le client depuis 1 an",
+      "proposition_valeur": "Amélioration des performances, optimisation ou extension des capacités de la solution actuelle déjà appréciée",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Le client lui-même utilise déjà la solution de base depuis 1 an avec satisfaction"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance des besoins client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à réaliser des ventes additionnelles (upsell) auprès de clients existants satisfaits en faisant percevoir la valeur ajoutée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance commerciale — Montée en gamme client satisfait",
+    "vous_etes": "Commercial account manager en charge du portefeuille clients courtage assurance.",
+    "vous_vendez": "La version Premium de votre solution actuelle, avec modules avancés d'automatisation et formation équipe incluse.",
+    "vous_appelez": "Christophe Delorme, 52 ans, gérant de Delorme Courtage & Patrimoine (17 salariés, Rhône). Pragmatique, direct, allergique au bullshit. Apprécie la franchise brutale.",
+    "ce_que_vous_savez": [
+      "Client depuis 13 mois sur votre offre de base, globalement satisfait",
+      "Vient de recruter 2 conseillers juniors qui peinent sur les outils actuels",
+      "Croissance +8% en 2024, pression concurrentielle d'un réseau national implanté à 3km",
+      "N'utilise que 60% des fonctionnalités disponibles, budget dispo estimé 3-8K€",
+      "Certification ORIAS renforcée 2025 en préparation"
+    ],
+    "votre_objectif": "Lui vendre l'upgrade Premium en ancrant la valeur sur ses 2 problèmes concrets : formation rapide des juniors + gain temps administratif face à la concurrence.",
+    "vos_atouts": [
+      "Relation établie — il connaît votre support réactif",
+      "Modules de formation intégrés avec courbe d'apprentissage 3x plus rapide",
+      "ROI démontré chez 8 confrères de taille similaire (gain 6h/semaine/conseiller)",
+      "Période d'essai 15 jours sur ses vrais dossiers sans engagement"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:35:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15007,
+    "total_time_s": 133.3
+  }
+}

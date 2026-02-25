@@ -1,0 +1,338 @@
+{
+  "id": "scenario_1771518891",
+  "description_originale": "Le fondateur / associé gérant d'une cabinet de gestion de patrimoine de 5-15 conseillers (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : banque_patrimoine]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "fondateur / associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution ou service B2B destiné aux cabinets de gestion de patrimoine",
+      "proposition_valeur_presumee": "amélioration de la performance, de la qualité de service ou de l'efficacité opérationnelle des conseillers en gestion de patrimoine",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "présence de concurrents mentionnée implicitement par la menace de départ"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "problème de livraison, service ou qualité ayant généré une insatisfaction majeure",
+        "risque de perte d'un client existant",
+        "menace de basculement vers la concurrence"
+      ],
+      "implicites": [
+        "déficit de gestion de la relation client après-vente",
+        "manque de processus de détection précoce des problèmes",
+        "écart entre promesse commerciale et réalité opérationnelle",
+        "absence de suivi proactif client",
+        "défaillance interne (production, livraison ou service client)"
+      ],
+      "probleme_racine": "gestion défaillante de la satisfaction client et absence de processus de gestion des réclamations permettant de transformer un problème en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "problème de qualité/livraison/service",
+      "menace de partir à la concurrence"
+    ],
+    "objectif_formation": "former les commerciaux à gérer les réclamations clients, désamorcer les situations de crise, pratiquer l'écoute active en situation de tension, proposer des solutions adaptées et préserver voire renforcer la relation commerciale malgré l'incident",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B aux professionnels de la banque et du patrimoine",
+      "entreprise_description": "fournisseur de solutions ou services destinés aux cabinets de gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service ayant fait l'objet d'une livraison/prestation défaillante auprès d'un cabinet de gestion de patrimoine",
+      "proposition_valeur": "accompagnement et amélioration de la performance des cabinets de gestion de patrimoine",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée indéterminée"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du problème (livraison/service/qualité)",
+        "nature précise de l'offre du vendeur",
+        "historique commercial avec le client",
+        "détails sur les solutions concurrentes",
+        "montant du contrat en jeu"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe",
+      "nom": "Derveaux",
+      "age": 52,
+      "poste": "Fondateur & Associé Gérant",
+      "entreprise": {
+        "nom": "Patrimoine Conseils Associés",
+        "secteur": "Gestion de patrimoine et conseil financier",
+        "taille": "11 conseillers + 4 back-office",
+        "ca_approximatif": "2,8M€ (dont 40% récurrent sur honoraires)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeant jusqu'à l'intransigeance sur la qualité",
+        "Méfiant depuis une mauvaise expérience avec un prestataire IT en 2019",
+        "Protecteur envers son équipe et sa réputation"
+      ],
+      "motivations_profondes": [
+        "Préserver la réputation du cabinet bâtie en 18 ans",
+        "Protéger ses conseillers de toute complication administrative ou technique",
+        "Démontrer à ses associés minoritaires qu'il prend les bonnes décisions stratégiques"
+      ],
+      "peurs_freins": [
+        "Que ses clients finals découvrent des dysfonctionnements et perdent confiance",
+        "Être perçu comme celui qui a choisi le mauvais prestataire",
+        "Perdre du temps en réunions inutiles alors qu'il a 3 RDV clients par jour",
+        "Se faire avoir une deuxième fois par des promesses non tenues"
+      ],
+      "rapport_aux_commerciaux": "Respecte ceux qui vont droit au but et assument leurs erreurs. Déteste le baratin, les excuses toutes faites et ceux qui rejettent la faute sur leurs équipes techniques. A tendance à couper court si on lui fait perdre son temps.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, cassant, avec une pointe d'agacement contenu. Commence souvent par 'Oui, je vous écoute' sur un ton qui signifie exactement l'inverse.",
+      "signaux_interet": [
+        "Arrête de faire autre chose (on entend qu'il pose son stylo)",
+        "Pose des questions précises sur les délais : 'Concrètement, quand ?'",
+        "Mentionne ses conseillers : 'Parce que mes équipes...'",
+        "Demande confirmation écrite : 'Vous me l'envoyez par mail ?'"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Phrases courtes et sèches : 'Oui. Et donc ?'",
+        "Interruptions : 'Attendez, là je vous arrête...'",
+        "Évoque la concurrence : 'J'ai trois autres propositions sur mon bureau'",
+        "Regarde sa montre même au téléphone (on le sent dans le débit)"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il est contrarié",
+        "Dit 'Franchement...' avant d'exprimer une critique",
+        "Utilise 'Voilà' pour clore un sujet de façon définitive",
+        "Ponctue de 'C'est simple' quand il explique ce qu'il attend"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : 30 secondes maximum. Au-delà, il coupe ou fait semblant d'avoir un autre appel. Attend des réponses factuelles, pas un pitch commercial."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance ralentie depuis 6 mois (marché nerveux). Deux conseillers seniors partent à la retraite en 2025, recrutement de juniors prévu. Pression sur la qualité de service pour conserver les clients existants face à la concurrence des banques privées.",
+      "priorites_actuelles": [
+        "Finaliser le bilan annuel avec l'expert-comptable (deadline 15 jours)",
+        "Sécuriser le renouvellement de 3 gros contrats clients (1,2M€ cumulé)",
+        "Gérer le départ des seniors et transmettre les portefeuilles",
+        "Éviter toute mauvaise surprise qui déstabiliserait les équipes"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 14 mois. Globalement satisfait les 11 premiers mois, mais le problème récent (livraison incomplète ou service défaillant non précisé) a fait ressurgir sa méfiance naturelle. Se demande s'il n'a pas fait une erreur de jugement.",
+      "fournisseur_actuel": "Votre entreprise (mais considère activement des alternatives depuis l'incident)",
+      "budget_disponible": "Budget déjà alloué dans le contrat actuel. Pas de budget additionnel prévu pour 'réparer' un problème qui n'aurait pas dû exister. Psychologiquement, considère avoir déjà payé pour un service qui n'a pas été rendu."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de l'erreur : 'On a merdé, je le reconnais'",
+        "Plan d'action chiffré avec dates précises (pas de 'rapidement' ou 'sous peu')",
+        "Compensation tangible sans qu'il ait à la demander (geste commercial proactif)",
+        "Engagement personnel du commercial : 'Je m'en occupe personnellement'",
+        "Preuve que le problème a été identifié en interne et corrigé structurellement"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème : 'C'est un incident isolé'",
+        "Rejeter la responsabilité : 'C'était l'équipe technique, pas moi'",
+        "Langue de bois : 'Nous prenons vos remarques très au sérieux'",
+        "Demander du temps sans contrepartie : 'Laissez-nous encore une chance'",
+        "Ne pas avoir préparé l'appel avec les détails du dossier en tête",
+        "Tenter de vendre autre chose : 'Justement, on a une nouvelle offre...'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui, je vous écoute. Mais j'ai trois minutes, là, j'ai un client qui arrive.",
+        "sous_texte": "Je ne vous ai pas pardonné. Prouvez-moi immédiatement que cet appel vaut la peine, sinon je raccroche.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement l'objet précis (reconnaissance + solution + délai) en 15 secondes maximum"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, après ce qui s'est passé, je ne sais même pas pourquoi je décroche encore.",
+        "sous_texte": "Je suis profondément déçu. Vous avez cassé la confiance. Montrez-moi que vous êtes différent des autres commerciaux.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'émotion sans se justifier, puis reconnaissance factuelle de l'erreur avec responsabilité assumée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, vos excuses, j'en ai déjà entendu. Ce que je veux savoir, c'est : concrètement, vous faites quoi ? Et QUAND ?",
+        "sous_texte": "Arrêtez le blabla relationnel. Je suis un chef d'entreprise, donnez-moi des faits, des chiffres, des dates. Sinon c'est du vent.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Plan d'action en 3 points avec dates précises et livrables mesurables, sans conditionnel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème, c'est que j'ai trois autres propositions sur mon bureau. Et eux, au moins, ils ne m'ont pas déçu.",
+        "sous_texte": "Je teste votre réaction. Êtes-vous en position de faiblesse ou allez-vous défendre votre valeur ? Montrez-moi pourquoi je devrais rester.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence, reconnaître sa légitimité à explorer, puis rappeler l'historique positif et le coût caché du changement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez combien de temps mes équipes ont perdu à cause de ça ? Mes conseillers n'ont pas été embauchés pour jouer les hotliners.",
+        "sous_texte": "Vous m'avez fait perdre de l'argent ET vous avez mis mes équipes en difficulté. C'est impardonnable. Comprenez-vous vraiment l'impact ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier l'impact reconnu (heures perdues) et proposer compensation chiffrée + garantie processus révisé"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et qu'est-ce qui me garantit que ça ne va pas recommencer dans deux mois ? Parce que moi, ce genre de problème, je ne peux pas me le permettre.",
+        "sous_texte": "Ma réputation est en jeu. J'ai besoin de certitudes, pas de probabilités. Rassurez-moi avec du concret, pas des promesses.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer la cause racine identifiée + changement structurel mis en place + processus d'alerte précoce désormais actif"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là je vous arrête. Vous êtes en train de me dire que c'était l'équipe technique qui a merdé ? Ça me rassure pas vraiment, ça.",
+        "sous_texte": "N'essayez pas de vous dédouaner. En tant que dirigeant, je sais qu'on est responsable de ses équipes. Assumez globalement ou perdez ma confiance définitivement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reprendre immédiatement la responsabilité collective : 'Non, on a merdé collectivement, moi inclus, et voici ce que j'ai personnellement mis en place'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien joli tout ça, mais concrètement, qu'est-ce que vous me proposez pour compenser le temps et l'argent perdus ?",
+        "sous_texte": "Vous avez cassé quelque chose, il faut réparer. Je n'ai pas à demander réparation, vous devriez me l'offrir spontanément. C'est un test de votre professionnalisme.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposition de compensation concrète chiffrée (avoir, mois offert, prestation gratuite) sans attendre qu'il négocie"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me l'envoyez par mail, ce plan d'action ? Parce que les promesses au téléphone, j'ai donné.",
+        "sous_texte": "Je ne vous fais plus confiance à 100%. Je veux des traces écrites pour pouvoir vous tenir responsable. Montrez-moi que vous êtes transparent.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accord immédiat + proposition d'envoyer dans l'heure avec suivi hebdomadaire formalisé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, j'ai envie de vous croire, mais là mes associés me regardent. Si je me plante une deuxième fois, c'est ma crédibilité qui est en jeu.",
+        "sous_texte": "J'ai une pression interne. Je dois justifier ma décision devant d'autres. Donnez-moi des arguments solides pour défendre le maintien de notre collaboration en comité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un RDV avec les associés pour présentation formelle du plan de remédiation + garanties contractuelles renforcées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui, mais ça, c'est ce que vous auriez dû faire dès le début. Pourquoi je devrais vous applaudir de faire enfin votre boulot correctement ?",
+        "sous_texte": "Vous me présentez la normalité comme un exploit. Je suis agacé que vous attendiez une récompense pour simplement respecter vos engagements de base.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Validation de son point de vue : 'Vous avez raison, c'est le minimum. Ce qui change vraiment, c'est [élément différenciant additionnel]'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais y réfléchir. Là, j'ai vraiment autre chose à gérer. On se rappelle, d'accord ?",
+        "sous_texte": "Je veux sortir de cet appel sans m'engager. Soit je suis vraiment surchargé, soit je n'ai pas eu les garanties suffisantes mais je ne veux pas l'affrontement.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter l'urgence tout en ancrant un prochain point précis : 'Je comprends. Je vous envoie le récap dans l'heure, on se cale 10 min jeudi 14h ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, OK. Mais c'est la dernière fois, hein. Au moindre nouveau couac, je bascule ailleurs. C'est clair ?",
+        "sous_texte": "J'accepte de vous donner une dernière chance, mais ma patience est à zéro. Vous êtes en période probatoire. Ne me décevez pas.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accepter la condition avec sérieux et reconnaissance, confirmer point de suivi rapproché pour prouver le changement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais. On verra bien. De toute façon, j'ai déjà prévu un RDV avec votre concurrent mardi prochain, donc...",
+        "sous_texte": "Test ultime : je veux voir si vous paniquez ou si vous restez professionnel. Votre réaction va me dire si vous êtes vraiment différent ou juste désespéré.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rester digne, valider son droit de comparer, puis focus sur valeur unique et historique : 'C'est normal, comparez. Ce qui nous différencie : [fait concret]'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voilà. Bon, je dois filer là. On verra à l'usage si vous tenez vos promesses cette fois. Mais franchement, j'ai plus trop confiance.",
+      "condition_declenchement": "Après avoir obtenu des engagements formels, reste sceptique. Accepte de continuer mais avec une confiance proche de zéro. À débloquer par la preuve des actes dans les 15 jours."
+    },
+    "pattern_escalade": "Philippe commence cassant et distant (protection). Si reconnaissance sincère et plan concret : il s'adoucit légèrement mais reste méfiant. Teste alors la solidité des engagements par objections tactiques. Si résistance cohérente : accepte de poursuivre sous conditions strictes. Si un seul faux pas : fermeture définitive brutale. La fenêtre de reconquête est de 45 secondes max au début de l'appel.",
+    "piege_classique": "Croire que son acceptation de poursuivre la conversation signifie qu'il a pardonné. En réalité, il reste en mode hyper-vigilance pendant 3 mois minimum. Le vendeur doit sur-délivrer, sur-communiquer et sur-anticiper chaque étape pour reconstruire la confiance. Un seul oubli de reporting et c'est terminé définitivement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B aux professionnels de la banque et du patrimoine",
+      "description": "fournisseur de solutions ou services destinés aux cabinets de gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service ayant fait l'objet d'une livraison/prestation défaillante auprès d'un cabinet de gestion de patrimoine",
+      "proposition_valeur": "accompagnement et amélioration de la performance des cabinets de gestion de patrimoine",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée indéterminée"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "former les commerciaux à gérer les réclamations clients, désamorcer les situations de crise, pratiquer l'écoute active en situation de tension, proposer des solutions adaptées et préserver voire renforcer la relation commerciale malgré l'incident",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client insatisfait — Gestion de crise et réclamation",
+    "vous_etes": "Account Manager chez un fournisseur de services B2B pour cabinets de gestion de patrimoine, en charge du compte Patrimoine Conseils Associés depuis 14 mois.",
+    "vous_vendez": "Une solution d'accompagnement opérationnel pour cabinets de gestion de patrimoine (abonnement annuel, prix non communiqué au prospect à ce stade).",
+    "vous_appelez": "Philippe Derveaux, 52 ans, fondateur et associé gérant de Patrimoine Conseils Associés (11 conseillers, 2,8M€ de CA). Exigeant, directif, cassant quand contrarié. Déteste le baratin et protège farouchement la réputation de son cabinet.",
+    "ce_que_vous_savez": [
+      "Client depuis 14 mois, globalement satisfait jusqu'à récemment",
+      "Un problème de livraison ou de service est survenu et a créé une insatisfaction majeure",
+      "Philippe menace de partir à la concurrence et évalue activement des alternatives",
+      "Il traverse une période tendue : bilan annuel à finaliser, renouvellement de gros contrats clients, départ de deux seniors",
+      "Il a déjà été échaudé par un prestataire IT en 2019 et reste méfiant"
+    ],
+    "votre_objectif": "Désamorcer la crise, reconnaître l'erreur sans détour, présenter un plan d'action concret avec dates précises et préserver la relation commerciale.",
+    "vos_atouts": [
+      "Vous connaissez bien son dossier et pouvez parler en détail de son compte",
+      "Vous avez identifié la cause du problème en interne et mis en place des correctifs structurels",
+      "Vous êtes prêt à proposer une compensation tangible (geste commercial proactif)",
+      "Vous pouvez vous engager personnellement sur le suivi avec un point hebdomadaire jusqu'à résolution complète"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:34:51Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14618,
+    "total_time_s": 124.1
+  }
+}

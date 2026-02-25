@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771518499",
+  "description_originale": "Le directeur du développement ou directeur de réseau d'une banque régionale ou groupe de CGP de 100+ collaborateurs veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : banque_patrimoine]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "visio",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "100+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "Directeur du développement / Directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Possiblement directeur financier",
+        "Directeur des achats",
+        "Comité de direction"
+      ],
+      "zone_geo": "Régionale"
+    },
+    "offre": {
+      "produit_service": "Solution ou service B2B pour banque/CGP",
+      "proposition_valeur_presumee": "Optimisation du développement réseau ou performance commerciale",
+      "fourchette_prix": "Contrat significatif pour structure 100+ personnes",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Négociation des conditions tarifaires",
+        "Mise en concurrence avec 2 autres fournisseurs",
+        "Hésitation avant signature"
+      ],
+      "implicites": [
+        "Pression interne sur le budget",
+        "Besoin de justifier le choix auprès de sa direction",
+        "Crainte de surpayer",
+        "Incertitude sur le ROI réel",
+        "Possibles doutes sur la différenciation de l'offre",
+        "Utilisation des concurrents comme levier de négociation"
+      ],
+      "probleme_racine": "Le commercial doit défendre sa valeur face à une pression tarifaire sans céder sur le prix, tout en identifiant les vrais critères de décision du prospect au-delà du prix"
+    },
+    "objections_mentionnees": [
+      "Vos tarifs sont plus élevés que la concurrence",
+      "J'ai deux autres propositions plus compétitives",
+      "Il faut revoir vos conditions pour qu'on signe",
+      "Votre concurrent propose la même chose moins cher"
+    ],
+    "objectif_formation": "Former les commerciaux à tenir leur valeur en phase de négociation finale, à ne pas brader les prix, à identifier les vrais critères de décision au-delà du tarif, et à closer avec confiance face à la concurrence",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions B2B pour le secteur bancaire et patrimonial",
+      "entreprise_description": "Fournisseur de solutions pour banques régionales et réseaux de conseillers en gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée à améliorer le développement commercial ou la performance du réseau bancaire/CGP",
+      "proposition_valeur": "Différenciation qualitative justifiant un positionnement prix premium vs concurrence",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Autres banques régionales équipées",
+        "Réseaux CGP similaires"
+      ],
+      "avantages_vs_concurrence": "Qualité supérieure, accompagnement, ROI démontré, expertise sectorielle spécifique",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Montant du contrat ou fourchette tarifaire",
+        "Nom de l'entreprise vendeuse",
+        "Durée d'engagement du contrat"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Delvaux",
+      "age": 52,
+      "poste": "Directeur du Développement et de l'Animation Réseau",
+      "entreprise": {
+        "nom": "Banque Régionale du Centre-Ouest (BRCO)",
+        "secteur": "Banque de proximité et gestion de patrimoine",
+        "taille": "142 collaborateurs dont 87 conseillers",
+        "ca_approximatif": "38M€ de PNB annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudence financière obsessionnelle",
+        "Besoin de validation hiérarchique camouflé",
+        "Fierté de négociateur habile"
+      ],
+      "motivations_profondes": [
+        "Être perçu comme celui qui a obtenu le meilleur deal pour la banque",
+        "Ne pas se faire avoir comme lors du fiasco CRM de 2019",
+        "Prouver au DG qu'il maîtrise les dépenses malgré l'ambition commerciale affichée",
+        "Protéger son bonus qui dépend du respect de l'enveloppe budgétaire"
+      ],
+      "peurs_freins": [
+        "Surpayer alors qu'un concurrent fait aussi bien pour moins cher",
+        "Que le DAF lui ressorte dans 6 mois : 'Je t'avais dit de négocier davantage'",
+        "Choisir un prestataire qui ne tient pas ses promesses et entacher sa crédibilité",
+        "Passer pour un pigeon auprès de ses pairs lors des congrès professionnels"
+      ],
+      "rapport_aux_commerciaux": "Méfiance de principe. Les considère comme des 'vendeurs de rêve' qui gonflent la valeur. Apprécie ceux qui résistent à sa pression mais déteste ceux qui le prennent de haut. Respecte secrètement la fermeté argumentée.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec distance calculée. Formules type : 'Écoutez, on va être clairs d'entrée...', 'Soyons pragmatiques', 'Concrètement...'",
+      "signaux_interet": [
+        "Demande des précisions chiffrées sur le ROI observé ailleurs",
+        "Mentionne spontanément des contraintes internes ('le DAF va me demander...')",
+        "Évoque des scénarios d'implémentation précis",
+        "Questionne sur les délais de démarrage",
+        "Sourit légèrement quand on tient tête sur le prix"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Oui, oui, j'ai compris le principe'",
+        "Regarde son téléphone ostensiblement",
+        "Répète mécaniquement 'Vos concurrents proposent X% de moins'",
+        "Soupire avant de parler",
+        "Dit 'On verra' ou 'Faut que j'en parle' sans préciser avec qui ni quand"
+      ],
+      "tics_langage": [
+        "Bon... (en début de phrase pour reprendre le contrôle)",
+        "Très franchement...",
+        "Je vais vous dire...",
+        "Utilise 'nous' au lieu de 'je' pour diluer la responsabilité",
+        "Fait traîner les syllabes : 'Ouaaaais...'",
+        "Soupir audible avant d'annoncer un chiffre concurrent"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Faible. Coupe au bout de 90 secondes max si pas d'interaction. Apprécie les questions qui le font réfléchir plutôt que les exposés. Déteste le jargon commercial ('solutions innovantes', 'écosystème', 'levier de croissance')."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "BRCO sort de 2 années de restructuration coûteuse. Pression du siège pour développer la collecte patrimoine (+15% objectif 2025). Le DG veut moderniser les outils mais le DAF surveille chaque ligne budgétaire. Climat interne tendu entre ambitions et restrictions.",
+      "priorites_actuelles": [
+        "Équiper le réseau d'un outil qui booste réellement la performance commerciale",
+        "Ne pas dépasser l'enveloppe validée de 180K€ sur 3 ans",
+        "Avoir un prestataire qui accompagne vraiment (échaudé par prestataires précédents)",
+        "Pouvoir montrer des résultats mesurables dès le T2 2025 au COMEX"
+      ],
+      "experience_avec_offre_similaire": "En 2019, achat d'un CRM sur-mesure qui a coûté 35% de plus que prévu et n'a jamais vraiment été adopté par les conseillers. Depuis, ultra-vigilant sur les promesses vs réalité terrain. A testé 2 solutions SaaS légères mais jugées trop superficielles.",
+      "fournisseur_actuel": "Utilise un mix d'Excel, d'un vieux logiciel métier et de process manuels. Pas de solution intégrée. Conscient que ça freine mais craint l'investissement hasardeux.",
+      "budget_disponible": "180K€ sur 3 ans validé en principe, mais Stéphane a dit au DAF qu'il négocierait pour descendre à 160K€. En interne, il a marge jusqu'à 190K€ maximum si valeur démontrée, mais ne le dira jamais au vendeur."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Montrer des résultats chiffrés précis chez un concurrent direct (nom, %, durée)",
+        "Expliquer calmement POURQUOI le prix est plus élevé avec des arguments factuels, pas du marketing",
+        "Accepter de perdre la vente plutôt que de brader : ça le rassure sur le sérieux",
+        "Proposer des garanties mesurables (KPIs trimestriels, clause de performance)",
+        "Reconnaître ses contraintes budgétaires sans les juger, mais tenir sa position",
+        "Lui donner des munitions pour convaincre en interne (argumentaire DAF/DG clé en main)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Céder trop vite sur le prix (perd instantanément sa confiance sur la valeur réelle)",
+        "Dénigrer les concurrents frontalement (il trouve ça puéril)",
+        "Être condescendant sur ses objections budgétaires",
+        "Promettre des résultats irréalistes ou évasifs",
+        "Montrer de l'impatience face à son processus de décision",
+        "Ignorer ses questions précises pour revenir à son pitch",
+        "Utiliser la pression temporelle artificielle ('l'offre expire vendredi')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, écoutez... avant qu'on aille trop loin, faut qu'on parle franchement du prix. Parce que j'ai deux autres propositions sur mon bureau qui sont franchement plus compétitives.",
+        "sous_texte": "Je pose mes limites dès maintenant. Si tu ne peux pas t'aligner, ne perdons pas notre temps. Je veux voir si tu vas céder ou tenir.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Confirmer qu'on va en parler, mais d'abord comprendre ses critères de choix au-delà du prix. Ne pas céder ni justifier immédiatement."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais... je vous préviens tout de suite, on est très encadrés budgétairement. Le DAF surveille chaque euro après la restructuration.",
+        "sous_texte": "Je te donne un contexte défavorable pour te mettre en position défensive. Mais c'est aussi une vraie contrainte que je dois gérer.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Reconnaître la contrainte avec empathie, mais creuser ce qui justifierait quand même l'investissement à ses yeux."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Très franchement, je vais vous dire... vos concurrents proposent la même chose pour 25 à 30% moins cher. Qu'est-ce qui justifie un tel écart ?",
+        "sous_texte": "Prouve-moi que ton prix n'est pas abusif. J'ai besoin d'arguments solides pour mon DAF, mais je teste aussi ta conviction sur ta valeur.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner d'abord ce qu'ils proposent exactement, puis expliquer calmement les différences factuelles. Ne pas se justifier défensivement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui, oui, j'ai compris le principe de votre accompagnement... Mais concrètement, comment je mesure que ça marche vraiment chez nous ? Parce qu'en 2019 on s'est fait avoir avec des belles promesses.",
+        "sous_texte": "Je suis échaudé. Tous les vendeurs me parlent d'accompagnement. Montre-moi des preuves tangibles, pas du discours marketing.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître l'expérience négative, puis proposer des KPIs mesurables et une clause de performance concrète. Exemples chiffrés précis."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon... nous on a 87 conseillers à équiper. Vos références, c'est plutôt des structures de quelle taille ? Parce que franchement, est-ce que ça scale vraiment à notre niveau ?",
+        "sous_texte": "Je cherche des raisons objectives de douter. Si tes références ne sont pas comparables, je tiens un argument pour négocier ou éliminer.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner des références précises de taille similaire ou supérieure avec résultats chiffrés. Transformer le doute en avantage."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, soyons pragmatiques... Le concurrent B me propose exactement les mêmes modules pour 158K€ sur trois ans. Vous êtes à combien déjà ? Plus de 180K€ c'est ça ?",
+        "sous_texte": "Je pose les cartes sur la table pour te mettre sous pression. Soit tu t'alignes, soit tu me convaincs que la différence vaut 22K€. Et je surveille ta réaction.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas révéler le prix exact si pas encore fait. Questionner ce que contient vraiment l'offre concurrent B. Puis affirmer calmement la différence de valeur."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouaaaais... mais vous comprenez que je dois justifier ça auprès du COMEX moi. Si je dis qu'on paie 20% de plus, ils vont me demander pourquoi on n'a pas pris les autres.",
+        "sous_texte": "Je suis sincèrement coincé politiquement. Aide-moi à construire l'argumentaire pour ma direction, sinon je ne peux pas défendre ton offre même si elle me plaît.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un document de justification COMEX clé en main avec comparatif valeur, ROI projeté et risques concurrence. Le rassurer qu'il aura les munitions."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais vous dire, hein... moi je trouve votre solution intéressante, mais faut qu'on reparle des conditions tarifaires. Il y a forcément moyen de faire un geste commercial, non ?",
+        "sous_texte": "Je valide ta solution mais je ne signerai pas sans avoir négocié. C'est une question de principe et d'image interne. Montre-moi où est ta limite.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître l'intérêt mais tenir ferme sur le prix de valeur. Éventuellement négocier sur autre chose (modalités paiement, services additionnels) mais pas le prix."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Très franchement, comment je sais que vos conseillers vont vraiment adopter l'outil ? Parce qu'en 2019, on a investi 240K€ dans un CRM que personne n'utilise aujourd'hui.",
+        "sous_texte": "Ma plus grande peur : payer cher pour un échec d'adoption. Si tu ne me rassures pas là-dessus avec du concret, je ne prendrai pas le risque.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détailler le processus d'accompagnement au changement, les formations, le suivi terrain. Proposer des indicateurs d'adoption mesurables avec engagement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... faut que j'en parle au DAF et au DG avant de prendre une décision. Je vous recontacte la semaine prochaine.",
+        "sous_texte": "Je botte en touche soit parce que je ne suis pas convaincu, soit parce que j'ai vraiment besoin de valider en interne, soit pour continuer à négocier avec vos concurrents.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter mais clarifier : Qu'est-ce qui leur ferait dire oui ? Quels points précis vont-ils questionner ? Proposer d'être présent à l'échange ou de fournir des éléments."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, soyons clairs... je suis intéressé mais pas à ce prix-là. Si vous descendez à 165K€, on signe cette semaine. Sinon je vais devoir partir sur le concurrent A.",
+        "sous_texte": "Ultime test de fermeté. Je veux voir si tu vas craquer sous la pression de la conclusion ou si tu vas tenir. Ton comportement me dira si ton prix est justifié ou gonflé.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tenir fermement en expliquant pourquoi impossible de descendre sans dégrader la valeur. Montrer qu'on accepte de perdre la vente plutôt que brader. Ça renforce paradoxalement la crédibilité."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais le concurrent B m'a dit qu'il pouvait démarrer dès février et vous, vous parlez de mars. Ça fait un trimestre de perdu pour nous...",
+        "sous_texte": "Je cherche tous les angles pour justifier un choix concurrent ou pour négocier. Le délai devient un prétexte si je ne suis pas totalement convaincu de la valeur supérieure.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Questionner si un démarrage précipité sans bonne préparation ne risque pas de reproduire l'échec 2019. Valoriser la qualité du déploiement vs vitesse."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais vous dire franchement... j'ai aussi une proposition du concurrent C qui inclut une garantie résultats : si on n'atteint pas +10% de collecte, ils remboursent 30%. Vous proposez quoi de ce côté-là ?",
+        "sous_texte": "Je teste ta capacité à prendre des engagements mesurables. C'est peut-être du bluff sur le concurrent, mais j'ai besoin d'être rassuré sur les résultats concrets.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner les conditions réelles de cette garantie (quelles variables contrôlées ?). Proposer une alternative crédible : paliers de succès avec services additionnels gratuits si objectifs atteints."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon... écoutez, votre offre est solide, je le reconnais. Mais très franchement, je ne peux pas faire valider 185K€ en interne alors que j'ai du 158K€ sur la table avec le concurrent B. Faites-moi une dernière proposition à 168K€ maximum, et on finalise aujourd'hui. Sinon, je vais devoir partir sur l'autre même si je préférerais travailler avec vous.",
+      "condition_declenchement": "Après avoir épuisé tous les arguments, quand Stéphane sent que le commercial tient vraiment sa position de valeur. C'est son dernier test de fermeté ultime avant de céder lui-même et d'accepter le prix initial si le commercial résiste."
+    },
+    "pattern_escalade": "Stéphane commence par des objections budgétaires générales (phase accroche), puis devient très précis avec des chiffres concurrents en phase découverte/argumentation pour tester la fermeté. Si le commercial tient bon avec arguments factuels, il passe aux objections sincères sur l'adoption et les résultats mesurables. En closing, il fait un dernier test de pression tarifaire ultime. Si le commercial reste ferme ET a apporté des réassurances concrètes, Stéphane finit par accepter le prix car il respecte la cohérence et interprète la fermeté comme preuve de valeur réelle.",
+    "piege_classique": "Céder sur le prix lors de l'objection finale croyant closer la vente. En réalité, cela détruit instantanément la confiance de Stéphane qui se dit : 'Si tu descends à 168K€ maintenant, c'est que tu m'as gonflé le prix depuis le début. Qu'est-ce qui me dit que 168K€ n'est pas aussi gonflé ? Je vais renégocier encore ou partir sur le concurrent qui sera peut-être plus honnête'. La fermeté respectueuse sur un prix justifié est contre-intuitivement ce qui fait signer Stéphane."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions B2B pour le secteur bancaire et patrimonial",
+      "description": "Fournisseur de solutions pour banques régionales et réseaux de conseillers en gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée à améliorer le développement commercial ou la performance du réseau bancaire/CGP",
+      "proposition_valeur": "Différenciation qualitative justifiant un positionnement prix premium vs concurrence",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Autres banques régionales équipées",
+        "Réseaux CGP similaires"
+      ],
+      "avantages_vs_concurrence": "Qualité supérieure, accompagnement, ROI démontré, expertise sectorielle spécifique"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à tenir leur valeur en phase de négociation finale, à ne pas brader les prix, à identifier les vrais critères de décision au-delà du tarif, et à closer avec confiance face à la concurrence",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Solution performance réseau bancaire",
+    "vous_etes": "Commercial expert solutions B2B pour banques régionales et réseaux CGP, 3 ans d'ancienneté dans le secteur financier.",
+    "vous_vendez": "Solution digitale d'optimisation de la performance commerciale pour réseaux bancaires — 195K€ sur 3 ans, incluant déploiement, formation et accompagnement continu.",
+    "vous_appelez": "Stéphane Delvaux, 52 ans, Directeur du Développement chez Banque Régionale du Centre-Ouest (142 collaborateurs, 87 conseillers). Négociateur expérimenté, prudent sur les budgets, échaudé par un projet CRM raté en 2019. Sous pression du DG pour moderniser mais surveillé par le DAF sur chaque euro. A deux autres propositions concurrentes sur la table, annoncées moins chères.",
+    "ce_que_vous_savez": [
+      "BRCO sort de 2 ans de restructuration, objectif +15% collecte patrimoine en 2025",
+      "Budget validé en interne : 180K€ sur 3 ans (vous le savez par échanges précédents)",
+      "Stéphane doit montrer des résultats mesurables dès T2 2025 au COMEX",
+      "Il utilise actuellement un mix Excel/logiciel vieillissant, conscient que ça freine",
+      "Votre concurrent 1 a proposé 165K€, concurrent 2 autour de 170K€ (annoncés par Stéphane lors du dernier échange)",
+      "Vous avez équipé 4 banques régionales similaires avec ROI moyen +22% sur la collecte en 18 mois"
+    ],
+    "votre_objectif": "Closer à 195K€ sans descendre sous 185K€, en ancrant la décision sur la valeur et les garanties de résultats, pas sur le prix.",
+    "vos_atouts": [
+      "ROI +22% mesuré chez Banque Régionale de l'Ain (142 collaborateurs, profil identique) en 18 mois",
+      "Accompagnement terrain inclus : 1 consultant dédié les 6 premiers mois + formation certifiante des conseillers",
+      "Clause de performance contractuelle : objectifs trimestriels mesurés, ajustements inclus sans surcoût",
+      "Argumentaire DAF prêt à l'emploi : grille de calcul ROI personnalisée BRCO + comparatif TCO 5 ans vs concurrents"
+    ],
+    "duree_estimee": "12-18 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:28:19Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15769,
+    "total_time_s": 144.0
+  }
+}

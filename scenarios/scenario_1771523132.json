@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771523132",
+  "description_originale": "Vous appelez à froid le dirigeant / directeur technique d'une ESN ou intégrateur IT de 20-50 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : telecoms_it]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "ESN ou intégrateur IT de 20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution à destination des ESN/intégrateurs IT",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel à froid sans demande préalable",
+        "Prospect occupé et n'a pas prévu l'appel",
+        "Absence de relation établie"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat",
+        "Nécessité de créer de la valeur en quelques secondes",
+        "Barrière de filtrage potentielle",
+        "Méfiance naturelle face à un commercial inconnu"
+      ],
+      "probleme_racine": "Créer de la valeur et de l'intérêt suffisants en 30 secondes auprès d'un décideur qui n'a pas sollicité l'échange et dispose d'un temps limité"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de prospection téléphonique à froid pour décrocher des rendez-vous qualifiés auprès de décideurs IT occupés et non sollicitants",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Probablement services ou solutions pour le secteur IT/télécoms",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux ESN et intégrateurs IT",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/solution proposée",
+        "Proposition de valeur spécifique",
+        "Problématiques métier adressées",
+        "Nom de l'entreprise vendeuse",
+        "Fourchette de prix",
+        "Références clients",
+        "Avantages concurrentiels",
+        "Zone géographique",
+        "Objections typiques rencontrées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Verhaeghe",
+      "age": 47,
+      "poste": "Directeur Général & Associé",
+      "entreprise": {
+        "nom": "Nexalis Solutions",
+        "secteur": "ESN spécialisée infra cloud & cybersécurité",
+        "taille": "32 salariés (26 consultants, 6 fonctions support)",
+        "ca_approximatif": "3,2M€ en 2023, objectif 3,8M€ en 2024"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Sous pression chronique (marge, recrutement, cash)",
+        "Valorise l'efficacité opérationnelle immédiate"
+      ],
+      "motivations_profondes": [
+        "Pérenniser sa boîte qu'il a montée il y a 9 ans",
+        "Être reconnu par ses pairs comme un patron qui réussit",
+        "Se dégager du temps pour moins être dans l'opérationnel",
+        "Rattraper les ESN concurrentes qui ont mieux géré leur croissance"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions gadget qui ne marchent pas sur le terrain",
+        "Se faire avoir par un commercial qui survend",
+        "Que ses équipes rejettent un nouvel outil 'imposé d'en haut'",
+        "Investir dans quelque chose qui ne se rentabilise pas en moins de 12 mois",
+        "Avoir l'air naïf face à un pitch commercial rodé"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Reçoit 8 à 12 sollicitations par semaine. A développé des réflexes de protection : phrases toutes faites, ton sec, raccourcis mentaux pour disqualifier vite. Respecte uniquement ceux qui connaissent VRAIMENT son métier et parlent ROI concret.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, légèrement agacé. 'Oui bonjour, je vous écoute mais j'ai une conf dans 10 minutes'. Attend que vous prouviez que vous méritez son temps.",
+      "signaux_interet": [
+        "Le débit ralentit, il pose des questions de clarification",
+        "Il répète un élément : 'Ah d'accord, donc là vous dites que...'",
+        "Il mentionne spontanément un problème qu'il rencontre : 'Tiens justement on galère sur...'",
+        "Il demande un exemple client : 'Vous avez fait ça chez qui ?'",
+        "Il ouvre son agenda sans qu'on le demande"
+      ],
+      "signaux_rejet": [
+        "Réponses monosyllabiques : 'Ouais', 'OK', 'Mmh'",
+        "Il coupe pour dire 'On a déjà' même si c'est faux",
+        "Ton condescendant : 'Écoutez c'est gentil mais...'",
+        "Cherche à clore : 'Envoyez-moi un mail' (traduction: poubelle)",
+        "Bruits de clavier en fond : il fait autre chose"
+      ],
+      "tics_langage": [
+        "Abuse du 'Franchement' en début de phrase",
+        "Dit 'Voilà voilà' quand il veut conclure",
+        "Emploie 'Nickel' ou 'Top' de façon mécanique sans vraiment valider",
+        "Soupire audiblement quand quelque chose l'agace"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, il coupe ou décroche mentalement. Préfère les échanges ping-pong où il garde le contrôle. Déteste les pitchs PowerPoint par téléphone."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance soutenue mais tensions RH (5 postes ouverts non pourvus depuis 4 mois). Clients qui poussent sur les délais. Marge opérationnelle qui s'érode (passée de 12% à 8,5%). Christophe dort mal, fait tout lui-même : avant-vente, négo commerciale, pompier technique. Sa DRH est partie il y a 2 mois, pas remplacée.",
+      "priorites_actuelles": [
+        "Recruter des profils infra senior (mission critique)",
+        "Signer 2 contrats au forfait pour lisser le CA intercontrat",
+        "Réduire le temps passé sur l'administratif (il gère encore les congés sous Excel)",
+        "Garder ses 3 meilleurs consultants qui ont des propositions ailleurs"
+      ],
+      "experience_avec_offre_similaire": "A testé 2-3 outils SaaS vendus par téléphone ces 3 dernières années : un CRM jamais déployé (trop compliqué), un ATS abandonné au bout de 6 mois (ses managers ne remplissaient pas), une formation commerciale pour ses avant-ventes (bof). Bilan mitigé qui nourrit son scepticisme.",
+      "fournisseur_actuel": "Utilise un patchwork d'outils : Excel, un ERP vieillissant pour la facturation, LinkedIn Recruiter, Slack. Pas de vraie stack intégrée. Pas de fournisseur dominant.",
+      "budget_disponible": "Entre 15K€ et 30K€/an pour une solution qui améliore vraiment sa vie. Mais il ne le dira jamais en premier rendez-vous. Demandera toujours 'Combien ça coûte ?' de façon sèche, comme pour tester si vous osez répondre franchement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une ESN comparable qui a résolu un problème similaire (surtout un concurrent qu'il connaît)",
+        "Parler en termes de 'temps gagné par semaine' plutôt que de fonctionnalités",
+        "Montrer que vous connaissez ses galères (intercontrat, recrutement, marge) SANS qu'il ait besoin de les expliquer",
+        "Proposer un ROI chiffré en mois, pas en années",
+        "Être cash sur les limites de votre solution ('ça ne fera pas le café')",
+        "Demander conseil plutôt que vendre : 'Comment vous gérez X aujourd'hui ?'",
+        "Utiliser le vocabulaire métier : TJM, intercontrat, staffing, delivery"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'On est leader européen de...' (il s'en fout)",
+        "Poser des questions bateau : 'Quels sont vos enjeux ?' (il n'a pas le temps de vous former)",
+        "Promettre des résultats magiques sans effort",
+        "Comparer des pommes et des poires : 'On travaille avec des ESN de 500 personnes' (pas la même réalité)",
+        "Insister lourdement pour un RDV : 'Juste 30 minutes' (il sait que ça durera 1h)",
+        "Parler de 'transformation digitale' ou autre jargon creux",
+        "Ne pas connaître la différence entre une ESN et un éditeur"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez je suis en conf dans 5 minutes là, vous m'appelez pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas le temps, prouve-moi immédiatement que ça vaut le coup de t'écouter ou je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, annoncer une durée courte (2 min max) et accrocher avec un problème concret qu'il vit"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement j'ai déjà 10 appels comme ça par semaine, qu'est-ce qui vous différencie des autres ?",
+        "sous_texte": "Je suis saturé de sollicitations, j'ai mes défenses levées, surprends-moi ou dégage",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître sa situation, montrer que vous connaissez son métier précisément, citer un cas concret d'ESN similaire"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà des outils pour ça, merci",
+        "sous_texte": "Réflexe de protection automatique - peut-être vrai, peut-être faux, mais ça me permet de clore rapidement sans être impoli",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas contester, poser une question sur comment il gère un point de douleur spécifique aujourd'hui"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous avez dit que vous travaillez avec des ESN de quelle taille ? Parce que nous on est 32 personnes hein, c'est pas du tout la même chose qu'une boîte de 300",
+        "sous_texte": "Je vérifie que tu comprends vraiment ma réalité. Les solutions pour grandes ESN ne marchent jamais chez nous. Si tu me sors un cas client inadapté, je décroche",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer des références de 20-50 personnes précisément, expliquer pourquoi votre approche s'adapte à cette taille"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais bon, mes managers ils remplissent déjà rien dans l'ERP actuel, je vais pas leur imposer un outil de plus qu'ils utiliseront pas",
+        "sous_texte": "J'ai déjà été échaudé par des outils jamais adoptés. Je ne veux pas revivre ça. L'adoption utilisateur est mon vrai frein, pas le prix",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aborder frontalement l'adoption : temps de formation, simplicité, comment vous accompagnez le déploiement, témoignage sur l'adhésion terrain"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mmh mmh... OK... Voilà voilà...",
+        "sous_texte": "Je fais autre chose en même temps, tu m'as perdu, je cherche une sortie polie",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Stopper immédiatement le monologue, poser une question fermée qui le ramène dans l'échange"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est quoi le ROI concrètement ? En combien de temps je rentre dans mes frais ?",
+        "sous_texte": "Maintenant on parle sérieusement. Si tu me sors des généralités ou 'ça dépend', je me barre. Je veux du chiffre",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette chiffrée en mois (6-12 max), détailler 2-3 postes de gains concrets avec calcul transparent"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez franchement ça a l'air intéressant mais j'ai vraiment pas le temps de gérer un projet de plus là. On est à fond sur le recrutement, j'ai 5 postes ouverts depuis 4 mois",
+        "sous_texte": "C'est sincère : je suis sous l'eau. Même si c'est bien, je n'ai pas la bande passante mentale. À moins que tu me prouves que ça m'enlève de la charge immédiatement",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retourner l'objection : montrer en quoi la solution libère justement du temps sur ses priorités (recrutement notamment), proposer accompagnement clé en main"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien votre truc ?",
+        "sous_texte": "Je teste ta transparence. Si tu éludes ou tu noies le poisson, je te classe dans les vendeurs de tapis. Si tu assumes un prix élevé avec des arguments, tu gagnes en crédibilité",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer le prix clairement, le mettre en perspective avec le gain (ex: 'X€/mois soit Y heures gagnées par semaine à Z€/heure'), proposer de détailler l'offre en RDV"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez fait ça chez qui exactement ? Des noms que je connais ?",
+        "sous_texte": "Je veux des preuves sociales de mon univers. Si tu cites Cap Gemini, ça ne compte pas. Je veux des ESN de ma taille dans ma région si possible",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer 2-3 ESN comparables (taille, zone géo, spécialité), proposer mise en relation si besoin, partager cas d'usage précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez envoyez-moi un mail avec tout ça, je regarderai",
+        "sous_texte": "Je veux clore l'échange sans m'engager. Le mail = poubelle à 90%. Je ne suis pas convaincu mais je reste poli",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître, puis créer de l'urgence ou de la rareté ('J'envoie volontiers, et si on cale 15min mardi prochain pour que je vous montre le module staffing qui règle votre problème d'intercontrat ?')"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Nickel nickel, top, voilà... Bon écoutez je vais en parler à mon associé et on revient vers vous",
+        "sous_texte": "Je botte en touche. Mon associé est un prétexte commode. Je ne suis pas assez convaincu pour m'engager maintenant. Ou alors je suis vraiment intéressé mais je veux valider en interne avant",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier : 'OK, qu'est-ce que votre associé a besoin de savoir pour valider ?'. Proposer RDV à 3 ou sécuriser date de feedback précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement vous m'avez pas convaincu là. J'ai besoin de réfléchir, c'est pas le bon moment",
+        "sous_texte": "Rejet assez franc. Soit vous avez raté un truc important dans l'argumentaire, soit je suis vraiment pas prêt, soit je teste votre réaction face au refus",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter, comprendre le vrai frein ('Qu'est-ce qui vous manque pour vous décider ?'), laisser porte ouverte avec timing précis ('Je vous rappelle quand alors ?')"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, on peut caler un truc rapide mais alors vraiment 30 minutes max hein, pas une de plus",
+        "sous_texte": "J'accepte mais je garde le contrôle. Je teste si vous respecterez la contrainte temps. Si vous débordez, je ne vous fais plus confiance",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider formellement 30min, tenir parole absolument, proposer agenda secondaire si besoin d'aller plus loin"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez mais si ça marche pas au bout de 3 mois, je fais quoi moi ? Vous me remboursez ?",
+        "sous_texte": "J'ai peur de l'engagement, de me faire avoir. Je cherche une porte de sortie sécurisée. Si vous assumez une garantie satisfait/remboursé, ma confiance monte",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Expliquer conditions d'engagement, période d'essai éventuelle, garanties contractuelles, partager taux de satisfaction client"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'entends ce que vous dites mais très franchement je connais pas votre boîte, j'ai été échaudé deux fois avec des solutions qu'on m'a vendues par téléphone et qui ont fini au placard. Là j'ai trois urgences qui m'attendent. Donc merci mais je vais passer mon tour pour le moment",
+      "condition_declenchement": "Si le commercial n'a pas créé suffisamment de confiance (pas de preuve sociale adaptée, pas de ROI concret, ton trop vendeur), si le prospect n'a pas été acteur de l'échange (monologue du vendeur), ou si un signal de rejet précoce n'a pas été traité"
+    },
+    "pattern_escalade": "Christophe commence poli mais distant ('Oui bonjour'). Si vous ne captez pas l'attention en 30 sec, il passe en mode monosyllabique ('Mmh', 'OK'). Si vous insistez sans valeur, il devient sec ('Écoutez franchement...'). Si vous poussez encore, il ferme brutalement ('Je vais vous arrêter là, merci'). Escalade rapide si vous ne captez pas les signaux ou monopolisez la parole.",
+    "piege_classique": "Christophe peut dire 'Nickel, top, envoyez-moi tout par mail' avec un ton positif qui semble validant. Le vendeur junior pense avoir gagné et envoie 15 slides. En réalité Christophe n'était pas convaincu, voulait juste clore poliment, et ne lira jamais le mail. Piège : confondre politesse française et intérêt réel. Il faut qualifier derrière chaque 'mail' demandé."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Probablement services ou solutions pour le secteur IT/télécoms",
+      "description": "Entreprise proposant des solutions ou services destinés aux ESN et intégrateurs IT"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de prospection téléphonique à froid pour décrocher des rendez-vous qualifiés auprès de décideurs IT occupés et non sollicitants",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur ESN sous pression",
+    "vous_etes": "Commercial chez une entreprise qui propose des solutions pour optimiser la gestion des ESN de taille moyenne.",
+    "vous_vendez": "Une solution destinée aux ESN de 20-50 personnes pour améliorer leur efficacité opérationnelle (prix et détails non communiqués à ce stade).",
+    "vous_appelez": "Christophe Verhaeghe, 47 ans, Directeur Général de Nexalis Solutions, ESN de 32 personnes spécialisée cloud et cybersécurité. Pragmatique, méfiant, chroniquement débordé.",
+    "ce_que_vous_savez": [
+      "Nexalis fait 3,2M€ de CA avec 32 salariés, objectif 3,8M€ cette année",
+      "L'entreprise a 5 postes ouverts non pourvus depuis 4 mois",
+      "La marge opérationnelle a chuté de 12% à 8,5%",
+      "Christophe gère encore l'opérationnel lui-même : avant-vente, négo, administratif sous Excel",
+      "Il reçoit 8 à 12 sollicitations commerciales par semaine et a déjà testé plusieurs solutions SaaS sans succès"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique ou visio en démontrant que vous comprenez ses contraintes métier et que votre solution lui fera gagner du temps concret.",
+    "vos_atouts": [
+      "Vous connaissez les vrais problèmes des ESN de sa taille : recrutement, staffing, marge sous pression",
+      "Vous parlez son langage : TJM, intercontrat, delivery, pas de jargon marketing creux",
+      "Vous pouvez citer des résultats chiffrés en temps gagné ou ROI rapide (même si flous pour l'instant)",
+      "Vous êtes prêt à être direct sur les limites de votre solution"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:45:32Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15358,
+    "total_time_s": 139.7
+  }
+}

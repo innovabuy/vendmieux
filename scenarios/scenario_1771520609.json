@@ -1,0 +1,343 @@
+{
+  "id": "scenario_1771520609",
+  "description_originale": "Vous appelez une banque régionale ou groupe de CGP de 100+ collaborateurs. L'assistante de gestion du directeur du développement ou directeur de réseau décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : banque_patrimoine]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "100+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur du développement ou directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de gestion",
+          "role": "filtrage_systematique",
+          "caracteristiques": "professionnelle, habituée aux commerciaux"
+        }
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution ou service destiné aux établissements bancaires, groupes de conseillers en gestion de patrimoine",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "passage de barrage secrétariat difficile",
+        "filtrage systématique par assistante",
+        "accès au décideur bloqué"
+      ],
+      "implicites": [
+        "discours commercial trop standardisé détecté par l'assistante",
+        "manque de légitimité perçue",
+        "absence de différenciation dans l'approche téléphonique",
+        "difficulté à créer de l'intérêt en quelques secondes"
+      ],
+      "probleme_racine": "incapacité à créer suffisamment de valeur perçue et de légitimité en phase de contact initial pour contourner professionnellement le filtrage secrétariat"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de passage de barrage secrétariat avec élégance et professionnalisme pour accéder aux décideurs dans le secteur bancaire et patrimonial",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux établissements financiers ou formation commerciale",
+      "entreprise_description": "entreprise proposant des solutions ou services destinés au secteur bancaire et patrimonial",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service à destination des banques régionales et groupes de CGP",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commercialisée",
+        "proposition de valeur spécifique",
+        "éléments de différenciation",
+        "prix ou budget type",
+        "nom et description précise de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe",
+      "nom": "Duvernet",
+      "age": 52,
+      "poste": "Directeur du Développement Commercial",
+      "entreprise": {
+        "nom": "Patrimonia Conseil Régional",
+        "secteur": "Banque privée et gestion de patrimoine",
+        "taille": "145 collaborateurs (dont 68 conseillers)",
+        "ca_approximatif": "18M€ - marge nette 11%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux depuis 28 ans de carrière bancaire",
+        "Obsédé par le ROI et la rentabilité court terme",
+        "Protecteur de son temps et de celui de ses équipes"
+      ],
+      "motivations_profondes": [
+        "Atteindre ses objectifs annuels sans perturber l'organisation actuelle",
+        "Être reconnu par sa direction comme un pilier fiable et prudent",
+        "Éviter à tout prix les déceptions fournisseurs qui l'ont déjà fragilisé en 2022"
+      ],
+      "peurs_freins": [
+        "Perdre du temps en réunions inutiles qui ne débouchent sur rien",
+        "Se faire avoir par des promesses commerciales intenables",
+        "Que ses conseillers soient perturbés par un nouveau changement d'outil ou process",
+        "Être jugé comme naïf par sa direction s'il choisit mal un prestataire"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Pense que 95% des commerciaux qui l'appellent ne comprennent rien à son métier. A déjà été échaudé par 3 prestataires différents. Respecte uniquement ceux qui démontrent une vraie connaissance du secteur patrimonial et qui ne lui font pas perdre son temps.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais froid, avec une impatience à peine voilée. Regarde sa montre ou son écran pendant que l'autre parle.",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou un ROI",
+        "Mentionne un problème actuel concret de son organisation",
+        "Demande combien de temps ça prend vraiment à mettre en place",
+        "Évoque spontanément un concurrent ou un ancien prestataire pour comparer"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole en disant 'Oui oui je vois le principe'",
+        "Répond par des monosyllabes ('Hmm', 'D'accord', 'OK')",
+        "Dit 'Écoutez, envoyez-moi un mail' avant la fin de l'argumentation",
+        "Invoque un faux alibi: 'On a déjà un prestataire' alors que ce n'est pas toujours vrai"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Bon écoutez...'",
+        "Utilise 'concrètement' et 'en pratique' pour court-circuiter le blabla",
+        "Dit 'Faut qu'on se comprenne bien' quand il veut recadrer",
+        "Ponctue par 'Voilà voilà' quand il veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes. Au-delà, décroche mentalement et commence à penser à autre chose. Déteste les présentations PowerPoint de plus de 3 slides."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stagnante (+1,2% vs objectif 8%). Pression forte de la direction pour moderniser l'approche client sans exploser les coûts. Turnover préoccupant chez les jeunes conseillers (3 départs en 6 mois). Réglementation ACPR de plus en plus contraignante.",
+      "priorites_actuelles": [
+        "Augmenter le taux de transformation prospects en clients de 18% à 25% d'ici fin d'année",
+        "Réduire le temps administratif des conseillers (actuellement 40% de leur temps)",
+        "Éviter une nouvelle vague de départs de conseillers expérimentés",
+        "Préparer l'audit de conformité ACPR prévu en septembre"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2 CRM spécialisés patrimoine qui ont été des échecs (adoption<30%). A eu recours à un cabinet de formation commerciale en 2021 qui n'a rien apporté selon lui ('du réchauffé LinkedIn Learning'). Échaudé mais pas fermé si on lui prouve une vraie différence.",
+      "fournisseur_actuel": "Utilise un CRM bancaire générique (Salesforce adapté) et fait appel ponctuellement à des formateurs indépendants via son OPCO. Pas satisfait mais 'ça marche tant bien que mal'.",
+      "budget_disponible": "Enveloppe formation annuelle de 47K€ dont 31K€ déjà engagés. Marge de manœuvre réelle: 15-20K€ maximum, mais il faudrait une justification ROI béton pour débloquer un budget additionnel auprès de la direction."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un chiffre précis du secteur qu'il reconnaît (ex: 'les directeurs de réseau patrimoine perdent en moyenne 12h/semaine en réunions improductives')",
+        "Citer une référence d'un concurrent direct ou d'un acteur qu'il respecte",
+        "Parler de conformité réglementaire (ACPR, DDA, MIF2) - il déteste ça mais c'est prioritaire",
+        "Lui faire gagner du temps dès le premier contact (être bref, concret, factuel)",
+        "Proposer un diagnostic gratuit de 20 min au lieu d'un RDV commercial classique"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours généraliste 'on aide les entreprises à se développer'",
+        "Demander 1h de RDV sans justification de valeur",
+        "Parler de 'transformation digitale' ou autre buzzword creux",
+        "Ne pas connaître les spécificités de la gestion de patrimoine (parler comme à n'importe quelle PME)",
+        "Insister lourdement après un premier refus poli",
+        "Critiquer frontalement ses choix actuels sans avoir compris son contexte"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, il faut passer par mon assistante pour ce genre de sollicitation",
+        "sous_texte": "Je détecte un commercial et j'active mon réflexe de protection. Je ne vous connais pas et vous me dérangez.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement l'interruption et proposer un bénéfice ultra-concret en 15 secondes maximum pour justifier de garder 45 secondes supplémentaires"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bon c'est pour me vendre quoi exactement ?",
+        "sous_texte": "Je suis fatigué des approches détournées. Dites-moi ce que vous vendez directement pour que je puisse vous éconduire rapidement si ça ne m'intéresse pas.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être direct et transparent sur la nature de l'appel tout en pivotant immédiatement vers un problème métier qu'il reconnaît"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà tout ce qu'il faut niveau prestataires",
+        "sous_texte": "Je vous bloque par principe. Ce n'est pas forcément vrai mais c'est l'objection automatique pour faire barrage.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas contester frontalement mais poser une question ouverte sur un point de douleur fréquent dans le secteur pour vérifier si c'est un vrai ou faux barrage"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement vous voulez en venir où ? Parce que j'ai pas beaucoup de temps là",
+        "sous_texte": "Votre introduction était trop longue. J'ai besoin que vous alliez droit au but sinon je vais raccrocher poliment dans 30 secondes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Synthétiser immédiatement en une phrase pourquoi vous appelez et quelle question précise vous voulez poser en 2 minutes maximum"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Hmm d'accord... Mais nous on est spécialisés en patrimoine hein, c'est pas comme une PME lambda",
+        "sous_texte": "Je teste si vous connaissez vraiment mon secteur ou si vous récitez un pitch générique. Si vous ne comprenez pas les spécificités gestion de patrimoine vs banque de détail, je coupe court.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer immédiatement une connaissance sectorielle précise avec un exemple chiffré ou une référence spécifique au patrimoine"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà testé ce genre de trucs, franchement ça marche jamais chez nous",
+        "sous_texte": "J'ai été échaudé par le passé et je ne veux pas revivre un échec. Je suis méfiant et j'ai besoin de preuves que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser avec empathie les échecs passés pour comprendre ce qui n'a pas marché, puis différencier clairement votre approche en vous appuyant sur ces apprentissages"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nos conseillers ont déjà 40% de leur temps bouffé par l'administratif, on va pas en rajouter",
+        "sous_texte": "C'est une vraie douleur actuelle. Mais je crains que votre solution rajoute de la complexité au lieu de simplifier. Prouvez-moi le contraire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Retourner l'objection en montrant comment votre approche réduit précisément ce temps administratif avec un chiffre concret de gain de temps"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui je vois le principe, envoyez-moi un mail avec les détails",
+        "sous_texte": "Je veux clore poliment cet échange. Le mail sera ma façon élégante de vous ghostériser ensuite. Je ne suis pas convaincu mais je ne veux pas être désagréable.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accuser réception de la demande mais ancrer un prochain point de contact précis avant d'envoyer quoi que ce soit, en créant un micro-engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, c'est combien votre truc ? Parce que si c'est hors budget autant le savoir tout de suite",
+        "sous_texte": "Je veux vous éliminer rapidement sur le prix si vous êtes trop cher, pour ne pas perdre plus de temps. Mais j'ai aussi besoin de justifier un refus rationnel.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner de prix sec sans contexte, mais recadrer sur le ROI et poser une question sur son budget pour comprendre le cadre de décision"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous savez, nous on a Salesforce qui est déjà bien paramétré, on va pas tout changer",
+        "sous_texte": "Je suis dans ma zone de confort même si ce n'est pas optimal. Le coût du changement me semble supérieur au bénéfice potentiel que vous présentez.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas attaquer Salisforce mais comprendre ce qui ne fonctionne pas et montrer une complémentarité ou une approche progressive sans tout bouleverser"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut qu'on se comprenne bien : mes conseillers sont déjà sollicités de partout, ils ont pas besoin d'un énième changement",
+        "sous_texte": "Je protège mon équipe et je crains la résistance au changement. J'ai eu un turnover récent et je ne veux pas créer plus de frustration.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer que vous comprenez cette tension et proposer une approche pilote light avec des conseillers volontaires pour limiter le risque"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais là on est en plein dans les objectifs de fin d'année, c'est pas le moment",
+        "sous_texte": "Je suis peut-être sincèrement intéressé mais le timing est mauvais. Ou alors c'est une excuse polie pour repousser indéfiniment sans dire non.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la contrainte timing puis proposer un pré-cadrage court maintenant pour démarrer en janvier avec un plan précis, ou identifier si c'est un faux prétexte"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais en parler à ma direction et je reviens vers vous",
+        "sous_texte": "Je ne veux pas décider seul ou je ne suis pas suffisamment convaincu. C'est aussi une façon de vous faire patienter indéfiniment.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Comprendre qui est cette direction, quel est le processus de décision réel, et proposer d'être présent lors de cette discussion pour répondre aux questions"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà voilà, on va réfléchir de notre côté et on vous rappelle",
+        "sous_texte": "C'est un non poli. Je ne vous rappellerai jamais. Je veux clore l'échange sans conflit.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Confronter avec élégance en demandant ce qui manque précisément pour se décider, ou ce qui bloque vraiment, pour transformer le faux peut-être en vrai oui ou vrai non"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que j'ai déjà eu trois prestataires qui m'ont promis monts et merveilles, et au final zéro résultat",
+        "sous_texte": "C'est ma vraie blessure. Je ne vous fais pas confiance par défaut à cause de ces échecs passés. Il faut me rassurer profondément sur votre différence et votre engagement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accueillir cette déception avec empathie, creuser ce qui n'a pas marché, et proposer des garanties concrètes ou un engagement de résultat mesurable différenciant"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez franchement, je vois pas la différence avec ce qu'on nous a déjà vendu trois fois. Vous me dites la même chose que les autres finalement.",
+      "condition_declenchement": "Si le commercial n'a pas suffisamment différencié son approche par des preuves concrètes, des références sectorielles précises, ou une méthodologie vraiment distinctive. Philippe se ferme quand il a l'impression d'entendre un discours déjà entendu."
+    },
+    "pattern_escalade": "Philippe commence par des objections réflexes de protection (j'ai pas le temps, on a déjà). Si le commercial passe ce premier filtre avec du concret, il teste la connaissance sectorielle (vous connaissez vraiment le patrimoine ?). S'il sent une vraie compétence, il livre ses vraies objections sincères (j'ai déjà été déçu, mes équipes sont fatiguées). En closing, il bascule vers des tactiques d'évitement poli (mail, réflexion, direction) sauf si le ROI et la différenciation sont cristallins.",
+    "piege_classique": "Philippe peut sembler s'ouvrir et poser des questions concrètes pour donner l'impression d'être intéressé, alors qu'en réalité il collecte juste des informations pour comparer ou pour justifier un refus ultérieur auprès de sa direction ('j'ai creusé, c'est pas pour nous'). Le piège est de croire qu'on a gagné sa confiance alors qu'il est juste en mode évaluation froide. Il faut créer un micro-engagement concret avant de se quitter, sinon il disparaîtra dans la nature."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux établissements financiers ou formation commerciale",
+      "description": "entreprise proposant des solutions ou services destinés au secteur bancaire et patrimonial"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service à destination des banques régionales et groupes de CGP",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de passage de barrage secrétariat avec élégance et professionnalisme pour accéder aux décideurs dans le secteur bancaire et patrimonial",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Passage de barrage secrétariat bancaire",
+    "vous_etes": "Commercial spécialisé dans les solutions pour établissements bancaires et conseillers en gestion de patrimoine.",
+    "vous_vendez": "Une solution destinée aux banques régionales et groupes de CGP (nature et prix à définir selon votre stratégie).",
+    "vous_appelez": "Philippe Duvernet, 52 ans, Directeur du Développement Commercial chez Patrimonia Conseil Régional (145 collaborateurs, banque privée). Méfiant, obsédé par le ROI, ultra-protecteur de son temps.",
+    "ce_que_vous_savez": [
+      "Son réseau compte 68 conseillers et stagne à +1,2% de croissance vs objectif de 8%",
+      "Il subit une pression forte pour moderniser sans exploser les coûts",
+      "Il a déjà été échaudé par 2 CRM et 1 cabinet de formation qui ont échoué",
+      "Il prépare un audit ACPR en septembre et veut réduire le temps administratif de ses équipes (actuellement 40%)",
+      "Son budget formation disponible : 15-20K€ maximum"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante de gestion (professionnelle, filtre systématiquement) pour obtenir 20 minutes avec Philippe.",
+    "vos_atouts": [
+      "Vous connaissez les spécificités du secteur patrimonial et la réglementation ACPR/DDA",
+      "Vous pouvez citer des chiffres précis du secteur (ex: temps perdu en réunions improductives)",
+      "Vous proposez un diagnostic court (20 min) au lieu d'un RDV commercial classique",
+      "Vous êtes capable de parler ROI et conformité, ses deux obsessions"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:03:29Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14483,
+    "total_time_s": 126.1
+  }
+}

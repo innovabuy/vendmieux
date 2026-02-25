@@ -1,0 +1,253 @@
+{
+  "id": "demo_espanol_llamada_fria_v1",
+  "scenario_type": "appel_telephonique",
+  "metadata": {
+    "titre_court": "Llamada fría — Mantenimiento predictivo IoT",
+    "type_appel": "Llamada en frío",
+    "secteur": "Mecanizado de precisión",
+    "taille_entreprise": "PYME — 55 empleados",
+    "difficulte": 3,
+    "duree_cible": "3 a 5 minutos",
+    "langue": "es",
+    "competences_force3d_prioritaires": {
+      "accroche": 1.5,
+      "objections": 1.5,
+      "engagement": 1.2
+    },
+    "version": "V1",
+    "template": "FORCE 3D®"
+  },
+  "extraction": {
+    "secteur": "Mecanizado de precisión",
+    "type_simulation": "Llamada en frío",
+    "difficulte": 3,
+    "tags": ["industria", "mantenimiento", "IoT", "DG", "PYME", "cold call", "DISC-D/I", "demo", "español"]
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Carlos",
+      "nom": "Mendoza",
+      "genre": "M",
+      "age": 48,
+      "poste": "Director General",
+      "entreprise": {
+        "nom": "MetalMec Ibérica",
+        "secteur": "Mecanizado de precisión — torneado, fresado, subcontratación",
+        "taille": "55 empleados",
+        "ca_approximatif": "7M€",
+        "localisation": "Barcelona, España"
+      }
+    },
+    "psychologie": {
+      "profil_disc": {
+        "principal": "D",
+        "secondaire": "D/I",
+        "description": "Directo y orientado a resultados, pero también relacional si se establece confianza. Necesita hechos concretos."
+      },
+      "traits_dominants": [
+        "directo",
+        "orientado a resultados",
+        "relacional cuando hay confianza",
+        "desconfiado con los comerciales"
+      ],
+      "motivations_profondes": [
+        "Reducir las paradas de máquina no planificadas que cuestan una fortuna",
+        "Modernizar el mantenimiento sin riesgo operativo"
+      ],
+      "peurs_freins": [
+        "Perder el tiempo con otro vendedor de soluciones milagrosas",
+        "Dependencia tecnológica de un único proveedor",
+        "Que su equipo no sepa utilizar la tecnología"
+      ],
+      "rapport_aux_commerciaux": "Los tolera si son concretos y rápidos. Detesta la palabrería, los PowerPoints y los discursos genéricos. Respeta al comercial que conoce su sector.",
+      "style_communication": "directif",
+      "registre_langage": "Directo, breve, sin rodeos. Frases cortas. Tutea cuando entra en confianza.",
+      "sensibilite_emotionnelle": "Media — los argumentos relacionales le interesan si son genuinos.",
+      "patience": "Baja — cuelga si no hay valor en los primeros 60 segundos."
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Neutro-frío. No hostil pero tampoco acogedor. Está entre reuniones y no tiene tiempo.",
+      "signaux_interet": [
+        "Hace preguntas técnicas precisas sobre la solución",
+        "Menciona sus propios problemas de averías o retrasos",
+        "Pide referencias en el sector del mecanizado",
+        "Hace una pausa después de una cifra impactante"
+      ],
+      "signaux_rejet": [
+        "Suspira",
+        "Responde con monosílabos",
+        "Dice 'Mire...' o 'Envíeme un correo'",
+        "Corta al comercial a mitad de frase"
+      ],
+      "tics_langage": [
+        "Mire...",
+        "¿Y concretamente?",
+        "Vaya al grano.",
+        "A ver...",
+        "Dígame."
+      ],
+      "debit_parole": "Rápido y cortante. Corta al comercial si se extiende demasiado.",
+      "tolerance_monologue_vendeur": "Corta después de 15 segundos de monólogo"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 paradas de máquina no planificadas el último trimestre. La peor: el proveedor tardó 7 horas en llegar — un día entero de producción perdido. La cartera de pedidos está llena pero los márgenes se reducen por los retrasos en las entregas.",
+      "priorites_actuelles": [
+        "Reducir las paradas de máquina no planificadas",
+        "Entregar los pedidos actuales a tiempo"
+      ],
+      "experience_avec_offre_similaire": "Una empresa de sensores vino hace 6 meses, hizo una demo bonita pero nunca volvió a llamar. Mal recuerdo.",
+      "fournisseur_actuel": "Proveedor de mantenimiento correctivo local desde 10 años (Manteni-Tec Barcelona). Correcto en lo correctivo pero nada de predictivo. Los tiempos de respuesta empeoran.",
+      "budget_disponible": "No hay presupuesto asignado para innovación, pero podría desbloquearse si se demuestra el ROI rápidamente"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mencionar una cifra concreta del coste por hora de parada en mecanizado de precisión (1.200 a 3.500€)",
+        "Citar un caso concreto en mecanizado o subcontratación industrial",
+        "Proponer una visita sin compromiso de 20-30 min en planta"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discurso genérico 'nuestra solución revolucionaria'",
+        "No conocer su sector (mecanizado de precisión)",
+        "Hablar de IA o transformación digital de forma abstracta",
+        "Insistir después de un rechazo claro",
+        "Técnicas de manipulación visibles"
+      ]
+    },
+    "informations_revelables": [
+      {
+        "question_qui_debloque": "¿Cuál es su tiempo de respuesta actual cuando tienen una avería crítica?",
+        "information_revelee": "La última vez esperamos 7 horas. Perdimos un día entero de producción."
+      },
+      {
+        "question_qui_debloque": "¿Cuánto les cuesta una hora de parada en sus máquinas?",
+        "information_revelee": "En nuestro centro de mecanizado 5 ejes... es difícil de calcular pero es mucho."
+      },
+      {
+        "question_qui_debloque": "¿Tienen algún equipo conectado en la planta actualmente?",
+        "information_revelee": "Pusimos sensores en 2 máquinas pero no sabemos muy bien qué hacer con los datos."
+      },
+      {
+        "question_qui_debloque": "¿Cuál es su prioridad de mantenimiento este año?",
+        "information_revelee": "Reducir las paradas no planificadas. Tuvimos 3 el último trimestre."
+      }
+    ]
+  },
+  "objections": {
+    "objections": [
+      {
+        "numero": 1,
+        "moment": "accroche",
+        "nom": "Proveedor actual",
+        "verbatim": "Ya tenemos a alguien para eso.",
+        "sous_texte": "Filtro automático, prueba si el comercial se rinde fácilmente. Fiel al proveedor actual pero insatisfacción latente con los tiempos de respuesta.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "seuil_bascule": "El comercial menciona una cifra concreta sobre el coste horario de una parada no planificada. Mendoza hace una pausa, responde con una pregunta o reconoce el problema.",
+        "fermeture_definitive": "El comercial repite el mismo argumento sin aportar valor nuevo. Mendoza: 'Mire, de verdad no tengo tiempo. Buenos días.'",
+        "reponse_efficace_indice": "No atacar al proveedor. Anclar una cifra concreta que genere curiosidad sobre el coste de no hacer nada."
+      },
+      {
+        "numero": 2,
+        "moment": "decouverte",
+        "nom": "Tiempos de respuesta (dolor oculto)",
+        "verbatim": "Nuestro proveedor responde... bueno, hace lo que puede.",
+        "sous_texte": "Ligera vacilación que delata una insatisfacción real. Señal de dolor oculto para profundizar.",
+        "type": "sincere",
+        "difficulte": 8,
+        "seuil_bascule": "El comercial profundiza: '¿Cuál es el tiempo medio de respuesta cuando tienen una avería crítica?' Mendoza revela el incidente de las 7 horas.",
+        "fermeture_definitive": "El comercial ignora la señal de dolor y vuelve a su argumentario genérico.",
+        "reponse_efficace_indice": "Preguntar concretamente por el tiempo de respuesta. No hacer pitch. Dejar que Mendoza hable de su dolor."
+      },
+      {
+        "numero": 3,
+        "moment": "closing",
+        "nom": "No es el momento",
+        "verbatim": "No es el momento, estamos a tope de producción.",
+        "sous_texte": "Aplazamiento clásico. Pero no está cerrado si las objeciones 1 y 2 se han tratado bien.",
+        "type": "tactique",
+        "difficulte": 6,
+        "seuil_bascule": "El comercial propone un micro-compromiso con fecha concreta. Mendoza acepta si las objeciones anteriores fueron bien tratadas.",
+        "fermeture_definitive": "El comercial insiste sin proponer fecha. Mendoza: 'Envíeme un correo.' (señal de fin).",
+        "reponse_efficace_indice": "Proponer una fecha concreta y un compromiso sin riesgo."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bueno mire, tengo una reunión. Envíeme algo concreto con cifras, no palabrería comercial.",
+      "condition_declenchement": "Si el comercial no ha creado urgencia después de 3 minutos"
+    },
+    "pattern_escalade": "Proveedor actual → Dolor oculto (tiempos) → No es el momento → Correo/colgar",
+    "regle_absolue": "El prospecto nunca repite la misma objeción más de 2 veces. Si el comercial responde bien, la postura evoluciona obligatoriamente."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "IoT Predict",
+      "secteur": "Mantenimiento predictivo industrial",
+      "description": "Empresa española especializada en sensores de mantenimiento predictivo para la industria"
+    },
+    "offre": {
+      "nom": "PredictSense",
+      "description": "Sensores IoT que detectan anomalías en las máquinas antes de la avería. Instalación en 2 horas, sin parada de producción. Alertas en tiempo real en el smartphone.",
+      "proposition_valeur": "Reducción del 60% de paradas de máquina no planificadas",
+      "prix": "Desde 500€/mes para 5 máquinas",
+      "references": [
+        "Fundiciones del Besós (-62% de paradas en 4 meses)",
+        "Precisión Mecanizados Barcelona — ROI en 3 meses"
+      ],
+      "avantages_vs_concurrence": "Instalación sin parada de producción, piloto gratuito 30 días en 2 máquinas"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Conseguir una cita de 20-30 minutos en planta para una demostración en una máquina.",
+      "criteres_succes": [
+        "Obtener una fecha y hora concretas",
+        "20-30 minutos en planta, no más",
+        "Demostración en una máquina real"
+      ]
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Primer contacto. Ningún intercambio previo.",
+      "infos_connues": "PYME industrial Barcelona, 55 empleados, mecanizado de precisión, 3 paradas no planificadas recientemente"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Llamada fría — Mantenimiento predictivo IoT",
+    "vous_etes": "Comercial en IoT Predict, empresa española especializada en sensores de mantenimiento predictivo para la industria.",
+    "vous_vendez": "Sensores IoT que detectan anomalías en las máquinas antes de la avería. Instalación en 2h, sin parada de producción. Alertas en tiempo real.",
+    "vous_appelez": "Carlos Mendoza, Director General de MetalMec Ibérica (55 empleados, mecanizado de precisión, Barcelona). Primera llamada, contacto frío.",
+    "ce_que_vous_savez": [
+      "La empresa ha tenido 3 paradas de máquina no planificadas el último trimestre",
+      "Su proveedor actual es correctivo, sin capacidad predictiva",
+      "Una empresa de sensores visitó hace 6 meses sin convencer",
+      "La cartera de pedidos está llena — los retrasos cuestan caro"
+    ],
+    "votre_objectif": "Conseguir una cita de 20-30 minutos en planta para una demostración en una máquina.",
+    "vos_atouts": [
+      "Referencia cliente: Fundiciones del Besós (-62% de paradas en 4 meses)",
+      "Piloto gratuito 30 días en 2 máquinas",
+      "Instalación sin parada de producción",
+      "ROI demostrable en 3 meses"
+    ],
+    "conseils": "No hagas pitch de entrada. Pregunta por las averías recientes y su impacto en las entregas. Cuantifica el coste de no actuar. Propón 20 min sin compromiso con fecha concreta.",
+    "duree_estimee": "3-5 minutos",
+    "attention": "Perfil D/I — directo, impaciente, pero relacional si hay confianza. Cuelga si no hay valor en 60 segundos."
+  },
+  "scenarios_de_fin": {
+    "rdv_obtenu": {
+      "conditions": "El comercial mencionó una cifra concreta + profundizó en el dolor de tiempos + propuso visita sin compromiso con fecha. Objeciones 1 y 2 bien tratadas.",
+      "replique": "Bueno. El jueves a media mañana, 30 minutos. Me enseña cómo funciona en una máquina. Pero si es palabrería, lo dejamos ahí."
+    },
+    "email_demande": {
+      "conditions": "El comercial empezó bien pero no profundizó en el dolor o no propuso fecha.",
+      "replique": "Envíeme lo que tiene por correo. Si me interesa le contesto."
+    },
+    "refus_poli": {
+      "conditions": "El comercial falló en la apertura o no aportó valor en 90 segundos.",
+      "replique": "Mire, tenemos un proveedor que nos va bien. Buenos días."
+    },
+    "raccrochage": {
+      "conditions": "El comercial insistió tras rechazo claro o usó manipulación visible.",
+      "replique": "[Cuelga sin decir nada]"
+    }
+  }
+}

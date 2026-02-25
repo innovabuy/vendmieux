@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771518381",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur d'agence / fondateur d'une agence de recrutement ou cabinet RH de 10-25 consultants il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : rh_recrutement]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "10-25 consultants",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné à optimiser l'activité d'une agence de recrutement ou cabinet RH",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Peur de déranger le prospect",
+        "Manque de stratégie de suivi structuré",
+        "Difficulté à gérer le silence radio",
+        "Potentielle faiblesse de la proposition initiale qui n'a pas suscité d'intérêt",
+        "Incapacité à qualifier réellement l'intérêt avant l'envoi"
+      ],
+      "probleme_racine": "Absence de processus de qualification et de suivi structuré : le commercial envoie des propositions sans engagement préalable du prospect et sans cadence de relance définie, ce qui le met en position de faiblesse lors du rappel"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à gérer efficacement les relances post-proposition pour obtenir un positionnement clair du prospect (oui/non/prochaine étape) et sortir du silence radio",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Service B2B pour cabinets RH et agences de recrutement",
+      "entreprise_description": "Entreprise proposant des solutions ou services aux professionnels du recrutement et des ressources humaines",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite envoyée il y a 10 jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète",
+        "Prix ou fourchette budgétaire",
+        "Contexte de la relation avant l'envoi (appel préalable, salon, recommandation)",
+        "Contenu et qualité de la proposition envoyée",
+        "Nom de l'entreprise du vendeur",
+        "Éléments différenciants vs concurrence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur associé",
+      "entreprise": {
+        "nom": "Talents & Stratégies",
+        "secteur": "Cabinet de recrutement middle/senior management",
+        "taille": "17 consultants permanents",
+        "ca_approximatif": "2,1M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Hyper-sollicité et sur-défensif",
+        "Méfiant envers les promesses marketing"
+      ],
+      "motivations_profondes": [
+        "Protéger ses marges dans un secteur sous pression",
+        "Ne pas perdre de temps avec des outils qui ne tiendront pas leurs promesses",
+        "Éviter d'être celui qui a fait acheter un truc inutile devant ses associés",
+        "Garder le contrôle sur ses décisions sans se faire bousculer"
+      ],
+      "peurs_freins": [
+        "S'engager dans un projet chronophage pour un ROI hypothétique",
+        "Que ses consultants résistent au changement d'outil",
+        "Payer pour quelque chose qui fera doublon avec l'existant",
+        "Se faire avoir par un discours commercial rodé",
+        "Devoir justifier un échec d'investissement"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Considère 90% des approches comme du spam déguisé. Respecte uniquement ceux qui comprennent vraiment son métier et ne font pas perdre de temps. A développé des réflexes d'évitement : ne répond pas aux mails commerciaux, laisse passer les relances, dit 'je regarde et je reviens vers vous' par réflexe.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais fermé. Voix légèrement agacée dès qu'il détecte un script commercial. Utilise le vouvoiement distant. Coupe court rapidement s'il sent qu'on lui fait perdre son temps.",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou un cas client",
+        "Mentionne un problème opérationnel concret qu'il rencontre",
+        "Demande 'Combien de temps ça prend vraiment à déployer ?'",
+        "Évoque ses associés ou son équipe comme parties prenantes"
+      ],
+      "signaux_rejet": [
+        "Utilise 'Écoutez...' en début de phrase (signal de coupure)",
+        "'On a déjà pas mal de choses en cours là'",
+        "'Je vais être transparent avec vous' (annonce d'un refus poli)",
+        "Répond en mode automatique sans poser de questions",
+        "Regarde ostensiblement son écran pendant l'appel (audible par les silences)"
+      ],
+      "tics_langage": [
+        "'Franchement' utilisé 4-5 fois par conversation",
+        "'Voilà voilà' quand il veut clore un sujet",
+        "'Honnêtement' avant de dire quelque chose de négatif",
+        "Soupirs audibles quand quelque chose l'agace",
+        "'Ça me parle moyen' au lieu de dire non directement"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper. Zéro tolérance pour les présentations PowerPoint verbales. Veut des phrases courtes, des faits, des chiffres. Si le commercial parle plus de 2 minutes d'affilée sans l'impliquer, il décroche mentalement et cherche comment raccrocher poliment."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+8% CA l'an dernier) mais marges en compression. Deux consultants seniors partis en 18 mois. Tension sur le recrutement de bons profils. Utilise un ATS depuis 4 ans (solution mid-market française) qui fait le job mais sans plus. A investi dans LinkedIn Recruiter l'an dernier. Vient de refuser une levée de fonds pour garder l'indépendance.",
+      "priorites_actuelles": [
+        "Stabiliser l'équipe et recruter 2 consultants confirmés",
+        "Améliorer le taux de conversion candidats présentés/recrutés",
+        "Réduire le temps passé sur l'administratif par ses consultants",
+        "Ne PAS lancer de gros projets avant septembre"
+      ],
+      "experience_avec_offre_similaire": "A testé 2-3 solutions innovantes ces 5 dernières années. Bilan mitigé : un outil de sourcing automatisé abandonné après 6 mois (trop de faux positifs), une formation commerciale qui n'a rien changé. Est devenu sceptique. Se dit 'encore un truc qui promet la lune'.",
+      "fournisseur_actuel": "ATS CleverConnect + LinkedIn Recruiter + suite Office classique",
+      "budget_disponible": "A une enveloppe 'outils & formation' d'environ 15-20K€/an mais déjà engagée à 60%. Pourrait débloquer 5-8K€ max s'il voit un ROI évident et rapide. Pas de budget discrétionnaire immédiat."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un chiffre concret observé chez un concurrent ou confrère similaire (ex: 'Cabinet X a réduit de 30% son time-to-fill sur les postes cadres')",
+        "Reconnaître explicitement qu'on n'a peut-être pas le bon timing et proposer de qualifier ça en 3 minutes",
+        "Poser une question intelligente sur SON métier qui montre qu'on a fait ses devoirs",
+        "Proposer un benchmark gratuit ou un audit sans engagement de sa situation",
+        "Être capable de dire 'Si votre ATS actuel fait ça, effectivement on n'apporte rien'",
+        "Parler en termes de marge et de productivité consultant, pas de fonctionnalités"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je relance concernant la proposition que je vous ai envoyée' (attaque frontale)",
+        "Faire comme si la proposition était extraordinaire et qu'il avait forcément dû la lire",
+        "Pression commerciale type 'Vous aviez dit que vous regardiez'",
+        "Discours générique sur 'la transformation digitale du recrutement'",
+        "Ne pas accepter un 'non' et insister lourdement",
+        "Proposer une démo de 45 minutes alors qu'il n'a même pas validé l'intérêt",
+        "Parler budget ou pricing avant d'avoir créé de la valeur perçue",
+        "Toute phrase contenant 'solution innovante' ou 'leader sur le marché'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, franchement là j'ai un entretien candidat dans 10 minutes, c'est pas le moment...",
+        "sous_texte": "Je n'ai pas regardé votre proposition, je ne veux pas l'avouer, et je cherche une porte de sortie rapide sans être impoli",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter immédiatement la contrainte temps, proposer un créneau ultra-court dans 2 jours en posant UNE question qualifiante avant de raccrocher"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Votre proposition... oui oui, écoutez j'ai pas encore eu le temps de regarder ça en détail, je suis sous l'eau là. Je devais vous recontacter mais voilà...",
+        "sous_texte": "Je n'ai aucune intention de la regarder. Je dis ça pour être poli. Si vous insistez, je vais devenir désagréable",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS insister sur la lecture de la proposition. Pivoter immédiatement : 'Justement, je me demandais si c'était même pertinent pour vous. Vous utilisez quoi aujourd'hui pour...?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, on reçoit des propositions tous les jours hein. Faut que je trouve le temps de tout regarder...",
+        "sous_texte": "Vous n'êtes pas spécial. Vous êtes un commercial parmi 50. Prouvez-moi que vous méritez mon attention",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la réalité, montrer qu'on comprend sa position, et offrir une porte de sortie élégante : 'Je comprends totalement. Peut-être que ce n'est tout simplement pas le bon timing pour vous ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Honnêtement, on a déjà CleverConnect et LinkedIn Recruiter. On a déjà pas mal d'outils là, je vois pas trop ce que vous apportez de plus...",
+        "sous_texte": "Je ne veux pas empiler un énième outil. Mes consultants vont me tuer si je leur impose une nouvelle plateforme. Et je ne veux pas payer pour un doublon",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS défendre son produit immédiatement. Creuser d'abord : 'C'est une vraie question. CleverConnect vous couvre quel pourcentage de vos besoins aujourd'hui ? Qu'est-ce qui vous manque, s'il y a quelque chose ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a testé un truc de sourcing automatisé il y a deux ans. Franchement, ça nous a fait perdre plus de temps qu'autre chose. Trop de faux positifs, mes consultants ont détesté.",
+        "sous_texte": "J'ai déjà été déçu. Je ne veux pas refaire la même erreur. Prouvez-moi que vous êtes différent sans me faire un discours marketing",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la déception, montrer qu'on connaît ce problème : 'Vous avez testé quoi exactement ? Parce que c'est vrai que les outils de sourcing automatique de première génération ont créé ce problème. Quel taux de pertinence vous aviez obtenu ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà le truc, c'est que mes consultants sont déjà speed. Si je leur impose un nouvel outil à prendre en main, je vais avoir une révolution interne...",
+        "sous_texte": "Je ne peux pas me permettre une baisse de productivité temporaire. Mon autorité est fragile sur ce sujet après l'échec précédent. Et je n'ai pas de marge de manœuvre pour former tout le monde",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître le risque réel : 'C'est LA question clé. Combien de temps vos consultants ont mis pour maîtriser CleverConnect à l'époque ? Parce que si c'est plus de 2 heures de prise en main, effectivement ça pose problème'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, je dis ça gentiment, mais vous êtes la troisième personne qui me contacte ce mois-ci avec une solution soit-disant révolutionnaire pour le recrutement. À un moment donné...",
+        "sous_texte": "Je suis saturé de sollicitations. Vous me semblez tous pareils. Différenciez-vous ou je raccroche",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS se défendre en disant qu'on est différent. Plutôt : 'Je vous crois. Et franchement, si les deux autres proposaient déjà quelque chose de pertinent, je perds mon temps. Ils proposaient quoi concrètement ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Ça me parle moyen tout ça. Dans les faits, combien de temps ça prend vraiment à déployer votre truc ?",
+        "sous_texte": "Je commence à écouter mais je reste très sceptique. Je veux des chiffres concrets, pas du marketing. Si vous me mentez maintenant, je le saurai vite",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être brutalement honnête : 'Paramétrage technique : 2-3 jours. Prise en main par les consultants : 3-4 semaines pour être vraiment fluide. Les 15 premiers jours, ils vont râler. Je vous mens pas'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK, admettons. Mais concrètement, sur mon CA, ça représente quel impact ? Parce que des promesses j'en ai entendu...",
+        "sous_texte": "Parlez-moi argent et ROI. Pas de concepts. Des euros. Et soyez capable de justifier vos chiffres sinon je ne vous crois pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Renvoyer d'abord une question : 'Ça dépend de votre structure de coûts. Vos consultants passent combien d'heures par semaine sur de l'administratif vs du vrai recrutement ?' puis chiffrer avec SES données"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Honnêtement, on est déjà engagés sur pas mal de sujets là. Je dois recruter deux consultants, refondre notre offre senior... Franchement c'est pas le timing.",
+        "sous_texte": "C'est une objection vraie, pas une excuse. Je suis réellement surchargé. Mais si vous me montrez que ça m'aide sur mes priorités actuelles, je peux reconsidérer",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rebondir sur ses priorités : 'Vous dites que vous devez recruter deux consultants... Justement, si vos consultants actuels gagnaient 15% de temps productif, ça change votre calcul de recrutement ou pas ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget, franchement on a déjà pas mal dépensé cette année. Je sais même pas si j'ai l'enveloppe là...",
+        "sous_texte": "Je teste votre réaction au budget. Je veux savoir si vous êtes cher avant de m'engager émotionnellement. Et je prépare une objection prix",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas parler prix maintenant : 'Je comprends. Avant de parler budget, on n'a même pas validé si ça vous apporte quelque chose. Vous avez dépensé combien déjà sur quoi ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà voilà... Bon écoutez, pourquoi pas. Envoyez-moi un mail avec les infos, je regarde ça avec mes associés et on vous recontacte.",
+        "sous_texte": "Je veux vous faire partir poliment. Je ne vais ni lire le mail, ni en parler aux associés. C'est ma technique pour clore sans dire non frontalement",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne PAS accepter cette sortie : 'Laurent, soyons cash 30 secondes. Si je vous envoie un mail, vous allez le regarder ou c'est votre façon de me dire que ça vous intéresse pas ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être transparent avec vous : je dois en parler à mes deux associés avant de m'engager sur quoi que ce soit. On prend toutes les décisions budget à trois.",
+        "sous_texte": "C'est vrai, mais c'est aussi une protection. Je ne veux pas être celui qui pousse ce projet seul. Si ça foire, je ne veux pas être responsable. Et mes associés sont encore plus sceptiques que moi",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider et structurer : 'Totalement logique. Comment vous prenez ce genre de décisions d'habitude ? Vous leur présentez d'abord ou ils veulent voir eux-mêmes ? Et qui est le plus difficile à convaincre des trois ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, c'est tentant. Mais là si je lance ça avant septembre, ça va être la catastrophe avec tout ce qu'on a en cours. On peut en reparler à la rentrée ?",
+        "sous_texte": "Peut-être sincère, peut-être une excuse. Je teste si vous allez insister lourdement ou respecter ma contrainte. Et dans 3 mois j'aurai peut-être oublié",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Challenger gentiment : 'Je comprends le timing. Une question bête : si on pouvait déployer ça en mode très progressif, genre un consultant pilote en juillet pour être opérationnel en septembre, ça change quelque chose ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, je suis intéressé. Mais faut qu'on parle prix maintenant parce que j'ai pas de budget illimité moi. Vous êtes à combien ?",
+        "sous_texte": "Je suis intéressé MAIS je m'attends à un choc du prix. Je prépare ma déception et mon objection finale. Si c'est trop cher, je vais me servir de ça pour tout annuler",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ancrer d'abord la valeur : 'Avant de vous donner un chiffre, pour que ça ait du sens : vous avez validé qu'on pouvait vous faire gagner [X] heures par mois sur vos 17 consultants. Ça représente quel coût pour vous actuellement ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voilà, écoutez j'entends tout ce que vous me dites, ça peut être intéressant, mais franchement là [gros soupir]... Je peux pas m'engager comme ça au téléphone. C'est trop de changement, trop de risques, et j'ai pas assez de recul. Laissez-moi le temps de digérer tout ça, je vous rappelle si ça m'intéresse vraiment. Mais me faites pas de forcing hein.",
+      "condition_declenchement": "Se déclenche si le commercial a trop poussé, trop vite, sans construire suffisamment de valeur perçue ou sans désarmer les risques (risque équipe, risque ROI, risque timing). Ou si le prix a été annoncé trop tôt sans ancrage valeur"
+    },
+    "pattern_escalade": "Laurent commence en mode barrage réflexe ('pas le temps', 'j'ai pas regardé'). Si le commercial respecte ses contraintes et pose des questions intelligentes, il s'ouvre progressivement et partage ses vraies objections (outils existants, échec passé, équipe résistante). Puis il teste la solidité du commercial avec des objections tactiques (budget, associés, timing). Si le commercial tient bon et reste factuel, Laurent peut basculer en intérêt sincère mais va poser une dernière objection de sécurité avant de s'engager. Si à un moment le commercial fait du forcing ou du marketing creux, Laurent se referme instantanément et met fin à l'échange poliment mais fermement.",
+    "piege_classique": "Laurent donne facilement des signaux d'intérêt modéré ('mouais pourquoi pas', 'ça peut se regarder') qui font croire au commercial qu'il a gagné. Mais ces signaux sont des tests : Laurent observe si le commercial va relâcher sa rigueur et basculer en mode closing agressif. Le piège est de croire qu'on a vendu quand Laurent est seulement passé de 'hostile' à 'curieux'. Il faut continuer à construire la valeur et désarmer les risques jusqu'au bout. L'autre piège : accepter son 'envoyez-moi un mail' = mort de la vente à 95%"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Service B2B pour cabinets RH et agences de recrutement",
+      "description": "Entreprise proposant des solutions ou services aux professionnels du recrutement et des ressources humaines"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite envoyée il y a 10 jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à gérer efficacement les relances post-proposition pour obtenir un positionnement clair du prospect (oui/non/prochaine étape) et sortir du silence radio",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Cabinet de recrutement (silence radio J+10)",
+    "vous_etes": "Commercial B2B chez un éditeur de solutions pour cabinets RH, avec 2 ans d'expérience sur ce marché.",
+    "vous_vendez": "Une solution pour cabinets de recrutement (nature et prix non communiqués dans ce brief — vous devrez les découvrir ou les assumer pendant l'appel).",
+    "vous_appelez": "Laurent Mercier, 47 ans, Directeur associé chez Talents & Stratégies, cabinet de recrutement middle/senior management (17 consultants, 2,1M€ CA). Pragmatique, hyper-sollicité, méfiant par défaut. Coupe court dès qu'il sent qu'on lui fait perdre son temps.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale il y a 10 jours",
+      "Il n'a jamais répondu — silence radio total",
+      "Son cabinet utilise déjà CleverConnect (ATS) et LinkedIn Recruiter",
+      "Il est en tension sur ses marges et veut éviter les projets chronophages avant septembre",
+      "Il a déjà testé des outils innovants par le passé avec des résultats décevants"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : soit un vrai intérêt avec prochaine étape définie, soit un non franc, soit un timing précis de rappel — sortir du flou.",
+    "vos_atouts": [
+      "Vous pouvez parler chiffres concrets et ROI rapide si vous savez ce que votre solution apporte vraiment",
+      "Vous êtes capable de reconnaître si ce n'est pas le bon timing ou si l'offre ne colle pas",
+      "Vous connaissez les douleurs terrain des cabinets : temps passé sur l'administratif, taux de conversion, productivité consultant"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:26:21Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15824,
+    "total_time_s": 154.9
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "id": "scenario_1771524368",
+  "description_originale": "Vous appelez une cabinet comptable de 10-25 collaborateurs. C'est l'assistante de cabinet qui décroche. Vous devez passer le barrage pour parler au expert-comptable associé / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : comptabilite]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "10-25 collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "expert-comptable associé / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de cabinet",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage_filtre"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets comptables pour optimiser leur activité ou servir leurs clients",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Passage du barrage de l'assistante difficile",
+        "Accès au décideur bloqué par le filtrage"
+      ],
+      "implicites": [
+        "Manque de crédibilité perçue par l'assistante",
+        "Difficulté à énoncer une proposition de valeur rapide et pertinente",
+        "Incapacité à différencier l'appel des sollicitations commerciales classiques",
+        "Manque de technique pour créer de la légitimité instantanée"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas créer suffisamment de valeur perçue en 30 secondes pour justifier le transfert d'appel vers le décideur"
+    },
+    "objections_mentionnees": [
+      "Il est en rendez-vous",
+      "Il ne prend pas d'appels commerciaux",
+      "Envoyez-nous une documentation",
+      "De quoi s'agit-il exactement ?"
+    ],
+    "objectif_formation": "Former les commerciaux à franchir le barrage secrétaire/assistante puis décrocher un RDV avec le décideur final dans un contexte de prospection froide multi-interlocuteurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Probable : solutions B2B pour cabinets comptables (logiciel, services, formation, équipement)",
+      "entreprise_description": "Entreprise B2B proposant une solution adaptée aux besoins des cabinets comptables de taille petite à moyenne",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution professionnelle destinée aux cabinets comptables pour améliorer leur performance, productivité ou offre client",
+      "proposition_valeur": "Apporter une amélioration mesurable à l'activité du cabinet comptable (gain de temps, nouveaux services, conformité, rentabilité)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur concrète",
+        "Entreprise vendeuse",
+        "Pricing",
+        "Arguments de différenciation",
+        "Scripts ou angles d'approche actuels",
+        "Taux de réussite actuel du passage de barrage"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Dulac",
+      "age": 51,
+      "poste": "Expert-comptable associé gérant",
+      "entreprise": {
+        "nom": "Cabinet Dulac & Perrin",
+        "secteur": "Expertise comptable et conseil aux TPE/PME",
+        "taille": "17 collaborateurs (3 experts-comptables, 2 chefs de mission, 9 collaborateurs comptables, 2 assistantes, 1 apprenti)",
+        "ca_approximatif": "1,2M€ - marge nette environ 18%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par déformation professionnelle",
+        "Surchargé chroniquement",
+        "Besoin de contrôle et d'autonomie décisionnelle"
+      ],
+      "motivations_profondes": [
+        "Rentabiliser chaque minute facturable",
+        "Protéger la réputation du cabinet bâtie en 23 ans",
+        "Rester compétitif face aux plateformes digitales low-cost",
+        "Réduire la charge administrative pour se recentrer sur le conseil",
+        "Préparer une transmission du cabinet dans 8-10 ans"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des prestataires peu sérieux",
+        "Être dépendant d'un fournisseur ou d'une technologie",
+        "Investir dans quelque chose qui ne sera pas utilisé par l'équipe",
+        "Complexifier davantage des process déjà lourds",
+        "Se faire avoir comme en 2019 avec ce logiciel de gestion payé 8000€ jamais vraiment déployé"
+      ],
+      "rapport_aux_commerciaux": "Réflexe défensif immédiat. Pense : 'Encore un qui veut me vendre un truc dont je n'ai pas besoin'. A développé une carapace après 20 ans de sollicitations incessantes. Respecte uniquement ceux qui connaissent VRAIMENT son métier.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec micro-soupirs traduisant 'je n'ai pas le temps'. Regarde sa montre ou son écran pendant que vous parlez.",
+      "signaux_interet": [
+        "Arrête de faire autre chose et se cale dans sa chaise",
+        "Pose des questions précises sur les délais ou l'implémentation",
+        "Mentionne un cas client concret : 'Tiens, j'ai justement un client dans le BTP qui...'",
+        "Dit 'Attendez' et prend des notes manuscrites",
+        "Demande si vous connaissez tel confrère ou tel cabinet"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Écoutez, je vais être honnête...'",
+        "'On a déjà quelque chose qui fait à peu près ça'",
+        "'Franchement, ce n'est pas le moment'",
+        "Commence à taper au clavier pendant que vous parlez",
+        "'Envoyez-moi un mail, je regarderai' (= poubelle assurée)",
+        "Ton qui devient faussement poli mais glacial"
+      ],
+      "tics_langage": [
+        "'Honnêtement' (revient 8 fois par conversation)",
+        "'Bon écoutez...' (signal de fin imminente)",
+        "'Je ne vais pas vous mentir' (contradiction immédiate après)",
+        "Soupirs audibles",
+        "'Ouais, ouais...' (= pas convaincu du tout)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35 secondes maximum avant interruption ou décrochage mental. Détecte instantanément le pitch préfabriqué et déconnecte."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable mais sous pression : turnover d'un collaborateur senior parti en janvier, marges qui s'érodent avec la concurrence digitale, clients qui négocient davantage. Nouveau décret sur la facture électronique à gérer pour 2026 = source de stress ET d'opportunité business. Vient de refuser 2 nouveaux clients car équipe saturée.",
+      "priorites_actuelles": [
+        "Finaliser la campagne déclarative ISF-IFI (mars-avril)",
+        "Recruter un collaborateur confirmé (cherche depuis 4 mois)",
+        "Comprendre comment monétiser l'accompagnement facture électronique",
+        "Automatiser la saisie comptable pour libérer du temps collaborateur",
+        "Dormir plus de 5h par nuit pendant la saison fiscale"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 logiciels de gestion de cabinet en 15 ans. Un seul vraiment adopté. Échaudé par les promesses marketing vs réalité terrain. A assisté à 2 webinaires l'an dernier, trouvés 'creux'.",
+      "fournisseur_actuel": "ACD (logiciel historique), Cegid pour la compta, MyUnisoft pour quelques clients qui l'exigent. Contrat photocopieur avec un prestataire local. Assurance RCP avec Axa. Formation via IFEC et Ordre.",
+      "budget_disponible": "Peut débloquer 3000-8000€ rapidement si ROI évident et mesurable sous 6 mois. Au-delà : nécessite validation avec l'associé Perrin + étude de rentabilité formelle. Budget formation annuel : 12 000€ déjà largement consommé."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un pain point TRÈS spécifique qu'il vit cette semaine (ex: 'les 40h perdues par mois en relances clients pour pièces manquantes')",
+        "Citer un confrère qu'il connaît/respecte sans être intrusif",
+        "Démontrer une connaissance pointue de la réglementation récente (facture électronique, nouvelles normes ANC)",
+        "Quantifier un gain de temps ou de marge avec des chiffres crédibles issus de cabinets similaires",
+        "Reconnaître explicitement que vous ne voulez pas lui faire perdre son temps",
+        "Proposer un format court et concret : '12 minutes chrono pour vous montrer X'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Phrases bateau : 'J'accompagne les cabinets comptables dans leur transformation digitale'",
+        "Tutoiement (surtout si vous avez 28 ans et lui 51)",
+        "Ne pas connaître la différence entre expert-comptable et comptable",
+        "Insister après un premier 'non'",
+        "Prétendre 'révolutionner' son métier",
+        "Demander 'Avez-vous 5 minutes ?' (réponse mentale immédiate : non)",
+        "Comparer votre solution à ce qu'il utilise déjà sans la connaître",
+        "Parler de votre entreprise avant de parler de son problème à lui",
+        "Mail de relance générique envoyé 17 fois"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis vraiment débordé là, c'est la période déclarative, ce n'est vraiment pas le moment...",
+        "sous_texte": "Je suis sincèrement sous l'eau ET c'est mon excuse par défaut pour tous les commerciaux. Prouvez-moi en 10 secondes que ça vaut le coup de continuer.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la période difficile avec empathie réelle + proposer un format ultra-court (8 minutes) + ancrer sur un gain mesurable post-période déclarative"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Honnêtement, on reçoit 15 appels par semaine de ce genre, qu'est-ce qui fait que je devrais vous écouter vous plutôt qu'un autre ?",
+        "sous_texte": "Je suis fatigué d'être sollicité. Je teste votre capacité à vous différencier immédiatement. Si vous me servez du générique, je raccroche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître frontalement la fatigue commerciale + donner UN élément factuel différenciant ultra-spécifique au secteur comptable + prouver que vous connaissez SON contexte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec la documentation, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Ce mail ira directement à la corbeille. Je ne vous rappellerai jamais.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas accepter cette fuite. Reconnaître que les mails ne sont jamais lus + proposer un format interactif court + créer un micro-engagement immédiat"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, ouais, on a déjà quelque chose qui fait à peu près ça... On utilise ACD depuis des années, ça fait le job.",
+        "sous_texte": "Je ne veux pas me compliquer la vie avec un changement. Mon équipe maîtrise l'existant. Même si c'est imparfait, le coût du changement me semble trop élevé.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer ACD. Questionner sur les zones grises que ACD ne couvre PAS (ex: nouvelles obligations 2026) + positionner en complémentarité plutôt qu'en remplacement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je ne vais pas vous mentir, on a déjà testé un truc similaire en 2019, on a payé 8000 balles, personne ne l'a utilisé. Je ne vais pas refaire la même erreur.",
+        "sous_texte": "J'ai une cicatrice d'échec. Je me suis senti grugé. Vous devez me rassurer sur l'adoption réelle, sinon je me protège en disant non.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie pour comprendre les causes réelles + montrer comment votre process d'implémentation diffère concrètement + offrir des garanties tangibles d'adoption"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, concrètement, combien ça coûte ? Parce que si c'est pour me parler d'un truc à 15 000 euros, autant arrêter maintenant.",
+        "sous_texte": "Je veux savoir si je suis dans la bonne catégorie budgétaire avant d'investir plus de temps mental. Mais j'ai aussi peur qu'on me manipule avec des prix échelonnés.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête sans détailler + recadrer sur le ROI potentiel chiffré + demander quel budget il considère raisonnable pour résoudre [problème identifié]"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez... vous me parlez de quoi exactement là ? De logiciel ? De formation ? De conseil ? Je ne suis pas sûr de bien comprendre votre offre.",
+        "sous_texte": "Vous n'avez pas été clair. Je ne comprends pas concrètement ce que vous vendez et comment ça s'intègre chez moi. Je commence à douter de votre sérieux.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Simplifier radicalement en UNE phrase métier (pas jargon). Donner un exemple concret d'utilisation dans SON cabinet avec avant/après tangible."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Honnêtement, ça a l'air intéressant, mais il faudrait que j'en parle avec mon associé Perrin. On prend ce genre de décision ensemble.",
+        "sous_texte": "Je cherche soit une porte de sortie polie, soit j'ai vraiment besoin de validation. Difficile de savoir. Je teste si vous insistez ou si vous respectez mon process.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le process décisionnel + proposer de rencontrer les deux associés ensemble + créer un élément de rareté ou d'urgence légitime (deadline réglementaire, places limitées)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, qui va former mes collaborateurs ? Parce que moi je n'ai pas le temps de faire la formation en interne, et si personne ne l'utilise, ça ne sert à rien.",
+        "sous_texte": "Mon vrai frein c'est l'adoption terrain. J'ai déjà donné avec des outils non utilisés. Je veux des garanties concrètes sur l'accompagnement humain.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler précisément le process d'onboarding (jours, format, intervenant) + donner des métriques d'adoption chez clients similaires + proposer un pilote avec 2-3 collaborateurs"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, je vois ce que vous proposez, mais là on a un collaborateur senior qui vient de partir, on est en sous-effectif, ce n'est vraiment pas le moment d'intégrer un nouvel outil.",
+        "sous_texte": "C'est vrai que j'ai ce problème ET c'est aussi une défense. Mais si vous me démontrez que ça compense justement le départ, vous retournez l'objection.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Retourner l'objection : le départ crée un trou de productivité, votre solution peut compenser partiellement en automatisant X tâches + témoignage cabinet similaire ayant absorbé un départ grâce à la solution"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau sécurité des données, vous êtes hébergés où ? Parce qu'on manipule des données sensibles, je ne vais pas confier ça à n'importe qui.",
+        "sous_texte": "C'est une vraie préoccupation professionnelle + je teste votre crédibilité technique. Si vous ne répondez pas de manière précise et rassurante, vous n'êtes pas sérieux.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Réponse factuelle précise : hébergement (France/UE), certifications (ISO 27001, HDS si santé), conformité RGPD, process de sauvegarde + proposer de fournir la documentation de sécurité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que ça fait gagner 40 heures par mois... Excusez-moi mais ça me paraît énorme, j'ai du mal à y croire. Sur quoi vous vous basez ?",
+        "sous_texte": "J'ai été échaudé par des promesses marketing bidons. Je veux des preuves concrètes, pas du flan. Si vous ne me rassurez pas avec des faits, je vous classe dans la catégorie 'bullshit'.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décomposer le calcul étape par étape avec des chiffres moyens du secteur + proposer de faire SON calcul ensemble sur SES process + offrir une période d'essai mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, je ne dis pas non, mais franchement là j'ai trois dossiers urgents qui m'attendent, il faut vraiment que je vous laisse...",
+        "sous_texte": "Je suis vraiment débordé (vrai) + vous commencez à me convaincre mais je veux souffler et réfléchir seul. Je ne veux pas être brusqué vers une décision.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter immédiatement la contrainte temps + synthétiser en 20 secondes le bénéfice clé + caler un point précis court (date/heure) dans les 48-72h"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, vraiment, mais là on est en pleine période fiscale, on va dire qu'on se rappelle après le 15 mai, d'accord ?",
+        "sous_texte": "Je repousse à plus tard pour ne pas décider maintenant. Il y a 60% de chances que je ne donne jamais suite. Je me donne une excuse temporelle légitime.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la période + ancrer un RDV PRECIS post-15 mai dans l'agenda maintenant + créer un élément de continuité (envoi d'une ressource spécifique d'ici là)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Honnêtement, je dois comparer avec d'autres solutions avant de prendre une décision, vous comprenez. Je ne vais pas m'engager comme ça.",
+        "sous_texte": "Je suis un décideur prudent et analytique. Je veux garder le contrôle du process. Mais je n'ai peut-être pas vraiment d'autres options en tête, je gagne du temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la démarche comparative + proposer une grille de comparaison objective (que vous fournissez) + demander quels critères précis il va utiliser pour décider"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, là vous me proposez de signer aujourd'hui, mais moi je dois voir avec mon collaborateur en charge du projet, avec mon associé, avec mon comptable aussi d'ailleurs...",
+        "sous_texte": "Vous allez trop vite, je me sens bousculé. Je crée un circuit de validation complexe pour reprendre le contrôle et vous ralentir. Peut-être réel, peut-être tactique.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ralentir immédiatement + cartographier le vrai process décisionnel avec lui + proposer un accompagnement pour faciliter la validation interne (présentation aux parties prenantes)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, je ne vais pas vous mentir, votre solution m'intéresse mais le prix me bloque. C'est trop cher pour ce qu'on est.",
+        "sous_texte": "Soit c'est vrai et je n'ai pas le budget, soit je négocie, soit je ne suis pas convaincu du ROI. Vous devez creuser pour savoir lequel.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement. Questionner : trop cher par rapport à quoi ? Quel budget était envisagé ? Recentrer sur le coût de l'inaction + proposer paiement échelonné si pertinent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais, non mais c'est intéressant hein, mais là franchement je ne suis pas sûr qu'on ait la bande passante pour déployer ça. On verra peut-être l'année prochaine.",
+        "sous_texte": "Je repousse à un futur flou pour clôturer poliment. Je ne suis pas assez convaincu de l'urgence ou du bénéfice pour agir maintenant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence légitime : évolution réglementaire 2026, concurrence qui avance, coût de l'inaction chiffré + proposer déploiement progressif low-effort"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être honnête avec vous : j'aime bien ce que vous proposez, mais là j'ai besoin de réfléchir tranquillement. Je ne suis pas à l'aise pour prendre cette décision maintenant. Laissez-moi deux semaines et je vous rappelle, OK ?",
+      "condition_declenchement": "Apparaît quand le commercial a bien argumenté, a créé de l'intérêt réel, mais veut forcer le closing trop rapidement sans laisser à Stéphane son besoin de contrôle et d'analyse posée. Déclencheur = pression de signature immédiate."
+    },
+    "pattern_escalade": "Stéphane suit une escalade prévisible : (1) Objection réflexe polie pour filtrer (débordé, pas le temps) → (2) Si vous tenez bon : test de crédibilité (différenciation, preuve connaissance métier) → (3) Si vous passez : objections sincères sur risques perçus (adoption, échec passé, prix) → (4) Si vous rassurez : objections tactiques de contrôle (associé, comparaison, timing) → (5) Final : besoin de respirer et réfléchir seul avant engagement. La clé : ne jamais griller une étape, respecter son rythme analytique.",
+    "piege_classique": "Le piège mortel avec Stéphane : confondre ses objections tactiques (qu'il utilise par réflexe professionnel d'expert-comptable prudent) avec du désintérêt réel. Beaucoup de commerciaux abandonnent à 'envoyez un mail' ou 'je dois en parler avec mon associé' alors que ce sont des tests de votre ténacité et professionnalisme. L'autre piège : vouloir le convaincre par le volume d'arguments. Stéphane déteste le blabla. 3 arguments béton valent mieux que 15 arguments moyens. Enfin : ne jamais sous-estimer sa cicatrice de 2019 (8000€ perdus) - c'est LE traumatisme qui dicte toute sa méfiance actuelle."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Probable : solutions B2B pour cabinets comptables (logiciel, services, formation, équipement)",
+      "description": "Entreprise B2B proposant une solution adaptée aux besoins des cabinets comptables de taille petite à moyenne"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution professionnelle destinée aux cabinets comptables pour améliorer leur performance, productivité ou offre client",
+      "proposition_valeur": "Apporter une amélioration mesurable à l'activité du cabinet comptable (gain de temps, nouveaux services, conformité, rentabilité)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à franchir le barrage secrétaire/assistante puis décrocher un RDV avec le décideur final dans un contexte de prospection froide multi-interlocuteurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Cabinet d'expertise comptable 17 personnes",
+    "vous_etes": "Commercial B2B spécialisé solutions pour cabinets comptables, vous prospectez à froid par téléphone.",
+    "vous_vendez": "Solution logicielle d'automatisation de la saisie comptable et gestion de la relation client pour cabinets — tarif entre 3 000€ et 8 000€ selon modules.",
+    "vous_appelez": "Stéphane Dulac, 51 ans, expert-comptable associé gérant du Cabinet Dulac & Perrin (17 collaborateurs, 1,2M€ CA). Méfiant, surchargé, échaudé par des promesses non tenues. Ne supporte pas le blabla commercial.",
+    "ce_que_vous_savez": [
+      "Le cabinet utilise ACD + Cegid, a testé 3 logiciels en 15 ans avec 1 seul succès",
+      "Stéphane cherche à automatiser pour libérer du temps collaborateur, a refusé 2 clients faute de capacité",
+      "Priorité actuelle : monétiser l'accompagnement facture électronique 2026 et recruter (cherche depuis 4 mois)",
+      "Budget dispo immédiat : 3 000-8 000€ si ROI prouvé sous 6 mois",
+      "Il décroche mentalement après 35 secondes de monologue et déteste les phrases bateau"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante puis décrocher un RDV physique de 12 minutes avec Stéphane en prouvant que vous connaissez vraiment son métier.",
+    "vos_atouts": [
+      "Vous accompagnez 140 cabinets comptables de 10-30 personnes, dont 12 dans sa région",
+      "Votre solution fait gagner en moyenne 38h/mois en saisie et relances clients",
+      "Module spécifique facture électronique déjà conforme décret 2026",
+      "Onboarding en 3 semaines, pas 6 mois — avec reprise des données ACD/Cegid"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:06:08Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16877,
+    "total_time_s": 164.3
+  }
+}

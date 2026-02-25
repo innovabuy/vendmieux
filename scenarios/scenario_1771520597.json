@@ -1,0 +1,372 @@
+{
+  "id": "scenario_1771520597",
+  "description_originale": "Le directeur des achats centraux d'une chaîne de distribution de 100+ points de vente veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : commerce_distribution]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "grande_distribution_100+_points_vente",
+      "interlocuteur_principal": {
+        "poste": "directeur_achats_centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_destinee_chaine_distribution_multisite",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2_fournisseurs_concurrents_actifs"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "prospect_demande_renegociation_conditions",
+        "mise_en_concurrence_active_2_autres_fournisseurs",
+        "risque_perte_affaire_sur_critere_prix"
+      ],
+      "implicites": [
+        "difficulte_a_maintenir_valeur_percue_face_pression_prix",
+        "manque_information_sur_vrais_criteres_decision",
+        "risque_commoditisation_offre",
+        "commercial_peut_ceder_trop_vite_sur_conditions"
+      ],
+      "probleme_racine": "incapacite_a_differencier_offre_et_extraire_les_vrais_enjeux_business_du_client_au_dela_du_prix"
+    },
+    "objections_mentionnees": [
+      "demande_renegociation_conditions",
+      "comparaison_concurrence",
+      "pression_sur_prix_conditions"
+    ],
+    "objectif_formation": "entrainer_commerciaux_a_defendre_valeur_face_pression_prix_decoder_vrais_criteres_decision_et_closer_sans_brader_marge",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_solutions_pour_commerce_distribution",
+      "entreprise_description": "entreprise_b2b_fournissant_produits_ou_services_aux_chaines_de_distribution_multisite",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_adaptee_gestion_centralisee_deploiement_multisite_100+_points_vente",
+      "proposition_valeur": "valeur_a_defendre_face_concurrence_probablement_lie_qualite_service_fiabilite_accompagnement_ou_roi",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature_exacte_produit_service",
+        "montant_contrat_enjeu",
+        "conditions_actuelles_vs_demandees",
+        "historique_relation_client",
+        "arguments_concurrence",
+        "marges_negociation_disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 51,
+      "poste": "Directeur des Achats et Services Centraux",
+      "entreprise": {
+        "nom": "Proximarché Plus",
+        "secteur": "Grande distribution alimentaire et mixte",
+        "taille": "142 points de vente (franchise et succursales)",
+        "ca_approximatif": "1,2 milliard d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Négociateur redoutable formé à l'ancienne école des achats",
+        "Obsédé par les process et les KPIs de performance fournisseurs",
+        "Profondément méfiant envers les discours commerciaux depuis 28 ans de métier"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur au COMEX en ramenant 3,2M€ d'économies cette année",
+        "Maintenir son statut de terreur respectée auprès des fournisseurs",
+        "Sécuriser sa prime annuelle liée aux gains achats réalisés",
+        "Montrer qu'il maîtrise encore les nouveaux outils digitaux malgré son âge"
+      ],
+      "peurs_freins": [
+        "Passer pour un has-been qui paye trop cher face à la nouvelle DG",
+        "Se faire avoir par un fournisseur et devoir l'expliquer en CODIR",
+        "Que les franchisés se plaignent d'un choix imposé par la centrale",
+        "Perdre la main face au DAF qui pousse pour centraliser les achats IT"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des adversaires sympathiques à manœuvrer. Respecte ceux qui tiennent tête avec arguments, méprise ceux qui cèdent immédiatement. Utilise systématiquement la mise en concurrence comme arme psychologique même quand sa décision est prise.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distancié, tutoiement calculé pour déstabiliser. Commence toujours par 'Bon, on va pas se mentir...' ou 'Soyons factuels...' pour poser son cadre de domination",
+      "signaux_interet": [
+        "Prend des notes manuscrites sur son Moleskine noir (signe qu'il écoute vraiment)",
+        "Pose des questions techniques précises sur les specs ou le déploiement",
+        "Évoque spontanément des contraintes internes spécifiques ('Chez nous à Proximarché...')",
+        "Mentionne un timing précis ('Il faudrait que ce soit bouclé avant le CODIR de mars')",
+        "Demande des références clients dans la distribution avec contact direct"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement avec 'Oui oui, ça je connais'",
+        "Regarde ostensiblement ses mails sur son double écran pendant l'échange",
+        "Évoque les concurrents avec admiration exagérée ('Eux au moins ils ont compris que...')",
+        "Utilise le conditionnel distant ('Ce serait peut-être intéressant de voir... un jour')",
+        "Délègue au responsable achats junior en fin d'échange ('Voyez ça avec Thomas')"
+      ],
+      "tics_langage": [
+        "Commence 60% de ses phrases par 'Bon' ou 'Voilà'",
+        "Utilise 'on va pas se mentir' minimum 3 fois par conversation",
+        "Abuse du 'de toute façon' fataliste",
+        "Place régulièrement 'faut qu'on se comprenne bien' avant d'annoncer une exigence",
+        "Ponctue ses refus par 'après c'est vous qui voyez, hein' pour renvoyer la balle"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum avant interruption. Déteste les introductions corporate ('votre belle entreprise fondée en...'). Veut qu'on rentre dans le vif en 30 secondes. Si le commercial ne pose pas de questions dans les 2 premières minutes, décroche mentalement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Proximarché Plus sort de 18 mois difficiles post-COVID avec une pression énorme de la DG pour optimiser tous les coûts centraux. Le réseau de franchisés râle sur les coûts imposés par la centrale. Un plan de transformation digitale de 8M€ est lancé mais contesté en interne. Stéphane doit montrer des quick wins.",
+      "priorites_actuelles": [
+        "Renégocier tous les contrats centraux avant fin mars pour présentation budget",
+        "Trouver 3,2M€ d'économies achats sur l'année (objectif COMEX)",
+        "Gérer la grogne des franchisés sur les solutions imposées",
+        "Prouver que la centrale apporte de la valeur vs achats décentralisés"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 4 solutions concurrentes ces 6 dernières années. Deux ont été abandonnées après déploiement partiel (fiasco avec le prestataire précédent qui a foiré le rollout sur 40 magasins). Échaudé mais conscient qu'il faut une solution.",
+      "fournisseur_actuel": "Contrat qui arrive à échéance avec TechDistrib Solutions (concurrent historique). Relation correcte mais prix jugé trop élevé et support technique critiqué par les exploitants. Stéphane sait qu'il a un levier de négociation.",
+      "budget_disponible": "Entre 420K€ et 580K€ annuel pour la solution complète avec déploiement et maintenance. Budget validé en principe mais Stéphane a ordre de gratter 15-20% sur toutes les lignes. Il ne révélera jamais le budget plafond."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer qu'on comprend les spécificités de la grande distribution (franchisés + succursales)",
+        "Présenter un ROI chiffré et vérifiable avec références vérifiables (il appellera)",
+        "Proposer un pilote sur 10-15 magasins pour prouver avant déploiement massif",
+        "Montrer qu'on a anticipé la complexité du déploiement multisite (son traumatisme)",
+        "Impliquer son équipe achats dès le début (il valorise l'avis de Thomas son N-1)",
+        "Accepter une clause de performance avec pénalités (ça le rassure vraiment)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Céder sur le prix dès la première demande (il pensera qu'il y a encore de la marge)",
+        "Critiquer frontalement le fournisseur actuel (solidarité professionnelle, c'est lui qui l'a choisi)",
+        "Promettre des délais de déploiement irréalistes (il a donné)",
+        "Noyer sous du jargon technique sans traduction business",
+        "Refuser de donner des références clients contactables (signe de bluff)",
+        "Se montrer arrogant ou donneur de leçons sur son métier",
+        "Proposer un contrat rigide de 3 ans sans clause de sortie (dealbreaker absolu)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, je vais être direct avec vous : on a déjà deux autres fournisseurs sur le coup, et franchement leurs conditions sont plutôt agressives. Donc si c'est pour me refaire le pitch corporate, on va gagner du temps tous les deux.",
+        "sous_texte": "Je pose mon cadre de domination dès le départ. Je veux voir si vous allez paniquer ou tenir votre position. J'ai effectivement des concurrents mais je veux d'abord savoir si vous méritez mon attention.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le cadre direct, montrer qu'on vient avec des questions précises sur ses enjeux spécifiques, pas un pitch générique. Demander 5 minutes pour qualifier si ça vaut le coup pour les deux parties."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais on vous connaît... Vous avez déjà essayé de nous approcher y'a deux ans, ça n'avait rien donné. Qu'est-ce qui a changé aujourd'hui ?",
+        "sous_texte": "Je vous teste pour voir si vous avez fait vos devoirs. Je veux savoir si vous avez compris pourquoi ça n'avait pas marché la première fois et ce que vous avez appris depuis.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la tentative précédente, montrer qu'on a analysé pourquoi le timing n'était pas bon, et identifier précisément ce qui a changé côté Proximarché (fin de contrat, nouveau projet digital, etc.)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon faut qu'on se comprenne bien : moi mon objectif c'est de ramener 3,2 millions d'économies cette année. Donc votre belle solution, c'est bien joli, mais si vous êtes 25% au-dessus du marché, ça sert à rien qu'on perde notre temps.",
+        "sous_texte": "Je vous livre mon vrai enjeu de prime pour mettre une pression maximale sur le prix dès maintenant. Je veux vous voir réagir : vous allez négocier tout de suite ou creuser d'abord mes vrais critères ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas mordre à l'hameçon prix immédiatement. Reconnaître l'objectif mais demander comment il mesure le 'marché' et quels autres critères comptent au-delà du prix initial (coût global, risques, performance). Garder le contrôle de la découverte."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Votre concurrent TechDistrib, avec qui on bosse depuis 4 ans, ils nous ont déjà proposé de baisser de 18% pour renouveler. Vous comprenez que ça me donne une base de comparaison, quoi.",
+        "sous_texte": "Je teste votre réaction à la mention du concurrent et je lance un chiffre précis pour voir si vous allez vous aligner. En réalité ils ont proposé 12% et j'ai dit non, mais je veux voir votre marge de manœuvre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas valider ni contester le chiffre. Poser des questions sur leur satisfaction réelle avec TechDistrib, les raisons pour lesquelles ils explorent des alternatives malgré cette offre, et ce qui manque dans la relation actuelle."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon, faut savoir que chez nous les franchisés gueulent dès qu'on leur impose un truc de la centrale. Donc votre solution, si elle est pas acceptée sur le terrain, elle finira au placard comme les deux précédentes.",
+        "sous_texte": "Je vous livre une vraie contrainte structurelle pour voir si vous comprenez la complexité politique interne. C'est aussi un début d'ouverture : je vous explique mon vrai problème si vous creusez intelligemment.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser la dynamique franchisés/centrale, demander ce qui a foiré avec les solutions précédentes, comprendre le processus d'adoption et comment impliquer les franchisés dès le pilote. Montrer qu'on a géré ce type de configuration."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon oui oui, tout le monde me dit que leur solution est spécialement adaptée à la grande distrib. Mais concrètement, vous avez combien de clients avec un réseau franchisé de plus de 100 points de vente ? Parce que c'est pas la même limonade, hein.",
+        "sous_texte": "Je vérifie si vous bullshitez ou si vous avez vraiment l'expérience. Je vais probablement appeler vos références donc ne me racontez pas n'importe quoi. C'est un vrai critère discriminant pour moi.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un chiffre précis, nommer 2-3 clients comparables avec permission de contact direct, et expliquer les spécificités du modèle franchisé qu'on a dû gérer (formation décentralisée, rollout progressif, support proximité)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, votre ROI sur 18 mois, c'est basé sur quelles hypothèses exactement ? Parce que des ROI en papier j'en vois passer 15 par mois, et une fois déployé c'est jamais ça. On s'est déjà fait avoir.",
+        "sous_texte": "Je suis échaudé par des promesses non tenues. Je veux voir si votre ROI est solide ou du vent marketing. Si vous ne pouvez pas le défendre ligne par ligne, vous perdez toute crédibilité.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Décortiquer chaque ligne du ROI avec ses hypothèses, proposer de co-construire un ROI spécifique Proximarché avec ses chiffres, offrir des clauses de performance liées aux résultats mesurables. Être transparent sur les conditions de réalisation."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, c'est bien tout ça, mais moi ce qui m'intéresse c'est le prix de déploiement complet sur les 142 magasins, formation comprise, avec la maintenance sur 3 ans. Un chiffre. Pas vos tarifs catalogue là.",
+        "sous_texte": "J'accélère vers le prix parce que je commence à m'intéresser mais je veux garder le contrôle. Je teste aussi si vous allez me donner un chiffre sans avoir fini de qualifier mes besoins (erreur) ou tenir votre méthode.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que c'est légitime mais expliquer qu'un chiffrage précis nécessite encore 2-3 informations sur son infrastructure actuelle, ses priorités de déploiement, et le niveau de support souhaité. Proposer un range large puis affiner ensemble."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On va pas se mentir : votre support technique, j'ai entendu dire que c'était compliqué de vous joindre après-vente. Un de vos clients m'a dit qu'il attendait 48h pour une réponse en cas de pépin. Chez nous, 48h c'est la mort.",
+        "sous_texte": "J'ai vraiment fait mes devoirs et contacté vos clients. Ce feedback est peut-être réel ou exagéré, mais je veux voir comment vous gérez une critique documentée. Votre réaction va en dire long sur votre honnêteté.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas nier ou minimiser. Demander quel client a dit ça et dans quel contexte, reconnaître un éventuel problème passé et expliquer ce qui a été corrigé depuis, et surtout proposer des engagements contractuels de délai de réponse avec pénalités."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est qu'on s'est vraiment fait planter y'a 18 mois par un de vos concurrents sur le déploiement. Ils avaient promis 6 mois, ça a pris 14 mois, la moitié des magasins ont jamais accroché. J'ai pris cher au COMEX. Donc là je suis prudent.",
+        "sous_texte": "Je vous livre ma vraie blessure professionnelle. C'est une ouverture importante : si vous savez me rassurer sur ce point précis avec des preuves concrètes, vous marquez des points majeurs. Mais si vous balayez ça d'un revers de main, c'est fini.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce qui a foiré précisément, montrer de l'empathie sans critiquer le concurrent, expliquer votre méthodologie de déploiement étape par étape avec phases de validation, proposer un pilote sur 12-15 magasins pour prouver avant d'engager les 142."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon après, on peut discuter, mais faut être réaliste : entre nous, vous avez combien de marge sur votre prix ? Parce que je sais très bien comment ça marche, hein. Vous annoncez un tarif et derrière y'a toujours 20-25% de négo possible.",
+        "sous_texte": "Je teste votre maturité commerciale et j'essaie de vous faire lâcher vos marges de manœuvre. Je veux voir si vous allez céder immédiatement (signe de faiblesse) ou tenir une position professionnelle sur la construction de valeur.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Sourire, reconnaître qu'il a de l'expérience, mais expliquer que le prix dépend du périmètre exact, des options choisies, du calendrier de déploiement. Proposer de travailler sur la valeur d'abord, puis d'optimiser l'investissement ensemble sur des critères objectifs."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant ce que vous me présentez. Voyez ça avec Thomas, mon responsable achats, il va creuser les specs techniques et on se recale après. Il a vos coordonnées ?",
+        "sous_texte": "Je délègue pour prendre de la distance et garder le contrôle. Soit je suis vraiment intéressé et Thomas va qualifier sérieusement, soit c'est une façon polie de vous refroidir. Votre réaction va me dire si vous comprenez les dynamiques de pouvoir.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter de rencontrer Thomas (obligatoire) mais demander à Stéphane quels sont les 2-3 critères décisifs pour lui personnellement, et quel est le timing de décision réel. Sécuriser un point de suite avec lui après l'échange avec Thomas."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, de toute façon faut que j'en parle au DAF et au DG. C'est pas moi tout seul qui décide sur ce montant-là. Je vous recontacte d'ici 3 semaines quand j'ai leur retour.",
+        "sous_texte": "C'est partiellement vrai (le DAF est impliqué sur les gros montants) mais c'est surtout une tactique pour garder la main et vous mettre en position d'attente. Je veux voir si vous acceptez passivement ou si vous proposez une approche proactive.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre le processus de validation exact, demander si on peut préparer des éléments spécifiques pour faciliter sa présentation au DAF/DG, proposer d'être présent ou de préparer un dossier exécutif. Fixer un point intermédiaire plutôt que d'attendre passivement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, on arrive au bout là. Dernière question : quel est vraiment votre meilleur prix ? Parce que TechDistrib m'a proposé 385K€ tout compris pour le renouvellement. Vous êtes où vous ?",
+        "sous_texte": "C'est le moment de vérité. Le chiffre que je donne est probablement faux ou incomplet pour vous mettre sous pression. Je veux voir si vous allez vous aligner aveuglément ou défendre votre valeur avec des arguments solides.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas s'aligner sans comprendre ce qui est inclus dans les 385K€. Demander le détail du périmètre concurrent, pointer les différences (support, formation, garanties), et si l'écart existe, le justifier par des éléments de valeur quantifiables ou proposer un pilote comparatif."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement j'aime bien votre approche, vous avez l'air de connaître votre sujet. Mais là vous me demandez 480K€, mes concurrents sont à 380-390K€. Faut m'expliquer les 90-100K€ de delta, parce que je vais pas les justifier au COMEX comme ça.",
+        "sous_texte": "C'est une vraie objection sincère. J'ai un intérêt pour votre solution mais l'écart de prix est réel et je dois le défendre en interne. Si vous savez décomposer cet écart en valeur tangible ou réduire l'écart intelligemment, on peut avancer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Décomposer l'écart ligne par ligne en valeur business : meilleur support (économie temps IT), formation renforcée (adoption plus rapide = ROI accéléré), garanties de performance (réduction risque), clause de sortie flexible. Proposer des options pour réduire l'écart sans brader."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, on va pas se mentir, moi ce que je veux c'est une clause de sortie au bout d'un an si ça marche pas. Votre contrat sur 3 ans ferme, ça me bloque. J'ai déjà donné avec le prestataire précédent.",
+        "sous_texte": "C'est un dealbreaker réel basé sur une mauvaise expérience. Si vous refusez catégoriquement, je vais probablement aller voir ailleurs. Si vous trouvez une solution créative (pilote, clause conditionnelle, etc.), vous déverrouillez la situation.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre sa crainte légitime, proposer une structure hybride : pilote 12 mois sur 15 magasins avec clause de sortie, puis si validation, extension sur 3 ans avec clause de performance. Transformer la contrainte en opportunité de prouver sa valeur progressivement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le timing c'est quoi chez vous pour démarrer ? Parce que nous faudrait que ce soit opérationnel avant fin septembre pour les franchisés. Si vous me dites que c'est jouable et que dans 6 mois vous me dites 'ah bah non finalement', je suis dans la merde.",
+        "sous_texte": "J'ai un vrai timing métier mais je teste aussi votre réalisme. Si vous promettez n'importe quoi pour closer, vous allez me poser un problème énorme. Je préfère quelqu'un qui me dit la vérité même si c'est tendu, plutôt qu'un mythomane.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur le rétroplanning réaliste, identifier les contraintes côté Proximarché qui pourraient retarder (validation interne, préparation infra), proposer des jalons clairs avec responsabilités partagées, et être honnête si fin septembre est tendu."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon, avec la nouvelle DG ils remettent tout à plat. Y'a peut-être un plan de réorganisation des achats dans les tuyaux. Donc moi je vais pas m'engager sur 3 ans si dans 6 mois c'est quelqu'un d'autre qui pilote le dossier.",
+        "sous_texte": "Je vous livre une incertitude politique réelle qui peut bloquer la décision, mais c'est aussi une excuse potentielle pour repousser. Je veux voir si vous allez paniquer ou m'aider à construire un dossier solide qui survivra aux changements organisationnels.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser la probabilité et le timing du changement, proposer de construire un business case béton qui sera défendable quel que soit l'interlocuteur futur, offrir de rencontrer le DAF ou DG pour ancrer le projet stratégiquement, ou proposer une phase 1 courte avec option d'extension."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon voilà, j'ai bien tout noté. C'est un beau projet mais franchement, entre vous et moi, y'a quand même 80-90K€ d'écart avec la concurrence. Je vais être cash : soit vous faites un effort significatif sur le prix pour qu'on puisse avancer, soit on va devoir passer notre tour. Après c'est vous qui voyez, hein. Mais c'est dommage parce que techniquement vous me bottez bien.",
+      "condition_declenchement": "Se déclenche quand le commercial a bien géré la découverte, démontré la valeur, créé une vraie connexion, MAIS n'a pas encore abordé frontalement l'écart de prix de manière structurée avec des justifications chiffrées. Stéphane veut closer mais teste une dernière fois la capacité à défendre la valeur ou à proposer une créativité commerciale intelligente."
+    },
+    "pattern_escalade": "Stéphane commence toujours par des objections de cadrage et de dominance (1-2 minutes) pour tester la solidité du commercial. Si le commercial tient bon et pose de bonnes questions, il passe en mode découverte sincère en livrant des vraies contraintes (franchisés, traumatisme précédent). Puis il escalade progressivement la pression sur le prix en introduisant des chiffres concurrents de plus en plus précis. L'objection finale arrive toujours sous forme de 'dernière chance' après avoir validé l'intérêt technique. S'il dit 'après c'est vous qui voyez', c'est qu'il teste votre détermination une dernière fois avant de négocier sérieusement.",
+    "piege_classique": "Le piège majeur de Stéphane est de faire croire que le prix est le seul critère dès le début de l'échange ('je dois ramener 3,2M€ d'économies'), alors qu'en réalité il a 4-5 critères décisifs : fiabilité du déploiement (son traumatisme), acceptation par les franchisés (sa contrainte politique), ROI vérifiable (sa crédibilité COMEX), support réactif (son opérationnel), ET prix compétitif. Le commercial qui négocie le prix avant d'avoir exploré et adressé les 4 autres critères perd toute sa valeur et se fait démonter. Stéphane respecte ceux qui tiennent leur valeur avec arguments et méprise ceux qui cèdent immédiatement sur le prix, car il en déduit qu'il y a encore énormément de marge et que le commercial l'a pris pour un pigeon depuis le début."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_solutions_pour_commerce_distribution",
+      "description": "entreprise_b2b_fournissant_produits_ou_services_aux_chaines_de_distribution_multisite"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_adaptee_gestion_centralisee_deploiement_multisite_100+_points_vente",
+      "proposition_valeur": "valeur_a_defendre_face_concurrence_probablement_lie_qualite_service_fiabilite_accompagnement_ou_roi",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "entrainer_commerciaux_a_defendre_valeur_face_pression_prix_decoder_vrais_criteres_decision_et_closer_sans_brader_marge",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation commerciale — Directeur Achats grande distribution",
+    "vous_etes": "Commercial B2B chez un fournisseur de solutions pour la grande distribution, en phase de négociation avancée avec Proximarché Plus.",
+    "vous_vendez": "Une solution de gestion centralisée pour déploiement multisite adaptée aux réseaux mixtes (franchise + succursales) — Budget estimé client : 420-580K€/an.",
+    "vous_appelez": "Stéphane Mercier, 51 ans, Directeur des Achats Centraux chez Proximarché Plus (142 points de vente). Négociateur redoutable, méfiant, obsédé par les économies d'achats et les preuves concrètes.",
+    "ce_que_vous_savez": [
+      "Leur contrat actuel avec TechDistrib Solutions arrive à échéance — prix jugé élevé, support critiqué",
+      "Stéphane doit ramener 3,2M€ d'économies cette année et renégocier tous les contrats avant fin mars",
+      "L'entreprise a vécu un fiasco de déploiement il y a 2 ans (40 magasins impactés) — il est échaudé",
+      "Il a 2 autres fournisseurs concurrents sur la table et utilisera la mise en concurrence comme levier",
+      "Les franchisés râlent sur les coûts imposés par la centrale — Stéphane doit prouver la valeur"
+    ],
+    "votre_objectif": "Closer la vente sans brader vos conditions en extrayant ses vrais critères de décision au-delà du prix et en défendant votre valeur face à la pression.",
+    "vos_atouts": [
+      "Votre expertise spécifique sur les réseaux mixtes franchise/succursale en distribution",
+      "Votre méthodologie de déploiement progressif et sécurisé (pilote avant généralisation)",
+      "Vos références clients vérifiables dans la distribution avec ROI documenté",
+      "Votre flexibilité contractuelle (clause de performance, sortie anticipée possible)"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:03:17Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17979,
+    "total_time_s": 195.3
+  }
+}

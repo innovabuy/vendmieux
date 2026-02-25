@@ -1,0 +1,332 @@
+{
+  "id": "scenario_1771509237",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : services_entreprises]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "PME de 25 à 50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux entreprises de nettoyage, sécurité ou maintenance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale depuis 10 jours",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Le commercial n'a probablement pas créé d'engagement fort lors de l'envoi initial",
+        "Absence de date de relance planifiée en amont",
+        "Le gérant peut être débordé ou la proposition n'est pas prioritaire",
+        "Manque de suivi structuré et de jalons dans le processus commercial"
+      ],
+      "probleme_racine": "Absence de processus de suivi structuré avec jalons et engagements mutuels après l'envoi de proposition"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à gérer efficacement les relances après proposition commerciale et obtenir des engagements clairs du prospect (oui/non/prochaine étape) sans être intrusif",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B - Fournisseur de solutions pour entreprises de services",
+      "entreprise_description": "Entreprise proposant des produits ou services aux sociétés de nettoyage, sécurité et maintenance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution commerciale ayant fait l'objet d'une proposition écrite envoyée il y a 10 jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Prix ou budget de la proposition",
+        "Contexte de la première interaction (comment la proposition a été demandée)",
+        "Besoins identifiés du prospect",
+        "Nom et détails de l'entreprise vendeuse",
+        "Raisons potentielles du silence (objections possibles)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Karim",
+      "nom": "Benkhaled",
+      "age": 47,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Net'Pro Services",
+        "secteur": "Nettoyage industriel et tertiaire",
+        "taille": "38 salariés",
+        "ca_approximatif": "1,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Chroniquement débordé",
+        "Méfiant envers les promesses commerciales"
+      ],
+      "motivations_profondes": [
+        "Protéger sa marge dans un secteur ultra-concurrentiel",
+        "Éviter les emmerdes opérationnelles qui lui bouffent du temps",
+        "Prouver qu'il a réussi sans grandes études (fierté du self-made man)"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur plus malin que lui",
+        "Investir dans quelque chose qui ne sert à rien sur le terrain",
+        "Perdre du temps en réunions inutiles alors qu'il a 3 chantiers en retard",
+        "Que ses équipes ne suivent pas et que ça reste un gadget"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des 'beaux parleurs' qui ne connaissent pas la réalité du terrain. Respecte uniquement ceux qui ont fait leurs preuves dans l'opérationnel",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'impatience à peine dissimulée. Coupe court aux préliminaires",
+      "signaux_interet": [
+        "Pose des questions très concrètes sur le ROI et les délais",
+        "Évoque spontanément des problèmes opérationnels précis",
+        "Demande des références dans son secteur exact",
+        "Dit 'Attends, laisse-moi noter ça'"
+      ],
+      "signaux_rejet": [
+        "Répond 'Ouais ouais' de manière automatique",
+        "Commence ses phrases par 'Écoutez, franchement...'",
+        "Invoque un appel urgent qu'il doit prendre",
+        "Dit 'On verra ça' sans proposer de date concrète",
+        "Utilise le conditionnel : 'Ça pourrait être intéressant' sans engagement"
+      ],
+      "tics_langage": [
+        "Ponctue par 'Voilà voilà' quand il veut clore",
+        "Dit 'Concrètement' avant chaque question importante",
+        "Utilise 'franchement' pour introduire une objection",
+        "Appelle tout le monde 'chef' ou 'mon ami'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum avant interruption. Au-delà, il décroche mentalement ou coupe pour reprendre la main"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance organique (+12% CA sur 2 ans) mais marges sous pression. Deux gros clients perdus en 6 mois à cause de moins-disant chinois. Recrutement difficile (5 postes non pourvus). Vient d'investir 45K€ dans un camion et du matériel",
+      "priorites_actuelles": [
+        "Remporter l'appel d'offres mairie du 15e arr. (250K€ sur 3 ans)",
+        "Stabiliser l'équipe du site Défense où il y a du turn-over",
+        "Négocier avec la banque pour décaler un crédit",
+        "Digitaliser la pointeuse (obligation légale)"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de gestion il y a 3 ans, abandonné au bout de 6 mois ('trop compliqué, pas adapté'). Échaudé par un formateur qui n'a jamais mis les pieds sur un chantier",
+      "fournisseur_actuel": "Gère tout sur Excel + WhatsApp + carnets papier. Sa comptable utilise Ciel Compta. Pas de solution intégrée",
+      "budget_disponible": "Maximum 8-10K€ sur l'année, à condition de prouver un retour en moins de 12 mois. Doit passer en conseil avec son expert-comptable pour toute dépense >5K€"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets et gain de temps quantifié ('3h/semaine économisées')",
+        "Montrer qu'on connaît ses contraintes (pointeuse, clients qui payent à 60 jours)",
+        "Citer un concurrent direct qui utilise la solution avec succès",
+        "Proposer un test rapide sur UN chantier précis sans engagement",
+        "Reconnaître la complexité de son métier sans bullshit",
+        "Être disponible en dehors des heures de bureau (il bosse de 6h à 20h)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou de 'stratégie'",
+        "Minimiser ses objections ou lui dire que 'c'est simple'",
+        "Proposer une démo de 2h en visio avec 3 interlocuteurs",
+        "Éviter de parler prix et renvoyer vers un 'devis personnalisé'",
+        "Utiliser du jargon startup ou Anglo-saxon ('onboarding', 'user-friendly')",
+        "Insister après un 'non' clair",
+        "Ne pas avoir regardé son site web avant d'appeler"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute chef, je suis en plein chantier là, c'est pas vraiment le moment...",
+        "sous_texte": "Je n'ai pas relu votre proposition et je ne veux pas l'avouer. Je teste si vous allez insister ou me laisser tranquille.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter l'urgence, proposer un créneau ultra-précis (2 minutes) ou un moment plus adapté en le faisant choisir"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui votre proposition... Franchement j'ai pas encore eu le temps de regarder en détail avec tout ce qu'on a en ce moment.",
+        "sous_texte": "Soit c'est vrai (débordé), soit ce n'est pas prioritaire, soit je ne vois pas l'intérêt. Je vous renvoie la balle pour voir votre réaction.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler les 2-3 points clés de la proposition en 20 secondes max, puis poser une question fermée sur UN élément précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais bon, nous on fonctionne déjà avec nos carnets et WhatsApp, ça marche très bien hein. Pourquoi se compliquer la vie ?",
+        "sous_texte": "Je suis dans ma zone de confort. Prouvez-moi que le changement vaut le coup ET que mes gars vont suivre, sinon je ne bouge pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que ça fonctionne, puis questionner sur un point de douleur précis (pertes d'info, temps passé à consolider, erreurs de pointage)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, qu'est-ce que ça va me faire gagner en euros sonnants et trébuchants ? Parce que là je vois surtout un investissement...",
+        "sous_texte": "Je suis intéressé MAIS je dois justifier cette dépense. Donnez-moi des munitions chiffrées pour convaincre mon comptable et me convaincre moi-même.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Renvoyer une question sur SES coûts actuels (temps admin, erreurs, litiges clients) avant de chiffrer le gain"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai déjà testé un truc il y a 3 ans, un logiciel soi-disant révolutionnaire... Au final personne s'en servait, c'était la galère. J'ai perdu 6 mois et du pognon.",
+        "sous_texte": "Je suis échaudé. J'ai peur de me refaire avoir. Vous devez me rassurer sur l'adoption terrain et la simplicité RÉELLE, pas marketing.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché précisément (formation ? complexité ? SAV ?), montrer en quoi vous êtes différent avec des preuves concrètes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais, je comprends... Bon écoute on va regarder ça tranquillement de notre côté et je te recontacte, OK ?",
+        "sous_texte": "Je veux clore poliment sans dire non. Soit je ne suis pas convaincu, soit ce n'est pas le bon moment, soit je veux comparer. Vous ne me reverrez probablement jamais.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Challenger avec bienveillance : 'Karim, soyons francs 2 secondes, qu'est-ce qui coince vraiment ?' ou proposer un micro-engagement (test, visite)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, là tu me parles de ROI à 12 mois, mais c'est quand même 8 ou 10 bornes à sortir cash là tout de suite non ? On a investi 45K dans du matos le mois dernier...",
+        "sous_texte": "L'argent est un vrai sujet en ce moment. Je ne dis pas non, mais le timing est pourri. Proposez-moi une alternative (échelonnement, phase de test) ou je vais devoir passer mon tour.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la contrainte cash, proposer un phasage (commencer petit sur 1 chantier) ou questionner sur le coût de l'inaction"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et vos concurrents ils proposent quoi eux ? Parce que j'ai vu qu'il y avait 2-3 autres boîtes qui font des trucs similaires...",
+        "sous_texte": "Soit je cherche vraiment à comparer (bon signe d'intérêt), soit je veux vous mettre la pression sur le prix, soit je gagne du temps pour ne pas décider maintenant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer qu'il y a des alternatives, valoriser VOTRE différence spécifique pour son contexte, puis recentrer sur SES critères de choix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, mes gars sur le terrain ils sont pas des cracks de l'informatique hein. Si c'est trop compliqué ils vont jamais s'en servir et ça va être la merde...",
+        "sous_texte": "J'ai peur du rejet terrain qui me ferait perdre du temps et de la crédibilité. Si vous ne me rassurez pas CONCRÈTEMENT (pas avec du marketing), je passe mon chemin.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer l'interface mobile en 30 secondes chrono, proposer de former 1-2 chefs d'équipe pilotes, citer un client similaire qui a réussi"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute c'est intéressant, ça pourrait le faire... Mais bon faut que j'en parle à mon comptable déjà, et puis là j'ai l'appel d'offres de la mairie du 15ème qui me bouffe tout mon temps. On se rappelle dans un mois ou deux ?",
+        "sous_texte": "Je suis en surcharge cognitive. Vous n'êtes pas prioritaire MAINTENANT même si l'offre n'est pas mauvaise. Si vous n'installez pas un prochain jalon concret, on ne se reparlera jamais.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la priorité AO, puis montrer le lien (ex : meilleure gestion = plus crédible sur AO). Proposer un micro-engagement pendant qu'il prépare l'AO"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, envoie-moi un nouveau mail avec tout ça récapitulé et les prix détaillés, et je regarde ça cette semaine promis.",
+        "sous_texte": "Je vous évacue poliment en vous donnant une tâche administrative. Soit je suis sincère (20% de chances), soit c'est une manière de dire non sans conflit.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter MAIS conditionner : 'Je t'envoie ça ce soir, et on se cale 10 minutes vendredi 11h pour tes questions ?' Planifier le next step immédiatement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà... Bon écoute merci pour l'appel, on reste en contact hein. Allez, bonne journée mon ami !",
+        "sous_texte": "Je termine poliment mais je ferme la porte. Vous avez perdu ma confiance, ou je ne vois pas l'intérêt, ou vous avez trop insisté. C'est un non déguisé.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Dernière tentative de vérité : 'Karim, sois franc, c'est un non poli là ? Parce que je préfère un non clair qu'un peut-être qui traîne.' Puis accepter la réponse"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "T'as des clients dans le nettoyage industriel qui utilisent ton truc ? Parce que c'est bien beau les belles démos, mais moi je veux voir ce que ça donne dans la vraie vie hein.",
+        "sous_texte": "Je suis proche de décider MAIS j'ai besoin d'une dernière preuve sociale. Si vous avez des références crédibles dans mon secteur, je bascule. Sinon, je reste méfiant.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 1-2 noms précis avec contexte (taille, problème résolu), proposer un contact direct ou une visite, sinon admettre et compenser autrement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est combien par mois ton machin ? Parce que si c'est pour me rajouter 500 balles de charges fixes tous les mois en ce moment...",
+        "sous_texte": "Je veux savoir si c'est dans mon budget AVANT d'investir du temps mental. Si c'est trop cher, autant arrêter maintenant. Je teste aussi votre transparence.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette honnête rapidement, puis recentrer sur la valeur : 'Entre X et Y selon config, mais avant ça, combien tu perds aujourd'hui en...?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute franchement, c'est pas inintéressant ce que tu me dis, mais concrètement là j'ai pas le temps de me lancer dans un truc comme ça. Entre l'appel d'offres, les problèmes de recrutement, le banquier qui me saoule... Je peux pas rajouter un projet en plus. On en reparle dans 6 mois quand ce sera calmé, OK ?",
+      "condition_declenchement": "Déclenchée quand le vendeur a échoué à : 1) Créer l'urgence/coût de l'inaction, 2) Proposer un engagement minimal (pas 'un projet'), 3) Lier la solution à UNE de ses priorités actuelles (AO, recrutement, cash). Karim utilise la surcharge comme bouclier final."
+    },
+    "pattern_escalade": "Karim commence cordial mais pressé → Émet des objections terrain légitimes → Si le vendeur insiste sans apporter de valeur ou le fait tourner en rond, il passe en mode évacuation polie ('Ouais ouais', 'On verra ça') → Si le vendeur persiste maladroitement, il termine brutalement ('Bon j'ai un appel urgent là'). EN REVANCHE : si le vendeur pose des questions intelligentes, reconnaît ses contraintes ET propose un micro-engagement concret, Karim s'ouvre progressivement et teste la solution avec sérieux.",
+    "piege_classique": "Karim donne l'impression d'être intéressé ('Ouais c'est pas mal', 'Ça pourrait le faire') pour rester poli et éviter le conflit, puis utilise le manque de temps comme excuse finale pour disparaître. Le vendeur croit avoir un prospect chaud alors qu'il n'a jamais vraiment accroché. ANTIDOTE : Challenger dès les premiers signaux mous ('Karim, j'ai l'impression que tu me dis oui pour être sympa, c'est vraiment prioritaire pour toi ou pas ?') et obtenir un engagement micro et vérifiable (test sur 1 chantier, RDV avec un chef d'équipe, partage d'un tableau Excel actuel)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B - Fournisseur de solutions pour entreprises de services",
+      "description": "Entreprise proposant des produits ou services aux sociétés de nettoyage, sécurité et maintenance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution commerciale ayant fait l'objet d'une proposition écrite envoyée il y a 10 jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à gérer efficacement les relances après proposition commerciale et obtenir des engagements clairs du prospect (oui/non/prochaine étape) sans être intrusif",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance téléphonique — 10 jours après envoi proposition",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour entreprises de nettoyage industriel",
+    "vous_vendez": "Une solution de gestion opérationnelle (proposition détaillée envoyée il y a 10 jours, montant non communiqué au prospect par téléphone)",
+    "vous_appelez": "Karim Benkhaled, gérant de Net'Pro Services (38 salariés, nettoyage industriel). Pragmatique, chroniquement débordé, méfiant envers les commerciaux. Parle cash, déteste perdre son temps",
+    "ce_que_vous_savez": [
+      "Il a reçu votre proposition écrite il y a 10 jours et n'a pas donné signe de vie",
+      "Il gère actuellement tout sur Excel + WhatsApp, pas de solution intégrée",
+      "Son entreprise croît (+12% CA) mais il a perdu 2 gros clients face à la concurrence chinoise",
+      "Il vient d'investir 45K€ dans du matériel, budget limité",
+      "Il a abandonné un logiciel de gestion il y a 3 ans (trop compliqué)"
+    ],
+    "votre_objectif": "Obtenir un OUI, un NON ou une prochaine étape concrète avec date — sortir du flou",
+    "vos_atouts": [
+      "Vous connaissez les contraintes terrain du nettoyage industriel",
+      "Votre solution permet de gagner du temps chiffré sur la gestion quotidienne",
+      "Vous proposez des tests rapides sur un chantier sans engagement lourd",
+      "Vous parlez ROI concret, pas transformation digitale"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:53:57Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14162,
+    "total_time_s": 137.5
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "id": "scenario_1771523175",
+  "description_originale": "Vous appelez une PME agroalimentaire de 30-60 salariés, production régionale. C'est l'assistante de direction qui décroche. Vous devez passer le barrage pour parler au dirigeant / directeur de production. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : agroalimentaire]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant ou Directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante de direction",
+          "role": "Barrage/filtrage des appels",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "production régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux décideurs de PME agroalimentaires en production régionale",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Franchir le barrage de l'assistante de direction",
+        "Convaincre un interlocuteur non décisionnaire de transférer l'appel",
+        "Décrocher un RDV avec le décideur"
+      ],
+      "implicites": [
+        "Légitimer l'appel auprès d'un filtrage protecteur",
+        "Créer suffisamment de valeur perçue pour justifier l'accès au décideur",
+        "Gérer la structure hiérarchique et les rôles de protection",
+        "Établir la crédibilité sans pouvoir présenter l'offre complète"
+      ],
+      "probleme_racine": "Incapacité à créer une légitimité suffisante et une proposition de valeur claire dès les premières secondes pour justifier l'accès au décideur malgré le filtrage organisationnel"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser le passage de barrage assistante et obtenir des RDV avec décideurs en prospection téléphonique froide dans le secteur agroalimentaire",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Service BtoB ciblant l'industrie agroalimentaire",
+      "entreprise_description": "Entreprise proposant des solutions pour les PME agroalimentaires de production régionale",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux dirigeants et directeurs de production dans l'agroalimentaire",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Problématiques métier adressées",
+        "Nom de l'entreprise vendeuse",
+        "Arguments de légitimation pour passer le barrage",
+        "Fourchette de prix",
+        "Références ou preuves sociales"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Bourdier",
+      "age": 52,
+      "poste": "Directeur de production et associé minoritaire",
+      "entreprise": {
+        "nom": "Terroir & Saveurs du Périgord",
+        "secteur": "Transformation de produits carnés régionaux (conserves, terrines, plats cuisinés)",
+        "taille": "43 salariés dont 31 en production",
+        "ca_approximatif": "4,2 M€ avec une stagnation depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre issu du terrain",
+        "Méfiant envers les 'beaux parleurs parisiens'",
+        "Loyal mais rigide une fois qu'un fournisseur a sa confiance"
+      ],
+      "motivations_profondes": [
+        "Protéger l'outil de production qu'il a contribué à bâtir",
+        "Prouver que les PME régionales peuvent tenir face à l'industrialisation",
+        "Éviter les erreurs coûteuses qui fragiliseraient l'emploi local",
+        "Transmettre une entreprise saine à la génération suivante"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par des promesses de consultants déconnectés du réel",
+        "Perturber l'équilibre fragile de la production avec des changements hasardeux",
+        "Dépenser dans du 'vent' alors que chaque euro compte",
+        "Perdre du temps en réunions inutiles qui l'éloignent de l'atelier"
+      ],
+      "rapport_aux_commerciaux": "Profondément sceptique. Considère que 95% veulent lui vendre ce dont il n'a pas besoin. Respecte uniquement ceux qui connaissent vraiment son métier et parlent chiffres concrets",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'ironie défensive type 'Bon, vous me vendez quoi aujourd'hui ?'",
+      "signaux_interet": [
+        "Commence à poser des questions précises sur les chiffres ou le ROI",
+        "Mentionne spontanément un problème concret de son atelier",
+        "Passe du vouvoiement distant à un tutoiement professionnel",
+        "Dit 'Attendez, laissez-moi noter ça' en cherchant un stylo"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Écoutez, je vous arrête là...'",
+        "Regarde ostensiblement sa montre ou son écran d'ordi",
+        "Répond par monosyllabes 'Ouais...', 'Mouais...', 'Bah...'",
+        "Invoque un prétexte : 'J'ai un souci en prod qui m'attend'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' ou 'Bon, franchement...'",
+        "Utilise 'Nous autres, en région...' pour marquer la distance Paris/province",
+        "Ponctue de 'hein' interrogatif : 'C'est pas évident, hein'",
+        "Emploie 'Ouais mais non' quand il désapprouve sans vouloir polémiquer"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Passé ce délai, coupe poliment mais fermement pour reprendre la main ou fuir"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Plateau de CA depuis 18 mois malgré une demande soutenue. Tensions sur marges dues à l'inflation matières premières. Deux départs en retraite non remplacés en production créant des goulets. Nouveau contrat GMS en discussion qui nécessiterait d'augmenter les cadences de 20%",
+      "priorites_actuelles": [
+        "Réduire le gaspillage matière qui grignote 3-4 points de marge",
+        "Fiabiliser la ligne de mise en conserve qui tombe en panne trop souvent",
+        "Former les nouveaux pour compenser les départs sans ralentir",
+        "Trouver 1-2 nouveaux débouchés pour compenser la perte d'un distributeur"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé un logiciel de suivi de production il y a 4 ans (jamais vraiment utilisé car trop complexe). A eu un consultant OPCO pour une formation qualité (résultats mitigés). Méfiance installée",
+      "fournisseur_actuel": "Maintenance assurée par un prestataire local de confiance. Matières premières via coopérative régionale. Aucun accompagnement stratégique externe actuellement",
+      "budget_disponible": "Entre 8K€ et 15K€ mobilisables rapidement si ROI démontrable sous 12 mois. Au-delà, nécessite validation du DG (son cousin) et passage en CODIR"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client similaire de la région avec résultats chiffrés vérifiables",
+        "Parler de gain de marge ou réduction gaspillage avec méthodologie précise",
+        "Montrer qu'on connaît vraiment les contraintes HACCP et traçabilité agroalimentaire",
+        "Proposer une approche par étape testable sans bouleverser l'organisation",
+        "Être recommandé par quelqu'un du réseau (chambre de commerce, syndicat professionnel)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours généraliste marketing type 'transformation digitale' ou 'excellence opérationnelle'",
+        "Comparer son entreprise aux grands groupes industriels",
+        "Minimiser la complexité de son métier ('C'est simple, vous n'avez qu'à...')",
+        "Proposer un engagement long (>2 ans) ou des montants à 5 chiffres d'emblée",
+        "Insister lourdement après un premier refus poli",
+        "Dénigrer ses fournisseurs actuels sans connaître le contexte",
+        "Arriver sans avoir pris 5 minutes pour regarder le site web de l'entreprise"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en pleine production là, c'est pas vraiment le moment...",
+        "sous_texte": "Je ne vous connais pas, vous me dérangez, et je suppose que vous allez me faire perdre mon temps comme les autres",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer immédiatement un moment précis plus tard dans la journée en validant que c'est bien lui le bon interlocuteur sur [problème spécifique]"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, vous me vendez quoi aujourd'hui ?",
+        "sous_texte": "Je vous classe d'emblée dans la catégorie 'commercial comme les autres', prouvez-moi que je me trompe dans les 20 prochaines secondes",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas décrire votre offre mais poser une question sur SA situation actuelle liée à un problème spécifique du secteur"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On travaille déjà avec quelqu'un pour ça, hein",
+        "sous_texte": "Je protège mes fournisseurs actuels par loyauté et aussi pour éviter la remise en question qui demanderait du temps et de l'énergie",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que c'est bien de travailler avec des partenaires de confiance, puis demander s'ils abordent [problème complémentaire spécifique]"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais, mais vous connaissez vraiment notre secteur vous ? Parce que l'agroalimentaire, c'est pas l'industrie classique, nous...",
+        "sous_texte": "Je teste si vous êtes un commercial généraliste qui récite son pitch ou si vous connaissez réellement les contraintes HACCP, traçabilité et spécificités de mon métier",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer des contraintes très spécifiques au secteur (DLC, traçabilité lot, nettoyage/désinfection) et demander comment IL les gère concrètement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà testé un truc comme ça il y a quelques années... Ça a fini au placard. Trop compliqué pour mes équipes",
+        "sous_texte": "J'ai été échaudé, j'ai perdu du temps et de l'argent, et surtout j'ai l'impression d'avoir été pris pour un pigeon. Pourquoi ce serait différent cette fois ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché précisément, valider que c'est effectivement un vrai risque, puis montrer en quoi l'approche proposée est radicalement différente (démarche progressive, simplicité)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais nous autres en région, on n'a pas les moyens des grands groupes, hein...",
+        "sous_texte": "Je me sens en position d'infériorité face à l'industrialisation et je crains que votre solution soit dimensionnée pour des structures plus importantes",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner l'objection en force : justement, les PME régionales ont besoin d'être plus efficaces pour compenser. Citer un exemple similaire en taille"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que j'ai deux gars qui partent à la retraite, je dois former les nouveaux... C'est pas le moment de tout chambouler",
+        "sous_texte": "Je suis sous pression, en sous-effectif, et l'idée d'ajouter un projet de plus me stresse profondément même si je vois l'intérêt",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Repositionner la solution comme facilitateur du transfert de compétences ou comme moyen de compenser la perte de savoir-faire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bah écoutez, tout ça c'est bien joli sur le papier, mais dans la vraie vie, en atelier, c'est une autre histoire...",
+        "sous_texte": "Votre discours sonne comme du marketing déconnecté du terrain. Je ne vous crois pas parce que vous n'avez jamais mis les mains dans le cambouis",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Passer immédiatement du concept aux détails opérationnels concrets : comment ça se passe exactement, qui fait quoi, combien de temps, quel impact sur la prod"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais vos clients dont vous parlez, ils sont où ? Parce que moi je connais personne qui utilise ça dans le coin",
+        "sous_texte": "Je veux des preuves sociales locales et vérifiables, pas des success stories invérifiables de Paris ou d'ailleurs",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 1-2 noms d'entreprises régionales similaires vérifiables (quitte à proposer de les appeler) ou expliquer pourquoi on démarre dans la région"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien votre machin ? Parce que bon, chaque euro compte chez nous...",
+        "sous_texte": "Je veux savoir si on parle de 2000€ ou 50000€ pour calibrer si ça vaut le coup que je continue à vous écouter",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette réaliste rapidement puis IMMÉDIATEMENT recentrer sur le ROI : 'Entre X et Y selon la config, mais l'enjeu c'est surtout les Z points de marge que vous récupérez'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, j'ai déjà eu un consultant OPCO qui m'a fait le coup des belles promesses... Au final, on a rien vu venir",
+        "sous_texte": "Je généralise mon expérience négative à tous les prestataires externes. Vous devez me prouver que vous êtes différent avec des garanties concrètes",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Assumer la déception passée, demander ce qui a manqué précisément, puis montrer comment votre process évite spécifiquement ces écueils (livrables, jalons, engagement de résultat)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, c'est intéressant, mais là je dois gérer un problème sur la ligne de mise en conserve, on peut se reparler plus tard ?",
+        "sous_texte": "Soit c'est vrai et je suis réellement débordé, soit c'est ma stratégie de sortie polie parce que je ne suis pas convaincu mais je ne veux pas être désagréable",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Distinguer le vrai du faux en proposant immédiatement un créneau précis dans les 48h. Si vraie urgence, il acceptera. Si faux, il éludera"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais non, il faut que j'en parle à mon associé avant de m'engager sur quoi que ce soit",
+        "sous_texte": "C'est peut-être vrai (décision collégiale), ou c'est ma porte de sortie pour prendre du recul sans vous vexer",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est normal, proposer un RDV à trois pour gagner du temps, ou a minima obtenir un RDV de débriefing après sa discussion"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis pas sûr qu'on ait le temps de se lancer là-dedans maintenant avec tout ce qu'on a sur le feu...",
+        "sous_texte": "Je vois l'intérêt mais j'ai peur de la charge mentale et organisationnelle supplémentaire dans une période déjà tendue",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Isoler l'objection temps : proposer une phase pilote ultra-limitée ou un phasage qui commence APRÈS résolution de ses urgences actuelles (dans 2-3 mois)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi un mail avec tout ça, je regarderai et je vous rappelle si ça m'intéresse",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Il y a 90% de chances que je ne rappelle jamais",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail MAIS poser une question fermante qui force la qualification : 'Par contre, pour ne pas vous faire perdre de temps, si le ROI est démontré et qu'on commence petit, qu'est-ce qui vous empêcherait de tester ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, soyons clairs : chez nous, un investissement comme ça, ça passe par le CODIR, et mon cousin qui est DG, il va falloir le convaincre aussi...",
+        "sous_texte": "Je vous dis la vérité sur le process décisionnel mais je peux aussi utiliser ça pour temporiser ou me défausser si je ne suis pas 100% convaincu",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre le process : qui décide in fine ? Stéphane doit-il présenter seul ou vous pouvez venir ? Quels sont les critères du DG ? Quand est le prochain CODIR ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bah le problème c'est que 15000 balles là tout de suite, je les ai pas vraiment. Faudrait que je jongle avec la tréso...",
+        "sous_texte": "Le budget existe peut-être mais je teste si vous pouvez descendre le prix, ou bien c'est vraiment un frein budgétaire réel lié à la tension de trésorerie",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser le ROI pour justifier l'investissement ('Si on récupère 3 points de marge, ça se paye en combien de temps ?') et/ou proposer un phasage, étalement, ou version allégée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais attendez, si ça marche pas, je me retrouve avec quoi moi ? J'ai pas envie de claquer 10 bornes dans le vent encore une fois",
+        "sous_texte": "J'ai été brûlé avant, je veux des garanties tangibles, un parachute de sécurité, une preuve que je ne prends pas un risque inconsidéré",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer des garanties concrètes : phase pilote sur périmètre réduit, clause de sortie, engagement sur résultats mesurables, accompagnement renforcé les 3 premiers mois"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être honnête avec vous : j'ai rien contre vous personnellement, mais là je sens que c'est pas le bon moment pour nous. On a trop de choses à stabiliser avant de se lancer dans un truc comme ça. Peut-être dans 6 mois, un an, quand on aura digéré le nouveau contrat GMS et que les jeunes seront formés... Je garde vos coordonnées et je vous recontacte si ça se décante, OK ?",
+      "condition_declenchement": "Apparaît quand Stéphane est intellectuellement convaincu de l'intérêt MAIS que la charge mentale/organisationnelle lui semble insurmontable dans le contexte actuel. C'est un refus poli et sincère qui cache une vraie surcharge cognitive"
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de protection ('pas le temps', 'on a déjà quelqu'un'). Si vous franchissez ce premier mur, il passe aux objections de test pour vérifier votre crédibilité secteur. Une fois la crédibilité établie, il révèle ses vraies objections sincères (échec passé, budget, timing, risque). L'escalade finale combine plusieurs objections sincères en une objection composite qui reflète sa surcharge réelle",
+    "piege_classique": "Stéphane peut donner l'impression d'être convaincu et intéressé ('C'est vrai que ce serait bien de régler ce problème...') puis sortir une objection finale dilatoire au moment du closing. Le piège est de confondre son intérêt intellectuel avec sa capacité/volonté réelle de passer à l'action MAINTENANT. Il faut qualifier très tôt la disponibilité mentale et organisationnelle, pas seulement l'adéquation problème/solution"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Service BtoB ciblant l'industrie agroalimentaire",
+      "description": "Entreprise proposant des solutions pour les PME agroalimentaires de production régionale"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux dirigeants et directeurs de production dans l'agroalimentaire",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser le passage de barrage assistante et obtenir des RDV avec décideurs en prospection téléphonique froide dans le secteur agroalimentaire",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Solutions production agroalimentaire régionale",
+    "vous_etes": "Commercial BtoB spécialisé sur les PME agroalimentaires en région, vous prospectez à froid pour décrocher des rendez-vous avec des décideurs production.",
+    "vous_vendez": "Une solution d'optimisation de production pour PME agroalimentaires (réduction gaspillage, fiabilisation process) — Budget cible 8-15K€ avec ROI démontrable sous 12 mois.",
+    "vous_appelez": "Stéphane Bourdier, 52 ans, Directeur de production et associé minoritaire chez Terroir & Saveurs du Périgord (conserves et terrines, 43 salariés, Dordogne). Pragmatique, méfiant envers les commerciaux, attaché à sa région. Vous devrez d'abord franchir le barrage de son assistante de direction.",
+    "ce_que_vous_savez": [
+      "PME de transformation carnée régionale, 4,2M€ de CA, production 31 personnes",
+      "Stagnation CA depuis 18 mois malgré demande soutenue",
+      "Secteur sous pression sur les marges (inflation matières premières)",
+      "Tensions production typiques des PME régionales (départs retraite, cadences)",
+      "Entreprise familiale avec culture de proximité et méfiance vis-à-vis des 'consultants parisiens'"
+    ],
+    "votre_objectif": "Passer le barrage assistante puis convaincre Stéphane Bourdier de vous accorder 30 minutes en rendez-vous physique pour discuter optimisation production.",
+    "vos_atouts": [
+      "Vous accompagnez spécifiquement des PME agroalimentaires régionales de même taille",
+      "Vous pouvez citer un client similaire dans le Sud-Ouest avec résultats chiffrés concrets",
+      "Votre approche : audit terrain rapide, test sur 1 ligne, pas de bouleversement organisation",
+      "Vous connaissez les contraintes HACCP, traçabilité et réalités de production en conserverie"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:46:15Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15575,
+    "total_time_s": 146.6
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "id": "scenario_1771519958",
+  "description_originale": "Vous avez présenté votre offre au directeur des achats ou directeur F&B d'une chaîne hôtelière régionale ou groupe de restauration de 100+ salariés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : hotellerie_restauration]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "100+ salariés - chaîne régionale ou groupe",
+      "interlocuteur_principal": {
+        "poste": "Directeur des Achats ou Directeur F&B",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction Générale (validation budgétaire probable)",
+        "Direction d'exploitation (utilisateurs finaux potentiels)"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - offre B2B secteur hôtellerie-restauration",
+      "proposition_valeur_presumee": "Solution pour optimiser les achats ou la fonction F&B dans l'hôtellerie-restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation malgré engagement",
+        "Perte de contrôle du cycle de vente",
+        "Difficulté à relancer sans paraître insistant"
+      ],
+      "implicites": [
+        "Manque de qualification du process décisionnel lors du RDV initial",
+        "Absence de next step clair et daté en fin de rendez-vous",
+        "Possible concurrence ou arbitrage budgétaire en cours",
+        "Prospect potentiellement non décisionnaire final",
+        "Manque de création d'urgence lors de la présentation"
+      ],
+      "probleme_racine": "Absence de cadrage du processus décisionnel et de jalonnement explicite lors du premier RDV, laissant le prospect maître du timing et créant une situation de dépendance passive"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la relance commerciale après silence radio : débloquer la situation, comprendre le statu du process décisionnel, identifier les freins réels, et reprendre le contrôle du cycle de vente sans brûler la relation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour le secteur hôtellerie-restauration",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux chaînes hôtelières et groupes de restauration",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B présentée au directeur des achats ou F&B, probablement liée à l'optimisation des achats, la gestion F&B, ou services connexes",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'offre",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Montant du deal ou fourchette budgétaire",
+        "Raisons évoquées lors du RDV initial pour le délai de réponse",
+        "Concurrents identifiés",
+        "Présence ou non d'autres décideurs lors du premier RDV",
+        "Engagement précis pris par le prospect (date, action)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Horizon Hospitality",
+        "secteur": "Hôtellerie-restauration (chaîne régionale)",
+        "taille": "14 établissements, 340 salariés",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent et procrastinateur stratégique",
+        "Loyauté excessive envers fournisseurs historiques",
+        "Besoin de consensus qui paralyse la décision"
+      ],
+      "motivations_profondes": [
+        "Ne surtout pas se tromper - la stabilité prime sur l'innovation",
+        "Être reconnu par la DG comme celui qui sécurise les coûts sans prendre de risques",
+        "Éviter les conflits avec les directeurs d'exploitation qui détestent les changements"
+      ],
+      "peurs_freins": [
+        "Faire une erreur qui déstabiliserait l'opérationnel en pleine saison",
+        "Perdre la confiance du DG qui l'a nommé il y a 18 mois",
+        "Gérer les récriminations des chefs qui n'aiment pas qu'on touche à leurs habitudes",
+        "Que le fournisseur actuel apprenne qu'il prospècte ailleurs et se venge sur les délais"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Les voit comme des envahisseurs de son agenda surchargé. Respecte ceux qui connaissent vraiment son métier mais détecte immédiatement le bullshit. A tendance à dire oui mollement pour clore poliment le RDV.",
+      "style_communication": "aimable"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Chaleureux mais pressé. Phrase d'ouverture type : 'Alors, vous avez 30 minutes parce que j'ai un comex juste après, mais allez-y, je vous écoute.'",
+      "signaux_interet": [
+        "Prend des notes manuscrites sur un carnet Moleskine usé",
+        "Demande spontanément 'et concrètement, chez Lagarde Hôtels, ça a donné quoi au bout de 6 mois ?'",
+        "Évoque un problème précis non-résolu : 'Le truc c'est qu'on a encore des écarts de 8% entre budget et réalisé sur le sec'",
+        "Regarde sa montre puis dit 'bon, on peut prendre 10 minutes de plus'"
+      ],
+      "signaux_rejet": [
+        "Répond aux emails sur son téléphone pendant que vous parlez",
+        "Phrase assassine : 'Oui enfin, ça, tous les fournisseurs nous le disent hein...'",
+        "Parle de son fournisseur actuel avec affect : 'Hervé, ça fait 12 ans qu'il nous suit'",
+        "Conclut par un vague 'écoutez, je vais en parler en interne' sans date ni action"
+      ],
+      "tics_langage": [
+        "Ponctue par 'voilà voilà' quand il veut clore un sujet",
+        "Dit 'après, hein...' suivi d'une objection déguisée",
+        "Utilise 'nous' au lieu de 'je' systématiquement pour diluer sa responsabilité",
+        "Abus de 'concrètement' pour masquer qu'il ne décide rien seul"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "4 minutes maximum avant de décrocher mentalement. Besoin d'interaction sinon il checke ses mails"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée post-COVID mais pression forte sur les marges. Le DG veut optimiser les achats de 12% d'ici fin d'année. Deux nouveaux hôtels ouvrent en septembre, donc période de tension. Audit interne des procédures achats en cours depuis mars.",
+      "priorites_actuelles": [
+        "Renégocier les contrats énergie avant fin juin (urgence absolue)",
+        "Harmoniser les achats alimentaires entre les 14 sites (projet en cours, compliqué)",
+        "Survivre aux deux ouvertures de septembre sans catastrophe logistique",
+        "Faire bonne figure lors de l'audit interne"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de sourcing il y a 3 ans chez son ancien employeur. Déploiement catastrophique, les utilisateurs ont boycotté l'outil. Depuis, très méfiant sur les promesses digitales.",
+      "fournisseur_actuel": "Partenariat historique avec Sogeres Distribution (contact privilégié avec Hervé Dumas, Account Manager). Relation confortable mais pricing perfectible. Contrat renouvelé il y a 8 mois, clause de sortie à 6 mois.",
+      "budget_disponible": "Enveloppe de 45K€ validée en théorie pour 'amélioration processus achats' mais nécessite validation collégiale DG + DAF. Pas de budget additionnel disponible avant le BP 2025."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets issus de son secteur : 'Chez Lacroix Hôtels, 137K€ économisés sur 14 mois'",
+        "Montrer qu'on comprend sa contrainte politique interne : 'Comment vous avez embarqué vos directeurs d'exploitation ?'",
+        "Proposer un pilote ultra-limité sans engagement : '3 établissements, 90 jours, sortie libre'",
+        "Évoquer un risque qu'il n'a pas anticipé : 'Avec la nouvelle réglementation AGEC sur le gaspillage alimentaire...'",
+        "Offrir de parler directement à un pair : 'Le DA de Bellevue Resort accepte de vous appeler'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Critiquer frontalement son fournisseur actuel (loyauté tribale)",
+        "Promettre des résultats irréalistes : 'Vous allez économiser 30% dès le premier mois'",
+        "Forcer une décision rapide : 'L'offre est valable jusqu'à vendredi'",
+        "Ignorer sa complexité organisationnelle : 'C'est très simple à déployer'",
+        "Le relancer trop souvent : au-delà de 3 tentatives espacées, il vous classe mentalement 'lourd'",
+        "Parler budget trop tôt : il doit d'abord être convaincu avant de défendre le dossier en interne"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, vous... Écoutez, là je suis vraiment sur un truc urgent avec les contrats énergie, c'est vraiment pas le moment vous voyez...",
+        "sous_texte": "Je n'ai pas préparé cette relance, je suis débordé, et je cherche une excuse socialement acceptable pour raccrocher sans être impoli",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider l'urgence de son sujet, proposer un micro-créneau de 4 minutes maintenant OU une date précise sous 48h qu'il choisit lui-même"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui, je devais vous rappeler c'est vrai... Après on a eu l'audit interne, les ouvertures de septembre qui arrivent, voilà voilà... C'est pas que votre dossier nous intéresse pas hein, mais là concrètement...",
+        "sous_texte": "Je me sens coupable de ne pas avoir rappelé, je noie le poisson avec des justifications réelles mais c'est surtout que je n'ai pas avancé car pas prioritaire",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas le laisser s'enliser dans les justifications, recadrer sur SA situation (pas notre solution), poser UNE question fermée sur le statut décisionnel réel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous on en a rediscuté en interne effectivement... après vous voyez, faut qu'on voie aussi avec la direction générale, la DAF, parce que c'est un budget quand même. Et puis il y a les directeurs d'exploitation à embarquer, parce que si eux ils sont pas partants...",
+        "sous_texte": "Je dilue ma responsabilité. En réalité je n'ai probablement parlé à personne ou très superficiellement, et j'utilise le collectif pour masquer mon inaction",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser méthodiquement : avez-vous effectivement présenté le dossier (à qui, quand) ? Sinon, qu'est-ce qui vous a bloqué ? Identifier le vrai frein avant d'avancer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le truc c'est que... bon je vous le dis franchement hein... Hervé de chez Sogeres, ça fait 12 ans qu'on bosse avec lui. Il a toujours été irréprochable. Vous comprenez que c'est pas évident pour nous de...",
+        "sous_texte": "J'ai une loyauté émotionnelle forte envers mon fournisseur actuel. Vous demander de changer, c'est comme me demander de trahir quelqu'un. C'est mon vrai frein mais je ne veux pas l'avouer complètement",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Respecter la relation existante, ne jamais critiquer Hervé, reframer en complément ou en test sans rupture, évoquer que les meilleurs DA ont plusieurs options pour rester performants"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui enfin, tout ça c'est bien beau sur le papier, mais vous, tous les fournisseurs vous nous dites la même chose hein... Que c'est simple, que ça marche tout de suite, et après concrètement, c'est jamais le cas.",
+        "sous_texte": "J'ai été échaudé par mon expérience catastrophique il y a 3 ans. Je vous teste : allez-vous reconnaître les risques réels ou me survendre comme les autres ?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accuser réception de sa méfiance légitime, demander ce qui s'est mal passé précisément, montrer les conditions d'échec ET de réussite, parler des difficultés rencontrées chez d'autres clients"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais si je comprends bien, il faut former les équipes, changer les process, interfacer avec notre ERP... Vous imaginez le bordel que ça va être en pleine saison ? Les chefs vont me tomber dessus direct.",
+        "sous_texte": "Ma vraie peur : déstabiliser l'opérationnel et créer des conflits internes. Je préfère un système imparfait qui tourne qu'un changement risqué même potentiellement meilleur",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider sa peur comme rationnelle, proposer un timing post-saison, offrir un pilote ultra-limité sur 2-3 sites non-critiques, impliquer les directeurs d'exploitation dès le départ"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, votre offre elle est intéressante hein, je dis pas le contraire. Mais là avec les deux ouvertures de septembre, l'audit qui continue, les contrats énergie... concrètement on va pas pouvoir regarder ça avant fin d'année.",
+        "sous_texte": "Je botte en touche avec des arguments réels mais c'est surtout que je ne veux pas dire non frontalement. Si vous insistez pas, je vais laisser mourir le dossier tout seul",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Challenger poliment : est-ce vraiment un problème de timing ou autre chose ? Si timing réel, caler une date précise en septembre. Si esquive, creuser le vrai frein"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Après, nous on a déjà un contrat avec Sogeres hein, renouvelé il y a 8 mois. Donc bon, on peut pas juste claquer des doigts et...",
+        "sous_texte": "J'utilise la contrainte contractuelle comme bouclier mais en réalité j'ai une clause de sortie à 6 mois. Je teste si vous connaissez les standards du marché ou si je peux vous décourager facilement",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander la durée exacte du contrat et les clauses, montrer qu'on connaît les standards (sortie 6 mois), proposer une préparation sur la période contractuelle pour démarrage fluide ensuite"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, Lagarde Hôtels que vous me citez, c'est pas la même taille que nous, pas les mêmes contraintes. Nous on a 14 établissements très différents, des franchises, des propres... c'est beaucoup plus complexe.",
+        "sous_texte": "Je cherche des différences pour me rassurer que votre solution n'est pas adaptée à MON cas spécifique. J'ai besoin de sentir que vous comprenez ma complexité unique",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa spécificité réelle, puis montrer un cas client PLUS complexe que le sien qui a réussi, ou proposer une analyse préalable pour adapter l'approche"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais en reparler avec le DG et la DAF, et puis voir aussi avec les directeurs d'exploitation ce qu'ils en pensent. Et après je vous fais un retour, voilà voilà.",
+        "sous_texte": "Je clôture poliment sans engagement précis. Si vous acceptez ce flou, je ne rappellerai jamais. Je teste si vous osez me demander un vrai next step daté",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne JAMAIS accepter ce flou. Demander : quand allez-vous leur parler précisément ? Proposer d'accompagner cette discussion (conf call, doc de synthèse). Fixer date de debriefing sous 7 jours max"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le souci c'est que là, on a vraiment pas le budget disponible avant le BP 2025. Les 45K€ dont je vous avais parlé, finalement ils sont déjà engagés sur autre chose...",
+        "sous_texte": "Je teste votre réaction face à l'objection budget. Soit c'est vrai et je cherche une porte de sortie honorable, soit c'est faux et je veux voir si vous avez des solutions de financement ou si vous baissez votre prix",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser : sur quoi précisément ? Était-ce le bon budget ? Explorer d'autres lignes budgétaires (gains rapides qui autofinancent, phasage différent). Ne pas brader le prix immédiatement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement votre solution m'intéresse, mais je peux pas vous dire oui comme ça. Faut que je sois sûr que ça va pas foutre le bordel en interne. Si ça plante, c'est moi qui prends cher.",
+        "sous_texte": "C'est ma peur la plus profonde et la plus sincère. Je suis prudent par nature et je ne veux surtout pas mettre en péril ma crédibilité acquise difficilement il y a 18 mois auprès du DG",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider totalement sa prudence comme une qualité, proposer un dispositif de sécurisation maximal (pilote réversible, accompagnement renforcé, clause de sortie), offrir de parler à un pair DA"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je suis preneur que vous me fassiez une offre par écrit, je la présenterai en comex du mois prochain. Après on verra ce qu'ils en disent.",
+        "sous_texte": "Je vous mets en position d'attente passive. Je ne m'engage sur aucun portage actif du dossier. C'est une manière polie de vous faire patienter indéfiniment sans dire non",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Refuser poliment d'envoyer un document dans le vide. Proposer de co-construire le doc ou de présenter vous-même au comex. Sinon, demander quel est LE point précis qui le bloque vraiment aujourd'hui"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez, avec Hervé on a quand même renégocié les tarifs il y a deux mois. Il nous a fait un geste. Donc là, nous on est plutôt satisfaits en fait...",
+        "sous_texte": "Mon fournisseur actuel a anticipé votre arrivée et a bougé un peu. Ma loyauté est renforcée. Vous n'avez plus d'argument économique simple, il faut que vous changiez d'angle complètement",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Ne pas attaquer le prix. Pivoter vers ce que Hervé ne peut PAS apporter (innovation, process, visibilité, conformité réglementaire). Reframer en complément du partenariat existant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, je vais être transparent avec vous : on a aussi deux autres fournisseurs qu'on regarde en parallèle. Donc voilà, on compare, et après on décidera.",
+        "sous_texte": "Je crée une pression concurrentielle pour soit vous décourager, soit obtenir une meilleure offre. Je teste aussi votre réaction : allez-vous paniquer et brader ou rester solide ?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa démarche de benchmark comme professionnelle. Demander sur quels critères précis il va arbitrer. Proposer de l'aider à structurer sa grille de comparaison (reprise de contrôle subtile)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être honnête avec vous : j'ai présenté ça rapidement au DG la semaine dernière, et il m'a dit qu'on avait d'autres priorités pour l'instant. Que c'était pas le bon moment. Donc voilà, je peux rien faire de plus...",
+      "condition_declenchement": "Après plusieurs tentatives de relance, quand le vendeur a réussi à le pousser dans ses retranchements et qu'il ne peut plus esquiver. Il balance la responsabilité sur son DG (vraie ou fausse) pour clore définitivement sans culpabilité."
+    },
+    "pattern_escalade": "Stéphane utilise une escalade progressive de l'évitement : d'abord les excuses logistiques (timing, urgences), puis la dilution dans le collectif ('nous devons voir'), ensuite la loyauté fournisseur, puis les contraintes techniques/organisationnelles, et enfin le blocage hiérarchique ultime. Chaque couche protège la suivante. S'il revient en arrière dans cette séquence (ex: re-parler timing après avoir évoqué le DG), c'est qu'il cherche encore une issue.",
+    "piege_classique": "Accepter son 'je vais en parler en interne et je vous fais un retour' sans date ni structure. C'est SON piège favori pour clore poliment tout en ne s'engageant à rien. Une fois ce flou accepté, la relation commerciale est morte. Le vendeur qui l'accepte renforce le pattern de procrastination et perd tout levier de reprise de contrôle du cycle."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour le secteur hôtellerie-restauration",
+      "description": "Entreprise proposant des solutions destinées aux chaînes hôtelières et groupes de restauration"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B présentée au directeur des achats ou F&B, probablement liée à l'optimisation des achats, la gestion F&B, ou services connexes",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'offre",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser la relance commerciale après silence radio : débloquer la situation, comprendre le statu du process décisionnel, identifier les freins réels, et reprendre le contrôle du cycle de vente sans brûler la relation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance commerciale — Silence radio après démo",
+    "vous_etes": "Account Executive chez un éditeur de solutions d'optimisation achats pour l'hôtellerie-restauration.",
+    "vous_vendez": "Plateforme SaaS d'optimisation des achats food & non-food pour chaînes hôtelières — 45K€/an pour 14 établissements.",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur des Achats Groupe chez Horizon Hospitality (14 hôtels, 340 salariés). Prudent, consensuel, fidèle à ses fournisseurs historiques. Dit souvent 'voilà voilà' et 'nous' au lieu de 'je'.",
+    "ce_que_vous_savez": [
+      "RDV démo réalisé il y a 3 semaines, accueil courtois mais aucun retour depuis malgré sa phrase de fin : 'Je vais en parler en interne et je reviens vers vous'",
+      "Le groupe doit optimiser les achats de 12% d'ici fin d'année sur pression de la DG",
+      "Deux nouveaux hôtels ouvrent en septembre — période de forte tension opérationnelle",
+      "Contrat actuel avec Sogeres (Hervé Dumas) renouvelé il y a 8 mois, sortie possible à 6 mois",
+      "Budget théorique de 45K€ validé mais nécessite aval DG + DAF"
+    ],
+    "votre_objectif": "Comprendre où en est réellement le dossier, identifier les freins (budget, timing, concurrence, politique interne), et obtenir un next step clair avec date — ou disqualifier proprement.",
+    "vos_atouts": [
+      "Référence Lacroix Hôtels : 137K€ économisés sur 14 mois (secteur identique)",
+      "Possibilité de pilote limité : 3 établissements, 90 jours, sortie libre sans engagement",
+      "Contact pair disponible : le DA de Bellevue Resort accepte de témoigner",
+      "Accompagnement change management pour embarquer les directeurs d'exploitation"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:52:38Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16251,
+    "total_time_s": 157.0
+  }
+}

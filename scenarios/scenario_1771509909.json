@@ -1,0 +1,337 @@
+{
+  "id": "scenario_1771509909",
+  "description_originale": "Le directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : services_entreprises]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "groupe multi-sites 200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des opérations ou directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "direction générale (escalade potentielle)",
+        "juriste/service contrat (pénalités)",
+        "responsables sites impactés"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service B2B multi-sites récurrent",
+      "proposition_valeur_presumee": "continuité de service, fiabilité, support aux opérations critiques du client",
+      "fourchette_prix": "contrat compte clé significatif avec clauses de pénalités",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "incident majeur ayant impacté l'activité client",
+        "risque de pénalités contractuelles",
+        "client furieux, relation détériorée",
+        "risque de perte de compte clé"
+      ],
+      "implicites": [
+        "défaillance dans la qualité de service promise",
+        "potentielle rupture de SLA (Service Level Agreement)",
+        "risque de contamination réputation sur autres sites",
+        "fragilité de la confiance établie",
+        "possible remise en cause du contrat global"
+      ],
+      "probleme_racine": "gestion de crise et récupération de relation client : écart critique entre service promis et service délivré mettant en péril un contrat stratégique compte clé"
+    },
+    "objections_mentionnees": [
+      "pénalités contractuelles applicables",
+      "impact opérationnel majeur sur l'activité",
+      "remise en question de la fiabilité du prestataire",
+      "colère et frustration face à l'incident"
+    ],
+    "objectif_formation": "former les commerciaux et responsables de comptes à gérer les situations de crise client : absorber la colère, reconnaître l'impact, proposer un plan de résolution crédible, négocier les pénalités, et préserver/restaurer la relation commerciale sur comptes stratégiques",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B multi-sites",
+      "entreprise_description": "prestataire de services récurrents pour grandes entreprises avec déploiement multi-sites et engagements contractuels de niveau de service",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service B2B critique pour les opérations du client, déployé sur plusieurs sites, avec SLA contractuels et clause de pénalités",
+      "proposition_valeur": "fiabilité opérationnelle, continuité de service, support multi-sites, engagement contractuel de performance",
+      "prix_indicatif": "contrat annuel ou pluriannuel compte clé avec pénalités financières en cas de défaillance",
+      "references": [
+        "autres comptes clés multi-sites (à mobiliser pour rassurer)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "gestion de crise : désamorcer la colère, proposer plan de résolution, négocier pénalités, sauver le contrat",
+      "type_prospection": "gestion de réclamation compte existant"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature précise de l'incident",
+        "montant des pénalités en jeu",
+        "historique de la relation client",
+        "nature exacte du service fourni",
+        "délai de résolution attendu"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Dufresne",
+      "age": 48,
+      "poste": "Directeur des Opérations Groupe",
+      "entreprise": {
+        "nom": "Hexagone Services Plus",
+        "secteur": "Services aux entreprises - facility management et maintenance industrielle",
+        "taille": "Groupe 380 salariés, 23 sites en France",
+        "ca_approximatif": "47M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Contrôle absolu sur ses émotions en public mais rancunier sur la durée",
+        "Obsession de la traçabilité et des process",
+        "Méfiance viscérale envers les promesses non tenues"
+      ],
+      "motivations_profondes": [
+        "Protéger sa crédibilité auprès de la DG après avoir défendu ce prestataire en comex",
+        "Éviter qu'un site remonte directement à la direction générale en court-circuitant sa hiérarchie",
+        "Prouver qu'il maîtrise la situation avant l'audit trimestriel dans 3 semaines"
+      ],
+      "peurs_freins": [
+        "Que le PDG découvre l'ampleur réelle de l'incident par un directeur de site",
+        "Perdre la main sur la gestion fournisseurs stratégiques",
+        "Que ses équipes terrain perdent confiance en ses choix de prestataires",
+        "Que cet incident devienne un précédent autorisant d'autres défaillances"
+      ],
+      "rapport_aux_commerciaux": "Les tolère tant qu'ils sont factuels et rapides. Déteste viscéralement les tournures marketing et le language corporate. Respecte ceux qui assument les merdes sans se défausser.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, coupant, avec un débit volontairement ralenti pour marquer sa domination. Silence pesant avant de répondre. Commence par 'Bon.' suivi d'une pause.",
+      "signaux_interet": [
+        "Demande des délais précis au jour près",
+        "Prend des notes manuscrites ostensiblement",
+        "Pose des questions sur QUI précisément sera responsable côté prestataire",
+        "Évoque spontanément 'les autres sites' si on le rassure"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoutez...'",
+        "Mentionne le service juridique ou les pénalités contractuelles très tôt",
+        "Coupe brutalement avec 'Je vous arrête là'",
+        "Évoque un autre fournisseur 'qui justement nous avait contactés il y a 2 mois'"
+      ],
+      "tics_langage": [
+        "Bon. [silence]",
+        "Concrètement, ça veut dire quoi ?",
+        "Je note.",
+        "Là, j'ai besoin de FAITS.",
+        "On va pas se mentir..."
+      ],
+      "debit_parole": "lent",
+      "tolerance_monologue_vendeur": "Zéro. Coupe au bout de 20 secondes max. Veut des échanges question-réponse secs. Exige qu'on aille droit au but."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Incident majeur survenu il y a 72h sur le site de Lyon-Vénissieux qui a provoqué l'arrêt de la ligne de production d'un client final pendant 6h. Le directeur du site a déjà envoyé un mail au PDG. Laurent a défendu ce prestataire il y a 8 mois contre l'avis du DAF qui trouvait l'offre trop chère.",
+      "priorites_actuelles": [
+        "Obtenir un plan de remédiation écrit avant vendredi 17h pour le comex",
+        "Sécuriser les 22 autres sites pour éviter un effet domino",
+        "Négocier les pénalités à la baisse (actuellement 34K€) pour limiter l'impact sur son budget 2025",
+        "Restaurer sa crédibilité en interne en montrant qu'il gère"
+      ],
+      "experience_avec_offre_similaire": "A travaillé avec 4 prestataires différents ces 12 dernières années. Deux contrats rompus pour défaillances. Très échaudé. Celui-ci était censé être 'le bon' avec des SLA béton.",
+      "fournisseur_actuel": "Votre entreprise, justement, depuis 14 mois. Contrat de 3 ans. Renouvellement automatique dans 10 mois sauf dénonciation 6 mois avant.",
+      "budget_disponible": "Les pénalités sont provisionnées mais Laurent veut absolument limiter la casse. A une enveloppe de 15K€ pour mesures correctives immédiates s'il est convaincu."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Assumer immédiatement et factuellement la défaillance sans langue de bois",
+        "Arriver avec un PLAN écrit, daté, chiffré, avec noms et tel des responsables",
+        "Proposer un audit préventif gratuit des 22 autres sites sous 10 jours",
+        "Montrer qu'on a déjà sanctionné ou recadré en interne les responsables de l'incident",
+        "Évoquer une compensation partielle AVANT qu'il ne mentionne les pénalités"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou chercher des excuses externes",
+        "Langue de bois corporate type 'nous prenons cet événement très au sérieux'",
+        "Ne pas connaître précisément les détails techniques de l'incident",
+        "Proposer une réunion de suivi dans 15 jours (trop tard)",
+        "Faire intervenir un N+1 qu'il ne connaît pas comme rustine",
+        "Dire 'ce genre de chose peut arriver' ou toute relativisation"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon. Écoutez, j'ai 12 minutes. Pas une de plus. Lyon-Vénissieux, c'est 6 heures d'arrêt client. Vous avez quoi, concrètement ?",
+        "sous_texte": "Je suis déjà en posture d'accusateur. Prouve-moi immédiatement que tu n'es pas venu pour noyer le poisson. Si tu commences par des politesses ou du contexte, je raccroche mentalement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aller droit au but avec les faits de l'incident et annoncer immédiatement qu'on vient avec un plan écrit. Pas de préambule."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Avant qu'on continue... votre direction est au courant que vous m'appelez ? Parce que là, c'est pas un sujet commercial, c'est un sujet juridique.",
+        "sous_texte": "Je teste ta légitimité et ton niveau d'engagement. Si c'est juste le commercial qui gère sa tambouille pour sauver sa comm', je vais direct escalader au-dessus de ta tête.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confirmer que la direction est impliquée, donner un nom précis, et montrer que c'est traité au plus haut niveau en interne."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez combien ça nous coûte, 6 heures d'arrêt chez un client final ? Vous le savez ? Parce que moi, j'ai le mail du PDG dans ma boîte depuis hier matin.",
+        "sous_texte": "J'ai besoin que tu comprennes la gravité. Mais surtout, j'ai besoin que tu reconnaisses que MA crédibilité est en jeu. Si tu minimises, tu me manques de respect.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'impact sans chiffrer à sa place. Montrer qu'on mesure les conséquences humaines et hiérarchiques pour lui personnellement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je vous arrête là. Les causes, je m'en fous. Ce que je veux savoir : est-ce que ça peut se reproduire sur Marseille ? Sur Lille ? Sur mes 22 autres sites ?",
+        "sous_texte": "Je suis en mode pompier. Mon vrai problème n'est pas le passé mais l'effet domino. Si tu restes focalisé sur l'explication de l'incident de Lyon, tu passes à côté de mon vrai besoin.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Pivoter immédiatement sur le plan de sécurisation préventif des autres sites avec calendrier et moyens déployés."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça veut dire quoi 'audit préventif' ? Parce que des audits, j'en ai 3 classeurs. Je veux des NOMS. Qui vient ? Quand ? Avec quel mandat ?",
+        "sous_texte": "J'ai besoin de traçabilité obsessionnelle. Les concepts génériques me font sortir de mes gonds. Si tu restes flou, c'est que tu n'as rien préparé et que tu improvises.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner immédiatement noms, prénoms, fonctions, dates précises au jour près, et périmètre d'intervention site par site."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon. On va pas se mentir. Les pénalités, c'est 34 000 euros. Contractuellement, je peux les activer. Vous proposez quoi ?",
+        "sous_texte": "Je ne veux PAS activer les pénalités totales car ça plombe mon budget et ça m'oblige à documenter lourdement. Mais je veux voir si tu viens avec une proposition ou si je dois négocier dans le vide.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une compensation partielle crédible + des mesures de valeur ajoutée (audits gratuits, ressources supplémentaires) pour limiter l'impact budgétaire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez. Vous me proposez un plan de progrès. Mais qui me dit que dans 3 mois, on n'aura pas le même problème à Nantes ? Vous aviez déjà des SLA béton. Ça vous a pas empêché de merder.",
+        "sous_texte": "Je suis échaudé. J'ai déjà donné ma confiance une fois et je me suis fait avoir. Toutes les belles promesses du monde ne suffiront pas. Je veux des GARANTIES tangibles et des conséquences si ça recommence.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer des mécanismes de contrôle renforcés, des points de suivi rapprochés avec lui personnellement, et des clauses de garantie supplémentaires écrites."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je note. Mais là, j'ai besoin de FAITS. Vous avez viré quelqu'un ? Vous avez changé un process ? Parce que sinon, c'est juste du PowerPoint.",
+        "sous_texte": "Les mots ne suffisent pas. Je veux des preuves que vous avez pris des mesures internes CONCRÈTES et DÉFINITIVES. Sinon, je considère que vous n'avez pas vraiment intégré la gravité.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler précisément les actions correctives internes déjà réalisées : personnes recadrées, process modifiés, investissements engagés, avec dates et preuves."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, soyons clairs. J'ai défendu votre boîte y'a 8 mois contre le DAF qui voulait prendre moins cher. Là, ma crédibilité, elle est à zéro. Vous comprenez ça ?",
+        "sous_texte": "Ce n'est pas qu'une affaire de business. C'est personnel. J'ai mis ma réputation en jeu pour vous. Vous me devez quelque chose. Si tu ne reconnais pas cette dimension, je ne pourrai pas te sauver politiquement en interne.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître explicitement sa prise de risque personnelle, le remercier pour sa confiance passée, et montrer qu'on va l'aider à restaurer sa position en interne avec des éléments communicables."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Votre plan, il est bien. Mais j'ai le comex vendredi 17h. Vous me l'envoyez quand, PAR ÉCRIT, avec les engagements que vous venez de me prendre ?",
+        "sous_texte": "Je veux un livrable exploitable immédiatement. Si tu me dis 'semaine prochaine', tu ne comprends rien à mon urgence politique interne. C'est maintenant ou jamais.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une heure précise d'envoi dans les 24-48h max, confirmer le format attendu, et proposer une relecture rapide avant envoi."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon. Dernière question. Qui est mon point de contact direct si ça dérape à nouveau ? Parce que vous, vous êtes commercial. Moi j'ai besoin d'un opérationnel, avec son portable, disponible 7j/7.",
+        "sous_texte": "Je ne veux plus passer par des intermédiaires commerciaux si un problème survient. J'ai besoin d'une ligne directe avec quelqu'un de technique qui a du pouvoir. Sinon, je ne signe rien.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner immédiatement le nom, fonction, et numéro mobile d'un responsable opérationnel senior avec mandat explicite sur ce compte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez... Justement, Sécur'Plus nous avait contactés il y a 2 mois. J'avais dit non. Là, je me demande si j'ai pas eu tort. Qu'est-ce qui me retient de lancer un appel d'offres ?",
+        "sous_texte": "C'est à la fois une vraie menace et un test final. Je veux voir si tu paniques ou si tu assumes. Si tu te défausses sur la concurrence ou si tu restes focus sur CE que TOI tu vas faire. C'est mon dernier levier de négociation.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent. Reconnaître son droit d'explorer. Recentrer sur les investissements déjà faits ensemble, la connaissance de ses sites, et le coût d'un changement en pleine crise."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "[Soupir audible] Bon. Je vais y réfléchir. On s'appelle la semaine prochaine.",
+        "sous_texte": "Je ne suis pas convaincu mais je ne veux pas claquer la porte définitivement maintenant. C'est une sortie de secours pour moi. Si tu ne me relances pas de manière ultra-précise et rapide, je considérerai que tu as laissé tomber.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter le flou. Proposer immédiatement une date et heure précises, reformuler les livrables intermédiaires attendus d'ici là."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, j'ai écouté. Mais tout ce que vous me dites, c'est ce que vous AURIEZ DÛ faire AVANT Lyon. Pourquoi je devrais croire que cette fois, ce sera différent ? Donnez-moi UNE raison. Une seule.",
+      "condition_declenchement": "Se déclenche si le vendeur a été techniquement correct mais n'a pas créé de rupture émotionnelle ou factuelle majeure. Laurent veut UN élément décisif, personnel, engageant, qui change la donne. Sinon il considère que c'est du réchauffé."
+    },
+    "pattern_escalade": "Laurent commence froid et factuel (contrôle). Si le vendeur résiste bien, il révèle progressivement sa vulnérabilité personnelle (crédibilité interne menacée). Si le vendeur saisit cette perche et le traite en allié plutôt qu'en adversaire, Laurent peut basculer en mode collaboratif. Mais à la moindre langue de bois ou tentative de minimisation, il se referme brutalement et passe en mode juridique/rupture. Le point de bascule se situe au moment où Laurent évoque sa défense du prestataire 8 mois plus tôt : c'est une fenêtre de 90 secondes où tout se joue.",
+    "piege_classique": "Laurent donne l'impression d'être uniquement focalisé sur les pénalités et le juridique. En réalité, son vrai besoin est de restaurer sa crédibilité interne et d'éviter un effet domino sur les autres sites. Les vendeurs qui restent bloqués sur la négociation financière passent à côté de l'essentiel. Le piège : il faut traiter les pénalités (sinon il pense qu'on les ignore) MAIS ne pas en faire le cœur de la discussion. Le vrai deal se joue sur le plan de sécurisation multi-sites + les éléments communicables pour son comex."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B multi-sites",
+      "description": "prestataire de services récurrents pour grandes entreprises avec déploiement multi-sites et engagements contractuels de niveau de service"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service B2B critique pour les opérations du client, déployé sur plusieurs sites, avec SLA contractuels et clause de pénalités",
+      "proposition_valeur": "fiabilité opérationnelle, continuité de service, support multi-sites, engagement contractuel de performance",
+      "prix": "contrat annuel ou pluriannuel compte clé avec pénalités financières en cas de défaillance",
+      "references": [
+        "autres comptes clés multi-sites (à mobiliser pour rassurer)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "gestion de crise : désamorcer la colère, proposer plan de résolution, négocier pénalités, sauver le contrat",
+      "description": "former les commerciaux et responsables de comptes à gérer les situations de crise client : absorber la colère, reconnaître l'impact, proposer un plan de résolution crédible, négocier les pénalités, et préserver/restaurer la relation commerciale sur comptes stratégiques",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "gestion de réclamation compte existant",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Incident majeur multi-sites",
+    "vous_etes": "Responsable de compte chez votre entreprise de services B2B, en charge du contrat Hexagone Services Plus depuis 14 mois.",
+    "vous_vendez": "Contrat de maintenance/services multi-sites sur 3 ans, 23 sites équipés, renouvellement automatique dans 10 mois — Pénalités contractuelles de 34K€ en jeu suite à l'incident.",
+    "vous_appelez": "Laurent Dufresne, 48 ans, Directeur des Opérations Groupe chez Hexagone Services Plus (380 salariés, 23 sites). Style sec, factuel, rancunier. A défendu votre contrat il y a 8 mois contre l'avis du DAF. Le directeur du site de Lyon a déjà remonté l'incident au PDG.",
+    "ce_que_vous_savez": [
+      "Incident majeur il y a 72h sur le site Lyon-Vénissieux : arrêt production client final pendant 6h",
+      "Pénalités contractuelles : 34K€ provisionnées",
+      "Laurent doit présenter un plan de remédiation écrit avant vendredi 17h pour le comex",
+      "Audit trimestriel dans 3 semaines — Laurent doit montrer qu'il maîtrise la situation",
+      "Contrat de 3 ans, mois 14/36, avec clause de dénonciation 6 mois avant renouvellement"
+    ],
+    "votre_objectif": "Sauver le contrat : assumer factuellement l'incident, présenter un plan de résolution daté avec responsables identifiés, négocier les pénalités, sécuriser les 22 autres sites, restaurer la confiance.",
+    "vos_atouts": [
+      "Plan de remédiation écrit déjà préparé avec dates, responsables nommés et numéros directs",
+      "Proposition d'audit préventif gratuit des 22 autres sites sous 10 jours",
+      "Mesures correctives internes déjà prises (recadrage équipe technique responsable)",
+      "Compensation partielle proposable : budget 15K€ disponible pour mesures immédiates"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:05:09Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15414,
+    "total_time_s": 140.0
+  }
+}

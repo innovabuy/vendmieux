@@ -1,0 +1,365 @@
+{
+  "id": "scenario_1771521779",
+  "description_originale": "Vous appelez à froid le CEO / CTO d'une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : tech_saas]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO ou CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux éditeurs de logiciels et agences digitales",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospect ne connaît pas l'entreprise appelante",
+        "Prospect n'a rien demandé",
+        "Prospect est occupé",
+        "Appel non prévu"
+      ],
+      "implicites": [
+        "Faible taux de conversion des appels à froid",
+        "Difficulté à capter l'attention rapidement",
+        "Gestion des refus et barrages",
+        "Construction de crédibilité en quelques secondes",
+        "Articulation de la valeur sans contexte préalable"
+      ],
+      "probleme_racine": "Incapacité à créer de la valeur perçue en situation de prospection froide face à des décideurs tech très sollicités"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à la prospection téléphonique à froid auprès de décideurs tech B2B pour obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B destinée aux éditeurs de logiciels et agences digitales de 15-40 personnes",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commercialisée",
+        "Proposition de valeur spécifique",
+        "Identité de l'entreprise vendeuse",
+        "Prix et modèle économique",
+        "Problématiques métier adressées",
+        "Différenciateurs concurrentiels"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Matthieu",
+      "nom": "Delamare",
+      "age": 38,
+      "poste": "CTO & co-fondateur",
+      "entreprise": {
+        "nom": "Keypilot",
+        "secteur": "SaaS - Gestion de projet pour équipes produit",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ ARR"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique jusqu'à la paralysie décisionnelle",
+        "Méfiant envers les discours commerciaux formatés",
+        "Perfectionniste procrastinateur"
+      ],
+      "motivations_profondes": [
+        "Prouver la viabilité technique de sa boîte face aux investisseurs",
+        "Éviter de reproduire les erreurs de sa précédente startup (échec en 2019)",
+        "Être reconnu comme un tech leader crédible dans l'écosystème français"
+      ],
+      "peurs_freins": [
+        "Perdre du temps sur des solutions qui ne tiendront pas leurs promesses",
+        "Se faire avoir par un vendeur persuasif mais incompétent techniquement",
+        "Que son associé CEO lui reproche d'avoir signé un mauvais deal",
+        "Être perçu comme un dev qui ne comprend rien au business"
+      ],
+      "rapport_aux_commerciaux": "Profondément sceptique. A vécu 3 mauvaises expériences avec des éditeurs de solutions 'miracle' qui ont fait perdre 6 mois à ses équipes. Considère 90% des commerciaux comme des baratineurs incapables de comprendre les enjeux tech réels. Respecte uniquement ceux qui parlent son langage et admettent les limites de leur produit.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'agacement contrôlé. Voix monocorde. Phrase type d'entrée : 'Oui bonjour, j'ai deux minutes là...'",
+      "signaux_interet": [
+        "Pose une question technique précise non prévue dans le pitch",
+        "Mentionne spontanément un problème actuel de sa stack",
+        "Demande 'Vous avez des clients dans la fintech?' (son vertical de prédilection)",
+        "Silence de 3-4 secondes = il réfléchit vraiment, bon signe"
+      ],
+      "signaux_rejet": [
+        "Commence ses phrases par 'Écoutez...' (tonalité descendante)",
+        "Dit 'C'est gentil mais...' = fin de l'échange dans 10 secondes",
+        "Respiration courte audible = irritation montante",
+        "Coupe la parole avec 'Ouais ouais' répétitif = veut raccrocher",
+        "Mentionne Gartner ou un benchmark = cherche une excuse pour dire non"
+      ],
+      "tics_langage": [
+        "Abuse du 'Du coup' en début de phrase",
+        "Dit 'Clairement' quand il est en désaccord",
+        "Utilise 'Voilà voilà' pour signifier qu'il veut conclure",
+        "Ponctue de 'Hein' interrogatif quand il n'est pas convaincu"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximale 45 secondes avant interruption. Tout pitch de plus de 90 secondes déclenche un 'Désolé je vais devoir y aller' même si c'est faux."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Post-Série A (levée de 3M€ il y a 8 mois). Pression du board pour scaler à 50 personnes d'ici 18 mois. Infrastructure technique en dette technique croissante. 3 développeurs seniors recrutés récemment = besoin urgent d'outiller l'onboarding et la collaboration. Le CEO pousse pour plus de 'professionnalisation' des process, ce que Matthieu traduit mentalement par 'bureaucratie inutile'.",
+      "priorites_actuelles": [
+        "Refactoriser l'API v2 avant l'arrivée de gros clients",
+        "Recruter 2 devs backend confirmés (galère depuis 4 mois)",
+        "Mettre en place un vrai CI/CD digne de ce nom",
+        "Gérer la pression du CEO qui veut des certifications ISO 'pour rassurer les prospects'"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions en 2022 : une plateforme de gestion de la connaissance (abandonnée après 3 mois, personne ne l'utilisait) et un outil de code review collaboratif (trop complexe, jamais déployé correctement). Depuis, il est devenu hyper prudent.",
+      "fournisseur_actuel": "Utilise GitHub + Notion + Slack + Linear. Tout est éparpillé mais 'ça marche'. Réticent à ajouter un nouvel outil sauf si ROI évident et adoption garantie.",
+      "budget_disponible": "Entre 800€ et 2500€/mois max pour de nouveaux outils, mais doit justifier chaque euro au CEO et à la DAF. Processus de validation : 30 jours minimum avec 2 comités à convaincre."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client tech français qu'il connaît/respecte (ex: 'On travaille avec Alan et Qonto')",
+        "Reconnaître d'emblée qu'on ne connaît pas son produit et poser une vraie question dessus",
+        "Parler d'un pain point ultra-spécifique tech (ex: 'gestion des feature flags en prod')",
+        "Admettre une limite de la solution proposée = crédibilité instantanée",
+        "Proposer un format court et concret : 'Démo technique de 15 min avec ton lead dev'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Buzzwords marketings type 'solution disruptive' ou 'transformation digitale'",
+        "Prétendre comprendre ses enjeux sans avoir posé une seule question",
+        "Comparaison avec des entreprises hors catégorie ('Comme chez Google' = raccroche)",
+        "Insister après un premier refus poli",
+        "Demander 'Qui décide chez vous?' = insulte à son statut de co-fondateur",
+        "Tout pitch de plus de 2 minutes en monologue"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, écoutez là je suis en plein milieu d'un truc, vous m'appelez pour quoi exactement ?",
+        "sous_texte": "Je ne t'ai rien demandé, tu me déranges, justifie ton existence dans les 10 prochaines secondes ou je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaissance immédiate du dérangement + question ultra-précise sur son contexte pour prouver la légitimité de l'appel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Clairement je connais pas votre boîte là, vous faites quoi concrètement ?",
+        "sous_texte": "Tu es qui toi ? Pourquoi je devrais t'écouter ? Prouve-moi que tu n'es pas le énième vendeur lambda qui me fait perdre mon temps",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Explication factuelle courte (20 sec max) avec référence client tech reconnu + pivot immédiat vers une question sur lui"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah ouais d'accord... Écoutez c'est gentil mais franchement on a déjà pas mal d'outils, on est plutôt bien équipés là.",
+        "sous_texte": "J'ai eu 3 mauvaises expériences avec des solutions miracle, je ne vais pas rajouter un outil de plus qui va finir à la poubelle dans 3 mois",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa situation + creuser la stack actuelle avec curiosité technique vraie (pas pour vendre) + identifier l'éparpillement réel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Du coup vous m'appelez parce que... vous avez vu qu'on avait levé c'est ça ? Vous avez un fichier des levées de fonds ?",
+        "sous_texte": "Tu me prospectes de manière industrielle, je suis une ligne dans ton CRM, tu ne connais rien à ma boîte ni à mes problèmes réels",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur la prospection + pivot immédiat vers recherche spécifique faite sur Keypilot + question technique précise"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Honnêtement je vois pas trop le rapport entre ce que vous faites et nos enjeux à nous hein...",
+        "sous_texte": "Tu me poses des questions génériques de commercial, tu ne comprends rien à mes vrais problèmes tech, tu essaies juste de caser ton produit",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Admettre le flou + demander permission de poser 2-3 questions beaucoup plus techniques pour comprendre vraiment + reformulation précise"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais mais nous c'est particulier, on a une stack assez spécifique... je suis pas sûr que ça colle avec notre architecture.",
+        "sous_texte": "Mon contexte technique est unique, ta solution standardisée ne peut pas répondre à mes besoins, tu vas me proposer un truc générique qui ne marchera pas",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Curiosité technique authentique sur leur stack + exemples clients avec stack similaire + admission des limites d'intégration"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez on a déjà tenté ce type de solutions il y a deux ans, ça a été la cata... personne l'utilisait au final, voilà voilà.",
+        "sous_texte": "J'ai déjà perdu 6 mois et de la crédibilité sur un projet similaire, je ne vais pas refaire la même erreur, mon associé CEO me tuerait",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec précédent avec empathie vraie + identifier les causes d'échec d'adoption + montrer approche radicalement différente sur l'onboarding"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... et vous avez des clients dans la fintech ? Parce que nous on adresse ce secteur, les contraintes sont pas les mêmes hein.",
+        "sous_texte": "Je cherche un signal de crédibilité vertical pour justifier que je continue d'écouter + je teste si tu as vraiment des références sérieuses",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 1-2 clients fintech précis (si vrai) OU admettre le manque et proposer angle différent (problématique commune non verticale)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Clairement là vous me faites un pitch hyper générique... vous avez vraiment regardé ce qu'on fait chez Keypilot ou pas ?",
+        "sous_texte": "Tu récites un script commercial, tu ne t'es pas renseigné sur mon produit, tu ne comprends rien à mes enjeux, je suis juste un numéro pour toi",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Admission directe du manque de personnalisation + retournement en question précise sur son produit + écoute active pour vraiment comprendre"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mais du coup concrètement, comment ça s'intègre avec GitHub et Linear ? Parce que si c'est pour refaire tout notre workflow là...",
+        "sous_texte": "Je ne vais pas tout casser pour ton outil, je veux une intégration native fluide, prouve-moi techniquement que c'est possible sans friction",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse technique précise sur API et webhooks + cas d'usage client similaire + proposition démo technique avec son lead dev"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, 'solution disruptive' 'transformation digitale' tout ça... désolé mais j'ai entendu ça 50 fois, ça veut rien dire hein.",
+        "sous_texte": "Tu parles comme tous les commerciaux bullshit, tu n'as aucune crédibilité technique, tu essaies de m'impressionner avec du vide marketing",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Excuse immédiate + abandon du jargon marketing + reformulation en termes techniques concrets et mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Hmmm ok... et c'est quoi les limites de votre truc ? Parce que bon, tout marche jamais comme prévu, il doit bien y avoir des cas où ça fonctionne pas non ?",
+        "sous_texte": "Je teste ta crédibilité : si tu admets les faiblesses de ta solution, je te croirai sur les forces. Si tu dis que tout est parfait, tu es un menteur",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transparence totale sur 2-3 limitations connues + contextes où la solution n'est PAS recommandée + gain de crédibilité instantané"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends mais vous me parlez de ROI, de gains de productivité tout ça... vous avez des chiffres concrets ? Des études ? Ou c'est juste du ressenti client ?",
+        "sous_texte": "Prouve-moi de manière factuelle et chiffrée, je ne crois pas aux témoignages vagues, je veux des données analysables et vérifiables",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Chiffres précis d'un cas client similaire + méthodologie de mesure transparente + proposition de définir SES indicateurs propres pour test"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais là franchement on a d'autres priorités... on est en pleine refonte de l'API v2, c'est pas le moment.",
+        "sous_texte": "Je veux éviter de dire non directement, je cherche une excuse de timing pour esquiver la décision sans conflit",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la priorité + montrer le lien entre refonte API et solution proposée OU proposer timing post-refonte précis avec relance calendée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais peut-être... enfin bon de toute façon faut que j'en parle à mon associé, et puis y'a la DAF qui valide tout maintenant, du coup c'est compliqué vous voyez.",
+        "sous_texte": "Je ne veux pas prendre la décision seul par peur de me tromper, mais je ne veux pas non plus te donner accès à mon CEO car ça fragilise ma position",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer format 'démo technique' 15 min avec lead dev d'abord + puis faciliter argumentaire pour qu'il convainque CEO/DAF lui-même ensuite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Hmmm... et là concrètement on parle de quel budget ? Parce que bon on est post-levée mais c'est pas pour autant qu'on jette l'argent par les fenêtres hein.",
+        "sous_texte": "Je veux savoir si c'est dans mes cordes budgétaires avant de m'engager dans un process, je ne veux pas perdre de temps si c'est hors budget",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner fourchette large honnête + contextualiser par rapport à valeur créée + demander SON budget pour qualifier si ça vaut le coup de continuer"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais je sais pas trop... faudrait que je regarde ce que dit Gartner sur ce type de solutions, voir ce qui se fait ailleurs quoi.",
+        "sous_texte": "Je cherche une excuse pour différer la décision, je veux me rassurer en consultant des benchmarks externes avant de m'engager",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'envoyer le Gartner report si pertinent + suggérer format test court (POC 2 semaines) pour qu'il juge par lui-même versus théorie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là un rendez-vous d'une heure... j'ai vraiment pas le temps, on est sous l'eau, vous comprenez.",
+        "sous_texte": "Je suis réellement débordé + j'ai peur que ce soit encore un RDV commercial classique de 1h de blabla sans valeur concrète",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer format ultra-court (15 min visio) + agenda précis partagé d'avance + option d'annuler si pas de valeur après 10 min"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez c'est sympa mais bon... clairement je pense pas que ce soit le bon moment pour nous, voilà voilà. On se recontacte dans 6 mois peut-être, ok ?",
+      "condition_declenchement": "Se déclenche si le commercial insiste trop après 2 objections non résolues OU si le pitch dépasse 3 minutes en monologue OU si aucune personnalisation/question technique n'a été démontrée. C'est la sortie de secours polie mais définitive."
+    },
+    "pattern_escalade": "Matthieu commence courtois mais distant (ton neutre, réponses courtes). Si le vendeur ne prouve pas rapidement sa légitimité technique, il passe en mode 'signaux de rejet' : utilise 'Clairement', 'Écoutez', coupe plus souvent la parole, respiration courte audible. Si le vendeur persiste avec du jargon marketing ou ne pose aucune question technique, il invente une urgence ('Désolé faut que j'y aille, on a un incident prod') ou sort l'objection finale. En revanche, une SEULE question technique pertinente ou l'admission d'une limite de solution peut inverser totalement la dynamique et le rendre curieux.",
+    "piege_classique": "Le 'faux intérêt analytique' : Matthieu peut poser 4-5 questions techniques de suite qui donnent l'impression qu'il est hyper intéressé, alors qu'en réalité il cherche LA faille technique pour justifier son refus. Si le vendeur ne détecte pas ce pattern et répond en mode 'tout est parfait', il perd instantanément toute crédibilité. La clé : détecter quand les questions deviennent un interrogatoire et proposer un format différent ('On dirait que tu as plein de questions précises, ce serait pas plus efficace qu'on fasse une démo technique de 15 min avec ton lead dev ?')."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B destinée aux éditeurs de logiciels et agences digitales de 15-40 personnes",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à la prospection téléphonique à froid auprès de décideurs tech B2B pour obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — CTO SaaS post-levée",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour équipes produit et développement en scale-up tech.",
+    "vous_vendez": "Une solution de collaboration et gestion de projet pour équipes tech en croissance (pricing non communiqué à ce stade, découverte prioritaire).",
+    "vous_appelez": "Matthieu Delamare, 38 ans, CTO et co-fondateur de Keypilot (SaaS gestion de projet, 28 personnes, post-Série A de 3M€). Profil analytique, méfiant envers les discours commerciaux, a vécu plusieurs déceptions avec des outils prometteurs jamais adoptés.",
+    "ce_que_vous_savez": [
+      "Keypilot a levé 3M€ il y a 8 mois et doit scaler à 50 personnes sous 18 mois",
+      "3 devs seniors viennent d'être recrutés, enjeu d'onboarding et de collaboration",
+      "Stack actuelle éclatée : GitHub + Notion + Slack + Linear",
+      "Matthieu recrute 2 devs backend depuis 4 mois sans succès",
+      "Échecs passés avec 2 outils similaires abandonnés faute d'adoption"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous de 15 minutes avec Matthieu et/ou son lead dev pour une démo technique ciblée.",
+    "vos_atouts": [
+      "Références clients tech français reconnus (Alan, Qonto)",
+      "Approche transparente sur les limites de la solution",
+      "Format court et concret adapté aux profils tech",
+      "Compréhension des enjeux d'adoption en post-levée"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:22:59Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15004,
+    "total_time_s": 142.0
+  }
+}

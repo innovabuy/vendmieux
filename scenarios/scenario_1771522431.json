@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771522431",
+  "description_originale": "Vous avez envoyé une proposition commerciale au CEO / CTO d'une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : tech_saas]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO/CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux éditeurs de logiciels et agences digitales",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Manque de retour clair du prospect"
+      ],
+      "implicites": [
+        "Difficulté à obtenir un engagement (oui/non) du prospect",
+        "Risque de perdre l'opportunité par abandon silencieux",
+        "Probable faiblesse du suivi commercial post-proposition",
+        "Possibilité que la proposition ne soit pas adaptée ou claire",
+        "Manque de création d'urgence ou de valeur perçue"
+      ],
+      "probleme_racine": "Les commerciaux n'obtiennent pas de décision claire après envoi de proposition, laissant les opportunités en suspens indéfiniment par manque de technique de relance assertive et structurée"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance commerciale pour obtenir des réponses claires (oui/non/prochaine étape) après envoi de proposition, éviter les prospects fantômes et faire avancer le pipeline de vente",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services ou solutions B2B pour le secteur tech/digital",
+      "entreprise_description": "Entreprise proposant des services ou solutions destinés aux startups et PME du secteur technologique, éditeurs de logiciels et agences digitales",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service B2B destiné aux entreprises tech de 15-40 salariés, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Contexte de la prise de contact initiale",
+        "Contenu et qualité de la proposition envoyée",
+        "Zone géographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thomas",
+      "nom": "Mercier",
+      "age": 38,
+      "poste": "CEO & Co-fondateur",
+      "entreprise": {
+        "nom": "Streamline Solutions",
+        "secteur": "Éditeur SaaS - outils de gestion de projets pour agences créatives",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ (dernière clôture)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Hyper-sollicité et protecteur de son temps",
+        "Pragmatique jusqu'à l'impatience",
+        "Syndrome de l'imposteur masqué par de l'assurance"
+      ],
+      "motivations_profondes": [
+        "Prouver la viabilité de sa boîte face aux investisseurs",
+        "Passer de 2M€ à 5M€ dans les 18 mois",
+        "Être reconnu comme un acteur sérieux du SaaS français, pas 'juste une startup'",
+        "Éviter les erreurs coûteuses qui ralentiraient la croissance"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des prestataires qui sur-promettent",
+        "S'engager sur un service qui ne livre pas et devoir justifier l'échec en interne",
+        "Paraître naïf face à son CTO associé (très méfiant des vendeurs)",
+        "Manquer de budget pour des priorités produit critiques"
+      ],
+      "rapport_aux_commerciaux": "Méfiant par défaut. A été échaudé 2 fois l'an dernier avec des promesses non tenues. Respecte uniquement ceux qui vont droit au but et admettent les limites de leur offre. Déteste la familiarité forcée.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je n'ai que 10 minutes là'. Tutoiement mixte : vouvoie si vous vouvoiez, tutoie si vous tutoyiez en premier. Légère pointe d'agacement si vous rappelez sans raison claire.",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou un délai ('Concrètement, ça prend combien de temps à déployer ?')",
+        "Mentionne spontanément son CTO : 'Faudrait que j'en parle à Karim'",
+        "Demande un exemple client dans son secteur spécifique",
+        "Ralentit son débit et prend des notes (bruit de clavier)"
+      ],
+      "signaux_rejet": [
+        "Répète 'Ouais ouais' sans poser de question",
+        "Commence ses phrases par 'Écoutez...' (ton descendant)",
+        "'C'est noté, on reviendra vers vous' (= non poli)",
+        "Mentionne un concurrent : 'On regarde aussi du côté de [X]' (= vous met en concurrence sans engagement)",
+        "Coupe court : 'Envoyez-moi un mail avec tout ça'"
+      ],
+      "tics_langage": [
+        "'Concrètement' (revient 3-4 fois par conversation)",
+        "'Franchement' (quand il va être direct/négatif)",
+        "'On va pas se mentir' (avant une objection)",
+        "Soupirs audibles si explication trop longue"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35-40 secondes MAX. Au-delà, commence à décrocher. Préfère les échanges ping-pong. Si vous parlez 2 minutes d'affilée, il dira 'OK OK, j'ai compris' pour vous couper."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance ralentie depuis 4 mois (churn en légère hausse). Pression du board pour accelerer l'acquisition client. Vient de perdre un gros compte (25K€/an). Équipe commerciale = 1 responsable commercial + 2 BDR juniors qui peinent à closer. Thomas fait encore 40% des démos lui-même.",
+      "priorites_actuelles": [
+        "Recruter un Head of Sales senior (budget 70-80K€)",
+        "Industrialiser le processus de vente (CRM mal utilisé)",
+        "Réduire le cycle de vente (actuellement 6-8 semaines)",
+        "Préparer une levée Série A dans 9 mois"
+      ],
+      "experience_avec_offre_similaire": "A suivi une formation commerciale il y a 2 ans (2 jours en présentiel, 'beaucoup de théorie, pas assez d'opérationnel'). A testé un outil de sales engagement l'an dernier, abandonné après 3 mois (trop complexe pour l'équipe).",
+      "fournisseur_actuel": "Utilise Hubspot CRM (licence gratuite) et bricole avec des templates de mails. Aucune formation structurée pour l'équipe commerciale depuis 14 mois.",
+      "budget_disponible": "Entre 8K€ et 15K€ pour de la formation/conseil commercial, mais doit convaincre son associé CTO. Préfère étaler le paiement (3x) ou lier à des résultats mesurables."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un résultat chiffré obtenu chez un éditeur SaaS similaire ('Cycle de vente réduit de 40% en 8 semaines chez [nom]')",
+        "Reconnaître sa situation sans forcer : 'Vous m'aviez dit en septembre que vos BDR galéraient à closer, c'est toujours d'actualité ?'",
+        "Proposer un angle concret et immédiat : 'Je vous montre 3 techniques de relance en 15 min, vous les testez cette semaine, on refait le point vendredi'",
+        "Lui faire gagner du temps : 'Je ne vous redemande pas tout le contexte, vous m'aviez dit X et Y. Ma question est simple : [question précise] ?'",
+        "Être direct sur le délai : 'Si c'est pas une priorité avant mars, autant se le dire maintenant'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Faire comme si vous étiez potes : 'Salut Thomas, alors cette rentrée ?'",
+        "Ne pas avoir lu sa proposition : 'Je voulais revenir vers vous pour savoir où vous en étiez'",
+        "Mettre la pression commerciale bas de gamme : 'Alors, on signe ?'",
+        "Proposer un RDV long sans agenda clair : 'On pourrait se caler 45 min pour rediscuter'",
+        "Généraliser : 'Nos clients dans la tech sont très satisfaits' (= creux)",
+        "Insister après un 'non' poli : il vous blacklistera mentalement"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, je suis en réunion là, c'est pour quoi exactement ?",
+        "sous_texte": "Test de pertinence immédiat : prouve-moi en 10 secondes que tu mérites mon temps, sinon je raccroche poliment",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler sa situation précise en une phrase + question fermée ultra-courte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai reçu ta proposition il y a 3 semaines, si ça m'intéressait j'aurais répondu non ?",
+        "sous_texte": "Agacement légitime + test de ton assertivité. Attend que tu assumes la relance sans t'excuser platement",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider son point de vue + recadrer avec un élément nouveau ou une question sur le timing réel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On va pas se mentir, on a d'autres priorités en ce moment... Peut-être dans quelques mois ?",
+        "sous_texte": "Évitement poli mais sincère. Vraiment surchargé MAIS n'a pas dit non définitif. Cherche une porte de sortie confortable",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le timing + ancrer une date précise + planter une graine de coût d'opportunité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, tu me redemandes tout ça ? Je t'avais déjà expliqué notre situation dans le mail de septembre...",
+        "sous_texte": "Irritation légitime : tu perds son temps en redemandant des infos déjà données. Manque de préparation = dealbreaker pour lui",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "S'excuser brièvement + prouver qu'on a tout lu + poser UNE question sur l'évolution depuis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, c'est quoi la différence avec la formation qu'on a faite il y a 2 ans ? Parce que franchement, ça nous a pas servi à grand-chose...",
+        "sous_texte": "Scepticisme basé sur expérience négative réelle. Cherche LA preuve tangible que ce sera différent. Pas convaincu par les promesses génériques",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser son expérience passée (ce qui n'a pas marché) + différencier sur le format/suivi/mesure, pas sur le contenu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais là tu me parles de cycle de vente, de process... Mon vrai problème c'est que mes BDR sont juniors, ils savent pas closer. C'est pas une question de méthode, c'est des profils.",
+        "sous_texte": "Rationalisation : rejette la solution sur un facteur externe (profils RH) pour éviter de voir le vrai problème structurel. Cherche inconsciemment à se déresponsabiliser",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reformuler son diagnostic + challenger doucement avec une question sur ce qu'il a déjà testé pour les faire progresser"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK OK, mais concrètement là, je dois convaincre Karim mon CTO. Et lui il va me demander : c'est quoi le ROI ? Parce que 12K€ pour de la formation, il va tiquer...",
+        "sous_texte": "Intérêt réel MAIS besoin d'arguments pour convaincre son associé méfiant. Cherche des munitions chiffrées et du concret, pas du storytelling",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Co-construire les métriques de succès avec lui + proposer un format 'pilote mesurable' plutôt qu'engagement long"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, vous faites ça en visio ou en présentiel ? Parce que franchement, mes équipes sont en remote 3 jours sur 5, les trucs en présentiel c'est compliqué à organiser...",
+        "sous_texte": "Objection logistique sincère MAIS cache peut-être aussi une crainte sur l'engagement temps. Teste la flexibilité de l'offre",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la flexibilité format + recadrer sur l'efficacité (présentiel vs distanciel) selon son contexte précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, là je vous écoute, mais on regarde aussi du côté de [Nom concurrent crédible]. Eux ils proposent un truc plus packagé avec le CRM intégré...",
+        "sous_texte": "Mise en concurrence tactique pour négocier OU vraie hésitation. Cherche à voir si tu vas paniquer et brader ou rester solide sur ta valeur",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que c'est intelligent de comparer + recentrer sur SON problème spécifique (pas sur les features) + demander ses critères de choix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Le problème c'est que j'ai déjà eu ce discours 3 fois. Tout le monde me dit 'on est différents, on est opérationnels'. Résultat : que dalle.",
+        "sous_texte": "Cynisme acquis par expériences décevantes. Mur émotionnel difficile à franchir. Cherche UNE preuve sociale ultra-précise ou un engagement de résultat",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider sa frustration sans se justifier + proposer un test à risque minimal (1 session pilote remboursée si pas convaincu)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, c'est intéressant, envoie-moi un mail avec tout ça, je vais en parler en interne et on revient vers vous.",
+        "sous_texte": "Fuite polie classique. Intérêt modéré MAIS aucune intention réelle de reprendre contact. Va ghosting à 80% si tu laisses filer",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'envoi du mail MAIS ancrer un point de contact précis : 'Je t'envoie ça ce soir, on se fait 10 min vendredi 11h pour ton retour ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là je peux pas m'engager. On est en pleine clôture de trimestre, j'ai la levée à préparer... C'est vraiment pas le moment.",
+        "sous_texte": "Excuse timing sincère MAIS floue. Soit vraiment débordé, soit utilise ça pour éviter la décision. Teste si tu vas insister ou proposer une alternative smart",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la contrainte + challenger le timing réel : 'OK pour la levée, elle est prévue quand ? Parce que justement, des commerciaux qui performent mieux, ça aide pour les metrics investisseurs non ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le budget, franchement c'est chaud. On vient de perdre un gros compte, je peux pas claquer 12K€ comme ça. T'as pas un truc moins cher pour commencer ?",
+        "sous_texte": "Vraie contrainte budget immédiate MAIS peut-être aussi négociation tactique. Teste ta flexibilité sans vouloir forcément tuer le deal. Intéressé si prix ajusté",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement + proposer paiement étalé OU version pilote réduite avec upsell si résultats + recadrer sur le coût de l'inaction"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, mais si ça marche pas au bout de 2 mois, je fais quoi ? Je suis coincé avec un prestataire qui livre pas ?",
+        "sous_texte": "Peur de l'engagement basée sur expériences passées. Besoin d'être rassuré sur une clause de sortie ou des garanties. Pas un rejet, un dernier frein avant le oui",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un mécanisme de garantie crédible (remboursement partiel, jalons validés, indicateurs mesurés) + co-définir les critères de succès AVANT"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, c'est noté. Je vais y réfléchir et je te rappelle la semaine prochaine si ça colle.",
+        "sous_texte": "Fuite molle : aucune intention de rappeler. Intérêt faible déguisé en 'je réfléchis'. Tu ne le reverras jamais si tu le laisses partir comme ça",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Bloquer poliment mais fermement : 'Thomas, soyons francs 30 secondes : c'est un non poli ou il y a un vrai truc qui coince ? Parce que si c'est non, je préfère qu'on se le dise.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, tu sais quoi ? On va attendre encore un peu. On a lancé un process de recrutement pour un Head of Sales senior, on va voir avec lui ce qu'il en pense. Ça sert à rien de mettre la charrue avant les bœufs.",
+      "condition_declenchement": "Apparaît si le commercial a été trop insistant sur le closing sans avoir solidement ancré l'urgence et le coût d'opportunité. Thomas se réfugie derrière une décision RH future pour reprendre le contrôle et clore la conversation sans conflit."
+    },
+    "pattern_escalade": "Thomas commence cordial mais pressé (test de pertinence). Si vous tenez bon avec du concret, il s'ouvre et pose des questions précises (signaux d'intérêt). Mais dès qu'il sent de la pression commerciale classique ou du blabla, il passe en mode 'évitement poli' : phrases courtes, 'c'est noté', 'on reviendra vers vous'. Dernier stade : il devient directif et cassant ('Écoute, c'est bon, j'ai compris') puis coupe court. Impossible de revenir en arrière une fois à ce stade.",
+    "piege_classique": "Confondre ses signaux d'intérêt intellectuel ('C'est intéressant, concrètement comment vous faites ?') avec un engagement d'achat. Thomas peut être captivé par une technique pendant 10 minutes ET ne jamais acheter. Le vrai signal : il mentionne spontanément Karim (son CTO) ou un timing concret ('On pourrait tester ça en mars'). Tant qu'il ne parle pas d'implémentation réelle dans SON contexte avec SON équipe, c'est de la curiosité, pas de l'achat."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services ou solutions B2B pour le secteur tech/digital",
+      "description": "Entreprise proposant des services ou solutions destinés aux startups et PME du secteur technologique, éditeurs de logiciels et agences digitales"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service B2B destiné aux entreprises tech de 15-40 salariés, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance commerciale pour obtenir des réponses claires (oui/non/prochaine étape) après envoi de proposition, éviter les prospects fantômes et faire avancer le pipeline de vente",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — CEO SaaS en croissance ralentie",
+    "vous_etes": "Commercial B2B spécialisé dans l'accompagnement des éditeurs SaaS sur leur performance commerciale.",
+    "vous_vendez": "Programme d'accompagnement commercial pour structurer et accélérer les ventes (formation équipe + outils + suivi), entre 8K€ et 15K€.",
+    "vous_appelez": "Thomas Mercier, 38 ans, CEO de Streamline Solutions (SaaS gestion de projets, 28 personnes). Pragmatique, pressé, méfiant envers les commerciaux après deux déceptions l'an dernier.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition il y a 3 semaines, aucun retour depuis",
+      "Lors du premier échange, il vous a parlé de ses 2 BDR qui peinent à closer et de son cycle de vente trop long (6-8 semaines)",
+      "Son churn a légèrement augmenté ces 4 derniers mois, avec perte récente d'un gros compte",
+      "Il prépare une levée Série A dans 9 mois et doit montrer de la traction commerciale",
+      "Son associé CTO est très méfiant des prestataires, Thomas doit le convaincre avant tout achat"
+    ],
+    "votre_objectif": "Obtenir une réponse claire : oui avec prochaine étape précise, non assumé, ou date ferme de décision.",
+    "vos_atouts": [
+      "Vous avez réduit le cycle de vente de 40% en 8 semaines chez un éditeur SaaS de taille similaire",
+      "Votre méthode est opérationnelle : 3 techniques testables dès la semaine 1, résultats mesurables sous 30 jours",
+      "Vous proposez un paiement en 3 fois et un suivi personnalisé avec leur CRM actuel (Hubspot)",
+      "Vous ne sur-promettez pas : vous admettez d'emblée les limites et le travail requis côté client"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:33:51Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15308,
+    "total_time_s": 144.2
+  }
+}

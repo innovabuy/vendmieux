@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771521292",
+  "description_originale": "Le directeur des achats centraux d'une chaîne de distribution de 100+ points de vente (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : commerce_distribution]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "100+ points de vente - grande entreprise",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction générale",
+        "Service juridique",
+        "Équipe achats"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - fourniture B2B sous contrat cadre",
+      "proposition_valeur_presumee": "Fiabilité, respect des engagements contractuels, service de qualité pour compte clé",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Menace de pénalités contractuelles",
+        "Colère du directeur des achats",
+        "Risque de perte du contrat"
+      ],
+      "implicites": [
+        "Défaillance dans l'exécution du contrat",
+        "Impact sur la réputation auprès d'un compte clé",
+        "Possible manque de process de gestion de crise",
+        "Communication défaillante en amont de l'incident",
+        "Probable escalade hiérarchique chez le client"
+      ],
+      "probleme_racine": "Incapacité à gérer efficacement une réclamation majeure et à transformer une crise relationnelle en opportunité de renforcement du partenariat"
+    },
+    "objections_mentionnees": [
+      "Application de pénalités contractuelles",
+      "Rupture de confiance",
+      "Non-respect des engagements",
+      "Impact business direct sur l'activité"
+    ],
+    "objectif_formation": "Entraîner les commerciaux à la gestion de crise client, au management des réclamations de compte clés, à la désescalade émotionnelle, et à la construction de plans de résolution créateurs de valeur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour la grande distribution",
+      "entreprise_description": "Entreprise fournissant des produits ou services à une chaîne de distribution multi-sites dans le cadre d'un contrat cadre",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou produit fourni dans le cadre d'un contrat cadre avec clauses de pénalités",
+      "proposition_valeur": "Partenaire fiable pour comptes clés, expertise sectorielle distribution, capacité de déploiement multi-sites",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Contrat en cours avec chaîne de 100+ points de vente"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Montant des pénalités potentielles",
+        "Durée du contrat",
+        "Nature du produit/service fourni",
+        "Historique de la relation client",
+        "Cause de l'incident (interne/externe)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Deschamps",
+      "age": 52,
+      "poste": "Directeur des Achats Centraux",
+      "entreprise": {
+        "nom": "Groupe Proximarché",
+        "secteur": "Distribution alimentaire de proximité",
+        "taille": "127 points de vente en franchise + 18 magasins intégrés",
+        "ca_approximatif": "420M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Contrôlant et pointilleux sur les engagements contractuels",
+        "Défenseur féroce de sa réputation interne auprès de la direction",
+        "Ancien cadre de la grande distribution passé aux achats après 15 ans en exploitation"
+      ],
+      "motivations_profondes": [
+        "Prouver que sa fonction achats apporte de la valeur stratégique, pas juste des économies",
+        "Être perçu comme un rempart protégeant l'enseigne des défaillances fournisseurs",
+        "Maintenir son statut de membre du CODIR acquis il y a 3 ans",
+        "Compenser un complexe vis-à-vis des diplômes des autres directeurs (lui est autodidacte)"
+      ],
+      "peurs_freins": [
+        "Que le PDG le rende responsable de l'incident devant le CODIR",
+        "Perdre la face devant les franchisés qui remontent l'info",
+        "Être accusé d'avoir mal négocié les clauses du contrat",
+        "Que ses équipes le voient accepter des excuses faciles sans obtenir réparation"
+      ],
+      "rapport_aux_commerciaux": "Méfiance de principe héritée de son passage en magasin où il a vu défiler les promesses non tenues. Respecte uniquement ceux qui assument leurs erreurs sans langue de bois et qui proposent du concret. Déteste viscéralement les beaux parleurs et les PowerPoint corporate.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque agressif. Attaque directement sans préambule : 'Bon, on va pas tourner autour du pot, vous avez merdé. Point.' Coupe la parole systématiquement les 3 premières minutes pour tester la résistance au stress.",
+      "signaux_interet": [
+        "Arrête de consulter ses emails sur son téléphone",
+        "Prend des notes manuscrites sur son carnet Moleskine noir",
+        "Demande des précisions chiffrées : 'Concrètement, ça représente combien en euros ?'",
+        "Évoque spontanément d'autres dossiers : 'Tiens, sur le marché textile on a eu le même souci...'",
+        "Passe du vouvoiement distant au tutoiement rugueux mais moins hostile"
+      ],
+      "signaux_rejet": [
+        "Soupirs exagérés + regards vers le plafond",
+        "Phrase couperet : 'Écoutez, je vais être transparent avec vous...' (= fin de l'échange)",
+        "Mentionne le service juridique : 'Je vais transmettre ça au contentieux'",
+        "Ramène systématiquement à la clause contractuelle : 'Article 12.3, vous vous souvenez ?'",
+        "Ton définitif : 'On va faire jouer la concurrence, j'ai trois appels d'offres qui dorment dans un tiroir'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Bon.' ou 'Voilà.' pour reprendre la main",
+        "Utilise 'In fine' et 'A minima' à outrance (complexe d'autodidacte)",
+        "Dit 'merdé' sans filtre, même en réunion formelle",
+        "'C'est pas compliqué' avant de poser une exigence très compliquée",
+        "'Je vais être cash' avant une attaque frontale",
+        "Expressions terrains : 'en rayon', 'côté magasin', 'sur le terrain'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Moins de 45 secondes. Au-delà, coupe net : 'Oui oui, j'ai compris, mais concrètement ?' Veut des réponses directes, pas des argumentaires. Si le commercial enchaîne les slides, raccroche ou quitte la réunion."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "CODIR mercredi dernier : le PDG a ouvertement critiqué la direction achats suite à l'incident qui a impacté 23 magasins pendant 4 jours en pleine opération commerciale. Les franchisés sont remontés. Le DAF a suggéré de revoir les process de sélection fournisseurs. Laurent est sous pression maximale et doit présenter un plan d'action lundi prochain.",
+      "priorites_actuelles": [
+        "Obtenir réparation financière concrète (remise, avoir, geste commercial chiffré)",
+        "Sécuriser un plan B opérationnel pour éviter toute récidive (stock tampon, fournisseur de secours)",
+        "Rédiger un compte-rendu pour le PDG montrant sa fermeté et son efficacité",
+        "Calmer les franchisés en leur montrant qu'il a obtenu des garanties renforcées",
+        "Éviter que l'incident ne remonte jusqu'au conseil de surveillance trimestriel dans 3 semaines"
+      ],
+      "experience_avec_offre_similaire": "20 ans d'achats dans la distribution. A tout vu : ruptures, litiges qualité, défaillances logistiques. Ancien de Carrefour et Système U avant de rejoindre Proximarché. Connaît tous les classiques des excuses fournisseurs et toutes les ficelles contractuelles.",
+      "fournisseur_actuel": "Contrat cadre 3 ans signé il y a 18 mois après appel d'offres serré. Fournisseur actuel était 8% plus cher que le concurrent mais avait promis 'fiabilité absolue' et 'service premium compte-clé'. Laurent avait défendu ce choix en CODIR. L'incident le met personnellement en porte-à-faux.",
+      "budget_disponible": "Pas de budget pour changer de fournisseur (pénalités de sortie + coûts de switch). Peut négocier des avoirs ou remises sur factures futures. Enveloppe annuelle du poste concerné : environ 3,2M€. Marge de manœuvre actuelle : quasi-nulle sauf si miracle commercial."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance explicite et immédiate de l'erreur sans chercher d'excuses : 'On a merdé, point'",
+        "Proposition chiffrée de compensation AVANT qu'il ne la demande (avoir minimum 35K€ attendu dans sa tête)",
+        "Plan d'action détaillé avec dates, responsables nommés, jalons de contrôle",
+        "Engagement du directeur commercial ou du directeur général du fournisseur (pas juste le commercial)",
+        "Proposition de clause contractuelle renforcée avec pénalités automatiques en cas de récidive",
+        "Offre d'un audit conjoint des process pour identifier les causes racines",
+        "Transparence totale sur les causes de l'incident (y compris si ça met le fournisseur en difficulté)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident : 'C'est pas si grave' ou 'Ça arrive à tout le monde'",
+        "Rejeter la responsabilité sur des tiers : sous-traitants, transporteurs, cas de force majeure",
+        "Langue de bois corporate : 'Nous prenons cet incident très au sérieux' sans action concrète",
+        "Proposer une réunion pour 'en discuter' sans apporter de solution immédiate",
+        "Tenter de noyer le poisson dans des explications techniques interminables",
+        "Vouloir renégocier d'autres aspects du contrat en profitant de la situation",
+        "Montrer de l'impatience ou de l'agacement face à sa colère légitime",
+        "Citer d'autres clients satisfaits comme preuve que le problème est isolé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, on va pas tourner autour du pot. Vous avez merdé, point. J'ai 23 magasins qui ont été impactés pendant 4 jours en pleine opération commerciale. Alors vos salamalecs, là, tout de suite, ça m'intéresse pas.",
+        "sous_texte": "Je suis furieux et sous pression hiérarchique. Je veux voir si tu assumes ou si tu vas te dégonfler. Tes premières secondes vont tout déterminer.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer immédiatement sans chercher d'excuse. Montrer que vous venez avec des solutions concrètes, pas des excuses."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai un CODIR dans 45 minutes et franchement, si c'est pour m'expliquer que 'vous prenez ça très au sérieux' et qu'on va 'analyser la situation', raccrochez maintenant, ça ira plus vite.",
+        "sous_texte": "J'ai entendu mille fois ce discours corporate vide. Je teste ta capacité à aller droit au but et à apporter du concret immédiatement.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Annoncer directement les trois éléments concrets : reconnaissance, compensation chiffrée, plan d'action avec dates."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez combien ça nous a coûté, votre incident ? Entre le manque à gagner, les franchisés qui gueulent, et la perte de chiffre sur l'opération ? On parle pas de cacahuètes là. Et moi, je me suis fait démonter mercredi dernier devant tout le CODIR.",
+        "sous_texte": "Je suis personnellement en danger hiérarchique. Ce n'est pas juste un problème commercial, c'est MA réputation qui est en jeu. Il faut que tu comprennes la gravité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'impact personnel et professionnel sur lui. Montrer que vous comprenez qu'il doit rendre des comptes."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, avant qu'on aille plus loin : c'est quoi exactement la cause racine ? Parce que si c'est votre sous-traitant logistique, ou un cas de force majeure, ou je sais pas quoi, moi j'en ai rien à faire. Contractuellement, vous êtes responsable, point.",
+        "sous_texte": "Je connais toutes les ficelles pour se défausser. Je veux voir si vous allez assumer à 100% ou chercher des échappatoires juridiques.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Assumer la responsabilité contractuelle totale tout en expliquant transparentement les causes pour montrer que vous avez identifié le problème."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, concrètement : qu'est-ce qui me garantit que ça va pas se reproduire dans 3 mois ? Parce que là, c'est pas compliqué, moi je dois présenter un plan d'action lundi au PDG. Et si je peux pas lui garantir que c'est sécurisé, il va me demander de relancer un appel d'offres.",
+        "sous_texte": "Je dois me couvrir institutionnellement. J'ai besoin d'éléments tangibles pour défendre notre maintien du contrat auprès de ma hiérarchie.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Fournir un plan d'action structuré avec jalons, responsables nommés, indicateurs de suivi et clause contractuelle renforcée."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me dites que vous avez identifié le problème, c'est bien joli. Mais franchement, quand on m'a vendu le contrat il y a 18 mois, on me parlait de 'fiabilité absolue' et 'service premium'. J'ai défendu ce choix, j'ai pris 8% plus cher que la concurrence pour ça. Et résultat ?",
+        "sous_texte": "Je me sens personnellement trahi et manipulé. J'ai pris un risque politique en vous choisissant et vous m'avez mis dans la merde. Ma crédibilité est atteinte.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître que vous avez failli à vos engagements initiaux et que sa confiance a été trahie. Montrer comment vous allez mériter de la reconstruire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, votre plan d'action, j'ai compris. Mais moi, in fine, j'ai des franchisés qui ont perdu du chiffre. A minima, il faut une compensation financière. Concrètement, vous proposez quoi ? Parce que côté magasin, ils attendent des réponses.",
+        "sous_texte": "Je veux un chiffre maintenant. J'ai besoin d'une monnaie d'échange pour calmer mes franchisés et montrer à ma hiérarchie que j'ai obtenu réparation.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un montant chiffré d'avoir ou de compensation (au moins 35K€) AVANT qu'il ne fixe lui-même le montant."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, je vais être cash : votre proposition, là, elle est pas à la hauteur. Le DAF m'a suggéré mercredi de regarder l'article 12.3 du contrat sur les pénalités. Vous vous souvenez de l'article 12.3 ? Parce que moi, je l'ai relu ce matin.",
+        "sous_texte": "Je brandis la menace contractuelle pour obtenir plus. Je veux voir jusqu'où vous êtes prêt à aller pour sauver la relation. C'est aussi un test de votre marge de manœuvre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder à la panique. Reconnaître la clause, montrer que vous proposez déjà au-delà pour préserver la relation à long terme."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon voilà, je vais être transparent avec vous : j'ai trois appels d'offres qui dorment dans un tiroir. Des concurrents à vous qui seraient ravis de reprendre le marché. Alors certes, il y a les pénalités de sortie, mais si je présente ça comme une question de fiabilité stratégique au PDG, il validera.",
+        "sous_texte": "Je veux tester ta vraie capacité de négociation. Est-ce que tu as les couilles de tenir ta position ou tu vas paniquer et tout donner ? Je veux voir ta limite.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas surréagir. Reconnaître son droit de consulter le marché tout en rappelant les coûts réels de switch et en proposant une solution gagnant-gagnant."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me proposez un audit conjoint et un comité de pilotage mensuel ? Mais c'est pas compliqué : moi je veux juste que ça marche, point. Je vais pas mobiliser mes équipes pour faire votre boulot à votre place. Vous êtes le fournisseur, c'est à vous de livrer.",
+        "sous_texte": "Je rejette instinctivement tout ce qui ressemble à des usines à gaz bureaucratiques. J'ai pas le temps ni les ressources pour ça. Propose-moi des solutions qui ne me coûtent rien en charge mentale.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler en montrant que c'est pour SA sécurité et son reporting, pas pour créer du travail supplémentaire. Proposer que vous preniez en charge l'essentiel."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vos propositions, c'est bien. Mais moi ce que je vois, c'est que vous m'avez mis dans la merde. Le PDG me regarde bizarrement depuis mercredi. Les franchisés me harcèlent. Et vous, vous me faites des PowerPoint. Vous comprenez le décalage ?",
+        "sous_texte": "Je suis émotionnellement à bout. J'ai besoin d'empathie et de reconnaissance de ma douleur professionnelle avant de pouvoir passer en mode solution. Tu dois d'abord valider mes émotions.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Arrêter l'argumentaire. Reconnaitre frontalement la douleur et l'impact personnel. Créer un moment d'humanité avant de revenir aux solutions."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, admettons que j'accepte votre plan. Mais moi, lundi, je dois présenter quelque chose au PDG. Concrètement, vous pouvez me mettre quoi par écrit avant lundi 9h ? Parce que si je débarque avec des promesses verbales, je suis mort.",
+        "sous_texte": "Je suis tenté par ta proposition mais j'ai besoin de couverture institutionnelle immédiate. Si tu ne peux pas produire du concret avant lundi, ça ne sert à rien.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'engager sur un document formel (lettre signée DG + plan d'action) livré avant dimanche soir. Proposer même d'en discuter samedi si besoin."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ok, mais attendez : qui s'engage chez vous ? Parce que si c'est juste vous qui me promettez ça, ça a aucune valeur. Moi j'ai besoin que votre directeur commercial, voire votre DG, s'engage formellement. Sinon dans 2 mois on est reparti pour un tour.",
+        "sous_texte": "J'ai besoin d'un engagement au plus haut niveau pour crédibiliser ma décision de vous maintenir. C'est aussi une condition pour que je puisse défendre ça en CODIR.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confirmer immédiatement l'implication du directeur commercial ou DG. Proposer un appel tripartite ou une lettre signée par la direction."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais en parler au service juridique et au DAF. Parce que là, in fine, c'est pas juste une décision achats, c'est stratégique. Je vous rappelle en fin de semaine prochaine, on verra.",
+        "sous_texte": "Je me défausse sur d'autres pour gagner du temps et renégocier à la baisse ou pour préparer une sortie. Je ne suis pas convaincu mais je ne veux pas dire non frontalement.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Identifier l'échappatoire. Proposer d'accompagner la présentation au juridique/DAF pour sécuriser le dossier et accélérer la décision."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà, c'est pas que votre proposition est mauvaise, mais franchement, je sais pas si je peux vous refaire confiance. Vous comprenez ? C'est émotionnel aussi. J'ai l'impression de m'être fait entuber il y a 18 mois avec vos belles promesses.",
+        "sous_texte": "La blessure de confiance est profonde. Au-delà du rationnel, il y a une dimension relationnelle cassée. J'ai besoin d'être rassuré sur le plan humain, pas juste contractuel.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Moment de vérité humaine. Reconnaitre la trahison ressentie. Proposer de reconstruire la confiance étape par étape avec preuves tangibles."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, écoutez. Je vais être honnête avec vous : votre proposition, elle est correcte. Mais moi, j'ai le PDG qui me dit qu'on peut plus se permettre de prendre des risques avec vous. Et les franchisés qui veulent du sang. Alors concrètement, même si j'ai envie de vous donner une deuxième chance, politiquement, je suis coincé. Vous comprenez ?",
+      "condition_declenchement": "Déclenchée si le commercial a bien géré toutes les objections précédentes mais n'a pas suffisamment adressé la dimension politique et hiérarchique. Laurent est personnellement convaincu mais institutionnellement bloqué."
+    },
+    "pattern_escalade": "Laurent commence par une agression verbale frontale pour tester la résistance (phase 1-3 minutes). Si le commercial tient, il passe en mode négociation dure avec menaces contractuelles et concurrence (phase 4-8 minutes). Si les propositions sont solides, il révèle progressivement ses vraies contraintes institutionnelles (CODIR, PDG, franchisés). L'escalade émotionnelle suit ce schéma : colère → méfiance → écoute critique → blocage politique. Le point de bascule se situe quand il commence à prendre des notes manuscrites et à tutoyer.",
+    "piege_classique": "Laurent teste systématiquement la cohérence entre les engagements verbaux et les actes concrets. Il posera plusieurs fois la même question sous des angles différents pour vérifier que le commercial ne se contredit pas. Son piège signature : accepter en apparence une proposition puis revenir 48h plus tard en disant 'j'en ai parlé au juridique/DAF et ils sont pas d'accord' pour renégocier à la baisse. Il faut donc TOUJOURS obtenir un engagement écrit co-signé avant de considérer que c'est gagné. Autre piège : il minimise volontairement l'impact de sa position hiérarchique ('je suis pas seul à décider') pour obtenir plus de concessions, alors qu'il a en réalité beaucoup de pouvoir de décision sur ce dossier."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour la grande distribution",
+      "description": "Entreprise fournissant des produits ou services à une chaîne de distribution multi-sites dans le cadre d'un contrat cadre"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou produit fourni dans le cadre d'un contrat cadre avec clauses de pénalités",
+      "proposition_valeur": "Partenaire fiable pour comptes clés, expertise sectorielle distribution, capacité de déploiement multi-sites",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Contrat en cours avec chaîne de 100+ points de vente"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Entraîner les commerciaux à la gestion de crise client, au management des réclamations de compte clés, à la désescalade émotionnelle, et à la construction de plans de résolution créateurs de valeur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Réclamation majeure compte clé distribution",
+    "vous_etes": "Account Manager chez votre fournisseur B2B, en charge du contrat Groupe Proximarché depuis 18 mois.",
+    "vous_vendez": "Vous gérez un contrat cadre 3 ans (3,2M€/an) pour la fourniture de produits/services à 145 points de vente.",
+    "vous_appelez": "Laurent Deschamps, 52 ans, Directeur des Achats Centraux chez Groupe Proximarché. Ancien terrain, autodidacte, membre du CODIR depuis 3 ans. Direct, rugueux, allergique à la langue de bois.",
+    "ce_que_vous_savez": [
+      "Incident majeur il y a 10 jours : 23 magasins impactés pendant 4 jours en pleine opération commerciale",
+      "Laurent s'est fait démonter en CODIR mercredi dernier par le PDG devant ses pairs",
+      "Les franchisés sont remontés et Laurent doit présenter un plan d'action lundi au PDG",
+      "Il avait défendu votre offre (8% plus chère) sur l'argument 'fiabilité absolue' — l'incident le discrédite personnellement",
+      "Clauses de pénalités contractuelles activables — il a le service juridique et le DAF qui le poussent à les appliquer"
+    ],
+    "votre_objectif": "Désamorcer la crise, obtenir un plan de sortie qui sauve la relation et le contrat, éviter les pénalités et la rupture.",
+    "vos_atouts": [
+      "18 mois de collaboration sans incident avant celui-ci",
+      "Équipe technique capable d'auditer et renforcer les process sous 72h",
+      "Marge de manœuvre pour proposer un avoir commercial significatif (budget à négocier en interne)",
+      "Possibilité d'engager votre directeur commercial ou DG pour crédibiliser les engagements",
+      "Clause contractuelle permettant de renégocier les garanties sans rompre le contrat"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:14:52Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17477,
+    "total_time_s": 161.0
+  }
+}

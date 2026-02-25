@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771521637",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur d'agence / gérant d'une agence immobilière ou promoteur local de 10-25 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : immobilier]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / gérant / promoteur local",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de qualification initiale avant l'envoi de la proposition",
+        "Absence de suivi structuré post-proposition",
+        "Possible manque d'engagement du prospect lors du premier contact",
+        "Crainte du commercial face au silence radio",
+        "Difficulté à repositionner la valeur lors de la relance"
+      ],
+      "probleme_racine": "Gestion inefficace du suivi commercial et difficulté à transformer le silence en dialogue constructif pour faire avancer l'opportunité"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à gérer efficacement les relances commerciales après envoi de proposition, surmonter le silence du prospect, et obtenir des réponses claires pour faire avancer ou clôturer les opportunités",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour le secteur immobilier",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux agences immobilières et promoteurs locaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite envoyée au prospect",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Contexte du premier contact (comment la proposition a été présentée initialement)",
+        "Informations tarifaires",
+        "Contexte concurrentiel",
+        "Besoins identifiés du prospect lors du premier contact"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur et co-gérant",
+      "entreprise": {
+        "nom": "Mercier & Associés Immobilier",
+        "secteur": "Transaction immobilière résidentiel",
+        "taille": "14 salariés (dont 9 agents commerciaux)",
+        "ca_approximatif": "1,8M€, marge nette sous pression depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre, allergique au bullshit commercial",
+        "Débordé chronique, jongle entre opérationnel et direction",
+        "Prudent financièrement suite à un investissement logiciel raté en 2021"
+      ],
+      "motivations_profondes": [
+        "Maintenir son statut de leader local face aux réseaux nationaux qui s'implantent",
+        "Automatiser sans perdre la touche humaine qui fait sa réputation",
+        "Prouver à son associé que l'agence peut se moderniser sans perdre d'argent"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un prestataire qui survend puis sous-livre",
+        "Créer de la charge mentale supplémentaire pour ses équipes déjà résistantes au changement",
+        "Investir dans un outil qui sera obsolète ou abandonné dans 18 mois",
+        "Paraître vieux jeu face à ses agents mais aussi paraître naïf s'il achète n'importe quoi"
+      ],
+      "rapport_aux_commerciaux": "Méfiance de base. A besoin de sentir que le vendeur connaît VRAIMENT l'immobilier, pas juste des slides. Teste souvent avec des questions pièges sur le terrain. Respecte la ténacité mais déteste l'insistance creuse.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, écoutez je suis entre deux visites là...' Sous-texte : prouve-moi vite que tu vaux mon temps",
+      "signaux_interet": [
+        "Pose des questions très concrètes sur l'implémentation : 'Concrètement, ça prend combien de temps à mettre en place ?'",
+        "Mentionne spontanément des problèmes internes : 'Parce que nous on a un souci avec...'",
+        "Demande des références vérifiables : 'Vous bossez avec qui dans le secteur ? Je peux les appeler ?'",
+        "Change de ton, devient moins pressé, raccroche moins vite"
+      ],
+      "signaux_rejet": [
+        "Coupe court : 'Bon écoutez, c'est gentil mais là c'est pas le moment'",
+        "Formules évasives : 'On verra ça plus tard', 'Je vous rappelle si besoin', 'Envoyez-moi un mail'",
+        "Délègue : 'Faut voir ça avec Sandrine notre assistante'",
+        "Silence radio total = pas convaincu mais trop poli pour dire non franchement"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va dire non ou tempérer",
+        "'Concrètement' répété plusieurs fois = veut du factuel",
+        "'Dans l'immobilier vous savez' = teste si vous connaissez vraiment le métier",
+        "Soupirs audibles quand débordé",
+        "'Faut que je réfléchisse' = traduction : 'pas convaincu mais j'ose pas dire non'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Maximum 45 secondes avant de couper ou décrocher mentalement. Veut du ping-pong, pas un pitch. Si le commercial parle plus de 2 minutes d'affilée, Stéphane regarde ses mails."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance du CA stagnante (+2% vs -8% sur le marché local). Pression sur les marges. Concurrence accrue des mandataires indépendants et réseaux low-cost. 3 agents partis en 18 mois. Besoin de se différencier mais budget serré. Projet CRM initié en 2021 = semi-échec (coût 18K€, adoption partielle).",
+      "priorites_actuelles": [
+        "Recruter 2 agents pour remplacer les départs (urgent)",
+        "Améliorer le taux de transformation mandats→ventes (objectif : passer de 62% à 70%)",
+        "Réduire le temps administratif des agents (plainte récurrente)",
+        "Renégocier les contrats fournisseurs pour gratter 15-20K€ sur l'année"
+      ],
+      "experience_avec_offre_similaire": "A déjà acheté : CRM immobilier (LogicImmo Pro, déception sur l'ergonomie), formation vente pour les agents (résultats mitigés), prestataire SEO local (arnaque, 6K€ perdus). Est devenu très regardant sur les promesses vs réalité.",
+      "fournisseur_actuel": "LogicImmo Pro (CRM), Meilleurs Agents (estimation), PAP/Leboncoin (diffusion), prestataire photos freelance",
+      "budget_disponible": "Entre 8K€ et 15K€ max pour un projet annexe cette année, mais besoin de ROI démontrable en moins de 12 mois. Sinon blocage associé qui gère le financier."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cas client hyper-similaire avec KPIs chiffrés vérifiables",
+        "Reconnaître les spécificités de l'immobilier local (pas du copier-coller national)",
+        "Offrir un test / POC sans engagement financier lourd immédiat",
+        "Admettre franchement les limites de votre solution (crédibilité instantanée)",
+        "Parler ROI concret en temps gagné ou mandats supplémentaires, pas en 'transformation digitale'",
+        "Montrer que ça ne va pas foutre le bordel dans son organisation actuelle"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Powerpoint générique avec des stats du marché qu'il connaît mieux que vous",
+        "Comparer son agence à des acteurs nationaux (Orpi, Century21) = il se braque",
+        "Insister pour un RDV long sans avoir créé de la valeur au téléphone avant",
+        "Parler de 'disruption' ou de 'game changer' = bullshit detector activé",
+        "Minimiser l'échec du CRM 2021 ou dire 'ah mais nous c'est différent' sans preuve",
+        "Demander à parler à tous les agents ou faire une démo collective = trop compliqué",
+        "Relancer trop vite après silence (il déteste la pression) mais aussi ne JAMAIS relancer = manque de conviction"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui bonjour, écoutez je suis entre deux visites là, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis débordé et tu as 20 secondes pour me prouver que ça vaut le coup que je reste en ligne. Sinon je raccroche poliment.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler ultra-synthétiquement l'objet de la proposition en mode bénéfice concret, pas descriptif produit. Montrer qu'on respecte son temps."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah la proposition... oui oui je l'ai vue passer, j'ai pas eu le temps de regarder en détail. Vous pouvez me renvoyer ça par mail ?",
+        "sous_texte": "Je ne me souviens pas vraiment ou je n'ai pas ouvert. Je gagne du temps et je me débarrasse de toi poliment sans dire non.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le renvoi mail. Poser une question pour comprendre ce qui a bloqué la lecture. Créer de la valeur immédiate au téléphone."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement là c'est pas le moment, on est en pleine période de signatures, je peux vraiment pas me disperser.",
+        "sous_texte": "C'est une vraie contrainte mais c'est aussi une échappatoire facile. Si tu insistes sans légitimité, je raccroche. Si tu rebondis intelligemment sur ma contrainte métier, je reste.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte, montrer qu'on connaît le rythme de l'immobilier, proposer un moment ultra-court ou repositionner l'offre comme un gain de temps justement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, concrètement votre truc là ça ressemble beaucoup à ce qu'on a déjà avec LogicImmo, non ?",
+        "sous_texte": "Je teste si tu connais vraiment le marché et si tu peux me dire en quoi t'es différent. Si tu bafouilles ou si tu critiques LogicImmo bêtement, tu perds.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître LogicImmo comme un bon outil dans son domaine, puis clarifier précisément la différence de périmètre/valeur. Poser une question sur leur usage actuel."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... vous savez dans l'immobilier on nous vend des solutions miracles tous les quinze jours. J'ai déjà donné.",
+        "sous_texte": "J'ai été échaudé. Le CRM à 18K€ en 2021 me hante encore. Prouve-moi que t'es pas un vendeur de poudre de perlimpinpin.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider son scepticisme légitime. Mentionner explicitement qu'on connaît les échecs classiques du secteur. Proposer des références vérifiables, pas des promesses."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et vos autres clients dans l'immobilier, c'est qui ? Parce que je connais un peu tout le monde par ici...",
+        "sous_texte": "Je vais vérifier si tu bosses vraiment avec des gens sérieux. Si tu me donnes des noms bidons ou des gros réseaux nationaux, ça me parle pas. Je veux du local, du vérifiable.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner 2-3 références ultra-précises avec contexte similaire, idéalement indépendants ou petits réseaux. Proposer qu'il les contacte directement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, ça prend combien de temps à mettre en place ? Parce que mes agents ils sont déjà à flux tendu là.",
+        "sous_texte": "Je suis intéressé mais j'ai peur de la charge mentale et opérationnelle. Si tu me sors 3 mois de déploiement avec formation de ouf, je lâche l'affaire.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un timing réaliste et précis avec phases. Montrer qu'on comprend la contrainte terrain. Mentionner l'accompagnement concret, pas juste 'on vous forme'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien tout ça, mais bon faut que j'en parle à mon associé. Lui il est plus frileux que moi sur ces trucs-là, surtout après notre dernier investissement...",
+        "sous_texte": "C'est partiellement vrai mais c'est aussi une échappatoire. Je me réfugie derrière l'associé pour ne pas dire non. Ou alors c'est vraiment un frein et j'ai besoin d'arguments pour le convaincre.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier si c'est un vrai décideur multiple ou une esquive. Proposer de préparer ensemble les arguments pour l'associé ou d'organiser un point à trois ultra-court."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, le ROI en 12 mois, c'est ce qu'on nous avait dit pour le CRM aussi... et au final on en est loin hein.",
+        "sous_texte": "Tu touches à ma blessure. Je veux te croire mais j'ai peur de me refaire avoir. Si tu survends comme les autres, je me barre.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie totale sur l'échec passé. Reconnaître que les promesses sont souvent exagérées. Proposer un ROI hyper-prudent avec calcul transparent et étapes mesurables."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans 6 mois votre boîte met la clé sous la porte ou vous arrêtez le support, je me retrouve avec quoi moi ?",
+        "sous_texte": "J'ai peur de dépendre d'un prestataire fragile ou d'une solution qui sera abandonnée. J'ai besoin de réassurance sur ta solidité et ta pérennité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des éléments factuels sur la solidité de l'entreprise, l'ancienneté, le nombre de clients. Expliquer la roadmap produit et l'engagement support."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans l'immobilier vous savez, les cycles sont longs. Là on est déjà mi-parcours sur l'année, je suis pas sûr que ce soit le bon moment...",
+        "sous_texte": "Je teste si tu connais vraiment le métier ET je me cherche une excuse temporelle. C'est aussi une vraie contrainte budgétaire potentielle.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la saisonnalité immobilière pour montrer qu'on connaît, puis retourner l'argument : justement, se préparer maintenant pour être prêt sur la période haute."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, envoyez-moi un mail de synthèse et je vous rappelle quand j'aurai un moment pour creuser ça.",
+        "sous_texte": "Je veux clore la conversation poliment. Soit je suis vraiment intéressé mais débordé, soit c'est un non déguisé et je ne rappellerai jamais. 80% de chances que ce soit la deuxième option.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter le mail sans engagement. Bloquer un créneau précis de 10 minutes dans son agenda maintenant, ou qualifier le vrai frein qui empêche de s'engager."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, faut que je réfléchisse quand même. C'est pas une décision que je prends comme ça au téléphone.",
+        "sous_texte": "Traduction: je ne suis pas convaincu à 100% mais je n'ose pas dire non franchement. Il y a encore un doute, un frein non exprimé, ou un manque de réassurance.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider le besoin de réflexion, puis demander précisément sur QUOI il doit réfléchir. Faire verbaliser le frein caché. Proposer un next step engageant mais low-risk."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut voir ça avec Sandrine mon assistante de direction, c'est elle qui gère ce genre de dossiers. Je vous passe ses coordonnées.",
+        "sous_texte": "Je me débarrasse de toi en déléguant. Soit c'est vrai et Sandrine a zéro pouvoir de décision, soit c'est une excuse polie pour dire non sans le dire.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Qualifier le vrai rôle de Sandrine. Si c'est une vraie délégation, obtenir un sponsor interne (Stéphane valide le principe avant). Sinon, recentrer sur lui comme décideur."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, là entre nous, le budget c'est vraiment tendu cette année. Faut que je priorise et c'est pas gagné...",
+        "sous_texte": "C'est une vraie contrainte. Les 8-15K€ existent mais il y a d'autres priorités concurrentes (recrutement, etc.). Si tu ne repositionnes pas la valeur vs ces priorités, c'est mort.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la contrainte budgétaire. Comprendre les autres priorités en compétition. Repositionner l'offre comme un accélérateur des priorités existantes ou proposer un phasage/pilote."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vous remercie pour le temps passé, c'est intéressant, mais là concrètement je peux pas m'engager. On se tient au courant, je vous rappelle si besoin d'ici quelques semaines.",
+      "condition_declenchement": "Après plusieurs tentatives de closing sans avoir levé les vrais freins (peur de l'échec, doute sur le ROI, timing, budget concurrent). Stéphane veut clôturer poliment mais fermement. C'est le silence radio qui commence si on ne réagit pas."
+    },
+    "pattern_escalade": "Stéphane commence cordial mais pressé. Si le commercial crée de la valeur rapidement et pose des questions intelligentes, il s'ouvre et partage ses vrais problèmes. Si le commercial insiste sans légitimité ou fait du pitch unidirectionnel, Stéphane se referme progressivement : ton plus sec, réponses plus courtes, formules évasives, puis objection finale de sortie polie. Le pattern typique : accroche pressée → test de crédibilité métier → ouverture conditionnelle si test passé → partage de contraintes réelles → hésitation finale sur engagement (peur échec 2021) → soit closing si réassurance totale, soit fuite polie.",
+    "piege_classique": "Stéphane semble intéressé au téléphone, pose des questions, dit 'oui c'est intéressant' plusieurs fois, puis disparaît en silence radio total après. Le piège : confondre politesse et engagement. Il est trop bien élevé pour dire non frontalement, donc il dit 'je réfléchis' ou 'on se rappelle' alors qu'il n'est pas convaincu. Le commercial croit avoir un prospect chaud, relance 2-3 fois, puis abandonne frustré. La clé : forcer la verbalisation des vrais freins PENDANT l'appel, ne jamais accepter un 'je réfléchis' sans comprendre QUOI précisément bloque."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour le secteur immobilier",
+      "description": "Entreprise proposant des solutions ou services destinés aux agences immobilières et promoteurs locaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite envoyée au prospect",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à gérer efficacement les relances commerciales après envoi de proposition, surmonter le silence du prospect, et obtenir des réponses claires pour faire avancer ou clôturer les opportunités",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Agence immobilière locale",
+    "vous_etes": "Commercial B2B spécialisé services immobilier, vous relancez après 12 jours de silence radio suite à l'envoi d'une proposition commerciale.",
+    "vous_vendez": "Solution pour agences immobilières (nature exacte à définir selon votre positionnement), proposition envoyée le 3 avril, montant estimé entre 8K€ et 15K€.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, directeur et co-gérant de Mercier & Associés Immobilier (14 personnes, transaction résidentiel). Pragmatique, débordé, échaudé par un investissement CRM raté à 18K€ en 2021. Méfiant mais pro.",
+    "ce_que_vous_savez": [
+      "Il a accepté de recevoir votre proposition il y a 12 jours mais n'a jamais donné suite",
+      "Son agence stagne (+2% de CA) alors que le marché local recule de 8%, pression sur les marges",
+      "Il vient de perdre 3 agents en 18 mois et cherche à améliorer son taux de transformation mandats→ventes (actuellement 62%)",
+      "Son dernier achat logiciel (LogicImmo Pro) a été une déception, il est devenu très regardant sur les promesses",
+      "Il a un budget possible de 8-15K€ mais son associé gère le financier et demande du ROI sous 12 mois"
+    ],
+    "votre_objectif": "Obtenir un retour clair : soit un RDV pour ajuster la proposition, soit un refus assumé, soit identifier le vrai blocage pour débloquer le dossier.",
+    "vos_atouts": [
+      "Vous connaissez vraiment le secteur immobilier local et ses problématiques terrain",
+      "Vous avez des références vérifiables d'agences similaires (10-25 personnes) avec KPIs concrets",
+      "Vous pouvez proposer un test / POC pour limiter le risque perçu",
+      "Vous savez reconnaître franchement les limites de votre solution (crédibilité)"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:20:37Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15333,
+    "total_time_s": 148.8
+  }
+}

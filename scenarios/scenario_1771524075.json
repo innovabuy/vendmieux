@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771524075",
+  "description_originale": "Vous appelez une groupe immobilier multi-agences de 100+ salariés. L'assistante commerciale du directeur commercial ou directeur du développement décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : immobilier]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "groupe multi-agences, 100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur du développement",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante commerciale",
+          "role": "filtre/barrage",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution ou service destiné aux groupes immobiliers multi-agences",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "barrage systématique par l'assistante commerciale",
+        "difficulté à accéder au décideur",
+        "filtrage professionnel des appels commerciaux"
+      ],
+      "implicites": [
+        "manque de technique pour passer les barrages avec élégance",
+        "probable manque de légitimité perçue lors de l'appel",
+        "difficulté à se différencier des autres commerciaux",
+        "qualification insuffisante avant ou pendant l'appel",
+        "manque de stratégie multi-interlocuteurs"
+      ],
+      "probleme_racine": "absence de stratégie structurée pour passer les barrages décisionnels et créer de la légitimité dès les premières secondes avec l'assistante, qui est la vraie porte d'entrée"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de passage de barrage avec élégance, développer une approche respectueuse et professionnelle avec les assistantes, et obtenir des RDV qualifiés avec les décideurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux entreprises immobilières (présumé)",
+      "entreprise_description": "entreprise proposant des solutions ou services aux groupes immobiliers multi-agences",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service B2B destiné aux groupes immobiliers, nécessitant l'attention du directeur commercial ou du développement",
+      "proposition_valeur": "NON_SPECIFIE - à construire en fonction de la problématique spécifique des groupes immobiliers",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du produit/service proposé",
+        "proposition de valeur spécifique",
+        "prix ou budget type",
+        "nom de l'entreprise du vendeur",
+        "contexte de prospection (fichier acheté, ciblage géographique, etc.)",
+        "argumentaire commercial actuel",
+        "taux de réussite actuel au passage de barrage",
+        "script ou approche actuellement utilisée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Valérie",
+      "nom": "Benoît",
+      "age": 52,
+      "poste": "Directrice Commerciale Groupe",
+      "entreprise": {
+        "nom": "Reseau Habitat Plus",
+        "secteur": "Immobilier résidentiel - réseau multi-agences",
+        "taille": "142 collaborateurs, 18 agences en Île-de-France et Hauts-de-France",
+        "ca_approximatif": "23M€ (honoraires + prestations annexes)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Surchargée et hyper-sollicitée (15+ démarchages/semaine)",
+        "Méfiante envers les 'vendeurs de rêve' après plusieurs déceptions",
+        "Exigeante sur le ROI mais capable de décider vite si convaincue"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur au COMEX après une année difficile (-12% CA 2023)",
+        "Digitaliser le réseau sans perdre l'ADN 'proximité humaine'",
+        "Préparer sa succession en laissant un réseau performant et moderne",
+        "Obtenir enfin un outil qui fonctionne sans nécessiter 6 mois d'implémentation"
+      ],
+      "peurs_freins": [
+        "Investir dans une énième solution qui finira abandonnée par les agents",
+        "Perdre du temps en RDV avec un commercial qui ne connaît rien à l'immobilier",
+        "Décevoir encore le DG qui perd patience sur les projets 'innovation'",
+        "Paraître naïve devant ses N-1 si elle valide un projet mal ficelé"
+      ],
+      "rapport_aux_commerciaux": "Blasée et défensive. A développé un radar anti-bullshit affûté. Respecte ceux qui vont droit au but et connaissent son métier. Déteste qu'on lui explique son business.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe de lassitude : 'Bon, vous avez 10 minutes, qu'est-ce que vous me proposez exactement ?'",
+      "signaux_interet": [
+        "Pose des questions précises sur les délais de déploiement",
+        "Mentionne spontanément un concurrent : 'Et vous, vous faites mieux que X comment ?'",
+        "Prend des notes sur son iPad",
+        "Évoque un cas d'usage concret : 'Chez nous à Lille, on a ce problème...'",
+        "Regarde sa montre moins souvent"
+      ],
+      "signaux_rejet": [
+        "Répond à un SMS en plein pitch",
+        "Soupir audible suivi de 'Écoutez...'",
+        "Phrase assassine : 'Mais ça, tous mes prestataires me le disent'",
+        "Regard fuyant vers son écran d'ordinateur",
+        "Coupe court : 'Je vais y réfléchir et je vous rappelle' (= jamais)"
+      ],
+      "tics_langage": [
+        "Abuse du 'concrètement' : 'Concrètement, ça m'apporte quoi ?'",
+        "Utilise 'franchement' quand elle est sceptique",
+        "Dit 'Bref' pour couper les digressions",
+        "Ponctue de 'Voilà' quand elle veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe après 90 secondes max si pas d'interaction. Valorise énormément le questionnement pertinent."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sortie difficile du Covid, marché immobilier en baisse, pression du DG pour améliorer la marge. 3 agences sous-performantes menacées de fermeture. Guerre des talents pour recruter des agents expérimentés. Projet CRM en cours mais patine (6 mois de retard).",
+      "priorites_actuelles": [
+        "Augmenter le taux de conversion leads → mandats (actuellement 18%, objectif 25%)",
+        "Réduire le délai moyen de vente (actuellement 94 jours)",
+        "Former les nouveaux agents plus vite (turnover 28%)",
+        "Trouver des leviers différenciants face aux néo-agences en ligne"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions de formation e-learning (échec, pas adaptées au terrain), 1 outil de coaching IA (gadget selon elle), 1 cabinet de conseil (facture salée, résultats moyens). Globalement échaudée.",
+      "fournisseur_actuel": "Formation interne assurée par 2 formateurs maison + sessions ponctuelles avec la FNAIM. Rien de structuré sur la vente consultative.",
+      "budget_disponible": "Enveloppe formation 2024 : 87K€ dont 52K€ déjà engagés. Possibilité de débloquer 15-20K€ supplémentaires si ROI démontrable sur 6 mois. Cherche à mobiliser l'OPCO aussi."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un résultat chiffré obtenu chez un concurrent direct (ex: 'Chez Réseau Immo 360, +23% de mandats en 4 mois')",
+        "Démontrer une compréhension fine de SES enjeux spécifiques (pas du blabla générique immobilier)",
+        "Proposer un pilote rapide sur 1 agence test avec indicateurs clairs",
+        "Être recommandé par quelqu'un de son réseau professionnel (FNAIM, club DirCo, ancien collègue)",
+        "Arriver avec une analyse préalable de son réseau (ex: zones de chalandise, positionnement visible)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Comparer l'immobilier à un autre secteur 'pour simplifier'",
+        "Promettre des résultats en 3 semaines (red flag énorme)",
+        "Critiquer frontalement ses choix passés ou ses outils actuels",
+        "Parler budget avant d'avoir parlé problème et solution",
+        "Utiliser du jargon techno incompréhensible (SaaS, API, machine learning...)",
+        "Ne pas connaître la différence entre transaction et gestion locative",
+        "Être en retard au RDV téléphonique ou physique"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je reçois 15 appels comme le vôtre par semaine, là franchement je n'ai pas le temps",
+        "sous_texte": "Prouvez-moi en 20 secondes que vous n'êtes pas un commercial lambda, sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa réalité, se différencier immédiatement par une référence concrète ou un résultat chiffré dans son secteur"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attendez, c'est pour me vendre quoi exactement ? Parce que j'ai déjà tout ce qu'il faut",
+        "sous_texte": "Je filtre : êtes-vous juste un vendeur de plus ou avez-vous compris mes vrais problèmes ?",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas pitcher le produit. Poser une question sur SA situation actuelle concernant un point de douleur précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On travaille déjà avec des formateurs en interne, on n'a pas besoin de prestataire externe",
+        "sous_texte": "Défense du territoire. Je protège mes choix actuels et mon équipe en place",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser l'existant, puis questionner sur un angle complémentaire spécifique (ex: taux de conversion, time-to-competency des nouveaux)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais ça tous mes prestataires me le disent. Concrètement, vous, vous faites mieux comment ?",
+        "sous_texte": "J'ai entendu 1000 promesses. Prouvez que vous êtes différent avec du factuel, pas du discours marketing",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre avec un exemple précis, chiffré, dans l'immobilier, avec le nom d'un réseau et des métriques avant/après"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous connaissez la différence entre transaction et gestion locative au moins ?",
+        "sous_texte": "Test de crédibilité secteur. Si vous ratez ça, je sais que vous ne connaissez rien à mon métier",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Réponse claire et précise montrant la maîtrise du vocabulaire immobilier, idéalement avec un exemple lié à son réseau"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà testé du e-learning, ça n'a pas marché. Les agents ne se connectent jamais, voilà",
+        "sous_texte": "Blessure passée réelle. Je suis échaudée et je ne veux pas revivre un échec qui me discréditera",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie pour identifier POURQUOI ça n'a pas fonctionné, puis différencier votre approche sur ces points précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai trois agences qui risquent de fermer, franchement c'est pas le moment d'investir dans de la formation",
+        "sous_texte": "Vulnérabilité révélée. Urgence ailleurs. Mais peut-être est-ce justement une solution à cette urgence ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler l'enjeu avec empathie, puis questionner si la performance commerciale de ces agences fait partie du problème"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bref, ça m'a l'air bien sur le papier mais combien ça coûte tout ça ?",
+        "sous_texte": "Je veux clore rapidement. Si le prix est trop élevé, je peux refuser sans m'engager émotionnellement",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Différer le prix en ancrant d'abord la valeur: 'Ça dépend du périmètre. Avant de parler chiffres, est-ce que sur le principe la démarche vous parle ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me promettez combien de délai de déploiement ? Parce que mon CRM ça fait 6 mois que ça patine",
+        "sous_texte": "J'ai peur de la complexité et des projets qui s'enlisent. Rassurez-moi sur votre capacité d'exécution rapide",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un pilote court et mesurable (1 agence, 30-45 jours, 3 KPI clairs) plutôt qu'un déploiement groupe immédiat"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que je dois valider ça avec mon DG et il est très très exigeant sur les projets innovation",
+        "sous_texte": "Objection politique réelle. J'ai peur de porter un projet qui sera retoqué et me fera perdre de la crédibilité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de co-construire l'argumentaire chiffré pour le DG, voire de participer à la présentation si besoin"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, mes agents ils sont déjà débordés. Je ne vois pas comment leur rajouter de la formation en plus",
+        "sous_texte": "Peur de la résistance terrain. Je dois protéger mes équipes de la surcharge et préserver la paix sociale",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler en gain de temps/efficacité plutôt qu'en charge additionnelle. Exemple: format micro-learning, 15 min/semaine, résultats visibles vite"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de 6 mois pour voir des résultats ? Moi j'ai besoin de résultats maintenant",
+        "sous_texte": "Pression hiérarchique énorme. Je n'ai pas le luxe du temps, je cherche des quick wins",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un phasage avec premiers résultats mesurables à 45-60 jours (indicateurs avancés) avant les résultats business à 6 mois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, je vais y réfléchir et je vous rappelle la semaine prochaine",
+        "sous_texte": "Fuite polie. Je ne suis pas convaincue mais je n'ose pas dire non frontalement. Vous ne me reverrez probablement jamais",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confronter avec élégance: 'Valérie, soyons francs: qu'est-ce qui vous freine vraiment ?' pour faire émerger la vraie objection"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mon budget formation 2024 est déjà engagé à 60%, je ne peux rien débloquer avant septembre",
+        "sous_texte": "Objection budgétaire peut-être vraie, peut-être prétexte. Testez ma motivation à trouver une solution si la valeur est là",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Explorer les 40% restants, l'OPCO, ou proposer un phasage avec investissement initial réduit sur agence pilote"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez-moi tout ça par mail, je regarderai avec mon équipe",
+        "sous_texte": "Sortie de secours classique. Je dilue la responsabilité. Faible probabilité de suite concrète",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Bloquer un point de suivi précis avant d'envoyer: 'Avec plaisir. On se recale jeudi 15h pour en reparler 15 minutes ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon concrètement, je dois comparer avec deux autres prestataires que j'ai vus le mois dernier",
+        "sous_texte": "Vraie comparaison en cours OU tactique pour obtenir un meilleur prix. Je garde le contrôle du processus",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la démarche, proposer un pilote différenciant: 'Normal. Que diriez-vous qu'on démarre un test sur 1 agence pendant que vous comparez ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, le truc c'est que j'ai déjà lancé tellement de chantiers qui n'ont rien donné... Je ne peux pas me permettre un nouvel échec",
+        "sous_texte": "Vulnérabilité profonde. Peur de l'échec et de la perte de crédibilité. C'est LA vraie objection si vous arrivez là",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie forte + réduction du risque maximum: garantie de résultats, pilote réversible, accompagnement rapproché, références similaires"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, soyons honnêtes : vous me semblez sérieux, mais j'ai le DG qui me met la pression pour des résultats rapides, un budget formation déjà bien entamé, trois agences en difficulté qui monopolisent mon énergie, et franchement je n'ai plus le droit à l'erreur après les projets qui ont foiré. Alors à moins que vous me garantissiez des résultats mesurables en moins de 3 mois avec un risque quasi-nul pour moi, je ne vois pas comment je peux valider ça maintenant",
+      "condition_declenchement": "Apparaît si le vendeur n'a pas suffisamment réduit le risque perçu, créé d'urgence positive, ou différencié son approche des échecs passés. C'est l'objection cumulative de toutes ses peurs et contraintes réelles."
+    },
+    "pattern_escalade": "Valérie commence cordiale mais pressée (objections réflexes courtes). Si le vendeur monologue ou utilise du jargon → elle devient cassante et coupe. Si le vendeur questionne intelligemment et démontre une connaissance sectorielle → elle s'ouvre progressivement et révèle ses vraies peurs (échecs passés, pression DG, budget). L'objection finale cumulative n'apparaît que si la confiance n'est pas installée. Elle peut basculer rapidement vers l'adhésion si le vendeur propose un pilote à faible risque avec preuves concrètes.",
+    "piege_classique": "Valérie teste systématiquement la crédibilité sectorielle dans les 3 premières minutes (vocabulaire immobilier, connaissance des enjeux transaction vs location, références réseau). Si le vendeur échoue ce test → elle ferme mentalement et les objections deviennent tactiques pures pour sortir poliment. Le vendeur doit absolument passer ce test de crédibilité AVANT de découvrir ses besoins, sinon toute la suite est compromise. Autre piège : elle mentionne spontanément des contraintes (budget, timing, DG exigeant) qui peuvent sembler des objections finales mais sont en réalité des appels à être rassurée si la solution est pertinente."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux entreprises immobilières (présumé)",
+      "description": "entreprise proposant des solutions ou services aux groupes immobiliers multi-agences"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service B2B destiné aux groupes immobiliers, nécessitant l'attention du directeur commercial ou du développement",
+      "proposition_valeur": "NON_SPECIFIE - à construire en fonction de la problématique spécifique des groupes immobiliers",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de passage de barrage avec élégance, développer une approche respectueuse et professionnelle avec les assistantes, et obtenir des RDV qualifiés avec les décideurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Réseau Habitat Plus (18 agences)",
+    "vous_etes": "Commercial terrain spécialisé dans les solutions pour réseaux immobiliers multi-agences.",
+    "vous_vendez": "Une solution de formation et d'accompagnement commercial pour améliorer les performances des agents immobiliers (prix et détails à adapter selon le niveau d'intérêt).",
+    "vous_appelez": "Valérie Benoît, Directrice Commerciale Groupe chez Réseau Habitat Plus — 18 agences, 142 collaborateurs, Île-de-France et Hauts-de-France. Profil : ultra-sollicitée, méfiante après plusieurs déceptions, mais capable de décider vite si le ROI est clair.",
+    "ce_que_vous_savez": [
+      "Le réseau sort d'une année difficile (-12% CA en 2023), avec pression sur les marges",
+      "3 agences sous-performantes sont menacées de fermeture",
+      "Valérie cherche à augmenter le taux de conversion leads/mandats (actuellement 18%, objectif 25%)",
+      "Elle a déjà testé plusieurs solutions (e-learning, coaching IA, conseil) sans satisfaction",
+      "Son budget formation 2024 est en partie engagé, mais elle peut débloquer 15-20K€ si le ROI est démontrable sur 6 mois"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante commerciale avec professionnalisme, puis obtenir un RDV de 20 minutes avec Valérie Benoît.",
+    "vos_atouts": [
+      "Vous comprenez les enjeux spécifiques des réseaux multi-agences (turnover, conversion, différenciation)",
+      "Vous proposez une approche pilote rapide testable sur 1 agence",
+      "Vous avez des résultats concrets obtenus chez des réseaux immobiliers similaires",
+      "Vous respectez le temps et l'intelligence de vos interlocuteurs — pas de blabla"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:01:15Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15474,
+    "total_time_s": 136.3
+  }
+}

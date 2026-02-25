@@ -134,6 +134,22 @@ async def init_db():
             except Exception:
                 pass
 
+        # type_simulation column on scenarios
+        try:
+            await db.execute("ALTER TABLE scenarios ADD COLUMN type_simulation TEXT DEFAULT 'Sur mesure'")
+        except Exception:
+            pass
+
+        # Demo page — is_demo + ip_hash columns on sessions
+        for col, coltype, default in [
+            ("is_demo", "INTEGER", "0"),
+            ("ip_hash", "TEXT", "NULL"),
+        ]:
+            try:
+                await db.execute(f"ALTER TABLE sessions ADD COLUMN {col} {coltype} DEFAULT {default}")
+            except Exception:
+                pass
+
         await db.commit()
 
 
@@ -315,14 +331,14 @@ async def update_last_login(user_id: str):
 
 async def create_session(
     user_id: str, scenario_id: str, difficulty: int = 2, livekit_room_id: str = "",
-    language: str = "fr",
+    language: str = "fr", is_demo: bool = False, ip_hash: str | None = None,
 ) -> str:
     sid = _gen_id()
     async with aiosqlite.connect(DB_PATH) as db:
         await db.execute(
-            """INSERT INTO sessions (id, user_id, scenario_id, difficulty, livekit_room_id, language)
-               VALUES (?, ?, ?, ?, ?, ?)""",
-            (sid, user_id, scenario_id, difficulty, livekit_room_id, language),
+            """INSERT INTO sessions (id, user_id, scenario_id, difficulty, livekit_room_id, language, is_demo, ip_hash)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+            (sid, user_id, scenario_id, difficulty, livekit_room_id, language, int(is_demo), ip_hash),
         )
         await db.commit()
     return sid

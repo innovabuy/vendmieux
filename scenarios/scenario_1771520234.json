@@ -1,0 +1,331 @@
+{
+  "id": "scenario_1771520234",
+  "description_originale": "Le directeur de réseau / gérant d'une réseau de 5-15 points de vente, commerce spécialisé est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : commerce_distribution]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "PME - réseau de 5 à 15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "Directeur de réseau / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour commerce spécialisé (probablement logiciel/service de gestion ou marketing)",
+      "proposition_valeur_presumee": "Optimisation de la gestion multi-sites, harmonisation des pratiques réseau, amélioration de la performance commerciale",
+      "fourchette_prix": "Prix perçu comme élevé par le prospect - réduction maximale de 10% possible",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix trop élevé",
+        "Nécessité de défendre le tarif tout en trouvant un accord",
+        "Gestion de la négociation avec marge limitée"
+      ],
+      "implicites": [
+        "Risque de brader le prix par peur de perdre la vente",
+        "Difficulté à valoriser le ROI de la solution face à l'investissement",
+        "Manque d'argumentation sur la valeur versus le prix",
+        "Tendance à céder trop vite sur la remise"
+      ],
+      "probleme_racine": "Les commerciaux peinent à justifier la valeur de leur offre face à l'objection prix et cèdent trop facilement sur les remises sans négocier de contreparties"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre leur prix, négocier avec fermeté tout en trouvant un accord gagnant-gagnant, et utiliser intelligemment leur marge de manœuvre limitée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de solutions pour le commerce de détail / Services B2B pour la distribution",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux réseaux de points de vente dans le commerce spécialisé",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution complète pour la gestion et l'optimisation de réseaux de points de vente (possiblement CRM, ERP, solution de pilotage, marketing ou gestion des stocks)",
+      "proposition_valeur": "Uniformisation des pratiques, centralisation du pilotage, amélioration de la rentabilité, gain de temps, vision consolidée du réseau",
+      "prix_indicatif": "Positionnement premium - marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Montant du prix discuté",
+        "Historique de la relation commerciale",
+        "Concurrents comparés",
+        "Arguments de valeur déjà présentés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bruno",
+      "nom": "Delvaux",
+      "age": 52,
+      "poste": "Directeur de réseau et co-gérant",
+      "entreprise": {
+        "nom": "Esprit Jardin",
+        "secteur": "Jardineries et décoration extérieure",
+        "taille": "11 points de vente (Hauts-de-France et Grand Est)",
+        "ca_approximatif": "18M€ - rentabilité sous pression depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique anxieux - veut des résultats concrets vite",
+        "Méfiant envers les discours commerciaux trop lisses",
+        "Autoritaire avec ses équipes mais cherche la validation externe"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il peut redresser la rentabilité sans son associé historique (récemment parti)",
+        "Ne pas se faire avoir comme avec l'ancien prestataire web (50K€ perdus)",
+        "Être perçu comme un dirigeant moderne par ses franchisés qui le poussent à digitaliser"
+      ],
+      "peurs_freins": [
+        "Que la solution soit trop complexe pour ses gérants de magasin (moyenne d'âge 48 ans)",
+        "Investir lourd sans ROI visible avant 18 mois",
+        "Perdre le contrôle opérationnel au profit d'un système rigide",
+        "Que ses associés minoritaires lui reprochent une dépense inconsidérée en AG"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des opportunistes qui enjolent puis disparaissent après signature. Teste leur solidité en négociant agressivement. Respecte seulement ceux qui tiennent tête avec des arguments factuels.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude - 'Bon, on va pas y passer trois heures hein, j'ai le comité de direction à 15h'",
+      "signaux_interet": [
+        "Demande des détails précis sur les délais de déploiement",
+        "Évoque spontanément des problèmes internes concrets ('Là on a encore eu un souci de stock non synchronisé jeudi dernier')",
+        "Commence ses phrases par 'Concrètement' ou 'Dans les faits'",
+        "Prend des notes manuscrites (pas sur ordinateur)"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Regarde sa montre ostensiblement",
+        "Coupe la parole avec 'Ouais ouais, ça je connais'",
+        "Sort l'argument prix très tôt pour tester la réaction",
+        "Compare explicitement à une solution moins chère vue en salon"
+      ],
+      "tics_langage": [
+        "Abuse du 'Franchement' en début de phrase",
+        "Emploie 'on va pas se mentir' quand il attaque sur le prix",
+        "Dit 'vous me vendez du rêve là' quand il est sceptique",
+        "Ponctue par 'voilà voilà' quand il veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant interruption. Attend des échanges ping-pong, pas des présentations PowerPoint. Dit explicitement 'C'est bon, j'ai compris le principe' dès qu'il estime avoir saisi."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stagnante (+1% en 2024), marges en baisse de 2,3 points. Trois magasins sous-performants. Pression de l'associé principal pour rationaliser. Objectif : retrouver 12% de marge nette d'ici fin 2026.",
+      "priorites_actuelles": [
+        "Unifier la gestion des stocks entre magasins (actuellement 11 systèmes différents)",
+        "Réduire les ruptures de stock en haute saison (perte estimée à 200K€/an)",
+        "Avoir un tableau de bord consolidé lisible pour le CODIR mensuel",
+        "Former les gérants sans les braquer (changement = résistance)"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un CRM revendu par un commercial 'qui promettait la lune'. Déploiement chaotique, éditeur aux abonnés absents après 6 mois, abandon du projet. Échaudé.",
+      "fournisseur_actuel": "Utilise un mix de solutions : logiciel de caisse Cegid vieillissant + tableurs Excel partagés + WhatsApp pour la coordination (système D généralisé)",
+      "budget_disponible": "Budget CODIR validé : 85K€ sur 2025. Mais doit justifier chaque euro devant l'expert-comptable et l'associé principal (réunion validation dans 10 jours). Peut gratter 10K€ supplémentaires max sur ligne 'modernisation IT'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler ROI avec des chiffres d'autres réseaux similaires (pas de grandes enseignes nationales, il ne s'y reconnaît pas)",
+        "Proposer un pilote sur 2-3 magasins avant généralisation",
+        "Mentionner l'accompagnement au changement (sa vraie angoisse cachée)",
+        "Montrer qu'on comprend que ses gérants ne sont pas des digitaux natives",
+        "Offrir une garantie de résultat ou clause de sortie (sécurité émotionnelle)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou autre jargon bullshit",
+        "Minimiser la difficulté du déploiement ('C'est très simple, ça se fait en 2 semaines')",
+        "Céder sur le prix sans contrepartie (il interprétera ça comme 'le tarif initial était du flan')",
+        "Ne pas avoir de réponse sur la compatibilité avec Cegid (question technique bloquante)",
+        "Comparer sa situation à celle de franchises nationales (il est en indépendant associé, sensibilité différente)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, on a déjà regardé ce genre de solutions l'année dernière et franchement le budget c'est pas du tout le moment. Vous me proposez quoi là concrètement ?",
+        "sous_texte": "Je ne veux pas perdre mon temps avec un énième commercial qui va me vendre du rêve. Prouve-moi rapidement que tu es différent ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte budget sans l'éviter, puis recentrer sur le coût de l'inaction (200K€ de ruptures). Demander 5 minutes chrono."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Voilà, c'est encore un truc où vous me promettez que ça va régler tous mes problèmes en trois clics, j'ai déjà donné hein. On s'est fait avoir il y a trois ans avec un CRM soit-disant révolutionnaire.",
+        "sous_texte": "Je suis échaudé et je vais te tester pour voir si tu reconnais les difficultés réelles ou si tu me prends pour un idiot avec des promesses marketing.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider explicitement son expérience négative, montrer qu'on comprend sa méfiance. Demander ce qui a raté précisément pour différencier votre approche."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes gérants ils ont une moyenne d'âge de 48 ans, ils bossent à l'ancienne. Vous allez me mettre un machin complexe, dans six mois j'ai une mutinerie sur les bras. Comment vous gérez ça vous ?",
+        "sous_texte": "C'est ma vraie angoisse. Je ne veux pas d'une solution techniquement parfaite mais inutilisable par mes équipes. Si tu balayes ce sujet, je ne te fais pas confiance.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas minimiser. Approfondir la question de l'accompagnement terrain, proposer des témoignages de profils similaires, suggérer un pilote pour tester l'adoption."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais, ça je connais, le tableau de bord unifié toussa. Mais dans les faits, ça va être compatible avec mon Cegid actuel ou je dois tout refaire ?",
+        "sous_texte": "J'ai un point de blocage technique concret. Si tu n'as pas la réponse ou si c'est compliqué, ça va me coûter encore plus cher que prévu. Test de crédibilité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse factuelle immédiate sur la compatibilité. Si incertitude, promettre une réponse de l'équipe technique sous 24h avec le nom du contact."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, entre nous, le vrai sujet c'est que j'ai trois magasins qui plombent le réseau. Votre truc ça va m'aider à identifier lesquels fermer ou pas ?",
+        "sous_texte": "Je te teste pour voir si ta solution va vraiment au fond des problèmes stratégiques ou si c'est juste de la gestion opérationnelle. Je te livre une info sensible, sois à la hauteur.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider l'enjeu stratégique. Montrer comment la visibilité permet d'objectiver la décision. Ne pas esquiver le sujet difficile de la fermeture éventuelle."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de grandes enseignes nationales dans vos références... Moi je suis un indépendant avec 11 points de vente, c'est pas comparable. Vous avez déjà travaillé avec des structures comme la mienne ?",
+        "sous_texte": "Je ne veux pas qu'on me vende une Rolls Royce conçue pour Leroy Merlin. J'ai besoin de me projeter avec des pairs, sinon je me sens arnaqué par avance.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la différence de contexte. Citer immédiatement 2-3 références de PME indépendantes avec chiffres concrets de résultats."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me vendez du rêve là avec vos ROI en six mois... Dans les faits, combien de temps avant que je voie un euro de retour ? Parce que le CODIR et l'expert-comptable ils vont me demander ça.",
+        "sous_texte": "Je dois justifier devant mes associés. J'ai besoin d'arguments défendables, pas de marketing. Si tu me donnes une fourchette honnête même longue, je préfère ça au bullshit optimiste.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette réaliste basée sur des cas similaires (12-18 mois). Décomposer les gains rapides vs structurels. Proposer des indicateurs de progression trimestriels."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais concrètement le déploiement, vous me dites que ça prend combien de temps ? Parce que si vous me dites deux semaines comme le dernier, on va avoir un problème.",
+        "sous_texte": "Je teste ta crédibilité. Si tu minimises la difficulté, je ne te crois plus. Je préfère quelqu'un qui me dit 6 mois avec un plan clair qu'un menteur qui dit 15 jours.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Annoncer un délai réaliste (4-6 mois) avec étapes détaillées. Proposer l'approche pilote sur 2-3 magasins pour sécuriser. Transparence totale."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà voilà, tout ça c'est bien joli mais au salon de Lille le mois dernier j'ai vu une solution à 45K€ qui fait à peu près la même chose. Pourquoi je paierais le double chez vous ?",
+        "sous_texte": "Je ne te dis peut-être pas toute la vérité sur cette solution concurrente, mais je teste ta capacité à défendre ta valeur. Si tu baisses ton prix directement, j'en conclus que tu m'arnaquais depuis le début.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser la solution concurrente (inclut-elle déploiement, formation, maintenance ?). Défendre la valeur différenciante sans dénigrer. Ne PAS céder sur le prix immédiatement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, là votre prix c'est 125K€. Moi j'ai 85K€ de validés. Même en grattant partout je monte à 95K€ grand maximum. Donc soit vous vous alignez, soit on arrête là.",
+        "sous_texte": "Je pose mon budget réel mais peut-être pas ma limite absolue (j'ai probablement 10K€ de marge). Je teste si tu vas t'effondrer ou tenir ta valeur. Si tu cèdes 30%, je perds confiance.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder frontalement. Reconfigurer l'offre : pilote sur moins de magasins, étalement paiement, contreparties (durée engagement, référence, démarrage rapide)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, même si je suis convaincu moi, j'ai mon associé principal et l'expert-comptable qui vont me crucifier si je signe à ce prix-là sans rien négocier. Vous comprenez ma position ?",
+        "sous_texte": "Je cherche un alibi pour négocier mais c'est peut-être sincère. J'ai besoin que tu m'aides à justifier devant mes pairs. Donne-moi des arguments et un geste, pas un effondrement de prix.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un dossier de justification chiffré pour son CODIR. Offrir un geste limité (5-7%) contre engagement ferme et rapide. Montrer qu'on le respecte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK mais si dans un an ça marche pas, je fais quoi moi ? Je me retrouve avec 125K€ dans le vent et mes associés qui me demandent des comptes. Y'a une garantie ou c'est banco ?",
+        "sous_texte": "Ma vraie peur : reproduire l'échec d'il y a 3 ans. J'ai besoin d'être rassuré sur le risque. Si tu proposes une clause de sortie ou garantie résultat, tu me débloques émotionnellement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer paliers validation trimestre par trimestre, clause sortie après pilote, ou garantie résultats intermédiaires mesurables. Sécurité émotionnelle avant prix."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, je réfléchis... C'est quand même un sacré investissement. Je peux avoir le week-end pour en parler avec mon associé ? On se rappelle lundi ?",
+        "sous_texte": "Soit je suis vraiment hésitant, soit c'est une tactique dilatoire pour te faire céder davantage. Teste ma vraie intention : est-ce que j'ai posé toutes mes questions ou j'esquive une objection non dite ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le délai mais verrouiller : 'Qu'est-ce qui vous fait hésiter précisément ?' Traiter l'objection cachée. Fixer RDV précis lundi avec condition (engagement si OK associé)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, 110K€ c'est mon dernier mot. Au-delà je peux pas me le permettre et puis soyons honnêtes, si vous me lâchez pas un peu sur le tarif c'est que vous aviez de la marge depuis le début, voilà voilà.",
+        "sous_texte": "Je teste ton intégrité finale. Si tu acceptes, je me demande si j'aurais pu avoir 100K€. Si tu refuses sec sans rien, je risque de partir frustré. Trouve le juste équilibre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposition créative : 110K€ OK si contrepartie claire (engagement 3 ans, devenir cas client référence, démarrage sous 3 semaines). Montrer la limite : 'Je peux descendre à 115K€ max, et voici pourquoi.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, je suis tenté, mais là j'ai un doute... Et si je me plante encore ? J'ai pas les moyens de me tromper à 125K€. Vous, à ma place, vous signeriez ?",
+      "condition_declenchement": "Apparaît après que toutes les objections rationnelles ont été traitées. C'est l'objection émotionnelle ultime : la peur de l'échec et de la responsabilité. Se déclenche quand Bruno est intellectuellement convaincu mais émotionnellement bloqué."
+    },
+    "pattern_escalade": "Bruno commence par des objections réflexes agressives ('pas le budget', 'déjà donné') pour filtrer les commerciaux faibles. Si le vendeur tient, il passe aux objections sincères sur l'adoption utilisateurs et la compatibilité technique (vraies préoccupations). Ensuite viennent les objections tactiques sur le prix et la concurrence (phase de négociation). Enfin, si tout est traité, émerge l'objection émotionnelle finale sur la peur de l'échec. Le vendeur doit résister aux premières sans s'effondrer, traiter sérieusement les sincères, négocier intelligemment les tactiques, et rassurer émotionnellement sur la dernière.",
+    "piege_classique": "Céder trop vite sur le prix (plus de 10%) quand Bruno sort son objection tactique à 95K€. Il interprétera cela comme la preuve que le tarif initial était gonflé, perdra confiance, et soit partira, soit signera en restant méfiant. L'autre piège : minimiser la difficulté du déploiement ou l'enjeu de l'adoption utilisateurs. Bruno a été échaudé et teste constamment la crédibilité. Le vendeur doit être transparent sur les difficultés tout en montrant comment il les gère, plutôt que de les nier."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de solutions pour le commerce de détail / Services B2B pour la distribution",
+      "description": "Entreprise proposant des solutions destinées aux réseaux de points de vente dans le commerce spécialisé"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution complète pour la gestion et l'optimisation de réseaux de points de vente (possiblement CRM, ERP, solution de pilotage, marketing ou gestion des stocks)",
+      "proposition_valeur": "Uniformisation des pratiques, centralisation du pilotage, amélioration de la rentabilité, gain de temps, vision consolidée du réseau",
+      "prix": "Positionnement premium - marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre leur prix, négocier avec fermeté tout en trouvant un accord gagnant-gagnant, et utiliser intelligemment leur marge de manœuvre limitée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution de gestion multi-sites jardineries",
+    "vous_etes": "Commercial chez un éditeur de solutions de gestion pour réseaux de points de vente, en phase finale de négociation avec un prospect chaud.",
+    "vous_vendez": "Solution complète de pilotage et gestion unifiée pour réseaux de magasins (stocks, tableaux de bord, coordination) — Tarif proposé : 95K€ — Marge de manœuvre maximale : 10% (soit 85,5K€ plancher).",
+    "vous_appelez": "Bruno Delvaux, 52 ans, Directeur de réseau et co-gérant d'Esprit Jardin (11 jardineries Hauts-de-France/Grand Est, 18M€ CA) — Pragmatique, méfiant, teste votre solidité en négociant dur.",
+    "ce_que_vous_savez": [
+      "Il a validé l'intérêt de la solution mais trouve le prix trop élevé",
+      "Budget CODIR validé : 85K€ + 10K€ mobilisables sur ligne IT soit 95K€ max",
+      "Échaudé par un échec CRM il y a 3 ans (50K€ perdus, éditeur disparu)",
+      "Ses vrais points de douleur : 11 systèmes stocks différents, 200K€/an de perte en ruptures, gérants peu digitaux",
+      "Réunion de validation budget avec son associé et l'expert-comptable dans 10 jours"
+    ],
+    "votre_objectif": "Conclure à 95K€ (votre tarif) ou défendre jusqu'à 88K€ minimum en échange de contreparties crédibles (paiement comptant, déploiement rapide, témoignage client, etc.).",
+    "vos_atouts": [
+      "ROI chiffré sur réseaux jardineries similaires (récupération investissement en 14 mois via réduction ruptures)",
+      "Compatibilité native avec Cegid (son logiciel actuel) — argument technique bloquant",
+      "Possibilité de pilote sur 3 magasins avant généralisation (réduit son risque)",
+      "Accompagnement formation inclus spécifique profils non-digitaux (sa vraie angoisse cachée)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:57:14Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15543,
+    "total_time_s": 151.4
+  }
+}

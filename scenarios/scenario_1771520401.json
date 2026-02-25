@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771520401",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant / directeur d'agence d'une cabinet de courtage ou agence d'assurance de 10-30 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : finance_assurance]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant ou directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets de courtage et agences d'assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse du prospect après envoi de proposition",
+        "Besoin d'obtenir un retour clair"
+      ],
+      "implicites": [
+        "Difficulté à relancer sans paraître insistant",
+        "Manque de qualification initiale avant envoi de la proposition",
+        "Proposition possiblement non adaptée ou non lue",
+        "Absence de date de relance convenue lors de l'envoi",
+        "Incertitude sur l'intérêt réel du prospect"
+      ],
+      "probleme_racine": "Processus commercial incomplet en amont : proposition envoyée sans engagement du prospect sur un calendrier de suivi, ce qui crée une zone d'incertitude et complique la relance"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser l'art de la relance post-proposition pour obtenir un positionnement clair du prospect sans paraître insistant, et apprendre à cadrer les engagements en amont",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_aux_professionnels_assurance",
+      "entreprise_description": "Entreprise proposant des solutions aux cabinets de courtage et agences d'assurance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution commerciale destinée aux professionnels de l'assurance et du courtage, permettant d'améliorer leur activité",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service",
+        "Contexte de la relation commerciale avant l'envoi de la proposition",
+        "Contenu et format de la proposition envoyée",
+        "Prix et conditions commerciales",
+        "Avantages concurrentiels",
+        "Historique des échanges avec le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Monteil",
+      "age": 52,
+      "poste": "Gérant-associé",
+      "entreprise": {
+        "nom": "Monteil & Partenaires Assurances",
+        "secteur": "Courtage en assurances IARD et Prévoyance",
+        "taille": "16 salariés (11 commerciaux, 3 gestionnaires, 2 administratifs)",
+        "ca_approximatif": "1,8M€ avec stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux après 30 ans de sollicitations",
+        "Débordé mais refuse de déléguer les décisions stratégiques",
+        "Rationnel-procrastinateur : demande beaucoup d'infos puis ne décide pas"
+      ],
+      "motivations_profondes": [
+        "Retrouver la croissance sans perdre le contrôle de son affaire",
+        "Prouver qu'il peut encore innover malgré la concurrence des néo-courtiers",
+        "Ne pas faire d'erreur coûteuse qui impacterait sa trésorerie fragile"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un prestataire qui sur-promet et sous-délivre",
+        "Investir dans un outil que ses équipes n'utiliseront pas",
+        "Perdre du temps en formations ou déploiements complexes",
+        "Révéler ses faiblesses commerciales à un externe"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais protectionniste. Dit souvent 'envoyez-moi ça par mail' pour couper court. A développé une résistance aux techniques de vente classiques. Respecte uniquement ceux qui comprennent vraiment son métier.",
+      "style_communication": "analytique-défensif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais distant, avec une pointe de lassitude. Commence souvent par 'Oui bonjour, je vous écoute mais je n'ai que quelques minutes'",
+      "signaux_interet": [
+        "Pose des questions précises sur les résultats mesurables",
+        "Mentionne spontanément ses problèmes actuels ('nos commerciaux peinent à closer')",
+        "Demande des références dans le courtage spécifiquement",
+        "Passe en mode calcul mental : 'ça représente combien par commercial ?'"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles quand on parle ROI trop vite",
+        "Coupe la parole avec 'oui oui je connais le principe'",
+        "Utilise le mail comme sortie de secours : 'renvoyez-moi tout ça'",
+        "Évoque un concurrent fictif : 'j'ai déjà un prestataire qui fait à peu près ça'",
+        "Devient évasif sur son budget : 'faut que je voie avec ma comptable'"
+      ],
+      "tics_langage": [
+        "Abuse du 'écoutez...' en début de phrase pour reprendre la main",
+        "Dit 'dans notre métier' pour rappeler la spécificité du courtage",
+        "Utilise 'concrètement' quand il doute de la faisabilité",
+        "Ponctue par 'après je dis ça...' quand il veut nuancer sans s'engager"
+      ],
+      "debit_parole": "normal mais s'accélère quand il cherche à clore l'échange",
+      "tolerance_monologue_vendeur": "Très faible, maximum 45 secondes avant de reprendre la parole ou de montrer des signes d'impatience. Déteste les slides PowerPoint en rdv."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Stagnation du CA depuis la crise Covid. Pression des néo-courtiers digitaux. 3 commerciaux seniors proches de la retraite, difficultés à recruter des jeunes performants. Trésorerie correcte mais pas de marge d'erreur.",
+      "priorites_actuelles": [
+        "Augmenter le taux de transformation (actuellement 22% contre 28% il y a 5 ans)",
+        "Structurer le suivi client pour limiter les résiliations",
+        "Trouver une solution qui ne nécessite pas de formation lourde",
+        "Éviter les dépenses gadget : privilégier le concret"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM il y a 4 ans (Salesforce) : échec total, trop complexe, équipes n'ont jamais accroché. A assisté à 2 webinaires sur la transformation digitale : trouvé ça 'hors-sol'. Depuis, très prudent.",
+      "fournisseur_actuel": "Utilise un logiciel métier de gestion (Sequoia) + Excel pour le suivi commercial + WhatsApp pour communiquer avec l'équipe. Pas de solution de formation structurée.",
+      "budget_disponible": "Entre 8K€ et 15K€ maximum sur l'année, mais doit justifier chaque euro. Préfère payer au résultat ou mensuellement pour limiter le risque."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner des résultats chiffrés obtenus chez d'autres courtiers de taille similaire",
+        "Proposer un pilote à risque limité plutôt qu'un engagement global",
+        "Montrer qu'on comprend la différence entre IARD, prévoyance et crédit",
+        "Reconnaître explicitement ses contraintes (temps, budget, équipe hétérogène)",
+        "Utiliser le vocabulaire métier sans condescendance",
+        "Proposer un accompagnement 'clé en main' sans jargon tech"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'disruption' ou de 'transformation digitale'",
+        "Minimiser la spécificité du courtage ('ça marche dans tous les secteurs')",
+        "Présenter un catalogue générique sans personnalisation",
+        "Insister sur la signature immédiate ou créer une fausse urgence",
+        "Critiquer ouvertement ses outils actuels",
+        "Promettre des résultats sans période d'essai crédible",
+        "Demander accès à ses données de CA ou marges trop rapidement"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, là j'ai un client en salle d'attente et je suis déjà en retard sur mes dossiers... Vous m'aviez envoyé un truc par mail c'est ça ?",
+        "sous_texte": "Je n'ai pas lu votre proposition et je cherche une excuse polie pour raccrocher. Prouvez-moi que ça vaut la peine que je vous accorde 2 minutes.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa contrainte temps, donner une raison valable de maintenir 90 secondes d'échange, poser UNE question qualifiante"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui je me souviens, j'ai reçu votre proposition... Bon écoutez, je n'ai pas encore eu le temps de regarder en détail, vous comprenez on croule sous les renouvellements en ce moment",
+        "sous_texte": "Votre proposition est quelque part dans ma boîte mail sous 47 autres. Je ne sais plus vraiment ce que vous proposez et je n'ai aucune urgence à le découvrir.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas redemander s'il a lu. Reposer le contexte en 1 phrase, puis qualifier si le problème existe toujours avant de repositionner"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah ben justement, j'allais vous rappeler... enfin vous savez ce que c'est, le quotidien nous rattrape. Renvoyez-moi le document, je crois que je l'ai perdu dans mes mails",
+        "sous_texte": "Je n'allais absolument pas vous rappeler. Je cherche à gagner du temps et à vous éloigner poliment. Vous renvoyer le doc = fin de conversation.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter de renvoyer sans qualification. Transformer en mini-découverte pour confirmer l'intérêt réel avant tout renvoi"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, dans notre métier c'est très spécifique vous comprenez... Les solutions généralistes qu'on nous vend, ça marche jamais. Vous avez déjà travaillé avec des courtiers en IARD ou c'est du conseil tous secteurs confondus ?",
+        "sous_texte": "Je teste votre connaissance métier. Si vous me sortez du blabla générique, je raccroche dans 30 secondes. Prouvez-moi que vous comprenez MON activité.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer 2-3 références courtage précises avec taille similaire, utiliser vocabulaire métier, reconnaître la spécificité sans sur-jouer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais attendez, nous on a déjà Sequoia pour la gestion, on a nos process qui tournent... Votre truc c'est pas encore un logiciel qui va venir se rajouter et que personne va utiliser au final ?",
+        "sous_texte": "J'ai été échaudé par Salesforce. Je ne veux pas revivre ça. Mes équipes sont réfractaires au changement et je n'ai ni le temps ni l'énergie pour un déploiement complexe.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la cicatrice Salesforce, différencier radicalement votre approche, parler accompagnement clé-en-main et adoption garantie"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le taux de transformation vous dites... Nous on est plutôt satisfaits de nos résultats, on tourne autour de 25-26% sur l'IARD, c'est dans la moyenne du marché non ?",
+        "sous_texte": "Je minimise mon problème réel (22%) pour ne pas montrer ma vulnérabilité. Je veux voir si vous connaissez les vrais benchmarks ou si vous inventez.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ni contredire brutalement ni valider. Rebondir sur 'moyenne marché' pour amener les meilleurs à 32-35%, questionner l'évolution vs 3 ans avant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez après je dis ça, mais moi je suis ouvert hein... Le problème c'est surtout mes commerciaux seniors, ils ont leurs habitudes, ils sont à 2-3 ans de la retraite certains... Comment vous voulez leur faire changer de méthode à leur âge ?",
+        "sous_texte": "Je projette MES résistances sur mon équipe. En réalité je crains de perdre le contrôle si on professionnalise trop. Mais c'est un vrai frein aussi.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Différencier seniors et juniors, proposer approche progressive, impliquer Thierry comme sponsor du changement, montrer que les seniors sont souvent les meilleurs adoptants si bien accompagnés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui je comprends le principe, ça a l'air intéressant sur le papier... Mais concrètement, ça représente quel investissement ? Parce que faut que je voie avec ma comptable, on a déjà engagé pas mal de frais ce trimestre",
+        "sous_texte": "Je veux connaître le prix pour avoir une raison objective de dire non si c'est trop cher. 'Ma comptable' est mon bouclier. Je n'ai pas encore décidé si je veux vraiment cette solution.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix sans avoir consolidé la valeur. Questionner 'frais engagés' pour identifier si c'est sincère ou tactique, ancrer le ROI avant tarif"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de combien là ? 12 000 euros ?! Pour de la formation ? Mais ça fait 750 balles par commercial, c'est délirant... J'ai un prestataire qui me fait des sessions à 400 euros la journée",
+        "sous_texte": "Je ramène tout au coût unitaire pour minimiser la valeur. Je compare des pommes et des poires volontairement. Je teste votre solidité sur le pricing.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Recadrer la comparaison : accompagnement vs formation one-shot, résultats mesurables vs théorie, amortissement sur 12 mois, coût de l'inaction"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais les références que vous me donnez là, Bertrand Assurances, Coastal Courtage... Je les connais pas ces boîtes. Vous avez travaillé avec des cabinets reconnus dans la région ? Des noms que je peux appeler moi-même ?",
+        "sous_texte": "Je cherche la faille. Si vos références sont bidons ou non vérifiables, je vous grille. Je veux aussi ralentir le processus en demandant plus de preuves.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner 1-2 références vérifiables avec coordonnées, proposer mise en relation, éventuellement mentionner une clause de confidentialité pour d'autres, retourner : 'Qu'est-ce qui vous rassurerait vraiment ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, dans le principe je suis pas contre hein, mais je peux pas décider ça tout seul. Faudrait que j'en parle avec mes associés, qu'on fasse un point en comité de direction... On se revoit début du mois prochain ?",
+        "sous_texte": "Je dilue la responsabilité pour ne pas avoir à dire non maintenant. Il n'y a pas vraiment de comité formel. C'est ma façon polie de prendre du recul ou de vous éloigner.",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Qualifier le processus décisionnel réel, identifier les autres décideurs, proposer d'être présent à cette réunion, ou obtenir un engagement conditionnel de Thierry"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon après, ce que je me dis aussi, c'est qu'on pourrait peut-être commencer par tester sur 2-3 commerciaux seulement, histoire de voir si ça prend... Vous faites des pilotes à tarif réduit ?",
+        "sous_texte": "Je suis semi-intéressé mais terrorisé par l'engagement. Je cherche à minimiser le risque financier. Si vous acceptez trop facilement, je douterai de votre valeur.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider l'approche pilote (c'est intelligent), mais recadrer : pilote = engagement sérieux avec indicateurs précis, pas rabais. Proposer structure pilote pro."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui, ça me paraît cohérent ce que vous me dites... Bon écoutez, laissez-moi 8-10 jours pour y réfléchir tranquillement, je regarde mes plannings, mes budgets, et je vous fais un retour, promis",
+        "sous_texte": "Je veux sortir de cette conversation sans m'engager. '8-10 jours' = flou artistique. 'Promis' = formule de politesse. Vous ne me reverrez probablement jamais si vous acceptez ça.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas accepter le flou. Proposer date précise, identifier ce qui doit être réfléchi précisément, offrir aide pour éléments de décision, obtenir engagement calendaire ferme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, je vous ai pas dit non hein ! C'est juste que là, entre nous, janvier-février c'est la période galère avec les renouvellements qui tombent... Si on lançait ça en mars-avril, ce serait pas mieux pour tout le monde ?",
+        "sous_texte": "Je procrastine en habillant ça d'arguments rationnels. Mars-avril = dans 8-12 semaines = je repousse. Soit je ne suis pas convaincu, soit j'ai peur de m'engager maintenant.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Valider la contrainte saisonnalité MAIS retourner : plus vous attendez, plus vous perdez des deals. Proposer démarrage léger janvier avec déploiement intensif mars. Créer coût de l'inaction."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon sincèrement, j'aime bien ce que vous proposez, mais j'ai déjà quelqu'un qui me fait un peu ça... Enfin pas exactement pareil, mais dans l'esprit... Il faudrait que je compare, vous comprenez",
+        "sous_texte": "Faux concurrent pour négocier ou vrais doutes ? Les deux. Je teste si vous allez paniquer et brader. Je veux aussi me donner une porte de sortie honorable.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Creuser sans agressivité : qui, quoi, depuis quand, résultats obtenus. Différencier sans dénigrer. Proposer comparaison structurée. Recadrer : 'comparer' sans critères = procrastination."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, refaites-moi une proposition écrite avec tout ce qu'on s'est dit, les tarifs, le détail de l'accompagnement, les conditions de pilote... Et là je pourrai me positionner clairement",
+        "sous_texte": "Je vous fais bosser pour me donner du temps. Soit je suis sincère et j'ai besoin de formaliser, soit c'est une tactique d'éloignement classique. Testez mon engagement réel.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Accepter mais conditionner : 'Je vous fais ça avec plaisir. Si c'est conforme à ce qu'on vient d'échanger, vous êtes prêt à démarrer quand ?' Obtenir engagement conditionnel AVANT de travailler."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'entends tout ce que vous me dites, je trouve ça intéressant, vraiment... Mais concrètement là, aujourd'hui, je peux pas m'engager. J'ai besoin de digérer tout ça, de voir avec mes équipes, de regarder mes priorités budgétaires... Vous comprenez ? On se rappelle dans quelques semaines et on refait le point tranquillement, d'accord ?",
+      "condition_declenchement": "Se déclenche quand Thierry se sent acculé à une décision mais n'est pas 100% convaincu de la valeur OU quand il sent qu'il perd le contrôle de la conversation. C'est sa sortie de secours ultime : ni oui ni non, maximum de flou."
+    },
+    "pattern_escalade": "Thierry commence courtois-pressé (objections réflexes temporelles). Si vous tenez bon, il teste votre légitimité métier (objections spécificité courtage). Si vous passez, il devient analytique-méfiant (prix, ROI, preuves). Puis il procrastine (délais, faux comités, comparaison). Enfin, si vraiment coincé, il sort l'objection finale fourre-tout. Chaque niveau franchi augmente sa résistance si vous n'avez pas créé assez de valeur perçue.",
+    "piege_classique": "Thierry est un champion du 'oui mais pas maintenant'. Il validera votre proposition sur le fond ('c'est intéressant', 'je dis pas non') tout en trouvant des raisons infinies de ne pas décider ('mes commerciaux', 'ma comptable', 'le timing', 'je dois comparer'). Le piège : prendre ses validations molles pour de l'engagement. Vous devez le forcer à choisir : soit problème grave = action maintenant avec vous, soit pas grave = on se quitte. Le flou est votre ennemi mortel avec lui."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_aux_professionnels_assurance",
+      "description": "Entreprise proposant des solutions aux cabinets de courtage et agences d'assurance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution commerciale destinée aux professionnels de l'assurance et du courtage, permettant d'améliorer leur activité",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser l'art de la relance post-proposition pour obtenir un positionnement clair du prospect sans paraître insistant, et apprendre à cadrer les engagements en amont",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Courtage assurances",
+    "vous_etes": "Commercial chez un éditeur de solutions pour professionnels de l'assurance, spécialisé dans l'accompagnement des cabinets de courtage.",
+    "vous_vendez": "Une solution d'amélioration de la performance commerciale pour courtiers (nature exacte et tarif à préciser selon votre offre réelle).",
+    "vous_appelez": "Thierry Monteil, 52 ans, gérant-associé de Monteil & Partenaires Assurances (16 salariés, courtage IARD/Prévoyance). Professionnel aguerri, méfiant, débordé, qui a déjà tout entendu.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale il y a quelques jours/semaines",
+      "Aucun retour de sa part depuis l'envoi",
+      "Son cabinet stagne depuis 2 ans malgré une trésorerie correcte",
+      "Il a 11 commerciaux et cherche à améliorer son taux de transformation (actuellement 22%)",
+      "Il a vécu un échec cuisant avec Salesforce il y a 4 ans — ses équipes n'ont jamais accroché"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : soit il est intéressé et on fixe une prochaine étape, soit il refuse et on comprend pourquoi, soit ce n'est pas le moment et on convient d'une date de recontact.",
+    "vos_atouts": [
+      "Vous connaissez le métier du courtage et ses spécificités (IARD, prévoyance, pression néo-courtiers)",
+      "Vous pouvez proposer un pilote limité plutôt qu'un engagement lourd",
+      "Vous avez compris qu'il déteste les usines à gaz et privilégie le concret",
+      "Vous êtes capable de parler résultats chiffrés obtenus chez d'autres courtiers de taille similaire"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:00:01Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15430,
+    "total_time_s": 155.9
+  }
+}

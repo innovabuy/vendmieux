@@ -1,0 +1,357 @@
+{
+  "id": "scenario_1771520075",
+  "description_originale": "Vous appelez à froid le directeur commercial ou directeur de la distribution d'une compagnie d'assurance régionale ou société de gestion de 150+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : finance_assurance]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial ou Directeur de la Distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour améliorer la performance commerciale ou la distribution dans le secteur de l'assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à obtenir un rendez-vous avec des décideurs de haut niveau",
+        "Prospect a un agenda chargé",
+        "Absence de relation préalable",
+        "Process d'achat structurés qui ralentissent l'accès"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors des appels à froid",
+        "Difficulté à capter l'attention rapidement",
+        "Incapacité à différencier l'offre dès les premières secondes",
+        "Gestion des barrages secrétariat",
+        "Justifier la valeur d'un RDV de 45 minutes à un décideur occupé"
+      ],
+      "probleme_racine": "Absence de proposition de valeur claire et différenciante communiquée efficacement dans les 30 premières secondes pour justifier l'interruption d'un décideur de haut niveau qui ne vous connaît pas"
+    },
+    "objections_mentionnees": [
+      "Agenda chargé",
+      "Ne vous connaît pas",
+      "N'a rien demandé",
+      "Process d'achat structurés"
+    ],
+    "objectif_formation": "Former les commerciaux à obtenir des rendez-vous qualifiés lors d'appels de prospection à froid auprès de décideurs de haut niveau dans le secteur de l'assurance",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur de l'assurance",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux compagnies d'assurance et sociétés de gestion",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution visant à améliorer la performance commerciale, la distribution ou les processus métiers des compagnies d'assurance régionales",
+      "proposition_valeur": "Apporter une valeur mesurable aux directions commerciales ou de distribution des compagnies d'assurance",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Prix ou budget indicatif",
+        "Références clients existantes",
+        "Arguments de différenciation concurrentielle",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Darville",
+      "age": 51,
+      "poste": "Directeur Commercial et Marketing",
+      "entreprise": {
+        "nom": "Mutuelle Solidarité Régions",
+        "secteur": "Assurance santé et prévoyance",
+        "taille": "280 salariés dont 85 conseillers terrain",
+        "ca_approximatif": "142M€ de cotisations annuelles"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les promesses commerciales après 25 ans de métier",
+        "Protecteur de son temps et de celui de son équipe",
+        "Pragmatique avec un ego territorial marqué"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa position face au Comex après deux trimestres difficiles",
+        "Prouver que son réseau physique reste pertinent face à la digitalisation",
+        "Laisser une empreinte avant la retraite dans 4 ans",
+        "Éviter de se faire remarquer négativement par la maison-mère parisienne"
+      ],
+      "peurs_freins": [
+        "Investir dans un énième outil qui ne sera pas adopté par les conseillers terrain",
+        "Perdre du temps en réunions stériles avec des vendeurs qui ne connaissent rien à l'assurance mutualiste",
+        "Se faire court-circuiter par le DSI qui pousse ses propres solutions tech",
+        "Paraître dépassé s'il refuse la nouveauté, paraître naïf s'il accepte trop vite"
+      ],
+      "rapport_aux_commerciaux": "Condescendant mais curieux si on démontre une vraie connaissance du secteur. A l'habitude de mener la danse. Déteste qu'on lui explique son métier. Respecte ceux qui résistent à sa brusquerie initiale.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'ironie défensive : 'Alors, qu'est-ce que vous vendez qui va révolutionner ma vie aujourd'hui ?'",
+      "signaux_interet": [
+        "Pose des questions précises sur les métriques : 'Combien de temps de déploiement réellement ?'",
+        "Mentionne spontanément ses problèmes actuels : 'Nos conseillers seniors ne suivent aucune formation digitale...'",
+        "Commence à calculer mentalement le ROI à voix haute",
+        "Demande des références dans des mutuelles comparables, pas des groupes nationaux"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement son téléphone",
+        "Coupe la parole pour 'gagner du temps' : 'Oui bon allez à l'essentiel'",
+        "Utilise le 'nous' institutionnel : 'Nous avons déjà tout ce qu'il faut'",
+        "Évoque un fournisseur actuel avec insistance même si c'est faux",
+        "Dit 'envoyez-moi un mail' avant même la fin de la présentation"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' en début de phrase pour reprendre le contrôle",
+        "Ponctue de 'Concrètement' quand il trouve qu'on noie le poisson",
+        "Dit 'On en reparlera' comme euphémisme de refus",
+        "Utilise 'Vous comprenez' en mode assertif, pas interrogatif"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant interruption. Exige des échanges, pas des présentations. Coupe systématiquement les digressions. Apprécie les réponses en moins de 15 secondes."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression du Comex pour digitaliser le parcours client. Baisse de 8% des nouvelles souscriptions sur le segment des indépendants. Fusion prévue avec une mutuelle voisine d'ici 18 mois, créant une incertitude sur les postes de direction.",
+      "priorites_actuelles": [
+        "Redresser le taux de transformation des conseillers avant le bilan annuel (dans 4 mois)",
+        "Justifier le maintien de 12 agences physiques face aux velléités de fermeture du DAF",
+        "Former 35 conseillers 50+ ans aux outils numériques sans braquer le CSE",
+        "Préparer son positionnement politique dans l'organigramme post-fusion"
+      ],
+      "experience_avec_offre_similaire": "A testé en 2019 une plateforme de formation e-learning 'qui a coûté 45K€ pour un taux de complétion de 12%'. A fait venir en 2021 un cabinet conseil qui a produit 180 slides PowerPoint jamais appliquées. Échaudé mais pas fermé si on prouve la différence.",
+      "fournisseur_actuel": "Utilise les formations internes RH (jugées trop généralistes) + un organisme conventionné OPCO pour les obligations légales. Pas de solution spécifique performance commerciale depuis l'échec de 2019.",
+      "budget_disponible": "Entre 30K€ et 60K€ disponibles sur la ligne formation 2024, mais nécessite validation DG au-dessus de 40K€. Peut débloquer plus si ROI démontré sur 12 mois et si rattachable aux enjeux de la fusion."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer des chiffres précis du secteur mutualiste (pas de l'assurance générale)",
+        "Mentionner le nom d'une mutuelle concurrente similaire comme référence (validation par les pairs)",
+        "Proposer un diagnostic gratuit de 45min pour auditer 3 entretiens réels de ses conseillers",
+        "Parler en 'jours de mise en œuvre' plutôt qu'en 'mois de déploiement'",
+        "Évoquer l'argument post-fusion : 'harmoniser les pratiques commerciales avant la bascule'",
+        "Demander son avis d'expert plutôt que de lui vendre une solution toute faite"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser le jargon tech ou startup ('onboarder les users', 'gamification', 'disruption')",
+        "Comparer l'assurance mutualiste à la bancassurance ou aux courtiers",
+        "Proposer un rendez-vous à plus de 3 personnes ('Pas un comité de pilotage, j'ai dit non')",
+        "Envoyer un dossier de 40 pages avant l'échange téléphonique",
+        "Dire 'Tous nos clients sont satisfaits' sans preuve chiffrée",
+        "Ignorer sa remarque sur l'échec précédent ou minimiser ses réticences",
+        "Demander un créneau de plus de 45 minutes en premier RDV"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, j'ai trois réunions qui s'enchaînent là, vous m'appelez pour quoi exactement ?",
+        "sous_texte": "Je protège mon temps et je veux savoir immédiatement si ça vaut le coup. Prouvez votre légitimité en 15 secondes ou je raccroche poliment.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer le bénéfice tangible en 10 secondes avec un chiffre sectoriel précis pour justifier l'interruption"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On ne vous connaît pas du tout... Vous travaillez avec qui dans le mutualiste déjà ?",
+        "sous_texte": "Test de légitimité. Je veux savoir si vous êtes crédible dans MON univers ou si vous êtes un généraliste qui démache tout le monde.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer une référence mutualiste comparable (pas un grand groupe) OU reconnaître l'absence tout en démontrant la connaissance sectorielle pointue"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Alors encore un qui va révolutionner la performance commerciale... J'en vois passer quinze par trimestre hein.",
+        "sous_texte": "Je suis blasé après 25 ans à recevoir des promesses creuses. Montrez-moi que vous êtes différent des autres, sinon je décroche mentalement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement ce scepticisme légitime et se différencier par une approche inverse (diagnostic avant vente, par exemple)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà tout ce qu'il faut en interne. La RH fait des formations, on a nos process...",
+        "sous_texte": "Je défends mon territoire et mes choix passés. Mais si vous creusez intelligemment, je vais vous révéler que ces solutions ne marchent pas.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Poser une question de contrôle sur les RÉSULTATS concrets de ces formations internes plutôt que de contester frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, j'ai eu une expérience catastrophique en 2019 avec une plateforme e-learning. 45 000 balles pour 12% de complétion. Alors bon...",
+        "sous_texte": "Je suis échaudé et j'ai peur de refaire la même erreur. C'est une objection sincère qui cache une vraie douleur. Si vous la traitez bien, je m'ouvre.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser les CAUSES de l'échec avec empathie, montrer qu'on a intégré ces leçons dans la conception de l'approche, différencier radicalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez combien de jours de mise en œuvre ? Parce que moi je n'ai pas six mois devant moi.",
+        "sous_texte": "Test de réalisme opérationnel. Je veux des réponses précises, pas du bullshit consulting. Je sens la pression du temps (bilan dans 4 mois).",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un chiffre précis en JOURS avec les étapes, montrer qu'on comprend l'urgence, proposer un pilote rapide"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes conseillers seniors, ils ont entre 52 et 58 ans... Ils ne vont jamais adhérer à un truc digital compliqué. Le CSE va me tomber dessus.",
+        "sous_texte": "Vraie préoccupation politique interne. Je crains la résistance au changement et les complications RH. C'est un frein majeur mais pas rédhibitoire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer qu'on a déjà géré ce profil, proposer une approche accompagnée non-digitale ou hybride, impliquer les seniors dès le départ"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis avec la fusion qui arrive dans 18 mois, je ne sais même pas si je vais garder mon périmètre actuel...",
+        "sous_texte": "J'ai peur d'investir dans quelque chose qui ne servira pas OU qui ne me sera pas crédité politiquement. Mais ça peut aussi être un levier si bien présenté.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retourner l'objection : c'est justement AVANT la fusion qu'il faut prouver sa valeur et harmoniser les pratiques pour se positionner"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais attendez, vous me parlez d'assurance en général... Nous on est une MUTUELLE, c'est pas pareil, l'esprit mutualiste, les adhérents...",
+        "sous_texte": "Test d'expertise. Je veux voir si vous connaissez vraiment les spécificités du mutualisme ou si vous récitez un pitch générique assurance.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer la connaissance des spécificités mutualistes (gouvernance, adhérents vs clients, valeurs, contraintes réglementaires Code de la Mutualité)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est bien tout ça, mais envoyez-moi un mail avec les détails, je regarderai et je vous rappelle si ça m'intéresse.",
+        "sous_texte": "Technique d'évitement polie. Je n'ai pas vu assez de valeur pour bloquer du temps. C'est un refus déguisé sauf si vous résistez intelligemment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence ou la rareté (agenda limité), proposer un diagnostic gratuit immédiat, ne PAS accepter de disparaître dans les emails"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous savez, j'ai déjà un prestataire qui fait un peu la même chose... On va rester avec eux pour l'instant.",
+        "sous_texte": "Objection de défense territoriale, souvent fausse ou exagérée. Je teste votre réaction. Si vous lâchez, je confirme que vous n'êtes pas différent.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander avec curiosité 'Ah intéressant, ils font quoi exactement ?' pour détecter le bluff OU identifier les vraies lacunes à combler"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que ça va me demander de mobiliser le DSI, la RH, le contrôle de gestion... Je n'ai pas l'énergie pour un projet transverse là.",
+        "sous_texte": "Vraie fatigue organisationnelle. J'ai peur de la complexité politique interne. Mais si vous simplifiez l'approche, je peux reconsidérer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une approche pilote autonome sur son périmètre uniquement, sans impliquer d'autres directions dans un premier temps"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais pourquoi pas, mais pas avant février... Là j'ai le budget 2025 à boucler, les évaluations annuelles, le Comex de décembre...",
+        "sous_texte": "Tactique de report. Soit c'est vrai (surchage réelle), soit je teste votre persistance. Dans les deux cas, je ne veux pas m'engager maintenant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'agenda chargé MAIS proposer un rendez-vous de diagnostic gratuit en décembre pour janvier (rester dans le radar)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, il faut que j'en parle à la DG de toute façon. Je ne décide pas seul sur ce budget-là.",
+        "sous_texte": "Vrai processus décisionnel. Je ne suis pas seul décideur au-dessus de 40K€. Mais attention, ça peut aussi être une échappatoire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer d'accompagner la présentation à la DG avec des éléments ROI chiffrés, ou rencontrer la DG ensemble"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vous dis cash : j'ai besoin de voir des résultats sur mes chiffres du trimestre prochain. Si votre truc prend 6 mois, ça ne sert à rien pour moi.",
+        "sous_texte": "Vraie urgence business. Je suis sous pression Comex. C'est une objection sincère qui révèle une opportunité SI vous avez des quick-wins crédibles.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une approche à deux vitesses : quick-wins immédiats (formation express 5 conseillers) + déploiement structuré après"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, 45 minutes de rendez-vous, c'est compliqué à caler... Vous ne pouvez pas me faire ça en 20 minutes par téléphone ?",
+        "sous_texte": "Je protège mon agenda mais aussi je teste votre flexibilité. Attention : céder totalement = perdre en crédibilité. Négocier intelligemment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter 30 minutes en visio MAIS conditionner à sa préparation active (3 cas concrets de conseillers à auditer ensemble)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est très intéressant, vraiment. Mais je vais être honnête avec vous : avec l'incertitude de la fusion, je ne peux rien engager de structurant avant d'y voir plus clair sur l'organigramme. On en reparlera après, envoyez-moi vos coordonnées.",
+      "condition_declenchement": "Apparaît quand le vendeur a bien géré toutes les objections mais n'a pas retourné l'argument fusion en opportunité. C'est l'excuse de sortie élégante quand Christophe est intellectuellement convaincu mais émotionnellement pas prêt à prendre le risque politique."
+    },
+    "pattern_escalade": "Christophe commence par des objections réflexes rapides pour tester la solidité du vendeur (protection du temps, méfiance). Si le vendeur résiste bien, il passe à des objections sincères révélant ses vraies douleurs (échec 2019, pression Comex, conseillers seniors). S'il sent qu'on le pousse trop vite vers l'engagement, il remonte en objections tactiques (mail, prestataire existant, report). Le pattern final est soit une ouverture (demande de références précises, calcul ROI à voix haute) soit un repli sur l'excuse fusion.",
+    "piege_classique": "Christophe donne l'impression d'être convaincu intellectuellement ('C'est intéressant, je vois l'intérêt') mais place une objection finale émotionnelle/politique au moment du closing ('Mais avec la fusion...', 'Mais mes conseillers seniors...'). Le piège est de croire qu'on a gagné trop tôt. Il faut traiter les peurs profondes (échec passé, risque politique, adoption terrain) PENDANT la découverte, pas après l'argumentation."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur de l'assurance",
+      "description": "Entreprise proposant des solutions destinées aux compagnies d'assurance et sociétés de gestion"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution visant à améliorer la performance commerciale, la distribution ou les processus métiers des compagnies d'assurance régionales",
+      "proposition_valeur": "Apporter une valeur mesurable aux directions commerciales ou de distribution des compagnies d'assurance",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à obtenir des rendez-vous qualifiés lors d'appels de prospection à froid auprès de décideurs de haut niveau dans le secteur de l'assurance",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Commercial Mutuelle Régionale",
+    "vous_etes": "Commercial B2B spécialisé secteur assurance, vous prospectez des directions commerciales de mutuelles régionales pour améliorer leur performance terrain.",
+    "vous_vendez": "Solution de formation/accompagnement pour booster la performance commerciale des conseillers mutualistes (prix et format à préciser selon découverte).",
+    "vous_appelez": "Christophe Darville, 51 ans, Directeur Commercial et Marketing chez Mutuelle Solidarité Régions (280 salariés, 85 conseillers terrain). Vétéran méfiant du secteur, protecteur de son temps, sous pression après deux trimestres difficiles.",
+    "ce_que_vous_savez": [
+      "La mutuelle subit -8% de souscriptions sur les indépendants cette année",
+      "Une fusion avec une mutuelle voisine est prévue d'ici 18 mois",
+      "Christophe a 85 conseillers terrain dont 35 seniors à former au digital",
+      "Il a été échaudé en 2019 par un e-learning à 45K€ avec 12% de complétion seulement",
+      "Le Comex pousse pour digitaliser, lui doit défendre son réseau physique"
+    ],
+    "votre_objectif": "Décrocher un RDV de 45 minutes maximum pour un diagnostic gratuit de 3 entretiens commerciaux réels de ses conseillers.",
+    "vos_atouts": [
+      "Vous connaissez les spécificités du mutualisme (pas de la bancassurance)",
+      "Vous proposez un diagnostic terrain rapide, pas un tunnel de réunions",
+      "Vous parlez ROI mesurable et déploiement en jours, pas en mois",
+      "Vous comprenez l'enjeu fusion : harmoniser les pratiques commerciales avant la bascule"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:54:35Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15729,
+    "total_time_s": 140.9
+  }
+}

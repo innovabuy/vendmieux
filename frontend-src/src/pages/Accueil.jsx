@@ -4,7 +4,20 @@ import { useColors, Badge, Avatar, WaveformAnim, CountUp, MiniSparkline, Nav, Fo
 
 /* ======== HERO ======== */
 function Hero(){
-  const C = useColors(); const navigate = useNavigate(); return(
+  const C = useColors(); const navigate = useNavigate();
+  const [timer,setTimer]=useState(167);
+  const [msgIdx,setMsgIdx]=useState(0);
+  const heroMessages=[
+    {mention:"On a eu 3 arrêts machines non planifiés le mois dernier..."},
+    {mention:"On a déjà un prestataire pour la maintenance..."},
+    {mention:"C'est trop cher pour ce que c'est..."},
+    {mention:"Envoyez-moi un mail, je regarderai..."},
+    {mention:"Je dois en parler à mon associé..."},
+  ];
+  useEffect(()=>{ const iv=setInterval(()=>setTimer(t=>t+1),1000);return()=>clearInterval(iv); },[]);
+  useEffect(()=>{ const iv=setInterval(()=>setMsgIdx(i=>(i+1)%heroMessages.length),4000);return()=>clearInterval(iv); },[]);
+  const fmt=s=>`${Math.floor(s/60)}:${(s%60).toString().padStart(2,"0")}`;
+  return(
     <div style={ { position:"relative",overflow:"hidden",padding:"80px 24px 72px",textAlign:"center" } }>
       <div style={ { position:"absolute",top:"-20%",left:"50%",transform:"translateX(-50%)",width:600,height:600,borderRadius:"50%",background:"radial-gradient(circle,rgba(212,133,74,0.06) 0%,transparent 70%)",pointerEvents:"none" } }/>
       <div style={ { position:"relative",maxWidth:720,margin:"0 auto" } }>
@@ -35,7 +48,7 @@ function Hero(){
               <div style={ { width:6,height:6,borderRadius:"50%",background:C.ac,animation:"pulse 1.5s infinite" } }/>
               <span style={ { fontSize:11,fontWeight:600,color:C.ac } }>Simulation en cours</span>
             </div>
-            <span style={ { fontSize:12,color:C.dm,marginLeft:"auto",fontVariantNumeric:"tabular-nums" } }>2:47</span>
+            <span style={ { fontSize:12,color:C.dm,marginLeft:"auto",fontVariantNumeric:"tabular-nums" } }>{ fmt(timer) }</span>
           </div>
           <div style={ { display:"flex",alignItems:"center",gap:16,marginBottom:20 } }>
             <Avatar name="Olivier Bertrand" gender="M" size={ 52 }/>
@@ -47,7 +60,7 @@ function Hero(){
           <WaveformAnim/>
           <div style={ { marginTop:20,padding:"12px 16px",background:"rgba(212,133,74,0.06)",borderRadius:10,border:"1px solid rgba(212,133,74,0.12)" } }>
             <div style={ { fontSize:11,color:C.ac,fontWeight:600,marginBottom:4 } }>💡 Le prospect vient de mentionner</div>
-            <div style={ { fontSize:13,color:C.tx,lineHeight:1.5 } }>"On a eu 3 arrêts machines non planifiés le mois dernier..."</div>
+            <div style={ { fontSize:13,color:C.tx,lineHeight:1.5,transition:"opacity 0.3s" } }>"{ heroMessages[msgIdx].mention }"</div>
           </div>
         </div>
       </div>

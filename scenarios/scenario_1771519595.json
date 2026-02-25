@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771519595",
+  "description_originale": "Le dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : industrie]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "industrie (usinage, mécanique, plasturgie)",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (nature exacte non spécifiée)",
+      "proposition_valeur_presumee": "valeur ajoutée par rapport à l'offre actuelle déjà utilisée",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "Obtenir l'accord pour un devis sur une montée en gamme"
+      ],
+      "implicites": [
+        "Risque de perception de sur-vente ou forcing commercial",
+        "Client déjà satisfait peut ne pas voir l'intérêt d'évoluer",
+        "Difficulté à justifier un investissement supplémentaire",
+        "Besoin de démontrer un ROI tangible dans un contexte industriel"
+      ],
+      "probleme_racine": "Transformer une relation client satisfaite en opportunité de développement sans détériorer la confiance établie, en démontrant une valeur incrémentale claire"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upselling et de cross-selling en contexte B2B industriel : identifier les besoins latents, valoriser l'offre premium, obtenir l'engagement pour un devis sans braquer un client satisfait",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur de services ou équipements pour l'industrie manufacturière",
+      "entreprise_description": "Entreprise B2B proposant des solutions pour les PME industrielles dans l'usinage, la mécanique et la plasturgie, avec une offre échelonnée permettant montée en gamme",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou version premium d'une offre existante déjà souscrite par le client depuis 1 an",
+      "proposition_valeur": "Valeur ajoutée, optimisation, gain de performance ou de productivité par rapport à l'offre de base actuellement utilisée",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client existant depuis 1 an, satisfait de l'offre actuelle"
+      ],
+      "avantages_vs_concurrence": "Relation établie, confiance acquise, connaissance du contexte client",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service/produit vendu",
+        "Nature du service complémentaire ou montée en gamme proposée",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Objections typiques rencontrées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bruno",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Mercier Précision",
+        "secteur": "Usinage de précision - sous-traitance automobile et aéronautique",
+        "taille": "42 salariés",
+        "ca_approximatif": "3,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers le superflu",
+        "Loyal mais exigeant sur le ROI"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité durement acquise",
+        "Éviter les erreurs d'investissement comme celle de 2019 (logiciel GPAO jamais rentabilisé)",
+        "Être reconnu comme un patron qui fait les bons choix, pas celui qui se fait avoir"
+      ],
+      "peurs_freins": [
+        "Peur de se faire 'refourguer' des options inutiles",
+        "Crainte que l'amélioration théorique ne se concrétise pas en atelier",
+        "Anxiété face aux dépenses non essentielles en contexte de tensions sur les matières premières",
+        "Syndrome 'si c'est pas cassé, pourquoi réparer'"
+      ],
+      "rapport_aux_commerciaux": "Cordial avec ceux qui ont fait leurs preuves, mais garde toujours une distance professionnelle. Déteste la tchatche commerciale. Respecte ceux qui connaissent son métier et parlent chiffres concrets",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Amical mais sur ses gardes - 'Ah c'est toi, qu'est-ce qui t'amène ?'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'application en atelier",
+        "Mentionne spontanément un problème actuel ('Tiens, justement on a eu un souci la semaine dernière...')",
+        "Demande des exemples chiffrés chez des confrères",
+        "Passe du vouvoiement au tutoiement décontracté"
+      ],
+      "signaux_rejet": [
+        "Coupe court : 'Écoute, là franchement, c'est pas la priorité'",
+        "Regarde ostensiblement sa montre ou son écran",
+        "Répète 'Oui mais nous on est déjà bien équipés'",
+        "Phrase assassine : 'C'est combien ? Ah non, là c'est trop cher pour ce que c'est'",
+        "Délègue : 'Faut que tu en parles à Sandrine, c'est elle qui gère ça maintenant'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...'",
+        "Utilise 'sur le papier' pour marquer son scepticisme",
+        "Dit 'dans la vraie vie' pour opposer théorie commerciale et réalité terrain",
+        "Ponctue de 'Voilà' en fin de phrase pour clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "30 secondes maximum avant de couper pour poser SA question ou ramener à SON contexte"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct jusqu'à fin juin, mais tension sur les marges. Deux recrutements réussis en début d'année. Un tour CN en panne 3 semaines en mars a créé des retards. Concurrent local a fermé, opportunité de récupérer des clients",
+      "priorites_actuelles": [
+        "Fiabiliser la production pour tenir les délais",
+        "Récupérer les clients du concurrent qui a déposé le bilan",
+        "Négocier les nouveaux tarifs avec les donneurs d'ordre",
+        "Préparer la certification ISO 9001 renouvellement octobre"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 13 mois de votre offre de base. Globalement satisfait, quelques couacs en période de rodage mais bien gérés. A recommandé votre solution à un confrère",
+      "fournisseur_actuel": "Vous, sur offre standard. Utilise aussi deux autres fournisseurs historiques pour outillage et consommables",
+      "budget_disponible": "Prudent. Dispose d'une enveloppe 'investissement amélioration continue' d'environ 15-20K€ pour l'année, déjà utilisée à 40%. Peut débloquer si ROI démontré sous 18 mois maximum"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une amélioration CHIFFRÉE constatée chez un confrère de même taille",
+        "Faire le lien avec un problème qu'il a verbalisé (retards, rebuts, temps perdu)",
+        "Proposer un test limité ou une phase pilote sans engagement massif",
+        "Reconnaître que ce n'est pas pour tout le monde, mais expliquer pourquoi ça colle à SON cas",
+        "Parler en temps économisé plutôt qu'en fonctionnalités"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Suggérer que son installation actuelle est 'dépassée'",
+        "Faire du forcing 'Cette offre expire vendredi'",
+        "Noyer sous les arguments techniques sans lien avec SES contraintes",
+        "Comparer son entreprise à des grands comptes",
+        "Minimiser ses objections budgétaires ('Oh c'est rien 10K€')",
+        "Critiquer implicitement ses choix précédents"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, on est déjà bien équipés là, je vois pas trop ce que tu pourrais nous proposer de plus franchement.",
+        "sous_texte": "Je suis satisfait, pourquoi tu me déranges ? Je pressens de la vente forcée.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa satisfaction, puis piquer la curiosité avec un bénéfice chiffré constaté chez un confrère similaire"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah tu m'appelles pour me vendre un truc en plus c'est ça ? Faut que je te dise, là c'est vraiment pas le moment, on a les tarifs matières qui flambent.",
+        "sous_texte": "Je suis en tension budgétaire, je me protège par avance. Prouve-moi que ça vaut le coup malgré le contexte.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie sur le contexte, puis recentrer sur l'économie/productivité que la solution peut générer précisément dans ce contexte tendu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Sur le papier ça a l'air bien, mais dans la vraie vie, en atelier, je suis pas sûr que ça change grand-chose pour nous.",
+        "sous_texte": "Je suis sceptique sur l'applicabilité réelle. J'ai déjà été déçu par des promesses non tenues (cf. GPAO 2019).",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander permission de creuser un problème opérationnel concret qu'il rencontre, puis montrer comment la solution s'applique spécifiquement à ce cas"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attends, nous on tourne déjà bien avec ce qu'on a. Si c'est pas cassé, pourquoi réparer ?",
+        "sous_texte": "Logique de prudence. Je ne veux pas prendre de risque inutile. Démontre-moi qu'il y a un vrai gap.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que l'existant fonctionne, puis identifier avec lui un irritant ou un potentiel d'amélioration qu'il n'avait pas quantifié"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Tu sais, j'ai déjà donné avec un logiciel GPAO en 2019, on l'a jamais rentabilisé. Alors les trucs supplémentaires...",
+        "sous_texte": "J'ai peur de refaire une erreur coûteuse. Ma crédibilité de dirigeant est en jeu. Rassure-moi sur le risque.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accuser réception de la cicatrice, distinguer cette situation (accompagnement, périmètre limité, ROI mesurable), proposer garantie ou phase test"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, vous dites tous ça. Chez Dupont Mécanique aussi on leur avait promis 20% de gain, au final c'était peanuts.",
+        "sous_texte": "Je teste ta solidité et ta connaissance terrain. Prouve-moi que tu ne racontes pas du vent comme les autres.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander ce qui n'a pas fonctionné chez Dupont, montrer les différences de contexte, donner références précises avec résultats vérifiables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "D'accord mais là vous me parlez de fonctionnalités, moi ce qui m'intéresse c'est : combien de temps ça me fait gagner par semaine concrètement ?",
+        "sous_texte": "Arrête le blabla commercial, donne-moi du tangible. Je parle en heures productives, pas en slides PowerPoint.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Traduire immédiatement les fonctionnalités en temps économisé sur SES processus, avec chiffrage réaliste"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, tout ça c'est très bien, mais faut que j'en parle à Sandrine qui gère ça maintenant. Je te rappelle.",
+        "sous_texte": "Je me défile poliment soit parce que je ne suis pas convaincu, soit parce que je veux éviter de dire non directement.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Challenger gentiment : clarifier son rôle décisionnel réel, proposer d'impliquer Sandrine maintenant, ou identifier la vraie objection cachée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais nous on a déjà récupéré des clients de Brunet qui a fermé, faut qu'on digère tout ça d'abord avant de se lancer dans autre chose.",
+        "sous_texte": "J'ai d'autres priorités business plus urgentes. C'est une vraie contrainte, pas un prétexte. Timing pas idéal.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la priorité, montrer comment la solution AIDE justement à gérer cette croissance/surcharge, ou convenir d'un timing plus adapté"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est combien ton truc ? Parce que là sur mon enveloppe annuelle il me reste pas grand-chose.",
+        "sous_texte": "Le prix va être le juge de paix. Si c'est trop cher, je coupe court. Justifie-moi l'investissement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Recentrer sur la valeur avant le prix, donner fourchette en la rattachant au ROI démontré, proposer étalement ou phase 1 réduite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ah non là c'est trop cher pour ce que c'est. Pour ce prix-là, je préfère investir dans une machine.",
+        "sous_texte": "Le ratio valeur perçue/prix ne passe pas. Ou c'est une tactique de négociation. Ou comparaison avec d'autres priorités tangibles.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Décomposer le coût (€/jour, €/pièce produite), comparer au coût de l'inefficacité actuelle, ou proposer périmètre réduit"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, je vais réfléchir, je te redis ça. De toute façon avec la certif ISO à préparer pour octobre, j'ai pas trop la tête à ça.",
+        "sous_texte": "Je botte en touche. Soit vraiment pas le bon timing, soit pas totalement convaincu et je préfère temporiser que refuser.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier si objection timing ou conviction, faire le lien avec la certif ISO (traçabilité, qualité), ancrer un prochain point avec date précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Fais-moi un devis, on verra. Mais je te préviens, c'est pas dit que je signe hein.",
+        "sous_texte": "Je te donne un os à ronger pour te faire partir gentiment, mais je ne m'engage à rien. Fais ton travail, je verrai après.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier les conditions de décision (quels critères ?, qui valide ?, quel délai ?), éviter le devis 'boîte noire', co-construire la proposition"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous êtes combien de fournisseurs à proposer ce genre de trucs ? Parce que j'ai eu Solutec la semaine dernière qui m'a parlé d'un machin similaire.",
+        "sous_texte": "Je mets la pression pour négocier, ou je cherche légitimement à comparer avant de décider. Je ne veux pas me faire avoir.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser la démarche de comparaison, différencier clairement votre approche/valeur, éviter le dénigrement, proposer grille de comparaison objective"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Dans 18 mois tu me garantis que c'est rentabilisé ? Parce que sinon moi je signe pas.",
+        "sous_texte": "J'ai besoin d'une sécurité tangible pour décider. Le ROI 18 mois est mon seuil mental. Engage-toi ou je passe.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Construire avec lui le calcul de ROI sur SES données, identifier les indicateurs de suivi, proposer clause de performance ou phase pilote"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute franchement, c'est intéressant ce que tu me racontes, mais là je peux pas me permettre de mettre 15 balles dans un truc dont je suis pas sûr à 100% que ça va marcher chez nous. J'ai déjà donné. Peut-être dans 6 mois quand on aura passé la certif et digéré les nouveaux clients. Voilà.",
+      "condition_declenchement": "Après argumentation complète, si le vendeur n'a pas suffisamment démontré le ROI concret, désécurisé sur le risque d'échec, ou ignoré le contexte de tension actuelle (certif ISO + intégration nouveaux clients)"
+    },
+    "pattern_escalade": "Bruno commence cordial mais sur ses gardes -> teste la solidité avec des questions directes -> verbalise son scepticisme lié à l'expérience GPAO -> demande du concret chiffré -> objection prix si valeur pas démontrée -> fermeture tactique ('je dois réfléchir/en parler') si pas convaincu -> objection finale de temporisation avec justification contexte si poussé dans ses retranchements",
+    "piege_classique": "Bruno peut donner l'impression d'être convaincu ('Ouais c'est pas bête') puis bloquer brutalement sur le prix ou le timing au closing. Son ton direct peut faire croire qu'il dit oui alors qu'il dit 'peut-être'. Il faut systématiquement clarifier engagement et critères de décision, sinon il demandera un devis 'pour voir' sans réelle intention d'achat immédiate."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur de services ou équipements pour l'industrie manufacturière",
+      "description": "Entreprise B2B proposant des solutions pour les PME industrielles dans l'usinage, la mécanique et la plasturgie, avec une offre échelonnée permettant montée en gamme"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou version premium d'une offre existante déjà souscrite par le client depuis 1 an",
+      "proposition_valeur": "Valeur ajoutée, optimisation, gain de performance ou de productivité par rapport à l'offre de base actuellement utilisée",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client existant depuis 1 an, satisfait de l'offre actuelle"
+      ],
+      "avantages_vs_concurrence": "Relation établie, confiance acquise, connaissance du contexte client"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser les techniques d'upselling et de cross-selling en contexte B2B industriel : identifier les besoins latents, valoriser l'offre premium, obtenir l'engagement pour un devis sans braquer un client satisfait",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Montée en gamme client existant — Usinage de précision",
+    "vous_etes": "Account Manager chez un fournisseur de solutions industrielles, en charge du portefeuille clients PME.",
+    "vous_vendez": "Une offre Premium complémentaire à la solution de base utilisée depuis 13 mois par votre client (prix et nature exacte à découvrir pendant l'appel selon ses besoins).",
+    "vous_appelez": "Bruno Mercier, 52 ans, gérant de Mercier Précision (42 salariés, usinage de précision). Pragmatique, méfiant sur le superflu, traumatisé par un investissement logiciel raté en 2019.",
+    "ce_que_vous_savez": [
+      "Client depuis 13 mois sur votre offre standard, globalement satisfait",
+      "A recommandé votre solution à un confrère",
+      "A eu un tour CN en panne 3 semaines en mars, créant des retards",
+      "Concurrent local en faillite = opportunité de récupérer des clients",
+      "Priorité actuelle : fiabiliser la production et tenir les délais"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis sur l'offre Premium en démontrant un ROI concret lié à SES problèmes actuels (fiabilité, retards).",
+    "vos_atouts": [
+      "Relation de confiance établie depuis plus d'un an",
+      "Connaissance de son contexte industriel et ses contraintes",
+      "Il vous a déjà recommandé = preuve de satisfaction",
+      "Offre Premium déjà testée chez des PME similaires avec gains mesurés"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:46:35Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14350,
+    "total_time_s": 123.6
+  }
+}

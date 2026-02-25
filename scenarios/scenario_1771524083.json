@@ -1,0 +1,339 @@
+{
+  "id": "scenario_1771524083",
+  "description_originale": "Le dirigeant / directeur technique d'une ESN ou intégrateur IT de 20-50 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : telecoms_it]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "ESN ou intégrateur IT de 20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant ou Directeur Technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution IT/logicielle destinée aux ESN et intégrateurs",
+      "proposition_valeur_presumee": "Optimisation ou amélioration des processus techniques/opérationnels pour ESN",
+      "fourchette_prix": "Prix perçu comme élevé par la cible, marge de négociation de 10% maximum",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé",
+        "Nécessité de défendre la valeur sans brader le prix"
+      ],
+      "implicites": [
+        "Risque de perdre la vente si le commercial cède trop facilement sur le prix",
+        "Difficulté à ancrer la valeur perçue face à l'objection prix",
+        "Challenge de maintenir sa posture de conseil tout en négociant",
+        "Besoin de structurer une stratégie de concession contrôlée"
+      ],
+      "probleme_racine": "Les commerciaux cèdent trop vite sur le prix sans avoir suffisamment valorisé l'offre ni exploré les véritables contraintes budgétaires du prospect"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix face à une objection tarifaire, négocier avec méthode en restant ferme sur la valeur tout en trouvant un compromis acceptable dans les limites de la marge de manœuvre autorisée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de solutions IT pour ESN/intégrateurs ou fournisseur de services B2B tech",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux ESN et intégrateurs IT, positionnée sur un segment à valeur ajoutée",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution IT (logiciel, plateforme, service) destinée à optimiser l'activité des ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, gain de productivité, optimisation des processus techniques ou de gestion pour les ESN",
+      "prix_indicatif": "Positionnement premium avec une marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Montant du prix ou fourchette tarifaire précise",
+        "Éléments de différenciation vs concurrence",
+        "Historique de la relation commerciale",
+        "Budget estimé du prospect",
+        "Références clients disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur Technique et Associé",
+      "entreprise": {
+        "nom": "Nexiom Solutions",
+        "secteur": "ESN spécialisée infrastructure cloud et cybersécurité",
+        "taille": "32 salariés (dont 24 consultants)",
+        "ca_approximatif": "3,2M€ avec une marge nette de 8% - sous pression"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les discours commerciaux depuis 20 ans de carrière",
+        "Pragmatique obsessionnel - veut du ROI chiffré, pas des promesses",
+        "Loyal mais calculateur - fidèle tant que le rapport qualité-prix tient"
+      ],
+      "motivations_profondes": [
+        "Prouver aux deux autres associés qu'il maîtrise les coûts mieux qu'eux",
+        "Éviter à tout prix une mauvaise décision qui minerait sa crédibilité",
+        "Pérenniser la boîte dans un marché ESN hyper-concurrentiel où les marges fondent",
+        "Secrètement fatigué de gérer l'opérationnel - cherche vraiment des outils qui simplifient"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec l'ERP il y a 3 ans (surcoût de 40%, projet raté)",
+        "Que ses consultants rejettent l'outil et qu'il perde la face",
+        "Manquer de trésorerie pour les salaires si l'investissement ne paie pas vite",
+        "Être perçu comme le naïf qui s'est fait embobiner par un beau discours"
+      ],
+      "rapport_aux_commerciaux": "Part du principe qu'ils gonflent toujours les prix de 20-30% et qu'il DOIT négocier pour être respecté. Teste systématiquement la solidité du vendeur en attaquant sur le prix dès le 2ème échange",
+      "style_communication": "analytique avec des pointes directives quand il sent une faille"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec un soupçon de lassitude 'encore un vendeur'. Attend de voir si vous connaissez VRAIMENT son métier avant de s'ouvrir",
+      "signaux_interet": [
+        "Commence à poser des questions techniques précises sur l'implémentation",
+        "Mentionne spontanément un problème interne concret ('Tiens, ça pourrait régler notre galère avec les timesheets justement')",
+        "Passe du vouvoiement au tutoiement si affinité technique",
+        "Son débit ralentit et il prend des notes papier (vieille école)"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles quand il sent le blabla marketing",
+        "Coupe sèchement avec 'Ouais OK mais concrètement ça me coûte combien et ça me rapporte quoi'",
+        "Regarde ostensiblement ses mails en parallèle (on l'entend taper au clavier)",
+        "Phrases assassines: 'Vous me prenez pour un jambon là' ou 'C'est le discours standard ça'"
+      ],
+      "tics_langage": [
+        "Dit 'Voilà' toutes les 3 phrases pour ponctuer",
+        "Utilise beaucoup 'Franchement' quand il veut être cash",
+        "Expression favorite: 'Faut pas me raconter de salades' quand il flaire l'entourloupe",
+        "Glisse des termes tech pour tester votre niveau: 'Et niveau scalabilité Docker?' alors que ce n'est pas le sujet"
+      ],
+      "debit_parole": "normal mais s'accélère quand il argumente sur le prix - signe qu'il est sur son terrain de prédilection",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant de couper. Doit sentir que c'est un dialogue, pas une démo PowerPoint. Déteste les vendeurs qui 'font leur show' sans écouter"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance +15% sur 2 ans mais marges en baisse. Vient de perdre un gros client (12% du CA) parti chez un pure player low-cost. Les 3 associés sont en tension sur la stratégie: industrialiser ou rester artisanal premium",
+      "priorites_actuelles": [
+        "Améliorer la productivité des consultants pour compenser la pression tarifaire",
+        "Réduire le temps admin/reporting qui bouffe 20% du temps facturable",
+        "Éviter d'embaucher un contrôleur de gestion (coût 55K€) si un outil peut faire le job",
+        "Préparer une levée de fonds dans 18 mois - besoin de process propres"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions il y a 18 mois: une gratuite (trop limitée, abandonnée après 4 mois) et une grosse suite (trop complexe, jamais adoptée par les équipes). Échaudé mais conscient qu'il FAUT une solution",
+      "fournisseur_actuel": "Bricolage maison: Excel + Trello + un vieux CRM qui plante. Coût caché énorme en temps perdu mais 'au moins c'est gratuit' (son argument interne)",
+      "budget_disponible": "A provisionné 25K€ sur l'exercice mais pourrait monter à 32K€ en grattant sur d'autres lignes. Au-delà, il faut l'aval des 2 autres associés et il perd la main"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler ROI concret avec son vocabulaire: 'X heures gagnées par consultant/mois = Y K€ de marge récupérée'",
+        "Citer un cas client ESN similaire (taille, secteur) avec chiffres vérifiables",
+        "Reconnaître frontalement que c'est un investissement et proposer une monte en charge progressive (phase pilote à moindre coût)",
+        "Montrer qu'on comprend SA contrainte spécifique: 'Vous avez raison, avec 8% de marge vous ne pouvez pas vous planter'",
+        "Proposer de parler avec un client existant (il appellera vraiment)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Brader de 15% dès la première objection (il se dira 'il me prenait vraiment pour un con avec son prix initial')",
+        "Dénigrer ses outils actuels avec condescendance ('Excel en 2025, sérieusement?')",
+        "Noyer le poisson sur le pricing avec des 'ça dépend' et refuser de donner un ordre de grandeur",
+        "Insister sur des fonctionnalités gadget (gamification, IA généralisée...) qu'il juge du bullshit marketing",
+        "Pousser pour un closing dans l'appel ('Je peux vous envoyer le contrat cet aprem') - il déteste la pression temporelle"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous préviens tout de suite, j'ai déjà regardé trois solutions dans ce genre-là ces 18 derniers mois... Franchement ça a été la cata à chaque fois. Donc faut vraiment que ce soit carré, hein.",
+        "sous_texte": "Je suis échaudé et fatigué. Prouve-moi rapidement que tu n'es pas comme les autres sinon je raccroche poliment dans 5 minutes",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître frontalement son expérience négative et demander ce qui a précisément dysfonctionné pour montrer qu'on comprend ses contraintes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Voilà, bon écoutez j'ai un COMEX dans 20 minutes là... Vous pouvez me faire la version courte? Qu'est-ce que vous vendez exactement et en quoi c'est pas comme tous les autres?",
+        "sous_texte": "Je teste ta capacité à synthétiser et à te différencier immédiatement. Si tu me sors le pitch PowerPoint standard, t'es grillé",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, proposer 3 minutes chrono avec UNE différence concrète, puis caler un vrai RDV"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attendez, niveau scalabilité Docker et intégration avec nos pipelines GitLab existants, ça tient la route votre truc? Parce que nous on a une stack technique assez pointue hein.",
+        "sous_texte": "Je teste si tu es un vrai technique ou juste un commercial qui récite. Si tu cafouilles sur ce point secondaire, je me méfierai sur tout le reste",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas bluffer. Soit confirmer avec précision, soit dire honnêtement qu'on vérifiera ce point technique avec l'équipe produit et revenir avec la réponse"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement on s'en sort pas trop mal avec notre système actuel... C'est vrai que c'est un peu artisanal, Excel plus Trello plus le CRM, mais au moins c'est gratuit et les gars savent s'en servir. Pourquoi je changerais?",
+        "sous_texte": "Je sais que mon système est pourri mais j'ai peur du changement et du coût. Fais-moi réaliser le coût caché de ma situation actuelle sans me faire la morale",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier le coût caché en temps perdu = marge perdue, avec SES chiffres (nombre de consultants × temps admin × taux de marge)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà, nous on a 32 personnes, on fait 3,2 millions de CA... Mais faut savoir qu'on est sur des marges serrées hein, 8% net. On a pas les moyens de se planter sur un investissement comme ça.",
+        "sous_texte": "Je te donne ma vraie contrainte budgétaire pour voir si tu es capable d'en tenir compte. Si tu minimises cette réalité, je ne te ferai jamais confiance",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte explicitement ('Avec 8% de marge vous avez raison, vous ne pouvez pas vous tromper') et construire l'argumentation autour du ROI mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Tout ça c'est bien joli sur le papier, mais concrètement ça me coûte combien et ça me rapporte quoi? Parce que des belles promesses j'en ai entendu plein avec l'ERP qu'on a implémenté y'a 3 ans. Résultat: 40% de surcoût et on s'en sert même pas.",
+        "sous_texte": "Je suis traumatisé par un échec passé et j'ai besoin de chiffres concrets et vérifiables, pas de belles slides. Prouve-moi que tu comprends ma prudence",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement l'échec passé, demander ce qui a dérapé, et proposer une approche opposée (pilote limité, jalons de validation)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais vous me dites pas combien ça coûte là... C'est quoi le tarif? Faut pas me raconter de salades, donnez-moi un ordre de grandeur.",
+        "sous_texte": "Je déteste qu'on élude le sujet du prix. Si tu continues à botter en touche je vais me braquer. Mais si tu donnes un prix trop tôt sans avoir ancré la valeur, je vais juste dire que c'est trop cher",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la légitimité de la question, donner une fourchette large conditionnée au périmètre, et recentrer sur la valeur: 'Entre X et Y selon le périmètre, mais avant de parler prix, laissez-moi vous montrer pourquoi nos clients estiment que...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de gains de productivité, d'heures gagnées... Mais vous avez des chiffres vérifiables? Parce que moi j'ai besoin de concret pour présenter ça à mes associés, pas juste 'en moyenne nos clients gagnent X%'.",
+        "sous_texte": "Je suis vraiment intéressé mais j'ai besoin de munitions pour convaincre en interne. Aide-moi à construire le business case avec MES données, pas des moyennes de marché",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Co-construire le calcul de ROI avec ses chiffres réels: nombre de consultants, temps admin actuel estimé, taux horaire facturable, et projeter le gain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon franchement là vous me sortez des fonctionnalités dont je vois pas l'intérêt... La gamification, l'IA machin chose... C'est du bullshit marketing ça. Moi ce que je veux c'est un truc simple et efficace, pas une usine à gaz.",
+        "sous_texte": "Tu es en train de perdre mon attention avec des features gadget. Recentre ton discours sur MES problèmes concrets ou je décroche",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Stopper immédiatement le discours features, s'excuser, et revenir aux 2-3 fonctions essentielles qui résolvent SON problème métier prioritaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK bon écoutez, ça m'intéresse globalement votre solution... Mais là franchement 38 000 euros c'est juste trop cher. J'ai pas le budget. Si vous pouvez pas descendre significativement, on va pas pouvoir avancer.",
+        "sous_texte": "Je suis vraiment intéressé mais le prix dépasse mon budget provisionné (25K€). Je teste ta marge de manœuvre et ta solidité. Si tu cèdes trop vite je vais me dire que ton prix initial était gonflé",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Reformuler la valeur, comprendre l'écart budgétaire précis, proposer des options (pilote réduit, phasage, retrait de périmètre) avant toute remise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais regardez, moi j'ai vu une solution concurrente à 22 000 euros qui fait à peu près la même chose... Expliquez-moi pourquoi je devrais payer 15 000 de plus chez vous?",
+        "sous_texte": "Soit j'ai vraiment vu un concurrent moins cher, soit c'est du bluff pour te faire baisser ton prix. Dans tous les cas je veux comprendre ce qui justifie ton premium pricing",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Poser des questions sur le concurrent (fonctionnalités précises, périmètre, coûts cachés) pour comprendre si c'est comparable, puis recentrer sur la valeur différenciante sans dénigrer"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, soyez honnête avec moi: c'est quoi votre vraie marge de manœuvre sur le prix? Parce que franchement je sais bien que vous avez gonflé votre tarif de 20-30% en comptant sur la négo...",
+        "sous_texte": "Je pars du principe que tous les commerciaux gonflent les prix. Si tu me dis 'aucune marge' je ne te croirai pas. Si tu cèdes de 20% direct, je me dirai que j'aurais pu gratter 30%",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Être transparent sur le fait qu'il y a une petite marge (10% max) mais qu'elle est liée à des contreparties précises (engagement durée, parrainage, etc). Donner un cadre clair"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je suis intéressé mais faut que je réfléchisse, que j'en parle aux deux autres associés... Envoyez-moi votre proposition par mail et je vous rappelle la semaine prochaine.",
+        "sous_texte": "Soit je suis vraiment en phase de réflexion et j'ai besoin de temps, soit c'est une sortie polie parce qu'un point me bloque (prix, doute sur l'adoption, etc) que je n'ose pas dire",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter la fuite. Creuser avec tact: 'Je comprends, mais dites-moi: si on met de côté la question du prix, est-ce que vous êtes convaincu que la solution répond à vos enjeux?' pour identifier le vrai frein"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement je suis pas sûr que mes consultants vont adhérer à un nouvel outil... On a déjà eu le coup avec le CRM, ça a été un échec cuisant. Ils vont me dire que c'est encore un truc qui va leur faire perdre du temps.",
+        "sous_texte": "J'ai vraiment peur de l'échec d'adoption et de perdre ma crédibilité. C'est un frein majeur même si la solution est bonne. Rassure-moi concrètement sur ce point ou je ne signerai pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un pilote limité avec 3-4 consultants volontaires, impliquer un champion interne, prévoir accompagnement au changement, et mettre des KPIs d'adoption mesurables"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon très bien, mais moi je veux parler avec un de vos clients qui a une structure similaire à la nôtre. Une ESN de 30-40 personnes qui a implémenté votre solution et qui peut me dire concrètement ce que ça a donné.",
+        "sous_texte": "Je ne fais confiance qu'aux retours terrain de pairs. Si tu refuses ou que tu me proposes un gros compte qui n'a rien à voir, c'est louche. Si tu acceptes, je vais vraiment appeler et poser des questions cash",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter immédiatement et proposer 2-3 références similaires avec contact direct. Préparer le client référent en amont pour qu'il soit disponible et authentique"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "OK donc on récapitule: vous êtes à 38 000, moi j'ai 25 000 de budget. Vous me proposez de descendre à 34 000 si je m'engage sur 2 ans... Franchement c'est encore trop cher. Faites-moi une vraie proposition à 28-29 000 et on signe. Sinon je vais voir ailleurs, voilà.",
+      "condition_declenchement": "Après avoir ancré la valeur et proposé une première concession conditionnelle. C'est le moment de vérité où il teste la vraie limite basse. Il est à 80% convaincu mais veut s'assurer d'avoir 'gagné' la négociation"
+    },
+    "pattern_escalade": "Stéphane commence courtois mais distant (phase test), devient plus ouvert quand il sent de la compétence technique et de l'honnêteté (phase découverte), puis durcit le ton sur le prix (phase négociation agressive) pour tester la solidité, avant de revenir à un mode plus collaboratif ('aidez-moi à trouver une solution') si le vendeur tient bon sans être rigide. Si le vendeur cède trop vite ou brade, Stéphane ne signe pas car il perd confiance dans la valeur initiale.",
+    "piege_classique": "Le vendeur panique face à l'objection prix et descend à 31-32K€ (dans sa marge de 10%) en pensant conclure. Stéphane accepte mais perd tout respect pour le commercial ('il m'avait vraiment pris pour un jambon') et devient un client difficile qui redemandera des concessions à chaque renouvellement. La vraie stratégie gagnante: tenir à 34K€ avec contreparties claires (engagement 2 ans, parrainage, périmètre précis), proposer un pilote limité à 18K€ pour 6 mois si vraiment blocage budgétaire, ou retirer des modules pour rentrer dans l'enveloppe. Montrer qu'on respecte son budget SANS brader la valeur."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de solutions IT pour ESN/intégrateurs ou fournisseur de services B2B tech",
+      "description": "Entreprise proposant des solutions destinées aux ESN et intégrateurs IT, positionnée sur un segment à valeur ajoutée"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution IT (logiciel, plateforme, service) destinée à optimiser l'activité des ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, gain de productivité, optimisation des processus techniques ou de gestion pour les ESN",
+      "prix": "Positionnement premium avec une marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix face à une objection tarifaire, négocier avec méthode en restant ferme sur la valeur tout en trouvant un compromis acceptable dans les limites de la marge de manœuvre autorisée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution ESN",
+    "vous_etes": "Commercial chez un éditeur de solutions IT pour ESN et intégrateurs, en phase finale de négociation.",
+    "vous_vendez": "Une solution logicielle d'optimisation opérationnelle pour ESN (gestion projet, timesheet, reporting). Prix proposé : 35 000€. Marge de manœuvre maximale : 10%.",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur Technique et associé chez Nexiom Solutions (ESN 32 personnes, 3,2M€ CA). Pragmatique, méfiant, obsédé par le ROI. A déjà vécu un échec ERP coûteux il y a 3 ans.",
+    "ce_que_vous_savez": [
+      "Il a testé 2 solutions similaires il y a 18 mois sans succès (gratuite trop limitée, grosse suite jamais adoptée)",
+      "Son bricolage actuel Excel + Trello + vieux CRM coûte cher en temps mais il défend le 'gratuit'",
+      "Ses marges sont sous pression (8%), il vient de perdre un gros client, besoin urgent de productivité",
+      "Il a provisionné 25K€ mais pourrait gratter jusqu'à 32K€ sans impliquer les autres associés",
+      "Il teste systématiquement les vendeurs sur le prix dès le 2ème échange pour voir s'ils tiennent"
+    ],
+    "votre_objectif": "Conclure la vente à un tarif entre 31 500€ (plancher absolu) et 35 000€ en ancrant la valeur sans céder trop vite.",
+    "vos_atouts": [
+      "Votre solution fait gagner en moyenne 15h/mois par consultant (= 45K€ de marge récupérée/an pour une équipe de 24)",
+      "Client référence : ESN Altexis (28 personnes, même profil) - ROI atteint en 7 mois, contactable",
+      "Déploiement progressif possible : phase pilote 3 mois sur 8 consultants avant généralisation",
+      "Vous comprenez vraiment ses contraintes métier et sa situation financière tendue"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:01:23Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16659,
+    "total_time_s": 166.9
+  }
+}

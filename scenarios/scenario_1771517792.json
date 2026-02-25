@@ -1,0 +1,383 @@
+{
+  "id": "scenario_1771517792",
+  "description_originale": "Vous avez présenté votre offre au directeur des achats groupe ou directeur après-vente d'une groupe de concessions multi-marques ou équipementier de 200+ salariés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : automobile]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats groupe ou directeur après-vente",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "direction générale",
+          "role": "validation finale potentielle"
+        },
+        {
+          "poste": "comité d'achat",
+          "role": "validation collégiale possible"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - lié au secteur automobile (fourniture, équipement, service ou logiciel)",
+      "proposition_valeur_presumee": "solution pour groupes de concessions multi-marques ou équipementiers automobiles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "absence de retour après présentation",
+        "délai de 2 semaines sans nouvelle",
+        "difficulté à relancer sans paraître insistant"
+      ],
+      "implicites": [
+        "manque de suivi structuré post-RDV",
+        "absence de jalons de décision définis lors du RDV initial",
+        "probable manque de création d'urgence lors de la présentation",
+        "difficulté à identifier les véritables décideurs et processus de validation",
+        "peur du commercial de paraître trop insistant et de perdre l'opportunité",
+        "manque de techniques pour contourner le silence radio"
+      ],
+      "probleme_racine": "absence de cadrage du processus de décision et des prochaines étapes lors du RDV initial, couplée à une difficulté à gérer le silence radio sans compromettre la relation commerciale"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de relance efficaces après silence radio, savoir débloquer un processus de décision stagnant, identifier les freins réels sans être intrusif, et recadrer les prochaines étapes concrètes",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B secteur automobile",
+      "entreprise_description": "entreprise proposant des solutions aux groupes de concessions automobiles multi-marques et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution B2B destinée aux directeurs des achats ou après-vente de groupes automobiles de taille significative",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le produit/service (optimisation des coûts, amélioration de la qualité de service, gains de productivité, conformité réglementaire)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre présentée",
+        "contenu de la présentation initiale",
+        "engagements pris lors du RDV (qui devait rappeler, quand, pourquoi)",
+        "signaux d'intérêt ou freins exprimés lors du RDV",
+        "budget et timing décisionnel du prospect",
+        "concurrents identifiés en présence",
+        "raison réelle du silence (oubli, attente validation interne, comparaison concurrence, désintérêt)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Masseron",
+      "age": 52,
+      "poste": "Directeur Achats Groupe",
+      "entreprise": {
+        "nom": "Groupe Horizon Auto",
+        "secteur": "Distribution automobile multi-marques",
+        "taille": "320 salariés répartis sur 9 concessions",
+        "ca_approximatif": "145M€ de CA consolidé"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les promesses commerciales après 15 ans d'expérience achats",
+        "Perfectionniste paralysant qui reporte les décisions jusqu'à avoir 'tous les éléments'",
+        "Loyauté excessive envers fournisseurs historiques même quand ils sous-performent"
+      ],
+      "motivations_profondes": [
+        "Éviter à tout prix une erreur qui entacherait sa réputation auprès de la DG",
+        "Prouver sa valeur ajoutée après restructuration du groupe (fusion récente)",
+        "Partir en préretraite dans 3 ans sans avoir fait de vagues",
+        "Protéger son périmètre face au directeur après-vente qui empiète sur ses décisions"
+      ],
+      "peurs_freins": [
+        "Risque de disruption opérationnelle pendant l'implémentation d'une nouvelle solution",
+        "Être tenu responsable si le changement de fournisseur génère des surcoûts cachés",
+        "Devoir justifier longuement son choix devant le comité de direction qui le trouve trop prudent",
+        "Que ses équipes résistent au changement et le mettent en difficulté",
+        "Perdre la face si le nouveau prestataire ne tient pas ses engagements contractuels"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Les voit comme nécessaires mais chronophages. A développé une allergie aux relances insistantes suite à une mauvaise expérience avec un éditeur de logiciel en 2019. Apprécie quand on le challenge avec des données chiffrées, déteste le baratin commercial.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais réservé. Commence systématiquement par 'Bon, je n'ai pas beaucoup de temps là' même quand c'est faux. Vouvoiement strict même après plusieurs échanges.",
+      "signaux_interet": [
+        "Prend des notes manuscrites détaillées sur un cahier Moleskine noir",
+        "Pose des questions très précises sur les délais de déploiement et ROI",
+        "Mentionne spontanément des contraintes internes ('il faudrait que je voie avec le DAF')",
+        "Demande des références clients dans son secteur précis",
+        "Accepte un second RDV avec d'autres parties prenantes"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou ses e-mails sur son smartphone",
+        "Répond 'oui, oui' de manière répétitive sans poser de questions",
+        "Dit 'on verra ça' ou 'je vous tiens au courant' sans fixer de date précise",
+        "Invoque un budget déjà alloué ailleurs pour l'année en cours",
+        "Coupe court avec 'écoutez, envoyez-moi tout ça par mail, je regarderai'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il va objecter",
+        "Utilise fréquemment 'concrètement' pour ramener aux détails pratiques",
+        "Dit 'je ne vous cache pas que...' avant d'exprimer une réserve",
+        "Emploie 'on va se dire les choses franchement' quand il est sceptique",
+        "Ponctue avec 'voilà voilà' pour clore un sujet qui ne l'intéresse pas"
+      ],
+      "debit_parole": "normal, mais s'accélère quand il est contrarié ou pressé",
+      "tolerance_monologue_vendeur": "Très faible. Coupe au bout de 90 secondes maximum si pas de questions ouvertes. Attend qu'on lui demande son avis plutôt que d'écouter passivement. Veut être consulté, pas convaincu."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Post-fusion délicate entre deux groupes de concessions (fin 2023). Harmonisation des processus achats en cours avec résistances terrain. Pression DG pour réduire les coûts achats de 8% sur l'exercice. Nouveau DAF arrivé il y a 6 mois qui challenge tous les postes de dépenses. Climat social tendu avec les chefs d'atelier qui craignent les changements.",
+      "priorites_actuelles": [
+        "Finaliser l'appel d'offres véhicules utilitaires pour la flotte (deadline fin de mois)",
+        "Renégocier contrat pièces détachées avec fournisseur historique qui expire en juin",
+        "Gérer crise qualité sur fourniture de pneumatiques avec réclamations clients",
+        "Préparer budget achats 2025 à présenter en comité direction début avril"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 4 ans une solution concurrent chez son ancien employeur. Déploiement chaotique, promesses non tenues sur les délais d'intégration, a dû gérer la crise pendant 8 mois. Depuis, très prudent sur les changements de fournisseurs stratégiques. Reste marqué par cette expérience.",
+      "fournisseur_actuel": "Partenariat depuis 11 ans avec prestataire historique (PME régionale). Relation personnelle forte avec le dirigeant (déjeuners trimestriels). Service correct mais sans innovation. Prix devenus moins compétitifs mais sécurité de la routine. Clause de résiliation 6 mois, ce qui complique tout changement rapide.",
+      "budget_disponible": "Ligne budgétaire existante de 180K€/an allouée au fournisseur actuel. Tout dépassement nécessite validation DAF + DG. Budget additionnel quasi-impossible à obtenir avant 2025. Possibilité de réallocation si économies démontrées ailleurs, mais processus lourd (comité achats trimestriel)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Benchmark chiffré avec 3 références clients dans groupes automobiles comparables",
+        "Étude de cas détaillée montrant ROI atteint en moins de 12 mois avec preuves",
+        "Proposition de phase pilote limitée à 2 concessions pour tester sans risque",
+        "Accompagnement change management inclus pour faciliter adoption équipes",
+        "Garantie contractuelle de performance avec clause de sortie si objectifs non atteints",
+        "Démonstration qu'on comprend ses contraintes de timing (fusion, budget) sans forcer",
+        "Connexion avec son réseau professionnel (ancien collègue, membre réseau achats auto)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Insister lourdement par téléphone sans apporter de nouvelles informations pertinentes",
+        "Critiquer frontalement son fournisseur actuel (loyauté personnelle)",
+        "Présenter comme 'urgent' ou 'opportunité limitée dans le temps' (déteste la pression commerciale)",
+        "Impliquer sa hiérarchie sans son accord préalable (contournement perçu comme manipulation)",
+        "Minimiser la complexité du déploiement ou promettre des délais irréalistes",
+        "Envoyer des relances génériques impersonnelles type mailing automatisé",
+        "Ne pas tenir compte du contexte post-fusion et des priorités qu'il a explicitement mentionnées",
+        "Le forcer à se justifier sur son silence (attitude défensive garantie)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je ne vous cache pas que là en ce moment c'est compliqué, j'ai l'appel d'offres véhicules utilitaires qui doit partir fin de mois, je suis vraiment sous l'eau...",
+        "sous_texte": "Je teste si vous allez respecter mon temps ou insister lourdement. Je cherche aussi une excuse socialement acceptable pour couper court sans être impoli.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte temps, proposer un échange ultra-bref (2 minutes chrono) centré sur UNE question précise liée à SA priorité actuelle"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui, je me souviens de votre présentation... Bon, je vous avoue qu'on n'a pas trop avancé de notre côté là-dessus. Voilà voilà.",
+        "sous_texte": "Je suis gêné de ne pas avoir donné suite, mais je ne vais pas vous expliquer pourquoi. J'espère que vous allez comprendre l'implicite et raccrocher poliment.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Dédramatiser le silence, proposer une hypothèse bienveillante sur la raison ('Je me doute que la période post-fusion vous accapare complètement'), puis poser UNE question de clarification"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Je suis en réunion là dans 5 minutes, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis débordé ET je ne me souviens peut-être plus très bien de votre offre. Prouvez-moi en 30 secondes que ça vaut la peine de vous rappeler.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rappel ultra-synthétique (10 mots max) du bénéfice clé discuté au RDV, puis proposition de rappel à SON agenda plutôt que de forcer maintenant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez franchement, on a déjà un fournisseur avec qui ça se passe bien, on travaille ensemble depuis plus de 10 ans, je ne vois pas trop l'intérêt de changer là maintenant...",
+        "sous_texte": "Je suis loyal envers mon prestataire historique, il y a une dimension relationnelle forte. Changer = risque + effort + justification interne. Convainquez-moi que le jeu en vaut vraiment la chandelle.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS attaquer le fournisseur actuel. Reconnaître la valeur de la stabilité. Explorer ce qui pourrait justifier une ÉVOLUTION (pas remplacement) : nouvelles contraintes post-fusion, objectifs coûts 2024, innovation manquante"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous me parlez de ROI en 12 mois, mais moi j'ai déjà vécu ça avec [concurrent] il y a 4 ans, et le déploiement a duré 18 mois avec des bugs à n'en plus finir. J'ai passé 6 mois en mode pompier.",
+        "sous_texte": "J'ai été échaudé. Votre promesse réactive un traumatisme professionnel. Je ne vous fais pas confiance tant que vous n'aurez pas prouvé que vous êtes différent et que vous comprenez mes craintes légitimes.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'expérience passée (qu'est-ce qui a dérapé précisément), reconnaître la légitimité de la méfiance, proposer des garde-fous contractuels CONCRETS (pilote, jalons, clause sortie, accompagnement dédié)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je ne vous cache pas que là, tout dépassement budgétaire doit passer par le DAF qui est arrivé il y a 6 mois et qui challenge tout. C'est devenu hyper compliqué de faire valider quoi que ce soit.",
+        "sous_texte": "Je n'ai plus le pouvoir de décision que j'avais avant. Le processus s'est alourdi. Je ne veux pas me mettre en porte-à-faux avec ma hiérarchie sur un sujet non prioritaire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre le nouveau processus décisionnel, identifier les critères du DAF, proposer des éléments de dossier robustes (business case chiffré) pour faciliter SA défense interne du projet"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, je vais être transparent avec vous : on est en pleine fusion, on harmonise les process, les chefs d'atelier sont déjà sur les dents... Rajouter un changement de fournisseur maintenant, c'est chercher les problèmes.",
+        "sous_texte": "Le timing est catastrophique. J'ai déjà suffisamment de chantiers de transformation à gérer. Je ne veux pas un projet de plus qui va générer de la résistance terrain et me compliquer la vie.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider que le timing actuel n'est pas optimal. Explorer un calendrier différé (pilote Q3/Q4 2024 ou 2025) ou un angle différent : comment VOTRE solution pourrait FACILITER l'harmonisation post-fusion plutôt que l'entraver"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, j'ai présenté vos éléments au comité achats la semaine dernière, et globalement ils trouvent que c'est intéressant, mais qu'on n'a pas assez de recul sur votre boîte. Vous êtes qui exactement par rapport à [concurrent leader] ?",
+        "sous_texte": "Mes pairs m'ont fait des remarques qui me confortent dans ma prudence. Je cherche des munitions pour vous écarter poliment OU pour vous défendre si vous m'en donnez. Je veux aussi comprendre le risque fournisseur.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander qui était présent au comité et leurs réserves PRÉCISES. Apporter des preuves tangibles (ancienneté, références clients, parts de marché, solidité financière). Proposer une rencontre avec décideurs-clés du comité."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, le déploiement sur nos 9 concessions, ça prend combien de temps réellement ? Parce que vous me parlez de 6 mois, mais dans la réalité terrain avec nos contraintes, je suis pas sûr que ce soit tenable.",
+        "sous_texte": "J'ai appris à multiplier par 2 les délais annoncés par les commerciaux. Je teste votre honnêteté et votre connaissance réelle des contraintes de mon métier. Si vous minimisez, je vous élimine mentalement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être transparent sur les variables qui peuvent allonger le délai (disponibilité équipes, complexité SI, résistance au changement). Proposer un planning réaliste par phase avec ses dépendances. Montrer qu'on SAIT ce qui peut dérailler."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vos références clients c'est bien, mais vous en avez dans des groupes multi-marques comme nous avec minimum 8 concessions ? Parce que la complexité c'est pas la même quand vous avez 2-3 sites...",
+        "sous_texte": "Je cherche la faille dans votre discours. Je veux des preuves que vous avez géré MA complexité spécifique, pas juste des PMI mono-site. Sinon je considère que vous n'avez pas l'expérience suffisante.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Si vous avez les références : détails précis (nombre sites, marques, défis rencontrés). Si vous ne les avez pas : transparence totale + proposition de co-construction d'un pilote adapté à SA complexité + mise en relation avec client le plus proche"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans 6 mois ça marche pas comme prévu, je fais comment ? Mon contrat actuel a une clause de préavis de 6 mois, je peux pas me permettre de me retrouver coincé entre deux chaises.",
+        "sous_texte": "Je visualise le scénario catastrophe où je suis coincé avec vous qui ne performez pas ET impossible de revenir en arrière rapidement. Cette peur bloque ma décision. Donnez-moi des filets de sécurité contractuels.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un pilote parallèle (2 concessions) sans rupture du contrat actuel. Inclure clause de sortie facilitée avec critères de performance mesurables. Engagement sur phase de transition réversible."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon on va se dire les choses franchement : votre prix est 15% plus élevé que ce qu'on paie actuellement. Même si vous m'annoncez des économies indirectes, concrètement je dois présenter un surcoût en comité direction, et là c'est mort.",
+        "sous_texte": "Le prix est un vrai frein, pas juste une négociation. Je dois défendre ce dossier en interne face à un DAF et une DG qui challengent tous les coûts. Si vous ne m'aidez pas à construire une justification béton, je ne pourrai pas vous choisir.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Co-construire le TCO complet (coûts directs + indirects + coûts évités). Quantifier les économies induites ailleurs (temps équipes, erreurs, litiges). Aider à bâtir l'argumentaire chiffré pour SON comité de direction avec simulation sur 3 ans."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de conduite du changement incluse, mais concrètement c'est quoi ? Parce que j'ai déjà eu des promesses d'accompagnement qui se résumaient à une demi-journée de formation PowerPoint...",
+        "sous_texte": "J'ai besoin de comprendre PRÉCISÉMENT ce que vous mettez derrière les mots. L'adoption terrain est mon cauchemar numéro 1. Si l'accompagnement est cosmétique, mes équipes vont résister et je vais morfler.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler jour par jour le plan d'accompagnement (ateliers terrain, formation pratique, hotline dédiée, coaching managers, support post-déploiement). Montrer des livrables concrets. Proposer de rencontrer le responsable accompagnement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant tout ça, mais je dois en discuter avec plusieurs personnes en interne... Le directeur après-vente, le DAF, peut-être la DG. Laissez-moi le temps de faire mon travail de maturation, je reviens vers vous.",
+        "sous_texte": "Je ne veux pas m'engager maintenant. Je me réfugie derrière le collectif pour ne pas prendre position. Soit je suis vraiment dans un processus de validation complexe, soit c'est un moyen poli de vous mettre en stand-by indéfini.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Clarifier le processus réel : qui doit valider quoi, dans quel ordre, selon quels critères, avec quel timing. Proposer de FACILITER ces validations (présentation au DAF, éléments pour la DG) plutôt que d'attendre passivement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je ne vous cache pas que j'ai aussi une proposition de [concurrent] sur mon bureau, et je dois comparer sérieusement avant de prendre une décision. Donnez-moi encore 3 semaines pour analyser tout ça.",
+        "sous_texte": "Soit c'est vrai et je veux créer une mise en concurrence pour négocier. Soit c'est faux et c'est un prétexte pour gagner du temps sans vous froisser. Dans les deux cas, je ne veux pas être pressé.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider qu'une comparaison est légitime. Proposer de clarifier les critères de choix prioritaires pour LUI. Offrir un tableau comparatif objectif qu'il pourra utiliser. Fixer un point d'étape dans 10 jours plutôt que 3 semaines."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi tout ça par mail récapitulatif avec le détail des coûts et le planning, je vais étudier tranquillement et je vous rappelle si ça m'intéresse, d'accord ?",
+        "sous_texte": "Je veux clore cet échange téléphonique qui me prend du temps. L'envoi du mail me donne une porte de sortie confortable. 'Je vous rappelle' = probabilité 20% que je le fasse vraiment. Je reprends le contrôle du timing.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi du mail MAIS fixer un micro-engagement concret (point téléphonique 10 min jeudi prochain à 14h pour recueillir ses premières réactions sur le document). Ne pas lâcher sans jalonnement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà, je vais réfléchir à tout ça. De toute façon, notre budget 2024 est déjà bouclé, donc au mieux ça serait pour 2025. On en reparle en septembre peut-être.",
+        "sous_texte": "Je vous donne une objection budgétaire qui reporte à très long terme. C'est peut-être vrai (budget figé) ou peut-être un moyen de vous écarter sans conflit. Je teste si vous allez accepter ce délai ou trouver un angle pour maintenir le lien.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la contrainte budgétaire annuelle. Proposer un pilote fin 2024 (sur budget existant via réallocation) pour prouver la valeur AVANT le budget 2025. Fixer un RDV en juin pour préparer l'arbitrage budgétaire septembre."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement, là je pars à la Guadeloupe en congés dans 10 jours pour 3 semaines, donc de toute façon je ne pourrai rien avancer avant mi-mai. On se rappelle après, tranquillement.",
+        "sous_texte": "C'est peut-être vrai (congés) ou un prétexte. Dans tous les cas, je veux couper court à la pression. Je teste si vous allez respecter ce délai ou insister malgré tout, ce qui me ferait définitivement fuir.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter totalement les congés (crédibilité). Proposer de préparer un dossier de synthèse pour son retour avec TOUS les éléments qu'il a demandés. Fixer un RDV dès son retour (mi-mai) pour un point décisionnel structuré."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez franchement, je ne suis pas sûr que ce soit le bon moment pour nous. On a tellement de chantiers en cours avec la fusion, je préfère stabiliser tout ça avant de me lancer dans un changement de cette ampleur. Je garde vos coordonnées, et si les choses évoluent de notre côté, je vous recontacte, d'accord ? Mais là, concrètement, je ne peux rien vous promettre.",
+      "condition_declenchement": "Se déclenche si le vendeur n'a pas réussi à : 1) transformer les contraintes actuelles en raisons d'agir (fusion = opportunité d'harmoniser avec bonne solution dès le départ), 2) construire des jalons concrets avec dates et engagements mutuels, 3) proposer un pilote sécurisant sans engagement lourd, 4) démontrer que le statu quo a un coût supérieur au changement. Thierry se réfugie alors dans l'attentisme prudent, sa zone de confort psychologique."
+    },
+    "pattern_escalade": "Thierry démarre courtois mais distant (barrière temps/priorités). Si le vendeur respecte son temps et apporte de la valeur, il s'ouvre progressivement et verbalise ses vraies craintes (expérience passée négative, complexité fusion, validation interne). Si le vendeur propose des solutions concrètes à SES problèmes réels, il devient collaboratif et aide à construire le dossier. MAIS si le vendeur insiste sans apporter de nouveaux éléments, minimise ses contraintes, ou pousse à la décision, Thierry se referme brutalement et utilise des objections dilatoires (timing, budget, réflexion) pour couper court définitivement. Le point de bascule : sentiment d'être compris ET sécurisé vs sentiment d'être poussé à l'achat.",
+    "piege_classique": "Prendre au pied de la lettre 'envoyez-moi tout par mail' ou 'je vous rappelle' et attendre passivement. Thierry ne rappellera pas spontanément (surbooké + évitement décisionnel). Le vendeur doit JALONNER avec des micro-engagements concrets ('je vous envoie le mail ce soir, on se fait un point téléphonique vendredi 10h pour vos premières questions ?'). Autre piège : critiquer son fournisseur actuel ou forcer sur l'urgence, ce qui active sa méfiance et sa loyauté défensive. Enfin, ne pas identifier et adresser le VRAI décideur collectif (DAF, comité achats) condamne le dossier même si Thierry est intellectuellement convaincu."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B secteur automobile",
+      "description": "entreprise proposant des solutions aux groupes de concessions automobiles multi-marques et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution B2B destinée aux directeurs des achats ou après-vente de groupes automobiles de taille significative",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le produit/service (optimisation des coûts, amélioration de la qualité de service, gains de productivité, conformité réglementaire)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "maîtriser les techniques de relance efficaces après silence radio, savoir débloquer un processus de décision stagnant, identifier les freins réels sans être intrusif, et recadrer les prochaines étapes concrètes",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance après silence radio — Directeur Achats Groupe automobile",
+    "vous_etes": "Commercial B2B dans le secteur automobile, vous avez rencontré Thierry Masseron il y a 2 semaines pour lui présenter votre solution d'optimisation achats.",
+    "vous_vendez": "Une solution d'optimisation des achats pour groupes de concessions multi-marques (budget type : 150-200K€/an).",
+    "vous_appelez": "Thierry Masseron, 52 ans, Directeur Achats Groupe chez Horizon Auto (9 concessions, 320 salariés). Profil analytique, méfiant, perfectionniste. Fidèle à ses fournisseurs historiques depuis 11 ans. Marqué par un déploiement raté il y a 4 ans.",
+    "ce_que_vous_savez": [
+      "Il a pris des notes détaillées pendant votre présentation et posé des questions précises sur le ROI",
+      "Son groupe sort d'une fusion compliquée fin 2023, avec pression DG pour réduire les coûts de 8%",
+      "Il doit finaliser un appel d'offres véhicules utilitaires (deadline fin de mois) et renégocier un contrat pièces détachées",
+      "Il gère une crise qualité pneumatiques avec réclamations clients",
+      "Il déteste les relances insistantes depuis une mauvaise expérience en 2019"
+    ],
+    "votre_objectif": "Identifier le vrai frein derrière son silence, recadrer des prochaines étapes concrètes avec dates, sans le braquer ni paraître insistant.",
+    "vos_atouts": [
+      "Vous avez 3 références clients dans des groupes automobiles comparables",
+      "Vous pouvez proposer une phase pilote sur 2 concessions pour limiter le risque",
+      "Votre solution inclut un accompagnement change management",
+      "Vous avez une étude de cas avec ROI démontré en moins de 12 mois"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:16:32Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18473,
+    "total_time_s": 190.5
+  }
+}

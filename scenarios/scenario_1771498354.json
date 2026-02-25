@@ -1,0 +1,330 @@
+{
+  "id": "scenario_1771498354",
+  "description_originale": "a\n[Secteur : tech]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "tech",
+      "taille_entreprise": "NON_SPECIFIE",
+      "interlocuteur_principal": {
+        "poste": "NON_SPECIFIE",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [],
+      "implicites": [
+        "Difficulté à établir un premier contact en prospection froide",
+        "Manque de méthodologie pour qualifier rapidement les prospects",
+        "Incapacité à créer de l'intérêt dès les premières secondes"
+      ],
+      "probleme_racine": "Absence de structure et d'accroche percutante pour transformer un appel froid en opportunité qualifiée dans le secteur tech"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à réussir leurs appels de prospection froide dans le secteur tech",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "tech",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_visio",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "faible",
+      "elements_manquants_critiques": [
+        "Nature du produit/service vendu",
+        "Profil précis de l'interlocuteur cible",
+        "Problèmes commerciaux spécifiques rencontrés",
+        "Proposition de valeur de l'offre",
+        "Taille et zone géographique des prospects",
+        "Budget et cycle de vente typique",
+        "Nom et positionnement de l'entreprise"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Duteil",
+      "age": 47,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Nexalys Solutions",
+        "secteur": "Édition de logiciels SaaS pour la logistique",
+        "taille": "130 salariés",
+        "ca_approximatif": "18M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Obsédé par le ROI mesurable",
+        "Impatient avec les discours marketings"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il peut optimiser les coûts mieux que son prédécesseur",
+        "Éviter de se faire piéger par des promesses non tenues",
+        "Protéger son temps surchargé comme un bien précieux"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un énième vendeur qui ne comprend rien à son métier",
+        "Se faire reprocher un mauvais investissement par le COMEX",
+        "Déstabiliser ses équipes avec un changement inutile"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. A vécu 3 déceptions majeures avec des prestataires tech qui ont sur-promis. Teste systématiquement la crédibilité dans les 30 premières secondes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'agacement préventif. Phrases courtes. Attend qu'on aille droit au but.",
+      "signaux_interet": [
+        "Pose une question chiffrée précise ('Concrètement, ça donne quoi en jours/homme économisés?')",
+        "Mentionne un problème opérationnel réel de son équipe",
+        "Demande des références dans son secteur exact",
+        "Son débit ralentit légèrement et il prend des notes"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès la présentation",
+        "Coupe avec 'Écoutez, j'ai pas trop le temps là...'",
+        "Répond par des monosyllabes ('OK', 'Mmh', 'D'accord')",
+        "Lance un 'Envoyez-moi un mail' alors qu'on vient de commencer"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...'",
+        "Utilise 'concrètement' comme mantra",
+        "Dit 'Ouais enfin...' quand il est sceptique",
+        "Ponctue ses doutes par 'Mouais, faut voir'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, il coupe ou décroche mentalement. Déteste les pitchs formatés."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance rapide (+ 40% en 2 ans) avec des douleurs d'organisation. L'équipe commerciale est passée de 8 à 22 personnes, certains juniors sont noyés. Le DAF met la pression sur tous les budgets formation.",
+      "priorites_actuelles": [
+        "Réduire le temps de montée en compétence des nouveaux commerciaux",
+        "Améliorer le taux de transformation des démos produit (actuellement 18%)",
+        "Trouver un moyen de qualifier les leads avant de mobiliser les commerciaux seniors"
+      ],
+      "experience_avec_offre_similaire": "A fait appel à un cabinet de conseil il y a 18 mois pour refondre le process commercial. Résultat décevant : beaucoup de slides, peu d'impact terrain. L'équipe a trouvé ça théorique.",
+      "fournisseur_actuel": "Formations internes assurées par le Head of Sales, mais manque de temps et de méthodologie structurée. Utilise aussi LinkedIn Learning en e-learning libre.",
+      "budget_disponible": "Entre 15K et 30K€ pour une action formation, mais doit être justifié devant le DAF avec des KPIs clairs. Budget 2024 déjà engagé à 60%."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un chiffre précis, un cas client dans l'édition SaaS",
+        "Montrer qu'on a compris SA réalité (ex: 'Vous avez recruté massivement, vos juniors rament sur la prospection froide, c'est ça?')",
+        "Proposer un audit gratuit de 2-3 appels de ses commerciaux pour diagnostiquer avant de vendre",
+        "Parler durée courte et résultats mesurables ('En 2 jours, vos commerciaux auront une grille de qualification qu'ils utiliseront dès le lundi')"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser le jargon formation ('Nous co-construisons un parcours apprenant...')",
+        "Ne pas connaître son secteur ('Vous faites quoi exactement?')",
+        "Proposer un cycle long ou certifiant (il veut de l'opérationnel immédiat)",
+        "Être intrusif sur son agenda ('Vous avez 45 minutes jeudi?')",
+        "Parler méthode propriétaire brevetée sans preuve concrète"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion dans 5 minutes là, c'est pour quoi exactement ?",
+        "sous_texte": "Prouve-moi en 10 secondes que tu ne vas pas me faire perdre mon temps, sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner l'objectif ultra-précis + le bénéfice chiffré + proposer de rappeler à un meilleur moment"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais d'accord, mais concrètement vous faites quoi ? Parce que des formations commerciales on en reçoit 15 propositions par semaine...",
+        "sous_texte": "Différencie-toi immédiatement ou tu es déjà dans la pile 'à jeter' avec les 14 autres",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Nommer SON problème spécifique (croissance rapide, juniors perdus en prospection froide) avec un cas client édition logicielle précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Mmh... Envoyez-moi un mail, je regarderai ça.",
+        "sous_texte": "Je veux te faire disparaître poliment sans m'engager à quoi que ce soit",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la tactique avec humour + poser UNE question de qualification pour éveiller la curiosité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà essayé avec un cabinet de conseil il y a 18 mois. Ils nous ont pondu un process de 40 pages, personne s'en sert. Donc bon...",
+        "sous_texte": "J'ai été déçu et je ne veux pas revivre la même déception. Prouve-moi que tu es différent",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa déception + expliquer COMMENT on évite l'écueil (opérationnel immédiat, pas de slides, testing terrain dès J+1)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "OK mais vous avez déjà bossé avec des éditeurs SaaS logistique ? Parce que notre métier c'est très spécifique hein...",
+        "sous_texte": "Je vérifie si tu connais vraiment mon secteur ou si tu vends la même soupe à tout le monde",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 1-2 clients dans l'édition SaaS avec cycle de vente similaire + montrer compréhension des spécificités (cycle moyen, décideurs multiples, démo produit clé)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais, faut voir... Nos commerciaux sont déjà surchargés, je vais pas leur rajouter 3 jours de formation en plus.",
+        "sous_texte": "J'ai peur que la formation soit une charge supplémentaire plutôt qu'une solution",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler en bénéfice temps : '2 jours qui leur feront gagner 2h par semaine sur la qualification = 100h/an récupérées'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, vous me garantissez quoi comme résultat ? Parce que là j'entends beaucoup de promesses...",
+        "sous_texte": "Je veux des chiffres, des KPIs, du mesurable. Les belles paroles ne m'intéressent pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner des KPIs suivis chez clients similaires (ex: +25% de taux de prise de RDV, -30% temps de qualification) + proposer mesure avant/après"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est intéressant, mais là on a déjà bouclé 60% du budget formation 2024. Faudrait voir ça pour 2025.",
+        "sous_texte": "L'objection budget classique, mais peut-être sincère ou peut-être une façon de gagner du temps pour réfléchir",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner la douleur business : 'Si vos juniors continuent à galérer 6 mois de plus, ça vous coûte combien en deals ratés ?' + explorer budget Q1 2025"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais pourquoi je ferais appel à vous plutôt qu'à mes managers commerciaux qui connaissent le produit par cœur ?",
+        "sous_texte": "Justifie ton existence et ta valeur ajoutée par rapport à une solution interne gratuite",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la légitimité des managers + montrer complémentarité (méthodologie structurée, regard externe, libération du temps des managers)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin 2 jours c'est quand même court pour vraiment transformer des commerciaux, non ?",
+        "sous_texte": "Je suis sceptique sur l'efficacité d'un format court, j'ai l'impression que c'est insuffisant",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer la logique : 2 jours intensifs + mise en pratique immédiate > 5 jours théoriques sans application. Citer retention/application"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle au Head of Sales et au DAF avant. Je peux pas décider ça tout seul.",
+        "sous_texte": "Objection process légitime, mais peut aussi être une façon de temporiser ou de vérifier mon intérêt réel",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider le process + proposer de préparer un document de synthèse avec ROI pour faciliter la discussion interne + suggérer conf call à 3"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est tentant mais là j'ai vraiment 150 priorités. Je vous recontacte quand j'ai un peu d'air, OK ?",
+        "sous_texte": "Je suis sincèrement intéressé mais débordé. Ou alors c'est une tactique pour te faire partir gentiment",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Tester la sincérité : 'Je comprends. Entre nous, c'est une vraie priorité pour vous ou ça peut attendre 3-6 mois ?' + ancrer date précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, mais avant je veux voir un exemple concret de ce que vous faites. Vous avez un module à me montrer ou un truc comme ça ?",
+        "sous_texte": "Je suis intéressé mais méfiant, j'ai besoin de voir la qualité avant de m'engager",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer audit gratuit de 2-3 appels de ses commerciaux avec restitution de 30min = preuve de valeur + diagnostic gratuit"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si ça marche pas, il se passe quoi ? Parce que je vais pas claquer 25K pour rien...",
+        "sous_texte": "J'ai besoin de réassurance, j'ai peur de prendre un risque et de me faire reprocher un mauvais investissement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer des conditions rassurantes : satisfaction mesurée à J+30, paiement échelonné, session de suivi gratuite si KPIs non atteints"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Je vais y réfléchir et je vous redis, OK ?",
+        "sous_texte": "La politesse française pour dire non ou vraiment gagner du temps de réflexion - difficile à distinguer",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Forcer la clarification avec bienveillance : 'Stéphane, soyons francs 30 secondes : qu'est-ce qui vous retient vraiment ?' puis traiter l'objection réelle"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est intéressant ce que vous me dites, mais concrètement là je peux rien vous promettre. Le budget est serré, faut que je valide en interne, et puis j'ai déjà eu des déceptions donc je préfère prendre le temps de bien réfléchir. On se reparle dans quelques semaines, d'accord ?",
+      "condition_declenchement": "Apparaît quand le commercial a bien argumenté mais n'a pas créé d'urgence suffisante ou n'a pas désamorcé la peur de l'échec passé. Cumule plusieurs freins : budget, validation interne, blessure d'expérience précédente."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de temps/filtrage (20 premières secondes), puis teste la crédibilité du commercial (connaissance secteur, différenciation). Si le commercial passe ces tests, il devient plus sincère et partage ses vraies peurs (échec passé, ROI, pression COMEX). Les objections finales sont un mélange de freins légitimes et de tactiques dilatoires qu'il faut distinguer en questionnant directement.",
+    "piege_classique": "Stéphane dit souvent 'Envoyez-moi un mail' ou 'On se reparle' pour clore poliment sans s'engager. Le piège est d'accepter sans ancrer d'action concrète. Il faut tester si c'est une vraie demande (il veut un support pour décision interne) ou une tactique de sortie (il n'est pas intéressé). La clé : poser une question directe sur sa vraie intention avant d'accepter le mail."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "tech",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_visio",
+      "description": "Former les commerciaux à réussir leurs appels de prospection froide dans le secteur tech",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Formation commerciale SaaS",
+    "vous_etes": "Commercial d'une solution de formation à la prospection téléphonique dans le secteur tech.",
+    "vous_vendez": "Programme de formation terrain pour structurer les appels de prospection froide et qualifier rapidement les prospects tech (budget estimé : 15-30K€).",
+    "vous_appelez": "Stéphane Duteil, Directeur des Opérations chez Nexalys Solutions (SaaS logistique, 130 personnes). Pragmatique, méfiant, obsédé par le ROI. Vous interrompt si vous tournez autour du pot.",
+    "ce_que_vous_savez": [
+      "Nexalys a recruté massivement : équipe commerciale passée de 8 à 22 personnes en 2 ans",
+      "Les juniors peinent sur la prospection froide, taux de transformation des démos à 18%",
+      "Budget formation 2024 déjà engagé à 60%, pression du DAF sur les coûts",
+      "Mauvaise expérience il y a 18 mois avec un cabinet conseil jugé trop théorique",
+      "Formations actuelles assurées en interne par le Head of Sales, manque de structure"
+    ],
+    "votre_objectif": "Décrocher un créneau de 30 minutes en visio pour auditer 2-3 appels de ses commerciaux et présenter une solution courte et mesurable.",
+    "vos_atouts": [
+      "Approche diagnostique avant toute proposition (audit gratuit d'appels)",
+      "Format court et opérationnel : impact dès le lundi suivant la formation",
+      "Expertise prouvée dans le SaaS avec KPIs mesurables",
+      "Méthodologie de qualification terrain, pas de slides théoriques"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T10:52:34Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 12879,
+    "total_time_s": 113.8
+  }
+}

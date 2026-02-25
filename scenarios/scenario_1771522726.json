@@ -1,0 +1,351 @@
+{
+  "id": "scenario_1771522726",
+  "description_originale": "Vous appelez une cabinet d'avocats de 50+ avocats, multi-spécialités. L'assistante juridique du directeur administratif ou associé senior décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : juridique]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "juridique",
+      "taille_entreprise": "50+ avocats",
+      "interlocuteur_principal": {
+        "poste": "directeur administratif ou associé senior",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante juridique",
+          "role": "gatekeeper",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B destinée aux cabinets d'avocats ou directions administratives",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante",
+        "filtrage systématique des appels commerciaux"
+      ],
+      "implicites": [
+        "manque de légitimité perçue lors de l'appel",
+        "approche commerciale trop directe ou peu adaptée au secteur juridique",
+        "difficulté à créer de la valeur dès les premières secondes",
+        "manque de préparation sur le cabinet ciblé"
+      ],
+      "probleme_racine": "incapacité à démontrer rapidement la pertinence et la valeur de l'appel pour justifier un transfert vers le décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "apprendre à passer le barrage d'une assistante professionnelle avec élégance, établir sa crédibilité rapidement, et obtenir un RDV qualifié avec le décideur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "entreprise B2B commercialisant des solutions auprès de cabinets d'avocats ou de leurs directions administratives",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature de l'offre commercialisée",
+        "entreprise du vendeur",
+        "proposition de valeur spécifique",
+        "prix ou budget",
+        "problématiques métier du cabinet d'avocats ciblé",
+        "références ou preuves sociales disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur Administratif et Financier",
+      "entreprise": {
+        "nom": "Mercier & Associés",
+        "secteur": "Droit des affaires et fiscal",
+        "taille": "68 avocats, 22 collaborateurs administratifs",
+        "ca_approximatif": "12M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les nouveaux fournisseurs",
+        "Analytique jusqu'à la paralysie",
+        "Obsédé par le ROI chiffré"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation auprès des associés seniors",
+        "Éviter toute décision précipitée qui pourrait être critiquée",
+        "Démontrer sa valeur par l'optimisation des coûts",
+        "Maintenir le statu quo sauf si le risque de ne rien faire est supérieur"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau discours commercial",
+        "Déstabiliser l'organisation avec un changement mal géré",
+        "Perdre du temps avec des rendez-vous inutiles",
+        "Que les avocats le voient comme celui qui dépense mal",
+        "Les solutions qui promettent trop sans preuves concrètes"
+      ],
+      "rapport_aux_commerciaux": "Profondément suspicieux. Considère 95% des commerciaux comme des vendeurs de vent. A été échaudé trois fois ces cinq dernières années par des prestataires qui n'ont pas tenu leurs promesses. Respecte uniquement ceux qui parlent chiffres, références vérifiables et qui connaissent VRAIMENT le métier juridique.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'impatience à peine dissimulée. Commence souvent par 'Alors, en deux mots, de quoi il s'agit exactement ?' pour couper court au pitch préparé.",
+      "signaux_interet": [
+        "Se penche légèrement en avant et prend des notes manuscrites",
+        "Pose des questions très précises sur les aspects financiers",
+        "Demande des noms de références dans le secteur juridique",
+        "Utilise l'expression 'concrètement' ou 'dans les faits'",
+        "Évoque spontanément un problème interne qui pourrait correspondre"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son écran",
+        "Répond par des 'Mmm' sans développer",
+        "Croise les bras et recule sur son siège",
+        "Coupe la parole avec 'Oui, oui, j'ai compris le principe'",
+        "Évoque immédiatement le budget comme frein ('Franchement, là, on n'a pas la tête à ça')"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il est sceptique",
+        "Utilise 'Bon' pour clore un sujet",
+        "Dit 'C'est vous qui le dites' face aux promesses",
+        "Répète 'Ça dépend' face aux affirmations trop générales",
+        "Soupire bruyamment avant de répondre aux questions qu'il juge naïves"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant interruption. Attend des questions ouvertes, pas des discours. Si le commercial parle plus de 2 minutes d'affilée, décroche mentalement et commence à préparer sa sortie polie."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet en croissance modérée (+8% l'an dernier) mais avec des tensions sur la rentabilité horaire. Les associés pressent Stéphane d'optimiser les coûts de structure sans toucher aux rémunérations. Projet de fusion avec un cabinet lyonnais en discussion, ce qui monopolise son attention.",
+      "priorites_actuelles": [
+        "Harmoniser les outils de time-tracking entre Paris et Lyon avant fusion",
+        "Réduire de 15% les frais généraux d'ici fin d'exercice",
+        "Recruter un contrôleur de gestion (budget bloqué depuis 4 mois)",
+        "Gérer la migration du système de facturation (projet en cours, déjà chaotique)"
+      ],
+      "experience_avec_offre_similaire": "A testé deux solutions SaaS ces trois dernières années. La première n'a jamais été adoptée par les avocats ('trop compliqué'). La seconde a été abandonnée après 8 mois car le service client était inexistant. Très échaudé.",
+      "fournisseur_actuel": "Mix de solutions : un logiciel métier historique (LexisNexis), Excel pour 40% des process, et un prestataire externe pour l'archivage physique. Insatisfait mais 'ça fonctionne'.",
+      "budget_disponible": "Budget 2024 déjà engagé à 87%. Enveloppe innovation de 35K€ théoriquement disponible mais nécessite validation des 3 associés principaux. Tout investissement >15K€ doit démontrer un ROI sous 18 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet concurrent reconnu qui utilise la solution",
+        "Parler d'un problème spécifique qu'il rencontre ACTUELLEMENT (time-tracking, rentabilité)",
+        "Proposer un audit gratuit avec chiffrage précis du gain potentiel",
+        "Démontrer une connaissance fine du secteur juridique (pas du bullshit générique)",
+        "Être recommandé par un associé du cabinet ou un confrère respecté",
+        "Proposer un pilote limité, réversible, sans engagement long terme"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je ne vais pas vous prendre beaucoup de temps'",
+        "Prétendre que 'tous les cabinets d'avocats ont ce problème'",
+        "Être incapable de citer une référence dans le juridique",
+        "Proposer un engagement pluriannuel dès le premier RDV",
+        "Minimiser la complexité de mise en œuvre",
+        "Critiquer frontalement ses outils actuels sans les connaître",
+        "Utiliser du jargon tech incompréhensible",
+        "Insister après un 'non' clair"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je ne sais même pas qui vous êtes ni ce que vous vendez, et là j'ai vraiment pas le temps pour ça.",
+        "sous_texte": "Je filtre instinctivement tous les commerciaux. Prouvez-moi en 10 secondes que cet appel n'est pas une perte de temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Nommer immédiatement une référence client du secteur juridique et un problème précis qu'il rencontre probablement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, c'est pour me vendre quoi exactement ? Parce que je reçois 6 appels par jour de gens qui veulent 'échanger'...",
+        "sous_texte": "Je détecte le langage commercial formaté. Soyez direct et concret, sinon je raccroche poliment dans 20 secondes.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur l'objet commercial + valeur immédiate (insight, benchmark) plutôt que demande de temps"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mmm... Vous savez, on a déjà testé ce genre de choses. Ça n'a jamais marché chez nous, les avocats n'utilisent jamais ces outils.",
+        "sous_texte": "J'ai été échaudé. Je me protège d'une nouvelle déception. Je ne vous crois pas tant que vous n'avez pas prouvé que c'est différent cette fois.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé pour comprendre POURQUOI ça n'a pas marché, puis montrer comment vous gérez spécifiquement ce risque d'adoption"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui, oui, j'ai compris le principe. Mais concrètement, ça coûte combien ? Parce que si c'est pour me dire 'ça dépend', autant arrêter maintenant.",
+        "sous_texte": "Je veux filtrer par le prix tout de suite pour ne pas perdre de temps si c'est hors budget. Aussi, je teste votre transparence.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette réaliste ET conditionner la pertinence du prix au ROI qu'on va calculer ensemble"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ça dépend... Vous avez d'autres clients dans le juridique ? Parce que franchement, chaque cabinet fonctionne différemment, je vois mal comment une solution générique pourrait coller.",
+        "sous_texte": "Je cherche des preuves sociales solides. Si vous n'avez pas de références juridiques françaises, vous n'êtes pas crédible dans mon monde.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 références précises vérifiables (nom de cabinet + ville) et offrir de mettre en relation avec un client similaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, tout ça c'est très intéressant, mais là on est en plein projet de fusion avec un cabinet lyonnais. Vraiment, c'est pas le moment de rajouter un chantier.",
+        "sous_texte": "Vrai ET faux. C'est une priorité réelle, mais aussi une excuse commode pour repousser. Montrez-moi en quoi vous facilitez cette fusion plutôt que la compliquer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Repositionner la solution comme facilitateur de fusion (harmonisation des process) plutôt que projet additionnel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est vous qui le dites, mais dans les faits, combien de temps ça prend réellement à mettre en place ? Parce qu'on a déjà un projet de migration de facturation qui est un cauchemar.",
+        "sous_texte": "Je ne crois pas vos promesses de simplicité. J'ai déjà été brûlé par des prestataires qui sous-estimaient la complexité. Prouvez-moi que c'est réaliste.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un timeline réaliste avec jalons précis, reconnaître honnêtement les points de friction possibles, proposer un accompagnement renforcé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons. Mais le budget 2024 est déjà engagé à 87%. Donc même si c'est génial, je ne peux rien faire avant l'année prochaine de toute façon.",
+        "sous_texte": "C'est vrai, mais je teste aussi votre capacité à trouver des solutions créatives. Si vous abandonnez maintenant, vous n'êtes pas différent des autres.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer l'enveloppe innovation de 35K€, proposer un pilote Q4 pour préparer 2025, ou identifier une ligne budgétaire libérable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mmm... Et le ROI, vous l'estimez comment ? Parce que franchement, ces projections, j'en ai vu passer des dizaines, et c'est toujours très optimiste sur le papier.",
+        "sous_texte": "Je suis obsédé par le ROI mais profondément sceptique sur les calculs commerciaux. Convainquez-moi avec MA réalité, pas vos hypothèses.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer de co-construire le calcul de ROI avec SES chiffres à lui, être conservateur, inclure les coûts cachés (temps, formation)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais voilà, nous on utilise déjà LexisNexis pour tout le métier. Comment ça s'intègre avec eux ? Parce que si c'est pour multiplier les outils qui ne se parlent pas...",
+        "sous_texte": "Je ne veux pas créer une usine à gaz. Si vous ne connaissez pas LexisNexis ou que l'intégration est floue, vous ne connaissez pas mon environnement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer une connaissance technique précise de LexisNexis, expliquer l'intégration API ou les passerelles existantes avec preuves"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas inintéressant, mais franchement là je dois valider ça avec les trois associés principaux, et leur agenda est blindé jusqu'à fin mars. Donc bon...",
+        "sous_texte": "Excuse commode pour diluer l'engagement. Mais révèle aussi un vrai frein : je ne peux pas décider seul au-dessus de 15K€.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de préparer AVEC lui le dossier de présentation aux associés, ou organiser une démo courte spécifique pour eux"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, je vais être honnête avec vous : j'ai déjà eu deux prestataires qui m'ont lâché en cours de route niveau support. Qu'est-ce qui me garantit que vous, vous serez là dans 18 mois ?",
+        "sous_texte": "Peur profonde et légitime basée sur des traumatismes passés. Si vous minimisez ce risque, je ne vous ferai jamais confiance.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître le risque, présenter les garanties contractuelles, SLA, preuves de pérennité entreprise, témoignage client sur support"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ça dépend... Un pilote, pourquoi pas, mais sur quel périmètre exactement ? Parce que si c'est pour mobiliser mes équipes pendant 3 mois pour rien...",
+        "sous_texte": "J'entrouvre la porte mais je protège mes arrières. Définissez un pilote VRAIMENT limité et réversible, sinon je recule.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un pilote ultra-cadré (1 service, 3 utilisateurs, 6 semaines) avec critères de succès mesurables définis AVANT"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mmm, laissez-moi réfléchir. Envoyez-moi un mail avec tout ça, je regarderai quand j'aurai un moment et je vous recontacte si ça m'intéresse.",
+        "sous_texte": "Traduction : je veux clore poliment sans m'engager. Ce mail finira probablement dans les limbes. Mais si vous insistez lourdement, je me braque.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi du mail MAIS caler immédiatement un point téléphonique court 8-10 jours plus tard pour recueillir ses questions"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est gentil, mais franchement, on a déjà un prestataire pour l'archivage et LexisNexis pour le reste. Ça fonctionne, c'est pas parfait, mais ça fonctionne. Pourquoi changer ?",
+        "sous_texte": "Aversion au risque et au changement. Je ne changerai que si vous me démontrez que le coût du statu quo est supérieur au coût du changement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Quantifier ensemble le coût caché du statu quo (temps perdu, erreurs, inefficacités) pour créer l'urgence"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est pas que ça m'intéresse pas, mais vraiment, entre la fusion, le recrutement du contrôleur de gestion qui est bloqué, et la migration facturation qui part en vrille, là je peux pas me permettre de rajouter un truc. Rappellez-moi dans 6 mois, on verra où on en est.",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas réussi à : 1) créer l'urgence via coût du statu quo, 2) repositionner la solution comme facilitateur des priorités actuelles, 3) proposer un engagement minimal non-intrusif"
+    },
+    "pattern_escalade": "Stéphane commence courtois mais distant (phase test). Si le commercial résiste aux premières objections réflexes avec professionnalisme ET connaissance du secteur, il passe en mode 'sincère' et révèle ses vraies préoccupations (échecs passés, contraintes budget/validation). Si le commercial gère ces objections sincères avec empathie et preuves, Stéphane s'ouvre progressivement. MAIS au moindre signe de sur-promesse, langue de bois ou méconnaissance du juridique, il se referme définitivement avec une objection 'tactique' polie mais infranchissable. Sa défense ultime est toujours le timing/priorités, qu'il utilisera si aucune urgence réelle n'a été créée.",
+    "piege_classique": "Stéphane donne l'impression d'être convaincu intellectuellement ('Oui, je vois l'intérêt') mais utilise systématiquement une objection procédurale finale (budget, validation associés, timing) pour éviter l'engagement. Le piège : traiter uniquement les objections rationnelles sans jamais adresser sa peur profonde de l'échec et sa paralysie décisionnelle. Il faut sécuriser émotionnellement (pilote réversible, preuves sociales, garanties) ET rationnellement (ROI, références) pour obtenir un vrai OUI."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "entreprise B2B commercialisant des solutions auprès de cabinets d'avocats ou de leurs directions administratives"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "apprendre à passer le barrage d'une assistante professionnelle avec élégance, établir sa crédibilité rapidement, et obtenir un RDV qualifié avec le décideur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Cabinet d'avocats Mercier & Associés",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour cabinets d'avocats, vous prospectez à froid un cabinet parisien de droit des affaires.",
+    "vous_vendez": "Solution SaaS d'optimisation de la gestion administrative pour cabinets juridiques (prix et détails à adapter selon la discussion).",
+    "vous_appelez": "Stéphane Mercier, 52 ans, Directeur Administratif et Financier chez Mercier & Associés. Ancien de la finance, analytique, allergique aux discours commerciaux. Échaudé par deux projets SaaS ratés ces trois dernières années.",
+    "ce_que_vous_savez": [
+      "Cabinet de 68 avocats spécialisé en droit des affaires et fiscal, 12M€ de CA annuel",
+      "En discussion pour une fusion avec un cabinet lyonnais (projet stratégique en cours)",
+      "Utilise actuellement un mix LexisNexis + Excel + archivage externe, setup jugé insatisfaisant",
+      "Direction pousse pour -15% de frais généraux d'ici fin d'année",
+      "Migration d'un système de facturation en cours (projet déjà compliqué)"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante, puis obtenir un rendez-vous physique de 30 minutes avec Stéphane Mercier dans les 10 jours.",
+    "vos_atouts": [
+      "Vous connaissez bien les enjeux de rentabilité horaire des cabinets en croissance",
+      "Vous pouvez proposer un audit gratuit avec chiffrage ROI précis sous 18 mois",
+      "Vous avez des références vérifiables dans le secteur juridique parisien",
+      "Vous proposez systématiquement un pilote limité et réversible avant engagement"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:38:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14944,
+    "total_time_s": 133.8
+  }
+}

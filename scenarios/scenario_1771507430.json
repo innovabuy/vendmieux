@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771507430",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : batiment]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "BTP - Travaux tous corps d'état et gros œuvre",
+      "taille_entreprise": "20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service en lien avec l'activité BTP - vraisemblablement équipement, logiciel de gestion, assurance, formation ou sous-traitance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale depuis 10 jours",
+        "Besoin d'obtenir un retour clair sur la proposition"
+      ],
+      "implicites": [
+        "Difficulté à engager le prospect après l'envoi de documentation",
+        "Manque de suivi structuré post-proposition",
+        "Probable manque de création d'urgence ou d'engagement lors du premier contact",
+        "Risque que le prospect soit sollicité par des concurrents pendant le silence radio"
+      ],
+      "probleme_racine": "Absence de processus de relance efficace et de techniques pour débloquer un prospect silencieux après envoi de proposition"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect silencieux, débloquer les situations de non-réponse et obtenir un positionnement clair (oui/non/prochaine étape)",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur pour le secteur BTP",
+      "entreprise_description": "Entreprise proposant des produits ou services destinés aux entreprises du bâtiment et travaux publics",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service destiné aux entreprises de BTP de taille moyenne, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE - à préciser selon le produit/service réel",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Prix ou budget de la proposition",
+        "Contexte du premier contact (comment la proposition a été initiée)",
+        "Nom de l'entreprise vendeuse",
+        "Éléments de différenciation concurrentielle",
+        "Zone géographique d'intervention",
+        "Historique relationnel avec le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick",
+      "nom": "Moretti",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Moretti TP & Rénovation",
+        "secteur": "BTP - Travaux tous corps d'état et gros œuvre",
+        "taille": "28 salariés (dont 22 ouvriers, 3 chefs de chantier, 2 administratifs, lui)",
+        "ca_approximatif": "3,2 M€ annuels"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-méfiant : a vu passer 1000 commerciaux, attend des preuves concrètes",
+        "Débordé chronique : jongle entre chantiers, devis, problèmes RH et relances clients",
+        "Loyal mais opportuniste : fidèle à ses fournisseurs historiques sauf si économie significative"
+      ],
+      "motivations_profondes": [
+        "Pérenniser l'entreprise familiale créée par son père en 1987",
+        "Éviter les emmerdes administratives et les retards de chantier",
+        "Préserver sa marge dans un secteur ultra-concurrentiel",
+        "Prouver qu'il fait mieux que son beau-frère qui a une boîte similaire"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un fournisseur peu fiable qui mettrait ses chantiers en péril",
+        "Perdre du temps en réunions inutiles alors que les chefs de chantier l'appellent toutes les 20 minutes",
+        "S'engager sur un contrat rigide qui ne correspond pas à la réalité du terrain",
+        "Que sa femme (qui gère l'admin) lui reproche une dépense non budgétée"
+      ],
+      "rapport_aux_commerciaux": "Plutôt négatif par défaut - les voit comme des 'beaux parleurs' qui ne connaissent pas la réalité du chantier. Respecte uniquement ceux qui sont directs, connaissent le métier et ne font pas perdre de temps",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé - 'Oui allô, Patrick à l'appareil' puis attend que l'interlocuteur aille droit au but. Peut être sur un chantier avec bruit de fond",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur la mise en œuvre",
+        "Demande des références dans sa région",
+        "Mentionne un problème concret actuel : 'Justement on a eu un souci la semaine dernière avec...'",
+        "Dit 'Attends, je note' ou 'Redis-moi ça que je marque'",
+        "Propose de transférer au chef d'atelier ou à sa femme pour les détails"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole : 'Écoute, là c'est pas le moment'",
+        "Répond par monosyllabes : 'Ouais', 'Mmh', 'OK'",
+        "Sort le classique : 'Envoie-moi un mail, je regarderai'",
+        "Invoque le fournisseur actuel : 'On travaille déjà avec Dupont depuis 15 ans, jamais eu de problème'",
+        "Devient évasif sur les délais : 'On verra ça plus tard, là on est en plein rush'"
+      ],
+      "tics_langage": [
+        "Utilise beaucoup 'Écoute...' en début de phrase",
+        "Ponctue avec 'Voilà' ou 'C'est ça' pour clore un sujet",
+        "Dit 'Tu vois' ou 'Vous voyez' même au téléphone",
+        "Emploie le jargon métier sans l'expliquer (IPN, BA13, DTU...)",
+        "Râle sur les clients : 'Les gens veulent du sur-mesure au prix du standard'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 45 secondes max. Passé ce délai, commence à décrocher ou interrompt. Déteste les introductions corporate type 'Notre entreprise leader depuis X années...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais tensions trésorerie - plusieurs clients qui paient à 60-90 jours alors que les fournisseurs veulent du 30 jours. Deux gros chantiers en cours (rénovation d'une copropriété + extension maison individuelle). Cherche à embaucher un chef de chantier mais peine à trouver",
+      "priorites_actuelles": [
+        "Finir le chantier de la copropriété avant pénalités de retard",
+        "Sécuriser la trésorerie pour passer l'hiver (période creuse)",
+        "Répondre à un appel d'offres municipal pour un gymnase (gros contrat potentiel)",
+        "Gérer un conflit avec un sous-traitant plombier peu fiable"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2-3 solutions similaires par le passé - une abandonnée car 'trop compliquée pour les gars', une autre car le SAV était inexistant. Sceptique sur les promesses commerciales",
+      "fournisseur_actuel": "Matériaux : Point P et Gedimat selon les chantiers. Outillage : Hilti en location longue durée. Logiciel de gestion : Excel + un logiciel de devis/facture basique (EBP Bâtiment). Assurance : MMA depuis toujours",
+      "budget_disponible": "Peut débloquer 5 à 15 K€ si ROI prouvé et accord de sa femme (qui gère le budget). Au-delà, nécessite validation comptable et étalement du paiement"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent local qui utilise la solution avec succès",
+        "Parler économie chiffrée : 'Ça vous fait gagner X heures/mois soit Y euros'",
+        "Comprendre et verbaliser ses contraintes : 'Je sais que vous êtes sur les chantiers, je serai bref'",
+        "Proposer un test gratuit ou une démo ultra-courte (15 min max)",
+        "Avoir des références BTP vérifiables, pas des multinationales",
+        "Montrer qu'on connaît le métier : utiliser le jargon correctement, comprendre les DTU"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Insister lourdement après un 'non' : il raccroche sans préavis",
+        "Critiquer ses fournisseurs actuels sans connaître son historique",
+        "Proposer un RDV de 1h30 ou une 'présentation complète de nos solutions'",
+        "Parler 'transformation digitale', 'synergie', 'écosystème' - jargon bullshit",
+        "Ne pas connaître les spécificités du BTP (réglementation, saisonnalité, marges serrées)",
+        "Avoir un ton condescendant ou donneur de leçons",
+        "L'appeler 'Monsieur Moretti' de façon guindée - il préfère Patrick en mode direct"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, là je suis sur un chantier, c'est pas le moment franchement",
+        "sous_texte": "Je suis réellement occupé ET c'est un réflexe pour filtrer les commerciaux. Prouve-moi en 10 secondes que ça vaut le coup que je t'écoute",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa contrainte temps + donner UNE raison précise de rappeler (deadline, info importante) + proposer horaire précis alternatif"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah ouais, votre truc... J'ai pas eu le temps de regarder en fait. Là je croule sous les devis",
+        "sous_texte": "Soit je n'ai vraiment pas regardé car pas prioritaire, soit j'ai regardé et ça ne m'intéresse pas mais je botte en touche pour être poli",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS le culpabiliser. Résumer la proposition en 15 secondes max + poser UNE question de qualification pour mesurer l'intérêt réel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoie-moi un mail de relance, je te rappelle dès que j'ai 5 minutes",
+        "sous_texte": "C'est ma phrase bateau pour me débarrasser des commerciaux poliment. Je ne rappellerai probablement jamais",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier la tactique sans le braquer + poser une question fermée qui force un positionnement : 'Patrick, direct : le sujet vous intéresse ou c'est mort pour vous ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour quoi déjà votre proposition ? J'en reçois tellement...",
+        "sous_texte": "Soit je ne me souviens vraiment pas, soit je teste si tu maîtrises ton dossier et si tu vas me faire perdre du temps à re-expliquer",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rappel ultra-synthétique (3 mots-clés max) + recentrer sur LUI : 'On s'était parlé pour [problème précis]. Où t'en es sur ce sujet ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On travaille déjà avec Point P et Gedimat depuis des années, jamais eu de souci. Pourquoi je changerais ?",
+        "sous_texte": "J'ai mes habitudes et mes accords tarifaires. Tu dois me prouver un avantage SIGNIFICATIF pour que je prenne le risque de changer",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne JAMAIS critiquer ses fournisseurs actuels. Questionner sur ce qui n'est pas couvert actuellement + positionner en complémentaire, pas en remplacement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mmh... C'est quoi le prix déjà ? Parce que là, question tréso on est un peu tendus tu vois",
+        "sous_texte": "Double message : 1) Je vérifie si c'est dans mon budget 2) Je prépare une porte de sortie en invoquant le budget si ça ne m'intéresse pas vraiment",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner le prix tout de suite. Investiguer : 'Tendu comment ? C'est un problème de montant ou de timing ?' + quantifier la valeur avant de parler prix"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais bon, des solutions comme ça j'en ai déjà testé deux. Au final personne s'en servait, trop compliqué pour les gars",
+        "sous_texte": "J'ai une vraie expérience négative. Tu dois me rassurer sur la simplicité d'utilisation et l'adoption terrain, sinon c'est mort",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec passé (qu'est-ce qui a merdé exactement ?) + montrer en quoi c'est différent avec preuve concrète (témoignage pair, démo ultra-simple)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, je comprends pas là... Ça marche comment concrètement sur le chantier ? Parce que mes gars ils ont pas le temps de se faire chier avec des applis",
+        "sous_texte": "Je teste si tu connais vraiment la réalité du terrain ou si tu me vends un truc hors-sol. Si tu réponds avec du bullshit corporate, je décroche",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Explication terrain en jargon métier + cas d'usage ultra-concret avec timing réaliste : 'Ton chef de chantier en 2 minutes le matin il...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin c'est ce que vous dites tous hein... Après sur le papier c'est toujours beau, mais quand t'as un problème, le SAV il répond jamais",
+        "sous_texte": "Je suis échaudé par des expériences passées. Je veux des garanties sur le support, pas des promesses en l'air",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa méfiance légitime + preuves tangibles du SAV : numéro direct, nom du contact technique, délai d'intervention contractuel, référence à appeler"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien gentil tout ça mais là j'ai l'appel d'offres du gymnase à boucler pour vendredi, j'ai pas la tête à ça",
+        "sous_texte": "Soit je suis vraiment sous l'eau (probable), soit je teste si tu vas insister lourdement et me faire chier",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie réelle + lier au projet gymnase si pertinent sinon caler après : 'Je comprends. Justement, on en reparle semaine du X ? Je te mets un rappel mardi 11h ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut que j'en parle à ma femme de toute façon, c'est elle qui gère les budgets et les contrats. Je peux rien décider tout seul",
+        "sous_texte": "Soit vrai (co-décision), soit prétexte pour temporiser. Je veux voir si tu vas me pousser ou accepter d'intégrer ma femme dans le process",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le décideur multiple + proposer un format adapté : 'Pas de souci. Elle a besoin de quoi pour se faire un avis ? Je vous prépare un récap chiffré ou vous préférez qu'on fasse un point rapide à 3 ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Et c'est quoi la durée d'engagement ? Parce que si je teste et que ça marche pas, je me retrouve coincé pour 3 ans comme avec mon assurance...",
+        "sous_texte": "J'ai peur de l'engagement et de perdre ma flexibilité. Si tu me parles de contrat rigide 36 mois, je me barre",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur l'engagement + rassurer avec option de sortie ou période d'essai : 'On a justement prévu une période test de X mois, après t'es libre'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, c'est intéressant mais là c'est pas le bon moment. On en reparle au printemps tranquille, je te remets un coup de fil",
+        "sous_texte": "Je botte en touche car soit je ne suis pas convaincu, soit c'est vraiment pas le moment. Le printemps = jamais. Je ne rappellerai pas",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Confronter poliment le report : 'Patrick, soyons directs : le printemps c'est dans 4 mois. Concrètement, qu'est-ce qui te bloque aujourd'hui pour au moins tester ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mmh OK... Bon écoute, envoie-moi encore ton truc par mail, je vais re-regarder ça avec ma femme et je te tiens au courant",
+        "sous_texte": "Je ne suis pas prêt à m'engager maintenant. Je veux garder le contrôle du timing. Je ne recontacterai probablement pas",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi MAIS verrouiller une date de feedback : 'Je t'envoie ça ce soir. On se rappelle jeudi 10h pour ton retour, ça te va ?' + confirmer dans le mail"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, ça me paraît un peu cher quand même pour ce que c'est. Mon beau-frère il paye pas ce prix-là pour un truc similaire",
+        "sous_texte": "Soit je négocie par principe, soit je n'ai pas perçu suffisamment de valeur. Le beau-frère peut être réel ou inventé pour justifier ma résistance",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Question de clarification : 'Qu'est-ce qui te paraît cher exactement ? Le montant total ou par rapport au bénéfice ?' + recadrer sur ROI chiffré vs investissement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, là j'ai un chef de chantier qui m'appelle, faut que je te laisse. On s'reparle hein, allez salut",
+        "sous_texte": "Soit vraiment un imprévu (30% de chances), soit je veux clore la conversation car tu ne m'as pas convaincu et je ne sais pas comment te dire non",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas le retenir + sécuriser la suite IMMÉDIATEMENT : 'Vas-y pas de souci. Je te rappelle demain 14h ou jeudi matin ?' (choix binaire, pas ouvert)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attends... Au final, là maintenant, qu'est-ce que tu veux que je te dise ? Je te dis pas non hein, mais je te dis pas oui non plus. Je vais y réfléchir et puis voilà quoi. On verra bien",
+      "condition_declenchement": "Quand le vendeur pousse trop pour un closing immédiat sans avoir suffisamment qualifié/prouvé, ou quand Patrick n'est vraiment pas convaincu mais veut rester poli"
+    },
+    "pattern_escalade": "Patrick commence cordial mais pressé (réflexe défensif). Si le vendeur respecte son temps et parle concret/métier, il s'ouvre progressivement et pose des questions techniques (intérêt). Si le vendeur fait du blabla commercial, parle ROI sans preuve ou insiste lourdement, Patrick devient monosyllabique puis invoque un prétexte pour raccrocher. L'escalade négative est rapide (2-3 minutes max) car il a zéro tolérance au bullshit",
+    "piege_classique": "Patrick dit 'Ouais, c'est intéressant, envoie-moi ça par mail' avec un ton plutôt positif. Le vendeur inexpérimenté croit que c'est gagné et envoie sans verrouiller de suite. En réalité, c'est sa technique de politesse pour clore la conversation. Sans date de rappel précise et confirmée, le dossier meurt silencieusement. Le vrai test : s'il dit 'intéressant' mais refuse un créneau de rappel précis, c'est un non déguisé"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur pour le secteur BTP",
+      "description": "Entreprise proposant des produits ou services destinés aux entreprises du bâtiment et travaux publics"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service destiné aux entreprises de BTP de taille moyenne, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE - à préciser selon le produit/service réel",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect silencieux, débloquer les situations de non-réponse et obtenir un positionnement clair (oui/non/prochaine étape)",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance prospect silencieux — BTP gros œuvre",
+    "vous_etes": "Commercial chez un fournisseur de solutions pour le BTP, vous relancez un gérant d'entreprise de travaux après 10 jours de silence radio.",
+    "vous_vendez": "Une solution pour entreprises BTP (nature exacte à définir selon votre produit) — proposition commerciale envoyée il y a 10 jours, montant non communiqué.",
+    "vous_appelez": "Patrick Moretti, 52 ans, gérant de Moretti TP & Rénovation (28 salariés, 3,2 M€ CA). Pragmatique, débordé, méfiant envers les commerciaux — attend du concret, déteste perdre du temps.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition il y a 10 jours, aucun retour depuis",
+      "Il jongle entre chantiers urgents, problèmes de tréso et recrutement d'un chef de chantier",
+      "Il bosse avec des fournisseurs historiques (Point P, Gedimat, Hilti) depuis des années",
+      "Il a déjà testé des solutions similaires par le passé — abandonnées car trop compliquées ou SAV inexistant",
+      "Il peut débloquer 5 à 15 K€ si ROI prouvé et accord de sa femme qui gère l'admin"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : oui, non, ou prochaine étape concrète — sortir du silence radio coûte que coûte.",
+    "vos_atouts": [
+      "Vous connaissez le secteur BTP et ses contraintes (délais, tréso, saisonnalité)",
+      "Vous avez des références locales vérifiables dans le gros œuvre",
+      "Vous proposez un test gratuit ou une démo de 15 minutes max",
+      "Vous savez parler chiffres : économies en heures et en euros"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:23:50Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15854,
+    "total_time_s": 150.6
+  }
+}

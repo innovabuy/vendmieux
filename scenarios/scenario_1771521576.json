@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771521576",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : batiment]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "BTP - travaux tous corps d'état et gros œuvre",
+      "taille_entreprise": "20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux entreprises de BTP pour améliorer leur activité",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de suivi structuré après envoi de proposition",
+        "Incapacité à créer l'urgence ou l'engagement",
+        "Probable manque de qualification en amont",
+        "Difficulté à gérer le silence commercial",
+        "Manque de technique pour relancer sans être intrusif"
+      ],
+      "probleme_racine": "Absence de processus de qualification et d'engagement avant l'envoi de la proposition, conduisant à des relances difficiles et un tunnel de vente qui s'étire"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale et obtenir des réponses claires (oui, non, ou étape suivante) plutôt que du silence",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services ou solutions B2B pour le secteur du BTP",
+      "entreprise_description": "Entreprise proposant des produits ou services aux professionnels du bâtiment",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service destiné aux entreprises de BTP de taille moyenne, faisant l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Prix ou fourchette de prix",
+        "Proposition de valeur concrète",
+        "Contexte de la relation antérieure (premier contact, suite salon, recommandation)",
+        "Contenu et positionnement de la proposition envoyée",
+        "Raisons du choix de ce prospect spécifique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Dalmont",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Dalmont Bâtiment",
+        "secteur": "BTP - gros œuvre et second œuvre",
+        "taille": "28 salariés (18 ouvriers, 6 chefs de chantier, 3 administratifs, lui)",
+        "ca_approximatif": "3,2M€ annuels, marge nette 4-6%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Surinvesti dans l'opérationnel au détriment du stratégique",
+        "Fierté d'être un 'vrai patron qui mouille la chemise'"
+      ],
+      "motivations_profondes": [
+        "Transmettre l'entreprise familiale à son fils qui vient d'entrer dans la boîte",
+        "Prouver qu'on peut réussir sans faire d'études",
+        "Ne pas revivre la galère de 2009-2012 où il a failli tout perdre"
+      ],
+      "peurs_freins": [
+        "Peur viscérale de se faire 'avoir' par un commercial en costard",
+        "Angoisse de l'engagement financier sur du long terme",
+        "Crainte de paraître incompétent devant ses équipes si ça ne marche pas",
+        "Complexe face aux outils numériques qu'il ne maîtrise pas bien"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Les voit comme 'ceux qui promettent la lune et disparaissent après'. A été échaudé 3 fois : logiciel de gestion jamais déployé (2017), formation jamais donnée (2019), abonnement impossible à résilier (2021). Respecte uniquement ceux qui connaissent vraiment son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, écoutez là je suis sur un chantier, faut faire vite'. Tutoiement quasi immédiat si affinité, vouvoiement distant sinon.",
+      "signaux_interet": [
+        "Demande des exemples concrets : 'Ouais mais concrètement, chez Dupuis BTP, ça a donné quoi ?'",
+        "Partage spontanément ses problèmes : 'Nous on galère avec...'",
+        "Évoque son fils : 'Faudrait que j'en parle à Anthony, c'est lui qui gère ce côté-là maintenant'",
+        "Propose un créneau précis : 'Bon écoutez, revenez vers moi mardi matin, là j'aurai les chiffres'"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles pendant que vous parlez",
+        "Coupe systématiquement avec 'Oui oui c'est ça' pour accélérer",
+        "Évoque le prix immédiatement : 'De toute façon c'est trop cher pour nous'",
+        "Délègue brutalement : 'Envoyez ça à Sandrine, c'est elle qui voit' (= poubelle)",
+        "Le 'On verra ça' définitif sans aucune date"
+      ],
+      "tics_langage": [
+        "'Écoutez' en début de phrase quand il va dire non",
+        "'Franchement' quand il doute",
+        "'Vous comprenez' quand il justifie son inaction",
+        "Expressions BTP : 'faut pas mettre la charrue avant les bœufs', 'là c'est du brouillard'",
+        "Répète 'hein ?' quand il n'écoute pas vraiment"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35 secondes maximum. Au-delà, décroche mentalement ou coupe. Déteste les 'speech' préparés qu'il repère immédiatement. Préfère les échanges courts et directs type 'Vous avez ce problème ? On a ce truc. Ça marche comme ça. Ça coûte ça. Vous voulez essayer ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct (6 mois) mais trésorerie tendue. Retards de paiement clients qui se multiplient. Difficulté à recruter des ouvriers qualifiés. Son fils Anthony (28 ans) pousse pour moderniser mais Christophe freine car 'on a toujours fait comme ça'. Gros chantier de rénovation en cours qui dérape sur les délais.",
+      "priorites_actuelles": [
+        "Récupérer 180K€ d'impayés sur 3 chantiers publics",
+        "Finir le chantier résidence Les Érables avant pénalités",
+        "Préparer la certification Qualibat qu'il repousse depuis 2 ans",
+        "Trouver 2 maçons et 1 chef de chantier"
+      ],
+      "experience_avec_offre_similaire": "A regardé 2-3 solutions il y a 8 mois lors d'un salon pro à Lyon. A reçu 15 propositions commerciales cette année. N'en a lu aucune en détail. Les classe dans un dossier 'À voir' qui déborde.",
+      "fournisseur_actuel": "Bricole avec Excel pour le planning, WhatsApp pour les équipes, un comptable externe old school, des devis faits sur Word par sa secrétaire Sandrine. Pas de CRM, pas de suivi commercial structuré.",
+      "budget_disponible": "Capacité réelle : 15-25K€ sur l'année MAIS bloqué psychologiquement à 8-10K€. Besoin de justifier chaque euro. Préfère payer au mois qu'en one-shot (même si plus cher au total) car 'ça passe mieux en compta'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Prouver que vous connaissez VRAIMENT son métier (citer ses problèmes précis sans qu'il les dise)",
+        "Montrer un ROI chiffré ultra-concret : 'Sur 10 chantiers, vous gagnez X heures, donc X€'",
+        "Évoquer un concurrent ou confrère qu'il respecte : 'Brunet TP l'utilise depuis 2 ans'",
+        "Impliquer son fils Anthony qui est plus ouvert aux outils modernes",
+        "Proposer un test gratuit/limité : 'On fait UN chantier ensemble, si ça marche on déploie'",
+        "Être disponible immédiatement pour un besoin urgent (réactivité = crédibilité)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon commercial ou tech incompréhensible",
+        "Engagement longue durée sans porte de sortie",
+        "Formation obligatoire de plusieurs jours (= chantiers à l'arrêt)",
+        "Processus de décision complexe impliquant trop de gens",
+        "Lui faire sentir qu'il est en retard technologiquement (ego blessé)",
+        "Comparaison avec 'les grands groupes' (il déteste)",
+        "Proposer un RDV 'pour faire connaissance' sans valeur ajoutée immédiate",
+        "Relancer en disant 'Vous avez pu regarder ma proposition ?' (= avouer qu'il ne l'a pas lue)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez là je suis sur un chantier, j'ai deux minutes pas plus hein",
+        "sous_texte": "Je me protège d'emblée. Si c'est nul, j'ai une excuse toute prête pour raccrocher. Prouve-moi vite que ça vaut le coup.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte temps et aller DIRECT au problème concret sans tourner autour"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais j'ai reçu votre truc mais franchement j'ai pas eu le temps de regarder, vous comprenez avec les chantiers",
+        "sous_texte": "Je ne l'ai pas lu et je ne compte pas le lire. Trop de pages, trop complexe, pas le temps. Si c'était important tu me le résumerais là maintenant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer qu'il ne l'a pas lu et proposer de lui extraire les 3 points clés en 30 secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez je sais même plus ce que vous vendez là, rappelez-moi c'était quoi déjà ?",
+        "sous_texte": "Vous êtes le 47ème commercial à m'appeler ce mois-ci. Je ne me souviens absolument pas de vous. Recadrez-moi ultra vite ou je raccroche.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Recadrer en 10 secondes max avec LE problème qu'il a exprimé lors du premier contact"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ah mais nous on a déjà tout ça hein, Sandrine gère très bien avec Excel",
+        "sous_texte": "Je ne veux pas remettre en cause notre système actuel car ça voudrait dire qu'on a été nuls pendant des années. Et je ne veux pas vexer Sandrine.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser Excel et Sandrine PUIS montrer ce que ça ne peut PAS faire (que Sandrine vit comme un problème aussi)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement moi ces trucs numériques là c'est pas mon truc, faudrait que j'en parle à Anthony",
+        "sous_texte": "Je ne maîtrise pas ces outils et j'ai honte de l'avouer. Mon fils comprend mieux que moi. Mais j'ai peur de perdre le contrôle si je délègue ça.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son expertise métier VS technique, proposer que Anthony pilote l'outil mais que LUI garde la vision/décision"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais concrètement chez Brunet TP ils ont gagné quoi ? Parce que des belles promesses j'en ai entendu hein",
+        "sous_texte": "Je connais Brunet, je le respecte. Si c'est vrai qu'il utilise votre truc, ça compte. Mais je veux du CONCRET chiffré, pas du pipeau.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner des chiffres précis vérifiables (heures gagnées, erreurs évitées) avec l'accord de citer Brunet"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez là on a le chantier des Érables qui dérape, j'ai pas la tête à ça",
+        "sous_texte": "C'est vrai que je suis sous l'eau. Mais c'est aussi un test : est-ce que tu vas insister lourdement ou comprendre la situation ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser le problème Érables pour voir si votre solution pourrait justement aider SUR CE CHANTIER précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et ça coûte combien votre truc ?",
+        "sous_texte": "J'anticipe que c'est trop cher. Je veux tuer dans l'œuf avant de m'attacher à l'idée. Si c'est dans mon budget je serai surpris.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS donner le prix tout de suite. D'abord valider la valeur perçue puis présenter le prix en le fractionnant mensuellement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ah mais attendez faut faire une formation de 3 jours ? Mais c'est mort là, je peux pas arrêter les gars 3 jours",
+        "sous_texte": "3 jours = 3 jours de chantiers perdus = facilement 15K€ de manque à gagner. Vous ne comprenez pas les contraintes de mon métier.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une formation fractionnée sur chantier, ou le soir, ou en visio 30 min/jour sur 2 semaines"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais si ça marche pas, je suis coincé combien de temps ? Y'a un engagement ?",
+        "sous_texte": "J'ai été piégé par un abonnement impossible à résilier en 2021. Plus jamais. Je ne signe rien sans clause de sortie claire.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer la question et proposer engagement court (3-6 mois) ou période test avec sortie libre"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça mais moi j'ai 180K€ d'impayés à récupérer, c'est pas votre machin qui va me les faire rentrer hein",
+        "sous_texte": "Mon vrai problème c'est le cash immédiat, pas l'optimisation à moyen terme. Si tu ne m'aides pas sur MES priorités, ça ne sert à rien.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Pivoter : en quoi votre solution peut aider à mieux anticiper/suivre les paiements clients pour éviter que ça se reproduise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais je sais pas, faut que j'en parle à Sandrine déjà, c'est elle qui va devoir utiliser ça",
+        "sous_texte": "Je ne veux pas décider seul et imposer un outil. Ou bien : c'est une façon polie de dire non sans dire non.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un RDV court avec Sandrine présente pour recueillir SON avis (elle est clé dans l'adoption)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là j'ai déjà trop de trucs en cours, la Qualibat, les recrutements, les Érables... on verra ça dans 6 mois",
+        "sous_texte": "Je suis sincèrement débordé et ça me paraît un projet de trop. Ou bien : je botte en touche parce que je ne suis pas convaincu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer que votre solution aide JUSTEMENT sur ses priorités actuelles (suivi Qualibat, gestion équipes, suivi Érables)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez envoyez-moi un mail de synthèse, je regarde ça tranquillement et je vous rappelle",
+        "sous_texte": "C'est ma sortie de secours classique. Je ne rappellerai pas. Si tu envoies le mail, je ne le lirai pas. Je veux clore poliment.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Refuser poliment et proposer un créneau précis dans 2-3 jours pour un GO/NO GO de 10 minutes"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon c'est trop cher pour nous, on n'a pas le budget là",
+        "sous_texte": "Soit c'est vrai (trésorerie tendue). Soit je n'ai pas perçu assez de valeur pour justifier le prix. Soit je teste ta marge de négo.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Isoler l'objection : 'Si on trouve une solution sur le budget, vous seriez partant ?' puis proposer paiement mensuel ou version allégée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez je dois filer là, on en reparle, laissez-moi vos coordonnées je vous rappelle promis",
+        "sous_texte": "Je suis vraiment pressé OU je veux fuir la décision. 'Promis' = je ne rappellerai probablement jamais.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Bloquer 30 secondes : 'Christophe juste une question avant que vous partiez' puis question ultra directe pour obtenir OUI/NON/PROCHAIN RENDEZ-VOUS"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez moi je peux pas décider ça tout seul, faut que j'en parle au comptable, à Anthony, à Sandrine...",
+        "sous_texte": "Je dilue la responsabilité pour ne pas décider. Ou bien : je cherche des alliés internes pour valider mon intuition. Ou : je gagne du temps.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Clarifier le process de décision : 'Qui doit valider quoi ? Organisons un point tous ensemble plutôt que de faire 4 tours'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement j'ai été échaudé trois fois avec des commerciaux qui promettent la lune, j'y crois plus trop",
+        "sous_texte": "C'est mon blocage psychologique principal. Logiciel 2017, formation 2019, abonnement 2021. Je veux y croire mais j'ai peur de me refaire avoir.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Écouter l'histoire, la valider, puis proposer des garanties concrètes (période test, clause sortie, engagement écrit sur livrables)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez honnêtement là c'est pas le moment, on a trop de trucs à gérer, je vais être franc avec vous je crois que c'est pas pour nous",
+      "condition_declenchement": "Si le commercial a accumulé trop d'erreurs : trop parlé, pas écouté ses vrais problèmes, pas montré de ROI concret, ou insisté lourdement après plusieurs signaux de rejet. C'est le 'NON' définitif mais poli."
+    },
+    "pattern_escalade": "Christophe teste d'abord avec des objections réflexes (temps, prix). Si le commercial les gère bien, il passe à des objections sincères (peur de se faire avoir, complexité). Si le commercial crée de la confiance, il révèle ses vrais freins (trésorerie tendue, impayés, débordement). Le point de bascule : quand il évoque spontanément son fils Anthony ou un problème concret de chantier = signal d'ouverture. Mais si on insiste trop après un signal de rejet, il se ferme définitivement et devient injoignable.",
+    "piege_classique": "Croire qu'il va lire la proposition envoyée par mail. Il ne la lira JAMAIS en détail. Le piège est de relancer en demandant 'Vous avez pu lire ma proposition ?' car ça le met face à son inaction et braque son ego. Autre piège : vouloir le convaincre par la technologie alors que lui raisonne en ROI opérationnel immédiat (heures gagnées, erreurs évitées, chantiers mieux gérés). Ne jamais lui faire sentir qu'il est 'en retard' technologiquement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services ou solutions B2B pour le secteur du BTP",
+      "description": "Entreprise proposant des produits ou services aux professionnels du bâtiment"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service destiné aux entreprises de BTP de taille moyenne, faisant l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale et obtenir des réponses claires (oui, non, ou étape suivante) plutôt que du silence",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — BTP gros œuvre",
+    "vous_etes": "Commercial B2B spécialisé solutions BTP, vous relancez un gérant après 3 semaines de silence radio suite à l'envoi d'une proposition.",
+    "vous_vendez": "Solution pour entreprises de BTP (nature et prix non précisés dans la prop envoyée — vous devrez gérer ce flou).",
+    "vous_appelez": "Christophe Dalmont, 52 ans, gérant de Dalmont Bâtiment (28 salariés, gros œuvre). Pragmatique, méfiant envers les commerciaux, débordé, a reçu 15 propositions cette année et n'en a lu aucune. Son fils Anthony pousse pour moderniser, lui freine.",
+    "ce_que_vous_savez": [
+      "Carnet de commandes correct mais trésorerie tendue (180K€ d'impayés à récupérer)",
+      "Gros chantier en retard (résidence Les Érables) avec risque de pénalités",
+      "Recrute activement : 2 maçons et 1 chef de chantier manquants",
+      "Gère tout à l'arrache : Excel, WhatsApp, pas de CRM",
+      "A été échaudé 3 fois par des prestataires (logiciel, formation, abo)"
+    ],
+    "votre_objectif": "Obtenir une réponse claire : oui avec prochaine étape concrète, non définitif, ou nouveau besoin identifié — mais sortir du silence.",
+    "vos_atouts": [
+      "Vous connaissez ses vrais problèmes opérationnels (planning, tréso, recrutement)",
+      "Vous pouvez proposer un test sur UN chantier avant engagement",
+      "Vous savez qu'Anthony (son fils) est votre allié potentiel",
+      "Vous parlez cash, pas jargon commercial"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:19:36Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15917,
+    "total_time_s": 154.1
+  }
+}

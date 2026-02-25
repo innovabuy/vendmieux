@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771515437",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : services_entreprises]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution logicielle ou service BtoB (nature exacte non précisée)",
+      "proposition_valeur_presumee": "Optimisation de la gestion d'entreprise de services multi-activités (nettoyage/sécurité/maintenance)",
+      "fourchette_prix": "Prix perçu comme élevé par le prospect, marge de négociation de 10% disponible",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix trop élevé",
+        "Nécessité de négociation tarifaire"
+      ],
+      "implicites": [
+        "Difficulté à justifier la valeur perçue vs prix demandé",
+        "Risque de dévaloriser l'offre en cédant trop facilement",
+        "Besoin de techniques de défense de prix",
+        "Enjeu de maintenir la marge tout en concluant la vente"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas défendre leur prix et ancrer la valeur avant de négocier, ce qui les met en position de faiblesse face aux demandes de remise"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre leur prix, justifier la valeur de leur offre et négocier avec méthode sans brader les tarifs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions BtoB pour entreprises de services",
+      "entreprise_description": "Éditeur de solution ou fournisseur de services destinés aux entreprises du secteur services aux entreprises (nettoyage, sécurité, maintenance)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution permettant d'améliorer la gestion, la rentabilité ou l'efficacité opérationnelle d'entreprises de services multi-activités",
+      "proposition_valeur": "Gain de productivité, optimisation des coûts opérationnels, amélioration de la gestion des interventions et des équipes, ROI mesurable",
+      "prix_indicatif": "Tarif élevé selon perception prospect, remise maximale autorisée de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Montant du prix contesté",
+        "Arguments de valeur déjà présentés",
+        "Raisons précises de l'objection prix",
+        "Budget réel du prospect",
+        "Concurrents en lice"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "MultiServices Horizon",
+        "secteur": "Nettoyage industriel, sécurité et maintenance multi-sites",
+        "taille": "38 salariés",
+        "ca_approximatif": "2,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les commerciaux",
+        "Obsédé par la rentabilité immédiate"
+      ],
+      "motivations_profondes": [
+        "Protéger sa trésorerie comme un lion défend ses petits",
+        "Prouver qu'il peut gérer sans aide extérieure coûteuse",
+        "Ne pas se faire avoir comme avec l'ancienne solution ratée en 2019",
+        "Être vu comme un patron qui négocie bien par son comptable"
+      ],
+      "peurs_freins": [
+        "Investir dans du vent, encore une fois",
+        "Que ses concurrents s'en sortent sans dépenser autant",
+        "Perdre le contrôle sur ses marges déjà serrées",
+        "Que son équipe ne s'adapte pas et qu'il perde du temps",
+        "Que le commercial le prenne pour un pigeon"
+      ],
+      "rapport_aux_commerciaux": "Relation conflictuelle : les voit comme des vendeurs de rêve qui gonflent les prix pour leur commission. Teste systématiquement leur solidité en demandant des remises dès le premier contact. A été échaudé 3 fois en 15 ans.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais transactionnel immédiat : 'Bon, c'est bien tout ça, mais concrètement ça coûte combien vraiment ?'",
+      "signaux_interet": [
+        "Demande des détails chiffrés précis sur le ROI",
+        "Évoque spontanément ses problèmes opérationnels actuels",
+        "Mentionne son comptable ou son responsable d'exploitation comme futures parties prenantes",
+        "Pose des questions sur les délais de mise en œuvre"
+      ],
+      "signaux_rejet": [
+        "Soupir audible quand on parle fonctionnalités sans évoquer les économies",
+        "Phrase killer : 'Écoutez, je vais être franc, c'est au-dessus de mes moyens'",
+        "Compare à voix haute avec 'ce que proposent les autres pour moitié prix'",
+        "Regarde ostensiblement sa montre",
+        "Ton qui devient cassant : 'Non mais attendez, vous me prenez pour qui là ?'"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases de 'concrètement' toutes les 2 minutes",
+        "Dit souvent 'Je vais vous dire franchement' avant de négocier",
+        "Utilise 'Voilà voilà' pour clore un sujet qui ne l'intéresse pas",
+        "Aime dire 'Moi je suis un pragmatique' ou 'Je suis terre à terre'",
+        "Phrase récurrente : 'Faut pas me la faire à l'envers'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : coupe après 45 secondes maximum. Veut du dialogue ping-pong orienté chiffres. Déteste les grands discours marketing."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 15% en 2 ans mais marges en baisse (passage de 12% à 8,5%) à cause de coûts de coordination qui explosent. 3 nouveaux contrats d'ampleur signés mais cauchemar administratif. Turnover à 35% sur les équipes terrain. Sa femme, qui fait la compta, le pousse à digitaliser.",
+      "priorites_actuelles": [
+        "Réduire le temps passé en planification hebdomadaire (actuellement 12h/semaine pour lui)",
+        "Diminuer les erreurs de facturation qui lui coûtent 15k€/an en avoirs",
+        "Garder ses 3 nouveaux gros clients satisfaits sans recruter un manager supplémentaire",
+        "Améliorer son BFR qui se dégrade"
+      ],
+      "experience_avec_offre_similaire": "A testé en 2019 un logiciel de gestion 'soi-disant adapté aux PME' vendu 18k€. Déploiement raté, éditeur disparu, perte sèche. Depuis, ultra-méfiant. Utilise actuellement un mix Excel + logiciel comptable + WhatsApp pour coordonner ses équipes.",
+      "fournisseur_actuel": "Pas de solution intégrée, système artisanal maison",
+      "budget_disponible": "Peut mobiliser 25k€ maximum sans faire exploser sa trésorerie, mais pense à voix haute qu'il ne devrait pas dépasser 15k€. N'a pas provisionné ce budget officiellement, c'est une marge de manœuvre qu'il s'autorise."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en temps gagné PAR SEMAINE plutôt qu'en fonctionnalités abstraites",
+        "Montrer des cas clients dans son secteur exact avec CA et taille similaires",
+        "Proposer un phasage de paiement étalé qui préserve sa tréso",
+        "Évoquer le coût de l'inaction chiffré (ses erreurs de factu actuelles)",
+        "Reconnaître ouvertement que le prix est élevé mais expliquer POURQUOI en détail",
+        "Lui donner le contrôle en proposant un pilote limité"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Céder sur le prix trop vite (il pense alors que le tarif initial était gonflé)",
+        "Noyer sous des slides PowerPoint avec jargon marketing",
+        "Comparer son organisation actuelle à de l'amateurisme",
+        "Promettre des résultats 'magiques' sans méthodologie claire",
+        "Dire que 'tous ses concurrents l'ont déjà adopté' (réaction épidermique)",
+        "Montrer de l'impatience face à ses objections prix",
+        "Ne pas avoir de réponse concrète sur le ROI en mois"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais être franc, j'ai déjà donné avec ce genre de solutions. En 2019 j'ai claqué 18 000 balles dans un logiciel qui a fini à la poubelle. Alors bon, faut pas m'en vouloir mais je suis méfiant.",
+        "sous_texte": "J'ai été brûlé et je ne veux plus être le pigeon. Prouve-moi d'abord que tu es différent des autres avant que je t'écoute vraiment.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'échec passé, montrer qu'on comprend la méfiance légitime, demander ce qui a mal tourné précisément pour prouver qu'on en tiendra compte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Voilà voilà, c'est bien tout ça, mais concrètement ça coûte combien votre truc ? Parce que moi je suis un pragmatique hein, je vais pas tourner autour du pot pendant une heure.",
+        "sous_texte": "Je veux prendre le contrôle de l'échange immédiatement et te mettre en position défensive sur le prix avant même que tu aies pu créer de la valeur.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner le prix tout de suite. Reconnaître la question légitime mais expliquer que le prix dépend de son contexte précis. Poser 2-3 questions de cadrage rapides."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi j'ai 38 salariés, je fais du nettoyage, de la sécu, de la maintenance... Je gère avec Excel et WhatsApp depuis 15 ans et ça tourne. Pourquoi je devrais changer alors que ça fonctionne ?",
+        "sous_texte": "Je me défends contre le changement en minimisant mes problèmes actuels. Fais-moi prendre conscience de ce que ça me coûte vraiment.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que ça fonctionne, puis creuser le coût caché : temps passé, erreurs, turnover. Faire dire les chiffres par lui plutôt que les affirmer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me dites que je perds du temps... Mais concrètement, vous avez des clients dans ma situation exacte ? Parce que les belles promesses marketing, j'ai déjà donné hein.",
+        "sous_texte": "Je veux une preuve sociale ultra-précise pour me rassurer. Je ne crois pas les discours génériques.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un cas client précis : même secteur, même taille, mêmes problèmes, résultats chiffrés. Proposer un contact référent si possible."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attendez, faut pas me la faire à l'envers. Mes concurrents, ils s'en sortent très bien sans payer des fortunes dans ce genre de solutions. Comment vous expliquez ça ?",
+        "sous_texte": "Réaction épidermique : je déteste qu'on me dise que je suis en retard. Mais au fond, j'ai peur d'être le seul à ne pas avoir compris quelque chose.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer ses concurrents. Expliquer que chacun a sa stratégie, mais que la croissance qu'il connaît (+15% en 2 ans) crée des besoins que ses concurrents n'ont peut-être pas encore."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais d'accord, je vois l'intérêt... Mais bon, concrètement, ça va me coûter combien tout ça ? Donnez-moi un chiffre, après on verra.",
+        "sous_texte": "J'ai compris la valeur mais je veux reprendre le contrôle sur le prix pour pouvoir négocier ensuite. Je teste ta solidité.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ancrer d'abord la valeur chiffrée (économies sur erreurs factu 15k€/an + temps gagné valorisé). Puis donner le prix en le contextualisant immédiatement avec le ROI."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez là... Vous me parlez de ROI, de gain de temps, tout ça c'est bien joli, mais en combien de temps concrètement ? Parce que moi j'ai pas 2 ans à attendre hein.",
+        "sous_texte": "Je veux du concret immédiat. J'ai peur que le retour sur investissement soit une promesse lointaine alors que je vais payer cash maintenant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un échéancier précis : gains rapides dès mois 2-3 sur la facturation, ROI complet en X mois. Phasage des bénéfices dans le temps."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre truc là, c'est pas trop compliqué à mettre en place ? Parce que mes gars sur le terrain, ils sont pas des ingénieurs informatiques hein. Et moi j'ai pas le temps de former tout le monde pendant 3 mois.",
+        "sous_texte": "J'ai peur de l'échec de déploiement comme en 2019. Je veux être rassuré sur la simplicité et l'accompagnement sans que ça me bouffe du temps.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Décrire le process d'onboarding précis, l'accompagnement inclus, la prise en main terrain. Proposer éventuellement un pilote sur une équipe réduite."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis bon, entre nous hein, je vais vous dire franchement : j'ai regardé un peu, y'a d'autres solutions qui font à peu près la même chose pour moitié prix. Alors pourquoi je paierais le double chez vous ?",
+        "sous_texte": "Objection classique de négociation. Soit j'ai vraiment vu moins cher (probable mais solutions pas équivalentes), soit je bluffe pour obtenir une remise. Teste ta conviction sur ta valeur.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder ni dénigrer la concurrence. Creuser ce qu'il a vu exactement, montrer les différences précises (accompagnement, fonctions spécifiques secteur, support). Assumer son positionnement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant ce que vous me montrez là, vraiment. Par contre le prix, franchement, c'est au-dessus de mes moyens. J'avais en tête maximum 15 000 euros, pas plus. Là vous me parlez de combien, 28 000 ? Non non, c'est pas possible.",
+        "sous_texte": "Je révèle mon budget plafond (possiblement en dessous de mon vrai budget) pour ancrer ma position de négociation. Je veux voir jusqu'où tu peux descendre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Revaloriser l'offre, rappeler le coût de l'inaction (15k€/an perdus). Explorer des options : phasage paiement, version progressive, ou retirer des modules. Maximum 10% de remise si absolument nécessaire."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi je suis d'accord sur le principe, mais faut que j'en parle à ma femme qui fait la compta. Elle va me tuer si je signe ça sans la prévenir. Et puis mon comptable aussi, il va falloir que je lui en touche un mot.",
+        "sous_texte": "Objection de procédure classique. Peut être sincère (sa femme a vraiment son mot à dire sur les investissements) ou tactique (gagner du temps pour négocier ou comparer).",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le besoin d'alignement interne. Proposer de préparer un dossier chiffré pour sa femme/comptable, ou mieux : les inclure dans un point de validation rapide. Poser une date de retour précise."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais sérieusement, faut pas me prendre pour un pigeon. Si vous me faites pas un geste commercial là, je peux pas signer. Faites un effort, je sais très bien que vous avez de la marge sur vos tarifs.",
+        "sous_texte": "Négociation frontale. Je teste ta limite basse en provoquant. Je veux voir si tu vas craquer ou tenir ton prix. Ma décision finale dépend aussi de ta résistance (paradoxalement).",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rester ferme avec respect. Expliquer la structure de prix transparente. Si remise nécessaire (max 10%), l'échanger contre quelque chose : engagement durée, paiement anticipé, témoignage client, référence."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, dernière question concrètement : si je me plante avec votre solution, si ça marche pas chez moi, qu'est-ce qui se passe ? Parce que moi j'ai pas les moyens de me retaper un ratage comme en 2019.",
+        "sous_texte": "Peur viscérale de l'échec qui remonte. C'est l'objection finale sincère : j'ai besoin d'être ultra-rassuré sur la sécurité de mon investissement avant de m'engager.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer avec des éléments concrets : garantie satisfait/remboursé si applicable, jalons de validation progressifs, accompagnement renforcé, clause de sortie claire. Montrer qu'on comprend et partage le risque."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être cash avec vous : j'ai deux autres fournisseurs qui me font des propositions. Ils sont moins chers. Donnez-moi une bonne raison de choisir chez vous plutôt qu'eux, là maintenant.",
+        "sous_texte": "Mise en concurrence finale, probablement vraie. Je veux t'entendre défendre ta valeur une dernière fois pour être conforté dans mon choix (si je penche déjà vers toi) ou pour justifier d'aller voir ailleurs.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas paniquer ni brader. Recentrer sur SES critères à lui (ses problèmes spécifiques évoqués), montrer en quoi l'offre y répond précisément. Assumer que ce n'est pas le moins cher mais le meilleur rapport valeur/prix pour SON contexte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, votre offre est bien, mais là tout de suite, c'est pas le bon moment. On reparlera de ça dans 6 mois, après la saison. Recontactez-moi en septembre.",
+        "sous_texte": "Fuite polie. Soit je n'ai vraiment pas le budget/timing maintenant (possible avec sa trésorerie tendue), soit c'est une façon élégante de dire non sans avoir à négocier davantage.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser le vrai frein : est-ce vraiment le timing ou autre chose ? Quantifier le coût d'attendre 6 mois (6 mois d'erreurs de factu = 7500€ perdus). Si sincère, poser une date précise de recontact et un jalon intermédiaire."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attendez, vous me prenez pour qui là ? Je vais pas signer à ce prix-là, point final. Soit vous faites un vrai geste commercial, genre 20% minimum, soit on arrête là et on se dit au revoir. Je perds mon temps là.",
+      "condition_declenchement": "Si le commercial a trop insisté sans écouter ses contraintes budgétaires réelles, ou si Laurent sent qu'on essaie de forcer la vente sans respecter son rythme de décision. Ton cassant, agacement visible, menace de rupture crédible."
+    },
+    "pattern_escalade": "Laurent commence cordial mais transactionnel, teste immédiatement sur le prix (minute 2-3), puis écoute si on résiste bien. Il revient régulièrement à la charge sur le prix à chaque nouvelle étape (découverte, argumentation, closing) pour voir si le discours tient. Si le commercial reste solide sans être méprisant, il passe d'objections tactiques à des objections sincères (peurs vraies : échec 2019, déploiement, ROI). L'escalade finale arrive si on a mal géré son besoin de contrôle ou cédé trop vite (il perd confiance) ou à l'inverse été trop rigide sans empathie (il se braque).",
+    "piege_classique": "Céder sur le prix trop rapidement en pensant faciliter la vente. Laurent interprète une remise facile comme la preuve que le prix initial était gonflé, ce qui détruit toute la crédibilité de l'argumentation valeur précédente. Il faut tenir le prix fermement en justifiant chaque euro, puis si vraiment nécessaire, ne concéder qu'un geste modéré (5-7% max des 10% autorisés) en échange d'une contrepartie claire (paiement anticipé, engagement, témoignage). L'autre piège : noyer sous les fonctionnalités sans ramener constamment aux problèmes concrets qu'il a évoqués (ses 15k€ d'erreurs, ses 12h/semaine perdues). Laurent décroche après 45 secondes de monologue marketing."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions BtoB pour entreprises de services",
+      "description": "Éditeur de solution ou fournisseur de services destinés aux entreprises du secteur services aux entreprises (nettoyage, sécurité, maintenance)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution permettant d'améliorer la gestion, la rentabilité ou l'efficacité opérationnelle d'entreprises de services multi-activités",
+      "proposition_valeur": "Gain de productivité, optimisation des coûts opérationnels, amélioration de la gestion des interventions et des équipes, ROI mesurable",
+      "prix": "Tarif élevé selon perception prospect, remise maximale autorisée de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre leur prix, justifier la valeur de leur offre et négocier avec méthode sans brader les tarifs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution de gestion MultiServices",
+    "vous_etes": "Commercial d'un éditeur de solutions de gestion pour entreprises de services multi-activités (nettoyage, sécurité, maintenance).",
+    "vous_vendez": "Une solution complète qui optimise la planification, réduit les erreurs de facturation et améliore la rentabilité — tarif 22 000€, remise maximale autorisée 10%.",
+    "vous_appelez": "Laurent Mercier, 52 ans, gérant de MultiServices Horizon (38 salariés, 2,8M€ CA). Pragmatique, obsédé par sa trésorerie, ultra-méfiant depuis un échec logiciel en 2019 à 18k€. Teste systématiquement en demandant des remises dès le premier échange.",
+    "ce_que_vous_savez": [
+      "Croissance +15% en 2 ans mais marges passées de 12% à 8,5%",
+      "Passe 12h/semaine en planification, perd 15k€/an en erreurs de facturation",
+      "3 gros contrats récents = cauchemar administratif, turnover terrain à 35%",
+      "Budget mobilisable réel : 25k€ max, mais pense ne pas devoir dépasser 15k€",
+      "Utilise actuellement Excel + logiciel compta + WhatsApp"
+    ],
+    "votre_objectif": "Conclure la vente à 22k€ (ou 19,8k€ minimum) en ancrant la valeur avant toute négociation tarifaire.",
+    "vos_atouts": [
+      "ROI démontrable : 12h/semaine gagnées = 24k€/an économisés en temps gérant",
+      "Réduction erreurs facturation = 15k€/an récupérés dès année 1",
+      "Cas client secteur identique : 42 salariés, ROI en 11 mois",
+      "Phasage paiement possible sur 12 mois pour préserver trésorerie"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:37:17Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15741,
+    "total_time_s": 154.4
+  }
+}

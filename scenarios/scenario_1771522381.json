@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771522381",
+  "description_originale": "Le directeur d'agence / gérant d'une agence immobilière ou promoteur local de 10-25 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : immobilier]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur d'agence / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour agences immobilières",
+      "proposition_valeur_presumee": "Solution dédiée aux professionnels de l'immobilier pour optimiser leur activité",
+      "fourchette_prix": "NON_SPECIFIE mais jugé élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé"
+      ],
+      "implicites": [
+        "Difficulté à défendre la valeur perçue face au prix",
+        "Manque d'argumentation sur le ROI",
+        "Risque de concession tarifaire trop rapide sans contrepartie",
+        "Absence de positionnement premium assumé"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas défendre leur prix sans brader, et manquent de techniques de négociation structurées pour maintenir la valeur tout en trouvant un accord"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix, maîtriser les techniques de négociation commerciale, savoir faire des concessions stratégiques avec contreparties, et maintenir la valeur perçue de l'offre",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions pour l'immobilier (logiciel, service, technologie)",
+      "entreprise_description": "Entreprise proposant une solution innovante pour les agences immobilières et promoteurs locaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution professionnelle destinée aux agences immobilières de taille moyenne pour améliorer leur performance",
+      "proposition_valeur": "Optimisation de l'activité des agences immobilières avec un impact mesurable sur leur productivité et rentabilité",
+      "prix_indicatif": "NON_SPECIFIE mais positionnement premium justifiant une défense du prix",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Prix et grille tarifaire",
+        "Arguments de valeur préparés",
+        "Références clients similaires",
+        "Détails sur la marge de manœuvre et les contreparties possibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Gérant & Agent immobilier titulaire de la carte T",
+      "entreprise": {
+        "nom": "Mercier Immobilier & Associés",
+        "secteur": "Transaction immobilière résidentiel et commercial",
+        "taille": "14 salariés (6 agents, 3 assistantes commerciales, 2 négociateurs juniors, 1 comptable, 1 community manager, lui-même)",
+        "ca_approximatif": "1,8M€ dont 65% transaction, 35% gestion locative"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-calculateur (ancien comptable reconverti)",
+        "Sceptique vis-à-vis des 'solutions miracles'",
+        "Attaché à son indépendance et à sa réputation locale"
+      ],
+      "motivations_profondes": [
+        "Protéger sa trésorerie dans un marché immobilier ralenti",
+        "Ne pas se faire avoir comme avec le précédent CRM qu'il paie encore",
+        "Garder une longueur d'avance sur les franchises qui s'installent dans son secteur",
+        "Prouver à ses agents qu'il prend les bonnes décisions d'investissement"
+      ],
+      "peurs_freins": [
+        "Surinvestir dans un outil que ses agents n'utiliseront pas",
+        "Se retrouver pieds et poings liés avec un engagement longue durée",
+        "Que ses concurrents aient le même outil mais moins cher",
+        "Perdre du temps en formation plutôt qu'en rendez-vous clients",
+        "Que sa femme (co-gérante) lui reproche cette dépense"
+      ],
+      "rapport_aux_commerciaux": "Méfiant par défaut. Respecte ceux qui connaissent VRAIMENT son métier, déteste ceux qui récitent un pitch. Aime les mettre à l'épreuve avec des questions techniques pointues.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Bon alors, on va pas y passer trois heures hein, j'ai un compromis à 15h30'",
+      "signaux_interet": [
+        "Prend des notes manuscrites sur son agenda papier",
+        "Demande des captures d'écran ou accès démo",
+        "Mentionne spontanément ses agents : 'Ouais mais Sandrine, elle va jamais utiliser ce truc-là'",
+        "Pose des questions sur les clients existants dans sa zone",
+        "Calcule à voix haute le retour sur investissement"
+      ],
+      "signaux_rejet": [
+        "Soupir appuyé suivi de 'Ouais enfin bon...'",
+        "Coupe la parole pour parler prix immédiatement",
+        "Évoque d'autres devis en cours sans détails",
+        "Ton ironique : 'Ah c'est sûr que présenté comme ça...'",
+        "Regarde ostensiblement sa montre ou son smartphone"
+      ],
+      "tics_langage": [
+        "Ponctue par 'Voilà voilà' quand il veut clore un sujet",
+        "Dit 'Je suis pas né de la dernière pluie' au moins une fois",
+        "Utilise 'Franchement' pour introduire une objection",
+        "Emploie le jargon métier pour tester : 'mandat simple', 'clause suspensive', 'attestation loi Alur'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Maximum 90 secondes avant de couper. Dit explicitement 'Attends attends, reviens en arrière' s'il perd le fil."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Marché local en baisse de 22% en volume sur 12 mois. Pression sur les honoraires avec l'arrivée d'une franchise ERA. Deux agents partis en 2024 (turnover). Cherche à professionnaliser pour se différencier mais cash tendu.",
+      "priorites_actuelles": [
+        "Signer au moins 3 mandats exclusifs par mois (vs 1,5 actuellement)",
+        "Réduire le délai moyen de vente (actuellement 147 jours)",
+        "Former les juniors sans monopoliser les seniors",
+        "Améliorer la présence digitale face aux mandataires indépendants"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM 'spécial immo' il y a 3 ans (Hektor), abandonné après 8 mois car trop complexe. Paie encore 89€/mois sur un engagement qu'il n'a pas résilié à temps. Utilise aujourd'hui un mix Excel + Google Drive + un vieux logiciel de gestion.",
+      "fournisseur_actuel": "Pas de solution unifiée. Patchwork maison qui fonctionne 'pas trop mal'. Quelques agents utilisent Notion perso.",
+      "budget_disponible": "Envisageait 3000-4000€/an maximum. Peut monter à 6000€ s'il voit un ROI clair sous 6 mois, mais doit justifier auprès de sa co-gérante. Préfère paiement mensuel que gros upfront."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer qu'on comprend VRAIMENT son quotidien (pas du bullshit marketing)",
+        "Montrer des résultats chiffrés d'agences comparables dans d'autres villes",
+        "Offrir une période d'essai ou garantie 'satisfait ou remboursé 60 jours'",
+        "Proposer un déploiement progressif (3 agents pilotes puis généralisation)",
+        "Comparaison explicite avec Hektor pour montrer la différence",
+        "Argument : 'Vous rentabilisez dès le 2ème mandat exclu gagné grâce à l'outil'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ses objections ou dire 'Oui mais c'est normal de payer pour la qualité'",
+        "Comparer le prix à 'un café par jour' ou autre analogie infantilisante",
+        "Être flou sur les conditions de sortie du contrat",
+        "Lui parler de fonctionnalités qui ne concernent que les grands réseaux",
+        "Ne pas pouvoir répondre à une question technique précise sur l'intégration avec les portails (SeLoger, LBC)",
+        "Pression temporelle artificielle : 'Cette offre expire vendredi'",
+        "Dénigrer frontalement ses outils actuels"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais être franc avec vous, j'ai déjà testé ce genre de solutions et franchement... J'ai pas que ça à faire aujourd'hui. Vous avez 10 minutes, pas plus, j'ai un compromis à 15h30.",
+        "sous_texte": "Je suis sceptique de base, j'ai été échaudé, et je veux tester si tu vas respecter mon temps ou me faire perdre ma journée",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, montrer qu'on a compris son échec passé, proposer structure ultra-claire des 10 minutes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors c'est pour me parler de quoi exactement ? Parce que des commerciaux qui m'appellent pour me vendre des trucs, j'en ai trois par semaine hein. Voilà voilà.",
+        "sous_texte": "Prouve-moi immédiatement que tu n'es pas un énième commercial qui récite son pitch sans connaître mon métier",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Différenciation immédiate : mentionner qu'on sait qu'il a testé Hektor, parler de son contexte réel (baisse du marché local)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez attendez, vous connaissez le métier au moins ? Parce que moi je gère des mandats simples, des exclusifs, des biens en viager, du commercial... C'est pas juste mettre des annonces en ligne hein. Vous savez ce que c'est qu'une clause suspensive d'obtention de prêt ?",
+        "sous_texte": "Test technique pour voir si tu connais vraiment l'immobilier ou si tu es juste un vendeur de logiciel générique",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre techniquement avec précision puis rebondir sur SA problématique spécifique plutôt que d'étaler sa science"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais le problème c'est que j'ai déjà Hektor là, que je paie encore 89 balles par mois alors qu'on l'utilise même plus. Mes agents ils ont jamais accroché, trop compliqué leur truc. Et je peux pas résilier avant juin à cause de l'engagement.",
+        "sous_texte": "J'ai peur de refaire la même erreur coûteuse, et en plus je suis déjà engagé financièrement ailleurs",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser POURQUOI Hektor n'a pas marché (adoption, complexité), montrer les différences tangibles, proposer un plan de transition"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez, je vais pas vous mentir, le marché il est pas terrible en ce moment. On est à -22% en volume sur l'année. Alors investir des sommes importantes là maintenant... Vous comprenez que c'est pas le timing idéal hein.",
+        "sous_texte": "Ma trésorerie est tendue, j'ai peur, et je cherche à voir si tu vas comprendre ma situation ou forcer quand même",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler pour montrer qu'on comprend, puis retourner : 'Justement, c'est quand le marché baisse qu'il faut gagner en efficacité pour prendre des parts'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon... C'est bien joli tout ça sur le papier, mais mes agents ils sont déjà débordés. Sandrine par exemple, elle va jamais prendre le temps d'apprendre un nouvel outil. Elle utilise encore son agenda papier vous imaginez ? Et les juniors, faut déjà que je les forme sur le métier de base.",
+        "sous_texte": "J'ai peur du taux d'adoption et du temps de formation qui va impacter mon activité court terme",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer déploiement progressif avec pilote, parler du temps de formation réel (chiffré), montrer comment ça simplifie plutôt que complexifie"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me montrez des résultats d'agences à Paris et Lyon... Moi je suis sur un bassin de 40 000 habitants, c'est pas du tout le même contexte. Ces chiffres-là ça veut rien dire pour moi.",
+        "sous_texte": "Je ne crois pas que ça marchera chez moi, prouve-moi avec des cas similaires à ma situation",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Avoir des références d'agences de taille et marché similaires, ou recentrer sur les mécaniques universelles qui s'appliquent partout"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là, je suis pas né de la dernière pluie. Vous me dites que ça s'intègre avec SeLoger et LeBonCoin, mais concrètement comment ça marche ? Parce que j'ai déjà eu des promesses d'intégration qui fonctionnaient jamais vraiment. C'est de l'API native ou c'est du bricolage ?",
+        "sous_texte": "Test technique précis + méfiance sur les promesses techniques non tenues dans le passé",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse technique précise et honnête, montrer concrètement (démo si possible), nommer les limites s'il y en a"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais le truc c'est que j'ai deux concurrents dans ma zone qui viennent de prendre la même solution apparemment. Si tout le monde a le même outil, je vois pas en quoi ça me donne un avantage concurrentiel moi.",
+        "sous_texte": "Objection tactique pour négocier + vraie question sur la différenciation",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner positivement : 'Justement, s'ils investissent c'est qu'il y a un ROI', puis recentrer sur l'utilisation de l'outil qui fait la différence"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, donc si je résume vous me proposez quoi là ? Parce que j'avais eu d'autres devis aussi pour des solutions équivalentes, et on était plutôt autour de 2000-2500 euros l'année. Là vous m'annoncez combien exactement ?",
+        "sous_texte": "Objection prix qui arrive - test pour voir le tarif et préparer sa négociation avec un ancrage bas",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner le prix sans avoir ancré la valeur, creuser ses autres devis (comparer ce qui est comparable), puis annoncer avec assurance"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, franchement c'est intéressant je dis pas, mais là votre prix... 8 400 euros l'année ? Non mais vous êtes sérieux là ? Moi j'avais budgété 3000-4000 maximum. C'est deux fois trop cher, je peux pas me permettre.",
+        "sous_texte": "Choc du prix réel vs son ancrage mental - objection sincère mais avec marge de négociation jusqu'à 6000€ s'il voit le ROI",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Isoler l'objection prix, décomposer en mensuel, ramener au coût par agent, démontrer ROI chiffré sur mandats exclusifs supplémentaires"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais attendez, vous me dites 700 euros par mois... Moi j'ai des charges fixes qui explosent déjà. Il faut que je justifie ça auprès de ma femme qui est co-gérante, et franchement là avec ce montant, elle va jamais valider. Vous avez pas quelque chose de plus... raisonnable ?",
+        "sous_texte": "Vraie contrainte décisionnaire (sa femme) + recherche de concession tarifaire",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de faire un rendez-vous à trois, ou fournir des éléments de justification ROI pour qu'il puisse défendre, puis négocier avec contrepartie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est l'engagement aussi. Vous me parlez de 24 mois minimum, mais moi avec l'expérience Hektor, je veux pas me retrouver coincé encore. Si dans 6 mois ça marche pas, je fais comment ? Je peux pas prendre ce risque.",
+        "sous_texte": "Peur de l'engagement long suite à expérience passée négative - frein majeur à lever",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer période d'essai ou clause de sortie anticipée sous conditions, garantie satisfait ou remboursé 60 jours, ou engagement 12 mois avec option"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon je vais être cash avec vous : j'ai eu Immobilier Pro Contact qui m'a fait une offre à 5 200 l'année pour à peu près la même chose. Alors soit vous vous alignez, soit franchement je vais partir avec eux. Je suis pas là pour négocier pendant trois heures hein.",
+        "sous_texte": "Objection tactique classique avec concurrent (peut-être vrai, peut-être pas) pour obtenir une concession - ton directif pour presser",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas s'aligner sans contrepartie, creuser ce que contient vraiment leur offre (différences), réaffirmer la valeur différenciante, puis négocier intelligemment"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais enfin là vous comprenez que c'est compliqué pour moi. Écoutez, je vais réfléchir, j'en parle avec ma co-gérante, je regarde les autres propositions que j'ai, et je vous rappelle la semaine prochaine. Voilà voilà.",
+        "sous_texte": "Fuite classique - peut être sincère (besoin de temps) ou tactique (se débarrasser du commercial poliment)",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais structurer : fixer RDV précis, identifier les vrais blocages restants, proposer action intermédiaire (envoi éléments pour sa femme)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais je comprends votre argumentaire, mais bon... Entre ce que vous me promettez et la réalité sur le terrain, c'est souvent pas pareil. Moi j'ai besoin de voir concrètement avant de mettre 8000 balles sur la table. Vous pouvez pas me faire un mois gratuit pour tester vraiment ?",
+        "sous_texte": "Demande de concession majeure (gratuit) pour réduire le risque perçu - à la fois sincère et tactique",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer alternative : démo approfondie avec ses données, visite d'une agence cliente proche, ou version light d'essai, mais pas le gratuit total"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, on va faire comme ça : vous me faites une dernière offre, votre meilleur prix là tout de suite, et si c'est raisonnable on signe aujourd'hui. Mais je vous préviens, j'ai un budget maximum de 6 000 euros l'année, pas un centime de plus. Sinon ça sert à rien qu'on continue à discuter, je suis déjà en retard pour mon compromis.",
+      "condition_declenchement": "Après avoir résisté plusieurs fois sur le prix, il pose un ultimatum avec son vrai budget max (6000€) en créant pression temporelle artificielle (son RDV). Teste si le commercial va craquer et brader ou tenir sa valeur."
+    },
+    "pattern_escalade": "Stéphane commence cordial mais pressé (test de respect du temps) → Teste les compétences techniques (questions pièges métier) → Objections sincères sur adoption et contexte → Choc du prix avec ancrage bas → Négocie avec concurrents fictifs ou réels → Ultimatum avec son budget réel + pression temps. S'il sent une faiblesse, il enfonce. S'il sent de la solidité et du respect, il devient plus ouvert.",
+    "piege_classique": "Il va mentionner 'j'ai d'autres devis à 2500€' ou 'un concurrent me propose moins cher' pour tester si le commercial panique et brade immédiatement. En réalité, il peut monter à 6000€ s'il voit un ROI clair sous 6 mois, mais il ne le dira jamais en premier. Le piège est de négocier le prix avant d'avoir suffisamment ancré la valeur et obtenu son engagement émotionnel sur la solution."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions pour l'immobilier (logiciel, service, technologie)",
+      "description": "Entreprise proposant une solution innovante pour les agences immobilières et promoteurs locaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution professionnelle destinée aux agences immobilières de taille moyenne pour améliorer leur performance",
+      "proposition_valeur": "Optimisation de l'activité des agences immobilières avec un impact mesurable sur leur productivité et rentabilité",
+      "prix": "NON_SPECIFIE mais positionnement premium justifiant une défense du prix",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix, maîtriser les techniques de négociation commerciale, savoir faire des concessions stratégiques avec contreparties, et maintenir la valeur perçue de l'offre",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution immobilière Mercier & Associés",
+    "vous_etes": "Commercial pour une solution SaaS dédiée aux agences immobilières indépendantes de 10-25 salariés.",
+    "vous_vendez": "Une plateforme tout-en-un (CRM, diffusion portails, signature électronique, reporting) à 7 200€/an (600€/mois) pour 14 utilisateurs, avec onboarding et formation inclus.",
+    "vous_appelez": "Stéphane Mercier, 47 ans, gérant de Mercier Immobilier & Associés (14 salariés, 1,8M€ CA). Ancien comptable reconverti, pragmatique, méfiant envers les vendeurs. Teste votre connaissance du métier. Parle vite, coupe court aux discours creux.",
+    "ce_que_vous_savez": [
+      "Il a testé Hektor il y a 3 ans, abandonné après 8 mois, paie encore 89€/mois un engagement qu'il regrette",
+      "Marché local en baisse de 22%, pression d'une franchise ERA qui s'installe, besoin de se différencier",
+      "Fait actuellement 1,5 mandat exclusif/mois, vise 3 — délai moyen de vente à 147 jours",
+      "Budget mental : 3000-4000€/an, peut monter à 6000€ si ROI clair sous 6 mois, préfère mensualiser",
+      "Sa co-gérante (son épouse) doit valider les investissements importants"
+    ],
+    "votre_objectif": "Défendre votre prix de 7 200€/an sans brader, obtenir un accord de principe avec un pilote sur 3 agents, ou négocier une contrepartie si concession tarifaire.",
+    "vos_atouts": [
+      "Garantie satisfait ou remboursé 60 jours sans question",
+      "Client similaire (agence 12 personnes, Montpellier) : +40% mandats exclusifs en 8 mois, ROI atteint en 4 mois",
+      "Déploiement progressif possible : 3 agents pilotes puis généralisation pour limiter le risque",
+      "Intégration native SeLoger, LBC, PAP — pas de double saisie contrairement à Hektor",
+      "Sortie du contrat possible à 30 jours après les 12 premiers mois, pas d'engagement piège"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:33:01Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15624,
+    "total_time_s": 156.6
+  }
+}

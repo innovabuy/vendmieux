@@ -1,0 +1,336 @@
+{
+  "id": "scenario_1771523593",
+  "description_originale": "Vous avez envoyé une proposition commerciale au dirigeant / directeur technique d'une installateur ENR ou bureau d'études environnement de 15-40 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : energie_environnement]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "energie_environnement",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution liée aux énergies renouvelables ou environnement pour professionnels du secteur",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse suite à l'envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de suivi structuré après envoi de proposition",
+        "Probable absence de pré-engagement avant l'envoi du document",
+        "Difficulté à gérer le silence radio des prospects",
+        "Manque de légitimité ou d'accroche pour relancer efficacement"
+      ],
+      "probleme_racine": "Les commerciaux envoient des propositions sans avoir sécurisé l'engagement du prospect à les examiner, ce qui crée des situations de relance inconfortables et peu efficaces"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale pour obtenir un positionnement clair (oui/non/prochaine étape) sans paraître insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "energie_environnement",
+      "entreprise_description": "Fournisseur de solutions pour les professionnels des énergies renouvelables et de l'environnement (installateurs ENR, bureaux d'études)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B destinée aux installateurs ENR et bureaux d'études environnement, probablement logiciel, service ou équipement technique",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Prix ou budget concerné",
+        "Historique de la relation avant l'envoi de la proposition",
+        "Raisons pour lesquelles la proposition a été envoyée (demande du prospect, suite à RDV, envoi spontané)",
+        "Proposition de valeur concrète",
+        "Différenciateurs face à la concurrence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marc",
+      "nom": "Dufresne",
+      "age": 47,
+      "poste": "Directeur Technique & Associé",
+      "entreprise": {
+        "nom": "Hélio Solutions",
+        "secteur": "Installation photovoltaïque et pompes à chaleur",
+        "taille": "23 salariés (18 techniciens, 5 administratifs)",
+        "ca_approximatif": "2,8M€ en 2023"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les promesses commerciales",
+        "Surinvesti dans l'opérationnel au détriment du stratégique"
+      ],
+      "motivations_profondes": [
+        "Être reconnu comme expert technique, pas comme client",
+        "Éviter les erreurs coûteuses qui impacteraient sa crédibilité d'associé",
+        "Maintenir sa réputation locale sans prendre de risques inutiles",
+        "Se différencier des concurrents low-cost qui tirent le marché vers le bas"
+      ],
+      "peurs_freins": [
+        "Investir dans un outil qui ne sera pas utilisé par les équipes terrain",
+        "Se faire avoir par un commercial qui ne comprend rien au métier",
+        "Manquer de temps pour déployer correctement une nouvelle solution",
+        "Que son co-associé lui reproche une dépense non rentable",
+        "Dépendre d'un éditeur qui fera faillite dans 2 ans"
+      ],
+      "rapport_aux_commerciaux": "Considère 80% des commerciaux comme des parasites qui le dérangent. Respecte ceux qui connaissent réellement son métier et vont droit au but. A horreur qu'on lui fasse perdre son temps avec du blabla.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Répond au téléphone entre deux chantiers avec bruit de fond. Première phrase souvent : 'Oui Marc bonjour, je vous écoute mais j'ai 5 minutes là'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur le fonctionnement",
+        "Mentionne un problème concret qu'il rencontre actuellement",
+        "Demande combien de temps prend la mise en route réelle",
+        "Dit 'Attends je me pose, donne-moi 2 secondes' et change d'environnement",
+        "Évoque son associé : 'Faudrait que j'en parle à Christophe'"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole pour dire 'Écoutez on verra ça plus tard'",
+        "Répète 'Ouais, ouais' de façon mécanique sans écouter",
+        "Utilise le prétexte 'Je suis sur un chantier là' même quand c'est faux",
+        "Dit 'Envoyez-moi un mail' comme stratégie d'évitement",
+        "Mentionne qu'il a déjà un fournisseur avec qui 'ça se passe bien'"
+      ],
+      "tics_langage": [
+        "Bon alors concrètement...",
+        "Ouais mais dans la vraie vie...",
+        "C'est bien joli tout ça mais...",
+        "Faut que je sois honnête avec vous...",
+        "J'entends ce que vous dites mais..."
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper ou décrocher mentalement. Attend qu'on lui pose des questions plutôt qu'on lui déroule un pitch."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance forte (+35% CA) mais tension sur recrutement techniciens. Multiplication des chantiers crée désorganisation administrative. Retards de facturation. Co-associé commercial pousse pour professionnaliser.",
+      "priorites_actuelles": [
+        "Recruter 2 techniciens qualifiés avant la saison",
+        "Réduire les retards de paiement clients (45j de moyenne)",
+        "Gérer la montée en compétence sur pompes à chaleur (nouveau marché)",
+        "Éviter les erreurs de dimensionnement qui coûtent cher en SAV"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de gestion il y a 3 ans, jamais déployé car 'trop compliqué pour les gars'. Utilise actuellement Excel + papier. Sait que c'est artisanal mais ça fonctionne.",
+      "fournisseur_actuel": "Pas de solution structurée. Fournisseurs matériel classiques (grossistes). Comptable externe pour la compta.",
+      "budget_disponible": "Pourrait débloquer 8-15K€ si ROI démontré sur 18 mois maximum, mais doit convaincre son associé. Frein psychologique au-dessus de 10K€."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client similaire (nom de ville/région) qui a résolu LE MÊME problème précis",
+        "Quantifier le temps gagné en heures concrètes par semaine",
+        "Montrer qu'on comprend la différence entre PAC et photovoltaïque (crédibilité sectorielle)",
+        "Proposer un test limité / phase pilote sans engagement complet",
+        "Dire explicitement 'Si c'est pas pour vous, je vous le dirai'",
+        "Évoquer la pression administrative des nouveaux financements CEE/MaPrimeRénov qui complexifient le métier"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou jargon bullshit",
+        "Critiquer sa façon actuelle de travailler",
+        "Faire du forcing avec relances insistantes",
+        "Proposer un RDV démo de 2h (trop long)",
+        "Envoyer une proposition commerciale de 15 pages sans contexte",
+        "Être incapable de répondre à une question technique basique sur son métier",
+        "Promettre des gains irréalistes"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui Marc bonjour, écoutez là je suis sur un chantier, vous m'envoyez un mail et je regarde ça tranquillement ok ?",
+        "sous_texte": "Je ne me souviens pas de votre proposition OU je l'ai vue mais je ne veux pas vous dire non directement OU je cherche juste à me débarrasser de vous poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider qu'il est occupé, donner une raison PRÉCISE de l'appel en 10 secondes max avec élément nouveau, puis proposer un créneau ultérieur précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui votre truc... Écoutez franchement j'ai pas trop eu le temps de regarder en détail, on est débordés en ce moment",
+        "sous_texte": "Votre proposition ne m'a pas semblé prioritaire OU je ne vois pas en quoi ça résout MES problèmes actuels OU je l'ai survolée et rien ne m'a accroché",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas insister sur le document, reconnecter avec SON problème business concret mentionné lors du premier échange, créer l'urgence sur ce problème spécifique"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est bien gentil mais bon, pour être honnête avec vous, on a déjà nos process qui tournent là... Donc voilà quoi",
+        "sous_texte": "Je ne vois pas pourquoi je changerais quelque chose qui fonctionne déjà OU je minimise mes problèmes pour éviter la conversation OU l'effort du changement me paraît supérieur au bénéfice",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Technique du miroir : répéter 'vos process qui tournent' puis silence pour qu'il développe les failles lui-même, OU challenger gentiment sur UN point de douleur spécifique connu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais dans la vraie vie, mes gars sur le terrain ils vont jamais utiliser votre machin hein, faut être réaliste",
+        "sous_texte": "J'ai déjà échoué à faire adopter un outil OU je connais la résistance au changement de mon équipe OU je cherche une excuse pour ne pas avancer car MOI je ne suis pas convaincu",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider cette peur comme légitime, demander ce qui s'est passé la dernière fois, puis montrer concrètement comment l'adoption sera différente (accompagnement, simplicité, bénéfice direct pour EUX)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon alors concrètement, combien de temps ça prend réellement pour que ce soit opérationnel ? Parce que moi je peux pas me permettre de perdre 3 semaines à paramétrer des trucs",
+        "sous_texte": "Je suis réellement intéressé MAIS j'ai besoin de savoir si c'est réaliste avec ma charge actuelle - c'est un signal d'intérêt déguisé en objection",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un timing RÉALISTE et précis avec jalons concrets, proposer d'absorber une partie de la charge de mise en route, ne JAMAIS minimiser l'effort requis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien joli tout ça mais on a déjà testé un logiciel il y a deux-trois ans... Au final personne l'utilisait, on est revenus à l'Excel",
+        "sous_texte": "Prouvez-moi que vous êtes différent de l'échec précédent OU j'ai peur de revivre la même désillusion OU je protège ma crédibilité d'associé qui a déjà fait une erreur",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie pour identifier ce qui a merdé, puis démontrer point par point en quoi l'approche sera différente - NE PAS dénigrer l'outil précédent"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais j'entends ce que vous dites, mais faudrait que j'en parle à Christophe mon associé déjà... Lui il gère plutôt la partie commerciale et chiffrage",
+        "sous_texte": "Je ne veux pas porter seul la décision OU je cherche à diluer ma responsabilité OU c'est vraiment vrai et il faut impliquer l'associé OU je gagne du temps pour réfléchir",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'importance de l'associé, demander quel est SON avis perso d'abord, puis proposer un format adapté pour impliquer Christophe (call à 3, synthèse courte)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, et si vous faites faillite dans 18 mois, nous on se retrouve avec quoi ? Un logiciel qui marche plus et on repart à zéro ?",
+        "sous_texte": "J'ai besoin d'être rassuré sur la pérennité OU j'ai déjà vécu cette situation avec un autre fournisseur OU je cherche un deal-breaker pour éviter de décider",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas être sur la défensive, montrer des preuves de solidité (clients, levée de fonds, historique), proposer clause contractuelle sur récupération des données, voire garantie"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon soyons clairs, là vous me parlez de combien exactement ? Parce que si c'est pour claquer 20 000 balles, autant que je le sache tout de suite",
+        "sous_texte": "Le prix est mon vrai frein MAIS je ne veux pas le dire directement OU je teste votre réaction au budget OU j'ai un seuil psychologique précis en tête",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Recadrer sur la valeur avant le prix, donner fourchette réaliste avec options, désamorcer les 20K€ en montrant que c'est moins, puis ramener au ROI mensuel concret"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Je sais pas, faut que je réfléchisse quand même. C'est pas anodin comme décision pour nous",
+        "sous_texte": "Je ne suis pas assez convaincu du ROI OU j'ai besoin de valider politiquement en interne OU il me manque un élément de réassurance OU je suis intéressé mais j'ai peur de me tromper",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce qui bloque vraiment : 'Je comprends Marc, dites-moi, qu'est-ce qui vous fait hésiter précisément ?' puis traiter l'objection réelle cachée derrière le flou"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez ça m'intéresse, mais là avec la saison qui arrive et les recrutements en cours, c'est vraiment pas le bon moment. On en reparle plutôt cet automne non ?",
+        "sous_texte": "C'est un vrai frein timing OU c'est une excuse polie pour dire non sans conflit OU je procrastine une décision difficile OU je teste si vous allez insister lourdement",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider le timing puis créer paradoxe : 'Justement, démarrer maintenant avant la saison permet d'être rodé pour la période chargée' + proposer accompagnement renforcé + poser deadline automne ferme si refus"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, envoyez-moi un mail de synthèse avec tout ça, je regarde avec Christophe et on vous recontacte",
+        "sous_texte": "Je veux clore poliment la conversation sans m'engager OU j'ai vraiment besoin de temps de réflexion MAIS je ne veux pas que vous me relancez OU je ne vous rappellerai jamais",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'envoi MAIS verrouiller le prochain point de contact : 'Je vous envoie ça ce soir, et je vous rappelle vendredi 14h pour avoir votre retour, ça vous va ?' - obtenir accord explicite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai un concurrent à vous qui m'a déjà approché avec un truc similaire... Ils sont moins chers et connaissent bien le métier aussi hein",
+        "sous_texte": "C'est vrai et je veux négocier OU c'est faux et je teste votre réaction OU je suis réellement en phase de comparaison et vous êtes en compétition",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer concurrent, creuser ce qu'il a aimé chez eux, puis recentrer sur VOS différenciateurs uniques, demander sur quels critères précis il va trancher"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais bon, 12 000 euros quand même... C'est chaud. Vous pouvez pas faire un geste commercial là-dessus ?",
+        "sous_texte": "Le prix est un frein psychologique réel OU je teste votre marge de négo par réflexe OU j'ai un budget max de 10K€ en tête OU je veux me sentir gagnant dans la négo",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement, creuser quel montant le ferait signer, proposer soit étalement paiement soit réduction de périmètre plutôt que remise sèche, valoriser l'investissement"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'apprécie votre démarche vraiment, mais là honnêtement je me sens un peu pressé... On va dire que c'est pas non, mais c'est pas oui non plus. Laissez-moi le temps de digérer tout ça et on se rappelle d'ici quelques semaines ok ?",
+      "condition_declenchement": "Après 2-3 tentatives de closing où Marc sent une pression commerciale s'installer, même subtile. Il veut reprendre le contrôle de la relation et du timing. Peut être sincère OU stratégie d'évitement définitif."
+    },
+    "pattern_escalade": "Marc commence cordial mais pressé (mode automatique). Si le commercial apporte de la valeur concrète rapidement, il se pose et devient attentif. Si ça dérive en blabla ou forcing, il remonte progressivement des barrières : d'abord 'faut que j'y réfléchisse', puis 'faut que je vois avec mon associé', puis 'c'est pas le bon moment', et finalement 'envoyez un mail' qui signifie game over. La fenêtre d'attention réelle est de 3-4 minutes max au téléphone.",
+    "piege_classique": "Marc donne parfois des signaux d'intérêt (pose des questions techniques, mentionne des problèmes) mais peut quand même ne jamais signer. Il apprécie intellectuellement la solution sans être prêt à passer à l'acte. Le piège est de confondre intérêt conversationnel et intention d'achat. Il faut systématiquement qualifier l'engagement concret (budget OK? timing OK? décideur OK?) sinon on tourne en rond pendant des semaines."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "energie_environnement",
+      "description": "Fournisseur de solutions pour les professionnels des énergies renouvelables et de l'environnement (installateurs ENR, bureaux d'études)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B destinée aux installateurs ENR et bureaux d'études environnement, probablement logiciel, service ou équipement technique",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale pour obtenir un positionnement clair (oui/non/prochaine étape) sans paraître insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Logiciel de gestion pour installateur ENR",
+    "vous_etes": "Commercial chez un éditeur de logiciel de gestion spécialisé pour installateurs photovoltaïque et pompes à chaleur.",
+    "vous_vendez": "Solution de gestion administrative et technique pour PME du secteur ENR (devis, chantiers, facturation, suivi CEE). Formule à partir de 850€/mois.",
+    "vous_appelez": "Marc Dufresne, 47 ans, Directeur Technique et associé chez Hélio Solutions (23 salariés, installation PV et PAC). Pragmatique, méfiant, surchargé. Déteste le blabla commercial.",
+    "ce_que_vous_savez": [
+      "Il a reçu votre proposition il y a 8 jours suite à un RDV téléphonique de qualification",
+      "L'entreprise croît vite (+35% CA) mais souffre de désorganisation administrative et retards de facturation",
+      "Marc a déjà testé un logiciel il y a 3 ans, jamais déployé car 'trop compliqué'",
+      "Il doit convaincre son associé Christophe pour tout investissement > 10K€",
+      "Il est souvent sur chantier, répond entre deux interventions"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : OUI on avance avec une démo terrain, NON ce n'est pas le moment, ou découvrir le vrai frein.",
+    "vos_atouts": [
+      "Vous avez équipé 12 installateurs ENR de taille similaire dans la région",
+      "Votre solution réduit de 6h/semaine le temps admin (chiffre client Bordeaux, 19 salariés)",
+      "Formation terrain de 2 jours incluse pour garantir l'adoption par les techniciens",
+      "Compatible avec les nouveaux dossiers MaPrimeRénov et CEE (son cauchemar actuel)"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:53:13Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14735,
+    "total_time_s": 139.8
+  }
+}

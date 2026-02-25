@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771519770",
+  "description_originale": "Vous appelez à froid le gérant / directeur d'agence d'une cabinet de courtage ou agence d'assurance de 10-30 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : finance_assurance]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant ou directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution destinée aux cabinets de courtage et agences d'assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "appels à froid non sollicités",
+        "prospect occupé et n'a pas prévu l'appel",
+        "absence de relation préalable"
+      ],
+      "implicites": [
+        "résistance initiale forte du prospect",
+        "nécessité de créer rapidement de la valeur perçue",
+        "difficulté à capter l'attention dans les premières secondes",
+        "risque élevé de rejet immédiat",
+        "nécessité de légitimer l'appel rapidement"
+      ],
+      "probleme_racine": "transformer une interruption non sollicitée en opportunité de dialogue avec un décideur pressé qui n'a aucune raison a priori d'écouter"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de prospection téléphonique à froid pour obtenir des rendez-vous qualifiés auprès de décideurs du secteur assurance",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "entreprise proposant une solution B2B destinée aux professionnels de l'assurance et du courtage",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée aux cabinets de courtage et agences d'assurance de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre/solution proposée",
+        "proposition de valeur spécifique",
+        "prix ou budget indicatif",
+        "problématiques métier adressées",
+        "différenciation concurrentielle",
+        "zone géographique ciblée",
+        "références ou cas clients"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Fabrice",
+      "nom": "Deltour",
+      "age": 52,
+      "poste": "Gérant associé",
+      "entreprise": {
+        "nom": "Deltour & Associés Courtage",
+        "secteur": "Courtage en assurances IARD et prévoyance",
+        "taille": "17 salariés (4 courtiers, 8 gestionnaires, 3 assistantes, 2 administratifs)",
+        "ca_approximatif": "1,2M€ avec une stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Méfiant envers les vendeurs par expérience",
+        "Fier de son indépendance et de sa réussite à l'ancienne"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité de son cabinet qu'il a bâti depuis 23 ans",
+        "Ne pas perdre de temps car il gère encore personnellement les gros clients",
+        "Garder le contrôle sur les décisions structurantes sans dépendre de prestataires externes",
+        "Prouver qu'on peut encore réussir sans céder aux modes digitales"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui survend une solution inadaptée",
+        "Investir dans un outil que ses équipes n'utiliseront pas",
+        "Perdre du temps en réunions commerciales stériles alors qu'il croule sous les renouvellements",
+        "Être perçu comme dépassé s'il refuse systématiquement la nouveauté",
+        "Que ses courtiers juniors partent chez un concurrent plus moderne"
+      ],
+      "rapport_aux_commerciaux": "Globalement négatif. A subi 15 ans de démarchage agressif pour des CRM, logiciels métier, formations certifiantes. Dit souvent : 'J'ai déjà tout ce qu'il me faut' par réflexe défensif. Respecte uniquement ceux qui connaissent vraiment son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, légèrement agacé, avec une politesse minimale typiquement française : 'Oui, bonjour, je vous écoute mais je n'ai vraiment pas beaucoup de temps là'",
+      "signaux_interet": [
+        "Arrête de taper sur son clavier et pose des questions précises sur les chiffres",
+        "Mentionne spontanément un problème actuel : 'Tiens, justement on galère avec...'",
+        "Demande des références dans son secteur géographique ou des noms de confrères",
+        "Change de ton, devient moins cassant, utilise le conditionnel : 'Ça pourrait éventuellement nous intéresser si...'",
+        "Propose lui-même une date : 'Vous êtes sur quel secteur ? On pourrait éventuellement se voir jeudi prochain si vous passez dans le coin'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès les 10 premières secondes",
+        "Coupe sèchement : 'Écoutez, on a déjà un fournisseur et on en est contents'",
+        "Formule polie mais définitive : 'Je vous remercie mais ça ne nous concerne pas'",
+        "Dit 'Envoyez-moi un mail' sans donner son adresse (technique d'évitement)",
+        "Mentionne un prétexte factuel : 'Je suis en rendez-vous client dans 2 minutes'",
+        "Ton ironique : 'Ah oui, encore un logiciel révolutionnaire...'"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases par 'voilà' de manière saccadée",
+        "Utilise 'Écoutez...' en début de phrase quand il va refuser quelque chose",
+        "Dit 'Concrètement' pour forcer l'interlocuteur à aller droit au but",
+        "Emploie 'Franchement' quand il exprime un doute ou une objection",
+        "Abuse du 'Là' temporel : 'Là je suis vraiment pris', 'Là on a d'autres priorités'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, il interrompt ou décroche mentalement. Déteste les présentations PowerPoint classiques. Veut des faits, des chiffres, des noms de clients similaires."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable mais en léger déclin d'activité. Perte de 2 courtiers expérimentés partis en 18 mois. Digitalisation partielle : utilise un vieux logiciel métier (depuis 2012) que personne ne maîtrise vraiment. Pression croissante des comparateurs en ligne et des néo-assureurs. Renouvellements clients OK mais prospection quasi inexistante.",
+      "priorites_actuelles": [
+        "Finaliser les renouvellements annuels (période novembre-janvier critique)",
+        "Former la nouvelle courtière embauchée en septembre qui coûte cher et ne produit pas encore",
+        "Gérer un contentieux avec un assureur sur une indemnisation client",
+        "Réfléchir (sans vraiment avancer) à une stratégie de développement pour 2025"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 4 ans un CRM recommandé par la chambre de commerce. Échec total : interface complexe, équipes non formées, abandon au bout de 6 mois. Depuis, très réticent sur le digital. A aussi eu un stagiaire qui voulait 'faire du marketing sur LinkedIn' : n'a rien donné.",
+      "fournisseur_actuel": "Logiciel métier Gestowin (éditeur régional, support médiocre, interface datée mais 'ça fait le job'). Pas de CRM dédié. Prospection = bouche-à-oreille + quelques rendez-vous par d'anciens clients.",
+      "budget_disponible": "Dirait spontanément 'Ça dépend de ce que vous proposez' mais peut débloquer entre 8 et 15K€ si ROI clairement démontré et rapidement visible. Rechigne à tout abonnement mensuel au-dessus de 300€. Préfère les achats en propre aux SaaS."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner dès les 10 premières secondes un confrère courtier local qu'il connaît et respecte",
+        "Parler son langage métier avec précision : commissions, DDA, IC, taux de transformation, panier moyen client",
+        "Reconnaître explicitement qu'on le dérange et proposer immédiatement une porte de sortie valorisante",
+        "Évoquer un problème qu'il rencontre VRAIMENT : difficulté de prospection, turnover des courtiers, pression des néo-assureurs",
+        "Apporter une donnée chiffrée crédible et spécifique : 'Les cabinets de votre taille perdent en moyenne 12% de CA sur 3 ans s'ils ne renouvellent pas leur portefeuille'",
+        "Proposer un rendez-vous ultra-court (20 min) en se déplaçant chez lui, idéalement hors période de renouvellement"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Entrer directement dans un pitch commercial sans avoir demandé la permission de parler",
+        "Utiliser du jargon startup/tech : 'solution disruptive', 'IA', 'gamification', 'onboarding'",
+        "Promettre des résultats irréalistes : '+40% de CA en 6 mois'",
+        "Ne pas connaître les spécificités du courtage (le confondre avec un agent général ou un conseiller banque-assurance)",
+        "Insister lourdement après un premier refus poli",
+        "Proposer un webinaire, une démo en ligne, un livre blanc de 40 pages",
+        "Dire 'On travaille déjà avec les leaders du secteur' sans pouvoir citer de nom précis",
+        "Minimiser ses objections : 'Oui mais justement notre solution règle ce problème' (ton condescendant)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez là je suis vraiment débordé, envoyez-moi un mail on verra ça plus tard",
+        "sous_texte": "Je n'ai pas prévu cet appel, je veux me débarrasser de vous poliment sans m'engager. Le mail = la poubelle, c'est ma technique habituelle.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider l'interruption, proposer 45 secondes chrono avec permission explicite de raccrocher après"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui encore un coup de fil commercial... Vous vendez quoi exactement ? Parce que franchement j'ai déjà tout ce qu'il me faut",
+        "sous_texte": "Je suis agacé par le démarchage permanent. Je me protège par réflexe avant même de savoir ce que vous proposez. Prouvez-moi que vous n'êtes pas comme les autres.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître explicitement la saturation commerciale, différencier immédiatement l'approche, parler son langage métier"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, c'est pour me vendre un CRM ou un truc digital c'est ça ? On a déjà essayé il y a quelques années, ça n'a rien donné, mes équipes n'ont jamais accroché",
+        "sous_texte": "J'ai une vraie blessure sur ce sujet. J'ai investi temps et argent pour un échec. Je ne veux pas revivre ça. Vous devez comprendre ce traumatisme avant de proposer quoi que ce soit.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec précédent avec empathie, identifier les vraies causes (formation ? complexité ? adhésion ?), différencier sans dénigrer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement vous travaillez avec qui dans le courtage ? Parce que moi j'entends beaucoup de belles promesses mais au final personne n'a de résultats probants",
+        "sous_texte": "Test de crédibilité. Si vous ne pouvez pas citer des noms précis de courtiers locaux, vous perdez toute légitimité. Je veux des preuves sociales tangibles, pas du baratin.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 références ultra-précises (nom, ville, taille similaire, résultat chiffré), proposer mise en relation si nécessaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Votre solution là, ça coûte combien ? Parce que si c'est pour me prendre 500 balles par mois en abonnement je vous arrête tout de suite, j'ai pas ce budget",
+        "sous_texte": "Je déteste les modèles SaaS qui me rendent dépendant. Je veux maîtriser mes coûts. Mais cette objection peut aussi être tactique : je teste votre marge de négociation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix sans avoir créé de valeur. Retourner sur les enjeux business. Si insistance : donner fourchette avec ROI chiffré immédiat"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement on a d'autres priorités là, on est en pleine période de renouvellements, c'est pas du tout le moment de lancer un nouveau projet",
+        "sous_texte": "C'est vrai ET c'est une excuse. Je suis effectivement sous l'eau, mais je dis aussi ça pour éviter de m'engager. Si votre solution résout un vrai problème urgent, je trouverai du temps.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte timing, proposer horizon post-renouvellements, mais questionner si le problème ne coûte pas DÉJÀ cher pendant les renouvellements"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez mon métier c'est pas vendre des produits hein, c'est conseiller mes clients. Ces trucs digitaux ça déshumanise la relation, c'est pas notre culture",
+        "sous_texte": "J'ai peur de perdre mon identité métier et ma valeur ajoutée. Je m'accroche à mes convictions d'artisan du conseil. Mais je sens aussi la pression de la modernité. Aidez-moi à concilier les deux.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler pour montrer que vous comprenez sa fierté métier, positionner l'outil comme amplificateur du conseil (plus de temps client), citer courtiers traditionnels conquis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais mes courtiers ils sont déjà surchargés là, je vais pas leur rajouter encore un outil à apprendre, ils vont me démissionner",
+        "sous_texte": "J'ai vraiment peur du turnover, j'ai déjà perdu deux bons éléments. Je ne veux pas créer de friction supplémentaire. Prouvez-moi que ça simplifie vraiment leur quotidien au lieu de le compliquer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la crainte légitime, montrer temps de formation réduit + gain temps immédiat, impliquer les courtiers dès le départ dans le choix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez vous me parlez de résultats dans 6 mois, 1 an... Moi je peux pas attendre aussi longtemps, j'ai besoin de voir un impact rapide sinon ça sert à rien",
+        "sous_texte": "Je suis en mode survie business. Chaque investissement doit payer vite. Si vous promettez du long terme, je traduis : 'aucun résultat concret rapidement'. Montrez-moi des quick wins.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Découper en jalons courts (quick wins à 30-60 jours), chiffrer les gains immédiats, proposer pilote limité pour prouver la valeur vite"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez c'est intéressant tout ça mais là je dois filer en rendez-vous client, on en reparle un autre jour d'accord ?",
+        "sous_texte": "Fuite tactique. Soit c'est vrai (50% de chances), soit je veux prendre du recul sans m'engager, soit je ne suis pas convaincu mais trop poli pour le dire frontalement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Tester la sincérité : 'Pas de souci Fabrice, juste pour savoir : quand on se reparle, vous voulez approfondir quel point précisément ?' Si flou = objection cachée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, et puis qui me dit que dans 2 ans vous existez encore ? Parce que des startups qui ferment j'en ai vu passer hein, et après je me retrouve avec un outil mort",
+        "sous_texte": "Je veux de la stabilité, de la pérennité. Je ne peux pas me permettre de dépendre d'une boîte fragile. Rassurez-moi sur votre solidité financière et votre ancrage.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence sur ancienneté, nombre de clients, croissance, modèle économique rentable, garanties contractuelles, récupération données"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement je suis pas contre qu'on se voie mais faut que j'en parle à mon associé d'abord, je peux pas décider tout seul sur ce genre de sujet",
+        "sous_texte": "Peut être vrai (décision collégiale légitime) OU excuse classique pour temporiser sans dire non. Je teste aussi si vous allez accepter un RDV à deux ou insister pour me voir seul d'abord.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la légitimité, proposer RDV à 3 directement en valorisant le gain de temps, ou RDV exploratoire solo puis 2ème avec associé si pertinent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais là on arrive sur décembre, janvier, c'est mort niveau planning, on peut pas caler un rendez-vous avant février au mieux",
+        "sous_texte": "C'est factuellement vrai (période chargée) mais je l'utilise aussi pour repousser indéfiniment. Février = 'on verra à ce moment-là' = jamais. Testez mon vrai niveau d'intérêt.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte, proposer pré-bloquer un créneau février maintenant (engagement), OU pitcher un RDV 20min fin janvier en précisant 'période creuse post-renouvellements'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez je vais être honnête avec vous, c'est pas la priorité du cabinet cette année, on a déjà d'autres chantiers en cours, donc voilà merci mais c'est non",
+        "sous_texte": "Je vous respecte assez pour être direct maintenant. C'est probablement un vrai non pour l'instant, mais peut-être pas définitif si la situation évolue. Gérez la fin avec classe.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Remercier la franchise, demander permission de recontacter dans 6 mois si contexte change, laisser porte ouverte sans insister lourdement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, finalement je pense qu'on va rester sur notre organisation actuelle, ça fonctionne pas si mal, on va pas tout chambouler pour le principe",
+        "sous_texte": "Le statu quo me rassure. Changer fait peur. Je n'ai pas assez perçu le coût de l'inaction. Vous n'avez pas suffisamment creusé mes vrais problèmes ou créé d'urgence.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tentative ultime : 'Je comprends Fabrice. Juste une dernière question : quand vous dites que ça fonctionne pas si mal, vous pensez à quoi précisément ?' Faire émerger insatisfaction cachée"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez c'est gentil de m'avoir appelé mais concrètement je vois pas ce que votre solution va m'apporter que je n'ai pas déjà. Là je perds mon temps et vous aussi, donc voilà on va s'arrêter là d'accord ? Bonne continuation",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas su créer de valeur perçue différenciante dans les 2-3 premières minutes, ou s'il a multiplié les erreurs (pitch trop long, jargon inadapté, pas de références crédibles, promesses floues). Fabrice décide de couper court poliment mais fermement car il ne voit aucun bénéfice tangible à poursuivre."
+    },
+    "pattern_escalade": "Fabrice commence par des objections réflexes de protection (pas le temps, envoyez un mail, j'ai déjà tout). Si le commercial franchit cette barrière avec crédibilité, il passe à des objections plus sincères et profondes (échec passé CRM, peur turnover équipe, besoin résultats rapides). En phase closing, il utilise des objections tactiques de temporisation (en parler à l'associé, période chargée) pour garder le contrôle et tester la solidité du commercial. Le pattern révèle une défiance initiale forte qui peut se transformer en curiosité pragmatique si le commercial prouve sa connaissance métier et apporte des preuves concrètes. L'escalade finale mène soit à un rendez-vous conditionné à des garanties précises, soit à un refus poli mais définitif si la valeur n'a pas été démontrée.",
+    "piege_classique": "Le piège majeur avec Fabrice est de confondre ses objections réflexes (protection) avec ses vraies préoccupations (peur de l'échec, besoin de ROI rapide, crainte du turnover). Beaucoup de commerciaux s'épuisent à répondre rationnellement aux objections de surface ('j'ai pas le temps' → 'ça prendra que 20 minutes') sans jamais accéder aux freins profonds. Autre piège : prendre son ton direct et cassant personnellement et se braquer, alors que c'est juste sa manière de filtrer les commerciaux médiocres. Fabrice respecte ceux qui tiennent face à sa brutalité initiale et qui connaissent vraiment son métier. Le vrai piège est aussi de sur-argumenter quand il dit non : à un moment donné, son non devient définitif et insister détruit toute chance de rappel futur. Enfin, piège subtil : il peut sembler intéressé pour se débarrasser de vous ('envoyez-moi une doc') alors qu'il a déjà décidé que non. Il faut tester la sincérité de chaque micro-engagement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "entreprise proposant une solution B2B destinée aux professionnels de l'assurance et du courtage"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée aux cabinets de courtage et agences d'assurance de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de prospection téléphonique à froid pour obtenir des rendez-vous qualifiés auprès de décideurs du secteur assurance",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Cabinet de courtage IARD",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour professionnels de l'assurance et du courtage.",
+    "vous_vendez": "Une solution destinée aux cabinets de courtage de taille moyenne (10-30 salariés) — prix et détails à adapter selon les besoins identifiés.",
+    "vous_appelez": "Fabrice Deltour, 52 ans, gérant associé de Deltour & Associés Courtage — 17 salariés, 1,2M€ de CA. Pragmatique, méfiant, protecteur de son indépendance. Il va vous tester dans les 20 premières secondes.",
+    "ce_que_vous_savez": [
+      "Cabinet stable mais CA stagnant depuis 2 ans",
+      "A perdu 2 courtiers expérimentés en 18 mois",
+      "Utilise un vieux logiciel métier depuis 2012",
+      "Prospection quasi inexistante, renouvellements OK mais pas de croissance",
+      "Période actuelle : pic de renouvellements annuels (novembre-janvier) = surchargé"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique de 20 minutes maximum, en vous déplaçant chez lui, idéalement hors période de renouvellement.",
+    "vos_atouts": [
+      "Vous connaissez son secteur : courtage IARD, commissions, DDA, turnover",
+      "Vous avez identifié son vrai problème : stagnation du CA et difficulté à prospecter",
+      "Vous respectez son temps : vous allez reconnaître que vous le dérangez",
+      "Vous parlez son langage, pas du jargon startup"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:49:30Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16611,
+    "total_time_s": 159.0
+  }
+}

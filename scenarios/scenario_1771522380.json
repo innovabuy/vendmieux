@@ -1,0 +1,334 @@
+{
+  "id": "scenario_1771522380",
+  "description_originale": "Le expert-comptable associé / gérant d'une cabinet comptable de 10-25 collaborateurs est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : comptabilite]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "10-25 collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "expert-comptable associé / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution logicielle ou service pour cabinets comptables",
+      "proposition_valeur_presumee": "optimisation des processus comptables, gain de temps, amélioration de la productivité du cabinet",
+      "fourchette_prix": "NON_SPECIFIE - mais perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé",
+        "Nécessité de négocier pour conclure"
+      ],
+      "implicites": [
+        "Le commercial a probablement mal défendu la valeur en première présentation",
+        "Risque de brader le prix sans obtenir de contrepartie",
+        "Difficulté à maintenir sa posture de valeur face à la pression tarifaire",
+        "Manque de technique de défense de prix"
+      ],
+      "probleme_racine": "Le commercial ne maîtrise pas les techniques de défense de prix et de négociation raisonnée, ce qui l'expose à brader sa marge sans stratégie"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix, négocier avec méthode en préservant ses marges, et conclure un accord gagnant-gagnant sans céder sur la valeur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "édition de logiciels pour cabinets comptables ou services BtoB pour experts-comptables",
+      "entreprise_description": "Fournisseur de solutions technologiques ou de services destinés aux cabinets d'expertise comptable pour optimiser leur activité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution permettant d'améliorer l'efficacité opérationnelle des cabinets comptables, probablement un logiciel de gestion, un outil de dématérialisation, ou un service d'accompagnement",
+      "proposition_valeur": "Gain de productivité pour le cabinet, réduction des tâches chronophages, amélioration de la rentabilité par collaborateur, modernisation du cabinet",
+      "prix_indicatif": "NON_SPECIFIE - mais qualifié d'élevé par le prospect",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Prix exact de la solution",
+        "Nature précise de l'offre (logiciel, service, formation)",
+        "Montant de la remise maximale acceptable (10% de quel montant)",
+        "Historique de la relation commerciale",
+        "Budget du prospect",
+        "Alternatives envisagées par le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathieu",
+      "nom": "Durieux",
+      "age": 47,
+      "poste": "Expert-comptable associé",
+      "entreprise": {
+        "nom": "Durieux & Lefranc Expertise Comptable",
+        "secteur": "Expertise comptable et conseil",
+        "taille": "18 collaborateurs (3 associés, 12 collaborateurs comptables, 3 administratifs)",
+        "ca_approximatif": "1,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent financièrement jusqu'à l'excès",
+        "Analytique mais procrastinateur sur les décisions stratégiques",
+        "Méfiant envers les discours commerciaux trop lisses"
+      ],
+      "motivations_profondes": [
+        "Ne pas se faire avoir comme lors de l'achat raté d'un logiciel en 2019 (12 000€ perdus)",
+        "Prouver à son associé Marc qu'il sait négocier (rivalité amicale)",
+        "Réduire le turnover des collaborateurs en leur offrant de meilleurs outils",
+        "Éviter de perdre des clients face aux cabinets plus digitalisés"
+      ],
+      "peurs_freins": [
+        "Investir dans une solution qui ne sera pas adoptée par l'équipe",
+        "Se retrouver coincé dans un contrat pluriannuel non résiliable",
+        "Que ses confrères découvrent qu'il a payé plein pot alors qu'eux ont eu 20% de remise",
+        "Manquer de trésorerie pour les primes de fin d'année"
+      ],
+      "rapport_aux_commerciaux": "Commence cordial puis devient cassant dès qu'il sent une technique de vente. Respecte ceux qui assument leurs prix sans fléchir. Déteste les relances insistantes mais apprécie qu'on le relance une fois.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sympathique mais légèrement distant, avec un 'Bon alors, on va faire vite parce que j'ai un client à 11h'",
+      "signaux_interet": [
+        "Pose des questions très précises sur les délais de mise en œuvre",
+        "Demande spontanément des références dans des cabinets de taille similaire",
+        "Évoque des situations concrètes de son cabinet ('Là, sur la révision, on perd un temps fou...')",
+        "Son débit ralentit et il prend des notes",
+        "Utilise le 'nous' : 'nous aurions besoin de'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible quand on annonce le prix",
+        "Phrase type : 'Écoutez, c'est pas dans nos cordes là'",
+        "Commence à parler d'un concurrent fictif qui lui aurait fait une meilleure offre",
+        "Regarde ostensiblement son téléphone",
+        "Raccourcit ses réponses : 'Ouais', 'Bon', 'D'accord'"
+      ],
+      "tics_langage": [
+        "Abuse du 'franchement' : 'Franchement, votre prix...'",
+        "Dit 'Voilà voilà' quand il veut couper court",
+        "Utilise 'entre nous' pour créer une fausse complicité négociatrice",
+        "Ponctue de 'hein' ses affirmations : 'C'est trop cher, hein'"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant d'interrompre avec une question ou un 'Oui mais concrètement...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable mais sous pression : 2 collaborateurs seniors partis en 6 mois vers des structures plus modernes. Carnet de commandes plein mais rentabilité par dossier en baisse. Vient de perdre un client PME qui lui reprochait d'être 'old school'.",
+      "priorites_actuelles": [
+        "Fidéliser l'équipe en place (objectif n°1)",
+        "Digitaliser les processus avant la saison fiscale de mars-avril",
+        "Convaincre son associé Marc (plus conservateur) que l'investissement est nécessaire"
+      ],
+      "experience_avec_offre_similaire": "A testé une solution concurrente en version gratuite il y a 8 mois mais n'est pas allé au bout. A acheté un logiciel de GED en 2019 qui n'a jamais été déployé (échec cuisant, source de moqueries internes).",
+      "fournisseur_actuel": "Utilise encore un mix bricolé : Cegid pour la compta, Excel pour le suivi, Dropbox pour le partage. Aucun vrai logiciel intégré.",
+      "budget_disponible": "A provisionné 15 000€ dans sa tête mais n'en dira jamais plus de 10 000€. Pourrait monter à 18 000€ maximum si étalement sur 2 exercices comptables ou si valeur clairement démontrée avec ROI chiffré."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer des cabinets similaires dans sa région avec résultats chiffrés concrets",
+        "Proposer un pilote court (1 à 2 mois) avec clause de sortie",
+        "Parler ROI en heures gagnées par collaborateur (son langage)",
+        "Montrer qu'on comprend la saisonnalité de son métier (période fiscale)",
+        "Accepter un paiement étalé sur 2 ans pour lisser l'impact tréso",
+        "Évoquer la rétention des talents comme retour sur investissement invisible mais réel"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Comparer son cabinet à des structures de 50+ personnes",
+        "Minimiser son objection prix avec des phrases du type 'Oui mais pour la qualité...'",
+        "Lui dire que 'tous ses confrères ont déjà sauté le pas' (faux et condescendant)",
+        "Proposer une remise immédiate sans contrepartie (perd toute crédibilité)",
+        "Insister après un 'non' ferme la première fois",
+        "Utiliser du jargon commercial anglo-saxon (disruption, game changer, etc.)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous préviens tout de suite, on a déjà regardé votre solution et franchement le prix nous a refroidis, hein. Donc si c'est pour me refaire le même pitch...",
+        "sous_texte": "Je veux éviter de perdre du temps si vous n'êtes pas prêt à négocier sérieusement. Je teste votre capacité à sortir du discours marketing.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître l'objection sans se justifier immédiatement. Recentrer sur la valeur avant de parler prix."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors, on va faire vite parce que j'ai un client à 11h. Vous avez combien de temps ?",
+        "sous_texte": "Je garde le contrôle de l'échange. Je veux voir si vous respectez mon temps ou si vous allez dérouler votre argumentaire sans m'écouter.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Confirmer un timing précis et s'y tenir. Montrer qu'on respecte son agenda."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Entre nous, j'ai déjà un concurrent qui m'a proposé la même chose à 30% moins cher. Pourquoi je paierais plus chez vous ?",
+        "sous_texte": "C'est probablement faux ou exagéré. Je teste votre réaction : allez-vous paniquer et brader votre prix ou défendre votre valeur avec assurance ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas remettre en question sa parole, mais creuser les différences réelles entre les offres. Recentrer sur ses priorités spécifiques."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que nous on a déjà testé un truc similaire en 2019, on a claqué 12 000 balles et ça n'a jamais été utilisé. Mes collaborateurs sont restés sur Excel.",
+        "sous_texte": "J'ai peur de revivre un échec cuisant. Je ne veux pas me faire ridiculiser à nouveau devant mon associé et mon équipe. Prouvez-moi que cette fois sera différente.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Explorer l'échec passé pour identifier les causes (formation ? adoption ? mauvais fit ?). Montrer comment vous évitez ces pièges."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, nous on a une saisonnalité très forte. Entre janvier et avril on est sous l'eau, donc si ça demande 3 mois de déploiement, c'est mort.",
+        "sous_texte": "Je cherche des raisons rationnelles de dire non, mais c'est aussi une vraie contrainte. Si vous comprenez mon métier, vous saurez traiter cette objection.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer qu'on comprend son cycle et proposer un calendrier adapté (démarrage post-avril, pilote en période creuse)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais c'est bien beau tout ça, mais concrètement, sur un cabinet comme le mien, 18 personnes, ça donne quoi en vrai ? Parce que vos beaux slides avec des cabinets de 100 personnes, ça me parle pas.",
+        "sous_texte": "Je suis analytique et méfiant des discours génériques. Donnez-moi du concret et du comparable, sinon je décroche.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer des références précises de cabinets de 15-25 personnes avec résultats chiffrés. Parler son langage (heures gagnées, coût par collaborateur)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, votre prix là... *soupir* C'est pas dans nos cordes. On a provisionné 10 000 euros maximum. Là vous me parlez de combien déjà ?",
+        "sous_texte": "Je mets la pression sur le prix. Je vous donne un budget inférieur à ce que j'ai vraiment pour voir votre marge de manœuvre. Attention, je mens sur le montant réel.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Explorer le ROI et la valeur avant de discuter modalités de paiement ou adaptations de périmètre."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais si je paie plein pot et que j'apprends que le cabinet Martel à côté a eu 20% de ristourne, je vais passer pour un con, hein. Comment je sais que vous me faites pas ça ?",
+        "sous_texte": "J'ai peur de me faire avoir et que mes confrères se moquent de moi. Je veux sentir que j'ai obtenu le meilleur deal possible.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer la politique tarifaire transparente. Rassurer sur l'équité tout en valorisant ce que LUI obtient spécifiquement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau engagement, c'est quoi ? Parce que si je me retrouve coincé sur 3 ans avec un truc que mon équipe n'utilise pas, je préfère encore rester comme on est.",
+        "sous_texte": "Je ne veux pas être prisonnier. Mon expérience ratée de 2019 me hante. J'ai besoin d'une porte de sortie pour me sentir en sécurité.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un pilote avec clause de sortie ou engagement plus court avec possibilité de réévaluation. Rassurer sur la flexibilité."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà... Écoutez, faut que j'en parle à mon associé Marc. Vous savez comment c'est, on décide pas tout seul sur des montants comme ça. Je vous rappelle la semaine prochaine.",
+        "sous_texte": "C'est ma tactique habituelle de fuite. Marc existe et est conservateur, mais c'est surtout moi qui hésite encore. Je veux gagner du temps pour réfléchir ou pour créer une pression à la baisse.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Impliquer l'associé dès maintenant : proposer un point à trois, ou a minima définir les critères de décision précis pour Marc."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, entre nous, si vous me faites un geste commercial significatif, genre 15% minimum, là on peut conclure aujourd'hui. Sinon je peux pas justifier ça en interne.",
+        "sous_texte": "Je négocie dur maintenant que je suis intéressé. Je veux une remise pour me sentir gagnant. Je teste votre limite basse et votre capacité à tenir votre position.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas céder à la demande brute. Proposer une contrepartie (durée d'engagement, témoignage, parrainage) ou un réaménagement de l'offre qui préserve la marge."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le truc c'est qu'avec les primes de fin d'année qui arrivent, et le 13ème mois, là en tréso on est un peu justes jusqu'à janvier. C'est vraiment le timing qui coince.",
+        "sous_texte": "C'est une vraie contrainte de trésorerie, mais aussi une porte de sortie confortable. Si vous me proposez un étalement intelligent, je peux dire oui.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un échelonnement sur 2 exercices comptables ou un démarrage différé avec signature immédiate. Transformer la contrainte en solution."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, j'ai besoin de réfléchir encore. C'est quand même un investissement conséquent. Laissez-moi le week-end, on se reparle lundi ?",
+        "sous_texte": "Je procrastine sur les décisions stratégiques, c'est mon trait de caractère. Mais je suis aussi sincèrement en train de peser le pour et le contre. Ne me lâchez pas mais ne me brusquez pas.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter un temps de réflexion COURT et STRUCTURÉ. Identifier ensemble les derniers points à clarifier et fixer un point de décision précis."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est trop cher. Point. Voilà voilà. Merci pour votre temps mais on va rester comme on est pour le moment.",
+        "sous_texte": "Je me braque parce que je me sens acculé ou parce que vous avez insisté trop lourdement sur la vente. C'est ma défense quand je perds le contrôle de la négociation.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Faire un pas en arrière immédiat. Reconnaître sa position sans argumenter. Proposer de laisser la porte ouverte dignement sans pression."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, j'apprécie votre solution, vraiment. Mais là, même avec vos aménagements, on est encore à 15% au-dessus de ce que je peux raisonnablement justifier. Si vous pouvez rien faire de plus, on va en rester là. Dommage, hein, mais voilà.",
+      "condition_declenchement": "Se déclenche si le commercial a défendu son prix avec cohérence mais que Mathieu sent qu'il ne peut plus extraire de concession supplémentaire. C'est son objection de repli ultime, sincère mais aussi légèrement tactique : il laisse une ouverture ('dommage') pour voir si le commercial va vraiment le laisser partir ou proposer un dernier élément créatif."
+    },
+    "pattern_escalade": "Mathieu commence sympathique et analytique. Quand le prix arrive, il soupire et devient plus cassant ('franchement, c'est pas dans nos cordes'). Si le commercial défend mal ou brade trop vite, il perd le respect et durcit ('voilà voilà'). Si le commercial tient bon avec empathie et créativité, Mathieu respecte la posture et s'engage dans une vraie négociation raisonnée, révélant progressivement ses vrais enjeux (peur de l'échec 2019, besoin de justification face à Marc, contrainte tréso). Le point de bascule : quand le commercial transforme une contrainte en opportunité (ex: 'justement, étalons sur 2 exercices pour lisser l'impact') plutôt que de simplement baisser le prix.",
+    "piege_classique": "Mathieu annonce un budget de 10 000€ alors qu'il a provisionné 15 000€ et pourrait monter à 18 000€. Le commercial débutant va immédiatement adapter son offre à 10 000€ (en retirant des modules ou en bradant), validant ainsi le budget fictif. Résultat : Mathieu perd confiance dans la valeur de l'offre ('si c'est si facile de descendre, c'est que c'était gonflé') ET rate l'opportunité de la solution complète. La bonne approche : ignorer le budget annoncé dans un premier temps, construire la valeur et le ROI, PUIS seulement discuter des modalités financières une fois la valeur établie. Mathieu respectera celui qui ne plie pas immédiatement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "édition de logiciels pour cabinets comptables ou services BtoB pour experts-comptables",
+      "description": "Fournisseur de solutions technologiques ou de services destinés aux cabinets d'expertise comptable pour optimiser leur activité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution permettant d'améliorer l'efficacité opérationnelle des cabinets comptables, probablement un logiciel de gestion, un outil de dématérialisation, ou un service d'accompagnement",
+      "proposition_valeur": "Gain de productivité pour le cabinet, réduction des tâches chronophages, amélioration de la rentabilité par collaborateur, modernisation du cabinet",
+      "prix": "NON_SPECIFIE - mais qualifié d'élevé par le prospect",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix, négocier avec méthode en préservant ses marges, et conclure un accord gagnant-gagnant sans céder sur la valeur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution digitale cabinet comptable",
+    "vous_etes": "Commercial pour un éditeur de solutions digitales destinées aux cabinets d'expertise comptable.",
+    "vous_vendez": "Une solution logicielle permettant de gagner en productivité sur les processus comptables, tarif annoncé à 16 800€ TTC (14 000€ HT).",
+    "vous_appelez": "Mathieu Durieux, expert-comptable associé chez Durieux & Lefranc, 18 collaborateurs. Analytique, méfiant, échaudé par un achat raté en 2019. Il a vu votre démo la semaine dernière et vous rappelle aujourd'hui.",
+    "ce_que_vous_savez": [
+      "Il a perdu 2 collaborateurs seniors en 6 mois vers des cabinets plus modernes",
+      "Il utilise actuellement un mix bricolé Cegid + Excel + Dropbox, aucun outil intégré",
+      "Un client PME vient de le quitter en lui reprochant d'être 'old school'",
+      "Il doit convaincre son associé Marc, plus conservateur, de l'investissement",
+      "Il vous a dit lors de la démo : 'Franchement, votre prix, c'est pas dans nos cordes'"
+    ],
+    "votre_objectif": "Conclure la vente à 14 000€ HT minimum, avec un étalement de paiement acceptable, sans brader votre prix.",
+    "vos_atouts": [
+      "ROI mesurable : vos clients cabinets similaires gagnent 6h/semaine/collaborateur en moyenne",
+      "Vous avez 4 références de cabinets 15-25 personnes dans sa région avec résultats chiffrés",
+      "Possibilité d'étaler le paiement sur 2 exercices comptables (9000€ + 5800€)",
+      "Clause pilote 60 jours avec sortie possible si non-adoption par l'équipe"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:33:00Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15170,
+    "total_time_s": 142.4
+  }
+}

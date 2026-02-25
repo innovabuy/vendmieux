@@ -1,0 +1,323 @@
+{
+  "id": "scenario_1771513934",
+  "description_originale": "Le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : batiment]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP",
+      "taille_entreprise": "PME 20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant/Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Fourniture/service pour entreprise BTP (matériaux, équipements, ou service professionnel)",
+      "proposition_valeur_presumee": "Fiabilité de livraison, qualité produit/service, relation commerciale de confiance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Concurrents évoqués comme alternative par le client mécontent"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison, service ou qualité",
+        "Client mécontent menace de partir à la concurrence",
+        "Risque de perte d'un client existant"
+      ],
+      "implicites": [
+        "Manque de réactivité face aux incidents",
+        "Communication défaillante en cas de problème",
+        "Absence de process de gestion des réclamations",
+        "Difficulté à gérer l'émotionnel client",
+        "Incapacité à transformer une crise en opportunité de renforcer la relation"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas gérer une réclamation client sous pression émotionnelle, désamorcer la colère, et transformer un incident en opportunité de fidélisation"
+    },
+    "objections_mentionnees": [
+      "Je vais aller voir la concurrence",
+      "Vous n'êtes pas fiables",
+      "Ce n'est pas la première fois",
+      "Je ne peux pas me permettre ce genre de problème sur mes chantiers"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise client : écoute active, empathie, gestion de l'émotionnel, recherche de solution, préservation de la relation et transformation d'un incident en opportunité de fidélisation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fourniture/services pour le secteur BTP",
+      "entreprise_description": "Entreprise fournissant des produits ou services aux professionnels du BTP (matériaux, équipements, solutions techniques ou services)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produits ou services destinés aux entreprises de BTP pour leurs chantiers de gros œuvre ou tous corps d'état",
+      "proposition_valeur": "Fiabilité des livraisons, qualité constante, service client réactif, compréhension des contraintes chantier, relation partenariale durable",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "Relation client existante, connaissance du dossier client, historique de collaboration, réactivité potentielle pour résoudre les problèmes",
+      "objectif_appel": "Désamorcer la crise, trouver une solution concrète immédiate, préserver et renforcer la relation commerciale",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service fourni",
+        "Type précis de problème (livraison/qualité/service)",
+        "Historique de la relation client",
+        "Montant du contrat/CA client",
+        "Nom et positionnement de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Didier",
+      "nom": "Montclair",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Montclair Maçonnerie & Fils",
+        "secteur": "Maçonnerie générale - Gros œuvre",
+        "taille": "28 salariés (dont 2 apprentis)",
+        "ca_approximatif": "2,8 M€ (en baisse de 12% sur l'exercice)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Perfectionniste jusqu'à l'obsession sur la qualité de ses chantiers",
+        "Méfiance viscérale envers les promesses commerciales non tenues",
+        "Sens aigu de l'honneur professionnel - sa réputation est tout pour lui"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise solide à son fils qui vient d'entrer au capital",
+        "Maintenir sa réputation irréprochable auprès des promoteurs locaux",
+        "Ne jamais pénaliser ses équipes à cause d'un fournisseur défaillant",
+        "Prouver qu'on peut rester compétitif sans rogner sur la qualité"
+      ],
+      "peurs_freins": [
+        "Perdre un chantier à cause d'un retard de livraison (déjà vécu il y a 3 ans)",
+        "Voir son fils hériter d'une boîte fragilisée par de mauvais choix fournisseurs",
+        "Être pris pour un pigeon qui se laisse baratiner",
+        "Que ses chefs de chantier perdent confiance en ses décisions d'achat"
+      ],
+      "rapport_aux_commerciaux": "Les tolère uniquement s'ils connaissent vraiment le métier. Déteste le bagou, les excuses faciles et les promesses en l'air. Respecte ceux qui reconnaissent une erreur cash et proposent du concret immédiatement. A viré 4 fournisseurs en 10 ans.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Tendu, cassant, voix qui monte vite dans les aigus quand il est contrarié. Coupe la parole dès qu'il sent du blabla commercial.",
+      "signaux_interet": [
+        "Baisse légèrement le ton et pose des questions techniques précises",
+        "Mentionne spontanément un prochain chantier ou une échéance",
+        "Utilise 'écoute' ou 'bon' en début de phrase (signe qu'il vous accorde 30 secondes)",
+        "Demande des délais chiffrés au jour près"
+      ],
+      "signaux_rejet": [
+        "Soupir bruyant suivi d'un 'Putain...' exaspéré",
+        "Répète mécaniquement 'ouais ouais ouais' sans écouter",
+        "Évoque nommément un concurrent direct : 'Matériaux Delsol eux au moins...'",
+        "Menace de raccrocher ou dit 'j'ai un chantier qui m'attend'",
+        "Phrase assassine : 'T'es payé pour me raconter ça toi ?'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoute-moi bien...'",
+        "Dit 'merde' et 'putain' naturellement, sans agressivité mais par habitude",
+        "Appelle tout le monde 'mon gars' quand il est énervé",
+        "Utilise 'concrètement' comme ponctuation : 'Concrètement, t'as merdé'",
+        "Références chantier constantes : 'J'ai trois dalles qui sèchent là'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum avant de couper. Zéro tolérance pour les explications qui sentent l'excuse préparée. Veut des faits, des dates, des solutions."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Tension financière modérée : un gros chantier (résidence 24 logements) démarre dans 6 jours, avec pénalités de retard de 800€/jour. Deux autres chantiers en cours. Son chef de chantier principal lui a fait remonter ce matin que 'si y'a encore un couac avec les livraisons, faudra voir ailleurs'. CA en baisse, donc besoin de réussir ce chantier pour redresser l'année.",
+      "priorites_actuelles": [
+        "Sécuriser l'approvisionnement du gros chantier qui démarre lundi prochain",
+        "Éviter TOUT retard qui impacterait sa réputation auprès du promoteur (client depuis 8 ans)",
+        "Montrer à son fils qu'il maîtrise encore la situation malgré les difficultés",
+        "Réduire ses coûts de 7% sans sacrifier la qualité (objectif imposé par l'expert-comptable)"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans et demi. Globalement satisfait jusqu'à il y a 6 mois. Depuis : 1 livraison incomplète (il a dû envoyer son fils récupérer le manquant en camion), 1 erreur de référence produit (2 jours de retard), et aujourd'hui ce nouveau problème qui fait déborder le vase.",
+      "fournisseur_actuel": "C'est vous - mais il a déjà demandé un devis à Matériaux Delsol (concurrent) hier après-midi, et il a le commercial de BigMat qui le relance depuis 3 semaines.",
+      "budget_disponible": "Pas un problème de budget mais de fiabilité. Prêt à payer 4-5% plus cher si zéro embrouille. En revanche, ultra-sensible au rapport qualité/respect des délais."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître l'erreur IMMÉDIATEMENT sans langue de bois ('On a merdé, Didier')",
+        "Proposer une solution concrète dans l'heure (livraison express, dépannage, compensation)",
+        "Montrer qu'on comprend l'impact sur SON chantier, pas juste s'excuser pour la forme",
+        "Évoquer la relation de 4 ans et demander UNE chance de prouver qu'on corrige",
+        "Parler technique et délais précis (pas de 'on va faire le nécessaire')",
+        "Lui demander ce dont il a besoin EXACTEMENT pour sauver son chantier"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou chercher des excuses ('Vous savez, avec les fournisseurs en ce moment...')",
+        "Rejeter la faute sur la logistique, le livreur, le système informatique",
+        "Proposer un geste commercial au lieu d'une solution opérationnelle immédiate",
+        "Parler process, procédure ou délai 'habituel' alors qu'il a besoin d'une réponse MAINTENANT",
+        "Faire une seule promesse qu'on ne pourra pas tenir à 100%",
+        "Ne pas comprendre que sa réputation est en jeu sur ce chantier"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah putain non, c'est pas vrai... Écoute-moi bien là, j'ai trois dalles qui sèchent et ton bordel qui arrive pas, alors t'as intérêt à avoir une VRAIE solution, pas du blabla hein.",
+        "sous_texte": "Je suis déjà à cran avant même que tu parles. Je te laisse 20 secondes pour me prouver que cet appel ne va pas être une perte de temps supplémentaire. Ma journée est déjà foutue à cause de vous.",
+        "type": "reflexe",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaissance immédiate de l'erreur + solution concrète avec horaire précis dans les 15 premières secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "T'es le combientième à m'appeler pour me dire que 'tout va s'arranger' ? Parce que ton collègue hier, il m'a sorti exactement le même discours, et ce matin RIEN. Alors concrètement, là, tu m'apportes quoi toi ?",
+        "sous_texte": "J'ai perdu confiance dans votre parole. Les excuses et promesses ne valent plus rien. Je veux des actes, pas des mots. Prouve-moi que tu es différent des autres abrutis qui m'ont déjà appelé.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne pas défendre les collègues. S'approprier le problème personnellement et donner un engagement mesurable avec son nom dessus"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attends, le problème c'est pas QUE cette livraison là. Y'a six mois vous m'aviez déjà fait le coup. Et y'a trois mois l'erreur de référence. Alors me parle pas de 'incident isolé', c'est devenu une habitude chez vous merde.",
+        "sous_texte": "Je garde une comptabilité mentale précise de vos erreurs. Vous avez épuisé votre crédit. Ce n'est pas un problème ponctuel, c'est un pattern qui me fait douter de votre organisation entière.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reconnaître le pattern sans chercher d'excuse, montrer qu'on a analysé les causes racines et qu'on a changé quelque chose de concret dans le process"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoute, j'ai pas le temps là. Matériaux Delsol ils m'ont fait un devis hier, ils me livrent demain matin 7h. Pourquoi je prendrais le risque avec vous encore une fois ?",
+        "sous_texte": "Je teste ta réaction. J'ai effectivement le devis Delsol, mais je préférerais ne pas changer de fournisseur si tu me rassures VRAIMENT. Montre-moi que tu te bats pour garder mon business.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Ne pas attaquer Delsol, reconnaître qu'ils sont bons, puis rappeler la valeur de 4 ans de relation et proposer mieux que 'demain 7h'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais tu comprends pas mon gars... C'est pas une question de prix ou de geste commercial. C'est que JE PEUX PAS me permettre ça. J'ai 800 balles de pénalités par jour de retard sur ce chantier. MOI je paie si vous merdiez, tu captes ?",
+        "sous_texte": "Je ne cherche pas de compensation financière. Je veux de la FIABILITÉ. Tu dois comprendre que mes marges, ma réputation et ma relation avec le promoteur sont en jeu. Si tu proposes de l'argent au lieu d'une solution, tu n'as rien compris.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Reformuler son enjeu pour montrer qu'on a compris (réputation + pénalités + équipe), puis proposer une solution qui élimine le risque"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais ouais, quatre ans de relation, tout ça je sais... Mais concrètement, mon chef de chantier ce matin il m'a dit texto : 'Si y'a encore un couac, faut voir ailleurs'. Tu vois ce que ça veut dire ? Mon équipe elle me fait plus confiance sur les fournisseurs.",
+        "sous_texte": "Tu joues sur l'affect de notre ancienneté, mais moi j'ai une pression opérationnelle concrète. Mon autorité de patron est challengée par mes propres gars à cause de vos erreurs. Ça c'est gravissime pour moi.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reconnaître la gravité de perdre la confiance de son équipe, proposer une solution qui restaure sa crédibilité devant eux (engagement écrit, visite chantier, etc.)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mais qu'est-ce qui me dit que cette fois c'est pas du vent ? T'es payé pour me raconter ça toi, c'est ton boulot de m'embobiner. Moi j'ai besoin de PREUVES, pas de belles paroles.",
+        "sous_texte": "J'ai été échaudé. Je ne crois plus aux promesses verbales des commerciaux. Si tu veux que je te croie, il me faut quelque chose d'engageant, de traçable, qui te coûte si tu ne tiens pas parole.",
+        "type": "test",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Proposer un engagement écrit avec pénalité claire, donner son mobile perso, impliquer sa hiérarchie ou venir physiquement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, mon fils il vient d'entrer au capital. Je vais pas lui transmettre une boîte où on bosse avec des fournisseurs à la con qui nous font perdre des chantiers. C'est son avenir que je protège là, tu comprends ça ?",
+        "sous_texte": "Cette décision dépasse le cadre commercial immédiat. C'est ma succession, mon héritage qui est en jeu. Si je continue avec vous malgré ces erreurs, je montre à mon fils qu'on accepte la médiocrité. Je ne peux pas faire ça.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Reconnaître la dimension symbolique et successorale, proposer de rencontrer le fils aussi, s'engager sur le long terme avec garanties"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ah ouais ? Et comment tu vas faire concrètement ? Parce que 'on va mettre les moyens', 'on va tout faire', ça je l'ai déjà entendu 50 fois. Je veux des DÉLAIS, des NOMS, des NUMÉROS, du CONCRET bordel.",
+        "sous_texte": "Arrête de parler dans le vague. Je suis un homme de terrain, je veux du factuel : qui fait quoi, quand exactement, comment je vérifie. Si tu restes flou, c'est que tu n'as pas de vraie solution.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Donner des horaires précis (pas 'dans la journée' mais '14h30'), des noms de personnes, des numéros de téléphone directs, un point de contrôle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Nan mais attends, tu me proposes de te refaire confiance alors que là, MAINTENANT, j'ai toujours pas ma livraison. Tu vois le problème ? Tu me demandes de parier sur l'avenir alors que vous gérez même pas le présent.",
+        "sous_texte": "Tu mets la charrue avant les bœufs. Avant de me demander un engagement ou de sauver la relation commerciale, RÈGLE le problème d'aujourd'hui. Tant que ma livraison n'est pas là, on ne négocie rien.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Traiter le problème immédiat AVANT de parler de la relation future. Ne pas mélanger urgence et stratégie."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, j'ai un chantier qui m'attend là. Si dans deux heures j'ai pas un sms avec une heure de livraison PRÉCISE, je signe avec Delsol et on en parle plus. Point final.",
+        "sous_texte": "Je suis au bout. Je ne négocie plus. C'est ton ultime chance. Si tu ne livres pas exactement ce que tu promets dans le délai annoncé, c'est terminé définitivement. Et je ne bluffe pas.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Prendre l'ultimatum au sérieux, confirmer qu'on comprend que c'est la dernière chance, donner l'info dans le délai imparti avec preuve"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais... Mouais... Bon on verra. Mais je te préviens hein, au premier couac, même minime, je me casse. Et je te dis pas ça pour négocier, c'est juste pour que tu saches où on en est toi et moi.",
+        "sous_texte": "J'accepte de te donner une dernière chance, mais je suis en surveillance maximale. La confiance n'est pas restaurée, elle est en probation. Tu es sous période d'essai inversée. Je cherche presque une raison pour partir.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Remercier de la chance, reformuler les attentes, proposer un suivi rapproché du prochain chantier avec points de contrôle, ne pas surjouer la victoire"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Putain non mais sérieux... Tu sais quoi ? Laisse tomber. J'ai pas le temps de gérer vos conneries en plus de mes chantiers. Mon comptable il m'a dit de réduire les coûts de 7%, pas de réduire les emmerdes de 7%. Je vais appeler Delsol, au moins eux ils me feront pas perdre mon temps. Allez salut.",
+      "condition_declenchement": "Se déclenche si le commercial : 1) Minimise ou cherche des excuses, 2) Propose un geste commercial au lieu d'une solution immédiate, 3) Ne donne pas d'horaire précis dans les 90 premières secondes, 4) Utilise du jargon commercial ou des phrases toutes faites, 5) Ne montre pas qu'il comprend l'impact sur le chantier et la réputation, 6) Fait une seule promesse qui semble irréaliste ou vague"
+    },
+    "pattern_escalade": "Didier démarre très remonté (niveau 8/10). Si reconnaissance immédiate + solution concrète dans les 30 premières secondes : descend à 6/10. Si on cherche à expliquer ou justifier : monte à 10/10 et menace de raccrocher. Si solution concrète proposée mais sans engagement vérifiable : reste à 7/10 avec scepticisme. Si engagement précis + reconnaissance des impacts sur SON business : descend à 4/10 et devient pratico-pratique. Si on essaie de closer trop vite avant d'avoir résolu le problème immédiat : remonte à 9/10 et raccroche. Le pattern est : colère → test de sincérité → pragmatisme SI et SEULEMENT SI on a passé le test.",
+    "piege_classique": "Le commercial pense que reconnaître l'erreur suffit. FAUX. Didier a besoin de trois choses dans cet ordre précis : 1) Reconnaissance cash de l'erreur (10 secondes max), 2) Solution concrète avec horaire précis pour le problème ACTUEL (30 secondes), 3) Engagement vérifiable pour éviter que ça se reproduise (20 secondes). Si on inverse cet ordre ou qu'on passe trop de temps sur l'un des points, il décroche mentalement. Autre piège : proposer un geste commercial (remise, avoir) avant d'avoir résolu l'opérationnel. Pour lui, c'est l'aveu qu'on n'a pas de vraie solution. Dernier piège : parler de la relation de 4 ans comme argument principal. Il s'en fout de l'ancienneté si vous n'êtes plus fiables MAINTENANT."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fourniture/services pour le secteur BTP",
+      "description": "Entreprise fournissant des produits ou services aux professionnels du BTP (matériaux, équipements, solutions techniques ou services)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produits ou services destinés aux entreprises de BTP pour leurs chantiers de gros œuvre ou tous corps d'état",
+      "proposition_valeur": "Fiabilité des livraisons, qualité constante, service client réactif, compréhension des contraintes chantier, relation partenariale durable",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "Relation client existante, connaissance du dossier client, historique de collaboration, réactivité potentielle pour résoudre les problèmes"
+    },
+    "objectif_appel": {
+      "type": "Désamorcer la crise, trouver une solution concrète immédiate, préserver et renforcer la relation commerciale",
+      "description": "Former les commerciaux à la gestion de crise client : écoute active, empathie, gestion de l'émotionnel, recherche de solution, préservation de la relation et transformation d'un incident en opportunité de fidélisation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client en crise — Fourniture BTP",
+    "vous_etes": "Commercial terrain chez un fournisseur de matériaux BTP, en poste depuis 3 ans avec ce portefeuille.",
+    "vous_vendez": "Fourniture de matériaux pour chantiers de gros œuvre (prix marché standard, vous n'êtes pas les moins chers mais pas les plus chers).",
+    "vous_appelez": "Didier Montclair, 52 ans, gérant de Montclair Maçonnerie & Fils (28 salariés). Ancien maçon devenu patron, caractère direct, dit ce qu'il pense. Son fils vient d'entrer au capital.",
+    "ce_que_vous_savez": [
+      "Client depuis 4 ans et demi, globalement satisfait jusqu'à récemment",
+      "Trois problèmes en 6 mois : livraison incomplète, erreur de référence, et aujourd'hui un nouveau couac",
+      "Il démarre un gros chantier (24 logements) dans 6 jours avec pénalités de retard de 800€/jour",
+      "Son chef de chantier l'a prévenu ce matin : 'encore un problème et on change de fournisseur'",
+      "Il a déjà demandé un devis chez Matériaux Delsol hier après-midi"
+    ],
+    "votre_objectif": "Désamorcer la crise, obtenir qu'il vous laisse une dernière chance en proposant une solution concrète immédiate pour son chantier de lundi.",
+    "vos_atouts": [
+      "Vous connaissez son entreprise, ses chantiers et ses exigences depuis 4 ans",
+      "Vous avez accès à un stock de dépannage et pouvez débloquer une livraison express aujourd'hui",
+      "Vous pouvez impliquer votre responsable d'agence pour un engagement ferme",
+      "Vous savez que sa réputation auprès des promoteurs est sa priorité absolue"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:12:14Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16472,
+    "total_time_s": 157.1
+  }
+}

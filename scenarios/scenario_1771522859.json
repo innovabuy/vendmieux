@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771522859",
+  "description_originale": "Vous avez présenté votre offre au directeur du développement ou new business director d'une groupe de communication multi-entités de 100+ salariés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : communication_marketing]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "groupe multi-entités de 100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur du Développement / New Business Director",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation",
+        "Relance nécessaire après 2 semaines de silence"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-RDV",
+        "Absence d'engagement ferme lors du RDV initial",
+        "Pas de jalons décisionnels clairs définis",
+        "Possibles objections non exprimées",
+        "Priorité du projet potentiellement faible côté prospect"
+      ],
+      "probleme_racine": "Absence de cadrage du processus décisionnel et des prochaines étapes lors du RDV initial, conduisant à une perte de momentum commercial"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect après un silence post-présentation, comprendre où en est le processus décisionnel, et relancer la dynamique commerciale sans paraître insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise proposant une offre destinée aux groupes de communication et marketing",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Offre présentée il y a 2 semaines au directeur du développement, nature exacte non spécifiée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature précise de l'offre présentée",
+        "Contenu et résultat du RDV initial",
+        "Informations sur l'entreprise vendeuse",
+        "Prix et proposition de valeur",
+        "Raisons présumées du silence",
+        "Interlocuteurs décisionnaires impliqués",
+        "Budget et timing côté prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Matthieu",
+      "nom": "Clermont",
+      "age": 42,
+      "poste": "Directeur du Développement & Nouveaux Marchés",
+      "entreprise": {
+        "nom": "Artémis Communication Group",
+        "secteur": "Communication & Marketing intégré (conseil, digitale, événementiel)",
+        "taille": "135 salariés répartis sur 4 entités",
+        "ca_approximatif": "18M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Opportuniste pragmatique",
+        "Chroniquement surbooké",
+        "Prudent sur l'engagement budgétaire"
+      ],
+      "motivations_profondes": [
+        "Être reconnu comme celui qui ouvre de nouveaux relais de croissance",
+        "Éviter les échecs visibles devant le COMEX",
+        "Prouver sa valeur ajoutée face aux directeurs opérationnels qui le challengent",
+        "Garder un agenda maîtrisé malgré 40+ sollicitations hebdomadaires"
+      ],
+      "peurs_freins": [
+        "S'engager sur un projet qui capote et entache sa crédibilité interne",
+        "Perdre du temps avec des prestataires qui sur-promettent",
+        "Décevoir le PDG qui lui a confié la mission 'transformation'",
+        "Être perçu comme le type qui dit oui à tout et ne délivre rien"
+      ],
+      "rapport_aux_commerciaux": "Cordial mais distant. A développé une capacité à écouter poliment tout en pensant à autre chose. Apprécie l'efficacité, déteste qu'on lui ressorte son propre pitch. Ghoste sans culpabilité quand ce n'est pas prioritaire.",
+      "style_communication": "expressif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Chaleureux mais avec une pointe d'impatience contenue. Commence souvent par 'Écoute, j'ai un créneau serré mais...'",
+      "signaux_interet": [
+        "Prend des notes sur son iPad",
+        "Pose des questions sur les délais de mise en œuvre",
+        "Mentionne spontanément des noms de décideurs internes",
+        "Dit 'Il faudrait que tu me renvoies ça par mail' (signe qu'il veut partager)",
+        "Se projette : 'Si on fait ça au Q2...'"
+      ],
+      "signaux_rejet": [
+        "Regard fuyant vers son téléphone",
+        "Répond 'Ouais, ouais' sans reformuler",
+        "Coupe court avec 'Super, on se rappelle'",
+        "Ne pose aucune question de précision",
+        "Utilise le 'on' générique : 'Faut qu'on revoie ça' (= jamais)"
+      ],
+      "tics_langage": [
+        "Abuse du 'En vrai...' pour introduire une réserve",
+        "Dit 'Franchement' avant chaque objection",
+        "Termine ses phrases par '...donc voilà' quand il veut clore",
+        "Utilise 'Après...' pour introduire un mais",
+        "'C'est pas faux' = je ne suis pas convaincu mais je ne veux pas débattre"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Au-delà de 90 secondes sans interaction, il décroche mentalement. Préfère les échanges ping-pong."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "L'agence sort d'une année 2023 compliquée (-8% de CA). Le PDG a missionné Matthieu pour identifier 3 nouveaux relais de croissance d'ici juin 2024. Pression forte. Il explore 7-8 pistes simultanément, dont la vôtre. Réunion COMEX le 15 du mois où il doit présenter ses arbitrages.",
+      "priorites_actuelles": [
+        "Finaliser le dossier 'extension géographique' (Lyon) qui mobilise 70% de son énergie",
+        "Recruter un business developer junior (4 entretiens prévus cette semaine)",
+        "Préparer sa présentation COMEX avec des projets 'bankables'",
+        "Gérer la crise relationnelle avec le directeur de la BU digitale qui trouve qu'il empiète sur son territoire"
+      ],
+      "experience_avec_offre_similaire": "A testé un outil de même nature il y a 18 mois avec une autre boîte. Résultats mitigés, déploiement raté à cause d'une résistance interne. Depuis, il est plus méfiant sur les promesses d'accompagnement.",
+      "fournisseur_actuel": "Utilise un mix de solutions bricolées + deux prestataires historiques, mais conscient que ce n'est pas optimal. Contrats renégociables en septembre.",
+      "budget_disponible": "Enveloppe 'innovation' de 45K€ non consommée, mais doit justifier chaque euro devant la DAF qui déteste son 'côté dépensier'. Pour un projet >30K€, il faut l'aval du PDG."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un ROI chiffré rapidement atteignable (<6 mois)",
+        "Citer une référence dans son secteur qu'il connaît personnellement",
+        "Proposer une phase pilote limitée qui ne l'engage pas massivement",
+        "Montrer qu'on a compris sa contrainte politique interne (validation COMEX)",
+        "Lui faire gagner du temps en synthétisant ce qu'il a déjà entendu",
+        "Évoquer un bénéfice 'visibilité personnelle' (tribune, speaking, cas client)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Relancer en disant 'Je relance comme convenu' alors qu'il n'a rien convenu",
+        "Commencer par 'Vous vous souvenez de moi ?' (infantilisant)",
+        "Lui redemander des infos qu'il a déjà données lors du 1er RDV",
+        "Proposer un nouveau RDV de découverte ('On a déjà fait ça, mec')",
+        "Mettre la pression avec des deadlines artificielles",
+        "Parler process et méthodologie avant résultat",
+        "L'appeler un lundi matin ou vendredi après 16h"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, je suis en réunion dans 3 minutes là, c'est pas le bon moment...",
+        "sous_texte": "Je ne m'attendais pas à ton appel, je n'ai pas préparé mentalement cette conversation, et je veux garder le contrôle de mon agenda",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte temps, proposer un créneau ultra-précis (2min chrono ou callback planifié), montrer que vous avez quelque chose de nouveau/concret"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah ouais... Écoute franchement j'ai pas eu le temps de me repencher dessus, là j'suis à fond sur autre chose",
+        "sous_texte": "Votre projet n'est pas dans mes 3 priorités actuelles, et je n'ai pas envie d'avouer que j'ai ghosté par choix",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître sa charge, créer un pont avec ses priorités actuelles (ex: extension Lyon), montrer en quoi votre solution accélère ses autres projets"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attends, tu m'as envoyé quoi déjà par mail après notre RDV ? J'ai dû le louper...",
+        "sous_texte": "Test pour voir si tu as vraiment fait le suivi promis, ou excuse pour masquer qu'il n'a pas ouvert tes mails",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas tomber dans la justification, résumer en 20 secondes l'essentiel du RDV et la valeur, puis recentrer sur l'objectif de l'appel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En vrai, je te cache pas qu'on a testé un truc similaire il y a un an et demi et ça a pas pris... Donc bon, j'suis un peu refroidi",
+        "sous_texte": "J'ai été échaudé, j'ai pris cher en interne lors de l'échec précédent, prouve-moi que tu es différent sans me refaire le même discours",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé (pourquoi ça n'a pas marché), montrer que vous avez identifié les pièges, proposer une approche pilote sécurisée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, le problème c'est surtout l'alignement en interne... Le directeur de la BU digitale, il va me dire que ça empiète sur son périmètre, donc voilà...",
+        "sous_texte": "J'ai un problème politique interne qui me paralyse, et je ne sais pas comment le résoudre. Aide-moi sans me faire perdre la face",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer d'impliquer ce directeur dès maintenant, positionner le projet comme une victoire collective, offrir de faire une présentation conjointe"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoute, j'te dis pas non, mais faut que j'en parle au COMEX du 15, et après je dois valider avec la DAF pour le budget... C'est un process, tu vois",
+        "sous_texte": "Je veux gagner du temps sans te dire non, et je ne veux pas m'engager tant que je n'ai pas sécurisé mes arrières politiques",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de l'aider à préparer le COMEX (slide recap, ROI chiffré), fixer une date de callback juste après le 15, qualifier le process DAF"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après, c'est pas faux ce que tu dis, mais concrètement vous êtes pas les seuls sur le coup... J'ai deux autres boîtes qui me font des propositions dans le même genre",
+        "sous_texte": "Test pour voir comment tu réagis à la pression concurrentielle, et aussi je veux négocier sans l'avouer frontalement",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence, questionner sur les critères de choix, différencier sur l'accompagnement/pilote, créer urgence sur un élément unique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais bon, 6 mois pour voir le ROI, franchement c'est long... Moi j'ai besoin de résultats avant le Q2 pour présenter au PDG",
+        "sous_texte": "J'ai une deadline politique interne très serrée, et je ne peux pas me permettre un projet qui traîne",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer des quick-wins intermédiaires visibles dès M1-M2, dissocier ROI complet et preuves de traction, créer des jalons de reporting"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et niveau accompagnement vous faites quoi exactement ? Parce que la dernière fois on nous a vendu de l'accompagnement et on s'est retrouvés seuls comme des cons",
+        "sous_texte": "Je veux des garanties concrètes, pas du bullshit marketing. Prouve-moi que vous serez vraiment là",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler le plan d'accompagnement jour par jour (qui, quand, quoi), donner des noms, proposer de parler à un client similaire sur l'accompagnement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, votre référence chez Publicis c'est bien, mais nous on n'a pas les mêmes moyens qu'eux hein... C'est pas la même échelle",
+        "sous_texte": "Je me protège d'un éventuel échec en préparant l'excuse 'on n'est pas assez gros', mais aussi inquiétude réelle sur l'adaptabilité",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une référence à taille comparable (100-150 pers), montrer la scalabilité/modularité, rassurer sur le dimensionnement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais, non mais c'est intéressant, faut juste que je revoie ça tranquillement... Renvoie-moi les éléments par mail et on se rappelle, OK ?",
+        "sous_texte": "Je veux clore la conversation poliment sans m'engager, et il y a 80% de chances que je ne lise jamais ce mail",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS accepter ce flou, proposer un micro-engagement concret (callback planifié 5min, visio 15min avec expert, partage doc avec questions précises attendues)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, là pour te dire franchement, le budget c'est tendu... J'ai 45K de dispo mais la DAF elle va me cuisiner sur chaque ligne, donc faut vraiment que je sois sûr",
+        "sous_texte": "Objection budget réelle + peur du jugement de la DAF, mais aussi signal d'intérêt (il révèle son budget exact)",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur le ROI documenté pour convaincre la DAF, proposer phasage budgétaire, offrir de participer à la réunion de validation DAF"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "En vrai, je suis tenté, mais j'ai 7-8 pistes en parallèle et je peux en retenir que 3 pour le COMEX... Donc voilà, c'est une question de priorité",
+        "sous_texte": "Je veux négocier indirectement, et aussi j'ai besoin que tu m'aides à justifier pourquoi ton projet doit être dans le top 3",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Questionner sur les critères d'arbitrage COMEX, positionner votre projet sur ces critères, proposer de l'aider à bâtir l'argumentaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Après, c'est clairement pas moi qui décide tout seul hein... Va falloir que j'implique le PDG et peut-être même deux autres directeurs, donc ça va prendre du temps",
+        "sous_texte": "Je te préviens que le process est long (protection) mais aussi je t'indique qui sont les vrais décideurs (invitation à les rencontrer)",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier le rôle de chacun, proposer de rencontrer le PDG avec lui, cartographier le process décisionnel précis avec dates"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, faut que je file là, on se recale la semaine prochaine OK ? Je te rappelle promis",
+        "sous_texte": "Je veux échapper à cette conversation sans m'engager, et je ne te rappellerai probablement jamais",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Bloquer 30 secondes pour fixer date/heure précise MAINTENANT, envoyer invitation agenda immédiatement, obtenir un micro-engagement d'ici là"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute franchement, c'est pas que c'est pas intéressant, mais là avec l'ouverture de Lyon qui bouffe tout mon temps et tout mon budget, je peux rien lancer de nouveau avant au moins septembre... Donc on se recontacte cet été, OK ?",
+      "condition_declenchement": "Se déclenche si le vendeur insiste trop sur un closing immédiat sans avoir traité la vraie priorité (Lyon) ni proposé de lien entre les deux projets. Matthieu utilise cette objection pour clore définitivement quand il sent qu'on ne comprend pas sa réalité"
+    },
+    "pattern_escalade": "Matthieu commence chaleureux mais évasif ('C'est intéressant, faut qu'on revoie ça'). Si le vendeur insiste sans apporter de valeur nouvelle, il passe au mode 'révélation contrainte' (budget, COMEX, politique interne). Si ça ne suffit pas, il sort l'objection temps ('débordé') puis finalement l'objection définitive (priorité Lyon). Il ne devient jamais agressif, mais de plus en plus fuyant et monosyllabique ('Ouais', 'Mmh', 'OK').",
+    "piege_classique": "Matthieu donne des signaux d'intérêt verbaux ('C'est pas faux', 'Pourquoi pas') qui font croire au vendeur que c'est gagné, alors qu'en réalité il est en mode écoute polie. Le vrai signal d'achat c'est quand il AGIT : prend des notes, pose des questions sur le planning, mentionne des noms de collègues, ou propose spontanément une prochaine étape concrète. Si le vendeur confond politesse et engagement, il va perdre 3 semaines en relances inutiles."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise proposant une offre destinée aux groupes de communication et marketing"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Offre présentée il y a 2 semaines au directeur du développement, nature exacte non spécifiée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect après un silence post-présentation, comprendre où en est le processus décisionnel, et relancer la dynamique commerciale sans paraître insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance téléphonique après 2 semaines de silence — Artémis Communication Group",
+    "vous_etes": "Commercial en charge du compte Artémis Communication Group, vous avez rencontré Matthieu Clermont il y a 2 semaines pour lui présenter votre offre.",
+    "vous_vendez": "Une solution destinée aux groupes de communication et marketing (nature et prix présentés lors du RDV initial).",
+    "vous_appelez": "Matthieu Clermont, 42 ans, Directeur du Développement & Nouveaux Marchés chez Artémis Communication Group (135 salariés, 18M€ CA). Opportuniste pragmatique, chroniquement surbooké, cordial mais distant.",
+    "ce_que_vous_savez": [
+      "Artémis sort d'une année 2023 difficile (-8% CA), forte pression pour trouver 3 relais de croissance d'ici juin 2024",
+      "Matthieu explore 7-8 pistes simultanément dont la vôtre, mobilisé à 70% sur un projet d'extension Lyon",
+      "Il présente ses arbitrages en COMEX le 15 du mois, doit justifier chaque projet devant le PDG et la DAF",
+      "A vécu un déploiement raté il y a 18 mois sur une offre similaire, méfiant sur les promesses d'accompagnement",
+      "Dispose de 45K€ d'enveloppe innovation non consommée, mais au-delà de 30K€ il faut l'aval du PDG"
+    ],
+    "votre_objectif": "Comprendre où en est le projet dans son processus décisionnel, identifier les freins éventuels et relancer la dynamique sans paraître insistant.",
+    "vos_atouts": [
+      "Vous avez déjà passé un RDV avec lui, il connaît votre offre",
+      "Votre solution peut être déployée en phase pilote limitée pour réduire le risque",
+      "Vous pouvez fournir des références secteur communication/marketing",
+      "Vous comprenez sa contrainte COMEX et pouvez adapter votre discours au calendrier décisionnel"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:40:59Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14571,
+    "total_time_s": 132.9
+  }
+}

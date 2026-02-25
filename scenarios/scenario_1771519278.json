@@ -1,0 +1,362 @@
+{
+  "id": "scenario_1771519278",
+  "description_originale": "Vous appelez à froid le directeur des achats ou directeur F&B d'une chaîne hôtelière régionale ou groupe de restauration de 100+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : hotellerie_restauration]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur F&B",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux achats ou F&B dans l'hôtellerie-restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospect ne connaît pas l'entreprise",
+        "Aucune demande initiale du prospect",
+        "Agenda chargé du décideur",
+        "Process d'achat structurés à contourner"
+      ],
+      "implicites": [
+        "Difficulté à passer les barrages (secrétariat/standard)",
+        "Temps d'attention très limité lors de l'appel",
+        "Risque élevé de refus immédiat",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Méfiance naturelle face aux appels non sollicités",
+        "Besoin de légitimité instantanée"
+      ],
+      "probleme_racine": "Capter l'attention et créer suffisamment de valeur perçue en moins de 60 secondes pour qu'un décideur occupé et sollicité accepte de bloquer 45 minutes d'agenda alors qu'il n'a exprimé aucun besoin"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de décideurs haut niveau dans l'hôtellerie-restauration pour obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour l'hôtellerie-restauration",
+      "entreprise_description": "Entreprise proposant des solutions/produits/services destinés aux achats ou à la fonction Food & Beverage de chaînes hôtelières et groupes de restauration",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ciblant les directions achats ou F&B des établissements hôteliers et de restauration collective/commerciale",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète",
+        "Positionnement prix",
+        "Références clients",
+        "Nom et positionnement de l'entreprise vendeuse",
+        "Arguments de différenciation",
+        "Bénéfices métier spécifiques pour le F&B/achats"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Hôtels & Patrimoine Prestige",
+        "secteur": "Hôtellerie haut de gamme",
+        "taille": "140 salariés répartis sur 8 établissements",
+        "ca_approximatif": "28M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique impatient",
+        "Méfiant par déformation professionnelle",
+        "Obsédé par les indicateurs de performance"
+      ],
+      "motivations_profondes": [
+        "Prouver que la fonction Achats crée de la valeur stratégique, pas juste des économies",
+        "Être reconnu par le COMEX comme un contributeur business, pas un cost-killer",
+        "Maintenir son réseau fournisseurs sous contrôle strict"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui lui fait perdre du temps",
+        "Déstabiliser ses relations fournisseurs actuelles sans gain réel",
+        "Que le directeur général découvre qu'il a validé un fournisseur médiocre",
+        "Les solutions 'révolutionnaires' qui explosent en vol après 3 mois"
+      ],
+      "rapport_aux_commerciaux": "Relation transactionnelle assumée. Les voit comme des adversaires courtois dans une négociation permanente. Respecte ceux qui connaissent vraiment son métier et ses contraintes. Mépris absolu pour les discours marketing creux.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, j'ai trois minutes là'. Attend qu'on aille droit au but.",
+      "signaux_interet": [
+        "Silence soudain = il écoute vraiment",
+        "Pose une question chiffrée précise ('Ça représente combien en volume ?')",
+        "Mentionne spontanément un problème actuel ('Tiens, justement on...')",
+        "Allonge lui-même la durée de l'appel sans qu'on le demande"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole pour dire 'Écoutez, envoyez-moi un mail'",
+        "Ton qui devient faussement patient = irritation croissante",
+        "Généralise : 'Oui, on connaît ce type de solution'",
+        "Respiration audible d'exaspération",
+        "Formule rituelle : 'C'est noté, on reviendra vers vous si besoin'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il va dire non",
+        "Dit 'Concrètement' quand il veut recadrer sur le factuel",
+        "Utilise 'franchement' pour signaler qu'il va être direct",
+        "Répète 'Ouais ouais' rapidement = signe d'impatience, pas d'approbation"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "25 secondes maximum. Au-delà, décroche mentalement. Interrompt si le commercial ne respire pas."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Après 2 années difficiles post-COVID, le groupe vient de retrouver sa rentabilité. Le PDG pousse pour 'consolider avant d'investir'. Stéphane a un mandat clair : optimiser sans dégrader la qualité perçue par le client final. Grosse pression sur les marges achats F&B.",
+      "priorites_actuelles": [
+        "Renégocier 3 contrats fournisseurs majeurs qui arrivent à échéance en Q2",
+        "Préparer la procédure d'appel d'offres pour les vins et spiritueux",
+        "Implémenter un nouveau logiciel de gestion des achats (chantier douloureux en cours)",
+        "Recruter un acheteur junior pour le remplacer sur l'opérationnel"
+      ],
+      "experience_avec_offre_similaire": "A testé 4-5 solutions 'innovantes' ces 8 dernières années. Bilan mitigé : beaucoup de promesses, peu de ROI mesurable. Échaudé par un fournisseur de produits locaux qui n'a pas tenu ses engagements de volume.",
+      "fournisseur_actuel": "Panel de 47 fournisseurs référencés, dont 12 stratégiques avec lesquels il a des relations établies depuis 5+ ans. Système qui fonctionne correctement mais qu'il sait perfectible.",
+      "budget_disponible": "Pas de ligne budgétaire spécifique pour tester de nouveaux fournisseurs. Tout investissement doit se justifier par des économies démontrables à 12 mois ou une amélioration mesurable de la qualité. Seuil psychologique : rien au-dessus de 35K€ sans validation COMEX."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un chiffre concret et crédible dès les 15 premières secondes ('Nos clients du secteur ont réduit leurs coûts F&B de 8% en moyenne')",
+        "Citer un concurrent direct qu'il connaît et respecte",
+        "Montrer qu'on a compris SES contraintes spécifiques sans qu'il les explique",
+        "Proposer un benchmark ou un audit gratuit avec données chiffrées",
+        "Dire explicitement 'Je ne vais pas vous vendre aujourd'hui, je voudrais juste comprendre si...'",
+        "Utiliser son langage métier avec précision (parler de taux de rotation stock, de saisonnalité, de coefficients)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Comment allez-vous aujourd'hui ?' = vendeur basique",
+        "Parler de 'solution innovante' sans rien de concret derrière",
+        "Demander 'Qui s'occupe des achats chez vous ?' = incompétence crasse",
+        "Proposer un rendez-vous sans avoir donné UN SEUL élément de valeur",
+        "Insister après un premier refus poli",
+        "Ton trop enjoué ou trop familier ('Super ! Génial !')",
+        "Avouer qu'on appelle tout le secteur avec le même pitch",
+        "Comparer son entreprise à des géants du secteur sans nuance"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, envoyez-moi un mail je regarderai",
+        "sous_texte": "Je ne vous connais pas, vous m'interrompez, et je pars du principe que vous n'avez rien d'urgent à me dire. Prouvez-moi le contraire en 10 secondes ou raccrochez.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps + donner UNE raison factuelle de continuer 15 secondes + proposer alternative précise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi exactement ?",
+        "sous_texte": "Je détecte un commercial. Je veux savoir immédiatement si vous allez me faire perdre mon temps ou si vous avez vraiment quelque chose de pertinent. Soyez direct ou je raccroche.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Transparence totale + bénéfice chiffré concret + désescalade commerciale immédiate"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On travaille déjà avec des fournisseurs, on n'a pas besoin de nouveaux contacts",
+        "sous_texte": "Mon système actuel fonctionne correctement. Vous allez devoir m'expliquer pourquoi je devrais investir du temps mental à évaluer une alternative alors que j'ai 1000 autres priorités.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa satisfaction + pivoter sur benchmark/veille sectorielle plutôt que remplacement + ancrage compétition"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous appelez tous les hôtels de France avec le même speech ou vous savez qui on est au moins ?",
+        "sous_texte": "Test de crédibilité. Si vous n'avez pas fait vos devoirs sur mon entreprise, vous êtes juste un vendeur de plus qui envoie des messages génériques. Je vais vous éliminer.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer connaissance précise de son groupe + mentionner élément spécifique non public + humilité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça me ferait gagner quoi ? Parce que là vous me parlez dans le vide",
+        "sous_texte": "Vous utilisez des mots-valises marketing. Je veux des chiffres, des impacts métiers précis, des preuves. Sinon c'est du vent et je ne joue pas à ce jeu-là.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Pivoter sur découverte plutôt que vendre + poser question chiffrée sur SA situation + utiliser données sectorielles"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, j'ai déjà testé ce genre de trucs il y a trois ans, ça n'a rien donné",
+        "sous_texte": "Je suis échaudé. J'ai déjà donné sa chance à des solutions similaires qui ont sous-performé. Vous devez me prouver que vous n'êtes pas comme eux, sinon pourquoi je recommencerais ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie + identifier différence structurelle + offrir garantie/sécurisation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, mes fournisseurs actuels font le job. Je vois pas pourquoi je changerais",
+        "sous_texte": "J'ai investi du temps à construire ces relations. Elles sont stables. Vous me demandez de prendre un risque opérationnel et politique sans que je comprenne le bénéfice réel. Pas intéressé pour le moment.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider complètement + repositionner sur amélioration incrémentale ou complément, pas remplacement + créer FOMO"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et vos références dans l'hôtellerie, c'est qui ?",
+        "sous_texte": "Je veux savoir si vous avez de la crédibilité dans MON secteur. Si vous me citez des PME ou des secteurs différents, je vais considérer que vous n'avez pas la légitimité pour travailler avec un groupe comme le mien.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer références comparables PRÉCISES + prouver compréhension enjeux hôtellerie haut de gamme + humilité si portefeuille limité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Combien de temps ça prend à mettre en place votre solution ?",
+        "sous_texte": "J'ai déjà un chantier logiciel en cours qui me bouffe mon énergie. Si vous me dites 3 mois de déploiement avec mobilisation de mes équipes, je n'ai ni le temps ni les ressources. C'est un dealbreaker.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Être honnête sur timeline + quantifier ressources nécessaires + proposer phasage progressif ou accompagnement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais, tout ça c'est bien beau, mais en vrai ça coûte combien ?",
+        "sous_texte": "Je sens le piège. Vous m'avez vendu du rêve, maintenant dites-moi combien ça coûte vraiment pour que je puisse décider si on continue à parler ou si on arrête de perdre du temps.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner fourchette large + contextualiser par rapport ROI + conditionner prix à découverte approfondie + garder contrôle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, envoyez-moi votre doc commerciale, je vais regarder ça et on se rappelle",
+        "sous_texte": "Je veux clôturer cet appel poliment. Je ne suis pas convaincu mais je ne veux pas être désagréable. Il y a 90% de chances que je ne lise jamais votre doc et que je ne donne pas suite.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître tentation procrastination + créer micro-engagement immédiat + fixer action concrète mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vois pas en quoi c'est différent de ce que propose [concurrent] ou même mes fournisseurs actuels",
+        "sous_texte": "Vous ne m'avez pas convaincu de votre différenciation. Je vous mets au défi de m'expliquer en quoi vous n'êtes pas un énième fournisseur interchangeable.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander ce qu'il connaît précisément des concurrents + identifier angle mort + preuve par cas client spécifique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que je n'ai pas de budget pour tester des nouveaux trucs cette année",
+        "sous_texte": "Soit c'est vrai et je n'ai vraiment pas de marge de manœuvre budgétaire, soit c'est une objection pour gagner du temps parce que je ne suis pas assez convaincu pour aller batailler en interne.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Creuser timing budgétaire + proposer ROI autofinancé + identifier budget alternatif ou année N+1"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "45 minutes de rendez-vous, franchement là j'ai pas le temps. Rappelez-moi dans deux mois",
+        "sous_texte": "Vous ne m'avez pas donné assez de valeur perçue pour que je bloque 45 minutes d'agenda. Deux mois = façon polie de dire non sans fermer complètement la porte.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer format plus court + agenda ultra-précis du RDV + créer urgence contextuelle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à mon directeur général avant, on ne prend pas ce genre de décision comme ça",
+        "sous_texte": "Soit je protège mon périmètre décisionnel et je veux valider en interne, soit je me planque derrière ma hiérarchie parce que je ne suis pas convaincu et je ne veux pas assumer le 'non'.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier si vrai décideur collectif + proposer RDV exploratoire sans engagement + outiller pour convaincre DG"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous avez des clients dans le haut de gamme sur Paris ? Parce que nous c'est pas du Formule 1 hein",
+        "sous_texte": "Je défends mon positionnement premium. Si vous me citez des clients qui ne sont pas à notre niveau de standing, je vais douter que vous compreniez nos exigences qualitatives.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer références prestige comparables + montrer compréhension enjeux luxe + éviter sur-promesse si portefeuille junior"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, cale-moi un truc fin avril, je regarde mon agenda et je te confirme",
+        "sous_texte": "Je vous donne un signal positif flou pour clore l'appel. Probabilité réelle de concrétisation : 40%. Je ne me suis pas vraiment engagé, j'ai juste repoussé la décision.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Bloquer créneau immédiatement + envoyer invitation calendrier + micro-engagement avant RDV"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est sympa mais là franchement j'ai trois urgences qui m'attendent, je peux pas continuer. On se rappelle, envoyez-moi vos coordonnées par mail",
+      "condition_declenchement": "Si le commercial a dépassé 3 minutes 30 sans avoir créé de valeur perçue suffisante OU si Stéphane a détecté un discours marketing générique OU si on lui a posé trop de questions sans donner d'insights en retour"
+    },
+    "pattern_escalade": "Stéphane commence toujours cordial mais pressé. Si la valeur n'apparaît pas en 45 secondes, il passe en mode 'politesse formelle' (ton qui se refroidit, réponses plus courtes). Ensuite vient la phase 'signaux de sortie' : il mentionne ses contraintes temps, propose d'envoyer un mail, utilise le futur vague ('on verra ça plus tard'). Si le commercial insiste maladroitement, il bascule en mode 'fermeture polie mais définitive' : 'C'est noté, merci pour votre appel' + raccroche rapidement. Très rarement désagréable frontalement, mais redoutablement efficace pour terminer les conversations qui ne l'intéressent pas.",
+    "piege_classique": "Stéphane teste souvent la crédibilité du commercial en posant une question technique précise sur SON secteur en milieu d'appel ('Et vous travaillez comment sur la saisonnalité des approvisionnements dans l'hôtellerie ?'). Si le commercial bafouille ou généralise, il perd toute crédibilité. Autre piège : il peut sembler intéressé ('Ah ouais, intéressant...') alors qu'il est en train de consulter ses emails. Le silence n'est pas toujours de l'écoute attentive, parfois c'est juste qu'il fait autre chose. Enfin, attention au faux closing : quand il dit 'OK envoyez-moi un truc', ce n'est presque JAMAIS un engagement réel, c'est une stratégie de sortie polie."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour l'hôtellerie-restauration",
+      "description": "Entreprise proposant des solutions/produits/services destinés aux achats ou à la fonction Food & Beverage de chaînes hôtelières et groupes de restauration"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ciblant les directions achats ou F&B des établissements hôteliers et de restauration collective/commerciale",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de décideurs haut niveau dans l'hôtellerie-restauration pour obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Achats Groupe hôtelier haut de gamme",
+    "vous_etes": "Commercial B2B spécialisé hôtellerie-restauration, en prospection téléphonique à froid.",
+    "vous_vendez": "Une solution d'optimisation des achats F&B pour groupes hôteliers (nature et prix à définir selon votre stratégie d'approche).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur des Achats Groupe chez Hôtels & Patrimoine Prestige (8 établissements haut de gamme, 140 salariés, 28M€ CA). Pragmatique, impatient, allergique au discours commercial creux. Méfiant par déformation professionnelle.",
+    "ce_que_vous_savez": [
+      "Le groupe vient de retrouver sa rentabilité après le COVID, le PDG pousse pour consolider",
+      "Forte pression actuelle sur les marges achats F&B",
+      "3 contrats fournisseurs majeurs arrivent à échéance en Q2",
+      "Stéphane gère 47 fournisseurs dont 12 stratégiques avec lesquels il travaille depuis 5+ ans",
+      "Il a testé plusieurs solutions 'innovantes' par le passé avec un bilan mitigé, dont un fournisseur local qui n'a pas tenu ses promesses de volume"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique de 45 minutes en créant suffisamment de valeur perçue dans les 60 premières secondes pour qu'il accepte de bloquer son agenda.",
+    "vos_atouts": [
+      "Références clients dans l'hôtellerie haut de gamme (groupes concurrents qu'il connaît et respecte)",
+      "Capacité à présenter un chiffre d'économie concret et crédible dès l'accroche (ex: réduction coûts F&B de 8% en moyenne)",
+      "Possibilité de proposer un benchmark ou audit gratuit avec données chiffrées",
+      "Maîtrise du vocabulaire métier achats (taux de rotation stock, saisonnalité, coefficients)"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:41:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15575,
+    "total_time_s": 136.6
+  }
+}

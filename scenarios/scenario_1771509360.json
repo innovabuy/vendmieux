@@ -1,0 +1,315 @@
+{
+  "id": "scenario_1771509360",
+  "description_originale": "Vous avez présenté votre offre au directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : services_entreprises]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "200+ salariés, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "Directeur des opérations ou Directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux groupes de services multi-sites",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après RDV malgré engagement",
+        "Processus de décision bloqué ou ralenti"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-RDV",
+        "Possibles freins non identifiés lors du premier RDV",
+        "Concurrence potentiellement entrée dans la danse",
+        "Changement de priorités chez le prospect",
+        "Décideur non identifié ou mal qualifié"
+      ],
+      "probleme_racine": "Absence de processus de décision clairement défini et validé lors du RDV initial, couplée à un manque de création d'urgence"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect sans être intrusif, débloquer un processus de décision en suspens, identifier les freins réels et repositionner la valeur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour entreprises multi-sites",
+      "entreprise_description": "Entreprise proposant des solutions pour groupes de services avec présence multi-sites",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution présentée lors d'un RDV commercial destinée aux directeurs opérationnels ou commerciaux de groupes de services",
+      "proposition_valeur": "NON_SPECIFIE - à construire lors de la relance",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre présentée",
+        "Contenu et résultat du RDV initial",
+        "Raison de l'engagement de retour",
+        "Budget et timing évoqués",
+        "Autres parties prenantes identifiées",
+        "Concurrents en lice"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Proxiservices France",
+        "secteur": "Services aux entreprises (facility management et maintenance)",
+        "taille": "280 salariés répartis sur 12 agences régionales",
+        "ca_approximatif": "32M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Surinvesti dans l'opérationnel au détriment du stratégique",
+        "Loyal envers ses fournisseurs historiques"
+      ],
+      "motivations_profondes": [
+        "Être reconnu par sa direction comme celui qui stabilise les opérations",
+        "Éviter les changements qui pourraient créer du chaos à court terme",
+        "Protéger son territoire décisionnel face au directeur commercial"
+      ],
+      "peurs_freins": [
+        "Faire une erreur visible qui impacterait les équipes terrain",
+        "Se faire imposer une solution par la direction sans son aval",
+        "Perdre du temps avec des prestataires qui ne comprennent pas le terrain",
+        "Devoir gérer un déploiement multi-sites complexe avec ses équipes déjà surchargées"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Les considère comme des vendeurs de rêve qui ne connaissent pas les contraintes opérationnelles. A besoin qu'on lui parle concret, chiffres, risques.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais légèrement pressé. Commence souvent par 'J'ai 30 minutes maximum' même quand c'est faux",
+      "signaux_interet": [
+        "Demande des exemples précis avec chiffres",
+        "Évoque spontanément des problèmes opérationnels concrets",
+        "Pose des questions sur le déploiement et l'accompagnement",
+        "Mentionne un collègue ou un N+1 à impliquer"
+      ],
+      "signaux_rejet": [
+        "Regarde son téléphone ostensiblement",
+        "Répond 'Oui oui' de manière répétitive sans poser de questions",
+        "Commence ses phrases par 'Le problème c'est que...'",
+        "Évoque immédiatement le fournisseur actuel en termes positifs"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "Concrètement...",
+        "Sur le terrain, c'est pas si simple",
+        "Faut voir avec les équipes",
+        "J'entends bien mais..."
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, décroche mentalement ou coupe poliment avec 'Oui d'accord, mais concrètement pour nous...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Proxiservices traverse une phase de consolidation post-rachat de 2 petites structures régionales. Pression forte sur l'harmonisation des process et la rentabilité. Le COMEX attend des résultats d'ici 6 mois.",
+      "priorites_actuelles": [
+        "Intégrer les 2 nouvelles agences sans perdre de contrats clients",
+        "Réduire les coûts de non-qualité sur les interventions terrain",
+        "Calmer les tensions avec le directeur commercial qui veut digitaliser le reporting client",
+        "Préparer le budget N+1 d'ici fin du mois"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution de gestion d'interventions qui a capoté lors du déploiement (resistance des chefs d'agence, bugs, formation insuffisante). Échaudé.",
+      "fournisseur_actuel": "Un mix de tableaux Excel partagés, d'un vieux logiciel métier (acheté en 2015) et de WhatsApp pour la coordination terrain. Tout le monde râle mais ça fonctionne.",
+      "budget_disponible": "Budget 2024 déjà alloué. Possibilité de débloquer 80-120K€ sur 2025 si ROI démontré et validation DG + DAF. Réticent à s'engager sur du conseil ou de l'accompagnement qui alourdit la note."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cas client similaire avec métriques précises (réduction délais, taux d'adoption terrain)",
+        "Proposer une phase pilote sur 1-2 agences avec indicateurs de succès définis",
+        "Reconnaître explicitement les échecs fréquents du secteur et expliquer comment vous les évitez",
+        "Impliquer son directeur général dans la discussion (il respecte la hiérarchie)",
+        "Montrer qu'on comprend la charge de ses équipes et proposer un accompagnement terrain"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser la complexité du déploiement multi-sites",
+        "Vendre du rêve sans preuves tangibles",
+        "Critiquer frontalement son organisation actuelle",
+        "Pousser pour une décision rapide sans arguments solides",
+        "Ignorer qu'il a besoin de l'aval de la direction",
+        "Parler uniquement ROI financier sans évoquer l'impact humain/organisationnel"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoutez, je suis en plein rush là, j'ai les agences de Lyon et Marseille qui ont des soucis de planning... Vous pouvez me rappeler quand ?",
+        "sous_texte": "Je ne me souviens pas vraiment de vous et je n'ai pas le temps de me replonger dans ce dossier maintenant. Si c'était vraiment prioritaire pour moi, je vous aurais rappelé.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la pression opérationnelle, créer une accroche qui rappelle un élément précis du RDV et proposer un créneau court et défini"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui, je me souviens... On devait se recontacter effectivement. Bon écoutez, on a eu d'autres priorités entre temps, avec les rachats vous vous doutez bien...",
+        "sous_texte": "Votre projet est passé derrière d'autres urgences. Je ne veux pas vous vexer mais ce n'est plus dans mon radar immédiat.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Relier votre solution directement aux défis de l'intégration post-rachat pour redevenir pertinent dans son contexte actuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que pour être honnête, on a reparlé de votre solution en interne et... comment dire... on n'est pas sûr que ce soit le bon timing. Là on doit stabiliser l'existant.",
+        "sous_texte": "Quelqu'un en interne a émis des réserves ou alors nous-même avons eu peur de la complexité du projet. On préfère ne rien changer plutôt que risquer le chaos.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner ce qui a changé depuis le RDV, identifier le frein réel et repositionner votre offre comme aide à la stabilisation plutôt que comme projet additionnel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Faut voir avec les équipes... Sur le terrain, c'est pas si simple. Les chefs d'agence ont déjà eu leur dose de changements cette année, si je leur impose encore un truc ils vont me lyncher.",
+        "sous_texte": "Je porte la cicatrice d'un projet raté où le terrain a résisté. Je ne veux pas revivre ça. Je ne suis pas convaincu que vous compreniez cette dimension humaine.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Montrer votre compréhension de la résistance terrain, partager un exemple de gestion du change management réussi, proposer de co-construire avec les chefs d'agence"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais concrètement, nous on a déjà un système en place. Ça râle un peu mais ça tourne. Pourquoi je prendrais le risque de tout chambouler ?",
+        "sous_texte": "Convainquez-moi que le risque de changer est inférieur au risque de ne rien faire. Pour l'instant, vous ne l'avez pas fait.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier le coût caché de l'existant avec des questions précises, faire verbaliser les irritants quotidiens et leur impact business"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'entends bien tout ça, mais vous savez il y a trois ans on a testé une solution similaire... Ça a été la catastrophe. Bugs, formation insuffisante, résistance des chefs d'agence. On a perdu 6 mois et du budget pour rien.",
+        "sous_texte": "J'ai une blessure professionnelle non cicatrisée. Je ne veux pas être celui qui refait la même erreur. Prouvez-moi que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider sa prudence comme légitime, poser des questions sur ce qui a raté précisément, montrer comment vous évitez ces écueils avec preuves et méthode pilote"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, je ne vais pas vous mentir, il y a aussi la question budget... Là le budget 2024 est calé. Et pour 2025, faudrait que je convainque la direction, le DAF... C'est pas gagné d'avance.",
+        "sous_texte": "Je n'ai pas le pouvoir de décision seul et je ne suis pas sûr de vouloir porter ce projet en interne. Vous me demandez un effort politique que je ne suis pas prêt à faire sans garanties solides.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier qui d'autre doit être impliqué, proposer de co-construire l'argumentaire pour la direction avec ROI chiffré, offrir de présenter vous-même"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui ça se tient... Mais franchement sur le déploiement multi-sites, vous avez déjà fait ça dans notre secteur ? Parce que les services aux entreprises, c'est très spécifique hein.",
+        "sous_texte": "J'ai besoin d'être rassuré que vous comprenez vraiment mon métier et ses contraintes. Donnez-moi des preuves sociales pertinentes.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer un cas client similaire avec nom, contexte, problèmes résolus et métriques. Proposer une mise en relation si pertinent."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis concrètement, mes équipes sont déjà à fond. Le déploiement, la formation, tout ça... ça va me mobiliser qui ? Parce que moi j'ai pas de ressources à allouer sur 3-4 mois.",
+        "sous_texte": "Vous me vendez une solution mais vous me créez un projet complexe à gérer. Je ne vois que la charge, pas encore suffisamment le bénéfice.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler précisément votre accompagnement et ce que vous prenez en charge, proposer un pilote à charge limitée, chiffrer le temps d'implication réaliste"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, vraiment... Mais là je dois d'abord finir le budget N+1, gérer l'intégration des nouvelles agences... Laissez-moi un peu de temps, on se rappelle début d'année prochaine peut-être ?",
+        "sous_texte": "Je recule devant la décision. C'est plus confortable de reporter. Soit je ne suis pas convaincu, soit j'ai peur de m'engager, soit il y a un frein que je ne dis pas.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier le vrai frein en questionnant, créer de l'urgence en liant à ses priorités actuelles, proposer une prochaine étape à faible engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut voir... Je dois aussi en parler avec Antoine, notre directeur commercial, parce que ça va impacter son équipe aussi. Et il a ses propres projets en cours, si vous voyez ce que je veux dire.",
+        "sous_texte": "Il y a une tension politique interne. Je ne veux pas marcher sur les plates-bandes du dirco ou alors nous ne sommes pas alignés sur les priorités.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer d'impliquer Antoine dès maintenant dans la réflexion, positionner la solution comme transverse et bénéfique aux deux directions"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis bon, notre fournisseur actuel, ils connaissent bien la boîte maintenant. Y'a aussi une question de confiance et de relation dans la durée vous comprenez...",
+        "sous_texte": "Je suis loyal envers mes partenaires historiques. Vous devez me donner une raison vraiment forte de prendre le risque de changer.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter cette loyauté, ne pas critiquer le fournisseur actuel, se positionner en complément ou en alternative pour combler des gaps identifiés ensemble"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez franchement, j'apprécie votre démarche mais là concrètement on n'a pas la bande passante. Entre les intégrations, le budget à boucler et les chantiers en cours... Je préfère être honnête avec vous : c'est pas pour maintenant. Peut-être plus tard mais pas avant 6-8 mois minimum. Voilà, désolé.",
+      "condition_declenchement": "Si le commercial n'a pas réussi à repositionner son offre dans le contexte actuel du prospect, à créer de l'urgence réelle ou à identifier et lever les freins cachés (peur d'un nouvel échec, tensions internes, manque de portage direction)"
+    },
+    "pattern_escalade": "Stéphane commence courtois mais pressé (objections réflexes), puis devient plus sincère si le commercial montre de la compréhension (verbalise ses vraies peurs), mais peut se refermer brutalement si on pousse trop fort ou si on minimise ses contraintes. Son pattern est : politesse professionnelle → test de crédibilité → ouverture conditionnelle → retrait définitif si pas rassuré. Il ne claque jamais de porte violemment mais trouve toujours une excuse rationnelle pour reporter indéfiniment.",
+    "piege_classique": "Stéphane donne l'impression d'écouter attentivement et dit souvent 'oui oui j'entends bien' ou 'c'est intéressant', mais c'est son mode par défaut professionnel. Le piège est de croire qu'on avance alors qu'il est en train de chercher mentalement une porte de sortie élégante. Indicateur réel d'engagement : quand il pose des questions précises sur le déploiement, mentionne spontanément ses contraintes opérationnelles concrètes ou propose d'impliquer quelqu'un d'autre. Sans ça, ses 'oui' ne veulent rien dire."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour entreprises multi-sites",
+      "description": "Entreprise proposant des solutions pour groupes de services avec présence multi-sites"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution présentée lors d'un RDV commercial destinée aux directeurs opérationnels ou commerciaux de groupes de services",
+      "proposition_valeur": "NON_SPECIFIE - à construire lors de la relance",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect sans être intrusif, débloquer un processus de décision en suspens, identifier les freins réels et repositionner la valeur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-RDV — Solution multi-sites facility management",
+    "vous_etes": "Commercial B2B spécialisé solutions opérationnelles pour groupes de services multi-sites.",
+    "vous_vendez": "Solution de gestion et coordination pour entreprises de services avec plusieurs agences — budget type 80-120K€.",
+    "vous_appelez": "Stéphane Mercier, Directeur des Opérations chez Proxiservices France (280 salariés, 12 agences). Pragmatique, méfiant, surinvesti dans l'opérationnel. Échaudé par un échec de déploiement il y a 3 ans.",
+    "ce_que_vous_savez": [
+      "Vous avez eu un RDV il y a quelques semaines, il devait revenir vers vous — aucun retour depuis",
+      "L'entreprise a racheté 2 structures régionales récemment, pression forte sur l'harmonisation et la rentabilité d'ici 6 mois",
+      "Ils utilisent Excel + vieux logiciel 2015 + WhatsApp, tout le monde râle mais 'ça fonctionne'",
+      "Stéphane a besoin de l'aval DG + DAF pour débloquer un budget 2025",
+      "Il prépare son budget N+1 en ce moment — timing potentiellement critique"
+    ],
+    "votre_objectif": "Identifier le vrai frein au silence, débloquer le process de décision et obtenir une prochaine étape concrète (pilote, rdv DG, ou clôture assumée).",
+    "vos_atouts": [
+      "Vous comprenez la complexité du déploiement multi-sites et les risques terrain",
+      "Vous avez des cas clients facility management avec métriques précises (délais, adoption terrain)",
+      "Vous proposez des phases pilotes sur 1-2 agences avec indicateurs de succès définis",
+      "Vous pouvez impliquer son DG dans la discussion pour faciliter la validation"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:56:00Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13481,
+    "total_time_s": 120.9
+  }
+}

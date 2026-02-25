@@ -1,0 +1,369 @@
+{
+  "id": "scenario_1771520681",
+  "description_originale": "Le directeur des achats ou directeur F&B d'une chaîne hôtelière régionale ou groupe de restauration de 100+ salariés veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : hotellerie_restauration]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des Achats ou Directeur F&B",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "Fourniture pour hôtellerie-restauration (alimentaire, boissons, équipements ou services)",
+      "proposition_valeur_presumee": "Solution complète pour chaîne hôtelière ou groupe de restauration avec conditions commerciales négociables",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect met en concurrence 2 autres fournisseurs",
+        "Demande de renégociation des conditions avant signature",
+        "Risque de perdre le deal sur le prix"
+      ],
+      "implicites": [
+        "Difficulté à défendre la valeur face à la pression tarifaire",
+        "Manque de compréhension des vrais critères de décision du prospect",
+        "Tendance à céder sur les conditions sans creuser les motivations",
+        "Risque de brader l'offre sans obtenir de contreparties"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas la négociation de valeur et se focalisent sur le prix sans découvrir les vrais enjeux décisionnels du directeur achats/F&B"
+    },
+    "objections_mentionnees": [
+      "Vos conditions ne sont pas assez compétitives",
+      "Vos concurrents proposent mieux",
+      "Il faut faire un geste sur le prix"
+    ],
+    "objectif_formation": "Maîtriser la négociation commerciale en phase finale : défendre la valeur de l'offre, identifier les vrais critères de décision au-delà du prix, et closer sans brader les conditions",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur pour l'hôtellerie-restauration (grossiste alimentaire, équipementier CHR, ou prestataire de services)",
+      "entreprise_description": "Entreprise fournissant des produits ou services pour le secteur de l'hôtellerie-restauration, travaillant avec des chaînes et groupes de taille significative",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution de fourniture adaptée aux besoins d'une chaîne hôtelière ou groupe de restauration multi-sites",
+      "proposition_valeur": "Offre différenciante face à la concurrence avec des éléments de valeur à défendre (qualité, service, fiabilité, accompagnement, innovation, etc.)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise du produit/service vendu",
+        "Montant du contrat en jeu",
+        "Durée de l'engagement",
+        "Points précis de renégociation demandés",
+        "Historique de la relation commerciale",
+        "Avantages concrets vs concurrence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 51,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Hôtels & Résidences Azur",
+        "secteur": "Hôtellerie 3-4 étoiles",
+        "taille": "450 salariés, 18 établissements",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Joueur de poker commercial - calcule chaque geste",
+        "Ancien opérationnel devenu acheteur - connaît les vraies contraintes terrain",
+        "Cynique bienveillant - ne croit plus aux belles promesses"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX qu'il génère de l'économie chaque trimestre (reporting obsessionnel)",
+        "Protéger sa réputation de négociateur redoutable auprès de ses pairs",
+        "Éviter l'erreur qui coûte cher - cicatrice d'un fournisseur défaillant en 2019 qui a impacté 3 hôtels"
+      ],
+      "peurs_freins": [
+        "Passer pour celui qui s'est fait avoir sur un contrat",
+        "Disruption opérationnelle - les directeurs d'hôtels qui râlent si le service déconne",
+        "S'engager sur 3 ans avec un prestataire qui ne tiendra pas ses engagements",
+        "Que le DAF découvre qu'un concurrent proposait 8% de moins"
+      ],
+      "rapport_aux_commerciaux": "Les voit comme des adversaires sympathiques dans une partie d'échecs. Respecte ceux qui tiennent tête avec des arguments factuels. Méprise ceux qui cèdent trop vite (= cache quelque chose) ou qui bluffent maladroitement.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, avec micro-soupirs calculés pour installer un rapport de force. Commence toujours par : 'Bon, on va pas y passer trois heures...'",
+      "signaux_interet": [
+        "Commence à comparer des chiffres précis entre fournisseurs (= il a vraiment étudié)",
+        "Évoque spontanément un problème opérationnel actuel : 'Vous savez, ce qui nous tue en ce moment c'est...'",
+        "Demande des références clients PRÉCISES avec noms et téléphones",
+        "Pose des questions sur la continuité de service pendant les vacances d'été",
+        "Mentionne le COMEX du mois prochain : 'Faut que je présente ça le 12..'"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son téléphone",
+        "Répète 'oui, oui...' sans écouter vraiment",
+        "Coupe court : 'Écoutez, envoyez-moi tout ça par mail'",
+        "Utilise la formule mortelle : 'On va réfléchir'",
+        "Compare explicitement avec un concurrent en le survalorant : 'Chez Transgourmet, eux au moins...'"
+      ],
+      "tics_langage": [
+        "'Soyons clairs' (utilise cette expression 5 fois par conversation)",
+        "'Je vous le dis franchement' (prélude à un mensonge négocié)",
+        "'Vous me prenez pour qui ?' (quand on le flatte trop)",
+        "'C'est gentil mais...' (rejet poli)",
+        "Soupirs appuyés avant de parler des prix"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Coupe poliment mais fermement : 'Oui, ok, j'ai compris le principe. Maintenant concrètement...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée post-COVID (+6% sur 2024). Pression du private equity actionnaire pour améliorer les marges. Ouverture de 2 nouveaux hôtels prévue en 2026. Refonte complète de la stratégie achats avec digitalisation des commandes.",
+      "priorites_actuelles": [
+        "Réduire de 12% le poste achats F&B sans dégrader la satisfaction client (objectif COMEX)",
+        "Simplifier la gestion multi-sites (actuellement 3 fournisseurs différents = cauchemar logistique)",
+        "Sécuriser l'approvisionnement pour la saison haute avril-septembre",
+        "Justifier ses choix avec des KPIs béton devant le DAF et le DG"
+      ],
+      "experience_avec_offre_similaire": "Travaille avec Metro depuis 8 ans (contrat qui arrive à échéance). Satisfait mais pas enthousiasmé. A testé Transgourmet sur 2 établissements en 2023 = résultats mitigés sur la réactivité SAV.",
+      "fournisseur_actuel": "Metro C&C (contrat groupe) + Brake France sur 4 hôtels + un grossiste local pour les produits frais régionaux",
+      "budget_disponible": "3,8M€/an sur le périmètre concerné. Cherche à descendre à 3,4M€ tout en améliorant certains services. A obtenu 2 offres concurrentes à -7% et -11% vs Metro mais avec scope de service réduit."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Prouver par A+B (avec calcul de TCO) que gagner 8% sur le prix mais perdre en fiabilité coûtera 15% de plus en gestion de crise",
+        "Montrer une solution concrète au problème de ses directeurs d'hôtels qui se plaignent (exemple : tableau de bord de suivi des livraisons en temps réel)",
+        "Proposer une phase de test rémunérée sur 2 établissements avec objectifs mesurables",
+        "Benchmarker ses pratiques avec celles d'un concurrent direct (ex: 'Chez Accor, ils ont résolu ça comme ça...')",
+        "Offrir un élément tangible pour briller devant le COMEX (reporting automatisé, calcul d'empreinte carbone, innovation visible)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Céder immédiatement sur le prix sans demander de contrepartie (= vous êtes faibles)",
+        "Critiquer frontalement ses fournisseurs actuels (= vous êtes désespérés et malhonnêtes)",
+        "Promettre des délais irréalistes (il sait ce qui est possible, il a 25 ans de métier)",
+        "Faire du name-dropping client sans preuve (il appellera pour vérifier)",
+        "Montrer qu'on ne connaît pas les spécificités CHR (parler de 'produits' au lieu de 'références', ignorer les contraintes HACCP)",
+        "Être condescendant ou donneur de leçons sur les achats"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, on va pas y passer trois heures hein... J'ai déjà deux offres sur mon bureau et franchement, elles sont plutôt agressives niveau prix. Qu'est-ce que vous avez de différent à me proposer concrètement ?",
+        "sous_texte": "Je pose le rapport de force d'entrée : je suis en position de force, j'ai des alternatives, prouvez-moi que je ne perds pas mon temps. Test : est-ce que vous allez paniquer et brader direct ?",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas réagir au prix immédiatement. Demander ce qui compte vraiment au-delà des 2 offres. Montrer qu'on a compris qu'il compare, et que c'est justement pour ça qu'on veut comprendre ses vrais critères."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, soyons clairs : Metro, ça fait 8 ans qu'on bosse avec. Ils ont leurs défauts mais au moins je sais à quoi m'attendre. Pourquoi je prendrais un risque avec vous ?",
+        "sous_texte": "J'ai peur de la disruption opérationnelle. La cicatrice de 2019 me fait encore mal. Si vous ne me rassurez pas sur la continuité de service, c'est mort. Mais je suis ouvert si vous comprenez cette peur.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître explicitement la légitimité de cette peur. Demander ce qui s'est passé avec le fournisseur défaillant. Proposer une approche progressive avec phase de test mesurable."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "*soupir* Vous me prenez pour qui ? Je connais le discours : 'qualité premium, service irréprochable, accompagnement personnalisé'... Tout le monde dit la même chose. Moi ce que je veux, c'est des chiffres.",
+        "sous_texte": "J'en ai marre des promesses creuses. J'ai été déçu trop souvent. Si vous n'avez pas de preuves factuelles et chiffrées, vous êtes comme les autres. Mais si vous en avez, là je commence à écouter vraiment.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Arrêter le discours marketing. Demander quels chiffres précis il veut voir. Proposer de comparer les KPIs qui comptent vraiment pour lui (taux de service, délai moyen de résolution incident, etc.)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est simple : je dois présenter une économie de 12% au COMEX du 12. Transgourmet me propose -11%, Brake -7%. Vous êtes où vous sur le prix ?",
+        "sous_texte": "Je teste votre réaction. Est-ce que vous allez me dire -12% direct comme un débutant ? Ou est-ce que vous allez creuser pourquoi j'ai cet objectif et m'aider à construire une justification qui tient la route devant le COMEX ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS donner un chiffre. Creuser : est-ce que le COMEX veut 12% d'économie brute ou 12% d'amélioration de marge ? Qui va gérer les ruptures si le fournisseur à -11% plante ? Aider à construire un calcul de TCO."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est gentil mais vous savez, en 2023 j'ai testé un nouveau fournisseur sur deux hôtels... Catastrophe. Les directeurs d'hôtels m'ont appelé en pleine nuit pour des ruptures de stock. Plus jamais ça.",
+        "sous_texte": "Trauma réel. J'ai failli me faire virer ou au minimum j'ai perdu beaucoup de crédibilité interne. Cette cicatrice conditionne toute ma décision. Si vous ne me rassurez pas sur ce point précis, je ne signerai JAMAIS.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander précisément ce qui s'est passé. Comprendre le processus de gestion de crise qui a échoué. Proposer une garantie contractuelle sur le taux de service + processus d'escalade formalisé + test sur 2 sites comme en 2023 mais avec KPIs définis."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui, oui, je comprends votre valeur ajoutée... Mais concrètement, chez Transgourmet ils me proposent le tableau de bord digital aussi, et c'est 380K€ de moins sur l'année. Comment vous justifiez l'écart ?",
+        "sous_texte": "Vous venez de m'argumenter sur un élément que le concurrent a aussi. Vous ne différenciez rien. Je vais utiliser cette faiblesse pour vous faire baisser. Sauf si vous me prouvez que leur tableau de bord n'est pas équivalent au vôtre.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander à voir l'offre Transgourmet (il bluffe peut-être). Creuser : est-ce que leur tableau de bord inclut X, Y, Z ? Recentrer sur ce que LUI veut accomplir avec cet outil, pas sur l'outil lui-même."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de 'fiabilité', 'réactivité'... Moi j'ai besoin de KPIs précis. Quel est votre taux de service moyen ? Votre délai de résolution d'incident ? Et je veux des preuves, pas du déclaratif.",
+        "sous_texte": "Enfin on rentre dans le concret. Si vous avez ces chiffres et qu'ils sont bons, vous montez dans mon estime. Si vous ne les avez pas ou si vous esquivez, je sais que vous bluffez et je vais vous défoncer en négociation.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner les vrais chiffres (même s'ils ne sont pas parfaits). Proposer de les inclure dans le contrat avec pénalités si non-atteints. Demander quels KPIs sont mesurés chez Metro actuellement pour comparer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "*regarde sa montre* Écoutez, tout ça c'est bien, mais j'ai un rendez-vous dans 15 minutes. Envoyez-moi votre meilleure offre par mail, on verra après.",
+        "sous_texte": "Vous me perdez. Soit vous êtes trop long, soit vous ne parlez pas de ce qui m'intéresse vraiment. Je vous évacue poliment. Dernière chance de me raccrocher avec quelque chose de concret, sinon c'est fini.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter cette fin. Synthétiser en 30 secondes ce qu'on a compris de ses enjeux. Proposer UNE question finale qui peut débloquer : 'Qu'est-ce qui vous ferait dire en sortant de cette réunion : ça valait le coup' ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Soyons clairs : chez Accor, mon homologue a négocié 15% de remise sur ce type de contrat l'année dernière. Je vois pas pourquoi j'obtiendrais moins. Qu'est-ce que vous me proposez ?",
+        "sous_texte": "Bluff partiel (le chiffre est peut-être gonflé ou hors contexte). Je teste votre connaissance du marché et votre capacité à tenir tête. Si vous cédez, je saurai que je peux encore gratter. Si vous tenez bon avec des arguments, je respecte.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rester calme. Questionner : sur quel périmètre ? Avec quels engagements en contrepartie ? Quelle durée ? Votre situation n'est pas celle d'Accor. Qu'est-ce qui compte vraiment pour vous au-delà du % ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, votre offre est intéressante, mais il faut faire un geste sur le prix. Descendez-moi à -10% et on signe demain. Sinon je vais devoir aller voir ailleurs.",
+        "sous_texte": "Négociation classique de dernière minute. Je teste votre marge de manœuvre. J'ai peut-être vraiment une alternative à -10%, ou peut-être pas. Votre réaction va me dire si vous êtes prêt à céder ou si on négocie autrement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas céder sans contrepartie. Demander : qu'est-ce que -10% change concrètement pour vous ? Si je fais ce geste, qu'est-ce que vous m'apportez en retour (durée, volumes, exclusivité sur nouveaux sites) ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez, je vous le dis franchement : le DAF va me demander pourquoi je n'ai pas pris l'offre de Brake à -7%. Comment je justifie la différence si vous ne bougez pas ?",
+        "sous_texte": "Peur politique réelle. J'ai besoin de munitions pour défendre mon choix en interne. Si vous m'aidez à construire cette argumentation (TCO, risques évités, bénéfices mesurables), je peux défendre votre offre même si elle est plus chère.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Construire avec lui le business case pour le DAF : calcul TCO, coût d'une rupture de stock, valeur des services différenciants chiffrés. Proposer de co-créer une slide de justification avec des données factuelles."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que je ne peux pas m'engager sur 3 ans. Maximum 18 mois avec option de sortie. Trop de changements à venir dans le groupe. C'est à prendre ou à laisser.",
+        "sous_texte": "Vrai frein stratégique : fusion possible, revente d'établissements, restructuration. Mais aussi tactique de négociation : si vous acceptez 18 mois sans broncher, je sais que je pouvais négocier encore plus. Si vous tenez bon, on peut trouver un compromis.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser les changements à venir. Proposer une structure différente : 3 ans avec clause de renégociation à 18 mois en cas de changement majeur documenté. Ou prix différent selon durée engagement avec avantage clair pour 3 ans."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "*soupir* Vous me prenez pour qui ? Vous me proposez exactement les mêmes conditions que dans votre offre initiale. Moi j'ai passé 3 semaines à négocier, j'ai besoin de montrer que j'ai arraché quelque chose. Faites un effort visible.",
+        "sous_texte": "Besoin politique de 'gagner' la négociation pour prouver ma valeur au COMEX. Même si l'offre est bonne, je dois obtenir une concession visible (prix, service additionnel, garantie renforcée) pour légitimer mon travail. Aidez-moi à sauver la face.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une concession visible mais à faible coût pour vous : formation gratuite des équipes, extension de garantie, accès anticipé à une innovation, conditions de paiement améliorées, ou bonus sur objectifs. Lui donner son 'trophy'."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, on va réfléchir. Laissez-moi en discuter avec mon équipe et le DAF, je vous rappelle la semaine prochaine.",
+        "sous_texte": "Phrase mortelle. Soit je suis vraiment indécis et j'ai besoin d'un élément débloquant, soit je suis en train de vous évincer poliment. Dans les deux cas, si vous partez maintenant sans clarifier, c'est probablement fini.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne JAMAIS accepter cette conclusion. Clarifier : 'Laurent, soyons clairs tous les deux. Qu'est-ce qui vous manque pour prendre une décision aujourd'hui ?' Obtenir le vrai frein ou la vraie objection cachée. Proposer un mini-engagement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Honnêtement, je suis presque convaincu. Mais si je signe avec vous et que ça plante pendant la saison haute d'été, ma tête va sauter. Comment vous me garantissez que ça ne va pas arriver ?",
+        "sous_texte": "Trauma de 2019 qui resurgit au moment de signer. Peur viscérale de refaire la même erreur. C'est LE frein ultime. Si vous ne le traitez pas avec une garantie contractuelle béton et crédible, je vais trouver une excuse pour ne pas signer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une garantie contractuelle avec pénalités si taux de service < X% pendant avril-septembre. Plan B formalisé (fournisseur de backup, stock tampon). Références clientèles vérifiables ayant vécu une saison haute sans incident. Engagement du DG dans le contrat."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui, oui, d'accord... *regarde son téléphone* Écoutez, envoyez-moi tout ça par mail avec votre pricing, je regarderai.",
+        "sous_texte": "Vous êtes en train de me perdre. Soit votre discours est trop générique, soit vous ne posez pas les bonnes questions. Je cherche une excuse polie pour raccourcir. Si vous ne rebondissez pas maintenant avec une vraie question engageante, c'est game over.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter le monologue. Poser LA question qui le fait réagir : 'Laurent, entre nous, si vous deviez choisir aujourd'hui entre économiser 200K€ mais prendre un risque, ou investir 100K€ de plus pour dormir tranquille, vous feriez quoi ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ce qui me tue en ce moment, c'est la gestion multi-sites. J'ai 3 fournisseurs différents, c'est ingérable. Comment vous m'aidez concrètement sur ce point ?",
+        "sous_texte": "Signal d'intérêt fort ! Je viens de révéler mon vrai problème opérationnel. Si vous avez une solution tangible à me proposer sur cette douleur précise, avec une démo ou un cas client similaire, je suis preneur. Mais pas de blabla.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Demander : qu'est-ce qui est ingérable concrètement (facturation, commandes, SAV) ? Montrer un cas client avec 15-20 sites unifié. Proposer un POC sur 3 sites avec migration progressive. Chiffrer le gain de temps et d'argent sur cette simplification."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Chez Transgourmet, eux au moins ils m'ont proposé un chef de projet dédié pendant 6 mois pour la migration. Vous, qu'est-ce que vous mettez en face ?",
+        "sous_texte": "Je compare les accompagnements. Transgourmet a compris que la phase de transition me fait peur. Si vous n'avez rien d'équivalent ou de mieux, vous perdez un point majeur. Mais si vous surenchérissez intelligemment, vous reprenez l'avantage.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander ce que ferait concrètement ce chef de projet. Proposer un accompagnement équivalent ou différencié (ex: formation des équipes terrain incluse, audit pré-migration, hotline dédiée 24/7 pendant 3 mois). Contractualiser cet engagement."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, soyons clairs. J'ai une offre de Brake à 3,42M€ sur le périmètre. Vous êtes à combien ? Parce que là, si l'écart est trop important, on va perdre notre temps tous les deux.",
+      "condition_declenchement": "Se déclenche après avoir épuisé les arguments de valeur, au moment où le vendeur pense avoir convaincu. Laurent sort cette objection prix ultime pour tester une dernière fois la capacité du commercial à tenir sa position et négocier intelligemment sans brader."
+    },
+    "pattern_escalade": "Laurent commence cordial mais distant. Si le vendeur résiste bien aux premières objections tactiques, il monte en respect et révèle ses vraies peurs (trauma 2019, pression COMEX). Si le vendeur cède trop vite ou bluffe, il devient plus agressif et cynique, multipliant les comparaisons concurrentielles. L'escalade finale consiste à sortir une objection prix brutale pour forcer une dernière concession. S'il sent que le vendeur a une colonne vertébrale ET comprend ses vrais enjeux, il devient soudain constructif et cherche un deal gagnant-gagnant.",
+    "piege_classique": "Le piège n°1 de Laurent : il donne l'impression que tout se joue sur le prix (-11%, -7%, etc.) pour pousser le vendeur à brader. En réalité, son vrai critère est la sécurisation opérationnelle (éviter un nouveau 2019). S'il obtient cette garantie tangible et contractuelle, il est prêt à payer 5-8% de plus. Les vendeurs qui tombent dans le piège cèdent sur le prix sans avoir identifié cette peur sous-jacente, et perdent soit le deal (car pas crédibles), soit leur marge (car ont négocié sur le mauvais levier)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur pour l'hôtellerie-restauration (grossiste alimentaire, équipementier CHR, ou prestataire de services)",
+      "description": "Entreprise fournissant des produits ou services pour le secteur de l'hôtellerie-restauration, travaillant avec des chaînes et groupes de taille significative"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution de fourniture adaptée aux besoins d'une chaîne hôtelière ou groupe de restauration multi-sites",
+      "proposition_valeur": "Offre différenciante face à la concurrence avec des éléments de valeur à défendre (qualité, service, fiabilité, accompagnement, innovation, etc.)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser la négociation commerciale en phase finale : défendre la valeur de l'offre, identifier les vrais critères de décision au-delà du prix, et closer sans brader les conditions",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Contrat Groupe Hôtellerie",
+    "vous_etes": "Commercial Grand Compte chez un fournisseur CHR, en phase finale de négociation sur un contrat groupe de 3,8M€/an.",
+    "vous_vendez": "Solution complète de fourniture alimentaire et boissons pour 18 établissements hôteliers (3-4 étoiles), avec services logistiques et outils de pilotage — montant annuel : 3,8M€.",
+    "vous_appelez": "Laurent Mercier, 51 ans, Directeur des Achats Groupe chez Hôtels & Résidences Azur (450 salariés, 18 hôtels). Ancien opérationnel, négociateur redoutable, reporting obsessionnel vers le COMEX. Fournisseur actuel : Metro depuis 8 ans. Il a 2 offres concurrentes à -7% et -11% sur la table.",
+    "ce_que_vous_savez": [
+      "Il doit réduire le poste achats F&B de 12% sans dégrader la qualité (objectif COMEX)",
+      "Actuellement 3 fournisseurs différents = complexité logistique qu'il veut simplifier",
+      "Cicatrice d'un fournisseur défaillant en 2019 qui a impacté 3 hôtels — très sensible à la fiabilité",
+      "Ouverture de 2 nouveaux hôtels en 2026, saison haute avril-septembre à sécuriser absolument",
+      "Il présente sa recommandation au COMEX le 12 du mois prochain"
+    ],
+    "votre_objectif": "Closer le contrat en défendant votre valeur face à la pression prix, sans brader vos conditions — obtenir son engagement de principe aujourd'hui.",
+    "vos_atouts": [
+      "Plateforme digitale de pilotage temps réel des livraisons multi-sites (résout son problème logistique)",
+      "Taux de service 99,2% sur saison haute avec astreinte dédiée (vs incidents 2019)",
+      "ROI calculé : votre TCO réel est inférieur de 4% aux offres low-cost si on intègre coûts cachés",
+      "Reporting automatisé COMEX-ready avec KPIs achats et empreinte carbone (il brille devant sa direction)"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:04:41Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17902,
+    "total_time_s": 182.9
+  }
+}

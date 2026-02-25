@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771524496",
+  "description_originale": "Vous avez envoyé une proposition commerciale au dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : industrie]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "industrie - usinage, mécanique ou plasturgie",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant/gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution destinée aux PME industrielles du secteur usinage/mécanique/plasturgie",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après envoi de proposition commerciale",
+        "Délai de 10 jours sans réponse"
+      ],
+      "implicites": [
+        "Difficulté à obtenir un engagement clair du prospect",
+        "Manque de qualification initiale ou d'engagement avant envoi de la proposition",
+        "Possibilité que la proposition ne soit pas lue ou pas prioritaire",
+        "Relance probablement difficile car position de demandeur"
+      ],
+      "probleme_racine": "Absence de processus structuré de suivi et de qualification en amont - la proposition a été envoyée sans accord préalable sur les modalités de retour, créant une situation où le commercial est en position de quémandeur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance post-proposition pour obtenir un retour clair et éviter les zones grises",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "prestataire de services ou fournisseur pour l'industrie",
+      "entreprise_description": "entreprise proposant des solutions aux PME industrielles spécialisées en usinage, mécanique ou plasturgie",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution commerciale destinée aux PME industrielles - nature exacte non précisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service proposé",
+        "Contenu et structure de la proposition envoyée",
+        "Contexte de l'interaction précédente (premier contact, suite à RDV, etc.)",
+        "Historique relationnel avec le prospect",
+        "Proposition de valeur spécifique",
+        "Fourchette de prix",
+        "Identité de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Verneuil",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Méca-Précis SAS",
+        "secteur": "Usinage de précision pour l'aéronautique et l'automobile",
+        "taille": "38 salariés",
+        "ca_approximatif": "4,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les promesses commerciales",
+        "Pragmatique terre-à-terre, issu du terrain",
+        "Chroniquement débordé et en mode pompier"
+      ],
+      "motivations_profondes": [
+        "Préserver la trésorerie à tout prix",
+        "Éviter les erreurs coûteuses qui engagent l'entreprise",
+        "Garder le contrôle sur toutes les décisions importantes",
+        "Prouver qu'il peut faire aussi bien que les concurrents sans dépenser plus"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial trop lisse",
+        "Investir dans quelque chose qui ne sera pas utilisé par les équipes",
+        "Paraître incompétent devant son responsable production s'il prend une mauvaise décision",
+        "Manquer de temps pour évaluer correctement les propositions"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Les voit comme nécessaires mais intrusifs. A tendance à les faire attendre pour garder la main. Déteste qu'on le pousse",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, souvent coupe la conversation avec 'Écoutez, là je suis un peu speed'",
+      "signaux_interet": [
+        "Pose des questions très techniques précises",
+        "Mentionne son responsable production : 'Faudrait que j'en parle à Dany'",
+        "Demande des exemples chiffrés concrets",
+        "Évoque spontanément un problème spécifique de l'atelier"
+      ],
+      "signaux_rejet": [
+        "Répète 'ouais, ouais' de manière mécanique",
+        "Dit 'on verra ça' ou 'je regarde et je vous redis'",
+        "Parle de sa journée chargée plutôt que du sujet",
+        "Évoque vaguement 'le budget de l'année prochaine'"
+      ],
+      "tics_langage": [
+        "Bon, écoutez...",
+        "J'vous cache pas que...",
+        "Faut qu'j'voie avec...",
+        "C'est pas faux, mais...",
+        "Soupirs audibles quand on insiste"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible, 45 secondes maximum. Au-delà, commence à décrocher ou interrompt avec 'Oui mais concrètement...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct mais tensions sur les délais. Deux départs récents d'opérateurs qualifiés. Pression clients sur les prix. Machine de découpe laser qui vieillit mal",
+      "priorites_actuelles": [
+        "Recruter un tourneur-fraiseur qualifié",
+        "Boucler le dossier de réponse à l'appel d'offres Safran",
+        "Gérer le conflit avec le fournisseur de matière première qui a augmenté ses prix",
+        "Préparer la visite de certification ISO dans 6 semaines"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé deux solutions il y a 3-4 ans, dont une qu'il a abandonnée au bout de 8 mois car 'les gars ne s'en servaient pas'. Échaudé",
+      "fournisseur_actuel": "Bricolage maison avec Excel + un vieux logiciel de GPAO qu'il trouve 'pas terrible mais qui fait le job'",
+      "budget_disponible": "Entre 8K€ et 15K€ disponibles en investissement, mais doit justifier le ROI au comptable et à l'expert-comptable. Préfère étaler sur 2 exercices si possible"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client référence dans l'aéro qu'il connaît ou respecte",
+        "Parler de gain de temps chiffré très précis sur une tâche qu'il déteste (ex: 'vous gagnez 4h par semaine sur les ordres de fabrication')",
+        "Reconnaître explicitement ses contraintes ('Je comprends que vous n'ayez pas le temps maintenant, justement c'est pour ça que...')",
+        "Impliquer son responsable production dans le process",
+        "Proposer un test court et sans engagement contractuel long"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Insister lourdement après un 'je vais regarder'",
+        "Utiliser du jargon marketing ou des anglicismes ('solution disruptive', 'game-changer')",
+        "Critiquer frontalement sa façon actuelle de faire",
+        "Forcer un rendez-vous physique sans avoir donné de raison concrète",
+        "Évoquer des fonctionnalités dont il n'a pas besoin ('Vous pourrez même gérer vos stocks depuis votre smartphone!')",
+        "Minimiser le temps d'appropriation : il sait que ça prendra du temps"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, écoutez là je suis vraiment speed, j'ai les gars de Safran qui attendent une réponse sur un OF, vous me rappelez quand ?",
+        "sous_texte": "Je ne veux pas être impoli mais je n'ai vraiment pas la tête à ça maintenant et je cherche une échappatoire polie",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître explicitement la contrainte temps et proposer un créneau précis très court (2-3 minutes) en valorisant le respect de son agenda"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais j'ai bien reçu votre truc, j'vous cache pas que j'ai pas eu le temps de regarder en détail, y'a tellement de papiers qui s'empilent...",
+        "sous_texte": "Votre proposition n'est pas ma priorité et je me sens un peu coupable mais pas assez pour la lire maintenant",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas culpabiliser le prospect, proposer de résumer les 3 points clés en 60 secondes pour qu'il sache s'il doit creuser ou archiver"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, j'suis pas sûr que ça colle avec ce qu'on fait nous, hein. On a déjà essayé des trucs comme ça...",
+        "sous_texte": "J'ai été échaudé par le passé et je ne veux pas revivre un échec. Prouvez-moi que vous êtes différent",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'expérience négative passée avec empathie pour comprendre ce qui n'a pas marché, puis différencier explicitement votre approche"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas faux ce que vous dites, mais bon, on s'en sort pas trop mal avec notre système actuel vous savez...",
+        "sous_texte": "Je ne veux pas admettre que notre système est défaillant car ça me ferait passer pour quelqu'un qui a laissé pourrir la situation",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser ce qui fonctionne déjà et questionner sur les situations spécifiques où le système montre ses limites sans attaquer frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais vous comprenez, faut qu'j'voie avec Dany, mon responsable prod. Parce que si les gars adhèrent pas, moi j'me retrouve avec un truc qui sert à rien.",
+        "sous_texte": "J'ai peur de prendre une décision seul qui serait rejetée sur le terrain, je veux diluer ma responsabilité",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer immédiatement d'impliquer Dany dans la démarche, valoriser cette prudence comme professionnelle et non comme une faiblesse"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'vous cache pas qu'on vient de perdre deux gars qualifiés, là mon souci c'est de recruter, pas d'investir dans des outils...",
+        "sous_texte": "J'ai d'autres priorités plus urgentes et votre solution me paraît secondaire face au problème RH",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Relier la solution au problème RH : montrer comment elle peut réduire la dépendance aux opérateurs ou faciliter l'intégration des nouveaux"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "*Soupir* Écoutez, c'est quoi le budget là-dessus ? Parce que bon, faut pas se mentir, là on est pas chez Airbus hein...",
+        "sous_texte": "Je m'attends à un prix trop élevé pour mes moyens et je prépare ma sortie avant même de connaître le chiffre",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix tout de suite, creuser d'abord la valeur perçue et le coût actuel de la situation pour créer un référentiel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais, ouais... Mais concrètement, ça me fait gagner combien ? Parce que 'optimiser les process' tout ça, j'entends ça à longueur de journée...",
+        "sous_texte": "Je suis saturé de discours marketing creux, donnez-moi du tangible ou je décroche définitivement",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un chiffre précis et vérifiable avec un exemple concret de sa situation : '4h gagnées par semaine sur les OF, soit 16h/mois'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Et y'a combien de temps de formation ? Parce que moi sortir les gars de prod pour des formations, c'est compliqué vous imaginez bien.",
+        "sous_texte": "Je suis méfiant sur le temps d'appropriation réel et je sais que vous allez minimiser ce point comme tous les commerciaux",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur le temps réel nécessaire et proposer un plan de formation progressif qui ne bloque pas la production"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais vous comprenez, j'ai déjà eu une solution y'a trois ans, on l'a abandonnée au bout de huit mois, les gars s'en servaient pas.",
+        "sous_texte": "J'ai peur de revivre un échec cuisant qui m'a coûté de l'argent et de la crédibilité. Vous devez me rassurer sur ce point précis",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Explorer en profondeur les raisons de l'échec passé, identifier les différences et proposer des garanties d'accompagnement spécifiques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon après, vous me citez Mecatech Industries, mais eux ils ont 120 personnes, c'est pas la même échelle que nous ça...",
+        "sous_texte": "Je cherche une raison rationnelle pour me distancier de la décision car les références ne me paraissent pas transposables à ma situation",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Avoir des références d'entreprises de taille similaire (30-50 personnes) et expliquer pourquoi la solution est scalable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'comprends bien, mais là franchement faut qu'j'en parle au comptable, parce que côté tréso on est pas hyper à l'aise en ce moment...",
+        "sous_texte": "Le prix me fait peur mais je ne veux pas l'avouer directement, je me cache derrière une contrainte externe",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un étalement de paiement ou questionner le coût de l'inaction pour construire un business case simple pour le comptable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant hein, j'dis pas. J'vais regarder ça tranquillement et j'vous redis, OK ?",
+        "sous_texte": "Je veux clore poliment la conversation sans m'engager. Il y a 80% de chances que je ne donne jamais suite",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter ce flou, proposer un prochain point précis avec agenda et objectif défini pour garder la dynamique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais bon, faudrait déjà que j'en parle à Dany et qu'on voie si ça colle avec la visite de certif ISO qu'on a dans six semaines...",
+        "sous_texte": "Je me crée des obstacles pour repousser la décision car je ne suis pas convaincu ou pas prêt à m'engager maintenant",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer d'inclure Dany dans un échange court et positionner la solution comme facilitant la certification plutôt que la gênant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le truc c'est que là, j'ai vraiment pas le temps de m'occuper de ça avant... pff... allez, février au mieux. On s'en reparle début d'année ?",
+        "sous_texte": "Je veux vous repousser suffisamment loin pour que vous m'oubliez, ou alors je suis réellement surchargé et pas prioritaire pour vous",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Identifier si c'est une vraie contrainte timing ou une fuite, puis proposer de faire le travail préparatoire à sa place pour réduire sa charge"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, j'vais être honnête avec vous : là j'ai Dany qui m'engueule sur les retards, les gars de Safran qui me mettent la pression, et mon fournisseur de matière qui vient d'augmenter ses tarifs de 12%. Votre truc il est bien, mais c'est vraiment pas le moment.",
+        "sous_texte": "Je suis sincèrement débordé et votre solution, aussi bonne soit-elle, n'est pas dans mon top 5 des urgences actuelles",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Faire preuve d'empathie réelle, proposer un follow-up à date précise avec condition de déblocage claire, ou identifier quel problème actuel votre solution pourrait soulager"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon bah écoutez, envoyez-moi tout ça par mail, je regarde avec mon équipe et on vous fait un retour. Mais j'vous préviens hein, là on a la tête dans le guidon jusqu'à fin mars minimum.",
+      "condition_declenchement": "Se déclenche si le commercial pousse trop fort pour un engagement ou un rendez-vous sans avoir suffisamment créé de valeur perçue ou résolu les peurs profondes"
+    },
+    "pattern_escalade": "Christophe commence cordial mais pressé (réflexe), puis devient plus précis dans ses objections si on insiste (test), avant de se réfugier derrière des contraintes externes si on persiste (tactique), et finit par être très direct sur ses priorités actuelles si on ne lâche pas (sincère). L'escalade est rapide car sa tolérance au monologue commercial est très faible.",
+    "piege_classique": "Accepter le 'j'vais regarder et j'vous redis' sans cadrer de prochain point concret. Christophe a l'habitude que les commerciaux acceptent ce flou, et 9 fois sur 10 il ne donne jamais suite. Le vrai piège est de croire qu'on avance alors qu'on entre dans un tunnel sans issue. Il faut impérativement obtenir un engagement minimal (même petit) ou qualifier clairement le non-intérêt pour passer à autre chose."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "prestataire de services ou fournisseur pour l'industrie",
+      "description": "entreprise proposant des solutions aux PME industrielles spécialisées en usinage, mécanique ou plasturgie"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution commerciale destinée aux PME industrielles - nature exacte non précisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance post-proposition pour obtenir un retour clair et éviter les zones grises",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — PME usinage de précision",
+    "vous_etes": "Commercial chez un prestataire de solutions pour l'industrie, vous avez envoyé une proposition commerciale à Méca-Précis il y a 10 jours.",
+    "vous_vendez": "Une solution pour PME industrielles (détails dans votre proposition envoyée).",
+    "vous_appelez": "Christophe Verneuil, 52 ans, gérant de Méca-Précis SAS (38 salariés, usinage de précision aéro/auto). Pragmatique, méfiant, toujours débordé. Déteste qu'on le pousse.",
+    "ce_que_vous_savez": [
+      "Il n'a pas donné signe de vie depuis réception de votre proposition",
+      "Son entreprise fait 4,2M€ de CA, tensions actuelles sur délais et recrutement",
+      "Il a déjà testé deux solutions similaires par le passé, dont une abandonnée après 8 mois",
+      "Il travaille actuellement avec Excel et un vieux logiciel de GPAO 'qui fait le job'",
+      "Il doit préparer une certification ISO dans 6 semaines et répondre à un appel d'offres Safran"
+    ],
+    "votre_objectif": "Obtenir un retour clair — oui, non, ou conditions précises pour avancer — et éviter le flou qui tue.",
+    "vos_atouts": [
+      "Vous pouvez proposer un test court sans engagement long",
+      "Vous êtes capable de chiffrer les gains de temps très précisément",
+      "Vous comprenez ses contraintes de dirigeant débordé",
+      "Vous pouvez impliquer son responsable production dans l'évaluation"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:08:16Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13913,
+    "total_time_s": 128.6
+  }
+}

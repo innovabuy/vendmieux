@@ -1,0 +1,353 @@
+{
+  "id": "scenario_1771518767",
+  "description_originale": "Vous avez présenté votre offre au directeur commercial ou directeur des opérations d'une groupe d'intérim ou cabinet RH de 150+ collaborateurs il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : rh_recrutement]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "150+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur des opérations",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux acteurs du recrutement et de l'intérim",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation commerciale",
+        "Difficulté à relancer efficacement après un RDV",
+        "Process de décision qui stagne"
+      ],
+      "implicites": [
+        "Manque de technique de suivi post-présentation",
+        "Absence de cadrage des prochaines étapes en fin de RDV initial",
+        "Difficulté à gérer le silence radio du prospect",
+        "Possibilité que le prospect ne soit pas décisionnaire final"
+      ],
+      "probleme_racine": "Absence de méthodologie structurée de suivi commercial et de qualification du process de décision lors du premier RDV"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance commerciale et de déblocage des situations où le prospect ne donne pas suite après une présentation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions pour le secteur RH/Recrutement/Intérim",
+      "entreprise_description": "Entreprise proposant des solutions BtoB destinées aux groupes d'intérim et cabinets RH",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Offre présentée lors d'un RDV commercial à des décideurs du secteur RH",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Prix et conditions commerciales",
+        "Contenu de la présentation initiale",
+        "Raisons du silence (objections potentielles)",
+        "Identité de l'entreprise vendeuse",
+        "Processus de décision du prospect",
+        "Budget et timing du prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Flexis Intérim Services",
+        "secteur": "Intérim et recrutement - agences multi-secteurs",
+        "taille": "220 collaborateurs répartis sur 18 agences",
+        "ca_approximatif": "32M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent et averse au risque",
+        "Submergé et défensif face aux sollicitations",
+        "Perfectionniste qui reporte ses décisions"
+      ],
+      "motivations_profondes": [
+        "Éviter l'erreur stratégique qui pourrait nuire à sa réputation interne",
+        "Maintenir la paix sociale avec ses directeurs d'agence qui détestent les changements d'outils",
+        "Prouver à sa DG qu'il maîtrise les coûts tout en modernisant progressivement"
+      ],
+      "peurs_freins": [
+        "Crainte d'un déploiement raté qui paralyserait les agences pendant la haute saison",
+        "Peur de se faire court-circuiter par le DAF qui surveille tous les investissements IT",
+        "Appréhension de devoir gérer la résistance au changement de ses managers terrain",
+        "Angoisse de signer trop vite et de découvrir ensuite un défaut rédhibitoire"
+      ],
+      "rapport_aux_commerciaux": "Fatigué des commerciaux qui ne comprennent pas les réalités opérationnelles de l'intérim. A tendance à les trouver 'hors-sol' et trop focus fonctionnalités. Apprécie ceux qui posent des questions concrètes sur SES contraintes plutôt que de dérouler un PowerPoint.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, légèrement sur la défensive. Commence souvent par 'Alors, je vous écoute' avec un micro-soupir imperceptible.",
+      "signaux_interet": [
+        "Prend des notes manuscrites sur un carnet à spirale",
+        "Demande des précisions chiffrées sur les délais de déploiement",
+        "Évoque spontanément 'le sujet qu'on a eu en CODIR la semaine dernière'",
+        "Utilise le conditionnel positif : 'Si on devait avancer, il faudrait que...'"
+      ],
+      "signaux_rejet": [
+        "Regarde son téléphone en mode silencieux posé sur la table",
+        "Coupe avec 'Oui oui, ça je connais' avant la fin de vos phrases",
+        "Formule creuse : 'C'est intéressant, on va y réfléchir en interne'",
+        "Regard fuyant vers la porte ou l'horloge murale"
+      ],
+      "tics_langage": [
+        "Bon... (long silence) moi ce qui me gêne c'est...",
+        "On a déjà essayé un truc dans le genre en 2019, ça avait pas marché terrible",
+        "Il faut que j'en parle à Véronique du contrôle de gestion",
+        "Faut voir... faut voir..."
+      ],
+      "debit_parole": "lent",
+      "tolerance_monologue_vendeur": "Très faible. Décroche mentalement au-delà de 90 secondes de présentation unilatérale. A besoin d'être impliqué par des questions, sinon passe en mode 'j'attends que ça se termine'."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+6% sur l'année) mais pression forte sur les marges. La DG pousse pour digitaliser le suivi candidats et optimiser le taux de conversion placements. Deux acquisitions d'agences régionales prévues au S2, ce qui monopolise l'attention du CODIR.",
+      "priorites_actuelles": [
+        "Réussir l'intégration RH post-acquisition sans perdre de consultants clés",
+        "Boucler la certification Qualiopi avant juin (deadline réglementaire)",
+        "Résoudre le problème de turn-over des chargés de recrutement (23% l'an dernier)"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de matching automatique qui a été abandonné après 8 mois (trop rigide, les équipes ne l'utilisaient pas). Échaudé par cette expérience. Utilise actuellement un patchwork d'outils : un ATS vieillissant, Excel pour le pilotage, WhatsApp Business non officiel.",
+      "fournisseur_actuel": "ATS historique (Nicoka RH) dont le contrat arrive à échéance dans 7 mois. Relation tiède avec l'éditeur (bugs non corrigés, support médiocre). Mais migration = projet lourd.",
+      "budget_disponible": "Enveloppe de 45-65K€ validée en théorie au budget prévisionnel, mais doit être re-validée projet par projet par le DAF. Nécessite un business case béton avec ROI démontré sous 18 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer une compréhension fine des contraintes terrain de l'intérim (législation, urgence placements, pénurie candidats)",
+        "Proposer un pilote limité à 2-3 agences avec clause de sortie sans frais",
+        "Apporter des chiffres concrets issus de clients du même secteur en France",
+        "Clarifier dès le départ QUI décide QUOI et à QUELLE échéance chez lui",
+        "Lui permettre de jouer le rôle du 'héros interne' qui a négocié des conditions avantageuses"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser la complexité du changement d'outil pour ses équipes",
+        "Pousser à la signature rapide sans phase de test",
+        "Ignorer le rôle du DAF et des directeurs d'agence dans la décision",
+        "Comparer défavorablement son organisation actuelle sans connaître l'historique",
+        "Prétendre que 'tout est simple et rapide à mettre en place'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai eu votre présentation la dernière fois, là franchement je suis débordé avec les acquisitions qu'on a en cours...",
+        "sous_texte": "Je me souviens vaguement de vous, mais j'espérais que vous oublieriez. Je n'ai pas envie de gérer ça maintenant avec tout ce qui se passe.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la charge, créer un lien entre votre solution et son défi actuel d'acquisition"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon... moi je vous avais dit qu'on allait en reparler en interne, mais pour être honnête on n'a pas vraiment avancé sur le sujet",
+        "sous_texte": "Je n'ai rien fait depuis notre dernier échange. Soit ce n'était pas prioritaire, soit je bloque inconsciemment parce que je ne suis pas convaincu.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Découvrir ce qui a empêché l'action : manque d'urgence, objection cachée, ou processus décisionnel mal compris"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, votre solution... C'est intéressant hein, mais bon faut voir, on a d'autres priorités qui sont passées devant",
+        "sous_texte": "Je vous classe mentalement comme 'peut-être un jour'. Je ne veux pas vous vexer mais ce n'est pas dans mon top 5.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier si c'est un vrai recul de priorité ou une fuite. Identifier quelle priorité est passée devant et pourquoi."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà essayé un truc dans le genre en 2019, ça avait pas marché terrible... Les équipes ont jamais vraiment accroché",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre cet échec. Prouvez-moi que ce sera différent cette fois, sinon je protège ma réputation.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer en profondeur cet échec passé : causes, contexte, différences avec aujourd'hui, leçons apprises"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Faut voir... Le problème c'est que le contrat avec Nicoka se termine que dans 7 mois, donc bon...",
+        "sous_texte": "J'utilise le timing contractuel comme excuse pour ne pas avancer. En réalité, je ne suis pas sûr de vouloir gérer cette transition maintenant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer la contrainte en opportunité : préparation, parallélisation, clause de sortie Nicoka"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais vous comprenez, moi j'ai 18 directeurs d'agence qui détestent qu'on change les outils en pleine saison. C'est pas simple à gérer...",
+        "sous_texte": "Je suis coincé entre ma hiérarchie qui pousse à la digitalisation et mon équipe terrain qui résiste. Je cherche la solution miracle qui ne fâchera personne.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Co-construire une approche de conduite du changement, pilote terrain, implication des directeurs"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Il faut que j'en parle à Véronique du contrôle de gestion de toute façon, parce que le DAF il surveille tout ce qui est investissement IT maintenant",
+        "sous_texte": "Je ne décide pas seul et je ne veux pas vous le dire directement. Je peux être bloqué par le DAF même si moi je suis convaincu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Cartographier le circuit de décision réel, identifier les critères du DAF, proposer de co-construire le business case"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça, mais en vrai mes équipes elles passent déjà leur temps sur trois outils différents, j'ai pas envie d'en rajouter un quatrième...",
+        "sous_texte": "Je suis fatigué de la complexité actuelle. Je veux simplifier, pas empiler. Si vous ajoutez de la complexité, c'est mort.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer comment votre solution REMPLACE ou UNIFIE plutôt qu'elle n'ajoute"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon... moi ce qui me gêne c'est... (silence)... c'est que vous me dites que c'est simple à déployer, mais j'ai déjà entendu ça et après c'est la galère pendant 6 mois",
+        "sous_texte": "Je ne crois pas aux promesses commerciales. J'ai été déçu trop souvent. Montrez-moi des preuves tangibles ou assumez la complexité réelle.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transparence totale : assumer les difficultés, montrer un plan réaliste avec jalons et mécanismes de sécurisation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, ça je connais, vous me montrez tous les mêmes slides avec les belles captures d'écran... mais dans la vraie vie c'est jamais comme ça",
+        "sous_texte": "Je suis blasé des démos marketing. Je veux voir la réalité opérationnelle, pas la vitrine.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une démonstration avec LEURS données, un accès bac à sable, ou un échange avec un client similaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de ROI sous 18 mois, mais vous avez pris en compte le coût de formation, le temps perdu pendant la migration, tout ça ?",
+        "sous_texte": "Je cherche la faille dans votre business case. Je suis analytique et je veux être sûr que vous n'avez rien oublié qui me retombera dessus.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Co-construire un business case complet avec lui, incluant TOUS les coûts cachés qu'il mentionne"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que j'ai vu votre grille tarifaire la dernière fois, et franchement c'est pas donné... Je suis pas sûr de faire valider ça par le DAF",
+        "sous_texte": "Le prix me fait peur, mais je ne veux pas négocier directement. Je teste votre marge de manœuvre et je me protège derrière le DAF.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Séparer objection prix vs objection valeur. Identifier le vrai budget disponible et les critères du DAF."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant tout ça, je vais en reparler avec mon équipe et je vous recontacte, d'accord ?",
+        "sous_texte": "Je veux me débarrasser poliment de vous sans m'engager. Il y a peu de chances que je vous recontacte spontanément.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas accepter cette fuite. Cadrer la prochaine étape MAINTENANT avec date et contenu précis."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là honnêtement, avec les deux acquisitions qu'on a à boucler d'ici septembre, je peux rien vous promettre avant fin d'année...",
+        "sous_texte": "Je me cache derrière un vrai sujet stratégique pour gagner du temps. Peut-être sincère, peut-être une excuse.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider si c'est un délai réel ou une fuite. Si réel, identifier comment rester présent utilement pendant cette période."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut voir... Je dois d'abord en parler à Véronique, puis faudra que je présente ça au CODIR, enfin bon c'est un process qui prend du temps chez nous",
+        "sous_texte": "Je vous noie sous la complexité décisionnelle pour que vous renonciez. Ou je réalise moi-même que c'est trop compliqué et je recule.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Décomposer le processus, identifier les étapes critiques, proposer d'accompagner certaines phases (présentation CODIR, etc.)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, mais si jamais ça se passe mal votre truc, moi je fais comment ? J'ai pas les moyens de planter mes agences pendant 3 mois...",
+        "sous_texte": "Ma peur principale remonte : et si je me plantais ? Je cherche des garanties, des filets de sécurité avant de m'engager.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer des mécanismes de sécurisation : pilote limité, clause de sortie, accompagnement renforcé, garanties contractuelles"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais être transparent avec vous : j'ai un autre fournisseur qui me fait une proposition aussi, je veux comparer avant de me décider",
+        "sous_texte": "Peut-être vrai, peut-être faux. Je veux soit vous mettre en concurrence pour négocier, soit gagner du temps sans vous vexer.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la comparaison, aider à définir les critères de choix, proposer de clarifier ce qui est comparable ou non"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attendez, en fait là je réalise que je me suis peut-être emballé un peu vite... C'est un gros projet quand même, faut que je prenne du recul. On se rappelle dans quelques semaines, OK ?",
+      "condition_declenchement": "Arrive après qu'on ait tenté de closer trop fort, sans avoir sécurisé émotionnellement Stéphane sur sa peur de l'échec et sans avoir co-construit un plan de déploiement progressif avec filets de sécurité"
+    },
+    "pattern_escalade": "Stéphane utilise une stratégie d'évitement progressif : d'abord des objections logiques sur le timing ou le budget (bouclier externe), puis révèle ses vraies peurs (échec passé, résistance terrain) si on creuse avec empathie, et finalement se réfugie derrière le processus décisionnel complexe quand la pression de closing augmente. Plus on pousse sans sécuriser, plus il recule.",
+    "piege_classique": "Prendre pour argent comptant son 'je vais y réfléchir en interne' alors qu'il n'a ni plan d'action concret ni date de décision. Stéphane est master dans l'art de la formule polie qui ne l'engage à rien. Le piège est de repartir sans avoir cadré QUI fait QUOI QUAND. Si vous le laissez repartir dans le flou, vous ne le reverrez jamais."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions pour le secteur RH/Recrutement/Intérim",
+      "description": "Entreprise proposant des solutions BtoB destinées aux groupes d'intérim et cabinets RH"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Offre présentée lors d'un RDV commercial à des décideurs du secteur RH",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance commerciale et de déblocage des situations où le prospect ne donne pas suite après une présentation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-présentation — Solution RH pour l'intérim",
+    "vous_etes": "Commercial BtoB spécialisé solutions RH/Recrutement, en charge du marché grands comptes intérim.",
+    "vous_vendez": "Solution digitale pour les acteurs de l'intérim et du recrutement (nature exacte et tarif à préciser selon votre catalogue — budget prospect validé entre 45-65K€).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur des Opérations chez Flexis Intérim Services (220 collaborateurs, 18 agences, 32M€ CA). Prudent, analytique, échaudé par un projet raté en 2019. Submergé, déteste les commerciaux hors-sol.",
+    "ce_que_vous_savez": [
+      "Vous lui avez présenté votre offre il y a quelques semaines, mais il ne donne plus signe de vie depuis.",
+      "Son ATS actuel (Nicoka RH) arrive à échéance dans 7 mois, mais il redoute une migration complexe.",
+      "Deux acquisitions d'agences prévues au S2 monopolisent l'attention du CODIR.",
+      "Il doit obtenir un ROI démontré sous 18 mois pour convaincre son DAF de débloquer le budget.",
+      "Il craint un déploiement raté pendant la haute saison et la résistance au changement de ses managers terrain."
+    ],
+    "votre_objectif": "Comprendre pourquoi il ne donne pas suite, identifier les freins réels (décision, timing, budget, acteurs manquants) et obtenir un engagement concret sur les prochaines étapes.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes opérationnelles de l'intérim (législation, urgence placements, turn-over).",
+      "Vous pouvez proposer un pilote limité à 2-3 agences avec clause de sortie sans frais.",
+      "Vous disposez de cas clients concrets dans le secteur intérim en France avec ROI chiffré.",
+      "Vous êtes capable de cartographier le circuit de décision réel (DAF, directeurs d'agence) et d'adapter votre approche."
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:32:47Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14677,
+    "total_time_s": 135.1
+  }
+}

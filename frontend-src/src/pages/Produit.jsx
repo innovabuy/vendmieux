@@ -103,13 +103,25 @@ function Step1Visual(){
   ); }
 
 function Step2Visual(){
-
-  const C = useColors(); return(
+  const C = useColors();
+  const [timer,setTimer]=useState(192);
+  const [pairIdx,setPairIdx]=useState(0);
+  const pairs=[
+    {prospect:"On a déjà un prestataire pour la maintenance...",conseil:"Ne justifiez pas. Demandez ce qui le satisfait chez son prestataire actuel."},
+    {prospect:"C'est trop cher pour ce que c'est...",conseil:"Ancrez sur la valeur. Demandez le coût d'une panne non planifiée."},
+    {prospect:"Envoyez-moi un mail, je regarderai...",conseil:"Créez l'urgence. Quand a-t-il reçu le dernier devis concurrent ?"},
+    {prospect:"On n'a pas le budget cette année...",conseil:"Qualifiez le vrai frein. Budget ou manque de confiance ?"},
+    {prospect:"Je dois en parler à mon associé...",conseil:"Proposez une validation. Offrez un pilote sur 2 machines."},
+  ];
+  useEffect(()=>{ const iv=setInterval(()=>setTimer(t=>t+1),1000);return()=>clearInterval(iv); },[]);
+  useEffect(()=>{ const iv=setInterval(()=>setPairIdx(i=>(i+1)%pairs.length),4000);return()=>clearInterval(iv); },[]);
+  const fmt=s=>`${Math.floor(s/60)}:${(s%60).toString().padStart(2,"0")}`;
+  return(
     <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,padding:24,textAlign:"center" } }>
       <div style={ { display:"flex",alignItems:"center",justifyContent:"center",gap:8,marginBottom:24 } }>
         <div style={ { width:8,height:8,borderRadius:"50%",background:C.ac,animation:"pulse 1.5s infinite" } }/>
         <span style={ { fontSize:12,fontWeight:600,color:C.ac } }>Simulation en cours</span>
-        <span style={ { fontSize:12,color:C.dm,fontVariantNumeric:"tabular-nums",marginLeft:8 } }>3:12</span>
+        <span style={ { fontSize:12,color:C.dm,fontVariantNumeric:"tabular-nums",marginLeft:8 } }>{ fmt(timer) }</span>
       </div>
       <Avatar name="Olivier Bertrand" gender="M" size={ 72 }/>
       <div style={ { fontSize:18,fontWeight:600,marginTop:12 } }>Olivier Bertrand</div>
@@ -118,11 +130,11 @@ function Step2Visual(){
       <div className="vm-grid-2" style={ { display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginTop:20 } }>
         <div style={ { background:C.bgE,borderRadius:10,padding:"10px 12px",textAlign:"left" } }>
           <div style={ { fontSize:9,fontWeight:700,color:C.ac,marginBottom:4 } }>LE PROSPECT DIT</div>
-          <div style={ { fontSize:12,color:C.tx,lineHeight:1.4,fontStyle:"italic" } }>"On a déjà un prestataire pour la maintenance..."</div>
+          <div style={ { fontSize:12,color:C.tx,lineHeight:1.4,fontStyle:"italic",transition:"opacity 0.3s" } }>"{ pairs[pairIdx].prospect }"</div>
         </div>
         <div style={ { background:C.bgE,borderRadius:10,padding:"10px 12px",textAlign:"left" } }>
           <div style={ { fontSize:9,fontWeight:700,color:C.bl,marginBottom:4 } }>CONSEIL TEMPS RÉEL</div>
-          <div style={ { fontSize:12,color:C.tx,lineHeight:1.4 } }>Ne justifiez pas. Demandez ce qui le satisfait chez son prestataire actuel.</div>
+          <div style={ { fontSize:12,color:C.tx,lineHeight:1.4,transition:"opacity 0.3s" } }>{ pairs[pairIdx].conseil }</div>
         </div>
       </div>
       <style>{ `@keyframes pulse{ 0%,100%{ opacity:1 }50%{ opacity:0.4 } }` }</style>
@@ -130,8 +142,11 @@ function Step2Visual(){
   ); }
 
 function Step3Visual(){
-
-  const C = useColors(); const comps=[{ l:"Création d'enjeu",s:17 },{ l:"Engagement",s:17 },{ l:"Découverte",s:16 },{ l:"Argumentation",s:14 },{ l:"Objections",s:13 },{ l:"Accroche",s:11 }];
+  const C = useColors();
+  const [tick,setTick]=useState(0);
+  useEffect(()=>{ const iv=setInterval(()=>setTick(t=>t+1),3000);return()=>clearInterval(iv); },[]);
+  const compsBase=[{ l:"Création d'enjeu",s:17 },{ l:"Engagement",s:17 },{ l:"Découverte",s:16 },{ l:"Argumentation",s:14 },{ l:"Objections",s:13 },{ l:"Accroche",s:11 }];
+  const comps=compsBase.map((c,i)=>({...c,s:Math.round((c.s+Math.sin(tick*0.8+i)*0.8)*10)/10}));
   const sc=s=>s>=15?C.ok:s>=12?C.wr:C.dn;
   return(
     <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,padding:24 } }>
@@ -141,7 +156,7 @@ function Step3Visual(){
       </div>
       <div style={ { textAlign:"center",marginBottom:20 } }>
         <div style={ { display:"inline-flex",alignItems:"baseline",gap:6 } }>
-          <span style={ { fontSize:52,fontWeight:200 } }>14.2</span>
+          <span style={ { fontSize:52,fontWeight:200 } }>{ (comps.reduce((a,c)=>a+c.s,0)/comps.length).toFixed(1) }</span>
           <span style={ { fontSize:18,color:C.dm } }>/20</span>
         </div>
         <div style={ { display:"flex",justifyContent:"center",gap:8,marginTop:8 } }>
@@ -154,9 +169,9 @@ function Step3Visual(){
           <div key={ i } style={ { display:"flex",alignItems:"center",gap:10 } }>
             <span style={ { fontSize:11,color:C.mt,width:110,textAlign:"right" } }>{ c.l }</span>
             <div style={ { flex:1,height:5,background:C.bd,borderRadius:3,overflow:"hidden" } }>
-              <div style={ { width:`${ (c.s/20)*100 }%`,height:"100%",background:sc(c.s),borderRadius:3,transition:"width 1s" } }/>
+              <div style={ { width:`${ (c.s/20)*100 }%`,height:"100%",background:sc(c.s),borderRadius:3,transition:"width 1.5s ease" } }/>
             </div>
-            <span style={ { fontSize:13,fontWeight:700,color:sc(c.s),width:24 } }>{ c.s }</span>
+            <span style={ { fontSize:13,fontWeight:700,color:sc(c.s),width:28,transition:"color 0.5s" } }>{ c.s.toFixed(1) }</span>
           </div>
         )) }
       </div>
@@ -211,7 +226,17 @@ function SimModes(){
 
 /* ======== MULTI-INTERLOCUTEURS DEEP DIVE ======== */
 function MultiSection(){
-  const C = useColors(); return(
+  const C = useColors();
+  const [quoteIdx,setQuoteIdx]=useState(0);
+  const personaQuotes=[
+    ["Quel est le ROI concret sur 12 mois ?","Comment ça s'intègre avec notre GMAO actuelle ?"],
+    ["On a déjà investi 200K€ l'an dernier...","Est-ce que ça tourne sous Linux ?"],
+    ["Montrez-moi les références dans notre secteur.","Quelle est la latence réseau acceptable ?"],
+    ["Le DAF ne validera jamais ce budget.","On a eu une mauvaise expérience avec le cloud."],
+    ["Quel est le coût total sur 3 ans ?","Qui assure le support le week-end ?"],
+  ];
+  useEffect(()=>{ const iv=setInterval(()=>setQuoteIdx(i=>(i+1)%personaQuotes.length),3000);return()=>clearInterval(iv); },[]);
+  return(
     <div style={ { padding:"72px 24px",maxWidth:960,margin:"0 auto" } }>
       <div style={ { textAlign:"center",marginBottom:48 } }>
         <Badge color="violet" size="sm">Fonctionnalité avancée</Badge>
@@ -225,12 +250,12 @@ function MultiSection(){
         { /* Visual: the meeting */ }
         <div style={ { background:C.bgC,border:`1px solid ${ C.bd }`,borderRadius:18,padding:24 } }>
           <div style={ { fontSize:10,fontWeight:700,letterSpacing:1,textTransform:"uppercase",color:C.dm,marginBottom:16 } }>Exemple : Comité de direction</div>
-          
+
           <div style={ { display:"flex",flexDirection:"column",gap:14 } }>
             { [
-              { name:"Marc Tessier",role:"DG",focus:"ROI et coûts",mood:"Sceptique sur le budget",color:C.bl,gender:"M",quote:"Quel est le ROI concret sur 12 mois ?" },
-              { name:"Nathalie Roux",role:"Resp. Production",focus:"Fiabilité technique",mood:"Intéressée mais prudente",color:C.ok,gender:"F",quote:"Comment ça s'intègre avec notre GMAO actuelle ?" },
-              { name:"Vous",role:"Commercial",focus:"Piloter le consensus",mood:"",color:C.ac,gender:"M",quote:"" },
+              { name:"Marc Tessier",role:"DG",focus:"ROI et coûts",mood:"Sceptique sur le budget",color:C.bl,gender:"M" },
+              { name:"Nathalie Roux",role:"Resp. Production",focus:"Fiabilité technique",mood:"Intéressée mais prudente",color:C.ok,gender:"F" },
+              { name:"Vous",role:"Commercial",focus:"Piloter le consensus",mood:"",color:C.ac,gender:"M" },
             ].map((p,i)=>(
               <div key={ i } style={ { display:"flex",gap:12,alignItems:"flex-start",padding:"12px 14px",background:i===2?C.acD+"50":C.bgE,borderRadius:12,border:i===2?`1px solid ${ C.ac }30`:`1px solid transparent` } }>
                 <Avatar name={ p.name } gender={ p.gender } size={ 36 }/>
@@ -240,7 +265,7 @@ function MultiSection(){
                     <span style={ { fontSize:9,padding:"1px 6px",borderRadius:4,background:p.color+"18",color:p.color,fontWeight:700 } }>{ p.role }</span>
                   </div>
                   { i<2&&<div style={ { fontSize:11,color:C.mt,marginBottom:4 } }>Focus : { p.focus } · { p.mood }</div> }
-                  { p.quote&&<div style={ { fontSize:12,color:C.tx,fontStyle:"italic",background:C.bgC,borderRadius:8,padding:"6px 10px",marginTop:4 } }>"{ p.quote }"</div> }
+                  { i<2&&<div style={ { fontSize:12,color:C.tx,fontStyle:"italic",background:C.bgC,borderRadius:8,padding:"6px 10px",marginTop:4,transition:"opacity 0.3s" } }>"{ personaQuotes[quoteIdx][i] }"</div> }
                   { i===2&&<div style={ { fontSize:11,color:C.ac,fontWeight:500 } }>Adaptez votre discours à chaque interlocuteur en temps réel</div> }
                 </div>
               </div>

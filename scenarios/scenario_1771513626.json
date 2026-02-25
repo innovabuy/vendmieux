@@ -1,0 +1,344 @@
+{
+  "id": "scenario_1771513626",
+  "description_originale": "Le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : batiment]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP - Bâtiment",
+      "taille_entreprise": "PME 20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour entreprise BTP (logiciel, service ou équipement non précisé)",
+      "proposition_valeur_presumee": "Optimisation de la gestion ou productivité pour entreprises de travaux tous corps d'état et gros œuvre",
+      "fourchette_prix": "NON_SPECIFIE - perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé",
+        "Nécessité de défendre le prix sans le brader"
+      ],
+      "implicites": [
+        "Le commercial doit gérer la pression sur les marges",
+        "Risque de perdre la vente si trop rigide ou de dévaloriser l'offre si trop souple",
+        "Manque potentiel d'argumentation valeur face à l'objection prix"
+      ],
+      "probleme_racine": "Le commercial doit apprendre à justifier la valeur de son offre face à une objection prix et négocier dans un cadre contraint sans céder trop facilement"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Entraîner les commerciaux à défendre leur prix, argumenter la valeur, et négocier efficacement dans une marge de manœuvre limitée (10% maximum)",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions B2B pour le secteur du BTP",
+      "entreprise_description": "Éditeur ou fournisseur de solutions (logicielles, matérielles ou services) destinées aux entreprises du bâtiment",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution permettant d'améliorer la gestion, la productivité ou l'efficacité opérationnelle des entreprises de BTP tous corps d'état et gros œuvre",
+      "proposition_valeur": "Gain de temps, réduction des coûts opérationnels, amélioration de la rentabilité des chantiers, digitalisation des processus métier",
+      "prix_indicatif": "NON_SPECIFIE - perçu comme premium dans le secteur",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Montant du prix et de la remise potentielle",
+        "Historique de la relation commerciale",
+        "Arguments valeur déjà présentés",
+        "Raisons spécifiques de l'intérêt initial du prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick",
+      "nom": "Delorme",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Delorme Bâtiment",
+        "secteur": "BTP - Tous corps d'état et gros œuvre",
+        "taille": "32 salariés (18 ouvriers, 8 compagnons, 4 chefs de chantier, 2 administratifs)",
+        "ca_approximatif": "3,2M€ avec une marge nette de 4 à 6% selon les années"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre issu du terrain",
+        "Méfiant envers les discours commerciaux trop lisses",
+        "Obsédé par la rentabilité réelle de chaque chantier"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à son fils qui vient de le rejoindre",
+        "Ne plus perdre de temps sur l'administratif qui l'éloigne des chantiers",
+        "Prouver qu'il peut moderniser sa boîte malgré son âge",
+        "Arrêter de perdre de l'argent sur les mauvaises estimations de chantiers"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec le précédent logiciel jamais utilisé (12 000€ perdus en 2019)",
+        "Que ses gars sur le terrain ne sachent pas s'en servir",
+        "Investir dans un truc qui va nécessiter un informaticien à temps plein",
+        "Que sa femme (qui gère l'administratif) trouve ça trop compliqué"
+      ],
+      "rapport_aux_commerciaux": "A priori défensif. Dit souvent 'les commerciaux me prennent pour un pigeon'. Respecte ceux qui connaissent vraiment le BTP et parlent franc. Déteste qu'on lui fasse perdre son temps.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de scepticisme. 'Bon alors, c'est quoi exactement votre truc ? Parce que moi j'ai pas toute la journée là.'",
+      "signaux_interet": [
+        "Commence à donner des exemples concrets de ses problèmes de chantier",
+        "Demande 'Et chez Bouygues, ils utilisent ça ?'",
+        "Parle de son fils : 'Faudrait que je vois ça avec Kévin'",
+        "Râle contre son système actuel : 'Là on fait tout sur Excel bordel, c'est la misère'",
+        "Silence quand il calcule mentalement le ROI"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Ouais ouais, c'est ça' sur un ton ironique",
+        "Souffle bruyamment",
+        "Dit 'Écoutez, c'est gentil mais...' pour clore",
+        "Ramène systématiquement au prix : 'Tout ça c'est bien beau, mais ça coûte combien ?'",
+        "Mentionne un concurrent : 'J'ai vu que chez Machin c'est moitié prix'"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'hein' ou 'quoi'",
+        "Dit 'bordel' régulièrement sans vulgarité, c'est son rythme",
+        "Utilise 'bon ben' pour conclure prématurément",
+        "'Faut pas me prendre pour un con' quand il sent l'entourloupe",
+        "'On va pas se mentir' quand il veut du concret"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 2 minutes. Après il décroche ou interrompt. Veut du dialogue, pas un cours magistral. Phrases de + de 20 secondes = risque de décrochage."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 15% sur 2 ans mais marges qui se tassent. Trois chantiers en cours dont un gros (lotissement 14 pavillons) qui dérape sur les délais. Embauche prévue de 2 compagnons si la rentabilité se maintient. Son fils Kévin (28 ans, ingénieur travaux) vient d'arriver et pousse pour digitaliser.",
+      "priorites_actuelles": [
+        "Améliorer les devis pour arrêter de sous-estimer les chantiers",
+        "Réduire le temps passé sur l'administratif (lui consacre 2 jours/semaine)",
+        "Mieux suivre la rentabilité réelle de chaque chantier en temps réel",
+        "Faciliter la facturation et relances clients (40 jours de DSO actuellement)"
+      ],
+      "experience_avec_offre_similaire": "A acheté en 2019 un logiciel de gestion de chantier Batigest (12 000€) jamais déployé car trop complexe et formation insuffisante. Toujours traumatisé. Utilise actuellement Excel + Ciel Compta + papier sur chantiers.",
+      "fournisseur_actuel": "Excel pour devis et plannings, Ciel Compta pour la comptabilité, WhatsApp pour communiquer avec les chefs de chantier",
+      "budget_disponible": "A mentionné lors du premier contact qu'il pouvait aller jusqu'à 15-18K€ si ça changeait vraiment la donne. Mais veut absolument négocier pour ne pas paraître 'pigeon'. Trésorerie correcte (180K€) mais mentalité d'artisan : chaque euro compte."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en jours de travail économisés plutôt qu'en 'optimisation des processus'",
+        "Montrer des ROI calculés sur des cas réels BTP similaires (PME, pas grands groupes)",
+        "Comprendre sa douleur du logiciel inutilisé de 2019 sans le juger",
+        "Proposer un accompagnement terrain pour ses équipes, pas juste une formation théorique",
+        "Mentionner des références de PME BTP de la région qu'il pourrait appeler",
+        "Accepter un paiement échelonné sur 12 ou 18 mois",
+        "Parler à son fils Kévin qui est le vrai prescripteur digital"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser du jargon tech : SaaS, CRM, BI, interface API",
+        "Comparer à des grandes entreprises : 'Comme chez Vinci...'",
+        "Minimiser son expérience négative de 2019",
+        "Rester flou sur le prix total réel (licences + formation + maintenance)",
+        "Promettre des résultats sans garantie ('Vous allez gagner 30% de productivité')",
+        "Le presser à signer : 'Cette offre est valable jusqu'à vendredi'",
+        "Ne pas connaître les réalités du BTP (parler de 'clients' au lieu de 'maîtres d'ouvrage', ignorer les spécificités des marchés publics)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai 10 minutes là, pas plus hein. J'ai un chantier qui part en vrille à Villeurbanne, alors on va aller droit au but quoi.",
+        "sous_texte": "Je suis occupé et méfiant. Prouve-moi vite que tu ne vas pas me faire perdre mon temps comme les autres commerciaux.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte temps, reformuler son problème de chantier pour montrer qu'on comprend son quotidien, annoncer un plan d'échange structuré en 10 minutes max."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors, c'est quoi exactement votre truc ? Parce que moi les logiciels bordel, j'en ai déjà acheté un à 12 000 balles qui prend la poussière. Faut pas me prendre pour un con.",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre ce traumatisme. Je te teste pour voir si tu es différent des autres vendeurs.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement cette mauvaise expérience sans la minimiser, montrer ce qui sera différent cette fois (accompagnement terrain, validation avec son équipe), ne pas survendre."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais, c'est ça... Vous me sortez tous le même discours. 'Optimisation', 'digital', 'productivité'... Mais concrètement, ça me fait gagner combien de temps par semaine sur mes devis, hein ?",
+        "sous_texte": "Arrête ton baratin marketing et donne-moi des chiffres concrets que je peux vérifier. Je veux du tangible, pas des concepts.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Traduire immédiatement en jours/heures économisés avec des exemples chiffrés de PME BTP comparables. Parler son langage : 'Sur vos 2 jours par semaine d'administratif, on vise 1 journée de gagnée'."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et pour mes gars sur les chantiers, là ? Parce que mes compagnons hein, c'est pas des informaticiens. S'il faut un ingénieur pour s'en servir, c'est mort d'avance.",
+        "sous_texte": "J'ai peur que la solution soit trop complexe pour mes équipes terrain et que je revive l'échec de 2019. C'est un frein majeur même si la solution me plaît.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer l'interface mobile en situation réelle, proposer une démo avec un de ses chefs de chantier présent, garantir une formation sur chantier (pas en salle), citer des témoignages d'ouvriers utilisateurs."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ma femme qui gère l'administratif, elle a 58 ans. Si c'est trop compliqué pour elle, ça va être la guerre à la maison. Elle a déjà râlé pour passer de la machine à écrire à l'ordinateur vous voyez.",
+        "sous_texte": "Il y a un décideur caché (sa femme) qui peut faire capoter le projet. Je dois gérer l'équilibre familial et professionnel.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une session dédiée avec elle, montrer la simplicité pour les tâches administratives qu'elle fait déjà, valoriser son expertise actuelle qui sera amplifiée (pas remplacée)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon allez, arrêtez de tourner autour du pot. Ça coûte combien votre bidule ? Parce que si c'est pour me sortir un prix délirant...",
+        "sous_texte": "Je veux contrôler la conversation et évaluer si on est dans mes clous budgétaires. Je me prépare mentalement à négocier.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas donner le prix brut sans contexte. Recadrer sur la valeur déjà identifiée ensemble, puis annoncer un investissement avec ROI, enfin le prix décomposé. Anticiper sa réaction."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez là... 22 000 euros ?! Mais vous êtes sérieux quoi ? J'ai vu que Batisoft c'est 12 000 et qu'ils font la même chose. Vous vous foutez de ma gueule ou quoi ?",
+        "sous_texte": "C'est au-dessus de mon budget mental (15-18K€). Je suis choqué et je me sens agressé dans mon portefeuille. Je teste ta réaction et cherche à négocier immédiatement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Absorber le choc sans se justifier frénétiquement. Valider que c'est un investissement important. Déconstruire la comparaison (différences Batisoft). Rappeler son problème de 2019 avec le 'moins cher'. Recentrer sur le ROI calculé ensemble."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ben écoutez, moi je peux pas mettre plus de 15 000. Point barre. Si vous pouvez pas vous aligner, on va pas perdre notre temps tous les deux hein.",
+        "sous_texte": "Je pose mon ancrage de négociation. Je teste ta marge de manœuvre. Je veux que tu fasses un effort mais j'ai réellement un budget contraint. C'est une ligne rouge pour voir si tu es flexible.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement (dévaloriserait l'offre). Valider la contrainte. Explorer les options : étalement paiement, déploiement progressif, retrait de modules non critiques. Défendre la valeur avant tout geste commercial."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon ben vous voyez, j'ai eu Kévin mon fils au téléphone. Lui il dit qu'il a vu que vos concurrents font des promos en ce moment. C'est vrai ça ?",
+        "sous_texte": "Je me suis renseigné (ou je bluffe) pour obtenir un meilleur prix. J'utilise mon fils comme caution technique. Je veux sentir que j'ai du pouvoir dans la négo.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser que Kévin s'implique (bon signe). Questionner de quel concurrent il parle précisément et quelle promo. Différencier sans dénigrer. Rappeler que prix bas = souvent compromis (formation, support)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mais attendez, là vous me parlez de 22 000, mais c'est tout compris ça ? Parce que le dernier coup, on m'avait annoncé un prix et après il y avait les options, la maintenance, les trucs en plus... Au final j'en avais eu pour le double bordel.",
+        "sous_texte": "Je suis traumatisé par les coûts cachés. J'ai peur de me faire avoir. Je veux une transparence totale avant de m'engager.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décomposer ligne par ligne TOUT ce qui est inclus et ce qui ne l'est pas. Être transparent sur maintenance annuelle, formations supplémentaires éventuelles. Donner le coût total sur 3 ans."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est pas que ça me plaît pas hein. Mais là j'ai besoin de voir avec ma femme, avec Kévin aussi. On va en rediscuter en interne et je vous rappelle, promis.",
+        "sous_texte": "Je suis intéressé mais j'ai besoin de temps pour digérer le prix et valider avec mes proches. Je veux aussi te faire mariner pour obtenir un meilleur prix au prochain round. Je ne veux pas paraître trop enthousiaste.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter la nécessité de validation interne MAIS structurer : proposer un point à 3 avec Kévin et sa femme, fixer date précise, laisser des éléments concrets à discuter, créer un événement (pas attendre passivement)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "22 000 euros, franchement... On va pas se mentir, c'est énorme pour une boîte de ma taille. J'ai des compagnons à payer moi. Vous pouvez pas faire un effort commercial quoi ?",
+        "sous_texte": "Dernière tentative de négociation avant engagement. Je joue sur l'affect (mes salariés) et ma taille d'entreprise. Je veux sentir que j'ai arraché quelque chose.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître que c'est un investissement significatif. Rappeler le ROI calculé ensemble (X jours économisés = Y euros). Proposer l'étalement 18 mois pour lisser. Accorder maximum 10% SI contrepartie (engagement durée, témoignage, parrainage)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si ça marche pas ? Si mes gars l'utilisent pas comme le Batigest ? Moi j'ai pas 22 000 euros à jeter par les fenêtres hein. Vous me garantissez quoi exactement ?",
+        "sous_texte": "Mon traumatisme de 2019 revient au moment de l'engagement. J'ai peur de refaire la même erreur. J'ai besoin d'être rassuré avec du concret, pas des promesses en l'air.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un dispositif de garantie concret : période d'essai avec jalons de validation, accompagnement renforcé les 3 premiers mois, clause de sortie si taux d'adoption < X% à 6 mois, engagement sur formation terrain."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me mettez la pression là avec vos histoires de 'signer maintenant'. Moi je prends jamais de décision comme ça à la va-vite. J'ai construit ma boîte en 25 ans en réfléchissant bordel, pas en fonçant tête baissée.",
+        "sous_texte": "Je détecte une technique de closing sous pression et ça me braque. Je veux garder le contrôle de ma décision. Ne me manipule pas, ça va me faire fuir.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retirer immédiatement toute pression. Valoriser sa prudence (c'est une qualité). Recadrer : ce n'est pas signer maintenant, c'est valider qu'on est alignés sur la solution et les modalités. Proposer prochaine étape concrète non engageante."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, si vous me faites à 18 000 tout compris avec un paiement sur 18 mois, on signe cette semaine. Sinon tant pis hein, j'irai voir ailleurs.",
+        "sous_texte": "C'est mon offre finale réelle (je suis dans mon budget max de 15-18K€). Je teste ta dernière marge de manœuvre. Je suis prêt à m'engager si tu acceptes, mais je veux avoir gagné la négo.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "C'est le moment de vérité. Valoriser qu'on arrive en zone de décision. Accepter les 18 mois (facilite son cash). Sur le prix : proposer 19 800€ (10% de remise) avec contrepartie claire (témoignage client, logo, parrainage). Ne pas descendre à 18K direct."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, Kévin il m'a trouvé une solution à 14 000 euros. Baticonnect, vous connaissez ? Ils font exactement la même chose que vous. Alors soit vous vous alignez, soit on arrête là les discussions. J'ai pas de temps à perdre.",
+      "condition_declenchement": "Se déclenche si le commercial a trop insisté sur le prix sans travailler suffisamment la différenciation valeur, ou s'il a cédé trop facilement sur les premières objections (Patrick teste alors jusqu'où il peut aller). Peut aussi survenir si un concurrent a vraiment contacté Kévin entre-temps."
+    },
+    "pattern_escalade": "Patrick commence cordial mais pressé. Si le commercial utilise du jargon ou fait du forcing, il devient cassant et ironique ('Ouais c'est ça...'). Face aux objections prix, il ancre d'abord bas (15K€), puis monte progressivement vers sa vraie zone (18K€) en testant la fermeté du commercial. Il utilise son fils Kévin comme arme de négociation ('Kévin a vu que...'). S'il sent que le commercial panique ou survend, il se ferme complètement et cherche à conclure rapidement pour fuir. S'il respecte le commercial (connaissance BTP, franchise, pas de pression), il s'ouvre et partage ses vrais problèmes, mais négocie quand même durement sur le principe. L'escalade finale arrive quand il brandit un concurrent réel ou inventé pour obtenir le meilleur prix.",
+    "piege_classique": "Le piège est de croire que Patrick va dire oui facilement parce qu'il est 'chaud' et a un besoin réel. En réalité, sa mentalité d'artisan le pousse à négocier MÊME s'il est convaincu, pour ne pas se sentir 'pigeon'. Le commercial doit donc défendre fermement sa valeur tout en lui donnant le sentiment qu'il a gagné quelque chose (étalement, petit geste commercial conditionné). Céder trop vite sur le prix = perdre sa crédibilité et déclencher encore plus de demandes de réduction. Autre piège : ignorer les décideurs cachés (sa femme, Kévin) qui peuvent faire capoter même après un 'oui' de Patrick."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions B2B pour le secteur du BTP",
+      "description": "Éditeur ou fournisseur de solutions (logicielles, matérielles ou services) destinées aux entreprises du bâtiment"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution permettant d'améliorer la gestion, la productivité ou l'efficacité opérationnelle des entreprises de BTP tous corps d'état et gros œuvre",
+      "proposition_valeur": "Gain de temps, réduction des coûts opérationnels, amélioration de la rentabilité des chantiers, digitalisation des processus métier",
+      "prix": "NON_SPECIFIE - perçu comme premium dans le secteur",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Entraîner les commerciaux à défendre leur prix, argumenter la valeur, et négocier efficacement dans une marge de manœuvre limitée (10% maximum)",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation prix — Solution BTP face à objection budget",
+    "vous_etes": "Commercial B2B spécialisé solutions BTP, en poste depuis 2 ans dans l'entreprise.",
+    "vous_vendez": "Solution digitale complète pour PME du bâtiment (devis, suivi chantiers, facturation) — Prix annoncé : 16 800€ avec formation et accompagnement terrain inclus.",
+    "vous_appelez": "Patrick Delorme, 52 ans, gérant de Delorme Bâtiment (32 salariés, 3,2M€ CA, tous corps d'état). Pragmatique, méfiant, traumatisé par un logiciel jamais utilisé acheté 12K€ en 2019. Parle cash, déteste le baratin commercial. Son fils Kévin (ingénieur) vient de rejoindre la boîte et pousse pour digitaliser.",
+    "ce_que_vous_savez": [
+      "Il avait mentionné un budget possible de 15-18K€ si ça change vraiment la donne",
+      "Actuellement sur Excel + Ciel Compta + WhatsApp, perd 2 jours/semaine sur l'administratif",
+      "Gros chantier en cours (lotissement 14 pavillons) qui dérape sur les délais",
+      "Il veut absolument négocier pour ne pas se sentir 'pigeon'",
+      "Sa femme gère l'administratif, il craint qu'elle trouve ça trop compliqué"
+    ],
+    "votre_objectif": "Défendre votre prix face à son objection 'c'est trop cher', justifier la valeur concrète, et négocier dans la limite de 10% de remise maximum (soit 1 680€) pour closer.",
+    "vos_atouts": [
+      "Formation terrain incluse pour ses équipes (pas juste théorique)",
+      "ROI calculé : économie de 80 jours/an d'administratif valorisés à 24K€",
+      "Références vérifiables : 3 PME BTP locales (20-45 salariés) utilisatrices satisfaites",
+      "Paiement échelonnable sur 18 mois sans frais"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:07:06Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16591,
+    "total_time_s": 166.8
+  }
+}

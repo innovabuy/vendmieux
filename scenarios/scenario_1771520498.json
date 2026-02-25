@@ -1,0 +1,369 @@
+{
+  "id": "scenario_1771520498",
+  "description_originale": "Vous avez envoyé une proposition commerciale au dirigeant / directeur de production d'une PME agroalimentaire de 30-60 salariés, production régionale il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : agroalimentaire]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "production régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour l'industrie agroalimentaire, probablement liée à la production ou l'optimisation industrielle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse 10 jours après envoi de la proposition",
+        "Difficulté à obtenir un retour clair"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-proposition",
+        "Absence de pré-accord avant envoi de la proposition",
+        "Possible manque d'urgence créée lors de l'envoi",
+        "Proposition peut-être envoyée sans validation préalable du besoin",
+        "Difficulté à gérer le silence radio du prospect"
+      ],
+      "probleme_racine": "Les commerciaux envoient des propositions sans avoir créé d'engagement préalable ni défini de processus de décision clair avec le prospect, ce qui les place en position de quémandeur lors de la relance"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à gérer efficacement les relances post-proposition, obtenir des engagements clairs avant l'envoi de propositions, et transformer le silence en dialogue constructif",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur pour l'industrie agroalimentaire",
+      "entreprise_description": "Entreprise proposant des solutions (équipements, services, logiciels ou consommables) destinées aux PME agroalimentaires régionales",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution suffisamment complexe ou coûteuse pour nécessiter une proposition écrite formelle et un processus de décision impliquant la direction",
+      "proposition_valeur": "amélioration de la production, optimisation des coûts, conformité réglementaire, ou amélioration de la qualité dans l'industrie agroalimentaire",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "obtenir un retour clair : validation positive, refus argumenté, ou définition d'une prochaine étape concrète",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit",
+        "Historique de la relation avant envoi de la proposition",
+        "Montant de la proposition",
+        "Contexte de l'envoi initial (suite à un RDV, un appel, un salon?)",
+        "Raisons présumées du silence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delmotte",
+      "age": 52,
+      "poste": "Directeur Général",
+      "entreprise": {
+        "nom": "Conserverie du Val d'Eure",
+        "secteur": "Transformation de légumes en conserves (haricots verts, petits pois, macédoine)",
+        "taille": "43 salariés",
+        "ca_approximatif": "6,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les promesses commerciales",
+        "Surinvesti dans l'opérationnel quotidien"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité dans un secteur à marges compressées",
+        "Maintenir l'emploi local et la réputation familiale de l'entreprise",
+        "Éviter les erreurs d'investissement qui pourraient fragiliser la trésorerie",
+        "Être reconnu comme un gestionnaire prudent et avisé"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui survend",
+        "Investir dans une solution qui ne sera pas utilisée ou mal adaptée",
+        "Perdre du temps en réunions improductives",
+        "Que ses équipes résistent au changement",
+        "Déstabiliser une organisation qui fonctionne déjà 'correctement'"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Les perçoit comme des gens qui 'veulent lui vendre quelque chose' plutôt que résoudre ses problèmes. A déjà été échaudé par des promesses non tenues. Respecte ceux qui connaissent vraiment son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude. Commence souvent par 'Oui alors rapidement parce que là j'ai la production qui...'",
+      "signaux_interet": [
+        "Pose des questions très concrètes sur les délais et la mise en œuvre",
+        "Mentionne spontanément un problème précis qu'il rencontre",
+        "Demande des références dans son secteur spécifique",
+        "Évoque son responsable de production : 'Faudrait que j'en parle à Didier'",
+        "Change de ton, devient moins défensif"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son écran",
+        "Répond par monosyllabes : 'Mouais', 'Bah oui', 'Possible'",
+        "Coupe la parole pour ramener à des détails insignifiants",
+        "Dit 'On verra' ou 'Je vous rappelle' sans fixer de date",
+        "Invoque la crise, les marges, la concurrence allemande"
+      ],
+      "tics_langage": [
+        "Bon alors... [soupir]",
+        "Écoutez hein...",
+        "C'est bien gentil tout ça mais...",
+        "Faut voir hein",
+        "Sur le papier c'est toujours beau",
+        "Nous on est une petite structure hein"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Maximum 45 secondes avant qu'il ne décroche mentalement ou interrompe. Déteste les présentations PowerPoint qui 'prennent la tête'."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sortie difficile de la période COVID, marges sous pression à cause de l'inflation des matières premières et de l'énergie. A perdu un gros client de la GMS au profit d'un concurrent espagnol. Cherche à réduire les coûts et améliorer la productivité mais ne peut pas se permettre d'erreur d'investissement. L'outil de production date des années 2000 et commence à montrer des signes de fatigue.",
+      "priorites_actuelles": [
+        "Réduire les rebuts et améliorer le rendement matière",
+        "Stabiliser l'équipe de production (turnover élevé sur les postes de conditionnement)",
+        "Décrocher un nouveau contrat avec une enseigne régionale",
+        "Préparer le passage de relais à sa fille dans 5-7 ans"
+      ],
+      "experience_avec_offre_similaire": "A déjà reçu plusieurs propositions de fournisseurs d'équipements et de logiciels ces deux dernières années. En a écarté la plupart jugées 'trop chères pour ce que c'est'. A fait venir un consultant OPCO il y a 18 mois, bilan mitigé.",
+      "fournisseur_actuel": "Travaille avec plusieurs fournisseurs historiques qu'il connaît depuis 15-20 ans. Fidèle par habitude et crainte du risque, mais conscient que certains 'se reposent sur leurs lauriers'.",
+      "budget_disponible": "Prudent. Dispose théoriquement de 80-120K€ pour investissements annuels mais réticent à engager plus de 40K€ sur une seule ligne sans ROI démontré sous 24 mois. Étudie actuellement un financement pour une nouvelle ligne de conditionnement (priorité absolue)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer une connaissance fine de SON métier et de SES contraintes spécifiques (saisonnalité, cahiers des charges GMS, traçabilité)",
+        "Citer des résultats chiffrés obtenus chez des conserveries comparables",
+        "Proposer une approche par étapes avec test pilote limité",
+        "Impliquer son responsable de production dès le début",
+        "Être transparent sur les limites de la solution",
+        "Montrer qu'on ne cherche pas à vendre à tout prix"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Vocabulaire marketing creux ou anglicismes excessifs",
+        "Minimiser ses objections ou la difficulté de mise en œuvre",
+        "Pousser pour une décision rapide sans lui laisser le temps de réflexion",
+        "Critiquer directement ses fournisseurs actuels",
+        "Proposer une solution 'clé en main' sans phase de diagnostic",
+        "Insister lourdement après un 'non' ou un silence",
+        "Ne pas respecter les horaires (appeler pendant le rush de production 10h-12h ou 14h-16h)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez là je vous arrête tout de suite, j'ai la ligne 2 qui vient de tomber en panne, c'est pas le moment",
+        "sous_texte": "Je n'ai pas préparé cette conversation, je suis pris au dépourvu et j'ai une excuse légitime pour couper court",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître l'urgence réelle, proposer un créneau précis dans les 48h plutôt qu'un vague 'je vous rappelle'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bon écoutez, votre proposition je l'ai parcourue hein, mais là franchement on a d'autres priorités",
+        "sous_texte": "Je l'ai peut-être survolée en diagonal, je ne me souviens plus des détails, et je cherche à clore poliment",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner les priorités actuelles pour comprendre ce qui est passé devant, plutôt que de défendre la proposition"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui votre proposition... Bon c'est gentil mais c'est pas pour nous là, on est une petite structure hein",
+        "sous_texte": "Votre solution me semble disproportionnée ou trop chère, mais je ne veux pas entrer dans les détails",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander ce qui précisément semble inadapté à sa taille plutôt que de contredire frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais enfin vous comprenez, avec l'inflation qu'on se tape et les prix de l'énergie, là c'est pas le moment d'investir",
+        "sous_texte": "J'ai peur de prendre un risque financier dans un contexte incertain, et c'est socialement acceptable de le dire",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer si justement la solution pourrait atténuer l'impact de ces hausses, plutôt que de minimiser ses craintes légitimes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, faut que j'en parle à Didier mon responsable de prod, parce que vous savez si lui n'est pas partant...",
+        "sous_texte": "Je veux diluer ma responsabilité de décision, ou bien Didier est réellement un décisionnaire que vous avez oublié d'impliquer",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer immédiatement d'associer Didier à la conversation plutôt que de contourner cette objection"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Sur le papier c'est toujours beau hein, mais dans la vraie vie, avec nos contraintes... faut voir",
+        "sous_texte": "Je ne crois pas à vos promesses, j'ai déjà été déçu, prouvez-moi que c'est différent cette fois",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander quelle déception passée le rend méfiant et proposer des preuves concrètes adaptées à SES contraintes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez hein, j'ai eu trois commerciaux la semaine dernière qui me proposent à peu près la même chose que vous",
+        "sous_texte": "Je veux vous mettre en concurrence pour négocier le prix, ou bien je suis vraiment saturé de sollicitations",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence mais questionner ce qui l'a empêché de dire oui aux trois autres"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là vous me parlez de ROI 24 mois, moi j'ai besoin que ça rentre dans l'année, point",
+        "sous_texte": "Ma trésorerie est tendue, je n'ai pas de marge de manœuvre temporelle même si rationnellement le ROI est acceptable",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Explorer les options de phasage, location ou financement plutôt que de défendre le ROI à 24 mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien gentil tout ça mais mes gars en production, ils ont l'habitude de leurs process, ils vont me faire la gueule",
+        "sous_texte": "J'ai peur de la résistance au changement et que ça crée des tensions que je devrai gérer, je suis déjà débordé",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître cette difficulté réelle et proposer un plan d'accompagnement impliquant Didier comme relais"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau mise en œuvre, ça prend combien de temps ? Parce que nous on peut pas arrêter la prod comme ça hein",
+        "sous_texte": "J'ai besoin de concret sur les contraintes opérationnelles, mais je teste aussi si vous connaissez vraiment mon métier",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une réponse précise et réaliste avec les contraintes, pas une réponse lissée marketing"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Je vais être honnête avec vous, là j'ai déjà engagé un budget sur une nouvelle ligne de conditionnement",
+        "sous_texte": "Mon budget est réellement verrouillé ailleurs, à moins que vous ne me prouviez que votre solution est plus prioritaire",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Comprendre le timing de cet autre projet pour positionner la solution en complémentarité ou en décalage temporel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que ça marche chez Conserverie Dupont, mais eux ils ont pas la même structure que nous hein",
+        "sous_texte": "Je cherche des raisons de disqualifier vos références pour justifier mon immobilisme",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander en quoi sa structure diffère précisément plutôt que de défendre la référence citée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais réfléchir à tout ça et je vous rappelle, d'accord ?",
+        "sous_texte": "Je veux clore poliment sans engagement, je ne vous rappellerai probablement jamais",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander ce qui précisément nécessite réflexion et proposer une date précise avec raison valable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est le prix, voilà. C'est trop cher pour nous, point final",
+        "sous_texte": "Soit c'est vraiment trop cher, soit je négocie, soit je n'ai pas compris la valeur donc le prix me paraît injustifié",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Questionner par rapport à quoi c'est trop cher plutôt que de défendre le prix ou proposer une remise immédiate"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut voir hein... Là je dois en discuter en interne, avec ma fille aussi qui commence à s'impliquer dans la gestion",
+        "sous_texte": "Il y a un autre décisionnaire que vous ignoriez, ou bien je gagne du temps pour éviter de dire non frontalement",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer une réunion incluant sa fille plutôt que d'accepter ce renvoi dans un timing flou"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon alors là pour tout vous dire, j'attends un retour de mon expert-comptable sur la capacité d'investissement",
+        "sous_texte": "J'ai une vraie contrainte de trésorerie dont je ne veux pas parler en détail, ou bien je cherche une excuse professionnelle",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Demander quand il doit avoir ce retour et proposer d'adapter la proposition aux contraintes financières identifiées"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, je vais comparer avec les deux autres propositions que j'ai reçues et je reviens vers vous",
+        "sous_texte": "Je veux garder la main et vous mettre en position d'attente, possiblement pour négocier ou simplement gagner du temps",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Demander sur quels critères précis il va comparer pour orienter sa grille de lecture"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là je suis pas convaincu... On a déjà essayé un truc dans le même genre il y a deux ans, ça nous a coûté bonbon pour rien",
+        "sous_texte": "J'ai une blessure commerciale non cicatrisée qui bloque ma décision, j'ai besoin d'être rassuré sur les risques",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Faire raconter cette expérience ratée en détail pour identifier ce qui serait différent cette fois"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez là je vais être cash avec vous : votre proposition elle est bien, mais on n'a ni le budget ni le temps pour se lancer là-dedans cette année. Peut-être l'année prochaine si les choses s'améliorent, mais là franchement non",
+      "condition_declenchement": "Quand le vendeur a répondu mécaniquement aux objections sans vraiment comprendre la situation profonde de Christophe, ou quand il pousse trop fort vers une décision immédiate"
+    },
+    "pattern_escalade": "Christophe commence cordial mais distant > devient évasif avec des 'faut voir' et 'mouais' > invoque des contraintes externes (équipe, budget, comptable) > si poussé, se ferme avec des réponses sèches > finit par un refus poli mais définitif avec porte ouverte fictive ('peut-être l'an prochain')",
+    "piege_classique": "Accepter le 'je vous rappelle' ou le 'je vais réfléchir' sans cadrer de prochaine étape concrète. Christophe est culturellement incapable de dire 'non' frontalement à un commercial, il préférera toujours une sortie douce qui laisse le vendeur en attente indéfinie. Le vrai piège est de confondre sa politesse avec de l'intérêt."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur pour l'industrie agroalimentaire",
+      "description": "Entreprise proposant des solutions (équipements, services, logiciels ou consommables) destinées aux PME agroalimentaires régionales"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution suffisamment complexe ou coûteuse pour nécessiter une proposition écrite formelle et un processus de décision impliquant la direction",
+      "proposition_valeur": "amélioration de la production, optimisation des coûts, conformité réglementaire, ou amélioration de la qualité dans l'industrie agroalimentaire",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "obtenir un retour clair : validation positive, refus argumenté, ou définition d'une prochaine étape concrète",
+      "description": "Apprendre à gérer efficacement les relances post-proposition, obtenir des engagements clairs avant l'envoi de propositions, et transformer le silence en dialogue constructif",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Conserverie agroalimentaire",
+    "vous_etes": "Commercial chez un fournisseur de solutions pour l'industrie agroalimentaire régionale.",
+    "vous_vendez": "Une solution d'optimisation de production (équipement, logiciel ou service) adaptée aux PME de transformation alimentaire — montant et détails envoyés dans la proposition il y a 10 jours.",
+    "vous_appelez": "Christophe Delmotte, 52 ans, Directeur Général de la Conserverie du Val d'Eure (43 salariés, transformation de légumes en conserves). Pragmatique, méfiant, surinvesti dans l'opérationnel quotidien. Déteste perdre son temps et a déjà été échaudé par des promesses commerciales.",
+    "ce_que_vous_savez": [
+      "Vous avez envoyé une proposition écrite il y a 10 jours — aucun retour depuis",
+      "L'entreprise sort d'une période difficile : marges sous pression, perte d'un gros client GMS",
+      "Priorités actuelles : réduire les rebuts, améliorer le rendement matière, stabiliser l'équipe",
+      "Christophe est prudent sur les investissements (réticent au-delà de 40K€ sans ROI sous 24 mois)",
+      "Il ne faut JAMAIS appeler entre 10h-12h ou 14h-16h (rush production)"
+    ],
+    "votre_objectif": "Obtenir un retour clair — soit un 'oui' avec prochaine étape définie, soit un 'non' argumenté, soit un délai précis avec raison valable.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes spécifiques des conserveries (saisonnalité, traçabilité, cahiers des charges GMS)",
+      "Vous pouvez proposer une approche par étapes avec test pilote limité",
+      "Vous êtes transparent sur les limites et les délais de mise en œuvre",
+      "Vous respectez son temps et sa réalité terrain"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:01:38Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15102,
+    "total_time_s": 133.1
+  }
+}

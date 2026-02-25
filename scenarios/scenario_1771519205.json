@@ -1,0 +1,371 @@
+{
+  "id": "scenario_1771519205",
+  "description_originale": "Vous appelez à froid le directeur des achats centraux d'une chaîne de distribution de 100+ points de vente. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : commerce_distribution]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "100+ points de vente",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistant(e) de direction",
+          "role": "Filtre de premier niveau"
+        },
+        {
+          "poste": "Acheteurs opérationnels",
+          "role": "Potentiels prescripteurs"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour optimiser les achats ou les opérations de la chaîne de distribution",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel à froid sans demande préalable du prospect",
+        "Interlocuteur avec agenda chargé",
+        "Process d'achat structurés et formalisés"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque élevé de rejet immédiat",
+        "Nécessité de légitimer l'appel sans référence ni contexte",
+        "Barrière des assistantes/secrétaires",
+        "Cycle de décision multi-acteurs et long",
+        "Besoin de différenciation face à de nombreuses sollicitations"
+      ],
+      "probleme_racine": "Comment créer de l'intérêt et de la légitimité en quelques secondes auprès d'un décideur senior sollicité en permanence, sans contexte préalable ni demande exprimée"
+    },
+    "objections_mentionnees": [
+      "Nous avons déjà des fournisseurs",
+      "Je n'ai pas le temps",
+      "Envoyez-moi une documentation",
+      "Nous ne changeons pas nos process",
+      "Passez par notre portail fournisseurs"
+    ],
+    "objectif_formation": "Maîtriser l'art de l'accroche commerciale en prospection froide B2B auprès de décideurs senior, générer de l'intérêt rapidement, contourner les objections de premier niveau et obtenir un engagement ferme (rendez-vous)",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour la distribution",
+      "entreprise_description": "Entreprise proposant des solutions pour optimiser les opérations, les achats ou la performance des réseaux de distribution",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution permettant d'améliorer l'efficacité opérationnelle, de réduire les coûts ou d'augmenter la performance commerciale d'un réseau de distribution multi-sites",
+      "proposition_valeur": "Aide les chaînes de distribution à optimiser leurs processus centralisés (achats, logistique, merchandising) pour gagner en compétitivité et en rentabilité",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nom et description précise de l'entreprise vendeuse",
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète et chiffrée",
+        "Références clients dans le secteur",
+        "Prix ou budget indicatif",
+        "Zone géographique de prospection",
+        "Arguments de différenciation concurrentielle",
+        "Triggers ou insights business justifiant l'appel"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Olivier",
+      "nom": "Martineau",
+      "age": 51,
+      "poste": "Directeur des Achats et Supply Chain",
+      "entreprise": {
+        "nom": "Optival Distribution",
+        "secteur": "Distribution alimentaire spécialisée (bio et produits locaux)",
+        "taille": "142 points de vente (mix franchise/succursales)",
+        "ca_approximatif": "380M€ dont 65% en succursales"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux après 25 ans d'expérience",
+        "Perfectionniste analytique qui surpondère les risques",
+        "Protecteur de son territoire et de sa légitimité interne"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur dans un contexte de digitalisation qu'il maîtrise mal",
+        "Sécuriser sa position avant la retraite dans 6-7 ans",
+        "Être reconnu comme celui qui a professionnalisé les achats de l'enseigne",
+        "Ne pas revivre l'échec du projet SRM raté en 2021 qui a terni sa réputation"
+      ],
+      "peurs_freins": [
+        "Peur viscérale de se faire piéger par un beau discours commercial sans substance",
+        "Crainte de perdre le contrôle sur ses fournisseurs historiques qui le connaissent",
+        "Angoisse d'être contourné par la direction qui pourrait imposer un projet tech sans lui",
+        "Peur du ridicule si un nouvel outil échoue sous sa responsabilité"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des 'vendeurs de tapis' jusqu'à preuve du contraire. A développé un réflexe pavlovien de rejet face aux approches non sollicitées. Respecte uniquement ceux qui connaissent vraiment son métier et parlent son langage (taux de rotation, marge brute, DLC, shrinkage).",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtoisie froide professionnelle avec soupir à peine audible. Commence souvent par 'Oui bonjour, je vous écoute mais je n'ai que quelques minutes'. Voix légèrement lasse traduisant les dizaines d'appels similaires déjà reçus cette semaine.",
+      "signaux_interet": [
+        "Silence soudain quand vous mentionnez un chiffre précis ou un pain point qu'il vit vraiment",
+        "Question technique inattendue pour tester votre crédibilité ('Et comment vous gérez la saisonnalité sur les produits frais?')",
+        "Passage du vouvoiement distant au 'tu' semi-condescendant ('T'as déjà travaillé avec des enseignes comme nous?')",
+        "Mentionne spontanément un problème interne sans s'en rendre compte"
+      ],
+      "signaux_rejet": [
+        "Répète mécaniquement 'Envoyez-moi un mail' sans écouter votre réponse",
+        "Coupe la parole pour dire 'On a déjà tout ça' même si c'est faux",
+        "Ton qui monte subitement si vous utilisez un terme galvaudé ('digital', 'innovation', 'disruptif')",
+        "Délègue instantanément vers un subordonné: 'Voyez avec Stéphanie, mon assistante achats'",
+        "Soupir appuyé suivi de 'Écoutez, on ne change pas nos process comme ça'"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...' avec une légère exaspération",
+        "Utilise 'Franchement' quand il va être direct/cassant",
+        "Dit 'Vous comprenez' en fin de phrase quand il refuse quelque chose",
+        "Emploie le jargon métier pour tester: 'Vous suivez nos OTIF?', 'Vous avez une approche catman?'",
+        "Ponctue de 'Bon.' sec quand il veut conclure l'échange"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "12 à 15 secondes maximum avant interruption. Exige de la concision militaire. Déteste les tournures marketing creuses. Si vous dépassez 30 secondes sans avoir dit quelque chose de concret, il raccroche ou décroche mentalement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance organique stagnante (+1,2% sur 2024). Pression du COMEX pour réduire les coûts d'achat de 3% sans dégrader la qualité perçue. Projet d'ouverture de 15 nouveaux magasins en 2025-2026 qui va complexifier la supply. Début de réflexion sur une plateforme d'achat centralisée mais projet encore flou et non budgété.",
+      "priorites_actuelles": [
+        "Renégocier les contrats-cadres avec 3 fournisseurs stratégiques (produits frais) avant fin T1",
+        "Réduire les ruptures en magasin qui génèrent des plaintes franchisés",
+        "Prouver la valeur de sa direction face à un DG qui trouve qu'il coûte cher",
+        "Éviter qu'un cabinet de conseil externe soit mandaté pour auditer ses achats"
+      ],
+      "experience_avec_offre_similaire": "A testé en 2021 une solution SRM recommandée par un commercial charismatique. Échec cuisant: déploiement raté, formation insuffisante, outil inadapté aux spécificités du frais. A dû arrêter le projet après 9 mois et 180K€ perdus. Depuis, ultra-prudent et cynique.",
+      "fournisseur_actuel": "Gestion hybride: Excel pour 60% des achats, un vieux ERP (SAP Business One) mal paramétré, et beaucoup de relations personnelles téléphoniques avec les fournisseurs historiques. Pas de solution dédiée achats moderne.",
+      "budget_disponible": "Aucun budget fléché officiellement. Devrait défendre tout investissement >50K€ devant le COMEX avec un ROI démontrable sous 18 mois maximum. Peut débloquer 15-20K€ sur son budget de fonctionnement sans validation, mais ne le fera pas pour un commercial inconnu."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une enseigne concurrente directe qui a obtenu des résultats chiffrés précis (son ego compétitif s'active)",
+        "Démontrer que vous comprenez la différence entre gestion franchise/succursale (la plupart des commerciaux ignorent cette nuance)",
+        "Parler d'un problème qu'il vit vraiment: écart de marge brute entre magasins, surstock de saisonniers, litiges fournisseurs non tracés",
+        "Proposer un diagnostic gratuit ultra-court (1h max) sans engagement, juste pour challenger sa vision",
+        "Être recommandé par quelqu'un qu'il respecte (rare mais décisif)",
+        "Accepter de parler d'abord avec son adjointe Stéphanie si vous reconnaissez que son temps est précieux (montre que vous n'êtes pas dans l'ego)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire que votre solution est 'simple' ou 'intuitive' (il a trop vu d'outils complexes vendus comme simples)",
+        "Prétendre tout révolutionner ou 'disrupter' son métier",
+        "Ne pas connaître son secteur (confondre alimentaire et non-alimentaire = mort instantanée)",
+        "Insister lourdement après un premier 'non' (renforce son rejet)",
+        "Demander plus de 30 minutes de rdv lors d'un premier échange",
+        "Utiliser un argumentaire générique qu'il devine récité",
+        "Critiquer ses process actuels sans les connaître vraiment (réflexe de défense immédiat)",
+        "Mentionner des technologies qu'il ne maîtrise pas (IA, blockchain) sans contexte métier clair"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je reçois 15 appels comme ça par semaine, je n'ai vraiment pas le temps là.",
+        "sous_texte": "Prouvez-moi en 10 secondes que vous n'êtes pas un commercial lambda qui va me faire perdre mon temps. Je teste votre capacité à être concis et pertinent.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa réalité sans s'excuser, poser UNE question ultra-précise sur son contexte métier qui prouve que vous n'êtes pas n'importe qui"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On ne cherche rien actuellement, on a nos fournisseurs et nos process en place.",
+        "sous_texte": "Je protège mon territoire. Je ne veux pas remettre en question ce que j'ai construit. Vous allez devoir me montrer un vrai problème que je n'ai pas encore résolu.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ne pas contester frontalement. Pivoter vers une question sur un pain point probable (écarts de marge entre magasins, ruptures) plutôt que parler de votre solution"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, envoyez-moi une doc par mail, je regarderai si j'ai le temps.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Je ne lirai jamais ce mail. C'est ma technique pour dire non sans conflit.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que la doc seule ne sert à rien sans contexte. Proposer 2 questions rapides pour qualifier s'il y a même un intérêt mutuel avant d'envoyer quoi que ce soit"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous travaillez avec qui dans notre secteur ? Vous connaissez nos spécificités produits frais et bio ?",
+        "sous_texte": "Je teste si vous êtes légitime ou si vous démarchons tous les secteurs sans distinction. La plupart des commerciaux échouent ce test et je peux les éliminer en 20 secondes.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer UNE référence précise dans la distribution alimentaire avec un résultat chiffré concret, OU admettre honnêtement votre expérience tout en démontrant votre compréhension du shrinkage, DLC, rotation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà essayé un outil en 2021, ça a été une catastrophe. J'ai perdu 180K€ et 9 mois. Franchement, j'ai donné.",
+        "sous_texte": "C'est ma blessure profonde. J'ai peur de revivre cet échec qui a entamé ma crédibilité. Vous allez devoir me prouver que vous n'êtes pas comme ceux qui m'ont arnaqué.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider son traumatisme sans minimiser. Poser des questions sur ce qui a raté spécifiquement pour montrer que vous comprenez les pièges. Différencier votre approche par la méthode, pas par le produit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez combien coûte votre solution ? Parce que là je n'ai aucun budget fléché sur ce type de projet.",
+        "sous_texte": "Je cherche une raison rationnelle pour dire non. Mais si le ROI est évident et rapide, je pourrais défendre un budget. Je teste aussi si vous êtes transparent ou si vous allez noyer le poisson.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner de prix hors contexte. Retourner sur la valeur: 'Ça dépend du gain que vous pourriez réaliser. Si je vous montrais comment récupérer 200K€ sur vos achats frais en 12 mois, quel budget serait cohérent ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je ne vois pas trop ce que vous pourriez m'apporter de plus que ce qu'on fait déjà. On gère nos fournisseurs depuis des années.",
+        "sous_texte": "Vous touchez à mon expertise et ma légitimité. Si j'admets avoir besoin d'aide, je remets en question 25 ans de carrière. Mon ego est menacé.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son expérience d'abord. Puis poser une question sur un angle mort probable: 'Avec votre expérience, vous devez tracer finement les litiges fournisseurs et les non-conformités ? Comment vous capitalisez ça aujourd'hui ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous suivez les OTIF ? Vous avez une approche catman intégrée dans votre truc ?",
+        "sous_texte": "Je balance du jargon pour voir si vous êtes un vrai professionnel ou un commercial qui bullshit. Si vous hésitez ou donnez une réponse creuse, je vous classe comme incompétent.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Répondre avec précision sur les OTIF (On-Time In-Full) et category management, OU admettre 'On ne le fait pas directement, mais nos clients l'alimentent avec nos données'. Surtout ne pas bluffer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, ça a l'air bien sur le papier, mais le déploiement dans 142 magasins dont 40% en franchise, c'est un autre monde. Vous avez déjà géré cette complexité ?",
+        "sous_texte": "Je commence à être intéressé mais je cherche la faille qui va justifier mon non. Le mix franchise/succursale est MA complexité spécifique. Si vous ne l'avez jamais gérée, ça ne marchera pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer que vous comprenez la différence de gouvernance franchise/succursale. Proposer un pilote sur 10 succursales d'abord pour valider l'approche avant de déployer. Donner un exemple concret de client similaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que je dois défendre ça devant le COMEX. Le DG va me demander le ROI au centime près. Vous pouvez me garantir combien d'économies ?",
+        "sous_texte": "Je dois protéger ma position. Je ne peux pas prendre de risque sans garanties solides. J'ai besoin de munitions pour convaincre en interne. Aidez-moi à me couvrir.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne jamais garantir un chiffre sorti du chapeau. Co-construire une projection basée sur SES données: 'Sur vos 380M€ d'achats, si on isole les 120M€ de frais, même 1,5% de gain c'est 1,8M€. Qu'est-ce qui vous semble réaliste ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On a déjà SAP Business One. Votre truc s'interface comment avec ? Parce que refaire tout le paramétrage, c'est mort.",
+        "sous_texte": "J'ai déjà un écosystème existant mal ficelé mais fonctionnel. Tout changement = risque + travail. Si vous ajoutez de la complexité technique, je ne pourrai jamais vendre ça en interne.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer sur l'intégration API sans refonte. Proposer un audit technique gratuit pour valider la faisabilité. Montrer un cas de connexion réussie avec SAP B1"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mes fournisseurs historiques, je les connais depuis 15 ans. Ils vont voir votre outil comme une contrainte de plus. Comment vous gérez ça ?",
+        "sous_texte": "Je protège mes relations qui sont ma vraie valeur ajoutée. Si votre solution détériore mes relations fournisseurs, je perds mon pouvoir. C'est un vrai frein affectif pour moi.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Repositionner l'outil comme un facilitateur qui renforce la relation (traçabilité, moins d'erreurs, paiements plus fluides). Proposer d'impliquer 2-3 fournisseurs clés dans le pilote pour co-construire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, c'est intéressant mais je ne vais pas décider ça tout seul. Il faut que j'en parle avec mon équipe et la direction.",
+        "sous_texte": "Je me cache derrière le collectif pour ne pas m'engager. Soit je suis vraiment intéressé mais j'ai peur de décider seul, soit c'est une échappatoire élégante pour ne rien faire.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est normal. Puis identifier QUI précisément (DG ? DAF ?) et proposer de préparer AVEC LUI les éléments pour convaincre en interne. Demander un prochain point dans 8 jours avec date ferme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas le bon moment. On a l'ouverture des 15 nouveaux magasins qui arrive, je suis sous l'eau. Rappelez-moi dans 6 mois.",
+        "sous_texte": "Je suis sincèrement débordé mais j'utilise aussi ça comme excuse pour repousser une décision qui m'angoisse. Dans 6 mois j'aurai oublié et vous redirai la même chose.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Retourner l'objection: 'C'est précisément pendant cette ouverture que vous allez vivre les problèmes qu'on résout. Si on pose les bases maintenant, vous êtes opérationnel pour la montée en charge.' Proposer un accompagnement léger"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voyez avec Stéphanie, mon assistante achats. Si elle valide, on pourra en reparler.",
+        "sous_texte": "Je me débarrasse de vous en vous envoyant vers un subordonné qui n'a aucun pouvoir de décision. C'est mon fusible. Si ça vous intéresse vraiment, vous allez devoir prouver votre valeur à deux niveaux.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter de parler à Stéphanie MAIS verrouiller un point de validation avec lui après: 'Parfait, je l'appelle cette semaine. Quels sont les 2-3 points que vous voulez qu'elle valide ? Et si c'est OK, on cale 15min tous les deux vendredi prochain ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, proposez-moi une date pour un rendez-vous mais je ne promets rien, hein. Je veux d'abord voir concrètement ce que vous avez.",
+        "sous_texte": "Je suis à 60% intéressé mais je ne veux pas me découvrir. Je vais évaluer lors du RDV si vous êtes solide. Je me garde une porte de sortie pour annuler si j'ai un doute d'ici là.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter l'engagement fragile mais structurer le RDV: 'Ok pour un rdv exploratoire de 45min. Pour que ce soit utile pour vous, je vais vous demander 2-3 chiffres avant: CA achats frais, nombre de fournisseurs actifs, taux de rupture moyen. Vous avez ça sous la main ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, je vais être honnête avec vous. J'ai 51 ans, je pars dans 6-7 ans. Lancer un projet comme ça maintenant, avec tous les risques... Je ne suis pas sûr que ça vaille le coup pour moi. Vous comprenez.",
+      "condition_declenchement": "Après 20-25 minutes d'échange, si Olivier commence à se projeter dans le projet mais réalise l'ampleur du chantier et la prise de risque personnelle. Objection intime qui révèle sa vraie peur: échouer en fin de carrière."
+    },
+    "pattern_escalade": "Olivier suit un pattern prévisible: (1) Rejet réflexe froid → (2) Si vous tenez, test de crédibilité technique → (3) Si vous passez, partage d'un vrai problème mais minimisé → (4) Si vous creusez, révélation du trauma 2021 → (5) Si vous gérez, objections tactiques (budget, timing, équipe) → (6) Si vous persistez, objection existentielle sur son risque personnel. Plus vous avancez, plus les objections deviennent sincères et intimes.",
+    "piege_classique": "Olivier donne parfois des signaux d'intérêt (pose des questions techniques, mentionne un problème) pour MIEUX vous tester ensuite. Si vous vous emballez et commencez à pitcher votre solution, il se referme immédiatement. Il respecte uniquement ceux qui restent en posture de questionnement même quand il s'ouvre. Autre piège: il peut accepter un RDV pour 'se débarrasser' de vous, puis annuler 48h avant par mail sibyllin de son assistante."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour la distribution",
+      "description": "Entreprise proposant des solutions pour optimiser les opérations, les achats ou la performance des réseaux de distribution"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution permettant d'améliorer l'efficacité opérationnelle, de réduire les coûts ou d'augmenter la performance commerciale d'un réseau de distribution multi-sites",
+      "proposition_valeur": "Aide les chaînes de distribution à optimiser leurs processus centralisés (achats, logistique, merchandising) pour gagner en compétitivité et en rentabilité",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser l'art de l'accroche commerciale en prospection froide B2B auprès de décideurs senior, générer de l'intérêt rapidement, contourner les objections de premier niveau et obtenir un engagement ferme (rendez-vous)",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Directeur Achats grande distribution bio",
+    "vous_etes": "Commercial B2B spécialisé distribution, vous prospectez à froid des directeurs achats de chaînes multi-sites pour optimiser leurs process.",
+    "vous_vendez": "Solution d'optimisation des achats et supply chain pour réseaux de distribution (prix et détails non communiqués au prospect à ce stade).",
+    "vous_appelez": "Olivier Martineau, 51 ans, Directeur des Achats chez Optival Distribution (142 magasins bio/local, 380M€ CA). Méfiant, analytique, protecteur de son territoire. A vécu un échec cuisant avec une solution SRM en 2021 (180K€ perdus). Considère les commerciaux comme des vendeurs de tapis jusqu'à preuve du contraire.",
+    "ce_que_vous_savez": [
+      "Optival gère 142 points de vente en mix franchise/succursales dans le bio et produits locaux",
+      "Croissance stagnante (+1,2% en 2024), pression du COMEX pour réduire les coûts d'achat de 3%",
+      "Gestion hybride archaïque : 60% Excel, ERP mal paramétré, beaucoup de téléphone avec fournisseurs historiques",
+      "15 nouveaux magasins prévus 2025-2026, ce qui va complexifier la supply",
+      "Projet flou de plateforme d'achat centralisée, pas encore budgété"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou un diagnostic court (1h max) en créant de l'intérêt dans les 20 premières secondes.",
+    "vos_atouts": [
+      "Vous comprenez la différence franchise/succursale (la plupart des commerciaux l'ignorent)",
+      "Vous parlez son langage métier : taux de rotation, marge brute, ruptures, OTIF",
+      "Vous avez travaillé avec des enseignes alimentaires spécialisées similaires",
+      "Vous proposez un diagnostic gratuit ultra-court sans engagement, juste pour challenger sa vision"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:40:05Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17908,
+    "total_time_s": 167.5
+  }
+}

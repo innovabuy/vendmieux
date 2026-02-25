@@ -1,0 +1,343 @@
+{
+  "id": "scenario_1771512877",
+  "description_originale": "Vous appelez une ETI industrielle de 200-400 salariés, production en série, plusieurs sites. L'assistante de direction du directeur des achats ou directeur industriel décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : industrie]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés, production en série, plusieurs sites",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats ou directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de direction",
+          "role": "filtre/barrage",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution destinée aux achats ou à la production industrielle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante de direction",
+        "assistante filtre systématiquement les appels commerciaux"
+      ],
+      "implicites": [
+        "manque de légitimité perçue lors de l'appel",
+        "approche commerciale probablement trop frontale ou générique",
+        "absence de technique de contournement ou d'accroche différenciante",
+        "difficulté à créer de la curiosité auprès du filtre",
+        "peur de paraître insistant ou non professionnel"
+      ],
+      "probleme_racine": "incapacité à créer suffisamment de valeur perçue et de légitimité dès les 15 premières secondes pour que l'assistante accepte de transférer l'appel au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de passage de barrage secrétaire/assistante dans un contexte B2B industriel exigeant, avec élégance et professionnalisme",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B pour l'industrie",
+      "entreprise_description": "entreprise proposant des solutions pour le secteur industriel, ciblant les directions achats ou industrielles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service destiné aux ETI industrielles, en lien avec les achats ou la production",
+      "proposition_valeur": "gain de performance, optimisation, réduction de coûts ou amélioration de processus industriels (présumé)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commerciale",
+        "proposition de valeur concrète",
+        "références ou légitimité de l'entreprise vendeuse",
+        "contexte déclencheur de l'appel",
+        "prix ou budget type",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Valérie",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Assistante de Direction du Directeur Industriel",
+      "entreprise": {
+        "nom": "Précisia Composants",
+        "secteur": "Fabrication de composants électroniques pour l'automobile et l'aéronautique",
+        "taille": "ETI, 320 salariés répartis sur 3 sites (Toulouse, Lyon, Rennes)",
+        "ca_approximatif": "85 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Gardienne territoriale farouche de l'agenda de son directeur",
+        "Fière de son expertise du métier et de son réseau interne",
+        "Profondément agacée par l'incompétence et le manque de préparation"
+      ],
+      "motivations_profondes": [
+        "Être reconnue comme l'interlocutrice clé qui fait gagner du temps à sa hiérarchie",
+        "Protéger son directeur des importuns et préserver sa crédibilité en interne",
+        "Maintenir son statut de personne incontournable dans l'organisation"
+      ],
+      "peurs_freins": [
+        "Que son directeur lui reproche d'avoir laissé passer un fournisseur inutile",
+        "Perdre du temps avec des commerciaux qui ne comprennent rien à leur métier",
+        "Qu'on la contourne et qu'elle perde de son pouvoir d'influence"
+      ],
+      "rapport_aux_commerciaux": "Profondément méfiante et blasée après 18 ans au même poste. A développé un radar infaillible pour détecter les discours creux en 10 secondes. Respecte uniquement ceux qui connaissent vraiment le secteur et font preuve d'humilité",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais froid, avec une impatience sous-jacente perceptible. Utilise le vouvoiement strict et attend la même chose en retour",
+      "signaux_interet": [
+        "Pose une question de clarification sur un point technique précis",
+        "Mentionne spontanément le prénom de son directeur ('M. Beaumont sera intéressé si...')",
+        "Propose elle-même une fenêtre de rappel ou demande un email avec des éléments concrets",
+        "Son débit ralentit légèrement et elle prend des notes"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole sèchement avec 'Écoutez...' suivi d'une excuse toute faite",
+        "Respiration audible d'exaspération si elle détecte un script commercial",
+        "Passe immédiatement au tutoiement condescendant si elle sent une jeune recrue inexpérimentée",
+        "Formule passive-agressive: 'Je vais transmettre vos coordonnées' (= poubelle garantie)"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez' quand elle va dire non",
+        "'Nous sommes déjà équipés' (réflexe pavlovien même si faux)",
+        "'M. Beaumont n'a pas le temps en ce moment' (traduction: vous ne passerez pas)",
+        "Soupir discret mais audible avant de répondre aux appels non annoncés",
+        "'C'est-à-dire?' avec une intonation dubitative quand la proposition est floue"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, elle interrompt systématiquement. Déteste les commerciaux qui ne respirent pas et ne laissent pas d'espace de dialogue"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Entreprise en pleine certification IATF 16949 (automobile). Climat tendu: nouveau directeur industriel arrivé il y a 8 mois qui réorganise tout, avec pression forte sur les délais et la qualité. Réduction volontaire du nombre de fournisseurs référencés",
+      "priorites_actuelles": [
+        "Filtrer impitoyablement pour que M. Beaumont ne perde pas de temps",
+        "Gérer le planning surchargé avec les audits qualité en cours",
+        "Éviter les nouveaux fournisseurs non référencés pendant la période de certification"
+      ],
+      "experience_avec_offre_similaire": "Reçoit entre 12 et 18 appels commerciaux par semaine. A tout vu et tout entendu. Connait tous les scripts par cœur",
+      "fournisseur_actuel": "Panel de 7 fournisseurs industriels référencés et historiques, dont certains depuis plus de 15 ans. Relation forte avec les commerciaux terrain de ces entreprises",
+      "budget_disponible": "Bloqué jusqu'à fin d'année en raison de la certification. Nouveaux investissements gelés sauf validation Board de Direction"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un contact commun crédible dans le secteur (réseau professionnel des assistantes de direction industrielles)",
+        "Démontrer une connaissance précise de leur secteur (certification, contraintes automobiles/aéro)",
+        "Adopter une posture humble et demander conseil plutôt que vendre ('Je me demandais si c'était le bon moment pour vous')",
+        "Parler de ROI chiffré ou de retour d'expérience chez un concurrent direct nommément cité",
+        "Être recommandé par un autre directeur industriel ou un cabinet qu'elle respecte"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre avoir déjà échangé avec M. Beaumont alors que c'est faux",
+        "Utiliser son prénom sans permission ('Bonjour Valérie' d'emblée)",
+        "Dire 'Je ne vous vends rien' ou 'Juste 2 minutes' (elle a horreur des manipulations grossières)",
+        "Être incapable de répondre précisément à la question 'Vous proposez quoi exactement ?'",
+        "Insister lourdement après un premier refus",
+        "Parler de 'solution innovante' ou 'transformation digitale' sans substance derrière"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, M. Beaumont n'a vraiment pas le temps en ce moment, nous sommes en pleine certification.",
+        "sous_texte": "Je ne vous connais pas, vous n'avez pas de légitimité, et je protège mon territoire. Prouvez-moi rapidement que ça vaut le coup ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la certification IATF, montrer qu'on comprend la pression, et proposer un timing post-certification avec une raison valable de rappeler maintenant."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est à quel sujet exactement ? Parce que nous sommes déjà équipés.",
+        "sous_texte": "Je vais vous tester : si vous êtes vague ou que vous balbutiez, je vous élimine immédiatement. Soyez précis ou disparaissez.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre avec une précision chirurgicale sur l'offre ET le bénéfice métier concret, sans langue de bois. Accepter qu'ils soient équipés mais apporter un angle différent."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "*soupir audible* Vous êtes le troisième cette semaine à m'appeler pour ce genre de chose. Vous comprenez que je ne peux pas déranger M. Beaumont à chaque fois.",
+        "sous_texte": "Je suis fatiguée, saturée, et vous faites partie d'une masse indifférenciée de commerciaux. Pourquoi VOUS seriez différent ? Montrez-moi quelque chose d'unique ou laissez-moi tranquille.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie authentique, reconnaissance de sa difficulté, puis différenciation radicale par une référence, un chiffre, ou un nom qui prouve qu'on n'est pas 'les autres'."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec votre documentation, je transmettrai.",
+        "sous_texte": "Je vous éjecte poliment. Ce mail finira à la poubelle dans 99% des cas. C'est ma technique pour me débarrasser de vous sans conflit.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas accepter cette sortie de secours. Proposer une micro-implication immédiate (une question, un conseil) ou ancrer un rappel précis avec condition vérifiable."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, je ne vais pas vous faire perdre votre temps : notre panel fournisseurs est fermé jusqu'à la fin de l'année au minimum.",
+        "sous_texte": "Je vous donne une vraie information parce que vous avez passé le premier filtre, mais j'attends que vous compreniez l'implicite : soit vous avez une bonne raison de rester dans le match, soit vous partez dignement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Remercier pour la transparence, valider la contrainte, puis repositionner sur une approche long-terme ou un angle qui ne nécessite pas d'ouverture de panel immédiate."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire ? Parce que là je ne vois pas bien en quoi ça nous concerne concrètement.",
+        "sous_texte": "Vous êtes resté trop vague, trop marketing. Je veux du concret, du tangible, du mesurable. Sinon je décroche mentalement dans 10 secondes.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner immédiatement un exemple chiffré, une référence client similaire, ou un cas d'usage ultra-précis dans leur secteur automobile/aéro."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, M. Beaumont a déjà eu des présentations comme la vôtre l'année dernière. Ça n'a rien donné.",
+        "sous_texte": "J'essaie de vous décourager en invoquant un précédent négatif. Soit c'est vrai et vous devez montrer en quoi vous êtes différent, soit c'est faux et je teste votre réaction.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Curiosité authentique sur ce qui n'a pas fonctionné, puis différenciation nette. Ou accepter que ce ne soit pas le moment en gardant la porte ouverte avec dignité."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je vais être honnête avec vous : même si M. Beaumont est intéressé, toute décision d'investissement passe maintenant par le Board. Et ils ne se réunissent qu'une fois par trimestre.",
+        "sous_texte": "Je vous donne les vraies règles du jeu parce que vous m'avez un peu convaincue. Mais je teste aussi votre maturité commerciale : allez-vous respecter notre processus ou forcer stupidement ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la contrainte, valoriser sa transparence, et proposer un chemin compatible avec leur calendrier interne sans brusquer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais nous travaillons déjà avec Servin et Technique Industrie depuis 12 ans. Ils nous connaissent par cœur.",
+        "sous_texte": "J'ai une vraie loyauté envers nos fournisseurs historiques. Vous devez respecter ça. Si vous critiquez la concurrence frontalement, je vous éliminerai par principe. Montrez-moi une complémentarité, pas une substitution brutale.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser la relation existante au lieu de l'attaquer. Proposer un angle complémentaire, un test sans engagement, ou un bénéfice additionnel sans cannibalisation."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que vous travaillez avec Airbus Helicopters, mais comment je vérifie ça moi ? Vous comprenez ma prudence.",
+        "sous_texte": "Je ne crois personne sur parole après toutes ces années. Si vous mentez, je le sentirai. Soyez transparent sur comment je peux vérifier vos références, sinon je vous classerai comme 'suspect'.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un nom de contact vérifiable, un numéro de contrat, ou proposer de l'appeler devant elle. La transparence totale désarme cette objection."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "*débit qui ralentit* Écoutez, entre nous, même si je trouve ça intéressant, M. Beaumont n'aime pas qu'on le sollicite pour des sujets qui ne viennent pas de son réseau habituel. Vous comprenez la difficulté ?",
+        "sous_texte": "Je suis en train de vous aider en vous donnant le code culturel interne. Si vous êtes intelligent, vous allez demander comment rentrer dans ce réseau ou comment légitimer votre approche autrement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Remercier pour cette confidence, demander conseil sur la meilleure voie d'entrée, ou proposer une introduction via un tiers crédible qu'elle respecte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais en parler à M. Beaumont, laissez-moi vos coordonnées et on vous rappelle si ça l'intéresse.",
+        "sous_texte": "C'est mon dernier rempart avant de vous donner un vrai accès. Soit vous laissez filer et je ne rappellerai jamais, soit vous m'engagez sur quelque chose de concret maintenant.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ancrer un rappel précis avec déclencheur vérifiable, ou obtenir un micro-engagement immédiat qui la rend coresponsable du suivi."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "*ton plus doux* Honnêtement, là tout de suite c'est compliqué avec les audits. Mais recontactez-moi fin novembre, on y verra plus clair.",
+        "sous_texte": "Vous m'avez convaincue qu'il y a peut-être quelque chose. Je vous ouvre une vraie fenêtre de tir, mais je teste votre sérieux : allez-vous vraiment rappeler à la bonne date avec les bons éléments ?",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Remercier chaleureusement, ancrer précisément la date, clarifier ce qu'elle attend comme préparation d'ici là, et tenir parole scrupuleusement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi ? Envoyez-moi un récapitulatif en 10 lignes maximum par mail. Si c'est clair, je cale 15 minutes dans l'agenda de M. Beaumont la semaine prochaine.",
+        "sous_texte": "Vous avez réussi à m'intéresser, mais je garde le contrôle du processus. Je vais juger votre capacité à synthétiser et votre réactivité. Si votre mail est bavard ou arrive dans 3 jours, tout sera annulé.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier immédiatement les 3 points clés qu'elle veut voir dans le mail, envoyer dans l'heure suivante, et relancer 24h après par téléphone."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, M. Beaumont rentre de déplacement dans 10 minutes. Si vous voulez je peux lui glisser un mot maintenant, mais soyez synthétique : je lui dis quoi en une phrase ?",
+        "sous_texte": "Vous avez gagné ma confiance au point que je vais me mouiller pour vous. Mais attention : si vous foirez ce pitch éclair, non seulement vous perdez l'opportunité, mais MOI je perds ma crédibilité. Ne me décevez pas.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Formuler en 15 secondes max : QUI vous êtes + QUOI précisément + POURQUOI maintenant avec un chiffre ou une référence. Puis la remercier explicitement pour sa prise de risque."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "*ton las mais pas agressif* Vous savez, vous m'avez bien parlé, et je trouve ça intéressant. Mais soyons réalistes : vous connaissez pas M. Beaumont, moi je le connais depuis 8 mois, et je SAIS qu'il va me dire qu'on n'a ni le temps ni le budget pour ça avant au moins 6 mois. Je fais quoi avec ça, moi ?",
+      "condition_declenchement": "Après 4-5 minutes d'échange, si le commercial a bien performé mais que Valérie reste coincée entre son intérêt intellectuel pour l'offre et sa connaissance de la réalité terrain de son directeur. Déclenchée uniquement si elle a perçu du professionnalisme ET qu'elle veut sincèrement aider."
+    },
+    "pattern_escalade": "Valérie commence par un barrage réflexe froid (objections 1-2), puis teste la substance avec des questions pièges (objections 3-4). Si le commercial tient bon avec humilité et précision, elle commence à donner des vraies informations (objections 5-8) tout en testant son respect des règles internes. À la fin, elle passe en mode 'conseil' implicite en dévoilant les codes culturels de l'entreprise (objections 9-11). Le closing est une série de tests finaux pour valider que le commercial mérite vraiment l'accès à M. Beaumont (objections 12-15). L'objection finale est un appel à la coresponsabilité : elle vous donne le pouvoir de trouver AVEC elle la bonne stratégie.",
+    "piege_classique": "Beaucoup de commerciaux prennent 'Envoyez-moi un mail, je transmettrai' pour une victoire alors que c'est une éjection polie. Le vrai piège de Valérie : elle donne parfois des informations vraies (budget bloqué, certification) pour tester si vous allez respecter ces contraintes ou forcer stupidement. Si vous insistez après qu'elle ait été transparente, vous perdez définitivement sa confiance ET toute chance future. Elle pardonne l'inexpérience si elle est compensée par l'humilité, mais jamais le non-respect de ses signaux clairs."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B pour l'industrie",
+      "description": "entreprise proposant des solutions pour le secteur industriel, ciblant les directions achats ou industrielles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service destiné aux ETI industrielles, en lien avec les achats ou la production",
+      "proposition_valeur": "gain de performance, optimisation, réduction de coûts ou amélioration de processus industriels (présumé)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de passage de barrage secrétaire/assistante dans un contexte B2B industriel exigeant, avec élégance et professionnalisme",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Passage de barrage assistante de direction",
+    "vous_etes": "Commercial B2B dans l'industrie, vous prospectez une ETI du secteur automobile/aéronautique pour décrocher un rendez-vous avec le Directeur Industriel.",
+    "vous_vendez": "Une solution destinée à optimiser les achats ou la production industrielle (optimisation processus, réduction coûts, gains de performance). Budget et références à préciser selon votre positionnement.",
+    "vous_appelez": "Valérie Marchand, 52 ans, Assistante de Direction du Directeur Industriel chez Précisia Composants (320 salariés, 3 sites, fabrication de composants électroniques auto/aéro). Gardienne territoriale farouche, 18 ans d'ancienneté, elle filtre impitoyablement et détecte les discours creux en 10 secondes.",
+    "ce_que_vous_savez": [
+      "Précisia Composants est en pleine certification IATF 16949, climat tendu avec audits qualité en cours",
+      "Nouveau Directeur Industriel (M. Beaumont) arrivé il y a 8 mois, réorganise tout avec pression forte sur délais/qualité",
+      "Réduction volontaire du nombre de fournisseurs référencés, budgets gelés jusqu'à fin d'année sauf validation Board",
+      "Valérie reçoit 12 à 18 appels commerciaux par semaine, elle a tout vu et connaît tous les scripts par cœur",
+      "Elle vouvoie strictement, interrompt après 15 secondes de monologue, déteste les manipulations grossières"
+    ],
+    "votre_objectif": "Passer le barrage de Valérie et obtenir un rendez-vous téléphonique ou physique avec M. Beaumont, Directeur Industriel.",
+    "vos_atouts": [
+      "Vous connaissez leur contexte de certification IATF 16949 et les contraintes du secteur auto/aéro",
+      "Vous pouvez adopter une posture humble et demander conseil plutôt que vendre frontalement",
+      "Vous êtes capable de parler ROI chiffré ou retour d'expérience chez un concurrent du secteur",
+      "Vous maîtrisez le vocabulaire technique industriel et pouvez démontrer votre sérieux dès les premières secondes"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:54:37Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15373,
+    "total_time_s": 138.6
+  }
+}

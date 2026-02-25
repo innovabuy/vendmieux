@@ -1,0 +1,325 @@
+{
+  "id": "scenario_1771506519",
+  "description_originale": "Le dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : industrie]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "industrie (usinage, mécanique, plasturgie)",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant/gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (nature exacte non spécifiée)",
+      "proposition_valeur_presumee": "valeur ajoutée à faire percevoir au client existant satisfait",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "Obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "Risque de complaisance du client satisfait (pourquoi changer?)",
+        "Justifier l'investissement supplémentaire sans remettre en cause la satisfaction actuelle",
+        "Identifier un besoin latent non exprimé",
+        "Éviter de paraître opportuniste ou commercial agressif"
+      ],
+      "probleme_racine": "Transformer la satisfaction passive en engagement actif pour développer le compte client sans créer de résistance au changement"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la technique d'upselling sur client satisfait : identifier les besoins complémentaires, démontrer la valeur ajoutée sans remettre en cause l'existant, et obtenir l'engagement commercial",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour l'industrie (probable: maintenance, fournitures industrielles, services techniques, conseil, formation, logiciels, etc.)",
+      "entreprise_description": "Fournisseur établi avec relation client d'1 an, proposant des services évolutifs ou gamme de produits/services complémentaires",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou montée en gamme par rapport à l'offre actuelle déjà souscrite",
+      "proposition_valeur": "Valeur ajoutée à démontrer: optimisation, performance accrue, gain de temps/productivité, réduction de coûts, ou nouveaux bénéfices business",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Relation client existante depuis 1 an avec satisfaction démontrée"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance du contexte client, crédibilité acquise",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service/produit à proposer",
+        "Détails de l'offre actuelle souscrite",
+        "Budget ou fourchette de prix",
+        "Bénéfices concrets mesurables de l'upsell",
+        "Secteur d'activité précis du vendeur"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Moreau",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "MOREAU Usinage & Précision",
+        "secteur": "Usinage de pièces mécaniques de précision pour l'aéronautique et l'automobile",
+        "taille": "42 salariés",
+        "ca_approximatif": "4,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique économe (génération post-crise industrielle)",
+        "Fidèle mais prudent dans les relations fournisseurs",
+        "Méfiant face au 'vendeur de tapis' déguisé"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à son fils qui intègre la direction",
+        "Gagner en productivité sans prendre de risque financier inconsidéré",
+        "Être respecté comme chef d'entreprise qui connaît son métier (30 ans d'expérience)",
+        "Prouver qu'une PME française peut rester compétitive"
+      ],
+      "peurs_freins": [
+        "Se faire 'avoir' par un commercial qui profite de la relation établie",
+        "Investir dans du superflu alors que la machine actuelle fonctionne",
+        "Complexifier l'organisation pour un gain marginal",
+        "Perdre du temps en réunions commerciales inutiles"
+      ],
+      "rapport_aux_commerciaux": "Tolérant avec ceux qui connaissent VRAIMENT l'industrie et parlent résultats concrets. Cassant avec ceux qui récitent un PowerPoint. Apprécie la franchise brutale à la parisienne mal polie.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui, bonjour, vas-y je t'écoute mais j'ai un client dans 20 minutes.' Vouvoiement qui glisse vers tutoiement si affinité technique.",
+      "signaux_interet": [
+        "Coupe pour poser une question technique précise sur SON cas",
+        "Mentionne spontanément un problème actuel de production",
+        "Demande 'combien de temps pour le retour sur investissement RÉEL, pas dans vos slides'",
+        "Fait référence à un concurrent qui a adopté la solution"
+      ],
+      "signaux_rejet": [
+        "Soupir appuyé + 'Écoute là franchement...'",
+        "Regarde ostensiblement l'horloge murale",
+        "Commence une phrase par 'Le problème avec vous les commerciaux c'est que...'",
+        "Mentionne que 'ça tourne bien comme ça, faut pas tout changer'"
+      ],
+      "tics_langage": [
+        "'Bon...' en début de phrase quand il veut conclure",
+        "'Franchement' répété 4-5 fois dans la conversation",
+        "'Après...' pour introduire une objection polie",
+        "Expressions datées: 'ça le fait', 'ça coince où ?', 'c'est du pipeau ou pas ?'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant interruption. Déteste les introductions marketing. Veut qu'on entre dans le vif en 30 secondes."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable +8% sur 18 mois grâce à nouveau contrat aéronautique. Embauche de 3 personnes prévue en septembre. Tension sur délais de livraison mais trésorerie correcte. Son fils Louis (28 ans) pousse pour moderniser certains process.",
+      "priorites_actuelles": [
+        "Réduire les délais de fabrication sur série moyenne (15-20% de gain espéré)",
+        "Former les nouveaux sans ralentir la production",
+        "Anticiper la certification EN9100 révisée dans 14 mois",
+        "Ne PAS perdre le gros client auto qui menace de partir en Pologne"
+      ],
+      "experience_avec_offre_similaire": "A déjà été brûlé il y a 6 ans avec un logiciel de GPAO 'clé en main' qui a planté pendant 3 mois. Depuis, méfiance accrue sur toute promesse de modernisation.",
+      "fournisseur_actuel": "Satisfait de votre prestation actuelle (d'où la relation d'1 an). Apprécie particulièrement le SAV réactif et le fait que vous parliez 'son langage'. Mais pense que 'ça fait le job comme ça, pourquoi en rajouter ?'",
+      "budget_disponible": "Réserve tréso de 120-150K€ mais très réticent à investir >25K€ sans ROI démontrable sous 18 mois. Préfère échelonner les paiements."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un résultat CHIFFRÉ obtenu chez un industriel similaire de la région",
+        "Identifier une douleur précise qu'il n'a pas encore verbalisée (ex: taux de rebut, temps de réglage machine)",
+        "Proposer un diagnostic GRATUIT de 2h sur site avec son fils Louis présent",
+        "Parler EN PREMIER de ce qui peut foirer et comment vous gérez l'échec",
+        "Commencer par 'Je vais pas te vendre de la merde Stéphane, mais y'a un truc qui pourrait t'intéresser'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Sous-entendre que sa solution actuelle est dépassée ou mauvaise",
+        "Utiliser du jargon marketing américain (game-changer, disruptif, etc.)",
+        "Proposer un rdv 'exploratoire' de 2h sans ordre du jour précis",
+        "Faire pression sur l'urgence artificielle ('offre valable jusqu'à vendredi')",
+        "Ignorer son expertise industrielle ou le traiter comme un débutant",
+        "Proposer une solution 'packagée' sans personnalisation à son process"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, là franchement j'ai un client dans 20 minutes, tu peux me dire en 2 minutes de quoi il s'agit ?",
+        "sous_texte": "Je suis cordial car on se connaît, mais je n'ai pas de temps à perdre. Prouve-moi vite que ça vaut le coup.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, annoncer un bénéfice chiffré concret en 30 secondes, proposer de rappeler à un meilleur moment."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon attends, on est déjà client hein, ça tourne bien comme ça. C'est pour me vendre autre chose c'est ça ?",
+        "sous_texte": "Alerte commercial opportuniste détectée. Je crains qu'on essaie de me fourguer du superflu en profitant de la relation.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître frontalement l'intention commerciale, valider que l'existant fonctionne bien, positionner l'appel comme une opportunité identifiée sur SON contexte spécifique."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après bon, faut pas tout changer non plus... On a nos habitudes, ça fait le job, pourquoi compliquer ?",
+        "sous_texte": "Résistance au changement classique du dirigeant. Pourquoi prendre un risque alors que ça fonctionne ? Prouve-moi que le jeu en vaut la chandelle.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contester son confort actuel. Investiguer ses projets futurs (embauches, certification, contrats) pour révéler une douleur latente."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, je vois pas en quoi ça nous aiderait concrètement sur les délais de livraison nous. T'as des exemples CHEZ NOUS, pas dans tes plaquettes ?",
+        "sous_texte": "Méfiance face au discours générique. Il veut des preuves contextualisées à SON usine, pas des cas d'usage théoriques.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Poser des questions précises sur son process actuel pour co-construire l'exemple avec lui. Mentionner un cas similaire local avec chiffres vérifiables."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, il y a 6 ans on m'avait vendu un logiciel 'clé en main' aussi... Résultat 3 mois de galère, j'ai failli perdre mon client PSA. Donc les belles promesses hein...",
+        "sous_texte": "Trauma passé réactivé. Il me teste sur l'honnêteté et la gestion de l'échec. Veut savoir si je suis différent des charlatans d'avant.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider son expérience négative, parler AVANT lui des risques de l'implémentation, détailler le plan B si ça foire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème avec vous les commerciaux, c'est que vous promettez la lune et après quand ça merde, vous êtes plus là. Qui me garantit que c'est pas du pipeau ton truc ?",
+        "sous_texte": "Test de confrontation pour évaluer ma solidité. Veut voir si je me dégonfle ou si j'assume la dimension commerciale avec franchise.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le reproche général, se différencier par des engagements contractuels concrets et mesurables, proposer une clause de sortie."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais ça coûte combien ton machin ? Parce que franchement là, investir 40 ou 50K€ dans un truc dont on n'a pas besoin...",
+        "sous_texte": "Objection prix préventive. Il sur-estime volontairement pour tester ma réaction et ancrer une fourchette basse. Sensibilité ROI forte.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dévoiler le prix tout de suite, recadrer sur le ROI et le coût de l'inaction, investiguer son budget réel de modernisation."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mon fils Louis il voudrait qu'on modernise tout, mais moi j'ai 30 ans de métier hein, je sais ce qui marche dans une boîte comme la nôtre.",
+        "sous_texte": "Tension générationnelle père-fils. Crainte de perdre la main ou d'être jugé 'has been'. Ego du fondateur.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valoriser son expérience comme un atout pour évaluer l'opportunité. Proposer d'impliquer Louis dans le diagnostic pour créer une coalition décisionnaire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, faut que j'y réfléchisse, que je vois avec mon comptable, que j'en parle à Louis... Rappelle-moi dans 2-3 mois, là c'est pas le moment.",
+        "sous_texte": "Fuite polie. Pas convaincu de l'urgence ou de la valeur. Cherche à gagner du temps pour esquiver la décision.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier LA vraie raison du report (budget, priorité, doute). Créer une micro-urgence légitime liée à son contexte (embauches, certification EN9100)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, ça peut être intéressant mais là pour un devis complet, il me faut plus d'éléments. C'est pas non, mais c'est pas oui non plus.",
+        "sous_texte": "Indécision classique. Intérêt réel mais peur de s'engager. Cherche une porte de sortie confortable sans froisser la relation.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un engagement progressif : diagnostic gratuit sur site avec Louis, puis devis personnalisé. Créer une next step concrète avec date."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK mais attends, si ça foire, qu'est-ce qui se passe ? Vous me laissez dans la merde avec mes 3 nouveaux qui arrivent en septembre ?",
+        "sous_texte": "Peur du risque opérationnel concrète. Demande implicite de réassurance. Veut entendre le plan de secours AVANT d'accepter.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler le plan de déploiement phasé, l'accompagnement formation, les garanties de continuité de service. Proposer un pilote limité."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Après, faut voir... J'ai peut-être d'autres fournisseurs qui peuvent me proposer la même chose moins cher, non ?",
+        "sous_texte": "Objection concurrence tactique pour négocier le prix. Test pour voir si je vais brader ou défendre ma valeur.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "L'encourager à comparer (confiance), mais recentrer sur la valeur différenciante de la relation établie et la connaissance de son contexte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là, avec la menace du client auto qui pourrait partir en Pologne, je peux pas me permettre de perdre du temps sur un projet annexe.",
+        "sous_texte": "Objection de priorité légitime. Stress réel sur la survie du compte client. Besoin de montrer en quoi l'offre AIDE à ce problème, pas le concurrence.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnecter l'offre à cette priorité absolue : en quoi elle peut améliorer sa compétitivité face à la menace polonaise (coûts, délais, qualité)."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute, c'est intéressant mais là franchement avec tout ce qu'on a sur le feu... Refais-moi un point après l'été, quand Louis sera bien en place et qu'on aura digéré les embauches. Là je peux pas décider dans le vide.",
+      "condition_declenchement": "Si le vendeur n'a pas créé d'urgence légitime ET n'a pas impliqué Louis dans la démarche ET n'a pas relié l'offre à une priorité critique actuelle (délais, certification, menace concurrentielle)."
+    },
+    "pattern_escalade": "Stéphane commence cordial mais pressé (test de respect de son temps). Si le vendeur tient 90 secondes de pitch générique, il coupe avec un 'franchement'. Si on persiste dans la promesse sans preuve concrète, il sort le trauma du logiciel raté (test d'honnêteté). Si on passe ce test, il ouvre sur ses vraies priorités (délais, menace Pologne) mais demande immédiatement le prix et le ROI. L'objection finale arrive si on n'a pas co-construit une urgence légitime avec lui.",
+    "piege_classique": "Croire que la satisfaction actuelle suffit pour vendre la suite. Stéphane est satisfait de l'existant DONC il a besoin d'une raison NOUVELLE et FORTE pour investir. Le piège est de vouloir 'forcer' la vente sans investiguer ses projets futurs (embauches, certification EN9100, menace concurrentielle Pologne). S'il ne verbalise pas lui-même un problème que l'offre résout, il esquivera poliment en reportant à plus tard. Second piège : ignorer Louis. Le fils est prescripteur moderne, ne pas l'impliquer = perdre un allié interne décisif."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour l'industrie (probable: maintenance, fournitures industrielles, services techniques, conseil, formation, logiciels, etc.)",
+      "description": "Fournisseur établi avec relation client d'1 an, proposant des services évolutifs ou gamme de produits/services complémentaires"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou montée en gamme par rapport à l'offre actuelle déjà souscrite",
+      "proposition_valeur": "Valeur ajoutée à démontrer: optimisation, performance accrue, gain de temps/productivité, réduction de coûts, ou nouveaux bénéfices business",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Relation client existante depuis 1 an avec satisfaction démontrée"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance du contexte client, crédibilité acquise"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser la technique d'upselling sur client satisfait : identifier les besoins complémentaires, démontrer la valeur ajoutée sans remettre en cause l'existant, et obtenir l'engagement commercial",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client satisfait — Upsell service complémentaire",
+    "vous_etes": "Commercial chez un fournisseur de services industriels, en relation avec MOREAU Usinage depuis 1 an avec un SAV qui cartonne.",
+    "vous_vendez": "Un service complémentaire ou montée en gamme par rapport à ce qu'ils ont déjà — prix et détails à adapter selon la discussion.",
+    "vous_appelez": "Stéphane Moreau, 52 ans, gérant et patron de MOREAU Usinage & Précision (42 salariés, usinage aéro/auto). Pragmatique, direct, allergique au baratin commercial.",
+    "ce_que_vous_savez": [
+      "Il est satisfait de votre prestation actuelle, surtout du SAV réactif",
+      "L'entreprise croît +8%, embauche 3 personnes en septembre, tension sur les délais de livraison",
+      "Son fils Louis (28 ans) pousse pour moderniser certains process",
+      "Il s'est fait brûler il y a 6 ans avec un logiciel GPAO raté — depuis, très méfiant sur les promesses de modernisation",
+      "Il déteste qu'on remette en cause ce qui fonctionne déjà"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis sur le service complémentaire en identifiant une douleur concrète (délais, formation, certification EN9100) sans décrédibiliser l'existant.",
+    "vos_atouts": [
+      "1 an de relation avec confiance établie et SAV irréprochable",
+      "Vous connaissez son secteur et parlez 'son langage' industriel",
+      "Vous pouvez proposer un diagnostic gratuit 2h sur site avec Louis",
+      "Vous avez des résultats chiffrés d'industriels similaires dans la région"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:08:39Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14581,
+    "total_time_s": 127.3
+  }
+}

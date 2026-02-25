@@ -1,0 +1,380 @@
+{
+  "id": "scenario_1771523170",
+  "description_originale": "Vous appelez une cabinet de courtage ou agence d'assurance de 10-30 salariés. C'est l'assistante de direction qui décroche. Vous devez passer le barrage pour parler au gérant / directeur d'agence. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : finance_assurance]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant / directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de direction",
+          "role": "barrage / filtre",
+          "comportement": "protège le décideur, filtre les sollicitations"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B destinée aux cabinets de courtage et agences d'assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Passer le barrage de l'assistante de direction",
+        "Convaincre l'assistante de transférer l'appel",
+        "Obtenir un RDV avec le décideur"
+      ],
+      "implicites": [
+        "Légitimer rapidement la valeur de l'appel",
+        "Créer de la confiance avec un interlocuteur non-décideur",
+        "Gérer un double niveau de conviction (assistante puis patron)",
+        "Éviter d'être catalogué comme démarchage commercial agressif",
+        "Adapter le discours selon l'interlocuteur"
+      ],
+      "probleme_racine": "Difficulté à franchir le barrage secrétariat et à créer suffisamment de valeur perçue pour justifier le transfert vers le décideur dans un contexte d'appel froid"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrage secrétariat et obtenir des RDV qualifiés avec les décideurs d'agences d'assurance",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B services aux professionnels de l'assurance",
+      "entreprise_description": "Entreprise proposant une solution B2B pour les cabinets de courtage et agences d'assurance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée à améliorer l'activité des cabinets de courtage et agences d'assurance (productivité, acquisition, gestion, digital...)",
+      "proposition_valeur": "Aide les gérants d'agences d'assurance à optimiser leur activité professionnelle",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur concrète",
+        "Positionnement prix",
+        "Éléments de différenciation",
+        "Zone géographique ciblée",
+        "Objections typiques rencontrées",
+        "Scripts ou argumentaires actuels utilisés",
+        "Taux de réussite actuel du franchissement barrage"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Véronique",
+      "nom": "Tessier",
+      "age": 52,
+      "poste": "Gérante",
+      "entreprise": {
+        "nom": "Tessier Assurances & Courtage",
+        "secteur": "Courtage en assurance IARD et prévoyance",
+        "taille": "14 salariés (elle + 2 commerciaux + 4 gestionnaires + 1 assistante direction + 6 conseillers)",
+        "ca_approximatif": "1,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et cash - déteste qu'on lui fasse perdre son temps",
+        "Méfiante vis-à-vis des promesses commerciales après 25 ans de métier",
+        "Protectrice envers son équipe et ses process établis"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité de l'agence face à la digitalisation des grands groupes",
+        "Transmettre une entreprise saine à moyen terme (pense à la revente d'ici 7-8 ans)",
+        "Prouver qu'une structure indépendante peut rivaliser avec les réseaux",
+        "Protéger sa réputation locale bâtie sur 23 ans"
+      ],
+      "peurs_freins": [
+        "Investir dans un outil qui ne sera pas adopté par l'équipe (déjà vécu 2 fois)",
+        "Se faire avoir par un discours commercial trop lisse",
+        "Perdre du temps en réunions inutiles alors qu'elle croule sous les dossiers",
+        "Dépendre d'un prestataire externe qui ne comprend rien au métier d'assureur",
+        "Que sa fidèle assistante Martine la juge trop crédule si elle accepte n'importe quel RDV"
+      ],
+      "rapport_aux_commerciaux": "Très blasée. Reçoit 12-15 appels par semaine. Pense que 90% des commerciaux récitent un script sans connaître son métier. Respecte uniquement ceux qui ont fait leurs devoirs et parlent son langage.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé. 'J'ai 20 minutes, pas une de plus. Martine m'a dit que c'était important, donc allez-y, je vous écoute.'",
+      "signaux_interet": [
+        "Se penche légèrement en avant et retire ses lunettes",
+        "Pose des questions techniques précises sur l'intégration avec son CRM actuel",
+        "Mentionne spontanément un problème concret qu'elle rencontre",
+        "Dit 'Attendez' et prend des notes manuscrites",
+        "Demande des références dans le courtage, pas dans l'assurance de masse"
+      ],
+      "signaux_rejet": [
+        "Répond à un email sur son téléphone pendant que vous parlez",
+        "Soupire en disant 'Oui mais vous savez, on a déjà...'",
+        "Coupe court avec 'Écoutez, envoyez-moi une doc, je regarderai'",
+        "Utilise l'excuse Martine : 'Je dois voir ça avec mon assistante d'abord'",
+        "Regarde ostensiblement sa montre et dit 'Bon, il faut que je...'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...'",
+        "Dit 'Concrètement' quand elle veut revenir au factuel",
+        "Utilise beaucoup 'Nous, dans le courtage' pour marquer la distinction avec les bancassureurs",
+        "Soupire audiblement avant de répondre à une question qui l'agace",
+        "Dit 'J'entends bien' quand elle n'est pas convaincue mais reste polie"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, elle coupe ou décroche mentalement. A besoin d'interaction, de questions-réponses. Déteste les présentations PowerPoint de plus de 6 slides."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Rentable mais sous pression : les commissions ont baissé de 12% en 3 ans. Doit digitaliser pour rester compétitive. 2 commerciaux seniors partent à la retraite d'ici 18 mois. Cherche à automatiser la gestion administrative pour libérer du temps commercial.",
+      "priorites_actuelles": [
+        "Réduire le temps de traitement des devis (actuellement 48h, objectif 24h)",
+        "Améliorer le suivi client pour limiter l'attrition (8% par an, trop élevé)",
+        "Former les nouveaux commerciaux plus rapidement",
+        "Trouver une solution pour ne pas perdre les leads qui arrivent via le site web le soir/weekend"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM généraliste il y a 4 ans (Salesforce) : échec total, trop complexe, abandon après 8 mois et 15K€ perdus. A aussi souscrit à un outil de signature électronique qui fonctionne bien. Méfiante mais pas fermée si la valeur est démontrée.",
+      "fournisseur_actuel": "Utilise un logiciel métier historique (AS-Courtage) pour la gestion des contrats, Excel pour le suivi commercial, et WhatsApp Business pour communiquer avec les clients pressés. Sait que c'est artisanal mais 'ça marche'.",
+      "budget_disponible": "Peut débloquer jusqu'à 25K€ annuel si ROI démontré sous 12 mois. Au-delà, doit convaincre son expert-comptable et éventuellement son banquier. Préfère un abonnement mensuel à un gros investissement initial."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent local qui a adopté la solution avec succès (elle connaît tout le monde)",
+        "Parler en termes métier : taux de transformation, panier moyen, récurrence client",
+        "Proposer un ROI chiffré et rapide, pas de blabla sur 'la transformation digitale'",
+        "Montrer qu'on connaît la réalité du courtage indépendant vs les réseaux",
+        "Offrir un test gratuit limité dans le temps sur 1-2 utilisateurs",
+        "Avoir des références vérifiables dans des agences de taille similaire",
+        "Respecter son temps : être précis, concret, sans langue de bois"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'révolution digitale' ou de jargon bullshit à la mode",
+        "Ne pas connaître la différence entre courtier et agent général",
+        "Proposer un tunnel de vente complexe avec 3 démos avant un devis",
+        "Dire que 'tous les assureurs utilisent déjà' notre solution (elle sait que c'est faux)",
+        "Critiquer ouvertement son organisation actuelle dès les 5 premières minutes",
+        "Insister lourdement après un premier 'non'",
+        "Envoyer 15 relances emails automatisées après le RDV",
+        "Ne pas pouvoir répondre à une question technique et botter en touche"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai vraiment pas le temps là, je suis sur un dossier urgent. Envoyez-moi un mail, je regarderai si j'ai 5 minutes.",
+        "sous_texte": "Réflexe de protection automatique. Teste si vous allez insister lourdement ou respecter son temps. Veut aussi voir si vous savez pitcher en 20 secondes max.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, proposer 45 secondes chrono pour qualifier l'intérêt, puis céder si non pertinent"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah encore un commercial... Vous êtes le quatrième cette semaine à me proposer un truc digital. Qu'est-ce qui vous différencie des autres exactement ?",
+        "sous_texte": "Vraie lassitude mais aussi un test de crédibilité immédiat. Veut savoir si vous connaissez vraiment son métier ou si vous débitez un script générique.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Nommer explicitement le problème courtage vs assurance de masse, mentionner une référence locale si possible, parler métier immédiatement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà un logiciel métier, AS-Courtage, qui fait très bien le job depuis 12 ans. Tout est dedans, nos process sont rodés. Pourquoi je changerais ?",
+        "sous_texte": "Peur du changement + protection de l'existant + souvenir douloureux de l'échec Salesforce. Teste si vous allez critiquer son outil actuel (erreur fatale) ou comprendre sa situation.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne jamais critiquer AS-Courtage. Positionner en complémentarité sur la partie commerciale, pas en remplacement de la gestion contrats"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez combien de clients courtiers indépendants comme moi ? Parce que si vous bossez surtout avec des bancassureurs ou des gros réseaux, on n'a pas du tout la même réalité.",
+        "sous_texte": "Question piège pour vérifier votre connaissance métier. Très importante pour elle : veut être sûre que vous comprenez les spécificités du courtage indépendant vs les structures intégrées.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Avoir des chiffres précis et des noms d'agences similaires (10-30 personnes, indépendantes). Si pas de références exactes, l'admettre honnêtement plutôt que bluffer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'entends bien tout ça, mais nous on fonctionne déjà avec Excel et WhatsApp Business. C'est artisanal, je vous l'accorde, mais ça marche. Mes commerciaux sont habitués.",
+        "sous_texte": "Résistance au changement + peur que l'équipe rejette l'outil. Souvenir cuisant de Salesforce jamais adopté. Cherche une vraie raison business de changer, pas juste du 'plus moderne'.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Quantifier la perte cachée de l'artisanal : leads perdus, temps gaspillé, erreurs de suivi. Parler adoption avec parcours progressif, pas big bang"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous parlez de leads qui arrivent le soir et le weekend... Mais comment vous savez ça ? Vous avez fait des recherches sur nous ou vous dites ça à tout le monde ?",
+        "sous_texte": "Test de crédibilité mélangé à un vrai intérêt naissant. Si vous avez vraiment étudié son site/son activité, son niveau d'écoute va monter en flèche. Si vous bluffez, elle va vous griller.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer des éléments précis vus sur son site/Google My Business ou avouer que c'est un problème courant dans le courtage de cette taille"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais tout ça c'est bien joli en théorie... Il y a 4 ans j'ai mis 15 000 euros dans Salesforce. Résultat : personne ne l'utilisait, trop complexe. J'ai pas envie de me refaire avoir.",
+        "sous_texte": "Cicatrice profonde. Vraie peur de reproduire l'échec. Teste votre capacité à adresser l'adoption utilisateur, pas juste les features. Attend des garanties concrètes, pas des promesses.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'échec Salesforce (trop généraliste), expliquer en quoi votre approche adoption est différente, proposer pilote limité avec clause de sortie"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vos chiffres de ROI sont impressionnants mais comment je peux être sûre que ça va marcher chez moi ? Chaque agence est différente, on a nos spécificités.",
+        "sous_texte": "Méfiance envers les promesses marketing trop belles. Veut du concret, du mesurable, du personnalisé. Teste si vous allez lui sortir des stats génériques ou adapter le discours à SA situation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un audit rapide de SES process actuels, chiffrer SON potentiel d'amélioration, pas des moyennes marché. Offrir des KPIs de suivi mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Nous dans le courtage, on a des obligations réglementaires très strictes. Votre outil est-il vraiment conforme RGPD, ACPR, DDA ? Parce que si je me prends un contrôle...",
+        "sous_texte": "Question technique légitime mais aussi test pour voir si vous connaissez l'environnement réglementaire spécifique du courtage. Si vous bégayez sur ACPR/DDA, vous perdez toute crédibilité.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Connaître les acronymes ACPR (Autorité de Contrôle Prudentiel) et DDA (Directive Distribution Assurance), avoir la doc de conformité prête"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau formation, ça prend combien de temps ? Parce que mes commerciaux ils sont déjà à 110%, je peux pas les bloquer 3 jours en salle de formation.",
+        "sous_texte": "Peur de la perte de productivité pendant la montée en compétence. Teste la complexité réelle de l'outil et votre compréhension de ses contraintes opérationnelles.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer un temps de formation réaliste et court (2-3h max par personne), proposer du e-learning asynchrone, formation par vagues"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons que je sois intéressée. Il faut que je voie ça avec Martine d'abord, mon assistante de direction. C'est elle qui gère tous nos outils au quotidien.",
+        "sous_texte": "Tactique dilatoire classique MAIS aussi vérité : Martine est vraiment influente. Teste si vous allez accepter d'impliquer Martine (bonne idée) ou insister pour closer sans elle (erreur).",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un deuxième RDV incluant Martine, valoriser son rôle, en faire une alliée plutôt qu'un obstacle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Soupir... Écoutez, je trouve ça intéressant mais là j'ai la tête dans mes bilans trimestriels et deux dossiers contentieux. Je peux pas me projeter sur un nouveau projet avant au moins 2-3 mois.",
+        "sous_texte": "Mélange de vraie contrainte timing ET de prétexte pour temporiser. Teste votre capacité à qualifier l'urgence réelle vs à insister lourdement. Peut-être aussi un test de persistance intelligente.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le timing mais sécuriser un point de contact intermédiaire, proposer de commencer la réflexion en parallèle sans engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est combien exactement par mois ? Parce que si on dépasse 2 000 euros mensuels, je dois voir avec mon expert-comptable et là ça rallonge tout.",
+        "sous_texte": "Vraie contrainte budgétaire mais aussi négociation implicite. Donne un plafond psychologique. Teste si vous allez annoncer un prix supérieur (et comment vous allez le justifier).",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Si prix <2K€ : annoncer directement. Si >2K€ : décomposer la valeur, proposer un phasage ou impliquer l'expert-comptable dans un RDV ROI"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous avez des références que je peux appeler ? Pas des témoignages sur votre site hein, des vrais courtiers que je peux contacter directement.",
+        "sous_texte": "Test de confiance ultime. Veut vérifier dans son réseau professionnel (qu'elle connaît bien) si vos promesses sont vraies. Si vous refusez ou proposez des références bidons, deal mort.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Avoir 2-3 clients courtiers similaires qui ont accepté d'être contactés. Si possible dans sa région. Donner coordonnées complètes sans hésiter"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais être cash avec vous : j'ai besoin de réfléchir. Envoyez-moi un récap par mail avec tout ce qu'on s'est dit, et je vous rappelle la semaine prochaine.",
+        "sous_texte": "Peut être un vrai besoin de maturation MAIS souvent une porte de sortie polie. Teste si vous allez relancer intelligemment ou harceler. Veut garder le contrôle du timing.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter, envoyer un récap ultra-structuré le jour même, proposer une date de rappel précise plutôt que 'je vous laisse revenir vers moi'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On a déjà prévu d'autres investissements cette année : refonte du site web et un nouveau standard téléphonique. Budget IT bouclé jusqu'en décembre.",
+        "sous_texte": "Vraie contrainte budgétaire annuelle. Teste votre capacité à soit proposer un phasage 2025, soit à démontrer que c'est plus prioritaire que site/standard.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un démarrage post-budget 2024 avec engagement maintenant OU démontrer le coût d'opportunité de retarder (leads perdus chiffrés)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, et si ça marche pas ? Vous avez une période d'essai ? Une clause de sortie ? Parce que je veux pas me retrouver bloquée 3 ans sur un contrat.",
+        "sous_texte": "Peur de l'engagement long suite au trauma Salesforce. Veut une porte de sortie rassurante. Légitime mais teste aussi votre flexibilité contractuelle et votre confiance dans votre produit.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer 1-3 mois de pilote satisfait ou remboursé, engagement mensuel ou trimestriel max la première année"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai un concurrent, Jean-Marc Dufour d'Assurances Conseil Plus, qui utilise un outil dans le même genre. Je vais lui demander son retour d'expérience d'abord.",
+        "sous_texte": "Vraie démarche prudente. Va réellement demander dans son réseau. Si Jean-Marc dit du mal de votre solution ou utilise un concurrent, deal compliqué. Teste votre réaction.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Si c'est votre client : encourager l'appel. Si c'est un concurrent : proposer d'autres références. Si inconnu : proposer de faciliter la mise en relation"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, soyons honnêtes : vous me proposez un truc intéressant mais je suis pas sûre à 100%. J'ai déjà donné avec des promesses qui finissent en usine à gaz. Qu'est-ce qui me garantit que dans 6 mois, je serai pas en train de regretter ?",
+      "condition_declenchement": "Après 35-40 minutes d'échange, si elle est intéressée mais pas encore totalement convaincue. Objection finale de synthèse qui révèle sa vraie peur : refaire l'erreur du passé. Moment décisif où elle attend THE argument qui va la faire basculer."
+    },
+    "pattern_escalade": "Véronique commence par des objections réflexes de protection (temps, sollicitations multiples). Si vous passez ce premier filtre avec crédibilité, elle passe en mode TEST : questions techniques métier, références, différenciation. Si vous réussissez les tests, elle révèle ses VRAIES objections sincères : trauma Salesforce, peur adoption équipe, contraintes budget/timing. En closing, elle mélange tactiques dilatoires (Martine, expert-comptable) et tests finaux de confiance (références clients). Son pattern : elle vous donne des chances successives de prouver votre crédibilité, mais à la moindre langue de bois ou méconnaissance métier, elle ferme définitivement.",
+    "piege_classique": "Critiquer son organisation actuelle (Excel/WhatsApp) ou son logiciel AS-Courtage dans les 10 premières minutes = mort instantanée de la relation. Véronique défendra son existant avec véhémence même si elle sait que c'est limité. Il faut d'abord reconnaître que 'ça marche' puis montrer en quoi vous COMPLÉTEZ plutôt que REMPLACEZ. Autre piège : ne pas impliquer Martine assez tôt alors que c'est une vraie influenceuse. Enfin : promettre un ROI irréaliste ou un déploiement rapide sans phase pilote = rappel douloureux de l'échec Salesforce."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B services aux professionnels de l'assurance",
+      "description": "Entreprise proposant une solution B2B pour les cabinets de courtage et agences d'assurance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée à améliorer l'activité des cabinets de courtage et agences d'assurance (productivité, acquisition, gestion, digital...)",
+      "proposition_valeur": "Aide les gérants d'agences d'assurance à optimiser leur activité professionnelle",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrage secrétariat et obtenir des RDV qualifiés avec les décideurs d'agences d'assurance",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Courtage d'assurance indépendant",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour cabinets de courtage et agences d'assurance indépendantes.",
+    "vous_vendez": "Une solution digitale qui aide les courtiers indépendants à réduire leur temps de traitement des devis, améliorer le suivi client et automatiser la gestion administrative.",
+    "vous_appelez": "Véronique Tessier, 52 ans, gérante de Tessier Assurances & Courtage (14 salariés, 1,8M€ CA). Pragmatique, cash, méfiante après 25 ans de métier. Protégée par Martine, son assistante fidèle qui filtre tout.",
+    "ce_que_vous_savez": [
+      "Structure indépendante sous pression : commissions en baisse de 12% sur 3 ans",
+      "Deux commerciaux seniors partent en retraite d'ici 18 mois",
+      "Échec CRM Salesforce il y a 4 ans (15K€ perdus, trop complexe)",
+      "Utilise AS-Courtage + Excel + WhatsApp Business en mode artisanal",
+      "Reçoit 12-15 appels commerciaux par semaine, très blasée"
+    ],
+    "votre_objectif": "Passer le barrage de Martine, puis convaincre Véronique d'accepter un RDV de 20 minutes en parlant son langage métier.",
+    "vos_atouts": [
+      "Vous connaissez la différence entre courtier indépendant et agent général",
+      "Vous parlez en ROI, taux de transformation et panier moyen, pas en jargon digital",
+      "Vous avez des références vérifiables dans des agences de taille similaire",
+      "Vous proposez un test gratuit limité sur 1-2 utilisateurs"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:46:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16985,
+    "total_time_s": 165.2
+  }
+}

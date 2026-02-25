@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771524090",
+  "description_originale": "Le DSI ou VP Sales d'une éditeur SaaS de 150-300 salariés, plusieurs produits, marché B2B (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : tech_saas]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "DSI ou VP Sales",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Potentiellement : DAF, Directeur Général, équipes techniques, Legal"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution SaaS B2B (plusieurs produits) pour comptes clés",
+      "proposition_valeur_presumee": "Fiabilité, continuité de service, support premium pour comptes stratégiques",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Client furieux et insatisfait",
+        "Menace de pénalités contractuelles",
+        "Risque de perte du contrat"
+      ],
+      "implicites": [
+        "Rupture de confiance client",
+        "SLA probablement non respecté",
+        "Image de marque dégradée auprès d'un compte clé",
+        "Risque de bad buzz dans l'écosystème SaaS",
+        "Équipe commerciale mal préparée à la gestion de crise",
+        "Manque de protocoles de remontée d'incident",
+        "Communication de crise défaillante"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas gérer une situation de crise client avec un compte stratégique en colère, négocier sous pression émotionnelle forte, et transformer une menace contractuelle en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "Activation de pénalités contractuelles",
+      "Remise en cause de la fiabilité du service",
+      "Perte de confiance",
+      "Impact business mesurable chez le client"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la négociation sous pression, et à la construction d'un plan de résolution crédible pour sauver un contrat stratégique menacé",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de solutions SaaS B2B multi-produits",
+      "entreprise_description": "Éditeur SaaS proposant plusieurs produits à destination de comptes clés B2B, avec des engagements contractuels de service",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solutions SaaS critiques pour l'activité des clients comptes clés, avec SLA et engagement de disponibilité",
+      "proposition_valeur": "Fiabilité, disponibilité, support dédié, expertise métier, continuité de service pour clients stratégiques",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise de l'incident",
+        "Durée de la relation commerciale",
+        "Montant du contrat en jeu",
+        "Détails des pénalités contractuelles",
+        "Historique de la relation client",
+        "Éléments du plan de résolution attendus"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Optimia Logistics",
+        "secteur": "Logistique et transport B2B",
+        "taille": "220 salariés",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant après déceptions techniques répétées",
+        "Perfectionniste exigeant sur les process",
+        "Protecteur vis-à-vis de sa réputation interne"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX qu'il maîtrise ses prestataires après 18 mois de critiques sur 'ses choix tech'",
+        "Éviter à tout prix un second incident qui le discréditerait définitivement",
+        "Obtenir des garanties béton pour se couvrir politiquement en interne",
+        "Restaurer sa crédibilité auprès des Ops qui ont subi l'incident"
+      ],
+      "peurs_freins": [
+        "Être celui qui a fait perdre des clients à cause d'un mauvais choix de solution",
+        "Que la DG découvre l'ampleur réelle des dégâts (il a minimisé en COMEX)",
+        "Que ses équipes révèlent qu'il avait ignoré des alertes techniques 3 semaines avant",
+        "Paraître faible s'il ne fait pas payer lourdement le prestataire"
+      ],
+      "rapport_aux_commerciaux": "Glacial depuis l'incident. Considère qu'ils promettent n'importe quoi en phase de vente puis disparaissent quand ça se gâte. A été échaudé 2 fois dans sa carrière par des discours commerciaux vides. Respecte uniquement ceux qui admettent les failles techniques sans langue de bois.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, coupant, avec sarcasmes à peine voilés. Commence par 'Alors, on a trouvé des excuses cette fois ?' ou 'J'espère que vous n'allez pas me sortir le couplet habituel sur la force majeure'.",
+      "signaux_interet": [
+        "Arrête de couper pour noter précisément des chiffres techniques",
+        "Demande 'Vous pouvez me l'envoyer par écrit avec engagement contractuel ?'",
+        "Évoque spontanément le DAF : 'Parce que Christophe va me demander des garanties financières'",
+        "Silence prolongé (il réfléchit intensément aux implications politiques internes)"
+      ],
+      "signaux_rejet": [
+        "Soupir exaspéré audible suivi de 'Écoutez, j'ai trois appels derrière'",
+        "Ton professoral condescendant : 'Vous comprenez ce que signifie SLA de 99,9% j'espère ?'",
+        "Évocation du contrat avec insistance : 'L'article 12.3 prévoit des pénalités de 15% par jour'",
+        "Mentionne immédiatement la concurrence : 'CloudForce nous a déjà contactés avec une offre de migration gratuite'"
+      ],
+      "tics_langage": [
+        "Abuse des anglicismes tech pour tester la compétence : 'Votre rollback procedure est-elle ISO 27001 compliant ?'",
+        "Dit systématiquement 'Très bien' avec un ton qui signifie le contraire",
+        "Répète 'Concrètement' avant chaque relance agacée",
+        "Utilise 'Nous' majestueux quand il parle au nom de l'entreprise pour marquer son pouvoir"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "10 secondes maximum. Coupe net avec 'Oui mais concrètement, qu'est-ce qui change par rapport à avant l'incident ?' S'il sent du blabla, raccroche sous prétexte d'urgence technique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 23% sur le semestre mais tensions énormes sur la supply chain. L'incident SaaS a provoqué 6h d'arrêt du TMS, bloquant 140 expéditions et générant 87K€ de surcoûts (transport express de rattrapage). Deux clients B2B majeurs ont menacé de rompre. Le DG a convoqué Laurent en one-to-one la veille et lui a dit texto : 'C'est réglé sous 10 jours ou on change de prestataire, voire de DSI'.",
+      "priorites_actuelles": [
+        "Obtenir un plan de remédiation technique avec engagement de moyens chiffrés (serveurs, équipes dédiées...)",
+        "Négocier 100K€ de dédommagement minimum pour couvrir les surcoûts ET se refaire une image en interne",
+        "Sécuriser un point de contact C-level côté éditeur (plus jamais de support niveau 1)",
+        "Préparer un plan B crédible pour montrer à la DG qu'il a des alternatives"
+      ],
+      "experience_avec_offre_similaire": "3ème solution SaaS logistique en 5 ans. Les deux premières (OnTracks puis FleetPro) ont été migrées après incidents. Laurent en garde un syndrome du 'déjà vu' qui le rend ultra-suspicieux sur toute promesse d'amélioration.",
+      "fournisseur_actuel": "Contrat de 3 ans signé il y a 14 mois, reste 22 mois. Montant annuel 180K€. Clause de sortie anticipée possible avec 6 mois de préavis + pénalité de 20% du restant dû. Laurent a déjà demandé un chiffrage de migration à CloudForce (le sait, mais pas que Laurent a aussi reçu une offre agressive de DataFlow).",
+      "budget_disponible": "Officiellement aucun budget supplémentaire (déjà consommé 92% du budget IT annuel). MAIS Laurent sait que la DG débloquera si nécessaire pour éviter le scandale. En revanche, tout euro supplémentaire versé au prestataire actuel sera vu comme un aveu de faiblesse de sa part."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance factuelle immédiate de la gravité SANS excuse bateau (Laurent a horreur du 'nous nous excusons pour la gêne occasionnée')",
+        "Présentation d'un RCA (Root Cause Analysis) technique détaillé prouvant la compréhension en profondeur",
+        "Proposition d'audit indépendant de l'infrastructure aux frais de l'éditeur",
+        "Engagement personnel du VP Engineering sur un plan de résilience chiffré (coûts infrastructure visibles)",
+        "Compensation financière proposée AVANT qu'il ne la demande (renverse le rapport de force)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou trouver des circonstances atténuantes ('Tous nos autres clients n'ont rien eu')",
+        "Citer des clauses contractuelles pour limiter la responsabilité (Laurent les connaît par cœur, tentera de piéger)",
+        "Promettre un simple 'patch' ou 'monitoring renforcé' sans changement architectural",
+        "Laisser entendre que ses équipes internes ont une part de responsabilité (même si c'est vrai)",
+        "Proposer une réunion technique de niveau 2 au lieu de traiter le sujet politique/contractuel immédiatement"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah super, j'attendais votre appel. Vous savez combien ça nous a coûté vos six heures d'arrêt ? 87 000 euros. Sans compter les deux clients qu'on a failli perdre. Alors j'espère que vous n'allez pas me sortir le couplet habituel sur la force majeure.",
+        "sous_texte": "Je suis furieux, humilié en interne, et je veux que vous sentiez immédiatement le poids de vos conséquences. Je teste si vous allez jouer la carte de l'excuse corporate vide ou si vous assumez vraiment.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer factuellement sans détour, montrer qu'on connaît déjà les chiffres d'impact, ne PAS chercher à minimiser"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, avant qu'on aille plus loin, dites-moi franchement : est-ce que cet appel c'est pour me rassurer avec des belles promesses ou vous avez vraiment quelque chose de concret à me proposer ? Parce que des réunions de debriefing, j'en ai eu trois cette semaine.",
+        "sous_texte": "Je n'ai aucune confiance, je suis épuisé par la gestion de crise, et je ne veux pas perdre de temps en discussions creuses. Prouvez-moi en 30 secondes que cet appel a un intérêt ou je raccroche.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement l'agenda concret : RCA + plan + compensation. Pas de langue de bois."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Très bien, très bien... Et qui me dit que votre 'analyse approfondie' ne va pas conclure comme d'habitude que c'est un pic de charge imprévisible ou une mise à jour tierce ? Vous comprenez que j'ai besoin de savoir QUI a merdé exactement ?",
+        "sous_texte": "Je veux des coupables identifiés, pas une analyse technico-politique édulcorée. Je dois me couvrir en interne en montrant que ce n'était pas mon erreur de choix de prestataire.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur la cause racine, sans jargon d'évitement, même si ça expose l'éditeur"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, entre nous, vous pensez vraiment que je vais croire qu'un éditeur de votre taille n'a pas de procédure de rollback automatique en 2025 ? Parce que là, honnêtement, soit vous êtes incompétents, soit vous me prenez pour un con.",
+        "sous_texte": "Je vous provoque pour voir si vous allez vous défendre maladroitement ou reconnaître une vraie faille. Je teste votre capacité à tenir sous pression et votre honnêteté technique.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la faille process sans se justifier, expliquer pourquoi elle existait, annoncer la correction structurelle"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, laissez-moi vous poser une question : est-ce que VOS équipes internes utilisent votre propre solution en production critique ? Parce que si c'est pas le cas, ça veut tout dire non ?",
+        "sous_texte": "Je cherche à vous piéger sur la confiance que vous avez réellement dans votre produit. C'est une question technique mais surtout philosophique sur votre crédibilité.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre factuellement (oui/non) puis recentrer sur les mesures correctives spécifiques pour Optimia"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, qu'est-ce qui m'assure que dans trois mois on n'aura pas exactement le même problème ? Vous me dites 'monitoring renforcé', 'équipe dédiée'... OnTracks et FleetPro m'ont déjà fait le coup. Résultat : deux migrations en quatre ans.",
+        "sous_texte": "J'ai un PTSD des promesses d'éditeurs SaaS. Je ne crois plus aux mots, uniquement aux preuves contractuelles et aux changements architecturaux visibles. Convainquez-moi que cette fois c'est différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Preuves tangibles : architecture before/after, investissements chiffrés, audit tiers, pénalités auto-imposées renforcées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis franchement, même si vous réglez le problème technique, comment je vends ça en interne ? Le DG m'a convoqué hier, il m'a dit texto : 'C'est réglé sous 10 jours ou on change de prestataire, voire de DSI'. Donc votre plan de remédiation sur six semaines, ça ne passe pas.",
+        "sous_texte": "Ma survie politique interne est en jeu. Vous devez comprendre que ce n'est plus un sujet technique mais un sujet de crédibilité personnelle. Aidez-moi à avoir des munitions pour tenir face à ma direction.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Co-construire une communication COMEX, proposer intervention d'un C-level de l'éditeur, quick-wins immédiats + roadmap long terme"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'investissements dans l'infrastructure, de ressources supplémentaires... Très bien. Mais qui paie tout ça ? Parce que si vous venez me demander un avenant budgétaire pour corriger VOS erreurs, là je vais vraiment péter un câble.",
+        "sous_texte": "Je teste si vous allez essayer de me facturer indirectement les corrections. Je suis sur mes gardes financièrement. Toute tentative de me faire payer sera considérée comme une insulte finale.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier immédiatement : investissements à la charge de l'éditeur, aucun coût supplémentaire pour le client, possiblement compensation financière"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et votre plan de résilience, il est ISO 27001 compliant ? Parce que notre clause contractuelle article 8.2 stipule que toute modification d'architecture doit respecter nos standards de sécurité. Vous avez vérifié ça avec vos équipes techniques ?",
+        "sous_texte": "Je vous teste sur votre préparation et votre maîtrise des détails contractuels. Je vérifie aussi si vous avez vraiment impliqué vos équipes tech ou si c'est du vent commercial. Accessoirement, je me couvre avec une référence contractuelle.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Confirmer l'implication des équipes tech, engagement de conformité, proposer validation conjointe avec les équipes du client"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, votre proposition est intéressante sur le papier. Mais j'ai CloudForce qui nous a contactés avec une offre de migration gratuite, trois mois d'accompagnement offerts, et une pénalité de 20% sur la facturation s'ils ont un incident dans la première année. Pourquoi je resterais avec vous ?",
+        "sous_texte": "Je veux que vous fassiez mieux. Je teste votre capacité à réagir sous pression concurrentielle. Mais attention : si vous surenchérissez trop vite, je saurai que vous étiez capable de faire mieux depuis le début et ça confirmera ma méfiance.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas surenchérir frénétiquement. Valoriser l'investissement déjà fait (données, process, formation), proposer plan de garantie équivalent PLUS continuité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Admettons que j'accepte votre plan. Concrètement, qui sera mon interlocuteur si ça se reproduit ? Parce que là, pendant l'incident, j'ai eu le support niveau 1 qui me disait 'nous remontons l'information'. Six heures à attendre ! Je veux un numéro direct, un engagement de réponse en moins de 15 minutes, et un nom.",
+        "sous_texte": "Je ne négocie plus sur le fond, je négocie sur l'exécution. Je veux des garanties opérationnelles concrètes et personnalisées. C'est ma condition sine qua non pour continuer. Je teste aussi si vous avez le pouvoir d'engager votre organisation.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Nommer un TAM dédié, donner contact C-level pour escalade, proposer protocole de crise documenté et contractualisé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et la compensation financière, concrètement, on parle de combien ? Parce que 87K de surcoûts directs, mais moi j'ai aussi le coût de gestion de crise, les heures sup de mes équipes, la perte de marge sur les deux contrats clients... Si vous me proposez 10K de geste commercial, autant arrêter là.",
+        "sous_texte": "Je veux un chiffre qui montre que vous avez vraiment compris la gravité. Je vous teste sur votre courage commercial : allez-vous annoncer un montant ambitieux ou allez-vous négocier au centime près comme un radin ?",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un montant substantiel (50-70K minimum) en une fois, expliquer la logique de calcul, montrer qu'on a anticipé cette question"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Très bien, très bien... Mais je vais être transparent avec vous : mes équipes m'ont fait remonter qu'il y avait eu des alertes monitoring trois semaines avant l'incident. Donc si je découvre que vous étiez au courant et que vous n'avez rien fait, là c'est négligence caractérisée et je ne lâcherai rien sur les pénalités contractuelles.",
+        "sous_texte": "Je vous tends un piège. Je sais que mes équipes auraient dû remonter ces alertes mais ne l'ont pas fait. Je renverse la responsabilité pour voir comment vous réagissez. Si vous accusez mes équipes, c'est terminé. Si vous assumez sans broncher, je réviserai mon jugement.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne PAS accuser les équipes client. Reconnaître si alertes côté éditeur existaient, proposer protocole d'alerte conjoint renforcé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Soyons clairs : même si on trouve un accord aujourd'hui, je dois présenter ça au DAF et au DG d'ici vendredi. Christophe, notre DAF, va me demander des garanties financières contractuelles. Vous êtes prêts à signer un avenant avec des pénalités renforcées en cas de nouvel incident ?",
+        "sous_texte": "Je me couvre politiquement. Je veux que vous vous engagiez de façon contraignante pour pouvoir le présenter en COMEX. Je teste si vous avez le pouvoir de négocier des clauses contractuelles ou si vous devez remonter (ce qui retarderait tout).",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confirmer capacité à négocier un avenant, proposer pénalités progressives réalistes, impliquer le Legal de l'éditeur rapidement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Une dernière chose : vous comprenez que mes équipes Ops, celles qui ont géré la crise pendant six heures un samedi matin, elles ne vous portent pas dans leur cœur. Si je leur dis qu'on reste avec vous, je vais passer pour quoi ? Pour le mec qui se couche devant l'éditeur ?",
+        "sous_texte": "Mon autorité interne est fragilisée. Je dois restaurer mon leadership vis-à-vis de mes équipes techniques. Vous devez m'aider à leur montrer que j'ai obtenu quelque chose de significatif, que je les ai vengés symboliquement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer session de feedback directe avec les équipes Ops, reconnaissance publique de leur travail, formation technique offerte"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, on a fait le tour. Votre proposition est recevable, je ne vais pas vous mentir. Mais je vais être cash avec vous : j'ai aussi DataFlow qui m'a envoyé une offre hier soir, avec migration prise en charge et six mois gratuits. Ils m'ont dit qu'ils pouvaient démarrer sous trois semaines. Donc concrètement, pourquoi je prendrais le risque de continuer avec vous plutôt que de partir sur du neuf, sans historique pourri, avec un éditeur qui a quelque chose à prouver ?",
+      "condition_declenchement": "Se déclenche après argumentation complète si le commercial n'a pas suffisamment valorisé la continuité, ou si la compensation financière proposée est jugée insuffisante, ou si Laurent sent qu'il a encore du pouvoir de négociation à exploiter"
+    },
+    "pattern_escalade": "Laurent commence froid et coupant (objections réflexe agressives). Si le commercial tient le choc sans se défendre maladroitement, il passe en mode 'test de crédibilité technique' avec questions pièges. S'il sent de la sincérité ET de la compétence, il révèle progressivement ses vraies contraintes internes (pression DG, situation politique). L'escalade finale consiste à jouer la carte concurrentielle pour maximiser les gains (compensation + garanties). Si le commercial gère l'ensemble sans rompre, Laurent montrera un micro-signal de respect (silence de réflexion, 'Écoutez, je vais être transparent avec vous...') qui indique une ouverture réelle.",
+    "piege_classique": "Laurent va tenter de faire porter une part de responsabilité aux équipes techniques du client qui n'ont pas remonté les alertes. S'il réussit à faire dire au commercial que 'les équipes du client auraient dû réagir plus tôt', il explosera et claquera la porte en accusant l'éditeur de mauvaise foi. C'est son test ultime d'intégrité : le commercial doit assumer à 100% sans chercher de circonstances atténuantes externes, même si techniquement il y a une part de vérité."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de solutions SaaS B2B multi-produits",
+      "description": "Éditeur SaaS proposant plusieurs produits à destination de comptes clés B2B, avec des engagements contractuels de service"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solutions SaaS critiques pour l'activité des clients comptes clés, avec SLA et engagement de disponibilité",
+      "proposition_valeur": "Fiabilité, disponibilité, support dédié, expertise métier, continuité de service pour clients stratégiques",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la négociation sous pression, et à la construction d'un plan de résolution crédible pour sauver un contrat stratégique menacé",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Client stratégique après incident majeur",
+    "vous_etes": "Account Manager chez un éditeur SaaS B2B, en charge du compte Optimia Logistics (180K€/an, 14 mois de contrat).",
+    "vous_vendez": "Solution SaaS critique pour la logistique avec engagement SLA 99,9% — contrat 3 ans en cours.",
+    "vous_appelez": "Laurent Mercier, 47 ans, DSI d'Optimia Logistics (220 salariés, logistique B2B). Profil analytique, méfiant après deux échecs de migration SaaS précédents. Sous pression du DG après l'incident.",
+    "ce_que_vous_savez": [
+      "Incident il y a 8 jours : 6h d'arrêt du TMS, 140 expéditions bloquées, 87K€ de surcoûts transport express",
+      "Deux clients B2B majeurs d'Optimia ont menacé de rompre suite à l'incident",
+      "Laurent a reçu un ultimatum du DG : résolu sous 10 jours ou changement de prestataire",
+      "CloudForce (concurrent) a déjà contacté Optimia avec offre de migration gratuite",
+      "Laurent a minimisé l'ampleur réelle des dégâts en COMEX — il est politiquement fragilisé"
+    ],
+    "votre_objectif": "Sauver le contrat en obtenant un accord sur un plan de remédiation technique + compensation financière, tout en restaurant la confiance et en désamorçant la menace de résiliation.",
+    "vos_atouts": [
+      "Analyse Root Cause complète réalisée par votre VP Engineering (prête à partager)",
+      "Budget de 120K€ débloqué par votre direction pour compensation + infrastructure renforcée",
+      "Engagement possible d'un audit indépendant ISO 27001 à vos frais",
+      "Accès direct au CTO de votre boîte pour engagement C-level"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:01:30Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17356,
+    "total_time_s": 168.9
+  }
+}

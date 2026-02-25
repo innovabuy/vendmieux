@@ -1,0 +1,370 @@
+{
+  "id": "scenario_1771523025",
+  "description_originale": "Le expert-comptable associé / gérant d'une cabinet comptable de 10-25 collaborateurs (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : comptabilite]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "reclamation_client",
+      "canal": "telephone",
+      "cycle_vente": "NON_APPLICABLE",
+      "temperature_prospect": "client_insatisfait"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "10-25 collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "expert-comptable associé / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution ou service destiné aux cabinets comptables",
+      "proposition_valeur_presumee": "Optimisation de la gestion du cabinet comptable, productivité, qualité de service",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Concurrence évoquée comme menace de changement de fournisseur"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité constaté",
+        "Client mécontent menace de partir à la concurrence",
+        "Risque de perte d'un client existant"
+      ],
+      "implicites": [
+        "Confiance dégradée dans la relation commerciale",
+        "Attentes initiales non satisfaites",
+        "Possibilité de problèmes récurrents non traités",
+        "Communication défaillante en amont du problème",
+        "Gestion de crise et service après-vente à améliorer"
+      ],
+      "probleme_racine": "Incapacité à gérer efficacement les réclamations clients et à transformer une crise en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "Menace de partir à la concurrence",
+      "Insatisfaction concernant la livraison/service/qualité"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise client : désamorcer les tensions, pratiquer l'écoute active, proposer des solutions concrètes, préserver et renforcer la relation commerciale dans un contexte conflictuel",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur de solutions/services pour cabinets comptables",
+      "entreprise_description": "Entreprise proposant des produits ou services aux professionnels de la comptabilité (logiciels, formations, matériel, services de gestion, etc.)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée à améliorer la performance et l'efficacité des cabinets comptables",
+      "proposition_valeur": "Fiabilité, qualité de service, support client réactif, amélioration de la productivité des cabinets comptables",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "Relation client établie, connaissance du cabinet, capacité de résolution rapide, flexibilité dans les solutions",
+      "objectif_appel": "retention_client",
+      "type_prospection": "gestion_reclamation_client_existant"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service fourni",
+        "Détails du problème de qualité/livraison/service",
+        "Historique de la relation commerciale",
+        "Valeur du contrat client",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bernard",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Expert-comptable associé gérant",
+      "entreprise": {
+        "nom": "Cabinet Mercier & Associés",
+        "secteur": "Expertise comptable et conseil",
+        "taille": "17 collaborateurs (3 experts-comptables, 2 chefs de mission, 9 collaborateurs comptables, 3 administratifs)",
+        "ca_approximatif": "1,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeant et perfectionniste (valorise la rigueur absolue)",
+        "Loyal mais rancunier quand trahi",
+        "Pragmatique terre-à-terre, déteste le baratin commercial"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation professionnelle construite en 25 ans",
+        "Maintenir la qualité de service irréprochable envers ses propres clients",
+        "Éviter à tout prix d'être perçu comme celui qui a fait le mauvais choix de fournisseur",
+        "Prouver à ses associés qu'il maîtrise la situation"
+      ],
+      "peurs_freins": [
+        "Perdre des clients à cause d'un dysfonctionnement lié à un outil défaillant",
+        "Être ridiculisé devant ses collaborateurs par un fournisseur peu fiable",
+        "Devoir avouer à ses associés qu'il s'est trompé dans le choix du prestataire",
+        "Perdre du temps dans des palabres alors qu'il a 40 dossiers en retard"
+      ],
+      "rapport_aux_commerciaux": "Méfiant par défaut. A entendu trop de promesses non tenues. Respecte uniquement ceux qui admettent leurs erreurs franchement et proposent du concret immédiatement",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, cassant, avec une pointe d'agressivité contenue. Coupe la parole rapidement s'il sent de la langue de bois. Utilise un ton sarcastique quand il est vraiment énervé",
+      "signaux_interet": [
+        "Demande des détails techniques précis sur les solutions proposées",
+        "Mentionne spontanément un problème annexe qu'il pourrait aussi régler",
+        "Baisse légèrement le ton et rallonge ses réponses",
+        "Dit 'Bon, on verra' au lieu de 'De toute façon c'est fichu'"
+      ],
+      "signaux_rejet": [
+        "Soupirs exaspérés audibles au téléphone",
+        "Phrases courtes et sèches : 'Oui', 'Non', 'C'est tout ?'",
+        "Mentionne explicitement un concurrent : 'Chez Cegid ils m'ont déjà appelé vous savez'",
+        "Regarde ostensiblement sa montre ou fait autre chose en même temps (bruit de clavier)",
+        "Formule finale : 'Bon écoutez, j'ai mes bilans à boucler là'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il est contrarié",
+        "Utilise 'franchement' comme tic de ponctuation",
+        "Dit 'Voilà quoi' en fin de phrase pour clore le sujet",
+        "Emploie l'expression 'Moi je veux bien mais...' pour exprimer son scepticisme"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum avant interruption. Attend du concret, des chiffres, des dates. Tolérance zéro pour les généralités type 'nous mettons tout en œuvre'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Période de clôture comptable (mars-avril), cabinet sous pression. L'outil défaillant a causé un retard de 3 jours sur la saisie de données pour 12 clients. Bernard a dû présenter des excuses à un client important qui menaçait de partir. Ses collaborateurs se plaignent ouvertement de l'outil 'qui plante tout le temps'",
+      "priorites_actuelles": [
+        "Boucler 38 bilans avant le 5 mai sans autre incident",
+        "Restaurer immédiatement la confiance de ses équipes dans les outils",
+        "Éviter qu'un autre client ne se plaigne",
+        "Prendre une décision définitive sur le fournisseur avant l'été"
+      ],
+      "experience_avec_offre_similaire": "Utilisateur depuis 14 mois. Les 8 premiers mois se sont bien passés, mais depuis 6 mois, incidents récurrents (3 bugs majeurs, 2 lenteurs système, 1 perte de données heureusement récupérée). Le support technique met parfois 48h à répondre",
+      "fournisseur_actuel": "Vous êtes le fournisseur actuel en situation d'échec",
+      "budget_disponible": "Possède encore 18 mois de contrat avec vous. Budget de migration vers concurrent estimé à 15K€ (formation, reprise données, perte productivité). Préférerait ne pas changer mais se sent trahi et considère sérieusement l'option"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et franche de l'erreur, sans chercher d'excuse ni de justification technique",
+        "Proposition d'un plan d'action concret avec dates précises et nom du responsable attitré",
+        "Offre d'un geste commercial chiffré immédiatement (remise, mois offert, prestation gratuite)",
+        "Engagement personnel du commercial à être joignable directement en cas de nouveau problème",
+        "Démonstration qu'on a compris l'impact sur SA réputation, pas juste sur 'notre partenariat'",
+        "Mention d'un cas client similaire résolu avec succès (cabinet comptable précis, situation comparable)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou rejeter la faute sur un facteur externe",
+        "Jargon technique pour noyer le poisson",
+        "Promettre de 'remonter l'information' sans action immédiate",
+        "Lui demander de 'patienter encore un peu' ou 'nous faire confiance'",
+        "Invoquer les CGV ou des clauses contractuelles pour se dédouaner",
+        "Tenter de le convaincre que ce n'est 'pas si grave que ça'",
+        "Parler du 'partenariat' ou de 'relation gagnant-gagnant' sans actes concrets",
+        "Durée d'appel dépassant 12 minutes sans solution tangible proposée"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est maintenant que vous appelez ? Franchement, il aurait fallu m'appeler il y a trois jours quand tout plantait, pas maintenant !",
+        "sous_texte": "Je suis furieux qu'on me contacte uniquement quand c'est arrangeant pour vous, pas quand MOI j'avais besoin d'aide en urgence",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître immédiatement le retard inacceptable sans chercher à se justifier, montrer qu'on comprend la gravité de ne pas avoir été là au bon moment"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai 38 bilans à boucler avant le 5 mai, votre appel tombe vraiment mal là. Qu'est-ce que vous voulez exactement ?",
+        "sous_texte": "Je suis sous pression maximale et votre problème me fait perdre du temps. Prouvez-moi en 10 secondes que cet appel va m'aider, sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer qu'on sait exactement pourquoi il est sous pression et qu'on a une solution concrète qui lui fera GAGNER du temps, pas en perdre"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez ce qui s'est passé ? Mais vous le savez très bien ce qui s'est passé ! Trois jours de blocage, douze dossiers clients en retard, et moi qui présente mes excuses à un client qui vaut 45K€ de CA ! Voilà ce qui s'est passé !",
+        "sous_texte": "Je suis scandalisé que vous n'ayez pas pris la peine de vous renseigner avant de m'appeler. Vous me faites perdre du temps à répéter ce que vous devriez déjà savoir",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Confirmer qu'on connaît tous les détails et qu'on appelle justement parce qu'on a déjà travaillé sur une solution, pas pour faire l'état des lieux"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien vous expliquer, mais franchement c'est la troisième fois en six mois qu'on a ce genre de souci. À un moment, c'est pas un incident isolé hein, c'est un problème de fond votre truc.",
+        "sous_texte": "Je ne veux plus entendre parler d'incident ponctuel. J'ai identifié un pattern et je vous mets face à vos responsabilités systémiques",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le pattern sans détour, montrer qu'on a analysé les causes racines des trois incidents et qu'on a un plan structurel, pas juste un patch"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et mes collaborateurs là, vous savez ce qu'ils me disent ? Que l'outil il plante tout le temps et qu'ils en ont marre. Comment vous voulez que je les motive avec un outil pareil ?",
+        "sous_texte": "Ma crédibilité de dirigeant est atteinte devant mes équipes. C'est MOI qui ai choisi votre solution et maintenant je passe pour celui qui s'est planté",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'impact sur sa position de leader et proposer une action qui restaure sa crédibilité auprès de ses équipes (intervention, formation, engagement visible)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais bon, vous me dites ça maintenant, mais franchement on m'a déjà fait le coup trois fois. 'On va mettre en place, on va suivre, vous allez voir'. Et puis après plus rien, et ça replante deux mois plus tard.",
+        "sous_texte": "J'ai entendu trop de belles promesses qui n'ont jamais été tenues. Je ne crois plus aux discours, seulement aux preuves tangibles",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Abandonner les promesses verbales et donner immédiatement quelque chose de vérifiable : nom du responsable attitré, numéro direct, date de prochain point, engagement écrit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan d'action, un plan d'action... Moi ce que je veux c'est que ça marche, point. Je m'en fiche de vos plans, je veux que mes collaborateurs puissent bosser sans que ça plante.",
+        "sous_texte": "Arrêtez le jargon processuel. Je veux des résultats concrets visibles immédiatement, pas des PowerPoint de plan d'action",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Traduire chaque action du plan en bénéfice opérationnel immédiat pour ses collaborateurs avec des délais en heures, pas en semaines"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous savez, Cegid ils m'ont déjà contacté la semaine dernière. Et eux au moins, ils me font une proposition commerciale intéressante pour migrer. Vous, qu'est-ce que vous me proposez concrètement ?",
+        "sous_texte": "Je teste votre réactivité et votre capacité à faire un geste. J'ai une alternative crédible et je suis prêt à partir si vous ne montrez pas que vous tenez vraiment à me garder",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas entrer dans une surenchère commerciale immédiate, mais d'abord reconstituer la confiance avec du concret, puis proposer un geste commercial proportionné au préjudice subi"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, moi j'ai encore 18 mois de contrat avec vous. Si je casse maintenant, ça me coûte combien ? Parce que franchement, je commence à me dire que ce sera peut-être moins cher que de continuer à subir vos pannes.",
+        "sous_texte": "J'ai fait le calcul économique. Je suis prêt à perdre de l'argent pour partir si vous ne me donnez pas des garanties solides. Je ne bluffe pas",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Prendre au sérieux son calcul coût/bénéfice et lui montrer qu'on comprend que l'enjeu n'est pas financier mais la fiabilité. Proposer des garanties contractuelles contraignantes pour vous"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon d'accord, mais tout ça c'est bien beau, mais votre support technique là, ils mettent 48 heures à répondre ! Comment vous voulez que je vous fasse confiance avec un support pareil ?",
+        "sous_texte": "Le problème n'est pas que technique, c'est votre organisation entière qui dysfonctionne. Prouvez-moi que toute la chaîne va changer, pas juste le produit",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le dysfonctionnement du support et donner un circuit prioritaire avec engagement de délai contractuel (ex: réponse sous 4h, résolution sous 24h)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Moi je veux bien, mais franchement j'ai besoin de réfléchir là. C'est quand même pas rien de vous faire encore confiance après ce qui s'est passé.",
+        "sous_texte": "Je suis tenté par votre proposition mais j'ai peur de me faire avoir une nouvelle fois. J'ai besoin qu'on sécurise encore plus mon engagement avant de dire oui",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter son besoin de réflexion mais sécuriser en formalisant immédiatement les engagements par écrit et en fixant une date de point dans 48h maximum"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK, mais si ça replante encore une fois d'ici le 5 mai, vous comprenez que je serai obligé de partir hein ? Je peux pas me permettre un autre incident pendant la période de clôture.",
+        "sous_texte": "Je vous donne une dernière chance mais c'est la toute dernière. La moindre erreur et c'est terminé définitivement, je ne vous le pardonnerai pas",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter publiquement cette condition et proposer une clause de sortie sans pénalité si un incident majeur se reproduit d'ici là, pour montrer qu'on assume le risque"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, j'ai mes bilans à boucler là. Envoyez-moi tout ça par mail, je regarderai quand j'aurai le temps. Voilà quoi.",
+        "sous_texte": "Je veux clore la conversation car soit je ne suis pas convaincu, soit je suis convaincu mais submergé. Testez si vous êtes capable de closer sans être insistant",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter son timing mais sécuriser avec un micro-engagement : confirmer l'envoi immédiat du mail + un point téléphonique à date/heure précise dans les 48h"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour quoi ? Parce que si c'est encore pour me dire que vous avez bien reçu ma réclamation et que c'est en cours de traitement, vous pouvez raccrocher tout de suite hein.",
+        "sous_texte": "Je suis blasé des appels creux du service client. Si vous n'avez rien de concret à m'annoncer, vous me faites perdre mon temps",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer d'emblée qu'on appelle AVEC une solution concrète à lui présenter, pas pour faire un point d'étape"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ah mais moi je comprends rien à vos histoires techniques là ! Je suis expert-comptable, pas informaticien. Tout ce que je sais c'est que ça marchait pas et que j'ai perdu trois jours.",
+        "sous_texte": "Ne me noyez pas sous la technique pour justifier vos erreurs. Parlez-moi en termes d'impact métier, pas de jargon IT",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Abandonner immédiatement toute explication technique et traduire en impact métier et en solution concrète pour lui"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me proposez une remise de 10% ? Franchement, vous croyez que 10% ça compense les 45K€ de client que j'ai failli perdre ? Vous vous moquez de moi là ?",
+        "sous_texte": "Votre geste commercial est insultant par rapport au préjudice subi. Vous n'avez pas mesuré la gravité de la situation",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître que le préjudice est effectivement disproportionné et revoir immédiatement l'offre à la hausse avec justification claire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, vous me dites que ça va être résolu, mais concrètement, qu'est-ce qui me garantit que dans deux mois c'est pas le même cirque ?",
+        "sous_texte": "Je veux des garanties contractuelles, pas des promesses orales. Qu'est-ce que vous risquez VOUS si ça se reproduit ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer des garanties contractuelles avec pénalités à votre charge en cas de récidive, pour montrer que vous assumez le risque"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, je vais en parler avec mes associés parce que là franchement, ils commencent aussi à en avoir marre de vos histoires.",
+        "sous_texte": "Je ne suis plus seul décisionnaire. Ma crédibilité est tellement entamée que je dois maintenant valider avec les autres associés, ce qui n'était pas le cas avant",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une réunion avec les associés où VOUS présenterez le plan d'action, pour restaurer la confiance collectivement et retirer la pression de Bernard"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, franchement, j'apprécie l'effort que vous faites là maintenant, mais le mal est fait. Mes collaborateurs ont perdu confiance, moi j'ai perdu confiance, et je me suis senti complètement abandonné pendant trois jours. Alors oui vous me proposez des choses, mais franchement, je sais pas si c'est pas trop tard. Je vais réfléchir, mais je vous promets rien.",
+      "condition_declenchement": "Se déclenche si le commercial a bien géré les objections mais que Bernard sent qu'il manque encore l'engagement émotionnel sincère et la reconnaissance pleine et entière du préjudice HUMAIN subi, au-delà des solutions techniques"
+    },
+    "pattern_escalade": "Bernard commence sec et cassant (défense), puis si on reconnaît franchement l'erreur, il devient plus factuel et détaillé (test), ensuite si les solutions sont concrètes il passe en mode évaluatif critique (négociation), et enfin si tout est cohérent il exprime sa vulnérabilité (peur de se tromper à nouveau). Mais à tout moment, une phrase creuse ou une justification peut le faire basculer instantanément en mode fermeture définitive avec mention du concurrent.",
+    "piege_classique": "Le commercial tente de reconstruire la relation en parlant du 'partenariat' et de la 'confiance mutuelle' avant d'avoir proposé des actions concrètes qui réparent le préjudice. Bernard déteste qu'on parle de relation avant d'avoir prouvé par des actes qu'on mérite une seconde chance. Il faut d'abord AGIR (solutions + garanties + geste commercial), PUIS seulement parler de relation."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur de solutions/services pour cabinets comptables",
+      "description": "Entreprise proposant des produits ou services aux professionnels de la comptabilité (logiciels, formations, matériel, services de gestion, etc.)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée à améliorer la performance et l'efficacité des cabinets comptables",
+      "proposition_valeur": "Fiabilité, qualité de service, support client réactif, amélioration de la productivité des cabinets comptables",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "Relation client établie, connaissance du cabinet, capacité de résolution rapide, flexibilité dans les solutions"
+    },
+    "objectif_appel": {
+      "type": "retention_client",
+      "description": "Former les commerciaux à la gestion de crise client : désamorcer les tensions, pratiquer l'écoute active, proposer des solutions concrètes, préserver et renforcer la relation commerciale dans un contexte conflictuel",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "gestion_reclamation_client_existant",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Réclamation client — Cabinet comptable mécontent",
+    "vous_etes": "Account manager chez un éditeur de logiciel pour cabinets comptables.",
+    "vous_vendez": "Une solution de gestion comptable en SaaS, utilisée par le cabinet depuis 14 mois, contrat encore valable 18 mois.",
+    "vous_appelez": "Bernard Mercier, 52 ans, expert-comptable associé gérant du Cabinet Mercier & Associés (17 personnes). Exigeant, direct, à fleur de peau en ce moment.",
+    "ce_que_vous_savez": [
+      "3 bugs majeurs ces 6 derniers mois, dont un qui a causé 3 jours de retard sur 12 dossiers clients",
+      "Bernard a dû s'excuser auprès d'un client important qui a menacé de partir",
+      "Ses équipes se plaignent ouvertement de l'outil, sa crédibilité interne est atteinte",
+      "Vous êtes en pleine période de clôture (38 bilans à boucler avant le 5 mai)",
+      "Il évalue sérieusement un passage chez Cegid, budget migration estimé à 15K€"
+    ],
+    "votre_objectif": "Sauver le compte : désamorcer sa colère, reconnaître franchement l'erreur, proposer un plan d'action concret avec dates et geste commercial immédiat.",
+    "vos_atouts": [
+      "Vous connaissez son cabinet et ses spécificités métier depuis 14 mois",
+      "Migration vers concurrent = 15K€ + perte productivité qu'il préférerait éviter",
+      "Vous pouvez proposer un interlocuteur support dédié et joignable directement",
+      "Vous avez résolu un cas similaire chez Cabinet Lefort (25 personnes) en 10 jours avec succès"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:43:45Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16269,
+    "total_time_s": 151.2
+  }
+}

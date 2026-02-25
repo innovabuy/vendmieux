@@ -1,0 +1,343 @@
+{
+  "id": "scenario_1771523153",
+  "description_originale": "Le CEO / CTO d'une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : tech_saas]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO / CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution tech/SaaS (non précisée)",
+      "proposition_valeur_presumee": "solution technologique à forte valeur ajoutée pour éditeurs logiciels et agences digitales",
+      "fourchette_prix": "NON_SPECIFIE - perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à défendre le prix face aux objections",
+        "Risque de concéder trop de remise sans justification"
+      ],
+      "implicites": [
+        "Manque de confiance dans l'argumentation valeur",
+        "Absence de cadre structuré pour négocier",
+        "Tendance à céder trop rapidement sur le prix",
+        "Difficulté à quantifier le ROI de la solution"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas comment ancrer la valeur de la solution avant de discuter prix, et manquent de techniques pour négocier sans brader"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix en valorisant l'offre, maîtriser les techniques de négociation commerciale avec marges de manœuvre limitées, savoir créer de la valeur perçue plutôt que de concéder systématiquement des remises",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "tech/SaaS ou services B2B pour le secteur tech",
+      "entreprise_description": "Entreprise proposant une solution ou service destiné aux éditeurs de logiciels et agences digitales",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution technologique ou service à forte valeur ajoutée ciblant les startups et PME tech de 15-40 personnes",
+      "proposition_valeur": "Solution premium positionnée sur la valeur et non sur le prix, adaptée aux besoins des entreprises tech en croissance",
+      "prix_indicatif": "NON_SPECIFIE - positionnement premium avec marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Montant du prix ou de la remise en valeur absolue",
+        "Éléments de différenciation vs concurrence",
+        "Historique de la relation commerciale",
+        "Besoins spécifiques exprimés par le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thomas",
+      "nom": "Mercier",
+      "age": 38,
+      "poste": "CEO & Co-fondateur",
+      "entreprise": {
+        "nom": "Streamly",
+        "secteur": "SaaS - solution de gestion de workflows no-code pour agences digitales",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ ARR, croissance +65% sur 12 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et orienté ROI court terme",
+        "Méfiant envers les discours commerciaux trop léchés",
+        "Impatient avec une forte aversion pour la perte de temps"
+      ],
+      "motivations_profondes": [
+        "Prouver la viabilité de sa boîte aux investisseurs après une série A récente (1,5M€)",
+        "Scaler rapidement sans exploser les coûts fixes",
+        "Garder le contrôle des marges pour tenir ses projections financières",
+        "Être perçu comme un dirigeant malin qui ne se fait pas avoir"
+      ],
+      "peurs_freins": [
+        "S'engager sur un outil qui ne sera pas adopté par les équipes",
+        "Payer un prix 'pigeon' alors que d'autres ont eu mieux",
+        "Découvrir 3 mois après qu'une alternative moins chère fait pareil",
+        "Décevoir son board en gaspillant le cash levé sur des outils superflus"
+      ],
+      "rapport_aux_commerciaux": "Globalement sceptique. A eu des mauvaises expériences avec des vendeurs qui surpromettent. Respecte ceux qui connaissent vraiment leur produit et son écosystème tech. Déteste le bullshit et les tournures marketing creuses.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais légèrement distant, avec une pointe de test ('Bon, vendez-moi du rêve en 2 minutes')",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'implémentation",
+        "Demande des cas clients similaires avec chiffres à l'appui",
+        "Commence à projeter : 'Et si on avait besoin de scaler à 50 users...'",
+        "Ton qui se réchauffe, utilise le 'on' collectif"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole pour revenir au prix : 'Oui mais concrètement, ça coûte combien ?'",
+        "Soupir audible ou silence pesant",
+        "Phrases types : 'Mouais, j'ai déjà entendu ça 50 fois', 'C'est pas dans le budget, désolé'",
+        "Évoque immédiatement un concurrent moins cher même s'il ne le connaît pas vraiment",
+        "Commence à donner des signaux de clôture : 'Bon écoute, envoie-moi un devis on verra'"
+      ],
+      "tics_langage": [
+        "'Franchement' en début de phrase pour annoncer une objection",
+        "'Voilà' pour clore un sujet",
+        "'Après' pour nuancer ou introduire un 'mais'",
+        "Utilise 'grave' pour insister (ex: 'C'est grave important pour nous la scalabilité')",
+        "'Tu vois' ou 'Vous voyez' pour valider qu'on le suit"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 45 secondes max avant d'interrompre. Veut un dialogue, pas une présentation PowerPoint à l'oral"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Phase de scaling post-levée. Équipe qui double en 8 mois. Pression sur l'EBITDA mais besoin d'investir dans les bons outils. 3 recrutements tech en cours. Revenue ops à structurer d'urgence.",
+      "priorites_actuelles": [
+        "Améliorer le taux de conversion trial-to-paid (actuellement 18%, objectif 25%)",
+        "Automatiser l'onboarding client pour libérer du temps CSM",
+        "Réduire le time-to-value de leur propre produit",
+        "Professionnaliser les process sans perdre l'agilité startup"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions concurrentes en freemium/trial. Une était trop basique, l'autre trop complexe avec onboarding interminable. Actuellement en mode 'bricolage maison' avec stack Notion + Zapier + outils customs",
+      "fournisseur_actuel": "Mix d'outils - pas de solution intégrée. Frustration croissante sur les silos de data",
+      "budget_disponible": "Entre 15K€ et 25K€/an max alloués à cette catégorie d'outil. Budget validé en COMEX mais Thomas doit justifier chaque euro. Préfère partir sur 12K€ et garder de la marge."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cas client ultra-similaire (SaaS B2B, même taille, même problématique) avec métriques concrètes",
+        "Démontrer une compréhension fine de son écosystème tech (intégrations, stack type startup SaaS)",
+        "Proposer un POC court et cadré avec critères de succès mesurables",
+        "Évoquer le coût de l'inaction chiffré (temps perdu, opportunités ratées) plutôt que juste les bénéfices",
+        "Être transparent sur les limites du produit - ça crédibilise tout le reste",
+        "Lui donner le sentiment qu'il est en position de force dans la négo"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Bullshit marketing générique type 'solution innovante qui révolutionne'",
+        "Insister lourdement sans répondre à ses objections factuelles",
+        "Comparer son pricing à des benchmarks non pertinents (grandes entreprises, autres secteurs)",
+        "Faire du name dropping de grands comptes qui n'ont rien à voir avec sa réalité",
+        "Lui faire sentir qu'on essaie de lui forcer la main avec de la rareté artificielle ('offre valable jusqu'à vendredi')",
+        "Ne pas connaître les basiques de son secteur (confondre SaaS et agence par exemple)",
+        "Démarche commerciale trop scripté et robotique - il sent immédiatement le pitch appris par cœur"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai déjà trois commerciaux qui m'ont appelé cette semaine pour me vendre des trucs similaires. Vous avez deux minutes, pas plus.",
+        "sous_texte": "Je suis submergé de sollicitations, prouve-moi rapidement que tu n'es pas comme les autres sinon je raccroche",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître son contexte, être ultra-concis et différenciant dès les 20 premières secondes avec un élément factuel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on a déjà pas mal d'outils en place là. On fait avec Notion et Zapier, ça marche plutôt bien pour nous.",
+        "sous_texte": "Pourquoi devrais-je changer quelque chose qui fonctionne déjà ? Prouve-moi que le jeu en vaut la chandelle",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser les frustrations cachées de cette solution bricolée plutôt que d'attaquer frontalement leur setup actuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous voyez, le truc c'est qu'on vient de lever, donc chaque euro compte grave. Le board regarde tout de près. Je peux pas claquer 30K dans un outil si j'ai pas des garanties béton.",
+        "sous_texte": "Je suis sous pression financière, j'ai peur de faire une erreur qui me discrédite. Rassure-moi avec du factuel, pas du discours",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Travailler sur le coût de l'inaction et le ROI mesurable plutôt que de défendre le prix direct. Proposer des garanties concrètes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais après, comment je sais que les équipes vont vraiment l'utiliser ? On a déjà testé un outil y'a 6 mois, personne s'en est servi, j'ai jeté 8K par la fenêtre.",
+        "sous_texte": "J'ai déjà été échaudé, je crains le manque d'adoption. J'ai besoin de preuves concrètes d'adoption réussie dans des contextes similaires",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Aborder frontalement le risque d'adoption avec un plan d'onboarding cadré et des métriques d'usage à 30 jours"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais j'entends, mais là concrètement vous me parlez de quoi en termes de pricing ? Parce que si c'est pour me sortir un truc à 40K je vous arrête tout de suite.",
+        "sous_texte": "Je veux savoir si on joue dans la même cour avant de perdre plus de temps. J'ai une limite mentale et je teste ta réaction au prix",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix sans avoir créé de la valeur. Recentrer sur les enjeux business avant de parler euros"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ok, je vois l'intérêt, mais franchement j'ai regardé vite fait [Concurrent X], ils sont à moitié prix. Qu'est-ce qui justifie que vous soyez le double ?",
+        "sous_texte": "Je teste ta solidité sur la différenciation et je cherche un levier de négociation. Peut-être que tu vas paniquer et baisser le prix",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Qualifier sa connaissance réelle du concurrent, puis recentrer sur SES critères de choix plutôt que de se justifier défensivement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, mais le truc c'est qu'on a pas encore structuré notre revenue ops. Vous me parlez d'automatisation, mais si les process sont pas clairs en amont, ça sert à rien non ?",
+        "sous_texte": "J'ai une vraie préoccupation logique - suis-je prêt pour votre solution ? Est-ce que le timing est bon ? Je ne veux pas mettre la charrue avant les bœufs",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider son point, puis montrer comment la solution peut justement aider à structurer les process plutôt que d'attendre la perfection"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Après, tu vois, j'ai déjà entendu ça 50 fois : 'On s'intègre avec tout, c'est super simple, l'onboarding prend 2 semaines'. Et au final c'est 3 mois de galère avec la DSI.",
+        "sous_texte": "Je suis blasé des promesses commerciales non tenues. Prouve-moi que tu es différent avec des preuves tangibles",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Être transparent sur les vrais délais et contraintes, proposer un plan d'implémentation détaillé avec jalons et responsabilités claires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais ok, mais niveau scalabilité, si on passe de 28 à 50 personnes dans l'année, ça se passe comment côté pricing ? Parce que souvent c'est là qu'on se fait enfler.",
+        "sous_texte": "Je projette dans le futur et je teste ta transparence. Je veux pas de mauvaise surprise dans 6 mois qui explose mon budget",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être ultra-transparent sur le modèle de pricing évolutif avec des scénarios chiffrés pour anticiper sa croissance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoute, c'est intéressant tout ça, mais là je vais être cash avec toi : on a un budget de 15K max sur cette ligne. C'est validé en COMEX, je peux pas aller au-delà.",
+        "sous_texte": "Je pose mon ancrage prix pour voir ta marge de manœuvre. Soit c'est vrai, soit j'ai 5K de plus mais je veux que tu fasses un effort d'abord",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Ne pas capituler immédiatement. Reformuler la valeur, ajuster éventuellement le périmètre, et créer une contrepartie si concession"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, je suis intéressé mais je peux pas décider seul. Je dois en parler avec mon CTO et notre Head of Ops. Envoie-moi un récap par mail, on verra.",
+        "sous_texte": "Je me protège en diluant la responsabilité de décision. Soit c'est vrai et j'ai besoin d'aide pour convaincre en interne, soit c'est une échappatoire polie",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier la vraie raison : besoin de validation légitime ou fuite ? Proposer de faciliter la présentation aux décideurs plutôt que d'envoyer un mail orphelin"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement vous êtes pas mal, mais là je dois être honnête : j'ai un autre call prévu vendredi avec [Concurrent Y] qui m'a fait une offre très agressive. Faut que je compare.",
+        "sous_texte": "Je crée une pression concurrentielle pour obtenir ta meilleure offre. Je veux que tu aies peur de me perdre pour que tu me fasses un geste commercial",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Garder son calme, recentrer sur ses critères de choix à lui plutôt que sur le concurrent, faire comprendre que ce n'est pas une guerre de prix"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, 22K c'est vraiment trop pour nous. Si vous pouvez descendre à 16-17K, je signe là maintenant. Sinon ça va être compliqué de valider en interne.",
+        "sous_texte": "Je te teste pour voir jusqu'où tu peux aller. Je suis probablement prêt à signer un peu au-dessus si tu défends bien ton prix, mais je veux sentir que j'ai obtenu un deal",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Résister à la tentation de brader. Proposer une concession mineure avec contrepartie forte (engagement durée, référence client, case study...)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Alors après, vous me dites que ça va nous faire gagner X heures par semaine, mais franchement je vois pas comment vous arrivez à ce chiffre. C'est un peu sorti du chapeau non ?",
+        "sous_texte": "Ton ROI me paraît trop beau pour être vrai, j'ai besoin de comprendre la méthodologie derrière sous peine de ne pas y croire du tout",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Décortiquer le calcul de ROI étape par étape avec SES chiffres à lui, et être honnête sur les hypothèses et variables"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais grave, le time-to-value c'est hyper important pour nous. Si je signe aujourd'hui, combien de temps avant qu'on voit des résultats concrets ? Parce que j'ai pas 6 mois devant moi.",
+        "sous_texte": "J'ai une pression sur les résultats rapides, je dois justifier cet investissement rapidement auprès de mon board. Rassure-moi sur la rapidité de mise en œuvre",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un plan de mise en œuvre phasé avec quick wins identifiables à 30-45-60 jours pour prouver la valeur progressivement"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute, on va être honnête tous les deux : j'aime bien votre produit, je pense que ça peut vraiment nous aider. Mais là, au prix que vous me proposez, franchement je peux pas. J'ai un collègue CEO qui a pris le même outil que vous y'a 3 mois, il a payé 30% moins cher. Donc soit vous vous alignez et on fait affaire, soit désolé mais je peux pas justifier ça en interne, vous comprenez ?",
+      "condition_declenchement": "Se déclenche après plusieurs échanges sur le prix si le commercial n'a pas suffisamment ancré la valeur différenciante et reste sur une posture défensive. Thomas sort cette carte ultime pour tester la vraie marge de manœuvre du vendeur. C'est un test de solidité finale : soit le commercial panique et brade, soit il tient bon avec des arguments valeur et obtient le deal à un prix défendable."
+    },
+    "pattern_escalade": "Thomas commence par des objections de surface (timing, budget vague, concurrence générique) pour tester la solidité du commercial. Si celui-ci tient bon et démontre une vraie compréhension de son contexte, il partage progressivement ses vraies préoccupations (peur de l'échec, pression du board, expériences passées négatives). L'escalade finale se fait sur le prix avec des tactiques de négociation de plus en plus agressives (ancrage bas, name dropping d'autres clients, ultimatum poli). Si le commercial cède trop facilement, Thomas perd le respect et soit continue à négocier encore plus fort, soit se dit qu'il a surpayé et le regrette post-signature.",
+    "piege_classique": "Thomas va volontairement mentionner un concurrent ou un 'autre CEO qui a eu mieux' sans forcément que ce soit vrai, juste pour observer la réaction du commercial. S'il panique et commence à justifier défensivement ou à proposer une remise immédiate, Thomas en conclut que le prix initial était gonflé et qu'il peut négocier encore plus. Le piège est de répondre au prix par le prix au lieu de recentrer sur la valeur et les critères de décision réels de Thomas."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "tech/SaaS ou services B2B pour le secteur tech",
+      "description": "Entreprise proposant une solution ou service destiné aux éditeurs de logiciels et agences digitales"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution technologique ou service à forte valeur ajoutée ciblant les startups et PME tech de 15-40 personnes",
+      "proposition_valeur": "Solution premium positionnée sur la valeur et non sur le prix, adaptée aux besoins des entreprises tech en croissance",
+      "prix": "NON_SPECIFIE - positionnement premium avec marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix en valorisant l'offre, maîtriser les techniques de négociation commerciale avec marges de manœuvre limitées, savoir créer de la valeur perçue plutôt que de concéder systématiquement des remises",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation commerciale — Solution SaaS B2B premium",
+    "vous_etes": "Account Executive chez une scale-up SaaS qui vend une plateforme d'automatisation revenue ops à 22K€/an.",
+    "vous_vendez": "Plateforme SaaS tout-en-un pour automatiser l'onboarding, le suivi clients et la conversion trial-to-paid — 22 000€/an (contrat 12 mois), marge de négo max 10%.",
+    "vous_appelez": "Thomas Mercier, CEO de Streamly (28 personnes, 2,1M€ ARR), SaaS no-code pour agences digitales. Post-série A (1,5M€ levés il y a 6 mois). Pragmatique, cash, allergique au bullshit marketing. Vous a dit lors du dernier échange : 'Intéressant, mais franchement le prix pique. Faut qu'on en reparle.'",
+    "ce_que_vous_savez": [
+      "Il bricole actuellement avec Notion + Zapier + outils customs — ça coince, silos de data partout",
+      "Son vrai problème : taux de conversion trial-to-paid à 18%, il vise 25% pour tenir ses projections investisseurs",
+      "Budget alloué catégorie 'revenue ops' : 15-25K€, mais il cherchera à partir sur 12K€ pour garder de la marge",
+      "A testé 2 concurrents : un trop basique, l'autre trop lourd à déployer",
+      "Sous pression board : doit scaler sans exploser les coûts, justifier chaque euro dépensé"
+    ],
+    "votre_objectif": "Closer à 22K€ (accepter 20K€ si vraiment bloqué) en ancrant la valeur sur son vrai pain : le coût de l'inaction et le manque à gagner conversion.",
+    "vos_atouts": [
+      "Cas client Clairy (SaaS 32 personnes) : +9 points conversion trial-to-paid en 4 mois, ROI 340% première année",
+      "Time-to-value imbattable : opérationnel en 3 semaines vs 2-3 mois concurrents lourds",
+      "Intégrations natives stack SaaS (Stripe, Segment, Intercom, HubSpot) — zéro bricolage Zapier",
+      "Vous pouvez proposer POC 30 jours cadré avec KPI mesurables avant signature annuelle"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:45:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15503,
+    "total_time_s": 149.7
+  }
+}

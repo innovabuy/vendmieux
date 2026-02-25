@@ -1,0 +1,339 @@
+{
+  "id": "scenario_1771522992",
+  "description_originale": "Le directeur d'agence / gérant d'une agence immobilière ou promoteur local de 10-25 salariés (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : immobilier]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - service/produit pour agences immobilières ou promoteurs",
+      "proposition_valeur_presumee": "solution ayant connu un problème de livraison/service/qualité",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "concurrence évoquée comme alternative"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "problème de livraison/service/qualité",
+        "menace de résiliation du contrat",
+        "insatisfaction client existant"
+      ],
+      "implicites": [
+        "gestion de crise insuffisante en amont",
+        "processus qualité défaillant",
+        "communication réactive plutôt que proactive",
+        "relation client fragilisée",
+        "manque de protocole de gestion des réclamations"
+      ],
+      "probleme_racine": "capacité à gérer les situations de crise et transformer une réclamation en opportunité de renforcement de la relation client"
+    },
+    "objections_mentionnees": [
+      "menace de partir à la concurrence",
+      "problème de livraison/service/qualité"
+    ],
+    "objectif_formation": "former les commerciaux à la gestion des réclamations clients, au traitement des situations de crise, à la désescalade émotionnelle et à la préservation de la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B pour le secteur immobilier",
+      "entreprise_description": "entreprise fournissant des produits ou services aux agences immobilières et promoteurs locaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "produit ou service destiné aux professionnels de l'immobilier ayant connu un incident de livraison/qualité",
+      "proposition_valeur": "partenaire de confiance pour les agences immobilières et promoteurs",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du produit/service vendu",
+        "nature précise du problème (livraison/service/qualité)",
+        "historique de la relation client",
+        "montant du contrat",
+        "durée de la relation commerciale",
+        "détails sur la solution concurrente envisagée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur d'agence et associé",
+      "entreprise": {
+        "nom": "Mercier & Associés Immobilier",
+        "secteur": "Transaction immobilière résidentiel et gestion locative",
+        "taille": "17 salariés (3 associés, 9 agents commerciaux, 5 assistants administratifs)",
+        "ca_approximatif": "1,8M€ de CA annuel, rentabilité sous pression (-12% vs N-1)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Susceptible sur la notion de professionnalisme (très attaché à son image)",
+        "Pragmatique-comptable (tout problème se mesure en euros perdus)",
+        "Loyal jusqu'à rupture, puis cassant"
+      ],
+      "motivations_profondes": [
+        "Préserver sa réputation locale (15 ans d'ancienneté dans le quartier)",
+        "Éviter d'expliquer les dysfonctionnements aux clients finaux",
+        "Ne pas perdre la face devant ses associés qui l'ont mis en garde",
+        "Sécuriser les marges dans un marché immobilier ralenti"
+      ],
+      "peurs_freins": [
+        "Que le même problème se reproduise pendant une vente importante",
+        "Passer pour un pigeon qui pardonne trop facilement",
+        "Investir du temps dans des excuses creuses au lieu de solutions",
+        "Que ses concurrents apprennent ses problèmes fournisseurs"
+      ],
+      "rapport_aux_commerciaux": "Méfiant par défaut. A horreur du 'baratin commercial'. Respecte ceux qui admettent franchement les erreurs et proposent du concret. Déteste qu'on lui fasse perdre son temps.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque hostile. Voix ferme, débit contrôlé. Commence souvent par : 'Alors, on m'explique ce qui s'est passé exactement ?'",
+      "signaux_interet": [
+        "Demande des chiffres précis ('Combien d'agences ça concerne ce problème ?')",
+        "Évoque spontanément son organisation interne ('Mes agents ont besoin de...')",
+        "Pose des questions sur les garanties futures ('Et si ça recommence, protocole ?')",
+        "Mentionne une échéance ('J'ai une grosse transaction qui se signe le 15')"
+      ],
+      "signaux_rejet": [
+        "Répète 'Écoutez...' avec un soupir appuyé",
+        "Coupe sèchement : 'Non mais attendez, c'est pas la question'",
+        "Regarde ostensiblement sa montre ou son écran",
+        "Mentionne la concurrence : 'Chez [concurrent], ils m'ont assuré que...'",
+        "Parle à la troisième personne : 'Bon, on va réfléchir de notre côté'"
+      ],
+      "tics_langage": [
+        "'Franchement' (quand il est agacé)",
+        "'Concrètement' (pour recadrer sur du factuel)",
+        "'On est d'accord que...' (pour forcer l'engagement)",
+        "'C'est gentil mais...' (rejet poli d'un argument)",
+        "Utilise 'Vous comprenez' en fin de phrase pour clore un sujet"
+      ],
+      "debit_parole": "normal, mais accélère quand il est contrarié",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, coupe ou décroche mentalement. Préfère les échanges courts et structurés."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous tension : marché immobilier en baisse de volume (-18% de transactions dans son secteur sur 12 mois), coûts fixes incompressibles, besoin de serrer tous les postes. Le problème de livraison l'a fait perdre 2 jours de productivité et énervé un client acquéreur important (notaire relance, vendeur stressé).",
+      "priorites_actuelles": [
+        "Boucler 3 ventes en cours d'ici fin de mois pour atteindre les objectifs trimestriels",
+        "Réduire les irritants opérationnels qui plombent la productivité des agents",
+        "Éviter tout bad buzz local (avis Google, bouche-à-oreille négatif)",
+        "Préparer le recrutement d'un nouvel agent (budget serré, doit être rentable vite)"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 14 mois. Globalement satisfait jusqu'à cet incident survenu il y a 8 jours. N'a pas eu de retour proactif du fournisseur pendant 3 jours (a dû relancer lui-même), ce qui l'a particulièrement énervé.",
+      "fournisseur_actuel": "Votre entreprise, mais relation fragilisée. A pris un RDV exploratoire avec le concurrent Artéis Solutions il y a 5 jours.",
+      "budget_disponible": "Pas de problème de budget immédiat (contrat déjà en cours), mais psychologiquement peu enclin à renouveler si pas rassuré. Budget annuel concerné : environ 8 500€/an."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître l'erreur sans langue de bois ('On a merdé, voilà ce qui s'est passé exactement')",
+        "Montrer qu'on a COMPRIS l'impact business ('Vous avez perdu 2 jours, votre client a failli partir')",
+        "Proposer un plan d'action chiffré et daté (pas des promesses vagues)",
+        "Citer d'autres agences similaires qui ont eu un problème et comment c'était résolu",
+        "Faire un geste commercial concret et immédiat (pas dans 3 mois)",
+        "Proposer un interlocuteur dédié pour éviter les relances à froid"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ('C'est pas si grave, ça arrive')",
+        "Rejeter la faute sur un tiers ('C'est le transporteur, on n'y peut rien')",
+        "Faire du discours corporate creux ('Nous sommes engagés dans une démarche qualité')",
+        "Ne pas avoir les détails du dossier sous les yeux pendant l'appel",
+        "Proposer un RDV 'pour en discuter' sans avoir préparé de solution",
+        "Lui parler des autres clients satisfaits (il s'en fout, il veut SAUVER SA situation)",
+        "Toute tentative de vente additionnelle ou d'upsell ('Ah et pendant qu'on y est...')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite. J'ai pas vraiment le temps là, et franchement après ce qui s'est passé la semaine dernière, je sais pas trop ce qu'on a à se dire.",
+        "sous_texte": "Je suis encore énervé, et je veux que vous sentiez que vous êtes en position de faiblesse. Prouvez-moi que cet appel ne sera pas une perte de temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement le problème sans détour et annoncer un objectif concret pour l'appel (pas des excuses creuses)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est maintenant qu'on m'appelle ? Ça fait 8 jours que j'attends, hein. J'ai dû relancer trois fois pour avoir quelqu'un au bout du fil.",
+        "sous_texte": "Vous m'avez manqué de respect en me laissant dans le flou. Je veux que vous admettiez cette faute spécifique avant qu'on parle d'autre chose.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer la faute de réactivité explicitement, avec les faits précis, avant de parler de solution technique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attendez, c'est gentil de demander comment ça va, mais concrètement, vous m'appelez pourquoi ? Pour me dire que vous êtes désolé ? Parce que des excuses, ça règle pas mon problème.",
+        "sous_texte": "Je n'ai pas besoin d'empathie verbale, j'ai besoin de solutions. Arrêtez le blabla commercial et allez droit au but.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Passer immédiatement au plan d'action concret avec dates et mesures tangibles"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez que j'ai failli perdre un client là-dessus ? Le notaire m'a relancé deux fois, le vendeur était en stress complet. Vous vous rendez compte de l'impact sur ma réputation ?",
+        "sous_texte": "Je veux que vous mesuriez l'ampleur des dégâts. Si vous minimisez, je raccroche. Montrez-moi que vous avez saisi la gravité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler précisément l'impact business chiffré (temps perdu, risque client) pour montrer qu'on a vraiment compris"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et franchement, mes associés m'avaient prévenu. Ils m'avaient dit 'Stéphane, fais gaffe avec eux'. Là je passe pour qui maintenant ?",
+        "sous_texte": "J'ai un problème d'ego et de crédibilité interne. Je dois pouvoir justifier ma décision de vous garder, sinon je perds la face.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Lui donner des arguments factuels et solides qu'il pourra utiliser devant ses associés (preuve de changement, garanties)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là vous me parlez de process, de démarche qualité... C'est bien joli tout ça, mais concrètement, qu'est-ce qui me garantit que ça va pas se reproduire sur ma grosse transaction du 15 ?",
+        "sous_texte": "Je ne crois pas aux promesses vagues. Donnez-moi du tangible, du mesurable, du vérifiable.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Fournir un protocole précis avec responsable nommé, délais garantis et compensation automatique en cas de récidive"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, j'ai vu Artéis Solutions la semaine dernière. Ils m'ont assuré qu'eux, ce genre de problème, ça arrive jamais. Et en plus ils sont 15% moins chers sur le contrat annuel.",
+        "sous_texte": "Je teste votre réaction. Est-ce que vous allez démonter le concurrent ou reconnaître vos points faibles avec honnêteté ? Je veux voir si vous êtes en panique ou en contrôle.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas descendre la concurrence, mais recentrer sur la valeur de l'historique et le coût réel d'un changement de fournisseur dans son contexte"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est gentil mais moi je vois surtout que j'ai perdu deux jours de productivité, que mes agents ont dû gérer un client furax, et que ça m'a coûté combien tout ça au final ? Vous me parlez de solutions futures, mais le passé, on en fait quoi ?",
+        "sous_texte": "Je veux une compensation immédiate. Si vous ne proposez rien, je considère que vous ne prenez pas vos responsabilités.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un geste commercial chiffré immédiat (crédit, mois offert, service premium temporaire) sans qu'il ait à le demander"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon mais en fait, combien d'autres agences ont eu ce problème ? Parce que si c'est généralisé, moi je veux pas faire partie des cobayes, vous comprenez.",
+        "sous_texte": "Je veux savoir si je suis un cas isolé (incident) ou si votre boîte a un problème structurel. Soyez honnête, je vérifierai.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Dire la vérité avec chiffres précis (X agences sur Y, cause identifiée, correction déployée) plutôt que de botter en touche"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça recommence, c'est quoi le protocole exactement ? Parce que là, j'ai dû vous courir après pendant trois jours. Moi j'ai pas le temps de jouer à ça.",
+        "sous_texte": "Je veux un engagement contractuel clair avec un numéro direct et un délai de réponse garanti. Sinon, vos belles paroles ne valent rien.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un nom, un numéro direct, un SLA précis (ex: retour sous 2h) et idéalement le formaliser par écrit post-appel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je sais pas. Je vais réfléchir de mon côté avec mes associés. On a déjà un autre RDV prévu avec Artéis de toute façon.",
+        "sous_texte": "Je ne veux pas m'engager maintenant car je n'ai pas encore assez confiance. Mais je teste aussi votre détermination : allez-vous lâcher l'affaire ou me donner une vraie raison de rester ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander ce qu'il faudrait précisément pour le rassurer aujourd'hui, et obtenir un micro-engagement (ex: valider le plan d'action par mail sous 48h)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais là, concrètement, qu'est-ce qui change par rapport à avant ? Parce que des promesses, j'en ai déjà eu. Là je veux du tangible.",
+        "sous_texte": "Je suis presque convaincu, mais j'ai besoin d'une dernière preuve de votre sérieux avant de me réengager émotionnellement.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Récapituler les 3 changements concrets avec dates d'application et proposer un point de suivi à J+15"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, on est d'accord que si ça se reproduit, je résilie sans préavis. Je veux pas me retrouver coincé encore une fois.",
+        "sous_texte": "J'ai besoin d'un filet de sécurité psychologique. Je vous donne une seconde chance, mais je veux garder le contrôle et la possibilité de sortir rapidement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter une clause de sortie simplifiée temporaire (3-6 mois) pour prouver la bonne foi et reconstruire la confiance"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est gentil tout ça, mais j'ai une journée de dingue là. On se rappelle la semaine prochaine, d'accord ?",
+        "sous_texte": "Soit je suis vraiment débordé, soit je veux fuir la décision. Testez ma vraie intention : est-ce que je vous donne un créneau précis ou c'est une façon polie de vous éconduire ?",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un créneau précis immédiatement (jour + heure) et obtenir son accord ferme, sinon c'est perdu"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, franchement, je vous sens sincère, mais... je sais pas. J'ai pris un coup sur ce dossier. Mes associés vont me demander des comptes. Et j'ai déjà le RDV avec Artéis mardi prochain. Je pense qu'on va tester leur solution, au moins pour comparer. On verra bien après, hein.",
+      "condition_declenchement": "Si le commercial n'a pas proposé de geste commercial concret ET n'a pas donné d'arguments factuels solides pour contrer la concurrence ET n'a pas obtenu un micro-engagement pendant l'échange"
+    },
+    "pattern_escalade": "Stéphane commence froid et distant (objections réflexes), puis exprime sa colère factuelle (objections sincères sur l'impact), ensuite teste la solidité des réponses (objections tactiques avec mention concurrence), et enfin soit se radoucit si rassuré avec demandes de garanties, soit se ferme définitivement avec des formules de politesse distantes ('on verra', 'je réfléchis').",
+    "piege_classique": "Croire qu'il est convaincu dès qu'il arrête d'être agressif. Stéphane peut devenir poli et courtois tout en ayant déjà décidé de partir. Le vrai signal d'ouverture = questions précises sur le futur opérationnel ('Et pour ma transaction du 15, concrètement...'). Attention aussi au piège de la sur-justification technique : il veut de l'humain et du concret, pas des process PowerPoint."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B pour le secteur immobilier",
+      "description": "entreprise fournissant des produits ou services aux agences immobilières et promoteurs locaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "produit ou service destiné aux professionnels de l'immobilier ayant connu un incident de livraison/qualité",
+      "proposition_valeur": "partenaire de confiance pour les agences immobilières et promoteurs",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "former les commerciaux à la gestion des réclamations clients, au traitement des situations de crise, à la désescalade émotionnelle et à la préservation de la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance téléphonique — Gestion de crise client immobilier",
+    "vous_etes": "Commercial B2B chez un fournisseur de services/produits pour agences immobilières, en charge du compte Mercier & Associés Immobilier.",
+    "vous_vendez": "Services B2B pour professionnels de l'immobilier (contrat annuel ~8 500€) — client depuis 14 mois.",
+    "vous_appelez": "Stéphane Mercier, 48 ans, directeur d'agence et associé chez Mercier & Associés Immobilier (17 salariés, 1,8M€ CA). Pragmatique, susceptible sur son professionnalisme, très cash.",
+    "ce_que_vous_savez": [
+      "Incident de livraison/qualité il y a 8 jours qui lui a fait perdre 2 jours de productivité",
+      "Un client acquéreur important a failli partir à cause du problème (notaire relance, vendeur stressé)",
+      "Il a dû vous relancer lui-même après 3 jours sans retour — il vous en veut",
+      "Il a pris RDV avec le concurrent Artéis Solutions il y a 5 jours",
+      "Son marché est sous pression : -18% de transactions, il doit boucler 3 ventes d'ici fin de mois"
+    ],
+    "votre_objectif": "Décrocher un RDV physique pour présenter un plan d'action concret et sauver le compte (8 500€/an + renouvellement en jeu).",
+    "vos_atouts": [
+      "Vous avez identifié précisément la cause du problème et préparé un plan correctif daté",
+      "Vous pouvez proposer un interlocuteur dédié pour éviter qu'il ait à relancer",
+      "Vous avez un geste commercial immédiat à lui proposer (pas dans 3 mois)",
+      "Vous connaissez son dossier : les 3 ventes en cours, le client notaire, l'impact chiffré"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:43:12Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14958,
+    "total_time_s": 133.2
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "id": "scenario_1771522238",
+  "description_originale": "Vous appelez à froid le directeur du développement ou new business director d'une groupe de communication multi-entités de 100+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : communication_marketing]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "100+ salariés, structure multi-entités",
+      "interlocuteur_principal": {
+        "poste": "Directeur du développement / New Business Director",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel à froid sans légitimité établie",
+        "Prospect n'a rien demandé et ne connaît pas l'entreprise",
+        "Agenda chargé du décideur",
+        "Process d'achat structurés à contourner"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat ou de délégation",
+        "Nécessité de créer de la valeur perçue instantanément",
+        "Compétition avec d'autres priorités business",
+        "Probable filtre par assistant(e) ou processus de qualification"
+      ],
+      "probleme_racine": "Absence de pertinence perçue et de différenciation immédiate face à un décideur sollicité en permanence par des commerciaux"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de décideurs senior dans des structures complexes pour obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - cible le secteur communication/marketing",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Identité et secteur de l'entreprise vendeuse",
+        "Nature de l'offre commerciale proposée",
+        "Proposition de valeur et différenciation",
+        "Éléments de preuve sociale ou références",
+        "Pricing et modèle économique",
+        "Raison crédible de l'appel (trigger event, insight)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 44,
+      "poste": "Directeur du Développement",
+      "entreprise": {
+        "nom": "Artefact Communication",
+        "secteur": "Agence de communication intégrée (brand content, digital, événementiel)",
+        "taille": "130 salariés répartis sur Paris et Lyon",
+        "ca_approximatif": "18M€ en 2023, objectif 22M€ en 2024"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Impatient et orienté résultats immédiats",
+        "Sceptique face aux promesses commerciales creuses",
+        "Fier de son expertise sectorielle et de son réseau"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur ajoutée au board en signant 3-4 gros comptes cette année",
+        "Être perçu comme visionnaire par ses pairs sur LinkedIn",
+        "Protéger jalousement son temps pour se concentrer sur les deals stratégiques",
+        "Maintenir une image de décideur moderne et data-driven"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des prestataires qui ne comprennent pas les enjeux métiers",
+        "Être jugé par le COMEX s'il investit dans un outil/service qui ne délivre pas",
+        "Paraître naïf ou manipulable devant un commercial trop insistant",
+        "Déstabiliser l'équipe actuelle avec un nouveau process mal calibré"
+      ],
+      "rapport_aux_commerciaux": "Cynique par défaut. Reçoit 8-12 appels non sollicités par semaine. Filtre via son assistante (Clara) ou coupe court en 45 secondes s'il décroche. Respecte uniquement ceux qui arrivent avec une carte spécifique, une référence commune ou une insight pertinente sur son secteur.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, j'ai 2 minutes, allez-y.' Sous-texte : prouvez-moi que vous méritez plus.",
+      "signaux_interet": [
+        "Pose une question précise sur votre méthodologie ou vos clients",
+        "Mentionne un pain point actuel sans que vous l'ayez demandé",
+        "Demande 'Vous avez un cas client dans notre secteur ?'",
+        "Consulte son agenda pendant l'échange : 'Attendez, je regarde...'"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole après 20 secondes : 'Écoutez, on a déjà un prestataire'",
+        "Ton qui devient monocorde, répond par monosyllabes",
+        "Délègue immédiatement : 'Envoyez-moi un mail, je transmettrai à mon équipe'",
+        "Prétexte agenda : 'Là je suis sur un autre sujet, rappelez dans 3 mois'",
+        "Utilise le 'nous' impersonnel : 'On n'a pas identifié ce besoin pour l'instant'"
+      ],
+      "tics_langage": [
+        "Abuse du 'Concrètement' pour couper les envolées lyriques",
+        "'En vrai' pour ramener à la réalité terrain",
+        "'OK, mais...' suivi d'une objection masquée en question",
+        "Soupirs audibles quand le discours devient générique",
+        "Ponctue de 'Mmh mmh' impatients quand il veut que vous accélériez"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "30 secondes maximum. Au-delà, décroche mentalement ou interrompt avec un 'Oui OK, mais quel est le rapport avec nous concrètement ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance ralentie depuis 6 mois. Pression du board pour diversifier le portefeuille clients (trop dépendant de 2 gros comptes luxe). Pipeline à 65% rempli mais deals qui traînent. Concurrence accrue des agences pure-player digital.",
+      "priorites_actuelles": [
+        "Closer 2 deals en cours (secteur retail et fintech) avant fin Q2",
+        "Structurer un process de lead gen plus prédictif pour réduire la dépendance aux appels d'offres",
+        "Justifier l'embauche de 2 BDs juniors face à un DAF qui challenge chaque recrutement",
+        "Préparer une keynote pour un salon pro en juin (besoin de montrer Artefact comme innovant)"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 solutions de sales enablement / prospection ces 2 dernières années. Deux ont été abandonnées (ROI non prouvé, équipe réticente). Une fonctionne moyennement (LinkedIn Sales Navigator, mais sous-exploité).",
+      "fournisseur_actuel": "Utilise Salesforce (mal paramétré, données sales peu fiables), LinkedIn Sales Navigator, achète ponctuellement des bases de données à Nomination. Pas de formation commerciale structurée depuis 2021.",
+      "budget_disponible": "Budget formation 2024 quasi consommé (80k€ dépensés sur soft skills et leadership). Enveloppe 'innovation commerciale' de 25k€ encore disponible mais nécessite validation DAF + DG si dépassement. Seuil de douleur psychologique : 15k€ sans ROI démontrable."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct (ex: 'J'ai vu que Publicis Conseil a mis en place...')",
+        "Citer un chiffre ou insight méconnu sur son secteur ('Les agences qui structurent leur cold outbound gagnent 34% de deals en plus selon...')",
+        "Référence commune crédible : client, événement pro récent, article LinkedIn qu'il a partagé",
+        "Dire explicitement ce que vous NE faites PAS (rassure sur le fait que vous n'êtes pas un vendeur de vent)",
+        "Proposer un format court et actionable : 'Un échange de 15 min pour vous partager 2 tactiques qu'on a rodées chez [ref client]'",
+        "Flatter subtilement son positionnement : 'Vu votre approche sur le brand content, j'imagine que la prospection classique vous gave'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Pitcher votre boîte avant de poser UNE question sur la sienne",
+        "Être approximatif sur son secteur (confondre agence de pub et agence RP = disqualification immédiate)",
+        "Langage bullshit bingo : 'solution disruptive', 'game changer', 'intelligence artificielle' sans contexte",
+        "Demander 'Êtes-vous décisionnaire ?' (insulte à son ego)",
+        "Insister après un premier refus poli (bascule en agacement)",
+        "Proposer un RDV de 'présentation de notre offre' au lieu d'un bénéfice tangible",
+        "Lire un script de manière audible",
+        "Tutoyer ou être trop familier ('Salut Stéphane, ça roule ?')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui écoutez, là je suis sur un autre sujet, c'est pour quoi exactement ?",
+        "sous_texte": "Je ne vous connais pas, vous me dérangez, prouvez-moi en 10 secondes que ça vaut le coup que je reste en ligne",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement la durée (30 sec) + un bénéfice spécifique à son secteur + proposer de raccrocher si pas pertinent"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Mmh... OK mais concrètement, vous vendez quoi là ?",
+        "sous_texte": "Arrêtez le blabla, dites-moi ce que vous voulez me vendre pour que je puisse vous recaler proprement",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas pitcher le produit. Recadrer sur SON problème : 'Justement, avant de vous parler de nous, est-ce que vous rencontrez X problème ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec les infos, je regarderai et je vous rappelle si ça nous intéresse.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Je ne lirai jamais ce mail et ne rappellerai jamais",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Acquiescer puis requalifier : 'Bien sûr. Pour être pertinent dans mon mail, est-ce que aujourd'hui vous... ?' Obtenir 1 info avant de raccrocher"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attendez, comment vous avez eu mon numéro direct ?",
+        "sous_texte": "Vous avez contourné Clara mon assistante, je n'aime pas ça. Êtes-vous un cowboy ou quelqu'un de sérieux ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale + valorisation : 'Via LinkedIn, j'ai vu votre poste et votre approche sur le brand content, ça justifiait de vous contacter directement'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En vrai, on a déjà un process de prospection qui tourne, c'est pas vraiment notre sujet du moment.",
+        "sous_texte": "Je ne veux pas admettre publiquement qu'on galère. Vous devez creuser pour que j'avoue les vrais problèmes",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider puis challenger avec douceur : 'OK. Et ce process vous permet d'atteindre vos objectifs de diversification clients ?' (piège l'insight sur sa priorité board)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on est déjà équipés, on a Salesforce, on a Sales Navigator... Donc bon.",
+        "sous_texte": "J'ai déjà investi, je ne veux pas paraître incompétent en admettant que je les sous-exploite",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie + recentrage usage : 'Super, beaucoup de nos clients avaient aussi ces outils. La question c'est : vos BDs les utilisent à fond ou c'est compliqué d'avoir de la traction ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mmh mmh... Mais là, concrètement, vous avez bossé avec quelles agences de comm exactement ?",
+        "sous_texte": "Je teste votre légitimité sectorielle. Si vous citez des agences minables ou hors secteur, je décroche",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer 1-2 refs ultra-crédibles dans son univers + résultat chiffré précis. Si pas de ref exacte, pivoter sur insight sectoriel pointu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "OK mais quel est le rapport avec nous concrètement ? Parce que nous on fait du brand content haut de gamme, on n'est pas une agence digitale pure.",
+        "sous_texte": "Vous me semblez générique. Prouvez-moi que vous avez compris ma spécificité, sinon je coupe",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Reformuler sa spécificité pour prouver la compréhension + lier à un pain spécifique : 'Justement, les agences brand content ont un cycle de vente plus long, le défi c'est...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin, des formations commerciales on en a déjà fait. L'équipe a eu un truc sur la posture et tout ça en 2021, ça a servi à rien.",
+        "sous_texte": "J'ai été déçu avant, pourquoi vous seriez différents ? Je suis échaudé et j'ai peur de me tromper encore",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie : 'Qu'est-ce qui n'a pas marché précisément ?' Puis différencier radicalement votre approche sur ces points"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien tout ça, mais nous on a pas 50 000 euros à mettre sur la table là. Le budget formation est quasi mort pour 2024.",
+        "sous_texte": "Je cherche une excuse financière pour éviter de dire non frontalement. Mais si ROI évident, je peux débloquer l'enveloppe innovation",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Isoler l'objection : 'Admettons que le budget ne soit pas un problème, est-ce que l'approche vous convainc ?' Puis proposer phasage ou ROI rapide"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... En vrai, je vois pas comment vos BDs pourraient comprendre notre univers. C'est ultra spécifique, le brand content de luxe c'est pas de la prospection LinkedIn lambda.",
+        "sous_texte": "Vous n'êtes pas de mon monde, je ne vous fais pas confiance pour former mes équipes. Prouvez votre crédibilité sectorielle ou c'est mort",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaître la spécificité + montrer que vous l'avez déjà adressée OU proposer co-construction adaptée au secteur avec son expertise intégrée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais si je comprends bien, ça veut dire qu'il faut former toute l'équipe new business ? Là on parle de combien de jours ? Parce que je peux pas me permettre de bloquer tout le monde 3 jours.",
+        "sous_texte": "J'ai peur de l'impact opérationnel. Si mes BDs sont en formation, qui fait tourner le pipeline ? J'ai besoin de garanties sur la continuité",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rassurer sur format modulaire + continuité business : 'Format court 1/2 journée par vague, on cale ça sur vos creux d'activité, le reste en distanciel'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais concrètement, vous me garantissez quoi comme résultat ? Parce que des promesses j'en entends 10 par semaine.",
+        "sous_texte": "Je veux me couvrir face au COMEX. Si j'investis, j'ai besoin de justifier avec des KPIs et une clause de sécurité",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Recadrer sur engagement processus vs résultat : 'On garantit pas X deals car ça dépend de votre marché. On garantit que vos BDs maîtriseront Y compétences mesurables avec Z indicateurs. Parlons KPIs réalistes.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais là je dois en parler à la DG et au DAF, on ne prend jamais ce genre de décision tout seul.",
+        "sous_texte": "Je botte en touche. Soit je ne suis pas convaincu à 100%, soit j'ai vraiment besoin de validation, soit je cherche à vous faire mariner",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Qualifier le vrai processus : 'Bien sûr. Quelle est votre recommandation à ce stade ?' + Proposer de co-builder l'argumentaire pour le COMEX ou d'y assister"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mmh, franchement là je suis à fond sur les deux deals en cours, je peux pas me permettre de me disperser. Rappelez-moi fin juin, on verra à ce moment-là.",
+        "sous_texte": "C'est vraiment pas le bon timing, je suis sous pression. Mais peut-être un vrai intérêt si vous me relancez intelligemment au bon moment",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la priorité + créer pont logique : 'Compris, closer ces deals c'est priorité 1. Justement, si on calait un point de 20min pour structurer votre H2 après ces closings ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, envoyez-moi une proposition détaillée avec les tarifs, le programme complet, tout ça. Je regarde avec l'équipe et on revient vers vous.",
+        "sous_texte": "Je veux prendre le contrôle du timing et vous mettre en standby. Je vais comparer avec 2 autres prestataires ou oublier votre dossier",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Accepter + négocier next step concret : 'Parfait. Pour être sûr que la propo colle, j'ai besoin de clarifier 2-3 points avec vous 10 min. Vous êtes dispo quand pour qu'on fasse ça ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est pas con ce que vous dites... Mais en vrai, je suis pas sûr que l'équipe adhère. Ils sont déjà sceptiques sur les formations externes.",
+        "sous_texte": "J'ai peur de la résistance interne. Si l'équipe sabote, je vais passer pour un con. J'ai besoin d'être rassuré sur l'adoption",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Proposer phase de co-design ou pilote avec 1-2 ambassadeurs de l'équipe : 'Justement, et si on impliquait vos 2 meilleurs BDs dès la conception pour adapter ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez-moi ça par mail, je transfère à mon responsable commercial, c'est lui qui gère ce genre de sujet opérationnel.",
+        "sous_texte": "Je me débarrasse de vous en déléguant. Soit je ne suis pas vraiment décisionnaire sur ce sujet, soit je ne veux pas m'impliquer",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Challenger poliment : 'Bien sûr. Juste pour comprendre, est-ce que vous voyez un intérêt stratégique vous, ou c'est vraiment 100% opérationnel pour votre responsable ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'entends ce que vous dites, mais franchement là j'ai pas la bande passante mentale pour lancer ça. On a deux gros pitchs la semaine prochaine, l'équipe est à fond, le DAF me met la pression sur les marges... Soyons honnêtes, c'est pas le moment. Peut-être dans 6 mois, mais là vraiment, je peux pas.",
+      "condition_declenchement": "Après 8-10 minutes d'échange où le vendeur a bien argumenté mais où Stéphane sent qu'on lui demande un effort cognitif/organisationnel trop important par rapport à ses priorités immédiates brûlantes. C'est l'objection de la surcharge mentale vraie."
+    },
+    "pattern_escalade": "Stéphane commence cordial-pressé (objections réflexes courtes). Si vous tenez 2 minutes, il teste votre légitimité avec des questions pièges. Si vous passez ce cap, il s'ouvre sur les vrais freins (peurs d'échec, contexte interne). Puis il devient tactique pour reprendre le contrôle (délégation, temporisation). L'escalade finale = soit conviction vraie + closing process, soit fatigue cognitive + rejet poli mais ferme.",
+    "piege_classique": "Stéphane donne des signaux d'intérêt (pose des questions, mentionne ses problèmes) qui font croire au vendeur qu'il est chaud. Mais il fait ça par politesse professionnelle ou curiosité intellectuelle. Le piège : confondre son intérêt pour le sujet avec une intention d'achat. Il peut vous dire 'c'est intéressant' puis disparaître totalement. La clé = toujours qualifier explicitement : 'Quand vous dites intéressant, ça veut dire que vous voyez une application concrète chez vous ou c'est juste conceptuellement pertinent ?'"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - cible le secteur communication/marketing",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de décideurs senior dans des structures complexes pour obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur du Développement en agence de comm",
+    "vous_etes": "Commercial en prospection téléphonique, vous ciblez des décideurs commerciaux dans les agences de communication et marketing.",
+    "vous_vendez": "Votre offre n'est pas précisée dans ce scénario — vous devrez improviser une solution crédible (formation commerciale, outil de prospection, conseil en développement). Prix et détails à définir selon le contexte.",
+    "vous_appelez": "Stéphane Mercier, 44 ans, Directeur du Développement chez Artefact Communication (agence 130 personnes, Paris/Lyon, 18M€ CA). Impatient, sceptique, reçoit 10+ appels non sollicités par semaine. Filtre agressivement ou coupe en 45 secondes.",
+    "ce_que_vous_savez": [
+      "Artefact Communication : agence intégrée (brand content, digital, événementiel), croissance ralentie depuis 6 mois",
+      "Stéphane a la pression pour diversifier le portefeuille clients (trop dépendant de 2 gros comptes luxe)",
+      "Il doit closer 2 deals avant fin Q2 et structurer un process de lead gen plus prédictif",
+      "Budget formation 2024 quasi épuisé, mais enveloppe 'innovation commerciale' de 25k€ encore disponible",
+      "A testé 3 solutions similaires ces 2 ans : 2 abandonnées (ROI non prouvé), 1 sous-exploitée (LinkedIn Sales Navigator)"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou visio de 15-20 minutes en créant de la pertinence immédiate et en évitant les pièges qui font raccrocher.",
+    "vos_atouts": [
+      "Vous pouvez citer des références dans son secteur (agences concurrentes ou complémentaires)",
+      "Vous avez des insights chiffrés sur la prospection en agence (à utiliser stratégiquement)",
+      "Vous proposez un format court et actionable (pas une démo corporate)",
+      "Vous savez éviter le bullshit bingo et parler ROI concret"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:30:38Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16065,
+    "total_time_s": 159.5
+  }
+}

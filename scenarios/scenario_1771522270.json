@@ -1,0 +1,344 @@
+{
+  "id": "scenario_1771522270",
+  "description_originale": "Le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : batiment]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP - Bâtiment",
+      "taille_entreprise": "20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour entreprise de BTP (logiciel de gestion, ERP, CRM ou outil métier)",
+      "proposition_valeur_presumee": "Optimisation de la gestion d'entreprise BTP tous corps d'état",
+      "fourchette_prix": "NON_SPECIFIE - mais perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix : le prospect trouve la solution trop chère",
+        "Nécessité de défendre le prix face à une demande de réduction"
+      ],
+      "implicites": [
+        "Difficulté à justifier la valeur face au prix",
+        "Risque de brader l'offre par peur de perdre la vente",
+        "Manque d'argumentation ROI et valeur ajoutée",
+        "Tendance à céder trop vite sur le prix sans conditions"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas défendre leur prix avec confiance et technique de négociation, et cèdent trop facilement sans contrepartie ni ancrage de valeur"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix avec assurance, négocier avec méthode en utilisant la marge de manœuvre de manière stratégique, et obtenir des contreparties",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de logiciels / Solutions digitales pour le BTP",
+      "entreprise_description": "Fournisseur de solutions logicielles ou digitales destinées aux entreprises du bâtiment",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution dédiée aux entreprises de BTP travaux tous corps d'état ou gros œuvre, permettant vraisemblablement la gestion de chantiers, devis, planning, facturation",
+      "proposition_valeur": "Gain de temps, réduction d'erreurs, meilleure rentabilité des chantiers, pilotage en temps réel",
+      "prix_indicatif": "NON_SPECIFIE - mais avec marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution (logiciel, ERP, CRM, autre)",
+        "Prix de départ et prix après remise",
+        "Arguments de valeur déjà présentés",
+        "Budget du prospect",
+        "Alternatives envisagées par le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Mercier Bâtiment & Rénovation",
+        "secteur": "BTP - Gros œuvre et rénovation tous corps d'état",
+        "taille": "28 salariés (3 chefs de chantier, 22 ouvriers, 2 administratifs dont son épouse)",
+        "ca_approximatif": "2,8M€ - en légère baisse (-7%) sur les 18 derniers mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance - issu du terrain, valorise l'expérience concrète sur les diplômes",
+        "Économe voire radin - a construit sa boîte à la sueur de son front, chaque euro compte",
+        "Loyal mais calculateur - fidèle à ses partenaires tant qu'ils restent compétitifs"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à son fils qui vient d'intégrer la société",
+        "Prouver qu'on peut moderniser sans se faire plumer par les vendeurs de vent",
+        "Garder le contrôle sur sa trésorerie dans un contexte de ralentissement"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec le logiciel de devis qu'il a acheté il y a 5 ans et que personne n'utilise (8000€ jetés)",
+        "Investir dans un truc trop compliqué que ses gars n'utiliseront pas",
+        "Paraître vieux jeu face aux concurrents plus digitalisés mais sans céder à la pression commerciale",
+        "Perdre de l'argent sur un outil qui ne tiendra pas ses promesses de ROI"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut - les considère comme des beaux parleurs qui surévaluent toujours leurs produits. Respecte ceux qui connaissent vraiment le métier BTP et admettent les limites de leur solution",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant - teste rapidement si l'interlocuteur connaît les réalités du BTP ou débite un discours commercial formaté",
+      "signaux_interet": [
+        "Commence à parler de SES problèmes concrets : retards de facturation, erreurs de métrés, plannings qui partent en vrille",
+        "Mentionne son fils ou ses chefs de chantier : 'Faudrait que je voie avec Kévin si...'",
+        "Demande des détails techniques précis ou des captures d'écran",
+        "Évoque indirectement la concurrence : 'J'ai vu que Bouygues Bâtiment utilise un truc dans le genre'",
+        "Parle trésorerie ou délais de paiement clients"
+      ],
+      "signaux_rejet": [
+        "Soupire bruyamment ou fait un 'Ouais, ouais...' désabusé",
+        "Coup classique : 'Écoutez, je vais y réfléchir, renvoyez-moi un mail'",
+        "Ramène systématiquement à l'objection prix : 'Oui mais là on parle de combien au final ?'",
+        "Compare à voix haute avec un concurrent moins cher, même imaginaire",
+        "Commence ses phrases par 'Le problème c'est que...' de façon répétitive"
+      ],
+      "tics_langage": [
+        "Bon, écoutez... (quand il veut recadrer)",
+        "Soyons clairs... (avant d'annoncer une objection)",
+        "Dans la vraie vie... (pour opposer théorie commerciale vs réalité terrain)",
+        "Utilise des expressions du bâtiment : 'faut pas me prendre pour un pigeon', 'c'est du solide ou c'est du placo ?'",
+        "Hein ? (en fin de phrase, cherche l'approbation)"
+      ],
+      "debit_parole": "normal, mais accélère et devient plus sec quand il sent qu'on lui force la main",
+      "tolerance_monologue_vendeur": "Faible - coupe après 45 secondes maximum avec une question ou une objection. Déteste le blabla marketing, veut des faits et des chiffres"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Entreprise saine mais sous tension : marge en baisse à cause de la concurrence des low-cost et des retards de paiement clients. Erreurs administratives fréquentes qui coûtent cher (oublis de facturation, litiges métrés). Son épouse Christine gère l'administratif mais sature, fait des erreurs Excel. 3 gros chantiers en cours dont un qui dérive budgétairement",
+      "priorites_actuelles": [
+        "Réduire les erreurs de facturation qui lui ont coûté 18k€ sur le dernier exercice",
+        "Améliorer le pilotage des chantiers en temps réel pour éviter les dérives",
+        "Préparer la transmission progressive à son fils Thomas (29 ans, ingénieur BTP) qui pousse pour digitaliser",
+        "Maintenir la trésorerie - a 3 mois de charges de côté, pas plus"
+      ],
+      "experience_avec_offre_similaire": "Échec cuisant il y a 5 ans avec un logiciel de devis trop complexe acheté 8000€ HT, jamais adopté par les équipes. Actuellement : Excel + papier + logiciel de compta basique. Frustration car sait qu'il perd du temps et de l'argent mais traumatisé par l'investissement raté",
+      "fournisseur_actuel": "Pas de solution intégrée - bricolage maison avec Excel, WhatsApp pour les chantiers, logiciel compta Ciel",
+      "budget_disponible": "A provisionné mentalement 12 000€ maximum après discussion avec son comptable, mais espère négocier en dessous de 10k. Capable de monter à 15k si ROI vraiment démontré et paiement étalé possible"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets : 'Sur votre CA, ça représente X€ de facturation oubliée récupérée par an'",
+        "Montrer qu'on comprend LE problème du BTP : trésorerie, délais clients, gestion chantiers multiples",
+        "Proposer une phase test ou garantie satisfait ou remboursé crédible",
+        "Citer des artisans/PME BTP locales qui utilisent l'outil (pas des grands groupes)",
+        "Admettre une limite du produit avec honnêteté",
+        "Impliquer son fils Thomas dans la démo : 'Ce serait bien que Thomas voie ça avec vous'",
+        "Proposer un paiement étalé ou facilités sans le dire frontalement"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Comparer son entreprise à un grand compte : 'Comme chez Vinci...'",
+        "Minimiser sa précédente mauvaise expérience : 'Ah mais là c'est pas pareil'",
+        "Forcer la signature dans l'urgence : 'L'offre expire vendredi'",
+        "Parler ROI en pourcentages flous sans chiffres euros sonnants et trébuchants",
+        "Faire du name dropping de startups : 'On révolutionne le BTP'",
+        "Céder trop vite sur le prix sans contrepartie : il se dira que le prix de départ était du foutage de gueule",
+        "Ignorer ses questions techniques pour revenir au script commercial"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai déjà donné avec les logiciels miracles. J'ai acheté un truc à 8000 balles il y a cinq ans, personne ne s'en sert. Donc bon, faut pas me prendre pour un pigeon, hein ?",
+        "sous_texte": "Je suis échaudé et je te teste dès le départ pour voir si tu reconnais mon expérience négative ou si tu vas la balayer d'un revers de main comme les autres",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'échec, creuser ce qui n'a pas marché, montrer qu'on en tire des leçons concrètes pour éviter que ça se reproduise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais, ouais... j'imagine que vous allez me dire que votre solution est différente. C'est toujours la même chanson avec vous les commerciaux.",
+        "sous_texte": "Je te mets dans le même sac que tous les vendeurs qui m'ont déçu. Prouve-moi que tu n'es pas comme eux",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas se justifier, reconnaître sa méfiance légitime, proposer de parler d'abord de ses problèmes avant de parler produit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que mes gars, ils sont pas informaticiens. Ils savent à peine se servir d'un smartphone. Comment vous voulez qu'ils utilisent un logiciel compliqué ?",
+        "sous_texte": "J'ai peur d'investir dans un outil trop technique que personne n'adoptera, comme la dernière fois. Rassure-moi sur la simplicité RÉELLE",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander à voir l'équipe en action ou proposer une démo avec les chefs de chantier, montrer l'interface mobile terrain, pas le backoffice"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Dans la vraie vie, sur un chantier, y'a pas de réseau la moitié du temps. Votre truc, ça marche comment sans connexion ?",
+        "sous_texte": "Je teste ta connaissance du terrain BTP. Si tu me réponds un truc bullshit théorique, je décroche",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse technique précise sur le mode hors-ligne, avec exemple concret, ou admettre la limite si elle existe"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, soyons clairs... on parle de quel ordre de prix là ? Parce que moi j'ai pas un budget illimité. La tréso, elle est tendue en ce moment.",
+        "sous_texte": "Je veux savoir si je perds mon temps avec un produit hors budget. Mais c'est aussi un test pour voir si tu vas braquer direct sur le prix ou continuer la découverte",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas donner le prix tout de suite, ancrer la valeur d'abord, demander quel budget serait cohérent par rapport aux pertes actuelles identifiées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais combien ça coûte au final, tout compris ? Parce que vous me parlez de modules, d'options, de formation... Donnez-moi un chiffre clair.",
+        "sous_texte": "J'ai besoin de contrôle et de transparence. Je détecte que tu noies le poisson et ça me rend méfiant. Sois cash",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un prix décomposé clair en expliquant chaque ligne, montrer que rien n'est caché, permettre des choix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est hors de prix, votre truc. J'ai vu un concurrent qui fait sensiblement la même chose à moitié prix. Pourquoi je paierais le double ?",
+        "sous_texte": "J'ouvre la négociation. Je veux voir si tu vas paniquer et brader ou si tu vas défendre ton prix avec des arguments solides. Le concurrent existe peut-être... ou pas",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser quel concurrent, quelles fonctionnalités réelles, montrer les différences factuelles, quantifier l'écart de valeur en euros de gains"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... dans la théorie tout ça c'est beau, mais dans la pratique, je sais pas. Faut que j'en parle à Christine et à Thomas. Renvoyez-moi une proposition par mail.",
+        "sous_texte": "Je ne suis pas convaincu du ROI ou j'ai besoin d'une excuse de sortie polie. Ou bien je suis vraiment intéressé mais j'ai besoin d'impliquer la famille",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier ce qui bloque vraiment, proposer un rendez-vous à trois avec Thomas, ne pas juste envoyer un mail et attendre"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'économies, de gains de temps... Ouais, mais concrètement, en euros, sur mon CA de 2,8 millions, ça me rapporte combien par an votre logiciel ?",
+        "sous_texte": "Arrête le blabla marketing, donne-moi des CHIFFRES concrets que je puisse vérifier. Je suis ouvert mais je veux du factuel",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Construire un calcul de ROI avec LUI, sur SES chiffres identifiés en découverte : facturation oubliée, heures admin perdues, dérives chantiers"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant, mais là franchement, c'est trop cher. Si vous me faites un geste commercial significatif, genre 30-40% de remise, on peut peut-être discuter.",
+        "sous_texte": "J'ai envie d'acheter mais je teste ta marge de manœuvre au maximum. Je lance un chiffre élevé pour voir jusqu'où tu peux descendre",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder directement, demander une contrepartie (engagement durée, parrainage, témoignage), recadrer la valeur, proposer une remise inférieure conditionnée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que là, tout de suite, j'ai pas la trésorerie. Vous faites du paiement étalé ? Parce que sinon, faut que j'attende le prochain trimestre.",
+        "sous_texte": "Je suis intéressé mais j'ai une vraie contrainte tréso. Si tu me facilites le paiement sans que je doive le demander explicitement, on peut signer",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un échelonnement en plusieurs fois sans frais, ou un démarrage différé, montrer que c'est prévu et professionnel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je veux bien signer, mais je veux une garantie. Si dans six mois ça marche pas, que personne utilise le truc, je veux pouvoir me faire rembourser. Sinon, c'est trop risqué.",
+        "sous_texte": "Je suis proche de dire oui mais j'ai besoin d'une sécurité pour me protéger de mon expérience passée. Sans ça, je ne signe pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une période d'essai encadrée avec jalons mesurables, ou garantie partielle avec conditions claires d'accompagnement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est votre dernier prix là ? Parce que je peux pas aller au-delà. Soit vous faites un effort, soit je vais voir ailleurs, soyons clairs.",
+        "sous_texte": "Pression finale pour obtenir une dernière concession. Je teste si tu vas craquer. Mais si tu tiens bon avec arguments, je respecterai et potentiellement signerai au prix proposé",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Tenir bon avec empathie, rappeler les gains identifiés ensemble, proposer une micro-concession symbolique avec contrepartie, ne pas brader"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, je comprends pas là... Vous me disiez qu'on pouvait discuter du prix, et là vous me proposez que 8% de remise ? C'est du foutage de gueule, non ?",
+        "sous_texte": "Tu m'as fait miroiter de la flexibilité et là tu es radin. Soit tu as menti, soit tu me prends pour un con. Justifie ta position ou perds la vente",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Clarifier ce qu'on entend par 'discuter' : optimiser la config, pas brader. Montrer la valeur de ce qui est inclus pour ces 8%, rester ferme avec respect"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ok, mettons que je signe. Mais la formation, l'accompagnement, la hotline, tout ça, c'est inclus dans le prix ou c'est en supplément ? Parce que je veux pas de mauvaise surprise.",
+        "sous_texte": "J'ai peur des coûts cachés qui vont exploser la facture initiale. Rassure-moi complètement avant que je m'engage",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détailler exhaustivement ce qui est inclus vs options, donner un document récapitulatif clair, montrer qu'il n'y aura pas de surprise"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, écoutez, votre solution elle est bien, je dis pas le contraire. Mais là, à ce prix-là, je peux pas. Faites-moi une vraie proposition commerciale, avec un geste significatif, et on en reparle. Sinon, je vais réfléchir et on se rappelle dans quelques semaines.",
+      "condition_declenchement": "Déclenchée quand le commercial n'a pas su : 1) ancrer suffisamment la valeur en euros concrets sur SES problèmes à lui, 2) obtenir de contreparties lors des concessions, 3) impliquer Thomas ou Christine dans le process, 4) proposer des facilités de paiement, 5) défendre le prix avec assurance. C'est l'objection fourre-tout de sortie polie qui cache soit un vrai blocage prix/valeur non résolu, soit un manque de confiance dans le ROI ou l'adoption"
+    },
+    "pattern_escalade": "Stéphane suit un schéma prévisible : 1) Méfiance/test initial sur crédibilité (objections réflexe), 2) Questions techniques terrain pour valider que le vendeur connaît le BTP (objections test), 3) Objections sincères sur adoption équipe et trésorerie quand il commence à s'intéresser, 4) Objections tactiques agressives sur le prix pour maximiser sa négociation dès qu'un chiffre apparaît, 5) Objections de sécurisation finales (garanties, inclus/exclus) quand il est proche de signer. PIÈGE : si le commercial cède trop vite sur le prix (>15% sans contrepartie), Stéphane perd confiance dans la valeur initiale et se braque, pensant qu'on l'arnaquait au départ. Il respecte la fermeté argumentée mais déteste la rigidité sans empathie.",
+    "piege_classique": "Stéphane va volontairement citer 'un concurrent moitié prix' (souvent flou ou inexistant) pour tester la réaction du commercial. Le piège : si le vendeur panique et brade immédiatement pour 's'aligner', Stéphane conclura que le prix initial était gonflé et perdra toute confiance. Si au contraire le commercial demande 'Quel concurrent exactement ? Quelles fonctionnalités incluses ?', Stéphane respectera la défense et sera souvent incapable de donner des détails précis, révélant que c'était un bluff tactique. Autre piège récurrent : il dira 'faut que j'en parle à Christine/Thomas' comme excuse de sortie. Si le vendeur dit juste 'OK, appelez-moi', c'est mort. Il faut proposer un rdv à trois pour avancer concrètement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de logiciels / Solutions digitales pour le BTP",
+      "description": "Fournisseur de solutions logicielles ou digitales destinées aux entreprises du bâtiment"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution dédiée aux entreprises de BTP travaux tous corps d'état ou gros œuvre, permettant vraisemblablement la gestion de chantiers, devis, planning, facturation",
+      "proposition_valeur": "Gain de temps, réduction d'erreurs, meilleure rentabilité des chantiers, pilotage en temps réel",
+      "prix": "NON_SPECIFIE - mais avec marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix avec assurance, négocier avec méthode en utilisant la marge de manœuvre de manière stratégique, et obtenir des contreparties",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation prix — Solution de gestion BTP face à un gérant méfiant",
+    "vous_etes": "Commercial chez un éditeur de logiciels pour le BTP, en phase de négociation après une première démo.",
+    "vous_vendez": "Une solution de gestion intégrée pour entreprises BTP (devis, chantiers, facturation, planning) — prix initial non communiqué, marge de négo max 10%.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, gérant de Mercier Bâtiment & Rénovation (28 salariés, gros œuvre). Pragmatique, méfiant, traumatisé par un achat raté à 8000€ il y a 5 ans.",
+    "ce_que_vous_savez": [
+      "Son épouse gère l'admin sur Excel, fait des erreurs qui lui ont coûté 18k€ de facturation oubliée l'an dernier",
+      "Il prépare la transmission à son fils Thomas (29 ans, ingénieur) qui pousse pour digitaliser",
+      "Budget mental : 10-12k€ max, mais peut monter à 15k si ROI béton et paiement étalé",
+      "CA en baisse de 7% ces 18 mois, 3 gros chantiers en cours dont un qui dérive",
+      "Il va jouer la montre et négocier sec — déteste le blabla, veut des €uros concrets"
+    ],
+    "votre_objectif": "Signer à un prix défendu (concession max 10%) en obtenant des contreparties claires (délai, engagement, testimonial, etc.).",
+    "vos_atouts": [
+      "Vous connaissez ses douleurs chiffrées : 18k€ perdus en erreurs, dérives de chantier",
+      "Vous pouvez impliquer son fils Thomas dans le déploiement pour rassurer sur l'adoption",
+      "Vous avez des références PME BTP locales (pas de grands groupes)",
+      "Vous pouvez proposer un paiement étalé sans le brader"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:31:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16526,
+    "total_time_s": 157.6
+  }
+}

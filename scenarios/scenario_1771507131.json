@@ -1,0 +1,393 @@
+{
+  "id": "scenario_1771507131",
+  "description_originale": "Vous appelez à froid le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : batiment]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "BTP - Bâtiment",
+      "taille_entreprise": "20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour entreprises BTP (nature exacte non spécifiée)",
+      "proposition_valeur_presumee": "Optimisation ou amélioration de l'activité d'une entreprise de travaux tous corps d'état ou gros œuvre",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel non sollicité - prospect n'a rien demandé",
+        "Prospect occupé et n'a pas prévu l'appel",
+        "Absence de relation préalable"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Manque de légitimité perçue",
+        "Barrière de la secrétaire ou du standard potentielle"
+      ],
+      "probleme_racine": "Transformer un prospect froid, occupé et non demandeur en interlocuteur intéressé acceptant de donner 30 minutes de son temps"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'approche en prospection téléphonique à froid pour décrocher des rendez-vous qualifiés auprès de dirigeants de PME BTP",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions B2B pour le secteur BTP",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux entreprises de bâtiment et travaux publics",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux entreprises de BTP spécialisées dans les travaux tous corps d'état ou le gros œuvre",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Proposition de valeur spécifique",
+        "Prix ou fourchette budgétaire",
+        "Identité de l'entreprise vendeuse",
+        "Pain points spécifiques du secteur BTP visés",
+        "Zone géographique ciblée",
+        "Différenciation concurrentielle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Didier",
+      "nom": "Fourcade",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Fourcade Bâtiment & Rénovation",
+        "secteur": "BTP - Tous corps d'état et gros œuvre",
+        "taille": "28 salariés (dont 22 ouvriers, 4 chefs de chantier, 2 administratifs)",
+        "ca_approximatif": "3,2M€ - en légère baisse sur les 18 derniers mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux - a été échaudé par des promesses non tenues",
+        "Pragmatique terre-à-terre - valorise l'expérience terrain sur les diplômes",
+        "Débordé chronique - jongle entre chantiers, devis et gestion administrative"
+      ],
+      "motivations_profondes": [
+        "Protéger la pérennité de l'entreprise familiale créée il y a 24 ans",
+        "Éviter les emmerdes administratives et les litiges clients",
+        "Prouver qu'on peut encore réussir sans se faire avaler par les grands groupes",
+        "Garder ses meilleurs compagnons malgré la concurrence sur les salaires"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un énième commercial qui ne comprend rien au métier",
+        "S'engager dans un truc compliqué qui va lui prendre la tête",
+        "Décevoir ses équipes avec un nouvel outil qui ne sert à rien",
+        "Se faire avoir sur le prix - 'encore un qui va me prendre pour un pigeon'",
+        "Que sa femme (qui gère l'administratif) lui reproche une dépense inutile"
+      ],
+      "rapport_aux_commerciaux": "Très défensif. Catégorise mentalement en 2 secondes : 'costume-cravate qui n'a jamais tenu une truelle' vs 'quelqu'un qui connaît vraiment le terrain'. Respecte uniquement ceux qui parlent son langage et vont droit au but.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Bourru, légèrement agressif pour tester la résistance. 'Ouais c'est pour quoi?' avec un soupir audible. Parle souvent en faisant autre chose (consultation d'un plan, signature d'un bon de livraison).",
+      "signaux_interet": [
+        "Pose des questions très concrètes sur le prix exact et les délais",
+        "Mentionne un problème spécifique qu'il rencontre actuellement",
+        "Demande si d'autres boîtes du coin utilisent déjà la solution",
+        "Ton qui devient moins sec, parfois une blague potache",
+        "Commence une phrase par 'Parce que nous, le problème c'est que...'"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement",
+        "'J'ai déjà essayé ce genre de trucs, ça marche jamais'",
+        "'Écoutez là j'ai un chantier qui m'attend'",
+        "Répond par monosyllabes tout en tapant sur son clavier",
+        "'Envoyez-moi un mail' (= poubelle garantie)",
+        "Fait référence à sa secrétaire/femme pour se défausser : 'Faut voir avec Nadine'"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...'",
+        "'Nous dans le bâtiment' ou 'Sur le terrain' (opposition bureau/chantier)",
+        "'Faut pas me prendre pour un con hein'",
+        "Tutoiement rapide s'il sent quelqu'un de franc",
+        "Ponctue de 'Bon' ou 'Voilà' pour signaler qu'il veut clore",
+        "Argot métier : 'un chantier en carafe', 'un client chiant', 'bordélique'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi nulle. Maximum 30-45 secondes avant interruption. Veut des réponses courtes, factuelles. Déteste le jargon marketing et les tournures corporate."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression : marges qui se tassent à cause de l'inflation des matériaux, deux gros chantiers en retard, un client qui menace de ne pas payer tant que les réserves ne sont pas levées. Vient de perdre un chef de chantier parti chez un concurrent. Sa femme le pousse à 'moderniser' mais il n'a ni le temps ni l'envie.",
+      "priorites_actuelles": [
+        "Boucler le chantier de la résidence Les Acacias avant les pénalités de retard",
+        "Trouver un nouveau chef de chantier fiable",
+        "Récupérer 87K€ de factures impayées",
+        "Répondre aux 12 devis en attente (dont 3 très gros qui pourraient sauver l'année)",
+        "Éviter un contrôle URSSAF qui plane"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion de chantier recommandé par son comptable. Trop compliqué, personne ne l'utilisait sur le terrain, abandonné au bout de 4 mois. 2800€ de perdus. Sa femme le lui rappelle encore.",
+      "fournisseur_actuel": "Gestion bricolée : Excel pour les devis (modèle de 2008), WhatsApp pour communiquer avec les chefs de chantier, carnet papier pour les suivis, logiciel comptable Cegid imposé par l'expert-comptable. 'Ça marche comme ça depuis 20 ans, pourquoi changer?'",
+      "budget_disponible": "Sensible au prix. Réflexe de négocier systématiquement. Peut débloquer 3-5K€ max si ROI évident et rapide (moins de 6 mois). Au-delà, nécessite validation de sa femme et de l'expert-comptable. Préfère payer au coup par coup qu'un abonnement mensuel ('encore un prélèvement automatique...')."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent local qui utilise déjà la solution (preuve sociale locale)",
+        "Parler un problème ultra-concret qu'il vit aujourd'hui : retards de chantier, clients qui ne paient pas, turnover équipes",
+        "Montrer qu'on comprend SON métier spécifique (pas 'le BTP' en général)",
+        "Proposer quelque chose de simple, pas un 'projet' avec formation de 3 jours",
+        "Accepter qu'il teste/voie avant de s'engager",
+        "Être disponible en dehors des heures de bureau (il est plus détendu à 18h30)",
+        "Reconnaissance implicite qu'il sait mieux que quiconque comment marche son business"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours corporate type 'optimiser vos processus' ou 'transformation digitale'",
+        "Comparaison avec les 'leaders du secteur' (= grands groupes qu'il déteste)",
+        "Insister quand il dit non ou 'j'ai pas le temps'",
+        "Promettre des résultats chiffrés irréalistes",
+        "Critiquer sa façon actuelle de travailler ('vous êtes encore sur Excel??')",
+        "Vouloir parler à plusieurs personnes de l'entreprise (il déteste les réunions)",
+        "Utiliser des anglicismes : dashboard, pipeline, onboarding",
+        "Ne pas donner le prix rapidement et clairement",
+        "Sous-entendre qu'il n'est pas moderne ou 'digital'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais écoutez là j'ai vraiment pas le temps, j'suis sur un chantier moi.",
+        "sous_texte": "Je ne vous connais pas, vous me dérangez, et je vais utiliser le temps comme excuse automatique pour me débarrasser de vous.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Respecter l'excuse, proposer un moment précis très court (2 minutes), créer urgence ou curiosité immédiate"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi encore ? J'reçois 10 appels par jour vous savez.",
+        "sous_texte": "Je suis saturé de démarchage, vous êtes dans le lot des parasites. Prouvez-moi en 5 secondes que vous êtes différent.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Reconnaître sa réalité, se différencier immédiatement par un cas concret local ou un problème spécifique qu'il vit"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais nous on a déjà tout ce qu'il faut hein, on a pas besoin.",
+        "sous_texte": "Je ne sais même pas ce que vous vendez mais je dis non par principe pour vous décourager rapidement.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ne pas argumenter, poser une question qui révèle un problème caché qu'il n'avait pas identifié"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, j'ai déjà testé un logiciel y'a 3 ans, personne l'utilisait, 3000 balles de perdus. Plus jamais.",
+        "sous_texte": "J'ai été échaudé, je me suis fait avoir, ma femme me le reproche encore. Cette expérience me vaccine contre toute nouvelle solution.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser l'échec précédent avec empathie, identifier ce qui n'a pas marché, montrer en quoi votre approche évite ces écueils précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous on fait comme ça depuis 20 ans et ça marche, pourquoi je changerais ?",
+        "sous_texte": "Je me sens attaqué dans ma façon de faire, je défends mon territoire et mon expérience. Vous sous-entendez que je fais mal ?",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser son expérience, montrer que ce n'est pas remplacer mais compléter, lier au contexte actuel différent d'il y a 20 ans"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que mes gars sur les chantiers, ils sont pas des informaticiens hein. Ils vont jamais utiliser un truc compliqué.",
+        "sous_texte": "J'ai peur que ce soit trop complexe, que mes équipes résistent, et que je me retrouve encore avec un outil mort-né.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer la simplicité concrète (smartphone suffit), témoignages d'équipes terrain similaires, proposer test limité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, faut voir avec ma femme hein, c'est elle qui gère tout l'administratif et les achats.",
+        "sous_texte": "Je me défausse sur quelqu'un d'autre pour ne pas dire non directement, ou vraiment je ne décide pas seul sur le budget.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier le processus de décision, proposer de présenter à deux, ou identifier si c'est une fausse barrière"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et ça coûte combien votre truc ? Parce que là j'ai pas de budget pour des conneries hein.",
+        "sous_texte": "Je m'attends à ce que ce soit hors de prix, je me braque par avance. 'Conneries' = je ne suis pas encore convaincu de la valeur.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas donner le prix immédiatement si valeur pas établie, ou le donner en le liant au ROI concret sur SES problèmes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin tout ça c'est bien beau sur le papier, mais dans la vraie vie du chantier c'est jamais comme ça.",
+        "sous_texte": "Vous me vendez du rêve, je suis sceptique. Vous ne connaissez pas la réalité du terrain, vous êtes un commercial de bureau.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner des exemples ultra-concrets de chantiers réels, montrer qu'on connaît les galères terrain spécifiques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et comment je sais que dans 6 mois vous serez encore là ? J'ai vu tellement de boîtes disparaître...",
+        "sous_texte": "J'ai peur d'investir dans une solution qui sera abandonnée, de dépendre d'un prestataire qui peut faire faillite.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Preuves de solidité (ancienneté, clients, références), garanties, montrer qu'il garde contrôle de ses données"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de tableau de bord et de KPI là... faut pas me prendre pour un con, j'ai pas fait d'études mais j'suis pas débile non plus.",
+        "sous_texte": "Vous utilisez du jargon qui me fait sentir incompétent, ça me braque. Parlez-moi comme à un être humain normal.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "S'excuser immédiatement, traduire en langage simple et concret, montrer du respect pour son intelligence pratique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon mais là concrètement, ça va me faire gagner combien ? Parce que du temps j'en ai pas des masses à perdre dans vos formations.",
+        "sous_texte": "Je veux du concret chiffré, pas du blabla. Et j'ai peur que la mise en place bouffe tout le gain promis.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Chiffrer le gain sur SON cas précis (heures admin économisées, factures récupérées plus vite), minimiser temps formation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais là je peux pas me décider comme ça, faut que je réfléchisse.",
+        "sous_texte": "Je fuis l'engagement immédiat. Soit je ne suis pas convaincu, soit j'ai besoin de valider ailleurs, soit je veux juste me débarrasser de vous poliment.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Identifier la vraie raison (pas convaincu ? besoin validation ? budget ?), proposer étape suivante précise et petite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon envoyez-moi un mail avec tout ça, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je me débarrasse de vous poliment. Ce mail ira directement à la poubelle ou sera noyé dans ma boîte. Ne me rappelez pas.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Refuser poliment l'envoyer-un-mail, proposer un créneau précis de rappel ou mini-engagement concret"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai un concurrent, Bertrand Construction, qui utilise déjà un logiciel. Je vais lui demander ce qu'il en pense d'abord.",
+        "sous_texte": "Je cherche une validation sociale avant d'avancer, je ne fais pas confiance à votre parole seule. Ou c'est une excuse pour temporiser.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Encourager cette démarche, proposer de mettre en relation avec VOS clients locaux, fixer un rappel post-vérification"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais un rendez-vous de combien de temps ? Parce que moi les réunions de 2 heures où on avance pas, très peu pour moi.",
+        "sous_texte": "J'ai peur de perdre mon temps dans un rendez-vous interminable et inutile. J'ai besoin de contrôle sur mon agenda.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner durée précise et courte (30-45min max), expliquer le format concret, proposer créneaux hors heures ouvrées"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et vous voulez venir avec qui au rendez-vous ? Parce que si c'est pour avoir 3 personnes autour de la table, j'ai pas le temps.",
+        "sous_texte": "Je déteste les réunions à rallonge avec plein d'intervenants. Je veux un interlocuteur unique, efficace, qui va droit au but.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rassurer : vous seul (ou +1 technique si besoin), pas de réunion corporate, format simple et opérationnel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon et si ça me plaît pas après votre démo, je suis pas engagé hein ? Pas de signature de contrat surprise ?",
+        "sous_texte": "J'ai peur du piège, de l'engagement caché, de me faire avoir. J'ai besoin d'être rassuré que je garde le contrôle.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rassurer totalement : RDV sans engagement, zéro obligation, il décide après avoir vu concrètement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Faut pas me prendre pour un pigeon hein, j'en ai vu des commerciaux qui promettent la lune et après y'a plus personne.",
+        "sous_texte": "Je teste votre réaction : est-ce que vous encaissez ? Est-ce que vous allez vous vexer ? Je veux quelqu'un de solide.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Encaisser sans se vexer, reconnaître que c'est légitime, montrer concrètement votre différence par preuves"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais bon... chez Bouygues ou Vinci ils ont peut-être besoin de vos machins, mais nous on est une petite boîte, c'est pas pareil.",
+        "sous_texte": "Je ne me reconnais pas dans vos références, vous me parlez de grands groupes que je déteste. Montrez-moi des gens comme moi.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Éviter les références grands groupes, donner exemples PME locales de taille similaire, valoriser spécificité PME"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez c'est sympa tout ça, mais là entre mon chantier en retard des Acacias, mes 87 000 balles de factures impayées et mon chef de chantier qui vient de se barrer, franchement j'ai pas la tête à me lancer dans un nouveau truc. Rappelez-moi dans 6 mois quand ça ira mieux.",
+      "condition_declenchement": "Quand le vendeur pousse trop vers l'engagement alors que les problèmes immédiats de Didier n'ont pas été adressés comme des opportunités pour la solution. Il utilise sa situation de crise comme excuse légitime pour fuir."
+    },
+    "pattern_escalade": "Didier commence bourru et défensif (objections réflexes courtes et sèches). Si le commercial résiste et montre qu'il comprend le terrain, il passe à des objections plus sincères et détaillées (expérience passée négative, craintes réelles). Si poussé trop vite vers la vente sans que la valeur soit établie, il devient agressif ou se ferme complètement. Si bien accompagné, il teste encore 2-3 fois ('faut pas me prendre pour un con') avant d'accepter un micro-engagement.",
+    "piege_classique": "Répondre aux objections de Didier avec du discours corporate, des stats générales ou des arguments rationnels classiques. Il faut parler CASH : cas concrets locaux, chiffres précis sur SON business, reconnaissance qu'il est expert de son métier, format court et sans blabla. Le pire : argumenter trop ou ne pas encaisser ses tests d'autorité. Le piège mortel : ne pas donner le prix clairement ou utiliser des anglicismes et du jargon technique."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions B2B pour le secteur BTP",
+      "description": "Entreprise proposant des solutions destinées aux entreprises de bâtiment et travaux publics"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux entreprises de BTP spécialisées dans les travaux tous corps d'état ou le gros œuvre",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques d'approche en prospection téléphonique à froid pour décrocher des rendez-vous qualifiés auprès de dirigeants de PME BTP",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique à froid — PME BTP en tension",
+    "vous_etes": "Commercial B2B spécialisé solutions BTP, vous prospectez des entreprises de travaux tous corps d'état et gros œuvre de 20-40 salariés.",
+    "vous_vendez": "Une solution pour les entreprises de BTP (nature à préciser selon votre argumentaire — logiciel, service, équipement). Prix et détails à définir selon votre approche.",
+    "vous_appelez": "Didier Fourcade, 52 ans, gérant de Fourcade Bâtiment & Rénovation (28 salariés, 3,2M€ CA). Ancien de terrain, méfiant, débordé, allergique au baratin commercial.",
+    "ce_que_vous_savez": [
+      "Entreprise familiale de 24 ans, spécialisée tous corps d'état et gros œuvre",
+      "28 salariés dont 22 ouvriers et 4 chefs de chantier",
+      "Activité en légère baisse ces 18 derniers mois",
+      "Gestion artisanale : Excel pour devis, WhatsApp avec les équipes, carnet papier",
+      "A déjà testé un logiciel il y a 3 ans — échec cuisant, 2800€ perdus"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique en captant son attention dans les 30 premières secondes et en créant suffisamment d'intérêt pour qu'il vous donne 30 minutes.",
+    "vos_atouts": [
+      "Connaissance du terrain BTP — vous parlez son langage, pas corporate",
+      "Solution simple et concrète (pas un projet usine à gaz)",
+      "Preuves locales si possible : d'autres boîtes du coin l'utilisent",
+      "Disponibilité pour un test ou démo rapide avant engagement"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:18:51Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16646,
+    "total_time_s": 152.8
+  }
+}

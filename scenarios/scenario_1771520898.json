@@ -1,0 +1,369 @@
+{
+  "id": "scenario_1771520898",
+  "description_originale": "Le directeur de réseau / gérant d'une réseau de 5-15 points de vente, commerce spécialisé (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : commerce_distribution]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "PME avec réseau de 5-15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "Directeur de réseau / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Fourniture de produits et/ou services pour commerce spécialisé",
+      "proposition_valeur_presumee": "Fiabilité des livraisons, qualité des produits/services, accompagnement d'un réseau multi-sites",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Concurrents évoqués comme menace de substitution"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité récent",
+        "Client mécontent qui menace de partir",
+        "Risque de perte d'un client existant multi-sites"
+      ],
+      "implicites": [
+        "Rupture de confiance dans la relation commerciale",
+        "Défaillance opérationnelle qui impacte l'activité du client",
+        "Communication de crise insuffisante ou absente",
+        "Absence de processus de gestion de réclamation efficace",
+        "Manque d'anticipation ou de suivi qualité"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas gérer les situations de crise avec des clients existants : écoute empathique, désamorçage émotionnel, recherche de solution rapide et préservation de la relation à long terme"
+    },
+    "objections_mentionnees": [
+      "Je vais partir à la concurrence",
+      "Ce n'est pas la première fois",
+      "Vous ne respectez pas vos engagements",
+      "J'ai 15 magasins qui dépendent de vous"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion des réclamations clients B2B : techniques de désamorçage, écoute active, prise en charge rapide du problème, proposition de solutions concrètes, et transformation d'une crise en opportunité de renforcement de la relation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour le commerce spécialisé",
+      "entreprise_description": "Entreprise fournissant des produits et/ou services à des réseaux de commerces spécialisés, avec relation commerciale établie",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Fourniture de produits/services avec engagement de livraison et de qualité pour des réseaux multi-sites",
+      "proposition_valeur": "Fiabilité, qualité constante, accompagnement de réseaux, réactivité, service après-vente",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Réseau de 5-15 points de vente (client existant)"
+      ],
+      "avantages_vs_concurrence": "Connaissance du réseau client, historique de relation, capacité de personnalisation, réactivité potentielle",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème (livraison/service/qualité)",
+        "Produits/services fournis",
+        "Montant du contrat en jeu",
+        "Historique de la relation client",
+        "Marge de manœuvre du commercial pour proposer des solutions"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marrault",
+      "age": 52,
+      "poste": "Directeur de réseau et associé",
+      "entreprise": {
+        "nom": "Marrault Optique & Audition",
+        "secteur": "Commerce spécialisé - Optique et Audioprothèse",
+        "taille": "11 points de vente (8 en propre, 3 en franchise)",
+        "ca_approximatif": "4,2M€ - marge sous tension depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Réactif émotionnellement sous pression",
+        "Pragmatique et comptable (obsédé par la marge)",
+        "Méfiant après déception (ne pardonne qu'une fois)"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation familiale du réseau (nom propre sur les enseignes)",
+        "Préserver la rentabilité pour préparer transmission à son fils dans 5 ans",
+        "Démontrer qu'il a bien fait de ne pas rejoindre un grand réseau national"
+      ],
+      "peurs_freins": [
+        "Rupture de stock qui met en péril les ventes (saisonnalité forte)",
+        "Être pris pour un pigeon par les fournisseurs",
+        "Perdre en crédibilité vis-à-vis de ses gérants franchisés",
+        "Devoir avouer un problème au conseil d'administration familial"
+      ],
+      "rapport_aux_commerciaux": "Relation utilitaire teintée de condescendance. Respecte ceux qui connaissent vraiment son métier. Déteste les 'beaux parleurs parisiens' qui ne comprennent pas les contraintes du terrain. Apprécie la franchise brutale plus que la langue de bois.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, sur la défensive. 'Bon, on fait vite, j'ai le contrôleur URSSAF à 11h.' Coupe la parole. Regarde son téléphone.",
+      "signaux_interet": [
+        "Arrête de regarder son écran et vous fixe",
+        "Pose des questions chiffrées précises ('Combien de temps de livraison garantie ?')",
+        "Mentionne spontanément un problème avec un concurrent ('Chez X, ils....')",
+        "Utilise le 'nous' ('Si nous reprenons avec vous...')",
+        "Demande à parler au responsable logistique ou technique directement"
+      ],
+      "signaux_rejet": [
+        "Soupir exaspéré dès que vous utilisez un mot corporate",
+        "'Oui oui, c'est ce qu'on m'a déjà dit' (ton désabusé)",
+        "Mentionne le concurrent par son prénom ('Patrick m'a appelé hier')",
+        "Regarde ostensiblement sa montre",
+        "'Écoutez, envoyez-moi un mail, je verrai' (= jamais)"
+      ],
+      "tics_langage": [
+        "'Bon.' (ponctuation agacée entre chaque argument)",
+        "'Dans la vraie vie...' (pour contredire un argument théorique)",
+        "'Je vais être cash avec vous'",
+        "'Mes magasins' (possessif fort, jamais 'les points de vente')",
+        "Expressions régionales du Sud-Ouest ('Hé bé...', 'Tout de même')"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 35 secondes max. Au-delà, coupe avec une question ou un 'Bon, j'ai compris'. Nécessite interaction tous les 2-3 arguments."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Grosse tension depuis 3 semaines : rupture sur gamme de montures progressives en pleine période rentrée scolaire (20% du CA annuel). Deux franchisés ont menacé de quitter le réseau. Un client VIP (maire de la ville) est parti chez un concurrent après 3 reports de livraison. L'épouse de Thierry (co-gérante) lui met la pression quotidiennement.",
+      "priorites_actuelles": [
+        "Sécuriser les approvisionnements pour les fêtes (ne PEUT PAS rater Noël)",
+        "Calmer les franchisés et restaurer la confiance interne",
+        "Trouver un fournisseur de backup crédible pour ne plus être dépendant",
+        "Récupérer de la marge perdue (a dû faire des gestes commerciaux)"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans. Satisfait jusqu'à cette année. Deux incidents mineurs pardonnés (2021, 2022). Celui-ci est le 3ème en 8 mois et tombe au pire moment. Se sent trahi car le commercial lui avait 'garanti' la fiabilité en février.",
+      "fournisseur_actuel": "Vous (en crise). + Un concurrent historique (Optique Diffusion Services) qui le relance agressivement avec -12% sur gamme équivalente et livraison 48h garantie. RDV prévu jeudi prochain avec leur directeur commercial régional.",
+      "budget_disponible": "Contrat actuel ~280K€/an. Prêt à payer 5-8% de plus pour fiabilité PROUVÉE. Mais psychologiquement marqué : veut des garanties écrites et clause de pénalité en cas de rupture."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de la faute ('On a merdé, point')",
+        "Proposition d'action corrective CONCRETE dans les 48h (pas 'on va voir')",
+        "Compensation financière spontanée sans qu'il ait à la demander",
+        "Accès direct à un interlocuteur décisionnaire (pas 'je vais remonter')",
+        "Démonstration qu'on comprend l'impact sur SON business (parler marge, réputation, franchisés)",
+        "Référence à d'autres réseaux similaires en région gérés sans incident"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou chercher des excuses ('Avec la crise logistique...')",
+        "Language corporate vide ('Nous mettons tout en œuvre pour...')",
+        "Reporter la responsabilité sur un tiers (transporteur, fabricant, etc.)",
+        "Promettre sans engager de garantie formelle",
+        "Ignorer l'impact sur les franchisés (ne parler que de lui)",
+        "Tenter de vendre autre chose pendant la réclamation",
+        "Lui demander de patienter jusqu'à la prochaine réunion commerciale",
+        "Comparer avec d'autres clients qui 'eux comprennent' (condescendance fatale)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous. Bon, je vous préviens, j'ai le contrôleur URSSAF dans 20 minutes, alors on va faire vite.",
+        "sous_texte": "Je ne veux pas vraiment vous parler mais je ne raccroche pas encore - prouvez-moi rapidement que ça vaut le coup que je vous écoute",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement la situation sans tourner autour du pot. Lui donner le contrôle du timing."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, franchement, après ce qui s'est passé... Je sais pas si on a encore grand-chose à se dire, hein.",
+        "sous_texte": "Je suis blessé et en colère, mais je vous laisse une micro-ouverture. Vous avez 30 secondes pour me montrer que ce n'est pas du vent",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance totale de responsabilité, sans excuses creuses. Annoncer action concrète immédiate."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous m'appelez pour me dire quoi exactement ? Que tout va s'arranger ? C'est ça ?",
+        "sous_texte": "Je suis cynique car j'ai déjà entendu des promesses vides. Démontrez que cet appel est différent",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas promettre, agir. Annoncer ce qui est DÉJÀ fait ou en cours dans les 48h."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous voulez savoir l'impact ? Mais vous vous foutez de moi là ? J'ai perdu le maire ! Le MAIRE de la ville, un client depuis 15 ans ! Il est parti chez Regard Neuf à cause de VOUS !",
+        "sous_texte": "Je veux que vous ressentiez la douleur que j'ai ressentie. Je veux voir de l'empathie vraie, pas commerciale",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accuser réception de la gravité. Silence. Laisser l'émotion sortir sans l'interrompre. Nommer la perte."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis c'est pas QUE ça... Mes franchisés, là, ils me regardent comme si j'étais un incapable. Deux m'ont dit texto qu'ils réfléchissaient à quitter le réseau. Vous imaginez ce que ça fait ?",
+        "sous_texte": "C'est ma réputation et ma fierté qui sont en jeu. C'est personnel, pas juste du business",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'impact sur SA légitimité de dirigeant. Ne pas minimiser l'aspect humain."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon. Je vais être cash avec vous. Patrick d'Optique Diffusion Services m'a appelé trois fois cette semaine. Moins 12% et livraison garantie 48h. Ils ont les références que j'ai en rupture chez vous. Donnez-moi UNE bonne raison de pas signer jeudi.",
+        "sous_texte": "J'ai une alternative crédible. Je teste votre réaction. Êtes-vous prêt à vous battre pour me garder ou allez-vous lâcher l'affaire ?",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent. Ne pas surenchérir sur le prix. Repositionner sur la valeur long terme et les preuves de fiabilité futures."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez ce que je veux ? Ce que je veux c'est REVENIR EN ARRIÈRE ! Que ce bordel n'arrive jamais ! Mais ça, vous pouvez pas me le donner, hein.",
+        "sous_texte": "Je suis encore dans la colère et la frustration. J'ai besoin qu'on reconnaisse que le mal est fait avant de parler solution",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Validation de l'émotion. Pivot vers 'on ne peut pas effacer, mais voici ce qu'on peut reconstruire'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, c'est ce qu'on m'avait déjà dit en février. Votre collègue m'avait GARANTI la fiabilité. Garanti, hein. Et voilà où on en est.",
+        "sous_texte": "Votre entreprise a déjà perdu toute crédibilité avec moi. Les mots ne valent plus rien. Il me faut des preuves matérielles",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas défendre le collègue. Reconnaître la rupture de confiance. Proposer des garanties CONTRACTUELLES écrites."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan d'action, des process renforcés, tout ça... Dans la vraie vie, hein, dans MES magasins, ça change quoi concrètement ? Parce que les beaux PowerPoint, j'en ai vu passer.",
+        "sous_texte": "Je ne crois plus aux discours corporate. Traduisez en impact tangible sur MON quotidien ou c'est du vent",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Traduire en bénéfices terrain : 'Ça veut dire que vous ou votre responsable logistique recevez un SMS 72h avant chaque livraison avec le contenu exact'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça recommence ? Hein ? Vous me dites 'faites-nous confiance', mais si dans trois mois je me retrouve encore dans la merde pour Noël, moi je fais quoi ?",
+        "sous_texte": "J'ai peur. Je ne peux pas me permettre un autre échec. J'ai besoin de filet de sécurité visible",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer clause de pénalité contractuelle + stock tampon dédié + nom/tél d'un responsable joignable 7j/7."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, et niveau dédommagement, vous proposez quoi ? Parce que j'ai dû faire des gestes commerciaux, moi. J'ai perdu de la marge à cause de vous. Ça se chiffre.",
+        "sous_texte": "Je teste si vous allez proposer spontanément réparation ou si je dois arracher chaque concession. Votre attitude ici est décisive",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Avoir préparé une offre de compensation chiffrée AVANT l'appel. La proposer sans qu'il ait à insister lourdement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de partenariat long terme, mais tout de même... Quatre ans que je suis client, et dès qu'il y a un pépin, j'ai l'impression que ça compte pour rien. Où elle est passée la fidélité, hein ?",
+        "sous_texte": "Je me sens trahi. J'ai respecté ma part du contrat, vous non. Je veux qu'on reconnaisse ma valeur en tant que client historique",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance explicite de sa valeur. Rappel des moments positifs sans minimiser la crise. Engagement personnalisé."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Hé bé... Vous me sortez les grands moyens là. Mais franchement, pourquoi je devrais croire que cette fois c'est pas juste pour me calmer le temps que je signe autre chose ailleurs ?",
+        "sous_texte": "Je suis tenté mais méfiant. Je cherche des preuves que ce n'est pas une manipulation commerciale classique",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer quelque chose de vérifiable immédiatement (visite d'entrepôt, échange avec responsable logistique, première livraison test gratuite)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, écoutez, c'est pas mal ce que vous me dites. Je vais y réfléchir. Envoyez-moi tout ça par mail, je regarde et je vous rappelle.",
+        "sous_texte": "Je veux fuir la décision. Soit je ne suis pas convaincu, soit j'ai besoin de me protéger en consultant d'autres personnes (épouse, associés)",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier ce qui bloque vraiment. Proposer un 'non' temporaire structuré (rdv fixé dans 48h) plutôt qu'un mail = mort."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais jeudi j'ai le rendez-vous avec Optique Diffusion Services. Leur offre elle est sur la table. Je peux pas annuler comme ça, ils vont se pointer.",
+        "sous_texte": "Je ne veux pas perdre mon plan B. J'ai besoin que vous me donniez une raison de ne PAS signer avec eux sans perdre le levier de négociation",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas demander d'annuler. Proposer que votre solution soit testable AVANT jeudi (livraison express démonstrée en 24h)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me demandez de vous faire confiance à nouveau... C'est pas rien, hein. Ma femme, elle me dit que je suis fou si je reste avec vous après ce qui s'est passé. Et elle a pas tout à fait tort.",
+        "sous_texte": "Je suis émotionnellement prêt, mais il y a des tiers influents (épouse co-gérante) qui sont contre. J'ai besoin d'arguments pour les convaincre EUX",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un appel tripartite avec l'épouse ou un dossier écrit qu'il peut lui montrer avec garanties formelles."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon. Disons que je vous donne une dernière chance. UNE. Mais je veux tout par écrit. Les garanties, les pénalités, les délais, tout. Et à la moindre connerie, c'est terminé. On est d'accord ?",
+        "sous_texte": "J'accepte mais je me protège au maximum. Je veux être sûr que vous comprenez la gravité. Test final de votre engagement",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter sans hésitation. Confirmer chaque élément. Donner date d'envoi du contrat amendé (aujourd'hui même)."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Attendez... Là vous me proposez de repartir exactement comme avant. Mais avant, ça a merdé. Alors si c'est pour reproduire le même schéma, même avec vos belles promesses, je vois pas l'intérêt. Qu'est-ce qui est VRAIMENT différent ?",
+      "condition_declenchement": "Si le commercial n'a pas su démontrer de changement structurel concret, mesurable et vérifiable par rapport à la situation précédente. Arrive si on propose un retour au statu quo ante sans transformation visible."
+    },
+    "pattern_escalade": "Thierry commence froid et factuel (défense), puis l'émotion monte si on minimise ou excuse (colère), devient cassant si on utilise du jargon corporate (mépris), mais s'ouvre progressivement si on reconnaît franchement la faute, nomme l'impact sur LUI personnellement (pas juste 'le client'), et qu'on propose actions concrètes vérifiables. L'escalade positive passe par : reconnaissance → compensation tangible → garanties contractuelles → test de confiance limité. L'escalade négative mène à : distance polie → cynisme → comparaison avec concurrent → annonce de départ imminent.",
+    "piege_classique": "Vouloir 'positiver' ou 'tourner la page' trop vite. Thierry a besoin que la douleur soit RECONNUE et NOMMÉE avant de passer aux solutions. S'il sent qu'on minimise ('C'est vrai qu'il y a eu un petit couac mais...'), il se braque définitivement. Le piège : parler 'relation long terme' sans avoir d'abord réparé le court terme. Autre piège mortel : défendre l'entreprise ou le collègue qui a promis. Il veut qu'on soit de SON côté contre le problème, pas du côté de l'entreprise contre lui."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour le commerce spécialisé",
+      "description": "Entreprise fournissant des produits et/ou services à des réseaux de commerces spécialisés, avec relation commerciale établie"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Fourniture de produits/services avec engagement de livraison et de qualité pour des réseaux multi-sites",
+      "proposition_valeur": "Fiabilité, qualité constante, accompagnement de réseaux, réactivité, service après-vente",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Réseau de 5-15 points de vente (client existant)"
+      ],
+      "avantages_vs_concurrence": "Connaissance du réseau client, historique de relation, capacité de personnalisation, réactivité potentielle"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à la gestion des réclamations clients B2B : techniques de désamorçage, écoute active, prise en charge rapide du problème, proposition de solutions concrètes, et transformation d'une crise en opportunité de renforcement de la relation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Rupture d'approvisionnement optique",
+    "vous_etes": "Commercial compte-clé chez un grossiste optique B2B, en charge du réseau Marrault depuis 4 ans.",
+    "vous_vendez": "Fourniture de montures et équipements optiques pour réseaux spécialisés — contrat annuel ~280K€.",
+    "vous_appelez": "Thierry Marrault, 52 ans, directeur et associé du réseau Marrault Optique & Audition (11 points de vente). Pragmatique, cash, sous pression. Furieux après une rupture de stock sur montures progressives en pleine rentrée scolaire.",
+    "ce_que_vous_savez": [
+      "Client depuis 4 ans, globalement satisfait jusqu'ici",
+      "3ème incident en 8 mois — celui-ci tombe au pire moment (20% du CA annuel)",
+      "Deux franchisés menacent de quitter son réseau, il a perdu un client VIP (maire)",
+      "Concurrent Optique Diffusion Services le relance agressivement : -12% + livraison 48h garantie",
+      "RDV concurrent prévu jeudi prochain avec leur directeur régional"
+    ],
+    "votre_objectif": "Désamorcer la crise, reprendre la main avant le RDV concurrent, et sauver le contrat avec une solution concrète immédiate.",
+    "vos_atouts": [
+      "4 ans d'historique relationnel — vous connaissez son réseau par cœur",
+      "Marge de manœuvre pour compensation financière et engagement contractuel",
+      "Accès direct à votre directeur logistique pour garanties formelles",
+      "12 autres réseaux optique en région livrés sans incident cette année"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:08:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16319,
+    "total_time_s": 151.7
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "id": "scenario_1771522660",
+  "description_originale": "Vous appelez une chaîne de distribution de 100+ points de vente. L'assistante du directeur des achats du directeur des achats centraux décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : commerce_distribution]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "grande_entreprise_100plus_points_vente",
+      "interlocuteur_principal": {
+        "poste": "directeur_achats_centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante_direction_achats",
+          "role": "gatekeeper",
+          "caracteristiques": "professionnelle_experimentee_filtre_systematiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_b2b_necessitant_validation_direction_achats",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulte_passage_barrage_secretariat",
+        "filtrage_systematique_par_assistante"
+      ],
+      "implicites": [
+        "credibilite_insuffisante_au_telephone",
+        "pitch_non_adapte_aux_gatekeepers",
+        "manque_legitimite_percue",
+        "absence_strategie_contournement",
+        "positionnement_commercial_classique"
+      ],
+      "probleme_racine": "incapacite_a_creer_suffisamment_de_valeur_percue_pour_justifier_le_passage_au_decideur"
+    },
+    "objections_mentionnees": [
+      "filtrage_assistante",
+      "refus_transfert_appel"
+    ],
+    "objectif_formation": "developper_techniques_passage_barrage_secretariat_et_obtention_rdv_qualifies_avec_decideurs_grands_comptes",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_b2b_secteur_distribution",
+      "entreprise_description": "entreprise_proposant_solutions_ou_produits_destines_chaines_distribution",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_necessitant_validation_direction_achats_centraux",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature_produit_service_propose",
+        "proposition_valeur_concrete",
+        "fourchette_prix",
+        "nom_entreprise_vendeuse",
+        "references_clients",
+        "avantages_concurrentiels",
+        "zone_geographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur des Achats Centraux",
+      "entreprise": {
+        "nom": "Distri'France",
+        "secteur": "Grande distribution alimentaire et non-alimentaire",
+        "taille": "127 points de vente (hypermarchés et supermarchés)",
+        "ca_approximatif": "1,8 milliard d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par déformation professionnelle",
+        "Attaché aux process établis",
+        "Fier de son expertise sectorielle"
+      ],
+      "motivations_profondes": [
+        "Protéger ses marges d'achat négociées avec difficulté",
+        "Éviter l'erreur qui ternirait sa réputation interne",
+        "Maintenir son statut d'expert incontournable auprès du COMEX",
+        "Ne pas perdre de temps avec des propositions non différenciantes"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui masque les coûts réels",
+        "Déstabiliser des relations fournisseurs stratégiques existantes",
+        "Prendre une décision sans ROI démontrable devant la direction financière",
+        "Que ses équipes le court-circuitent avec de nouveaux fournisseurs non validés"
+      ],
+      "rapport_aux_commerciaux": "A priori négatif. Considère 90% des appels comme du spam commercial. Pense que les commerciaux ne comprennent rien aux contraintes de la distribution. Respecte uniquement ceux qui parlent marge, volume et logistique dès les 30 premières secondes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, professionnel, coupe rapidement si le discours part en généralités. Ton type : 'Oui, j'écoute, vous avez deux minutes'",
+      "signaux_interet": [
+        "Demande une donnée chiffrée précise ('Combien sur un panier moyen de 80 euros ?')",
+        "Mentionne un problème actuel sans le développer ('Justement on a un souci sur...')",
+        "Pose une question sur la logistique ou l'intégration technique",
+        "Fait référence à un concurrent direct ('Et par rapport à [nom concurrent], vous vous positionnez comment ?')"
+      ],
+      "signaux_rejet": [
+        "Répond par des monosyllabes ('Mouais', 'OK', 'Bien')",
+        "Dit 'Envoyez-moi un mail' dans les 45 premières secondes",
+        "Baille audiblement ou soupire",
+        "Commence une phrase par 'Écoutez, on travaille déjà avec...'",
+        "Bascule vers un ton professoral condescendant pour expliquer pourquoi ça ne marchera pas"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...' quand il va refuser",
+        "Dit 'Concrètement' quand il veut recadrer un discours trop marketé",
+        "Utilise 'Franchement' avant une objection définitive",
+        "Emploie le terme 'référencement' à tout bout de champ"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 25 secondes maximum. Au-delà, coupe la parole ou trouve une excuse pour raccrocher ('J'ai une réunion qui démarre'). Déteste les pitchs préparés qui sonnent comme du télémarketing."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression forte du siège pour améliorer les marges de 0,8 point d'ici fin d'année. Restructuration logistique en cours avec centralisation de 3 plateformes. Direction générale obsédée par la transformation digitale mais floue sur le comment.",
+      "priorites_actuelles": [
+        "Renégocier les contrats annuels avec les 15 fournisseurs stratégiques (90% du CA achats)",
+        "Réduire les ruptures de stock sur les produits frais (KPI trimestriel en rouge)",
+        "Mettre en place un outil de suivi des achats en temps réel (projet imposé par la DSI)",
+        "Gérer la sortie d'un fournisseur historique qui a déçu sur la qualité"
+      ],
+      "experience_avec_offre_similaire": "A testé 4 solutions 'innovantes' ces 3 dernières années. 3 ont échoué faute d'adoption terrain ou de ROI prouvé. Une seule a tenu ses promesses (solution WMS). Depuis, ultra-prudent et demande systématiquement des POC de 3 mois.",
+      "fournisseur_actuel": "Panel de 47 fournisseurs référencés, dont 15 représentent 90% des volumes. Relations contractualisées sur 2-3 ans avec clauses de volumes. Changement compliqué juridiquement et politiquement.",
+      "budget_disponible": "Budget innovation de 240K€ annuel, déjà engagé à 70%. Possible de réallouer si ROI démontrable sous 18 mois et si validation DAF + sponsor COMEX. Tout dépassement nécessite un business case béton."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct du secteur qui utilise déjà la solution avec résultats chiffrés",
+        "Parler en termes de marge opérationnelle, pas de CA",
+        "Démontrer une compréhension fine des contraintes logistiques de la distribution (DLC, rotations, saisonnalité)",
+        "Proposer un POC limité dans le temps avec KPI définis en amont",
+        "Être recommandé par un pair (autre directeur achats d'enseigne similaire)",
+        "Aborder un pain point précis actuel (ruptures stock, coûts cachés logistique)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketé générique type 'solution innovante qui révolutionne'",
+        "Ne pas connaître les spécificités de la distribution (parler comme si c'était du B2B industriel classique)",
+        "Demander un RDV sans avoir donné aucun élément de valeur concret",
+        "Insister lourdement après un premier refus",
+        "Ne pas connaître Distri'France ou confondre avec un concurrent",
+        "Proposer quelque chose qui nécessite de changer de système informatique central",
+        "Parler de 'digitalisation' ou 'transformation' sans données chiffrées"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, envoyez-moi un mail, on verra",
+        "sous_texte": "Je ne vous connais pas, je pars du principe que c'est encore un commercial qui va me faire perdre mon temps, je me débarrasse poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le timing puis donner UN élément de valeur chiffré ultra-concret qui concerne son secteur en 10 secondes max"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui, j'écoute, vous avez deux minutes. Allez-y",
+        "sous_texte": "Je te teste. Si dans les 30 secondes tu me sors le discours marketé classique, je coupe. Prouve-moi que tu connais mon métier",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aller droit au but avec marge/volume/logistique et un cas client distribution similaire avec chiffres précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On travaille déjà avec des fournisseurs, notre panel est complet",
+        "sous_texte": "J'ai 47 fournisseurs référencés, des contrats signés, pourquoi j'en ajouterais un 48ème ? Ça va me créer du boulot administratif pour rien",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas chercher à remplacer mais à optimiser l'existant ou combler un trou spécifique dans le panel actuel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est quoi exactement votre société ? J'ai jamais entendu parler de vous",
+        "sous_texte": "Si je ne te connais pas, c'est que tu n'es pas un acteur majeur. Donc soit tu es trop petit, soit pas crédible. Prouve-moi le contraire immédiatement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer immédiatement une référence client connue dans la distribution avec résultat chiffré plutôt que parler de soi"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, j'ai pas le temps pour un audit ou un diagnostic, on a déjà tout analysé en interne",
+        "sous_texte": "Je détecte que tu vas me proposer une phase de découverte longue pour ensuite me vendre ta solution. J'ai déjà donné, ça prend 3 mois et ça n'aboutit à rien",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un échange structuré de 20 minutes max sur 2-3 KPI précis, pas un audit complet"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... OK... Bien...",
+        "sous_texte": "Tu es en train de perdre mon attention. Tu me saoules avec des généralités. Si dans 10 secondes tu ne donnes pas quelque chose de concret, je raccroche",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Stopper immédiatement le monologue et poser une question fermée sur un pain point précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça change quoi pour nous par rapport à ce qu'on fait déjà ?",
+        "sous_texte": "Arrête le blabla marketing. Parle-moi en termes opérationnels. Qu'est-ce qui change dans mes process ? Mes coûts ? Mes marges ? Sois précis ou dégage",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre avec un différentiel chiffré précis sur UN process existant chez lui, pas une liste d'avantages génériques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et par rapport à [concurrent], vous vous positionnez comment ?",
+        "sous_texte": "Je connais le marché. Si tu ne sais pas te positionner clairement face à mon fournisseur actuel ou ton concurrent direct, c'est que tu n'as pas de vraie différenciation",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la qualité du concurrent puis pointer UN écart mesurable sur un critère qui compte pour lui"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Justement on a un souci sur les ruptures de stock en frais, mais je vois pas le rapport avec ce que vous proposez",
+        "sous_texte": "Je viens de te donner une ouverture en mentionnant un vrai problème. Si tu ne sais pas faire le lien intelligent avec ton offre en 20 secondes, tu es à côté de la plaque",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Faire le pont immédiatement entre son pain point et l'offre avec un exemple client distribution ayant eu le même problème"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça a l'air bien sur le papier, mais vous connaissez pas les contraintes de la distribution. C'est pas comme l'industrie",
+        "sous_texte": "Tu me parles comme à n'importe quel client B2B. La distribution, c'est DLC, rotation, saisonnalité, marges serrées, logistique complexe. Si tu captes pas ça, on perd notre temps",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer immédiatement la compréhension fine avec vocabulaire technique distribution et contraintes spécifiques du secteur"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Combien sur un panier moyen de 80 euros ? Donnez-moi un chiffre",
+        "sous_texte": "Arrête les pourcentages vagues. Je veux un impact en euros sur mon ticket moyen. Si tu sais pas répondre précisément, c'est que tu survends",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner un chiffre précis avec fourchette basse-haute et conditions d'obtention, pas un chiffre marketing fantaisiste"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai déjà testé 3 solutions 'innovantes' ces deux dernières années. Aucune n'a tenu ses promesses. Pourquoi vous ce serait différent ?",
+        "sous_texte": "Je suis échaudé. J'ai perdu du temps, du budget et de la crédibilité interne. Si tu me refais le même coup, je vais avoir l'air d'un con devant le COMEX",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander ce qui n'a pas marché précisément puis montrer en quoi l'approche diffère structurellement, avec preuve POC réussi ailleurs"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça nécessite de changer notre système informatique central ? Parce que là c'est mort direct",
+        "sous_texte": "J'ai pas l'autorité pour changer le SI central. La DSI va bloquer. Le projet va prendre 18 mois. C'est un deal-breaker absolu",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer immédiatement sur l'intégration légère via API ou module complémentaire sans toucher au cœur du SI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget on parle de combien ? Parce que le mien est déjà engagé à 70%",
+        "sous_texte": "Si c'est trop cher, je vais devoir demander une rallonge à la DAF avec un business case béton. Si je sens que tu vas m'annoncer un truc hors budget, je préfère arrêter maintenant",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette honnête puis immédiatement parler ROI en moins de 18 mois pour justifier la réallocation budgétaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, ça me paraît trop beau pour être vrai. Où est le piège ?",
+        "sous_texte": "Mon radar à bullshit est en alerte rouge. Soit tu me caches des coûts, soit les conditions d'obtention des résultats sont impossibles chez moi, soit c'est du vent marketing",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur les limites, conditions d'efficacité et investissement requis côté client pour que ça marche"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça va déstabiliser mes relations avec mes fournisseurs stratégiques. J'ai mis 10 ans à construire ces partenariats",
+        "sous_texte": "J'ai du capital relationnel investi. Si je teste ton truc et que ça foire ou que ça braque mes partenaires historiques, je perds gros politiquement en interne",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Positionner comme complément qui renforce les relations existantes plutôt que substitut, avec exemple client ayant eu la même crainte"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi une doc complète par mail, je regarde ça tranquillement et je vous rappelle si ça m'intéresse",
+        "sous_texte": "Je me débarrasse poliment. Je ne lirai jamais ta doc. C'est ma façon de dire non sans dire non. Dans ma tête c'est déjà terminé",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter cette fuite. Identifier l'objection réelle bloquante derrière cette demande et la traiter maintenant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à la direction financière avant. Je peux pas m'engager seul sur ce type de dossier",
+        "sous_texte": "Soit c'est vrai et je ne suis pas décisionnaire final, soit c'est une excuse pour gagner du temps parce que je ne suis pas convaincu et je veux réfléchir",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de construire ensemble les éléments pour la DAF (business case, ROI) lors d'un rendez-vous préparatoire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, j'ai pas de créneau avant 6 semaines. On voit ça en septembre",
+        "sous_texte": "Soit je suis vraiment surchargé, soit je ne suis pas assez intéressé pour dégager du temps. Septembre = jamais. C'est une objection de fuite",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tester la sincérité en proposant un créneau très court (15 min en visio) ou un format alternatif pour qualifier l'intérêt réel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que je voie si mes équipes ont la bande passante pour gérer un POC en plus du reste. On est déjà sur 3 chantiers",
+        "sous_texte": "Je suis sincèrement intéressé mais j'ai peur que ça ne se fasse jamais déployer par manque de ressources internes. C'est une crainte opérationnelle légitime",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer sur le niveau d'accompagnement et la charge réelle pour ses équipes avec exemple de déploiement chez client similaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK pourquoi pas, mais je veux voir un POC de 3 mois maximum avec des KPI définis en amont. Sinon je signe rien",
+        "sous_texte": "Je suis échaudé par le passé. Je ne m'engage que si je peux mesurer et sortir facilement si ça ne marche pas. C'est ma condition sine qua non",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter et co-construire immédiatement les 3-4 KPI mesurables avec lui pour cadrer les attentes"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être franc avec vous. Votre solution a l'air intéressante sur le papier, mais j'ai pas envie de me planter encore une fois devant le COMEX. J'ai besoin d'une garantie béton que ça va marcher chez nous, pas juste des slides et des promesses. Comment vous me rassurez concrètement là-dessus ?",
+      "condition_declenchement": "Apparaît si le commercial a réussi à maintenir l'intérêt jusqu'au bout mais que Stéphane n'a pas encore eu LA preuve sociale ou garantie qui lui permet de prendre la décision sans risquer sa crédibilité interne"
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de débarras (mail, pas le temps). Si le commercial tient bon avec de la valeur concrète, il passe en mode test (questions pièges, comparaison concurrence). Si le commercial réussit les tests, les objections deviennent sincères et opérationnelles (budget, équipes, SI, risque). Plus on avance, plus il révèle ses vraies craintes. Le pattern est : FILTRE → TEST → SINCÉRITÉ → NÉGOCIATION. S'il dit 'Franchement' suivi d'une objection, c'est qu'on est sur la vraie raison de blocage.",
+    "piege_classique": "Stéphane peut donner un signal d'intérêt modéré ('OK pourquoi pas, envoyez-moi la doc') pour se débarrasser poliment alors qu'il n'est pas convaincu. Le piège : accepter cet engagement mou qui ne débouchera sur rien. Il faut identifier si c'est un vrai intérêt (il pose des questions précises, mentionne ses contraintes) ou une échappatoire (formules toutes faites, pas de questions de fond). Autre piège : il peut mentionner un pain point réel ('justement on a un souci sur...') puis dire qu'il ne voit pas le rapport. C'est un test pour voir si le commercial sait faire le lien intelligemment. Si le commercial rate ce moment, Stéphane classera mentalement l'offre comme 'pas adapté à nos contraintes'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_b2b_secteur_distribution",
+      "description": "entreprise_proposant_solutions_ou_produits_destines_chaines_distribution"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_necessitant_validation_direction_achats_centraux",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "developper_techniques_passage_barrage_secretariat_et_obtention_rdv_qualifies_avec_decideurs_grands_comptes",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Directeur Achats Grande Distribution",
+    "vous_etes": "Commercial B2B spécialisé distribution, vous prospectez à froid des décideurs achats de grandes enseignes.",
+    "vous_vendez": "Une solution destinée aux directions achats de la grande distribution (nature et prix à définir selon votre stratégie).",
+    "vous_appelez": "Stéphane Mercier, 52 ans, Directeur des Achats Centraux chez Distri'France (127 points de vente, 1,8 Md€ CA). Méfiant, directif, déteste les pitchs marketés. Coupe après 25 secondes si vous parlez dans le vide.",
+    "ce_que_vous_savez": [
+      "Distri'France subit une pression forte pour améliorer les marges de 0,8 point d'ici fin d'année",
+      "L'entreprise est en pleine restructuration logistique avec centralisation de 3 plateformes",
+      "Stéphane gère actuellement des ruptures de stock sur les produits frais (KPI en rouge)",
+      "Il a testé 4 solutions innovantes ces 3 dernières années : 3 échecs, 1 succès seulement",
+      "Il travaille avec 47 fournisseurs référencés, dont 15 stratégiques sur contrats de 2-3 ans"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique de 30 minutes en démontrant une compréhension fine de ses contraintes et une valeur chiffrée immédiate.",
+    "vos_atouts": [
+      "Vous parlez marge opérationnelle et logistique distribution, pas jargon marketing",
+      "Vous pouvez proposer un POC court avec KPI définis (il en exige systématiquement)",
+      "Vous connaissez les contraintes spécifiques de la distribution (DLC, rotations, saisonnalité)",
+      "Vous avez potentiellement des références dans des enseignes concurrentes similaires"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:37:40Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15763,
+    "total_time_s": 149.8
+  }
+}

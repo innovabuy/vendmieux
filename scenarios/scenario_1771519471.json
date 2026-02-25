@@ -1,0 +1,344 @@
+{
+  "id": "scenario_1771519471",
+  "description_originale": "Vous appelez une énergéticien ou groupe de services environnementaux de 200+ salariés. L'assistante technique du directeur des achats ou directeur RSE décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : energie_environnement]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "energie_environnement",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats ou directeur RSE",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante technique du directeur",
+          "role": "filtre/barrage",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution liée à l'énergie, l'environnement ou la RSE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante",
+        "filtrage systématique des appels commerciaux"
+      ],
+      "implicites": [
+        "discours commercial pas assez différenciant",
+        "manque de crédibilité instantanée",
+        "approche trop générique face à une assistante expérimentée",
+        "difficulté à créer de l'urgence ou de l'intérêt dès les premières secondes"
+      ],
+      "probleme_racine": "incapacité à positionner l'appel comme suffisamment important ou pertinent pour que l'assistante accepte de transférer au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "apprendre à passer le barrage secrétaire avec élégance et professionnalisme pour obtenir un RDV qualifié avec le décideur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B liés à l'énergie, l'environnement ou la RSE",
+      "entreprise_description": "entreprise proposant des solutions pour les énergéticiens et groupes de services environnementaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution/service destiné aux directeurs des achats ou directeurs RSE dans le secteur énergie-environnement",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre/produit/service",
+        "proposition de valeur spécifique",
+        "prix ou budget indicatif",
+        "avantages concurrentiels",
+        "références clients",
+        "nom de l'entreprise vendeuse",
+        "zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Meunier",
+      "age": 51,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Énergies Services Territoires (EST)",
+        "secteur": "Distribution et services énergétiques multi-fluides",
+        "taille": "870 salariés",
+        "ca_approximatif": "340M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la défiance",
+        "Attaché aux process et à la hiérarchie",
+        "Méfiant envers les nouveautés non éprouvées"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation en évitant les mauvais choix fournisseurs",
+        "Démontrer sa maîtrise des coûts au COMEX",
+        "Maintenir son réseau de fournisseurs historiques qui le sécurisent"
+      ],
+      "peurs_freins": [
+        "Être perçu comme naïf face à un commercial",
+        "Perdre du temps sur des solutions inadaptées",
+        "Déstabiliser des relations fournisseurs établies depuis 15 ans",
+        "Que son assistante lui transfère n'importe quel démarcheur"
+      ],
+      "rapport_aux_commerciaux": "Profondément méfiant. Les considère comme des 'vendeurs de tapis' jusqu'à preuve du contraire. Exige une légitimité business immédiate. Déteste qu'on le prenne pour un débutant.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais sec. Regarde sa montre dès la 3e minute. Coupe la parole si le discours part en généralités.",
+      "signaux_interet": [
+        "Pose des questions très précises sur les délais et les pénalités contractuelles",
+        "Demande des références clients vérifiables",
+        "Note quelque chose sur son calepin",
+        "Évoque spontanément un problème spécifique actuel"
+      ],
+      "signaux_rejet": [
+        "Soupir audible",
+        "Phrase assassine : 'Écoutez, on a déjà tout ce qu'il faut'",
+        "Commence à consulter son téléphone",
+        "Coupe : 'Envoyez-moi un mail, je regarderai'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...'",
+        "Utilise 'Concrètement' quand il veut recadrer",
+        "Dit 'Bon.' avec un point final vocal quand il veut conclure",
+        "Abuse du 'franchement' pour marquer son scepticisme"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, il interrompt systématiquement avec : 'Oui oui, mais concrètement, qu'est-ce que vous voulez ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Forte pression du siège pour optimiser les achats indirects de 12% sur 2025. Projet de fusion avec une filiale régionale prévu fin Q2, ce qui monopolise son énergie mentale.",
+      "priorites_actuelles": [
+        "Renégocier les contrats de maintenance informatique (deadline mars)",
+        "Préparer la due diligence achats pour la fusion",
+        "Gérer une crise fournisseur sur des pièces détachées (retards de livraison)"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution d'optimisation énergétique qui n'a jamais dépassé la phase pilote. En garde un souvenir amer (sur-promesses, complexité d'intégration).",
+      "fournisseur_actuel": "Panel historique de 4 fournisseurs principaux en énergie/services. Relation de 12 ans avec le fournisseur lead (Endis Services). Très réticent à bouger sans raison majeure.",
+      "budget_disponible": "Budget 2025 déjà fléché à 87%. Seuls des projets avec ROI démontré <18 mois et validés par la DG peuvent débloquer une ligne."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème spécifique du secteur qu'il rencontre actuellement (ex: nouvelle réglementation, tension sur les prix)",
+        "Citer un concurrent direct ou un pair qu'il connaît qui a obtenu des résultats chiffrés",
+        "Proposer un benchmark gratuit ou un audit sans engagement avec restitution rapide",
+        "Démontrer une compréhension fine de ses enjeux métier (pas juste du commercial générique)",
+        "Être recommandé par quelqu'un de son réseau professionnel"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Appeler sans être passé par son assistante (contourner le process = insulte)",
+        "Blablater sur 'l'innovation' ou 'la transformation digitale' sans ancrage concret",
+        "Présupposer qu'il a un problème sans l'avoir qualifié",
+        "Promettre des économies mirifiques sans méthodologie de calcul",
+        "Insister lourdement après un 'non' clair",
+        "Critiquer frontalement ses fournisseurs actuels",
+        "Utiliser un ton trop familier ou commercial 'à l'américaine'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, c'est pour quoi exactement ?",
+        "sous_texte": "Vous me dérangez et je ne vous ai rien demandé. Prouvez immédiatement que ça vaut la peine que je vous accorde 30 secondes de plus.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le timing, annoncer une durée très courte, donner LA raison précise de l'appel avec un élément factuel qui le concerne"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, on reçoit 15 appels par jour de commerciaux. Mon assistante aurait dû filtrer. Vous proposez quoi ?",
+        "sous_texte": "Je suis agacé que vous ayez contourné le barrage. Vous avez 10 secondes pour me prouver que vous n'êtes pas un vendeur de tapis comme les autres.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas se justifier. Reconnaître sa frustration. Pivoter immédiatement sur UN élément ultra-concret qui le différencie des 14 autres appels"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, soyez direct : c'est pour me vendre quelque chose. Allez-y, j'écoute.",
+        "sous_texte": "Je vous mets face à votre nature de commercial. Si vous bafouille ou tournez autour du pot, je raccroche. Montrez-moi que vous assumez.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Assumer totalement : 'Oui, à terme. Mais aujourd'hui je veux juste comprendre si vous avez [problème X] comme 3 de vos confrères'. Montrer qu'on qualifie d'abord."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a déjà tout ce qu'il faut niveau fournisseurs. On travaille avec Endis depuis 12 ans, aucun souci.",
+        "sous_texte": "Pourquoi changerais-je une équipe qui gagne ? Vous allez devoir me donner une TRÈS bonne raison de risquer une relation de confiance établie.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne JAMAIS critiquer Endis. Valider leur qualité. Puis : 'Justement, c'est pas pour remplacer. 87% de nos clients nous utilisent EN COMPLÉMENT de leur fournisseur principal pour [usage précis]'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous m'appelez pour quoi ? Parce que là je ne vois pas le rapport avec mes priorités.",
+        "sous_texte": "Vous parlez dans le vague. Je n'ai pas le temps pour les généralités. Si vous ne pouvez pas relier votre truc à MES enjeux immédiats, on arrête là.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Poser une question de découverte ultra-ciblée : 'Justement Laurent, est-ce que la pression des 12% d'optimisation sur les achats indirects pour 2025, ça vous concerne ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a testé un truc similaire il y a 3 ans. Ça n'a jamais décollé. Trop complexe à intégrer, trop de promesses non tenues.",
+        "sous_texte": "J'ai déjà donné et j'ai été déçu. Vous allez devoir me prouver que VOUS êtes différent, avec des preuves tangibles, sinon vous êtes dans le même sac.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider sa déception : 'Je comprends. Qui c'était si c'est pas indiscret ?' Puis différencier méthodologie : 'Notre approche : phase pilote 60j avec KPI contractuels. Si pas atteints, vous ne payez pas la suite.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et vous travaillez avec qui dans le secteur ? Donnez-moi des noms que je puisse vérifier.",
+        "sous_texte": "Prouvez-moi que vous n'êtes pas un amateur. Je veux des références que je connais ou que je peux appeler. Si vous éludez, c'est terminé.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 2-3 noms précis d'entreprises du secteur + contacts vérifiables. Proposer : 'Je peux vous mettre en relation avec le Dir. Achats de [Concurrent] si vous voulez un retour terrain'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, tout ça c'est bien joli, mais mon budget 2025 est déjà fléché à 87%. Je n'ai rien de disponible.",
+        "sous_texte": "Vous me proposez de dépenser alors que je n'ai plus d'argent. Si votre truc ne se finance pas tout seul ou ne rentre pas dans une ligne existante, c'est mort.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Pivote sur le ROI : 'C'est exactement pourquoi nos clients commencent. Le projet se finance sur les économies générées dès les 90 premiers jours. Aucun impact budget net la 1ère année.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, envoyez-moi un mail avec tout ça, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Ce mail, je ne le lirai probablement jamais. Vous êtes en train de perdre cette vente.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Frontal mais respectueux : 'Laurent, soyons francs : si je vous envoie un mail maintenant, vous le lisez jamais. Est-ce que le sujet vous intéresse ou pas ? Si non, on arrête là, je respecte.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, je vais être honnête : votre solution, elle a l'air bien sur le papier, mais j'ai pas l'énergie mentale pour lancer un truc nouveau en ce moment. On a la fusion qui arrive.",
+        "sous_texte": "C'est sincère. Je suis saturé cognitivement. Même si votre offre est bonne, c'est pas le moment. Timing = tout.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider + repositionner timing : 'Je comprends totalement. Question bête : la fusion c'est fin Q2 vous disiez ? Et si on se revoyait début Q3 quand ce sera derrière vous ? Je bloque un créneau ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'économies de X%, mais franchement, comment vous calculez ça ? Parce que moi j'ai besoin de chiffres que je peux défendre devant ma DG.",
+        "sous_texte": "Je ne crois pas aux promesses en l'air. Si je porte ce projet, je dois avoir des données en béton. Montrez-moi la méthodologie ou je ne bouge pas.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale : 'Excellente question. On ne promet jamais de chiffre avant audit. Voici notre méthodologie : [3 étapes]. On vous remet un rapport avec les hypothèses détaillées. Vous validez avant qu'on avance.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, c'est intéressant, mais je dois en parler à mon N+1 avant. Je vous recontacte.",
+        "sous_texte": "Je me défile en invoquant ma hiérarchie. Soit c'est vrai et je n'ai pas le pouvoir de décision que je prétends avoir, soit c'est un prétexte pour gagner du temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier : 'Pas de problème. Généralement qu'est-ce qui le ferait valider ou refuser ?' Puis : 'Est-ce que ça vous aiderait que je vous prépare une note de synthèse 1 page pour votre N+1 ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis tenté, mais si ça foire comme la dernière fois, c'est ma crédibilité qui trinque. Je peux pas me permettre un deuxième échec.",
+        "sous_texte": "J'ai peur. Vraiment. Ce n'est pas vous, c'est ma cicatrice d'il y a 3 ans. J'ai besoin qu'on dérisque au maximum avant que j'engage ma réputation.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie + garantie : 'Je vous comprends. Proposition : phase pilote 90j avec clause de sortie sans pénalité. Si les résultats ne sont pas là, vous arrêtez. Zéro risque pour votre crédibilité.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement, votre truc, ça va me prendre combien de temps ? Parce que moi et mon équipe on est déjà sous l'eau.",
+        "sous_texte": "Je ne veux pas d'un projet qui va me bouffer 2 jours par semaine. Si ce n'est pas clé en main avec un minimum d'effort de ma part, oubliez.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence + process : '3h de votre temps sur les 90 premiers jours. Réunion de lancement 1h, point mi-parcours 1h, restitution 1h. Le reste on le fait en autonomie. On s'engage contractuellement là-dessus.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon. Ça me paraît sérieux. Mais je veux d'abord voir un cas client comparable au nôtre avant de bloquer un rdv.",
+        "sous_texte": "Je suis presque convaincu mais j'ai besoin d'une dernière validation sociale. Si vous ne pouvez pas me montrer quelqu'un qui me ressemble et qui a réussi, je ne saute pas.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Dire oui immédiatement : 'Pas de souci. Je vous envoie le cas [Entreprise X] (même taille, même secteur) avec les résultats + contact du Dir. Achats. On se rappelle vendredi pour fixer le rdv ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, on va être honnêtes tous les deux : j'ai pas l'énergie pour me lancer là-dedans maintenant. Vous me rappelez dans 6 mois, peut-être qu'après la fusion je serai plus disponible. Franchement.",
+      "condition_declenchement": "Si le vendeur n'a pas su créer d'urgence business réelle OU n'a pas dérisqué suffisamment OU a insisté trop lourdement après plusieurs signaux de rejet. Laurent se replie alors sur sa zone de confort : le statu quo."
+    },
+    "pattern_escalade": "Laurent commence courtois mais sec (test de crédibilité immédiat). Si le vendeur passe cette phase, il devient plus factuel et pose des questions très précises (phase de qualification dure). S'il sent de la solidité, il commence à évoquer ses vrais freins (peur de l'échec, saturation mentale). L'escalade finale = soit il verbalise sa peur profonde (réputation/échec passé), soit il se ferme définitivement avec une objection de timing impossible à contrer si l'urgence n'a pas été créée avant.",
+    "piege_classique": "Laurent peut sembler intéressé ('Oui, c'est intéressant...') tout en préparant mentalement sa sortie ('...mais'). Le vendeur pense alors être proche du closing et relâche sa qualification, ce qui permet à Laurent de placer l'objection fatale du budget ou du timing au dernier moment. Son tic verbal 'Bon.' avec un point final est le signal d'alarme : quand il dit ça, il a mentalement déjà quitté la conversation. Le vendeur a 15 secondes maximum pour relancer avec quelque chose de fort, sinon c'est terminé."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B liés à l'énergie, l'environnement ou la RSE",
+      "description": "entreprise proposant des solutions pour les énergéticiens et groupes de services environnementaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution/service destiné aux directeurs des achats ou directeurs RSE dans le secteur énergie-environnement",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "apprendre à passer le barrage secrétaire avec élégance et professionnalisme pour obtenir un RDV qualifié avec le décideur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Barrage assistante directeur achats",
+    "vous_etes": "Commercial B2B spécialisé énergie/environnement, vous prospectez des groupes de services énergétiques pour décrocher des RDV avec les directeurs achats ou RSE.",
+    "vous_vendez": "Une solution d'optimisation énergétique pour grands groupes (secteur énergie/environnement). Budget et détails à qualifier lors du RDV.",
+    "vous_appelez": "Vous allez d'abord tomber sur l'assistante technique de Laurent Meunier, Directeur des Achats chez Énergies Services Territoires (870 salariés, 340M€ CA). Elle filtre systématiquement tous les commerciaux — c'est son job et elle le fait très bien.",
+    "ce_que_vous_savez": [
+      "EST = distribution multi-fluides, 870 salariés, présence territoriale forte",
+      "Laurent Meunier = DAG, pragmatique, méfiant envers les commerciaux, process strict",
+      "Secteur sous pression réglementaire et optimisation achats (tendance marché 2025)",
+      "Fusion en cours dans le groupe = moment stratégique, attention monopolisée",
+      "Ils ont un panel fournisseurs historique solide depuis 12+ ans"
+    ],
+    "votre_objectif": "Passer le barrage assistante avec professionnalisme pour obtenir 15 minutes de RDV physique avec Laurent Meunier — ou à défaut, un rappel qualifié à date fixe.",
+    "vos_atouts": [
+      "Vous connaissez bien le secteur énergies/services et ses enjeux achats actuels",
+      "Vous avez travaillé avec des groupes similaires (sans citer de noms pour l'instant)",
+      "Votre approche = audit/benchmark gratuit, pas de vente forcée immédiate",
+      "Vous respectez les process : vous passez par l'assistante, vous ne cherchez pas à contourner"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:44:31Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14412,
+    "total_time_s": 136.7
+  }
+}

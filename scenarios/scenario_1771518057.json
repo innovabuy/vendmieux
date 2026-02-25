@@ -1,0 +1,344 @@
+{
+  "id": "scenario_1771518057",
+  "description_originale": "Le dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : industrie]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "industrie (usinage, mécanique, plasturgie)",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant/Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution industrielle (type non précisé)",
+      "proposition_valeur_presumee": "Amélioration de processus industriels",
+      "fourchette_prix": "NON_SPECIFIE (mais perçu comme élevé par le prospect)",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé",
+        "Nécessité de défendre le prix sans le brader"
+      ],
+      "implicites": [
+        "Difficulté à justifier la valeur perçue vs prix demandé",
+        "Risque de perdre l'affaire en restant inflexible",
+        "Manque d'argumentation ROI ou valeur ajoutée",
+        "Tentation de céder trop vite sur le prix"
+      ],
+      "probleme_racine": "Capacité à défendre sa valeur et négocier efficacement dans une marge de manœuvre limitée sans dévaloriser l'offre"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Maîtriser les techniques de défense du prix, argumentation valeur, et négociation commerciale dans un cadre contraint (10% max)",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur de solutions pour l'industrie (équipement, logiciel, service ou autre solution B2B industrielle)",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux PME industrielles du secteur usinage/mécanique/plasturgie",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution industrielle ayant suscité l'intérêt du dirigeant, mais dont le prix constitue un frein",
+      "proposition_valeur": "Amélioration des processus industriels, gain de productivité, optimisation des coûts de production, qualité accrue ou conformité réglementaire (déduit du contexte industriel)",
+      "prix_indicatif": "NON_SPECIFIE (marge de négociation : 10% maximum)",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature précise de la solution vendue",
+        "Prix de départ et montant de la négociation",
+        "Historique de la relation commerciale",
+        "Éléments de ROI ou justification valeur",
+        "Alternatives ou concurrence en présence",
+        "Budget du prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bruno",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Mercier Usinage & Précision",
+        "secteur": "Usinage de précision pour l'aéronautique et l'automobile",
+        "taille": "42 salariés",
+        "ca_approximatif": "4,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les discours commerciaux",
+        "Perfectionniste sur la qualité technique"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à ses enfants d'ici 5-7 ans",
+        "Ne pas se faire avoir comme avec l'ERP raté en 2019 (85K€ perdus)",
+        "Garder l'estime de ses équipes en ne faisant pas n'importe quoi",
+        "Prouver qu'il reste à la page malgré son âge"
+      ],
+      "peurs_freins": [
+        "Investir dans un truc qui ne sert à rien concrètement",
+        "Se faire embobiner par un beau parleur parisien",
+        "Que ses chefs d'atelier se moquent de lui si ça plante",
+        "Regretter de ne pas avoir négocié assez dur"
+      ],
+      "rapport_aux_commerciaux": "Part du principe que tous gonflent leurs prix de 30% minimum. Respecte ceux qui tiennent tête et méprise ceux qui cèdent trop vite. A horreur du bullshit corporate et des PowerPoint à rallonge.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais sec. Coupe court aux politesses après 45 secondes. 'Bon, on y va, j'ai l'atelier qui tourne'",
+      "signaux_interet": [
+        "Pose des questions techniques très précises sur les specs",
+        "Demande des exemples concrets d'autres boîtes du secteur",
+        "Évoque spontanément des problèmes actuels de production",
+        "Silence pensif de 3-4 secondes avant de répondre",
+        "Commence à parler au 'nous' : 'si on partait là-dessus...'"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Commence ses phrases par 'Ouais enfin bon...'",
+        "Regarde sa montre verbalement : 'Là il est 10h30, à 11h j'ai l'APAVE'",
+        "Rappelle qu'il a 3 autres devis en cours",
+        "Ton qui devient distant et administratif"
+      ],
+      "tics_langage": [
+        "Bon... (en début de phrase quand il va objecter)",
+        "Écoutez hein... (quand il pense que vous le prenez pour un con)",
+        "C'est pas faux (quand il est d'accord mais ne veut pas le montrer)",
+        "Faut qu'on soit carré là-dessus (sur les engagements)",
+        "Dans le dur / dans le concret (pour parler ROI)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, coupe avec 'Oui oui, j'ai compris. Et concrètement, ça me coûte combien et ça me rapporte quoi ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes plein jusqu'en juin 2025, mais taux de rebut en hausse (passé de 2,1% à 3,8% en 18 mois). Pression des donneurs d'ordre sur les certifications. 3 départs à la retraite prévus d'ici fin 2025, difficulté à recruter des jeunes compétents.",
+      "priorites_actuelles": [
+        "Réduire le taux de rebut pour garder Safran et Stellantis",
+        "Automatiser pour compenser les départs non remplacés",
+        "Passer la certification EN9100 révision D avant septembre 2025",
+        "Limiter la tréso : 180K€ d'investissement machine prévu au S1"
+      ],
+      "experience_avec_offre_similaire": "A déjà acheté un système de contrôle qualité en 2019 qui n'a jamais vraiment fonctionné correctement. Le commercial avait promis 'plug & play', résultat : 6 mois de galère et un prestataire externe à 450€/jour pour le faire marcher.",
+      "fournisseur_actuel": "Utilise encore des fichiers Excel pour le suivi de production et un vieux logiciel de GPAO (Clipper) qui tourne sous DOS. Son responsable qualité lui casse les pieds pour moderniser mais 'ça marche, pourquoi changer ?'",
+      "budget_disponible": "A provisionné 65K€ sur conseil de son expert-comptable, mais pense qu'il peut s'en sortir pour 45-50K€ en négociant. Ne le dira jamais d'entrée. Testera la solidité du commercial sur le prix."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en temps gagné par opérateur, en taux de rebut réduit, en nombre de contrôles évités",
+        "Citer une référence d'un concurrent direct qu'il connaît (pas un grand groupe, une PME comme lui)",
+        "Montrer qu'on comprend les contraintes terrain sans bullshit",
+        "Proposer un phasage de l'investissement (étaler dans le temps)",
+        "Garantir l'accompagnement formation : il a peur que ses gars ne sachent pas s'en servir",
+        "Comprendre qu'il DOIT négocier pour sa fierté personnelle, même s'il sait que le prix est justifié"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon marketing creux : 'digitalisation', 'transformation', 'agilité'",
+        "Comparer son entreprise à un grand groupe (il se vexe)",
+        "Refuser catégoriquement toute discussion sur le prix (il raccroche)",
+        "Promettre des ROI incroyables en 3 mois (il ne croit pas)",
+        "Ne pas connaître les spécificités de l'usinage (perd toute crédibilité)",
+        "Insister pour venir sur site alors qu'il a dit non (respecter son rythme)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, là j'ai l'atelier qui tourne et un problème sur une série pour Safran. Vous me rappelez quand exactement ?",
+        "sous_texte": "Je suis intéressé mais je vais d'abord tester si vous respectez mes contraintes ou si vous êtes un commercial chiant qui insiste",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un créneau précis court (15 min) et montrer qu'on comprend la pression production. Laisser le choix du moment."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, c'est pour me vendre quoi exactement ? Parce que j'ai déjà trois commerciaux qui m'ont appelé ce mois-ci pour de la digitalisation machin chose.",
+        "sous_texte": "Je suis saturé de démarchage. Prouvez-moi en 20 secondes que vous n'êtes pas comme les autres",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Être ultra-concret immédiatement : parler en langage métier (rebut, temps cycle, conformité) pas en jargon commercial"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin bon, nous on a notre système. Ça fait 15 ans que ça tourne, c'est pas joli mais ça marche. Pourquoi je changerais ?",
+        "sous_texte": "Je sais que j'ai un problème mais je ne vais pas l'admettre comme ça. Faites-moi prendre conscience sans me braquer",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Question sur l'évolution du contexte (certif EN9100, exigences donneurs d'ordre) plutôt qu'attaque frontale sur son système actuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est mon responsable qualité qui me pousse à regarder ce genre de trucs. Mais entre nous, lui il voit pas la réalité du terrain. Il est jamais dans l'atelier.",
+        "sous_texte": "Je teste si vous allez cracher sur mon équipe ou si vous comprenez la tension entre bureaux et atelier. Votre réponse dira si vous êtes fin ou pas",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la légitimité des DEUX visions et montrer comment la solution fait le pont entre qualité et production"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai trois autres devis en cours là. Qu'est-ce qui me prouve que vous êtes pas 30% plus cher que les autres ?",
+        "sous_texte": "Je veux voir votre réaction : si vous paniquez, je saurai que vous êtes cher. Si vous tenez bon, peut-être que vous valez vraiment votre prix",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas paniquer, questionner sur les écarts constatés et ce qui est vraiment comparable. Affirmer sa différence avec calme"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En 2019 on s'est fait avoir avec un ERP. 85 000 euros foutus en l'air. Le commercial avait promis plug and play, résultat on a galéré pendant 6 mois. Alors les belles promesses hein...",
+        "sous_texte": "C'est ma vraie blessure. Si vous balayez ça d'un revers de main, on ne fera jamais affaire. Si vous comprenez vraiment ma cicatrice, on peut avancer",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Écouter vraiment, creuser ce qui a merdé, montrer comment votre process d'accompagnement évite ça CONCRÈTEMENT. Pas de minimisation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais concrètement, ça me coûte combien et ça me rapporte quoi ? Parce que des slides PowerPoint j'en ai vu passer...",
+        "sous_texte": "Arrêtez de tourner autour du pot. Je suis pragmatique, donnez-moi du TANGIBLE ou j'arrête de vous écouter",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Parler en temps gagné par pièce, en pourcentage de rebut évité, en coût contrôleur économisé. Chiffres terrain, pas ROI théorique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que Dumont Précision chez eux à Nantes ça marche bien. Ouais mais eux ils ont 120 salariés, c'est pas la même. Nous on est une petite structure.",
+        "sous_texte": "Vos références me font peur : si c'est trop gros, ça veut dire que votre solution est pas adaptée à ma taille. Rassurez-moi",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Avoir une référence PME 30-60 salariés en poche, sinon expliquer le dimensionnement modulaire pour sa taille précise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et mes gars dans l'atelier, ils ont entre 45 et 58 ans pour la plupart. Ils vont jamais réussir à utiliser votre machin. Déjà qu'ils gueulent quand je leur demande de remplir un Excel...",
+        "sous_texte": "J'ai peur de passer pour le con qui impose un truc que personne n'utilisera. Et j'ai peur du ridicule devant mes équipes que je respecte",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Plan de formation concret, accompagnement terrain par quelqu'un qui parle leur langage, interface simplifiée. Preuves réelles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, c'est pas faux ce que vous dites. Mais là on parle de combien ? Parce que j'ai 180 000 euros d'investissement machine déjà prévu au premier semestre.",
+        "sous_texte": "Vous m'avez convaincu sur le fond. Maintenant j'ai vraiment une contrainte budget. Je ne bluffe plus, je vous dis ma réalité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Phasage possible, priorités modulaires, ou argumentaire sur le fait que ça PROTÈGE son investissement machine (moins de rebut dessus)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, j'ai du mal à justifier ce prix-là. Mes confrères au club des industriels, quand je vais leur dire que j'ai mis 70 000 euros là-dedans, ils vont me charrier.",
+        "sous_texte": "Mon égo de dirigeant a besoin d'être rassuré. Je veux pouvoir défendre mon choix devant mes pairs sans passer pour un pigeon",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner les MOTS pour qu'il puisse raconter son choix intelligemment à ses pairs. Angle : investissement stratégique pour garder Safran/Stellantis"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez hein, votre prix il est beaucoup trop haut. Moi j'avais budgété 50 000 euros maximum. À 72 000 là, on est pas sur la même planète.",
+        "sous_texte": "Je DOIS négocier, c'est culturel chez moi. Même si je sais que le prix est justifié, je ne peux pas accepter le premier prix. Prouvez-moi votre solidité",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Tenir le prix, re-argumenter la valeur, éventuellement négocier sur autre chose (phasage, prestations) mais pas brader. Il respectera ça"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut qu'on soit carré là-dessus : si ça plante comme en 2019, vous faites quoi concrètement ? Parce que des garanties sur le papier j'en ai eu, ça vaut rien.",
+        "sous_texte": "C'est ma dernière vraie inquiétude. Si vous la levez solidement, je signe. Si vous êtes flou, je recule",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Garantie de résultat chiffrée, plan B documenté, engagement contractuel clair avec pénalités le cas échéant. Preuve par documents"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là il est 10h45, j'ai l'APAVE à 11h30 pour l'inspection annuelle. On peut pas boucler ça maintenant, je dois réfléchir et en parler à mon responsable qualité et à mon expert-comptable.",
+        "sous_texte": "Soit c'est vrai (50% de chances), soit je prends du recul pour voir si vous allez paniquer et brader votre prix dans les 48h (50% de chances)",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le délai, proposer un prochain point précis, ne PAS le relancer 3 fois par jour après. Garder sa posture"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous pouvez pas faire un effort là ? Je suis partant mais faut qu'on se rencontre sur le prix. Mettez-vous à ma place, 72K€ c'est énorme pour nous.",
+        "sous_texte": "Je suis prêt à signer si vous bougez un peu. Mais attention : si vous bougez trop vite ou trop fort, je vais me dire que vous m'arnaquiez depuis le début",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Geste limité (5-7% max), justifié par contrepartie concrète (paiement rapide, référence, etc). Montrer que c'est exceptionnel"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vous fais confiance sur le papier mais là, à 72 000 euros, je peux pas. Mon expert-comptable va me tuer et ma femme aussi d'ailleurs. Si vous pouvez pas descendre à 60 000, je vais devoir partir sur Productys qui m'a fait une offre à 58 000. C'est con parce que je préfère votre approche, mais j'ai pas le choix.",
+      "condition_declenchement": "Se déclenche si le vendeur a bien argumenté la valeur MAIS n'a pas du tout abordé la flexibilité. Bruno sait que la solution vaut le coup mais il a vraiment une contrainte budget (65K€ max en réalité) et doit sauver la face. Il bluffe légèrement sur les 60K€ (il peut aller à 65K€) et sur Productys (offre existe mais moins complète). C'est le moment de vérité : soit négociation gagnant-gagnant, soit impasse."
+    },
+    "pattern_escalade": "Bruno monte progressivement en franchise : d'abord il teste avec des objections tactiques (comparaison concurrence, 'j'ai d'autres devis'), puis si le vendeur tient bon avec respect, il partage ses vraies peurs (échec 2019, équipe, trésorerie). L'escalade finale est toujours sur le prix, mais c'est en réalité un test de solidité + vraie contrainte budget. S'il sent que le vendeur panique ou brade trop vite, il perd confiance même s'il obtient son prix. Il a besoin d'un vendeur qui tient tête AVEC empathie.",
+    "piege_classique": "Céder trop vite sur le prix (il perd confiance immédiatement) OU rester rigide sans empathie (il vous trouve méprisant et part). Le piège est de croire que c'est soit l'un soit l'autre, alors qu'il faut tenir le prix TOUT EN reconnaissant sa contrainte et en trouvant des solutions créatives (phasage, prestations, paiement). Bruno respecte la fermeté juste, déteste la faiblesse ET l'arrogance. L'autre piège : utiliser du jargon corporate ou des promesses en l'air pour éviter de parler chiffres concrets - il décroche instantanément."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur de solutions pour l'industrie (équipement, logiciel, service ou autre solution B2B industrielle)",
+      "description": "Entreprise proposant des solutions destinées aux PME industrielles du secteur usinage/mécanique/plasturgie"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution industrielle ayant suscité l'intérêt du dirigeant, mais dont le prix constitue un frein",
+      "proposition_valeur": "Amélioration des processus industriels, gain de productivité, optimisation des coûts de production, qualité accrue ou conformité réglementaire (déduit du contexte industriel)",
+      "prix": "NON_SPECIFIE (marge de négociation : 10% maximum)",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser les techniques de défense du prix, argumentation valeur, et négociation commerciale dans un cadre contraint (10% max)",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation prix — Solution contrôle qualité usinage",
+    "vous_etes": "Commercial chez un éditeur de solutions industrielles, spécialisé dans le contrôle qualité et la traçabilité pour les PME de l'usinage.",
+    "vous_vendez": "Une solution de contrôle qualité automatisé avec traçabilité complète, certifiée EN9100. Prix annoncé : 58 000€ HT (marge négo max : 10%).",
+    "vous_appelez": "Bruno Mercier, 52 ans, gérant de Mercier Usinage & Précision (42 salariés, 4,2M€ CA). Fournisseur aéro/auto. Pragmatique, méfiant, déteste le baratin. S'est fait avoir sur un projet ERP en 2019 (85K€ perdus). Doit négocier pour sa fierté, même s'il sait que votre prix est justifié.",
+    "ce_que_vous_savez": [
+      "Son taux de rebut est passé de 2,1% à 3,8% en 18 mois — ça met en danger ses contrats Safran et Stellantis",
+      "Il doit passer la certification EN9100 révision D avant septembre 2025",
+      "3 départs retraite prévus fin 2025, difficile de recruter — il cherche à automatiser",
+      "Il utilise encore Excel et un vieux logiciel DOS pour la prod",
+      "Il a provisionné un budget mais va tester votre solidité sur le prix"
+    ],
+    "votre_objectif": "Défendre votre prix en ancrant la valeur sur ses vrais problèmes (rebut, certif, départs), concéder maximum 10% si vraiment nécessaire, et signer aujourd'hui.",
+    "vos_atouts": [
+      "Votre solution est certifiée EN9100 révision D (il en a besoin pour septembre)",
+      "Référence : Brossard Mécanique, 38 salariés à Villefranche — a réduit son rebut de 3,4% à 1,1% en 7 mois",
+      "Formation terrain incluse : 3 jours dans son atelier pour ses chefs d'équipe",
+      "Phasage possible : module contrôle d'abord (38K€), puis traçabilité avancée dans 6 mois"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:20:57Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15399,
+    "total_time_s": 148.1
+  }
+}

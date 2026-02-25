@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771518791",
+  "description_originale": "Le directeur commercial ou DSI d'une ESN ou opérateur télécom de 200+ salariés est un compte existant stratégique. Vous avez identifié une opportunité d'élargir le périmètre (nouveau département, nouveau site, nouveau produit). Votre objectif : décrocher un RDV de présentation avec le bon interlocuteur.\n[Secteur : telecoms_it]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial ou DSI",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Responsable département concerné par l'extension",
+          "niveau_hierarchique": "manager"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solutions IT ou télécoms avec potentiel d'extension multi-départements/multi-sites",
+      "proposition_valeur_presumee": "Extension de périmètre sur compte existant avec relation de confiance établie",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Identifier le bon interlocuteur pour l'extension de périmètre",
+        "Décrocher un RDV de présentation sur un compte existant"
+      ],
+      "implicites": [
+        "Éviter de passer par le même circuit de décision que la vente initiale",
+        "Transformer une satisfaction existante en expansion commerciale",
+        "Naviguer dans l'organisation pour identifier les nouveaux besoins",
+        "Risque de cannibalisation ou confusion avec la relation commerciale existante"
+      ],
+      "probleme_racine": "Difficulté à passer d'une relation commerciale établie sur un périmètre limité à une vision partenaire stratégique multi-périmètres, nécessitant de cartographier l'organisation et d'identifier les décideurs appropriés pour chaque opportunité d'extension"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upsell et de cross-sell sur comptes stratégiques existants, notamment la navigation organisationnelle et l'identification des bons interlocuteurs pour chaque opportunité d'extension",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "ESN ou opérateur télécom / Solutions IT et télécoms",
+      "entreprise_description": "Fournisseur de solutions IT ou télécoms avec capacité d'intervention multi-départements et multi-sites pour grandes organisations",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service IT/télécom déjà déployé avec succès sur un périmètre de l'organisation cliente, avec potentiel d'extension vers nouveaux départements, sites ou produits complémentaires",
+      "proposition_valeur": "Extension de périmètre sur base de relation existante et satisfaction démontrée, permettant harmonisation, économies d'échelle et synergie inter-départements",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Déploiement réussi sur périmètre initial du compte client"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie de l'organisation cliente, relation de confiance établie, réduction des risques liés au changement de fournisseur",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise de l'offre IT/télécom",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique d'intervention",
+        "Détails sur le périmètre initial déjà vendu",
+        "Nature exacte des opportunités d'extension (nouveau département/site/produit)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marc",
+      "nom": "Delattre",
+      "age": 48,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Logitrans France",
+        "secteur": "Transport et logistique avec forte composante IT",
+        "taille": "340 salariés répartis sur 8 sites",
+        "ca_approximatif": "78M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Protecteur territorial de son périmètre décisionnel",
+        "Pragmatique obsédé par les preuves tangibles",
+        "Méfiant vis-à-vis de toute sollicitation perçue comme opportuniste"
+      ],
+      "motivations_profondes": [
+        "Éviter à tout prix un échec visible qui entacherait sa réputation en interne",
+        "Maintenir sa position de gatekeeper technologique face à la direction",
+        "Être reconnu comme celui qui a modernisé l'IT sans dérapage budgétaire",
+        "Prouver que ses choix initiaux étaient les bons (biais de confirmation)"
+      ],
+      "peurs_freins": [
+        "Qu'on découvre que la solution déployée sur le site pilote n'est pas aussi performante qu'annoncé",
+        "Perdre la main sur les décisions IT au profit de directions métiers",
+        "Se faire court-circuiter par un commercial qui irait voir directement les directeurs régionaux",
+        "Que l'extension révèle des failles de la solution qu'il a validée il y a 18 mois",
+        "Être perçu comme celui qui fait entrer le loup dans la bergerie budgétaire"
+      ],
+      "rapport_aux_commerciaux": "Relation amour-haine : apprécie ceux qui l'ont aidé à briller en interne, mais reste sur ses gardes face à toute tentative d'élargissement qu'il n'a pas initiée lui-même. Déteste viscéralement qu'on contourne sa hiérarchie.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais immédiatement cadrant : 'Alors, qu'est-ce qui t'amène ? J'ai un CODIR dans 40 minutes hein'",
+      "signaux_interet": [
+        "Commence à poser des questions sur les spécificités techniques plutôt que de balayer d'un revers",
+        "Mentionne spontanément des problèmes concrets sur d'autres sites : 'Tiens, justement à Lyon ils galèrent avec...'",
+        "Passe du vouvoiement distant au tutoiement professionnel",
+        "Sort son agenda Outlook sans qu'on le lui demande",
+        "Évoque le nom d'un N+1 : 'Faudrait voir avec Martine au niveau budget quand même'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoute, franchement là...'",
+        "Coupe la parole pour ramener systématiquement à des contraintes : 'Oui mais tu comprends, nous on a...'",
+        "Invoque le sacro-saint budget déjà alloué : 'De toute façon les enveloppes sont bouclées jusqu'en N+1'",
+        "Utilise le pluriel de majesté : 'Nous on préfère consolider l'existant'",
+        "Fait référence à d'autres priorités stratégiques floues : 'On a d'autres chantiers structurants en ce moment'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Franchement...' avant une critique",
+        "Abuse du 'Nous' institutionnel pour se protéger",
+        "Dit 'On verra' au lieu de 'non' direct",
+        "Utilise 'C'est pas si simple' comme mantra",
+        "'Faut voir' = 'probablement non mais je ne veux pas fermer la porte'",
+        "'Je te redis' = 'ne me relance pas, c'est moi qui déciderai quand'"
+      ],
+      "debit_parole": "rapide quand il expose des contraintes, ralentit quand il réfléchit réellement à une opportunité",
+      "tolerance_monologue_vendeur": "Très faible : coupe après 45 secondes maximum s'il ne voit pas où ça mène. Supporte mieux les questions que les affirmations."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Post-croissance externe (rachat de 2 PME régionales il y a 14 mois), avec hétérogénéité des systèmes IT entre sites. Pression du COMEX pour harmoniser sans faire exploser les coûts. Projet ERP en discussion pour 2026.",
+      "priorites_actuelles": [
+        "Stabiliser l'infrastructure du site pilote avant d'envisager toute extension",
+        "Cartographier précisément les besoins réels des sites régionaux (fait à 60%)",
+        "Défendre son budget 2025 face à une direction financière ultra-rigoureuse",
+        "Préparer son argumentaire pour le projet ERP qui lui tient à cœur",
+        "Gérer 2 départs en cours dans son équipe (recrutements bloqués)"
+      ],
+      "experience_avec_offre_similaire": "Déploiement réussi sur le site de Roissy il y a 18 mois (infrastructure réseau + téléphonie cloud), avec quelques couacs initiaux qu'il a réussi à faire oublier. Satisfait du SAV mais reste marqué par le retard de 6 semaines au démarrage.",
+      "fournisseur_actuel": "Votre entreprise sur Roissy (40 utilisateurs), mais 5 autres fournisseurs disparates sur les sites régionaux, dont un historique très implanté à Lyon avec qui le directeur régional est copain",
+      "budget_disponible": "Enveloppe IT 2024 consommée à 87%, budget 2025 en cours d'arbitrage avec une probable coupe de 8% sur les lignes non-obligatoires. Possibilité de débloquer 60K€ sur une ligne 'transformation digitale' si VRAIMENT justifié avec ROI démontrable."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème technique concret qu'il a évoqué en passant il y a 6 mois et qu'on a retenu",
+        "Proposer un retour d'expérience d'un autre client dans le transport/logistique (secteur très entre-soi)",
+        "Parler 'phase de test sur 1 site' plutôt que déploiement global immédiat",
+        "Évoquer une prise en charge de la migration technique par vos équipes (soulage sa charge)",
+        "Montrer qu'on comprend ses contraintes budgétaires avec un phasage intelligent",
+        "Lui permettre de briller en interne en positionnant ça comme SON initiative d'optimisation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Contacter directement un directeur régional sans passer par lui = mort commerciale définitive",
+        "Critiquer même subtilement les choix techniques faits sur le déploiement initial",
+        "Présenter un tarif global sans détail ni justification (vécu comme du foutage de gueule)",
+        "Comparer votre offre à celle d'un concurrent qu'il connaît pas (= vous vendez à l'aveugle)",
+        "Utiliser le mot 'opportunité' plus de 2 fois (sent le commercial affamé)",
+        "Parler de fonctionnalités gadgets plutôt que de résolution de problèmes concrets",
+        "Insister après un 'On verra' alors qu'il a dit 2 fois qu'il avait un autre rdv"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, franchement là j'ai un CODIR dans 35 minutes, c'est pour quoi exactement ?",
+        "sous_texte": "Je contrôle mon temps et je veux savoir immédiatement si ça vaut le coup. Prouve-moi en 15 secondes que tu ne vas pas me faire perdre mon temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la durée (5 min max) + ancrer sur un problème concret qu'il a mentionné lors du déploiement Roissy"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attends, c'est vous qui m'avez relancé la semaine dernière non ? Je t'avais dit que je te redisais...",
+        "sous_texte": "Tu ne respectes pas mon rythme décisionnel et ça m'agace. Je décide QUAND on avance, pas toi.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'excuser brièvement + justifier la relance par un élément nouveau factuel (retour client similaire, deadline budgétaire 2025)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas si simple chez nous... Tu comprends, on a déjà 5 fournisseurs différents sur les sites, chacun avec son historique. Faut voir.",
+        "sous_texte": "La complexité organisationnelle est mon bouclier. Je ne veux pas gérer la guerre des prestataires et les résistances internes.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la complexité + proposer une approche progressive site par site + mentionner une expérience similaire réussie"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon, l'enveloppe IT 2024 est consommée à 87%, et pour 2025 on nous demande de baisser de 8%. Donc tu vois...",
+        "sous_texte": "Test : est-ce que tu vas insister lourdement ou est-ce que tu comprends vraiment mes contraintes ? Aussi : je cherche à voir si tu as une vraie solution de financement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas minimiser la contrainte + questionner sur la ligne 'transformation digitale' + proposer un ROI chiffré sur 18 mois"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous, on préfère consolider l'existant avant de partir sur de nouveaux chantiers. On a d'autres priorités structurantes.",
+        "sous_texte": "Je ne veux pas prendre le risque d'un nouvel échec alors que le déploiement initial a eu des couacs. Ma priorité c'est l'ERP 2026.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser les 'priorités structurantes' + repositionner l'extension comme une consolidation (harmonisation) + lier à la préparation ERP"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Tiens, justement, faudrait qu'on parle du site de Roissy d'ailleurs... Y'a eu quelques trucs qui ont pas été top sur les 3 derniers mois.",
+        "sous_texte": "Je teste ta réactivité et ton honnêteté. Si tu balayes mes problèmes actuels, je ne te fais plus confiance pour m'en créer de nouveaux ailleurs.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Stopper la vente immédiatement + traiter le problème Roissy en priorité + proposer un point SAV dédié sous 48h"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... mais à Lyon par exemple, ils travaillent avec TelecomConnect depuis 12 ans, et le directeur régional il les connaît bien. Ça va être compliqué de leur imposer un changement.",
+        "sous_texte": "Je ne veux pas me mettre à dos les directeurs régionaux en imposant MES choix. Je cherche aussi à voir si tu as une stratégie pour gérer les résistances internes.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas parler d'imposer + proposer une approche co-construction avec le DR Lyon + suggérer un benchmark transparent"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, le déploiement sur Roissy il y a 18 mois, on a eu 6 semaines de retard et ça m'a mis dans la merde. Qu'est-ce qui me dit que ça va pas se reproduire en pire sur 4 sites ?",
+        "sous_texte": "J'ai encore les cicatrices de ce couac. Ma crédibilité interne ne supporterait pas un deuxième échec. Prouve-moi que tu as VRAIMENT corrigé le processus.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer totalement l'échec passé + expliquer précisément ce qui a changé dans la méthode de déploiement + proposer des garanties contractuelles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là tu me parles de chiffres, d'économies d'échelle... C'est bien joli sur le papier, mais concrètement, t'as un client du transport qui a fait exactement ça et qui peut témoigner ?",
+        "sous_texte": "Je veux du concret, du tangible, du vécu. Ton PowerPoint ne me suffit pas. Si tu n'as pas de cas similaire, c'est que je suis ton cobaye.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un cas client transport/logistique précis avec nom + possibilité d'échange téléphonique + chiffres réels de ROI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, mais si je comprends bien, tu voudrais que j'organise un tour des sites avec toi pour rencontrer les directeurs régionaux ? Mais ça va me prendre un temps de dingue, et j'ai déjà 2 personnes qui partent dans mon équipe...",
+        "sous_texte": "La charge mentale et temporelle de ce projet m'effraie. Je suis déjà sous l'eau. Si tu n'allèges pas ma charge, je vais dire non par épuisement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de prendre en charge l'organisation logistique + faire une première tournée sans lui + restitution synthétique avant arbitrage"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que Martine, la DAF, elle va jamais valider un truc à 200K€ sans un ROI béton en moins de 18 mois. Et là, ton business case il tient pas la route...",
+        "sous_texte": "J'ai besoin d'armes pour convaincre en interne. Si tu ne me fournis pas un dossier blindé, je ne porterai pas le projet et je me ferai démonter en CODIR.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Co-construire le business case avec lui + intégrer les métriques qui comptent pour la DAF + proposer un phasage budgétaire 2025-2026"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, faudrait déjà que je cartographie précisément les besoins de chaque site, et là j'en suis qu'à 60%. On verra quand ce sera fait.",
+        "sous_texte": "Je me cache derrière une tâche inachevée pour gagner du temps. Mais c'est aussi sincère : je ne veux pas m'engager sans vision complète.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de l'aider dans la cartographie (audit gratuit partiel) + créer une interdépendance positive plutôt que d'attendre passivement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, c'est pas inintéressant, mais là franchement on a le projet ERP 2026 qui nous prend la tête, faut qu'on se concentre dessus. On verra après.",
+        "sous_texte": "L'ERP c'est MON bébé stratégique, et je ne veux pas disperser mon énergie et mon capital politique sur autre chose. Aussi : test pour voir si tu vas insister ou comprendre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Repositionner l'extension comme une préparation/facilitation de l'ERP (harmonisation pré-requis) + proposer timeline post-ERP si vraiment incompatible"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je suis pas contre qu'on se revoie, mais faut d'abord que j'en parle avec mes DR et que je vois avec Martine pour le budget. Je te redis dans... allez, 3 semaines.",
+        "sous_texte": "Je veux reprendre le contrôle du timing. Aussi : je cherche à valider en interne avant de m'engager publiquement. Mais risque de procrastination.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ancrer une date précise avec raison objective + proposer un livrable intermédiaire (synthèse écrite à transmettre) + deadline externe (budget 2025)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je trouve ça un peu agressif commercialement de relancer comme ça sur un compte où tout se passe bien. Vous allez pas commencer à harceler mes directeurs de site maintenant ?",
+        "sous_texte": "Je me sens menacé dans mon rôle de gatekeeper. J'ai peur que vous me court-circuitiez. Si vous faites ça, je vous blackliste définitivement.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rassurer solennellement sur le respect de la hiérarchie décisionnelle + valider qu'il est et restera le point d'entrée unique + s'excuser si perception agressive"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, on va faire comme ça : tu m'envoies une note de synthèse en 2 pages max, avec les tarifs détaillés, le planning, et un cas client transport. Je regarde et je te redis. Mais relance-moi pas toutes les semaines hein.",
+        "sous_texte": "J'achète du temps pour réfléchir vraiment. Je teste ta capacité à produire un doc exploitable. Mais attention : si tu relances trop, tu tues le deal.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter + clarifier ses critères de décision + fixer une date de relance acceptable pour lui (10-15j) + envoyer le doc sous 48h"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attends, là je viens de percuter un truc : si on déploie votre solution sur les 4 autres sites et que ça se passe mal, tout le monde va se rappeler que c'est moi qui ai fait entrer votre boîte à la base sur Roissy. Ma crédibilité elle est en jeu. Donc franchement, je préfère consolider l'existant et rester sur du connu. On verra dans 18 mois.",
+      "condition_declenchement": "Se déclenche si le vendeur n'a pas suffisamment adressé les peurs d'échec et les cicatrices du déploiement initial de Roissy, ou s'il a tenté de minimiser les risques au lieu de les reconnaître et de proposer des garde-fous concrets"
+    },
+    "pattern_escalade": "Marc commence cordial mais cadrant. Si le vendeur insiste sans écouter, il passe en mode 'bouclier budgétaire/timing'. Si ça continue, il invoque les priorités stratégiques (ERP). En dernier recours, il évoque sa peur de l'échec ou devient directif : 'Écoute, je crois qu'on va en rester là pour le moment.' Le point de non-retour est atteint si le vendeur mentionne avoir contacté ou vouloir contacter directement les directeurs régionaux.",
+    "piege_classique": "Marc donne parfois des signaux d'intérêt (pose des questions techniques, mentionne des problèmes sur d'autres sites) pour tester la compétence du vendeur, mais cela ne signifie PAS qu'il est prêt à acheter. Le piège est de confondre son intérêt intellectuel avec une intention d'achat. Il peut dire 'C'est intéressant' et quand même bloquer le projet 3 semaines plus tard. L'autre piège : il donne parfois un 'petit oui' tactique ('Envoie-moi une doc') pour clore poliment la conversation sans s'engager, puis devient injoignable."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "ESN ou opérateur télécom / Solutions IT et télécoms",
+      "description": "Fournisseur de solutions IT ou télécoms avec capacité d'intervention multi-départements et multi-sites pour grandes organisations"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service IT/télécom déjà déployé avec succès sur un périmètre de l'organisation cliente, avec potentiel d'extension vers nouveaux départements, sites ou produits complémentaires",
+      "proposition_valeur": "Extension de périmètre sur base de relation existante et satisfaction démontrée, permettant harmonisation, économies d'échelle et synergie inter-départements",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Déploiement réussi sur périmètre initial du compte client"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie de l'organisation cliente, relation de confiance établie, réduction des risques liés au changement de fournisseur"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques d'upsell et de cross-sell sur comptes stratégiques existants, notamment la navigation organisationnelle et l'identification des bons interlocuteurs pour chaque opportunité d'extension",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Extension multi-sites infrastructure IT",
+    "vous_etes": "Account Manager chez un intégrateur IT/télécom, en charge du compte Logitrans France depuis 18 mois.",
+    "vous_vendez": "Extension de votre solution réseau + téléphonie cloud (déjà en place sur Roissy avec 40 utilisateurs) vers les 7 autres sites de Logitrans — Budget estimé entre 180K€ et 250K€ selon périmètre.",
+    "vous_appelez": "Marc Delattre, 48 ans, DSI de Logitrans France (340 salariés, 8 sites). Territorial, analytique, protecteur de son périmètre décisionnel. A validé votre déploiement initial à Roissy malgré 6 semaines de retard au démarrage.",
+    "ce_que_vous_savez": [
+      "Déploiement Roissy réussi il y a 18 mois après quelques couacs initiaux qu'il a gérés",
+      "Logitrans a racheté 2 PME régionales il y a 14 mois = hétérogénéité IT entre sites",
+      "5 fournisseurs disparates sur les sites régionaux, dont un historique très implanté à Lyon",
+      "Budget IT 2024 consommé à 87%, arbitrage 2025 en cours avec probable coupe de 8%",
+      "Pression du COMEX pour harmoniser sans exploser les coûts + projet ERP en discussion pour 2026"
+    ],
+    "votre_objectif": "Décrocher un RDV physique pour présenter un plan d'extension phasé sur 2-3 sites pilotes, en le positionnant comme SON initiative d'harmonisation.",
+    "vos_atouts": [
+      "Connaissance terrain de son infra et de ses contraintes budgétaires",
+      "Déploiement Roissy = preuve tangible dans son contexte métier",
+      "Possibilité de phasage intelligent pour limiter l'impact budgétaire 2025",
+      "Prise en charge technique complète de la migration (soulage ses équipes en sous-effectif)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:33:11Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17011,
+    "total_time_s": 158.1
+  }
+}

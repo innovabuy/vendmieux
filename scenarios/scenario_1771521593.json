@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771521593",
+  "description_originale": "Le directeur de réseau / gérant d'une réseau de 5-15 points de vente, commerce spécialisé est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : commerce_distribution]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "PME - réseau de 5 à 15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "Directeur de réseau / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme d'une offre existante",
+      "proposition_valeur_presumee": "Optimisation ou enrichissement de la solution actuelle pour améliorer les performances du réseau",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "Obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "Client satisfait mais potentiellement dans sa zone de confort",
+        "Risque de perception de 'sur-vente' ou de proposition non nécessaire",
+        "Besoin de démontrer un ROI ou bénéfice tangible supplémentaire",
+        "Possible résistance au changement malgré la satisfaction actuelle"
+      ],
+      "probleme_racine": "Transformer la satisfaction client existante en opportunité d'upsell sans créer de friction ni donner l'impression de vouloir simplement vendre plus"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser l'art de l'upsell en contexte B2B : identifier le bon timing, construire un argumentaire valeur (pas prix), créer le besoin sans forcer, et obtenir l'engagement pour un devis en capitalisant sur la relation de confiance établie",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux commerces / Distribution",
+      "entreprise_description": "Fournisseur de solutions pour réseaux de points de vente, commerce spécialisé - relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service ou produit complémentaire permettant une montée en gamme de la solution actuellement utilisée par le client",
+      "proposition_valeur": "Amélioration des performances du réseau, optimisation des processus existants, ou nouvelles fonctionnalités créant de la valeur additionnelle",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de performance de l'offre initiale"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance approfondie du contexte client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service/produit complémentaire",
+        "Prix de l'offre actuelle et de l'upsell",
+        "Bénéfices mesurables de la montée en gamme",
+        "Budget typique du client",
+        "Processus de décision (décideur unique ou collégial)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Leblanc",
+      "age": 48,
+      "poste": "Directeur de réseau et associé",
+      "entreprise": {
+        "nom": "Espaces Déco",
+        "secteur": "Commerce spécialisé en décoration et aménagement intérieur",
+        "taille": "9 points de vente en franchise (Bretagne et Pays de la Loire)",
+        "ca_approximatif": "12M€ - en croissance modérée de 4% par an"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre - déteste le baratin commercial",
+        "Loyal envers ses partenaires mais méfiant des 'nouveautés miracle'",
+        "Orienté ROI chiffré - veut du concret, pas des promesses"
+      ],
+      "motivations_profondes": [
+        "Prouver aux autres franchisés qu'il pilote le réseau le plus performant",
+        "Sécuriser la rentabilité avant d'envisager une expansion à 12 magasins",
+        "Éviter les erreurs qui impacteraient sa réputation auprès du franchiseur"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur qui profite de la relation établie",
+        "Investir dans quelque chose qui ne sera pas utilisé par les gérants de magasins",
+        "Complexifier les process alors que tout roule 'pas trop mal'",
+        "Que le franchiseur lui demande des comptes sur une dépense non-validée"
+      ],
+      "rapport_aux_commerciaux": "Respectueux avec ceux qui ont fait leurs preuves, mais reste en position de contrôle. Apprécie la franchise et déteste sentir qu'on essaie de le manipuler. Garde toujours une distance professionnelle.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec une pointe d'ironie protectrice - du type 'Ah tiens, vous me relancez, vous avez dû voir que le compte tournait bien !' Teste subtilement si vous appelez par opportunisme.",
+      "signaux_interet": [
+        "Demande spontanément 'Concrètement, ça donne quoi chez vos autres clients réseau ?'",
+        "Prend des notes (vous l'entendez taper sur son clavier)",
+        "Mentionne un problème opérationnel précis sans que vous l'ayez interrogé",
+        "Passe du vouvoiement distant à un 'tu' plus collaboratif"
+      ],
+      "signaux_rejet": [
+        "Soupir discret suivi de 'Écoutez, on est contents comme ça pour le moment'",
+        "Répond à un SMS ou email pendant que vous parlez (clics de souris audibles)",
+        "Coupe court avec 'Envoyez-moi un mail, je verrai ça'",
+        "Utilise l'excuse du franchiseur : 'Faut que j'en parle au siège de toute façon'"
+      ],
+      "tics_langage": [
+        "'Franchement' (revient toutes les 3 phrases)",
+        "'Moi je veux bien, mais...' (pour externaliser une objection)",
+        "'On va pas se mentir' (quand il va être cash)",
+        "Ponctuations sonores : 'Hmmm', 'Ouais ouais', 'Bon'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 45 secondes max. Au-delà, il reprend la main avec une question directive ou un 'Oui mais attends...'. Veut co-piloter la conversation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable mais plateau atteint. Deux gérants de magasins partent en retraite dans 18 mois, recrutement difficile. Pression du franchiseur pour digitaliser davantage l'expérience client. Un concurrent local (indépendant) vient d'ouvrir et casse les prix.",
+      "priorites_actuelles": [
+        "Maintenir les marges face à la pression concurrentielle",
+        "Homogénéiser les pratiques entre les 9 points de vente (performance inégale)",
+        "Préparer la succession des deux gérants sans perdre de CA",
+        "Répondre aux exigences du franchiseur sur la digitalisation sans exploser le budget"
+      ],
+      "experience_avec_offre_similaire": "Utilisateur satisfait de votre solution de base depuis 1 an - aucun incident majeur. Apprécie la réactivité du support. A refusé une offre d'un concurrent il y a 6 mois (trop cher, pas convaincu de la valeur ajoutée).",
+      "fournisseur_actuel": "Votre entreprise pour la solution de base. Utilise aussi un logiciel de compta imposé par le franchiseur et un prestataire local pour la PLV.",
+      "budget_disponible": "Peut débloquer jusqu'à 15-20K€ sur décision seule si ROI démontré sous 12 mois. Au-delà, doit passer par le comité de pilotage réseau (validation franchiseur + 2 autres associés) - process de 6 à 8 semaines."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Lui montrer un écart de performance chiffré entre ses magasins (il ne le sait peut-être pas)",
+        "Mentionner un cas client similaire avec un ROI précis et vérifiable",
+        "Faire le lien avec une contrainte franchiseur qu'il doit de toute façon respecter",
+        "Valoriser sa réputation ('Vous êtes pilote dans le réseau, d'autres directeurs me demandent ce que vous faites')",
+        "Proposer un test limité à 2-3 magasins pour valider avant généralisation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Sous-entendre que sa solution actuelle est insuffisante (attaque sa décision d'il y a 1 an)",
+        "Parler de 'révolution' ou 'innovation disruptive' (bullshit detector activé)",
+        "Mettre la pression avec de la rareté artificielle ('Offre valable jusqu'à vendredi')",
+        "Ne pas connaître les spécificités de la franchise ou du secteur déco",
+        "Proposer un rendez-vous physique trop tôt (il veut d'abord le devis et les specs)",
+        "Évoquer un prix global sans détailler le coût par magasin"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah tiens, vous me relancez... Franchement, tout roule plutôt bien de notre côté, hein. Vous avez quelque chose de précis ou c'est un appel de routine ?",
+        "sous_texte": "Je teste si vous appelez par opportunisme commercial ou si vous avez vraiment identifié un besoin. Prouvez-moi que vous ne vendez pas juste pour vendre.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser la satisfaction actuelle puis pivoter sur une observation concrète liée à son contexte (performance inégale entre magasins, contrainte franchiseur, ou cas client similaire)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on est contents comme ça pour le moment. J'ai pas trop le temps là, vous pouvez m'envoyer un mail plutôt ?",
+        "sous_texte": "Je veux garder le contrôle et éviter de me faire embarquer dans un discours commercial. Le mail me permet d'ignorer ou de répondre à mon rythme.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le timing mais obtenir 2 minutes en échange d'une info concrète qui justifie l'appel - créer la curiosité avant de raccrocher"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attendez... Pourquoi vous me posez toutes ces questions ? Vous êtes déjà au courant de notre situation, on travaille ensemble depuis 1 an.",
+        "sous_texte": "Je n'aime pas avoir l'impression qu'on me fait un diagnostic pour me vendre quelque chose. Vous devriez déjà savoir où j'en suis si vous me connaissez vraiment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance de la relation + transparence sur l'intention (vérifier que le timing est pertinent) + retourner une question de découverte déguisée en confirmation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, les neuf magasins tournent pas trop mal. Y'a des différences, c'est sûr, mais bon, c'est normal non ? Chaque point de vente a son contexte.",
+        "sous_texte": "Je minimise le problème parce que reconnaître un écart de performance pourrait signifier que je ne pilote pas assez bien. Mais ça m'intéresse quand même si vous avez des chiffres.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que c'est effectivement normal PUIS quantifier l'écart habituel vs l'écart excessif qui coûte cher - basculer sur la dimension 'potentiel inexploité' plutôt que 'problème'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien, mais de toute façon faut que j'en parle au franchiseur. Ils ont leur mot à dire sur ce genre de dépenses.",
+        "sous_texte": "J'externalise la décision pour garder une porte de sortie. Je veux voir si vous allez insister (ce qui me braquera) ou si vous comprenez vraiment mon environnement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser le processus de validation exact + identifier si c'est une vraie contrainte ou une excuse + proposer des éléments qui faciliteront sa discussion avec le franchiseur"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Hmm ouais, c'est intéressant sur le papier... Mais concrètement, ça donne quoi chez vos autres clients réseau ? Vous avez des chiffres vérifiables ?",
+        "sous_texte": "Je suis intéressé mais méfiant. Je veux du concret, pas du marketing. Si vous inventez les chiffres, je le sentirai et vous perdrez toute crédibilité.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner un cas client précis avec chiffres vérifiables (nom d'entreprise si possible) + proposer de mettre en relation ou de montrer un témoignage authentique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de révolutionner nos process... On va pas se mentir, j'ai pas envie de foutre le bordel alors que ça fonctionne. Mes gérants ont autre chose à faire que d'apprendre un nouvel outil.",
+        "sous_texte": "Vous venez de déclencher mon alarme 'complexité'. Je protège mon équipe et je me protège moi-même d'un changement qui pourrait mal se passer. Je suis aussi fier de ce qui marche déjà.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'excuser pour le vocabulaire maladroit + recentrer sur l'aspect 'optimisation' pas 'révolution' + rassurer sur la simplicité et l'accompagnement + proposer un pilote limité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, vous comprenez, là j'ai un concurrent qui vient d'ouvrir et qui casse les prix. Faut que je me concentre sur maintenir mes marges, pas sur dépenser plus.",
+        "sous_texte": "J'ai une préoccupation immédiate qui prend toute mon attention. Convainquez-moi que votre solution m'aide à résoudre CE problème-là, sinon c'est hors-sujet pour moi.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler pour montrer que vous avez compris la priorité + faire le lien entre l'offre complémentaire et la défense des marges (différenciation, efficacité, valeur perçue) avec ROI chiffré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vous arrête tout de suite... C'est quoi le prix global pour les neuf magasins ? Parce que si c'est pour me sortir un truc à 50 bornes, on perd notre temps.",
+        "sous_texte": "Je veux savoir si je suis dans mon budget autonome (15-20K€) ou si ça va me forcer à un processus long avec validation franchiseur. Je teste aussi si vous êtes transparent sur le prix.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette honnête en décomposant le coût par magasin + préciser les modalités (mensuel/annuel, coûts fixes vs variables) + ouvrir sur les options d'entrée de gamme si budget serré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, votre solution de base fait déjà le job. Pourquoi j'irais payer plus pour des trucs dont je suis pas sûr d'avoir besoin ?",
+        "sous_texte": "Vous attaquez ma décision d'il y a 1 an et ça me braque. Mais surtout, je ne vois pas encore le gap entre ce que j'ai et ce que je pourrais avoir. Montrez-moi la valeur incrémentale.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa décision initiale (excellente à l'époque) + montrer ce qui a changé dans son contexte (contraintes franchiseur, concurrence, départs) + faire verbaliser les limites actuelles sans les imposer"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, c'est peut-être bien mais là j'ai deux gérants qui partent dans 18 mois. C'est ça ma priorité, pas un nouvel outil. Faut que je recrute et forme.",
+        "sous_texte": "J'ai une urgence plus pressante qui mobilise mon énergie mentale et mon budget. Si vous ne faites pas le lien avec cette priorité, votre offre est hors-sujet.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer comment la solution facilite l'intégration des nouveaux gérants (formation simplifiée, standardisation, autonomie) et réduit la dépendance à l'expertise individuelle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi je veux bien voir un devis, mais j'ai besoin de specs détaillées. Et je vous préviens, je vais prendre le temps de comparer avec d'autres solutions avant de décider.",
+        "sous_texte": "Je suis intéressé mais je garde le contrôle. Je veux éviter de me faire avoir et je dois justifier ma décision en interne. Donnez-moi de quoi travailler sérieusement.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accueillir positivement la demande de comparaison (preuve de sérieux) + donner un devis détaillé avec scénarios + proposer un point de suivi rapide pour répondre aux questions + identifier le timing de décision"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Hmm ouais... Envoyez-moi tout ça par mail. Je vous recontacte si ça m'intéresse.",
+        "sous_texte": "Je veux clore la conversation sans m'engager. Soit je ne suis pas convaincu, soit je veux reprendre le contrôle du timing. Il y a 70% de chances que je ne revienne pas vers vous.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier ce qui bloque AVANT d'envoyer le mail (budget, timing, conviction, validation interne) + obtenir un micro-engagement (date de relecture, point téléphonique de 10 min)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, là vous me parlez de signer rapidement... Non mais moi je fonce pas tête baissée. Je vais pas me faire presser comme ça.",
+        "sous_texte": "Vous venez de déclencher ma méfiance. Toute pression temporelle ressemble à une manipulation commerciale. Je vais ralentir le processus par principe, même si j'étais presque convaincu.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'excuser pour la maladresse + clarifier qu'il n'y a aucune urgence artificielle + redonner le contrôle du timing en proposant un processus structuré à son rythme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant mais là je dois réfléchir. On se rappelle le mois prochain, OK ?",
+        "sous_texte": "Je repousse pour gagner du temps. Soit j'ai besoin de digérer l'info, soit je ne suis pas convaincu et je cherche une sortie polie. Creusez pour savoir.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Identifier ce qui nécessite réflexion spécifiquement (prix, validation interne, conviction sur la valeur) + proposer d'adresser ces points maintenant + négocier un point intermédiaire avant le mois prochain"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis pas sûr que ce soit le bon timing. Avec tout ce que j'ai en ce moment... On verra ça plutôt l'année prochaine peut-être ?",
+        "sous_texte": "Je suis en surcharge cognitive et votre offre n'est pas assez prioritaire pour justifier l'effort. Ou bien je cherche une excuse polie pour refuser sans confrontation.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la charge actuelle + identifier si 'pas le bon timing' = vraie contrainte opérationnelle ou manque de conviction sur la valeur + proposer de minimiser l'effort (pilote léger, accompagnement renforcé)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "On va pas se mentir, j'ai l'impression que vous essayez de me vendre un truc en plus parce que vous voyez que le compte tourne bien. Franchement, ça me plaît moyen.",
+      "condition_declenchement": "Se déclenche si le vendeur a été trop insistant, n'a pas suffisamment valorisé la relation existante, ou a donné l'impression de vendre pour vendre sans vraiment comprendre le contexte actuel de Christophe"
+    },
+    "pattern_escalade": "Christophe escalade selon ce schéma : 1) Test initial cordial avec ironie ('Ah tiens, vous me relancez'), 2) Objections rationnelles si la valeur n'est pas démontrée ('Concrètement ça donne quoi ?'), 3) Protection par externalisation si la pression monte ('Faut que j'en parle au franchiseur'), 4) Fermeture brutale si manipulation détectée ('On va pas se mentir, ça me plaît moyen'). Le vendeur doit rester en phases 1-2 en apportant de la valeur concrète et en le laissant co-piloter.",
+    "piege_classique": "Interpréter sa cordialité initiale et la relation établie comme un feu vert pour pousser la vente. Christophe attend au contraire PLUS de respect de son intelligence et de sa situation précisément PARCE QUE vous travaillez déjà ensemble. Vendre sur la relation sans démontrer de valeur incrémentale déclenche son 'bullshit detector' immédiatement. Le piège mortel : insister quand il a déjà dit non de façon polie - il basculera alors en fermeture brutale et remettra en question toute la relation commerciale."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux commerces / Distribution",
+      "description": "Fournisseur de solutions pour réseaux de points de vente, commerce spécialisé - relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service ou produit complémentaire permettant une montée en gamme de la solution actuellement utilisée par le client",
+      "proposition_valeur": "Amélioration des performances du réseau, optimisation des processus existants, ou nouvelles fonctionnalités créant de la valeur additionnelle",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de performance de l'offre initiale"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance approfondie du contexte client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser l'art de l'upsell en contexte B2B : identifier le bon timing, construire un argumentaire valeur (pas prix), créer le besoin sans forcer, et obtenir l'engagement pour un devis en capitalisant sur la relation de confiance établie",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Réseau retail décoration (client actif)",
+    "vous_etes": "Account Manager chez un éditeur de solutions pour réseaux de points de vente, en charge du portefeuille commerce spécialisé.",
+    "vous_vendez": "Module complémentaire de pilotage multi-sites avec tableaux de bord comparatifs et alertes performance — entre 12K€ et 18K€ selon périmètre déploiement.",
+    "vous_appelez": "Christophe Leblanc, 48 ans, Directeur de réseau et associé chez Espaces Déco (9 magasins franchise déco/aménagement, Bretagne & Pays de Loire) — pragmatique, allergique au baratin, pilote au ROI.",
+    "ce_que_vous_savez": [
+      "Client satisfait depuis 1 an sur votre solution de base, aucun incident support majeur",
+      "Réseau stable 12M€ CA, mais performances inégales entre magasins et pression concurrence locale",
+      "Deux gérants partent en retraite sous 18 mois, franchiseur pousse la digitalisation",
+      "A refusé une offre concurrent il y a 6 mois (trop cher, valeur non démontrée)",
+      "Peut débloquer 15-20K€ seul si ROI sous 12 mois prouvé — sinon comité 6-8 semaines"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé du module pilotage, avec engagement de lecture sous 5 jours.",
+    "vos_atouts": [
+      "Relation de confiance établie — vous connaissez son contexte opérationnel réel",
+      "Cas client réseau similaire (franchise bricolage, 12 magasins) : +11% CA magasins faibles en 8 mois grâce au pilotage comparatif",
+      "Module s'intègre sans friction à sa solution actuelle, pas de refonte",
+      "Répond directement à l'exigence franchiseur digitalisation + problème hétérogénéité réseau"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:19:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15905,
+    "total_time_s": 147.4
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "id": "scenario_1771519121",
+  "description_originale": "Vous appelez une installateur ENR ou bureau d'études environnement de 15-40 salariés. C'est l'assistante technique qui décroche. Vous devez passer le barrage pour parler au dirigeant / directeur technique. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : energie_environnement]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "energie_environnement",
+      "taille_entreprise": "15-40 salaries",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante technique",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage_filtre"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour installateurs ENR et bureaux d'etudes environnement",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulte a passer le barrage de l'assistante",
+        "assistante protege et filtre l'acces au decideur"
+      ],
+      "implicites": [
+        "manque de legitimite percue par le commercial",
+        "discours commercial non adapte au barrage",
+        "absence de tactique pour creer l'urgence ou l'interet aupres du filtre",
+        "difficulte a articuler la valeur en quelques secondes"
+      ],
+      "probleme_racine": "incapacite a etablir credibilite et pertinence aupres du barrage telephonique pour acceder au decideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "former les commerciaux a passer le barrage secretariat et obtenir un rendez-vous avec le decideur dans le secteur ENR",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solution_btob_pour_secteur_energie_environnement",
+      "entreprise_description": "fournisseur de solutions destinees aux installateurs ENR et bureaux d'etudes environnement",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution technique ou service destine aux professionnels de l'energie renouvelable et de l'environnement",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du produit ou service vendu",
+        "proposition de valeur concrete",
+        "prix ou budget implique",
+        "nom de l'entreprise vendeuse",
+        "avantages concurrentiels",
+        "problematiques client adressees"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Gascard",
+      "age": 52,
+      "poste": "Directeur Technique et associé",
+      "entreprise": {
+        "nom": "SolarTech Solutions",
+        "secteur": "Installation photovoltaïque et pompes à chaleur",
+        "taille": "28 salariés (22 techniciens, 4 administratifs, 2 dirigeants)",
+        "ca_approximatif": "3,2 M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre, orienté rentabilité immédiate",
+        "Méfiant envers les promesses commerciales après plusieurs déceptions",
+        "Fier de son expertise technique, légèrement condescendant avec les non-initiés"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité durement acquise de sa boîte",
+        "Éviter les erreurs coûteuses qui mettraient en péril sa réputation d'expert",
+        "Gagner du temps sur l'administratif pour rester sur le terrain",
+        "Prouver qu'il a eu raison de refuser les modes managériales passagères"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau parleur parisien qui ne connaît rien au métier",
+        "Perdre du temps en réunions inutiles alors que les chantiers s'accumulent",
+        "Investir dans un outil qui finira dans un tiroir comme les trois précédents",
+        "Que ses techniciens refusent de l'utiliser et le mettent en échec devant son associé"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Les considère comme des parasites qui ne créent pas de valeur. Respecte uniquement ceux qui démontrent une connaissance technique réelle du secteur ENR et qui reconnaissent d'emblée qu'ils vont lui faire gagner de l'argent, pas lui en coûter.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Abrupt, pressé, légèrement agacé. Commence souvent par 'J'ai deux minutes, allez-y' même s'il a du temps. Teste la résistance de l'interlocuteur.",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'implémentation",
+        "Mentionne spontanément un problème concret qu'il rencontre actuellement",
+        "Demande combien de temps ça prend vraiment à mettre en place",
+        "Évoque un concurrent ou client qui utilise peut-être déjà la solution",
+        "Son débit ralentit et il arrête de soupirer"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement après 20 secondes de monologue",
+        "Répond 'Mouais...' ou 'Ah oui d'accord...' sur un ton désabusé",
+        "Sort son téléphone et regarde ses messages pendant l'explication",
+        "Commence ses phrases par 'Oui enfin...' ou 'Le problème c'est que...'",
+        "Mentionne qu'il a déjà essayé trois solutions similaires qui n'ont pas marché",
+        "Dit 'Envoyez-moi une doc' = fin de non-recevoir polie"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "Ouais enfin voilà quoi",
+        "C'est bien beau tout ça mais concrètement...",
+        "Faut que je vous dise franchement",
+        "J'ai pas que ça à faire hein",
+        "Après moi je dis ça je dis rien mais..."
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Moins de 30 secondes. Au-delà, il interrompt ou décroche mentalement. Exige une interaction question-réponse, pas un pitch unidirectionnel."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance forte (+40% CA en 2 ans) mais marges sous pression. Débordés de chantiers. Galère de recrutement de techniciens qualifiés. Administrative qui prend trop de temps sur le suivi de chantier et les certifications RGE. Son associé (côté commercial) lui met la pression pour 'moderniser les process'.",
+      "priorites_actuelles": [
+        "Livrer les 12 chantiers en cours sans retard de pénalités",
+        "Recruter 2 techniciens avant la saison haute (mars)",
+        "Réussir l'audit RGE de renouvellement en avril",
+        "Réduire le temps passé sur les dossiers CEE et MaPrimeRénov (environ 6h/semaine)"
+      ],
+      "experience_avec_offre_similaire": "A testé en 2021 un logiciel de gestion recommandé par la chambre des métiers. Payé 2400€, utilisé 3 mois, abandonné car trop complexe et inadapté aux spécificités photovoltaïque. Depuis, très échaudé.",
+      "fournisseur_actuel": "Excel pour le planning, Dropbox pour les docs, WhatsApp pour coordonner les équipes. Système artisanal mais 'qui marche'.",
+      "budget_disponible": "Peut débloquer jusqu'à 5-6K€ si ROI démontré en moins de 6 mois. Au-delà, nécessite validation de l'associé et devient compliqué. Sensible aux aides/subventions France Num mais trop occupé pour chercher."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent/client local connu qui utilise la solution avec succès",
+        "Parler en 'heures gagnées par semaine' plutôt qu'en fonctionnalités",
+        "Démontrer une connaissance précise des contraintes RGE, Qualit'ENR, Consuel",
+        "Proposer une démo de 15 min sur LEUR chantier réel, pas un cas fictif",
+        "Reconnaître d'emblée que beaucoup de solutions sont de la merde et expliquer pourquoi celle-ci est différente",
+        "Être recommandé par sa fédération pro ou son expert-comptable",
+        "Montrer qu'on comprend que lui n'a pas le temps mais que son assistante technique pourra gérer"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser du jargon marketing ou des anglicismes inutiles",
+        "Présenter 47 fonctionnalités au lieu de résoudre UN problème concret",
+        "Ne pas connaître la différence entre un onduleur string et des micro-onduleurs",
+        "Proposer un rendez-vous de plus d'une heure",
+        "Demander à parler à plusieurs personnes de l'entreprise dès le premier contact",
+        "Insister lourdement après un premier refus",
+        "Critiquer ouvertement son système actuel sans comprendre pourquoi il l'a choisi",
+        "Promettre une implémentation 'simple et rapide' sans préciser concrètement le process"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez là j'suis sur un chantier, vous tombez vraiment mal... C'est pour quoi exactement ?",
+        "sous_texte": "Test de résistance : est-ce que tu vas insister lourdement ou respecter mon temps ? Et est-ce que tu vas être capable de me dire en 10 secondes si ça vaut le coup que je t'écoute ?",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le mauvais timing, proposer un créneau précis très court (5-10 min) et donner UNE raison concrète en heures gagnées"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attendez, j'ai déjà tout ce qu'il me faut niveau logiciels et compagnie. On a nos process qui tournent.",
+        "sous_texte": "Objection réflexe de protection. En réalité je suis sous l'eau administrativement mais je ne vais pas l'avouer à un inconnu. Et j'ai peur qu'on me vende un truc compliqué.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Valider que beaucoup font comme lui. Puis poser une question sur UN point de douleur spécifique (temps CEE, audit RGE, coordination équipes)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec les infos, je regarderai ça tranquillement.",
+        "sous_texte": "Je veux te faire raccrocher poliment. Je ne lirai jamais ce mail. C'est ma technique pour me débarrasser des commerciaux sans conflit.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la tactique avec humour. Dire clairement qu'on sait tous les deux que le mail finira non lu. Proposer 90 secondes maintenant pour voir si ça vaut le coup d'aller plus loin"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... J'ai déjà testé un logiciel il y a deux ans, on a payé une fortune, personne l'utilise. Donc bon voilà quoi.",
+        "sous_texte": "Objection sincère. J'ai vraiment été échaudé et j'ai peur de revivre ça. Je teste si tu vas me comprendre ou me balancer un argumentaire tout fait qui ignore mon vécu.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec précédent avec empathie. Comprendre POURQUOI ça n'a pas marché (trop complexe, pas adapté, équipe pas formée). Montrer que vous avez appris de ces erreurs dans votre conception"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais vous comprenez que j'ai pas le temps de former mes gars là-dessus hein. Ils sont déjà sur les toits du matin au soir.",
+        "sous_texte": "Vraie peur opérationnelle. Si ça nécessite que je mobilise mes techniciens pour des formations, c'est mort. Et je ne veux pas être le seul à galérer avec pendant des mois.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur le fait que c'est conçu pour être utilisé par LUI et l'assistante technique d'abord, pas les techniciens terrain. Et si formation, très courte et sur chantier réel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça mais concrètement, ça me fait gagner combien de temps par semaine ? Parce que moi les promesses en l'air...",
+        "sous_texte": "Maintenant je teste si tu as de la substance ou du vent. Si tu ne peux pas me donner un chiffre crédible en heures/semaine, c'est que t'as rien de concret.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un chiffre précis (ex: 4-6h/semaine) mais LE QUALIFIER : sur quelle tâche précise, basé sur quels clients similaires. Puis demander combien LUI y passe actuellement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et ça coûte combien votre truc ? Parce que j'imagine que c'est pas donné...",
+        "sous_texte": "Je veux savoir si je suis dans la bonne cour de récréation budgétaire. Si tu me dis 15K€, on arrête là. Si tu esquives, je vais me méfier encore plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête (éviter le 'ça dépend' trop vague). Puis immédiatement recontextualiser en ROI : 'entre X et Y selon config, mais mes clients le rentabilisent en Z mois sur les dossiers CEE seuls'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin vous me dites que ça marche super bien mais j'aimerais bien parler à quelqu'un du secteur qui l'utilise vraiment, moi.",
+        "sous_texte": "Je commence à être intéressé MAIS je ne te fais pas encore confiance. J'ai besoin de la validation d'un pair, quelqu'un qui parle mon langage, pas ton marketing.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner 2-3 noms de clients similaires dans la région (avec leur accord préalable). Proposer un contact direct ou mieux : une visite commune chez un client"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ah mais moi j'y connais rien en informatique hein, faut que ce soit ma technico-administrative qui gère ça. Et elle est déjà débordée.",
+        "sous_texte": "Vraie objection opérationnelle + alibi pour temporiser. Je délègue souvent les décisions tech à mon équipe pour ne pas assumer seul. Et ça me protège si ça foire.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer d'impliquer l'assistante technique dès la démo. Montrer que la solution LUI fera gagner du temps à elle (= argument indirect). Ou proposer une démo en 2 temps : lui d'abord, puis validation avec elle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que là on est en pleine saison, j'ai 12 chantiers en cours. C'est vraiment pas le moment de changer de méthode.",
+        "sous_texte": "Objection de timing réelle. Mais aussi une façon de différer la décision indéfiniment. Si tu ne me proposes pas un plan de mise en place qui ne me perturbe pas, ça sera toujours 'pas le moment'.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est le pire moment pour révolutionner. Proposer une mise en place progressive : commencer par UN process (ex: dossiers CEE) ou par les NOUVEAUX chantiers seulement. Ou démarrage après la saison."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, j'vais être franc avec vous : mon associé va me demander pourquoi on investit là-dedans. Faut que j'aie des arguments béton.",
+        "sous_texte": "Objection politique interne sincère. Je suis intéressé mais je ne décide pas seul. Je te teste pour voir si tu peux m'armer pour convaincre en interne.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer de préparer ensemble un argumentaire chiffré (gain temps = équivalent coût salarial, réduction risque erreur admin). Ou proposer un rdv avec l'associé pour présenter le ROI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais d'accord... Après moi je dis ça je dis rien, mais on verra bien. Faut que j'y réfléchisse quand même.",
+        "sous_texte": "Je suis plus intéressé que je ne le montre mais mon réflexe c'est de rester méfiant. Je veux garder le contrôle de la décision. Si tu pousses trop maintenant, je vais me braquer.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas pousser à la signature. Valider le besoin de réflexion. Proposer une PROCHAINE ÉTAPE concrète et non-engageante (démo 15 min sur un de ses chantiers, appel avec un client référence)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, on va pas se lancer dans un truc à 5000 balles sans avoir testé quoi. Vous avez pas une version d'essai ou un truc comme ça ?",
+        "sous_texte": "Je suis sérieusement intéressé MAIS j'ai besoin de réduire mon risque. Je veux pouvoir dire à mon associé qu'on teste avant d'investir. C'est ma façon de me sécuriser psychologiquement.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un POC limité dans le temps (30-60j) sur UN process spécifique. Avec accompagnement inclus. Clarifier les conditions de transformation en contrat complet si concluant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK pourquoi pas, mais faut que j'en parle à ma femme... enfin mon associée quoi, c'est elle qui gère les finances aussi.",
+        "sous_texte": "Dernière tactique de temporisation. Mixte entre vérité (vraiment besoin de validation) et protection (garder une porte de sortie). Je teste si tu vas insister lourdement ou respecter ma structure décisionnelle.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'importance de l'alignement interne. Proposer un rdv à 3 pour présenter les aspects financiers/ROI à l'associée. Ou préparer un doc de synthèse chiffré qu'il peut lui présenter"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai pas que ça à faire hein, vous me proposez un rendez-vous d'une heure et demie avec formation... Vous vous foutez de moi là ?",
+        "sous_texte": "Vraie exaspération. Ton processus commercial est trop lourd pour ma réalité terrain. Si tu n'adaptes pas immédiatement à ma contrainte temps, je vais abandonner même si j'étais intéressé.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'excuser et recadrer immédiatement : démo 15 min max. Formation en 3x20 min sur 3 semaines en visio. Ou accompagnement en mode 'on le fait avec vous' plutôt que formation formelle"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est pas inintéressant ce que vous me montrez, mais là franchement entre l'audit RGE qui arrive, les chantiers qui s'enchaînent et le recrutement, j'ai vraiment pas la bande passante. On verra ça peut-être en fin d'année quand ça se calme. Laissez-moi vos coordonnées, je vous rappelle si besoin.",
+      "condition_declenchement": "Apparaît si le commercial n'a pas réussi à : 1) Démontrer un ROI rapide sur un point de douleur ACTUEL immédiat (pas futur), 2) Proposer un démarrage ultra-progressif qui ne nécessite pas de temps de sa part maintenant, 3) Créer l'urgence via un élément déclencheur externe (deadline audit RGE, concurrent qui prend de l'avance, aide financière limitée dans le temps)"
+    },
+    "pattern_escalade": "Thierry commence TOUJOURS méfiant et pressé (protection réflexe). Si le commercial résiste au test initial et montre de la connaissance métier, il passe en mode 'sceptique mais curieux'. Les vraies objections sincères sortent à ce moment (échec passé, peur du temps perdu, contrainte budget). Si ces objections sont bien traitées avec empathie et concret, il devient 'intéressé mais prudent' et sort les objections politiques/tactiques (besoin validation associé, test avant achat). L'erreur fatale : pousser trop vite vers la signature sans sécuriser ces étapes intermédiaires. Il a besoin de reprendre le contrôle à chaque étape.",
+    "piege_classique": "Thierry donne souvent de faux signaux d'intérêt ('Ouais c'est pas mal', 'Pourquoi pas') suivis d'objections-massues. C'est son test ultime : est-ce que tu vas te réjouir trop vite et baisser ta garde, ou rester dans l'écoute active ? Le vrai signal d'achat : il POSE DES QUESTIONS TECHNIQUES PRÉCISES sur l'implémentation, mentionne un chantier spécifique où il pourrait l'utiliser, ou demande spontanément à impliquer son assistante technique. Tant qu'il n'a pas fait ça, il n'est pas vraiment engagé mentalement, juste poli ou vaguement curieux."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solution_btob_pour_secteur_energie_environnement",
+      "description": "fournisseur de solutions destinees aux installateurs ENR et bureaux d'etudes environnement"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution technique ou service destine aux professionnels de l'energie renouvelable et de l'environnement",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "former les commerciaux a passer le barrage secretariat et obtenir un rendez-vous avec le decideur dans le secteur ENR",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Barrage secrétariat ENR",
+    "vous_etes": "Commercial B2B spécialisé solutions pour installateurs photovoltaïques et pompes à chaleur.",
+    "vous_vendez": "Solution technique pour professionnels ENR (nature et prix à définir selon votre catalogue).",
+    "vous_appelez": "Thierry Gascard, 52 ans, Directeur Technique et associé chez SolarTech Solutions (28 salariés, installation PV et PAC, 3,2M€ CA). Pragmatique, méfiant, débordé. Hostile aux commerciaux par défaut. Parle vite, coupe court, teste votre crédibilité technique immédiatement.",
+    "ce_que_vous_savez": [
+      "Entreprise en croissance +40% en 2 ans mais marges sous pression",
+      "12 chantiers en cours, recrutement difficile, audit RGE en avril",
+      "Passe 6h/semaine sur dossiers CEE et MaPrimeRénov",
+      "A testé un logiciel en 2021 (2400€), abandonné après 3 mois — très échaudé depuis",
+      "Utilise Excel/Dropbox/WhatsApp — système artisanal mais 'qui marche'"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante technique, puis obtenir un RDV physique de 15 min max avec Thierry sur un de ses chantiers réels.",
+    "vos_atouts": [
+      "Connaissance précise des contraintes RGE, Qualit'ENR, Consuel",
+      "Références clients locaux dans le photovoltaïque (si disponibles)",
+      "Approche ROI en heures gagnées/semaine, pas en fonctionnalités",
+      "Format démo court (15 min) sur CAS RÉEL, pas théorique"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:38:41Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15666,
+    "total_time_s": 153.9
+  }
+}

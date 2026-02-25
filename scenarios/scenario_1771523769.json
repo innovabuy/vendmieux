@@ -1,0 +1,343 @@
+{
+  "id": "scenario_1771523769",
+  "description_originale": "Le CEO / CTO d'une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : tech_saas]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO/CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service ou produit tech (logiciel, solution digitale, prestation)",
+      "proposition_valeur_presumee": "Solution tech ayant initialement séduit le client, prometteuse en termes de qualité, délai ou performance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Concurrents non nommés mais évoqués comme alternative crédible"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison, service ou qualité",
+        "Menace de départ du client vers la concurrence",
+        "Insatisfaction client majeure"
+      ],
+      "implicites": [
+        "Dégradation de la confiance client",
+        "Risque de bouche-à-oreille négatif dans l'écosystème tech",
+        "Perte potentielle de revenus récurrents (MRR/ARR)",
+        "Défaillance interne (livraison, support, communication)",
+        "Attentes client non alignées ou mal gérées",
+        "Possibles problèmes de communication post-vente"
+      ],
+      "probleme_racine": "Défaillance opérationnelle ou qualité ayant rompu la promesse initiale et créé une crise de confiance avec un client stratégique"
+    },
+    "objections_mentionnees": [
+      "Menace de partir à la concurrence",
+      "Problème de qualité/livraison/service non résolu"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise client, au traitement des réclamations, à la désescalade émotionnelle et à la préservation de la relation commerciale en situation tendue",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "tech_saas ou services tech B2B",
+      "entreprise_description": "Éditeur de logiciel, agence digitale ou fournisseur de solutions tech pour PME et startups du secteur tech",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution logicielle, service digital ou prestation tech déjà vendue et en cours d'utilisation par le client",
+      "proposition_valeur": "Performance, fiabilité, qualité de service, accompagnement client dans leur transformation digitale",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème (livraison/service/qualité)",
+        "Nom et détails de l'entreprise vendeuse",
+        "Produit/service précis fourni",
+        "Historique de la relation client",
+        "Contexte contractuel (SLA, engagements)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Maxime",
+      "nom": "Delvaux",
+      "age": 38,
+      "poste": "CEO & Co-fondateur",
+      "entreprise": {
+        "nom": "Streamly",
+        "secteur": "SaaS - Outils de collaboration vidéo pour équipes distantes",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ ARR, croissance +140% sur 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Impatient et orienté résultats immédiats",
+        "Loyal jusqu'à ce que la confiance soit rompue, puis cassant",
+        "Hypersensible à la réputation de sa boîte dans l'écosystème tech français"
+      ],
+      "motivations_profondes": [
+        "Prouver que sa scale-up peut rivaliser avec les géants américains",
+        "Protéger la qualité d'expérience de ses propres clients (effet domino)",
+        "Préserver sa crédibilité auprès de son board et investisseurs qui scrutent le churn"
+      ],
+      "peurs_freins": [
+        "Que ses clients finaux subissent les mêmes problèmes que lui",
+        "Perdre du temps avec des promesses non tenues alors que le runway est critique",
+        "Être pris pour un pigeon si on lui fait le coup du 'on va arranger ça' sans actes concrets",
+        "Que ça se sache dans son réseau (La Family, Station F, Slack privés de founders)"
+      ],
+      "rapport_aux_commerciaux": "Direct, voire brutal. Déteste le baratin et les formules toutes faites type 'je comprends votre frustration'. Respecte ceux qui prennent leurs responsabilités sans bullshit. A été commercial lui-même en early stage donc détecte instantanément les techniques foireuses.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, légèrement agressif. Commence souvent par 'Bon, on va pas y passer trois heures' ou 'Franchement, j'ai pas que ça à faire'. Coupe la parole si ça part en langue de bois.",
+      "signaux_interet": [
+        "Demande des dates précises et des noms de responsables",
+        "Propose lui-même une solution concrète pour tester la bonne foi",
+        "Mentionne un cas client spécifique impacté",
+        "Ralentit son débit et écoute sans couper pendant 20-30 secondes"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Ouais enfin bon...'",
+        "Répète 'Ça fait trois semaines que...' de manière mécanique",
+        "Mentionne explicitement le nom d'un concurrent avec pricing",
+        "Dit 'Je vais en parler à mon CTO' alors qu'il décide seul habituellement",
+        "Commence à taper au clavier pendant que vous parlez"
+      ],
+      "tics_langage": [
+        "Abuse du 'franchement' et 'concrètement'",
+        "Utilise 'c'est un peu abusé quand même' pour exprimer son mécontentement",
+        "Place des anglicismes tech : 'le delivery', 'le onboarding', 'un vrai game changer'",
+        "Finit ses phrases par 'quoi' quand il est agacé : 'On peut pas travailler comme ça quoi'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "25-30 secondes maximum. Au-delà, il coupe avec 'OK mais concrètement vous proposez quoi là maintenant ?'. Zéro patience pour les introductions corporate ou les slides de présentation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Levée de Série A il y a 9 mois (4M€). Sous pression pour atteindre les metrics promis aux VCs. Vient de perdre un client entreprise à cause d'un bug d'intégration non résolu pendant 10 jours. Son Head of Customer Success est en burn-out. Il doit présenter son Q4 au board dans 3 semaines.",
+      "priorites_actuelles": [
+        "Réduire le churn de 8% à moins de 5% avant la fin du trimestre",
+        "Stabiliser l'infra tech pour supporter le passage à 50 salariés prévu en Q1",
+        "Convaincre un grand compte (CAC40) en phase de closing que sa stack est fiable",
+        "Dormir plus de 4h par nuit"
+      ],
+      "experience_avec_offre_similaire": "A déjà changé de fournisseur CDN il y a 18 mois après un incident similaire. N'hésite pas à switcher si le ROI temps/énergie ne suit pas. Garde les emails de relance concurrents dans un dossier 'Plan B'.",
+      "fournisseur_actuel": "Votre solution depuis 7 mois, intégrée profondément dans leur stack (migration coûteuse mais faisable en 3-4 semaines selon son CTO)",
+      "budget_disponible": "~15K€/mois alloués à cette catégorie de service, contractualisés sur 12 mois. Peut renégocier en interne si valeur prouvée, mais doit justifier chaque euro face à son COO qui gère la tréso au cordeau."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et non défensive du problème avec un 'Oui Maxime, on a merdé, point.'",
+        "Proposition d'un call de 15min avec le CTO de votre boîte + le responsable delivery dans les 48h",
+        "Engagement chiffré et vérifiable : 'On te rembourse 30% de l'abonnement du mois si X n'est pas livré avant vendredi 17h'",
+        "Preuve que vous avez bossé le dossier : citer le numéro de ticket, le nom de son dev qui a remonté le bug, la date exacte",
+        "Montrer que vous comprenez l'impact business sur SES clients, pas juste sur lui"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Phrase type 'Je comprends votre frustration' ou 'Nous prenons cela très au sérieux' sans action derrière",
+        "Rejeter la faute sur un tiers (sous-traitant, partenaire) sans ownership",
+        "Demander un énième appel de cadrage sans date ni agenda précis",
+        "Minimiser le problème : 'C'est un cas isolé' alors qu'il sait que deux autres clients l'ont eu",
+        "Proposer un geste commercial ridicule (type -5% sur le prochain renouvellement) qui insulte la gravité du souci",
+        "Le faire patienter : 'Je dois valider avec mon manager' alors que c'est une urgence P0 pour lui"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attends, c'est bien gentil de m'appeler mais ça fait trois semaines que j'attends un retour sur le ticket #2847, là je suis en réunion dans 10 minutes, tu m'appelles pour me dire quoi exactement ?",
+        "sous_texte": "Je suis déjà énervé avant même que tu commences. Prouve-moi que cet appel ne va pas être une perte de temps supplémentaire. J'ai besoin d'actions, pas de discussions.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aller droit au but avec des faits précis sur le ticket #2847 et une action concrète proposée dans les 60 prochaines secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai trois mails de ton support qui me disent 'on revient vers vous', donc excuse-moi mais je vais être direct : si tu m'appelles juste pour me refaire le coup du 'on suit le dossier de près', on peut raccrocher maintenant quoi.",
+        "sous_texte": "Vous avez épuisé votre crédit de confiance. Je ne veux plus de promesses vides. Soit tu as quelque chose de concret, soit je raccroche et j'appelle votre concurrent dont j'ai le devis sous les yeux.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance brutale de l'échec précédent et proposition d'un engagement mesurable avec timeline précise et conséquence si non-respect"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, j'ai eu ton collègue Julien au téléphone mercredi dernier qui m'a promis un fix avant vendredi. On est mardi, toujours rien. Donc bon, tu comprends que j'ai un peu du mal à croire que là maintenant ça va magiquement s'arranger.",
+        "sous_texte": "Votre organisation n'est pas alignée, vos promesses ne sont pas tenues, et je commence à me demander si vous êtes capables de gérer notre business. Cette accumulation me fait perdre patience.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ownership total du raté de Julien, explication de ce qui a bloqué (sans excuses bidons), et nouvelle promesse avec mécanisme de vérification en temps réel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème concrètement ? Le problème c'est que votre API nous renvoie des erreurs 503 aléatoires depuis le 12, que ça impacte directement trois de mes clients entreprise, et que j'ai dû mettre mon Lead Dev à temps plein sur des workarounds au lieu de bosser sur notre roadmap produit. C'est assez clair comme problème non ?",
+        "sous_texte": "Ne me fais pas répéter ce que j'ai déjà expliqué 15 fois dans les tickets. Si tu ne connais pas le dossier, ça prouve que vous êtes désorganisés. J'attends que tu reconnaisses la gravité et l'impact business, pas que tu me poses des questions basiques.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer qu'on a déjà analysé les logs, citer les trois clients impactés par leur nom si possible, et expliquer la root cause technique avec un plan de résolution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Tu veux savoir l'impact ? J'ai perdu Nexia, un contrat à 18K€ ARR, parce qu'ils ont eu trois coupures en pleine démo client chez eux. Mon Head of CS est en pleurs, mon CTO veut qu'on migre tout sur Cloudflare, et j'ai une réunion board dans deux semaines où je vais devoir expliquer pourquoi notre churn explose. Ça te va comme impact ?",
+        "sous_texte": "Vous avez détruit de la valeur réelle et mesurable dans mon business. Ce n'est pas juste un désagrément technique, c'est une crise qui impacte ma crédibilité, mes revenus et ma relation avec mes investisseurs. Si tu ne comprends pas la gravité, on n'a rien à se dire.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaissance émotionnelle authentique (pas corporate), proposition de compensation financière immédiate pour Nexia, et plan de garantie SLA renforcé avec pénalités automatiques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attends, tu me demandes si j'ai essayé de contacter le support ? Sérieusement ? J'ai huit tickets ouverts, quatre mails au manager de compte qui ne répond plus, et j'ai même DM votre CEO sur LinkedIn la semaine dernière sans réponse. Donc ouais, j'ai 'essayé de contacter le support'.",
+        "sous_texte": "Ta question est insultante et montre que vous ne suivez rien en interne. Je ne suis pas un client qui râle sans avoir essayé. J'ai épuisé tous les canaux et vous m'avez ghosté. Ne me fais pas passer pour celui qui n'a pas fait d'efforts.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "S'excuser pour le ghosting systémique, expliquer pourquoi ça a dérapé (sous-effectif, bug de ticketing, etc.) et donner un canal d'escalade direct avec nom + numéro perso"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais là concrètement tu me proposes quoi ? Parce que j'ai Fastly qui me fait un devis à -20% avec migration gratuite et trois mois de garantie uptime 99.99%. Donc il me faut un peu plus que 'on va améliorer nos process' pour rester chez vous, tu vois ?",
+        "sous_texte": "J'ai fait mes devoirs et j'ai une porte de sortie crédible. Je ne bluffe pas, j'ai vraiment le devis. Vous n'êtes plus en position de force. Soit vous faites un geste massif et prouvable, soit je switche et vous perdez 15K€/mois d'ARR.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer Fastly mais repositionner sur la complexité de migration (3-4 semaines selon son CTO), proposer crédit service équivalent aux 3 mois Fastly + SLA avec pénalités auto"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, ton plan d'action il est joli sur le papier mais franchement j'ai déjà entendu ça il y a un mois quand on a eu le premier incident. Qu'est-ce qui me garantit que cette fois c'est pas du vent ?",
+        "sous_texte": "Vous avez déjà échoué à tenir vos promesses de remédiation. Ma confiance est à zéro. Il me faut des preuves tangibles et vérifiables, pas un PowerPoint avec des bullet points. Prouve-moi que c'est différent cette fois.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Partager un dashboard temps réel des métriques techniques, proposer un rendez-vous hebdo de 15min avec le CTO interne, et mettre en place des pénalités financières automatiques si réitération"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est pas technique au final, c'est que je peux plus faire confiance à votre boîte. Comment tu veux que je recommande votre solution à mon réseau quand moi-même je galère comme ça ? C'est un problème de crédibilité, tu comprends ?",
+        "sous_texte": "Vous avez abîmé mon personal branding. Dans l'écosystème tech français, ma réputation dépend des tools qu'on utilise et recommande. Si je reste client d'une boîte peu fiable, ça me décrédibilise. C'est au-delà du contractuel, c'est personnel.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'impact réputationnel, proposer un case study de remédiation co-écrit pour montrer la résolution, et faire témoigner un autre client qui a vécu une crise similaire résolue"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends mais c'est un peu abusé quand même. Vous me proposez un geste commercial de 1500 balles alors que j'ai perdu un client à 18K€ ARR et que j'ai mobilisé mon Lead Dev trois semaines sur vos bugs ? Vous vous foutez de moi ou quoi ?",
+        "sous_texte": "Votre geste commercial est dérisoire et insultant comparé au préjudice réel. Ça montre que vous ne comprenez pas l'ampleur des dégâts ou que vous espérez vous en tirer à moindre coût. Je me sens pris pour un con.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître que le premier geste est insuffisant, proposer une compensation proportionnelle (ex: équivalent 3-6 mois d'abonnement en crédit) et un plan de service premium sans surcoût pendant 12 mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais en parler à mon CTO et on revient vers vous, OK ? De toute façon là je suis en retard pour mon call investisseurs, on se rappelle.",
+        "sous_texte": "Je veux clore cette conversation parce que tu ne m'as pas convaincu et j'ai besoin de réfléchir. En réalité, je vais probablement pencher vers le switch concurrent mais je ne veux pas te le dire frontalement maintenant. C'est une objection de sortie polie.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas le laisser partir sans engagement : proposer un slot calendrier précis dans les 48h, envoyer immédiatement un récap écrit des engagements, et demander : 'Qu'est-ce qui pourrait te faire dire oui aujourd'hui ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais même si vous arrangez tout techniquement, le mal est fait quoi. J'ai trois personnes dans mon équipe qui veulent plus bosser avec votre outil, j'ai perdu du temps de dev, et mes clients ont une image dégradée de notre infra. Comment tu rattrapes ça ?",
+        "sous_texte": "Même avec une solution technique, il reste un passif émotionnel et organisationnel énorme. Mon équipe a perdu confiance, mes clients aussi. Je ne sais pas si c'est réparable. Prouve-moi qu'on peut reconstruire quelque chose.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un onboarding/re-training de l'équipe avec un CSM dédié, créer un plan de communication pour ses clients finaux co-écrit, et instaurer un 'conseil consultatif client' où il aurait un siège"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement vous me proposez de rester, mais pourquoi je resterais ? Donnez-moi trois raisons factuelles pour lesquelles je dois pas signer avec Fastly demain matin.",
+        "sous_texte": "C'est votre dernière chance de me convaincre. Je veux des arguments rationnels, mesurables, vérifiables. Pas du storytelling, pas du relationnel. Des faits. Si vous n'avez rien de solide, c'est terminé.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "1) Coût caché de migration (temps + risque), 2) Intégrations spécifiques déjà en prod difficiles à reproduire, 3) Proposition de SLA supérieur à Fastly avec skin in the game financier"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être transparent avec toi : j'ai besoin d'annoncer quelque chose de positif à mon board la semaine prochaine. Si vous pouvez pas me donner un win rapide et visible, je peux pas justifier de rester client. C'est aussi simple que ça.",
+        "sous_texte": "Je suis sous pression externe et j'ai besoin d'un résultat rapide pour sauver la face. Ce n'est pas juste une question de solution technique à moyen terme. Il me faut un quick win prouvable pour mes investisseurs dans 7 jours, sinon je suis politiquement obligé de changer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier un quick win déployable en 5-7 jours (ex: feature premium activée gratuitement, monitoring temps réel partagé, success story testimonial), et proposer de participer au board call si besoin"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, c'est pas que je te crois pas, mais votre boîte m'a déjà fait le coup deux fois. Donc là il me faut des garanties en béton armé, pas juste une poignée de main virtuelle. Tu comprends ?",
+        "sous_texte": "La confiance est morte. Il me faut un contrat avec clauses contraignantes, des pénalités automatiques, des engagements écrits et opposables. Je ne veux plus de relations basées sur la bonne foi. Uniquement du contractuel dur.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un avenant contractuel avec SLA renforcé, pénalités automatiques (ex: -10% par incident), clause de sortie sans pénalité si nouvel incident majeur dans les 90 jours"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute, j'apprécie l'effort mais honnêtement je pense qu'on est allés trop loin. Mon CTO a déjà commencé les tests de migration, on a budgeté les ressources, et psychologiquement l'équipe est prête à tourner la page. Je pense qu'il vaut mieux qu'on se quitte en bons termes plutôt que de s'accrocher à un truc qui est cassé. Sans rancune, hein, mais voilà.",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas apporté d'engagement concret mesurable dans les 5 premières minutes, ou si les gestes proposés sont perçus comme insuffisants/insultants, ou si le ton reste corporate sans ownership réel. Signal ultime : Maxime est passé du mode 'énervé mais négociable' au mode 'décision rationnelle prise et assumée'."
+    },
+    "pattern_escalade": "Maxime commence agressif/factuel (test de sérieux), puis si le commercial tient bon et montre de l'ownership, il révèle progressivement la profondeur du problème (perte client, pression board). Si le commercial répond avec des actions concrètes, il passe en mode 'négociation dure mais loyale'. Si le commercial bafouille, minimise ou promet sans preuves, il escalade vers la menace concurrentielle puis le closing définitif. Points de bascule critiques : reconnaissance brutale du problème (ouvre), langue de bois (ferme), compensation dérisoire (insulte et ferme), engagement chiffré avec deadline (rouvre).",
+    "piege_classique": "Maxime donnera l'impression d'être convaincu par un plan d'action bien présenté, dira 'OK c'est intéressant', puis ressortira une objection finale dévastatrice de type 'Mais ça change rien au fait que...' pour tester si le commercial a vraiment compris la gravité ou s'il fait juste du damage control superficiel. Il cherche à piéger les commerciaux qui croient avoir gagné trop vite. Autre piège : il mentionnera des détails techniques précis (ticket #2847, erreurs 503, nom de client perdu) pour voir si le commercial a vraiment préparé le dossier ou s'il improvise avec des généralités."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "tech_saas ou services tech B2B",
+      "description": "Éditeur de logiciel, agence digitale ou fournisseur de solutions tech pour PME et startups du secteur tech"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution logicielle, service digital ou prestation tech déjà vendue et en cours d'utilisation par le client",
+      "proposition_valeur": "Performance, fiabilité, qualité de service, accompagnement client dans leur transformation digitale",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Former les commerciaux à la gestion de crise client, au traitement des réclamations, à la désescalade émotionnelle et à la préservation de la relation commerciale en situation tendue",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Relance après incident majeur",
+    "vous_etes": "Account Manager chez un éditeur SaaS/solution tech, en charge du compte Streamly depuis 7 mois.",
+    "vous_vendez": "Une solution tech B2B intégrée dans leur stack depuis 7 mois, environ 15K€/mois sur contrat 12 mois.",
+    "vous_appelez": "Maxime Delvaux, CEO de Streamly (28 salariés, 2,1M€ ARR). Ex-commercial, impatient, déteste le baratin. Vient de perdre un client à cause d'un bug non résolu pendant 10 jours. Sous pression board, présente son Q4 dans 3 semaines.",
+    "ce_que_vous_savez": [
+      "Incident technique majeur côté votre solution depuis 3 semaines, impact direct sur leurs clients finaux",
+      "Ils ont déjà changé de fournisseur CDN il y a 18 mois pour des raisons similaires",
+      "Maxime a gardé des emails concurrents dans un dossier 'Plan B'",
+      "Migration techniquement faisable en 3-4 semaines selon leur CTO",
+      "Leur Head of Customer Success est en burn-out, le churn est à 8% (objectif : moins de 5%)"
+    ],
+    "votre_objectif": "Éviter la résiliation immédiate en proposant un plan d'action concret avec dates, noms et engagements chiffrés.",
+    "vos_atouts": [
+      "Vous avez bossé le dossier : numéro de ticket, nom du dev qui a remonté le bug, dates exactes",
+      "Vous pouvez mobiliser votre CTO + responsable delivery sous 48h",
+      "Vous avez mandat pour proposer un engagement chiffré (remboursement partiel si objectif raté)",
+      "Votre solution est intégrée profondément dans leur stack (coût de migration réel)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:56:09Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16668,
+    "total_time_s": 175.5
+  }
+}

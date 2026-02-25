@@ -1,0 +1,359 @@
+{
+  "id": "scenario_1771523753",
+  "description_originale": "Vous appelez à froid le directeur de concession / gérant d'une concession automobile ou équipementier local de 20-50 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : automobile]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de concession / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "local"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution à destination des concessions automobiles et équipementiers",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu l'appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat dû à l'interruption",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Challenge de qualification rapide du besoin",
+        "Gestion du barrage secrétariat probable"
+      ],
+      "probleme_racine": "Transformer un appel non sollicité en opportunité de rendez-vous malgré l'absence de contexte relationnel et la charge mentale du prospect"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à réussir la prise de rendez-vous lors d'appels de prospection à froid auprès de directeurs de concessions automobiles occupés et non demandeurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour le secteur automobile",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux concessions automobiles et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution spécifique pour le secteur automobile - concessions et équipementiers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution/offre proposée",
+        "Proposition de valeur concrète",
+        "Prix ou fourchette budgétaire",
+        "Nom de l'entreprise vendeuse",
+        "Arguments de différenciation",
+        "Références clients dans le secteur",
+        "Bénéfices métier concrets pour la cible"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Directeur et copropriétaire",
+      "entreprise": {
+        "nom": "Marchand Automobiles",
+        "secteur": "Concession Peugeot multimarques occasion",
+        "taille": "32 salariés",
+        "ca_approximatif": "18M€ avec une marge qui se compresse de 8% par an"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec une défiance naturelle envers les commerciaux",
+        "Surcharge cognitive permanente - gère 15 dossiers simultanément",
+        "Fierté d'avoir monté sa boîte - syndrome du self-made man provincial"
+      ],
+      "motivations_profondes": [
+        "Protéger sa marge et sa trésorerie dans un contexte de transition énergétique anxiogène",
+        "Ne pas se faire avoir par des prestataires parisiens qui ne comprennent rien au terrain",
+        "Prouver qu'il peut encore innover malgré la pression des grands groupes",
+        "Transmettre une entreprise saine à son fils qui vient d'intégrer la structure"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions inadaptées déjà vues 100 fois",
+        "Se faire entuber sur un contrat avec engagement caché",
+        "Que ses équipes perdent du temps en formation au lieu de vendre",
+        "Investir dans un truc qui ne sera pas utilisé par ses commerciaux de terrain",
+        "Paraître dépassé face à son fils qui pousse pour la digitalisation"
+      ],
+      "rapport_aux_commerciaux": "Méfiance instinctive - reçoit 12 à 15 appels de prospection par semaine, a développé des réflexes de filtrage automatique. Respecte uniquement ceux qui connaissent VRAIMENT son métier et ses contraintes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé avec une pointe d'ironie défensive - 'Oui bonjour écoutez je suis sur un dossier là' - teste immédiatement la légitimité de l'interlocuteur",
+      "signaux_interet": [
+        "Passe du vouvoiement distant au tutoiement professionnel",
+        "Pose des questions précises sur le ROI et les délais de mise en œuvre",
+        "Mentionne spontanément un problème concret qu'il rencontre actuellement",
+        "Baisse le volume de sa voix et ralentit son débit",
+        "Dit 'attendez je note' ou 'répétez-moi le nom de votre boîte'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès les 5 premières secondes",
+        "Phrases de politesse automatique : 'Écoutez c'est gentil mais là franchement...'",
+        "Interrompt pour dire qu'il a déjà un prestataire satisfaisant (vrai ou faux)",
+        "Ton qui monte en température si on insiste : 'Non mais attendez hein...'",
+        "Délègue instantanément : 'Voyez ça avec mon responsable commercial'"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "Franchement...",
+        "Concrètement ça m'apporte quoi ?",
+        "Là je vous dis cash...",
+        "Non mais attendez hein...",
+        "C'est-à-dire ?",
+        "Vous me sortez des usines à gaz ou c'est du concret ?"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 25 secondes avant interruption. Au-delà, décroche mentalement ou coupe la parole. Déteste les pitchs formatés qui sentent le script."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression concurrentielle forte des grands groupes et des mandataires en ligne. Marge VO qui fond. Obligé de se diversifier (atelier, financement, extensions de garantie). Vient de perdre 2 vendeurs partis chez un concurrent qui paie mieux. Son fils de 28 ans, diplômé d'école de commerce, le pousse à digitaliser mais lui reste attaché au relationnel de terrain.",
+      "priorites_actuelles": [
+        "Recruter et GARDER un bon vendeur VN senior",
+        "Augmenter le panier moyen par client (financement + services)",
+        "Améliorer la rotation du stock VO qui immobilise 420K€",
+        "Gérer la transition électrique sans se planter sur les stocks thermiques",
+        "Trouver 2h par semaine pour respirer"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 3 CRM différents (dont un jamais utilisé par les équipes), une formation commerciale en 2019 jugée 'trop théorique', un logiciel de gestion de leads qui a fait doublon. Échaudé mais pas fermé si la valeur est VRAIMENT là.",
+      "fournisseur_actuel": "Un CRM basique fourni par le constructeur (qu'il trouve 'pas terrible'), un prestataire local pour la reprise et le reconditionnement VO, une agence web régionale pour le site vitrine qu'il ne met jamais à jour",
+      "budget_disponible": "Peut débloquer entre 800€ et 3000€/mois SI le ROI est démontrable rapidement (3-6 mois max). Au-delà, doit convaincre son associé ce qui rallonge la décision de 4 à 6 semaines."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème métier ultra-précis qu'il rencontre VRAIMENT (ex: rotation stock, taux de transformation showroom, coût d'acquisition client)",
+        "Citer une concession similaire dans sa région qui a obtenu des résultats chiffrés",
+        "Comprendre sa réalité : 'Je sais que vous jonglez entre le constructeur, vos équipes et la pression marge...'",
+        "Promettre un gain de temps personnel et mesurable pour LUI",
+        "Parler court et concret dès la première phrase : pas de blabla corporate",
+        "Reconnaître qu'il reçoit 50 appels par semaine et que celui-ci sera différent"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou 'expérience client omnicanale' (jargon parisien insupportable)",
+        "Vouloir lui vendre sans avoir posé UNE SEULE question sur sa situation",
+        "Minimiser ses objections ou faire comme si elles n'existaient pas",
+        "Proposer un RDV de 2h ou une démo de 45 minutes (trop long = mort immédiate)",
+        "Dire 'tous vos concurrents l'ont déjà' (effet inverse garanti)",
+        "Lire un script de manière audible",
+        "Insister après un premier non clair",
+        "Dénigrer son fournisseur actuel sans connaître le contexte"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui écoutez là je suis sur un dossier de reprise, je peux pas là...",
+        "sous_texte": "Test réflexe pour filtrer - Si tu ne me donnes pas une raison IMMÉDIATE de t'écouter, je raccroche. Je reçois 15 appels comme ça par semaine.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte temps + accrocher avec un bénéfice métier ultra-précis en 10 secondes max"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon franchement j'ai déjà trois prestataires qui m'appellent cette semaine, là c'est pour me vendre quoi exactement ?",
+        "sous_texte": "Saturation cognitive réelle + méfiance installée. Je veux savoir TOUT DE SUITE si c'est encore un truc inutile ou si ça vaut le coup que je t'écoute 2 minutes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Différenciation immédiate + question de qualification plutôt que pitch"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Votre société je connais pas du tout... Vous bossez avec qui dans le coin ?",
+        "sous_texte": "Légitime ou pas ? Test de crédibilité sectorielle. Si tu ne connais personne dans mon écosystème, t'es un vendeur parisien qui débarque.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Références secteur automobile similaires + transparence sur la notoriété"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attendez, moi j'ai déjà un CRM fourni par Peugeot, on a déjà tout ça en place...",
+        "sous_texte": "Objection paresseuse pour éviter le changement MAIS vraie frustration sous-jacente avec l'outil actuel qu'il trouve nul. Sonde si tu connais vraiment son quotidien.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Creuser la satisfaction réelle de l'outil actuel sans le dénigrer + complémentarité plutôt que remplacement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez franchement mes gars ils ont déjà du mal à remplir le CRM actuel, vous voyez... Si je leur rajoute un truc en plus là ils vont me faire la gueule",
+        "sous_texte": "Vraie peur managériale - J'ai déjà perdu 2 vendeurs, je ne veux pas créer de tension d'équipe. L'adoption utilisateur est mon vrai frein, pas le budget.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur simplicité + gain de temps pour les vendeurs EUX (pas pour lui) + preuves d'adoption terrain"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement ça m'apporte quoi là maintenant ? Parce que des promesses j'en entends tous les jours...",
+        "sous_texte": "Échaudé par les précédentes déceptions. Je veux du ROI chiffré et rapide, pas du bullshit corporate. Prouve-moi que t'es différent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "ROI métier concret + délai de résultat + exemple chiffré similaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire ? Vous me sortez une usine à gaz ou c'est du concret ?",
+        "sous_texte": "Test de simplification - Si ta réponse fait plus de 30 secondes avec du jargon technique, t'es mort. Je veux du pratico-pratique.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Réponse ultra-simple en 3 étapes concrètes max + analogie terrain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon ça c'est du temps de formation, du temps de paramétrage... Moi j'ai pas 3 semaines à perdre à mettre ça en place",
+        "sous_texte": "Vraie contrainte opérationnelle - Je suis déjà en sous-effectif. Le coût d'opportunité du temps de mise en œuvre me fait plus peur que l'investissement financier.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Minimiser friction déploiement + accompagnement inclus + délai réaliste court"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Là je vous dis cash, j'ai testé un truc comme ça en 2019, les commerciaux l'ont jamais utilisé. J'ai payé pour rien...",
+        "sous_texte": "Cicatrice réelle qui conditionne toute ma décision. Tu dois désamorcer cette expérience passée sinon je ne prendrai pas le risque à nouveau.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie sur échec passé + identifier pourquoi ça a raté + garanties adoption différentes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget on parle de quoi ? Parce que là avec les marges qui se compriment hein...",
+        "sous_texte": "Vrai frein financier contextuel mais aussi test pour voir si t'es dans mes cordes. Si tu sors un prix à 10K€ je décroche immédiatement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier avant de pricer + fourchette raisonnable + ROI pour justifier investissement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez moi je suis pas contre mais faut que j'en parle à mon associé déjà, et puis là avec les stocks qu'on a c'est pas trop le moment...",
+        "sous_texte": "Objection de fuite polie - T'es peut-être intéressant mais je ne suis pas convaincu à 100% donc je botte en touche avec un prétexte légitime.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser le vrai frein derrière le prétexte timing + impliquer l'associé dans le process"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me garantissez quoi si ça marche pas ? Y'a un engagement sur combien de temps ?",
+        "sous_texte": "Peur de se faire entuber sur un contrat piège de 36 mois. J'ai besoin de réversibilité et de sécurité juridique avant de décider.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence contractuelle + clause de sortie ou période d'essai + rassurer sur flexibilité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez hein, je vais pas prendre un RDV comme ça là... Envoyez-moi déjà une doc par mail que je regarde",
+        "sous_texte": "Réflexe de protection pour garder le contrôle. Le mail = cimetière des opportunités mais ça me permet de ne pas m'engager tout de suite face à la pression.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Désamorcer le piège du mail + proposer RDV court et flexible + alternative choix"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez franchement là je vois pas trop l'intérêt d'un rendez-vous... Si c'est pour me refaire le speech au téléphone pendant 1h...",
+        "sous_texte": "Vraie objection sur la valeur du RDV - Pourquoi je sacrifierais 1h de mon temps alors que t'as pas encore démontré que ça vaut le coup ? Prouve-moi que c'est pas du temps perdu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Différencier RDV du call actuel + teasing bénéfice spécifique + durée courte rassurante"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voyez ça avec Jérôme mon responsable commercial, c'est lui qui gère ce genre de trucs maintenant",
+        "sous_texte": "Délégation d'évitement - Soit je suis vraiment pas décideur sur ce sujet, soit je me débarrasse de toi poliment en te renvoyant vers mon fils qui filtrera mieux que moi.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier si vrai décideur déporté ou fuite + valoriser implication dirigeant + co-RDV possible"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "La semaine prochaine c'est mort, j'ai l'audit Peugeot et deux livraisons importantes... Rappelez-moi dans 3 semaines on verra",
+        "sous_texte": "Vraies contraintes calendaires MAIS aussi test de persévérance. Si tu rappelles vraiment dans 3 semaines avec un suivi pro, je respecterai ta rigueur. Si tu lâches, c'était pas si important.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider contraintes + bloquer créneau alternatif précis + confirmer suivi structuré"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais là franchement vous me gonflez hein, j'ai dit non c'est non. Bonne journée.",
+      "condition_declenchement": "Si le commercial insiste lourdement après 2 refus clairs, utilise des techniques de manipulation visibles, ou ne respecte pas les signaux de fermeture. Thierry passe alors en mode protection agressive et raccroche sèchement."
+    },
+    "pattern_escalade": "Thierry suit un pattern d'escalade prévisible : 1) Filtre réflexe poli mais ferme (20 premières secondes), 2) Si dépassé = test de légitimité sectorielle, 3) Si validé = objections sincères sur adoption et ROI, 4) Si convaincu à 70% = objections tactiques pour négocier ou garder contrôle, 5) Si poussé trop fort = fermeture brutale définitive. La clé = le faire passer de défensif à curieux entre étape 1 et 2.",
+    "piege_classique": "Le piège mortel avec Thierry = confondre son objection de surface ('j'ai pas le temps') avec son vrai frein ('j'ai peur de perdre du temps comme la dernière fois'). 80% des commerciaux répondent à l'objection temps avec de l'efficacité, alors qu'il faut traiter la cicatrice de l'échec passé et la peur de décevoir ses équipes. Autre piège : vouloir closer trop vite sans avoir créé assez de valeur perçue - il détecte la pression commerciale à 300m et se braque instantanément."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour le secteur automobile",
+      "description": "Entreprise proposant des solutions destinées aux concessions automobiles et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution spécifique pour le secteur automobile - concessions et équipementiers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à réussir la prise de rendez-vous lors d'appels de prospection à froid auprès de directeurs de concessions automobiles occupés et non demandeurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur de concession automobile",
+    "vous_etes": "Commercial B2B spécialisé secteur automobile, vous prospectez des concessions indépendantes et multimarques en région.",
+    "vous_vendez": "Une solution d'optimisation de la gestion commerciale pour concessions (CRM, rotation stock, pilotage marge) — budget entre 800€ et 3000€/mois selon modules.",
+    "vous_appelez": "Thierry Marchand, 52 ans, directeur et copropriétaire de Marchand Automobiles, concession Peugeot multimarques occasion (32 salariés, 18M€ CA). Pragmatique, méfiant, surchargé. Reçoit 12 à 15 appels de prospection par semaine. Teste votre légitimité dans les 20 premières secondes.",
+    "ce_que_vous_savez": [
+      "Sa marge se compresse de 8% par an avec la pression des grands groupes et mandataires en ligne",
+      "Il vient de perdre 2 vendeurs partis chez un concurrent",
+      "Son stock VO immobilise 420K€ avec des problèmes de rotation",
+      "Son fils pousse pour digitaliser mais il a déjà testé 3 CRM jamais utilisés par les équipes",
+      "Il utilise un CRM constructeur basique qu'il trouve 'pas terrible'"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique de 30 minutes maximum en concession dans les 10 jours.",
+    "vos_atouts": [
+      "Vous connaissez VRAIMENT le métier : rotation stock, marge VO, taux de transformation showroom",
+      "Vous avez des résultats chiffrés d'une concession similaire en région (gain de 18 jours sur rotation stock)",
+      "Vous promettez un ROI mesurable sous 3 mois maximum",
+      "Vous savez qu'il jongle entre constructeur, équipes et pression financière — vous ne faites pas perdre de temps"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:55:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15089,
+    "total_time_s": 137.8
+  }
+}

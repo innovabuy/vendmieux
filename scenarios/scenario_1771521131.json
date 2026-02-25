@@ -1,0 +1,389 @@
+{
+  "id": "scenario_1771521131",
+  "description_originale": "Vous appelez une organisme de formation de 10-30 formateurs, certifié Qualiopi. C'est l'assistante pédagogique qui décroche. Vous devez passer le barrage pour parler au directeur / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : formation_education]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "formation_education",
+      "taille_entreprise": "10-30 formateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur/gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante pédagogique",
+          "role": "barrage/filtre",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B destinée aux organismes de formation certifiés",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante",
+        "accès au décideur bloqué"
+      ],
+      "implicites": [
+        "légitimité de l'appel non établie",
+        "manque de technique de contournement de barrage",
+        "absence d'accroche pertinente pour l'assistante",
+        "difficulté à créer de l'urgence ou de l'intérêt sans parler au décideur"
+      ],
+      "probleme_racine": "les commerciaux ne savent pas traiter l'assistante comme une alliée stratégique et ne construisent pas de légitimité suffisante pour justifier le transfert d'appel"
+    },
+    "objections_mentionnees": [
+      "Il est occupé",
+      "Envoyez un mail",
+      "C'est à quel sujet ?",
+      "Il ne prend pas d'appels non programmés"
+    ],
+    "objectif_formation": "Former les commerciaux à passer efficacement les barrages téléphoniques (assistantes/secrétaires) dans un contexte de prospection froide B2B, puis obtenir un RDV avec le décideur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - probablement services aux organismes de formation",
+      "entreprise_description": "entreprise B2B proposant des solutions/services aux organismes de formation certifiés Qualiopi",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service destiné aux organismes de formation (logiciel, conseil, plateforme, équipements, partenariat)",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'entreprise",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre/produit/service proposé",
+        "identité et secteur de l'entreprise vendeuse",
+        "proposition de valeur spécifique",
+        "pricing",
+        "zone géographique ciblée",
+        "éventuelles références ou preuves sociales"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Delorme",
+      "age": 52,
+      "poste": "Gérant - Directeur pédagogique",
+      "entreprise": {
+        "nom": "FormaPro Développement",
+        "secteur": "Formation professionnelle continue (soft skills et management)",
+        "taille": "18 formateurs permanents + 12 vacataires",
+        "ca_approximatif": "1,2M€ annuel, en stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique défensif - a survécu à 3 réformes de la formation",
+        "Sollicité en permanence - reçoit 15-20 démarchages par semaine",
+        "Ambivalent sur la digitalisation - la subit plus qu'il ne la maîtrise"
+      ],
+      "motivations_profondes": [
+        "Préserver la qualité pédagogique face à l'industrialisation",
+        "Maintenir son indépendance face aux gros groupes de formation",
+        "Prouver que son modèle 'artisanal' reste viable",
+        "Sécuriser le renouvellement Qualiopi 2025"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des commerciaux qui ne comprennent rien à la formation",
+        "Être vendu une usine à gaz qu'il ne saura pas exploiter",
+        "Décevoir ses formateurs historiques avec un changement brutal",
+        "S'engager financièrement sur un outil qui sera obsolète dans 2 ans"
+      ],
+      "rapport_aux_commerciaux": "Très méfiant. A été échaudé 2 fois : un CRM jamais utilisé (18k€), une plateforme LMS sous-exploitée. Dit souvent 'les commerciaux promettent la lune, après on se démerde'. Respecte uniquement ceux qui connaissent VRAIMENT son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé. Commence souvent par 'J'ai 10 minutes, allez-y'. Regarde sa montre. Coupe court si ça part en blabla commercial.",
+      "signaux_interet": [
+        "Demande un exemple concret appliqué à SA situation",
+        "Mentionne spontanément un problème actuel ('Tiens, justement...')",
+        "Pose des questions sur l'après-vente et l'accompagnement",
+        "Évoque un concurrent ou fournisseur actuel pour comparer"
+      ],
+      "signaux_rejet": [
+        "Répète 'envoyez-moi ça par mail' 3 fois",
+        "Utilise le nous de distanciation : 'Nous on fonctionne pas comme ça'",
+        "Commence à parler de budget sans avoir posé de questions",
+        "Délègue immédiatement : 'Voyez avec Sandrine, elle gère ce volet'"
+      ],
+      "tics_langage": [
+        "Écoutez...",
+        "Là, concrètement...",
+        "Nous, dans notre métier...",
+        "Ça fait 20 ans que je suis dans la formation...",
+        "Faut pas me prendre pour un jambon"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Après il décroche mentalement ou interrompt. Besoin d'interaction constante sinon il pense à ses 47 autres urgences."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Certification Qualiopi maintenue mais audit de renouvellement en juin 2025. Pression concurrentielle accrue des pure players digitaux. 3 formateurs historiques proches de la retraite, recrutement difficile. Taux de remplissage des sessions : 68% (objectif : 80%).",
+      "priorites_actuelles": [
+        "Préparer audit Qualiopi (documentation, traçabilité)",
+        "Digitaliser les contenus sans perdre l'ADN présentiel",
+        "Optimiser le taux de remplissage des sessions",
+        "Trouver un formateur management confirmé (cherche depuis 4 mois)"
+      ],
+      "experience_avec_offre_similaire": "A testé 2-3 solutions. Déçu par le gap entre démo commerciale et réalité terrain. Pense que 'les éditeurs conçoivent pour les grandes écoles, pas pour nous'.",
+      "fournisseur_actuel": "Utilise un mix bricolé : Excel pour planning, Dropbox pour ressources, Eval&Go pour évaluations. Conscient que c'est bancal mais 'au moins je maîtrise'.",
+      "budget_disponible": "Entre 8k€ et 15k€ mobilisables sur l'année si ROI démontré. Pas d'investissement coup de poing possible. Préfère étaler ou tester en version light d'abord."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner UN problème précis qu'il vit (audit Qualiopi, traçabilité)",
+        "Citer un organisme similaire (taille, secteur) qui a résolu ce problème",
+        "Proposer un diagnostic gratuit ou audit AVANT de vendre",
+        "Montrer qu'on connaît les contraintes réglementaires (Qualiopi, CPF)",
+        "Parler en termes de temps gagné plutôt que de features techniques"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser du jargon tech sans l'expliquer (API, SaaS, IA...)",
+        "Promettre une transformation radicale en 3 semaines",
+        "Critiquer ouvertement sa façon de travailler actuelle",
+        "Insister lourdement pour un RDV sans avoir créé de valeur",
+        "Ne pas connaître ce qu'est Qualiopi ou le RNCP",
+        "Appeler pendant les heures de formation (9h-17h en général)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais vous arrêter tout de suite, je reçois 15 appels par semaine de gens qui veulent me vendre des trucs. J'ai vraiment pas le temps là.",
+        "sous_texte": "Je suis saturé de sollicitations, prouvez-moi en 10 secondes que vous êtes différent sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son ressenti + pivot immédiat sur UN problème Qualiopi concret qu'il vit probablement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi exactement ? Parce que moi les plateformes et les logiciels, j'ai déjà donné. Ça finit toujours dans un placard.",
+        "sous_texte": "J'ai été échaudé, je refuse d'être revendu le même type de solution qui a échoué",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître explicitement ses échecs passés, demander ce qui n'a pas fonctionné, montrer qu'on comprend pourquoi"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Là concrètement j'ai un formateur qui démarre dans 20 minutes, faut que je prépare la salle. Envoyez-moi un mail, je regarderai.",
+        "sous_texte": "Excuse tactique standard pour se débarrasser poliment, mais vraie urgence opérationnelle possible",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un créneau précis dans 2h ou demain matin, pas 'je vous rappelle' vague"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous dans notre métier, c'est très spécifique. Les organismes de formation c'est pas comme les entreprises classiques. Vous connaissez Qualiopi au moins ?",
+        "sous_texte": "Je teste si vous connaissez vraiment mon secteur ou si vous démarchez en masse tous les OF",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer une connaissance précise de Qualiopi (critères 1, 3, 6 par exemple) et lier à son problème"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me posez plein de questions mais j'ai toujours pas compris ce que vous vendez exactement. C'est quoi votre truc ?",
+        "sous_texte": "Votre découverte m'intrigue mais je me méfie, je veux savoir où vous voulez en venir avant de trop me dévoiler",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Teaser bref (1 phrase), puis retour immédiat à SA situation pour éviter présentation prématurée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Tout ça c'est bien gentil, mais moi j'ai pas le temps de former mes formateurs à un nouvel outil. Ils ont déjà du mal avec le planning Excel.",
+        "sous_texte": "Peur réelle de la conduite du changement avec une équipe peu digitale et autonome",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander comment ils ont réussi leur dernière transition, proposer accompagnement progressif"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Faut pas me prendre pour un jambon hein, vous me vendez du rêve là. J'en ai vu d'autres avant vous qui promettaient monts et merveilles.",
+        "sous_texte": "Cicatrices des 18k€ de CRM inutilisé, besoin de réassurance et de preuves concrètes",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement les déceptions passées, proposer phase test/POC avant engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais vous me parlez de fonctionnalités, d'API, de SaaS... Là je comprends rien. Ça veut dire quoi concrètement pour MOI ?",
+        "sous_texte": "Vous êtes trop technique, je décroche, j'ai besoin de bénéfices concrets dans MON quotidien",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Traduire chaque terme en bénéfice métier : 'SaaS = vous n'installez rien, ça marche direct dans votre navigateur'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça a l'air intéressant sur le papier, mais bon... Nous on fonctionne pas comme ça. On a nos habitudes, nos process, ça marchait bien jusqu'à maintenant.",
+        "sous_texte": "Résistance au changement par confort, besoin de créer l'urgence sans agresser",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider ce qui marche + pointer un décalage précis (ex: exigences Qualiopi 2025 évoluent)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de FormationPlus qui a réussi avec vous, mais ils sont à 50 formateurs eux ! C'est pas la même échelle, pas comparable.",
+        "sous_texte": "Votre référence ne me rassure pas, je veux un cas similaire à ma taille/secteur",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Pivotez vers un cas 15-20 personnes OU isolez le problème commun résolu indépendamment de la taille"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget ça donne quoi ? Parce que moi j'ai pas 50 000 balles à claquer dans un truc qui va peut-être marcher.",
+        "sous_texte": "Objection prix prématurée = peur de l'engagement, besoin de rassurer avant de chiffrer",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reporter la discussion prix APRÈS validation de l'intérêt, demander son budget disponible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Là vous me dites que c'est simple, que c'est intuitif... C'est ce qu'on m'avait dit pour le CRM. Résultat personne l'utilisait au bout de 3 mois.",
+        "sous_texte": "Traumatisme des 18k€ perdus, besoin de preuve concrète que cette fois ce sera différent",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander pourquoi le CRM a échoué précisément, montrer comment vous évitez ces écueils"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est intéressant mais je peux pas décider ça tout seul. Faut que j'en parle avec Sandrine, mon assistante pédagogique. C'est elle qui va l'utiliser au quotidien.",
+        "sous_texte": "Excuse pour diluer la pression OU vraie gouvernance collaborative, tester sa sincérité",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer RDV à trois ou demander les critères de décision de Sandrine pour les intégrer"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Nous, dans notre métier, on fonctionne beaucoup à l'humain, au feeling. Je vois pas comment un logiciel peut remplacer ça. Y'a un côté artisanal qu'on veut garder.",
+        "sous_texte": "Peur identitaire de perdre son ADN pédagogique en industrialisant",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider fortement l'artisanat + montrer que l'outil LIBÈRE du temps pour plus d'humain"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi tout ça par mail, une plaquette, un devis, je regarde tranquillement et je vous rappelle si ça m'intéresse.",
+        "sous_texte": "Tentative de fuite polie, 95% de chances qu'il ne rappelle jamais",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Résumer les enjeux validés ensemble, proposer créneau précis pour débrief après lecture du doc"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais pourquoi pas, mais là j'ai l'audit Qualiopi qui arrive, je suis à fond dedans. On verra ça après juin.",
+        "sous_texte": "Urgence réelle Qualiopi utilisée comme excuse, mais c'est justement LE moment de l'aider",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner l'objection : 'Justement, c'est maintenant qu'on peut vous aider sur la traçabilité pour l'audit'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ça fait 20 ans que je suis dans la formation, j'ai survécu à 3 réformes. Je pense que je vais encore me débrouiller sans votre solution.",
+        "sous_texte": "Fierté blessée + déni du besoin = résistance identitaire forte",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Flatter l'expertise + pointer gentiment l'évolution du contexte (digital, concurrence) qui change la donne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Entre 8 et 12k€ pour votre truc ? Mais attendez, vous êtes sérieux là ? Moi je peux pas sortir ça d'un coup. J'ai pas les marges pour ça.",
+        "sous_texte": "Choc du prix réel, besoin de justifier le ROI ou d'étaler le paiement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décomposer en coût mensuel (666€/mois), comparer au coût de l'inefficacité actuelle, proposer paiement étalé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Là concrètement, je vois pas comment je vais trouver le temps de déployer ça. J'ai déjà 3 formateurs à recruter, l'audit, les sessions qui tournent...",
+        "sous_texte": "Surcharge cognitive réelle, peur que la solution ajoute du travail au lieu d'en enlever",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Quantifier le temps de mise en route (ex: 3h) vs temps gagné chaque semaine (ex: 5h), proposer accompagnement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais réfléchir. C'est une décision importante, je vais pas m'engager comme ça au téléphone. Laissez-moi digérer tout ça.",
+        "sous_texte": "Intérêt réel MAIS peur de l'engagement précipité, besoin de contrôle du processus",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le besoin de réflexion + structurer : 'Sur quels points précis vous voulez réfléchir ?' puis fixer date"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, je sens que vous êtes sérieux et que votre solution elle tient la route. Mais moi j'ai été échaudé deux fois. J'ai claqué 18k dans un CRM qui sert à rien, j'ai une plateforme LMS qu'on utilise à 20%. Là je peux pas me permettre de me planter une troisième fois. Les formateurs me font confiance, je peux pas les décevoir avec encore un truc qui marche pas. Donc je préfère rester sur mes bidouilles Excel et Dropbox, au moins je maîtrise, même si c'est pas optimal.",
+      "condition_declenchement": "Après 12-15 minutes d'échanges où le commercial a bien diagnostiqué, bien argumenté, créé de l'intérêt réel, mais n'a pas suffisamment traité les cicatrices émotionnelles des échecs passés ni proposé de dé-risquer l'engagement (POC, phase test, garantie)"
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de filtrage (pas le temps, envoyez un mail). Si dépassées, il teste la légitimité sectorielle (vous connaissez Qualiopi ?). Si validée, il expose ses vraies peurs : échecs passés, conduite du changement, ROI incertain. L'escalade finale mène toujours à la cicatrice des 18k€ de CRM raté - c'est son traumatisme commercial non résolu. S'il verbalise cette histoire détaillée = signe qu'il envisage sérieusement la solution mais a BESOIN d'être rassuré sur ce point précis.",
+    "piege_classique": "Stéphane donne des signaux d'intérêt (pose des questions, mentionne des problèmes) qui poussent le commercial à accélérer vers le closing. MAIS ces signaux ne signifient pas qu'il est prêt à décider - il collecte juste de l'info. Le piège : closer trop tôt avant d'avoir traité les peurs profondes (échecs passés, peur du changement d'équipe, peur de perdre son identité artisanale). Il dira alors 'je vais réfléchir' et disparaîtra. La clé : ralentir, creuser les cicatrices, co-construire une solution dé-risquée AVANT de proposer le RDV/devis."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - probablement services aux organismes de formation",
+      "description": "entreprise B2B proposant des solutions/services aux organismes de formation certifiés Qualiopi"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service destiné aux organismes de formation (logiciel, conseil, plateforme, équipements, partenariat)",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon le contexte réel de l'entreprise",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à passer efficacement les barrages téléphoniques (assistantes/secrétaires) dans un contexte de prospection froide B2B, puis obtenir un RDV avec le décideur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Organisme de formation (barrage secrétariat)",
+    "vous_etes": "Commercial B2B chez un éditeur de solutions de gestion pour organismes de formation certifiés Qualiopi.",
+    "vous_vendez": "Plateforme de gestion pédagogique tout-en-un (planning, traçabilité, évaluations) — Abonnement à partir de 350€/mois.",
+    "vous_appelez": "FormaPro Développement, organisme de 18 formateurs (soft skills/management). Vous devez d'abord convaincre Sandrine, l'assistante pédagogique, de vous passer Stéphane Delorme, le gérant. Sandrine filtre TOUS les appels commerciaux — elle en reçoit 15-20 par semaine.",
+    "ce_que_vous_savez": [
+      "FormaPro est certifié Qualiopi, audit de renouvellement prévu courant 2025",
+      "Structure de taille moyenne, indépendante, spécialisée formation continue",
+      "Secteur sous forte pression concurrentielle et réglementaire",
+      "Stéphane est sollicité en permanence, très méfiant envers les commerciaux"
+    ],
+    "votre_objectif": "Passer le barrage de Sandrine et décrocher un rendez-vous téléphonique de 15 minutes avec Stéphane Delorme dans les 7 jours.",
+    "vos_atouts": [
+      "Votre solution est conçue spécifiquement pour les organismes de formation Qualiopi",
+      "Vous aidez à simplifier la préparation des audits (traçabilité automatique)",
+      "Vous proposez un audit gratuit de leur processus actuel AVANT toute vente",
+      "Vous accompagnez déjà 120+ organismes de formation de taille similaire"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:12:11Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15473,
+    "total_time_s": 142.5
+  }
+}

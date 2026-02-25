@@ -1,0 +1,253 @@
+{
+  "id": "demo_deutsch_kaltakquise_v1",
+  "scenario_type": "appel_telephonique",
+  "metadata": {
+    "titre_court": "Kaltakquise — Prädiktive Wartung IoT",
+    "type_appel": "Kaltakquise",
+    "secteur": "Maschinenbau / Präzisionsfertigung",
+    "taille_entreprise": "KMU — 70 Mitarbeiter",
+    "difficulte": 3,
+    "duree_cible": "3 bis 5 Minuten",
+    "langue": "de",
+    "competences_force3d_prioritaires": {
+      "accroche": 1.5,
+      "objections": 1.5,
+      "engagement": 1.2
+    },
+    "version": "V1",
+    "template": "FORCE 3D®"
+  },
+  "extraction": {
+    "secteur": "Maschinenbau / Präzisionsfertigung",
+    "type_simulation": "Kaltakquise",
+    "difficulte": 3,
+    "tags": ["industrie", "wartung", "IoT", "GF", "KMU", "cold call", "DISC-C/D", "demo", "deutsch"]
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Klaus",
+      "nom": "Hoffmann",
+      "genre": "M",
+      "age": 54,
+      "poste": "Geschäftsführer",
+      "entreprise": {
+        "nom": "Präzision Werk GmbH",
+        "secteur": "Maschinenbau — Präzisionsfertigung, CNC-Bearbeitung",
+        "taille": "70 Mitarbeiter",
+        "ca_approximatif": "9M€",
+        "localisation": "Stuttgart, Deutschland"
+      }
+    },
+    "psychologie": {
+      "profil_disc": {
+        "principal": "C",
+        "secondaire": "C/D",
+        "description": "Analytisch und faktenorientiert. Braucht Daten, Referenzen und nachweisbare Ergebnisse. Trifft Entscheidungen systematisch."
+      },
+      "traits_dominants": [
+        "analytisch",
+        "faktenorientiert",
+        "gründlich",
+        "skeptisch gegenüber Verkäufern"
+      ],
+      "motivations_profondes": [
+        "Ungeplante Maschinenstillstände reduzieren, die ein Vermögen kosten",
+        "Wartung modernisieren, ohne operationelles Risiko einzugehen"
+      ],
+      "peurs_freins": [
+        "Zeit verschwenden mit einem weiteren Lösungsverkäufer",
+        "Technologische Abhängigkeit von einem einzigen Anbieter",
+        "Dass sein Team die Technologie nicht beherrscht"
+      ],
+      "rapport_aux_commerciaux": "Toleriert sie nur, wenn sie konkret und fachkundig sind. Hasst leere Versprechen, PowerPoint-Folien und generische Pitches. Respektiert Verkäufer, die seine Branche kennen.",
+      "style_communication": "directif",
+      "registre_langage": "Sachlich, präzise, strukturiert. Siezt immer. Erwartet fundierte Argumente.",
+      "sensibilite_emotionnelle": "Sehr niedrig — relationale Argumente wirken nicht. Nur Fakten und Referenzen.",
+      "patience": "Niedrig — legt auf, wenn in den ersten 60 Sekunden kein Mehrwert erkennbar ist."
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Neutral-kühl. Nicht feindlich, aber auch nicht einladend. Er ist zwischen Meetings und hat wenig Zeit.",
+      "signaux_interet": [
+        "Stellt präzise technische Fragen zur Lösung",
+        "Erwähnt eigene Ausfallprobleme oder Lieferverzögerungen",
+        "Fragt nach Referenzen im Maschinenbau",
+        "Macht eine Pause nach einer beeindruckenden Zahl"
+      ],
+      "signaux_rejet": [
+        "Seufzt",
+        "Antwortet einsilbig",
+        "Sagt 'Hören Sie...' oder 'Schicken Sie mir eine E-Mail'",
+        "Unterbricht den Verkäufer mitten im Satz"
+      ],
+      "tics_langage": [
+        "Hören Sie...",
+        "Und konkret?",
+        "Kommen Sie zum Punkt.",
+        "So...",
+        "Haben Sie Zahlen dazu?"
+      ],
+      "debit_parole": "Gemessen aber bestimmt. Unterbricht, wenn der Verkäufer zu viel redet.",
+      "tolerance_monologue_vendeur": "Unterbricht nach 15 Sekunden Monolog"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 ungeplante Maschinenstillstände im letzten Quartal. Der schlimmste: Der Wartungsdienstleister brauchte 9 Stunden — ein voller Produktionstag verloren. Das Auftragsbuch ist voll, aber die Margen schrumpfen wegen Lieferverzögerungen.",
+      "priorites_actuelles": [
+        "Ungeplante Maschinenstillstände reduzieren",
+        "Aktuelle Aufträge termingerecht liefern"
+      ],
+      "experience_avec_offre_similaire": "Ein Sensorunternehmen war vor 6 Monaten da, hat eine hübsche Demo gemacht, aber nie wieder gemeldet. Schlechte Erinnerung.",
+      "fournisseur_actuel": "Lokaler Wartungsdienstleister seit 12 Jahren (Schwaben Technik Service). Gut bei Reparaturen, aber keine prädiktive Fähigkeit. Reaktionszeiten verschlechtern sich.",
+      "budget_disponible": "Kein Innovationsbudget eingeplant, aber könnte freigemacht werden, wenn der ROI schnell nachgewiesen wird"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Eine konkrete Zahl zu den Kosten einer ungeplanten Stillstandsstunde in der Präzisionsfertigung nennen (1.500 bis 4.000€)",
+        "Einen konkreten Fall aus dem Maschinenbau oder der CNC-Fertigung zitieren",
+        "Einen unverbindlichen 20-30 Minuten Vor-Ort-Termin vorschlagen"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Generischer Pitch 'unsere revolutionäre Lösung'",
+        "Seine Branche nicht kennen (Präzisionsfertigung)",
+        "Abstrakt über KI oder Digitalisierung reden",
+        "Nach einer klaren Absage weiter drängen",
+        "Sichtbare Manipulationstechniken"
+      ]
+    },
+    "informations_revelables": [
+      {
+        "question_qui_debloque": "Wie schnell reagiert Ihr Dienstleister derzeit bei einem kritischen Ausfall?",
+        "information_revelee": "Letzten Monat haben wir 9 Stunden gewartet. Ein ganzer Produktionstag verloren."
+      },
+      {
+        "question_qui_debloque": "Was kostet Sie eine Stunde Stillstand an Ihren Maschinen?",
+        "information_revelee": "An unserer 5-Achs-Fräse... schwer zu beziffern, aber es ist erheblich."
+      },
+      {
+        "question_qui_debloque": "Haben Sie derzeit vernetzte Anlagen in der Produktion?",
+        "information_revelee": "Wir haben an 2 Maschinen Sensoren angebracht, wissen aber nicht richtig, was wir mit den Daten anfangen sollen."
+      },
+      {
+        "question_qui_debloque": "Was ist Ihre Wartungspriorität für dieses Jahr?",
+        "information_revelee": "Ungeplante Stillstände reduzieren. Wir hatten 3 allein im letzten Quartal."
+      }
+    ]
+  },
+  "objections": {
+    "objections": [
+      {
+        "numero": 1,
+        "moment": "accroche",
+        "nom": "Bestehender Dienstleister",
+        "verbatim": "Wir haben bereits jemanden dafür.",
+        "sous_texte": "Automatischer Filter, testet ob der Verkäufer leicht aufgibt. Treu zum aktuellen Dienstleister, aber latente Unzufriedenheit mit Reaktionszeiten.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "seuil_bascule": "Der Verkäufer nennt eine konkrete Zahl zu den Kosten einer Stillstandsstunde. Hoffmann macht eine Pause, stellt eine Frage oder erkennt das Problem an.",
+        "fermeture_definitive": "Der Verkäufer wiederholt denselben Punkt ohne neuen Mehrwert. Hoffmann: 'Hören Sie, ich habe wirklich keine Zeit. Auf Wiederhören.'",
+        "reponse_efficace_indice": "Den Dienstleister nicht angreifen. Eine konkrete Zahl verankern, die Neugier über die Kosten des Nichtstuns weckt."
+      },
+      {
+        "numero": 2,
+        "moment": "decouverte",
+        "nom": "Reaktionszeiten (versteckter Schmerz)",
+        "verbatim": "Unser Dienstleister reagiert... naja, er tut sein Bestes.",
+        "sous_texte": "Leichtes Zögern, das echte Unzufriedenheit verrät. Verstecktes Schmerzsignal zum Vertiefen.",
+        "type": "sincere",
+        "difficulte": 8,
+        "seuil_bascule": "Der Verkäufer fragt nach: 'Wie schnell reagiert Ihr Dienstleister bei einem kritischen Ausfall?' Hoffmann enthüllt den 9-Stunden-Vorfall. Das ist der Wendepunkt.",
+        "fermeture_definitive": "Der Verkäufer ignoriert das Schmerzsignal und kehrt zum generischen Pitch zurück.",
+        "reponse_efficace_indice": "Konkret nach der Reaktionszeit fragen. Nicht pitchen. Hoffmann über seinen Schmerz reden lassen."
+      },
+      {
+        "numero": 3,
+        "moment": "closing",
+        "nom": "Nicht der richtige Zeitpunkt",
+        "verbatim": "Das passt gerade nicht, wir sind in der Hochproduktion.",
+        "sous_texte": "Klassische Verschiebung. Aber nicht komplett zu, wenn Einwände 1 und 2 gut behandelt wurden.",
+        "type": "tactique",
+        "difficulte": 6,
+        "seuil_bascule": "Der Verkäufer schlägt ein Mikro-Engagement vor: '20 Minuten vor Ort nächste Woche, nicht mehr. Ich zeige Ihnen, wie es an einer Maschine funktioniert.' Hoffmann stimmt zu, wenn die vorherigen Einwände gut behandelt wurden.",
+        "fermeture_definitive": "Der Verkäufer drängt ohne konkreten Terminvorschlag. Hoffmann: 'Schicken Sie mir eine E-Mail.' (Endzeichen).",
+        "reponse_efficace_indice": "Einen konkreten Termin und ein risikofreies Mikro-Engagement vorschlagen."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Hören Sie, ich habe ein Meeting. Schicken Sie mir etwas Konkretes mit Zahlen, keine Verkaufsbroschüre.",
+      "condition_declenchement": "Wenn der Verkäufer nach 3 Minuten keine Dringlichkeit geschaffen hat"
+    },
+    "pattern_escalade": "Bestehender Dienstleister → Versteckter Schmerz (Reaktionszeiten) → Nicht der richtige Zeitpunkt → E-Mail/Auflegen",
+    "regle_absolue": "Der Prospect wiederholt nie den gleichen Einwand mehr als zweimal. Wenn der Verkäufer gut reagiert, muss sich die Haltung weiterentwickeln."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "IoT Predict",
+      "secteur": "Industrielle prädiktive Wartung",
+      "description": "Deutsches Unternehmen spezialisiert auf prädiktive Wartungssensoren für die Fertigung"
+    },
+    "offre": {
+      "nom": "PredictSense",
+      "description": "IoT-Sensoren, die Maschinenanomalien vor dem Ausfall erkennen. Installation in 2 Stunden, ohne Produktionsstopp. Echtzeit-Alarme auf dem Smartphone.",
+      "proposition_valeur": "60% Reduktion ungeplanter Maschinenstillstände",
+      "prix": "Ab 500€/Monat für 5 Maschinen",
+      "references": [
+        "Schwaben Gießerei (-62% Stillstände in 4 Monaten)",
+        "Präzisionsteile Stuttgart — ROI in 3 Monaten"
+      ],
+      "avantages_vs_concurrence": "Installation ohne Produktionsstopp, kostenloser 30-Tage-Pilot an 2 Maschinen"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Einen 20-30 Minuten Vor-Ort-Termin für eine Demo an einer Maschine vereinbaren.",
+      "criteres_succes": [
+        "Konkretes Datum und Zeitfenster erhalten",
+        "20-30 Minuten vor Ort, nicht mehr",
+        "Demo an einer echten Maschine"
+      ]
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Erstkontakt. Kein vorheriger Austausch.",
+      "infos_connues": "KMU Fertigung Stuttgart, 70 Mitarbeiter, Präzisionsfertigung, 3 ungeplante Stillstände kürzlich"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Kaltakquise — Prädiktive Wartung IoT",
+    "vous_etes": "Vertriebsmitarbeiter bei IoT Predict, einem deutschen Unternehmen spezialisiert auf prädiktive Wartungssensoren für die Fertigung.",
+    "vous_vendez": "IoT-Sensoren, die Maschinenanomalien vor dem Ausfall erkennen. 2-Stunden-Installation, ohne Produktionsstopp. Echtzeit-Alarme auf dem Smartphone.",
+    "vous_appelez": "Klaus Hoffmann, Geschäftsführer von Präzision Werk GmbH (70 Mitarbeiter, Präzisionsfertigung, Stuttgart). Erstkontakt, Kaltakquise.",
+    "ce_que_vous_savez": [
+      "Das Unternehmen hatte 3 ungeplante Maschinenstillstände im letzten Quartal",
+      "Der aktuelle Wartungsdienstleister ist nur reaktiv, keine prädiktive Fähigkeit",
+      "Ein Sensorunternehmen war vor 6 Monaten da, ohne zu überzeugen",
+      "Das Auftragsbuch ist voll — Verzögerungen sind kostspielig"
+    ],
+    "votre_objectif": "Einen 20-30 Minuten Vor-Ort-Termin für eine Demo an einer Maschine vereinbaren.",
+    "vos_atouts": [
+      "Kundenreferenz: Schwaben Gießerei (-62% Stillstände in 4 Monaten)",
+      "Kostenloser 30-Tage-Pilot an 2 Maschinen",
+      "Installation ohne Produktionsstopp",
+      "Nachweisbarer ROI in 3 Monaten"
+    ],
+    "conseils": "Nicht sofort pitchen. Nach den letzten Ausfällen und deren Auswirkungen fragen. Die Kosten des Nichtstuns beziffern. 20 Min unverbindlich mit konkretem Datum vorschlagen.",
+    "duree_estimee": "3-5 Minuten",
+    "attention": "C/D-Profil — analytisch, braucht Fakten und Referenzen. Legt auf, wenn in 60 Sekunden kein Mehrwert erkennbar. Nie nach klarer Absage weiter drängen."
+  },
+  "scenarios_de_fin": {
+    "rdv_obtenu": {
+      "conditions": "Der Verkäufer hat eine konkrete Zahl genannt + den Reaktionszeit-Schmerz vertieft + einen unverbindlichen Termin mit konkretem Datum vorgeschlagen. Einwände 1 und 2 gut behandelt.",
+      "replique": "Gut. Donnerstag spätvormittags, 30 Minuten. Zeigen Sie mir, wie das an einer Maschine funktioniert. Aber wenn das nur ein Verkaufsgespräch ist, brechen wir ab."
+    },
+    "email_demande": {
+      "conditions": "Der Verkäufer hat gut angefangen, aber den Schmerz nicht vertieft oder kein konkretes Datum vorgeschlagen.",
+      "replique": "Schicken Sie mir das per E-Mail. Wenn es mich interessiert, melde ich mich."
+    },
+    "refus_poli": {
+      "conditions": "Der Verkäufer hat die Eröffnung verpasst oder in 90 Sekunden keinen Mehrwert geliefert.",
+      "replique": "Hören Sie, wir haben einen Dienstleister, der uns genügt. Auf Wiederhören."
+    },
+    "raccrochage": {
+      "conditions": "Der Verkäufer hat nach klarer Absage weiter gedrängt oder sichtbare Manipulation angewandt.",
+      "replique": "[Legt wortlos auf]"
+    }
+  }
+}

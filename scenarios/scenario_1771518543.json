@@ -1,0 +1,380 @@
+{
+  "id": "scenario_1771518543",
+  "description_originale": "Vous appelez une groupe logistique de 200+ salariés, plusieurs entrepôts. L'assistante d'exploitation du directeur supply chain ou directeur des opérations décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : transport_logistique]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "200+ salariés, plusieurs entrepôts",
+      "interlocuteur_principal": {
+        "poste": "Directeur Supply Chain ou Directeur des Opérations",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante d'exploitation",
+          "role": "barrage_filtrage",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour optimiser la supply chain ou les opérations logistiques",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Assistante filtre systématiquement les appels commerciaux",
+        "Difficulté à accéder au décideur",
+        "Barrage professionnel difficile à franchir"
+      ],
+      "implicites": [
+        "Discours commercial probablement peu différencié",
+        "Manque de légitimité perçue pour justifier l'accès direct",
+        "Approche probablement trop générique ou agressive",
+        "Absence de stratégie pour créer de la valeur dès le premier contact avec le filtre"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas créer suffisamment de valeur et de légitimité dès les premières secondes pour que l'assistante considère l'appel comme prioritaire et non comme un énième démarchage commercial classique"
+    },
+    "objections_mentionnees": [
+      "Filtrage systématique par l'assistante",
+      "Refus de passage au décideur"
+    ],
+    "objectif_formation": "Maîtriser les techniques de passage de barrage téléphonique avec professionnalisme, créer de la valeur dès le premier contact, et obtenir des RDV qualifiés avec des décideurs supply chain en contexte multi-interlocuteurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions B2B pour le secteur logistique/supply chain",
+      "entreprise_description": "Entreprise proposant des solutions destinées à améliorer les opérations logistiques et la supply chain",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service visant à optimiser les processus logistiques, la gestion d'entrepôts ou la supply chain",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, réduction des coûts logistiques, optimisation des flux",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Proposition de valeur spécifique",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique ciblée",
+        "Références clients éventuelles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur Supply Chain & Logistique",
+      "entreprise": {
+        "nom": "TransEuro Distribution",
+        "secteur": "Transport et logistique pharmaceutique",
+        "taille": "340 salariés, 4 entrepôts (Lyon, Lille, Bordeaux, Strasbourg)",
+        "ca_approximatif": "78M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique et méfiant envers les promesses commerciales",
+        "Perfectionniste anxieux sur la conformité réglementaire",
+        "Politiquement prudent en interne (craint l'échec visible)"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur après une fusion difficile il y a 18 mois",
+        "Réduire les coûts sans compromettre la qualité (pression du DAF)",
+        "Moderniser l'image de son département jugé 'old school' par la direction",
+        "Éviter un nouveau plantage de projet comme celui de 2022 (WMS raté)"
+      ],
+      "peurs_freins": [
+        "Être perçu comme celui qui dépense sans ROI démontrable",
+        "Perdre du temps en réunions commerciales stériles",
+        "Se faire court-circuiter par le DG qui adore 'les nouveautés'",
+        "Déstabiliser des process qui fonctionnent 'correctement'",
+        "Les solutions 'clés en main' qui plantent à l'implémentation"
+      ],
+      "rapport_aux_commerciaux": "Profondément lassé. Reçoit 12-15 sollicitations par semaine. Considère 90% des commerciaux comme des 'vendeurs de PowerPoint' qui ne comprennent rien aux contraintes GDP. A développé un détecteur à bullshit très affûté. Respecte uniquement ceux qui connaissent vraiment son métier.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, voix légèrement fatiguée. Commence souvent par 'J'ai 10 minutes maximum'. Coupe court aux présentations institutionnelles : 'Oui oui, j'ai regardé votre site'",
+      "signaux_interet": [
+        "Demande des chiffres précis ('Combien de jours d'implémentation RÉELLEMENT ?')",
+        "Mentionne spontanément un pain point actuel ('Justement on galère sur...')",
+        "Demande des références dans la pharma ou l'agroalimentaire",
+        "Propose de replanifier un créneau plus long",
+        "Implique un collaborateur ('Faudrait que j'en parle à Stéphane')"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles au téléphone",
+        "Répète 'Oui, oui...' de manière mécanique sans écouter",
+        "'On a déjà un prestataire, ça va très bien'",
+        "'Envoyez-moi une doc' (= poubelle diplomatique)",
+        "Consultations ostentatoires de mails pendant les visios",
+        "Usage du 'vous' distant au lieu du 'tu' fraternisant"
+      ],
+      "tics_langage": [
+        "'Concrètement' (répété 4-5 fois par conversation)",
+        "'C'est-à-dire ?' (quand il flaire du vide)",
+        "'Mouais...' (scepticisme par défaut)",
+        "'Je vais être transparent avec vous' (avant de dire non)",
+        "Anglicismes supply chain : 'lead time', 'KPI', 'cross-docking'"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Au-delà, décroche mentalement ou interrompt avec un 'Oui mais concrètement, chez nous...'. Déteste qu'on lui explique son métier."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance tendue (+12% volume) sans augmentation proportionnelle des moyens. Turnover élevé des caristes (23%). Pression énorme sur les délais de livraison (clients grands groupes pharma exigeants). Audit GDP prévu dans 4 mois = stress maximum. Projet d'ouverture d'un 5e entrepôt à Nantes en discussion.",
+      "priorites_actuelles": [
+        "Réduire les erreurs de préparation (taux actuel 0,8%, objectif 0,3%)",
+        "Automatiser le reporting mensuel (mange 3 jours/mois)",
+        "Fidéliser les équipes terrain (RH sur le dos)",
+        "Préparer l'audit GDP sans planter",
+        "Justifier le budget 2025 auprès d'un DAF hostile"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 WMS en 6 ans. Le premier (2019) n'a jamais vraiment fonctionné (intégrateur défaillant). Le second (2022, éditeur français) a été abandonné après 8 mois (trop complexe, équipes pas formées). Traumatisme fort. Aujourd'hui, travaille avec un mix Excel/TMS basique/process papier. 'Au moins ça marche'.",
+      "fournisseur_actuel": "TMS Generix, contrat qui se termine dans 11 mois. Relation correcte mais solution vieillissante. Pas d'appétence pour changer 'juste pour changer'.",
+      "budget_disponible": "Entre 60K€ et 180K€ sur 2025-2026, mais doit être défendu devant le COMEX avec ROI chiffré en moins de 18 mois. Budget pharaonique gelé après l'échec 2022."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client pharma reconnu comme référence",
+        "Parler conformité GDP/BPD avant de parler ROI",
+        "Reconnaître la complexité de son secteur (température dirigée, traçabilité lot)",
+        "Proposer une phase pilote sur UN entrepôt, courte et peu risquée",
+        "Montrer qu'on comprend l'échec de 2022 (sans qu'il ait à l'expliquer)",
+        "Être recommandé par un pair (réseau ASLOG ou club supply chain)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Promettre des résultats 'immédiats' ou 'garantis'",
+        "Minimiser la complexité de l'implémentation",
+        "Critiquer frontalement son organisation actuelle",
+        "Pousser pour un rendez-vous la semaine même ('Je suis dans le coin')",
+        "Ignorer la dimension humaine (formation, conduite du changement)",
+        "Parler de 'disruption' ou 'révolution digitale'",
+        "Ne pas connaître la réglementation GDP"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai vraiment pas le temps là, j'ai une conf dans 5 minutes et je suis déjà en retard",
+        "sous_texte": "Je veux voir si vous avez quelque chose de valable ou si vous êtes un commercial lambda. Prouvez votre valeur en 30 secondes ou je raccroche.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte, promettre 45 secondes chrono, et donner immédiatement un élément de valeur spécifique à son contexte pharma"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah encore un qui veut me vendre une solution miracle... Vous êtes le quatrième cette semaine franchement",
+        "sous_texte": "Je suis épuisé par les commerciaux qui ne connaissent rien à mon métier. Je vous mets dans le même sac par défaut. Différenciez-vous immédiatement.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie authentique sur sa lassitude, puis différenciation immédiate par une question pointue sur ses process GDP plutôt qu'un pitch"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà un TMS, ça tourne correctement, on a pas spécialement de besoin là",
+        "sous_texte": "Je ne veux pas revivre l'échec de 2022. Le statu quo est inconfortable mais sûr. Je ne change pas sans raison impérieuse.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que 'ça tourne' est déjà bien, puis questionner sur les irritants mineurs qu'il tolère plutôt que de vendre le changement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez combien de clients dans la pharma avec contraintes GDP ? Pas du transport standard hein, de la vraie pharma",
+        "sous_texte": "Je vérifie que vous n'êtes pas un généraliste qui improvise. Si vous n'avez pas de références pharma solides, je vais couper court.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 références pharma précises avec détails techniques (pas juste des logos) et proposer un contact référent si besoin"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... Vous savez, on a déjà testé un WMS en 2022, ça s'est très mal passé. L'éditeur promettait monts et merveilles, au final on a perdu 8 mois et pas mal d'argent",
+        "sous_texte": "J'ai été traumatisé par cet échec. Ma crédibilité interne en a pris un coup. Je ne peux pas me permettre un nouveau plantage. Rassurez-moi ou je ne bouge pas.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accueillir l'échec sans minimiser, montrer qu'on comprend les causes classiques d'échec, proposer une approche pilote réversible et progressive"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire ? Parce que là vous me parlez d'optimisation, de gains, mais concrètement chez nous qu'est-ce que ça changerait ?",
+        "sous_texte": "J'ai repéré du discours creux. Je veux du concret, des cas d'usage précis, pas du PowerPoint marketing. Vous connaissez vraiment mon métier ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter le discours générique, poser des questions précises sur ses process actuels plutôt que de continuer à pitcher"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est pas la solution technique, c'est les équipes. J'ai un turnover de 23% chez les caristes, ils ont déjà du mal avec l'existant, si vous me rajoutez une couche de complexité...",
+        "sous_texte": "Mon vrai problème est humain, pas technologique. Si vous ne comprenez pas la dimension conduite du changement et formation, vous êtes hors-jeu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que c'est LE sujet critique, parler accompagnement et simplicité d'usage avant de parler fonctionnalités"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais votre ROI de 18 mois, c'est sur papier ça. Dans la vraie vie, avec les imprévus, les formations qui prennent du retard, ça va plutôt être 30-36 mois non ?",
+        "sous_texte": "Je suis analytique et j'ai l'expérience des projets qui dérapent. Vos chiffres marketing ne me convainquent pas. Soyez transparent sur les risques.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître que c'est une hypothèse, donner une fourchette réaliste basse/haute, et expliquer les facteurs qui influencent le délai"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On a un audit GDP dans 4 mois, c'est vraiment pas le moment de tout chambouler, vous comprenez ?",
+        "sous_texte": "C'est une vraie contrainte, mais c'est aussi une excuse commode pour ne pas décider maintenant. Je veux voir si vous insistez lourdement ou si vous êtes intelligent.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte audit comme priorité absolue, mais positionner une phase de découverte post-audit plutôt qu'abandonner"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais être transparent avec vous : votre solution a l'air intéressante, mais je sais que mon DAF va me demander de comparer avec au moins deux autres offres. Donc envoyez-moi une doc et je reviens vers vous",
+        "sous_texte": "C'est ma sortie diplomatique standard. 80% du temps, 'je reviens vers vous' signifie 'non merci'. Mais les 20% restants sont sincères. Testez ma vraie intention.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter la logique comparative, mais verrouiller un point de suivi précis et questionner son vrai niveau d'intérêt avant d'envoyer quoi que ce soit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais si je comprends bien, il faut refaire toute la cartographie des flux pour paramétrer votre truc ? Ça c'est des semaines de boulot, on a pas les ressources pour ça",
+        "sous_texte": "Je visualise la charge de travail et je panique. Mon équipe est déjà surchargée. Si vous ne proposez pas d'accompagnement, c'est mort.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la charge, proposer un accompagnement méthodologique ou une co-construction progressive, pas tout d'un coup"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, mais vous dites ça, sauf que l'intégrateur en 2022 nous disait exactement la même chose. 'Formation complète, accompagnement, tout ça'... Au final on s'est retrouvés seuls après 2 mois",
+        "sous_texte": "Votre discours d'accompagnement me semble creux car j'ai déjà été déçu. Donnez-moi des garanties contractuelles concrètes ou je ne vous crois pas.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Comprendre ce qui a manqué en 2022, proposer des garanties contractuelles précises sur l'accompagnement, partager un retour d'expérience similaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, la mise en route ça prend combien de temps ? Et je parle pas du planning théorique, je parle de VRAIMENT opérationnel sur les 4 entrepôts",
+        "sous_texte": "Je veux voir si vous allez me mentir avec un planning marketing ou si vous êtes réaliste. Votre réponse va déterminer ma confiance.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un planning réaliste avec des fourchettes, distinguer le pilote d'un déploiement complet, mentionner les facteurs d'accélération/ralentissement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui oui, c'est intéressant, mais là j'ai vraiment besoin d'en discuter en interne avant. Avec le DG, avec le DAF aussi parce que bon... niveau budget c'est lui qui valide",
+        "sous_texte": "Je ne décide jamais seul sur ces montants, c'est vrai. Mais c'est aussi ma façon de gagner du temps pour réfléchir ou d'éviter de dire non. Quelle est votre lecture ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le process décisionnel comme légitime, proposer d'accompagner la présentation interne plutôt que d'insister pour un RDV immédiat"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, on va faire comme ça : vous m'envoyez une proposition écrite avec les chiffrages, les délais réalistes, et je regarde ça tranquillement. Si ça matche, je vous recontacte",
+        "sous_texte": "Je veux me débarrasser de vous poliment. 'Je vous recontacte' = 95% de chances que non. Mais je garde 5% d'ouverture si votre doc me surprend vraiment.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter cette impasse commerciale. Proposer plutôt un point de 20min pour présenter la proposition ensemble et verrouiller une date"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, vous avez l'air sérieux, mais vous savez... le timing est vraiment pas bon. Entre l'audit, le projet Nantes qui se précise, les tensions avec les RH sur le turnover... J'ai pas la bande passante",
+        "sous_texte": "C'est sincère : je suis vraiment saturé. Mais si vous m'aidez à prioriser ou si vous allégez ma charge mentale, je pourrais reconsidérer. Sinon, revenez dans 6 mois.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie totale sur sa surcharge, proposer de porter une partie de l'avancement (étude préalable, benchmark) pour lui faciliter la vie, pas pour le presser"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, on va se dire les choses : vous êtes cher. J'ai vu deux autres solutions à 40% moins cher. Pourquoi je paierais plus ?",
+        "sous_texte": "C'est peut-être vrai, peut-être une négociation. Je veux voir si vous tenez votre prix avec des arguments solides ou si vous bradez immédiatement.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas brader. Questionner ce qui est comparé (scope, accompagnement, maintenance), recentrer sur la valeur et les risques du moins-disant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est-à-dire que votre truc, ça nécessite quand même de changer pas mal de choses dans nos process actuels. Et ça, ça va être compliqué à faire passer auprès des chefs d'entrepôt qui sont là depuis 15 ans",
+        "sous_texte": "Je suis politiquement précautionneux. J'ai peur de la résistance interne. Si vous ne m'aidez pas sur le volet conduite du changement politique, je ne me lance pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de co-construire la communication interne, d'impliquer les chefs d'entrepôt dès le pilote, de valoriser leur expertise dans le paramétrage"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai bien compris votre proposition, c'est pas inintéressant, mais je vais être honnête avec vous : après l'échec de 2022, je peux pas me permettre de me planter à nouveau. Donc tant que j'ai pas une garantie en béton que ça va marcher, avec des références exactement dans mon contexte, avec un pilote hyper cadré et réversible, et avec l'assurance que mes équipes vont suivre... je préfère rester avec ce qu'on a. C'est pas parfait, mais au moins ça fonctionne. Vous comprenez ?",
+      "condition_declenchement": "Après 25-30 minutes d'échange où le commercial n'a pas suffisamment adressé la dimension risque, traumatisme 2022, et conduite du changement. Laurent sort cette objection de fond quand il sent qu'on pousse pour closer sans avoir vraiment sécurisé ses peurs."
+    },
+    "pattern_escalade": "Laurent commence cordial mais distant (test de valeur). Si le commercial résiste aux premiers tests, il s'ouvre progressivement et partage des éléments de contexte (projet Nantes, audit, échec 2022). Mais dès qu'il sent une pression commerciale ou un manque de compréhension de ses contraintes, il se referme brutalement et sort des objections tactiques ('envoyez une doc', 'je vous recontacte') pour couper court. Son pattern d'escalade : scepticisme de base → test de compétence → partage conditionnel → refermeture si pression ou bullshit détecté → objection de sortie diplomatique.",
+    "piege_classique": "Laurent donne facilement l'impression d'être intéressé ('oui oui, c'est intéressant') pour rester poli, mais son vrai niveau d'engagement se mesure à ses questions précises et sa volonté de planifier une prochaine étape concrète. Le piège : le commercial croit avoir un prospect chaud alors que Laurent est juste courtois. Indicateur fiable : s'il ne propose PAS lui-même de replanifier ou d'impliquer quelqu'un, c'est qu'il n'est pas vraiment convaincu, peu importe ce qu'il dit."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions B2B pour le secteur logistique/supply chain",
+      "description": "Entreprise proposant des solutions destinées à améliorer les opérations logistiques et la supply chain"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service visant à optimiser les processus logistiques, la gestion d'entrepôts ou la supply chain",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, réduction des coûts logistiques, optimisation des flux",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de passage de barrage téléphonique avec professionnalisme, créer de la valeur dès le premier contact, et obtenir des RDV qualifiés avec des décideurs supply chain en contexte multi-interlocuteurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Passage de barrage assistante Supply Chain",
+    "vous_etes": "Commercial terrain spécialisé solutions supply chain pharmaceutique, 3 ans d'expérience secteur régulé.",
+    "vous_vendez": "Solution d'optimisation logistique pour entrepôts pharmaceutiques sous contrainte GDP (prix indicatif 80-150K€ selon périmètre).",
+    "vous_appelez": "Nathalie Durand, assistante d'exploitation chez TransEuro Distribution (logistique pharma, 340 salariés). Professionnelle aguerrie, filtre méthodiquement tous les commerciaux. Protège farouchement l'agenda de Laurent Mercier, son Directeur Supply Chain.",
+    "ce_que_vous_savez": [
+      "TransEuro gère 4 entrepôts pharma (Lyon, Lille, Bordeaux, Strasbourg)",
+      "Croissance forte (+12% volumes) avec tensions opérationnelles visibles",
+      "Secteur ultra-régulé : audit GDP prévu sous 4 mois",
+      "Le directeur supply chain reçoit 12-15 sollicitations commerciales par semaine",
+      "Votre client Laboratoires Roussel (référence pharma) est dans la même zone"
+    ],
+    "votre_objectif": "Passer le barrage de Nathalie avec professionnalisme et obtenir un créneau de 15 minutes avec Laurent Mercier dans les 10 jours.",
+    "vos_atouts": [
+      "Référence client Laboratoires Roussel (pharma, 280 salariés, 3 entrepôts)",
+      "Spécialisation conformité GDP/BPD et traçabilité température dirigée",
+      "Approche pilote sur 1 entrepôt (phase test courte, risque maîtrisé)",
+      "Compréhension fine des contraintes secteur régulé"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:29:03Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16571,
+    "total_time_s": 162.0
+  }
+}

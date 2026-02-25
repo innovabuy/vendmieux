@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771521673",
+  "description_originale": "Vous avez envoyé une proposition commerciale au expert-comptable associé / gérant d'une cabinet comptable de 10-25 collaborateurs il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : comptabilite]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "10-25 collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "expert-comptable associé / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets comptables",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition",
+        "Difficulté à obtenir un retour clair"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-proposition",
+        "Possible difficulté à créer l'urgence",
+        "Manque de relances intermédiaires entre J0 et J10",
+        "Proposition peut-être non adaptée ou peu claire"
+      ],
+      "probleme_racine": "Absence de processus de suivi structuré et de création d'engagement progressif après envoi de proposition"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la relance post-proposition pour obtenir des retours clairs et faire avancer le cycle de vente",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solution B2B pour cabinets comptables",
+      "entreprise_description": "Entreprise proposant des solutions (logiciels, services, formation) destinées aux cabinets d'expertise comptable",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B destinée aux cabinets comptables de 10-25 collaborateurs",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle ou de la gestion des cabinets comptables",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Prix ou fourchette budgétaire",
+        "Contexte de la relation antérieure (RDV? Salon? Appel froid?)",
+        "Contenu de la proposition envoyée",
+        "Historique des échanges précédents",
+        "Raisons présumées du silence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Marchand",
+      "age": 51,
+      "poste": "Expert-comptable associé",
+      "entreprise": {
+        "nom": "Cabinet Marchand & Delorme",
+        "secteur": "Expertise comptable et conseil",
+        "taille": "17 collaborateurs (4 associés, 8 collaborateurs comptables, 3 apprentis, 2 administratifs)",
+        "ca_approximatif": "1,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Chroniquement surbooké",
+        "Méfiant envers les promesses commerciales"
+      ],
+      "motivations_profondes": [
+        "Protéger sa rentabilité et éviter les investissements hasardeux",
+        "Ne pas se faire distancer technologiquement par la concurrence",
+        "Maintenir sa réputation de cabinet sérieux et fiable",
+        "Déléguer davantage pour retrouver du temps personnel"
+      ],
+      "peurs_freins": [
+        "Investir dans un outil qui complexifie au lieu de simplifier",
+        "Perdre du temps en formation et déploiement pendant la haute saison",
+        "Que ses collaborateurs résistent au changement",
+        "Paraître 'vieux jeu' face aux jeunes cabinets digitalisés",
+        "Se faire avoir par un discours commercial bien rodé"
+      ],
+      "rapport_aux_commerciaux": "Attitude de défense polie mais ferme. A développé au fil des années un 'détecteur de bullshit'. Apprécie la transparence brutale, déteste qu'on lui fasse perdre son temps. Considère 80% des démarchages comme du spam déguisé.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je vous écoute mais j'ai un client dans 10 minutes'",
+      "signaux_interet": [
+        "Commence à poser des questions précises sur les délais de ROI",
+        "Mentionne spontanément un problème interne concret",
+        "Demande des références chez des confrères de taille similaire",
+        "Propose de faire intervenir sa collaboratrice principale dans la discussion",
+        "Évoque son agenda pour un prochain échange"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Formules d'évitement: 'On va réfléchir', 'Je vous redis', 'Pas le bon moment'",
+        "Coupe la parole pour ramener à l'essentiel",
+        "Commence ses phrases par 'Écoutez...' (signal d'impatience)",
+        "Invoque un prétexte externe: 'Ma secrétaire me fait signe', 'J'ai un appel qui rentre'"
+      ],
+      "tics_langage": [
+        "Utilise 'concrètement' comme ponctuation",
+        "Dit souvent 'En clair' avant de reformuler",
+        "Abuse du conditionnel de prudence: 'Ça pourrait être intéressant... si'",
+        "Expression favorite: 'Faut voir' (= non poli)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Maximum 90 secondes avant de reprendre la main. Déteste les présentations PowerPoint de plus de 3 slides."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable mais marges en pression. Vient de perdre 2 clients PME partis vers un cabinet low-cost digitalisé. L'un des 4 associés part en retraite dans 18 mois, pas encore de repreneur identifié. Période novembre-mai = enfer avec clôtures et déclarations.",
+      "priorites_actuelles": [
+        "Finaliser les bilans du 31/12 avant la deadline",
+        "Recruter un collaborateur confirmé (marché tendu)",
+        "Préparer le départ de l'associé senior",
+        "Moderniser l'image du cabinet sans perdre l'âme 'conseil humain'"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion commerciale pour cabinets, finalement abandonné après 8 mois (trop complexe, formation insuffisante, SAV inexistant). Échaudé. A une solution de dématérialisation qui fonctionne moyennement.",
+      "fournisseur_actuel": "Cegid pour la production comptable, Sidetrade pour les relances clients, un bricolage Excel pour le pilotage interne",
+      "budget_disponible": "Entre 8k€ et 15k€ pour un projet bien défini, mais besoin de l'accord des autres associés. Peut monter à 25k€ si ROI démontré sur 24 mois maximum."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Témoignage vidéo d'un confrère similaire avec chiffres précis de gain de temps",
+        "Démonstration courte (15 min max) sur UN cas d'usage concret du cabinet",
+        "Proposition d'audit gratuit de ses processus actuels sans obligation",
+        "Garantie de réversibilité et accompagnement sur 12 mois",
+        "Référence auprès de son expert-comptable de confiance (réseau IFEC ou CCI)",
+        "Argument: 'Vos collaborateurs gagnent 3h par semaine, vous pouvez prendre 2 clients de plus OU facturer du conseil à plus forte valeur'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par parler de ses fonctionnalités avant ses problématiques",
+        "Jargon techno ou bullshit corporate ('disruption', 'gamechanger', 'IA révolutionnaire')",
+        "Comparer son cabinet à des structures de 50+ collaborateurs",
+        "Pression commerciale: 'Offre valable jusqu'à vendredi'",
+        "Prétendre remplacer son logiciel métier (Cegid/Sage)",
+        "Ignorer sa question directe sur le prix: 'Ça dépend de vos besoins'",
+        "Ne pas connaître les spécificités réglementaires de l'expertise comptable"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, votre proposition là... je l'ai reçue mais j'ai pas eu le temps de la regarder en détail, on est en pleine période de bilans vous comprenez",
+        "sous_texte": "Je ne l'ai probablement même pas ouverte et je cherche une excuse socialement acceptable pour raccrocher",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Légitimer la période tout en créant un micro-engagement immédiat plutôt que de proposer un nouveau RDV vague"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui je me souviens... enfin vaguement. C'était quoi déjà exactement votre truc ?",
+        "sous_texte": "Je ne me souviens de rien du tout et je teste si vous allez me refaire tout votre pitch ou aller à l'essentiel",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Résumer en une phrase ultra-concrète centrée sur SON problème, pas sur votre solution"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement là c'est vraiment pas le moment, rappelez-moi après le 15 avril",
+        "sous_texte": "Formule d'évitement standard. Je ne veux pas être impoli mais j'espère que vous oublierez",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter l'excuse tout en plantant une graine de valeur qui le fera rappeler LUI"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, moi j'ai déjà Cegid pour la compta, Sidetrade pour les relances... Qu'est-ce que vous m'apportez de plus exactement ?",
+        "sous_texte": "Je suis équipé et ça marche à peu près. Prouvez-moi que vous n'êtes pas juste un outil de plus qui va compliquer mon environnement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner d'abord ce qui NE fonctionne PAS dans son setup actuel avant d'argumenter sur votre différenciation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... On a déjà testé un truc dans ce genre il y a 3 ans. Au bout de 8 mois on a tout laissé tomber. Trop compliqué, personne s'en servait vraiment.",
+        "sous_texte": "J'ai une cicatrice d'un projet raté. Vous allez devoir me rassurer sérieusement sur l'accompagnement et la simplicité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé pour comprendre les erreurs et montrer comment vous les évitez structurellement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est mes collaborateurs. Ils ont leurs habitudes, ils sont déjà surchargés... leur imposer un nouvel outil maintenant, je vous dis pas la levée de boucliers",
+        "sous_texte": "Vraie préoccupation managériale. J'ai peur de la résistance interne et de perdre du temps en conduite du changement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'impliquer un collaborateur clé dans l'évaluation et parler adoption progressive, pas big bang"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et au niveau prix, on parle de combien là ? Parce que j'ai pas un budget illimité non plus hein",
+        "sous_texte": "Je veux savoir MAINTENANT si je suis dans la fourchette, pas dans 30 minutes. Test de transparence et élimination rapide si hors budget",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette honnête tout en requalifiant le périmètre pour justifier l'investissement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut voir... C'est intéressant sur le papier mais concrètement, chez nous, avec nos process à nous, je suis pas sûr que ça colle",
+        "sous_texte": "Je ne suis pas convaincu que votre solution générique s'adapte à mes spécificités. Formule polie pour dire 'probablement non'",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une démonstration ultra-ciblée sur UN de ses process réels ou un audit gratuit sans engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez des références chez des cabinets de ma taille ? Parce que les exemples de gros cabinets, c'est pas comparable",
+        "sous_texte": "Question de crédibilité. Je veux parler à un pair avant de m'engager. Les grands comptes ne m'intéressent pas",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner 2-3 noms précis de cabinets 10-25 personnes avec permission de contact direct"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "En clair, vous me promettez quoi exactement comme gain de temps ? Parce que des promesses j'en entends toute la semaine...",
+        "sous_texte": "Mon détecteur de bullshit est activé. Donnez-moi des chiffres vérifiables ou arrêtez de me faire perdre mon temps",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des métriques précises avec fourchette basse crédible, pas de chiffres marketing gonflés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais tout ça, ça se met en place comment ? Parce que je peux pas me permettre de planter la prod pendant 3 mois pour déployer votre solution",
+        "sous_texte": "Peur du risque opérationnel. J'ai besoin de garanties sur la continuité de service pendant la transition",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler un plan de déploiement progressif hors période fiscale avec phase pilote sécurisée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, votre solution elle est compatible avec les normes ANC ? Et la piste d'audit fiscale, c'est géré comment ?",
+        "sous_texte": "Test de compétence sectorielle. Si vous pataugez sur la réglementation compta, vous perdez toute crédibilité",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Répondre avec précision réglementaire ou avouer honnêtement et proposer de revenir avec un expert technique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais je peux pas décider seul, faut que j'en parle avec mes associés. On se rappelle",
+        "sous_texte": "Vrai besoin de consensus OU excuse pour gagner du temps et ne jamais rappeler. Impossible à distinguer sans creuser",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un format adapté au comité de décision: documentation synthétique + rendez-vous collectif court"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là je dois vraiment y aller, ma secrétaire me fait signe, j'ai un client qui arrive. Je vous redis OK ?",
+        "sous_texte": "Fuite en règle. Peut être vrai OU prétexte pour clore sans dire non frontalement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte tout en arrachant un micro-engagement concret avant de raccrocher"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Votre offre elle est valable combien de temps ? Parce que là franchement je peux rien valider avant juin",
+        "sous_texte": "Tentative de gagner du temps sans s'engager OU vraie contrainte calendaire. Test de pression commerciale",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Désamorcer la pression temporelle tout en créant un calendrier de jalons d'ici juin"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon soyons francs : là votre prix, c'est 20% au-dessus de ce que j'avais en tête. Qu'est-ce qu'on peut faire ?",
+        "sous_texte": "Négociation directe. Peut être un vrai frein budgétaire OU une tactique pour obtenir une ristourne même s'il peut payer",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier d'abord si c'est éliminatoire ou négociable, puis défendre la valeur avant toute concession"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez-moi tout ça par mail avec un récap, je regarde tranquillement et je vous recontacte si ça m'intéresse",
+        "sous_texte": "Formule d'évitement ultime. Probabilité qu'il recontacte: 5%. Veut récupérer le contrôle et clore la conversation",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi mail tout en ancrant un point de contact futur précis avec raison valable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si ça marche pas, vous avez une garantie satisfait ou remboursé ? Parce que je vais pas m'engager sur 3 ans les yeux fermés",
+        "sous_texte": "Vraie aversion au risque post-échec précédent. Besoin de réversibilité pour lever la paralysie décisionnelle",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer clause de sortie raisonnable avec engagement progressif plutôt que contrat long d'emblée"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, vous m'avez convaincu sur le principe mais honnêtement j'ai trois cabinets qui m'ont démarché ce mois-ci avec des promesses similaires. Pourquoi vous plutôt qu'eux ? Je veux dire, concrètement, qu'est-ce qui fait vraiment la différence chez vous ?",
+      "condition_declenchement": "Arrive en fin d'entretien quand le prospect est intellectuellement convaincu mais cherche la raison émotionnelle/rationnelle finale pour choisir. Test ultime de différenciation authentique"
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de protection du temps (accroche), passe à des objections sincères de risque opérationnel si vous franchissez la première barrière (découverte), puis teste votre solidité technique et commerciale (argumentation). En closing, il oscille entre objections tactiques de négociation et sincères de gouvernance interne. Si vous gérez bien tout le processus, l'objection finale devient philosophique: pourquoi VOUS. La résistance augmente proportionnellement à l'approche de la décision réelle.",
+    "piege_classique": "Stéphane maîtrise l'art de l'objection molle qui semble accepter ('C'est intéressant...', 'Faut voir...', 'Pourquoi pas...') tout en ne s'engageant sur rien. Le vendeur inexpérimenté croit avoir gagné et envoie sa proposition, Stéphane disparaît ensuite dans la nature. Le vrai signal d'achat n'est PAS son approbation polie mais ses QUESTIONS PRÉCISES sur le déploiement, les références et le ROI. Tant qu'il n'en pose pas, vous n'avez rien vendu."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solution B2B pour cabinets comptables",
+      "description": "Entreprise proposant des solutions (logiciels, services, formation) destinées aux cabinets d'expertise comptable"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B destinée aux cabinets comptables de 10-25 collaborateurs",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle ou de la gestion des cabinets comptables",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser la relance post-proposition pour obtenir des retours clairs et faire avancer le cycle de vente",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Cabinet comptable 17 collaborateurs",
+    "vous_etes": "Commercial B2B spécialisé solutions pour cabinets d'expertise comptable, 10 jours après envoi d'une proposition commerciale.",
+    "vous_vendez": "Solution d'optimisation opérationnelle pour cabinets comptables 10-25 collaborateurs (prix et détails dans la proposition envoyée).",
+    "vous_appelez": "Stéphane Marchand, 51 ans, expert-comptable associé chez Marchand & Delorme (17 personnes). Pragmatique, chroniquement surbooké, allergique au bullshit commercial.",
+    "ce_que_vous_savez": [
+      "Il a reçu votre proposition il y a 10 jours — aucun retour depuis",
+      "Cabinet en croissance stable mais marges sous pression, a perdu 2 clients face à des cabinets digitalisés",
+      "Utilise Cegid pour la compta, a eu une mauvaise expérience avec un logiciel abandonné après 8 mois",
+      "Période de rush : bilans 31/12 en cours, tolérance discussion commerciale = très faible",
+      "Budget décision collégiale entre associés, peut aller jusqu'à 25k€ si ROI démontré sur 24 mois max"
+    ],
+    "votre_objectif": "Obtenir un retour clair sur la proposition : intérêt réel, frein identifié ou clôture nette pour avancer ou classer le dossier.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes métier des cabinets (réglementation, saisonnalité, logiciels métier)",
+      "Vous pouvez proposer un audit gratuit ou témoignage vidéo de confrère similaire",
+      "Vous savez parler ROI concret : gain de temps collaborateurs = capacité client supplémentaire",
+      "Vous respectez son temps : vous visez 5 minutes max si non intéressé"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:21:13Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14486,
+    "total_time_s": 133.2
+  }
+}

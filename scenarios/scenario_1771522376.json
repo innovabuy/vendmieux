@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771522376",
+  "description_originale": "Vous appelez une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements. C'est l'réceptionniste ou assistante de direction qui décroche. Vous devez passer le barrage pour parler au propriétaire / directeur d'hôtel. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : hotellerie_restauration]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "hotel_restaurant_independant_ou_petit_groupe_2_5_etablissements",
+      "interlocuteur_principal": {
+        "poste": "proprietaire_ou_directeur_hotel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "receptionniste_ou_assistante_direction",
+          "role": "barrage_filtrage_appels",
+          "comportement": "protectrice_du_decideur"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_ou_service_destine_aux_hotels_restaurants",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulte_a_passer_le_barrage_secretariat",
+        "assistante_filtre_et_protege_le_decideur"
+      ],
+      "implicites": [
+        "manque_de_techniques_de_contournement_barrage",
+        "discours_commercial_non_adapte_au_premier_interlocuteur",
+        "absence_de_strategie_multi_interlocuteurs",
+        "difficulte_a_creer_rapidement_credibilite_et_legitimite"
+      ],
+      "probleme_racine": "incapacite_a_transformer_le_barrage_secretarial_en_allie_pour_acceder_au_decideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maitriser_les_techniques_de_passage_de_barrage_secretarial_et_decrocher_des_rdv_avec_decideurs_hotellerie_restauration",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_services_hotellerie_restauration",
+      "entreprise_description": "entreprise_commercialisant_solutions_ou_services_pour_le_secteur_hotellerie_restauration",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_ou_service_apportant_valeur_aux_hotels_restaurants_independants_et_petits_groupes",
+      "proposition_valeur": "aide_les_hotels_restaurants_a_resoudre_un_probleme_operationnel_commercial_ou_ameliorer_leur_performance",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature_exacte_du_produit_service_propose",
+        "proposition_valeur_concrete",
+        "fourchette_prix",
+        "nom_entreprise_vendeuse",
+        "arguments_commerciaux_specifiques",
+        "objections_courantes_rencontrees",
+        "zone_geographique_ciblee"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick",
+      "nom": "Verlhac",
+      "age": 52,
+      "poste": "Propriétaire-Gérant",
+      "entreprise": {
+        "nom": "Hôtel-Restaurant Le Clos des Vignes",
+        "secteur": "Hôtellerie-restauration indépendante",
+        "taille": "3 établissements (2 hôtels 3 étoiles + 1 restaurant gastronomique)",
+        "ca_approximatif": "2,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux après plusieurs mauvaises expériences",
+        "Obsédé par le contrôle des coûts depuis la crise COVID",
+        "Perfectionniste sur l'expérience client mais procrastinateur sur les décisions internes"
+      ],
+      "motivations_profondes": [
+        "Transmettre un patrimoine familial rentable à ses enfants d'ici 5 ans",
+        "Rester compétitif face aux chaînes hôtelières sans perdre son âme",
+        "Être reconnu par ses pairs (Gault&Millau, Michelin, classements TripAdvisor)"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec l'agence web qui l'a arnaqué en 2021 (18 000€)",
+        "Perdre du temps en réunions inutiles alors qu'il court déjà partout",
+        "S'engager sur un abonnement long qu'il ne pourra pas résilier",
+        "Que ses équipes sabotent un nouveau système qu'elles ne comprennent pas"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Les considère comme des parasites qui ne comprennent rien à son métier. A un classeur mental des 'vendeurs de vent' avec qui il a perdu de l'argent. Respecte uniquement ceux qui connaissent vraiment l'hôtellerie et vont droit au but.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe d'agacement préventif. Commence souvent par 'J'ai vraiment pas beaucoup de temps là' même quand c'est faux",
+      "signaux_interet": [
+        "Pose des questions précises sur les chiffres et le ROI",
+        "Mentionne un concurrent ou un confrère ('Tiens, Le Moulin Rouge à Beaune, ils ont pris quoi eux ?')",
+        "Évoque spontanément un problème actuel précis",
+        "Ralentit son débit et arrête de regarder son téléphone"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoutez franchement...'",
+        "Coupe la parole pour dire 'Ouais c'est gentil mais on a déjà'",
+        "Mentionne le budget : 'De toute façon cette année c'est serré'",
+        "Commence ses phrases par 'Le problème avec vous les commerciaux...'",
+        "Ton qui devient condescendant : 'Vous avez déjà géré un hôtel vous ?'"
+      ],
+      "tics_langage": [
+        "Abuse du 'Franchement' en début de phrase",
+        "Dit 'Voilà voilà' quand il veut clore une discussion",
+        "Utilise 'Bon écoutez' comme signal de fin d'échange",
+        "Ponctue de 'Hein' en fin de phrase quand il est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Au-delà, il interrompt ou décroche mentalement. Déteste les power point et les 'laissez-moi vous présenter notre société'. Veut qu'on entre dans le vif immédiatement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sortie difficile du COVID avec endettement bancaire. Trésorerie tendue jusqu'en mars. Recherche d'un repreneur partiel (investisseur) pour le 3e établissement. Turnover élevé en cuisine (4 chefs en 2 ans). Remplissage correct (68%) mais marge en baisse.",
+      "priorites_actuelles": [
+        "Réduire la dépendance aux OTA (Booking, Expedia) qui prennent 18% de commission",
+        "Automatiser la gestion des réservations entre les 3 établissements",
+        "Trouver une solution pour les avis clients négatifs (personnel débordé qui oublie de répondre)",
+        "Digitaliser la carte du restaurant (clients se plaignent de l'illisibilité)"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 solutions de gestion hôtelière en 8 ans. Mécontent de l'actuelle (Hotsoft) : bugs fréquents, SAV inexistant, mais bloqué par contrat jusqu'en juin 2025. Échaudé par un consultant qui lui a vendu une 'stratégie digitale' jamais implémentée.",
+      "fournisseur_actuel": "Hotsoft (PMS), Zenchef (réservations restaurant), Semrush (web), Edenred (tickets restaurants), Téléphone fixe + mobile Bouygues",
+      "budget_disponible": "Entre 0€ et 800€/mois si ROI prouvé et démarrage après mars. Capable de débloquer 5000-8000€ en one-shot si convaincu que ça règle un problème urgent. Négocie systématiquement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct qu'il connaît et respecte (preuve sociale locale)",
+        "Quantifier précisément le gain : 'Vous économisez 320€/mois en moyenne' plutôt que 'Vous optimisez vos coûts'",
+        "Montrer qu'on comprend son quotidien : 'Je sais que le vendredi soir c'est le coup de feu'",
+        "Proposer un test gratuit sans engagement avec désactivation en 1 clic",
+        "Avoir un interlocuteur qui a lui-même travaillé en hôtellerie",
+        "Mentionner un problème spécifique qu'il rencontre (s'il est bien identifié en amont)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'Tous nos clients sont ravis' (bullshit détecté)",
+        "Demander 'Quel est votre budget ?' dès le début",
+        "Proposer un RDV sans avoir dit de quoi on parle concrètement",
+        "Utiliser du jargon tech ou marketing ('Digitalisation de votre parcours client omnicanal')",
+        "Critiquer frontalement son fournisseur actuel sans connaître le contexte",
+        "Appeler entre 12h et 14h30 ou après 18h (pleine activité)",
+        "Insister après un premier 'non' ferme",
+        "Être condescendant ou donner des leçons sur son métier"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez franchement j'ai vraiment pas le temps là, on est en plein coup de feu, vous rappelez jamais au bon moment vous les commerciaux",
+        "sous_texte": "Je pose une barrière réflexe pour me protéger, mais si vous me prouvez en 20 secondes que c'est pertinent, je peux écouter. Testez votre légitimité.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa réalité, proposer un moment précis ultra-court, ou accrocher avec un bénéfice chiffré immédiat qui justifie 2 minutes maintenant"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais c'est pour me vendre quoi exactement ? Parce que j'ai déjà tout ce qu'il me faut hein",
+        "sous_texte": "Je suis méfiant par défaut. Prouvez-moi rapidement que vous n'êtes pas un vendeur de vent. J'ai été échaudé. Si vous tournez autour du pot, je raccroche.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Dire en une phrase claire ce que vous vendez ET le problème précis que ça résout pour un hôtelier, sans langue de bois"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail, je regarderai quand j'aurai le temps, voilà voilà",
+        "sous_texte": "Je me débarrasse de vous poliment. Je ne lirai jamais ce mail. C'est ma technique pour ne pas dire non brutalement. Vous devez créer l'urgence MAINTENANT.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter cette échappatoire. Poser UNE question découverte qui le force à réfléchir à son problème concret, ou mentionner un concurrent direct"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème avec vous les commerciaux, c'est que vous connaissez rien à l'hôtellerie. Vous avez déjà géré un hôtel vous ?",
+        "sous_texte": "Je teste votre légitimité. Si vous êtes un commercial lambda qui récite un script, je vous disqualifie. Mais si vous montrez une vraie connaissance terrain, je peux écouter.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître humblement votre position, mais prouver votre expertise par des références précises, des chiffres sectoriels, ou l'expérience de votre boîte avec 50+ hôteliers"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement on a déjà un logiciel pour ça, on est équipés. Hotsoft. Ça fait le taf",
+        "sous_texte": "Je minimise mon insatisfaction par réflexe. En vérité je suis mécontent de Hotsoft, mais je suis coincé dans un contrat et j'ai peur de me planter encore avec un nouveau fournisseur.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser avec empathie : 'Hotsoft, d'accord... et niveau bugs, SAV, vous êtes satisfait ?' Identifier la frustration cachée sans attaquer frontalement le concurrent"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais bah écoutez c'est gentil mais niveau budget cette année c'est vraiment serré, on sort du COVID là, c'est compliqué",
+        "sous_texte": "Je protège ma trésorerie par réflexe. Mais si vous me prouvez un ROI rapide et concret, je peux débloquer du budget. Je négocie toujours. Testez ma vraie motivation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas parler prix maintenant. Recentrer sur le coût de l'inaction : 'Combien vous coûtent actuellement les 18% de commission Booking par mois ?' Quantifier le problème"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, tous vos clients sont ravis, c'est ça ? C'est ce qu'ils disent tous hein. Moi en 2021 j'ai claqué 18 000 balles avec une agence web, j'ai rien vu venir",
+        "sous_texte": "Je suis échaudé et cynique. Vos promesses marketing me font fuir. Je veux des preuves concrètes, des noms, des chiffres vérifiables. Ma confiance est à reconstruire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître sa mauvaise expérience, éviter les généralités. Proposer des références locales vérifiables, un test réversible sans engagement, ou une garantie résultats"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le truc c'est que je suis bloqué avec Hotsoft jusqu'en juin 2025, contrat de 3 ans. Donc bon, à quoi ça sert qu'on discute là ?",
+        "sous_texte": "C'est une vraie contrainte, mais je teste aussi si vous allez abandonner facilement. Si la solution est vraiment bonne, je peux anticiper, négocier une sortie anticipée, ou prévoir après juin.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Projeter après juin 2025, proposer une démo/audit maintenant pour préparer la transition, ou identifier des modules complémentaires non couverts par Hotsoft"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais vos trucs digitaux là, mes équipes vont jamais utiliser ça. Ils sont déjà débordés, je vais pas en plus leur imposer un nouveau système compliqué",
+        "sous_texte": "J'ai peur du sabotage interne. J'ai déjà vécu l'échec d'implémentation d'outils rejetés par le personnel. Si ce n'est pas ultra-simple et que vous ne formez pas, ça va foirer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur la simplicité (démo en 5 min), proposer formation incluse, montrer comment ça allège leur charge de travail plutôt que de l'alourdir"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "320 euros par mois vous dites ? Ouais enfin sur 3 ans ça fait quand même plus de 11 000 balles hein. C'est pas rien",
+        "sous_texte": "Je calcule vite et je reframe le coût pour me protéger. Mais en vérité, si le ROI est là, je peux payer. Je négocie systématiquement. Défendez votre prix avec des chiffres.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Recontrer avec le coût de l'inaction sur 3 ans : 'Et combien vous coûtent vos 18% de commission Booking sur 3 ans ? Minimum 35 000€. On divise par 3 ce poste.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez franchement ça m'intéresse, mais faut que j'en parle à mon comptable déjà. Et puis là avant mars je peux rien faire niveau tréso",
+        "sous_texte": "Je suis semi-convaincu mais je procrastine. Le comptable est une excuse pratique. Si vous ne créez pas l'urgence ou ne facilitez pas le passage à l'acte, je vais oublier.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de rencontrer le comptable ensemble, ou planifier dès maintenant un démarrage post-mars avec les documents pour le comptable. Engagement progressif."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais attendez, un rendez-vous pour quoi faire exactement ? Vous m'avez pas tout dit au téléphone là ? Ça va encore me prendre combien de temps votre truc ?",
+        "sous_texte": "Je déteste perdre mon temps en réunions inutiles. Si le RDV n'a pas d'objectif clair et concret, je refuse. Dites-moi exactement ce qu'on va faire et combien de temps ça prend.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Définir un agenda précis du RDV : '45 min max, je vous montre la démo en live sur VOS chiffres, vous décidez si ça colle ou pas. Pas de présentation PowerPoint.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement c'est gentil mais envoyez-moi d'abord une doc complète, les tarifs, tout. Si ça m'intéresse je vous rappelle",
+        "sous_texte": "Je fuis l'engagement du RDV. Je ne vous rappellerai probablement jamais. C'est ma porte de sortie polie. Si vous acceptez ça, vous perdez la vente.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter. Créer l'urgence : 'Patrick, les docs vous noieront. 30 min ensemble et vous savez si ça vous fait économiser 4000€/an ou pas. Mardi 10h ou jeudi 15h ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez j'entends ce que vous dites, mais là je suis vraiment surbooké. Rappelez-moi dans 2 mois, en mars, on verra",
+        "sous_texte": "Je procrastine. Dans 2 mois j'aurai oublié cette conversation. Soit vous n'avez pas créé assez d'urgence, soit je ne suis pas vraiment convaincu. Dernière chance de fermer.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence ou la rareté : 'Je comprends. Le souci c'est que d'ici mars vous perdez encore 1200€ en commissions Booking. Et nos créneaux d'installation se remplissent. 20 min jeudi ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà voilà, on verra, je note vos coordonnées, je vous recontacte si besoin",
+        "sous_texte": "C'est fini. Je mets fin à la conversation poliment. Je ne vous recontacterai jamais. Vous avez échoué à créer l'engagement. C'est un 'non' déguisé.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tentative de sauvetage en posant une dernière question découverte : 'Patrick, sincèrement, qu'est-ce qui vous freine ? Le timing, le budget, ou vous n'êtes pas convaincu du bénéfice ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez franchement là vous insistez trop, ça me gonfle. Je vous ai dit non poliment, respectez ça. Au revoir.",
+      "condition_declenchement": "Si le commercial relance plus de 2 fois après un refus clair, ou s'il adopte un ton condescendant/donneur de leçons, ou s'il ne respecte pas les signaux de fermeture évidents de Patrick"
+    },
+    "pattern_escalade": "Patrick commence courtois mais pressé (objections réflexes). Si le commercial tient bon avec pertinence, il passe en mode test (légitimité, expertise). Si le test est réussi, il révèle ses vraies objections sincères (peurs, échecs passés, contraintes budgétaires/contractuelles). À chaque étape franchie, son niveau d'écoute augmente. Mais si à n'importe quel moment le commercial fait une erreur grossière (jargon, condescendance, insistance lourde), Patrick ferme brutalement et définitivement.",
+    "piege_classique": "Patrick dit souvent 'Envoyez-moi un mail' ou 'On verra dans 2 mois' en mode poli-mais-ferme. 80% des commerciaux acceptent cette sortie de secours, perdent le momentum et ne convertissent jamais. Le vrai enjeu est de NE PAS accepter ces échappatoires polies, mais de creuser avec empathie pour identifier le vrai frein (peur, timing, doute sur ROI) et y répondre immédiatement pour obtenir l'engagement concret (date/heure de RDV) avant de raccrocher."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_services_hotellerie_restauration",
+      "description": "entreprise_commercialisant_solutions_ou_services_pour_le_secteur_hotellerie_restauration"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_ou_service_apportant_valeur_aux_hotels_restaurants_independants_et_petits_groupes",
+      "proposition_valeur": "aide_les_hotels_restaurants_a_resoudre_un_probleme_operationnel_commercial_ou_ameliorer_leur_performance",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maitriser_les_techniques_de_passage_de_barrage_secretarial_et_decrocher_des_rdv_avec_decideurs_hotellerie_restauration",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Hôtellerie indépendante avec barrage",
+    "vous_etes": "Commercial terrain chez un fournisseur de solutions pour l'hôtellerie-restauration indépendante.",
+    "vous_vendez": "Une solution opérationnelle pour hôtels-restaurants (nature à préciser selon votre offre réelle) — tarif moyen entre 400€ et 800€/mois.",
+    "vous_appelez": "Patrick Verlhac, 52 ans, propriétaire-gérant du Clos des Vignes : 3 établissements (2 hôtels 3* + 1 restaurant gastro) en Bourgogne, CA 2,8M€. Méfiant, pressé, obsédé par le ROI. Échaudé par plusieurs commerciaux qui l'ont déçu.",
+    "ce_que_vous_savez": [
+      "Il paie 18% de commission aux OTA (Booking, Expedia) et cherche à réduire cette dépendance",
+      "Il utilise actuellement Hotsoft (mécontent mais sous contrat jusqu'en juin 2025) et Zenchef",
+      "Trésorerie tendue jusqu'en mars, mais capable de débloquer un budget si ROI prouvé",
+      "Il déteste les longs discours commerciaux et veut qu'on aille droit au but",
+      "Réceptionniste ou assistante filtrera probablement l'appel avant de vous passer Patrick"
+    ],
+    "votre_objectif": "Passer le barrage du secrétariat, accrocher Patrick en 45 secondes max, et décrocher un RDV physique de 20 minutes sur site.",
+    "vos_atouts": [
+      "Vous connaissez vraiment l'hôtellerie indépendante et ses galères terrain",
+      "Vous pouvez citer des clients locaux comparables (preuve sociale)",
+      "Vous proposez un test gratuit sans engagement ni CB",
+      "Vous quantifiez précisément les gains (en € et en temps)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:32:56Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15954,
+    "total_time_s": 144.6
+  }
+}

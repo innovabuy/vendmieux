@@ -1,0 +1,320 @@
+{
+  "id": "scenario_1771510052",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : services_entreprises]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme dans le domaine nettoyage/sécurité/maintenance",
+      "proposition_valeur_presumee": "Extension de la couverture de services ou amélioration qualitative des prestations existantes pour un client déjà satisfait",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire à un client déjà satisfait de l'existant"
+      ],
+      "implicites": [
+        "Risque de paraître opportuniste ou commercial agressif avec un client existant",
+        "Difficulté à créer un besoin là où le client n'en ressent pas forcément",
+        "Éviter de donner l'impression que l'offre actuelle est insuffisante",
+        "Justifier un investissement supplémentaire sans créer de friction"
+      ],
+      "probleme_racine": "Transformer la satisfaction existante en levier de développement sans altérer la relation de confiance ni créer de résistance au changement"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upselling et de cross-selling en situation de relation client établie, en valorisant l'offre complémentaire sans fragiliser l'existant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_entreprises",
+      "entreprise_description": "Entreprise proposant des services de nettoyage, sécurité et/ou maintenance aux entreprises, avec une base client établie depuis au moins 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou montée en gamme dans les domaines nettoyage/sécurité/maintenance - extension de périmètre, augmentation de fréquence, prestation premium, ou service additionnel",
+      "proposition_valeur": "Optimisation globale de la gestion des services aux entreprises, cohérence et simplification avec un interlocuteur unique, qualité supérieure ou couverture étendue",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de fiabilité et qualité de service"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance fine de l'entreprise cliente, continuité de service, interlocuteur de confiance déjà identifié",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise du service complémentaire proposé",
+        "Tarification indicative",
+        "Nom de l'entreprise vendeuse",
+        "Besoins spécifiques du client identifiés durant l'année de collaboration",
+        "Zone géographique d'intervention"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Franck",
+      "nom": "Demaison",
+      "age": 51,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "ADEX Conseil & Audit",
+        "secteur": "Cabinet d'expertise comptable et audit",
+        "taille": "38 salariés",
+        "ca_approximatif": "2,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la suspicion",
+        "Fidèle mais calculateur",
+        "Protecteur de sa trésorerie comme un père de famille nombreuse"
+      ],
+      "motivations_profondes": [
+        "Maintenir la réputation impeccable de son cabinet auprès de ses clients grands comptes",
+        "Éviter tout ce qui ressemble à une dépense superflue ou à du 'gadget commercial'",
+        "Préserver la relation de confiance avec ses prestataires historiques sans se faire avoir",
+        "Simplifier sa vie : un problème de moins à gérer, c'est du temps gagné"
+      ],
+      "peurs_freins": [
+        "Se faire refourguer un service dont il n'a pas besoin juste parce qu'il est client satisfait",
+        "Que la qualité du service actuel se dégrade si on lui vend autre chose",
+        "Augmenter ses charges fixes dans un contexte économique qu'il juge 'tendu'",
+        "Perdre du temps en réunions commerciales qui n'aboutissent à rien"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais méfiant par défaut. Apprécie qu'on aille droit au but. Déteste le 'baratin' et les formules toutes faites. Respecte les prestataires qui font le job sans en rajouter. A horreur qu'on lui fasse sentir qu'il 'devrait' acheter quelque chose.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais légèrement sur la défensive, avec une pointe d'ironie préventive. Commence souvent par : 'Alors, qu'est-ce que vous voulez me vendre aujourd'hui ?' sur un ton mi-figue mi-raisin.",
+      "signaux_interet": [
+        "Pose des questions précises sur les coûts et le ROI",
+        "Demande des exemples concrets de clients similaires",
+        "Évoque spontanément un problème opérationnel récent",
+        "Son débit ralentit et il prend des notes",
+        "Dit : 'Tiens, ça c'est pas bête' ou 'Effectivement, on a eu un souci là-dessus'"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec : 'Écoutez, on est très bien comme ça'",
+        "Regarde ostensiblement sa montre ou son écran d'ordinateur",
+        "Évoque le budget de manière fataliste : 'Vous savez, en ce moment...'",
+        "Utilise le 'on verra plus tard' de manière définitive",
+        "Devient monosyllabique : 'Oui oui... d'accord... OK...'"
+      ],
+      "tics_langage": [
+        "Bon ben écoutez...",
+        "C'est-à-dire que...",
+        "Le truc c'est que...",
+        "Vous comprenez bien que...",
+        "Après, hein, moi je dis ça..."
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, il coupe ou décroche mentalement. Préfère un échange rythmé où il peut poser ses questions."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais stable (+8% CA l'an dernier). Vient de décrocher deux nouveaux clients moyens. A embauché une collaboratrice il y a 6 mois. Locaux rénovés il y a 18 mois. Satisfaction générale mais vigilance constante sur les coûts.",
+      "priorites_actuelles": [
+        "Maintenir la qualité de service avec la croissance de l'équipe",
+        "Ne pas dégrader les marges malgré l'inflation des salaires",
+        "Préserver l'image premium du cabinet",
+        "Automatiser certaines tâches administratives chronophages"
+      ],
+      "experience_avec_offre_similaire": "Client satisfait depuis 13 mois du service de nettoyage. Apprécie la régularité et la discrétion. A eu un léger accroc il y a 4 mois (remplacement d'une agent, qualité en baisse temporaire) mais ça s'est bien réglé. N'a jamais eu de service de sécurité ou maintenance externe autre que le nettoyage.",
+      "fournisseur_actuel": "Vous, pour le nettoyage 3 fois/semaine. Un électricien local pour les dépannages ponctuels. Un prestataire informatique. La maintenance de la climatisation est faite par l'installateur, contrat annuel.",
+      "budget_disponible": "Pas de ligne budgétaire prévue pour un service complémentaire. Pourrait débloquer 400-800€/mois si valeur démontrée et ROI clair, mais faudra argumenter. Au-delà, il faudra attendre le budget N+1."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Évoquer un problème concret qu'il a déjà rencontré (ex: sécurité des locaux, maintenance urgente, image lors de réception clients)",
+        "Montrer que c'est du 'bon sens' et pas du commercial : 'Vous avez sûrement déjà pensé à...'",
+        "Proposer un test ou une phase pilote limitée dans le temps",
+        "Mentionner d'autres cabinets comptables qui ont franchi le pas",
+        "Connecter l'offre à sa croissance récente : 'Maintenant que vous avez grandi...'",
+        "Parler économie globale et simplification plutôt que dépense supplémentaire"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par : 'J'ai une super opportunité pour vous'",
+        "Laisser entendre que son organisation actuelle est insuffisante",
+        "Présenter un package 'tout compris' sans modularité",
+        "Parler uniquement de ce que VOUS voulez vendre sans questionner SES besoins",
+        "Minimiser ses objections budgétaires : 'Oh mais c'est rien 500€'",
+        "Insister lourdement après un premier refus poli"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Alors, qu'est-ce que vous voulez me vendre aujourd'hui ?",
+        "sous_texte": "Je me doute que cet appel n'est pas juste pour prendre des nouvelles. Je me protège d'avance en affichant ma lucidité. Prouvez-moi que ça vaut mon temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Jouer la transparence avec humour et recadrer immédiatement sur SES enjeux, pas votre offre. Ex: 'Ha, vous me connaissez ! Mais avant de parler de quoi que ce soit, j'aimerais savoir si...'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, on est très bien comme ça pour le moment, le nettoyage ça tourne nickel.",
+        "sous_texte": "Je suis satisfait et je n'ai pas envie qu'on vienne perturber un équilibre qui fonctionne. Pourquoi changer une équipe qui gagne ? Et surtout, combien ça va me coûter ?",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa satisfaction plutôt que de la combattre, puis pivoter vers un enjeu adjacent qu'il n'a pas encore résolu. Ex: 'Justement, c'est bien parce que ça fonctionne que... Dites-moi, côté sécurité des locaux, vous gérez ça comment actuellement ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire que niveau budget, vous comprenez bien qu'en ce moment c'est pas la folie non plus...",
+        "sous_texte": "Je vous mets une objection budgétaire préventive pour tester si vous allez insister ou respecter ma contrainte. Je veux voir si vous allez minimiser mes difficultés ou les prendre au sérieux.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accuser réception avec empathie sincère mais ne pas baisser les bras. Creuser pour comprendre si c'est un vrai frein ou un test. Ex: 'Je vous comprends totalement. C'est justement pour ça que... Quand vous dites budget serré, ça veut dire qu'il y a zéro marge de manœuvre ou plutôt qu'il faut que l'investissement soit vraiment justifié ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après, hein, moi je dis ça, mais on a déjà un électricien qui passe quand on a besoin, ça nous suffit largement.",
+        "sous_texte": "Je n'ai pas de douleur aiguë sur ce sujet, donc pourquoi changer ? Je fonctionne en mode réactif et ça me va. Convainquez-moi qu'il y a un problème que je ne vois pas.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas attaquer frontalement son organisation actuelle. Questionner pour révéler les limites invisibles. Ex: 'C'est une bonne solution en dépannage. Et quand vous avez un pépin un vendredi soir ou juste avant une visite client importante, ça se passe comment le délai d'intervention ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le truc c'est que j'ai pas envie de me rajouter des trucs à gérer, vous voyez. J'ai déjà assez de prestataires comme ça.",
+        "sous_texte": "Je suis fatigué mentalement de gérer plusieurs interlocuteurs. Si votre offre m'ajoute de la complexité, c'est mort. Je veux MOINS de charge mentale, pas plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner l'objection en bénéfice : c'est justement pour simplifier. Ex: 'C'est exactement ce que je voulais aborder avec vous. Là vous avez nous, l'électricien, le gars de la clim... Si je vous disais qu'on peut centraliser tout ça avec un seul interlocuteur ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, entre ce que vous me dites et la réalité... Vous vous rappelez il y a 4 mois, on a eu un souci avec la dame qui vous remplaçait ?",
+        "sous_texte": "Je teste votre honnêteté et je vous rappelle que vous n'êtes pas parfait. Comment je peux vous faire confiance sur un nouveau service si l'existant a déjà déçu ? Prouvez-moi que vous assumez vos erreurs.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Assumer totalement l'erreur passée et la transformer en preuve de fiabilité. Ex: 'Vous avez raison de le mentionner, on a eu ce raté et on l'a corrigé sous 48h. C'est justement parce qu'on a cette réactivité et cette écoute que je me permets de...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon ben écoutez, c'est intéressant ce que vous me dites, mais faut que j'en parle à mon associé déjà.",
+        "sous_texte": "Je ne veux pas prendre la décision seul, soit parce que c'est vrai, soit parce que c'est une échappatoire confortable. Je teste si vous allez pousser ou respecter ma position. Peut-être que je ne suis pas convaincu à 100%.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter mais clarifier le processus pour éviter l'enlisement. Ex: 'Bien sûr. Pour que vous puissiez lui présenter, qu'est-ce qui vous manque comme info ? Et vous le voyez quand généralement ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, je vois... 650 euros par mois, c'est pas rien quand même. Qu'est-ce que ça m'apporte CONCRÈTEMENT que je n'ai pas aujourd'hui ?",
+        "sous_texte": "Le prix me refroidit. Je veux du tangible, pas du discours commercial. Donnez-moi du ROI mesurable ou un bénéfice que je peux visualiser immédiatement. Sinon je vais procrastiner ou refuser.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Ancrer dans SON contexte avec des chiffres et des situations vécues. Ex: 'Concrètement ? La dernière fois qu'un éclairage est tombé en panne dans la salle de réunion un lundi matin avant un RDV client, combien de temps ça vous a pris de gérer ça ? Combien ça vous a coûté en stress et en image ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tiens, ça c'est pas bête effectivement... Mais là, tout de suite, je peux pas vous dire oui, faut que je regarde mes comptes.",
+        "sous_texte": "Vous avez réussi à créer de l'intérêt, je suis en train de basculer. Mais je ne suis pas prêt à engager maintenant. J'ai besoin de digérer l'info et de vérifier que c'est cohérent avec ma trésorerie. Ne forcez pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Sécuriser l'intérêt sans forcer la décision. Proposer une prochaine étape concrète et proche. Ex: 'Je comprends parfaitement. Si on se rappelle vendredi en fin de matinée, ça vous donne le temps de regarder et on voit ensemble comment on structure ça ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez bien que si ça marche pas, je veux pouvoir arrêter sans me retrouver coincé avec un engagement d'un an.",
+        "sous_texte": "Je commence à envisager sérieusement, mais j'ai peur de me faire piéger. Je veux une porte de sortie claire. Si vous me rassurez sur ce point, je peux dire oui.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Offrir une flexibilité contractuelle rassurante. Ex: 'C'est justement pour ça qu'on propose une période d'essai de 3 mois sans engagement. Vous testez, et si ça ne vous convient pas, on arrête. Ça vous va comme approche ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Après moi je dis ça, mais faudrait quand même que je voie comment ça se passe chez un autre cabinet avant de me lancer.",
+        "sous_texte": "Je ne veux pas être le cobaye. J'ai besoin de preuve sociale pour me rassurer que je ne fais pas une bêtise. Donnez-moi des références crédibles dans mon secteur.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Fournir une référence concrète et proposer un contact direct. Ex: 'Je vous comprends. On travaille avec le cabinet Dumont & Associés à Levallois depuis 8 mois sur exactement cette formule. Je peux vous mettre en contact avec leur directeur administratif si vous voulez un retour direct ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon ben écoutez, on verra plus tard, là c'est pas le bon moment, on en reparle au prochain trimestre.",
+        "sous_texte": "Je n'ai pas envie de dire non brutalement car la relation est bonne, mais je ne suis pas convaincu ou pas prêt. C'est ma stratégie de sortie polie. Si vous n'identifiez pas le vrai frein maintenant, c'est perdu.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Confronter gentiment pour débusquer le vrai frein. Ex: 'Je sens que vous êtes un peu réservé Franck. Entre nous, c'est vraiment une question de timing ou il y a un truc qui vous bloque et dont on n'a pas parlé ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, je vais être honnête avec vous : je suis pas sûr que le rapport qualité-prix soit là. Ça fait cher pour ce que c'est, et j'ai peur de payer pour un service que je n'utiliserai finalement pas beaucoup.",
+      "condition_declenchement": "Apparaît quand le vendeur n'a pas réussi à créer d'urgence ni à ancrer suffisamment de valeur concrète mesurable. Franck est courtois mais met fin à la discussion. C'est l'objection de fond quand le reste n'a pas pris."
+    },
+    "pattern_escalade": "Franck commence courtois-défensif → teste avec des objections légères (budget vague, 'on verra') → si vous tenez bon et questionnez bien, il révèle les vraies préoccupations (complexité, ROI flou) → si vous apportez des réponses tangibles, il bascule en mode 'intéressé-prudent' avec des objections opérationnelles (engagement, références) → si vous sécurisez, il peut décider. Si à n'importe quel moment vous forcez ou minimisez ses contraintes, il se ferme définitivement avec politesse.",
+    "piege_classique": "Le vendeur pense que parce que Franck est client satisfait du nettoyage, il sera facile à convaincre sur un service additionnel. ERREUR : la satisfaction existante est une arme à double tranchant. Franck peut se dire 'pourquoi changer/ajouter si ça marche déjà ?' Il faut créer un nouveau besoin distinct sans dévaloriser l'existant. Autre piège : ne pas assez creuser le 'on verra plus tard' qui est sa porte de sortie favorite et qui cache souvent un frein non-dit (peur d'être déçu, doute sur le ROI, pas envie de compliquer la relation)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_entreprises",
+      "description": "Entreprise proposant des services de nettoyage, sécurité et/ou maintenance aux entreprises, avec une base client établie depuis au moins 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou montée en gamme dans les domaines nettoyage/sécurité/maintenance - extension de périmètre, augmentation de fréquence, prestation premium, ou service additionnel",
+      "proposition_valeur": "Optimisation globale de la gestion des services aux entreprises, cohérence et simplification avec un interlocuteur unique, qualité supérieure ou couverture étendue",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de fiabilité et qualité de service"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance fine de l'entreprise cliente, continuité de service, interlocuteur de confiance déjà identifié"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser les techniques d'upselling et de cross-selling en situation de relation client établie, en valorisant l'offre complémentaire sans fragiliser l'existant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Upselling sécurité/maintenance",
+    "vous_etes": "Commercial chez un prestataire de services aux entreprises (nettoyage/sécurité/maintenance), en charge du développement sur clients existants.",
+    "vous_vendez": "Un service complémentaire de sécurité ou maintenance (ex: contrôle d'accès, gardiennage ponctuel, maintenance préventive) — tarif non défini, à construire selon besoins.",
+    "vous_appelez": "Franck Demaison, 51 ans, gérant d'ADEX Conseil & Audit, cabinet comptable de 38 personnes (2,8M€ CA). Pragmatique, direct, allergique au baratin commercial.",
+    "ce_que_vous_savez": [
+      "Client satisfait depuis 13 mois pour le nettoyage 3×/semaine",
+      "Léger accroc il y a 4 mois (qualité temporairement baissée) mais bien rattrapé",
+      "Cabinet en croissance : +8% CA l'an dernier, une embauche récente, deux nouveaux clients",
+      "Locaux rénovés il y a 18 mois, image premium importante pour lui",
+      "Utilise un électricien local en dépannage et un contrat annuel clim avec l'installateur"
+    ],
+    "votre_objectif": "Identifier un besoin concret lié à sa croissance ou à la gestion de ses locaux, et proposer un service complémentaire qui simplifie sa vie sans alourdir son organisation.",
+    "vos_atouts": [
+      "Vous connaissez ses locaux et son fonctionnement quotidien",
+      "Relation de confiance établie depuis plus d'un an",
+      "Vous avez su gérer le problème qualité récent — preuve de réactivité",
+      "D'autres cabinets comptables similaires ont adopté vos services complémentaires"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:07:32Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15458,
+    "total_time_s": 141.0
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771506324",
+  "description_originale": "Le dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : industrie]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "industrie (usinage, mécanique ou plasturgie)",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant/gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "fourniture industrielle (équipements, consommables, services ou matières pour usinage/mécanique/plasturgie)",
+      "proposition_valeur_presumee": "fiabilité de livraison, qualité produit/service, support client",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "menace implicite de changement de fournisseur"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "problème de livraison/service/qualité ayant généré mécontentement",
+        "client existant menace de partir à la concurrence",
+        "relation client fragilisée par incident"
+      ],
+      "implicites": [
+        "probable absence de process de gestion de crise client",
+        "manque de formation à la gestion des réclamations",
+        "difficulté à gérer l'émotionnel en situation de tension",
+        "risque de perte de chiffre d'affaires récurrent",
+        "possible défaillance dans la chaîne de livraison ou qualité interne"
+      ],
+      "probleme_racine": "incapacité des commerciaux à gérer efficacement les situations de crise client et à transformer une réclamation en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "menace de départ à la concurrence",
+      "mécontentement sur qualité/livraison/service"
+    ],
+    "objectif_formation": "former les commerciaux à la gestion des réclamations clients, à la désescalade émotionnelle, à la recherche de solutions adaptées et à la préservation de la relation commerciale en situation de crise",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "distribution/négoce industriel ou fabricant pour l'industrie (usinage, mécanique, plasturgie)",
+      "entreprise_description": "fournisseur B2B de produits ou services pour l'industrie, ayant une base de clients existants dans le secteur manufacturier",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "produits ou services industriels destinés aux entreprises d'usinage, mécanique et plasturgie (équipements, outillage, consommables, matières premières ou services associés)",
+      "proposition_valeur": "fiabilité des livraisons, qualité constante des produits/services, réactivité et accompagnement client, expertise sectorielle",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client existant (PME industrielle 30-50 salariés)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE - à reconstruire durant la gestion de crise",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du problème (livraison/service/qualité)",
+        "historique de la relation client",
+        "valeur du compte client",
+        "produits/services spécifiques fournis",
+        "marges de manœuvre disponibles pour solution"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Michel",
+      "nom": "Desmarais",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Usinage Précision Desmarais",
+        "secteur": "Sous-traitance mécanique de précision (aéronautique et automobile)",
+        "taille": "42 salariés",
+        "ca_approximatif": "3,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et terre-à-terre",
+        "Émotionnellement impulsif sous pression",
+        "Sens aigu de la justice et de l'engagement"
+      ],
+      "motivations_profondes": [
+        "Protéger sa boîte qu'il a créée il y a 23 ans",
+        "Maintenir ses engagements envers SES clients (Safran, Valeo)",
+        "Être reconnu comme un patron fiable qui tient parole",
+        "Préserver l'emploi de ses équipes qu'il connaît personnellement"
+      ],
+      "peurs_freins": [
+        "Perdre un gros contrat à cause d'un retard de livraison",
+        "Passer pour le pigeon qui se fait marcher dessus",
+        "Être dépendant d'un seul fournisseur qui abuse",
+        "Revivre le traumatisme de 2009 où il a failli déposer le bilan"
+      ],
+      "rapport_aux_commerciaux": "Méfiance de base. Pense que 'les commerciaux disent tous la même chose'. Respecte ceux qui assument leurs erreurs et ne font pas de langue de bois. Déteste viscéralement ceux qui bottent en touche.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, légèrement agressif, coupant. Va droit au but sans préambule : 'Ouais alors voilà, on a un problème'",
+      "signaux_interet": [
+        "Passe du vouvoiement au tutoiement",
+        "Commence à parler de SES contraintes clients",
+        "Dit 'écoute' ou 'tu vois' en début de phrase",
+        "Pose des questions sur les délais précis, avec dates",
+        "Mentionne des références communes dans le secteur"
+      ],
+      "signaux_rejet": [
+        "Soupir audible + silence long",
+        "Dit 'Ouais ouais' de manière répétitive et désabusée",
+        "Phrase assassine : 'Bon bah écoute, je vais pas te faire perdre ton temps'",
+        "Commence à parler au passé : 'On avait une bonne relation'",
+        "Mentionne explicitement le concurrent : 'Tartempion m'a appelé hier justement'"
+      ],
+      "tics_langage": [
+        "'Franchement' (répété 3-4 fois par conversation)",
+        "'Tu vois' en milieu de phrase",
+        "'C'est pas compliqué pourtant'",
+        "'Moi je veux bien MAIS...'",
+        "Utilise 'problématique' pour dire 'problème'",
+        "'Là on est dans la merde' (quand vraiment énervé)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible (30 secondes max). Coupe la parole si le commercial dérive. Dit explicitement 'Attends attends' quand ça dure trop."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous forte tension : livraison critique pour Safran prévue dans 11 jours, besoin ABSOLU de recevoir l'outillage spécial commandé il y a 6 semaines. A déjà prévenu son client d'un possible retard de 3 jours. Son chef de production l'a engueulé ce matin.",
+      "priorites_actuelles": [
+        "Recevoir la commande C2847 AVANT le 18 du mois",
+        "Sécuriser l'approvisionnement pour les 6 prochains mois",
+        "Éviter toute pénalité de retard chez Safran (15K€ de clause)",
+        "Trouver un fournisseur fiable ou obtenir des garanties béton"
+      ],
+      "experience_avec_offre_similaire": "Cliente depuis 7 ans. Globalement satisfait jusqu'à présent (98% de livraisons OK). C'est le 2ème incident en 4 mois, ce qui crée un pattern inquiétant. Le premier avait été 'pardonné' après excuses.",
+      "fournisseur_actuel": "Vous (mais relation en danger critique)",
+      "budget_disponible": "Pas un problème pour l'instant. Budget outillage 2024 encore disponible à 60%. Mais la confiance est le vrai enjeu, pas le prix."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance IMMÉDIATE et sans excuse bidon de l'erreur",
+        "Solution concrète avec DATE précise (pas 'dans les prochains jours')",
+        "Engagement du responsable hiérarchique si nécessaire",
+        "Proposer une compensation tangible (livraison express gratuite, geste commercial)",
+        "Montrer qu'on a compris l'impact sur SON business",
+        "Partager un plan d'action pour éviter que ça se reproduise"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou rejeter la faute sur un tiers",
+        "Dire 'c'est exceptionnel' alors que c'est la 2ème fois",
+        "Demander 'c'est si urgent que ça ?' (réponse : raccrochage)",
+        "Langue de bois type 'on met tout en œuvre'",
+        "Ne pas avoir de réponse précise sur les délais",
+        "Vouloir recadrer sur 'toutes les bonnes fois où ça s'est bien passé'",
+        "Proposer un rdv physique pour 'en discuter' sans solution immédiate"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais alors voilà, j'ai pas trop le temps là, on a un gros problème avec votre livraison de la C2847. Franchement c'est la deuxième fois en quatre mois, là.",
+        "sous_texte": "Je suis en colère, sous pression, et je te mets directement face à ta responsabilité. Je ne veux pas de blabla commercial, je veux que tu reconnaisses qu'il y a un problème grave.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance immédiate sans excuse ni minimisation. Demander les détails factuels avec empathie."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attends attends, j'ai Tartempion Industrie qui m'a appelé hier justement, tu vois. Eux ils garantissent 72h sur ce type de pièces.",
+        "sous_texte": "Je te fais comprendre que j'ai des alternatives et que tu n'es pas indispensable. C'est une menace réelle, pas juste de la négociation. Prouve-moi pourquoi je devrais te garder.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent. Reconnaître sa légitimité à explorer des alternatives. Recentrer sur la solution concrète MAINTENANT, pas sur la comparaison."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas compliqué pourtant : j'ai Safran qui me livre dans 11 jours, ONZE jours. Si j'ai pas l'outillage, je prends 15 000 balles de pénalité. Tu vois le problème ?",
+        "sous_texte": "Je veux que tu mesures la gravité de la situation. Ton erreur met mon entreprise en danger financier direct. Est-ce que tu comprends VRAIMENT ou tu fais semblant ?",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler l'enjeu pour montrer qu'on a compris. Demander la date précise de besoin. Éviter le 'je comprends' creux."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, la dernière fois tu m'avais dit que c'était exceptionnel. Là on est sur un pattern, quoi. Comment tu veux que j'aie confiance ?",
+        "sous_texte": "Tu as déjà perdu un joker. Je ne crois plus à tes excuses. La confiance est rompue. Il va falloir plus que des mots pour me convaincre de continuer avec vous.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer le pattern. Ne pas se défendre. Proposer un plan correctif structurel avec garanties, pas juste une excuse pour cette fois."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attends, c'est quoi le problème au juste ? Parce que la semaine dernière j'ai appelé votre accueil, on m'a dit que c'était expédié. Donc qui me ment ?",
+        "sous_texte": "Je teste ta transparence. Si tu me mens maintenant ou si tu protèges tes collègues plutôt que de m'aider, c'est terminé entre nous.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur ce qui s'est passé, même si c'est embarrassant. Dire 'Je ne sais pas encore mais je vais vérifier maintenant' plutôt qu'inventer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi je veux bien MAIS concrètement, tu me livres QUAND ? Parce que 'la semaine prochaine' ça veut rien dire. J'ai besoin d'une date précise.",
+        "sous_texte": "Je veux un engagement ferme avec une date. Si tu es vague, c'est que tu ne maîtrises pas et donc que tu vas encore me décevoir. Prouve-moi que tu as le contrôle de la situation.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une date précise avec l'heure si possible. Si incertitude, expliquer pourquoi et proposer un point de contrôle intermédiaire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK, mais qu'est-ce qui me garantit que dans deux mois je me retrouve pas dans la même merde ? Franchement là tu vois, je suis en train de me dire que je devrais peut-être doubler mes fournisseurs.",
+        "sous_texte": "Je cherche des garanties structurelles. Cette crise me fait réaliser que je suis trop dépendant de vous. Donne-moi une raison rationnelle de ne pas sécuriser mes arrières.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un plan d'action préventif : stock de sécurité, alerte précoce, garantie de délai sur contrat, audit de process interne partagé."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais... *soupir* Écoute, c'est pas une question de prix hein. Même si vous me faites un geste, ça règle pas le problème de fond.",
+        "sous_texte": "Je commence à décrocher. Tu perds ton temps à négocier alors que je cherche de la fiabilité. Si tu continues sur le commercial classique, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Stopper immédiatement tout argumentaire commercial. Revenir sur 'qu'est-ce qui vous rassurerait concrètement pour les 6 prochois mois ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, ton responsable il est au courant de ce bordel ? Parce que là franchement, j'ai l'impression que je parle dans le vide.",
+        "sous_texte": "Je teste ton niveau d'autonomie et de crédibilité. Si tu n'es qu'un exécutant sans pouvoir, je vais exiger de parler à quelqu'un qui peut VRAIMENT décider et engager l'entreprise.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Assumer sa responsabilité si on a le pouvoir. Proposer proactivement l'escalade si nécessaire : 'Je gère ça, mais si vous voulez mon directeur en garantie, je l'appelle maintenant.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tu me parles de process, de plan d'action... On avait une bonne relation justement parce que c'était simple. Là ça devient compliqué, tu vois.",
+        "sous_texte": "Je suis fatigué émotionnellement. J'ai l'impression que la relation devient toxique et chronophage. Je commence à calculer mentalement si ça vaut le coup de continuer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'émotion. Simplifier le message : une seule promesse claire et un seul interlocuteur dédié pour lui."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon bah écoute, je vais pas te faire perdre ton temps. Je vais réfléchir de mon côté et on verra.",
+        "sous_texte": "C'est ma phrase de sortie polie. Je suis déjà mentalement parti. Si tu ne fais rien de fort là MAINTENANT, c'est terminé et je passe chez le concurrent dès que je raccroche.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Stopper la fuite. Dire cash : 'Michel, soyons francs, vous êtes en train de me dire que c'est fini ?' Forcer l'explicite pour rouvrir le dialogue."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est gentil tout ça, mais moi mon chef de prod il m'a engueulé ce matin. Qu'est-ce que je lui dis lundi matin, moi ?",
+        "sous_texte": "Je cherche des munitions pour justifier ma décision en interne de vous garder. Donne-moi des éléments factuels et crédibles que je peux rapporter à mon équipe.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des éléments factuels pour son reporting interne : date, numéro de suivi, nom du responsable engagé, mail de confirmation qu'il peut transférer."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis déçu là. Sept ans qu'on bosse ensemble, je pensais pas qu'on en arriverait là.",
+        "sous_texte": "Je t'exprime ma tristesse et mon sentiment de trahison. C'est une ouverture émotionnelle rare chez moi. Si tu ne la captes pas et que tu restes froid/commercial, c'est mort.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accueillir l'émotion avec authenticité. Reconnaître la relation et son importance. Être humain, pas commercial. Puis engager une action réparatrice forte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK, on va dire que je te laisse une chance. Mais c'est la dernière hein, tu vois. La prochaine fois je change, c'est clair.",
+        "sous_texte": "Je te tends une perche mais avec un ultimatum. J'ai besoin que tu me montres que tu as compris la gravité. Tout nouvel écart sera fatal, sans discussion.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'ultimatum avec gratitude. Formaliser par écrit l'engagement pris. Mettre en place un suivi client renforcé proactif."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, c'est quoi ta solution concrètement ? Parce que là on a tourné en rond pendant dix minutes.",
+        "sous_texte": "Je perds patience. Tu as parlé mais tu n'as rien proposé de tangible. Si tu n'as pas de solution concrète MAINTENANT, je raccroche et j'appelle ton concurrent.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Synthétiser en 30 secondes max : QUI fait QUOI QUAND, avec quelles garanties. Format bullet points oral."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute, j'apprécie l'effort franchement, mais là on est dans la merde et moi j'ai besoin de certitudes. Tartempion m'a envoyé un devis ce matin, ils peuvent me livrer sous 5 jours. Qu'est-ce que tu veux que je te dise ?",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas fourni de date précise de livraison ET n'a pas proposé de compensation tangible ET n'a pas impliqué sa hiérarchie dans les 8 premières minutes d'échange. Ou si le commercial a minimisé le problème à n'importe quel moment."
+    },
+    "pattern_escalade": "Michel commence froid et factuel (minute 1-2), puis monte en émotionnel si pas de reconnaissance (minute 3-5 : mentions du concurrent, hausses de ton, 'franchement' répété). Si toujours pas de solution concrète, il entre en phase de retrait émotionnel (minute 6-8 : 'ouais ouais', soupirs, phrases au passé). Phase finale = politesse froide de sortie ('je vais réfléchir') qui masque une décision déjà prise de changer de fournisseur.",
+    "piege_classique": "Vouloir défendre l'entreprise ou expliquer les raisons du problème avant d'avoir reconnu l'impact sur le client. Michel ne veut PAS comprendre pourquoi ça a merdé, il veut savoir QUAND c'est résolu. Le commercial qui explique avant de solutionner perd immédiatement toute crédibilité et déclenche la phrase assassine : 'Bon bah écoute, je vais pas te faire perdre ton temps.'"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "distribution/négoce industriel ou fabricant pour l'industrie (usinage, mécanique, plasturgie)",
+      "description": "fournisseur B2B de produits ou services pour l'industrie, ayant une base de clients existants dans le secteur manufacturier"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "produits ou services industriels destinés aux entreprises d'usinage, mécanique et plasturgie (équipements, outillage, consommables, matières premières ou services associés)",
+      "proposition_valeur": "fiabilité des livraisons, qualité constante des produits/services, réactivité et accompagnement client, expertise sectorielle",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client existant (PME industrielle 30-50 salariés)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE - à reconstruire durant la gestion de crise"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "former les commerciaux à la gestion des réclamations clients, à la désescalade émotionnelle, à la recherche de solutions adaptées et à la préservation de la relation commerciale en situation de crise",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Retard de livraison outillage industriel",
+    "vous_etes": "Commercial terrain chez un distributeur d'outillage industriel, en charge du compte Usinage Précision Desmarais depuis 7 ans.",
+    "vous_vendez": "Outillage spécial et consommables pour sous-traitance mécanique de précision (fraises, outils de coupe, abrasifs, fixations).",
+    "vous_appelez": "Michel Desmarais, 52 ans, gérant et fondateur d'Usinage Précision Desmarais (42 salariés, sous-traitant aéro/auto). Pragmatique, direct, émotionnellement à cran. Cliente depuis 7 ans, jamais eu de problème de paiement.",
+    "ce_que_vous_savez": [
+      "Sa commande C2847 (outillage spécial) commandée il y a 6 semaines n'est toujours pas livrée",
+      "Il a une livraison critique pour Safran prévue dans 11 jours avec clause de pénalité de 15K€",
+      "C'est le 2ème incident de livraison en 4 mois — le premier avait été pardonné",
+      "Il a déjà prévenu son client d'un possible retard de 3 jours",
+      "Son chef de production l'a engueulé ce matin — il est sous pression maximale"
+    ],
+    "votre_objectif": "Désamorcer la crise, proposer une solution concrète avec date précise, sauver le compte et éviter qu'il bascule chez le concurrent qui l'a démarché hier.",
+    "vos_atouts": [
+      "7 ans de relation commerciale avec 98% de livraisons conformes",
+      "Connaissance fine de ses contraintes aéro/auto et de ses cycles de production",
+      "Possibilité de livraison express sous 48h si validation hiérarchique",
+      "Geste commercial envisageable (transport gratuit ou remise sur prochaine commande)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:05:24Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15260,
+    "total_time_s": 135.4
+  }
+}

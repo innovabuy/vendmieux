@@ -1,0 +1,384 @@
+{
+  "id": "scenario_1771522546",
+  "description_originale": "Le dirigeant / directeur de production d'une PME agroalimentaire de 30-60 salariés, production régionale est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : agroalimentaire]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "production régionale"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme du service existant",
+      "proposition_valeur_presumee": "optimisation de la production, amélioration qualité, réduction coûts, conformité réglementaire ou efficacité opérationnelle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'un service complémentaire à un client déjà satisfait"
+      ],
+      "implicites": [
+        "risque de perception du client qu'on veut seulement vendre plus sans besoin réel",
+        "justifier un investissement supplémentaire alors que le service actuel donne satisfaction",
+        "identifier un besoin non exprimé ou une opportunité d'amélioration"
+      ],
+      "probleme_racine": "transformer la satisfaction actuelle en désir d'amélioration continue sans créer de résistance ou de méfiance commerciale"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser la technique d'upsell sur client satisfait en créant la perception de valeur ajoutée sans paraître opportuniste",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services BtoB pour l'agroalimentaire",
+      "entreprise_description": "fournisseur de services pour PME agroalimentaires, relation client établie depuis 1 an avec satisfaction client",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou montée en gamme par rapport à l'offre actuelle déjà souscrite",
+      "proposition_valeur": "accompagnement supplémentaire permettant d'optimiser davantage la production ou d'améliorer la performance au-delà du service de base",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "relation client satisfaisante depuis 1 an avec ce prospect"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du contexte client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du service actuel souscrit",
+        "nature du service complémentaire ou de la montée en gamme proposée",
+        "budget ou fourchette de prix",
+        "motivations d'achat initiales du client",
+        "indicateurs de performance actuels du client"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Monteil",
+      "age": 52,
+      "poste": "Directeur de production et associé",
+      "entreprise": {
+        "nom": "Les Délices du Périgord",
+        "secteur": "Transformation charcuterie artisanale (salaisons, pâtés, conserves)",
+        "taille": "42 salariés",
+        "ca_approximatif": "5,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec méfiance naturelle vis-à-vis des 'belles paroles'",
+        "Perfectionniste technique obsédé par la qualité produit",
+        "Calculateur prudent qui déteste gaspiller l'argent de l'entreprise"
+      ],
+      "motivations_profondes": [
+        "Fierté du produit artisanal et de la réputation régionale construite en 25 ans",
+        "Transmettre une entreprise plus performante à ses enfants qui entreront bientôt",
+        "Prouver qu'on peut rester compétitif face aux industriels sans perdre son âme",
+        "Éviter à tout prix un accident sanitaire qui détruirait la réputation"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui profite de la relation pour fourguer de l'inutile",
+        "Investir dans quelque chose qui ne servira pas réellement sur le terrain",
+        "Paraître naïf auprès de son associé et des équipes s'il se fait 'vendre' un truc",
+        "Complexifier des process qui marchent déjà bien depuis des années"
+      ],
+      "rapport_aux_commerciaux": "Respectueux mais défensif. Apprécie la franchise brutale et les chiffres concrets. Déteste le discours marketing et les tournures alambiquées. Une fois en confiance, devient fidèle mais teste constamment la sincérité. Considère que 'un bon commercial dit non quand c'est pas adapté'",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec un 'Alors, qu'est-ce qui t'amène?' qui signifie clairement 'j'ai 10 minutes, va à l'essentiel'",
+      "signaux_interet": [
+        "Se cale dans son fauteuil et croise les bras en écoutant vraiment",
+        "Pose des questions très techniques précises sur la mise en œuvre concrète",
+        "Évoque spontanément un problème actuel ou une frustration non résolue",
+        "Dit 'Attends, je note ça' et sort effectivement un carnet",
+        "Compare mentalement avec son expérience: 'Tiens, comme quand on a eu le souci avec...'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible et regard vers son écran d'ordinateur",
+        "'Oui, oui...' répété en rythme sans vraiment écouter",
+        "Coupe court avec 'Écoute, là on est bien comme on est'",
+        "Invoque l'associé absent comme prétexte: 'Faudrait que j'en parle à Michel'",
+        "Ton qui devient sec: 'Combien ça coûte?' dès la première minute"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...' avant d'exprimer un désaccord",
+        "Utilise 'franchement' pour introduire une vérité brutale",
+        "'On va pas se mentir' quand il pense qu'on lui cache quelque chose",
+        "Ponctue de 'Hein?' en fin de phrase pour chercher l'adhésion",
+        "Dit 'Mouais...' en tirant sur le 'ou' quand il est sceptique"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Très faible (max 45-60 secondes). Interrompt rapidement si ça part dans des généralités. Apprécie les phrases courtes et concrètes. Respecte davantage celui qui lui laisse la parole que celui qui déballe son argumentaire."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable (+8% l'an dernier), carnet de commandes GMS régional plein, mais marges qui se tassent légèrement. Deux départs en retraite prévus dans 18 mois à l'atelier. Certification IFS renouvelée il y a 6 mois sans problème. Début de réflexion sur transmission aux enfants (2-3 ans)",
+      "priorites_actuelles": [
+        "Maintenir la conformité réglementaire sans y passer un temps fou",
+        "Stabiliser les coûts matières premières dans contexte inflation",
+        "Former les nouveaux pour maintenir le savoir-faire maison",
+        "Ne pas perdre de parts de marché face à deux concurrents qui investissent"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 13 mois d'un service de base en contrôle qualité/traçabilité qui a résolu un vrai problème d'organisation paperasse. Satisfait car ça marche, équipe sympa, prix correct. N'a jamais eu de problème donc ne voit pas forcément l'intérêt d'en faire plus",
+      "fournisseur_actuel": "Votre entreprise pour le service de base. Utilise aussi un labo externe pour analyses micro, un cabinet comptable local, et un consultant HACCP ponctuel",
+      "budget_disponible": "Pas de budget formalisé pour services complémentaires. Pourrait débloquer 8-15k€ annuels si ROI clairement démontré ou si ça évite un risque majeur identifié. Doit valider avec l'associé au-delà de 5k€"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Partir d'un constat terrain observé chez lui: 'J'ai remarqué que vous...' plutôt que discours générique",
+        "Évoquer un risque réglementaire méconnu ou une opportunité concrète chiffrée de gain",
+        "Comparer avec ce que font 2-3 PME similaires qu'il connaît ou respecte",
+        "Proposer un test limité dans le temps plutôt qu'un engagement massif",
+        "Montrer qu'on connaît vraiment son métier et ses contraintes quotidiennes",
+        "Admettre franchement les limites: 'C'est pas miraculeux mais voilà ce que ça fait vraiment'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Laisser entendre que son organisation actuelle est défaillante ou dépassée",
+        "Vendre la peur avec catastrophisme ('Si vous faites rien, vous risquez...')",
+        "Présenter comme 'indispensable' quelque chose qu'il sait relatif",
+        "Dénigrer même subtilement la concurrence ou ses autres prestataires",
+        "Utiliser du jargon ou des anglicismes inutiles ('synergie', 'optimisation holistique'...)",
+        "Ne pas avoir de réponse précise sur 'Concrètement, ça me prend combien de temps?'",
+        "Insister lourdement après un premier refus poli"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, là franchement on est bien comme on est. Ton service il tourne nickel, j'ai aucun souci. Pourquoi tu veux changer quelque chose qui marche ?",
+        "sous_texte": "Je sens venir la vente forcée. Tu vas essayer de me fourguer un truc dont j'ai pas besoin juste pour augmenter ta commission. Je suis content de toi, reste pas là.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer immédiatement qu'on ne veut pas changer ce qui marche. Partir d'une observation terrain spécifique qui montre qu'on connaît vraiment son quotidien."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Mouais... T'as vu que le budget arrive et tu te dis 'tiens, je vais aller taper Thierry pour vendre un peu plus', c'est ça ?",
+        "sous_texte": "Je te teste sur ta sincérité. Si tu es là juste pour vendre, je te vire poliment. Prouve-moi que c'est dans MON intérêt, pas le tien.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être brutalement honnête. Reconnaître l'impression mais expliquer le déclencheur réel (observation, évolution réglementaire, retour d'autres clients similaires)."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "J'ai 10 minutes là, j'ai l'équipe qui m'attend pour le point production. Vas-y, dis-moi vite de quoi il s'agit.",
+        "sous_texte": "Je suis vraiment pressé mais je te donne une chance parce qu'on se connaît. Si tu perds mon temps en 30 secondes, je coupe court.",
+        "type": "tactique",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Annoncer en une phrase ultra-concrète de quoi il s'agit et le bénéfice chiffré ou le risque évité. Proposer de rappeler si vraiment pas le moment."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attends, tu me connais depuis plus d'un an, tu sais comment on bosse. Pourquoi tu me poses toutes ces questions maintenant ?",
+        "sous_texte": "Cette phase de découverte ressemble à une technique de vente apprise en formation. Je la vois venir. Arrête le cinéma et dis-moi ce que tu as derrière la tête.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer franchement qu'on pose des questions précises parce que ça a évolué ou parce qu'on veut être sûr avant de proposer quelque chose d'adapté (ou rien du tout)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Des problématiques ? Franchement non, ça roule. On a nos petits soucis comme tout le monde mais rien de catastrophique, hein ?",
+        "sous_texte": "Je ne vais pas te donner des munitions pour me vendre quelque chose. Je minimise naturellement les difficultés par fierté et pour ne pas paraître en difficulté.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas creuser frontalement. Évoquer plutôt ce que d'autres PME similaires ont comme enjeux actuels pour voir s'il se reconnaît sans avouer directement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Les départs en retraite ? Ouais, dans un an et demi. Mais bon, on s'organise, on forme déjà les jeunes. C'est géré.",
+        "sous_texte": "C'est effectivement une préoccupation mais je ne vais pas te le montrer. Si j'admets que c'est un problème, tu vas me vendre une solution à 20k€.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que c'est bien anticipé. Puis mentionner juste qu'il existe des outils complémentaires pour sécuriser le transfert de savoir-faire, sans forcer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, concrètement là, ça me prend combien de temps en plus par semaine ce truc ? Parce que moi j'ai déjà pas une minute.",
+        "sous_texte": "Question éliminatoire sincère. Si c'est chronophage, c'est mort direct. J'ai besoin de la vérité, pas d'un 'oh c'est transparent' bidon.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner un chiffre réaliste précis en heures/semaine. Si c'est lourd au départ puis léger après, le dire. Ne jamais minimiser ou mentir."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, ton optimisation là, sur le papier c'est joli. Mais dans la vraie vie, en atelier, avec mes gars, ça marche vraiment ?",
+        "sous_texte": "Je suis sceptique sur la promesse. J'ai vu trop de consultants vendre du vent. Prouve-moi avec du concret terrain que c'est pas de la théorie.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un exemple ultra-précis d'une PME similaire avec nom (si possible qu'il connaît), situation avant/après chiffrée, et difficulté rencontrée honnêtement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais toi tu me parles d'amélioration, de gain. Combien exactement ? Parce que là j'ai rien de chiffré.",
+        "sous_texte": "Je teste ta rigueur et ton honnêteté. Si tu balances un chiffre bidon ou trop vague, je ne te fais plus confiance. Sois précis ou admets que c'est difficile à chiffrer.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette réaliste basée sur des cas comparables, ou admettre que ça dépend de X facteurs et proposer une estimation ensemble."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, tout ça c'est très bien, mais franchement c'est pas dans mes priorités cette année. On a déjà plein de chantiers.",
+        "sous_texte": "C'est peut-être intéressant mais c'est pas urgent. Je vais pas me compliquer la vie maintenant. L'inertie du 'ça peut attendre' prend le dessus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Comprendre et valider. Puis soit identifier UN point d'urgence masqué (risque réglementaire, opportunité commerciale qui se ferme), soit proposer un planning décalé cohérent."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et mes concurrents, ils font ça eux ? Parce que si personne le fait, c'est peut-être que c'est pas si indispensable...",
+        "sous_texte": "Question sincère. Je me compare toujours aux autres PME du coin. Si eux s'en passent, pourquoi pas moi ? Je veux pas être le pigeon qui paie pour rien.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Dire la vérité : certains oui, d'autres non. Expliquer ce qui fait que ceux qui l'ont pris en avaient besoin (sans dénigrer ceux qui ne l'ont pas)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Non mais là tu me compliques les process. On fonctionne comme ça depuis 20 ans, ça marche, pourquoi je changerais ?",
+        "sous_texte": "Vraie résistance au changement. J'ai peur de perdre des repères, de complexifier, de créer des erreurs. Le statu quo me rassure même s'il n'est pas optimal.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que les process actuels sont bons. Montrer que c'est une COUCHE supplémentaire optionnelle, pas un remplacement. Insister sur la continuité."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est combien ?",
+        "sous_texte": "Question piège dès le début du closing. Si tu annonces le prix trop tôt avant que la valeur soit établie, je vais le trouver cher et couper court.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette rapidement mais enchaîner immédiatement sur 'selon ce qu'on met dedans, justement tu vois plutôt...' pour recentrer sur le besoin."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Là faut que j'en parle à Michel (l'associé). Je peux pas décider tout seul pour ce montant-là.",
+        "sous_texte": "Peut-être sincère (vraiment besoin de validation), peut-être tactique (éviter de dire non frontalement). L'associé est ma sortie de secours habituelle.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander si c'est une vraie contrainte ou une hésitation. Si vrai, proposer une conf call à trois ou préparer les éléments pour qu'il convainque Michel lui-même."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais, je sais pas. Laisse-moi réfléchir, je te rappelle.",
+        "sous_texte": "Je suis en mode fuite polie. Soit je suis vraiment pas convaincu, soit j'ai besoin de digérer, soit je veux juste clore l'appel sans conflit.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas laisser dans le flou. Demander franchement ce qui bloque encore : le prix ? le timing ? la pertinence ? Fixer un rappel précis avec raison claire."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, là j'ai un doute. C'est pas que ton truc est nul, mais j'ai peur qu'on paie pour quelque chose qu'on utilisera pas vraiment au final.",
+        "sous_texte": "Objection sincère et légitime. J'ai peur du gaspillage et de paraître naïf. C'est l'objection de fond : rapport valeur/engagement pas encore clair.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la peur comme légitime. Proposer soit un pilote limité, soit des garanties de résultat, soit un engagement progressif. Montrer qu'on partage le risque."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, ton service de base me coûte déjà [X€], là tu me rajoutes [Y€], ça commence à faire. Je suis pas sûr que ça vaille le coup.",
+        "sous_texte": "Vraie objection prix cumulé. Je fais le calcul total et je trouve ça lourd. Le prix absolu n'est pas choquant mais l'addition totale avec le service actuel fait mal.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Replacer le coût total en regard du CA ou des économies générées. Montrer le % que ça représente. Proposer éventuellement un package global revu."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK, admettons. Mais si dans 3 mois je vois que ça sert à rien, je peux arrêter ?",
+        "sous_texte": "Signal d'achat conditionnel. J'ai besoin d'une porte de sortie pour me rassurer avant de m'engager. Si tu dis oui, je signe probablement.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Dire oui si c'est vrai (engagement réversible). Ou proposer une période d'essai officielle. Transformer l'objection en accord avec clause de sortie claire."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, c'est pas bête ce que tu dis. Mais là je peux pas, on est en pleine prod, on reparle de ça après les fêtes / la saison / l'audit ?",
+        "sous_texte": "Possiblement sincère (vraiment mauvais timing) ou tactique (reporter pour éviter de décider). Besoin de clarifier si c'est un vrai timing ou une esquive.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider le timing si c'est vrai. Mais poser un rendez-vous ferme dans l'agenda maintenant pour la date évoquée, avec rappel avant. Sinon ça s'oublie."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être honnête avec toi : j'ai pas envie de me faire avoir. J'ai l'impression que tu me vends plus parce que tu PEUX que parce que j'en ai BESOIN. Prouve-moi le contraire.",
+        "sous_texte": "Objection ultime de fond. Toute la méfiance accumulée ressort. Si la réponse n'est pas authentique et désintéressée, c'est terminé définitivement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Moment de vérité totale. Soit reconnaître que c'est effectivement limite et proposer d'attendre, soit prouver le besoin avec un élément factuel indiscutable qu'on a observé chez lui."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute, je vais être franc : je te fais confiance, tu bosses bien, mais là tu m'as pas convaincu. On reste comme on est pour l'instant. Si un jour j'ai vraiment besoin, je te recontacte, OK ?",
+      "condition_declenchement": "Apparaît quand le commercial n'a pas réussi à créer l'urgence, à chiffrer le bénéfice concrètement, ou à lever la peur du gaspillage. C'est le 'non poli mais définitif' qui préserve la relation existante."
+    },
+    "pattern_escalade": "Thierry commence cordial mais méfiant (objections réflexes). Si le commercial insiste avec des généralités ou du forcing, il devient sec et coupe court rapidement. Si le commercial joue la carte de la franchise et du concret, il s'ouvre progressivement et teste la sincérité (objections sincères de fond). L'escalade négative se fait par signaux non-verbaux d'abord (soupirs, 'oui oui', regards ailleurs) puis devient verbale et directe ('Écoute, arrête'). L'escalade positive passe par des questions techniques précises et l'évocation spontanée de ses vraies préoccupations.",
+    "piege_classique": "Thierry peut sembler convaincu intellectuellement ('Ouais c'est pas bête') mais reculer au moment du closing par simple inertie ou peur du changement. Le piège est de croire qu'on a gagné après l'argumentation alors que la vraie bataille se joue sur la décision concrète. Il faut un élément déclencheur émotionnel (risque identifié, opportunité qui se ferme, comparaison sociale avec concurrent) pour transformer l'intérêt en action."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services BtoB pour l'agroalimentaire",
+      "description": "fournisseur de services pour PME agroalimentaires, relation client établie depuis 1 an avec satisfaction client"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou montée en gamme par rapport à l'offre actuelle déjà souscrite",
+      "proposition_valeur": "accompagnement supplémentaire permettant d'optimiser davantage la production ou d'améliorer la performance au-delà du service de base",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "relation client satisfaisante depuis 1 an avec ce prospect"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du contexte client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser la technique d'upsell sur client satisfait en créant la perception de valeur ajoutée sans paraître opportuniste",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Service qualité Les Délices du Périgord",
+    "vous_etes": "Commercial confirmé chez un prestataire de services qualité/traçabilité pour l'agroalimentaire, en relation avec ce client depuis 13 mois.",
+    "vous_vendez": "Module complémentaire de gestion de la conformité réglementaire et formation équipe (prix à définir selon périmètre, budget prospect estimé 8-15k€/an).",
+    "vous_appelez": "Thierry Monteil, 52 ans, Directeur de production et associé des Délices du Périgord (charcuterie artisanale, 42 salariés, 5,8M€ CA). Pragmatique, méfiant face aux discours commerciaux, obsédé qualité produit. Déteste perdre du temps et qu'on lui vende de l'inutile.",
+    "ce_que_vous_savez": [
+      "Client satisfait de votre offre de base depuis 13 mois (contrôle qualité/traçabilité)",
+      "Certification IFS renouvelée il y a 6 mois sans problème",
+      "Deux départs retraite prévus atelier dans 18 mois",
+      "Début de réflexion transmission aux enfants dans 2-3 ans",
+      "Marges qui se tassent légèrement malgré croissance +8%"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous pour présenter le module complémentaire en partant d'un constat terrain concret, sans jamais critiquer son organisation actuelle.",
+    "vos_atouts": [
+      "Relation de confiance installée depuis 13 mois",
+      "Connaissance fine de son organisation et de ses contraintes",
+      "Références similaires chez 2-3 PME charcuterie régionales",
+      "Possibilité de proposer un test limité dans le temps"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:35:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16545,
+    "total_time_s": 164.7
+  }
+}

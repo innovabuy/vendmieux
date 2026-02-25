@@ -1,0 +1,339 @@
+{
+  "id": "scenario_1771525306",
+  "description_originale": "Vous avez envoyé une proposition commerciale au dirigeant / directeur technique d'une ESN ou intégrateur IT de 20-50 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : telecoms_it]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux ESN et intégrateurs IT",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair (oui/non/prochaine étape)"
+      ],
+      "implicites": [
+        "Le prospect ne considère peut-être pas l'offre comme prioritaire",
+        "Manque de création d'urgence lors de l'envoi initial",
+        "Possible absence de qualification préalable du besoin",
+        "Le dirigeant/DT est probablement surchargé et la proposition s'est perdue dans sa to-do list",
+        "Manque de suivi structuré post-envoi de proposition"
+      ],
+      "probleme_racine": "Difficulté à transformer l'intérêt initial en engagement décisionnel concret, probablement due à un manque de qualification du timing et de priorisation du besoin côté prospect lors des échanges précédents"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale pour obtenir un retour décisionnel clair, gérer les non-réponses et débloquer les situations d'attente",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur de solutions ou services pour le secteur IT/Telecoms",
+      "entreprise_description": "Entreprise B2B ciblant les ESN et intégrateurs IT avec des solutions adaptées à leur activité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux ESN et intégrateurs IT de taille moyenne, ayant fait l'objet d'une proposition commerciale formelle",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service",
+        "Proposition de valeur précise",
+        "Contexte de la relation antérieure (nombre d'échanges, niveau d'intérêt exprimé)",
+        "Raison de l'envoi de la proposition (demande du prospect, initiative commerciale)",
+        "Fourchette de prix",
+        "Concurrents identifiés",
+        "Informations sur l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur Général",
+      "entreprise": {
+        "nom": "Nexium Technologies",
+        "secteur": "ESN spécialisée infrastructure cloud et cybersécurité",
+        "taille": "32 salariés",
+        "ca_approximatif": "3,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-méfiant (15 ans d'expérience = saturation commerciale)",
+        "Surchargé chronique (dirige + vend + manage)",
+        "Loyal envers ses partenaires actuels"
+      ],
+      "motivations_profondes": [
+        "Pérenniser la boîte sans prendre de risque inutile",
+        "Optimiser la marge sans ajouter de complexité opérationnelle",
+        "Être reconnu comme un patron qui protège ses équipes"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un prestataire qui sur-promet",
+        "Perdre du temps en réunions improductives",
+        "Déstabiliser l'organisation avec un changement raté",
+        "Être perçu comme celui qui dépense mal le cash de la boîte"
+      ],
+      "rapport_aux_commerciaux": "Fatigue assumée. A vu passer 300 commerciaux en 10 ans. Détecte instantanément le bullshit. Respecte uniquement ceux qui connaissent VRAIMENT son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je suis en déplacement là, vous avez 5 minutes max'",
+      "signaux_interet": [
+        "Pose une question technique précise sur un point de la proposition",
+        "Mentionne spontanément un problème concret actuel",
+        "Demande un délai de mise en œuvre réaliste",
+        "Dit 'attendez je note' ou 'vous pouvez me renvoyer ça par mail ?'"
+      ],
+      "signaux_rejet": [
+        "Répond 'oui oui j'ai bien reçu' sans développer",
+        "Utilise le 'nous' évasif : 'on va regarder ça en interne'",
+        "Coupe court avec 'écoutez je dois y aller'",
+        "Bâille audiblement ou soupire",
+        "Commence ses phrases par 'le problème c'est que...'"
+      ],
+      "tics_langage": [
+        "Alors...",
+        "Écoutez franchement",
+        "Pour être transparent avec vous",
+        "J'ai pas que ça à faire hein",
+        "On verra bien"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, coupe avec 'oui d'accord mais concrètement...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable (+8% N-1) mais pression sur les marges. Deux gros clients qui représentent 55% du CA. Recrutement de 3 ingés prévu Q2 si signature d'un contrat en négociation.",
+      "priorites_actuelles": [
+        "Signer le gros deal en cours (200K€) avant fin trimestre",
+        "Recruter sans se planter sur les profils",
+        "Éviter que son directeur technique (45 ans, ancien collègue) parte à la concurrence"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions concurrentes il y a 18 mois. L'une a été abandonnée (trop complexe), l'autre est encore en place mais personne ne l'utilise vraiment.",
+      "fournisseur_actuel": "Un mix entre un gros éditeur historique (contrat qui arrive à échéance dans 7 mois) et des outils bricolés en interne par le CTO",
+      "budget_disponible": "15-25K€ disponibles sur ligne 'outils & licences' mais nécessite validation CA si > 20K€. Aucune urgence budgétaire."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Faire référence à un pair dirigeant d'ESN qui a le même profil (validation sociale)",
+        "Montrer qu'on a compris le problème de marge opérationnelle des ESN",
+        "Proposer un pilote court et réversible sans engagement long terme",
+        "Admettre les limites de sa propre solution (crédibilité +1000)",
+        "Poser une question qui révèle un angle mort : 'Comment vous gérez le staffing inter-projets actuellement ?'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou 'disruption'",
+        "Insister après un premier refus poli",
+        "Dire 'je comprends que vous soyez occupé' (condescendance détectée)",
+        "Demander un RDV de 45 minutes pour 're-présenter l'offre'",
+        "Envoyer un énième mail de relance générique type 'suite à mon précédent message'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui j'ai bien reçu votre proposition, écoutez j'ai pas encore eu le temps de regarder en détail, là je suis sur le dossier client qui mobilise toute mon attention",
+        "sous_texte": "Je l'ai survolée 30 secondes et rien ne m'a sauté aux yeux comme urgent. J'espère que vous allez raccrocher vite.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que c'est normal, puis poser UNE question précise sur UN point de la proposition pour vérifier s'il l'a vraiment lue"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Pour être transparent avec vous, on a déjà un outil en place qui fait plus ou moins le job, c'est pas la priorité du moment",
+        "sous_texte": "J'ai un gros éditeur historique + des bricolages internes. Pourquoi je me casserais la tête à changer ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer l'existant. Creuser 'plus ou moins' et identifier la faille de l'outil actuel via questions factuelles"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement là j'ai pas que ça à faire, vous me rappelez dans 3 mois quand on sera moins dans le jus",
+        "sous_texte": "Test de motivation : est-ce que ce commercial va insister lourdement ou respecter mon autorité ?",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter le timing mais ancrer une info spécifique qui lui fera regretter d'attendre 3 mois"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On verra ça en interne avec mon directeur technique et je vous tiens au courant",
+        "sous_texte": "Je vous mets en standby infini. Le 'nous' évasif = porte de sortie élégante.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander qui décide vraiment, quel est le processus précis, et proposer d'inclure le DT maintenant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez vos prix sont sympas mais j'ai déjà eu deux bad expériences avec ce genre de solutions, au final personne les utilise vraiment",
+        "sous_texte": "Vraie blessure : il a investi temps/argent il y a 18 mois pour rien. Peur de reproduire l'erreur.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider cette expérience, creuser ce qui n'a pas marché (adoption ? complexité ?) et montrer comment vous évitez ça"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que notre contrat actuel se termine dans 7 mois, donc même si votre truc est bien, je vais pas payer double pendant 6 mois",
+        "sous_texte": "Objection logique et légitime. Il calcule en chef d'entreprise. Mais révèle qu'il envisage réellement un changement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer timing de démarrage aligné sur fin de contrat actuel, ou pilote gratuit de 2 mois avant bascule"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Alors concrètement, vous avez combien de clients ESN de ma taille qui utilisent vraiment votre solution au quotidien ?",
+        "sous_texte": "Test de crédibilité sectorielle. S'il dit 'plein' sans détails = bullshit détecté. S'il cite un pair identifiable = écoute activée.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 références précises avec taille/secteur, ou admettre honnêtement si peu de références exactes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais attendez, ça veut dire que je dois former mes équipes, migrer les données, tout le bordel quoi... j'ai pas les ressources pour gérer ça maintenant",
+        "sous_texte": "Peur réelle de la charge opérationnelle. Déjà surchargé. Besoin d'être rassuré sur l'accompagnement concret.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Quantifier précisément temps d'implémentation, votre prise en charge de la migration, formation incluse"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... j'ai l'impression que vous me promettez la lune là, dans les faits ça marche jamais comme dans les slides",
+        "sous_texte": "Scepticisme profond post-15 ans de pitchs commerciaux. Détecte l'overselling. Veut du concret.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Admettre une limite de votre solution, donner un cas d'usage raté et pourquoi, puis recentrer sur son besoin réel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le truc c'est que mon directeur technique est là depuis 8 ans, il a ses habitudes, si je lui impose un truc il va me faire la gueule",
+        "sous_texte": "Vraie peur : perdre son bras droit/ancien collègue qui pourrait partir à la concurrence. Politique interne sensible.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer que le DT soit décideur du pilote, valoriser son expertise, impliquer dès maintenant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est quoi vos concurrents déjà ? Parce que j'ai vu passer [Concurrent X] la semaine dernière aussi",
+        "sous_texte": "Pas forcément vrai. Tactique pour obtenir votre positionnement concurrentiel et négocier le prix.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer concurrent. Poser questions sur ce qu'il a aimé/pas aimé chez eux, différencier factuellement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais là je dois valider ça en CA, vous comprenez au-dessus de 20K€ je peux pas décider seul",
+        "sous_texte": "Peut être vrai OU tactique dilatoire. Teste si vous connaissez les process de décision en PME.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander quand est le prochain CA, qui y participe, quel dossier préparer pour maximiser chances validation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK pourquoi pas, envoyez-moi un mail de synthèse et je reviens vers vous",
+        "sous_texte": "Traduction : 'Je veux clore poliment cet appel. Probabilité que je vous réponde : 5%'",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Caler date/heure précise de rappel AVANT de raccrocher, éviter le mail-trou-noir"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai pas le budget là, on en reparle l'année prochaine lors du prochain exercice",
+        "sous_texte": "Objection prix masquée. Soit vrai (15-25K disponibles mais pas prioritaire), soit il négocie indirectement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser si c'est timing budgétaire ou montant. Proposer phasage ou pilote < 15K sans engagement annuel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Pour être transparent j'ai un gros deal en négociation là, tant que c'est pas signé je bouge sur rien d'autre",
+        "sous_texte": "VRAI. Priorité absolue = deal 200K€. Timing réel défavorable. Mais révèle que si deal signé = capacité investissement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Respecter priorité, ancrer date de signature probable, proposer travail préparatoire pendant ce temps"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez franchement votre truc est peut-être bien mais j'ai pas la bande passante mentale pour évaluer ça sérieusement maintenant, je préfère être honnête plutôt que vous faire perdre du temps",
+      "condition_declenchement": "Se déclenche si le commercial a insisté malgré 2-3 signaux de rejet clairs, ou n'a pas su créer d'urgence/valeur différenciante en 3 minutes"
+    },
+    "pattern_escalade": "Stéphane commence cordial → devient évasif si discours générique → utilise objections tactiques pour tester → devient direct/cassant si insistance → ferme définitivement avec transparence brutale si pas de respect de son temps/autorité",
+    "piege_classique": "Prendre son 'envoyez-moi un mail' pour un signal d'intérêt. C'est sa stratégie par défaut pour clore poliment. Le vrai signal = quand il pose une question technique précise ou demande un délai de mise en œuvre concret."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur de solutions ou services pour le secteur IT/Telecoms",
+      "description": "Entreprise B2B ciblant les ESN et intégrateurs IT avec des solutions adaptées à leur activité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux ESN et intégrateurs IT de taille moyenne, ayant fait l'objet d'une proposition commerciale formelle",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement après l'envoi d'une proposition commerciale pour obtenir un retour décisionnel clair, gérer les non-réponses et débloquer les situations d'attente",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance commerciale — Proposition sans retour ESN",
+    "vous_etes": "Commercial B2B spécialisé solutions IT pour ESN et intégrateurs",
+    "vous_vendez": "Solution pour ESN (nature non divulguée dans ce scénario) — proposition envoyée il y a 3 semaines, montant estimé 15-25K€",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur Général de Nexium Technologies (ESN 32 personnes, spécialisée cloud et cybersécurité). Pragmatique, surchargé, allergique au bullshit commercial.",
+    "ce_que_vous_savez": [
+      "Vous avez envoyé une proposition commerciale il y a 3 semaines suite à un échange initial",
+      "Nexium est en croissance stable (+8% N-1) mais sous pression sur les marges",
+      "Un gros deal de 200K€ est en négociation côté Nexium, priorité absolue du DG actuellement",
+      "Leur contrat fournisseur principal arrive à échéance dans 7 mois",
+      "Stéphane a déjà testé 2 solutions concurrentes il y a 18 mois (une abandonnée, une sous-utilisée)"
+    ],
+    "votre_objectif": "Obtenir un retour clair (oui/non/étape suivante) et comprendre si le projet est réellement prioritaire ou à mettre en standby",
+    "vos_atouts": [
+      "Vous connaissez les problématiques de marge opérationnelle des ESN de cette taille",
+      "Vous pouvez proposer un pilote court et réversible sans engagement",
+      "Vous avez des références d'ESN similaires (à mentionner si pertinent)",
+      "Vous savez que leur contrat actuel arrive à échéance : timing potentiel"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:21:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13461,
+    "total_time_s": 134.1
+  }
+}

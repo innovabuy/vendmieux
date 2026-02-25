@@ -1,0 +1,335 @@
+{
+  "id": "scenario_1771524754",
+  "description_originale": "Vous appelez une groupe d'expertise comptable multi-sites de 100+ collaborateurs. L'assistante de cabinet du associé directeur ou directeur du développement décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : comptabilite]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "expertise comptable",
+      "taille_entreprise": "100+ collaborateurs, structure multi-sites",
+      "interlocuteur_principal": {
+        "poste": "associé directeur ou directeur du développement",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de cabinet",
+          "role": "barrage systématique, filtre les commerciaux",
+          "caracteristiques": "professionnelle, expérimentée face aux commerciaux"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service à destination des cabinets d'expertise comptable multi-sites",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Barrage systématique par l'assistante de cabinet",
+        "Difficulté à accéder au décideur",
+        "Nécessité de qualifier le RDV avant obtention"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel froid",
+        "Approche commerciale probablement trop directe ou standardisée",
+        "Absence de différenciation par rapport aux autres commerciaux",
+        "Manque de stratégie de contournement du barrage",
+        "Difficulté à créer de la valeur dès les premières secondes"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur et de légitimité en quelques secondes pour justifier le passage du barrage et l'accès au décideur dans un contexte de sollicitations commerciales intensives"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrage avec élégance, créer de la légitimité instantanée, qualifier rapidement la pertinence de l'appel, et obtenir un RDV avec le décideur dans un environnement B2B exigeant et saturé de sollicitations",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux cabinets d'expertise comptable (logiciel, formation, conseil, outsourcing ou autre)",
+      "entreprise_description": "Entreprise commercialisant des solutions ou services destinés aux cabinets d'expertise comptable de taille moyenne à grande",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution professionnelle destinée à améliorer la performance, la productivité ou la compétitivité des cabinets d'expertise comptable multi-sites",
+      "proposition_valeur": "Apport de valeur tangible pour les cabinets comptables en croissance avec enjeux de structuration multi-sites",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commercialisée",
+        "Proposition de valeur spécifique",
+        "Positionnement prix",
+        "Références clients dans le secteur",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique ciblée",
+        "Avantages concurrentiels distinctifs"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Barmont",
+      "age": 52,
+      "poste": "Associé directeur",
+      "entreprise": {
+        "nom": "Cabinet Barmont & Associés",
+        "secteur": "Expertise comptable et audit",
+        "taille": "4 bureaux (Lyon, Villeurbanne, Vénissieux, Saint-Priest), 127 collaborateurs",
+        "ca_approximatif": "8,2 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux depuis 25 ans de sollicitations",
+        "Pragmatique cash : \"pas de temps à perdre avec du vent\"",
+        "Conservateur assumé : \"on change ce qui ne marche plus, pas le reste\""
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité du cabinet après deux années difficiles",
+        "Préparer la succession (départ prévu dans 5-7 ans)",
+        "Ne pas passer pour un dinosaure face aux jeunes associés qui poussent à la digitalisation"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui survend et sous-livre",
+        "Investir dans une solution que les collaborateurs n'utiliseront pas",
+        "Perdre du temps en réunions inutiles qui l'éloignent du terrain",
+        "Déstabiliser l'organisation avec un changement mal calibré"
+      ],
+      "rapport_aux_commerciaux": "Hostilité polie. Les considère comme des parasites sauf preuve du contraire. A développé des réflexes pavloviens de rejet dès qu'il détecte un pitch commercial. Respecte uniquement ceux qui connaissent VRAIMENT son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais glacial. Regarde ostensiblement sa montre. Phrases courtes. \"Oui, alors, vous avez 10 minutes, qu'est-ce que vous voulez ?\"",
+      "signaux_interet": [
+        "Se redresse dans son fauteuil",
+        "Pose son stylo et croise les bras (= vous avez mon attention)",
+        "\"Ah ça, c'est intéressant\" (rare, mais authentique quand ça sort)",
+        "Commence à poser des questions précises sur les délais et l'implémentation",
+        "Mentionne spontanément un problème interne concret"
+      ],
+      "signaux_rejet": [
+        "\"Écoutez, envoyez-moi un mail, je regarderai\"",
+        "Tapote sur son bureau avec impatience",
+        "\"Ouais, on a déjà essayé ce genre de trucs\"",
+        "Répond à un SMS en plein milieu de votre phrase",
+        "\"C'est Sandrine qui s'occupe de ça, voyez avec elle\" (= vous sortir)"
+      ],
+      "tics_langage": [
+        "\"Bon, écoutez...\" (pour recadrer)",
+        "\"Concrètement\" (exige du factuel)",
+        "\"Ouais, non mais...\" (exprime un désaccord poli)",
+        "Utilise \"franchement\" avant de vous démonter une idée",
+        "\"Ça me parle pas\" quand il ne comprend pas l'intérêt"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes max. Au-delà, décroche mentalement ou coupe : \"Oui, j'ai compris le principe, mais...\""
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance organique ralentie. Difficulté à recruter des collaborateurs qualifiés. Pression tarifaire des clients qui comparent avec les plateformes en ligne. Un bureau (Vénissieux) moins rentable que les autres. Objectif : harmoniser les process entre sites sans perdre l'autonomie locale.",
+      "priorites_actuelles": [
+        "Harmoniser la production comptable multi-sites (actuellement chacun fait à sa sauce)",
+        "Réduire les coûts cachés liés aux doublons inter-agences",
+        "Fidéliser les managers clés (2 départs l'an dernier)",
+        "Éviter de se faire ubériser par les néo-cabinets 100% digitaux"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion de production vendu par un commercial trop insistant. Déploiement raté, utilisé à 30%, a perdu 15K€ et 6 mois. Depuis, ultra-prudent.",
+      "fournisseur_actuel": "Logiciel de production historique (18 ans d'ancienneté), coûteux mais \"ça marche\". Pas de CRM formalisé, juste Excel et Outlook. Consultant RH externe pour les formations obligatoires.",
+      "budget_disponible": "Flou. Capable de débloquer 40-60K€ si ROI démontré sous 18 mois, mais ne le dira jamais en premier RDV. Commence toujours par \"Ça dépend, faut voir\"."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème qu'il pensait être le seul à avoir",
+        "Citer un cabinet concurrent qu'il respecte (sans survendre)",
+        "Parler en nombre d'heures gagnées plutôt qu'en fonctionnalités",
+        "Reconnaître d'emblée les limites de votre solution (= crédibilité +)",
+        "Lui demander SON avis d'expert avant de pitcher",
+        "Montrer que vous avez compris la spécificité du multi-sites en compta"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon bullshit (transformation digitale, disruption, solution 360°)",
+        "Phrases toutes faites type \"leader sur le marché depuis X années\"",
+        "Insister lourdement après un premier \"non\" poli",
+        "Comparer son cabinet à une PME classique (il déteste ça)",
+        "Sous-entendre que ses outils actuels sont dépassés (fierté blessée)",
+        "Demander un RDV sans avoir d'abord apporté de la valeur dans l'échange",
+        "Ignorer l'assistante qui lui sert de filtre depuis 12 ans"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en rdv là, vous pouvez envoyer un mail à Sandrine, elle trie tout ça.",
+        "sous_texte": "Réflexe de protection automatique. Teste si vous allez insister lourdement comme les autres commerciaux ou si vous savez vous adapter.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter le timing, proposer un créneau ultra-précis (2 min chrono) ou une question de qualification qui prouve que vous n'êtes pas un spam"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais, on reçoit 15 appels par semaine pour ce genre de trucs. Qu'est-ce qui fait que vous, vous seriez différent ?",
+        "sous_texte": "Vraie question. Il est saturé mais pas totalement fermé. Cherche UN élément distinctif tangible, pas du marketing.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse factuelle ultra-précise : un chiffre, un retour d'expérience d'un pair qu'il respecte, ou une question qui prouve que vous avez fait vos devoirs sur son cabinet"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà testé ce genre de solutions il y a 3 ans. Ça a été un plantage complet. On a perdu du temps et du fric.",
+        "sous_texte": "Blessure réelle. Méfiance légitime basée sur une expérience traumatisante. Attend que vous reconnaissiez le risque sans minimiser son vécu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider son expérience, creuser ce qui a raté précisément, montrer que vous comprenez les pièges d'implémentation dans un multi-sites comptable"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vos autres clients dans l'expertise comptable, ils ont mis combien de temps pour voir des résultats ? Et combien ça leur a vraiment coûté, tout compris ?",
+        "sous_texte": "Signal d'intérêt masqué. Il qualifie sérieusement maintenant. Teste votre honnêteté et votre connaissance terrain.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse factuelle avec fourchettes réalistes. Mentionner les coûts cachés (temps interne, formation). Citer un cas comparable sans survendre."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, mais nos collaborateurs, ils ont déjà leurs habitudes. Comment vous garantissez qu'ils vont l'utiliser votre truc ?",
+        "sous_texte": "Peur réelle de l'adoption. A déjà vu des outils neufs rester inutilisés. Cherche des garanties concrètes, pas des promesses.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Processus d'accompagnement précis, temps d'appropriation réaliste, indicateurs de suivi de l'adoption, retour d'expérience d'autres cabinets"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, envoyez-moi une plaquette par mail, je regarderai ça tranquillement et je vous rappelle si ça m'intéresse.",
+        "sous_texte": "Sortie de secours polie. Soit vraiment pas intéressé, soit teste votre capacité à maintenir l'échange sans être lourd.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter en apparence, mais poser UNE question de qualification qui relance l'échange sur un problème concret qu'il a mentionné"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais, non mais ça me parle pas trop là. On est déjà équipés et ça fonctionne. Pourquoi on changerait ?",
+        "sous_texte": "Conservatisme assumé. Vraie objection : n'a pas compris la valeur ajoutée par rapport à l'existant. Ou alors n'a pas perçu de problème suffisamment douloureux.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer l'existant. Plutôt parler de complémentarité ou de prochains défis business qu'il a mentionnés. Ou recréer de la douleur par des questions."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est Sandrine qui gère la partie outils et organisation. Faut voir avec elle d'abord, ensuite on pourra en reparler.",
+        "sous_texte": "Délégation = sortie diplomatique. Soit vraiment pas décideur sur ce sujet (rare vu son poste), soit manque d'intérêt et veut vous éjecter poliment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier le rôle décisionnel : 'Je comprends. Sur les décisions qui impactent la rentabilité multi-sites, c'est vous ou Sandrine qui arbitrez ?' ou pivoter sur un enjeu stratégique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, votre solution elle a l'air pas mal sur le papier, mais entre le papier et la vraie vie dans nos cabinets, il y a un monde.",
+        "sous_texte": "Scepticisme basé sur l'expérience. Besoin de preuve concrète, terrain, pas de slides marketing. Possibilité d'ouverture si vous incarnez la 'vraie vie'.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une mini-validation terrain : cas d'usage ultra-précis sur SON contexte, visite d'un cabinet référence, ou POC limité et cadré"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais, faut que j'en parle avec les autres associés. On prend pas ce genre de décision tout seul ici.",
+        "sous_texte": "Objection classique de temporisation. Peut être sincère (décision collégiale réelle) ou tactique (gagner du temps pour réfléchir ou vous oublier).",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le process décisionnel : 'Je comprends. Quand avez-vous votre prochain codir ? Qu'est-ce qui pourrait les convaincre eux ?' puis co-construire la suite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, ça dépend du prix. Vous êtes sur quelle fourchette ? Parce que si c'est pour me sortir 80 000 balles, on arrête tout de suite.",
+        "sous_texte": "Vraie question budgétaire. Teste aussi votre transparence et votre capacité à justifier l'investissement. Chiffre avancé peut être une fausse limite.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette réaliste liée à la configuration, puis rebondir sur le ROI attendu : 'Sur quoi vous basez-vous pour savoir si 80K€ c'est trop ou pas assez ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je suis pas contre vous revoir, mais dans 2-3 mois quand on aura bouclé la saison fiscale. Là c'est la course.",
+        "sous_texte": "Peut être sincère (vraiment surchargé) ou tactique (espère que vous oublierez). Timing réel : avril-juin et octobre-décembre sont morts en compta.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le timing : 'Je comprends, la saison c'est l'enfer. Justement, pour une mise en place septembre-octobre, il faudrait décider quand ?' et caler un point intermédiaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, appelez-moi dans 15 jours, j'aurai peut-être plus de visibilité sur le budget et les priorités du prochain semestre.",
+        "sous_texte": "Sortie polie. Très faible probabilité qu'il décroche dans 15 jours. Teste si vous êtes capable de créer plus d'urgence ou de valeur maintenant.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer de l'urgence douce : 'Je comprends. En attendant, ça vous dirait que je vous prépare une simulation chiffrée sur VOS 4 sites ? Comme ça vous aurez du concret pour arbitrer.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, écoutez, c'est intéressant mais là franchement on a d'autres priorités. On verra ça plus tard, peut-être fin d'année.",
+      "condition_declenchement": "Apparaît quand le commercial n'a pas réussi à connecter son offre à une douleur business immédiate et chiffrée, ou quand Thierry n'a pas senti de différenciation réelle vs les autres commerciaux qu'il voit chaque semaine"
+    },
+    "pattern_escalade": "Thierry monte en résistance de manière progressive : (1) Courtoisie glaciale initiale → (2) Questions fermées pour qualifier rapidement → (3) Objections factuelles basées sur l'expérience → (4) Tentatives de sortie diplomatique (mail, délégation) → (5) Si insistance maladroite : fermeture brutale et définitive. Si le commercial prouve sa valeur à chaque étape, Thierry s'ouvre progressivement et commence à co-construire.",
+    "piege_classique": "Thierry donne parfois de faux signaux d'intérêt ('Ouais, pourquoi pas') pour ne pas être impoli, mais coupe court ensuite. Il faut distinguer les 'oui polis' des vrais signaux d'engagement (questions précises, mention de problèmes internes, proposition de date concrète). Le vrai danger : croire qu'on l'a convaincu alors qu'il cherche juste à sortir de l'échange poliment."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux cabinets d'expertise comptable (logiciel, formation, conseil, outsourcing ou autre)",
+      "description": "Entreprise commercialisant des solutions ou services destinés aux cabinets d'expertise comptable de taille moyenne à grande"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution professionnelle destinée à améliorer la performance, la productivité ou la compétitivité des cabinets d'expertise comptable multi-sites",
+      "proposition_valeur": "Apport de valeur tangible pour les cabinets comptables en croissance avec enjeux de structuration multi-sites",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrage avec élégance, créer de la légitimité instantanée, qualifier rapidement la pertinence de l'appel, et obtenir un RDV avec le décideur dans un environnement B2B exigeant et saturé de sollicitations",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Cabinet comptable multi-sites",
+    "vous_etes": "Commercial B2B spécialisé sur le secteur de l'expertise comptable, vous prospectez des cabinets structurés pour leur proposer des solutions d'harmonisation de production multi-sites.",
+    "vous_vendez": "Une solution d'optimisation de la production comptable pour cabinets multi-sites (prix et détails non communiqués au prospect à ce stade).",
+    "vous_appelez": "Thierry Barmont, 52 ans, associé directeur du Cabinet Barmont & Associés (127 collaborateurs, 4 bureaux en région lyonnaise). Ultra-méfiant avec les commerciaux, pragmatique cash, déteste perdre son temps.",
+    "ce_que_vous_savez": [
+      "Cabinet multi-sites (Lyon, Villeurbanne, Vénissieux, Saint-Priest) avec enjeux d'harmonisation des process",
+      "Croissance ralentie, difficulté de recrutement, pression tarifaire des clients",
+      "Mauvaise expérience il y a 3 ans avec un logiciel mal déployé (15K€ perdus)",
+      "Utilise des outils historiques depuis 18 ans, pas de CRM formalisé",
+      "Assistante très professionnelle qui filtre systématiquement les commerciaux"
+    ],
+    "votre_objectif": "Franchir le barrage de l'assistante avec élégance, créer de la légitimité en 30 secondes face à Thierry, et décrocher un RDV physique de 30 minutes.",
+    "vos_atouts": [
+      "Vous connaissez précisément les problématiques multi-sites en expertise comptable",
+      "Vous pouvez parler en heures gagnées plutôt qu'en fonctionnalités techniques",
+      "Vous êtes capable de reconnaître d'emblée les limites de votre approche (crédibilité)",
+      "Vous savez poser des questions qui révèlent des problèmes que le prospect pensait être seul à avoir"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:12:34Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15041,
+    "total_time_s": 131.7
+  }
+}

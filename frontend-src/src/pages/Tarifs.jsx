@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useColors, Nav, Footer } from "../shared";
 
@@ -31,6 +31,8 @@ export default function Tarifs(){
   const C = useColors();
   const [ann,setAnn]=useState(false);
   const [fO,setFO]=useState(null);
+  const [simCount,setSimCount]=useState(1247);
+  useEffect(()=>{ const iv=setInterval(()=>setSimCount(c=>c+Math.floor(Math.random()*3)+1),5000);return()=>clearInterval(iv); },[]);
   const price = ann ? "39€" : "49€";
   const priceSub = ann ? "engagement 12 mois" : "sans engagement";
 
@@ -64,7 +66,7 @@ export default function Tarifs(){
 
       {/* PRICING CARD */}
       <div style={{display:"flex",justifyContent:"center",padding:"0 20px",maxWidth:520,margin:"0 auto"}}>
-        <div style={{width:"100%",background:`linear-gradient(180deg,${C.acD} 0%,${C.bgC} 40%)`,border:"1px solid rgba(212,133,74,0.35)",borderRadius:18,position:"relative",overflow:"hidden"}}>
+        <div style={{width:"100%",background:`linear-gradient(180deg,${C.acD} 0%,${C.bgC} 40%)`,border:"1px solid rgba(212,133,74,0.35)",borderRadius:18,position:"relative",overflow:"hidden",animation:"glowPulse 3s ease-in-out infinite"}}>
           <div style={{position:"absolute",top:16,right:16,background:`linear-gradient(135deg,${C.ac},${C.acL})`,color:"#fff",fontSize:10,fontWeight:700,padding:"4px 12px",borderRadius:20,letterSpacing:0.8,textTransform:"uppercase"}}>VendMieux Pro</div>
           <div style={{padding:"40px 28px 24px",textAlign:"center"}}>
             <div style={{display:"flex",alignItems:"baseline",justifyContent:"center",gap:4,marginBottom:4}}>
@@ -72,7 +74,8 @@ export default function Tarifs(){
               <span style={{fontSize:14,color:C.dm}}> HT /commercial/mois</span>
             </div>
             <p style={{fontSize:13,color:C.mt,margin:"8px 0 4px"}}>{priceSub}</p>
-            <p style={{fontSize:14,color:C.ac,fontWeight:600,margin:"12px 0 28px"}}>20 séances d'entraînement incluses</p>
+            <p style={{fontSize:14,color:C.ac,fontWeight:600,margin:"12px 0 4px"}}>20 séances d'entraînement incluses</p>
+            <p style={{fontSize:11,color:C.dm,margin:"0 0 28px",fontVariantNumeric:"tabular-nums",transition:"all 0.5s"}}>🔥 {simCount.toLocaleString()} simulations réalisées ce mois</p>
             <Link to="/contact" style={{display:"block",width:"100%",padding:"14px 20px",background:`linear-gradient(135deg,${C.ac},${C.acL})`,border:"none",borderRadius:10,color:"#fff",fontSize:15,fontWeight:600,cursor:"pointer",boxShadow:"0 4px 16px rgba(212,133,74,0.25)",textDecoration:"none",textAlign:"center"}}>Démarrer l'essai gratuit</Link>
             <p style={{fontSize:12,color:C.mt,marginTop:12}}>1 simulation gratuite · Sans carte bancaire</p>
           </div>
@@ -98,12 +101,12 @@ export default function Tarifs(){
           <div className="vm-grid-2" style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}}>
             <div>
               <div style={{fontSize:12,color:C.mt,marginBottom:6}}>Formation classique</div>
-              <div style={{fontSize:26,fontWeight:200}}>2 500€<span style={{fontSize:12,color:C.dm}}>/personne</span></div>
+              <div style={{fontSize:26,fontWeight:200,animation:"float 4s ease-in-out infinite"}}>2 500€<span style={{fontSize:12,color:C.dm}}>/personne</span></div>
               <div style={{fontSize:11,color:C.dm,marginTop:4}}>2 jours · 0 mesure · oublié en 2 semaines</div>
             </div>
             <div>
               <div style={{fontSize:12,color:C.ac,marginBottom:6,fontWeight:600}}>VendMieux Pro</div>
-              <div style={{fontSize:26,fontWeight:200}}>49€<span style={{fontSize:12,color:C.dm}}>/mois</span></div>
+              <div style={{fontSize:26,fontWeight:200,animation:"float 4s ease-in-out infinite 1s"}}>49€<span style={{fontSize:12,color:C.dm}}>/mois</span></div>
               <div style={{fontSize:11,color:C.ok,marginTop:4,fontWeight:500}}>10 min/jour · Progression mesurable · 24/7</div>
             </div>
           </div>
@@ -152,6 +155,10 @@ export default function Tarifs(){
       </div>
 
       <Footer/>
+      <style>{`
+        @keyframes glowPulse{ 0%,100%{ border-color:rgba(212,133,74,0.35);box-shadow:0 0 0 rgba(212,133,74,0) }50%{ border-color:rgba(212,133,74,0.6);box-shadow:0 0 20px rgba(212,133,74,0.15) } }
+        @keyframes float{ 0%,100%{ transform:translateY(0) }50%{ transform:translateY(-6px) } }
+      `}</style>
     </div>
   );
 }

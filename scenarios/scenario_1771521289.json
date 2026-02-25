@@ -1,0 +1,327 @@
+{
+  "id": "scenario_1771521289",
+  "description_originale": "Le propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : hotellerie_restauration]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "independant ou petit groupe (2-5 etablissements)",
+      "interlocuteur_principal": {
+        "poste": "proprietaire_directeur_hotel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "fourniture de produits ou services pour hotellerie-restauration",
+      "proposition_valeur_presumee": "fournisseur fiable pour hotellerie-restauration avec qualite et regularite de service",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "oui, menace de changement de fournisseur"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "probleme de livraison/service/qualite constate",
+        "client existant mecontent",
+        "menace de defection vers concurrent"
+      ],
+      "implicites": [
+        "confiance du client erodee",
+        "historique de relation a preserver",
+        "potentiel manque de suivi ou communication proactive",
+        "risque de perte de portefeuille client (2-5 etablissements)"
+      ],
+      "probleme_racine": "defaillance operationnelle ayant brise la confiance d'un client etabli, revelant potentiellement des failles dans le processus qualite ou communication"
+    },
+    "objections_mentionnees": [
+      "probleme de livraison",
+      "probleme de service",
+      "probleme de qualite",
+      "menace de partir a la concurrence"
+    ],
+    "objectif_formation": "gestion de crise client et preservation de la relation commerciale face a une reclamation serieuse avec menace de defection",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur BtoB hotellerie-restauration",
+      "entreprise_description": "entreprise fournissant produits ou services au secteur hotelier-restauration avec clientele existante d'hotels independants et petits groupes",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "produits ou services destines aux hotels-restaurants (possiblement alimentaire, equipement, linge, services maintenance, ou autres fournitures hotellerie)",
+      "proposition_valeur": "fiabilite, qualite et service regulier pour professionnels de l'hotellerie-restauration",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "relation existante etablie, connaissance du client et de ses besoins specifiques",
+      "objectif_appel": "resolution de crise et retention client",
+      "type_prospection": "gestion_reclamation_client_existant"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du produit/service fourni",
+        "nature precise du probleme (livraison/service/qualite)",
+        "historique de la relation commerciale",
+        "montant du contrat ou CA genere",
+        "nom entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick",
+      "nom": "Vermeulen",
+      "age": 52,
+      "poste": "Propriétaire-Directeur",
+      "entreprise": {
+        "nom": "Groupe Hôtelier Les Trois Tilleuls",
+        "secteur": "Hôtellerie-Restauration indépendante",
+        "taille": "3 établissements (2 hôtels-restaurants en Normandie, 1 en Bretagne)",
+        "ca_approximatif": "2,8M€ annuel consolidé"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique cash, allergique au baratin commercial",
+        "Fidèle mais rancunier si on le déçoit",
+        "Hyper-réactif sur tout ce qui touche à sa réputation client"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation familiale de ses établissements (héritage du père)",
+        "Prouver qu'un indépendant peut rivaliser avec les chaînes sur la qualité",
+        "Éviter à tout prix les mauvais avis TripAdvisor/Google liés à un problème opérationnel",
+        "Simplifier sa vie : moins de fournisseurs = moins de casse-tête"
+      ],
+      "peurs_freins": [
+        "Perdre le contrôle qualité en période de forte affluence (juin-septembre)",
+        "Être pris pour un pigeon par ses fournisseurs parce qu'il n'est pas une grosse chaîne",
+        "Devoir gérer 15 fournisseurs différents comme ses concurrents franchisés",
+        "Que ses chefs de cuisine le prennent pour un incompétent si les produits sont mauvais"
+      ],
+      "rapport_aux_commerciaux": "Respecte ceux qui connaissent vraiment le terrain et l'hôtellerie. Méprise profondément les 'costards-cravates' qui récitent un script sans comprendre ses contraintes de saisonnalité, rotation du personnel, marges serrées. Tolère zéro langue de bois.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque agressif : 'Ah c'est vous... Écoutez j'ai pas beaucoup de temps là, j'ai la livraison de linge qui arrive et mon chef qui me fait chier pour les légumes de demain.'",
+      "signaux_interet": [
+        "Arrête de faire autre chose et se concentre vraiment sur l'appel",
+        "Pose des questions précises sur les délais : 'Concrètement, si je commande lundi, je suis livré quand ?'",
+        "Mentionne ses autres établissements : 'Parce que moi si ça marche ici, j'ai les deux autres hôtels derrière hein'",
+        "Baisse d'un ton, devient presque confidentiel : 'Bon entre nous...'"
+      ],
+      "signaux_rejet": [
+        "Soupirs exaspérés audibles",
+        "Coupe sèchement : 'Ouais ouais, c'est ce qu'on m'a déjà dit...'",
+        "Commence à parler d'autre chose en parallèle (on entend qu'il donne des instructions à quelqu'un)",
+        "Le 'Écoutez' de la fin : 'Écoutez, je vais réfléchir, je vous rappelle' = traduction : jamais"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Bon...' ou 'Écoutez...'",
+        "Dit 'Hein' en fin de phrase pour forcer l'acquiescement",
+        "Emploie 'franchement' quand il est vraiment énervé",
+        "Tutoie facilement après 2 minutes si le courant passe, vouvoie froidement sinon"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "20 secondes maximum. Après il coupe avec un 'Oui d'accord mais concrètement...' S'il ne coupe pas, c'est qu'il fait autre chose et n'écoute plus."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Saison qui démarre (mai), stress maximum. Vient d'avoir un enterrement de vie de garçon qui a failli dégénérer samedi dernier dans l'hôtel de Dinard. Le problème de livraison la semaine dernière l'a mis en rage parce qu'il a dû gérer en urgence un remplacement via un grossiste local (surcoût + produits pas au niveau habituel). Son chef de Cabourg a menacé de partir si 'ça continue'.",
+      "priorites_actuelles": [
+        "Assurer la qualité de service pour la haute saison qui commence",
+        "Garder ses chefs de cuisine (turnover infernal dans la profession)",
+        "Maintenir ses notes Google/TripAdvisor au-dessus de 4,3/5",
+        "Préparer l'ouverture d'un 4ème établissement en 2026 (projet secret, banque pas encore OK)"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans, généralement satisfait. Mais c'est la 3ème micro-défaillance en 18 mois (les deux premières étaient 'passables', celle-ci non). A failli partir il y a 2 ans chez le concurrent mais le commercial de l'époque avait bien géré.",
+      "fournisseur_actuel": "Vous êtes son fournisseur actuel, mais il a déjà demandé 2 devis à votre concurrent Breton (Armor Frais Hôtellerie) suite à l'incident. Rendez-vous prévu avec leur commercial jeudi prochain.",
+      "budget_disponible": "Contrat actuel environ 45K€/an sur les 3 établissements. Marge de manœuvre nulle pour augmenter : il faut juste que ça marche."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître franchement l'erreur sans excuses corporates bidons : 'On a merdé, point'",
+        "Proposer une compensation CONCRETE (pas un geste commercial ridicule de 50€, mais un vrai truc)",
+        "Montrer qu'on a compris l'impact réel (réputation, chef qui râle, stress saison) pas juste 'désolé du désagrément'",
+        "Mettre un nom et un numéro direct sur la garantie : 'Moi Patrick, voici mon 06, prochain pépin tu m'appelles direct'",
+        "Parler chiffres et délais précis : 'Livraison garantie avant 7h', pas 'on va faire notre maximum'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème : 'Ça arrive à tout le monde'",
+        "Rejeter la faute sur la logistique/autre service : 'C'est pas moi c'est l'entrepôt'",
+        "Langue de bois procédurale : 'On a mis en place un plan d'action correctif'",
+        "Demander des détails comme si on le soupçonnait d'exagérer : 'Vous êtes sûr que...'",
+        "Finir par du forcing commercial : 'Bon alors je vous envoie le bon de commande pour juin ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous... Écoutez franchement j'ai pas la tête à ça là, j'ai le livreur de linge qui est en bas et mon chef de Cabourg qui me harcèle pour les légumes de demain.",
+        "sous_texte": "Je suis encore énervé du dernier incident, je vous fais sentir que vous n'êtes plus prioritaire dans ma journée. Test : est-ce que vous allez insister lourdement ou respecter ma situation ?",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa situation concrète, proposer un timing précis court (2min max), montrer qu'on comprend le contexte terrain"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon... Je vous écoute mais faites vite hein, parce que après la semaine dernière franchement j'ai pas envie d'entendre des belles paroles.",
+        "sous_texte": "Je vous donne une chance mais je suis sur mes gardes. Prouvez-moi que cet appel ne sera pas du baratin habituel. Ma patience est à zéro.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aller droit au but, reconnaître l'erreur immédiatement sans détour, parler solutions concrètes pas promesses"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "L'impact ? Vous voulez savoir l'impact ? Mon chef il a failli me claquer la porte, j'ai dû courir chez le grossiste du coin en payant 30% plus cher, et j'ai eu deux tables qui ont fait la gueule sur la qualité samedi soir. Voilà l'impact.",
+        "sous_texte": "Je suis en colère et j'ai besoin de vider mon sac. J'ai subi un stress énorme et des conséquences réelles. Est-ce que vous allez vraiment écouter ou minimiser ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Écouter sans couper ni se justifier, reformuler pour montrer qu'on a vraiment entendu, valider l'émotion avant de proposer quoi que ce soit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais, c'est ce que le commercial m'avait déjà dit il y a deux ans quand y'avait eu le problème sur Dinard. Et regardez, ça recommence.",
+        "sous_texte": "J'ai déjà donné une seconde chance. Vous êtes en train de consommer votre crédit définitivement. Historique négatif qui s'accumule.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'historique, ne pas redire les mêmes choses qu'avant, montrer ce qui a CHANGÉ concrètement dans le processus depuis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis franchement, c'est la troisième fois en 18 mois hein. À un moment faut arrêter de se foutre de la gueule du monde.",
+        "sous_texte": "Pattern identifié. Ce n'est plus un accident isolé, c'est un problème structurel chez vous. Ma confiance est rompue, pas juste ébranlée.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Impossible de nier le pattern. Reconnaître explicitement, expliquer la cause racine identifiée, montrer le changement organisationnel mis en place"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, entre nous, j'ai déjà deux devis sur mon bureau là. Armor Frais ils m'ont appelé mardi, leur commercial il vient jeudi. Pourquoi je resterais chez vous ?",
+        "sous_texte": "Je veux voir si vous paniques ou si vous avez de vrais arguments. Le concurrent est une réalité, pas un bluff. Montrez-moi votre valeur ajoutée MAINTENANT.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, reconnaître la légitimité de sa démarche, rappeler l'historique positif et mettre la vraie garantie sur la table"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais 'plan d'action' 'process amélioré' tout ça, c'est des mots hein. Concrètement, qu'est-ce qui va changer pour MOI ?",
+        "sous_texte": "Je détecte la langue de bois corporate. Descendez du concept et parlez-moi en termes terrain, avec des garanties tangibles que je peux vérifier.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Traduire en bénéfice client concret, donner des éléments vérifiables (nom, numéro, délai chiffré, compensation mesurable)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et le geste commercial là, c'est quoi exactement ? Parce que si c'est 100 balles de remise sur 45 000 € de contrat, laissez tomber hein.",
+        "sous_texte": "Test de votre marge de manœuvre et de votre sérieux. Un geste ridicule confirmera que vous ne mesurez pas la gravité. Un vrai geste peut me faire réfléchir.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une compensation proportionnelle à la gravité ET à la valeur client (3 hôtels, 4 ans d'ancienneté, potentiel 4ème établissement)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais moi mon problème c'est pas dans 6 mois, c'est MAINTENANT. La saison elle démarre là, j'ai pas le droit à l'erreur jusqu'en septembre.",
+        "sous_texte": "Timing critique. Les promesses à moyen terme ne me servent à rien. J'ai besoin de sécurité IMMÉDIATE pour les 4 prochains mois, période make-or-break pour mon CA annuel.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un dispositif de sécurité spécifique pour la période mai-septembre, avec engagement personnel et numéro direct d'escalade"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites ça mais le problème c'est que je peux plus faire confiance hein. Moi j'ai mes chefs qui comptent sur moi, j'ai mes clients, j'ai TripAdvisor... Je peux pas me permettre.",
+        "sous_texte": "Confiance brisée. Les mots ne suffisent plus. J'ai des tiers qui dépendent de ma décision (équipe, clients, réputation en ligne). Le risque est trop élevé pour moi.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconstruire la confiance par engagement personnel vérifiable, peut-être période d'essai avec clause de sortie facilitée, implication hiérarchique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais réfléchir tout ça. Je vous rappelle dans la semaine.",
+        "sous_texte": "Fuite polie. Je ne suis pas convaincu mais je veux clore l'appel sans conflit. Traduction réelle : je ne rappellerai pas, je vais signer avec Armor Frais jeudi.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détecter la fuite, la nommer avec respect, créer urgence légitime (RDV concurrent jeudi), obtenir mini-engagement (rappel après RDV concurrent pour comparer ?)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que moi les belles paroles j'en ai entendu plein. Là il me faut des garanties en béton, et franchement je sais pas si vous pouvez me les donner.",
+        "sous_texte": "Dernière chance de prouver votre différence. Si vous n'avez rien de tangible à mettre sur la table maintenant, c'est fini. Je teste votre capacité à engager vraiment votre boîte.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Sortir l'engagement maximum : implication direction, garantie contractuelle de service, compensation automatique si défaillance, période d'essai sécurisée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis vous comprenez, moi j'ai trois établissements. Si ça merde sur l'un, ça peut contaminer les autres. C'est trop risqué pour moi de rester.",
+        "sous_texte": "Argument rationnel massue. Le risque pour mon groupe est supérieur au bénéfice de rester. Je vous explique ma logique business pour que vous compreniez que ce n'est pas émotionnel.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retourner l'argument : notre connaissance de ses 3 établissements est un actif, proposer pilote sur 1 établissement, garantie étendue si déploiement sur les 3"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon ben écoutez, je vais être honnête avec vous : j'ai rendez-vous avec Armor Frais jeudi. À moins que vous ayez quelque chose de vraiment béton à me proposer là tout de suite, je vais signer avec eux. Parce que franchement, moi j'ai plus le temps de gérer ça.",
+      "condition_declenchement": "Si le commercial n'a pas réussi à reconstruire la confiance avec des engagements concrets et vérifiables + compensation significative. Moment de vérité où Patrick force la décision immédiate."
+    },
+    "pattern_escalade": "Patrick commence froid/agressif (accroche), vide son sac si on le laisse parler (découverte), teste la solidité des engagements (argumentation), puis soit se referme poliment si pas convaincu, soit s'ouvre vraiment si les réponses sont cash et concrètes. Chaque objection non traitée correctement réduit la fenêtre de tir. La mention du concurrent arrive comme une guillotine pour forcer le vendeur à sortir ses vraies cartes.",
+    "piege_classique": "Vouloir argumenter sur les qualités du produit/service ou la relation passée. Patrick s'en fout : le passé est souillé par les 3 incidents, le produit a déjà prouvé qu'il pouvait être défaillant. Le seul levier : reconnaissance totale de l'erreur + garantie béton future + compensation proportionnée + engagement personnel avec nom/prénom/06. Tout le reste est du bruit qui l'agace et précipite son départ vers Armor Frais."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur BtoB hotellerie-restauration",
+      "description": "entreprise fournissant produits ou services au secteur hotelier-restauration avec clientele existante d'hotels independants et petits groupes"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "produits ou services destines aux hotels-restaurants (possiblement alimentaire, equipement, linge, services maintenance, ou autres fournitures hotellerie)",
+      "proposition_valeur": "fiabilite, qualite et service regulier pour professionnels de l'hotellerie-restauration",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "relation existante etablie, connaissance du client et de ses besoins specifiques"
+    },
+    "objectif_appel": {
+      "type": "resolution de crise et retention client",
+      "description": "gestion de crise client et preservation de la relation commerciale face a une reclamation serieuse avec menace de defection",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "gestion_reclamation_client_existant",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client mécontent — Fournisseur hôtellerie-restauration",
+    "vous_etes": "Commercial BtoB chez un fournisseur pour l'hôtellerie-restauration, en charge du compte Groupe Les Trois Tilleuls depuis 4 ans.",
+    "vous_vendez": "Fournitures pour hôtels-restaurants (produits frais, alimentaire, équipements) — Contrat actuel 45K€/an sur 3 établissements.",
+    "vous_appelez": "Patrick Vermeulen, 52 ans, propriétaire-directeur du Groupe Hôtelier Les Trois Tilleuls (3 hôtels en Normandie/Bretagne). Pragmatique, cash, allergique au baratin. Hyper-réactif sur tout ce qui touche à sa réputation.",
+    "ce_que_vous_savez": [
+      "Client depuis 4 ans, généralement satisfait mais incident de livraison la semaine dernière",
+      "C'est la 3ème défaillance en 18 mois — celle-ci a déclenché une vraie crise",
+      "Il a dû gérer en urgence via un grossiste local (surcoût + qualité inférieure)",
+      "Son chef de Cabourg a menacé de partir si 'ça continue'",
+      "Il a demandé 2 devis au concurrent Armor Frais Hôtellerie — RDV avec leur commercial jeudi prochain",
+      "Saison haute qui démarre (mai), stress maximum sur la qualité de service"
+    ],
+    "votre_objectif": "Sauver le compte : reconnaître l'erreur franchement, proposer une compensation concrète, et empêcher le RDV concurrent de jeudi.",
+    "vos_atouts": [
+      "4 ans de relation, vous connaissez ses 3 établissements et leurs spécificités",
+      "Vous avez bien géré une crise similaire il y a 2 ans qui avait failli le faire partir",
+      "Potentiel projet 4ème établissement en 2026 (il ne sait pas que vous le savez)",
+      "Vous pouvez engager une hotline directe et des garanties de livraison avant 7h"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:14:49Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15492,
+    "total_time_s": 139.7
+  }
+}

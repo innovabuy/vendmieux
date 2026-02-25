@@ -1,0 +1,346 @@
+{
+  "id": "scenario_1771519186",
+  "description_originale": "Vous appelez une ESN ou intégrateur IT de 20-50 salariés. C'est l'assistante commerciale qui décroche. Vous devez passer le barrage pour parler au dirigeant / directeur technique. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : telecoms_it]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "ESN ou intégrateur IT de 20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant ou Directeur Technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante commerciale",
+          "role": "barrage",
+          "comportement": "filtre les appels et protège le décideur"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux ESN et intégrateurs IT",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'assistante commerciale",
+        "Accès difficile au décideur"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel",
+        "Discours non adapté au barrage secrétariat",
+        "Absence de technique pour créer l'intérêt rapidement",
+        "Difficulté à justifier la mise en relation auprès du filtrage"
+      ],
+      "probleme_racine": "Incapacité à démontrer la valeur de l'appel en quelques secondes pour franchir le barrage secrétariat et accéder au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrage secrétariat et décrocher des rendez-vous avec les décideurs IT",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Probablement fournisseur de solutions/services pour le secteur IT/télécoms",
+      "entreprise_description": "Entreprise prospectant des ESN et intégrateurs IT",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Nom et description de l'entreprise vendeuse",
+        "Proposition de valeur spécifique",
+        "Prix indicatif",
+        "Zone géographique ciblée",
+        "Objections typiques rencontrées",
+        "Arguments de valeur pour convaincre l'assistante",
+        "Références clients existantes"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur Technique et Associé",
+      "entreprise": {
+        "nom": "Nexiom Solutions",
+        "secteur": "ESN spécialisée infrastructure Cloud et cybersécurité",
+        "taille": "32 collaborateurs (22 consultants, 10 support/admin)",
+        "ca_approximatif": "3,2M€ en 2023, croissance +18% mais marge qui se réduit"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et orienté ROI immédiat",
+        "Méfiant envers les commerciaux 'bullshit' du secteur IT",
+        "Surinvesti dans l'opérationnel au détriment du stratégique"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité de sa boîte qu'il a co-fondée en 2014",
+        "Éviter de perdre du temps avec des vendeurs qui ne connaissent rien à son métier",
+        "Trouver des solutions qui réduisent vraiment sa charge mentale",
+        "Prouver qu'il peut scaler sans perdre l'ADN technique de Nexiom"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un contrat mal ficelé comme en 2021 avec un éditeur de CRM",
+        "Décevoir ses équipes avec un énième 'outil miracle' qui ne sert à rien",
+        "Perdre le contrôle sur la qualité technique en déléguant",
+        "Investir dans quelque chose qui devient obsolète en 18 mois"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Il estime recevoir 15-20 sollicitations par semaine, dont 90% sont hors-sujet. Dit souvent 'Les commerciaux ne pigent rien à notre métier'. Respecte uniquement ceux qui parlent technique ET business. A tendance à tester la crédibilité en posant des colles techniques dès la 3e minute.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais froid, avec une pointe d'impatience. Phrases courtes. Répond 'Oui, je vous écoute' en continuant à taper sur son clavier.",
+      "signaux_interet": [
+        "Arrête de taper sur son clavier",
+        "Demande 'Concrètement, ça donne quoi chez un client comme nous ?'",
+        "Pose une question technique précise pour vérifier la crédibilité",
+        "Dit 'Attendez' et sort un stylo pour noter"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoutez, là j'ai vraiment pas le temps'",
+        "Coupe la parole : 'C'est pas pour nous ça'",
+        "Ton qui devient cassant : 'Vous vendez quoi exactement ?'",
+        "Silence suivi de 'Ouais bah envoyez-moi un mail' = mort de l'appel"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Franchement...'",
+        "Dit 'Voilà' comme ponctuation quand il veut clore un sujet",
+        "Utilise 'Écoute' ou 'Écoutez' pour reprendre le contrôle de la conversation",
+        "Lance des 'Mouais...' quand il est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Moins de 45 secondes. Au-delà, il coupe ou décroche mentalement. Déteste les 'pitchs' et préfère le format question-réponse."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Nexiom est en croissance mais sous tension : les marges se réduisent à cause de la guerre des prix sur les TJM. Stéphane passe 60% de son temps à éteindre des incendies opérationnels (recrutement, avant-ventes complexes, litiges clients). Son associé (profil commercial) le presse d'industrialiser les process. Il sait qu'il doit déléguer mais ne trouve personne 'à son niveau'.",
+      "priorites_actuelles": [
+        "Recruter 2-3 profils seniors (impossible à trouver)",
+        "Améliorer le taux de conversion des avant-ventes (actuellement ~28%)",
+        "Réduire son temps passé sur les sujets administratifs",
+        "Gagner en visibilité sur un marché qui se consolide"
+      ],
+      "experience_avec_offre_similaire": "A testé en 2021 une formation commerciale 'générique' (2 jours, 3500€) qu'il a trouvée 'hors-sol' et inadaptée au B2B IT. Deux commerciaux formés sont partis 6 mois après. Depuis, il est devenu allergique aux 'formations vendues par des formateurs qui n'ont jamais vendu'.",
+      "fournisseur_actuel": "Aucun pour de la formation commerciale. Travaille avec un cabinet RH local pour du recrutement (résultats décevants). Utilise LinkedIn Sales Navigator en mode autodidacte.",
+      "budget_disponible": "Entre 5K€ et 12K€ si ROI démontrable sur 6 mois. Mais budget non fléché = doit convaincre son associé. Préfère payer cher pour du sur-mesure que pas cher pour du générique."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client similaire (ESN de 30-50p) avec résultat chiffré précis",
+        "Parler sa langue : 'taux de transfo', 'TJM', 'cycle de vente', pas 'solutions innovantes'",
+        "Reconnaître d'emblée sa contrainte temps : 'Je sais que vous êtes sous l'eau'",
+        "Poser une question qui révèle un angle mort : 'Comment vous gérez les avant-ventes quand vous êtes à 3 RDV en parallèle ?'",
+        "Proposer un format court et opérationnel : '20 minutes pour voir si ça colle'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je ne vous dérange pas ?' (= tu ME déranges déjà)",
+        "Parler de 'transformation digitale' ou autre buzzword creux",
+        "Demander 'Qui s'occupe de la formation chez vous ?' (= il sait que tu prospectes au hasard)",
+        "Insister après un premier 'non' : il raccroche",
+        "Proposer un RDV sans avoir créé de valeur : 'Je passe vous voir ?'",
+        "Ne pas connaître son métier : 'Vous faites du conseil IT c'est ça ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai vraiment pas le temps là, envoyez-moi un mail et on verra",
+        "sous_texte": "Je ne vois pas encore pourquoi je devrais t'accorder 30 secondes de plus. Prouve-moi que tu n'es pas comme les 15 autres cette semaine.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte temps ET créer un micro-engagement : 'Je comprends. 20 secondes : on a aidé une ESN de 35 personnes à passer de 28% à 41% de taux de conversion sur les avant-ventes. Si ça vous parle, on creuse 3 minutes, sinon je vous laisse.' Ne JAMAIS dire 'je ne vous dérange pas' ou supplier."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour vendre quoi exactement ?",
+        "sous_texte": "Ton introduction était floue. Je teste si tu es un vendeur bullshit ou si tu connais vraiment mon métier. Attention, je vais te cataloguer dans les 10 prochaines secondes.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse ultra-concrète en parlant SA langue : 'On forme les équipes commerciales d'ESN à améliorer leur taux de transformation sur les avant-ventes complexes et à réduire les cycles de vente. Concrètement : mieux qualifier, mieux pitcher la valeur, mieux closer.' Éviter les concepts creux type 'excellence commerciale' ou 'transformation'."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà fait une formation commerciale en 2021, ça a servi à rien. Les deux gars formés sont partis 6 mois après.",
+        "sous_texte": "J'ai été échaudé. Je ne veux plus investir dans du théorique déconnecté. Prouve-moi que ce ne sera pas du réchauffé générique. J'ai besoin de concret applicable immédiatement dans MON contexte.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser la cicatrice + différencier : 'Je comprends. C'était quel type de formation ? [Écouter]. Le problème des formations génériques c'est qu'elles ne parlent pas le langage IT : TJM, avant-vente, cycle long. Nous on part de VOS deals réels : je prends 3-4 opportunités en cours, on bosse dessus en mode atelier, vos équipes repartent avec des outils actionnables le lendemain. Pas de théorie hors-sol.' Puis question : 'Sur vos avant-ventes actuelles, c'est quoi le point qui coince le plus souvent ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... mais vous connaissez quoi au secteur IT vous ? Parce que franchement les commerciaux qui nous appellent pigent rien à notre métier",
+        "sous_texte": "Je vais te tester techniquement. Si tu ne connais pas les termes (TJM, régie, forfait, avant-vente, cycle de décision IT), tu perds toute crédibilité. Je ne veux pas former quelqu'un qui va apprendre sur mon dos.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer ET prouver : 'Bonne question. Moi je viens pas de l'IT, mais j'ai formé 14 ESN sur les 18 derniers mois, entre 20 et 80 personnes. Je connais vos enjeux : guerre des prix sur les TJM, cycles de vente qui s'allongent, difficulté à vendre du forfait vs de la régie, qualification des avant-ventes qui prend un temps fou. [Citer 1 client similaire avec résultat]. Plutôt que de vous raconter ma vie, dites-moi : chez vous, c'est quoi le principal irritant sur vos process commerciaux actuellement ?' Retourner en question métier précise."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà. Alors je vois pas trop comment vous allez m'aider concrètement. Nos deals sont tous différents, c'est du sur-mesure à chaque fois",
+        "sous_texte": "Mon business est complexe et unique (comme tout le monde pense). Je ne crois pas qu'une méthode générique puisse s'appliquer. Démontre-moi que tu comprends la complexité ET que tu as une approche adaptable.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider + recentrer sur les patterns : 'Exact, chaque deal est unique. Mais si je prends vos 10 dernières avant-ventes perdues, je vous parie qu'on va trouver 3-4 patterns qui reviennent : mauvaise qualification initiale, prix annoncé trop tôt, pas de champion interne identifié, conclusion qui traîne... On va pas plaquer une méthode, on va extraire VOS bonnes pratiques sur vos deals gagnés et structurer ça pour que ce soit reproductible. Concrètement : sur vos deals perdus récemment, vous savez généralement pourquoi ça a foiré ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais combien de temps ça prend votre truc ? Parce que là mes gars sont déjà à bloc sur les missions",
+        "sous_texte": "Je ne veux pas mobiliser mes équipes sur plusieurs jours pour une formation qui va les sortir du productif. Le temps c'est de l'argent, surtout en ESN. Propose-moi un format qui ne désorganise pas ma boîte.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur le format + montrer le ROI temps : 'Je vous comprends. Format court : 2 demi-journées espacées de 3 semaines maximum. Entre les deux, vos équipes appliquent sur des deals réels. Pas de mobilisation sur 3 jours consécutifs. Et le ROI temps est direct : si on améliore de 10% votre taux de conversion, ça veut dire combien de deals en plus sur un an ? [Le faire calculer]. Donc en gros, 1 journée investie pour X deals en plus. Ça se tient comme équation ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais c'est quoi le prix de votre prestation ?",
+        "sous_texte": "Je veux savoir si c'est dans mon budget avant d'aller plus loin. Si c'est trop cher ou trop cheap (= pas sérieux), je coupe court. Je veux aussi voir si tu assumes ton prix ou si tu vas bafouiller.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ancrer la valeur AVANT le prix : 'On va y venir. Avant de parler budget, je veux être sûr qu'on est alignés sur les objectifs. Vous m'avez dit que votre taux de conversion est à 28% et que vous visez quoi, 35-40% ? [Confirmation]. Sur vos 3,2M€ de CA, ça représente combien de deals gagnés en plus ? [Calcul ensemble]. OK donc si je vous aide à aller chercher ça, ça vaut combien pour vous ? [Laisser répondre]. Notre prestation est à [fourchette 8-12K€ selon format], avec un paiement en 2 fois. Sachant qu'un seul deal supplémentaire rembourse l'investissement, ça vous semble cohérent ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais franchement 10 000 balles quand même... c'est cher pour de la formation, non ?",
+        "sous_texte": "Je teste ton ancrage prix. Je veux voir si tu vas lâcher une remise ou défendre ta valeur. Si tu baisses facilement, ça veut dire que ton prix était gonflé. Si tu défends, je respecterai plus.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Défendre sans agressivité + recadrer sur ROI : 'Je comprends que ça puisse paraître élevé. Deux façons de voir : soit c'est 10K€ de formation, soit c'est un investissement qui rapporte X deals en plus cette année [rappeler le calcul]. Vous payez combien un recrutement raté ? [Attendre]. 15-20K€ entre le process et le temps perdu ? Nous on intervient sur vos équipes en place. Ceci dit, si 10K€ c'est bloquant budgétairement, on peut regarder un format plus light sur 1 jour à 5K€, mais on aura moins d'impact. Vous préférez quoi : de l'impact ou du moins cher ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez franchement c'est intéressant, mais là je dois d'abord en parler à mon associé. C'est lui qui gère le commercial",
+        "sous_texte": "Je me défile parce que soit je ne suis pas convaincu à 100%, soit c'est vrai que je dois valider, soit je veux gagner du temps pour réfléchir. En réalité, si j'étais ultra-convaincu, je prendrais la décision maintenant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser + impliquer : 'Bien sûr. Question : si votre associé vous demande ce que vous en pensez VOUS, qu'est-ce que vous allez lui dire ? [Écouter attentivement]. OK. Et à votre avis, qu'est-ce qui pourrait le faire hésiter de son côté ? [Anticiper objections]. Voilà ce que je vous propose : on cale un point téléphonique à 3, je réponds à ses questions, et comme ça vous décidez ensemble. Ça vous va jeudi 14h ou vendredi 10h ?' Sinon c'est mort, l'associé devient l'excuse fantôme."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, bah écoutez envoyez-moi tout ça par mail, je regarde et je vous rappelle",
+        "sous_texte": "Je veux clore l'appel poliment sans m'engager. Dans 90% des cas, ça veut dire non mais je n'ose pas le dire. Soit je ne suis pas convaincu, soit je veux comparer, soit j'ai juste pas envie de dire non frontalement.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confronter gentiment + engager : 'Stéphane, soyons francs 30 secondes : quand vous me dites ça, soit c'est vraiment OK et vous voulez juste poser ça par écrit, soit c'est une façon polie de me dire non. Dans le deuxième cas, pas de souci, mais dites-le-moi, je préfère. Qu'est-ce qui vous fait hésiter réellement ? [Silence, laisser parler]. OK. [Traiter la vraie objection]. Donc plutôt que de s'envoyer des mails, on cale 15 minutes mardi prochain, je vous envoie une proposition sur-mesure d'ici là, et on voit si ça tient la route. Mardi 11h ou 15h ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, moi je suis pas contre hein, mais faut que je voie avec les équipes déjà. Je vais leur en toucher un mot",
+        "sous_texte": "Je délègue la responsabilité du 'non' aux équipes. Soit c'est une excuse, soit je ne suis vraiment pas décideur final. Dans tous les cas, si je ne m'engage pas personnellement, ça ne se fera jamais.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Repositionner le décideur : 'Je comprends. Question : si vos équipes vous disent qu'elles sont partantes, VOUS vous validez ? [Attendre]. OK. Et si elles sont réticentes, vous faites quoi ? [Creuser]. Parce que généralement, les équipes sont toujours réticentes au début, c'est normal. Ce qui compte c'est VOTRE conviction à vous en tant que Directeur. Vous êtes convaincu que ça peut aider Nexiom ou pas ? [Silence]. OK alors voilà ce qu'on fait : je vous envoie un récap, vous le présentez en 5 minutes en réunion d'équipe, et on fait un point vendredi pour décider. Ça marche ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement je vois pas trop le problème, nos commerciaux ils se débrouillent bien. Le vrai sujet c'est qu'on trouve pas de profils à recruter",
+        "sous_texte": "Je minimise le problème commercial parce que soit je ne le vois pas vraiment, soit je suis dans le déni, soit je veux tester si tu vas insister ou me croire. Si tu lâches l'affaire, tu n'es pas un bon commercial.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Challenger avec respect + données : 'OK, tant mieux si ça roule. Juste par curiosité : vous m'avez dit 28% de taux de conversion sur les avant-ventes, c'est ça ? [Oui]. Dans votre secteur, les meilleures ESN sont entre 38 et 45%. Donc il y a peut-être 10-15 points à aller chercher, ce qui ferait combien de deals en plus ? [Calcul]. Je dis pas que vos gars sont mauvais, je dis qu'il y a peut-être de la marge. Mais effectivement, si le recrutement est votre priorité numéro 1, on peut en reparler dans 6 mois. C'est votre call.' [Se taire]."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous m'appelez pour quoi au juste ? C'est [prénom de l'assistante] qui vous a passé ?",
+        "sous_texte": "Je vérifie si tu as vraiment franchi le barrage légitimement ou si tu t'es incrusté. Si tu as menti à mon assistante, je vais te griller et tu perds toute crédibilité. Je veux voir si tu assumes ton approche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer avec transparence : 'Oui, c'est elle qui m'a passé. Je lui ai dit que j'appelais concernant l'amélioration du taux de conversion commerciale chez les ESN. Je sais que vous recevez 15 appels par jour, donc je vais être direct : [Accroche courte avec résultat client similaire]. Ça vaut 2 minutes de votre temps ou je vous laisse ?' Transparence totale, pas de manipulation, respect du temps."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, une formation ça marche 2 semaines et après les gens reprennent leurs vieilles habitudes. Comment vous garantissez que ça va tenir dans le temps ?",
+        "sous_texte": "J'ai peur d'investir pour rien. Je veux des garanties sur la pérennité. Je teste aussi si tu as un vrai dispositif d'accompagnement ou si c'est du one-shot.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la crainte + mécanisme d'ancrage : 'Vous avez complètement raison, et c'est exactement pour ça qu'on ne fait JAMAIS une formation one-shot. Nous on fait : Jour 1 = méthode + outils, puis 3 semaines d'application sur le terrain avec nous en support (on débrief 2-3 deals ensemble par Zoom), puis Jour 2 = on analyse ce qui a marché, on ajuste, on ancre. Plus un outil de suivi qu'ils gardent. Résultat : 6 mois après, nos clients appliquent encore 70% des méthodes. Mais je vais être honnête : si vos équipes ne s'impliquent pas entre les sessions, ça ne marchera pas. Vous les sentez motivés pour bosser entre les sessions ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous travaillez avec qui déjà dans le secteur ? Vous pouvez me citer des clients ?",
+        "sous_texte": "Je veux vérifier ta crédibilité et tes références. Si tu bosses avec mes concurrents directs, ça m'intéresse (et ça m'inquiète aussi). Si tu n'as personne dans mon secteur, tu perds des points. Je veux des noms précis, pas du bullshit.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer des références précises (si autorisé) ou profils similaires : 'On a bossé avec [Nom ESN 35p région X] qui est passée de 30% à 42% de conversion, [Nom ESN 50p] qui a réduit son cycle de vente de 87 à 61 jours, et 3-4 autres qu'on ne peut pas citer par confidentialité. Toutes entre 20 et 80 personnes, spécialisées infra/cloud ou dev. Si vous voulez, je peux vous mettre en contact avec [Nom] chez [ESN], il a le même profil que vous. Ça vous rassurerait ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voilà, écoutez franchement c'est pas bête ce que vous dites. Par contre là on est en plein dans les budgets de fin d'année, donc c'est compliqué. On en reparle début d'année prochaine peut-être ?",
+      "condition_declenchement": "Arrive quand le prospect est intellectuellement convaincu mais cherche une échappatoire temporelle pour ne pas décider maintenant. Survient généralement après 15-20 minutes d'échange si le vendeur n'a pas créé d'urgence."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes (pas le temps, envoyez un mail) pour filtrer. Si le vendeur tient, il passe en mode test (questions techniques, demande de preuves). S'il sent de la crédibilité, il ouvre sur ses vraies craintes (échec passé, ROI incertain, manque de temps équipes). Enfin, si tout est OK mais qu'il hésite encore, il utilise des tactiques pour gagner du temps (en parler à l'associé, timing budgétaire). La clé : ne jamais accepter les objections de surface, toujours creuser pour atteindre la vraie résistance.",
+    "piege_classique": "Stéphane donne des signaux d'intérêt verbaux ('OK', 'intéressant', 'je vois') tout en continuant à taper sur son clavier ou consulter ses écrans. Le vendeur croit qu'il est engagé alors qu'il est en mode multitâche. Le piège : continuer à pitcher sans vérifier l'engagement réel. Solution : poser des questions qui obligent une vraie réflexion ('Concrètement, sur vos 3 derniers deals perdus, c'était quoi le point de blocage ?') et écouter la QUALITÉ de la réponse, pas juste le 'oui' poli. S'il ne développe pas ou reste vague, il n'est pas vraiment présent."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Probablement fournisseur de solutions/services pour le secteur IT/télécoms",
+      "description": "Entreprise prospectant des ESN et intégrateurs IT"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux ESN et intégrateurs IT de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrage secrétariat et décrocher des rendez-vous avec les décideurs IT",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — ESN infrastructure Cloud",
+    "vous_etes": "Commercial d'une société spécialisée dans l'accompagnement des ESN et intégrateurs IT sur leurs enjeux de croissance et de performance commerciale.",
+    "vous_vendez": "Accompagnement sur-mesure pour améliorer le taux de conversion des avant-ventes et structurer les process commerciaux (budget estimé entre 5K€ et 12K€).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur Technique et Associé chez Nexiom Solutions, ESN de 32 personnes spécialisée Cloud et cybersécurité. Pragmatique, méfiant, surchargé. Déteste les commerciaux 'bullshit' et teste la crédibilité dès les premières minutes.",
+    "ce_que_vous_savez": [
+      "Nexiom Solutions : 32 collaborateurs, 3,2M€ CA, +18% croissance mais marges en tension",
+      "Stéphane passe 60% de son temps sur l'opérationnel, veut industrialiser mais peine à déléguer",
+      "Taux de conversion avant-vente actuel : ~28%",
+      "Mauvaise expérience en 2021 avec une formation commerciale 'hors-sol' à 3500€",
+      "Reçoit 15-20 sollicitations par semaine, 90% hors-sujet selon lui"
+    ],
+    "votre_objectif": "Franchir le barrage de l'assistante commerciale, puis obtenir un RDV de 20 minutes avec Stéphane en créant de la valeur immédiate.",
+    "vos_atouts": [
+      "Vous parlez le langage terrain : TJM, taux de transfo, cycle de vente",
+      "Vous avez accompagné 3 ESN de 30-50 personnes avec des résultats chiffrés",
+      "Vous proposez du sur-mesure adapté au B2B IT, pas du générique",
+      "Vous respectez sa contrainte temps : format court, opérationnel, ROI démontrable"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:39:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17394,
+    "total_time_s": 195.5
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "id": "scenario_1771519906",
+  "description_originale": "Vous avez présenté votre offre au directeur des achats centraux d'une chaîne de distribution de 100+ points de vente il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : commerce_distribution]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "100+ points de vente - grande distribution",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après RDV malgré engagement",
+        "Perte de visibilité sur l'avancement du process de décision"
+      ],
+      "implicites": [
+        "Difficulté à gérer le silence radio post-présentation",
+        "Manque de maîtrise du timing de relance",
+        "Probable absence de jalons/deadlines fixés lors du RDV initial",
+        "Risque de perdre l'opportunité par inaction",
+        "Incertitude sur la bonne approche de relance sans paraître insistant"
+      ],
+      "probleme_racine": "Absence de cadrage du process de décision et des prochaines étapes lors du RDV initial, laissant le commercial en position d'attente passive"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la relance commerciale après silence radio : comprendre l'état d'avancement du dossier, réactiver l'intérêt, débloquer la décision et obtenir un engagement sur les prochaines étapes sans être perçu comme insistant ou désespéré",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise B2B vendant à la grande distribution",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Offre présentée au directeur des achats centraux d'une chaîne de distribution - nature exacte non précisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Montant du deal ou fourchette budgétaire",
+        "Raisons présumées du silence (budget, concurrence, priorités internes)",
+        "Niveau de qualification du besoin lors du RDV initial",
+        "Présence d'autres décideurs dans le process",
+        "Nom et informations de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Mercier",
+      "age": 51,
+      "poste": "Directeur des Achats Centraux",
+      "entreprise": {
+        "nom": "Distri-Ouest",
+        "secteur": "Grande distribution alimentaire",
+        "taille": "142 points de vente (supermarchés et hypermarchés)",
+        "ca_approximatif": "2,8 milliards d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par déformation professionnelle",
+        "Obsédé par le benchmark et la négociation jusqu'au dernier centime",
+        "Surcharge cognitive permanente - gère 300+ dossiers fournisseurs simultanément"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur via les économies générées pour la direction générale",
+        "Ne surtout pas se faire remarquer négativement - culture de l'évitement du risque",
+        "Protéger son périmètre contre les opérationnels qui court-circuitent les achats"
+      ],
+      "peurs_freins": [
+        "Changer de fournisseur et que ça se passe mal devant tout le comex",
+        "Se faire avoir sur le prix - hantise qu'un concurrent ait payé moins cher",
+        "Perdre du temps avec des solutions 'innovantes' qui ne passeront jamais l'étape budgétaire",
+        "Que son N+1 découvre qu'il traîne sur des dossiers"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des ennemis sympathiques - assume totalement de faire jouer la concurrence et de disparaître sans prévenir si un autre dossier devient prioritaire. Déteste viscéralement qu'on le relance trop vite car 'j'ai dit que je reviendrais vers vous'",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, regarde ostensiblement sa montre ou ses mails. Coupe régulièrement : 'Oui, oui, j'ai compris, et le prix ?' ou 'Très bien, envoyez-moi tout ça par mail, je regarde'",
+      "signaux_interet": [
+        "Prend des notes manuscrites sur un carnet Rhodia orange",
+        "Demande des détails techniques précis sur les pénalités de retard ou les conditions de sortie",
+        "Évoque spontanément des problèmes concrets avec le fournisseur actuel",
+        "Accepte de fixer une date ferme pour le prochain point"
+      ],
+      "signaux_rejet": [
+        "Reformule votre proposition en version discount : 'Donc en gros c'est comme [concurrent] mais avec...'",
+        "Répète 'Je vais en parler en interne' sans préciser à qui ni quand",
+        "Commence ses phrases par 'Écoutez franchement...' suivi d'une objection molle",
+        "Consulte son téléphone en plein milieu de votre démonstration de valeur"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' en début de phrase",
+        "Ponctue de 'Voilà voilà' quand il veut clore un sujet",
+        "'On n'est pas pressés hein' (alors qu'il l'est)",
+        "'Faut que je valide avec la direction' (bouclier universel)",
+        "Tutoiement faussement décontracté pour créer une fausse proximité tout en gardant le pouvoir"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper avec une question terre-à-terre ou un 'Oui mais concrètement, ça me coûte combien ?'. Déteste les slides de storytelling corporate."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Distri-Ouest sort d'un plan de transformation digitale coûteux (4 ans). La direction exige désormais de l'EBITDA, pas de l'innovation. Christophe est sous pression pour réduire de 3% les coûts d'achats indirects d'ici fin Q2. Deux de ses acheteurs sont en arrêt maladie, il compense lui-même.",
+      "priorites_actuelles": [
+        "Renégocier le contrat logistique avec Kuehne+Nagel (gros dossier, très politique)",
+        "Gérer la crise sur les emballages carton (pénurie fournisseur)",
+        "Préparer le budget 2025 - arbitrages en cours avec la DAF",
+        "Votre dossier est dans la pile 'à traiter' mais n'est pas top 5"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2-3 solutions dans cette catégorie ces 5 dernières années. L'une n'a jamais été déployée (sabotage passif des opérationnels), l'autre a foiré sur l'intégration SI. Il est donc vacciné contre les promesses.",
+      "fournisseur_actuel": "Un incumbent historique 'qui fait le job sans faire de vagues' - contrat renouvelé par tacite reconduction depuis 8 ans. Prix moyen, service moyen, zéro innovation mais zéro emmerdes.",
+      "budget_disponible": "Budget théoriquement là (enveloppe achats indirects) mais doit être validé ligne par ligne par Nathalie, la DAF, qui refuse 60% des dossiers d'office pour 'tenir les objectifs'. Christophe ne dira jamais ce chiffre au téléphone."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct (Système U, Intermarché) qui utilise déjà votre solution avec KPI chiffrés",
+        "Proposer une phase pilote courte (3 mois max) sur un périmètre réduit pour limiter son risque",
+        "Parler ROI concret en mois, pas en 'transformation' ou 'expérience'",
+        "Reconnaître explicitement que vous savez qu'il est débordé et proposer de faire le boulot de benchmark à sa place",
+        "Être cash sur le pricing dès le début - il respecte ça"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Le relancer 48h après le RDV avec un 'Alors, vous avez pu réfléchir ?' infantilisant",
+        "Lui envoyer du contenu marketing bullshit ('Livre blanc : la transformation digitale des achats')",
+        "Essayer de passer par un opérationnel pour faire pression sur lui",
+        "Lui dire 'Je comprends que vous soyez occupé' d'un ton condescendant",
+        "Présenter une solution qui nécessite 6 mois d'implémentation et 3 ETP dédiés",
+        "Critiquer frontalement son fournisseur actuel (loyauté corporatiste)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là dans 5 minutes, c'est pour quoi exactement ?",
+        "sous_texte": "Je ne me souviens plus précisément de votre dossier parmi les 50 autres, et je teste si vous avez quelque chose de nouveau ou si c'est juste une relance vide",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Être ultra-concis, rappeler le contexte du RDV en une phrase avec un élément mémorable, proposer un créneau précis pour rappeler"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui oui, j'ai bien reçu votre proposition... Écoutez j'ai pas encore eu le temps de regarder en détail, là on est à fond sur la négo logistique, c'est le bordel",
+        "sous_texte": "Votre dossier n'est absolument pas prioritaire et je ne sais pas quand il le sera. Je vous mets en attente polie sans m'engager",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa priorité sans la contester, proposer de prendre 3 minutes pour qualifier si le timing est bon ou mauvais, éviter de forcer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pour être franc avec vous, on a déjà un fournisseur qui fait à peu près la même chose, et franchement on n'a pas de souci majeur avec eux",
+        "sous_texte": "Prouvez-moi que ça vaut le risque et l'énergie de changer. Je ne vais pas bouger sans argument massif",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce que signifie 'à peu près' et 'pas de souci majeur' - il y a forcément des irritants. Ne pas attaquer le concurrent frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais voilà, faut que je valide avec la direction de toute façon, et vous savez comment c'est en ce moment, ils regardent chaque euro",
+        "sous_texte": "Je vous annonce que même si moi je suis convaincu, il y a un barrage budgétaire que je ne maîtrise pas. C'est mon bouclier pour éviter de m'engager",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander qui précisément valide, sur quels critères, et proposer de co-construire le dossier de justification avec les bons KPI"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez franchement, j'ai eu trois autres commerciaux cette semaine qui me promettent tous des économies de 20%, vous comprenez que je devienne méfiant... C'est quoi vos vraies références ?",
+        "sous_texte": "Je suis vacciné contre les discours commerciaux. Prouvez-moi avec du factuel et du vérifiable que vous n'êtes pas comme les autres",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des références ultra-précises avec noms, contextes similaires et KPI réels. Proposer une mise en relation directe si besoin"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui j'entends bien, mais concrètement ça me coûte combien par mois, tout compris ? Parce que souvent vous annoncez un prix et après il y a les options, le support, la formation...",
+        "sous_texte": "Je veux le vrai prix, pas le prix d'appel marketing. Je déteste les mauvaises surprises et je teste votre transparence",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette réaliste tout-compris immédiatement, expliquer les variables, montrer qu'on n'a rien à cacher"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... En fait c'est un peu comme ce que propose [concurrent], non ? Quelle est la vraie différence parce que là je vois pas trop ?",
+        "sous_texte": "Je vous teste pour voir si vous connaissez vraiment le marché et si vous pouvez articuler une différenciation claire. Sinon je vais juste comparer les prix",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider les points communs, puis se différencier sur 2 critères maximum ultra-concrets qui comptent pour LUI (pas du bullshit générique)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que là vous me parlez de 6 mois de déploiement... J'ai pas les ressources pour piloter ça, mes équipes sont déjà à flux tendu",
+        "sous_texte": "C'est un vrai frein : je n'ai ni le temps ni les hommes pour un projet lourd. Si vous ne simplifiez pas drastiquement, je vais laisser tomber",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une approche pilote ultra-light, sur périmètre réduit, avec votre équipe qui fait 80% du boulot. Réduire le risque et l'engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà voilà... Écoutez je vais en reparler en interne, je prends note de tout ça et je vous redis",
+        "sous_texte": "Je veux raccrocher sans m'engager. Cette phrase est mon exit standard quand je ne suis pas convaincu ou pas prêt à décider",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne PAS accepter ce flou. Demander précisément : avec qui, quand, sur quels points, et fixer un prochain point dans l'agenda immédiatement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On n'est pas pressés hein, faut que ça mûrisse. Là je peux rien vous promettre avant fin de trimestre minimum",
+        "sous_texte": "Je repousse la décision pour garder le contrôle et voir si d'autres priorités émergent. Je teste aussi votre capacité à créer de l'urgence légitime",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier s'il y a une vraie contrainte calendaire (budget, fin de contrat actuel, etc.) et la connecter à son intérêt. Sinon, accepter mais cadrer"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le souci c'est que même si moi je valide, après faut que ça passe chez Nathalie à la DAF, et elle refuse 6 dossiers sur 10 en ce moment... Je préfère être transparent avec vous",
+        "sous_texte": "C'est à moitié sincère : il y a vraiment un barrage budgétaire, mais je l'utilise aussi pour justifier mon inaction et tester si vous pouvez m'aider à construire le dossier",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Remercier pour la transparence, demander ce qui fait qu'un dossier passe chez Nathalie, proposer de co-construire l'argumentaire financier"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Honnêtement, je vois pas comment je justifie de changer alors que le fournisseur actuel tient ses engagements. C'est beaucoup d'énergie pour un gain pas évident",
+        "sous_texte": "Le statu quo me protège. Tant qu'il n'y a pas de crise majeure, pourquoi prendrais-je le risque de changer et d'être potentiellement blâmé si ça foire ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Faire émerger les coûts cachés du statu quo, les opportunités manquées, et réduire le risque perçu via pilote ou garantie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, rappelez-moi dans 3 semaines, là j'ai vraiment la tête sous l'eau avec le dossier Kuehne, je pourrai pas avancer avant",
+        "sous_texte": "Je veux vous sortir de ma todo list mentale pour 3 semaines. Soit vous acceptez et je risque de vous oublier, soit vous insistez et je vais vous trouver lourd",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa contrainte, proposer de faire avancer des éléments de son côté pendant ce temps (benchmark, calcul ROI, etc.) et fixer RDV précis dans 3 semaines"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être cash avec vous : là on a un gel budgétaire jusqu'à fin Q2, ordre de la direction générale. Même si je voulais, je peux rien valider avant juin. Désolé mais c'est comme ça, vous comprenez...",
+      "condition_declenchement": "Après plusieurs tentatives de closing, si le commercial a réussi à le convaincre sur le fond mais qu'il cherche une porte de sortie définitive sans perdre la face"
+    },
+    "pattern_escalade": "Christophe commence par des objections polies et vagues ('j'ai pas eu le temps', 'je dois valider en interne'). Si le commercial insiste sans apporter de valeur nouvelle, il passe à des objections plus directes sur le prix et la différenciation. Si la pression continue sans réponse satisfaisante, il sort l'artillerie lourde : blocage budgétaire, manque de ressources, ou comparaison défavorable avec un concurrent. Son pattern est défensif : il accumule les boucliers plutôt que d'attaquer frontalement.",
+    "piege_classique": "Christophe donne l'impression d'être convaincu en prenant des notes et en posant des questions techniques précises, puis disparaît totalement pendant 3 semaines. Quand on le relance, il sort une objection budgétaire ou hiérarchique qu'il n'avait jamais mentionnée. Le piège : confondre son intérêt intellectuel (il aime comprendre les solutions) avec un engagement décisionnel. Il faut absolument qualifier le circuit de décision et les contraintes budgétaires DÈS le premier RDV, sinon on se retrouve en relance aveugle."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise B2B vendant à la grande distribution"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Offre présentée au directeur des achats centraux d'une chaîne de distribution - nature exacte non précisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser la relance commerciale après silence radio : comprendre l'état d'avancement du dossier, réactiver l'intérêt, débloquer la décision et obtenir un engagement sur les prochaines étapes sans être perçu comme insistant ou désespéré",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance après silence radio — Directeur Achats Grande Distribution",
+    "vous_etes": "Commercial B2B en relance téléphonique 3 semaines après un RDV avec Christophe Mercier, Directeur des Achats Centraux de Distri-Ouest.",
+    "vous_vendez": "Une solution B2B présentée lors du RDV initial (détails dans votre dossier) — prix et périmètre discutés mais non finalisés.",
+    "vous_appelez": "Christophe Mercier, 51 ans, Directeur des Achats Centraux chez Distri-Ouest (142 points de vente). Méfiant, surchargé (300+ dossiers fournisseurs), obsédé par le benchmark et les économies. Il avait dit 'je reviens vers vous' mais silence depuis.",
+    "ce_que_vous_savez": [
+      "Il gère une pression budgétaire forte : -3% sur les achats indirects avant fin Q2",
+      "Deux de ses acheteurs sont en arrêt, il est débordé et compense lui-même",
+      "Il négocie en parallèle un gros contrat logistique (Kuehne+Nagel) et gère une crise carton",
+      "Votre dossier n'est pas dans son top 5 priorités actuelles",
+      "Il a déjà testé 2-3 solutions similaires qui ont échoué (intégration SI, blocage opérationnel)"
+    ],
+    "votre_objectif": "Comprendre où en est le dossier, identifier les blocages réels (budget, validation DAF, concurrence) et obtenir un prochain point d'étape avec date ferme — sans passer pour le commercial relou.",
+    "vos_atouts": [
+      "Vous savez qu'il respecte la transparence : vous pouvez être cash sur le timing et les contraintes",
+      "Vous pouvez proposer une phase pilote courte (3 mois) sur périmètre réduit pour limiter son risque",
+      "Si vous avez des références grande distribution (Système U, Intermarché), c'est le moment",
+      "Vous êtes prêt à faire le boulot de benchmark à sa place pour lui faciliter la vie"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:51:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14893,
+    "total_time_s": 135.7
+  }
+}

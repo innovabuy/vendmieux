@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771514123",
+  "description_originale": "Le directeur travaux ou directeur technique d'une groupe BTP de 150-300 salariés, marchés publics et privés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : batiment]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Travaux / Directeur Technique",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction générale",
+        "Service juridique",
+        "Maîtrise d'ouvrage (client final)"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Fourniture ou prestation liée à un chantier BTP (matériaux, équipements, sous-traitance ou services techniques)",
+      "proposition_valeur_presumee": "Fiabilité, respect des délais, conformité aux normes BTP, support technique",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur sur un chantier",
+        "Client furieux",
+        "Risque de pénalités contractuelles",
+        "Risque de perte du contrat"
+      ],
+      "implicites": [
+        "Défaut de livraison ou de qualité",
+        "Non-respect des délais",
+        "Impact sur la réputation du client vis-à-vis de son donneur d'ordre",
+        "Risque de contentieux juridique",
+        "Possible rupture de relation commerciale à long terme",
+        "Stress et pression hiérarchique côté client"
+      ],
+      "probleme_racine": "Défaillance opérationnelle ayant compromis la bonne exécution d'un chantier stratégique pour un compte clé, menaçant la relation commerciale et la rentabilité du contrat"
+    },
+    "objections_mentionnees": [
+      "Fureur et mécontentement majeur",
+      "Menace de pénalités contractuelles",
+      "Perte de confiance",
+      "Impact sur sa propre réputation"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la proposition rapide de solutions concrètes et au sauvetage de relations commerciales stratégiques",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur BTP (matériaux, équipements, services techniques ou sous-traitance)",
+      "entreprise_description": "Entreprise fournissant des produits ou services pour le secteur du bâtiment, travaillant avec des groupes BTP sur marchés publics et privés",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service ayant fait l'objet d'un incident majeur impactant un chantier client",
+      "proposition_valeur": "Fiabilité, respect des engagements contractuels, réactivité, expertise technique, support post-vente",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Type de produit/service fourni",
+        "Montant du contrat et des pénalités",
+        "Historique de la relation commerciale",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Leroux",
+      "age": 48,
+      "poste": "Directeur Technique & Travaux",
+      "entreprise": {
+        "nom": "Bâtiplan Construct",
+        "secteur": "BTP - Gros œuvre et TCE",
+        "taille": "220 salariés",
+        "ca_approximatif": "42 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Obsédé par la maîtrise opérationnelle et le respect des délais",
+        "Méfiant envers les discours commerciaux après des déceptions passées",
+        "Loyal mais cassant quand on trahit sa confiance"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation auprès du DG et des maîtres d'ouvrage",
+        "Livrer les chantiers dans les temps pour éviter les pénalités qui affectent sa prime variable",
+        "Être reconnu comme un directeur technique fiable, pas un pompier permanent",
+        "Ne jamais revivre le fiasco du chantier de Nanterre en 2019 qui a failli lui coûter son poste"
+      ],
+      "peurs_freins": [
+        "Que le DG apprenne un nouveau problème avant lui",
+        "Les contentieux juridiques qui remontent au COMEX",
+        "Perdre la face devant les conducteurs de travaux qu'il manage",
+        "Être perçu comme celui qui choisit mal ses fournisseurs",
+        "Les appels du service juridique qui demandent des justificatifs"
+      ],
+      "rapport_aux_commerciaux": "Utilitaire et désabusé. Les voit comme des prometteurs professionnels. Apprécie ceux qui connaissent vraiment le terrain, déteste les beaux parleurs du siège. Exige qu'on parle chantier, pas PowerPoint.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Glacial et coupant, avec une colère froide à peine contenue. Commence par un silence lourd de 3 secondes avant de lâcher : 'Alors, vous avez conscience du bordel que vous nous avez mis ?'",
+      "signaux_interet": [
+        "Arrête de couper la parole et commence à poser des questions techniques précises",
+        "Demande des délais concrets : 'Quand exactement ?'",
+        "Mentionne des contraintes de planning spécifiques : 'Parce que le 15, j'ai l'inspection OPC...'",
+        "Évoque spontanément d'autres chantiers en cours : 'Et sur Villejuif, ça tiendrait aussi ?'",
+        "Passe du vouvoiement distant au tutoiement opérationnel"
+      ],
+      "signaux_rejet": [
+        "Coupe sèchement : 'Ouais, bon, on connaît la chanson'",
+        "Silence prolongé pendant que vous parlez, on l'entend taper sur son clavier",
+        "Phrase assassine : 'Vous me faites perdre mon temps là'",
+        "Mentionne un concurrent : 'De toute façon, Legrand m'a appelé ce matin'",
+        "Menace directe : 'Je transmets tout ça au juridique et on en reste là'"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases de 'hein' interrogatif : 'Parce que là, hein, c'est pas possible'",
+        "Utilise 'Franchement' en début de phrase quand il est énervé",
+        "Dit 'On s'est bien compris ?' quand il fixe une limite non négociable",
+        "Emploie le vocabulaire chantier : 'C'est pas le chantier de la comtesse', 'Là on est dans le dur'",
+        "Soupirs audibles quand il estime qu'on lui raconte des salades"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 20 secondes maximum. Au-delà, coupe avec un 'Ouais, et concrètement ?' ou un 'Abrège'. Veut du factuel, pas du storytelling. Si vous dépassez 40 secondes sans lui donner la parole, il raccroche."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression du DG après un incident majeur sur le chantier résidentiel de Champigny (95 logements, 8,2M€). Le maître d'ouvrage (Kaufman & Broad) menace de déclencher 45 000€ de pénalités de retard et envisage de blacklister Bâtiplan pour ses futurs appels d'offres. Stéphane a déjà eu deux réunions de crise cette semaine.",
+      "priorites_actuelles": [
+        "Rattraper le retard sur Champigny avant la visite de contrôle du 28",
+        "Sécuriser les 3 autres chantiers en cours pour éviter l'effet domino",
+        "Préparer un dossier béton pour le DG qui justifie les choix de fournisseurs",
+        "Éviter que cette affaire remonte au niveau du client final (promoteur) qui pourrait exiger un changement d'entreprise générale"
+      ],
+      "experience_avec_offre_similaire": "A déjà travaillé avec votre entreprise sur 4 chantiers depuis 2021. Globalement satisfait jusqu'ici (bon rapport qualité/réactivité), ce qui rend l'incident encore plus rageant : 'Justement, on vous avait fait confiance'. Mais se souvient aussi d'un micro-retard en 2022 qui n'avait pas eu de conséquences.",
+      "fournisseur_actuel": "Votre entreprise, mais relation au bord de la rupture. A déjà demandé à son acheteur de préparer une short-list de fournisseurs alternatifs. Doit prendre une décision avant vendredi : soit on sauve la relation, soit il bascule 100% du volume vers un concurrent pour les 6 prochains mois.",
+      "budget_disponible": "Pas de problème budgétaire en soi (enveloppe achats de 8,5M€/an). Le problème n'est pas le prix mais la FIABILITÉ. Prêt à payer 5-8% plus cher pour un fournisseur qui assure vraiment. Mais là, il veut des GARANTIES ou des compensations : geste commercial, clause de pénalités réciproques, stock tampon dédié..."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître la gravité SANS détour ni langue de bois : 'On a merdé, point'",
+        "Montrer qu'on a compris l'impact réputationnel sur LUI personnellement, pas juste sur le chantier",
+        "Arriver avec un PLAN D'ACTION CHIFFRÉ et daté (pas des intentions vagues)",
+        "Proposer une compensation concrète et immédiate (pas un avoir dans 3 mois)",
+        "Citer un autre client de référence du BTP qui a eu un souci similaire et comment vous l'avez géré",
+        "Parler en termes de planning et de jalons techniques : 'On vous livre samedi matin 7h, vos gars attaquent à 8h'",
+        "Offrir une garantie inhabituelle : stock dédié, contact direct avec le responsable prod, SMS en temps réel"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident : 'Ça arrive à tout le monde'",
+        "Rejeter la faute sur un tiers : 'C'est notre sous-traitant logistique qui...'",
+        "Promettre sans preuves : 'Vous pouvez nous faire confiance'",
+        "Lui demander de patienter ou de comprendre : 'Avec la conjoncture actuelle...'",
+        "Parler procédure interne : 'On a ouvert un ticket SAV niveau 2'",
+        "Évoquer un geste commercial dérisoire : 'On peut vous faire une remise de 3%'",
+        "Ne pas connaître le dossier dans le détail : 'Vous pouvez me rappeler quelle référence exactement ?'",
+        "Tenter de vendre autre chose : 'Au fait, on a un nouveau produit qui...'",
+        "Utiliser le jargon commercial : 'win-win', 'solution innovante', 'partenariat stratégique'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Alors, vous avez conscience du bordel que vous nous avez mis ?",
+        "sous_texte": "Je ne vais pas te laisser dérouler ton pitch commercial. Tu vas d'abord reconnaître la faute et encaisser ma colère.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance frontale sans détour : 'Oui Stéphane, on a merdé. Point. Je suis là pour réparer, pas pour me justifier.'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, là, vous me rappelez pour me dire quoi exactement ? Que vous êtes désolés ? Ça changera rien aux 45 000 balles de pénalités, hein.",
+        "sous_texte": "Les excuses ne m'intéressent pas. Si tu n'as pas de solution concrète dans les 30 secondes, je raccroche.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Annoncer immédiatement un plan d'action avec dates : 'Non, je t'appelle avec un plan de rattrapage daté et une compensation sur les pénalités. Tu as 5 minutes ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous me faites perdre mon temps là. J'ai l'inspection OPC dans 6 jours et le chantier est toujours pas aux normes à cause de vous.",
+        "sous_texte": "J'ai une épée de Damoclès au-dessus de la tête. Si tu ne m'aides pas à sauver cette inspection, notre relation est morte.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ancrer votre solution sur CE jalon précis : 'C'est justement pour ça que j'appelle. Livraison samedi 7h, tes équipes attaquent à 8h, vous êtes prêts pour l'inspection du 28.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, bon, on connaît la chanson. Vous allez me dire que c'est exceptionnel, que d'habitude tout roule... Sauf que là, c'est MOI qui dois justifier auprès du DG pourquoi j'ai choisi un fournisseur qui nous plante.",
+        "sous_texte": "Ma crédibilité personnelle est en jeu. Je ne te crois plus par défaut. Il faut que tu me donnes des munitions pour me défendre en interne.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Fournir des éléments factuels défendables : 'Je comprends. Voilà ce qui s'est passé [cause racine], et voilà les 3 mesures qu'on met en place pour que ça ne se reproduise jamais. Tu veux le compte-rendu écrit pour ton DG ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et pendant ce temps-là, Kaufman & Broad me chauffe les oreilles tous les matins. Ils parlent carrément de nous blacklister. Vous vous rendez compte de ce que ça veut dire pour nous ?",
+        "sous_texte": "Ce n'est pas qu'une question de pénalités financières. C'est ma réputation et celle de ma boîte auprès d'un client stratégique. Tu mesures l'ampleur ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Montrer qu'on comprend l'enjeu réputationnel : 'Oui, je mesure. Kaufman c'est 15% de ton CA. Je propose qu'on fasse un point avec eux ensemble si besoin, avec notre directeur ops. On assume face à ton client.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, hein, on vous avait fait confiance justement. On a bossé ensemble sur 4 chantiers, ça s'était bien passé. Et là, sur le plus gros dossier, vous nous lâchez. Comment tu veux que je te fasse encore confiance ?",
+        "sous_texte": "La trahison est pire que l'incompétence. J'avais misé sur vous en interne. Vous m'avez fait passer pour un con. Répare ça ou c'est terminé.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître la trahison de confiance : 'T'as raison. On t'a lâché au pire moment. Cette confiance, je vais devoir la regagner avec des actes, pas des mots. Voilà comment on commence...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon, j'ai déjà demandé à l'acheteur de me préparer une liste d'alternatifs. Legrand m'a appelé ce matin d'ailleurs.",
+        "sous_texte": "Je veux que tu saches que je ne suis pas coincé. J'ai des options. Si tu veux sauver cette relation, il va falloir me convaincre VRAIMENT. Et vite.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas mordre à l'hameçon mais reconnaître son droit : 'Normal que tu prennes tes précautions. À ta place je ferais pareil. Laisse-moi juste te montrer notre plan avant de trancher.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais, et concrètement ? Parce que des beaux discours, j'en ai eu toute la semaine. Là je veux des DATES, des HEURES, des RÉFÉRENCES de camion si possible.",
+        "sous_texte": "J'ai été échaudé. Je ne crois plus aux intentions. Je veux du factuel, du vérifiable, du traçable. Sinon tu me perds dans les 10 secondes.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner du concret immédiatement : 'Samedi 23 novembre, 7h15, camion immatriculé XY-123-ZZ, chauffeur Karim Benali, 18 palettes réf. A458. Je t'envoie le bon de commande dans 2 heures.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et sur Villejuif et Créteil, ça tiendrait aussi ? Parce que là j'ai trois chantiers qui tournent, hein. Si vous me refaites le coup ailleurs, je préfère tout basculer maintenant.",
+        "sous_texte": "Je teste ta capacité réelle de delivery. Si tu ne peux garantir que Champigny, ça ne m'intéresse pas. J'ai besoin d'un fournisseur fiable sur TOUS mes chantiers.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur les capacités : 'Oui, on tient Villejuif et Créteil. Mieux : on te dédie un stock tampon de 15 jours pour ces trois chantiers. Contrat de service avec pénalités si on dérape.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien joli tout ça, mais le juridique m'a demandé de documenter tous les manquements contractuels. Ils préparent un dossier. Donc si on doit aller au contentieux, on ira.",
+        "sous_texte": "La machine juridique est lancée. Je ne suis plus seul décisionnaire. Si tu veux éviter le contentieux, il faut que tu me donnes des raisons très solides de calmer les avocats.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un accord amiable formalisé : 'Je comprends. Proposition : on signe un avenant avec compensation de X€, clause de garantie renforcée, et engagement sur stock. Ça te donne des munitions pour calmer le juridique ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me proposez quoi concrètement ? Une remise de 3% ? Sérieusement ? J'ai 45 000 balles de pénalités qui me pendent au nez, et vous me parlez d'une ristourne ?",
+        "sous_texte": "Ne m'insulte pas avec un geste symbolique. L'enjeu est de plusieurs dizaines de milliers d'euros. Si ton geste commercial n'est pas à la hauteur du préjudice, tu me prends pour un con.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aligner la compensation sur le préjudice réel : 'T'as raison, c'est ridicule. Je propose : reprise des 45k€ de pénalités, plus un stock dédié gratuit pour 6 mois sur tes 3 chantiers. On est d'accord ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoute, c'est gentil tout ça mais là j'ai les conducteurs de travaux qui m'attendent pour le point hebdo. On en reparle la semaine prochaine peut-être.",
+        "sous_texte": "Je cherche une porte de sortie polie. Soit je ne suis pas convaincu, soit j'ai besoin de temps pour réfléchir, soit je veux vraiment te tester pour voir si tu relances.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence sans être oppressant : 'Stéphane, je comprends. Juste avant que tu y ailles : vendredi tu dois trancher pour tes fournisseurs. Je t'envoie le plan complet dans 2h, call de 10min demain matin pour valider ? Sinon je comprends.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, là tu me parles de garanties, de stocks dédiés... C'est vous qui avez merdé, hein. Pourquoi c'est pas standard chez vous ? Pourquoi je devrais négocier des garanties que vous devriez DÉJÀ m'offrir ?",
+        "sous_texte": "Tu m'offres en solution exceptionnelle ce qui devrait être la norme. Ça me confirme que votre process de base est défaillant. Pourquoi je resterais avec vous ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le fond du problème : 'T'as raison. On aurait dû avoir ces process dès le départ. C'est ce qu'on met en place maintenant, pour tous nos clients BTP. Tu seras le premier à en bénéficier. Garantie écrite.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On s'est bien compris ? Je valide rien tant que j'ai pas le plan écrit, avec les dates, les montants, et la signature de votre directeur. Et même avec ça, je me donne le droit de changer de crémerie si vous déconnez encore.",
+        "sous_texte": "Je fixe les règles du jeu. Tu es en probation. Un seul faux pas et c'est terminé définitivement. Je te laisse une chance mais c'est la DERNIÈRE.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter les conditions sans négocier : 'Compris. Tu auras le doc signé par le directeur ops avant 18h. Et oui, si on dérape encore, tu nous vires. C'est normal. On a une seule chance de te prouver qu'on a changé.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, hein, je veux bien te croire, mais là j'ai le DG qui me met la pression, j'ai Kaufman qui menace, j'ai mes équipes qui sont à cran... C'est pas contre toi personnellement, mais j'ai besoin de sécurité, pas de promesses.",
+        "sous_texte": "Je suis épuisé et sous pression de toutes parts. J'aimerais te faire confiance mais je ne peux plus me permettre de me tromper. Donne-moi quelque chose de SOLIDE à quoi me raccrocher.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Offrir une sécurité tangible immédiate : 'Je comprends. Voilà ce que je fais : je te donne mon portable direct, celui de notre responsable prod, ET je te mets un SMS automatique à chaque étape de livraison. Transparence totale en temps réel.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, OK, on va tenter. Mais je te préviens, hein : au moindre couac, même minime, je bascule tout chez un concurrent. Et je vous blackliste pour les 3 prochaines années minimum. C'est clair ?",
+        "sous_texte": "J'accepte de te donner une seconde chance mais ma confiance est à zéro. Tu es en période d'essai sous surveillance maximale. La moindre erreur et c'est l'exclusion définitive.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la pression et remercier : 'C'est très clair, Stéphane. Et merci de nous donner cette chance. On ne la gâchera pas. Je te call samedi matin dès que le camion est parti, et je reste joignable 7j/7 jusqu'à la fin du chantier.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute, j'entends ce que tu me dis, mais là franchement, j'ai plus la force. J'ai deux réunions de crise cette semaine, le DG qui me regarde de travers, Kaufman qui veut notre peau... Je crois que c'est mieux qu'on arrête les frais tous les deux. C'est pas contre toi mais j'ai besoin de repartir sur des bases saines avec quelqu'un d'autre. Désolé.",
+      "condition_declenchement": "Se déclenche si le commercial : 1) N'a pas proposé de compensation financière significative (>20k€), 2) N'a pas montré de compréhension réelle de l'impact réputationnel sur Stéphane personnellement, 3) N'a pas fourni de plan d'action ultra-concret avec dates/heures, 4) A utilisé du jargon commercial ou minimisé l'incident, 5) N'a pas proposé de garanties contractuelles exceptionnelles. Cette objection marque la rupture définitive si mal gérée."
+    },
+    "pattern_escalade": "Stéphane suit un schéma émotionnel prévisible : 1) COLÈRE FROIDE (30 premières secondes) - coupe, attaque, teste la reconnaissance de responsabilité, 2) MÉFIANCE ACTIVE (1-2 minutes) - challenge chaque affirmation, demande des preuves, évoque la concurrence, 3) ÉVALUATION PRAGMATIQUE (2-4 minutes) - si vous avez survécu, il commence à poser des questions techniques précises, 4) NÉGOCIATION DURE (4-6 minutes) - fixe ses conditions, parle compensation, veut des garanties écrites, 5) DÉCISION CONDITIONNELLE (fin) - accepte de tester mais avec épée de Damoclès. ATTENTION : si à n'importe quel moment vous minimisez, vous faites du commercial classique ou vous promettez sans preuves, il court-circuite le process et passe direct à la rupture définitive. Le timing critique se situe dans les 90 premières secondes : si vous ne reconnaissez pas la faute frontalement ET n'annoncez pas un plan concret, vous perdez la partie.",
+    "piege_classique": "Le piège mortel avec Stéphane est de vouloir 'sauver la face' de votre entreprise en atténuant la responsabilité ('c'était un concours de circonstances', 'le transporteur n'a pas suivi nos instructions', 'avec la conjoncture actuelle...') ou en tentant de relativiser l'incident ('ça reste un cas isolé', 'sur 4 chantiers on a toujours assuré'). Cette posture défensive le fait exploser car elle révèle que vous ne comprenez PAS la gravité de la situation POUR LUI PERSONNELLEMENT. Autre piège : proposer un geste commercial dérisoire (remise de 3-5%) qui l'insulte vu l'ampleur du préjudice. Enfin, le piège subtil : parler processus interne ('on a lancé un audit qualité', 'on a sensibilisé les équipes') au lieu de parler SOLUTION POUR LUI ('voilà ce que tu obtiens concrètement'). Stéphane se fout de vos process internes, il veut savoir ce qui change pour SON chantier, SON planning, SA réputation. La bonne approche : reconnaissance brutale + plan d'action chiffré + compensation à hauteur du préjudice + garanties exceptionnelles contractuelles. Tout le reste est du bruit qui accélère la rupture."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur BTP (matériaux, équipements, services techniques ou sous-traitance)",
+      "description": "Entreprise fournissant des produits ou services pour le secteur du bâtiment, travaillant avec des groupes BTP sur marchés publics et privés"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service ayant fait l'objet d'un incident majeur impactant un chantier client",
+      "proposition_valeur": "Fiabilité, respect des engagements contractuels, réactivité, expertise technique, support post-vente",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la proposition rapide de solutions concrètes et au sauvetage de relations commerciales stratégiques",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Sauvetage relation compte clé BTP",
+    "vous_etes": "Responsable Grands Comptes chez votre entreprise, fournisseur BTP depuis 15 ans, en charge du compte Bâtiplan Construct (220 salariés, 4 chantiers livrés ensemble depuis 2021).",
+    "vous_vendez": "Fournitures techniques BTP — relation commerciale de 320K€/an avec Bâtiplan, contrat-cadre renouvelable en juin.",
+    "vous_appelez": "Stéphane Leroux, 48 ans, Directeur Technique & Travaux chez Bâtiplan Construct. Ancien conducteur de travaux monté en grade, obsédé par les délais, allergique au bullshit commercial. Furieux après l'incident du chantier de Champigny.",
+    "ce_que_vous_savez": [
+      "Votre livraison du 12 avril a planté : retard de 4 jours sur éléments critiques, chantier Champigny à l'arrêt (95 logements, 8,2M€)",
+      "Kaufman & Broad (maître d'ouvrage) menace Bâtiplan de 45K€ de pénalités + blacklistage potentiel",
+      "Stéphane a eu 2 réunions de crise avec son DG cette semaine, il est sous pression maximale",
+      "Visite de contrôle OPC prévue le 28, deadline absolue pour rattraper le retard",
+      "Il a demandé à ses achats de préparer une short-list de fournisseurs de remplacement, décision avant vendredi"
+    ],
+    "votre_objectif": "Sauver la relation commerciale en proposant un plan d'action béton avec compensation immédiate, et sécuriser le renouvellement du contrat-cadre.",
+    "vos_atouts": [
+      "4 chantiers livrés nickel depuis 2021, vous avez l'historique de fiabilité",
+      "Stock disponible en entrepôt Lyon pour livraison express samedi 7h si besoin",
+      "Votre directeur technique (ex-ingénieur chantier) peut se déplacer lundi pour audit sécurité gratuit",
+      "Prêt à proposer : remise immédiate 8%, stock tampon dédié Bâtiplan pour 6 mois, ligne directe production"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:15:23Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18505,
+    "total_time_s": 186.9
+  }
+}

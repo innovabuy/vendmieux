@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771520037",
+  "description_originale": "Le directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : services_entreprises]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "groupe multi-sites 200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des Opérations ou Directeur Commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction Générale potentielle",
+        "Responsable Qualité",
+        "Service Juridique"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Prestation de services B2B avec engagement contractuel",
+      "proposition_valeur_presumee": "Continuité de service, fiabilité opérationnelle, support multi-sites",
+      "fourchette_prix": "Contrat compte clé - montant significatif avec clauses de pénalités",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Réclamation client sur incident de service",
+        "Risque de pénalités contractuelles",
+        "Client furieux - relation détériorée"
+      ],
+      "implicites": [
+        "Défaillance dans la promesse de service",
+        "Processus de gestion de crise inexistant ou inefficace",
+        "Communication de crise non maîtrisée",
+        "Risque de perte d'un compte clé stratégique",
+        "Possibles défauts de formation sur la gestion des réclamations majeures",
+        "Manque de protocoles d'escalade",
+        "Relations commerciales basées uniquement sur la performance sans filet de sécurité relationnel"
+      ],
+      "probleme_racine": "Les commerciaux ne sont pas formés à gérer les crises clients majeures : écoute active sous pression, reconnaissance sans culpabilité, plan de résolution structuré, et préservation de la relation malgré l'incident"
+    },
+    "objections_mentionnees": [
+      "Vous avez failli à vos engagements",
+      "Nous subissons des pénalités à cause de vous",
+      "La confiance est rompue",
+      "Nous envisageons de résilier le contrat",
+      "Ce n'est pas la première fois",
+      "Vos concurrents nous ont déjà contactés"
+    ],
+    "objectif_formation": "Former les commerciaux et responsables de comptes à la gestion de crise client : techniques de désescalade émotionnelle, prise en charge structurée de réclamations majeures, construction d'un plan de résolution crédible, et préservation de la relation commerciale dans un contexte de tension extrême",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Prestataire de services B2B multi-sites",
+      "entreprise_description": "Entreprise de services intervenant sur plusieurs sites pour des comptes clés avec engagements contractuels de niveau de service",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Prestations de services B2B avec SLA contractuels, engagements de performance et clauses de pénalités en cas de défaillance",
+      "proposition_valeur": "Fiabilité opérationnelle, continuité de service, support multi-sites, engagement contractuel fort",
+      "prix_indicatif": "Contrat annuel ou pluriannuel avec compte clé 200+ salariés",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Montant des pénalités en jeu",
+        "Historique de la relation commerciale",
+        "Durée du contrat restante",
+        "Nature précise du service fourni",
+        "Nom de l'entreprise prestataire"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Logipro Services",
+        "secteur": "Logistique et transport pour l'e-commerce",
+        "taille": "Groupe 340 salariés, 8 sites en France",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Perfectionniste anxieux sous pression hiérarchique",
+        "Loyal mais blessé dans sa confiance",
+        "Méfiant envers les belles paroles après déception"
+      ],
+      "motivations_profondes": [
+        "Protéger sa crédibilité auprès de sa Direction Générale",
+        "Ne plus jamais revivre l'humiliation d'annoncer un dysfonctionnement majeur en CODIR",
+        "Démontrer qu'il contrôle la situation et ses prestataires",
+        "Préserver son bonus annuel menacé par les pénalités"
+      ],
+      "peurs_freins": [
+        "Être perçu comme celui qui a mal choisi le prestataire initial",
+        "Subir une nouvelle défaillance qui serait fatale à sa carrière",
+        "Paraître faible s'il accepte trop vite des excuses",
+        "Que la DG impose un changement de prestataire sans son accord"
+      ],
+      "rapport_aux_commerciaux": "Relation dégradée : les voit désormais comme des bonimenteurs qui promettent sans tenir. Compense sa colère par une froideur distante et des attaques factuelles. Teste systématiquement la sincérité.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, professionnel jusqu'à la sécheresse. Voix posée mais légèrement tendue. Coupe la parole si détecte du storytelling commercial. 'Je vous écoute' dit avec un scepticisme palpable.",
+      "signaux_interet": [
+        "Commence à demander des précisions techniques plutôt que d'asséner des reproches",
+        "Mentionne 'Dans l'hypothèse où...' au lieu de 'C'est terminé'",
+        "Évoque spontanément les autres sites non impactés",
+        "Demande un délai pour 'étudier en interne' au lieu de refuser net",
+        "Passe du 'vous' accusateur au 'on' ou 'nous'"
+      ],
+      "signaux_rejet": [
+        "Souffle bruyamment pendant les explications",
+        "Répète 'Vous comprenez que...' suivi d'une impossibilité",
+        "Évoque explicitement les concurrents déjà contactés avec leurs noms",
+        "Menace de transmission au service juridique",
+        "'J'ai autre chose à faire là' - prépare la fin d'appel",
+        "Tutoiement soudain et déplacé : 'Écoute, tu comprends bien que...'"
+      ],
+      "tics_langage": [
+        "'Franchement...' en début de phrase critique",
+        "'Voilà' conclusif pour couper court",
+        "'On va pas se mentir' avant une vérité brutale",
+        "Soupirs audibles",
+        "'C'est gentil mais...' pour rejeter poliment",
+        "'Concrètement' répété pour ramener aux faits"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Interrompt si détecte du remplissage ou des promesses génériques. Exige des faits, dates, noms, chiffres."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance 18% sur l'année mais incident sur site de Lyon il y a 11 jours : rupture de service 6h pendant pic Black Friday d'un gros client e-commerce. Pénalités contractuelles 47K€ activées. PDG furieux, CODIR exceptionnel convoqué. Stéphane en supervision renforcée.",
+      "priorites_actuelles": [
+        "Restaurer la confiance du client e-commerce (son propre client) qui menace aussi de partir",
+        "Produire un rapport de non-récurrence pour la DG sous 3 semaines",
+        "Arbitrer : renégocier ou résilier avec le prestataire défaillant",
+        "Sécuriser les 7 autres sites avant les fêtes de fin d'année",
+        "Préparer son entretien annuel dans 6 semaines"
+      ],
+      "experience_avec_offre_similaire": "3ème prestataire en 5 ans. Les deux précédents résiliés pour sous-performance. Stéphane a personnellement porté le choix de l'actuel il y a 14 mois sur base d'un pitch commercial irréprochable. Se sent trahi et stupide.",
+      "fournisseur_actuel": "Le prestataire défaillant avec qui il est en crise. Contrat 36 mois, reste 22 mois. Clause de résiliation anticipée complexe mais activable moyennant 3 mois de préavis.",
+      "budget_disponible": "Budget prestation déjà engagé. Pas de marge pour formation supplémentaire cette année fiscale sauf si validé par DAF et présenté comme plan de remédiation. Stéphane doit justifier tout centime après l'incident."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance factuelle et sans détour de la défaillance, sans excuse bancale",
+        "Présentation d'un plan de non-récurrence déjà engagé (dates, noms, investissements) avant même cet appel",
+        "Mention d'un audit indépendant des process internes du prestataire",
+        "Proposition d'accompagnement dans la rédaction du rapport pour sa DG",
+        "Engagement contractuel renforcé (clause de service ou réduction tarifaire temporaire)",
+        "Référence à un cas similaire géré avec succès ailleurs, avec contact vérifiable"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimisation de l'incident ou relativisation ('ça arrive', 'c'est exceptionnel')",
+        "Rejet de responsabilité sur des tiers ou sur le client",
+        "Promesses floues sans échéancier ni responsable nommé",
+        "Tentative de vente additionnelle ou d'upsell déguisé",
+        "Comparaison avantageuse avec les concurrents (il les a déjà en ligne)",
+        "Appel à la relation historique ou à la fidélité ('après tout ce qu'on a fait ensemble')",
+        "Ton enjoué, familier ou commercial classique - totalement décalé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, je ne suis pas sûr qu'on ait grand-chose à se dire après ce qui s'est passé",
+        "sous_texte": "Je suis encore en colère mais j'écoute quand même pour ne pas paraître impulsif. Prouvez-moi que cet appel a un intérêt.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance immédiate et factuelle de l'incident, proposition d'une raison précise et nouvelle pour cet échange"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai trois concurrents qui m'ont déjà envoyé des propositions. Pourquoi je devrais vous écouter vous plutôt qu'eux ?",
+        "sous_texte": "Je teste votre réaction face à la menace de la concurrence. Est-ce que vous allez paniquer ou rester professionnel ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer les concurrents ni entrer en panique commerciale. Recentrer sur ce que vous seul pouvez apporter : connaissance du dossier et plan déjà en cours"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez que les 47 000 euros de pénalités, c'est moi qui vais les justifier devant mon PDG ? Pas vous, moi.",
+        "sous_texte": "Je souffre personnellement et professionnellement. J'ai besoin que vous compreniez la gravité avant de proposer quoi que ce soit.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Écoute empathique authentique, reconnaissance de l'impact sur lui personnellement, pas de tentative de minimisation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On va pas se mentir, c'est pas la première fois qu'il y a des couacs. Là c'était juste visible parce que c'était Black Friday",
+        "sous_texte": "Il y a un historique que vous ne connaissez peut-être pas ou que vous minimisez. Ma confiance est érodée depuis longtemps.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Poser des questions ouvertes pour comprendre l'historique complet, ne pas se justifier immédiatement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, qu'est-ce qui me garantit que ça ne recommencera pas sur Toulouse ou Marseille pendant les soldes ?",
+        "sous_texte": "J'ai besoin de preuves tangibles, pas de belles paroles. Mon prochain incident me coûte mon poste.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Plan de non-récurrence précis avec dates, responsables nommés, investissements chiffrés, audits planifiés"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez ce que mon client e-commerce m'a dit ? Que c'est la dernière fois. Voilà où j'en suis à cause de vous",
+        "sous_texte": "L'incident en cascade me détruit professionnellement. Je suis en position de faiblesse avec mon propre client. C'est émotionnellement insoutenable.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Offrir une aide concrète pour restaurer SA relation client (témoignage, participation à réunion, garanties transmissibles)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est gentil tout ça, mais des audits et des plans d'action, vous m'en aviez déjà parlé il y a 14 mois quand j'ai signé",
+        "sous_texte": "Vous avez déjà trahi ma confiance une fois. Pourquoi ces promesses seraient différentes des précédentes ?",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaître l'écart entre promesses passées et réalité. Montrer ce qui est DÉJÀ fait (pas futur) avec preuves tangibles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, je pense que le problème c'est que vous avez grandi trop vite et que vos process n'ont pas suivi",
+        "sous_texte": "J'ai analysé votre entreprise. Je ne suis pas dupe. Je teste votre lucidité et votre honnêteté sur vos propres failles.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Reconnaissance honnête si c'est fondé, puis exposition des actions structurelles déjà engagées pour y remédier"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mon DAF m'a dit clairement : pas un euro de plus pour ce prestataire cette année. Comment vous comptez faire ?",
+        "sous_texte": "J'ai une contrainte budgétaire réelle mais je teste aussi votre créativité et votre volonté de vous impliquer financièrement.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer des solutions sans surcoût (réaffectation, geste commercial temporaire, investissement unilatéral du prestataire)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, j'ai un CODIR dans 11 jours où je dois présenter ma décision. Votre plan, il sera prêt quand exactement ?",
+        "sous_texte": "J'ai une deadline réelle et je suis sous pression. Si vous ne pouvez pas tenir ce délai, je vais ailleurs.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engagement ferme sur délai tenable avec jalons intermédiaires. Proposer de co-construire le document de présentation."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Admettons que je vous donne cette chance. Qu'est-ce qui m'empêche de la donner aussi aux trois autres et de choisir le meilleur ?",
+        "sous_texte": "Je reprends le contrôle. Je vous mets en compétition pour obtenir plus. Mais c'est aussi un signe que je vous considère encore.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valoriser votre avantage unique : connaissance terrain, plan déjà amorcé, pas de temps de montée en charge concurrent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je dois en parler à mon PDG avant. Et franchement, après l'incident, il n'est pas très chaud pour vous garder",
+        "sous_texte": "C'est vrai ET c'est une protection pour ne pas m'engager seul. J'ai besoin d'éléments pour le convaincre, pas juste pour me convaincre moi.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer des éléments factuels transmissibles (executive summary, garanties contractuelles, audit indépendant) et éventuellement une rencontre tripartite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, la confiance elle est à zéro. Même si on continue, ça sera sur surveillance rapprochée permanente",
+        "sous_texte": "J'accepte peut-être de continuer mais notre relation a changé pour toujours. Êtes-vous prêt à travailler dans ces conditions ?",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Accepter sereinement cette nouvelle réalité. Proposer un cadre de gouvernance renforcée comme une opportunité de transparence."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si dans 3 mois il y a un autre problème, même mineur, qu'est-ce qui se passe ? Parce que moi je ne survivrai pas à un deuxième",
+        "sous_texte": "J'ai besoin d'un filet de sécurité contractuel clair. Ma carrière est en jeu, je ne peux pas me permettre le flou.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer une clause de sortie facilitée et/ou des engagements contractuels renforcés avec compensation automatique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai besoin d'un délai pour réfléchir. Disons... fin de semaine prochaine ?",
+        "sous_texte": "Je suis tenté mais j'ai besoin de temps pour digérer émotionnellement et consulter en interne. C'est un vrai délai, pas un refus déguisé.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le délai en proposant des points de contact intermédiaires (réponses à questions, envoi de documents) pour maintenir la dynamique"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être honnête avec vous. Mon service juridique me conseille de résilier et mon PDG penche pour un concurrent qui nous a fait une offre agressive. Je dois trancher avant vendredi. Donnez-moi UNE raison solide de prendre le risque de rester avec vous plutôt que de tourner la page",
+      "condition_declenchement": "Déclenchée si le commercial n'a pas su créer de différenciation claire, s'est montré trop commercial, ou n'a pas construit d'éléments transmissibles pour le PDG. C'est l'ultimatum final avant décision irrévocable."
+    },
+    "pattern_escalade": "Stéphane commence froid et factuel (test de sérieux), puis devient plus émotionnel si le commercial montre de l'empathie authentique (révélation des vraies peurs), avant de se repositionner en négociateur analytique (protection professionnelle). L'escalade négative se manifeste par des soupirs, des références croissantes aux concurrents et le passage au 'vous' accusateur systématique.",
+    "piege_classique": "Le commercial qui tente de reconstruire la relation en rappelant les bons moments passés ou en minimisant l'incident ('ce n'est qu'un incident isolé') déclenche une fermeture immédiate. Stéphane a besoin qu'on reconnaisse la gravité AVANT de parler de solutions. Toute tentative de vente additionnelle ou d'upsell est perçue comme du cynisme opportuniste et tue définitivement la conversation."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Prestataire de services B2B multi-sites",
+      "description": "Entreprise de services intervenant sur plusieurs sites pour des comptes clés avec engagements contractuels de niveau de service"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Prestations de services B2B avec SLA contractuels, engagements de performance et clauses de pénalités en cas de défaillance",
+      "proposition_valeur": "Fiabilité opérationnelle, continuité de service, support multi-sites, engagement contractuel fort",
+      "prix": "Contrat annuel ou pluriannuel avec compte clé 200+ salariés",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux et responsables de comptes à la gestion de crise client : techniques de désescalade émotionnelle, prise en charge structurée de réclamations majeures, construction d'un plan de résolution crédible, et préservation de la relation commerciale dans un contexte de tension extrême",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Réclamation majeure après incident contractuel",
+    "vous_etes": "Responsable de compte chez un prestataire de services B2B multi-sites avec engagements SLA contractuels",
+    "vous_vendez": "Vous ne vendez rien. Vous gérez une crise après une défaillance de service majeure sur un compte clé sous contrat pluriannuel.",
+    "vous_appelez": "Stéphane Mercier, 48 ans, Directeur des Opérations chez Logipro Services (logistique e-commerce, 340 salariés, 8 sites). Perfectionniste, sous pression hiérarchique, blessé dans sa confiance.",
+    "ce_que_vous_savez": [
+      "Incident grave il y a 11 jours sur le site de Lyon : rupture de service 6h pendant le Black Friday d'un gros client e-commerce",
+      "Pénalités contractuelles activées : 47K€",
+      "CODIR exceptionnel convoqué, PDG furieux, Stéphane en supervision renforcée",
+      "C'est le 3ème prestataire en 5 ans — Stéphane a personnellement porté votre choix il y a 14 mois",
+      "Contrat 36 mois, reste 22 mois, clause de résiliation activable sous 3 mois",
+      "Des concurrents ont déjà été contactés"
+    ],
+    "votre_objectif": "Désamorcer la colère, reconnaître la défaillance sans esquive, présenter un plan de remédiation crédible et préserver la relation commerciale malgré la crise",
+    "vos_atouts": [
+      "Un audit interne déjà lancé avec dates et responsables identifiés",
+      "Une proposition concrète d'accompagnement pour son rapport de non-récurrence à la DG",
+      "Un renforcement contractuel immédiat (clause de service ou geste commercial temporaire)",
+      "Une référence vérifiable d'une crise similaire gérée avec succès"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:53:57Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15730,
+    "total_time_s": 131.2
+  }
+}

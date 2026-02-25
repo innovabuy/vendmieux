@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771521908",
+  "description_originale": "Vous avez présenté votre offre au directeur travaux ou directeur technique d'une groupe BTP de 150-300 salariés, marchés publics et privés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : batiment]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "BTP",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Travaux ou Directeur Technique",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Directeur Général ou Président",
+          "role": "Décideur final potentiel"
+        },
+        {
+          "poste": "DAF",
+          "role": "Validation budgétaire potentielle"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B pour le secteur BTP destinée aux directeurs travaux/techniques",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après RDV malgré engagement",
+        "Perte de contact après présentation commerciale",
+        "Difficulté à maintenir le momentum commercial"
+      ],
+      "implicites": [
+        "Manque de qualification du niveau décisionnel réel",
+        "Absence de next steps clairs en fin de RDV",
+        "Pas de multi-threading (contact unique)",
+        "Circuit de décision non cartographié",
+        "Budget non validé ou priorités changées",
+        "Possibilité que le prospect compare avec concurrence"
+      ],
+      "probleme_racine": "Faiblesse méthodologique en closing de RDV : next steps non actés, pas de date butoir, niveau décisionnel réel non validé, circuit de validation non exploré"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance post-RDV, comprendre comment débloquer un process commercial en standby, savoir poser les bonnes questions pour identifier les vrais freins et relancer la dynamique décisionnelle",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour le secteur BTP",
+      "entreprise_description": "Entreprise proposant des solutions/services destinés aux groupes BTP travaillant sur marchés publics et privés",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B présentée en RDV il y a 2 semaines, suffisamment importante pour nécessiter validation directeur",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre commerciale",
+        "Montant du contrat",
+        "Identité précise de l'entreprise vendeuse",
+        "Engagements pris lors du RDV initial",
+        "Délai de retour promis explicitement",
+        "Autres interlocuteurs présents au RDV",
+        "Signaux d'achat détectés lors du RDV"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Directeur Travaux",
+      "entreprise": {
+        "nom": "Bâtiplan Construction",
+        "secteur": "BTP - Gros œuvre et rénovation",
+        "taille": "230 salariés",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrain avant tout",
+        "Méfiant envers les discours commerciaux",
+        "Surchargé et constamment interrompu"
+      ],
+      "motivations_profondes": [
+        "Éviter les emmerdes sur les chantiers",
+        "Tenir les délais coûte que coûte",
+        "Prouver sa valeur au DG qui le challenge",
+        "Protéger son équipe de chefs de chantier"
+      ],
+      "peurs_freins": [
+        "Que le DG trouve la solution trop chère",
+        "S'engager sur un outil qui plante en phase critique",
+        "Perdre du temps en formation alors que les chantiers brûlent",
+        "Passer pour un pigeon auprès du DAF",
+        "Devoir justifier un échec d'investissement"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Les voit comme des vendeurs de rêve qui ne comprennent pas la réalité du terrain. A été échaudé 3 fois ces 5 dernières années par des solutions qui ne tenaient pas leurs promesses.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Regarde sa montre. Dit systématiquement 'J'ai 20 minutes max' même quand c'est faux.",
+      "signaux_interet": [
+        "Se penche en avant quand on parle ROI chiffré",
+        "Demande 'Et concrètement sur chantier ça donne quoi?'",
+        "Évoque spontanément un problème précis récent",
+        "Prend des notes sur son téléphone"
+      ],
+      "signaux_rejet": [
+        "Répond aux SMS pendant l'échange",
+        "Croise les bras et recule sur sa chaise",
+        "Coupe avec 'Ouais ouais je vois le principe'",
+        "Passe en mode 'On verra' sans date précise"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "C'est pas faux mais...",
+        "Sur le papier c'est bien hein...",
+        "Faut que j'en parle à mon DG de toute façon",
+        "On a déjà testé un truc dans le genre"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Coupe au bout de 90 secondes. Veut des réponses courtes et concrètes. Déteste le jargon marketing."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 15% mais tensions sur 3 chantiers majeurs. Le DG pousse pour industrialiser mais reste conservateur sur les investissements. Turnover élevé chez les chefs de chantier (35% l'an dernier). Un concurrent local vient de décrocher un gros marché public qu'ils visaient.",
+      "priorites_actuelles": [
+        "Boucler le chantier de la ZAC Nord avant pénalités (3 semaines de retard)",
+        "Recruter 2 conducteurs de travaux d'urgence",
+        "Préparer l'appel d'offres CHU pour septembre",
+        "Convaincre le DG d'investir dans du matériel"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de planning chantier il y a 18 mois, abandonné au bout de 4 mois car trop compliqué pour les chefs de chantier. Le DAF lui ressort régulièrement les 12K€ perdus.",
+      "fournisseur_actuel": "Mix Excel + WhatsApp + logiciel de devis vieillissant (Batigest). Système artisanal qui fonctionne 'à peu près' mais source d'erreurs.",
+      "budget_disponible": "Budget formation 2024 consommé à 80%. Possibilité d'investissement si validation DG + DAF, mais devra attendre janvier ou prouver urgence absolue. Enveloppe théorique 20-35K€ pour digitalisation."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Étude de cas d'un concurrent direct qui a gagné en productivité",
+        "ROI chiffré avec exemples BTP précis",
+        "Témoignage d'un directeur travaux connu dans la région",
+        "Solution qui ne nécessite PAS de former tout le monde",
+        "Engagement contractuel sur les résultats",
+        "Possibilité de tester sur UN chantier pilote"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon techno ou marketing ('solution cloud agile innovante')",
+        "Minimiser ses contraintes actuelles",
+        "Comparer son système à de l'amateurisme",
+        "Process de vente trop long avec multiples RDV",
+        "Absence de support technique réactif",
+        "Formation obligatoire de 3 jours pour tous",
+        "Prix affiché très au-dessus du budget sans justification béton"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoutez, là franchement c'est pas le moment, j'ai la ZAC Nord qui part en vrille, j'ai même pas eu le temps de regarder vos docs...",
+        "sous_texte": "Je me sens coupable de ne pas avoir avancé, mais j'ai vraiment d'autres urgences. Fais-moi sentir que tu comprends sans me juger.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Légitimer son urgence terrain, proposer 3 minutes chrono pour cadrer s'il y a encore du sens à échanger ou pas"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On en avait parlé oui... mais bon j'attends de voir avec mon DG, c'est lui qui valide ce genre d'investissement hein",
+        "sous_texte": "Je me protège. Je ne veux pas être celui qui décide seul et qui se plante. Le DG est mon bouclier.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est normal, puis explorer ce que Thierry lui-même pense du projet avant d'impliquer le DG"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais mais vous comprenez, là on est en plein rush, on verra ça plutôt en septembre quand ça se calme un peu",
+        "sous_texte": "Je repousse par réflexe. Septembre = jamais. Je ne sais pas comment te dire que c'est pas ma priorité sans être impoli.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le timing mais clarifier si c'est un vrai 'peut-être en septembre' ou un 'non poli'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas faux ce que vous dites, mais faut voir... sur le papier c'est toujours bien hein, après sur le terrain c'est une autre histoire",
+        "sous_texte": "J'ai été échaudé. Je te teste : est-ce que tu connais vraiment la réalité du chantier ou tu me vends du vent ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'écart théorie/pratique, demander de raconter une expérience passée qui l'a déçu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà testé un logiciel y'a deux ans, ça a été une catastrophe. Les gars sur le terrain s'en servaient pas, on a perdu 12K€ pour rien. Le DAF m'en parle encore...",
+        "sous_texte": "J'ai peur de revivre cet échec. Cette cicatrice me bloque. Je dois être SÛR que ça ne se reproduira pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser cette expérience précise : qu'est-ce qui a coincé exactement ? Puis montrer en quoi votre approche évite ces écueils spécifiques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Là franchement, entre nous, je suis pas sûr que ce soit le bon timing... On a des tensions de tréso et le DG il est à cran sur les dépenses",
+        "sous_texte": "Le budget est un vrai frein. Je ne suis pas sûr de pouvoir convaincre en interne. Je te donne un signal honnête.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas minimiser. Explorer si c'est un problème de montant, de timing ou de ROI non démontré. Peut-être proposer phasage."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je suis preneur hein, mais bon faut que j'en parle à mon DG de toute façon, et lui il va vouloir impliquer le DAF, donc ça va prendre du temps vous voyez...",
+        "sous_texte": "Je suis intéressé mais je ne contrôle pas le circuit de décision. Je te préviens que ça va être long. Aide-moi à structurer ça.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Cartographier le circuit ensemble, proposer d'accompagner pour accélérer plutôt que laisser au hasard"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais mes chefs de chantier ils ont déjà du mal avec l'existant, si vous leur rajoutez un outil de plus ils vont péter un câble",
+        "sous_texte": "Je protège mon équipe. Je ne veux pas être celui qui leur impose un truc compliqué. Ils sont déjà sous pression.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa responsabilité d'équipe, montrer comment l'adoption sera progressive et facile, impliquer un chef dans la décision"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais si ça plante en plein chantier, qui c'est qui va prendre ? C'est moi hein. J'ai pas besoin de ça.",
+        "sous_texte": "Le risque me paralyse. Je visualise le scénario catastrophe. J'ai besoin de garanties béton.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Adresser le risque frontalement : support, SLA, plan B, engagement contractuel. Montrer qu'il ne sera pas seul."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, j'ai un autre fournisseur qui m'a contacté aussi, ils proposent moins cher et apparemment c'est la même chose...",
+        "sous_texte": "Test : est-ce que tu vas baisser ton prix ? Ou est-ce que tu vas m'expliquer la différence de valeur ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas parler prix tout de suite. Questionner : qu'ont-ils vu précisément ? Qu'est-ce qui compte vraiment pour lui ?"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Formation de 3 jours ? Vous rigolez là ? J'ai même pas le temps de faire mes entretiens annuels, alors bloquer mes gars 3 jours...",
+        "sous_texte": "C'est rédhibitoire. Le temps est ma ressource la plus rare. Si c'est obligatoire, je vais refuser.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Revoir le format : formation terrain, par phases, en duo, ou garantir autonomie rapide. Adapter au contexte rush."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Sur le papier le ROI il a l'air bien, mais j'ai besoin de le voir concrètement sur UN chantier avant de généraliser",
+        "sous_texte": "Je suis intéressé mais prudent. Je veux un pilote. C'est ma façon de minimiser le risque tout en avançant.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le pilote, le structurer avec critères de succès clairs et date de décision post-pilote"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais c'est intéressant, laissez-moi y réfléchir et je vous rappelle la semaine prochaine",
+        "sous_texte": "Je veux clore la conversation poliment. 'Je vous rappelle' = je ne rappellerai probablement pas. Je ne sais pas comment dire non.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Bloquer poliment : 'Thierry, entre nous, quand vous dites réfléchir, c'est qu'il manque un élément ou c'est une façon de me dire non ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le truc c'est que là je peux rien valider, faut que je voie avec le DG d'abord, et lui il est pas là cette semaine...",
+        "sous_texte": "Vrai frein décisionnel. Je ne peux vraiment pas avancer seul. Mais je ne te propose pas de rencontrer le DG non plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de préparer ensemble l'échange avec le DG, ou organiser une conf call à 3 quand il revient"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement ça me plaît, mais bon 30K€ là tout de suite, c'est mort. Le budget 2024 est explosé. Faut attendre janvier.",
+        "sous_texte": "Objection budget réelle. Janvier peut être vrai ou une excuse. Je teste si vous avez une solution de financement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Clarifier si janvier est acté. Explorer phasage, pilote réduit, ou argumenter sur le coût de l'inaction d'ici janvier"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là vous me mettez la pression, mais moi je prends pas de décision comme ça à chaud, c'est pas ma façon de bosser",
+        "sous_texte": "Tu pousses trop fort. Je me braque. Recule ou je vais te dire non par principe.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'excuser, relâcher la pression. Proposer un process clair avec lui aux commandes : 'Comment voulez-vous qu'on avance ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est sympa mais bon... entre nous hein, je suis pas sûr qu'on ait vraiment le budget et l'énergie pour se lancer là-dedans cette année. On en reparle l'année prochaine tranquille ?",
+      "condition_declenchement": "Si le vendeur n'a pas créé d'urgence réelle, n'a pas chiffré le coût de l'inaction, et n'a pas structuré de next step concret avec date et responsable"
+    },
+    "pattern_escalade": "Thierry commence cordial mais pressé (excuse temps). Si poussé trop vite → bouclier DG/DAF. Si on insiste sans valeur → objection budget ou timing. Si on ignore ses cicatrices passées → fermeture totale ('on verra ça plus tard'). Le débloquer nécessite de ralentir, légitimer ses peurs, co-construire le chemin décisionnel.",
+    "piege_classique": "Thierry dit souvent 'C'est intéressant' ou 'Pourquoi pas' mais ne s'engage jamais sur une action précise. Le vendeur repart content en pensant que c'est gagné, mais n'a ni next step ni date. Thierry ne rappelle jamais. Il faut l'obliger gentiment à clarifier : vraiment intéressé = on cale quoi quand avec qui ? Ou c'est un non poli ?"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour le secteur BTP",
+      "description": "Entreprise proposant des solutions/services destinés aux groupes BTP travaillant sur marchés publics et privés"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B présentée en RDV il y a 2 semaines, suffisamment importante pour nécessiter validation directeur",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de relance post-RDV, comprendre comment débloquer un process commercial en standby, savoir poser les bonnes questions pour identifier les vrais freins et relancer la dynamique décisionnelle",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-RDV — Directeur Travaux BTP en standby",
+    "vous_etes": "Commercial B2B spécialisé secteur BTP, vous avez présenté votre solution il y a 2 semaines à Thierry Marchand lors d'un RDV qui s'est bien passé.",
+    "vous_vendez": "Une solution pour les entreprises BTP (nature exacte à définir selon votre catalogue), ticket moyen 20-35K€, nécessitant validation Direction Générale.",
+    "vous_appelez": "Thierry Marchand, 52 ans, Directeur Travaux chez Bâtiplan Construction (230 salariés, BTP gros œuvre). Pragmatique terrain, méfiant commercial, constamment sous pression chantiers. Avait montré de l'intérêt en RDV mais n'a jamais redonné signe de vie.",
+    "ce_que_vous_savez": [
+      "Bâtiplan est en croissance (+15%) mais avec tensions opérationnelles sur 3 chantiers majeurs",
+      "Thierry a un chantier ZAC Nord en retard de 3 semaines avec risque de pénalités imminent",
+      "Il a été échaudé il y a 18 mois par un logiciel abandonné (12K€ perdus que le DAF lui ressort régulièrement)",
+      "Le budget formation 2024 est consommé à 80%, tout nouvel investissement doit passer par DG + DAF",
+      "Il gère une équipe avec 35% de turnover et cherche à recruter 2 conducteurs de travaux en urgence"
+    ],
+    "votre_objectif": "Comprendre pourquoi il n'a pas donné suite, identifier le vrai frein (budget ? validation DG ? priorités décalées ?), et débloquer la situation en obtenant une date précise de next step.",
+    "vos_atouts": [
+      "Vous avez déjà créé la relation en face-à-face, il vous connaît",
+      "Votre solution répond à un besoin réel qu'il a exprimé lors du RDV initial",
+      "Vous pouvez proposer un pilote sur un chantier unique pour limiter le risque",
+      "Vous avez des références BTP comparables (à préciser selon votre offre réelle)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:25:08Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14307,
+    "total_time_s": 129.5
+  }
+}

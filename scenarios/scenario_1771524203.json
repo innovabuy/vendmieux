@@ -1,0 +1,386 @@
+{
+  "id": "scenario_1771524203",
+  "description_originale": "Vous appelez à froid le directeur des achats groupe ou directeur après-vente d'une groupe de concessions multi-marques ou équipementier de 200+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : automobile]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats groupe ou directeur après-vente",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "responsable achats",
+          "role": "potentiel prescripteur"
+        },
+        {
+          "poste": "directeur général",
+          "role": "décideur final potentiel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour groupe de concessions multi-marques ou équipementiers automobiles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "le prospect ne connaît pas l'entreprise appelante",
+        "le prospect n'a rien demandé",
+        "le prospect a un agenda chargé",
+        "le prospect a des process d'achat structurés"
+      ],
+      "implicites": [
+        "difficulté à passer les barrages secrétariat",
+        "temps d'écoute très limité (30-60 secondes max)",
+        "nécessité de créer rapidement de l'intérêt",
+        "risque élevé de refus immédiat",
+        "besoin de légitimité instantanée",
+        "concurrence probablement déjà en place",
+        "méfiance naturelle face aux appels commerciaux non sollicités"
+      ],
+      "probleme_racine": "créer suffisamment de valeur perçue en quelques secondes pour qu'un décideur surbooké accepte de bloquer 45 minutes d'agenda sans connaissance préalable de l'offre ni besoin exprimé"
+    },
+    "objections_mentionnees": [
+      "je n'ai pas le temps",
+      "envoyez-moi une documentation",
+      "nous avons déjà des fournisseurs",
+      "rappelez dans 6 mois",
+      "nous ne changeons pas de process",
+      "quel est l'objet de votre appel ?"
+    ],
+    "objectif_formation": "maîtriser l'art de la prospection téléphonique à froid auprès de décideurs haut niveau dans l'automobile, en obtenant un rendez-vous qualifié malgré l'absence de relation préalable et les barrières organisationnelles",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B pour le secteur automobile",
+      "entreprise_description": "entreprise proposant des solutions aux groupes de concessions multi-marques et équipementiers automobiles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée aux achats ou après-vente de groupes automobiles de taille significative",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre/produit/service",
+        "proposition de valeur concrète",
+        "prix ou budget type",
+        "références clients existantes",
+        "avantages concurrentiels spécifiques",
+        "pain points précis du secteur",
+        "triggers d'achat identifiés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delorme",
+      "age": 52,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Groupe Horizon Auto",
+        "secteur": "Distribution automobile multi-marques (Renault, Peugeot, Volkswagen, Mercedes)",
+        "taille": "340 salariés répartis sur 12 concessions en Île-de-France et Hauts-de-France",
+        "ca_approximatif": "185M€ dont 22% pièces et après-vente"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance - 'J'ai vu passer tellement de commerciaux qui promettent la lune'",
+        "Obsédé par les process et la gouvernance - ancien contrôleur de gestion devenu acheteur",
+        "Protecteur de son temps comme d'un actif stratégique - agenda géré au cordeau par son assistante Martine depuis 14 ans"
+      ],
+      "motivations_profondes": [
+        "Être reconnu par le COMEX comme celui qui a structuré professionnellement la fonction achats dans un secteur encore artisanal sur ce sujet",
+        "Obtenir sa prime annuelle (15-20% variable) liée aux économies réalisées vs budget N-1",
+        "Ne surtout pas se faire avoir par un fournisseur - la hantise du ROI négatif qui entacherait sa réputation"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un énième commercial qui ne comprend rien aux spécificités de l'automobile",
+        "Que le DG lui reproche d'avoir écouté un fournisseur sans avoir validé en amont l'opportunité",
+        "Déstabiliser les relations établies avec les fournisseurs historiques (certains depuis 15 ans) sans gain réel",
+        "Être catalogué comme 'celui qui dit oui à tout le monde' par ses pairs de l'industrie auto"
+      ],
+      "rapport_aux_commerciaux": "Méfiance institutionnalisée. Reçoit 12-15 sollicitations par semaine. A développé un filtre quasi-pavlovien : 'Si c'est vraiment intéressant, on me l'aurait recommandé via mon réseau'. Déteste viscéralement les acroches type 'Je suis dans votre secteur jeudi, on prend un café ?'",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'impatience perceptible : 'Oui bonjour, je vous écoute mais j'ai un point dans 10 minutes'. Vouvoiement systématique, aucune familiarité possible avant 3-4 interactions minimum.",
+      "signaux_interet": [
+        "Pose une question chiffrée précise : 'Concrètement, on parle de quel ordre de grandeur d'économies ?'",
+        "Mentionne un pain point actuel sans qu'on le sollicite : 'Justement on a un sujet sur la gestion des stocks dormants...'",
+        "Demande qui d'autre dans le secteur utilise la solution : 'Vous travaillez avec quels groupes déjà ?'",
+        "Respiration qui ralentit, léger silence avant de répondre (réflexion en cours)"
+      ],
+      "signaux_rejet": [
+        "Commence ses phrases par 'Écoutez...' suivi d'une respiration audible = la guillotine arrive",
+        "'On a déjà quelqu'un pour ça' dit avec une légère irritation = dossier fermé",
+        "Parle de son assistante : 'Envoyez ça à Martine, elle regardera' = poubelle déguisée",
+        "Ton qui monte d'un cran : 'Mais vous proposez QUOI exactement ?' = vous avez raté l'accroche",
+        "Bruits de clavier en fond = il fait autre chose, vous avez perdu"
+      ],
+      "tics_langage": [
+        "'Écoutez...' pour marquer un désaccord poli",
+        "'Concrètement' répété 3-4 fois = veut du factuel, pas du marketing",
+        "'On verra' = non déguisé dans 87% des cas",
+        "'C'est intéressant MAIS' = le 'mais' annule tout ce qui précède",
+        "Soupirs audibles quand l'interlocuteur s'égare dans des généralités"
+      ],
+      "debit_parole": "normal, mais accélère progressivement si l'échange ne l'intéresse pas - indicateur fiable de décrochage",
+      "tolerance_monologue_vendeur": "25-30 secondes maximum. Au-delà, coupe poliment mais fermement : 'Oui OK mais moi ce qui m'intéresse c'est de savoir si...'. Déteste les vendeurs qui 'pitchent' sans avoir posé une seule question."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance externe en cours : rachat d'une 13ème concession (Audi) prévu Q2. Pression du COMEX pour harmoniser les achats hors-véhicules (actuellement chaque concession fonctionne en silo avec ses propres fournisseurs = cauchemar en termes de conditions commerciales). Christophe a 6 mois pour mettre en place un panel fournisseurs groupe sur 8 catégories d'achats prioritaires.",
+      "priorites_actuelles": [
+        "Finaliser l'appel d'offres pièces détachées multimarques (en cours, 3 fournisseurs shortlistés)",
+        "Renégocier les contrats de maintenance informatique (renouvellement annuel dans 2 mois)",
+        "Structurer les achats de consommables atelier (gants, produits d'entretien) = dispersion actuelle inadmissible",
+        "Préparer le budget achats N+1 pour arbitrage COMEX fin du mois"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 18 mois une plateforme d'e-procurement recommandée par un consultant. Échec cuisant : les chefs de concession n'ont jamais adhéré, outil abandonné après 4 mois. Christophe en a pris pour son grade en COMEX. Depuis, ultra-prudent sur toute innovation technologique.",
+      "fournisseur_actuel": "Multiples fournisseurs selon les concessions. Pas de vision groupe consolidée = exactement ce que Christophe veut corriger, mais avec des solutions qu'il contrôle de bout en bout.",
+      "budget_disponible": "Pas de ligne budgétaire dédiée aux nouveaux fournisseurs en année N. Toute dépense additionnelle doit être justifiée par un ROI < 12 mois et validée par le DAF. Christophe peut débloquer max 15-20K€ en phase test sans validation COMEX, au-delà il faut un business case béton."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Référence crédible : 'Je travaille avec le Groupe Salvatore [concurrent direct], Éric Moulin m'a suggéré de vous contacter'",
+        "Problème précis résolu : 'On aide les groupes multi-marques à réduire de 18-25% leurs coûts d'achats indirects en 6 mois' (chiffre + délai)",
+        "Reconnaissance de son agenda : 'Je sais que vous êtes sur le closing du budget, je vous propose 12 minutes jeudi 14h pour valider si ça vaut le coup qu'on creuse'",
+        "Apport de valeur immédiat : 'Je peux vous partager un benchmark de ce que paient 6 groupes similaires sur les consommables atelier, ça vous donnerait une base de négo'",
+        "Alignement avec ses priorités : toute mention de 'harmonisation des achats groupe' ou 'consolidation fournisseurs'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Phrases bateau : 'On est leader sur le marché' / 'On a une solution innovante' = discours entendu 1000 fois",
+        "Manque de préparation : ne pas connaître la structure du groupe, confondre avec un autre groupe auto",
+        "Demande floue : 'On pourrait se voir pour discuter de vos besoins' = perte de temps garantie",
+        "Pression commerciale : 'J'ai un créneau exceptionnel mardi, faut vraiment qu'on se cale' = rejet immédiat",
+        "Ton trop familier dès le premier contact : tutoiement, blagues, 'Christophe tu vas bien ?' de quelqu'un qu'il ne connaît pas",
+        "Parler de 'digital', 'disruption', 'transformation' sans ancrage concret = bullshit bingo",
+        "Ne pas être capable de répondre en 10 secondes à : 'Vous me faites gagner combien et en combien de temps ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je ne connais pas votre société et j'ai un point dans 8 minutes là. C'est pour quoi exactement ?",
+        "sous_texte": "Test de légitimité immédiat. Si vous ne répondez pas de façon ultra-précise en 15 secondes, je raccroche. Prouvez-moi que vous n'êtes pas un commercial lambda qui perd mon temps.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse factuelle en une phrase avec chiffre et bénéfice concret : 'On aide X groupes auto à réduire de Y% leurs achats indirects en Z mois'. Puis reconnaissance immédiate de sa contrainte temps."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec votre documentation, Martine regardera et on vous recontactera si ça nous intéresse.",
+        "sous_texte": "Technique d'évitement classique. Martine ne regardera jamais. C'est mon filtre anti-commerciaux poli. Si vous acceptez, vous êtes mort commercialement.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître sa logique mais créer un pont spécifique : 'Je comprends parfaitement. Pour que Martine ait quelque chose de pertinent, j'aurais juste 2 questions rapides sur [pain point précis] - 45 secondes maximum ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà des fournisseurs sur toutes nos catégories d'achats, on ne cherche rien actuellement.",
+        "sous_texte": "Vrai ET faux. J'ai effectivement des fournisseurs partout, mais c'est justement le bordel que je veux nettoyer. Mais je ne vais pas le dire à un inconnu au téléphone. Prouvez-moi d'abord que vous comprenez ma problématique.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Reformuler sa situation probable : 'C'est exactement pour ça que je vous contacte. Les 4 groupes avec qui on travaille avaient aussi des fournisseurs... en silo par concession. La question c'est : avez-vous une vision groupe consolidée ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, je reçois 10 appels par jour comme ça. Qu'est-ce qui fait que je devrais vous écouter vous plutôt qu'un autre ?",
+        "sous_texte": "Test de différenciation pur. J'ai entendu tous les discours marketing possibles. Si vous me sortez du 'on est innovants, leaders, partenaires', vous rejoignez la masse. Étonnez-moi ou dégagez.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Reconnaissance + preuve sociale ultra-spécifique : 'Vous avez raison de filtrer. La seule raison : on travaille avec [Groupe concurrent] depuis 2 ans, Éric Moulin a réduit de 320K€ ses achats indirects. Il m'a dit que votre structure était comparable.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous me proposez QUOI exactement ? Parce que là, je ne vois pas bien ce que vous voulez me vendre.",
+        "sous_texte": "J'ai accepté de continuer mais vous tournez autour du pot avec vos questions. Mon détecteur de bullshit est en alerte rouge. Accouchez ou je raccroche dans 20 secondes.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence immédiate avec framework simple : 'OK, je suis direct : on propose [X]. Mais avant de vous perdre 10 minutes, j'ai besoin de savoir si vous gérez vos achats en central ou si chaque concession est autonome. Sinon je vais être hors-sujet.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a déjà testé ce genre de solution il y a deux ans. Ça n'a pas marché, les chefs de concession n'ont jamais joué le jeu. On a perdu du temps et de l'argent.",
+        "sous_texte": "Cicatrice douloureuse. J'en ai pris pour mon grade en COMEX. Ma crédibilité en a souffert. Je ne referai pas deux fois la même erreur. Si votre solution ressemble de près ou de loin à ce fiasco, c'est mort.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Valider l'échec passé + creuser la cause racine : 'Justement, racontez-moi : qu'est-ce qui a bloqué concrètement ? L'outil ? L'adhésion terrain ? Parce que 80% des échecs viennent du déploiement, pas de la solution elle-même. C'est pour ça que je pose la question.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je ne suis pas sûr d'être le bon interlocuteur. Ce genre de sujet, ça doit passer par le directeur des systèmes d'information ou peut-être l'après-vente. Vous avez essayé de les contacter ?",
+        "sous_texte": "Tactique de dérivation. Soit je veux vraiment vous éjecter poliment, soit je teste si vous connaissez vraiment les circuits de décision chez nous. Ou alors j'ai peur de m'engager seul sur un sujet transverse.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Recadrer avec douceur sur son périmètre : 'En fait, les 6 groupes avec qui on travaille, c'est systématiquement le DAG qui pilote parce que ça impacte les conditions commerciales et les process achats. Le DSI intervient après, en phase déploiement. Vous fonctionnez différemment ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et vous travaillez avec qui déjà dans le secteur ? Parce que si c'est avec des petits garagistes, ça n'a rien à voir avec notre structure.",
+        "sous_texte": "Je veux évaluer votre crédibilité via vos références. Si vous me citez des acteurs que je ne connais pas ou trop petits, vous n'avez pas le pedigree. Si vous ne pouvez pas citer de noms, vous êtes un débutant.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Citer 2-3 références comparables (si disponibles) OU rediriger sur la problématique : 'On accompagne des groupes de 200 à 500 personnes, multi-marques. Par confidentialité je ne peux pas tous les citer au téléphone, mais la vraie question : vous avez combien de concessions ? Combien de fournisseurs différents aujourd'hui ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, on parle de quel ordre de grandeur d'économies ? Parce que 18-25% comme vous dites, sur quelle base de dépenses ? Ça représente combien en euros ?",
+        "sous_texte": "Mode contrôleur de gestion activé. Je veux des chiffres, pas des pourcentages dans le vide. Si vous ne savez pas me donner un ordre de grandeur crédible adapté à ma structure, vous êtes un amateur.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander SA base avant de projeter : 'Excellente question. Vous avez une idée de vos achats indirects annuels groupe ? Consommables atelier, maintenance, fournitures ? Si c'est dans les X€, on parle typiquement de Y€ d'économies sur 12 mois.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est le timing. Là, je suis à fond sur la finalisation du budget et un appel d'offres pièces. Rappelez-moi en mars, on aura plus de visibilité.",
+        "sous_texte": "Mi-sincère, mi-tactique. C'est vrai que je suis surchargé, MAIS c'est aussi une façon polie de dire 'pas prioritaire'. Si vous insistez lourdement, je vais me braquer. Si vous lâchez l'affaire, on ne se reparlera jamais.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Reconnaître + créer urgence douce liée à SES priorités : 'Je comprends parfaitement. Justement : si votre budget se finalise maintenant, c'est le moment d'intégrer une ligne d'optimisation achats pour N+1. En mars ce sera trop tard pour impacter les arbitrages. 15 minutes cette semaine pour valider si ça vaut le coup ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous comprenez, dans notre métier, on ne peut pas se permettre de changer nos process comme ça. On a des exigences constructeurs, des normes qualité, des habitudes terrain. C'est pas si simple.",
+        "sous_texte": "Peur du risque. J'ai une organisation qui fonctionne (même si mal). Tout changement = prise de risque = potentiellement ma responsabilité si ça foire. Rassurez-moi sur le comment, pas juste sur le quoi.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valider la complexité + rassurer par l'approche : 'Vous avez totalement raison, et c'est pour ça qu'on ne propose jamais de big bang. On démarre par une catégorie pilote, 2-3 concessions volontaires, sur 3 mois. Vous gardez le contrôle total. Si ça fonctionne, on étend. Sinon, on arrête. C'est comme ça qu'on a procédé chez [référence].'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget, on parle de combien ? Parce que si c'est pour me rajouter un coût fixe alors qu'on cherche justement à optimiser, ça n'a pas de sens.",
+        "sous_texte": "Question piège. Je veux savoir si vous êtes dans mes moyens AVANT de m'engager émotionnellement dans le projet. Si vous êtes trop cher, autant arrêter maintenant. Si vous bottez en touche, je vais me méfier encore plus.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Donner un ordre de grandeur conditionné au ROI : 'Les groupes de votre taille investissent entre X et Y€ en phase démarrage, mais l'approche c'est que ça doit être financé par les économies générées dès les 6 premiers mois. Avant de parler prix, il faut qu'on valide ensemble le potentiel d'économies. C'est l'objet du RDV.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est intéressant ce que vous me dites, MAIS il faut que j'en parle au directeur général avant de m'engager sur quoi que ce soit. Vous comprenez, c'est une décision qui le concerne aussi.",
+        "sous_texte": "Protection hiérarchique. Soit je n'ai vraiment pas le pouvoir seul (possible sur gros montants), soit c'est une excuse pour diluer ma responsabilité, soit je veux ralentir le process pour réfléchir sans pression.",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Accompagner plutôt que contourner : 'Tout à fait logique sur ce type de projet. Du coup, deux options : soit on fait un premier RDV vous et moi pour que vous ayez les éléments factuels à présenter au DG, soit je vous propose qu'on fasse directement un point à trois. Qu'est-ce qui serait le plus efficace selon vous ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi déjà des éléments par mail, je regarde avec mon équipe et on vous recontacte si on veut aller plus loin.",
+        "sous_texte": "Fuite classique en fin d'échange. Je ne veux pas dire non frontalement, mais je ne veux pas m'engager sur un RDV. C'est ma porte de sortie polie. Si vous acceptez sans cadre précis, vous ne me reverrez jamais.",
+        "type": "reflexe",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Créer un engagement minimum + deadline : 'Je vous envoie ça dans l'heure. Pour que ce soit vraiment pertinent, j'aurais besoin que vous me précisiez : vous voulez un focus sur quelle catégorie d'achats en priorité ? Et je vous propose qu'on se recale 10 minutes vendredi pour débriefer votre lecture, ça vous va ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous de 45 minutes, franchement, là maintenant je ne peux pas me positionner. J'ai trois semaines de dingue. On verra après les fêtes.",
+        "sous_texte": "Mi-sincère (vraiment surchargé), mi-tactique (excuse pour gagner du temps). Teste si vous allez insister lourdement (irritant) ou lâcher l'affaire (vous perdez). Cherche le juste milieu.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Proposition alternative à l'agenda : 'Je vous comprends. Deux options : soit on case 20 minutes en visio un matin 8h-8h30 avant que votre journée démarre, soit je vous propose un créneau début janvier que je bloque dès maintenant. Vous préférez quoi ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon, je ne prends jamais de décision après un seul rendez-vous. Il faudra que je consulte, que je compare, que je voie d'autres acteurs. Ça va être long.",
+        "sous_texte": "Vérité probable (je suis méthodique) + protection (je ne veux pas que vous pensiez qu'un RDV = signature). Teste votre réaction : allez-vous me mettre la pression ou respecter mon process ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aligner sur son process : 'Parfaitement normal et même recommandé. L'objectif du RDV c'est pas de signer quoi que ce soit, c'est de valider en 45 minutes si ça mérite d'être dans votre short-list de comparaison. Si oui, on structure un pilote. Si non, on ne perd pas de temps. Fair ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, je vais en toucher un mot à mon responsable achats justement. C'est lui qui est sur le terrain avec les fournisseurs. Donnez-moi ses coordonnées, il vous rappellera.",
+        "sous_texte": "Délégation vers le bas = vous perdez en niveau décisionnel. Soit je teste si vous allez accepter (erreur fatale), soit je veux vraiment que mon équipe filtre avant de m'impliquer. Dans tous les cas, danger.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Maintenir le niveau sans vexer : 'Excellente idée qu'il soit impliqué, c'est lui qui connaît le terrain. Par contre, sur les projets groupe de cette nature, on démarre toujours avec le DAG pour cadrer la stratégie, puis on implique le responsable achats en opérationnel. On peut faire un point à trois dès le départ si vous voulez ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, mais si je vous bloque 45 minutes d'agenda, vous allez me présenter quoi exactement ? Parce que si c'est pour me refaire votre pitch, ça ne sert à rien.",
+        "sous_texte": "Peur de l'arnaque au RDV. J'ai déjà vécu des RDV où le commercial répète son baratin pendant 1h sans rien d'utile. Je veux un agenda précis avant de m'engager. Test de professionnalisme.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Agenda structuré + implication : 'Pas du tout. Le format : 10 minutes où VOUS me présentez votre organisation achats actuelle, 20 minutes où je vous montre 3 leviers d'optimisation concrets adaptés à votre structure avec chiffres, 15 minutes où on décide si ça vaut le coup d'aller plus loin. Vous gardez le contrôle du timing.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, vous avez des arguments intéressants, je ne dis pas le contraire. Mais bon, honnêtement, là j'ai tellement de trucs en cours que je ne peux pas me permettre de lancer un nouveau chantier. On se retéléphone dans 3-4 mois quand j'aurai plus de bande passante, d'accord ?",
+      "condition_declenchement": "Apparaît après 6-8 minutes d'échange si le commercial n'a pas réussi à créer un sentiment d'urgence lié aux priorités actuelles de Christophe (budget N+1, harmonisation groupe). Mélange de sincérité (vraiment surchargé) et de tactique (excuse polie pour clore). Si le commercial accepte sans cadre précis de rappel, l'opportunité est morte à 95%."
+    },
+    "pattern_escalade": "Christophe suit une logique d'escalade en 4 phases : 1) Objections réflexes de filtrage initial (20-40 premières secondes) pour tester la légitimité et éliminer les amateurs. 2) Objections sincères de contexte (si passage du filtre) pour exprimer ses vraies contraintes : timing, échec passé, process. 3) Objections tactiques de protection (si intérêt naissant) pour garder le contrôle et ne pas s'engager trop vite : consulter le DG, comparer, déléguer. 4) Objection finale de temporisation (si pas d'urgence créée) pour sortir poliment sans dire non définitif. La clé : chaque phase nécessite une réponse adaptée. Argumenter en phase 1 = mort. Rassurer en phase 2. Accompagner en phase 3. Créer urgence douce en phase 4.",
+    "piege_classique": "Le piège majeur avec Christophe : confondre ses objections de forme (je n'ai pas le temps, envoyez un mail) avec ses objections de fond (je ne vois pas le ROI, j'ai peur de refaire l'erreur d'il y a 2 ans). 90% des commerciaux répondent aux objections de surface et perdent. Il faut creuser le sous-texte en posant des questions : 'Quand vous dites que vous n'avez pas le temps, c'est parce que le sujet n'est pas prioritaire ou parce que votre agenda est saturé ?' Autre piège : vouloir closer trop vite. Christophe DÉTESTE la pression commerciale. Il faut lui donner l'impression qu'il garde le contrôle du process, sinon fuite garantie. Enfin : ne jamais accepter un 'envoyez-moi un mail' sans créer un engagement de relecture ou de rappel cadré dans le temps. Sinon, trou noir assuré."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B pour le secteur automobile",
+      "description": "entreprise proposant des solutions aux groupes de concessions multi-marques et équipementiers automobiles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée aux achats ou après-vente de groupes automobiles de taille significative",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser l'art de la prospection téléphonique à froid auprès de décideurs haut niveau dans l'automobile, en obtenant un rendez-vous qualifié malgré l'absence de relation préalable et les barrières organisationnelles",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Achats Groupe automobile",
+    "vous_etes": "Commercial B2B spécialisé solutions achats pour groupes de concessions automobiles multi-marques.",
+    "vous_vendez": "Solution d'optimisation des achats indirects pour groupes automobiles — réduction moyenne 18-25% sur consommables atelier et achats hors-véhicules — budget type 45-60K€/an selon périmètre.",
+    "vous_appelez": "Christophe Delorme, 52 ans, Directeur des Achats du Groupe Horizon Auto (12 concessions Renault/Peugeot/VW/Mercedes, 340 personnes, IDF + Hauts-de-France). Ancien contrôleur de gestion, ultra-méfiant, obsédé process. Reçoit 12-15 sollicitations par semaine. Vous coupe au bout de 30 secondes si vous ne sortez pas du lot.",
+    "ce_que_vous_savez": [
+      "Le groupe est en croissance : rachat d'une 13ème concession Audi prévu ce trimestre",
+      "Chaque concession achète en silo ses consommables/fournitures = aucune négo groupe = surcoûts évidents",
+      "La direction lui a donné 6 mois pour harmoniser les achats groupe sur 8 catégories prioritaires",
+      "Il a testé une plateforme e-procurement il y a 18 mois : échec cuisant, il s'est fait taper dessus en COMEX",
+      "Son assistante Martine filtre depuis 14 ans — 'envoyez-lui un mail' = votre appel est mort"
+    ],
+    "votre_objectif": "Décrocher 12 minutes de rendez-vous jeudi ou vendredi pour qualifier si votre solution mérite un vrai RDV.",
+    "vos_atouts": [
+      "Vous travaillez avec le Groupe Salvatore (concurrent direct, 9 concessions, région parisienne) — gain 22% sur consommables atelier en 7 mois",
+      "Vous avez un benchmark anonymisé des prix payés par 6 groupes similaires sur les achats indirects — utilisable immédiatement en négo",
+      "Votre solution s'intègre aux process existants (pas de révolution = pas de rejet terrain comme sa dernière expérience)",
+      "ROI documenté < 9 mois sur 8 groupes clients, validé par cabinets d'audit"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:03:23Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 19898,
+    "total_time_s": 210.0
+  }
+}

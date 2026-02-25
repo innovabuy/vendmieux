@@ -1,0 +1,322 @@
+{
+  "id": "scenario_1771519715",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : services_entreprises]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "PME 25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Services aux entreprises (nettoyage/sécurité/maintenance)",
+      "proposition_valeur_presumee": "Fiabilité et qualité de service dans les domaines du nettoyage, sécurité et maintenance pour entreprises",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Oui, menace de partir à la concurrence"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité ayant généré une insatisfaction client",
+        "Risque de perte d'un client existant",
+        "Mécontentement du gérant qui menace de partir"
+      ],
+      "implicites": [
+        "Difficulté à gérer les situations de crise et réclamations",
+        "Processus de service après-vente potentiellement défaillant",
+        "Manque de compétences en gestion de conflit et désescalade",
+        "Absence probable de protocole de gestion des incidents",
+        "Communication réactive plutôt que proactive sur les problèmes"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas les techniques de gestion de crise client et de désescalade émotionnelle pour transformer une réclamation en opportunité de renforcement relationnel"
+    },
+    "objections_mentionnees": [
+      "Menace de partir à la concurrence",
+      "Insatisfaction sur la qualité du service rendu",
+      "Problème de livraison/service non résolu"
+    ],
+    "objectif_formation": "Former les commerciaux à gérer les réclamations clients, désamorcer les situations de crise, proposer des solutions adaptées et préserver/renforcer la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_entreprises",
+      "entreprise_description": "Entreprise fournissant des services de nettoyage, sécurité et maintenance aux entreprises, avec une clientèle de PME",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Services de nettoyage professionnel, sécurité et maintenance pour entreprises",
+      "proposition_valeur": "Prestation de services fiables et de qualité dans les domaines du nettoyage, sécurité et maintenance, avec engagement sur la satisfaction client",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème de service",
+        "Informations sur l'entreprise vendeuse",
+        "Historique de la relation commerciale",
+        "Valeur du contrat en jeu",
+        "Solutions envisageables",
+        "Marge de manœuvre commerciale"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Didier",
+      "nom": "Montagne",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Technolab Conseil",
+        "secteur": "Conseil en ingénierie industrielle",
+        "taille": "32 salariés",
+        "ca_approximatif": "2,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Susceptible et rancunier quand on le déçoit",
+        "Méfiant par défaut mais loyal si confiance établie",
+        "Impatient avec les discours commerciaux"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation auprès de ses clients finaux",
+        "Éviter de perdre du temps à gérer les prestataires défaillants",
+        "Prouver qu'il a fait le bon choix initial en gardant le fournisseur actuel"
+      ],
+      "peurs_freins": [
+        "Que ses clients remarquent la saleté dans les bureaux lors des audits",
+        "Perdre la face devant son équipe en restant avec un prestataire médiocre",
+        "Subir un nouveau problème similaire dans les 3 prochains mois",
+        "Que changer de prestataire soit pire que l'actuel"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des beaux parleurs jusqu'à preuve du contraire. Dit souvent 'Ouais enfin bon, on verra'. A été échaudé 3 fois ces 10 dernières années.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque hostile. Attaque directement avec 'Alors qu'est-ce que vous allez me raconter cette fois?' avec une pointe de sarcasme perceptible",
+      "signaux_interet": [
+        "Cesse de soupirer bruyamment",
+        "Pose des questions précises sur les délais d'intervention",
+        "Mentionne spontanément 'Bon, admettons...'",
+        "Demande des garanties écrites sans qu'on lui propose"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement",
+        "Répète 'Ouais c'est ça' sur un ton ironique",
+        "Évoque ostensiblement avoir 3 devis concurrents sur son bureau",
+        "Commence ses phrases par 'De toute façon...'",
+        "Regarde ostensiblement sa montre ou son écran"
+      ],
+      "tics_langage": [
+        "Utilise beaucoup 'franchement' en début de phrase",
+        "Dit 'Moi je veux bien hein mais...' avant chaque objection",
+        "Ponctue avec 'Voilà voilà' quand il est agacé",
+        "Emploie 'Faut pas me prendre pour un jambon' quand il sent qu'on le manipule"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi nulle. Coupe après 45 secondes maximum. Veut du concret immédiatement, pas de la théorie."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais forte pression sur les marges. Vient de décrocher un gros contrat avec un groupe du CAC40 qui impose des standards qualité stricts sur les locaux. L'incident récent l'a mis dans l'embarras lors d'un audit surprise.",
+      "priorites_actuelles": [
+        "Ne plus avoir à penser au nettoyage pendant 6 mois minimum",
+        "Recevoir un geste commercial substantiel (pas symbolique) pour compenser l'incident",
+        "Obtenir un engagement écrit sur les délais d'intervention en cas de problème",
+        "Sécuriser sa relation avec son nouveau client stratégique"
+      ],
+      "experience_avec_offre_similaire": "4ème prestataire en 12 ans. Les 3 précédents ont tous duré 2-3 ans avant déception. Pattern récurrent: ça commence bien puis la qualité se dégrade au bout de 18 mois quand ils prennent trop de clients.",
+      "fournisseur_actuel": "Votre entreprise depuis 26 mois. Satisfait jusqu'à cet incident majeur survenu il y a 12 jours : produits non livrés pour le nettoyage des vitres avant visite client importante. A dû gérer en interne.",
+      "budget_disponible": "Contrat actuel: 1850€ HT/mois. Peut monter à 2100€ pour un service irréprochable mais veut une ristourne de 10% sur les 3 prochains mois suite à l'incident. Sinon, concurrence propose 1680€/mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître l'incident explicitement sans langue de bois ('On a merdé, je le reconnais')",
+        "Proposer un plan d'action écrit avec des engagements chiffrés dans les 48h",
+        "Offrir un geste commercial significatif AVANT qu'il le demande",
+        "Lui présenter le responsable opérationnel qui gérera personnellement son compte",
+        "Partager un cas similaire géré avec succès et contact client référent",
+        "Proposer une clause de sortie sans pénalité pendant 3 mois pour le rassurer"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou trouver des excuses externes",
+        "Promettre sans engagements écrits concrets",
+        "Parler process et qualité de façon théorique sans mesures immédiates",
+        "Proposer un geste commercial ridicule (type 5% sur 1 mois)",
+        "Dire 'C'est la première fois que ça arrive' (il n'y croit jamais)",
+        "Tenter de noyer le poisson avec des arguments commerciaux classiques",
+        "Lui demander de patienter plus de 72h pour une solution"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Alors qu'est-ce que vous allez me raconter cette fois ? Parce que franchement, j'ai autre chose à faire que d'écouter des excuses hein.",
+        "sous_texte": "Je suis encore furieux de l'incident. Je vous laisse 30 secondes pour me prouver que cet appel ne sera pas une perte de temps. Montrez-moi que vous avez compris la gravité.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance immédiate de l'incident sans détour, annonce d'actions concrètes déjà mises en place"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Moi je veux bien vous écouter mais j'ai trois devis concurrents sur mon bureau là. À 1680 par mois. Voilà voilà.",
+        "sous_texte": "Je vous teste. Allez-vous paniquer et brader vos prix ou allez-vous me montrer que vous valez plus ? Prouvez-moi que je ne dois pas partir.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas entrer dans la guerre des prix immédiatement. Recentrer sur la valeur et le préjudice à compenser d'abord."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais c'est ça... Faut pas me prendre pour un jambon hein. Vous savez très bien ce qui s'est passé. Le 14 au matin, pas de produits, pas de vitres propres, audit client à 14h. J'ai dû envoyer MA comptable nettoyer les vitres. Vous imaginez ?",
+        "sous_texte": "Je veux que vous mesuriez l'humiliation que j'ai subie. Ne minimisez rien. Je dois sentir que vous comprenez VRAIMENT l'impact sur moi et mon entreprise.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie profonde, reformulation de l'impact émotionnel et professionnel, pas juste technique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon c'est toujours pareil avec vous les prestataires. Ça commence bien et au bout de deux ans ça se dégrade. Vous prenez trop de clients et on devient un numéro. J'en suis au quatrième en douze ans, j'ai l'habitude.",
+        "sous_texte": "Je suis blasé et désabusé. J'ai un pattern mental négatif bien installé. Prouvez-moi que vous êtes différent avec du CONCRET, pas des promesses creuses.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître le pattern, montrer ce qui a changé structurellement chez vous pour éviter cette dérive"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, on verra. Des process et de la qualité vous m'en aviez déjà parlé y'a deux ans. Et regardez où on en est aujourd'hui.",
+        "sous_texte": "Vos belles paroles ne valent rien à mes yeux. Je veux des GARANTIES écrites, des engagements chiffrés, du mesurable. Stop au blabla.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Passer immédiatement du discours aux engagements écrits concrets avec dates et compensations"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là vous me proposez quoi concrètement ? Parce que 5% de ristourne sur un mois, ça fait quoi, 90 balles ? Vous vous foutez de moi ?",
+        "sous_texte": "Le geste commercial que vous proposez est dérisoire par rapport au préjudice subi. Vous ne comprenez toujours pas la gravité. Soit vous rehaussez significativement, soit je pars.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposition d'un geste commercial à hauteur du préjudice (minimum 10% sur 3 mois) avec d'autres compensations"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi je veux bien hein mais comment je sais que dans deux mois ça va pas recommencer ? Vous allez me dire quoi, 'désolé c'est exceptionnel' encore une fois ?",
+        "sous_texte": "Ma vraie peur : revivre cette humiliation. Je veux des garanties structurelles, un plan B, une assurance que ça ne se reproduira JAMAIS.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Mise en place d'un système de backup, interlocuteur dédié joignable, clause de sortie sans pénalité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, c'est la première fois que ça arrive ? Ah bon ? Et le retard de trois jours en juillet dernier, c'était quoi ? Et l'agent de sécurité absent en mai sans prévenir ?",
+        "sous_texte": "Je teste votre honnêteté. Si vous niez ou minimisez les incidents passés, je sais que vous n'avez rien compris et je pars immédiatement.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaissance transparente de tous les incidents, pattern identifié, actions correctives déjà en cours"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà, vous me dites que je vais recevoir ça par écrit quand exactement ? Parce que des promesses verbales j'en ai eu plein. Là j'ai besoin de noir sur blanc.",
+        "sous_texte": "Je ne crois qu'aux engagements écrits. Si vous ne pouvez pas m'envoyer un document officiel sous 48h, c'est que vous n'avez pas le pouvoir décisionnel et je perds mon temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Engagement ferme sur date d'envoi (24-48h max), contenu précis du document, validation hiérarchique mentionnée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon admettons... Mais là vous me demandez de vous faire confiance encore. Le problème c'est que la confiance elle est cassée. Faut la reconstruire et ça prend du temps.",
+        "sous_texte": "Signal d'ouverture déguisé. Je suis prêt à donner une chance MAIS il me faut du temps pour vérifier. Proposez-moi une période probatoire avec clause de sortie facile.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposition de période probatoire 3 mois, clause sortie sans pénalité, points hebdomadaires, transparence totale"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon si ça recommence, je me casse direct. Je veux une clause où je peux partir sans préavis ni pénalité pendant trois mois. Simon c'est niet.",
+        "sous_texte": "C'est ma condition sine qua non pour accepter. Je veux garder le contrôle et un filet de sécurité. Si vous refusez, vous n'êtes pas assez confiant dans votre capacité à redresser la situation.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Acceptation de la clause, car elle démontre votre confiance en votre capacité à redresser la barre"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là je sais pas. Mon client du CAC40, s'ils voient encore un truc qui va pas dans les bureaux, je perds le contrat. Vous réalisez l'enjeu pour moi ?",
+        "sous_texte": "Révélation de ma vraie peur : l'effet domino. Ce n'est pas qu'une question de prestation de nettoyage, c'est ma survie commerciale. Rassurez-moi sur la sécurisation de cette relation stratégique.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Plan d'action spécifique avant visites client CAC40, contrôle qualité renforcé, engagement service premium"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez... J'ai besoin de réfléchir. Là vous me proposez des trucs mais j'ai besoin d'en parler avec ma femme. Elle est associée et elle m'a dit texto : 'Change de prestataire'. Donc je peux rien décider comme ça au téléphone.",
+      "condition_declenchement": "Se déclenche si le commercial a bien géré les objections précédentes et que Didier commence à être tenté de rester, MAIS qu'il n'a pas reçu un plan écrit complet avec geste commercial significatif (minimum 10% sur 3 mois) + clause de sortie. C'est une objection sincère mais aussi une dernière négociation : il veut que vous reveniez avec une offre finale béton par écrit."
+    },
+    "pattern_escalade": "Didier commence hyper fermé et sarcastique (hostilité défensive). Si le commercial reconnaît l'erreur sans langue de bois et propose du concret rapidement, il passe en mode 'testing' (il teste la solidité des engagements avec des objections tactiques). S'il sent de l'authenticité, il révèle progressivement ses vraies peurs (perte du client CAC40, humiliation vécue). En fin de conversation, s'il est rassuré, il utilisera l'objection 'besoin de réfléchir / en parler à ma femme' pour obtenir une dernière amélioration de l'offre avant de valider.",
+    "piege_classique": "Le piège majeur : croire que Didier veut juste un geste commercial financier. En réalité, son besoin profond est d'être RASSURÉ qu'il ne revivra jamais l'humiliation du 14. S'il sent que vous achetez son pardon avec de l'argent sans avoir résolu le problème structurel, il partira quand même. Le bon équilibre : reconnaissance + actions structurelles + geste commercial significatif + garanties écrites + clause de sortie. Les 5 éléments sont indispensables."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_entreprises",
+      "description": "Entreprise fournissant des services de nettoyage, sécurité et maintenance aux entreprises, avec une clientèle de PME"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Services de nettoyage professionnel, sécurité et maintenance pour entreprises",
+      "proposition_valeur": "Prestation de services fiables et de qualité dans les domaines du nettoyage, sécurité et maintenance, avec engagement sur la satisfaction client",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Former les commerciaux à gérer les réclamations clients, désamorcer les situations de crise, proposer des solutions adaptées et préserver/renforcer la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Relance client mécontent après incident service",
+    "vous_etes": "Commercial compte-clé chez un prestataire de services (nettoyage/sécurité/maintenance) qui intervient en PME.",
+    "vous_vendez": "Services de nettoyage professionnel, sécurité et maintenance — contrat actuel 1850€ HT/mois.",
+    "vous_appelez": "Didier Montagne, 52 ans, gérant de Technolab Conseil (32 salariés, conseil en ingénierie). Client depuis 26 mois, très mécontent suite à un incident majeur il y a 12 jours : produits non livrés avant visite client importante. Menace de partir à la concurrence.",
+    "ce_que_vous_savez": [
+      "Incident il y a 12 jours : produits nettoyage vitres non livrés, Didier a dû gérer en interne devant un client stratégique",
+      "C'est son 4ème prestataire en 12 ans, pattern récurrent : qualité se dégrade après 18 mois",
+      "Vient de décrocher un gros contrat CAC40 avec standards qualité stricts sur les locaux",
+      "La concurrence propose 1680€/mois (vs 1850€ actuellement)",
+      "Didier est susceptible, méfiant, déteste les beaux parleurs et coupe la parole après 45 secondes"
+    ],
+    "votre_objectif": "Désamorcer la crise, reconnaître l'erreur, proposer un plan d'action concret sous 48h et sauver le contrat.",
+    "vos_atouts": [
+      "Relation de 26 mois globalement satisfaisante avant cet incident",
+      "Possibilité de proposer un geste commercial significatif (ristourne 10% sur 3 mois)",
+      "Capacité à engager le responsable opérationnel en direct sur son compte",
+      "Clause de sortie sans pénalité 3 mois pour le rassurer"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:48:35Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14332,
+    "total_time_s": 120.1
+  }
+}

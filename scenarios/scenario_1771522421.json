@@ -1,0 +1,342 @@
+{
+  "id": "scenario_1771522421",
+  "description_originale": "Vous appelez une cabinet d'avocats de 5-15 avocats, droit des affaires. C'est l'assistante juridique qui décroche. Vous devez passer le barrage pour parler au avocat associé / managing partner. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : juridique]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "juridique - droit des affaires",
+      "taille_entreprise": "5-15 avocats",
+      "interlocuteur_principal": {
+        "poste": "avocat associé / managing partner",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante juridique",
+          "role": "barrage - filtrage des appels",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Franchir le barrage de l'assistante juridique",
+        "Accéder au décideur (managing partner)",
+        "Assistante qui protège l'agenda de son patron"
+      ],
+      "implicites": [
+        "Crédibilité insuffisante au téléphone",
+        "Manque de légitimité perçue",
+        "Absence de proposition de valeur immédiate",
+        "Difficulté à créer l'urgence ou l'intérêt chez le gatekeeper",
+        "Positionnement comme vendeur plutôt que comme apporteur de valeur"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur perçue et de légitimité dès les 30 premières secondes pour que l'assistante considère l'appel comme prioritaire et méritant l'attention du décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser le passage de barrage secrétaire/assistante et obtenir des rendez-vous avec les décideurs dans des structures où l'accès est filtré",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - probablement services B2B pour cabinets d'avocats",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE - service ou solution destinée aux cabinets d'avocats en droit des affaires",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commerciale",
+        "Proposition de valeur spécifique",
+        "Identité de l'entreprise vendeuse",
+        "Prix ou budget",
+        "Bénéfices concrets pour le cabinet d'avocats",
+        "Raison d'appel explicite",
+        "Contexte de prospection (base achetée, salon, recommandation)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Valérie",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Assistante juridique senior",
+      "entreprise": {
+        "nom": "Cabinet Delvaux & Associés",
+        "secteur": "Droit des affaires - Fusions-acquisitions et contentieux commercial",
+        "taille": "9 avocats + 3 assistantes",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Gardienne territoriale hyper-protectrice",
+        "Méfiante envers tout ce qui ressemble à de la vente",
+        "Fierté professionnelle de son rôle de filtre"
+      ],
+      "motivations_profondes": [
+        "Protéger le temps précieux de Maître Delvaux qu'elle considère comme SES avocats",
+        "Démontrer son importance dans l'organisation",
+        "Éviter les reproches si elle laisse passer un commercial chronophage",
+        "Maintenir sa réputation de 'forteresse imprenable' auprès des collègues"
+      ],
+      "peurs_freins": [
+        "Que Maître Delvaux lui reproche d'avoir laissé passer un vendeur qui lui a fait perdre 30 minutes",
+        "Passer pour naïve ou incompétente face à ses collègues assistantes",
+        "Être contournée ou court-circuitée (ce qui remettrait en cause son utilité)",
+        "Les changements technologiques qu'elle ne maîtrise pas toujours"
+      ],
+      "rapport_aux_commerciaux": "Antagoniste par défaut - les considère comme des parasites qui veulent voler le temps de ses patrons. A développé un sixième sens pour repérer un discours commercial en 5 secondes. Ressent une satisfaction à dire non poliment mais fermement.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel froid avec une pointe de lassitude - ton qui dit 'encore un vendeur, je connais la chanson'",
+      "signaux_interet": [
+        "Pose une question précise au lieu de couper court immédiatement",
+        "Demande l'orthographe du nom/entreprise (signifie qu'elle prend une note)",
+        "Utilise 'laissez-moi voir' au lieu de 'c'est impossible'",
+        "Baisse légèrement la garde si on la valorise intelligemment dans son rôle d'experte"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès qu'elle détecte un pitch commercial",
+        "Coupe la parole après 15 secondes avec 'Oui donc c'est pour vendre quelque chose'",
+        "Ton maternel condescendant: 'Écoutez mon petit monsieur...'",
+        "Formule automatique: 'Envoyez un mail, on vous rappellera si ça nous intéresse' (= jamais)"
+      ],
+      "tics_langage": [
+        "Dit 'Voilà' en fin de phrase pour clore la conversation",
+        "Utilise 'Alors écoutez...' quand elle s'apprête à refuser",
+        "Appelle systématiquement les avocats 'Maître' même en leur absence",
+        "Ponctue de 'Hein' interrogatif quand elle est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 20 secondes avant interruption. Si le vendeur ne respire pas, elle coupe avec un 'Oui oui très bien mais...' autoritaire. Déteste viscéralement les scripts qui sonnent faux."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet en croissance modérée. Maître Delvaux (managing partner) est débordé avec 3 gros dossiers M&A simultanés. L'ambiance est tendue, tout le monde court. Valérie gère 2 agendas d'associés + le standard + l'accueil physique occasionnel.",
+      "priorites_actuelles": [
+        "Protéger absolument le temps de Maître Delvaux qui frôle le burn-out",
+        "Gérer le recrutement d'une assistante junior (processus qui traîne)",
+        "Numériser les archives papier (projet imposé qu'elle traîne des pieds)",
+        "Organiser le séminaire annuel des associés dans 6 semaines"
+      ],
+      "experience_avec_offre_similaire": "Le cabinet reçoit 4-5 appels commerciaux par jour (logiciels juridiques, formations, fichiers prospects, assurances, mobilier de bureau...). Valérie a développé une armure. Seuls passent: les recommandations du Barreau, les anciens clients, ou quelqu'un qui prouve IMMÉDIATEMENT qu'il comprend leur métier.",
+      "fournisseur_actuel": "Logiciel de gestion Cabinet Lexway (satisfaits), prestataire IT local (relation historique), expert-comptable du réseau de Maître Delvaux",
+      "budget_disponible": "Elle n'en sait rien et s'en fiche - ce n'est pas son problème. Elle sait juste que 'Maître Delvaux n'aime pas qu'on lui fasse perdre son temps avec des trucs qu'il n'a pas demandés'"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une recommandation précise d'un autre cabinet (vérifiable)",
+        "Faire référence à un problème CONCRET qu'elle connaît et qui l'agace elle aussi (ex: 'J'imagine que vous passez du temps à relancer pour...)",
+        "La positionner en experte: 'Vous savez mieux que moi combien c'est complexe de...'",
+        "Être bref, respectueux de son temps, et dire IMMÉDIATEMENT de quoi il s'agit sans tourner autour",
+        "Prouver qu'on connaît leur secteur (parler M&A, contentieux, délais procéduraux...)",
+        "Appeler à 8h15 ou 18h30 quand elle est moins sur la défensive"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre avoir déjà échangé avec Maître Delvaux (elle vérifie et c'est faux = blacklist)",
+        "Insister lourdement après un premier refus poli",
+        "Tutoyer ou être trop familier",
+        "Dire 'Je ne vais pas vous vendre quelque chose' (elle pense: menteur)",
+        "Utiliser un script robotique avec des pauses artificielles",
+        "Demander 'juste 5 minutes' de Maître Delvaux (elle sait que ça dure toujours 30)",
+        "Critiquer leurs outils actuels sans les connaître",
+        "Appeler pendant les heures de pointe (9h30-11h30 et 14h-16h) quand elle croule"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, c'est à quel sujet exactement ?",
+        "sous_texte": "Je détecte un commercial. Prouve-moi en 10 secondes que tu ne me fais pas perdre mon temps sinon je coupe.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Répondre avec précision et légitimité immédiate, sans langue de bois. Ex: 'Bonjour Madame, [Nom Prénom] de [Entreprise]. J'accompagne des cabinets comme Durand & Associés sur [problème précis]. 30 secondes pour voir si ça vous concerne ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoutez, Maître Delvaux est en rendez-vous toute la journée là, il est vraiment pas disponible...",
+        "sous_texte": "Prétexte automatique pour te décourager. Je veux voir si tu insistes lourdement (= commercial relou) ou si tu proposes une alternative intelligente.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la réalité sans forcer, se positionner en partenaire : 'Je m'en doute, je sais que vous êtes en période chargée. C'est justement pour ça que je vous appelle VOUS d'abord - vous connaissez mieux que personne si ça peut avoir du sens pour le cabinet.'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui donc en fait c'est pour vendre quelque chose, hein ?",
+        "sous_texte": "Je viens de repérer ton pitch commercial. Tu vas me mentir en disant que non, ou tu as le courage d'assumer ?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Assumer avec transparence et repositionner : 'Oui Madame, je représente [entreprise]. Mais je n'appelle pas pour placer un produit - j'appelle parce que 3 cabinets en M&A m'ont remonté [problème précis]. Si ça ne vous concerne pas, je ne perds pas votre temps.'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Soupir... Écoutez mon petit monsieur, on reçoit déjà 10 appels comme ça par jour, vous comprenez...",
+        "sous_texte": "Je suis fatiguée de vous tous les commerciaux. Tu n'es qu'un numéro de plus dans la file. Prouve-moi que tu es différent MAINTENANT ou je raccroche.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie authentique + différenciation immédiate : 'Je vous comprends totalement Madame Marchand, et c'est justement pour ça que je ne vais pas vous faire un discours commercial. Question directe : vous arrive-t-il de perdre du temps à [problème opérationnel concret qu'ELLE vit] ? Oui ou non ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Alors écoutez, envoyez-moi un mail avec les infos, je transmettrai à Maître Delvaux, voilà.",
+        "sous_texte": "Formule polie pour te virer. Ce mail finira à la corbeille. Je ne transmets JAMAIS les mails commerciaux non sollicités.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Contourner sans insister : 'Je peux faire ça bien sûr. Mais pour vous éviter de recevoir 4 pages inutiles, une question rapide : quand vous gérez les dossiers M&A en ce moment, c'est plutôt [option A] ou [option B] votre fonctionnement ?' (La faire parler pour créer l'intérêt)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais attendez, vous avez déjà travaillé avec des cabinets d'avocats ou c'est la première fois que vous nous contactez ?",
+        "sous_texte": "Test de légitimité. Si tu n'as pas de références solides dans notre milieu, tu n'es pas crédible et je te jette.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Références précises ou preuve de connaissance sectorielle : 'Oui Madame, on accompagne notamment le cabinet Durand & Associés à Lyon et Martin-Lefebvre à Nantes, tous deux en droit des affaires. C'est d'ailleurs Maître Durand qui m'a suggéré de vous contacter après notre intervention sur [cas précis].'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais nous on a déjà Cabinet Lexway pour la gestion, et on en est très contents hein, donc...",
+        "sous_texte": "Je te coupe l'herbe sous le pied. On a déjà un fournisseur, donc inutile d'insister. Mais je teste aussi si tu connais notre outil.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider et différencier : 'C'est une excellente solution Madame, et je ne viens pas du tout pour remplacer Lexway. Ce dont je vous parle concerne [aspect complémentaire très spécifique]. Vous utilisez leur module [fonctionnalité] ou vous gérez ça autrement ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon vous savez, pour le budget c'est pas moi qui décide hein, moi je suis juste assistante...",
+        "sous_texte": "Je me protège. Je ne veux pas être impliquée dans une décision d'achat. Mais je reconnais implicitement qu'il pourrait y avoir un intérêt.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "La valoriser et la repositionner en experte : 'Bien sûr Madame, je ne vous demande pas de décider. Mais vous êtes au cœur du quotidien du cabinet, vous voyez ce qui fonctionne ou pas. C'est votre regard d'experte que je cherche avant même de parler budget.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin bon, il faudrait voir avec Maître Delvaux mais franchement là en ce moment il est complètement sous l'eau avec trois dossiers M&A, c'est vraiment pas le moment...",
+        "sous_texte": "C'est vrai qu'il est débordé. Je protège son temps mais je commence à entrevoir un intérêt. Si tu forces maintenant, je me braque. Si tu comprends le timing, je pourrais envisager de transmettre.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie + proposition adaptée au timing : 'Madame Marchand, c'est justement parce qu'il est sous l'eau que je ne vais PAS lui demander 45 minutes maintenant. Voici ce que je propose : je vous envoie un document d'1 page hyper concret. VOUS décidez si ça vaut 15 minutes dans 3 semaines quand il respirera. Ça vous va ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Et c'est quoi le tarif de votre truc ? Parce que bon, faut voir aussi...",
+        "sous_texte": "Je commence à être intéressée mais je veux me protéger. Si c'est hors budget (que je ne connais pas vraiment), j'ai une excuse pour couper sans perdre la face.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Recontextualiser avant de parler prix : 'C'est une question légitime. Pour vous donner un ordre d'idée pertinent, ça dépend de [variable]. Les cabinets de votre taille qu'on accompagne sont entre X et Y€. Mais avant ça, est-ce que le principe vous parle OU je suis complètement à côté de la plaque ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez hein, moi je peux lui en parler, mais je vous garantis rien hein, il dit souvent non à ce genre de choses...",
+        "sous_texte": "Je me protège par avance. Je commence à envisager de transmettre mais je me couvre au cas où il refuserait (pour ne pas passer pour celle qui fait perdre du temps).",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "La rassurer et faciliter la transmission : 'Je comprends tout à fait Madame Marchand. Voici comment je vous facilite la vie : je vous prépare un message de 3 lignes que vous pourrez lui transférer tel quel. Comme ça vous ne perdez pas de temps à reformuler, et LUI décide en 30 secondes. Ça marche ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais attendez, là vous me demandez de bloquer son agenda alors que je sais même pas exactement ce que vous faites !",
+        "sous_texte": "Tu vas trop vite. J'ai peur de m'engager pour lui sans comprendre à 100%. Si je bloque un créneau et que c'est une perte de temps, je vais me faire incendier.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ralentir et clarifier : 'Vous avez totalement raison Madame. Reformulons : en 2 phrases, je [fait précis 1] et [fait précis 2] pour que [bénéfice opérationnel concret]. Si ça ne vous parle pas, on en reste là. Si ça vous parle, JE propose un créneau, et VOUS validez avec lui. OK ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Pff... Je sais pas, faudrait que je voie si j'arrive à caser ça dans son agenda, mais c'est la course en ce moment, hein...",
+        "sous_texte": "Je suis tentée mais j'hésite encore. Je veux que tu me rassures et que tu me facilites VRAIMENT la tâche. Montre-moi que tu comprends ma réalité.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Faciliter au maximum : 'Madame Marchand, je ne veux surtout pas vous compliquer la vie. Quel créneau est habituellement plus respirable pour lui ? Tôt le matin ? Fin de journée ? Je m'adapte à VOTRE organisation, pas l'inverse.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais lui en parler, et si ça l'intéresse il vous rappellera, voilà.",
+        "sous_texte": "Je veux clore la conversation MAINTENANT. Je transmettrai peut-être, peut-être pas. Je ne m'engage à rien et je reprends le contrôle.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valoriser + garder la main sur le suivi : 'Parfait Madame Marchand, je vous fais confiance sur ça. Pour vous simplifier la vie, je vous envoie le doc de synthèse dans l'heure. Je vous laisse 48h pour lui en parler, et JE vous rappelle vendredi matin juste pour savoir si ça vaut le coup que je recontacte. Ça vous va comme ça ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais franchement là, j'ai essayé de lui en parler mais c'est juste PAS le moment, il m'a dit qu'il verrait ça dans 6 mois peut-être, donc voilà hein, je peux rien faire de plus...",
+      "condition_declenchement": "Si le vendeur a réussi à passer toutes les étapes précédentes mais que Valérie sent que Maître Delvaux va vraiment refuser, elle utilise cette objection de sortie pour clore définitivement sans se sentir coupable. C'est sa façon de dire 'j'ai fait mon job de transmission, mais la décision finale n'est pas de mon ressort'."
+    },
+    "pattern_escalade": "Valérie a un pattern de résistance par paliers : (1) Barrage réflexe froid → (2) Test de légitimité par questions pièges → (3) Objections techniques/pratiques si légitimité validée → (4) Protection de son patron par report/délégation → (5) Acceptation conditionnelle minimale ('je transmets mais je garantis rien'). Chaque palier nécessite une approche différente : respect puis preuve puis empathie puis facilitation.",
+    "piege_classique": "Le piège mortel avec Valérie : essayer de la contourner ou de minimiser son rôle. Phrases tueuses à éviter absolument : 'C'est pas grave, je rappellerai directement Maître Delvaux' / 'Vous pouvez juste me passer son mail ?' / 'Ça sera rapide, juste 5 minutes'. Elle blacklistera l'appelant immédiatement et informera même Maître Delvaux de ne JAMAIS prendre cet appel. L'approche gagnante : la positionner en alliée experte dès la première seconde et respecter son autorité sur l'agenda."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - probablement services B2B pour cabinets d'avocats",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE - service ou solution destinée aux cabinets d'avocats en droit des affaires",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser le passage de barrage secrétaire/assistante et obtenir des rendez-vous avec les décideurs dans des structures où l'accès est filtré",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Passage de barrage — Cabinet d'avocats d'affaires",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour cabinets d'avocats, vous prospectez à froid des structures de 5-15 avocats en droit des affaires.",
+    "vous_vendez": "Une solution pour cabinets juridiques (nature et prix non communiqués — vous devrez improviser avec crédibilité).",
+    "vous_appelez": "Valérie Marchand, 52 ans, assistante juridique senior chez Cabinet Delvaux & Associés (9 avocats spécialisés M&A et contentieux). Gardienne territoriale redoutable, méfiante par défaut, fierté de son rôle de filtre. Reçoit 4-5 appels commerciaux par jour qu'elle bloque avec satisfaction.",
+    "ce_que_vous_savez": [
+      "Cabinet en croissance, Maître Delvaux (managing partner) est débordé sur 3 dossiers M&A simultanés",
+      "Valérie gère 2 agendas + standard + accueil, ambiance tendue, tout le monde court",
+      "Projet de numérisation des archives en cours (qu'elle traîne des pieds)",
+      "Séminaire annuel des associés à organiser dans 6 semaines",
+      "Cabinet équipé de Lexway (gestion) et prestataire IT local (historique)"
+    ],
+    "votre_objectif": "Franchir le barrage de Valérie et obtenir un rendez-vous physique avec Maître Delvaux ou un associé décideur.",
+    "vos_atouts": [
+      "Connaissance précise du secteur juridique (M&A, contentieux, contraintes métier)",
+      "Capacité à identifier et verbaliser un problème concret qu'elle vit au quotidien",
+      "Posture de conseil, pas de vendeur — valoriser son expertise de gardienne",
+      "Brièveté et respect absolu de son temps dès les 10 premières secondes"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:33:41Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15888,
+    "total_time_s": 150.8
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "id": "scenario_1771522558",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur de l'agence / fondateur d'une agence de communication ou marketing de 10-25 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : communication_marketing]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-proposition",
+        "Proposition possiblement non adaptée ou non lue",
+        "Difficulté à gérer le silence radio du prospect",
+        "Peur de déranger ou d'être intrusif lors de la relance"
+      ],
+      "probleme_racine": "Incapacité à transformer l'intérêt initial en décision concrète et à gérer efficacement les relances sans paraître insistant"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect après l'envoi d'une proposition commerciale pour obtenir un retour décisionnel clair (validation, refus ou étape suivante) tout en maintenant la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commerciale proposée",
+        "Contexte de la relation antérieure avec le prospect",
+        "Contenu et qualité de la proposition envoyée",
+        "Secteur d'activité du vendeur",
+        "Valeur du deal potentiel",
+        "Raisons présumées du silence (surcharge, désintérêt, attente validation interne)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 42,
+      "poste": "Directeur associé & fondateur",
+      "entreprise": {
+        "nom": "Mercier & Associés Communication",
+        "secteur": "Agence de communication corporate et éditoriale",
+        "taille": "18 salariés",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Perfectionniste chronophage",
+        "Hyper-sollicité et débordé",
+        "Méfiant envers les promesses commerciales"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité fragile de l'agence (marge nette 8%)",
+        "Éviter les erreurs d'investissement qui ralentiraient la trésorerie",
+        "Déléguer enfin certaines tâches pour respirer",
+        "Prouver aux associés que ses décisions sont réfléchies"
+      ],
+      "peurs_freins": [
+        "Peur de se faire avoir par un commercial trop lisse",
+        "Angoisse de l'engagement contractuel rigide",
+        "Crainte que l'outil/service ne soit pas adopté par l'équipe",
+        "Syndrome de l'imposteur face aux grands groupes fournisseurs"
+      ],
+      "rapport_aux_commerciaux": "Fuit les relances pressantes. Apprécie la franchise brutale mais déteste le forcing. A besoin qu'on comprenne qu'il est sous l'eau, pas désintéressé.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé. Commence souvent par 'Je te préviens, j'ai 10 minutes max' même si faux",
+      "signaux_interet": [
+        "Pose des questions précises sur les coûts cachés",
+        "Demande des références dans son secteur exact",
+        "Évoque spontanément un problème interne concret",
+        "Termine par 'Faut que j'en parle à mon associée mais...' (signe de projection)"
+      ],
+      "signaux_rejet": [
+        "Réponses monosyllabiques : 'Ouais... ouais... OK...'",
+        "Dit 'Je te rappelle' sans proposer de date",
+        "Coupe court avec 'Écoute, là c'est compliqué niveau timing'",
+        "Accepte un rdv mais ne le cale jamais concrètement"
+      ],
+      "tics_langage": [
+        "Abuse de 'franchement' et 'concrètement'",
+        "Dit 'après' au lieu de 'ensuite'",
+        "Utilise 'voilà' comme ponctuation nerveuse",
+        "'Ouais non mais là...' quand il hésite"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, décroche mentalement et regarde ses mails"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée post-Covid (+12% CA) mais tension trésorerie. Recherche nouveau chef de projet depuis 3 mois sans succès. Surcharge opérationnelle du dirigeant.",
+      "priorites_actuelles": [
+        "Sécuriser 2 gros contrats en négociation (total 180K€)",
+        "Recruter un profil senior rapidement",
+        "Réduire le temps passé sur l'administratif/facturation",
+        "Préparer le bilan comptable (en retard)"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions SaaS les 18 derniers mois. Une abandonnée (trop complexe), une utilisée a minima (frustrante). Échaudé.",
+      "fournisseur_actuel": "Bricolage interne avec Excel, Trello, Google Drive. Conscient que c'est bancal mais fonctionnel.",
+      "budget_disponible": "3-7K€ annuel acceptable SI ROI démontré en 6 mois. Besoin validation associée + expert-comptable si >5K€."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître explicitement qu'il est sous l'eau : 'J'imagine que tu croules, je serai bref'",
+        "Partager un cas client similaire (agence com 15-20p) avec chiffres précis de gain de temps",
+        "Proposer un audit gratuit de 20 min de son process actuel (valorisant)",
+        "Avouer les limites de l'offre plutôt que survendre",
+        "Laisser une porte de sortie : 'Si c'est pas le moment, dis-le, je reviendrai dans 3 mois'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Phrases Corporate : 'optimiser votre performance globale' = raccroche mentalement",
+        "Insister lourdement : 'Vous aviez dit que c'était intéressant pourtant'",
+        "Proposer un rdv sans avoir recréé le contexte de la proposition",
+        "Minimiser ses contraintes : 'Ça prend 5 minutes à mettre en place' (il sait que c'est faux)",
+        "Faire pression sur la décision : 'L'offre expire vendredi' = perd toute crédibilité"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, là je suis en plein rush, c'est pas vraiment le moment...",
+        "sous_texte": "Je ne me souviens plus exactement de ta proposition et j'ai peur que tu me prennes 30 minutes. Test pour voir si tu es flexible.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa réalité sans insister, proposer un timing ultra-court et concret (3 min chrono) ou un créneau précis plus tard dans la journée"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai pas encore eu le temps de regarder ton truc en détail...",
+        "sous_texte": "Je l'ai peut-être survolé mais je n'ai pas creusé. J'ai honte de ne pas avoir traité ça mais je suis vraiment débordé. Dis-moi l'essentiel plutôt que de me renvoyer vers le doc.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Déculpabiliser totalement, reformuler l'essentiel en 20 secondes chrono pour lui éviter de relire, montrer que vous comprenez sa surcharge"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais non mais attends, je t'avais demandé ça moi ? Je sais plus trop où on en est là...",
+        "sous_texte": "J'ai reçu 40 propositions ce mois-ci. Je ne me souviens plus du contexte exact. Aide-moi à me resituer sans me faire sentir idiot.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recréer le contexte précis en 15 secondes : date, déclencheur, besoin exprimé par lui. Lui redonner le contrôle de la conversation."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est juste que... concrètement, j'ai pas validé le budget avec mon associée. Faut que j'en parle avec elle d'abord, voilà.",
+        "sous_texte": "C'est vrai mais c'est aussi une excuse confortable. En réalité, je ne suis pas encore convaincu du ROI ou j'ai peur de sa réaction si je propose ça maintenant.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider que c'est légitime, mais creuser : qu'est-ce qui lui permettrait d'être convaincu LUI avant d'impliquer l'associée ? Quels éléments lui manquent pour défendre le dossier en interne ?"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, je vois bien l'intérêt mais là, niveau timing, on a deux gros contrats qui se jouent... C'est compliqué de rajouter un truc en plus.",
+        "sous_texte": "Je suis sincèrement intéressé MAIS terrorisé à l'idée d'alourdir la charge mentale de l'équipe en pleine période tendue. Rassure-moi sur le coût d'adoption.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Reconnaître que c'est LE pire moment pour charger la barque. Proposer un démarrage différé ou progressif post-signature des gros contrats. Montrer que vous n'êtes pas là pour saborder son quotidien."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attends, on a déjà testé [outil concurrent], ça a été la galère totale. L'équipe n'a rien utilisé au final. Donc bon...",
+        "sous_texte": "J'ai été échaudé. Je ne veux pas revivre un échec qui me fasse perdre la face devant l'équipe. Prouve-moi que ce ne sera pas le même fiasco.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Creuser l'échec précédent pour comprendre ce qui a coincé (accompagnement ? complexité ? adoption ?). Montrer en quoi votre approche évite spécifiquement ces écueils. Être transparent sur les risques."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais là, dans ta proposition, tu m'annonces un gain de temps de 8h par semaine... Franchement, ça me paraît énorme. Comment tu arrives à ce chiffre ?",
+        "sous_texte": "Je sens le bullshit marketing. Si tu me balances des généralités, je décroche. Mais si tu m'expliques la méthodologie sérieusement, je t'écoute.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Détailler la méthodologie précise : quelles tâches, chez quel client similaire, sur quelle période. Être humble : 'Dans ton cas, peut-être plutôt 5-6h, il faudrait auditer'. La transparence désarme."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais non mais là, si je comprends bien, vous me proposez un accompagnement de 2 jours... Mais ça, c'est en plus du prix de base ? Parce que c'est pas hyper clair dans le devis.",
+        "sous_texte": "Je déteste les coûts cachés. Je veux tout savoir maintenant. Si tu noies le poisson, je me barre.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transparence totale immédiate. Détailler ligne par ligne : base + options + coûts annexes potentiels. Proposer de refaire un devis ultra-lisible si nécessaire. Pas de zone floue."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Après, le truc c'est que... je sais pas si l'équipe va accrocher. Ils ont leurs habitudes avec Trello et Excel. Ça marche moyen mais ils connaissent, quoi.",
+        "sous_texte": "J'ai peur de la résistance au changement. Je suis fatigué des batailles internes. Donne-moi des arguments pour convaincre l'équipe, pas juste moi.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Proposer une phase pilote avec 2-3 volontaires avant déploiement général. Impliquer l'équipe dans le paramétrage. Montrer des témoignages d'équipes sceptiques devenues ambassadrices."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, là tu me dis que ça se met en place en 48h mais j'ai un pote qui a galéré 3 semaines avec votre concurrent... C'est vraiment réaliste ton délai ?",
+        "sous_texte": "Je te teste sur ton honnêteté. Si tu survends, je le sens et je me barre. Sois transparent sur les emmerdes potentielles.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Nuancer : '48h pour la base, 2-3 semaines pour la personnalisation fine selon votre complexité. Voici les 3 trucs qui peuvent ralentir : X, Y, Z. On anticipe ça ensemble.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, c'est pas le montant qui me bloque... enfin si, un peu quand même, mais surtout je veux pas me retrouver coincé dans un contrat de 3 ans si ça marche pas.",
+        "sous_texte": "J'ai besoin de flexibilité et de réversibilité. Les engagements longs me terrorisent vu notre fragilité de trésorerie. Rassure-moi sur la sortie possible.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un engagement annuel avec clause de sortie à 6 mois si insatisfaction documentée. Ou formule sans engagement avec préavis 30j. Montrer que vous partagez le risque."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK je te rappelle la semaine prochaine, on verra ça tranquille.",
+        "sous_texte": "Je fuis poliment. Soit je ne suis pas convaincu, soit j'ai besoin de digérer, soit je vais te ghosting. Ne me laisse pas partir sans clarifier.",
+        "type": "reflexe",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Bloquer gentiment : 'Stéphane, soyons francs 30 secondes : qu'est-ce qui coince vraiment ? Budget ? Timing ? Conviction ? Aide-moi à comprendre pour pas qu'on se rappelle dans le vide.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, faut vraiment que j'en parle à [associée]. Je peux rien décider tout seul sur ces montants-là.",
+        "sous_texte": "C'est vrai mais incomplet. Soit je cherche une validation rassurante, soit je me planque derrière elle, soit j'ai vraiment besoin d'éléments pour la convaincre.",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer un call à 3 ou préparer un dossier de recommandation qu'il pourra présenter. Identifier les critères de décision de l'associée. Faciliter son rôle de prescripteur interne."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais non mais là, concrètement, avec le recrutement du chef de projet et le bilan compta qui traîne... Je peux pas rajouter ça maintenant. Faut qu'on se reparle dans 2-3 mois.",
+        "sous_texte": "C'est sincère. Je suis au bout. Mais si tu disparais 3 mois, je t'oublie. Et dans 3 mois, j'aurai d'autres urgences. Comment on garde le lien sans que ce soit lourd ?",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Valider totalement. Proposer un suivi léger : 'Je te fais un point mail mi-mars avec un retour client dans ton secteur, sans relance agressive. Ça te va ?' Maintenir sans oppresser."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Après, si je dis oui, ça démarre quand ? Parce que si c'est dans 6 mois, ça sert à rien de se presser...",
+        "sous_texte": "Je cherche une raison rationnelle de différer la décision. Ou je teste ta réactivité pour voir si t'es sérieux. Ou je suis sincèrement inquiet des délais de déploiement.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Clarifier les délais réels : 'Signature aujourd'hui = démarrage dans 10-15j. Mais si tu préfères valider maintenant et caler un kick-off fin mars, ça marche aussi.' Flexibilité cadrée."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, j'ai bien compris ton truc, c'est pas bête du tout... Mais voilà, là je suis vraiment sous l'eau, j'ai pas la bande passante mentale pour lancer ça. On se recale dans quelques mois, OK ?",
+      "condition_declenchement": "Après avoir épuisé les objections rationnelles. C'est l'objection émotionnelle ultime du dirigeant de PME débordé : la saturation cognitive. Survient quand il est intellectuellement convaincu mais émotionnellement incapable de se projeter dans le changement."
+    },
+    "pattern_escalade": "Stéphane démarre par des objections-réflexes de fuite ('pas le moment', 'pas le temps'). Si vous tenez bon avec empathie, il passe aux objections rationnelles (budget, timing, ROI, équipe). Si vous répondez avec transparence, il teste votre honnêteté avec des questions pièges. Si vous passez les tests, il révèle ses vraies peurs : l'échec passé, la surcharge, la validation interne. L'objection finale est émotionnelle : l'épuisement décisionnel. À ce stade, seule la légèreté et la permission de reporter gagnent sa confiance long terme.",
+    "piege_classique": "Stéphane dit souvent 'C'est pas le budget le problème' alors que ça l'est partiellement. Il minimise l'obstacle budgétaire parce qu'il a honte de négocier ou veut paraître solide financièrement devant un fournisseur. Le piège : le croire et pousser sur d'autres leviers. La réalité : il faut quand même sécuriser le budget en douceur, en proposant de l'étalement ou en impliquant l'expert-comptable pour déculpabiliser la dépense."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect après l'envoi d'une proposition commerciale pour obtenir un retour décisionnel clair (validation, refus ou étape suivante) tout en maintenant la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance après silence — Agence de communication",
+    "vous_etes": "Commercial BtoB, vous avez envoyé une proposition à Stéphane il y a 12 jours suite à un échange constructif, mais aucune nouvelle depuis.",
+    "vous_vendez": "Solution SaaS de gestion de projet et facturation pour agences créatives — abonnement annuel entre 4 500€ et 6 800€ selon modules.",
+    "vous_appelez": "Stéphane Mercier, 42 ans, directeur associé et fondateur de Mercier & Associés Communication (18 personnes). Perfectionniste, débordé, méfiant envers les commerciaux trop lisses. Veut déléguer mais a peur de se tromper.",
+    "ce_que_vous_savez": [
+      "Il gère tout en bricolage Excel/Trello/Drive, conscient que c'est bancal",
+      "A testé 2 outils SaaS ces 18 derniers mois : un abandonné (trop complexe), un sous-utilisé (frustrant)",
+      "L'agence croît (+12% CA) mais trésorerie tendue, il recherche un chef de projet depuis 3 mois",
+      "Toute décision >5K€ nécessite validation de son associée + expert-comptable",
+      "Il déteste le forcing et a besoin qu'on comprenne qu'il est sous l'eau, pas désintéressé"
+    ],
+    "votre_objectif": "Obtenir un retour clair — validation, refus argumenté, ou prochaine étape définie avec date — sans paraître insistant ni pressant.",
+    "vos_atouts": [
+      "Cas client : agence 20 personnes, ROI démontré en 5 mois (gain 8h/semaine direction)",
+      "Vous proposez un audit gratuit de 20 min de son process actuel si besoin",
+      "Vous êtes transparent sur les limites : implémentation réelle = 2-3 semaines, pas 5 minutes",
+      "Vous laissez une porte de sortie : si mauvais timing, vous revenez dans 3 mois sans rancune"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:35:58Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13917,
+    "total_time_s": 137.2
+  }
+}

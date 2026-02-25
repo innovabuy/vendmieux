@@ -1,0 +1,253 @@
+{
+  "id": "demo_italiano_chiamata_fredda_v1",
+  "scenario_type": "appel_telephonique",
+  "metadata": {
+    "titre_court": "Chiamata a freddo — Manutenzione predittiva IoT",
+    "type_appel": "Chiamata a freddo",
+    "secteur": "Lavorazioni meccaniche di precisione",
+    "taille_entreprise": "PMI — 50 dipendenti",
+    "difficulte": 3,
+    "duree_cible": "3 a 5 minuti",
+    "langue": "it",
+    "competences_force3d_prioritaires": {
+      "accroche": 1.5,
+      "objections": 1.5,
+      "engagement": 1.2
+    },
+    "version": "V1",
+    "template": "FORCE 3D®"
+  },
+  "extraction": {
+    "secteur": "Lavorazioni meccaniche di precisione",
+    "type_simulation": "Chiamata a freddo",
+    "difficulte": 3,
+    "tags": ["industria", "manutenzione", "IoT", "DG", "PMI", "cold call", "DISC-I/D", "demo", "italiano"]
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marco",
+      "nom": "Ferretti",
+      "genre": "M",
+      "age": 47,
+      "poste": "Direttore Generale",
+      "entreprise": {
+        "nom": "MeccanicaPro Srl",
+        "secteur": "Lavorazioni meccaniche di precisione — tornitura, fresatura, subfornitura",
+        "taille": "50 dipendenti",
+        "ca_approximatif": "6M€",
+        "localisation": "Milano, Italia"
+      }
+    },
+    "psychologie": {
+      "profil_disc": {
+        "principal": "I",
+        "secondaire": "I/D",
+        "description": "Relazionale ma orientato ai risultati. Apprezza un approccio umano e diretto. Se sente una connessione, si apre."
+      },
+      "traits_dominants": [
+        "relazionale",
+        "orientato ai risultati",
+        "diretto",
+        "diffidente verso i commerciali generici"
+      ],
+      "motivations_profondes": [
+        "Ridurre i fermi macchina non pianificati che costano una fortuna",
+        "Modernizzare la manutenzione senza rischio operativo"
+      ],
+      "peurs_freins": [
+        "Perdere tempo con l'ennesimo venditore di soluzioni miracolose",
+        "Dipendenza tecnologica da un unico fornitore",
+        "Che i suoi operai non sappiano usare la tecnologia"
+      ],
+      "rapport_aux_commerciaux": "Li tollera solo se sono concreti e umani. Detesta la parlantina vuota, le presentazioni e i discorsi generici. Rispetta un commerciale che conosce il suo settore e parla con franchezza.",
+      "style_communication": "directif",
+      "registre_langage": "Diretto, umano, senza fronzoli. Frasi corte. Dà del Lei ma passa al tu se c'è feeling.",
+      "sensibilite_emotionnelle": "Media-alta — apprezza l'approccio umano se è genuino.",
+      "patience": "Bassa — chiude se non c'è valore nei primi 60 secondi."
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Neutro-freddo. Non ostile ma nemmeno accogliente. È tra due riunioni e non ha tempo.",
+      "signaux_interet": [
+        "Fa domande tecniche precise sulla soluzione",
+        "Menziona i propri problemi di guasti o ritardi",
+        "Chiede referenze nel settore meccanico",
+        "Fa una pausa dopo un numero impressionante"
+      ],
+      "signaux_rejet": [
+        "Sospira",
+        "Risponde a monosillabi",
+        "Dice 'Senta...' o 'Mi mandi una mail'",
+        "Interrompe il commerciale a metà frase"
+      ],
+      "tics_langage": [
+        "Senta...",
+        "E concretamente?",
+        "Venga al dunque.",
+        "Allora...",
+        "Mi dica."
+      ],
+      "debit_parole": "Veloce e diretto. Interrompe se il commerciale si dilunga troppo.",
+      "tolerance_monologue_vendeur": "Interrompe dopo 15 secondi di monologo"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 fermi macchina non pianificati nell'ultimo trimestre. Il peggiore: il fornitore ha impiegato 6 ore ad arrivare — un'intera giornata di produzione persa. Il portafoglio ordini è pieno ma i margini si riducono per i ritardi nelle consegne.",
+      "priorites_actuelles": [
+        "Ridurre i fermi macchina non pianificati",
+        "Consegnare gli ordini attuali in tempo"
+      ],
+      "experience_avec_offre_similaire": "Un'azienda di sensori è venuta 6 mesi fa, ha fatto una bella demo ma non si è più fatta sentire. Brutto ricordo.",
+      "fournisseur_actuel": "Fornitore di manutenzione correttiva locale da 10 anni (Tecno Service Milano). Bravo nel correttivo ma nessuna capacità predittiva. I tempi di risposta peggiorano.",
+      "budget_disponible": "Nessun budget assegnato per innovazione, ma potrebbe essere sbloccato se il ROI viene dimostrato rapidamente"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Menzionare una cifra concreta del costo per ora di fermo nelle lavorazioni di precisione (1.200 a 3.500€)",
+        "Citare un caso concreto nella meccanica di precisione o nella subfornitura",
+        "Proporre una visita senza impegno di 20-30 min in stabilimento"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discorso generico 'la nostra soluzione rivoluzionaria'",
+        "Non conoscere il suo settore (meccanica di precisione)",
+        "Parlare di IA o trasformazione digitale in modo astratto",
+        "Insistere dopo un rifiuto chiaro",
+        "Tecniche di manipolazione visibili"
+      ]
+    },
+    "informations_revelables": [
+      {
+        "question_qui_debloque": "Qual è il vostro tempo di risposta attuale in caso di guasto critico?",
+        "information_revelee": "L'ultima volta abbiamo aspettato 6 ore. Abbiamo perso un'intera giornata di produzione."
+      },
+      {
+        "question_qui_debloque": "Quanto vi costa un'ora di fermo sulle vostre macchine?",
+        "information_revelee": "Sul nostro centro di lavoro 5 assi... è difficile da calcolare ma è parecchio."
+      },
+      {
+        "question_qui_debloque": "Avete macchinari connessi nello stabilimento attualmente?",
+        "information_revelee": "Abbiamo messo sensori su 2 macchine ma non sappiamo bene cosa fare con i dati."
+      },
+      {
+        "question_qui_debloque": "Qual è la vostra priorità di manutenzione per quest'anno?",
+        "information_revelee": "Ridurre i fermi non pianificati. Ne abbiamo avuti 3 solo nell'ultimo trimestre."
+      }
+    ]
+  },
+  "objections": {
+    "objections": [
+      {
+        "numero": 1,
+        "moment": "accroche",
+        "nom": "Fornitore attuale",
+        "verbatim": "Abbiamo già qualcuno per questo.",
+        "sous_texte": "Filtro automatico, verifica se il commerciale si arrende facilmente. Fedele al fornitore attuale ma insoddisfazione latente sui tempi di risposta.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "seuil_bascule": "Il commerciale menziona una cifra concreta sul costo orario di un fermo non pianificato. Ferretti fa una pausa, risponde con una domanda o riconosce il problema.",
+        "fermeture_definitive": "Il commerciale ripete lo stesso punto senza aggiungere valore. Ferretti: 'Senta, davvero non ho tempo. Buona giornata.'",
+        "reponse_efficace_indice": "Non attaccare il fornitore. Ancorare una cifra concreta che crei curiosità sul costo dell'inazione."
+      },
+      {
+        "numero": 2,
+        "moment": "decouverte",
+        "nom": "Tempi di risposta (dolore nascosto)",
+        "verbatim": "Il nostro fornitore risponde... beh, fa quello che può.",
+        "sous_texte": "Leggera esitazione che tradisce un'insoddisfazione reale. Segnale di dolore nascosto da approfondire.",
+        "type": "sincere",
+        "difficulte": 8,
+        "seuil_bascule": "Il commerciale approfondisce: 'Qual è il tempo medio di risposta quando avete un guasto critico?' Ferretti rivela l'incidente delle 6 ore.",
+        "fermeture_definitive": "Il commerciale ignora il segnale di dolore e torna al discorso generico.",
+        "reponse_efficace_indice": "Chiedere concretamente i tempi di risposta. Non fare pitch. Lasciare che Ferretti parli del suo dolore."
+      },
+      {
+        "numero": 3,
+        "moment": "closing",
+        "nom": "Non è il momento",
+        "verbatim": "Non è il momento, siamo a pieno regime di produzione.",
+        "sous_texte": "Rinvio classico. Ma non è completamente chiuso se le obiezioni 1 e 2 sono state trattate bene.",
+        "type": "tactique",
+        "difficulte": 6,
+        "seuil_bascule": "Il commerciale propone un micro-impegno con data concreta. Ferretti accetta se le obiezioni precedenti sono state trattate bene.",
+        "fermeture_definitive": "Il commerciale insiste senza proporre una data. Ferretti: 'Mi mandi una mail.' (segnale di fine).",
+        "reponse_efficace_indice": "Proporre una data concreta e un impegno senza rischio."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Senta, ho una riunione. Mi mandi qualcosa di concreto con i numeri, non chiacchiere da venditore.",
+      "condition_declenchement": "Se il commerciale non ha creato urgenza dopo 3 minuti"
+    },
+    "pattern_escalade": "Fornitore attuale → Dolore nascosto (tempi) → Non è il momento → Email/riattaccare",
+    "regle_absolue": "Il prospect non ripete mai la stessa obiezione più di 2 volte. Se il commerciale risponde bene, l'atteggiamento deve evolversi."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "IoT Predict",
+      "secteur": "Manutenzione predittiva industriale",
+      "description": "Azienda italiana specializzata in sensori di manutenzione predittiva per l'industria"
+    },
+    "offre": {
+      "nom": "PredictSense",
+      "description": "Sensori IoT che rilevano anomalie nelle macchine prima del guasto. Installazione in 2 ore, senza fermo produzione. Alert in tempo reale sullo smartphone.",
+      "proposition_valeur": "Riduzione del 60% dei fermi macchina non pianificati",
+      "prix": "A partire da 500€/mese per 5 macchine",
+      "references": [
+        "Fonderie Lombardia (-62% fermi in 4 mesi)",
+        "Precisione Meccanica Milano — ROI in 3 mesi"
+      ],
+      "avantages_vs_concurrence": "Installazione senza fermo produzione, pilota gratuito 30 giorni su 2 macchine"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Ottenere un appuntamento di 20-30 minuti in stabilimento per una demo su una macchina.",
+      "criteres_succes": [
+        "Ottenere data e orario concreti",
+        "20-30 minuti in stabilimento, non di più",
+        "Demo su una macchina reale"
+      ]
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Primo contatto. Nessuno scambio precedente.",
+      "infos_connues": "PMI manifatturiera Milano, 50 dipendenti, meccanica di precisione, 3 fermi non pianificati recentemente"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Chiamata a freddo — Manutenzione predittiva IoT",
+    "vous_etes": "Commerciale presso IoT Predict, azienda italiana specializzata in sensori di manutenzione predittiva per l'industria.",
+    "vous_vendez": "Sensori IoT che rilevano anomalie nelle macchine prima del guasto. Installazione in 2h, senza fermo produzione. Alert in tempo reale.",
+    "vous_appelez": "Marco Ferretti, Direttore Generale di MeccanicaPro Srl (50 dipendenti, meccanica di precisione, Milano). Prima chiamata, contatto a freddo.",
+    "ce_que_vous_savez": [
+      "L'azienda ha avuto 3 fermi macchina non pianificati nell'ultimo trimestre",
+      "Il fornitore attuale è solo correttivo, nessuna capacità predittiva",
+      "Un'azienda di sensori è venuta 6 mesi fa senza convincere",
+      "Il portafoglio ordini è pieno — i ritardi costano caro"
+    ],
+    "votre_objectif": "Ottenere un appuntamento di 20-30 minuti in stabilimento per una demo su una macchina.",
+    "vos_atouts": [
+      "Referenza cliente: Fonderie Lombardia (-62% fermi in 4 mesi)",
+      "Pilota gratuito 30 giorni su 2 macchine",
+      "Installazione senza fermo produzione",
+      "ROI dimostrabile in 3 mesi"
+    ],
+    "conseils": "Non fare pitch subito. Chiedi dei guasti recenti e del loro impatto sulle consegne. Quantifica il costo dell'inazione. Proponi 20 min senza impegno con data concreta.",
+    "duree_estimee": "3-5 minuti",
+    "attention": "Profilo I/D — relazionale ma orientato ai risultati. Apprezza l'approccio umano. Chiude se non c'è valore in 60 secondi."
+  },
+  "scenarios_de_fin": {
+    "rdv_obtenu": {
+      "conditions": "Il commerciale ha menzionato una cifra concreta + approfondito il dolore dei tempi + proposto una visita senza impegno con data. Obiezioni 1 e 2 trattate bene.",
+      "replique": "Va bene. Giovedì a metà mattina, 30 minuti. Mi faccia vedere come funziona su una macchina. Ma se è solo chiacchiere, ci fermiamo lì."
+    },
+    "email_demande": {
+      "conditions": "Il commerciale ha iniziato bene ma non ha approfondito il dolore o non ha proposto una data.",
+      "replique": "Mi mandi quello che ha per email. Se mi interessa la ricontatto."
+    },
+    "refus_poli": {
+      "conditions": "Il commerciale ha mancato l'apertura o non ha dato valore in 90 secondi.",
+      "replique": "Senta, abbiamo un fornitore che ci va bene. Buona giornata."
+    },
+    "raccrochage": {
+      "conditions": "Il commerciale ha insistito dopo un rifiuto chiaro o ha usato manipolazione visibile.",
+      "replique": "[Riattacca senza dire nulla]"
+    }
+  }
+}

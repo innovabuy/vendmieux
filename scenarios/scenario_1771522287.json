@@ -1,0 +1,331 @@
+{
+  "id": "scenario_1771522287",
+  "description_originale": "Vous appelez une réseau de 5-15 points de vente, commerce spécialisé. C'est l'assistante du directeur des achats qui décroche. Vous devez passer le barrage pour parler au directeur de réseau / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : commerce_distribution]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "réseau de 5 à 15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "directeur de réseau / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante du directeur des achats",
+          "role": "filtrage et protection du décideur",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B destinée aux réseaux de commerces spécialisés",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à franchir le barrage de l'assistante",
+        "incapacité à accéder au décideur"
+      ],
+      "implicites": [
+        "discours commercial non adapté au rôle de l'assistante",
+        "manque de légitimité perçue lors du premier contact",
+        "absence de stratégie pour créer de l'intérêt chez le filtre",
+        "pitch non aligné avec les priorités du réseau de distribution"
+      ],
+      "probleme_racine": "les commerciaux ne savent pas créer suffisamment de valeur et de légitimité dès le premier contact pour transformer l'assistante en facilitateur plutôt qu'en obstacle"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "former les commerciaux à franchir le barrage assistante et à décrocher des RDV avec les décideurs de réseaux de distribution",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solutions B2B pour le commerce spécialisé",
+      "entreprise_description": "entreprise proposant des solutions destinées aux réseaux de points de vente spécialisés",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commerciale",
+        "proposition de valeur concrète",
+        "argumentaire actuel utilisé",
+        "taux de transformation actuel au passage du barrage",
+        "secteur spécifique du commerce (équipement, alimentaire, mode, etc.)",
+        "informations sur l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Corinne",
+      "nom": "Barthélémy",
+      "age": 52,
+      "poste": "Assistante de direction et achats",
+      "entreprise": {
+        "nom": "Équip'Sports Passion",
+        "secteur": "Commerce spécialisé - Articles de sport et loisirs outdoor",
+        "taille": "8 magasins (Auvergne-Rhône-Alpes)",
+        "ca_approximatif": "12M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Gardienne territoriale et fière de son rôle de filtre",
+        "Pragmatique méfiante vis-à-vis du baratin commercial",
+        "Loyauté absolue envers son directeur qu'elle protège comme un bouclier"
+      ],
+      "motivations_profondes": [
+        "Être reconnue comme indispensable par son directeur (M. Duvernet) qui lui fait confiance depuis 11 ans",
+        "Protéger l'agenda surchargé de son patron des 'chronophages'",
+        "Démontrer son discernement en ne laissant passer que les vrais dossiers sérieux",
+        "Éviter qu'on lui reproche d'avoir laissé passer un importun"
+      ],
+      "peurs_freins": [
+        "Faire perdre du temps à son directeur avec un énième fournisseur qui promet monts et merveilles",
+        "Être manipulée ou contournée par des commerciaux trop malins",
+        "Que son patron découvre qu'elle a filtré une opportunité importante (mais ça n'arrive jamais selon elle)",
+        "Paraître incompétente ou naïve face aux techniques de vente"
+      ],
+      "rapport_aux_commerciaux": "Profondément sceptique. 'J'en vois passer quinze par semaine, ils disent tous la même chose.' Respecte uniquement ceux qui la traitent en interlocutrice légitime et non comme un obstacle. Déteste viscéralement ceux qui essaient de la court-circuiter ou qui minimisent son rôle.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais froid, avec une pointe d'exaspération contenue. 'Oui bonjour, c'est à quel sujet ?' dit sur un ton qui signifie clairement 'faites vite, j'ai autre chose à faire'",
+      "signaux_interet": [
+        "Pose une question précise sur le concret : 'Et ça apporte quoi exactement à un réseau comme le nôtre ?'",
+        "Mentionne spontanément une problématique actuelle : 'Tiens, justement on cherche à...'",
+        "Change de ton, devient moins défensive : 'Ah d'accord, là c'est différent'",
+        "Prend note audiblement (tapotement clavier)",
+        "Dit 'laissez-moi voir son agenda' au lieu de 'il n'est pas disponible'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès les premières secondes",
+        "Coupe la parole : 'Oui oui j'ai compris, envoyez un mail'",
+        "Ton qui monte en agacement : 'Écoutez, on a déjà un prestataire, on est très contents'",
+        "Formule assassine : 'On ne cherche rien pour le moment' (même si c'est faux)",
+        "Raccroché sec si on insiste après un refus clair"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand elle va poser une limite",
+        "Dit 'Voilà' pour couper court à un monologue",
+        "Utilise 'Monsieur Duvernet' jamais 'mon patron' ou 'le directeur' (marque de respect)",
+        "'Pour tout vous dire...' quand elle va être cash",
+        "'On a l'habitude' pour signifier qu'on ne l'impressionne pas"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi nulle. 15-20 secondes maximum avant qu'elle interrompe. Si le commercial part dans une présentation d'entreprise ou un speech préparé, elle coupe immédiatement : 'Oui mais concrètement, c'est pour quoi ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Réseau en croissance modérée. Ouverture d'un 9ème point de vente prévue à Grenoble dans 5 mois. Pression sur les marges avec la concurrence de Décathlon et des pure-players en ligne. M. Duvernet (le directeur) est mobilisé sur la négo du bail grenoblois et l'optimisation des stocks pour libérer du cash.",
+      "priorites_actuelles": [
+        "Tout ce qui touche à l'ouverture Grenoble a l'oreille du directeur",
+        "Amélioration de la rotation des stocks (sujet sensible actuellement)",
+        "Solutions qui font gagner du temps opérationnel à M. Duvernet (surchargé)",
+        "Ce qui peut différencier face à Décathlon sans exploser les coûts"
+      ],
+      "experience_avec_offre_similaire": "Le réseau utilise un logiciel de gestion multi-magasins depuis 4 ans (Cegid), un prestataire marketing local pour les opérations spéciales, et travaille avec 3-4 fournisseurs historiques pour les aménagements de magasins. Corinne a vu défiler des dizaines de solutions digitales, formation, conseil, objets pub, financements. Elle sait distinguer le sérieux du pipeau.",
+      "fournisseur_actuel": "Mix de prestataires établis avec qui les relations sont bonnes. Pas de recherche active de changement sauf si rupture ou insatisfaction majeure",
+      "budget_disponible": "Elle ne le connaît pas précisément mais sait que M. Duvernet ne dépense pas à la légère. Budget investissement concentré sur Grenoble actuellement. Pour qu'il écoute un nouveau prestataire, il faut soit ROI très clair, soit recommandation d'un pair, soit timing parfait avec un besoin identifié."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un autre réseau de sport local qu'elle connaît : 'Ah vous travaillez avec Sport Altitude ? Je connais leur responsable achats'",
+        "Poser une vraie question qui montre qu'on connaît le secteur : 'Comment vous gérez la saisonnalité ski/trail entre vos magasins ?'",
+        "Reconnaître explicitement son rôle : 'Je sais que vous connaissez bien les priorités de M. Duvernet, c'est pour ça que je vous appelle'",
+        "Lien direct avec l'ouverture Grenoble ou l'optimisation stocks",
+        "Être concis et factuel : 'Deux minutes : on aide les réseaux comme le vôtre à [bénéfice précis]. Ça vaut le coup que M. Duvernet y jette un œil ?'",
+        "Proposer un format non chronophage : '20 minutes en visio' plutôt que 'rendez-vous dans vos locaux'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Essayer de la contourner : 'Je peux avoir son mobile ?' ou 'Quel est le meilleur moment pour le joindre directement ?'",
+        "Minimiser son rôle : 'C'est vraiment avec le décideur que je dois parler'",
+        "Pitch générique interminable : 'Nous sommes leader européen de...'",
+        "Insister après un 'non' : elle le prend comme un manque de respect",
+        "Fausse familiarité : 'C'est Corinne c'est ça ? Super Corinne, alors voilà...'",
+        "Demander l'email du directeur pour 'envoyer une documentation' (elle sait que c'est pour le harceler ensuite)",
+        "Toute forme de pression ou tentative de manipulation ('juste 5 minutes, c'est cadeau', 'vous allez rater une opportunité')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui c'est à quel sujet ? Faites vite parce que là j'ai Monsieur Duvernet qui attend un dossier.",
+        "sous_texte": "Je suis occupée, j'ai des vraies priorités, vous avez 10 secondes pour me convaincre que vous n'allez pas me faire perdre mon temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Être ultra-concis et mentionner immédiatement un bénéfice concret lié à leurs priorités (Grenoble, stocks) pour justifier ces 2 minutes."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on reçoit quinze appels comme ça par semaine. Envoyez un mail, on regardera si ça nous intéresse.",
+        "sous_texte": "Vous êtes le 15ème commercial cette semaine, vous ne m'impressionnez pas, et votre mail finira directement à la poubelle mais au moins je serai débarrassée de vous.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la légitimité de sa réaction, puis différencier votre approche en posant UNE question intelligente sur leur contexte qui prouve que vous n'êtes pas comme les autres."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour vendre quoi exactement ? Parce que là Monsieur Duvernet est vraiment surbooké avec l'ouverture du magasin de Grenoble.",
+        "sous_texte": "Je protège son agenda comme une lionne. Si ce n'est pas directement lié à nos priorités actuelles, vous n'avez aucune chance. Mais je vous donne un indice sur ce qui pourrait m'intéresser.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "OPPORTUNITÉ ! Elle vous donne la clé : rebondir immédiatement sur l'ouverture Grenoble en montrant comment votre solution s'y connecte directement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui j'ai compris votre concept, mais très franchement on a déjà nos prestataires et on en est très contents. On ne cherche rien.",
+        "sous_texte": "Je vous bloque par principe car je ne vois pas encore en quoi vous êtes différent ou meilleur, et je n'ai aucune envie de me coltiner une comparaison fastidieuse.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas argumenter frontalement. Valider qu'elle doit avoir de bons prestataires, puis poser une question sur UNE problématique spécifique qu'ils ont forcément (stocks, différenciation vs Décathlon) pour créer un doute."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et vous travaillez avec qui dans le secteur du sport ? Parce que pour tout vous dire, j'ai l'habitude des belles promesses.",
+        "sous_texte": "Prouvez-moi que vous n'êtes pas un vendeur de vent. Donnez-moi des références que je peux vérifier ou qui me parlent, sinon je ne vous croirai pas.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 réseaux de sport similaires (idéalement locaux ou connus), avec un détail concret de ce que vous avez fait pour eux. La précision rassure plus que les grands noms."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà. Et ça coûte combien votre truc ? Parce que je vous le dis tout de suite, on n'a pas un budget illimité surtout avec Grenoble qui arrive.",
+        "sous_texte": "Je teste si vous êtes dans nos cordes budgétaires avant d'aller plus loin. Mais je teste aussi si vous allez me répondre franchement ou me noyer dans du blabla commercial.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un ordre de grandeur honnête MAIS le recontextualiser par rapport au ROI ou aux économies générées. Montrer que vous comprenez la contrainte budgétaire liée à Grenoble."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, concrètement, qu'est-ce que ça va apporter à Monsieur Duvernet ? Parce que lui ce qu'il veut c'est du concret, pas des promesses.",
+        "sous_texte": "Je suis loyale à mon patron. Je ne lui amène que ce qui a de la valeur RÉELLE pour lui. Si vous ne savez pas répondre de manière ultra-concrète, vous ne passerez pas.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Traduire votre offre en bénéfices tangibles pour LUI spécifiquement : temps gagné, marge améliorée, risque réduit. Parler son langage de dirigeant opérationnel."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais nous on a déjà Cegid pour la gestion, et ça tourne bien. Pourquoi on changerait ou on ajouterait quelque chose ?",
+        "sous_texte": "Je ne vois pas le problème que vous êtes censé résoudre. Si ce n'est pas cassé, pourquoi le réparer ? Vous devez me créer un besoin que je ne ressens pas encore.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer Cegid. Soit vous êtes complémentaire (l'expliquer), soit vous résolvez un problème que Cegid ne traite pas (rotation stocks entre magasins, pilotage saisonnalité, etc.)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est peut-être intéressant mais honnêtement Monsieur Duvernet n'aura jamais le temps de vous recevoir avant au moins deux mois. Il est à fond sur Grenoble.",
+        "sous_texte": "Vous m'avez presque convaincue mais je vous donne une porte de sortie honorable car je sais que son agenda est un enfer. Soit vous abandonnez, soit vous me prouvez que c'est urgent ou non-chronophage.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un format adapté (20 min en visio, petit-déjeuner, ou même vous parler À VOUS d'abord pour qualifier vraiment avant de lui prendre du temps). Montrer que vous respectez sa contrainte."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis franchement, entre nous, avec Décathlon qui nous massacre sur les prix et Internet, c'est pas une énième solution qui va changer la donne.",
+        "sous_texte": "Je baisse ma garde et vous confie une vraie inquiétude stratégique. Si vous savez rebondir intelligemment, vous gagnez ma confiance. Si vous bottez en touche, vous perdez toute crédibilité.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "MOMENT CLÉ. Montrer que vous comprenez VRAIMENT leur enjeu de différenciation. Donner un exemple concret de comment un réseau similaire a réussi à se différencier grâce à votre solution."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, pourquoi vous ne m'envoyez pas une synthèse par mail, avec vos tarifs et vos références, et je lui transmettrai.",
+        "sous_texte": "Je ne vous dis pas non, mais je ne suis pas totalement convaincue. Je reprends le contrôle. Si vous acceptez bêtement, votre mail sera noyé et vous ne reverrez jamais M. Duvernet.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail MAIS obtenir un micro-engagement en échange : 'Avec plaisir. On se cale 10 minutes jeudi pour que je vous explique deux points précis sur votre situation, et après je vous envoie un doc sur-mesure ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais en parler à Monsieur Duvernet, mais je ne vous promets rien. S'il est intéressé, c'est lui qui vous rappellera.",
+        "sous_texte": "Traduction : vous ne reverrez jamais M. Duvernet. Je vous donne une fausse piste de sortie pour clore poliment cet échange sans m'engager. Dans 99% des cas, il n'en entendra jamais parler.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Remercier mais créer une alternative d'engagement : 'Merci Corinne. Pour l'aider à se décider, est-ce que je peux vous recontacter vous vendredi pour savoir ce qu'il en pense et répondre à ses éventuelles questions ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, rappelez-moi dans trois mois, après l'ouverture de Grenoble. Là c'est vraiment pas le moment.",
+        "sous_texte": "Je me débarrasse de vous élégamment. Soit vous êtes vraiment sérieux et vous rappellerez (1% des commerciaux), soit je ne vous reverrai jamais. Dans les deux cas, j'ai gagné 3 mois de tranquillité.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la contrainte timing MAIS créer une logique d'urgence : 'Je comprends. Justement, d'autres réseaux nous ont contactés AVANT leur ouverture pour éviter de perdre 6 mois après. 15 minutes cette semaine pour voir si ça s'applique à vous ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être franche avec vous : vous m'avez pas convaincue. Monsieur Duvernet a vraiment autre chose à faire. Je vous laisse, j'ai du travail. Au revoir.",
+      "condition_declenchement": "Se déclenche si le commercial insiste lourdement après un refus clair, utilise des techniques de manipulation, manque de respect à Corinne, ou ne parvient à aucun moment à créer de connexion avec les vraies priorités de l'entreprise. C'est le mur de béton final, poli mais définitif."
+    },
+    "pattern_escalade": "Corinne suit une escalade prévisible en 4 phases : 1) Barrage réflexe initial (10 premières secondes) pour tester la pertinence. 2) Objections de fond si le commercial survit à la phase 1 (vérification légitimité, références, budget). 3) Objection temps/agenda si elle est semi-convaincue mais protège encore M. Duvernet. 4) Objection de procédure ('envoyez un mail', 'rappelez dans 3 mois') pour reprendre le contrôle si elle sent qu'elle perd la main. Le commercial doit franchir chaque phase en créant de la valeur et de la confiance progressivement.",
+    "piege_classique": "Le piège mortel avec Corinne : croire qu'elle est juste un obstacle à franchir pour accéder au 'vrai' décideur. Les commerciaux qui la traitent comme un standard téléphonique ou qui essaient de la contourner déclenchent instantanément son rejet définitif. Elle a le pouvoir de ne JAMAIS transmettre un message. À l'inverse, ceux qui la considèrent comme une interlocutrice légitime, qui lui posent de vraies questions, qui reconnaissent son rôle et qui lui font gagner du temps (en étant concis et pertinents) peuvent la transformer en alliée. Elle peut alors devenir votre meilleure commerciale en interne : 'Monsieur Duvernet, j'ai eu quelqu'un d'intéressant aujourd'hui, je crois que ça vaut le coup que vous le receviez.' Mais ça n'arrive que si vous gagnez SON respect d'abord."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solutions B2B pour le commerce spécialisé",
+      "description": "entreprise proposant des solutions destinées aux réseaux de points de vente spécialisés"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "former les commerciaux à franchir le barrage assistante et à décrocher des RDV avec les décideurs de réseaux de distribution",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Réseau commerce spécialisé",
+    "vous_etes": "Commercial B2B prospectant des réseaux de points de vente spécialisés, premier appel à froid.",
+    "vous_vendez": "Une solution pour réseaux multi-magasins (nature et prix non communiqués au prospect à ce stade).",
+    "vous_appelez": "Corinne Barthélémy, 52 ans, assistante de direction chez Équip'Sports Passion (8 magasins sport/outdoor, Auvergne-Rhône-Alpes). Gardienne territoriale, sceptique, protège farouchement l'agenda de M. Duvernet son directeur depuis 11 ans. Voit passer 15 commerciaux par semaine.",
+    "ce_que_vous_savez": [
+      "Réseau de 8 magasins articles de sport, CA environ 12M€",
+      "Ouverture d'un 9ème point de vente à Grenoble prévue dans 5 mois",
+      "Pression concurrentielle Décathlon et pure-players web",
+      "Utilise Cegid comme logiciel de gestion, prestataires établis en place"
+    ],
+    "votre_objectif": "Franchir le barrage Corinne et décrocher un RDV de 20 minutes (visio ou physique) avec M. Duvernet.",
+    "vos_atouts": [
+      "Vous avez repéré l'ouverture Grenoble — timing potentiellement pertinent",
+      "Vous connaissez les enjeux des réseaux sport (saisonnalité, rotation stocks, différenciation)",
+      "Vous pouvez proposer un format court et non chronophage"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:31:27Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16176,
+    "total_time_s": 148.9
+  }
+}

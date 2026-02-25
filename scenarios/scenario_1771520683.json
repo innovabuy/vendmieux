@@ -1,0 +1,375 @@
+{
+  "id": "scenario_1771520683",
+  "description_originale": "Vous appelez une groupe de concessions multi-marques ou équipementier de 200+ salariés. L'secrétaire commerciale du directeur des achats groupe ou directeur après-vente décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : automobile]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "automobile - concessions multi-marques et équipementiers",
+      "taille_entreprise": "200+ salariés - grande entreprise",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats groupe ou directeur après-vente",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "secrétaire commerciale",
+          "niveau_hierarchique": "operationnel",
+          "role": "filtre - barrage secrétariat",
+          "caractéristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - probablement solution B2B pour le secteur automobile",
+      "proposition_valeur_presumee": "solution pour améliorer les achats groupe ou l'après-vente dans le secteur automobile",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "barrage secrétariat systématique",
+        "difficulté à accéder au décideur",
+        "secrétaire professionnelle habituée à filtrer les commerciaux"
+      ],
+      "implicites": [
+        "manque de technique pour passer les barrages avec élégance",
+        "discours commercial probablement trop direct ou générique",
+        "absence de légitimité perçue lors de l'appel",
+        "difficulté à qualifier l'opportunité avant d'atteindre le décideur",
+        "taux de transformation faible des appels froids"
+      ],
+      "probleme_racine": "incapacité à créer une légitimité suffisante et un discours adapté pour passer le barrage secrétariat de manière professionnelle et obtenir l'accès aux décideurs de haut niveau"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de passage de barrage secrétariat avec élégance et professionnalisme pour accéder aux décideurs de haut niveau et décrocher des RDV qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B pour le secteur automobile",
+      "entreprise_description": "entreprise proposant des solutions ou services destinés aux groupes de concessions automobiles multi-marques et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution B2B ciblant les fonctions achats groupe ou après-vente dans le secteur automobile",
+      "proposition_valeur": "NON_SPECIFIE - probablement optimisation des coûts, amélioration de la performance, solutions innovantes",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commerciale",
+        "proposition de valeur spécifique",
+        "fourchette de prix",
+        "arguments différenciants",
+        "références clients",
+        "zone géographique",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Desmarest",
+      "age": 51,
+      "poste": "Directeur des Achats Groupe",
+      "entreprise": {
+        "nom": "Groupe Automotive Services France",
+        "secteur": "Distribution automobile multi-marques (Renault, Peugeot, Mercedes) + équipements",
+        "taille": "340 salariés répartis sur 8 sites en Île-de-France et Hauts-de-France",
+        "ca_approximatif": "185 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à l'impatience - veut du concret immédiatement",
+        "Méfiant envers les promesses commerciales - a été échaudé plusieurs fois",
+        "Calculateur obsessionnel - tout doit avoir un ROI chiffrable sous 18 mois"
+      ],
+      "motivations_profondes": [
+        "Réduire les coûts d'achat de 4% cette année (KPI imposé par la direction générale)",
+        "Prouver sa valeur ajoutée face à une digitalisation croissante des achats",
+        "Éviter les problèmes : un mauvais fournisseur = des ennuis avec les directeurs de site",
+        "Protéger sa réputation interne durement acquise"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des commerciaux qui ne comprennent rien au secteur auto",
+        "Être jugé sur un mauvais choix de prestataire qui paralyse l'après-vente",
+        "Les solutions 'innovantes' qui ne marchent qu'en PowerPoint",
+        "Dépendre d'un petit fournisseur qui fait faillite au bout de 6 mois"
+      ],
+      "rapport_aux_commerciaux": "Relation utilitaire et défensive. Considère que 80% des commerciaux perdent son temps avec du vent. Respecte uniquement ceux qui connaissent VRAIMENT son métier, arrivent avec des chiffres précis et des références vérifiables. Déteste qu'on le flatte ou qu'on essaie de créer une fausse proximité.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, professionnel, légèrement blasé. Première phrase type : 'Bon, vous avez 15 minutes, qu'est-ce que vous avez à me proposer concrètement ?'",
+      "signaux_interet": [
+        "Se redresse sur sa chaise et sort un stylo pour prendre des notes",
+        "Demande des chiffres précis et des références clients dans son secteur",
+        "Pose des questions techniques pointues sur l'implémentation",
+        "Évoque spontanément un problème actuel de son organisation"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son téléphone",
+        "Coupe la parole avec 'Oui oui, j'ai compris le principe, mais...'",
+        "Croise les bras et recule sur sa chaise",
+        "Phrases assassines : 'C'est gentil mais on a déjà essayé ce genre de trucs' ou 'Franchement, je vois pas la différence avec ce qu'on a'"
+      ],
+      "tics_langage": [
+        "Abuse du 'concrètement' et 'dans les faits'",
+        "Ponctue ses phrases de 'hein' interrogatif : 'Parce que moi j'ai besoin de résultats, hein'",
+        "Utilise un vocabulaire automobile sans l'expliquer pour tester l'interlocuteur",
+        "Soupirs audibles quand quelque chose ne lui convient pas"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe au bout de 45 secondes maximum si ce n'est pas directement pertinent. Exige un échange, pas une présentation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression forte de la direction pour optimiser les marges face à la concurrence des mandataires auto et à la baisse des ventes de véhicules neufs. Le groupe mise sur l'après-vente et les services pour compenser. Projet de centralisation des achats pièces détachées en cours, sources de tensions avec les directeurs de sites qui perdent leur autonomie.",
+      "priorites_actuelles": [
+        "Négocier de meilleurs tarifs avec les fournisseurs historiques de pièces (objectif : -4% global)",
+        "Trouver des fournisseurs alternatifs crédibles pour faire pression sur les équipementiers officiels",
+        "Digitaliser le processus de commande qui est encore trop manuel",
+        "Réduire les délais de livraison qui impactent la satisfaction client atelier"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 2 ans une plateforme digitale d'achats mutualisés qui s'est révélée catastrophique : interface complexe, bugs réguliers, SAV inexistant. Échaudé depuis. A aussi eu des commerciaux qui promettaient 20% d'économies sans jamais pouvoir les démontrer avec des chiffres réels.",
+      "fournisseur_actuel": "Mix de fournisseurs officiels des marques (60% des achats), d'équipementiers alternatifs de qualité équivalente (30%), et de quelques fournisseurs de consommables/outillage (10%). Relations tendues avec le responsable commercial du principal équipementier suite à une rupture de stock critique.",
+      "budget_disponible": "Pas de budget dédié à de nouveaux outils ou prestataires. Toute dépense supplémentaire doit générer des économies démontrables qui l'autofinancent. Enveloppe maximale sans validation DG : 25K€. Au-delà, procédure lourde avec comité de direction."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner des références précises dans son secteur (groupes de concessions concurrents) avec contacts vérifiables",
+        "Arriver avec un benchmark chiffré de ses coûts vs. marché (prouver qu'on a fait ses devoirs)",
+        "Parler son langage : taux de rotation stocks, NPS atelier, panier moyen après-vente",
+        "Reconnaître la complexité de son métier et les contraintes spécifiques du multi-marques",
+        "Proposer un pilote limité et mesurable avant tout déploiement",
+        "Être recommandé par quelqu'un qu'il respecte dans l'écosystème automobile"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours générique B2B applicable à n'importe quel secteur",
+        "Promesses d'économies sans méthodologie de calcul crédible",
+        "Vouloir un RDV 'pour mieux comprendre ses besoins' (= tu n'as rien préparé)",
+        "Insister lourdement après un premier refus poli",
+        "Critiquer frontalement ses fournisseurs actuels sans connaître le contexte",
+        "Présenter une solution qui nécessite de changer tous ses process",
+        "L'appeler 'Laurent' trop vite ou tenter une familiarité déplacée",
+        "Ne pas connaître les spécificités du marché après-vente automobile"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais vous arrêter tout de suite, j'ai déjà trois fournisseurs qui m'appellent cette semaine avec le même discours. Qu'est-ce qui vous différencie concrètement ?",
+        "sous_texte": "Je suis saturé de sollicitations commerciales. Prouve-moi immédiatement que tu n'es pas un commercial lambda qui fait du volume. Si tu balbutie, je raccroche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 1-2 éléments factuels ultra-précis (référence client vérifiable dans son secteur, chiffre d'économie documenté) en 20 secondes maximum"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, très franchement, j'ai vraiment pas le temps là. Envoyez-moi un mail, je regarderai si ça m'intéresse.",
+        "sous_texte": "C'est mon objection réflexe pour me débarrasser de toi poliment. Je ne lirai jamais ce mail. Mais si tu insistes lourdement, je vais devenir agressif.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître son timing, donner UNE raison factuelle et chiffrée de prendre 90 secondes maintenant (référence concurrent direct + bénéfice mesurable), puis demander permission de continuer"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous travaillez avec qui actuellement dans le secteur concessions ? Donnez-moi des noms que je puisse vérifier.",
+        "sous_texte": "Je teste ta crédibilité immédiatement. Si tu es vague ou si tu cites des clients que je ne peux pas vérifier, tu perds toute légitimité. Je vais peut-être même appeler pour vérifier.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner 2-3 noms précis de groupes similaires avec contacts vérifiables, mentionner les résultats obtenus en chiffres, accepter qu'il vérifie"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous voulez comprendre mon organisation ? Mais vous débarquez pour me vendre quelque chose, vous êtes censé savoir comment ça marche chez nous, non ?",
+        "sous_texte": "Je déteste perdre du temps à éduquer un commercial sur mon métier. Si tu n'as pas fait tes devoirs avant d'appeler, c'est irrespectueux. Prouve-moi que tes questions sont pertinentes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer qu'on a déjà fait ses devoirs (citer des éléments publics sur son groupe), expliquer que les questions portent sur des spécificités non-publiques nécessaires pour personnaliser l'approche"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on travaille déjà avec les fournisseurs officiels des marques et quelques alternatifs. On a pas de problème majeur. Je vois pas bien ce que vous allez m'apporter de plus.",
+        "sous_texte": "Pourquoi je prendrais le risque de changer quelque chose qui fonctionne correctement ? Tu dois me prouver qu'il y a un gain significatif qui vaut la peine de bousculer mes habitudes et de prendre un risque.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer ses fournisseurs actuels. Questionner sur les objectifs d'optimisation imposés par sa direction, faire émerger les irritants cachés (délais, process manuels, pression sur les marges)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Des économies de combien, concrètement ? Parce qu'on m'a déjà promis 15-20% d'économies qui ne se sont jamais matérialisées dans les faits, hein.",
+        "sous_texte": "J'ai été échaudé. Je ne crois plus aux promesses commerciales. Si tu avances un chiffre, je vais te demander de le prouver méthodologiquement. Et si tu es vague, je conclus que tu es comme les autres.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner une fourchette réaliste et conservatrice (3-6%), expliquer la méthodologie de calcul transparente, proposer un pilote mesurable sur un périmètre limité pour prouver avant de généraliser"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, j'ai testé il y a deux ans une plateforme digitale d'achats soit-disant révolutionnaire. C'était catastrophique : bugs, interface nulle, SAV inexistant. On a perdu trois mois. Plus jamais.",
+        "sous_texte": "J'ai une vraie cicatrice sur ce sujet. Je suis devenu très méfiant. Si ta solution ressemble de près ou de loin à cette expérience, c'est mort. Tu dois me rassurer sur la fiabilité et le support.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Écouter l'histoire complète, comprendre ce qui a précisément dysfonctionné, montrer en quoi l'approche est différente (notamment sur SAV, implémentation progressive, support dédié), proposer références clients sur durée longue"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, j'ai compris le principe. Mais concrètement, l'implémentation chez nous, ça prend combien de temps et ça mobilise combien de ressources en interne ?",
+        "sous_texte": "Ton discours commercial est joli, mais moi je dois gérer l'opérationnel. Si ça me bouffe 3 mois d'un collaborateur et que ça perturbe la production, le ROI s'effondre. Sois transparent sur la charge réelle.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un planning réaliste en jours/homme, détailler les étapes, expliquer l'accompagnement fourni, mentionner des exemples d'implémentation réussie dans des contextes similaires avec timeline"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça marche pas ? Si dans 6 mois je me rends compte que c'était une erreur, je fais comment ? J'explique quoi à ma direction ?",
+        "sous_texte": "Mon vrai frein, c'est le risque personnel. Si je me plante sur ce choix, ça impacte ma crédibilité durement acquise. Je dois pouvoir sortir facilement ou avoir des garanties béton.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une phase pilote limitée et mesurable (1-2 sites sur 3 mois), des KPI de succès définis ensemble à l'avance, une clause de sortie claire, engagement sur résultats minimum mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement je vois pas la différence avec ce qu'on a déjà. Vous me vendez la même chose que mes fournisseurs actuels avec un emballage différent.",
+        "sous_texte": "Test de solidité : est-ce que tu vas t'effondrer ou est-ce que tu vas m'expliquer clairement la valeur ajoutée différenciante ? Si tu te vexes ou si tu critiques bêtement la concurrence, tu perds.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rester calme, demander ce qu'il a exactement actuellement, identifier les 2-3 éléments factuellement différents (pas marketing), reconnaître ce qui est similaire, faire ressortir l'avantage net mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez d'optimisation des coûts, mais vous êtes une PME de combien de personnes ? Si vous faites faillite ou si vous êtes rachetés, je me retrouve avec quoi ?",
+        "sous_texte": "La pérennité du fournisseur est un critère majeur pour moi. J'ai besoin de stabilité. Si tu es trop petit ou fragile, c'est un risque que je ne veux pas prendre. Rassure-moi avec des faits.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Être transparent sur la taille/structure, mentionner années d'existence, croissance, références clients de longue durée, partenariats solides, éventuellement garanties contractuelles ou plan B"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau prix, on parle de combien ? Parce que moi j'ai pas de budget magique, hein. Il faut que ça s'autofinance sur les économies générées.",
+        "sous_texte": "Je teste ta transparence tarifaire. Si tu es évasif, je conclus que c'est cher et que tu cherches à me ferrer avant de sortir le prix. Sois clair, même si c'est une fourchette.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette réaliste avec les paramètres qui font varier le prix, expliquer le modèle économique (pourcentage économies, fixe, mixte), montrer que le ROI est positif sous X mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon c'est gentil tout ça, mais j'ai déjà un responsable commercial chez mon équipementier principal qui va péter un câble si je bouge. Ça va créer des tensions que je veux pas gérer.",
+        "sous_texte": "J'ai des relations établies, même tendues. Changer implique des confrontations politiques internes et externes. C'est fatiguant. Aide-moi à justifier ce changement ou montre-moi que c'est complémentaire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas minimiser la difficulté, proposer approche complémentaire progressive (pas remplacement brutal), aider à construire la justification factuelle pour sa direction et ses partenaires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Je sais pas. Je vais y réfléchir et je vous rappelle si ça m'intéresse. Laissez-moi vos coordonnées.",
+        "sous_texte": "Je suis moyennement convaincu mais je veux me débarrasser de toi poliment sans dire non frontalement. Je ne rappellerai probablement jamais. Il y a encore un frein non-exprimé.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Faire verbaliser le vrai frein ('Qu'est-ce qui vous fait hésiter précisément ?'), résumer les bénéfices concrets validés ensemble, proposer prochaine étape concrète et datée (pas attente passive)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous physique ? Franchement, faites-moi d'abord une présentation par visio, ça me fera gagner du temps. Si c'est pertinent, on verra après.",
+        "sous_texte": "Je ne suis pas encore assez convaincu pour te consacrer 1h30 de déplacement + RDV. La visio, c'est plus facile à annuler aussi. Prouve-moi d'abord la valeur avant que je m'engage davantage.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la visio comme première étape si le prospect est qualifié, mais cadrer format (30 min max), objectif précis, et conditionner à une visite site si concluant pour voir l'opérationnel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Là je suis en pleine négo avec mes fournisseurs historiques justement, c'est pas le timing. Rappelez-moi dans 2-3 mois quand ce sera bouclé.",
+        "sous_texte": "C'est peut-être vrai, peut-être une tactique pour différer. Je ne veux pas perturber des négociations en cours avec une variable externe. Ou alors, c'est un prétexte poli pour te faire partir.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider si c'est réel ou prétexte (questionner dates précises), proposer échange exploratoire maintenant pour être prêt à démarrer dès négos finalisées, obtenir date précise de rappel dans l'agenda"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Avant de bloquer un créneau, je veux en parler à mon directeur après-vente et mon directeur financier. C'est eux qui vont devoir valider de toute façon.",
+        "sous_texte": "Je ne décide pas seul sur ce type de sujet, même si je suis directeur achats. Il y a une dimension politique interne. Si tu comprends pas ça et que tu pousses pour un RDV solo, tu perds.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre le circuit de décision réel, proposer un premier RDV avec lui seul pour qualifier, puis second RDV collectif avec les parties prenantes, préparer les éléments pour faciliter sa discussion interne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, soyons clairs : j'ai déjà eu 4 commerciaux cette année qui m'ont fait perdre mon temps. Avant de vous rencontrer, je veux des preuves concrètes que ça marche. Envoyez-moi un dossier complet avec vos références et études de cas.",
+        "sous_texte": "Je suis échaudé et méfiant. Je mets une barrière administrative pour te tester : est-ce que tu as vraiment du solide ou tu vas disparaître ? C'est aussi une façon de reprendre le contrôle de la relation commerciale.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter d'envoyer un dossier CIBLÉ (pas plaquette générique), conditionner à un RDV de 30 min par visio dans la semaine suivante pour le présenter ensemble, obtenir engagement sur review du dossier avant"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, je vais être franc avec vous. C'est intéressant sur le papier, mais là concrètement j'ai mes objectifs de réduction de coûts à tenir dans les 6 mois, avec la pression de ma direction. Je peux pas me permettre de tester un truc qui marchera peut-être. J'ai besoin de résultats certains, tout de suite. Vous comprenez ?",
+      "condition_declenchement": "Après avoir répondu à toutes les objections mais sentant que le commercial veut closer. Laurent verbalise son vrai frein final : le risque temporel et la pression des résultats court terme qui le paralysent face à tout changement, même potentiellement bénéfique."
+    },
+    "pattern_escalade": "Laurent commence par des objections-tests rapides pour évaluer la crédibilité (références, différenciation). Si le commercial passe, il verbalise ses vraies préoccupations opérationnelles (implémentation, ressources). Si toujours pertinent, il aborde ses peurs profondes (risque, pérennité fournisseur, tensions internes). Enfin, il teste la flexibilité commerciale sur le format de RDV et les garanties. L'objection finale porte toujours sur l'arbitrage risque/récompense dans son contexte de pression immédiate.",
+    "piege_classique": "Laurent donne l'impression d'être convaincu intellectuellement ('Oui c'est intéressant, je vois le potentiel') mais bascule ensuite sur une objection opérationnelle ou politique qui révèle qu'émotionnellement, il n'est pas prêt à s'engager. Le commercial doit détecter ce décalage et le traiter, sinon il repart avec un faux 'peut-être' qui ne se concrétisera jamais. Laurent respecte uniquement les commerciaux qui creusent jusqu'à identifier et traiter le vrai frein, même inconfortable."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B pour le secteur automobile",
+      "description": "entreprise proposant des solutions ou services destinés aux groupes de concessions automobiles multi-marques et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution B2B ciblant les fonctions achats groupe ou après-vente dans le secteur automobile",
+      "proposition_valeur": "NON_SPECIFIE - probablement optimisation des coûts, amélioration de la performance, solutions innovantes",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de passage de barrage secrétariat avec élégance et professionnalisme pour accéder aux décideurs de haut niveau et décrocher des RDV qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Barrage secrétariat secteur automobile",
+    "vous_etes": "Commercial B2B spécialisé secteur automobile, vous prospectez un groupe de concessions multi-marques en Île-de-France et Hauts-de-France.",
+    "vous_vendez": "Une solution d'optimisation des achats après-vente pour groupes de concessions (prix et détails à préciser lors de l'appel selon les besoins détectés).",
+    "vous_appelez": "Vous devez d'abord passer la secrétaire commerciale du Groupe Automotive Services France — professionnelle aguerrie qui filtre systématiquement — pour atteindre Laurent Desmarest, Directeur des Achats Groupe, 51 ans, pragmatique et méfiant envers les commerciaux.",
+    "ce_que_vous_savez": [
+      "Groupe de 340 salariés, 8 sites, distribution Renault/Peugeot/Mercedes + équipements, CA 185M€",
+      "Laurent Desmarest a un objectif de réduction des coûts d'achat de 4% imposé par sa direction",
+      "Le groupe traverse une période de pression sur les marges, mise stratégique sur l'après-vente",
+      "Projet en cours de centralisation des achats pièces détachées",
+      "Expérience négative il y a 2 ans avec une plateforme digitale d'achats (bugs, SAV absent)"
+    ],
+    "votre_objectif": "Passer le barrage secrétariat avec professionnalisme et obtenir un rendez-vous physique de 30 minutes avec Laurent Desmarest.",
+    "vos_atouts": [
+      "Connaissance précise du secteur automobile et de ses enjeux après-vente",
+      "Références vérifiables dans des groupes de concessions similaires",
+      "Approche méthodologique chiffrée pour démontrer les économies potentielles",
+      "Possibilité de proposer un pilote limité et mesurable avant déploiement"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:04:43Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17255,
+    "total_time_s": 167.6
+  }
+}

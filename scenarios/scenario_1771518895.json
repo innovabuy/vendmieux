@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771518895",
+  "description_originale": "Vous appelez à froid le directeur de réseau / gérant d'une réseau de 5-15 points de vente, commerce spécialisé. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : commerce_distribution]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "réseau de 5-15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "directeur de réseau / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution adaptée aux réseaux de commerce spécialisé",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise appelante",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu l'appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Besoin de créer de l'intérêt en quelques secondes",
+        "Gestion des barrages et de l'impatience",
+        "Justifier la légitimité de l'appel",
+        "Transformer un appel non sollicité en opportunité"
+      ],
+      "probleme_racine": "Incapacité à créer de la valeur perçue immédiate pour justifier l'interruption et déclencher l'intérêt d'un décideur qui n'attend rien"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à décrocher un rendez-vous de 30 minutes en appel froid auprès de directeurs de réseau de commerce spécialisé occupés et non demandeurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solutions pour le commerce de détail / réseaux de points de vente",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux réseaux de commerce spécialisé",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux directeurs de réseaux de commerce spécialisé comptant entre 5 et 15 points de vente",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Proposition de valeur spécifique",
+        "Problématiques métier ciblées",
+        "Positionnement prix",
+        "Différenciation concurrentielle",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique visée",
+        "Références ou preuves sociales disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Directeur de réseau et associé minoritaire",
+      "entreprise": {
+        "nom": "Esprit Nature",
+        "secteur": "Commerce spécialisé - produits bio et bien-être",
+        "taille": "9 magasins (7 en propre, 2 en franchise)",
+        "ca_approximatif": "12M€, en stagnation depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Impatient chronique avec surcharge cognitive",
+        "Fier de son expérience terrain (30 ans dans le commerce)"
+      ],
+      "motivations_profondes": [
+        "Prouver aux actionnaires majoritaires qu'il maîtrise encore la situation malgré la concurrence digitale",
+        "Protéger sa réputation bâtie sur l'intuition et le relationnel humain",
+        "Trouver une solution miracle sans bouleverser ses méthodes actuelles"
+      ],
+      "peurs_freins": [
+        "Être ridicule en adoptant un outil qui ne marche pas devant ses équipes",
+        "Perdre du temps dans des tunnels de vente manipulatoires",
+        "Avouer qu'il ne comprend pas tout aux solutions tech modernes",
+        "S'engager dans un investissement sans ROI garanti avec la trésorerie tendue"
+      ],
+      "rapport_aux_commerciaux": "Défensif et condescendant. Pense avoir tout vu, détecte instantanément les scripts. Respecte uniquement ceux qui connaissent VRAIMENT son métier. A été échaudé 3 fois ces 2 dernières années par des promesses non tenues.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'agacement masqué par le professionnalisme. Commence par 'Oui bonjour écoutez je suis en plein...'",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou un cas client",
+        "Mentionne spontanément un problème actuel ('Tiens justement on galère avec...')",
+        "Demande combien de temps ça prend vraiment",
+        "Ton légèrement moins sec, respiration qui ralentit"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement après 15 secondes",
+        "Utilise 'on verra ça' ou 'envoyez-moi un mail' comme échappatoire",
+        "Pose des questions pièges pour tester la connaissance métier",
+        "Soupirs audibles, bruits de clavier en arrière-plan"
+      ],
+      "tics_langage": [
+        "Abuse du 'écoutez' en début de phrase",
+        "Dit 'concrètement' pour recadrer les discours trop vagues",
+        "Emploie 'franchement' avant de dire non",
+        "Utilise 'vous savez' pour affirmer sa supériorité d'expérience"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum avant interruption. Décroche mentalement après 30 secondes de blabla commercial classique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression des actionnaires pour digitaliser et optimiser les marges. Deux magasins sous-performants. Turnover en hausse chez les vendeurs. Concurrent local a ouvert un concept store moderne qui attire sa clientèle.",
+      "priorites_actuelles": [
+        "Harmoniser les pratiques entre magasins sans perdre l'autonomie des gérants",
+        "Réduire les ruptures de stock récurrentes qui énervent les clients fidèles",
+        "Comprendre pourquoi les jeunes n'entrent plus dans ses magasins",
+        "Justifier son salaire face à des actionnaires qui parlent de recruter un DG plus jeune"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion de stock 'soit-disant révolutionnaire' qui a foiré l'inventaire et créé un clash avec le gérant du magasin pilote. Depuis, ultra-prudent.",
+      "fournisseur_actuel": "Utilise un mix bancal : Excel pour le suivi CA, WhatsApp pour coordonner les gérants, un vieux logiciel de caisse différent dans 4 magasins",
+      "budget_disponible": "Peut débloquer 15-25K€ si ROI démontré sous 12 mois, mais doit passer par un comité de direction trimestriel. Budget formation quasi-nul."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct ou un réseau similaire qui a résolu LE problème qu'il vit",
+        "Promettre un diagnostic gratuit sans engagement avec restitution chiffrée",
+        "Montrer qu'on comprend la spécificité des réseaux mixtes propre/franchise",
+        "Parler en termes de CA perdu plutôt qu'en fonctionnalités",
+        "Proposer un format ultra-court (20 min chrono) avec lui seul d'abord",
+        "Utiliser un vocabulaire terrain : 'linéaire', 'démarque', 'rotation produits'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Phrases marketings type 'solution innovante' ou 'révolutionner votre business'",
+        "Demander à parler à d'autres personnes en premier contact",
+        "Minimiser ses problèmes ('c'est courant dans votre secteur')",
+        "Insister lourdement après un premier refus",
+        "Comparer son réseau à de grosses enseignes nationales (il déteste ça)",
+        "Proposer une démo de 1h30 ou un webinar",
+        "Ne pas connaître la différence entre franchise et succursale"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez je suis en plein inventaire là, c'est pas le moment du tout.",
+        "sous_texte": "Je ne vous connais pas, vous me dérangez, et je veux reprendre le contrôle de mon temps immédiatement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la mauvaise timing sans s'excuser platement, proposer un créneau précis sous 48h en créant un micro-intérêt"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous êtes qui déjà ? Non parce que j'ai trois commerciaux par jour qui m'appellent hein.",
+        "sous_texte": "Prouvez-moi que vous n'êtes pas un énième vendeur de poudre de perlimpinpin, j'ai déjà perdu assez de temps",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Se différencier immédiatement par une référence ultra-précise à son secteur ou un client concurrent, pas par un pitch entreprise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement on a déjà tout ce qu'il faut niveau outils, on n'a besoin de rien là.",
+        "sous_texte": "Je me protège d'une énième déception, je refuse d'avouer que mon système actuel est bancal",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas contredire frontalement, creuser avec curiosité sur un point de douleur spécifique plutôt que parler de sa solution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement vous proposez quoi ? Parce que là je comprends pas ce que vous me vendez.",
+        "sous_texte": "Votre discours est trop vague, je teste si vous maîtrisez vraiment votre sujet ou si vous récitez un script",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Répondre par un cas d'usage hyper-concret de son secteur, avec des chiffres, avant de pitcher la solution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais vous savez, nous on a un fonctionnement spécifique, on est pas comme les grosses chaînes. Je vois pas comment votre truc pourrait coller.",
+        "sous_texte": "Je suis fier de ma singularité, je refuse qu'on me mette dans une case, et j'ai peur que votre solution standardisée casse ce qui marche",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser cette spécificité, donner l'exemple d'un réseau mixte propre/franchise similaire, montrer la personnalisation possible"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a testé un logiciel il y a deux-trois ans, ça a été la catastrophe. On s'est tapé six mois de galère, le gérant du magasin pilote m'en veut encore.",
+        "sous_texte": "J'ai une cicatrice profonde d'un échec passé qui m'a fait perdre la face, je ne veux plus jamais revivre ça",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie totale, demander ce qui a merdé précisément, montrer comment vous évitez ces écueils, parler accompagnement pas juste installation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça, mais ça coûte combien votre affaire ? Parce que là on a pas des masses de tréso.",
+        "sous_texte": "Je veux éliminer tout de suite si c'est hors budget, mais aussi je teste votre transparence et si vous allez me manipuler sur le prix",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête conditionnée au périmètre, recentrer sur le coût de l'inaction, proposer de chiffrer ensemble le ROI"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous travaillez avec qui dans le bio ? Vous pouvez me donner des noms ?",
+        "sous_texte": "Je vais vérifier si vous connaissez vraiment mon secteur et si ces références sont crédibles, je pourrais même les appeler",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 2-3 noms vérifiables avec taille de réseau similaire, proposer une mise en relation, ou avouer honnêtement si pas de ref exacte en bio"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais concrètement, ça va me prendre combien de temps à mettre en place ? Parce que moi et mes gérants on croule déjà.",
+        "sous_texte": "J'ai peur de l'investissement en temps, de la courbe d'apprentissage, et de devoir gérer la résistance au changement de mes équipes",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être ultra-transparent sur le temps réel, décomposer les phases, montrer ce que VOUS prenez en charge, parler formation terrain courte"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et comment je sais que ça va vraiment marcher chez nous ? Vous pouvez me garantir quoi ?",
+        "sous_texte": "J'ai besoin de sécurité face aux actionnaires, je ne peux pas me permettre un nouvel échec, je cherche des garanties tangibles",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas sur-promettre, proposer un pilote limité avec KPIs mesurables, clause de sortie claire, montrer les quick wins possibles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement je vous arrête là, je suis pas décideur tout seul. Faut que je vois ça avec les actionnaires, on a un comité de direction dans deux mois.",
+        "sous_texte": "Je me protège derrière la hiérarchie pour éviter de m'engager, mais c'est peut-être vrai aussi, ou je teste si vous insistez lourdement",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider le process décisionnel, proposer de l'aider à préparer sa présentation au comité, créer de l'urgence sur un élément externe"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que ça règle les ruptures de stock, mais j'ai du mal à voir comment ça marche avec nos fournisseurs actuels.",
+        "sous_texte": "Je suis intéressé mais sceptique sur l'exécution concrète, je veux comprendre les rouages avant de dire oui",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rentrer dans le détail technique simplifié, donner un exemple de flux avec UN fournisseur type, proposer un test blanc"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant mais là maintenant c'est pas le moment, on verra ça début d'année prochaine peut-être.",
+        "sous_texte": "Je fuis la décision par procrastination, je préfère repousser que dire non, ou je n'ai vraiment pas le budget maintenant",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer urgence par élément externe (fin d'offre, saison, concurrent), chiffrer le coût de l'attente, proposer pre-audit gratuit d'ici là"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Allez envoyez-moi tout ça par mail, je regarde et je vous rappelle.",
+        "sous_texte": "Je veux clore la conversation poliment sans m'engager, je ne vous rappellerai probablement jamais",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais poser un RDV de suivi ferme dès maintenant, envoyer un contenu ultra-personnalisé pas une plaquette"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que je connais pas votre boîte, j'ai rien trouvé sur vous en ligne, comment je fais confiance ?",
+        "sous_texte": "Vous êtes peut-être une petite structure qui va disparaître dans 6 mois, j'ai besoin de réassurance sur votre pérennité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale sur taille/historique, proposer de parler à un client existant, montrer les garanties contractuelles, parler partenaires"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon franchement vous avez des concurrents moins chers, je vais comparer d'abord.",
+        "sous_texte": "Je négocie le prix en créant une pression concurrentielle, réelle ou inventée",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Encourager la comparaison, donner les critères de choix pertinents au-delà du prix, ancrer votre différenciation valeur"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, je vais en parler à mon gérant du magasin pilote, c'est lui qui va utiliser ça au quotidien. Si ça l'intéresse pas, ça sert à rien.",
+        "sous_texte": "Je délègue la responsabilité de la décision pour me protéger d'un échec, mais c'est aussi un test de votre capacité à embarquer le terrain",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser cette approche, proposer de l'accompagner dans cette discussion ou de rencontrer le gérant avec lui, préparer les arguments terrain"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez merci pour votre temps mais là sincèrement j'ai d'autres priorités plus urgentes, on repoussera.",
+        "sous_texte": "Soit je suis vraiment débordé, soit je ne vois pas assez de valeur immédiate pour prioriser ça, ou c'est un non poli",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander quelle est LA priorité n°1 actuelle, voir si votre solution y contribue indirectement, proposer un suivi minimaliste"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, on va rester comme on est pour l'instant. Ça marche pas si mal que ça au final, on va pas tout chambouler.",
+      "condition_declenchement": "Si le commercial n'a pas créé d'urgence ni chiffré le coût de l'inaction, Stéphane se raccroche au statu quo par peur du changement et de l'échec"
+    },
+    "pattern_escalade": "Stéphane commence cordial-pressé (15 premières secondes) → devient testeur agressif si discours trop commercial (objections pièges sur connaissance métier) → s'ouvre légèrement si crédibilité établie mais reste prudent → revient en force avec objections financières/organisationnelles dès qu'on pousse vers closing → fuit par procrastination ou délégation si pas assez rassuré. Seuil critique : si 2 objections mal gérées de suite, il clôt définitivement.",
+    "piege_classique": "Stéphane donne des signaux d'intérêt ('Tiens c'est intéressant ça', 'On galère justement avec les ruptures') pour garder le vendeur en ligne et obtenir gratuitement des infos/conseils, mais n'a aucune intention d'acheter. Il teste constamment la connaissance métier pour se rassurer sur son expertise vs celle du commercial. Le vendeur doit qualifier l'intérêt réel en posant des questions sur le budget/timing/process décisionnel très tôt, sous peine de passer 30 min pour un 'envoyez-moi tout ça par mail' final."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solutions pour le commerce de détail / réseaux de points de vente",
+      "description": "Entreprise proposant des solutions destinées aux réseaux de commerce spécialisé"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux directeurs de réseaux de commerce spécialisé comptant entre 5 et 15 points de vente",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Apprendre à décrocher un rendez-vous de 30 minutes en appel froid auprès de directeurs de réseau de commerce spécialisé occupés et non demandeurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Réseau commerce spécialisé bio",
+    "vous_etes": "Commercial terrain spécialisé dans l'accompagnement des réseaux de commerce spécialisé de 5-15 points de vente.",
+    "vous_vendez": "Solution de pilotage pour réseaux mixtes (propre/franchise) dans le commerce spécialisé — budget type 15-25K€.",
+    "vous_appelez": "Stéphane Marchand, 52 ans, Directeur de réseau et associé minoritaire chez Esprit Nature (9 magasins bio et bien-être, 12M€ de CA). Pragmatique, méfiant, impatient. 30 ans d'expérience terrain. Déteste le bullshit commercial.",
+    "ce_que_vous_savez": [
+      "Son réseau stagne depuis 18 mois avec 2 magasins sous-performants",
+      "Il subit la pression des actionnaires pour digitaliser et optimiser",
+      "Concurrent local récent avec concept store moderne qui lui pique des clients",
+      "Il gère avec un mix bancal : Excel, WhatsApp, vieux logiciels de caisse différents",
+      "Il a été échaudé il y a 3 ans par un logiciel de gestion qui a foiré son inventaire"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous de 20-30 minutes en face à face pour un diagnostic gratuit de son réseau.",
+    "vos_atouts": [
+      "Vous connaissez les réseaux mixtes propre/franchise et leurs problématiques spécifiques",
+      "Vous parlez en CA perdu et rotation produits, pas en fonctionnalités tech",
+      "Vous proposez un diagnostic chiffré gratuit sans engagement",
+      "Vous maîtrisez le vocabulaire terrain : linéaire, démarque, ruptures de stock"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:34:55Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14688,
+    "total_time_s": 131.9
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771521784",
+  "description_originale": "Le gérant / directeur d'agence d'une cabinet de courtage ou agence d'assurance de 10-30 salariés (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : finance_assurance]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant/directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service ou produit B2B destiné aux cabinets de courtage et agences d'assurance",
+      "proposition_valeur_presumee": "solution ayant initialement convaincu le client mais ayant rencontré un problème de livraison/service/qualité",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "oui, menace de partir à la concurrence"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité ayant généré un mécontentement",
+        "Client mécontent menace de partir à la concurrence",
+        "Risque de perte d'un client existant"
+      ],
+      "implicites": [
+        "Manque de processus de gestion de crise client",
+        "Difficulté à gérer les émotions d'un interlocuteur mécontent",
+        "Besoin de techniques de désescalade et négociation défensive",
+        "Faiblesse potentielle dans le suivi qualité ou la communication proactive"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas la gestion des situations de crise client et les techniques de récupération de relation commerciale dégradée"
+    },
+    "objections_mentionnees": [
+      "Menace de partir à la concurrence",
+      "Mécontentement sur qualité/service/livraison"
+    ],
+    "objectif_formation": "Former les commerciaux à désamorcer les situations de crise, gérer les réclamations clients, trouver des solutions adaptées et préserver la relation commerciale avec les clients mécontents",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B du secteur finance_assurance",
+      "entreprise_description": "entreprise fournissant des produits ou services aux cabinets de courtage et agences d'assurance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "produit ou service B2B destiné aux professionnels de l'assurance et du courtage, ayant rencontré un incident de livraison/qualité/service",
+      "proposition_valeur": "solution initialement adoptée par le client mais nécessitant une récupération de confiance suite à un incident",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème (livraison/service/qualité)",
+        "Type de produit/service fourni",
+        "Nom de l'entreprise vendeuse",
+        "Ancienneté de la relation client",
+        "Montant du contrat en jeu"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant associé",
+      "entreprise": {
+        "nom": "Mercier & Associés Courtage",
+        "secteur": "Courtage en assurances IARD et prévoyance",
+        "taille": "18 salariés",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Susceptible sur sa réputation professionnelle",
+        "Loyal mais rancunier si trahi"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation de son cabinet construite en 23 ans",
+        "Maintenir la confiance de ses clients finaux à tout prix",
+        "Ne pas passer pour un pigeon auprès de ses pairs",
+        "Prouver qu'il fait les bons choix de partenaires"
+      ],
+      "peurs_freins": [
+        "Que ses clients finaux apprennent le dysfonctionnement",
+        "Perdre la face devant son associé qui était réticent au départ",
+        "Être à nouveau déçu et perdre du temps",
+        "Que la concurrence se moque de lui au prochain déjeuner réseau"
+      ],
+      "rapport_aux_commerciaux": "Ancien commercial lui-même, il détecte instantanément le baratin. Respecte ceux qui assument franchement leurs erreurs. Mépris profond pour les excuses corporates creuses.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque agressif. Laisse planer un silence pesant après avoir décroché. Attend que l'interlocuteur se justifie sans l'aider.",
+      "signaux_interet": [
+        "Pose des questions précises sur les mesures correctives ('Concrètement, qu'est-ce qui a changé EXACTEMENT dans votre process ?')",
+        "Mentionne un détail positif du passé ('Bon, je dois reconnaître qu'avant cet incident...')",
+        "Parle au futur hypothétique ('SI on reprenait, il faudrait que...')",
+        "Baisse légèrement le ton agressif, soupire"
+      ],
+      "signaux_rejet": [
+        "Coupe brutalement : 'Écoutez, j'ai pas le temps là'",
+        "Ironie mordante : 'Ah ben ça c'est nouveau, un fournisseur qui reconnaît ses erreurs'",
+        "Mentionne la concurrence : 'Chez Concurent X, au moins...'",
+        "Respiration exaspérée audible, tapotements de stylo si en visio"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...'",
+        "Utilise 'hein' en fin de phrase quand il est contrarié",
+        "Dit 'franchement' ou 'concrètement' quand il veut du factuel",
+        "Expression favorite : 'Moi je veux bien, mais...'",
+        "Tutoie après 2 minutes si l'interlocuteur gère bien la pression"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Interrompt systématiquement si le commercial parle trop longtemps sans répondre à SA question précise."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 12% cette année, vient d'embaucher deux commerciaux juniors. Un gros client (cabinet d'experts-comptables, 47 contrats) a failli partir à cause de l'incident avec le fournisseur. Thierry a dû faire du damage control personnellement.",
+      "priorites_actuelles": [
+        "Sécuriser la relation avec ses 5 plus gros clients",
+        "Former ses deux nouvelles recrues sans montrer de faiblesse",
+        "Préparer le salon professionnel de septembre où il verra tous ses confrères",
+        "Renégocier son bail de locaux (échéance dans 4 mois, stressant)"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 14 mois. Les 11 premiers mois étaient impeccables, ce qui rend la déception encore plus violente. A recommandé l'offre à deux confrères qui lui ont fait confiance.",
+      "fournisseur_actuel": "Toujours officiellement client mais utilisation minimale depuis l'incident (il y a 6 semaines). A demandé des devis à deux concurrents sans encore signer.",
+      "budget_disponible": "Le budget n'est pas le problème. Il paierait même 15% de plus pour de la fiabilité garantie. C'est une question de confiance, pas d'argent."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de l'erreur ('Vous avez raison, on a merdé')",
+        "Explication factuelle de ce qui a dysfonctionné, sans jargon corporate",
+        "Mesures correctives CONCRÈTES déjà mises en place (pas des promesses)",
+        "Proposition de garantie ou clause de sauvegarde contractuelle",
+        "Montrer qu'on a compris l'impact sur SES clients à lui (pas juste sur lui)",
+        "Référence à d'autres clients qui ont eu le même problème et sont restés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou chercher des excuses externes",
+        "Langue de bois : 'Nous avons identifié des axes d'amélioration...'",
+        "Faire la victime : 'Vous comprenez, avec la situation actuelle...'",
+        "Proposer une remise commerciale comme si ça réglait tout",
+        "Ne pas connaître les détails précis de SON dossier avant d'appeler",
+        "Parler de 'partenariat' alors que la confiance est rompue",
+        "Rire ou prendre un ton léger au début de l'échange"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous... Écoutez j'ai trois rendez-vous ce matin là, donc si c'est pour me raconter encore des salades, on va gagner du temps tous les deux hein.",
+        "sous_texte": "Je suis encore en colère, je vous fais payer l'incident dès la première seconde. Je teste si vous allez oser minimiser ou botter en touche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître immédiatement l'erreur sans se justifier. Annoncer que l'appel sera court et factuel."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, après ce qui s'est passé, vous avez du culot de me rappeler. Vous vous rendez compte que j'ai failli perdre Dumont à cause de vous ?",
+        "sous_texte": "Vous ne mesurez pas l'impact réel de votre erreur sur MON business. Je veux voir si vous êtes au courant des conséquences concrètes.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer qu'on connaît le dossier précisément. Reconnaître l'impact sur ses clients finaux, pas juste présenter des excuses génériques."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Non mais attendez, vous m'avez déjà envoyé un mail d'excuses là. Qu'est-ce que vous voulez de plus ? Je vous ai répondu que je réfléchissais.",
+        "sous_texte": "J'ai besoin de temps pour digérer ma colère. Vous me pressez alors que je ne suis pas prêt. Respectez mon rythme.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter son besoin de temps. Proposer un échange court maintenant juste pour présenter les mesures correctives, pas pour vendre."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien vous écouter, mais concrètement, qu'est-ce qui me garantit que ça va pas se reproduire la semaine prochaine hein ?",
+        "sous_texte": "Montrez-moi des FAITS, pas des belles paroles. Je veux du tangible, du contractuel, des preuves que ça a vraiment changé.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler les changements process précis déjà effectués. Proposer une clause de sauvegarde ou garantie contractuelle."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, j'ai eu deux devis de chez Concurent X et AssurTech Pro. Ils sont un peu plus chers mais au moins je les connais pas, j'ai pas encore été déçu vous voyez.",
+        "sous_texte": "Je cherche à repartir de zéro avec quelqu'un qui ne m'a pas trahi. Le prix n'est pas le problème. C'est peut-être une menace tactique, mais je suis aussi sincère.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence. Reconnaître que son réflexe est légitime. Expliquer pourquoi rester avec un fournisseur qui a corrigé est moins risqué qu'en changer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me dites que vous avez mis en place des trucs, mais franchement, c'est pas ce qu'on m'avait dit AVANT de signer hein. Vous aviez déjà tout un discours sur votre qualité.",
+        "sous_texte": "Comment puis-je croire vos nouvelles promesses alors que les anciennes n'ont pas été tenues ? Vous aviez déjà un beau discours commercial.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Distinguer clairement promesses passées et mesures correctives présentes. Proposer de la vérifiabilité (audits, reportings, clause de sortie facilitée)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, mon associé Laurent, lui il m'avait dit dès le début qu'il avait un doute sur vous. Là je passe pour un con auprès de lui.",
+        "sous_texte": "Vous avez atteint mon ego et ma crédibilité en interne. Je dois justifier de continuer avec vous, ce n'est pas juste une décision commerciale.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une présentation des correctifs à Laurent aussi. Fournir des éléments factuels pour qu'il puisse justifier sa décision de (peut-être) rester."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais OK, vous me parlez de vos process améliorés là, mais moi pendant ce temps j'ai passé deux journées entières à éteindre le feu chez Dumont. Qui me rembourse ça ?",
+        "sous_texte": "Vous parlez de votre solution, mais vous ne réparez pas le préjudice déjà subi. Je veux une compensation concrète, pas juste des promesses d'avenir.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un geste commercial INTELLIGENT (pas juste une remise bête). Extension de service, support prioritaire, accompagnement gratuit sur un projet."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Non mais attendez, vous me proposez un rdv pour qu'on en rediscute... Pour quoi faire exactement ? Pour que vous me refassiez un pitch commercial ? J'ai déjà donné merci.",
+        "sous_texte": "Je ne veux pas perdre de temps à me faire vendre quelque chose que j'ai déjà acheté et qui m'a déçu. Quel est l'intérêt RÉEL de ce rdv pour MOI ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier que le rdv sert à présenter les correctifs avec preuves, co-construire des garanties, pas à re-vendre. Proposer format court et cadré."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi je veux bien, mais là j'ai le salon de septembre qui arrive. Tous mes confrères y seront. Si vous me refaites le coup, je suis grillé dans la profession vous comprenez.",
+        "sous_texte": "Ma réputation professionnelle est en jeu publiquement. Le timing est horrible. Je dois être certain à 200% avant de continuer avec vous.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une période de test avec clause de sortie avant septembre. Engagement écrit sur des KPI précis. Support dédié avec escalade directe."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, je comprends ce que vous me dites là, mais franchement, la confiance elle se reconstruit pas en un coup de fil hein. Moi j'ai besoin de temps.",
+        "sous_texte": "Vous voulez aller trop vite. Je ne suis pas encore prêt émotionnellement à vous refaire confiance même si rationnellement vos arguments tiennent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter ouvertement que la confiance prend du temps. Proposer un processus progressif avec étapes validées par lui. Ne pas forcer le closing."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis bon, si ça se trouve vous me racontez tout ça et c'est votre direction qui vous a demandé de limiter la casse. Dans trois mois vous serez passé à autre chose.",
+        "sous_texte": "Êtes-vous sincère ou exécutez-vous une consigne corporate de rétention client ? Est-ce que VOUS personnellement êtes engagé sur ces correctifs ?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engagement personnel et non corporate. Donner son contact direct. Expliquer son implication personnelle dans le suivi du dossier."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais je dis pas non hein, mais là franchement j'ai besoin d'y réfléchir encore. Rappelez-moi dans... allez, dans quinze jours on verra.",
+        "sous_texte": "Je cherche à gagner du temps sans claquer la porte. Je ne suis pas convaincu mais pas totalement fermé non plus. Je teste votre persévérance.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais poser un cadre : proposer de lui envoyer un document de synthèse des correctifs d'ici là. Fixer date précise de rappel, pas 'dans quinze jours'."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez là je dois raccrocher, j'ai un client qui arrive. Envoyez-moi un mail avec tout ce dont vous m'avez parlé, je regarderai.",
+        "sous_texte": "Je me défausse poliment mais je ne lirai probablement pas votre mail. C'est une façon de vous éconduire sans conflit direct.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter mais obtenir un micro-engagement : 'OK, je vous envoie ça. Vous préférez que je vous rappelle jeudi ou vendredi pour répondre à vos questions ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, je vais en parler à Laurent quand même. Mais je vous préviens, lui il est encore plus remonté que moi sur ce coup-là hein.",
+        "sous_texte": "Je commence à fléchir mais je me protège en vous prévenant que l'obstacle final sera mon associé. Je teste aussi si vous êtes prêt à affronter Laurent.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de parler directement à Laurent aussi. Préparer un dossier factuel pour faciliter la discussion entre associés. Ne pas avoir peur de l'obstacle."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais franchement, j'entends ce que vous me dites, c'est très bien tout ça, mais moi dans ma tête c'est déjà un peu acté que je change. Vous comprenez, j'ai déjà commencé à préparer le terrain avec mes équipes là. Alors bon...",
+      "condition_declenchement": "Si le commercial n'a pas su créer de rupture émotionnelle forte pendant l'échange. Si les correctifs présentés restent trop génériques. Si aucun geste ou garantie exceptionnelle n'a été proposé. Si le commercial a tenté de minimiser l'incident à un moment."
+    },
+    "pattern_escalade": "Thierry commence par des objections agressives de défense (accroche), puis teste la solidité des arguments (découverte), avant d'exprimer ses véritables peurs et freins émotionnels (argumentation). S'il sent de l'authenticité et des mesures concrètes, il passera d'un ton cassant à un ton fatigué-résigné ('Bon allez...'), signal qu'il commence à envisager de donner une seconde chance. L'escalade négative se produit si le commercial revient à des arguments commerciaux classiques : Thierry se ferme alors brutalement et écourte l'échange.",
+    "piege_classique": "Proposer une remise commerciale trop tôt. Thierry la prendra comme une insulte ('Vous croyez que c'est une question de fric ?') et comme la preuve que vous n'avez pas compris que le problème est la CONFIANCE, pas le prix. Autre piège : parler de 'partenariat' ou 'relation de confiance' alors que c'est précisément ce qui a été rompu - il faut RECONSTRUIRE avant de pouvoir utiliser ces mots."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B du secteur finance_assurance",
+      "description": "entreprise fournissant des produits ou services aux cabinets de courtage et agences d'assurance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "produit ou service B2B destiné aux professionnels de l'assurance et du courtage, ayant rencontré un incident de livraison/qualité/service",
+      "proposition_valeur": "solution initialement adoptée par le client mais nécessitant une récupération de confiance suite à un incident",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à désamorcer les situations de crise, gérer les réclamations clients, trouver des solutions adaptées et préserver la relation commerciale avec les clients mécontents",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client mécontent — Gestion de crise courtage assurance",
+    "vous_etes": "Commercial chez un fournisseur B2B du secteur assurance, en charge de récupérer la relation avec un client historique mécontent.",
+    "vous_vendez": "Une solution professionnelle pour cabinets de courtage (nature et prix non communiqués pour cet exercice), adoptée depuis 14 mois par le client.",
+    "vous_appelez": "Thierry Mercier, 52 ans, gérant associé de Mercier & Associés Courtage (18 salariés, 1,8M€ CA). Ancien commercial, pragmatique et brutal, susceptible sur sa réputation. Actuellement très remonté.",
+    "ce_que_vous_savez": [
+      "Client depuis 14 mois, satisfait jusqu'à il y a 6 semaines",
+      "Un incident qualité/livraison a failli lui faire perdre un gros client (cabinet comptable, 47 contrats)",
+      "Thierry a dû gérer personnellement le damage control auprès de SES clients",
+      "Il a recommandé votre solution à deux confrères qui lui ont fait confiance",
+      "Il a demandé des devis à deux concurrents mais n'a pas encore signé",
+      "Utilise votre solution au minimum depuis l'incident"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique pour reconstruire la confiance et sécuriser la relation commerciale.",
+    "vos_atouts": [
+      "11 mois d'excellente collaboration avant l'incident prouvent la qualité de base",
+      "Des mesures correctives concrètes ont été mises en place dans vos process",
+      "D'autres clients ont connu des incidents similaires et sont restés fidèles",
+      "Vous êtes prêt à proposer des garanties contractuelles spécifiques"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:23:04Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14846,
+    "total_time_s": 132.0
+  }
+}

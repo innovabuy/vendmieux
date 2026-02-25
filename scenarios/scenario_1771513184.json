@@ -1,0 +1,372 @@
+{
+  "id": "scenario_1771513184",
+  "description_originale": "Vous appelez à froid le directeur travaux ou directeur technique d'une groupe BTP de 150-300 salariés, marchés publics et privés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : batiment]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "BTP - Bâtiment",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Travaux ou Directeur Technique",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Direction des Achats",
+          "role": "Décideur processus achat structuré"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux directeurs techniques/travaux dans le BTP",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospect ne connaît pas l'entreprise appelante",
+        "Aucune demande initiale du prospect",
+        "Agenda chargé du décideur",
+        "Process d'achat structurés à contourner"
+      ],
+      "implicites": [
+        "Difficulté à passer le barrage secrétariat",
+        "Légitimité à démontrer rapidement",
+        "Concurrence déjà en place probable",
+        "Besoin de créer un sentiment d'urgence ou d'intérêt immédiat",
+        "Risque élevé de refus ou d'évitement",
+        "Nécessité de différenciation rapide"
+      ],
+      "probleme_racine": "Créer de l'intérêt et de la légitimité en 30-60 secondes auprès d'un décideur qui n'a rien demandé, ne connaît pas l'entreprise, et dispose de process d'achat formalisés limitant les nouveaux entrants"
+    },
+    "objections_mentionnees": [
+      "Manque de temps / agenda chargé",
+      "Process d'achat existants",
+      "Absence de besoin exprimé"
+    ],
+    "objectif_formation": "Maîtriser la prospection à froid téléphonique auprès de décideurs BTP de niveau directeur, franchir les barrages, créer rapidement de l'intérêt et obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur / Prestataire secteur BTP",
+      "entreprise_description": "Entreprise proposant une solution ou service à destination des entreprises du BTP, ciblant spécifiquement les directions techniques et travaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné à optimiser, faciliter ou améliorer les opérations des directions techniques/travaux dans le BTP",
+      "proposition_valeur": "Apport de valeur pour les directeurs travaux/techniques : gains de productivité, réduction de coûts, conformité réglementaire, ou amélioration qualité - à préciser selon l'offre réelle",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique ou rdv_visio",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète",
+        "Prix ou budget type",
+        "Nom de l'entreprise vendeuse",
+        "Références clients existantes",
+        "Différenciation vs concurrence",
+        "Zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delmotte",
+      "age": 52,
+      "poste": "Directeur Travaux",
+      "entreprise": {
+        "nom": "Bâti-Expansion Centre",
+        "secteur": "BTP - Gros œuvre et rénovation tertiaire",
+        "taille": "220 salariés",
+        "ca_approximatif": "38 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrain avant tout",
+        "Méfiant envers le discours commercial",
+        "Loyal envers ses fournisseurs historiques"
+      ],
+      "motivations_profondes": [
+        "Tenir les délais chantiers coûte que coûte",
+        "Préserver sa répétition auprès des clients grands comptes",
+        "Éviter les emmerdes administratives et les nouveaux risques",
+        "Prouver à la direction qu'il maîtrise ses affaires sans aide extérieure"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un fournisseur qui ne tient pas ses promesses",
+        "Se faire court-circuiter par les achats qui imposent un prestataire inadapté",
+        "Être perçu comme celui qui dépense sans ROI clair",
+        "Déstabiliser ses équipes avec un changement inutile"
+      ],
+      "rapport_aux_commerciaux": "Attitude de défense par défaut. Considère 80% des commerciaux comme des 'beaux parleurs' qui ne comprennent rien aux contraintes du terrain. Respecte uniquement ceux qui parlent son langage et viennent avec du concret, pas du PowerPoint",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, limite abrupt. 'Oui, j'écoute, mais faites vite'. Teste immédiatement la résistance de l'interlocuteur",
+      "signaux_interet": [
+        "Pose une question technique précise",
+        "Mentionne un chantier problématique en cours",
+        "Demande combien de temps ça prend réellement",
+        "Dit 'envoyez-moi un truc par mail' au lieu de raccrocher direct"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès les premières secondes",
+        "Coupe la parole avec 'Écoutez, on a déjà...'",
+        "Ton qui monte : 'Vous avez vu mon agenda vous ?'",
+        "Délègue immédiatement : 'Voyez avec les achats' (= poubelle)"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "Là, concrètement...",
+        "Moi j'ai pas le temps de...",
+        "On a déjà des partenaires qui...",
+        "Franchement, entre nous..."
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, soit il interrompt, soit il décroche mentalement en faisant autre chose"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance soutenue mais tensions sur la rentabilité. 4 chantiers majeurs en cours dont un complexe qui accumule du retard (rénovation siège social client bancaire). Pression de la direction pour améliorer les marges. Turnover élevé chez les chefs de chantier juniors",
+      "priorites_actuelles": [
+        "Rattraper 3 semaines de retard sur le chantier bancaire avant fin T2",
+        "Recruter 2 conducteurs de travaux expérimentés",
+        "Préparer le démarrage de 2 nouveaux chantiers en juin",
+        "Gérer un conflit avec un sous-traitant plomberie",
+        "Répondre à un appel d'offres pour un lycée (deadline dans 10 jours)"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution digitale de suivi de chantier, abandonnée au bout de 6 mois (trop compliqué, pas adopté par les équipes). Depuis, très sceptique sur l'innovation 'gadget'",
+      "fournisseur_actuel": "Réseau de 12-15 fournisseurs historiques (matériaux, location matériel, intérim BTP, assurances). Relations personnelles solides avec 3-4 commerciaux de confiance qu'il a depuis 10+ ans",
+      "budget_disponible": "Aucun budget formation/outils dédié. Tout investissement doit être justifié en gains mesurables et validé par le DAF. Peut débloquer jusqu'à 15K€ sur autorisation, au-delà = comité de direction"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct qui a résolu un problème similaire (effet FOMO)",
+        "Parler en délais et euros perdus, pas en pourcentages",
+        "Proposer un test rapide sans engagement sur UN chantier précis",
+        "Démontrer qu'on connaît SES problèmes spécifiques (pas le BTP en général)",
+        "Être recommandé par un pair qu'il respecte",
+        "Prouver que ça ne va pas lui bouffer du temps de formation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon marketing ou RH ('transformation digitale', 'accompagnement au changement'...)",
+        "Proposer une démo de 2h ou une formation de 3 jours",
+        "Critiquer ses méthodes actuelles ou ses fournisseurs",
+        "Insister après un premier refus sec",
+        "Dire 'tous vos concurrents l'utilisent déjà' (perçu comme mensonge)",
+        "Ne pas connaître la différence entre gros œuvre et second œuvre",
+        "Vouloir impliquer trop d'interlocuteurs dès le départ"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui, écoutez, je suis sur un chantier là, vous avez 30 secondes.",
+        "sous_texte": "Je suis effectivement occupé ET je teste votre capacité à être synthétique. Si vous ne captez pas le message, je raccroche.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte temps, aller droit au but avec un problème concret terrain qu'il connaît"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, je connais pas votre boîte. C'est pour vendre quoi exactement ?",
+        "sous_texte": "Méfiance maximale. Je veux savoir immédiatement si c'est encore un truc inutile. Prouve-moi que t'es pas un énième commercial qui fait perdre du temps.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Une phrase ultra-concrète sur ce que ça résout terrain, pas sur ce que c'est"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, là j'ai trois chantiers qui tournent et un qui part en vrille. C'est pas le moment.",
+        "sous_texte": "C'est sincère. Je suis vraiment sous l'eau. Mais si tu arrives à me montrer que ton truc pourrait justement m'aider avec mes chantiers qui partent en vrille, là tu m'intéresses.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rebondir sur 'chantier qui part en vrille' et proposer quelque chose qui adresse justement ce type de situation"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, passez par les achats. Moi je décide rien côté fournisseurs, c'est eux qui gèrent.",
+        "sous_texte": "Je me débarrasse de toi avec la procédure. En vrai, si tu me convaincs que c'est stratégique pour MES chantiers, je court-circuite les achats sans problème. Mais faut que tu me le prouves d'abord.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître leur rôle mais repositionner sur l'enjeu opérationnel terrain qui le concerne lui directement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Des solutions on en a déjà testé. Ça finit toujours pareil, personne s'en sert sur le terrain.",
+        "sous_texte": "J'ai été échaudé. Cette expérience ratée il y a 3 ans me hante encore. Je me suis senti con d'avoir poussé un truc que mes équipes ont boudé. Je ne veux plus revivre ça.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser cette expérience ratée, comprendre pourquoi ça n'a pas marché, montrer en quoi on est différent sur ces points précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon concrètement, ça me fait gagner quoi ? Parce que moi j'ai besoin de résultats, pas de slides PowerPoint.",
+        "sous_texte": "Là je teste si t'es du bullshit ou du concret. Donne-moi des chiffres, des délais, des euros. Si tu me sors du 'optimisation des process', t'es mort.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Parler en jours gagnés, en K€ économisés, sur des cas similaires précis et vérifiables"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et ça prend combien de temps à mettre en place ? Parce que là, mes gars ils ont pas une minute à perdre en formation.",
+        "sous_texte": "Si tu me dis 3 jours de formation, c'est terminé. Mes conducteurs de travaux sont déjà sur-sollicités. Toute complexité = refus immédiat.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Minimiser la charge (2h max), proposer de former vous-même, ou montrer que c'est intuitif"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous travaillez avec qui dans le secteur ? Parce que si c'est que des grands groupes, chez nous c'est pas pareil.",
+        "sous_texte": "Je veux des références à ma taille, dans mon métier exact. Si tu me cites Vinci ou Bouygues, ça ne me parle pas. Je veux du concret proche de ma réalité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer des références 100-300 personnes en gros œuvre/rénovation, avec nom et résultats chiffrés si possible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, mes fournisseurs actuels ils me connaissent depuis 10 ans. Ils me lâchent pas en plein chantier eux.",
+        "sous_texte": "La loyauté c'est sacré pour moi. Ces gens m'ont sauvé la mise plusieurs fois. Faut que tu me prouves une valeur ÉNORME pour que j'envisage de changer. Et même là, je culpabiliserai.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas attaquer les fournisseurs existants. Se positionner en complément ou sur un angle nouveau qu'ils ne couvrent pas"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement entre nous, moi je suis à deux ans de la retraite. Je vais pas révolutionner mes méthodes maintenant.",
+        "sous_texte": "C'est pas totalement vrai (j'ai plutôt 5-6 ans), mais je teste ta réaction. Est-ce que tu vas insister lourdement ou respecter ma position ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Justement, positionner comme un moyen de sécuriser sa réputation et finir en beauté plutôt que de galérer"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le prix c'est combien ? Parce que moi j'ai pas de budget formation-outils cette année.",
+        "sous_texte": "En vrai j'ai un peu de marge, mais je veux voir ta réaction au prix. Si c'est trop cher, je vais bloquer. Si c'est raisonnable ET que le ROI est béton, je peux débloquer 10-15K€.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un ordre de grandeur, puis recadrer sur le ROI rapide qui justifie l'investissement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais le problème c'est que tout ça c'est bien joli sur le papier. Dans la vraie vie chantier, c'est une autre histoire.",
+        "sous_texte": "Je reste sceptique. T'as dit de bonnes choses mais j'ai été déçu trop souvent. J'ai besoin d'être vraiment rassuré ou de tester en mini-version avant de m'engager.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un test sur UN chantier précis, limité dans le temps, avec des critères de succès mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai déjà eu un commercial qui m'a vendu exactement le même discours il y a deux ans. Ça s'est terminé en eau de boudin.",
+        "sous_texte": "Je généralise volontairement. C'était peut-être pas exactement le même produit, mais je veux voir si tu te défends sans dénigrer le concurrent. Je teste ton intégrité.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner précisément ce qui n'a pas fonctionné dans cette expérience, montrer les différences factuelles"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, envoyez-moi un mail je regarderai ça tranquillement.",
+        "sous_texte": "Traduction : tu vas finir dans ma boîte mail avec 300 autres trucs non lus. Je me débarrasse poliment de toi. Si t'insistes pas un minimum, je vais vraiment oublier.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'envoi du mail MAIS verrouiller un point de contact précis (date/heure de rappel ou rdv court)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là maintenant faut que j'y aille, j'ai le client qui arrive sur site dans 10 minutes.",
+        "sous_texte": "C'est peut-être vrai, peut-être pas. Si t'as réussi à m'intéresser un peu, je te laisserai la porte ouverte. Sinon, c'est juste une sortie polie.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte immédiatement, proposer un créneau précis sous 48-72h avant de raccrocher"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me proposez quoi là, un rendez-vous de 2h ? Moi j'ai pas 2h à vous donner.",
+        "sous_texte": "Si c'est vraiment 2h, c'est non. Si tu peux faire plus court ou venir sur mon chantier pendant que je bosse, peut-être. Adapte-toi à mes contraintes.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer 30-45 min max, ou un format 'je viens vous voir sur chantier pendant votre tournée'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, proposez-moi des créneaux mais je vous préviens, j'annule souvent quand ça part en urgence chantier.",
+        "sous_texte": "Je suis semi-intéressé mais je me protège. Mon métier c'est l'imprévu permanent. Si tu te vexes quand je décale, on travaillera jamais ensemble.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer de la flexibilité totale, proposer même un format téléphonique court si le présentiel saute"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais en parler à mon directeur général parce que sur ce montant-là, c'est lui qui tranche. Je vous tiens au courant.",
+      "condition_declenchement": "Arrive quand le vendeur a bien travaillé, que Christophe est convaincu à 70% mais qu'il utilise une dernière porte de sortie pour garder le contrôle. Soit il a vraiment besoin de valider (au-dessus de 15K€), soit c'est une objection tactique finale pour réfléchir ou négocier."
+    },
+    "pattern_escalade": "Christophe démarre abrupt/défensif → teste la solidité du vendeur → si le vendeur tient bon avec du concret, il s'adoucit légèrement et pose des questions techniques → continue de tester la crédibilité via références et ROI → si convaincu, bascule vers les objections pratiques (temps/budget/processus) → dernière ligne de défense = 'je dois valider avec...' avant d'accepter un rdv ou un test",
+    "piege_classique": "Christophe peut sembler convaincu au milieu de l'échange ('Ouais OK, c'est intéressant...') puis ressortir une grosse objection de fond juste avant le closing ('Mais bon, avec mes fournisseurs actuels...'). C'est son test ultime : est-ce que le vendeur va paniquer et brader son discours, ou rester solide sur la valeur ? Les vendeurs juniors tombent dans le piège en croyant l'affaire gagnée trop tôt."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur / Prestataire secteur BTP",
+      "description": "Entreprise proposant une solution ou service à destination des entreprises du BTP, ciblant spécifiquement les directions techniques et travaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné à optimiser, faciliter ou améliorer les opérations des directions techniques/travaux dans le BTP",
+      "proposition_valeur": "Apport de valeur pour les directeurs travaux/techniques : gains de productivité, réduction de coûts, conformité réglementaire, ou amélioration qualité - à préciser selon l'offre réelle",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique ou rdv_visio",
+      "description": "Maîtriser la prospection à froid téléphonique auprès de décideurs BTP de niveau directeur, franchir les barrages, créer rapidement de l'intérêt et obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Travaux BTP sous pression",
+    "vous_etes": "Commercial terrain spécialisé BTP, vous prospectez à froid des directeurs travaux pour décrocher des rendez-vous qualifiés.",
+    "vous_vendez": "Une solution d'optimisation pour directions techniques/travaux dans le BTP (nature exacte et prix à définir selon votre offre réelle).",
+    "vous_appelez": "Christophe Delmotte, 52 ans, Directeur Travaux chez Bâti-Expansion Centre (220 personnes, gros œuvre). Pragmatique, méfiant, ultra speed, coupe court si vous tournez autour du pot.",
+    "ce_que_vous_savez": [
+      "Son entreprise fait 38M€ de CA, en croissance mais avec tensions sur les marges",
+      "Il gère 4 chantiers majeurs en ce moment dont un en retard (rénovation bancaire)",
+      "Il a testé une solution digitale il y a 3 ans, abandonnée après 6 mois — il est devenu très sceptique",
+      "Il bosse avec 12-15 fournisseurs historiques de confiance depuis 10+ ans",
+      "Il déteste le jargon marketing et les démos de 2h"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou visio en créant de l'intérêt dans les 60 premières secondes, sans le faire fuir.",
+    "vos_atouts": [
+      "Vous parlez son langage : délais, euros perdus, chantiers concrets",
+      "Vous proposez un test rapide sur UN chantier, sans formation usine à gaz",
+      "Vous avez des références terrain (à préciser selon votre offre)",
+      "Vous savez qu'il a peu de temps — vous serez ultra concis"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:59:44Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15392,
+    "total_time_s": 136.3
+  }
+}

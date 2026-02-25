@@ -1,0 +1,338 @@
+{
+  "id": "scenario_1771519659",
+  "description_originale": "Vous avez envoyé une proposition commerciale au avocat associé / managing partner d'une cabinet d'avocats de 5-15 avocats, droit des affaires il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : juridique]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "juridique",
+      "taille_entreprise": "5-15 avocats",
+      "interlocuteur_principal": {
+        "poste": "Avocat associé / Managing Partner",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets d'avocats en droit des affaires",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse suite à l'envoi de la proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de qualification en amont de l'envoi de la proposition",
+        "Absence de suivi structuré post-envoi",
+        "Probable absence d'engagement ou d'accord verbal avant l'envoi de la proposition",
+        "Difficulté à gérer le silence radio du prospect",
+        "Manque de méthode pour relancer efficacement sans être intrusif"
+      ],
+      "probleme_racine": "Envoi de propositions commerciales sans engagement préalable du prospect et absence de processus de suivi structuré conduisant à des relances difficiles et des pertes de temps"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect qui ne répond pas à une proposition commerciale et obtenir un positionnement clair (oui, non, prochaine étape) sans paraître insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur juridique",
+      "entreprise_description": "Entreprise proposant des solutions aux cabinets d'avocats",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux cabinets d'avocats spécialisés en droit des affaires",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commerciale proposée",
+        "Contexte de la relation avant l'envoi de la proposition",
+        "Niveau d'engagement du prospect avant l'envoi",
+        "Montant ou fourchette de prix",
+        "Éléments de différenciation",
+        "Historique de la relation avec le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Olivier",
+      "nom": "Berthelot",
+      "age": 48,
+      "poste": "Avocat associé - Managing Partner",
+      "entreprise": {
+        "nom": "Cabinet Berthelot & Associés",
+        "secteur": "Droit des affaires et restructuring",
+        "taille": "9 avocats collaborateurs + 3 associés",
+        "ca_approximatif": "1,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et orienté ROI immédiat",
+        "Sceptique envers le discours commercial classique",
+        "Protecteur de son temps et de son équipe"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité du cabinet face à la concurrence des gros cabinets",
+        "Éviter les investissements chronophages sans retour mesurable",
+        "Protéger sa réputation professionnelle (peur de faire le mauvais choix)",
+        "Gagner 5-7h par semaine sur les tâches administratives qui le frustrent"
+      ],
+      "peurs_freins": [
+        "Perdre du temps en formation ou déploiement qui paralyse l'activité",
+        "Être vendu à une solution inadaptée aux spécificités du juridique",
+        "Dépendre d'un prestataire qui ne comprend pas les contraintes déontologiques",
+        "Se faire avoir comme avec le logiciel de gestion acheté il y a 3 ans (encore amer)"
+      ],
+      "rapport_aux_commerciaux": "Méfiance instinctive. Les considère comme des vendeurs de rêve jusqu'à preuve du contraire. A besoin de PREUVES factuelles, pas de promesses",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'agacement contenu ('Écoutez, je suis entre deux dossiers là...')",
+      "signaux_interet": [
+        "Pose des questions très précises sur les délais de mise en œuvre",
+        "Demande des références vérifiables dans le secteur juridique",
+        "Évoque spontanément un problème opérationnel concret du cabinet",
+        "Accepte de bloquer un créneau précis pour un prochain échange"
+      ],
+      "signaux_rejet": [
+        "Phrases barrières : 'On verra ça plus tard', 'Je dois en parler aux autres associés' (alors qu'il décide seul)",
+        "Regarde ostensiblement sa montre ou soupire",
+        "Répond par monosyllabes ou généralités",
+        "Évoque un 'budget déjà bouclé' ou 'pas la priorité cette année'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Franchement...' quand il va être direct",
+        "Utilise 'Concrètement' pour ramener au pragmatisme",
+        "Dit 'Je vous arrête tout de suite' quand quelque chose ne lui convient pas",
+        "Ponctue de 'Hein ?' en fin de phrase quand il attend validation"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximale 45 secondes. Au-delà, il coupe ou décroche mentalement. Préfère les échanges courts et denses"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+12% CA l'an dernier) mais pression sur les marges. Recrutement d'un jeune collaborateur prévu T2. Concurrent direct vient d'ouvrir un bureau à 200m",
+      "priorites_actuelles": [
+        "Finaliser deux gros dossiers de fusion-acquisition avant fin de mois",
+        "Sécuriser le renouvellement de 3 clients majeurs (50% du CA)",
+        "Réduire le temps passé en gestion administrative (comptabilité, facturation)"
+      ],
+      "experience_avec_offre_similaire": "A acheté un logiciel métier il y a 3 ans sur base d'une démo séduisante. Déploiement catastrophique, SAV inexistant, 18k€ perdus. Très échaudé",
+      "fournisseur_actuel": "Solution maison bricolée Excel + cabinet comptable externe + quelques outils gratuits non intégrés",
+      "budget_disponible": "Entre 8k€ et 15k€ max si ROI démontré sous 12 mois. Mais budget non formalisé, décision opportuniste possible si conviction absolue"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet concurrent ou similaire qui a obtenu des résultats mesurés",
+        "Quantifier précisément le temps gagné par semaine (son obsession actuelle)",
+        "Proposer une démo ultra-courte (15 min max) sur UN cas d'usage précis de son quotidien",
+        "Reconnaître d'emblée les spécificités déontologiques et réglementaires du métier d'avocat",
+        "Parler en termes de 'test limité' ou 'phase pilote' plutôt que d'engagement lourd"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon techno ou commercial creux ('solution innovante', 'paradigme', 'disruption'...)",
+        "Insister lourdement après un premier 'non' poli",
+        "Proposer une réunion longue ou un processus de vente complexe",
+        "Ne pas connaître les fondamentaux du métier d'avocat (il teste toujours)",
+        "Promettre des résultats sans preuves ou dire 'faites-moi confiance'",
+        "Le relancer par téléphone plus de 2 fois sans valeur ajoutée nouvelle"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis entre deux dossiers là, c'est pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas de temps à perdre, vous avez 20 secondes pour me convaincre que cet appel vaut la peine",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Aller droit au but avec une phrase factuelle de valeur mesurable, pas de tournures commerciales"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, votre proposition... Franchement j'ai pas encore eu le temps de regarder ça en détail, hein",
+        "sous_texte": "Je l'ai peut-être parcourue en diagonale, mais rien ne m'a accroché suffisamment pour y consacrer du temps. Ou je ne l'ai même pas ouverte",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas le culpabiliser. Reconnaître sa charge de travail et proposer de synthétiser en 30 secondes l'essentiel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Je vous arrête tout de suite, on a déjà un système qui fonctionne, on n'est pas vraiment en recherche active là",
+        "sous_texte": "Je n'ai pas identifié de problème urgent qui justifie de changer quoi que ce soit, et changer = risque + temps perdu",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider son point, puis poser une question de découverte sur une douleur spécifique (temps admin, reporting client) sans remettre en cause son système actuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, combien de cabinets comme le nôtre utilisent votre solution ? Vous avez des noms ?",
+        "sous_texte": "Test de crédibilité. Si vous n'avez pas de références vérifiables dans mon secteur, je ne vous prendrai pas au sérieux",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner 2-3 noms précis de cabinets comparables avec résultats chiffrés. Pas de généralités. Proposer mise en relation si besoin"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... J'ai déjà donné avec un logiciel il y a trois ans. Grosse démo, belles promesses, et au final un déploiement catastrophique. 18 000 balles dans le vent",
+        "sous_texte": "Je suis échaudé et méfiant. Prouvez-moi que vous êtes différent, pas juste avec des mots, avec des faits et un processus rassurant",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Empathie authentique + reconnaître le risque + proposer phase pilote limitée et réversible + garanties contractuelles concrètes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, le problème c'est pas l'outil, c'est le temps. Combien de temps ça prend pour que ce soit opérationnel ? Parce que là on a deux fusions-acquisitions qui se finalisent",
+        "sous_texte": "Objection sincère et opportunité. Il a un besoin réel (gagner du temps) mais la mise en œuvre ne doit PAS le ralentir maintenant",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Donner timeline précise en jours, proposer démarrage après ses dossiers urgents, montrer que le déploiement ne sollicite pas intensément son temps"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et niveau confidentialité et déontologie, vous connaissez les contraintes du Barreau j'imagine ? Parce qu'on manipule des données ultra-sensibles",
+        "sous_texte": "Test de compétence sectorielle. Si vous ne connaissez pas les enjeux déontologiques des avocats, vous êtes disqualifié immédiatement",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Démontrer connaissance précise : hébergement des données, secret professionnel, conformité RGPD + Barreau, certifications"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, vous me parlez de gain de temps, mais c'est quoi exactement ? Parce que 'optimisation' et 'efficacité' j'entends ça à longueur de journée",
+        "sous_texte": "J'ai besoin de chiffres précis et de cas d'usage tangibles, pas de discours marketing vague. Soyez factuel ou je décroche",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner chiffre précis : X heures/semaine économisées sur tâches Y et Z précises, avec exemple d'un cabinet similaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "D'accord, mais tout ça c'est très bien sur le papier... Dans la vraie vie, une fois que vous avez encaissé, le SAV il est comment ? Parce que j'ai pas envie de me retrouver seul face à des bugs",
+        "sous_texte": "Peur d'être abandonné après la vente comme avec son précédent fournisseur. Besoin de réassurance forte sur l'accompagnement",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Détailler process de support : délais de réponse contractuels, interlocuteur dédié, exemples de résolution de problèmes, témoignage client sur SAV"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mmh... Ça paraît intéressant mais là franchement c'est pas le moment. On verra ça au prochain trimestre peut-être, hein",
+        "sous_texte": "Esquive polie. Soit je ne suis pas convaincu, soit c'est vraiment pas le moment, soit je veux me débarrasser de vous gentiment",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Creuser avec question directe : 'Pour être sûr de comprendre, c'est une question de timing ou il y a un point qui ne vous convainc pas ?' + proposer date précise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je dois en parler aux autres associés de toute façon, je peux pas décider ça seul",
+        "sous_texte": "Fausse objection. Il décide seul mais utilise les associés comme excuse pour gagner du temps ou éviter de dire non directement",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valider puis proposer : 'D'accord, qu'est-ce qui selon vous pourrait les convaincre ?' ou 'Vous-même, vous êtes convaincu ?' pour le ramener à sa propre position"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le budget est déjà bouclé pour cette année, de toute façon",
+        "sous_texte": "Peut être vrai OU excuse tactique. Mais il a mentionné budget opportuniste possible si conviction absolue - il teste votre réaction",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Explorer : 'Si le ROI était démontré sur 12 mois, y a-t-il une enveloppe possible ?' OU 'On peut caler démarrage T2 si ça permet de l'inscrire au prochain budget'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais être honnête avec vous : c'est pas mal ce que vous proposez, mais j'ai besoin de réfléchir tranquillement. Je vous recontacte si ça m'intéresse",
+        "sous_texte": "Je veux clore poliment la conversation. Soit je ne suis vraiment pas convaincu, soit j'ai peur de m'engager. Faible probabilité de recontact spontané",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Accepter mais cadrer : 'Je comprends. Pour vous aider, quel est LE point sur lequel vous devez réfléchir ?' puis proposer date précise de rappel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là vous me mettez la pression, j'aime pas trop ça. Si je dis oui, c'est oui, mais je décide pas sous la contrainte",
+        "sous_texte": "Vous êtes allé trop loin dans la tentative de closing ou de relance. Il se braque. Besoin de recul immédiat",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "S'excuser immédiatement, reconnaître l'erreur, redonner le contrôle : 'Vous avez raison, ce n'était pas mon intention. Qu'est-ce qui vous aiderait à avancer sereinement ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je regarde votre proposition à tête reposée et je vous dis quoi d'ici... fin de semaine prochaine maximum",
+        "sous_texte": "Formule d'évitement classique. Probabilité très faible qu'il rappelle. Il veut clore sans dire non directement",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Tenter : 'Très bien. Pour être sûr que je vous rappelle au bon moment, qu'est-ce qui vous fera dire oui ou non ?' puis fixer rappel précis avec accord"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'apprécie votre professionnalisme mais là vraiment, c'est non. On n'est pas prêts, le timing est mauvais, et j'ai d'autres priorités. Merci quand même",
+      "condition_declenchement": "Si relance trop insistante, ou si aucune réponse satisfaisante aux objections sincères sur ROI/timing/SAV, ou si impression de pression commerciale répétée"
+    },
+    "pattern_escalade": "Olivier commence courtois mais distant → teste la crédibilité avec questions précises → évoque son expérience négative passée si pas convaincu → utilise objections tactiques (budget, associés, timing) → si pression perçue, devient sec et directif → clôture définitivement si insistance ou manque de preuves factuelles",
+    "piege_classique": "Olivier dit souvent 'je dois en parler aux associés' mais il décide seul. Si vous acceptez cette objection sans creuser, vous perdez l'opportunité. L'autre piège : il peut sembler convaincu intellectuellement mais ne jamais passer à l'action par peur de reproduire son échec passé - il faut traiter cette peur émotionnelle, pas juste l'argumentaire rationnel"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur juridique",
+      "description": "Entreprise proposant des solutions aux cabinets d'avocats"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux cabinets d'avocats spécialisés en droit des affaires",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect qui ne répond pas à une proposition commerciale et obtenir un positionnement clair (oui, non, prochaine étape) sans paraître insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance prospect — Cabinet d'avocats post-proposition",
+    "vous_etes": "Commercial B2B spécialisé solutions juridiques, en relance d'un prospect qualifié qui n'a pas donné suite à votre proposition envoyée il y a 10 jours.",
+    "vous_vendez": "Une solution dédiée aux cabinets d'avocats en droit des affaires (détails dans la proposition envoyée).",
+    "vous_appelez": "Olivier Berthelot, 48 ans, avocat associé et Managing Partner du Cabinet Berthelot & Associés (12 personnes, 1,8M€ CA). Pragmatique, sceptique, protège son temps comme un fauve. Échaudé par un achat logiciel raté il y a 3 ans (18k€ perdus). Obsédé par le ROI immédiat et le gain de temps concret.",
+    "ce_que_vous_savez": [
+      "Il passe entre 5 et 7h/semaine sur de l'administratif qui le frustre profondément",
+      "Cabinet en croissance modérée (+12% l'an dernier) mais sous pression concurrentielle directe",
+      "Il finalise deux gros dossiers M&A ce mois-ci et recrute un collaborateur T2",
+      "Budget théorique 8-15k€ si ROI prouvé sous 12 mois, mais décision opportuniste possible",
+      "Il déteste le jargon commercial et coupe après 45 secondes de monologue"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : oui avec prochaine étape concrète, non assumé, ou date ferme pour reparler — éviter à tout prix le flou poli.",
+    "vos_atouts": [
+      "Vous connaissez les spécificités déontologiques du métier d'avocat (vous pouvez le prouver)",
+      "Vous avez des références vérifiables dans des cabinets similaires",
+      "Vous proposez un test limité / phase pilote, pas un engagement lourd",
+      "Vous parlez en heures gagnées par semaine, pas en fonctionnalités"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:47:39Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13975,
+    "total_time_s": 123.1
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "id": "scenario_1771519879",
+  "description_originale": "Le directeur des achats ou directeur industriel d'une ETI industrielle de 200-400 salariés, production en série, plusieurs sites est un compte existant stratégique. Vous avez identifié une opportunité d'élargir le périmètre (nouveau département, nouveau site, nouveau produit). Votre objectif : décrocher un RDV de présentation avec le bon interlocuteur.\n[Secteur : industrie]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Responsable de site",
+        "Chef de département production",
+        "Responsable qualité"
+      ],
+      "zone_geo": "France - Multi-sites"
+    },
+    "offre": {
+      "produit_service": "Solution industrielle (équipement, service ou fourniture pour production en série)",
+      "proposition_valeur_presumee": "Optimisation de la production industrielle sur plusieurs sites avec extension possible à nouveaux périmètres",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à identifier le bon interlocuteur pour l'extension",
+        "Nécessité d'élargir le périmètre commercial"
+      ],
+      "implicites": [
+        "Risque de cannibalisation par la concurrence si pas d'expansion",
+        "Organisation matricielle complexe (plusieurs sites/départements)",
+        "Décision d'achat potentiellement éclatée entre sites",
+        "Besoin de justifier la valeur ajoutée sur nouveaux périmètres"
+      ],
+      "probleme_racine": "Difficulté à naviguer dans une structure complexe multi-sites pour transformer une relation existante en partenariat élargi, avec validation de multiples décideurs"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser l'upsell stratégique sur comptes existants en environnement industriel complexe : identifier les bons interlocuteurs, cartographier les opportunités d'extension, et obtenir des RDV qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur industriel B2B",
+      "entreprise_description": "Entreprise fournissant des solutions industrielles (équipements, services, fournitures) à des ETI en production série",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution industrielle déjà déployée sur un périmètre du client, avec potentiel d'extension à d'autres départements, sites ou produits",
+      "proposition_valeur": "Performance éprouvée sur le périmètre existant, potentiel de réplication et standardisation multi-sites, economies d'échelle, simplification de la relation fournisseur",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Déploiement existant chez le client concerné"
+      ],
+      "avantages_vs_concurrence": "Connaissance interne du client, confiance établie, facilité d'intégration avec l'existant",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service",
+        "Montant du contrat existant",
+        "Montant potentiel de l'extension",
+        "Historique relationnel précis",
+        "Raison spécifique de l'opportunité identifiée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Franck",
+      "nom": "Delattre",
+      "age": 52,
+      "poste": "Directeur Industriel Groupe",
+      "entreprise": {
+        "nom": "Mecapro Industries",
+        "secteur": "Sous-traitance automobile (usinage et assemblage)",
+        "taille": "ETI 340 salariés répartis sur 4 sites",
+        "ca_approximatif": "58M€ avec une pression marges constante (-2pts en 2 ans)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique territorial (défend son pré carré face aux Achats)",
+        "Prudent-calculateur (brûlé par 2 projets industriels ratés)",
+        "Méfiant envers les discours commerciaux standardisés"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX que l'industrialisation du site de Compiègne peut être répliquée ailleurs sans casse",
+        "Éviter qu'un échec d'extension ne remette en question sa crédibilité acquise difficilement",
+        "Garder la main sur les choix techniques face à la Direction des Achats qui veut centraliser",
+        "Sécuriser son bonus annuel lié aux gains de productivité (15% de sa rémunération)"
+      ],
+      "peurs_freins": [
+        "Que l'extension révèle des faiblesses cachées de la solution actuelle",
+        "Perdre du temps en réunions inutiles avec des commerciaux qui ne comprennent rien à l'industrie",
+        "Être court-circuité par les Achats qui imposent un appel d'offres complet",
+        "Que ses chefs de sites résistent par corporatisme ('On a toujours fait comme ça')",
+        "L'impact sur les équipes si ça se passe mal (il a viré un responsable méthodes l'an dernier suite à un projet foireux)"
+      ],
+      "rapport_aux_commerciaux": "Les tolère s'ils sont compétents techniquement et vont droit au but. Déteste viscéralement les vendeurs qui lisent un script, utilisent du jargon marketing ou ne connaissent pas leur propre produit. Respecte ceux qui admettent leurs limites.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude ('Bon, je vous écoute, mais j'ai le CODIR dans 20 minutes'). Tutoiement possible si affinités techniques.",
+      "signaux_interet": [
+        "Demande des données chiffrées précises sur le ROI du site existant",
+        "Évoque spontanément les problèmes spécifiques des autres sites ('À Reims on a un vrai souci de cadence sur la ligne 3')",
+        "Propose d'impliquer un chef de site : 'Faudrait que tu parles avec Jérôme à Bourges, c'est lui qui gère'",
+        "Griffonne des notes sur son bloc (papier, pas ordi)",
+        "Interrompt pour poser une question technique pointue"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole sèchement : 'Attends, attends, on n'est pas là'",
+        "Regard vers l'écran ou le téléphone pendant que vous parlez",
+        "Formules assassines : 'C'est du pipeau marketing tout ça' ou 'Mon petit gars, l'industrie c'est pas du PowerPoint'",
+        "Renvoie vers les Achats : 'Faut voir avec Martine de toute façon, c'est elle qui décide maintenant'",
+        "Silence pesant après votre argumentaire puis 'Mouais, bon, on verra'"
+      ],
+      "tics_langage": [
+        "'Concrètement' (répété 3-4 fois par conversation)",
+        "'C'est du flan' pour qualifier un argument faible",
+        "'On n'est pas chez Renault' quand on parle budget",
+        "Soupirs audibles avant de répondre à une question naïve",
+        "Utilise le 'nous' collectif industriel : 'Nous on a des cadences à tenir'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35 secondes maximum. Au-delà, coupe ou décroche mentalement. Attend des questions, pas un pitch."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression des donneurs d'ordres automobiles (renégociation -8% sur les prix série). Plan de performance industrielle validé avec objectif +12% de productivité sur 18 mois. Le site de Compiègne (où votre solution est déployée) a surperformé (+9% en 10 mois), ce qui a attiré l'attention du DG. Mais tensions internes : les 3 autres sites craignent d'être mis en concurrence ou restructurés.",
+      "priorites_actuelles": [
+        "Industrialiser la ligne d'assemblage du site de Reims (investissement 1,2M€ déjà budgété, arbitrage en cours entre 2 technologies)",
+        "Harmoniser les pratiques entre sites sans braquer les équipes locales",
+        "Préparer la certification IATF pour le site de Bourges (audit dans 6 mois)",
+        "Tenir le budget CAPEX 2024 déjà entamé à 67% mi-année"
+      ],
+      "experience_avec_offre_similaire": "Votre solution tourne depuis 14 mois sur une ligne de Compiègne (département emboutissage). Résultats tangibles : +7% de TRS, -11% de rebuts, retour sur investissement en 18 mois au lieu de 24 prévus. MAIS : déploiement initial chaotique (3 semaines de retard, conflit avec le chef d'équipe, intervention du DG). Franck reste marqué par cette mise en route difficile même si le résultat final est bon.",
+      "fournisseur_actuel": "Sur les autres sites : un mix de solutions hétérogènes (prestataires locaux historiques, parfois du bricolage interne, un concurrent allemand sur Bourges). Pas de standardisation = cauchemar de reporting pour Franck.",
+      "budget_disponible": "Pas de ligne dédiée 'extension fournisseur X'. Doit soit grappiller sur le budget méthodes/amélioration continue (180K€ restants sur 2024, mais déjà 3 projets en attente), soit intégrer dans le projet ligne Reims (mais nécessite validation Achats + DG si ça alourdit l'investissement). Sensibilité prix extrême : chaque 10K€ supplémentaire nécessite une justification écrite."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Référencer explicitement les résultats Compiègne avec les VRAIS chiffres (il les connaît par cœur)",
+        "Mentionner un problème technique spécifique d'un autre site que vous avez identifié (montre que vous avez fait vos devoirs)",
+        "Proposer une approche pilote low-cost sur un périmètre restreint ('On teste sur une ligne, si ça marche on déploie')",
+        "Impliquer rapidement un chef de site dans la conversation (délègue la crédibilité technique)",
+        "Admettre franchement les difficultés du démarrage initial à Compiègne et expliquer ce qui a été corrigé depuis"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ou ignorer les problèmes du lancement Compiègne ('Ah bon, il y a eu des soucis ?')",
+        "Promettre des gains irréalistes ou génériques sans données client spécifiques",
+        "Tenter de court-circuiter les chefs de sites en allant directement au DG",
+        "Utiliser un argumentaire marketing généraliste qui pourrait s'appliquer à n'importe quelle industrie",
+        "Proposer un RDV 'exploratoire' de 2h sans ordre du jour précis ('On fait un point sur vos besoins')",
+        "Critiquer ouvertement les solutions actuelles des autres sites sans avoir vu les installations"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, j'ai le CODIR dans 25 minutes, fais court. C'est pour quoi exactement ?",
+        "sous_texte": "Je te donne 90 secondes pour prouver que tu ne vas pas me faire perdre mon temps. Si c'est du commercial classique, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Aller droit au but avec les chiffres Compiègne et un problème identifié sur un autre site. Pas de blabla."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà votre truc à Compiègne, non ? Qu'est-ce que tu veux de plus ?",
+        "sous_texte": "J'ai déjà donné. Le démarrage a été galère. Pourquoi je me rembarquerais dans ce cirque sur d'autres sites ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître les difficultés initiales, montrer ce qui a changé, et parler ROI concret de Compiègne plutôt que de vendre une extension."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "De toute façon, faut voir avec Martine aux Achats maintenant. Ils veulent tout centraliser, c'est plus moi qui décide.",
+        "sous_texte": "Test pour voir si tu comprends les jeux de pouvoir internes. Je ne vais pas me mouiller si tu ne m'aides pas à contourner les Achats politiquement.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître le rôle des Achats tout en valorisant son expertise technique pour bâtir le dossier ensemble avant de les impliquer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous me garantissez les mêmes résultats sur Reims ou Bourges ? Parce que c'est pas le même contexte qu'à Compiègne hein.",
+        "sous_texte": "J'ai peur que votre solution ne marche que dans des conditions optimales. Si ça plante ailleurs, c'est ma tête qui saute, pas la vôtre.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Pas de garantie ferme mais une méthodologie d'analyse préalable des spécificités. Proposer un diagnostic technique avant tout engagement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, attends. Tu connais la différence entre un taux de rebut sur de l'emboutissage et sur de l'usinage ? Parce que là on parle pas du tout de la même chose.",
+        "sous_texte": "Test de compétence technique. Si tu cafouilles, je te classe dans la catégorie 'commercial qui lit son PowerPoint' et je décroche.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Soit admettre la limite de compétence et proposer d'impliquer un expert technique, soit démontrer une vraie compréhension industrielle."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... Les chefs de sites vont pas aimer qu'on leur impose un truc. Surtout Jérôme à Bourges, il a ses habitudes avec son prestataire allemand depuis 8 ans.",
+        "sous_texte": "Résistance organisationnelle réelle. Je ne veux pas créer un conflit interne pour vous faire plaisir. Comment tu m'aides à gérer ce problème politique ?",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Co-construire une approche collaborative impliquant les chefs de sites dès le départ, pas une imposition top-down."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça, mais concrètement ça me coûte combien ? Parce qu'on n'est pas chez Renault nous, le budget CAPEX est déjà cramé aux deux tiers.",
+        "sous_texte": "J'ai un vrai problème de budget. Si tu me balances un chiffre énorme sans options, je suis coincé même si je suis intéressé.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Approche modulaire ou pilote avec investissement progressif. Montrer comment intégrer dans les projets existants (ligne Reims)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais le lancement à Compiègne, ça a été le bordel. Trois semaines de retard, le chef d'équipe qui pétait un câble, j'ai dû faire monter le DG. C'est pas ça que je veux revivre.",
+        "sous_texte": "Objection cicatrice. Je suis marqué par cette expérience négative même si le résultat final est bon. Prouve-moi que ça ne se reproduira pas.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Analyser précisément ce qui a dysfonctionné, assumer la responsabilité, et détailler les changements opérationnels depuis (méthode, équipe, processus)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tu me parles de standardisation, d'économies d'échelle... C'est du pipeau marketing tout ça. Donne-moi des chiffres, du concret, pas du PowerPoint.",
+        "sous_texte": "Je détecte du blabla commercial générique. Je te teste : soit tu as de vraies données, soit tu es comme les autres et je perds mon temps.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Sortir des chiffres précis de Compiègne, des benchmarks industriels spécifiques, des calculs de ROI détaillés avec hypothèses transparentes."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça foire sur les autres sites, qu'est-ce qui se passe ? Vous me remboursez ? Vous venez expliquer au DG pourquoi on a claqué 300 bornes pour rien ?",
+        "sous_texte": "Besoin de réassurance sur le risque. Ma crédibilité est en jeu. Je cherche un filet de sécurité ou un engagement de résultat.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Proposer des garanties contractuelles raisonnables, une approche pilote réversible, ou un engagement sur l'accompagnement au-delà de l'installation."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mon petit gars, l'industrie c'est pas du conseil en management. Tes belles théories, elles tiennent pas 5 minutes face à une ligne qui s'arrête parce qu'un capteur déconne.",
+        "sous_texte": "Tu m'agaces avec ton discours trop théorique. Redescends sur terre ou je te mets dehors mentalement. Prouve que tu comprends la réalité du terrain.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Ramener des exemples concrets de problèmes résolus sur Compiègne, parler SAV, maintenance, support terrain plutôt que bénéfices business."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, là tu me parles de déployer sur trois sites. Faut être réaliste, j'ai pas les équipes pour gérer trois chantiers en parallèle. On est déjà sur les rotules avec Reims.",
+        "sous_texte": "Contrainte opérationnelle réelle. Même si je suis convaincu, je n'ai pas les ressources humaines pour exécuter. Comment tu m'aides à résoudre ce problème ?",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer un phasage réaliste site par site, avec accompagnement renforcé et autonomie progressive des équipes."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais, pourquoi pas... Mais bon, on verra. Envoie-moi un mail, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je ne suis pas convaincu ou pas prêt à m'engager. Cette formule polie = probable enterrement du dossier. Test de ta capacité à closer vraiment.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Ne pas accepter ce faux engagement. Identifier l'obstacle réel (budget? doute technique? timing?) et fixer un point de décision concret."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, c'est intéressant, mais faut vraiment que je voie avec Jérôme à Bourges et Patrick à Reims avant. Je peux pas décider tout seul sur un truc pareil.",
+        "sous_texte": "Vrai frein politique. J'ai besoin de l'adhésion de mes chefs de sites. Si tu forces le closing sans les impliquer, tu vas braquer tout le monde et tuer le deal.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un RDV tripartite ou une visite terrain avec un chef de site. Accepter ce process décisionnel plutôt que forcer."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un audit ou un diagnostic, ça veut dire que vous venez fouiller dans nos process pendant deux jours ? J'ai pas le temps de jouer aux consultants là.",
+        "sous_texte": "Méfiance envers une démarche qui ressemble à du conseil. Peur de perdre du temps et d'exposer les faiblesses internes à un prestataire externe.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rassurer sur le format léger et pragmatique (1/2 journée), focus technique pas organisationnel, restitution immédiate exploitable."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, t'as pas tort sur le fond. Mais là, timing pourri : j'ai l'audit IATF dans 6 mois, le projet Reims qui part, les négo avec PSA... Rappelle-moi en septembre peut-être.",
+        "sous_texte": "Objection temporelle sincère. Je suis réellement surchargé. Si tu insistes lourdement, tu me braques. Mais si tu lâches trop vite, un concurrent prendra la place.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Valider le timing mais sécuriser un micro-engagement (visite courte d'un site, envoi d'une étude de cas) pour maintenir la relation sans pression."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, fais-moi une offre complète avec les trois sites, le planning, les garanties, tout. Je présente ça au COMEX et on voit.",
+        "sous_texte": "Fausse demande d'offre formelle = soit il me teste pour voir si j'accepte de bosser gratuitement, soit il veut un document pour négocier avec un concurrent. Piège classique.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Clarifier le processus décisionnel réel, les critères du COMEX, et conditionner l'offre détaillée à un RDV de cadrage terrain préalable."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "C'est du flan tout ça. Tu me parles de réplication, de standardisation, mais concrètement t'as jamais fait un déploiement multi-sites dans l'automobile. Vous avez UN site chez nous qui marche, c'est bien, mais ça prouve rien. Les autres boîtes à qui tu racontes ça, c'est qui ? Montre-moi des références comparables ou arrête de me faire perdre mon temps.",
+      "condition_declenchement": "Se déclenche si le commercial a accumulé trop d'arguments marketing génériques sans ancrage terrain concret, ou s'il n'a pas su désamorcer les doutes sur le démarrage chaotique de Compiègne. Survient quand Franck sent qu'on lui vend un rêve sans preuves tangibles."
+    },
+    "pattern_escalade": "Franck commence cordial mais pressé (test de l'efficacité). Si le commercial tient bon avec des faits précis, il passe en mode 'challenger technique' avec des questions pointues pour tester la compétence. S'il détecte de la solidité, il ouvre progressivement sur les vrais problèmes (budget, politique interne, peur de l'échec). MAIS si à n'importe quel moment il sent du blabla commercial, il ferme brutalement avec des formules assassines et renvoie vers les Achats ou un vague 'on verra'. La fenêtre de crédibilité est de 3-4 minutes maximum.",
+    "piege_classique": "Franck peut sembler s'ouvrir sur les problèmes spécifiques des autres sites (Reims, Bourges) pour donner l'impression d'un intérêt réel. MAIS c'est un test : il observe si le commercial se précipite avec des promesses faciles ou s'il pose des questions intelligentes pour comprendre les spécificités. S'empresser de vendre sur ces problèmes sans diagnostic = perte instantanée de crédibilité. L'autre piège : il peut mentionner un concurrent fictif ou exagérer le rôle des Achats pour tester la réaction du commercial face à la concurrence."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur industriel B2B",
+      "description": "Entreprise fournissant des solutions industrielles (équipements, services, fournitures) à des ETI en production série"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution industrielle déjà déployée sur un périmètre du client, avec potentiel d'extension à d'autres départements, sites ou produits",
+      "proposition_valeur": "Performance éprouvée sur le périmètre existant, potentiel de réplication et standardisation multi-sites, economies d'échelle, simplification de la relation fournisseur",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Déploiement existant chez le client concerné"
+      ],
+      "avantages_vs_concurrence": "Connaissance interne du client, confiance établie, facilité d'intégration avec l'existant"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser l'upsell stratégique sur comptes existants en environnement industriel complexe : identifier les bons interlocuteurs, cartographier les opportunités d'extension, et obtenir des RDV qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Extension multi-sites solution industrielle",
+    "vous_etes": "Commercial industrie chez un fournisseur de solutions d'optimisation de production, en charge du compte Mecapro Industries.",
+    "vous_vendez": "Extension de votre solution industrielle (actuellement déployée sur une ligne à Compiègne) aux 3 autres sites du groupe (Reims, Bourges, et un 4e site).",
+    "vous_appelez": "Franck Delattre, 52 ans, Directeur Industriel Groupe chez Mecapro Industries (ETI 340 salariés, sous-traitance automobile). Pragmatique, méfiant envers les discours commerciaux, brûlé par des projets ratés. Tolère les commerciaux compétents qui vont droit au but. Sous pression du COMEX pour répliquer les succès de Compiègne.",
+    "ce_que_vous_savez": [
+      "Votre solution tourne depuis 14 mois sur une ligne d'emboutissage à Compiègne : +7% TRS, -11% rebuts, ROI en 18 mois au lieu de 24",
+      "Le démarrage initial a été chaotique (3 semaines de retard, conflit d'équipe) même si le résultat final est excellent",
+      "Mecapro subit une pression prix -8% des donneurs d'ordres et doit gagner +12% de productivité en 18 mois",
+      "Les 3 autres sites utilisent des solutions hétérogènes (prestataires locaux, bricolage interne, concurrent allemand à Bourges)",
+      "Franck arbitre actuellement un investissement 1,2M€ pour industrialiser la ligne de Reims"
+    ],
+    "votre_objectif": "Obtenir un RDV physique avec Franck et idéalement un chef de site pour évaluer concrètement une extension pilote sur un périmètre restreint.",
+    "vos_atouts": [
+      "Résultats chiffrés prouvés chez lui (vous connaissez le dossier de l'intérieur)",
+      "Vous pouvez standardiser ses 4 sites et simplifier son reporting (actuellement un cauchemar)",
+      "Approche pilote possible : tester sur une ligne avant de déployer largement",
+      "Vous avez tiré les leçons du démarrage raté à Compiègne et corrigé les processus"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:51:19Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17231,
+    "total_time_s": 163.1
+  }
+}

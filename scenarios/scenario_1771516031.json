@@ -1,0 +1,356 @@
+{
+  "id": "scenario_1771516031",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : services_entreprises]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme dans le secteur nettoyage/sécurité/maintenance",
+      "proposition_valeur_presumee": "Optimisation des services existants, efficacité opérationnelle renforcée, économies potentielles ou valeur ajoutée supplémentaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire ou supérieure"
+      ],
+      "implicites": [
+        "Éviter que le client se sente satisfait du statu quo",
+        "Justifier un investissement supplémentaire alors que le client est déjà satisfait",
+        "Risque de paraître opportuniste ou de casser la relation de confiance",
+        "Difficulté à créer un besoin non exprimé"
+      ],
+      "probleme_racine": "Transformer la satisfaction actuelle en opportunité de développement sans créer de friction ni paraître mercantile"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upselling en contexte de relation client établie, savoir créer de la valeur perçue et obtenir un engagement pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_entreprises",
+      "entreprise_description": "Fournisseur de services professionnels dans les domaines du nettoyage, de la sécurité et/ou de la maintenance pour les entreprises",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou offre premium par rapport aux prestations actuellement souscrites par le client",
+      "proposition_valeur": "Amélioration de la qualité de service, optimisation des coûts opérationnels, couverture plus complète des besoins, conformité renforcée, tranquillité d'esprit accrue",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de fiabilité et qualité"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie des besoins du client, relation de confiance établie, continuité de service, interlocuteur unique",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service complémentaire proposé",
+        "Tarification",
+        "Nom de l'entreprise vendeuse",
+        "Positionnement géographique",
+        "Détails du contrat actuel"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Jérôme",
+      "nom": "Beaufort",
+      "age": 48,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Beaufort Espaces Verts & Paysage",
+        "secteur": "Services d'aménagement paysager et entretien d'espaces verts",
+        "taille": "38 salariés",
+        "ca_approximatif": "2,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et terre-à-terre",
+        "Méfiant envers les dépenses non essentielles",
+        "Fidèle aux partenaires qui ont fait leurs preuves"
+      ],
+      "motivations_profondes": [
+        "Protéger sa trésorerie dans un secteur à faible marge",
+        "Maintenir la réputation irréprochable qu'il a mis 15 ans à bâtir",
+        "Éviter les emmerdes administratives et les mauvaises surprises",
+        "Prouver qu'il peut gérer seul sans se faire avoir par les commerciaux"
+      ],
+      "peurs_freins": [
+        "Que l'augmentation des coûts ne se justifie pas par un bénéfice tangible",
+        "Perdre du temps dans des rdv qui n'aboutissent à rien",
+        "Que ses équipes soient perturbées par des changements de prestataires",
+        "Se faire refourguer un service dont il n'a pas réellement besoin"
+      ],
+      "rapport_aux_commerciaux": "Respectueux mais toujours sur la défensive. Apprécie ceux qui vont droit au but et parlent chiffres concrets. Déteste le baratin et les promesses en l'air. A un radar aiguisé pour détecter le bullshit commercial.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe de lassitude bienveillante du type 'Bon alors, qu'est-ce que tu veux me vendre aujourd'hui ?'",
+      "signaux_interet": [
+        "Pose des questions précises sur les chiffres et les délais",
+        "Mentionne un problème concret qu'il rencontre actuellement",
+        "Dit 'Attends, laisse-moi noter ça' ou 'Envoie-moi un truc par mail'",
+        "Parle de ses contraintes budgétaires de manière ouverte"
+      ],
+      "signaux_rejet": [
+        "Répond par des 'Ouais, ouais...' distraits",
+        "Coupe la parole avec 'Bon écoute, là je suis vraiment à la bourre'",
+        "Dit 'C'est gentil mais pour l'instant on est carrés'",
+        "Ton qui devient impatient, soupirs audibles"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...'",
+        "Utilise 'carrés' pour dire que tout va bien",
+        "Dit 'C'est pas faux' quand il est d'accord mais pas convaincu",
+        "Ponctue de 'Franchement' quand il veut être direct"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum avant de couper. Si le commercial monopolise la parole plus de 2 minutes, il décroche mentalement et cherche une sortie polie."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+8% CA l'an dernier), mais marges sous pression à cause de l'augmentation des charges sociales et du carburant. Vient de décrocher 2 gros contrats de collectivités qui nécessitent une vraie rigueur administrative.",
+      "priorites_actuelles": [
+        "Sécuriser la conformité réglementaire pour les appels d'offres publics",
+        "Réduire le turnover des équipes terrain (problème récurrent)",
+        "Améliorer la gestion documentaire et la traçabilité des interventions",
+        "Préparer la transmission progressive de l'entreprise à son fils dans 5-7 ans"
+      ],
+      "experience_avec_offre_similaire": "A déjà été démarché 3 fois cette année par d'autres prestataires pour des services 'premium'. Systématiquement refusé car pas vu la différence concrète avec ce qu'il a déjà.",
+      "fournisseur_actuel": "Vous - satisfait du service de nettoyage de ses locaux et vestiaires depuis 1 an. Apprécie la régularité et le fait qu'il n'ait jamais eu à réclamer quoi que ce soit.",
+      "budget_disponible": "Pas de ligne budgétaire spécifique pour des services complémentaires. Pourrait débloquer entre 3 000€ et 8 000€ annuels si ROI clairement démontré et validé par son comptable."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème concret qu'il rencontre actuellement (conformité, traçabilité, turnover)",
+        "Parler en termes de ROI chiffré ou d'économies réelles",
+        "Citer des exemples d'autres gérants d'entreprises similaires dans la région",
+        "Montrer qu'on a compris ses contraintes spécifiques liées aux marchés publics",
+        "Proposer un test limité dans le temps ou une phase pilote peu engageante"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Critiquer indirectement ce qu'il fait actuellement ou son organisation",
+        "Parler de 'transformation digitale' ou autre jargon corporate",
+        "Insister lourdement après un premier refus poli",
+        "Ne pas avoir de réponse précise sur le prix quand il pose la question",
+        "Laisser entendre que son entreprise n'est pas assez professionnelle",
+        "Vouloir absolument fixer un rdv physique alors qu'il a dit non"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, c'est gentil de m'appeler mais là je suis vraiment à la bourre, j'ai une équipe qui m'attend sur un chantier...",
+        "sous_texte": "Je ne veux pas être impoli mais je n'ai pas prévu ce coup de fil et je n'ai mentalement aucune place pour une discussion commerciale maintenant",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Reconnaître immédiatement la contrainte temps et proposer une alternative précise ('30 secondes ou je vous rappelle à 14h ?')"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attendez, on est déjà clients chez vous pour le nettoyage, non ? Franchement je suis super content, y'a pas de souci de ce côté-là.",
+        "sous_texte": "Je ne comprends pas pourquoi vous m'appelez si tout va bien. Est-ce que vous allez essayer de me vendre un truc en plus ?",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Confirmer la satisfaction, transformer l'appel en opportunité d'amélioration continue plutôt qu'en vente frontale"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors, qu'est-ce que tu veux me vendre aujourd'hui ? Parce que j'ai déjà eu trois commerciaux cette semaine...",
+        "sous_texte": "Je suis blasé des appels commerciaux, montre-moi tout de suite que tu es différent ou je vais te sortir poliment de la conversation",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaissance de la lassitude légitime et pivot immédiat vers un bénéfice concret lié à SES problèmes spécifiques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On est carrés pour l'instant franchement. Le nettoyage ça tourne, mes gars sont contents, je vois pas trop ce que je pourrais améliorer...",
+        "sous_texte": "Je suis dans ma zone de confort et tu vas devoir vraiment me démontrer qu'il y a un problème que je ne vois pas, sinon je ne bouge pas",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Poser des questions sur les nouvelles contraintes (marchés publics, traçabilité) pour révéler des besoins latents"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais bon, tu comprends, avec les charges qui ont encore augmenté cette année, là je regarde plutôt où je peux réduire les coûts, pas où je peux en rajouter...",
+        "sous_texte": "Mon contexte économique est tendu, donc même si ton offre est intéressante, ce n'est vraiment pas le moment de dépenser plus",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Pivoter vers la notion d'optimisation/économies à moyen terme plutôt que de coût supplémentaire immédiat"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas faux ce que tu dis, mais concrètement ça me coûte combien ton truc ? Parce que si c'est pour me rajouter 500 balles par mois, ça va être compliqué là...",
+        "sous_texte": "Je commence à voir l'intérêt mais je veux savoir MAINTENANT si c'est dans mes cordes financièrement avant d'investir plus de temps mental",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un ordre de grandeur honnête tout en recentrant sur la valeur avant de parler prix détaillé"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, là tu me parles de traçabilité et tout, mais j'ai déjà un système qui fonctionne. Pourquoi je devrais changer quelque chose qui marche ?",
+        "sous_texte": "Le changement représente un risque et un effort. Je ne vais pas bouleverser mon organisation sauf si le bénéfice est vraiment évident",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas parler de 'changer' mais de 'compléter' ou 'sécuriser' ce qui existe déjà, surtout face aux nouvelles exigences"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... J'ai déjà entendu ça trois fois cette année avec d'autres prestataires. À chaque fois on me promet la lune et au final je vois pas la différence.",
+        "sous_texte": "Je suis devenu cynique face aux promesses commerciales. Tu vas devoir me prouver par des faits concrets, pas des belles paroles",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Apporter de la preuve sociale ultra-concrète (chiffres, noms si possible, cas similaires) et proposer un test sans engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, mes équipes elles ont déjà assez à faire comme ça. Si ton truc c'est compliqué à mettre en place ou que ça leur rajoute du boulot, c'est mort direct.",
+        "sous_texte": "La simplicité opérationnelle est ma priorité absolue. Toute complexité supplémentaire est rédhibitoire même si l'offre est intéressante sur le papier",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Insister sur la simplicité de mise en œuvre et l'accompagnement, voire la prise en charge totale de la partie administrative"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais je dois en parler à mon comptable avant de m'engager sur quoi que ce soit. Et puis là en ce moment c'est la fin de trimestre, c'est pas le moment...",
+        "sous_texte": "Je suis potentiellement intéressé mais je cherche à gagner du temps pour réfléchir sans pression et valider avec mon conseiller de confiance",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le besoin de validation externe mais obtenir un engagement de principe et une date de rappel précise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, ça a l'air intéressant mais je veux voir quelque chose de concret. Tu peux m'envoyer une doc avec des exemples et on en reparle ?",
+        "sous_texte": "Je veux clore poliment cette conversation sans m'engager. L'envoi de doc me permet de sortir de l'échange sans dire non frontalement",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi mais conditionner à un point de suivi planifié immédiatement, avec engagement mutuel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais, ouais... Bon écoute, c'est gentil mais pour l'instant je pense qu'on va rester comme on est. Si j'ai besoin je te recontacterai.",
+        "sous_texte": "Je commence à décrocher et je cherche une sortie polie. Tu es en train de perdre mon attention et je ne vois pas assez de valeur pour continuer",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rupture de pattern immédiate : question directe qui force le recadrage ou accepter la perte avec élégance et garder la relation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attends, un devis ça m'engage à rien mais ça veut dire que toi tu vas me relancer derrière, et franchement j'ai pas le temps de gérer ça en ce moment...",
+        "sous_texte": "J'ai peur de rentrer dans un cycle de relances commerciales dont je ne pourrai plus sortir poliment. Je protège mon temps et ma tranquillité",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer sur l'absence de relance agressive et clarifier le processus décisionnel et le timing de son côté"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est pas que ça m'intéresse pas, mais là je dois vraiment valider ça en interne. Je peux pas prendre ce genre de décision comme ça au téléphone.",
+        "sous_texte": "Je ressens la pression de clôture et je me protège. J'ai besoin de reprendre le contrôle du timing de la décision",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier qui est 'en interne' (comptable?) et proposer de faciliter cette validation plutôt que de forcer la décision"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement si je dois rajouter 5 ou 6 000 balles par an, faut vraiment que je réfléchisse. C'est pas rien sur ma trésorerie.",
+        "sous_texte": "Le prix devient maintenant concret dans ma tête et ça fait mal. J'ai besoin de digérer mentalement cet investissement même si j'en vois l'intérêt",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler en coût mensuel, comparer au coût d'un problème de conformité ou d'une perte de marché public"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si dans 6 mois je veux arrêter, comment ça se passe ? Parce que je veux pas me retrouver bloqué dans un engagement de 3 ans...",
+        "sous_texte": "Je commence à projeter un achat mais j'ai peur de perdre ma liberté. Je veux garder toutes les portes de sortie ouvertes",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier transparence les conditions contractuelles et proposer éventuellement une période d'essai"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, envoie-moi ton devis et je regarde ça tranquillement. Je te rappelle si ça m'intéresse, OK ?",
+        "sous_texte": "Je veux clore la conversation maintenant sans engagement ferme. C'est ma dernière défense polie avant de raccrocher",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Dernière tentative de cadrage temporel ('Vous préférez que je vous rappelle mardi ou jeudi?') ou accepter avec élégance et noter un rappel"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais là franchement, je te sens un peu trop insistant. J'ai dit que j'allais réfléchir, ça veut dire que j'ai besoin de temps. Si tu continues à pousser comme ça, ça me gave et ça me donne pas envie de bosser avec toi, tu vois ce que je veux dire ?",
+      "condition_declenchement": "Si le commercial insiste après 2 refus polis successifs ou tente de forcer une décision immédiate malgré les signaux clairs de besoin de recul"
+    },
+    "pattern_escalade": "Jérôme commence courtois mais pressé. Si le commercial crée de la valeur rapidement, il devient plus attentif et pose des questions concrètes. Si le commercial fait du baratin ou insiste trop, le ton devient progressivement plus sec, les réponses plus courtes, jusqu'au 'Bon écoute...' terminal qui signale qu'il va raccrocher sous 30 secondes maximum. L'escalade négative est rapide (2-3 minutes) mais réversible si le commercial change immédiatement de posture.",
+    "piege_classique": "Jérôme peut sembler intéressé ('C'est pas faux', 'Attends, laisse-moi noter') mais basculer brutalement en mode sortie si le commercial interprète cela comme un feu vert pour accélérer vers la clôture. Son engagement verbal ne devient réel qu'après validation avec son comptable. Les commerciaux trop pressés confondent son écoute polie avec un accord de principe et se font gentiment éconduire au moment du closing."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_entreprises",
+      "description": "Fournisseur de services professionnels dans les domaines du nettoyage, de la sécurité et/ou de la maintenance pour les entreprises"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou offre premium par rapport aux prestations actuellement souscrites par le client",
+      "proposition_valeur": "Amélioration de la qualité de service, optimisation des coûts opérationnels, couverture plus complète des besoins, conformité renforcée, tranquillité d'esprit accrue",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an - preuve de fiabilité et qualité"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie des besoins du client, relation de confiance établie, continuité de service, interlocuteur unique"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser les techniques d'upselling en contexte de relation client établie, savoir créer de la valeur perçue et obtenir un engagement pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Upselling services maintenance/sécurité",
+    "vous_etes": "Commercial chez un prestataire multi-services (nettoyage, maintenance, sécurité) qui accompagne déjà Beaufort Espaces Verts & Paysage depuis 1 an sur le nettoyage de leurs locaux et vestiaires.",
+    "vous_vendez": "Une offre complémentaire de services maintenance ou sécurité, positionnée comme une extension naturelle de la prestation actuelle pour renforcer conformité et traçabilité (prix à définir selon besoins, fourchette 3-8K€/an).",
+    "vous_appelez": "Jérôme Beaufort, 48 ans, gérant de Beaufort Espaces Verts & Paysage (38 salariés, 2,8M€ CA). Pragmatique, méfiant des dépenses superflues, toujours pressé. Apprécie les partenaires fiables mais déteste le baratin commercial.",
+    "ce_que_vous_savez": [
+      "Client satisfait de votre prestation nettoyage depuis 1 an — jamais eu à réclamer",
+      "Vient de décrocher 2 gros contrats collectivités avec exigences strictes de conformité administrative",
+      "Problématiques connues : traçabilité des interventions, rigueur documentaire pour appels d'offres publics",
+      "A refusé 3 fois cette année des offres 'premium' d'autres prestataires — pas vu la différence concrète",
+      "Marge de manœuvre budgétaire limitée mais peut débloquer 3-8K€ si ROI évident"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé sur une offre complémentaire qui répond à ses enjeux de conformité et traçabilité liés aux marchés publics.",
+    "vos_atouts": [
+      "Relation de confiance déjà établie — vous connaissez son fonctionnement",
+      "Interlocuteur unique vs multiplication des prestataires",
+      "Expertise terrain prouvée sur la durée (1 an sans incident)",
+      "Capacité à packager plusieurs services pour simplifier sa gestion administrative"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:47:11Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14918,
+    "total_time_s": 133.5
+  }
+}

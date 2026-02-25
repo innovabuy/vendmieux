@@ -1,0 +1,375 @@
+{
+  "id": "scenario_1771525019",
+  "description_originale": "Le associé directeur ou directeur du développement d'une groupe d'expertise comptable multi-sites de 100+ collaborateurs (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : comptabilite]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "100+ collaborateurs, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "Associé Directeur ou Directeur du Développement",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        "Directeur Administratif et Financier potentiel",
+        "Responsable des opérations"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution logicielle ou service pour cabinet d'expertise comptable",
+      "proposition_valeur_presumee": "Optimisation des processus, productivité, conformité réglementaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur impactant l'activité du client",
+        "Client furieux et menaçant",
+        "Risque de pénalités contractuelles",
+        "Risque de perte du contrat compte clé"
+      ],
+      "implicites": [
+        "Défaillance technique ou de service",
+        "Engagement contractuel non respecté",
+        "Relation client dégradée",
+        "Impact sur la réputation commerciale",
+        "Pression sur le commercial pour gérer une situation critique sans formation",
+        "Manque de processus de gestion de crise établi"
+      ],
+      "probleme_racine": "Les commerciaux ne sont pas formés à la gestion de crise et aux situations de réclamation sur comptes stratégiques, ce qui met en péril la rétention client et la rentabilité"
+    },
+    "objections_mentionnees": [
+      "Menace de pénalités contractuelles",
+      "Remise en cause de la continuité du contrat",
+      "Colère et perte de confiance"
+    ],
+    "objectif_formation": "Former les commerciaux à gérer les situations de crise avec des comptes clés : désamorcer la colère, prendre en charge le problème, proposer un plan de résolution crédible et préserver la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de logiciels ou fournisseur de services pour cabinets d'expertise comptable",
+      "entreprise_description": "Entreprise B2B proposant des solutions technologiques ou services aux professionnels de la comptabilité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution logicielle de gestion pour cabinets comptables ou service associé (dématérialisation, conformité, gestion de cabinet)",
+      "proposition_valeur": "Gain de productivité, conformité réglementaire, modernisation des processus comptables",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Nom de l'entreprise vendeur",
+        "Produit/service spécifique concerné",
+        "Montant du contrat ou des pénalités",
+        "Historique de la relation client"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Olivier",
+      "nom": "Desmarais",
+      "age": 52,
+      "poste": "Associé Directeur",
+      "entreprise": {
+        "nom": "Desmarais & Associés",
+        "secteur": "Expertise comptable et audit",
+        "taille": "Cabinet de 127 collaborateurs répartis sur 5 sites (Paris Opéra siège, Boulogne, Lyon, Nantes, Bordeaux)",
+        "ca_approximatif": "14,2 M€ - portefeuille 840 clients PME/ETI"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeant et intransigeant sur les engagements contractuels",
+        "Protecteur féroce de la réputation du cabinet (bâtie en 28 ans)",
+        "Pragmatique : privilégie les solutions concrètes aux excuses"
+      ],
+      "motivations_profondes": [
+        "Préserver la confiance des clients du cabinet à tout prix",
+        "Maintenir son image d'associé qui ne laisse rien passer",
+        "Éviter que l'incident ne se sache dans la profession (milieu très fermé)",
+        "Protéger ses équipes des conséquences d'une défaillance fournisseur"
+      ],
+      "peurs_freins": [
+        "Perdre un client historique à cause d'un prestataire externe",
+        "Que l'incident remonte à l'Ordre des Experts-Comptables",
+        "Paraître naïf ou manipulable face aux autres associés",
+        "Devoir gérer une crise médiatique ou réglementaire"
+      ],
+      "rapport_aux_commerciaux": "Méfiance structurelle. Les voit comme des 'beaux parleurs' qui promettent monts et merveilles puis disparaissent quand ça dysfonctionne. Respecte uniquement ceux qui assument leurs erreurs sans langue de bois.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, cassant, voix tendue. Commence systématiquement par 'Bon, on ne va pas y passer trois heures' ou 'J'ai un comité de direction dans 20 minutes'. Coupe la parole si le commercial dévie du sujet.",
+      "signaux_interet": [
+        "Pose des questions précises sur les délais ('C'est-à-dire quand EXACTEMENT ?')",
+        "Note quelque chose sur papier (jamais sur ordinateur pendant un appel)",
+        "Silence soudain après une proposition concrète",
+        "Change de ton : passe du 'vous' au 'tu' si le commercial gagne sa confiance"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles et exagérés",
+        "Phrase assassine : 'Écoutez, j'ai pas que ça à faire'",
+        "Mentionne ostensiblement un concurrent : 'Chez Sage/Cegid/Dext on n'a jamais eu ce genre de problème'",
+        "Demande à parler au N+2 du commercial : 'Passez-moi votre directeur commercial, là'"
+      ],
+      "tics_langage": [
+        "'Franchement' (répété 3-4 fois par conversation)",
+        "'C'est du n'importe quoi'",
+        "'On est d'accord que...' (pour forcer l'engagement)",
+        "Utilise des termes techniques comptables pour tester la compétence de l'interlocuteur",
+        "'Moi, dans ma carrière, j'ai vu passer...' (argument d'autorité)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Coupe brutalement avec 'Oui oui, j'ai compris, mais concrètement...' Déteste les introductions commerciales. Veut aller droit au but."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet en pleine clôture annuelle (février-avril = période de guerre). L'incident survient sur un client CAC réalisant 45K€ de CA annuel pour le cabinet. Le dysfonctionnement logiciel a bloqué la production des liasses fiscales pendant 72h, obligeant 3 collaborateurs à faire du travail manuel. Le client menace d'exiger 15K€ de dédommagement et envisage de changer de cabinet.",
+      "priorites_actuelles": [
+        "Gérer la crise avec le client impacté (PDG d'une entreprise familiale très procédurière)",
+        "Éviter que d'autres clients ne soient affectés par le même bug",
+        "Préparer l'AG des associés dans 3 semaines où il doit justifier ses choix de prestataires",
+        "Décider s'il active ou non la clause de résiliation anticipée du contrat"
+      ],
+      "experience_avec_offre_similaire": "3ème solution logicielle en 8 ans. A connu l'époque du 'tout Excel', nostalgique d'une certaine maîtrise. Les deux précédentes solutions ont été abandonnées pour défauts de fiabilité et support client catastrophique.",
+      "fournisseur_actuel": "Votre entreprise, en contrat depuis 14 mois. Déploiement laborieux (6 mois au lieu de 3 prévus). Quelques bugs mineurs acceptés jusqu'ici, mais là 'c'est la goutte d'eau'.",
+      "budget_disponible": "Contrat actuel : 78K€/an (licence + maintenance). Budget switching vers concurrent : 25-30K€ de coûts de migration qu'il veut vous faire payer. Pas de budget formation crise prévu mais pourrait débloquer 8-12K€ si ROI démontré sur rétention client."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de la gravité de l'incident ('Vous avez raison, c'est inacceptable')",
+        "Plan d'action ultra-précis avec dates et responsables nommés",
+        "Proposition de compensation financière chiffrée AVANT qu'il ne la demande",
+        "Engagement du N+2 du commercial dans la résolution (crédibilité)",
+        "Références d'autres cabinets comptables clients satisfaits (secteur fermé, le bouche-à-oreille est roi)",
+        "Transparence sur la cause racine du bug et les mesures correctives techniques"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou trouver des excuses ('Oui mais avec la mise à jour Windows...')",
+        "Promettre sans engager ('On va faire le maximum')",
+        "Rejeter la responsabilité sur l'équipe du cabinet ('Vos collaborateurs auraient dû...')",
+        "Langue de bois corporate ('Nous prenons cet incident très au sérieux et...')",
+        "Proposer une réunion 'pour en discuter' sans solution concrète immédiate",
+        "Toute tentative de vente additionnelle ou d'upsell dans ce contexte",
+        "Tutoiement non sollicité ou familiarité déplacée"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite. Vous appelez pour quoi exactement ? Parce que si c'est pour me parler de vos nouvelles fonctionnalités, franchement, là j'ai un client qui me menace de procès à cause de VOTRE logiciel, donc c'est pas le moment.",
+        "sous_texte": "Je suis en mode survie, submergé par la crise. Prouve-moi immédiatement que tu es là pour résoudre MON problème, pas pour vendre.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la crise immédiatement et positionner l'appel comme une résolution, pas une vente"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez combien ça nous a coûté ce dysfonctionnement ? 72 heures bloquées, trois collaborateurs en heures sup, un client qui nous réclame 15 000 euros. Et vous m'appelez comme si de rien n'était ?",
+        "sous_texte": "Je veux que tu mesures l'ampleur des dégâts. Si tu ne comprends pas la gravité, cette conversation s'arrête là.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Quantifier sa compréhension des impacts et proposer une compensation chiffrée avant qu'il ne la demande"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "J'ai un comité de direction dans 15 minutes où je dois expliquer aux autres associés pourquoi j'ai choisi un prestataire qui nous met dans la merde en pleine saison fiscale. Vous avez 2 minutes, pas une de plus.",
+        "sous_texte": "Ma crédibilité interne est en jeu. Je ne peux pas me permettre d'écouter du baratin. Sois ultra-concret ou je raccroche.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Structurer une réponse en 90 secondes maximum avec 3 points actionnables immédiats"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi je vous expliquerais en détail ce qui s'est passé ? C'est VOTRE bug, vous devez déjà savoir exactement ce qui a merdé. Ou alors vos équipes techniques ne communiquent même pas avec les commerciaux ?",
+        "sous_texte": "Test de compétence. Si tu ne connais pas déjà les détails techniques de l'incident, tu confirmes mon préjugé sur les commerciaux déconnectés.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Prouver qu'on a déjà investigué en citant des éléments techniques précis, puis demander sa vision pour compléter"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, ça fait 14 mois qu'on a ce logiciel. Le déploiement a duré 6 mois au lieu de 3. On a eu des petits bugs, OK, on a joué le jeu. Mais là ? Bloquer la production des liasses fiscales en pleine clôture ? C'est du n'importe quoi.",
+        "sous_texte": "J'ai été patient, j'ai accepté des compromis. Mais ma tolérance est épuisée. Cette fois, il faut un geste exceptionnel pour me garder.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître explicitement les concessions passées et proposer une rupture dans la relation (engagement différenciant)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez si d'autres clients sont touchés ? Mais attendez, vous ne savez même pas si c'est un bug généralisé ou spécifique à notre configuration ? C'est quoi ce pilotage ?",
+        "sous_texte": "Je découvre en temps réel que vous n'avez pas maîtrisé l'incident. Mon niveau de confiance chute encore.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale sur le périmètre de l'incident + mesures de protection pour les autres clients"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi dans ma carrière, j'ai vu passer des dizaines de prestataires informatiques. Ils promettent tous la lune au démarrage, et dès qu'il y a un pépin, ils disparaissent. Vous allez me prouver que vous êtes différent comment ?",
+        "sous_texte": "J'ai un biais de confirmation négatif sur les commerciaux IT. Je te mets au défi de casser ce schéma avec des preuves concrètes.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer des exemples précis de crises similaires gérées chez d'autres cabinets comptables avec résultats mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan d'action, un plan d'action... Écoutez, j'en ai déjà reçu trois depuis lundi de vos équipes support. Des PowerPoint magnifiques. Zéro résultat concret. Qu'est-ce qui me dit que le vôtre sera différent ?",
+        "sous_texte": "J'ai perdu confiance dans vos process internes. Les mots ne suffisent plus, je veux des garanties contractuelles ou financières.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transformer le plan en engagement contractuel avec pénalités en cas de non-respect"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de compensation financière, OK. Mais mon client, lui, il me réclame 15 000 euros. Vous allez mettre combien sur la table ? Parce que si c'est pour me proposer un mois de maintenance offert, franchement, c'est se foutre de ma gueule.",
+        "sous_texte": "Je vais tester ta marge de manœuvre et ton pouvoir de décision. Si tu n'as pas de budget sérieux, je veux parler à ton N+2.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Annoncer un montant précis (8-12K€) en l'ancrant dans une logique de préjudice calculé, pas de générosité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Chez Sage, on n'a jamais eu ce genre de problème. J'ai trois confrères qui tournent avec leur suite depuis 5 ans, zéro incident critique. Pourquoi je resterais chez vous ?",
+        "sous_texte": "Objection comparative classique. Je teste si tu vas dénigrer la concurrence (ce qui me braquera) ou si tu as un argument différenciant solide.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer Sage, mais reconnaître leur solidité puis recentrer sur ce que VOUS allez faire différemment post-crise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me proposez l'intervention de votre Directeur des Opérations. Très bien. Mais c'est quand ? Parce que moi j'ai l'AG des associés dans 3 semaines, et si je n'ai pas de solution béton d'ici là, je suis obligé d'activer la clause de résiliation.",
+        "sous_texte": "Le temps joue contre toi. J'ai une deadline politique interne. Si tu rates ce timing, la décision m'échappera (pression collective des associés).",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer un calendrier hyper-précis avec jalons hebdomadaires et livrables avant l'AG (17 jours max)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que vous allez faire une revue technique approfondie. Mais franchement, je m'en fous de la technique. Moi ce que je veux savoir, c'est : est-ce que ça peut se reproduire oui ou non ? Et si oui, qu'est-ce qui me garantit que vous allez le détecter AVANT que ça pète ?",
+        "sous_texte": "Je ne suis pas technicien. Traduis-moi les actions techniques en garanties business compréhensibles pour un dirigeant.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Vulgariser en terme de risque résiduel + monitoring proactif + engagement SLA renforcé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre offre de formation pour mes équipes sur la gestion des incidents, c'est gentil, mais on est en pleine saison fiscale. Personne n'a le temps de suivre une formation là. Vous êtes déconnecté de notre réalité ou quoi ?",
+        "sous_texte": "Tu proposes quelque chose qui techniquement a du sens mais qui ignore totalement mon contexte opérationnel. Ça confirme que tu ne comprends pas mon métier.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reprogrammer la formation post-saison (mai-juin) et proposer un support dédié immédiat à la place"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On est d'accord que si dans les 10 jours il y a le moindre nouveau bug, même mineur, le contrat est résilié automatiquement et vous reprenez les coûts de migration vers un concurrent ? Je veux ça par écrit.",
+        "sous_texte": "Je teste ton niveau d'engagement réel. Si tu recules sur cette clause, je saurai que tu n'es pas sûr de ton coup.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Négocier une période de probation (30j plutôt que 10) avec critères objectifs et clause de migration plafonnée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, votre plan est plutôt complet, je dis pas. Mais franchement, je dois en référer aux autres associés. C'est pas une décision que je peux prendre seul, on parle quand même de 78 000 euros par an.",
+        "sous_texte": "Objection classique de décideur qui veut garder une marge de négociation ou qui a peur de s'engager seul. Peut être sincère ou tactique selon le ton.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une conf call à 3 avec l'associé le plus influent + récap écrit avant pour préparer sa défense interne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, admettons que j'accepte votre proposition. Mais si mon client final n'accepte pas les 8000 euros de dédommagement et maintient sa demande de 15 000, vous faites quoi ?",
+        "sous_texte": "Je négocie le risque résiduel. Je veux savoir jusqu'où va votre engagement si le scénario se dégrade encore.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un accompagnement à la négociation client (présence d'un dirigeant de votre boîte) + budget complémentaire conditionnel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me demandez de signer un avenant aujourd'hui même. Mais moi j'ai besoin de le faire relire par notre avocat, on a été trop souvent grugés par des clauses en petits caractères. Ça va prendre 4-5 jours minimum.",
+        "sous_texte": "Méfiance juridique légitime OU tactique dilatoire pour garder la pression. Teste si tu as vraiment l'urgence que tu affiches.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la relecture mais demander un accord de principe signé aujourd'hui pour débloquer les actions immédiates"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Très bien. Mais je vous préviens : à la moindre nouvelle défaillance, même mineure, je résilie sans préavis et je fais jouer la clause de pénalité. Et je le ferai savoir dans le réseau des experts-comptables. Notre milieu est petit, ça va vite.",
+        "sous_texte": "Menace réputationnelle. Je garde le pouvoir en posant une épée de Damoclès. Je veux que tu aies peur de me décevoir à nouveau.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accuser réception de la menace sans se braquer, puis inverser en opportunité : 'Si on réussit, vous serez aussi notre meilleur ambassadeur'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'entends tout ce que vous me dites. Vous avez été plutôt pro sur le coup, je reconnais. Mais franchement... 14 mois de galère, ce bug en pleine clôture, la pression des associés... J'ai plus la force de me battre avec un logiciel. Je crois que je vais couper la branche. Basculer chez un concurrent, ça va me coûter 30 000 euros de migration, mais au moins j'aurai la paix. Désolé, mais c'est comme ça.",
+      "condition_declenchement": "Se déclenche si le commercial a techniquement bien répondu aux objections mais n'a pas créé de lien émotionnel ni reconnu la fatigue psychologique du prospect. Survient aussi si le plan d'action proposé est perçu comme 'encore du travail en plus pour moi' sans soulagement immédiat."
+    },
+    "pattern_escalade": "Olivier suit un schéma d'escalade en 4 phases : 1) DÉCHARGE ÉMOTIONNELLE (colère, menaces, urgence affichée) → 2) TEST DE CRÉDIBILITÉ (objections techniques et comparaisons concurrence pour évaluer la compétence) → 3) NÉGOCIATION DURE (exigences financières et contractuelles maximales) → 4) RETRAIT STRATÉGIQUE ('je dois en référer' ou fatigue affichée). Si le commercial tient bon avec preuves concrètes et empathie, phase 5 possible : ENGAGEMENT CONDITIONNEL ('OK mais à la moindre connerie...').",
+    "piege_classique": "Le piège majeur avec Olivier est de confondre son agressivité de surface avec un refus définitif. Beaucoup de commerciaux craquent ou s'excusent trop (ce qui le braque). En réalité, son style directif TESTE la solidité de l'interlocuteur. S'il sent que le commercial assume sans fléchir et propose du concret, il bascule rapidement en mode résolution. Le second piège : vouloir trop vite closer alors qu'il a besoin de 'sauver la face' en interne (d'où l'importance de lui donner des arguments pour défendre sa décision devant les associés). Le troisième piège mortel : minimiser l'incident ou utiliser du jargon corporate — ça déclenche instantanément son mépris pour les 'commerciaux hors-sol'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de logiciels ou fournisseur de services pour cabinets d'expertise comptable",
+      "description": "Entreprise B2B proposant des solutions technologiques ou services aux professionnels de la comptabilité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution logicielle de gestion pour cabinets comptables ou service associé (dématérialisation, conformité, gestion de cabinet)",
+      "proposition_valeur": "Gain de productivité, conformité réglementaire, modernisation des processus comptables",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à gérer les situations de crise avec des comptes clés : désamorcer la colère, prendre en charge le problème, proposer un plan de résolution crédible et préserver la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Client compte clé furieux après incident majeur",
+    "vous_etes": "Account Manager chez un éditeur de logiciels pour cabinets comptables, en poste depuis 18 mois, responsable du portefeuille grands comptes.",
+    "vous_vendez": "Vous gérez un contrat de 78K€/an (licence + maintenance) souscrit il y a 14 mois par le cabinet Desmarais & Associés.",
+    "vous_appelez": "Olivier Desmarais, 52 ans, Associé Directeur du cabinet (127 collaborateurs, 5 sites). Ancien de la profession, exigeant, protecteur de sa réputation, déteste les commerciaux qui trouvent des excuses.",
+    "ce_que_vous_savez": [
+      "Bug logiciel majeur survenu en pleine clôture annuelle : blocage production liasses fiscales pendant 72h",
+      "Son client CAC (45K€ CA/an pour le cabinet) menace de réclamer 15K€ de dédommagement et de changer de cabinet",
+      "3 collaborateurs ont dû faire du travail manuel d'urgence",
+      "Desmarais envisage la résiliation anticipée du contrat et a évoqué vos concurrents (Sage, Cegid)",
+      "C'est sa 3ème solution en 8 ans — les deux précédentes ont été abandonnées pour défauts de fiabilité"
+    ],
+    "votre_objectif": "Désamorcer la colère, assumer la responsabilité sans excuses, présenter un plan de résolution immédiat avec compensation chiffrée, et sauver le contrat.",
+    "vos_atouts": [
+      "Vous avez l'autorisation de votre direction pour proposer une compensation financière jusqu'à 20K€",
+      "Le CTO peut intervenir dans l'heure pour expliquer la cause technique et les correctifs",
+      "Vous disposez d'un plan d'action détaillé validé ce matin avec dates et responsables",
+      "Vous avez accès aux coordonnées de 2 autres associés de cabinets similaires prêts à témoigner de votre réactivité sur incidents passés"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:16:59Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16734,
+    "total_time_s": 166.5
+  }
+}

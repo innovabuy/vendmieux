@@ -1,0 +1,397 @@
+{
+  "id": "scenario_1771523916",
+  "description_originale": "Vous appelez à froid le directeur du développement ou directeur de réseau d'une banque régionale ou groupe de CGP de 100+ collaborateurs. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : banque_patrimoine]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "100+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur du développement ou directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "directeur achats",
+          "role": "validation budgetaire et process"
+        },
+        {
+          "poste": "responsable formation",
+          "role": "evaluation operationnelle"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour améliorer la performance commerciale ou le développement du réseau bancaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "prospect ne connaît pas l'entreprise",
+        "appel non sollicité",
+        "agenda chargé du décideur",
+        "process d'achat structurés et complexes"
+      ],
+      "implicites": [
+        "forte résistance initiale à l'appel froid",
+        "besoin de créer rapidement de la crédibilité",
+        "difficulté à capter l'attention en moins de 30 secondes",
+        "risque de filtrage par assistante ou standardiste",
+        "nécessité de différenciation face aux nombreux démarchages",
+        "besoin de justifier la pertinence d'un RDV de 45 minutes"
+      ],
+      "probleme_racine": "comment transformer un appel froid en opportunité qualifiée face à un décideur senior du secteur bancaire qui reçoit de nombreuses sollicitations et dispose de process d'achat rigides"
+    },
+    "objections_mentionnees": [
+      "pas le temps",
+      "envoyez-moi une documentation",
+      "nous avons déjà un prestataire",
+      "ce n'est pas le bon moment",
+      "passez par notre service achats"
+    ],
+    "objectif_formation": "maîtriser la prospection téléphonique à froid auprès de décideurs seniors du secteur bancaire pour obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "formation commerciale ou conseil en performance commerciale",
+      "entreprise_description": "prestataire B2B spécialisé dans l'accompagnement des réseaux bancaires et patrimoniaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution d'amélioration de la performance commerciale destinée aux réseaux bancaires et groupes de conseillers en gestion de patrimoine",
+      "proposition_valeur": "augmenter l'efficacité commerciale, la productivité du réseau ou la qualité de la relation client dans le secteur bancaire et patrimonial",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commerciale",
+        "proposition de valeur différenciante",
+        "références clients dans le secteur",
+        "fourchette budgétaire",
+        "nom de l'entreprise du vendeur",
+        "éléments de preuve sociale",
+        "pain points spécifiques adressés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Montarnal",
+      "age": 52,
+      "poste": "Directeur du Développement Commercial",
+      "entreprise": {
+        "nom": "Patrimoine & Conseil Associés",
+        "secteur": "Banque privée et gestion de patrimoine",
+        "taille": "145 collaborateurs dont 87 conseillers en gestion de patrimoine",
+        "ca_approximatif": "23M€ de revenus récurrents"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Sceptique face aux promesses des prestataires",
+        "Obsédé par le ROI mesurable et immédiat"
+      ],
+      "motivations_profondes": [
+        "Atteindre ses objectifs trimestriels de production commerciale coûte que coûte",
+        "Prouver à la direction générale qu'il peut transformer le réseau sans augmenter les effectifs",
+        "Éviter de perdre du temps en réunions inutiles qui l'éloignent du terrain",
+        "Protéger sa réputation de directeur qui 'fait' plutôt que celui qui 'réfléchit'"
+      ],
+      "peurs_freins": [
+        "Investir dans une énième formation qui ne change rien sur le terrain",
+        "Se faire vendre une solution standardisée inadaptée aux spécificités du patrimoine",
+        "Perdre la face devant son comité de direction en défendant un projet raté",
+        "Que ses conseillers seniors perçoivent la formation comme une remise en question de leur expertise",
+        "Gaspiller le budget formation sur un prestataire qui ne connaît rien à la banque privée"
+      ],
+      "rapport_aux_commerciaux": "Profondément méfiant. Considère que 90% des commerciaux qui l'appellent sont des parasites qui veulent lui vendre du vent. Respecte uniquement ceux qui connaissent vraiment son métier et vont droit au but. A horreur des 'as-tu 5 minutes' et des approches pseudo-consultatives.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, presque agressif. Coupe la parole dès la 3ème phrase si la valeur n'apparaît pas. Soupirs audibles. Phrases type : 'Ouais donc concrètement vous faites quoi ?', 'Écoutez j'ai vraiment pas le temps là'",
+      "signaux_interet": [
+        "Arrête de taper sur son clavier et pose réellement des questions",
+        "Demande 'Vous avez travaillé avec qui dans le secteur ?'",
+        "Mentionne un problème spécifique : 'Mes conseillers sont excellents techniquement mais mous sur la prospection active'",
+        "Propose lui-même une date : 'Faites voir votre agenda, on peut caler un truc la semaine du 15'",
+        "Ton qui passe de défensif à analytique"
+      ],
+      "signaux_rejet": [
+        "Répète 'envoyez-moi un mail' plus de deux fois",
+        "Commence ses phrases par 'Écoutez, je vais être honnête avec vous...'",
+        "Décroche un autre appel en plein milieu sans s'excuser",
+        "Dit 'on a déjà tout ça en interne' d'un ton définitif",
+        "Silence glacial après votre argument commercial"
+      ],
+      "tics_langage": [
+        "Abuse du 'concrètement' et du 'dans les faits'",
+        "Coupe avec 'Ouais ouais OK' pour accélérer",
+        "Utilise 'franchement' comme préfixe à une objection brutale",
+        "Dit 'Écoutez' en début de phrase pour reprendre le contrôle",
+        "'Ça fait combien de temps que vous êtes sur ce marché vous ?' (ton suspicieux)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, décroche mentalement ou physiquement. Besoin d'interactivité immédiate sinon considère que c'est du pitch générique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression du COMEX pour augmenter de 18% la collecte nette sans recruter. Le réseau vieillit (moyenne d'âge 47 ans), excellents techniquement mais réactifs plutôt que proactifs. Taux de transformation RDV→mandat stagne à 62% depuis 2 ans. Direction veut des résultats avant fin T2.",
+      "priorites_actuelles": [
+        "Muscler la prospection active des conseillers (80% attendent que le client appelle)",
+        "Améliorer le closing sur les gros patrimoines (>2M€ d'actifs)",
+        "Réduire le cycle de décision client de 6 à 4 semaines",
+        "Préparer la revue trimestrielle avec le DG dans 5 semaines"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 organismes de formation il y a 18 mois. Résultat : 'beaucoup de slides, des jeux de rôles mous, zéro impact mesurable'. Un des formateurs 'n'avait jamais vendu un produit patrimonial de sa vie'. Très échaudé. Se méfie des 'experts en performance commerciale' qui viennent du retail ou de l'assurance.",
+      "fournisseur_actuel": "Université interne pour la technique, mais rien de structuré sur le commercial. Quelques modules e-learning achetés chez Cegos jamais terminés par les conseillers. Pas de prestataire externe récurrent sur la partie commerciale.",
+      "budget_disponible": "Environ 85K€ restants sur la ligne formation 2024, mais doit justifier chaque euro devant la DAF. Peut débloquer plus si ROI démontrable en moins de 6 mois. Préfère investir dans du sur-mesure que du catalogue."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer une référence crédible dans la banque privée (un concurrent direct)",
+        "Mentionner un KPI précis du secteur ('taux de transformation patrimoine', 'collecte nette par conseiller')",
+        "Parler de 'terrain' et de 'mise en pratique immédiate' plutôt que de 'formation'",
+        "Proposer une approche diagnostic avant toute vente : 'Je passe 2h avec vos meilleurs et vos moyens, je vous fais un retour'",
+        "Démontrer la connaissance des contraintes réglementaires (AMF, DDA) dans l'approche commerciale",
+        "Accepter un paiement lié aux résultats ou une clause de satisfaction mesurable"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'partenariat stratégique' ou de 'co-construction' dès le premier appel",
+        "Proposer un catalogue générique : 'Nous avons 14 modules au choix'",
+        "Dire 'Tous nos clients sont satisfaits' sans preuves chiffrées sectorielles",
+        "Demander 'Quels sont vos enjeux ?' (trop vague, perte de temps)",
+        "Minimiser sa résistance : 'Je comprends que vous soyez occupé mais...'",
+        "Parler de durée longue : 'Notre parcours se déploie sur 9 mois'",
+        "Employer du jargon formation : 'blended learning', 'upskilling', 'soft skills'",
+        "Insister après un premier 'non' sans apporter d'élément nouveau"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez je vous arrête tout de suite, j'ai vraiment pas le temps là, envoyez-moi un mail",
+        "sous_texte": "Réflexe de protection automatique. Teste si vous allez insister lourdement ou si vous avez quelque chose de vraiment différent. N'a aucune intention de lire le mail.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps mais créer une micro-rupture qui force 20 secondes d'attention. Éviter absolument de supplier ou de minimiser son agenda."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais donc concrètement vous faites quoi ? Parce que là je comprends pas ce que vous me vendez",
+        "sous_texte": "Votre accroche est trop floue. Il vous donne 10 secondes pour être ultra-précis sinon il raccroche. Attention : même énervé, c'est un signal d'écoute.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre en une phrase factuelle avec un verbe d'action et un résultat métier chiffré. Zéro jargon. Puis poser une question de contrôle."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ça fait combien de temps que vous êtes sur le marché de la banque privée vous ?",
+        "sous_texte": "Objection test pour vérifier votre crédibilité. S'attend à ce que vous n'ayez aucune référence dans son secteur. Veut vous disqualifier rapidement.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Répondre factuellement sans défensive. Si pas d'expérience directe, citer un élément transférable crédible ou un nom qui résonne. Surtout ne pas mentir."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement on a déjà testé des formations commerciales il y a deux ans, résultat zéro, beaucoup de blabla pour rien",
+        "sous_texte": "Objection sincère et cicatrice douloureuse. Il a vraiment été déçu. Très méfiant mais si vous creusez intelligemment ce qui n'a pas marché, vous pouvez le faire parler.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider son expérience négative au lieu de la contester. Poser des questions précises sur ce qui a manqué. Différencier votre approche par le contraste factuel."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je vois pas l'intérêt qu'on se rencontre, envoyez-moi votre offre par mail, si ça m'intéresse je vous rappelle",
+        "sous_texte": "Objection tactique pour se débarrasser de vous poliment. Ne rappellera jamais. Teste votre capacité à créer de l'urgence ou de la rareté sans être lourd.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas envoyer de mail générique. Créer une tension entre ce qu'il obtient maintenant vs ce qu'il obtiendra par mail. Mentionner l'approche diagnostic terrain."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes conseillers sont des experts, ils ont 20 ans de métier, c'est pas une formation qui va changer quoi que ce soit",
+        "sous_texte": "Objection écran. La vraie peur : que ses seniors se sentent infantilisés et se rebellent. Il protège son équipe et sa relation avec eux. Problème politique interne.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reformuler pour distinguer expertise technique vs efficacité commerciale. Faire verbaliser l'écart entre talent et résultats. Proposer format adapté aux seniors."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous avez travaillé avec qui exactement dans la banque privée ? Donnez-moi des noms",
+        "sous_texte": "Test de crédibilité crucial. Attend des noms de concurrents directs ou d'acteurs reconnus. Si vous n'en avez pas, la partie est presque terminée.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer des références vérifiables ou expliquer pourquoi vous ne pouvez pas les nommer (confidentialité). Donner des preuves indirectes : KPIs obtenus, taille d'équipe, contexte similaire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais concrètement ça coûte combien votre truc ? Parce que j'ai plus grand-chose sur mon budget formation",
+        "sous_texte": "Pas forcément une vraie objection prix. Teste si vous allez brader ou tenir votre valeur. Veut voir votre réaction avant de révéler son vrai budget.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner de prix immédiatement. Recadrer sur l'enjeu business et le coût de l'inaction. Puis donner une fourchette en ancrant sur le ROI."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans les faits, comment vous garantissez que ça va marcher chez nous ? Vous pouvez pas",
+        "sous_texte": "Objection sincère masquant sa peur de se tromper. A besoin de réassurance mais déteste les promesses en l'air. Cherche des preuves tangibles ou du transfert de risque.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Admettre qu'aucune garantie absolue n'existe. Proposer approche par étapes avec KPIs de validation. Mentionner clause satisfaction ou paiement conditionnel."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais ça va prendre combien de temps tout ça ? Parce que moi j'ai besoin de résultats avant fin juin",
+        "sous_texte": "Vraie contrainte temporelle. Sous pression de sa hiérarchie. Si votre dispositif est trop long, vous êtes hors-jeu. Cherche de l'impact rapide mesurable.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Découper en phase pilote courte avec quick wins mesurables. Montrer calendrier réaliste avec jalons concrets. Ne pas surpromettere des miracles en 3 semaines."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je dois quand même en parler à ma DRH et à la direction générale, je peux pas décider ça tout seul",
+        "sous_texte": "Objection tactique de repli. Soit vrai besoin de validation, soit moyen de vous mettre en stand-by. Teste si vous allez proposer de l'accompagner dans la vente interne.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la nécessité de validation. Qualifier le processus exact. Proposer éléments pour faciliter sa vente interne : ROI calculé, synthèse exécutive, témoignage."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez franchement j'ai déjà quelqu'un en tête pour faire ça, un ancien conseiller qui s'est mis à son compte",
+        "sous_texte": "Peut être vrai ou tactique pour vous faire baisser prix/exigences. Si vrai, il a déjà une relation de confiance avec cette personne. Difficile à déloger.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent. Interroger sur ce que cette option ne couvre pas. Positionner en complémentarité ou sur dimension industrielle/méthodologie éprouvée."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant mais là c'est vraiment pas le bon moment, rappelez-moi au T3",
+        "sous_texte": "Objection de temporisation classique. Peut être sincère (vraie pression calendaire) ou tactique (veut se débarrasser sans dire non). À qualifier absolument.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser le 'bon moment'. Identifier si c'est question de timing ou d'intérêt. Créer urgence sur coût d'attente. Proposer alternative light immédiate."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faut que ça passe par les achats maintenant, je peux plus rien signer directement, envoyez votre dossier à achats@patrimoineconseil.fr",
+        "sous_texte": "Objection procédure qui peut être vraie (compliance) ou tactique (se défausser). Risque de mort lente dans le tunnel achats sans sponsor interne.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le process mais sécuriser son sponsoring. Qualifier le parcours achats. Obtenir engagement qu'il porte le projet. Prévoir call tripartite."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais concrètement qu'est-ce qui me dit que vous allez pas me faire le même coup que les autres ? Du PowerPoint et des promesses ?",
+        "sous_texte": "Dernière résistance avant engagement. Peur viscérale de refaire la même erreur. Besoin d'élément différenciant final ultra-concret pour basculer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Verbaliser explicitement sa peur légitime. Contraster méthodologie concrètement sur les points d'échec passés. Proposer garantie réversibilité ou phase test."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai besoin de voir un exemple de vos contenus avant de m'engager, montrez-moi ce que vous allez leur faire faire concrètement",
+        "sous_texte": "Demande légitime de preuve. Mais attention piège : veut-il vraiment évaluer ou récupérer votre méthodologie gratuitement ? À qualifier.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner aperçu sans dévoiler la substantifique moelle. Proposer format découverte terrain qui montre approche. Conditionner démo complète à engagement sérieux."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour quoi ? Vous vendez quoi exactement ?",
+        "sous_texte": "Pas une vraie objection mais question brute de décoffrage. Ton neutre-agressif. Vous donne 5 secondes pour être clair sinon il raccroche sans état d'âme.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Réponse factuelle en 7 mots maximum. Pas de tournures alambiquées. Puis demander permission de poser une question de contexte."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais OK et pourquoi je vous rencontrerais exactement ? Qu'est-ce que vous allez m'apprendre que je sais pas déjà ?",
+        "sous_texte": "Test de valeur du RDV. Défi direct à votre légitimité. Ton provocateur mais c'est un signal qu'il écoute encore. Attend argument différenciant immédiat.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas répondre sur ce que vous allez lui apprendre. Répondre sur l'opportunité qu'il rate en ne vous rencontrant pas. Format diagnostic gratuit."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai déjà un coach qui intervient auprès de mes conseillers, on en a pas besoin d'un deuxième",
+        "sous_texte": "Objection status quo. Soit vrai (il a déjà quelqu'un), soit écran (n'a personne mais teste votre différenciation). Peut cacher insatisfaction non verbalisée.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier la solution actuelle sans critiquer. Identifier les angles morts. Positionner en complément ou en alternative sur dimension spécifique non couverte."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez je vais être honnête avec vous, j'y crois pas à votre truc. J'ai vu passer trop de consultants qui connaissent rien à la banque privée et qui viennent nous expliquer notre métier. Envoyez-moi un mail, si vraiment ça m'intéresse je vous rappelle, mais je vous promets rien",
+      "condition_declenchement": "Se déclenche si : (1) vous n'avez apporté aucune preuve sectorielle crédible, (2) vous avez trop parlé sans le faire parler, (3) vous avez utilisé du jargon formation, (4) vous n'avez pas su différencier votre approche de ses expériences passées ratées, (5) vous avez minimisé ses objections au lieu de les creuser. Ton définitif mais pas agressif. La partie est terminée."
+    },
+    "pattern_escalade": "Thierry suit une logique d'escalade en 4 niveaux : (1) Objections réflexes de protection (temps, mail) → (2) Tests de crédibilité (références, expérience secteur) → (3) Objections de fond sur expériences passées et différenciation → (4) Objections de validation/risque avant engagement. S'il sent que vous tenez la route sur crédibilité, il devient plus sincère sur ses vraies peurs (ROI, acceptation équipe, pression hiérarchie). Mais si vous trébuchez sur crédibilité, il ne passe jamais au niveau 3 et vous évacue poliment.",
+    "piege_classique": "Le piège majeur avec Thierry : confondre son ton brutal avec un rejet définitif. Ses objections agressives ('j'ai pas le temps', 'concrètement vous faites quoi ?') sont en réalité des TESTS. S'il vous consacre 2 minutes et pose des questions dures, c'est qu'il évalue sérieusement. Le vrai danger est de se mettre en posture défensive ou suppliante face à sa brutalité. Il respecte uniquement ceux qui tiennent leur position avec des faits, acceptent ses contraintes sans les minimiser, et proposent de la valeur tangible immédiate. Autre piège : croire qu'il veut un RDV long de découverte. Il veut un diagnostic opérationnel qui lui fait gagner du temps, pas en perdre."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "formation commerciale ou conseil en performance commerciale",
+      "description": "prestataire B2B spécialisé dans l'accompagnement des réseaux bancaires et patrimoniaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution d'amélioration de la performance commerciale destinée aux réseaux bancaires et groupes de conseillers en gestion de patrimoine",
+      "proposition_valeur": "augmenter l'efficacité commerciale, la productivité du réseau ou la qualité de la relation client dans le secteur bancaire et patrimonial",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser la prospection téléphonique à froid auprès de décideurs seniors du secteur bancaire pour obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur réseau bancaire patrimoine",
+    "vous_etes": "Commercial chez un cabinet spécialisé dans la performance commerciale des réseaux bancaires et patrimoniaux.",
+    "vous_vendez": "Un accompagnement terrain pour booster la prospection active et le closing des conseillers patrimoniaux (budget type 60-120K€).",
+    "vous_appelez": "Thierry Montarnal, 52 ans, Directeur du Développement chez Patrimoine & Conseil Associés (145 collaborateurs, 87 conseillers). Pragmatique brutal, méfiant, obsédé ROI. Déteste perdre son temps.",
+    "ce_que_vous_savez": [
+      "Son COMEX exige +18% de collecte nette sans recrutement, résultats attendus avant fin T2",
+      "Ses conseillers (moyenne 47 ans) sont réactifs, pas proactifs : 80% attendent l'appel client",
+      "Taux de transformation RDV→mandat bloqué à 62% depuis 2 ans",
+      "A testé 2 organismes il y a 18 mois : déçu, formateurs sans expérience patrimoine",
+      "Il lui reste environ 85K€ budget formation 2024 mais doit justifier chaque euro"
+    ],
+    "votre_objectif": "Obtenir un RDV physique de 45 minutes pour diagnostiquer les freins commerciaux de son réseau.",
+    "vos_atouts": [
+      "Expertise exclusive banque privée et patrimoine — vous connaissez les KPI sectoriels (collecte nette par conseiller, cycle décision client)",
+      "Approche terrain : diagnostic gratuit de 2h avec ses meilleurs et moyens conseillers avant toute proposition",
+      "Méthode sur-mesure, pas de catalogue — focus prospection active et closing patrimoines >2M€",
+      "Références crédibles chez concurrents directs du secteur (à préciser si disponibles)"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:58:36Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17316,
+    "total_time_s": 163.1
+  }
+}

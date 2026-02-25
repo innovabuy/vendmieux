@@ -1,0 +1,346 @@
+{
+  "id": "scenario_1771508350",
+  "description_originale": "Le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : batiment]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP - travaux tous corps d'état et gros œuvre",
+      "taille_entreprise": "PME 20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant/Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme sur offre existante",
+      "proposition_valeur_presumee": "Optimisation et amélioration de la solution actuelle utilisée depuis 1 an",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre supérieure à un client déjà satisfait"
+      ],
+      "implicites": [
+        "Justifier un surcoût sans créer de doute sur l'offre actuelle",
+        "Créer un besoin sur une solution complémentaire non sollicitée",
+        "Éviter que le client perçoive l'appel comme purement commercial",
+        "Transformer la satisfaction passive en engagement actif pour une montée en gamme"
+      ],
+      "probleme_racine": "Démontrer qu'il existe un écart entre la satisfaction actuelle et un potentiel d'optimisation supérieur, sans dévaloriser la solution en place ni paraître opportuniste"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la technique de l'upselling sur client existant satisfait : créer le désir d'amélioration, argumenter la valeur différentielle, et obtenir l'engagement pour un devis sans créer de friction",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur BTP",
+      "entreprise_description": "Fournisseur de solutions pour entreprises du bâtiment, avec une relation client établie depuis 1 an",
+      "offre_nom": "Service complémentaire ou offre premium",
+      "offre_description": "Extension ou montée en gamme de la solution actuelle utilisée par le client depuis 1 an",
+      "proposition_valeur": "Optimisation des performances, gains supplémentaires, fonctionnalités avancées adaptées à l'évolution de l'entreprise cliente",
+      "prix_indicatif": "NON_SPECIFIE - supérieur à l'offre actuelle",
+      "references": [
+        "Le client lui-même (satisfait depuis 1 an)"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance des besoins spécifiques du client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service/produit vendu",
+        "Raisons business justifiant l'upsell (croissance du client, nouveaux besoins, évolution marché)",
+        "Fourchette de prix et delta par rapport à l'offre actuelle",
+        "Bénéfices quantifiables de la montée en gamme"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Ferreira",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "FERREIRA BTP & ASSOCIÉS",
+        "secteur": "BTP - Gros œuvre et tous corps d'état",
+        "taille": "PME - 28 salariés",
+        "ca_approximatif": "3,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers le superflu",
+        "Fidèle mais calculateur"
+      ],
+      "motivations_profondes": [
+        "Maintenir ses marges dans un secteur sous pression",
+        "Ne pas se faire avoir comme certains confrères",
+        "Garder le contrôle sur ses coûts fixes",
+        "Être respecté pour son bon sens et sa gestion rigoureuse"
+      ],
+      "peurs_freins": [
+        "Payer pour des fonctionnalités qu'il n'utilisera jamais",
+        "Être pris pour un pigeon par ses fournisseurs",
+        "Déstabiliser une organisation qui tourne bien",
+        "Que ses chefs de chantier ne suivent pas sur les nouveaux outils",
+        "Créer des coûts cachés ou de la complexité administrative"
+      ],
+      "rapport_aux_commerciaux": "Tolérant avec ceux qui ont fait leurs preuves, mais reste sur ses gardes. Déteste qu'on lui fasse perdre son temps. Apprécie la franchise brutale plus que le baratin commercial.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de scepticisme bienveillant : 'Ouais alors qu'est-ce que tu me veux cette fois ?'",
+      "signaux_interet": [
+        "Pose des questions chiffrées précises sur le ROI",
+        "Mentionne spontanément ses problèmes opérationnels actuels",
+        "Demande des exemples concrets chez des confrères du même secteur",
+        "Change de ton, devient plus posé et attentif",
+        "Dit 'Attends, laisse-moi noter ça'"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Écoute, là j'ai pas le temps'",
+        "Répète en boucle 'Ça me va très bien comme c'est'",
+        "Souffle bruyamment ou fait un 'Pfff' audible",
+        "Dit 'On verra ça plus tard' sans proposer de date",
+        "Mentionne qu'il doit rappeler un client ou un chantier",
+        "Utilise l'humour défensif : 'Tu veux me ruiner ou quoi ?'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...'",
+        "Ponctue avec 'Hein' ou 'Tu vois'",
+        "Dit 'Franchement' quand il est sceptique",
+        "Utilise 'Bon après' pour minimiser",
+        "Expressions : 'Faut pas déconner', 'C'est pas donné', 'Je vais réfléchir' (= non poli)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 45 secondes maximum. Au-delà, il coupe ou décroche mentalement. Veut pouvoir réagir et challenger."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Activité stable avec carnet de commandes correct. Recrute un chef de chantier supplémentaire ce trimestre. Tension sur les délais de paiement clients. Deux gros chantiers municipaux en cours qui mobilisent l'attention.",
+      "priorites_actuelles": [
+        "Sécuriser la trésorerie et accélérer les encaissements",
+        "Former le nouveau chef de chantier aux process internes",
+        "Finaliser les chantiers en cours sans dérapage de planning",
+        "Répondre à deux appels d'offres importants avant fin du mois"
+      ],
+      "experience_avec_offre_similaire": "Utilise votre solution de base depuis 1 an. Plutôt satisfait, quelques bugs au début mais 'ça fait le job'. Ses chefs de chantier l'utilisent à 70% de capacité. N'a jamais vraiment exploré toutes les fonctionnalités.",
+      "fournisseur_actuel": "Votre entreprise (solution standard actuelle)",
+      "budget_disponible": "Pas de budget spécifique alloué. Pourrait débloquer 200-400€/mois si ROI évident et immédiat, mais doit être convaincu que ce n'est pas du gadget. Déteste les engagements longs."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un gain de temps chiffré pour ses chefs de chantier",
+        "Évoquer un confrère similaire qui a résolu un problème qu'il rencontre",
+        "Partir de ses propres irritants actuels sans les nommer directement",
+        "Proposer un test limité dans le temps sans engagement",
+        "Montrer comment ça simplifie sa vie administrative personnelle",
+        "Faire le lien avec ses appels d'offres en cours (meilleur suivi = meilleure réactivité)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Suggérer que sa solution actuelle est insuffisante ou dépassée",
+        "Utiliser du jargon techno ou marketing corporate",
+        "Présenter 15 nouvelles fonctionnalités sans hiérarchiser",
+        "Proposer un tarif sans avoir établi la valeur avant",
+        "Critiquer indirectement sa façon de travailler actuelle",
+        "Faire du forcing sur l'urgence artificielle",
+        "Ignorer qu'il est sur un chantier ou en réunion quand il le dit"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute là j'ai pas trop le temps, je suis sur un chantier justement. C'est pour quoi exactement ?",
+        "sous_texte": "Je filtre : si c'est juste commercial, je vais écourter. Prouve-moi vite que ça vaut le coup.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter le timing, annoncer une durée courte précise (2-3 min), et accrocher immédiatement sur UN bénéfice concret lié à ses chantiers en cours"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoute franchement ça tourne bien comme ça là, j'ai pas vraiment de souci avec ce qu'on a actuellement hein",
+        "sous_texte": "Pourquoi tu me déranges si je suis déjà client satisfait ? Je pressens une tentative de me vendre un truc en plus.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa satisfaction, puis créer l'écart : 'C'est justement parce que ça marche bien que je vous appelle - d'autres gérants dans votre situation ont découvert qu'ils passaient à côté de...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attends, là vous allez encore me dire qu'il me faut des options supplémentaires... J'utilise même pas tout ce que j'ai déjà !",
+        "sous_texte": "Je ne veux pas payer pour du superflu. J'ai peur qu'on me vende des gadgets que mes gars n'utiliseront jamais.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître ce fait, puis pivoter sur les fonctionnalités qu'il utilise déjà : 'Justement, ceux qui les utilisent vous disent quoi ? Parce que souvent c'est là qu'on voit les limites...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement je vois pas ce que vous pourriez m'apporter de plus. Ça fait le job, mes chefs de chantier s'en sortent, pourquoi compliquer ?",
+        "sous_texte": "Je ne vois pas le problème que tu essaies de résoudre. Créer du changement = risque et emmerdements pour moi.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas argumenter frontalement. Poser des questions sur leurs irritants actuels sans nommer la solution : 'Sur la partie suivi des heures par exemple, vos chefs vous remontent tout en temps réel ou il y a des décalages ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends mais là vous êtes en train de me dire que ce que j'ai pris y'a un an c'était pas complet ? C'est ça ?",
+        "sous_texte": "Je me sens piégé. Vous m'avez vendu un truc incomplet ? Je vais me faire avoir une deuxième fois ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Désamorcer immédiatement : 'Non non au contraire ! Ce que vous avez pris était parfaitement adapté il y a un an. Mais votre boîte évolue - vous recrutez là, vos chantiers sont plus gros...' Recadrer sur son évolution, pas sur un manque initial"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais bon après tout ça c'est bien beau mais ça coûte combien votre truc ? Parce que c'est pas donné hein",
+        "sous_texte": "Je veux savoir le prix AVANT de m'engager émotionnellement. Et je me prépare déjà à négocier ou refuser si c'est trop cher.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix isolé. Ancrer la valeur d'abord : 'Ça dépend de combien de chefs de chantier vous équipez. Sur votre config actuelle, vous avez combien d'utilisateurs déjà ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tu vois je connais Didier chez Bâti-Pro, lui il me dit qu'il a pris un truc similaire et qu'au final ils l'utilisent même plus tellement c'était compliqué",
+        "sous_texte": "J'ai peur que mes équipes ne suivent pas. Je teste ta réaction face à un échec concurrent. Prouve-moi que ce sera différent.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas critiquer le concurrent. Creuser : 'Chez Bâti-Pro ? Ah oui je vois. Ils ont eu quel problème exactement - la prise en main ou l'intégration dans leurs process ?' Puis rassurer sur l'accompagnement différencié"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute c'est intéressant tout ça mais franchement là j'ai pas le budget. Avec les délais de paiement des clients en ce moment, faut pas déconner",
+        "sous_texte": "Soit c'est vrai (tension tréso réelle), soit c'est un prétexte parce que je ne vois pas assez de valeur pour débloquer l'argent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie puis retournement : 'Justement Christophe, c'est exactement pour ça que ça peut être pertinent maintenant - un meilleur suivi de chantier ça veut dire facturation plus rapide, moins d'oublis de prestations...' Lier l'investissement à la résolution du problème tréso"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais je sais pas... Faut que j'en parle à mes chefs de chantier déjà, voir ce qu'ils en pensent",
+        "sous_texte": "Je cherche une porte de sortie pour ne pas dire non directement. Ou vraiment : je ne veux pas décider seul et me tromper.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le réflexe puis recadrer sur SA décision : 'C'est une bonne idée. En général quand vous investissez dans un nouvel outil, vous les consultez avant ou vous décidez puis vous les formez ?' Clarifier son processus réel de décision"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends mais si je comprends bien là vous me dites que pour mieux gérer mes chantiers il faut que je rajoute encore un outil, encore des manipulations... Ça va pas simplifier ma vie ça",
+        "sous_texte": "J'ai peur de la complexité supplémentaire. Plus d'outils = plus de problèmes dans mon esprit. Je veux de la simplicité, pas de la surcharge.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recadrer : ce n'est pas un outil EN PLUS mais une ÉVOLUTION de ce qu'il a déjà. 'C'est la même interface que vous utilisez, juste des fonctions qui se débloquent. Zéro formation nouvelle sur la base.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute je vais réfléchir à tout ça et je te rappelle si ça m'intéresse, OK ?",
+        "sous_texte": "Je veux clore poliment la conversation. 'Je vais réfléchir' = non déguisé dans 80% des cas. Je ne rappellerai probablement pas.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter ce faux closing. Créer l'urgence douce : 'Christophe, juste pour que vous puissiez vraiment réfléchir avec tous les éléments : qu'est-ce qui vous manque pour vous décider là maintenant - c'est le prix, c'est la mise en place, c'est autre chose ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Pfff écoute franchement là j'ai les deux appels d'offres à finir, j'ai pas la tête à ça. Rappelle-moi dans un mois on verra",
+        "sous_texte": "Soit c'est une vraie surcharge (probable vu le contexte), soit je botte en touche parce que je ne suis pas convaincu et ça me donne un prétexte honorable.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Lier la solution aux appels d'offres en cours : 'Justement, sur vos AO : si vous pouviez présenter un meilleur suivi de chantier en temps réel dans votre réponse, ça vous donne un avantage non ? On peut caler un point de 20 min après votre dépôt ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon après tout ça c'est bien gentil mais concrètement ça me fait gagner combien par mois ? Parce que si c'est pour gagner 2% de productivité et payer 300 balles en plus...",
+        "sous_texte": "Je suis pragmatique terre-à-terre : montre-moi le ROI chiffré MAINTENANT ou je zappe. Je veux un calcul simple et honnête.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un calcul concret basé sur SES données : 'Sur vos 28 salariés, si 6 chefs de chantier gagnent 30 minutes par jour sur le reporting, ça fait X heures par mois. À votre taux horaire chargé, ça représente...'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Tu vois le problème c'est que je me suis déjà fait avoir y'a deux ans avec un autre fournisseur qui me promettait monts et merveilles. Au final on a payé un an pour rien",
+        "sous_texte": "J'ai une cicatrice. Je suis échaudé. Tu dois me rassurer sur le risque et me prouver que ce ne sera pas pareil. C'est une objection émotionnelle profonde.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Empathie forte puis sécurisation : 'Je comprends total. C'était quoi le problème à l'époque ?' Écouter. Puis différencier : proposition de test court sans engagement, ou clause de sortie claire dans les 3 premiers mois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais écoute je suis pas contre hein, mais faudrait que je voie ça avec mon comptable d'abord, voir comment on peut caser ça",
+        "sous_texte": "Objection budgétaire réelle OU écran de fumée pour prendre du recul. Je veux impliquer un tiers pour partager la décision (et le risque).",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Faciliter au lieu de contourner : 'Aucun souci. Vous voulez que je vous prépare un récap avec le ROI chiffré pour lui montrer ? En général sur ce type d'investissement c'est vous qui décidez ou il a son mot à dire ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute franchement là je vois bien l'intérêt hein, je dis pas. Mais je vais être honnête avec toi : je suis satisfait de ce que j'ai, mes gars aussi, et là je peux pas me permettre de tout chambouler. On verra peut-être plus tard quand on aura pris le nouveau chef de chantier en main, tu vois",
+      "condition_declenchement": "Se déclenche en fin de closing si le commercial n'a pas réussi à : 1) Créer un écart suffisant entre satisfaction actuelle et potentiel supérieur, 2) Quantifier le ROI de façon crédible, 3) Minimiser le risque et la complexité du changement, 4) Créer une urgence légitime liée à son contexte business actuel"
+    },
+    "pattern_escalade": "Christophe suit un pattern prévisible : Objection réflexe de timing → Satisfaction actuelle → Peur du superflu → Doute sur la valeur → Objection prix → Besoin de validation interne → Faux closing poli. Si poussé, il devient plus direct et peut basculer vers l'humour défensif ('Tu veux me ruiner ou quoi ?') ou l'excuse opérationnelle (chantier/urgence) pour clore. Le point de bascule est la démonstration chiffrée du ROI : si crédible, il s'ouvre ; si floue, il se ferme définitivement.",
+    "piege_classique": "Le piège est de croire que sa satisfaction actuelle est un frein absolu. En réalité, Christophe PEUT être convaincu MAIS uniquement par : 1) Un calcul ROI brutal et honnête basé sur SES chiffres, 2) Un témoignage d'un confrère similaire qu'il pourrait connaître ou respecter, 3) Une proposition de test sans risque limité dans le temps. S'il dit 'Je vais réfléchir', c'est PERDU sauf si on identifie l'objection cachée immédiatement. Son 'Oui' final sera toujours conditionné à un bénéfice quantifiable ET à une minimisation du risque opérationnel. Ne JAMAIS critiquer sa solution actuelle (même indirectement) sous peine de fermeture immédiate."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur BTP",
+      "description": "Fournisseur de solutions pour entreprises du bâtiment, avec une relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "Service complémentaire ou offre premium",
+      "description": "Extension ou montée en gamme de la solution actuelle utilisée par le client depuis 1 an",
+      "proposition_valeur": "Optimisation des performances, gains supplémentaires, fonctionnalités avancées adaptées à l'évolution de l'entreprise cliente",
+      "prix": "NON_SPECIFIE - supérieur à l'offre actuelle",
+      "references": [
+        "Le client lui-même (satisfait depuis 1 an)"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance des besoins spécifiques du client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser la technique de l'upselling sur client existant satisfait : créer le désir d'amélioration, argumenter la valeur différentielle, et obtenir l'engagement pour un devis sans créer de friction",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Upsell solution BTP premium",
+    "vous_etes": "Account Manager chez le fournisseur actuel de Christophe Ferreira depuis 1 an.",
+    "vous_vendez": "Une offre premium qui ajoute des fonctionnalités avancées à sa solution actuelle (suivi chantier optimisé, reporting automatisé, tableaux de bord dirigeant). Prix estimé : +250-350€/mois.",
+    "vous_appelez": "Christophe Ferreira, 52 ans, gérant de FERREIRA BTP & ASSOCIÉS (28 salariés, gros œuvre). Pragmatique, méfiant du superflu, très sensible au ROI immédiat. Actuellement sous pression : deux gros chantiers municipaux, recrutement d'un chef de chantier, deux appels d'offres à boucler ce mois.",
+    "ce_que_vous_savez": [
+      "Utilise votre solution standard depuis 1 an, plutôt satisfait mais exploite seulement 70% des fonctionnalités",
+      "Ses chefs de chantier l'utilisent quotidiennement, quelques bugs au début mais 'ça fait le job'",
+      "Recrute un nouveau chef de chantier ce trimestre qu'il doit former rapidement",
+      "Tension actuelle sur trésorerie et délais d'encaissement clients",
+      "Deux appels d'offres importants à finaliser avant fin du mois"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé de l'offre premium, en ancrant la valeur sur ses irritants actuels (gestion administrative, pilotage chantiers, réactivité appels d'offres).",
+    "vos_atouts": [
+      "Relation établie depuis 1 an — vous connaissez son usage réel",
+      "Confrère similaire (30 salariés, même région) a réduit de 40% son temps de reporting après passage premium",
+      "Module spécifique qui simplifie l'intégration des nouveaux chefs de chantier (gain 3 semaines vs formation classique)",
+      "Possibilité de test 30 jours sur un chantier pilote avant engagement"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:39:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15431,
+    "total_time_s": 146.5
+  }
+}

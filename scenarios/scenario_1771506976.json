@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771506976",
+  "description_originale": "Vous appelez une ETI industrielle de 200-400 salariés, production en série, plusieurs sites. L'assistante de direction du directeur des achats ou directeur industriel décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : industrie]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés, production en série, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats ou directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de direction",
+          "role": "barrage/filtre",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B pour environnement industriel, production en série",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Barrage systématique par l'assistante de direction",
+        "Difficulté à accéder au décideur",
+        "Besoin de passer le filtre avec élégance"
+      ],
+      "implicites": [
+        "Discours commercial probablement trop générique",
+        "Manque de crédibilité ou de différenciation lors du premier contact",
+        "Absence de stratégie claire pour créer de la valeur dès le barrage",
+        "Difficulté à qualifier rapidement l'intérêt et l'urgence"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas créer suffisamment de valeur et de crédibilité lors du premier contact téléphonique pour convaincre l'assistante de direction de les mettre en relation avec le décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à franchir le barrage assistante avec professionnalisme et élégance, pour accéder au décideur et décrocher un RDV qualifié dans un contexte industriel multi-sites",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B, solutions pour l'industrie",
+      "entreprise_description": "Entreprise proposant des solutions B2B destinées aux ETI industrielles avec production en série",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution adaptée aux enjeux d'ETI industrielles multi-sites avec production en série",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Prix ou budget type",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique d'intervention",
+        "Références clients existantes",
+        "Avantages concurrentiels",
+        "Pain points spécifiques des clients industriels visés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Marc",
+      "nom": "Delattre",
+      "age": 52,
+      "poste": "Directeur des Achats et Approvisionnements",
+      "entreprise": {
+        "nom": "Techni-Forge Industries",
+        "secteur": "Métallurgie et usinage de précision pour l'automobile et l'aéronautique",
+        "taille": "ETI, 320 salariés, 3 sites de production (Hauts-de-France, Rhône-Alpes, Pays de la Loire)",
+        "ca_approximatif": "68 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par déformation professionnelle (15 ans aux achats)",
+        "Rationnel jusqu'à l'excès, obsédé par le ROI quantifiable",
+        "Protecteur de son temps, considéré comme sa ressource la plus précieuse"
+      ],
+      "motivations_profondes": [
+        "Optimiser les coûts sans compromettre la qualité (KPI principal : réduction 4% annuelle)",
+        "Démontrer sa valeur stratégique auprès de la direction générale",
+        "Éviter les emmerdes : un mauvais fournisseur = arrêt de production = sa tête qui saute",
+        "Préparer sa succession (départ prévu dans 3-4 ans) en laissant des process solides"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des commerciaux qui ne comprennent rien à l'industrie",
+        "Se faire avoir par un beau parleur (déjà brûlé en 2019 avec un prestataire IT)",
+        "Bouleverser des équilibres fournisseurs établis sans bénéfice clair",
+        "Que sa direction pense qu'il se laisse influencer facilement"
+      ],
+      "rapport_aux_commerciaux": "Profondément blasé. Reçoit 12-15 sollicitations par semaine. Considère 90% des commerciaux comme des 'récitants de plaquette' incapables de parler technique ou ROI. Respecte uniquement ceux qui connaissent vraiment son secteur et arrivent avec des données chiffrées. Sa phrase favorite : 'Combien ça me coûte, combien ça me rapporte, sur quelle durée ?'",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais froid, avec une pointe de lassitude visible. Premier réflexe : 'J'ai 10 minutes, allez-y.' Teste immédiatement la crédibilité avec une question technique pointue.",
+      "signaux_interet": [
+        "Sort son carnet et prend des notes manuscrites (vieille école)",
+        "Pose des questions sur les références clients dans son secteur précis",
+        "Demande spontanément les conditions tarifaires ou marges de négo",
+        "Évoque ses irritants actuels avec son fournisseur sans qu'on lui demande",
+        "Change de posture : se penche en avant au lieu de rester adossé"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son écran d'ordinateur",
+        "Répond 'Oui, oui...' de façon monocorde sans poser de questions",
+        "Coupe court : 'Écoutez, envoyez-moi un mail, je verrai'",
+        "Bras croisés, soupir audible quand on parle en termes généraux",
+        "Lance brutalement : 'Mais concrètement, en euros, ça donne quoi ?'"
+      ],
+      "tics_langage": [
+        "Dit souvent 'Honnêtement' avant d'exprimer un désaccord",
+        "Utilise 'Écoutez...' pour reprendre le contrôle de la conversation",
+        "Emploie l'expression 'Qu'est-ce que ça m'apporte ?' au moins 3 fois par RDV",
+        "Soupire avant de répondre quand la question lui semble naïve"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, décroche mentalement ou interrompt sèchement. Déteste les introductions corporate interminables. Veut des faits, vite."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable (+7% CA sur 2 ans) mais pression accrue sur les marges. La direction pousse pour une certification ISO 14001 d'ici 18 mois (contrainte clients grands comptes). Tension sur le site Rhône-Alpes : turnover RH élevé, problèmes de qualité récurrents.",
+      "priorites_actuelles": [
+        "Réduire les coûts d'approvisionnement matières premières (acier, aluminium) : objectif -5% sans rogner qualité",
+        "Trouver des solutions pour améliorer la traçabilité multi-sites (exigence clients aéro)",
+        "Digitaliser les processus achats (encore beaucoup de papier, erreurs de commandes)",
+        "Préparer le budget 2025 : arbitrages en cours, guerre de tranchées avec les opérationnels"
+      ],
+      "experience_avec_offre_similaire": "A testé plusieurs solutions dans sa carrière, dont certaines ont foiré. Échaudé par les promesses non tenues. Dit souvent : 'Les démos, c'est toujours magnifique, après en prod c'est une autre histoire.'",
+      "fournisseur_actuel": "Mix de fournisseurs historiques (certains depuis 12 ans). Relation amour-haine : connaît leurs défauts mais aussi leur fiabilité. Change uniquement si écart de valeur > 15% ou si fournisseur actuel dérape gravement.",
+      "budget_disponible": "Budget achats 2024 déjà engagé à 87%. Marge de manœuvre réelle : 200-300K€ maximum pour nouvelles solutions, ET uniquement si ROI démontré < 18 mois. Pour 2025 : négociations budgétaires en septembre-octobre."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une référence client concrète dans son secteur exact (métallurgie auto/aéro)",
+        "Chiffrer immédiatement le gain potentiel : 'Nos clients ETI métallurgie gagnent en moyenne 3,2% sur leurs coûts achats en 12 mois'",
+        "Démontrer qu'on connaît ses contraintes : normes aéro, traçabilité, multi-sites",
+        "Proposer un audit gratuit ou diagnostic express SANS obligation (il aime évaluer sans s'engager)",
+        "Être recommandé par un pair acheteur qu'il respecte (réseau CDAF)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Nous sommes leader sur le marché...' (s'en fout totalement)",
+        "Parler de 'transformation digitale' ou 'innovation' sans contenu concret",
+        "Insister pour un RDV sans avoir donné la moindre info sur le ROI",
+        "Dire 'Tous nos clients sont satisfaits' (phrase bateau = crédibilité zéro)",
+        "Méconnaître les spécificités industrielles (confondre usinage et assemblage = game over)",
+        "Pousser pour rencontrer son N+1 (la DG) avant de l'avoir convaincu lui (insulte à son autorité)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais arrêter tout de suite là... Je reçois quinze appels par semaine de commerciaux qui me parlent tous d'optimisation et de solutions innovantes. Qu'est-ce qui fait que vous, vous seriez différent ?",
+        "sous_texte": "Je suis fatigué des pitchs génériques. Prouvez-moi immédiatement que vous connaissez mon métier sinon je raccroche dans 20 secondes.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer immédiatement un chiffre concret (ROI, gain %) + une référence secteur métallurgie auto/aéro"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Honnêtement, j'ai pas le temps là. Envoyez-moi un mail avec votre doc, je regarderai si ça m'intéresse.",
+        "sous_texte": "Objection réflexe pour me débarrasser de vous. Je ne lirai jamais votre mail sauf si vous m'accrochez dans les 10 prochaines secondes.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps ('Je comprends, 2 minutes max') + donner UN chiffre percutant qui justifie qu'il écoute maintenant"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, on travaille déjà avec des fournisseurs depuis des années sur ces sujets-là. Ils nous connaissent, on les connaît. Pourquoi je changerais maintenant ?",
+        "sous_texte": "J'ai des relations établies et je déteste le risque de changement. Vous devez me prouver un écart de valeur MASSIF pour que je bouge.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser la relation existante + proposer comparaison/benchmark sans engagement ('Gardez vos fournisseurs, vérifiez juste que vous avez le meilleur deal actuel')"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me posez des questions sur mes process internes... C'est quoi le but exactement ? Vous faites un audit de mes achats ou vous avez quelque chose à me vendre ?",
+        "sous_texte": "Je deviens méfiant. J'ai l'impression que vous me sondez pour me vendre ensuite. Démontrez que ces questions servent MON intérêt, pas le vôtre.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale : expliquer que le diagnostic permet d'identifier SI et OÙ il y a un gain mesurable, sinon on ne perd pas son temps mutuellement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui, on a déjà regardé ce genre de solutions y'a deux ans. Ça n'a rien donné. Trop complexe à mettre en place, les équipes terrain ont jamais adhéré.",
+        "sous_texte": "J'ai déjà été échaudé. Votre solution ressemble probablement à celle qui a échoué. Prouvez-moi que c'est différent ou que vous avez compris pourquoi l'autre a planté.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé (pourquoi ça n'a pas marché) + montrer comment votre approche évite spécifiquement ces pièges (accompagnement, change management)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais concrètement, vous bossez avec qui dans la métallurgie ? Parce que moi je connais bien le secteur, si vous me sortez des références dans la plasturgie ou l'agroalimentaire, ça n'a rien à voir avec mes contraintes.",
+        "sous_texte": "Test de crédibilité ultra-sévère. Si vous n'avez pas de références exactes en métallurgie auto/aéro, vous perdez 80% de votre crédibilité. Je vais vérifier vos dires.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer 2-3 clients métallurgie précis (villes, taille, secteur exact) + idéalement proposer de le mettre en contact avec un pair acheteur"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ok mais tout ça c'est bien joli dans une présentation PowerPoint. En vrai, sur mon site Rhône-Alpes où j'ai déjà des soucis de process, vous m'ajoutez une nouvelle solution à déployer... C'est ingérable.",
+        "sous_texte": "Peur sincère de la complexité d'implémentation. J'ai déjà assez de problèmes opérationnels, je ne veux pas ajouter un chantier qui va me péter à la figure.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la contrainte + proposer déploiement progressif (pilote sur un site plus stable d'abord) + quantifier les ressources nécessaires réellement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'économies, de gains de productivité... Mais concrètement, en euros, sur MES trois sites, avec MES volumes, ça donne quoi ? Parce que là vous me donnez des pourcentages dans le vide.",
+        "sous_texte": "Je ne marche qu'aux chiffres concrets appliqués à MA situation. Les % génériques ne me font ni chaud ni froid. Si vous ne pouvez pas chiffrer maintenant, vous n'êtes pas crédible.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander 2-3 données clés (volumes, CA achats matières) + calculer en direct une fourchette basse-haute réaliste. Transparence sur les hypothèses."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Honnêtement, même si je suis convaincu, j'ai plus de budget 2024. On est engagés à 87%. Faut qu'on reparle de ça en septembre-octobre pour 2025, pas avant.",
+        "sous_texte": "Objection réelle ET tactique. Je teste si vous allez insister lourdement (ce qui me fera fuir) ou si vous êtes assez pro pour comprendre les cycles budgétaires industriels.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la contrainte budgétaire + proposer action préparatoire (audit, pilote gratuit, collecte data) pour être prêt en sept-oct avec dossier béton"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vous me dites que ça se déploie en 4 à 6 mois. Mais moi j'ai besoin d'un ROI en moins de 18 mois, sinon ma direction validera jamais. Vous me garantissez quoi là-dessus ?",
+        "sous_texte": "Je commence à être intéressé MAIS j'ai besoin de sécurité. Je ne prendrai jamais le risque sans clause de performance ou engagement ferme. Ma crédibilité interne est en jeu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas surproposer. Proposer paiement conditionnel partiel ou objectifs chiffrés contractuels + partager REX client similaire avec timeline réelle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant, mais là je dois en parler à mon directeur industriel d'abord. On ne prend jamais ce type de décision sans valider ensemble. Laissez-moi deux semaines pour en discuter en interne.",
+        "sous_texte": "Objection semi-sincère. Soit j'ai vraiment besoin de valider (probable), soit je gagne du temps pour vous diluer dans ma pile de dossiers. Testez ma vraie motivation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le process décisionnel + proposer de préparer avec lui les éléments pour son directeur industriel (deck synthétique, chiffres clés) = rester dans la boucle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis pas convaincu que ça marche chez nous. On a des spécificités très particulières sur nos alliages et nos tolérances aéro. Vous avez déjà géré ça chez un client ?",
+        "sous_texte": "Doute sincère de dernière minute. Je cherche LA raison technique de ne pas m'engager car je déteste le risque. Rassurez-moi avec du concret technique, pas du blabla.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer un cas client avec contraintes aéro similaires (traçabilité, normes) + proposer échange technique avec votre expert produit + son homologue"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais là vous me proposez un rendez-vous sur site la semaine prochaine... J'ai mon planning de négos fournisseurs, mes budgets à boucler. Je peux pas me libérer avant fin du mois minimum.",
+        "sous_texte": "Objection vraie (je suis surbooké) mais aussi test : êtes-vous suffisamment pro pour comprendre mes contraintes temps ou allez-vous insister comme un boulet ?",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter sa contrainte + proposer créneau fin de mois précis + envoyer en amont éléments préparatoires pour qu'il arrive avec ses questions"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, je veux bien qu'on avance, mais moi je connais pas votre boîte. Vous existez depuis quand ? Vous avez combien de clients en France ? Parce que si vous faites faillite dans 2 ans, je me retrouve avec un outil sans support.",
+        "sous_texte": "Peur du risque fournisseur. J'ai besoin de sécurité et pérennité. Si vous êtes une startup ou un acteur fragile, c'est mort sauf garanties béton.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale : historique, actionnariat, nombre clients, CA tendance. Proposer clause de réversibilité ou garantie contractuelle si pertinent."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est pas que c'est inintéressant, mais honnêtement là j'ai vraiment pas la bande passante pour me lancer dans un truc pareil. Entre mes budgets à finaliser, mes problèmes sur le site Rhône-Alpes et la certif ISO qui arrive, je peux pas ajouter un chantier. Rappelez-moi dans 6 mois, on verra à ce moment-là.",
+      "condition_declenchement": "Se déclenche si le vendeur n'a pas réussi à : 1) Créer suffisamment d'urgence (coût de l'inaction chiffré), 2) Proposer un engagement progressif (pilote, audit), 3) Aligner sa solution avec les priorités immédiates (ISO, Rhône-Alpes, budgets). Marc fuit par surcharge cognitive et absence de valeur immédiate perçue."
+    },
+    "pattern_escalade": "Marc commence courtois mais distant (phase test crédibilité). Si le vendeur résiste et apporte du concret sectoriel, il s'ouvre progressivement et pose des questions techniques pointues (phase intérêt). Mais au moindre flou, discours marketing ou pression commerciale maladroite, il se referme brutalement et sort l'objection finale 'pas de bande passante'. Son pattern : tester > creuser > douter > fuir OU valider selon la solidité des réponses.",
+    "piege_classique": "Croire que Marc est convaincu quand il dit 'C'est intéressant' ou 'Oui, pourquoi pas'. Ces phrases sont souvent des marqueurs de politesse, pas d'engagement. Le vrai signal d'achat : il sort son carnet, demande les conditions tarifaires précises, évoque spontanément son budget disponible ou propose de vous mettre en contact avec son directeur industriel. Sinon, il est en mode 'évaluation passive' et vous rangera dans sa pile mentale des 'à voir plus tard' (= jamais)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B, solutions pour l'industrie",
+      "description": "Entreprise proposant des solutions B2B destinées aux ETI industrielles avec production en série"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution adaptée aux enjeux d'ETI industrielles multi-sites avec production en série",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à franchir le barrage assistante avec professionnalisme et élégance, pour accéder au décideur et décrocher un RDV qualifié dans un contexte industriel multi-sites",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Directeur Achats Métallurgie",
+    "vous_etes": "Commercial B2B spécialisé solutions industrielles, vous prospectez des ETI en métallurgie et usinage de précision.",
+    "vous_vendez": "Une solution B2B pour optimiser les processus industriels des ETI multi-sites en production série (prix et détails à adapter selon le contexte).",
+    "vous_appelez": "Marc Delattre, 52 ans, Directeur des Achats chez Techni-Forge Industries (métallurgie auto/aéro, 320 salariés, 3 sites). Rationnel à l'excès, obsédé ROI, profondément blasé par les commerciaux. Reçoit 15 sollicitations/semaine. Ne respecte que ceux qui parlent chiffres et connaissent vraiment l'industrie.",
+    "ce_que_vous_savez": [
+      "Techni-Forge : 320 salariés, 3 sites (Hauts-de-France, Rhône-Alpes, Pays de la Loire), métallurgie de précision pour automobile et aéronautique",
+      "Pression sur les marges malgré croissance stable, certification ISO 14001 en cours",
+      "Marc a 15 ans d'expérience achats, échaudé par des prestataires par le passé, protège son temps comme sa ressource la plus précieuse",
+      "Budget 2024 engagé à 87%, marge de manœuvre 200-300K€ uniquement si ROI < 18 mois",
+      "Priorités : réduire coûts approvisionnement (-5%), améliorer traçabilité multi-sites, digitaliser processus achats"
+    ],
+    "votre_objectif": "Franchir le barrage de l'assistante de direction, accéder à Marc Delattre et décrocher un RDV physique de 30 minutes en démontrant immédiatement votre crédibilité et la valeur chiffrée.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes métallurgie auto/aéro : normes, traçabilité, multi-sites",
+      "Vous pouvez chiffrer rapidement des gains potentiels concrets (%, délais, coûts)",
+      "Vous proposez systématiquement un audit gratuit sans engagement pour évaluer le ROI",
+      "Vous ne récitez jamais de plaquette — vous parlez ROI, faits, références sectorielles"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:16:16Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16233,
+    "total_time_s": 150.9
+  }
+}

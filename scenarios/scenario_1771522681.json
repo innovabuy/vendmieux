@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771522681",
+  "description_originale": "Vous appelez une chaîne hôtelière régionale ou groupe de restauration de 100+ salariés. L'réceptionniste ou assistante de direction du directeur des achats ou directeur F&B décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : hotellerie_restauration]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur_achats ou directeur_food_beverage",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "receptionniste ou assistante_direction",
+          "role": "barrage_filtrage",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "regionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_professionnelle_secteur_hotellerie_restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "passage_barrage_secretariat",
+        "filtrage_systematique_par_assistante"
+      ],
+      "implicites": [
+        "manque_credibilite_immediate",
+        "difficulte_a_differencier_des_autres_commerciaux",
+        "absence_accroche_pertinente_pour_le_gatekeep",
+        "pas_de_strategie_multi_niveau"
+      ],
+      "probleme_racine": "incapacite_a_creer_rapidement_confiance_et_legitimite_aupres_du_filtre_pour_acceder_au_decideur"
+    },
+    "objections_mentionnees": [
+      "filtrage_systematique_appels_commerciaux"
+    ],
+    "objectif_formation": "maitriser_techniques_passage_barrage_secretariat_et_obtention_rdv_qualifie_avec_decideur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_secteur_hotellerie_restauration",
+      "entreprise_description": "entreprise_b2b_ciblant_chaines_hotels_groupes_restauration",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_ou_produit_destine_secteur_chr_achats_ou_food_beverage",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature_offre_commerciale",
+        "problematique_client_ciblee",
+        "proposition_valeur_specifique",
+        "informations_entreprise_vendeur",
+        "budget_ou_fourchette_prix",
+        "references_ou_cas_clients"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Fabrice",
+      "nom": "Delvaux",
+      "age": 52,
+      "poste": "Directeur Achats & Approvisionnements",
+      "entreprise": {
+        "nom": "Groupe Hôtelier Patrimoine & Charme",
+        "secteur": "Hôtellerie haut de gamme",
+        "taille": "180 salariés répartis sur 8 établissements 4-5 étoiles",
+        "ca_approximatif": "32 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par expérience (30 ans dans les achats)",
+        "Orienté ROI et négociation serrée",
+        "Besoin de contrôle et d'être reconnu comme expert"
+      ],
+      "motivations_profondes": [
+        "Protéger ses marges dans un contexte post-COVID tendu",
+        "Prouver sa valeur ajoutée à la direction générale",
+        "Éviter les erreurs qui terniraient sa réputation interne",
+        "Consolider ses relations fournisseurs historiques pour garder son pouvoir"
+      ],
+      "peurs_freins": [
+        "Être perçu comme naïf face aux commerciaux",
+        "Déstabiliser l'équilibre opérationnel avec un changement hasardeux",
+        "Perdre du temps en réunions inutiles",
+        "Se faire court-circuiter par un commercial qui irait voir directement la DG"
+      ],
+      "rapport_aux_commerciaux": "Transactionnel et distant. Considère 95% des appels comme du spam. Respecte uniquement ceux qui comprennent ses contraintes métier sans les avoir lues sur LinkedIn. A développé un radar anti-bullshit très affûté.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais glacial, avec une pointe d'ironie sur les bords. Premier réflexe : 'Combien de temps ça va prendre ?'",
+      "signaux_interet": [
+        "Demande des chiffres précis ou des références dans des groupes similaires",
+        "Mentionne spontanément un problème actuel ('Justement, on a eu un souci avec...')",
+        "Pose des questions sur les délais de livraison ou les conditions de paiement",
+        "Prend des notes ou ouvre son CRM"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Répète 'On a déjà un fournisseur' comme un mantra",
+        "Consulte ostensiblement ses emails pendant que vous parlez",
+        "Coupe la parole pour dire 'Envoyez-moi un mail'",
+        "Ton qui devient paternaliste : 'Jeune homme, je fais ça depuis avant votre naissance'"
+      ],
+      "tics_langage": [
+        "'Écoutez...' (pour prendre le contrôle de la conversation)",
+        "'Concrètement' (pour couper le blabla)",
+        "'On a toujours fait comme ça' (bouclier automatique)",
+        "'Vous comprenez, dans notre métier...' (pour affirmer sa supériorité d'expertise)"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant interruption. Attend des questions ouvertes, pas un pitch. Si vous parlez plus de 2 minutes sans l'impliquer, il raccroche mentalement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Post-restructuration après COVID. Objectif 2025 : réduire les coûts d'achat de 8% sans impacter la qualité perçue par une clientèle exigeante. Pression forte du COMEX. Deux établissements viennent de changer de directeur.",
+      "priorites_actuelles": [
+        "Renégocier les contrats cadres avec les fournisseurs historiques",
+        "Trouver des alternatives crédibles pour créer de la tension concurrentielle",
+        "Gérer la transition sur les nouveaux établissements (standardisation des process)",
+        "Préparer le budget 2026 pour septembre"
+      ],
+      "experience_avec_offre_similaire": "A testé 4 nouveaux fournisseurs ces 3 dernières années. Un seul a été conservé. Les autres : trop chers, service après-vente défaillant, ou promesses non tenues sur les délais.",
+      "fournisseur_actuel": "Trois fournisseurs principaux avec qui il travaille depuis 7 à 12 ans. Relation quasi-familiale avec deux d'entre eux. Rencontre physique trimestrielle, invitation au salon professionnel annuel.",
+      "budget_disponible": "Enveloppe innovation de 40K€ pour tester de nouvelles solutions, mais bloquée jusqu'à validation COMEX. Sur les lignes existantes : très peu de marge de manœuvre sauf si économies démontrées."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une référence ultra-précise dans un groupe concurrent direct qu'il connaît personnellement",
+        "Poser une question sur SES contraintes métier spécifiques (saisonnalité, approvisionnement multi-sites, normes HACCP...)",
+        "Admettre d'emblée que ce n'est peut-être pas le bon moment mais proposer un échange de 15min sur une problématique précise",
+        "Être recommandé par un pair (directeur d'un autre groupe hôtelier)",
+        "Apporter un benchmark chiffré sur ses concurrents sans vendre directement"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'On travaille déjà avec plusieurs grands groupes hôteliers' (trop vague)",
+        "Critiquer ses fournisseurs actuels sans les connaître",
+        "Promettre des économies de 30% (crédibilité zéro)",
+        "Insister lourdement après un premier refus poli",
+        "Tenter de le contourner en contactant la direction générale",
+        "Utiliser son prénom trop rapidement ('Fabrice, je comprends que...')",
+        "Ne pas connaître les spécificités du haut de gamme vs hôtellerie économique"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je reçois 15 appels comme ça par semaine, vous comprenez... Envoyez-moi un mail, on verra.",
+        "sous_texte": "Je protège mon temps et ma crédibilité. Prouvez-moi en 10 secondes que vous n'êtes pas un commercial lambda qui a trouvé mon nom sur LinkedIn.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître explicitement sa situation sans insister, puis poser UNE question ultra-précise sur sa problématique métier qui montre que vous connaissez son secteur."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà tout ce qu'il nous faut, on travaille avec des partenaires depuis des années. Mais merci de votre appel.",
+        "sous_texte": "Je suis loyal envers mes fournisseurs historiques et je ne vais pas risquer de tout chambouler pour un inconnu. Ma position de pouvoir repose sur ces relations.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer ses fournisseurs. Positionner l'échange comme une veille concurrentielle ou un benchmark, pas un remplacement immédiat."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi exactement ? Parce que j'ai 3 réunions qui s'enchaînent là...",
+        "sous_texte": "Je veux couper court si c'est du spam, mais je teste aussi votre capacité à être synthétique et pertinent. Si vous bottez en touche, je raccroche.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Répondre en 15 secondes MAX avec un bénéfice métier concret lié à SES priorités actuelles (coûts, multi-sites, qualité), pas une description produit."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous travaillez avec qui dans l'hôtellerie haut de gamme ? Parce que c'est pas le même métier que l'économique hein...",
+        "sous_texte": "Je vérifie si vous comprenez MON univers. Si vous me citez des Ibis Budget ou des Campanile, vous perdez toute crédibilité. C'est un test de légitimité sectorielle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer 2-3 références ultra-précises dans le 4-5 étoiles avec des groupes qu'il connaît ou respecte. Si vous n'en avez pas, admettre-le franchement et proposer une approche pilote."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous on a des contraintes très spécifiques : 8 établissements, des saisonnalités différentes, des normes HACCP strictes... Je vois pas comment vous pourriez gérer ça mieux que nos fournisseurs actuels.",
+        "sous_texte": "Je suis fier de la complexité de mon métier et je ne pense pas que vous la compreniez. Prouvez-moi le contraire avec des questions intelligentes, pas des affirmations creuses.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Poser des questions de découverte précises sur CES contraintes spécifiques au lieu d'affirmer que vous gérez déjà ça ailleurs. Montrer votre curiosité métier avant de pitcher."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez, c'est intéressant, mais franchement j'ai pas le temps pour un rendez-vous de 2 heures là. Envoyez-moi une plaquette, je regarderai.",
+        "sous_texte": "Je commence à être un peu intéressé mais je garde le contrôle. Je teste si vous allez insister lourdement ou si vous allez proposer quelque chose de pragmatique et court.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un format court et précis (15-20 min, visio ou café), avec un ordre du jour clair focalisé sur UN sujet qui le concerne. Ne pas envoyer de plaquette générique."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'économies de 15%, mais j'ai entendu ça 100 fois... Au final, entre les frais de port, les minimums de commande et les galères de SAV, on perd de l'argent.",
+        "sous_texte": "J'ai été échaudé plusieurs fois. Je ne crois plus aux belles promesses. Montrez-moi des preuves chiffrées avec un calcul transparent, pas un pourcentage sorti du chapeau.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Présenter un cas client détaillé avec TOUS les coûts intégrés (TCO complet), reconnaître les risques potentiels et proposer une phase pilote mesurable."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça fonctionne pas, comment je gère le retour en arrière ? Vous imaginez le bordel opérationnel sur 8 sites ?",
+        "sous_texte": "Ma plus grande peur : déstabiliser l'équilibre actuel et me retrouver avec un problème ingérable qui ternira ma réputation. Je dois protéger mes arrières.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un plan de test progressif (1 seul site pilote), des KPIs de succès clairs dès le départ, et une clause de sortie sans pénalité dans les 90 premiers jours."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous savez, mes fournisseurs actuels, je les ai au téléphone en 5 minutes si j'ai un souci. Ils me connaissent. Chez vous, je vais avoir un SAV offshore qui lit un script ?",
+        "sous_texte": "La relation humaine et la réactivité valent plus que 5% d'économie. Je ne sacrifierai pas ma tranquillité opérationnelle pour un inconnu, même moins cher.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Présenter concrètement QUI sera son interlocuteur dédié (nom, expérience), les engagements de réactivité contractuels, et proposer de rencontrer cette personne AVANT de signer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Jeune homme, je fais ce métier depuis 30 ans... J'en ai vu défiler des commerciaux avec des belles présentations PowerPoint. Concrètement, qu'est-ce qui change pour MOI au quotidien ?",
+        "sous_texte": "Je me positionne en expert pour reprendre le contrôle. Arrêtez les slides génériques et parlez-moi de MON quotidien opérationnel, pas de vos fonctionnalités.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Raconter une journée type d'un directeur achats similaire AVANT/APRÈS votre solution, avec des détails opérationnels concrets (gain de temps, moins de relances, etc.)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas inintéressant, mais là on est en plein budget 2026 et j'ai une renégociation importante avec un fournisseur historique. Rappelez-moi dans 6 mois.",
+        "sous_texte": "C'est peut-être sincère OU je cherche à gagner du temps pour vous oublier poliment. Je teste si vous allez insister lourdement ou proposer quelque chose d'intelligent.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte timing, puis proposer un échange stratégique MAINTENANT pour qu'il ait des données comparatives PENDANT sa renégociation (levier concurrentiel)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faudrait que j'en parle à la direction générale et au directeur F&B de nos deux plus gros établissements. Ça va prendre du temps tout ça...",
+        "sous_texte": "Je ne veux pas prendre la décision seul (peur de l'erreur) ET je veux voir si vous êtes prêt à jouer le jeu d'une vente complexe multi-interlocuteurs sans vous impatienter.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de co-construire le dossier de présentation avec lui, identifier ensemble les arguments clés pour chaque interlocuteur, et proposer de participer aux réunions internes."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi une proposition chiffrée détaillée par mail, on verra après...",
+        "sous_texte": "Je veux clore la conversation poliment. Soit je suis sincèrement intéressé mais prudent, soit c'est une façon élégante de dire non. Vous saurez lequel en fonction de ma réactivité après le mail.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter mais recadrer : proposer un appel de 10 min dans 3 jours pour présenter la proposition ET répondre aux questions, plutôt que d'envoyer un mail dans le vide."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez, dans notre métier, on peut pas se permettre de prendre des risques. Un fournisseur qui plante en pleine saison haute, c'est la catastrophe. Alors avant de changer quoi que ce soit...",
+        "sous_texte": "Ma peur du changement est réelle et profonde. J'ai besoin d'être VRAIMENT rassuré avec des preuves sociales solides et un plan de déploiement ultra-sécurisé.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider complètement sa peur comme légitime, raconter un cas client similaire qui avait la même crainte et comment ça s'est passé, proposer un test hors saison haute."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ah oui, et puis il faut que je compare avec au moins deux autres fournisseurs hein, c'est la procédure interne. Donc même si vous êtes moins cher, ça va prendre 2-3 mois minimum.",
+        "sous_texte": "Je respecte mes process internes ET je veux voir si vous allez paniquer ou jouer la transparence. Je teste aussi si vous allez essayer de court-circuiter le process (disqualifiant).",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter totalement le process, proposer de l'aider à construire une grille de comparaison objective qui l'aide dans sa décision, même si ça inclut vos concurrents."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être franc avec vous : vous m'avez pas convaincu que ça vaut le coup de prendre le risque de tout chambouler. Mes fournisseurs actuels sont pas parfaits, mais je les connais. Vous, je vous connais pas. Et dans ma position, la stabilité, ça compte plus qu'on croit.",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas su créer de lien de confiance personnel, n'a pas apporté de preuve sociale crédible dans son univers, ou a trop insisté sur le prix sans adresser la peur du changement et le besoin de reconnaissance professionnelle de Fabrice."
+    },
+    "pattern_escalade": "Fabrice commence courtois mais distant (phase test). Si vous résistez aux premiers barrages avec pertinence, il devient plus analytique et pose des questions pointues (phase évaluation). Si vous passez cette étape, il révèle ses vraies contraintes et peurs (phase ouverture). MAIS : au moindre faux pas (promesse exagérée, méconnaissance sectorielle, insistance lourde), il repasse instantanément en mode blocage poli et définitif. Son pattern type : 'Écoutez... [reformulation polie de non] ... Envoyez-moi un mail.'",
+    "piege_classique": "Fabrice semble parfois accepter le RDV ou demander une proposition juste pour se débarrasser poliment de vous. Le piège : confondre sa politesse professionnelle avec un intérêt réel. Indicateur : s'il ne pose AUCUNE question opérationnelle concrète ou ne mentionne AUCUNE contrainte personnelle durant l'échange, c'est un refus poli déguisé. Autre piège : vouloir le convaincre par la logique rationnelle (ROI, features) alors que sa décision sera 70% émotionnelle (confiance, peur du changement, besoin de reconnaissance)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_secteur_hotellerie_restauration",
+      "description": "entreprise_b2b_ciblant_chaines_hotels_groupes_restauration"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_ou_produit_destine_secteur_chr_achats_ou_food_beverage",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maitriser_techniques_passage_barrage_secretariat_et_obtention_rdv_qualifie_avec_decideur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Groupe hôtelier haut de gamme",
+    "vous_etes": "Commercial B2B chez un fournisseur spécialisé hôtellerie-restauration, vous prospectez des groupes hôteliers 4-5 étoiles.",
+    "vous_vendez": "Une solution pour le secteur CHR destinée aux achats ou au Food & Beverage (détails à adapter selon votre offre réelle).",
+    "vous_appelez": "Fabrice Delvaux, 52 ans, Directeur Achats & Approvisionnements du Groupe Hôtelier Patrimoine & Charme. Méfiant, analytique, 30 ans d'expérience. Filtre 95% des appels commerciaux comme du spam. Ne respecte que ceux qui comprennent vraiment ses contraintes métier.",
+    "ce_que_vous_savez": [
+      "Groupe de 8 établissements 4-5 étoiles, 180 salariés, 32M€ de CA",
+      "Post-restructuration COVID — objectif 2025 : -8% sur les coûts achats sans baisser la qualité",
+      "Travaille avec 3 fournisseurs historiques depuis 7 à 12 ans, relations solides",
+      "A testé 4 nouveaux fournisseurs ces 3 ans : un seul conservé",
+      "Deux établissements viennent de changer de directeur (phase de transition)"
+    ],
+    "votre_objectif": "Obtenir un RDV physique de 30 minutes pour échanger sur ses enjeux achats 2025.",
+    "vos_atouts": [
+      "Vous comprenez les spécificités du haut de gamme vs économique",
+      "Vous connaissez les contraintes multi-sites et saisonnalité",
+      "Vous avez des références précises dans des groupes similaires",
+      "Vous ne critiquez jamais les fournisseurs en place"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:38:01Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14807,
+    "total_time_s": 135.5
+  }
+}

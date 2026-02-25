@@ -1,0 +1,338 @@
+{
+  "id": "scenario_1771509647",
+  "description_originale": "Le directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : services_entreprises]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "200+ salariés, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "Directeur des opérations ou Directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour groupe de services multi-sites",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect veut renégocier les conditions avant signature",
+        "Mise en concurrence avec 2 autres fournisseurs",
+        "Nécessité de défendre la valeur de l'offre"
+      ],
+      "implicites": [
+        "Risque de perdre la vente sur le prix uniquement",
+        "Méconnaissance des vrais critères de décision du prospect",
+        "Difficulté à justifier un premium price face à la concurrence",
+        "Pression sur les marges en phase finale"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas la négociation en position de concurrence : ils défendent mal la valeur, cèdent trop vite sur le prix sans comprendre les vrais enjeux décisionnels du prospect, et n'arrivent pas à closer efficacement en contexte compétitif"
+    },
+    "objections_mentionnees": [
+      "Demande de renégociation des conditions",
+      "Comparaison avec d'autres offres concurrentes"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre la valeur de leur offre face à la concurrence, identifier les vrais critères de décision du décideur, et closer efficacement en situation de négociation avancée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_entreprises",
+      "entreprise_description": "Fournisseur de solutions/services pour groupes multi-sites",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux groupes de services multi-sites de taille significative (200+ salariés)",
+      "proposition_valeur": "NON_SPECIFIE - à définir pour la simulation",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE - élément critique à développer pour la formation",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Fourchette de prix et montant de l'investissement",
+        "Arguments de valeur spécifiques vs concurrence",
+        "Nom de l'entreprise vendeuse",
+        "Historique de la relation commerciale",
+        "Raisons de la mise en concurrence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Hexaservices Group",
+        "secteur": "Services aux entreprises (nettoyage industriel et maintenance tertiaire)",
+        "taille": "280 salariés répartis sur 14 sites en France",
+        "ca_approximatif": "23M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Obsédé par la standardisation et les process",
+        "Perfectionniste procrastinateur en décision finale"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX qu'il optimise les coûts sans dégrader la qualité",
+        "Éviter à tout prix une erreur qui ternirait sa réputation interne",
+        "Imposer SA solution au DG qui lui fait une confiance modérée depuis l'échec du dernier projet digital"
+      ],
+      "peurs_freins": [
+        "Se faire avoir sur le prix et passer pour un pigeon",
+        "Choisir un fournisseur qui ne tiendra pas ses promesses post-signature",
+        "Que le concurrent moins cher démontre a posteriori qu'il avait raison",
+        "Perdre du temps avec un vendeur qui ne comprend pas les contraintes multi-sites"
+      ],
+      "rapport_aux_commerciaux": "Sceptique par défaut. Les considère comme des beaux parleurs jusqu'à preuve du contraire. Respecte uniquement ceux qui connaissent vraiment son métier et assument leurs limites. Déteste qu'on lui vende du rêve.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, avec un je-écoute-mais-je-suis-déjà-ailleurs dans la voix. Commence souvent par : Bon alors, on va pas y passer trois heures non plus hein...",
+      "signaux_interet": [
+        "Prend des notes manuscrites ostensiblement",
+        "Pose des questions de mise en œuvre très concrètes (Concrètement, sur le site de Lyon, comment vous gérez...)",
+        "Mentionne spontanément des problèmes actuels avec son fournisseur",
+        "Demande à impliquer un chef de projet dans la suite (Faudrait peut-être que je fasse rentrer Valérie dans la boucle...)"
+      ],
+      "signaux_rejet": [
+        "Soupirs discrets mais audibles",
+        "Regarde ostensiblement sa montre ou clique sur son clavier pendant l'explication",
+        "Répond par des Ouais, ouais... sans conviction",
+        "Coupe court : Écoutez, sur le principe c'est intéressant mais là franchement...",
+        "Compare immédiatement au concurrent : Parce que TechPro Services eux ils proposent X% de moins et..."
+      ],
+      "tics_langage": [
+        "Bon, concrètement...",
+        "Ouais mais attendez là...",
+        "Je dis pas que c'est pas bien hein, mais...",
+        "Faut qu'on soit pragmatiques",
+        "À un moment donné faut trancher",
+        "Je suis sous pression du COMEX là"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Très faible. Coupe après 45 secondes si pas de valeur concrète. Préfère les échanges courts et denses."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance externe récente (rachat de 3 PME locales en 18 mois). Harmonisation des outils et process en cours. Pression COMEX sur la rentabilité opérationnelle. Digitalisation imposée par le board mais budget contraint. Départ récent du responsable qualité, charge de travail augmentée.",
+      "priorites_actuelles": [
+        "Standardiser les outils sur les 14 sites avant septembre",
+        "Réduire les coûts d'exploitation de 8% sur 2025",
+        "Éviter tout incident qualité qui impacterait les contrats-cadres avec les grands comptes",
+        "Préparer la certification ISO qui arrive dans 11 mois"
+      ],
+      "experience_avec_offre_similaire": "Utilise depuis 4 ans une solution concurrente (OptiFleet Pro) sur 9 sites historiques. Insatisfait du support technique (Ils répondent jamais en moins de 48h) et du coût des modules complémentaires, mais l'outil fonctionne. Les 5 nouveaux sites utilisent des outils disparates à remplacer.",
+      "fournisseur_actuel": "OptiFleet Pro (contrat arrive à échéance dans 4 mois) + 2 solutions bricolées maison sur nouveaux sites",
+      "budget_disponible": "Budget 2025 voté : 185K€ sur 3 ans pour la solution complète. Peut débloquer 15K€ supplémentaires si ROI démontré sur réduction coûts admin. Finance veut un paiement étalé mais Stéphane préfère un one-shot pour éviter les tracas comptables annuels."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer la compréhension des contraintes multi-sites sans bullshit (expérience prouvée dans le secteur services)",
+        "Proposer un accompagnement formation inclus (il a peur que les chefs de site résistent au changement)",
+        "Assumer les limites de l'offre sur un point spécifique (ça crée la confiance)",
+        "Fournir des références clients vérifiables dans son secteur avec contact direct possible",
+        "Proposer une clause de réversibilité ou garantie satisfait/remboursé première année (réduit son risque perçu)",
+        "Montrer comment la solution facilite SA préparation de la certification ISO"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dénigrer frontalement OptiFleet Pro (il l'a choisi il y a 4 ans, attaque indirecte de sa décision)",
+        "Présenter un tarif supérieur sans justification ROI chiffrée et spécifique à SA situation",
+        "Promettre des fonctionnalités dans une version future (il veut du concret immédiat)",
+        "Minimiser la complexité du déploiement multi-sites (Ah mais c'est simple, 2 semaines et c'est bouclé)",
+        "Insister lourdement pour rencontrer le DG ou monter au board (ego : il veut trancher seul et présenter LUI la solution)",
+        "Utiliser des anglicismes corporate excessifs (game changer, disruptif, best-in-class...) sans substance"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, on va pas y passer trois heures hein. J'ai déjà deux propositions sur mon bureau et franchement là je suis sous l'eau.",
+        "sous_texte": "Je teste votre capacité à être concis et pertinent. Si vous monopolisez mon temps sans valeur immédiate, je raccroche. Prouvez-moi en 30 secondes que vous valez mieux que les deux autres.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la durée, qualifier rapidement sa situation vs concurrence, demander 1 question clé pour vérifier la pertinence"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais bon, c'est gentil mais TechPro Services et GlobalSoft m'ont déjà envoyé leurs offres. Je vois pas trop ce que vous allez m'apporter de plus franchement.",
+        "sous_texte": "Je suis fatigué de ce processus de sélection. Les concurrents sont déjà dans la place. Pourquoi je devrais vous écouter vous ? Donnez-moi UNE raison différenciante immédiatement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer les concurrents, poser une question sur ce que ces offres ne couvrent pas, identifier un angle mort"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je dis pas que c'est pas intéressant ce que vous me racontez là, mais concrètement, ça change quoi pour mes 14 sites ? Parce que des belles présentations PowerPoint j'en ai déjà vu passer hein...",
+        "sous_texte": "Arrêtez le blabla générique. Je veux des réponses CONCRÈTES sur MA situation multi-sites. Si vous ne comprenez pas cette complexité, vous êtes comme les autres et je perds mon temps.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter l'argumentaire, poser des questions précises sur ses contraintes multi-sites, montrer qu'on comprend avant de répondre"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attendez là, vous connaissez vraiment le secteur du nettoyage industriel vous ? Parce que c'est pas du service informatique hein, c'est du terrain, de la gestion d'équipes en 3x8, des contraintes horaires de dingue...",
+        "sous_texte": "J'ai peur que vous soyez un vendeur généraliste qui va me proposer une solution inadaptée. Prouvez-moi que vous connaissez MON métier, sinon je ne vous fais pas confiance pour comprendre mes besoins.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la spécificité, citer des références secteur similaire, poser des questions métier précises qui montrent la connaissance"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le truc c'est que OptiFleet Pro, ça fonctionne hein. J'ai pas de gros problèmes avec. Bon le support c'est pas top, mais l'outil tourne. Pourquoi je prendrais le risque de tout changer maintenant ?",
+        "sous_texte": "J'ai peur du changement et de l'échec. Mon dernier projet digital a foiré et le DG me fait moins confiance. Si je me plante encore, ma crédibilité est morte. Le statu quo est plus sûr même si imparfait.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas attaquer frontalement OptiFleet, explorer les irritants cachés, quantifier le coût du statu quo, proposer approche pilote sécurisée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais là vous me parlez de fonctionnalités, c'est bien beau, mais TechPro Services ils sont 18% moins chers que vous. À un moment donné faut être pragmatiques hein.",
+        "sous_texte": "Je suis sous pression du COMEX sur les coûts. Si je ne peux pas justifier votre surcoût, je vais passer pour celui qui dépense trop. Donnez-moi des munitions pour défendre votre prix, sinon je prends le moins cher pour me couvrir.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas baisser immédiatement le prix, creuser ce que contient vraiment l'offre TechPro, identifier les coûts cachés, chiffrer le ROI différentiel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vous arrête là, votre module de reporting c'est génial sur le papier, mais ça marche vraiment ? Parce qu'on m'a déjà vendu des trucs magnifiques qui plantaient une fois sur deux en production.",
+        "sous_texte": "J'ai été échaudé. Mon dernier investissement digital n'a pas tenu ses promesses et ça m'a coûté ma crédibilité. Je ne peux pas me permettre un nouvel échec. Prouvez-moi que ça MARCHE vraiment, pas juste en démo.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la légitimité de la crainte, proposer POC ou phase pilote, donner références clients vérifiables avec contact direct"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, formation incluse, accompagnement personnalisé, tout ça c'est bien, mais concrètement le déploiement sur mes 14 sites ça prend combien de temps ? Parce que là j'ai pas 6 mois devant moi hein.",
+        "sous_texte": "J'ai des deadlines COMEX non négociables (standardisation avant septembre, certif ISO dans 11 mois). Si votre solution ralentit mon planning, elle est out même si elle est meilleure. Le timing est un critère éliminatoire caché.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander les deadlines précises, proposer un planning réaliste avec jalons, identifier les sites prioritaires pour déploiement progressif"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais, c'est intéressant tout ça, mais bon... Je suis pas sûr que le DG valide un budget à ce niveau-là. Faut que je lui en parle, c'est lui qui tranche sur les montants importants.",
+        "sous_texte": "Objection-écran. Soit je n'ai vraiment pas le budget et je cherche une porte de sortie, soit je teste votre réaction face à l'autorité supérieure pour voir si vous me challengez ou si vous acceptez de monter au DG (ce que je refuse car je veux décider seul).",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier le budget réel, explorer si le DG valide ou juste signe, recentrer sur sa capacité à recommander, proposer outils pour qu'il défende le dossier"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut qu'on soit honnêtes là : votre solution elle est clairement premium. GlobalSoft me propose quasiment la même chose pour 35K€ de moins sur 3 ans. Vous comprenez mon dilemme...",
+        "sous_texte": "Négociation tactique. Je vous pousse à baisser votre prix. Mais aussi, je cherche sincèrement à comprendre si le delta vaut vraiment le coup. Si vous cédez trop vite, je perds confiance en votre valeur. Si vous ne justifiez pas, je prends l'autre.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement, déconstruire la comparaison (est-ce vraiment la même chose ?), quantifier la valeur différentielle, proposer compromis sur structure pas sur prix"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas que votre offre est pas bien hein, mais là j'ai besoin de temps pour comparer tout ça à tête reposée avec mes équipes. On se rappelle dans 15 jours ?",
+        "sous_texte": "Je procrastine parce que la décision m'angoisse. Si je choisis mal, ma tête est sur le billot. Repousser me soulage temporairement. Soit vous me forcez gentiment à avancer, soit je vais laisser traîner et peut-être prendre le moins cher par défaut pour en finir.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Identifier la vraie cause du retard, créer urgence légitime, proposer étape intermédiaire engageante, sécuriser avec garantie réversibilité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là franchement je suis tiraillé. TechPro ils sont moins chers, vous vous avez le meilleur accompagnement, GlobalSoft ils ont des références que je connais... Je sais plus trop quoi penser.",
+        "sous_texte": "Paralysie décisionnelle réelle. Trop d'informations, peur de l'erreur. J'attends inconsciemment que VOUS m'aidiez à décider en hiérarchisant MES critères. Si vous me laissez dans ce brouillard, je vais prendre le moins risqué (le moins cher ou l'actuel).",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reformuler ses 3 critères clés, l'aider à pondérer selon SES priorités stratégiques, proposer grille décision, assumer les limites de son offre sur 1 point"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je dis pas non hein, mais faudrait quand même que vous fassiez un geste sur le tarif. Si vous alignez TechPro à 5% près, je signe aujourd'hui.",
+        "sous_texte": "Test final. Je veux voir si vous défendez votre valeur ou si vous cédez. Si vous baissez trop facilement, je me demande si vous ne m'aviez pas gonflé le prix initial. Mais si vous refusez brutalement sans compromis, je peux aller voir ailleurs par principe.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas s'effondrer, rappeler la valeur différentielle, proposer concession sur structure/services additionnels pas sur prix de base, obtenir engagement ferme écrit"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais attendez, si dans 6 mois ça fonctionne pas, je fais comment moi ? Je peux pas me permettre de rester coincé avec une solution qui marche pas. OptiFleet au moins je les connais...",
+        "sous_texte": "Peur viscérale de l'irréversibilité. Le souvenir de mon échec digital précédent me hante. Je suis PRESQUE convaincu, mais j'ai besoin d'un filet de sécurité pour oser sauter. Donnez-moi une porte de sortie crédible et je signe.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer clause satisfait-remboursé ou réversibilité première année, garantir accompagnement renforcé phase 1, structurer en jalons validés"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, on va faire comme ça : vous me laissez 48h, je finalise ma grille de comparaison avec Valérie ma chef de projet, je représente ça au COMEX vendredi, et je vous rappelle lundi avec une décision. Mais je vous préviens, faudra vraiment que vous soyez compétitifs sur le prix final parce que là, entre nous, TechPro ils sont vraiment agressifs.",
+      "condition_declenchement": "Si le commercial a bien défendu la valeur mais n'a pas créé d'urgence suffisante ni obtenu d'engagement ferme. Stéphane temporise une dernière fois tout en gardant la pression sur le prix. C'est le moment de vérité : soit on sécurise un engagement conditionnel maintenant, soit on perd dans le brouillard concurrentiel."
+    },
+    "pattern_escalade": "Stéphane commence par des objections-réflexes de protection (manque de temps, concurrence déjà en place). Si le commercial résiste professionnellement, il passe à des objections sincères sur ses vraies peurs (risque d'échec, complexité multi-sites, crédibilité interne). En phase finale, il alterne tactiquement entre objections prix (pour négocier) et demandes de sécurisation (pour se rassurer). Plus on avance, plus ses objections révèlent son anxiété décisionnelle et son besoin d'être guidé sans être brusqué. Le piège : il peut paraître convaincu mais procrastiner indéfiniment par peur.",
+    "piege_classique": "Stéphane donne l'impression d'être rationnel et uniquement focalisé sur le prix/ROI. ERREUR : son vrai frein est ÉMOTIONNEL (peur de l'échec public après son dernier projet raté, besoin de prouver sa valeur au DG). Un commercial qui ne traite que les objections rationnelles et baisse son prix sans sécuriser émotionnellement Stéphane (références vérifiables, clause de réversibilité, accompagnement renforcé) perdra face à un concurrent moins bon mais plus rassurant, ou pire, Stéphane restera sur OptiFleet par inertie. L'autre piège : il veut décider seul pour restaurer son ego, donc insister pour monter au DG le braque définitivement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_entreprises",
+      "description": "Fournisseur de solutions/services pour groupes multi-sites"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux groupes de services multi-sites de taille significative (200+ salariés)",
+      "proposition_valeur": "NON_SPECIFIE - à définir pour la simulation",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE - élément critique à développer pour la formation"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre la valeur de leur offre face à la concurrence, identifier les vrais critères de décision du décideur, et closer efficacement en situation de négociation avancée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Solution de gestion multi-sites",
+    "vous_etes": "Commercial chez FleetConnect Solutions, spécialiste des outils de gestion opérationnelle pour groupes de services multi-sites.",
+    "vous_vendez": "Plateforme de pilotage opérationnel multi-sites avec formation incluse — 198K€ sur 3 ans (possibilité de paiement one-shot avec remise à 185K€).",
+    "vous_appelez": "Stéphane Mercier, 48 ans, Directeur des Opérations chez Hexaservices Group (nettoyage industriel, 280 salariés, 14 sites). Pragmatique, méfiant, obsédé par les process. Sous pression du COMEX pour optimiser les coûts sans dégrader la qualité.",
+    "ce_que_vous_savez": [
+      "Il utilise OptiFleet Pro depuis 4 ans sur 9 sites, insatisfait du support (délais 48h) et du coût des modules",
+      "Budget 2025 voté à 185K€, contrat actuel expire dans 4 mois, certification ISO dans 11 mois",
+      "Croissance récente : 5 nouveaux sites avec outils disparates à harmoniser avant septembre",
+      "Deux concurrents en lice, dont TechPro Services moins cher",
+      "Il veut trancher seul et présenter SA solution au DG, échec récent sur un projet digital"
+    ],
+    "votre_objectif": "Closer la vente en défendant votre valeur face à la concurrence, sans céder sur le prix, en identifiant ses vrais critères de décision au-delà du tarif.",
+    "vos_atouts": [
+      "Accompagnement formation chefs de site inclus (contrairement à TechPro)",
+      "Module préparation ISO intégré, spécifique secteur services",
+      "Garantie satisfait première année avec clause réversibilité",
+      "Références vérifiables : 3 clients services multi-sites (Netpro, Facilitys, CleanCorp) — contacts directs fournis",
+      "Déploiement réaliste en 8 semaines avec votre chef de projet dédié"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:00:47Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15765,
+    "total_time_s": 154.1
+  }
+}

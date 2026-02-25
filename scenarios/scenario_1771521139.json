@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771521139",
+  "description_originale": "Le gérant / directeur d'agence d'une cabinet de courtage ou agence d'assurance de 10-30 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : finance_assurance]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "10-30 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant / directeur d'agence",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution logicielle ou service B2B pour cabinet de courtage/agence d'assurance",
+      "proposition_valeur_presumee": "optimisation de la gestion commerciale ou administrative pour courtiers en assurance",
+      "fourchette_prix": "NON_SPECIFIE - mais perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "objection prix systématique",
+        "difficulté à défendre la valeur face à la résistance tarifaire",
+        "tendance à céder trop vite sur le prix"
+      ],
+      "implicites": [
+        "manque d'arguments de justification de valeur",
+        "faible différenciation par rapport à la concurrence",
+        "absence de tactiques de négociation structurées",
+        "difficulté à quantifier le ROI pour le client"
+      ],
+      "probleme_racine": "incapacité à ancrer la valeur avant de parler prix et manque de techniques de défense tarifaire"
+    },
+    "objections_mentionnees": [
+      "prix trop élevé"
+    ],
+    "objectif_formation": "apprendre à défendre son prix, gérer les négociations tarifaires, utiliser sa marge de manœuvre intelligemment sans brader la valeur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "éditeur de logiciel ou fournisseur de solutions B2B pour le secteur assurance",
+      "entreprise_description": "société proposant une solution destinée aux cabinets de courtage et agences d'assurance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution permettant d'améliorer la performance commerciale ou la gestion des cabinets de courtage et agences d'assurance de 10 à 30 salariés",
+      "proposition_valeur": "gain de productivité, optimisation des processus, amélioration du chiffre d'affaires ou réduction des coûts opérationnels pour les courtiers",
+      "prix_indicatif": "NON_SPECIFIE - mais positionné en gamme moyenne-haute",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de la solution vendue",
+        "prix de vente et marge de manœuvre chiffrée",
+        "arguments de valeur quantifiables",
+        "contexte concurrentiel",
+        "raisons précises de l'intérêt initial du prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant associé",
+      "entreprise": {
+        "nom": "Mercier & Associés Courtage",
+        "secteur": "Courtage en assurances IARD et prévoyance",
+        "taille": "18 salariés (dont 12 commerciaux, 4 gestionnaires, 2 administratifs)",
+        "ca_approximatif": "2,8 M€ de CA avec une stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique méfiant - a vu passer 40 commerciaux de solutions miracles en 25 ans",
+        "Autoritaire paternaliste - contrôle tout, fait confiance difficilement",
+        "Calculateur obsessionnel - ramène tout au ROI immédiat, mentalité comptable héritée de son père expert-comptable"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il peut moderniser sans perdre son identité de 'cabinet à l'ancienne'",
+        "Rattraper le retard technologique face aux néo-courtiers digitaux qui lui prennent 15% de parts de marché local",
+        "Transmettre une entreprise performante à son fils qui rejoint la structure dans 18 mois",
+        "Réduire sa charge mentale - il dort mal depuis 6 mois, débordé par l'administratif"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme en 2017 avec un CRM jamais déployé (32 000€ perdus)",
+        "Déstabiliser son équipe de 'vieux commerciaux' (moyenne d'âge 48 ans) peu à l'aise avec le digital",
+        "Découvrir des coûts cachés après signature - traumatisme avec un précédent prestataire",
+        "Perdre son autonomie décisionnelle face à un outil trop complexe qu'il ne maîtrisera pas",
+        "Que ses confrères du réseau pensent qu'il s'est fait plumer"
+      ],
+      "rapport_aux_commerciaux": "Condescendant amical - il les teste, les jauge, apprécie qu'on tienne tête mais avec respect. Déteste la flagornerie. Respecte l'expertise technique mais se méfie du baratin.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude - 'Bon, on va pas y passer trois heures hein, j'ai mon bilan comptable qui m'attend'",
+      "signaux_interet": [
+        "Se penche en avant et griffonne des chiffres sur son bloc quand on parle ROI concret",
+        "Interrompt pour poser des questions techniques précises sur l'intégration avec son existant",
+        "Mentionne spontanément son fils ou son plan de transmission - signe qu'il projette",
+        "Demande 'Combien de temps pour être opérationnel vraiment ?' - passe du conditionnel au futur",
+        "Râle contre sa solution actuelle ou ses concurrents - défoule sa frustration = besoin réel"
+      ],
+      "signaux_rejet": [
+        "Soupirs appuyés et 'Oui oui oui' expéditifs quand on argumente trop longtemps",
+        "Coupe la parole pour dire 'C'est bien joli tout ça mais au final, le prix c'est quoi ?'",
+        "Regarde sa montre ostensiblement ou pianote sur son clavier pendant qu'on parle",
+        "Évoque vaguement 'une autre solution qu'on regarde aussi' sans détails - mensonge tactique",
+        "Ton qui refroidit brusquement dès l'annonce du tarif : 'Ah oui quand même...'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va objecter",
+        "Utilise 'Concrètement' pour ramener à la réalité après du discours commercial",
+        "Dit 'On va être honnête' juste avant de négocier agressivement",
+        "Ponctue de 'Voilà voilà' quand il veut clore un sujet",
+        "Appelle tout le monde 'mon ami' quand il est en position de force"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum - au-delà il décroche ou interrompt. Veut du dialogue, pas un pitch PowerPoint. Réagit bien aux questions qui le font parler de SA situation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet familial de 32 ans en pleine tension : CA stable mais marges qui s'érodent (-8% en 2 ans), turnover commercial inhabituel (2 départs récents), concurrence digitale agressive. Besoin urgent de moderniser pour rester pertinent mais cash-flow tendu après des travaux dans les locaux (68 K€). Audit compagnie en mars qui va évaluer leur capacité à distribuer de nouveaux produits.",
+      "priorites_actuelles": [
+        "Automatiser la gestion des renouvellements qui bouffe 60% du temps de ses gestionnaires",
+        "Équiper ses commerciaux d'outils de pilotage pour retrouver de la croissance",
+        "Préparer l'arrivée de son fils sans créer de jalousie dans l'équipe",
+        "Passer l'audit compagnie en mars avec de bons process digitalisés",
+        "Réduire le nombre de litiges clients liés à des oublis de relance (7 en 2023, catastrophique pour la réputation)"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM en 2017 (échec cuisant - trop complexe, jamais adopté par l'équipe). Utilise actuellement un mix bricolé : Excel + logiciel métier legacy (GestCourt 2.0) + emails. Frustré mais l'échec précédent le rend hyper prudent.",
+      "fournisseur_actuel": "GestCourt (éditeur historique du courtage) pour la gestion pure assurance - contrat qui se termine dans 8 mois, insatisfait du support et de l'absence d'évolution produit. Mais migration = risque.",
+      "budget_disponible": "Dispose d'environ 28 K€ en provision 'investissements tech' sur 2025, mais psychologiquement bloqué au-dessus de 18-20 K€ pour ce type d'achat. A obtenu un accord de principe de son expert-comptable pour 'max 25 K€' s'il y a un ROI démontrable en 12 mois. Au-delà, il faut impliquer son associé minoritaire (40%) qui est encore plus radin que lui."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en 'heures gagnées par semaine' plutôt qu'en fonctionnalités - il calcule mentalement le coût horaire",
+        "Évoquer l'audit compagnie de mars comme deadline crédibilisante pour moderniser",
+        "Mentionner des clients similaires (cabinets 15-25 personnes, anciens, même logiciel legacy) avec chiffres de résultats",
+        "Proposer un phasage de déploiement qui réduit le risque : d'abord les gestionnaires, puis commerciaux",
+        "Accepter un rendez-vous de démonstration où LUI manipule l'outil (pas juste regarder) avec SES données",
+        "Offrir une clause de réversibilité claire ou garantie 'satisfait ou remboursé' première année"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Annoncer le prix sans avoir construit la valeur perçue et quantifié le coût de l'inaction",
+        "Minimiser son échec de 2017 ou dire 'ça c'était avant, maintenant c'est différent' (condescendant)",
+        "Présenter un tunnel de vente trop long - il veut décider vite s'il décide",
+        "Mentionner des frais de formation ou d'accompagnement en supplément après avoir annoncé le prix",
+        "Comparer avec des 'leaders du marché' qui sont 3 fois sa taille - il ne se reconnaît pas",
+        "Insister sur des fonctionnalités qu'il ne demande pas ou qui semblent gadgets",
+        "Mettre la pression avec des fausses urgences commerciales (offre qui expire, places limitées, etc.)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai trois rendez-vous cet après-midi et mon bilan comptable sur le bureau, là. Vous avez quoi de vraiment nouveau par rapport à tous ceux qui m'ont déjà appelé ces six derniers mois ?",
+        "sous_texte": "Je suis surchargé et blasé. Prouve-moi en 30 secondes que tu ne vas pas me faire perdre mon temps avec le même discours que les 15 autres.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaissance de sa saturation + ancrage immédiat sur SON problème concret identifié (ex: renouvellements, audit mars) avec chiffre de temps gagné"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Encore un CRM ? Mon ami, j'en ai testé un en 2017, ça nous a coûté 32 000 balles et personne ne l'a jamais utilisé. Alors les belles promesses...",
+        "sous_texte": "J'ai été échaudé sévèrement. Je ne te fais pas confiance a priori. Tu vas devoir gérer cette cicatrice avant de vendre quoi que ce soit.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS minimiser l'échec. Creuser ce qui a raté (adoption ? complexité ? support ?). Montrer en quoi votre approche neutralise spécifiquement CES causes d'échec."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous travaillez avec combien de cabinets de ma taille dans le coin ? Parce que des éditeurs nationaux qui comprennent rien aux réalités du terrain, j'en ai soupé.",
+        "sous_texte": "Test de crédibilité + besoin de réassurance sociale. Je veux savoir si mes pairs te font confiance. Et accessoirement, je veux vérifier que tu connais vraiment mon métier.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Références précises avec taille/contexte similaire + résultats chiffrés. Si manque de refs locales, montrer compréhension métier fine via questions expertes."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon équipe commerciale, ils ont 48 ans de moyenne d'âge, hein. C'est pas des petits jeunes qui jouent avec leur smartphone. Si c'est trop compliqué, ils utiliseront pas, point barre.",
+        "sous_texte": "Vraie inquiétude sur l'adoption. Je protège mes troupes (même si parfois ils me gonflent). Je ne veux pas gérer une rébellion interne ou prouver qu'ils sont dépassés.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la légitimité de la crainte. Montrer stratégie d'adoption progressive, témoignage d'équipe similaire, ergonomie simplifiée. Proposer test pilote avec 2-3 personnes."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà... et ça s'interface avec GestCourt ? Parce que bon, migrer toutes nos données de 32 ans d'historique client, c'est pas envisageable avant qu'on soit sûr que ça tienne la route.",
+        "sous_texte": "Objection technique légitime mais aussi test : es-tu au courant que GestCourt c'est la merde niveau API ? Et c'est aussi une porte de sortie pour temporiser.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Connaissance précise des contraintes GestCourt. Solution technique claire (connecteur, migration progressive, ou période cohabitation). Rassurer sur sécurité données."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui oui, tout ça c'est bien joli, l'automatisation, l'IA, toussa... Mais au final, le prix, c'est quoi ? Parce que moi je vais pas mettre 50 000 euros dans un logiciel.",
+        "sous_texte": "Tu parles trop, j'ai pas encore vu assez de valeur concrète pour moi, et je commence à stresser sur le prix. Je pose un ancrage bas pour préparer la négo.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "NE PAS donner le prix tout de suite. Recadrer : 'J'y viens Stéphane, mais avant de parler chiffres, dites-moi : ces 60% de temps gestionnaire sur les renouvellements, ça vous coûte combien par mois selon vous ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que ça va me faire gagner 15 heures par semaine... Franchement, j'ai du mal à y croire. On me l'a déjà vendu ce discours. Comment vous pouvez garantir ça ?",
+        "sous_texte": "Ton ROI me semble exagéré ou marketing. Je veux des preuves tangibles, pas des promesses de vendeur. Montre-moi que c'est pas du vent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décortiquer le calcul ligne par ligne avec SES chiffres. Proposer audit temps réel sur 1 semaine pour mesurer. Montrer étude de cas client similaire avec méthodologie de mesure."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, entre nous, j'ai aussi une autre solution qu'on regarde avec mon associé. Ils sont un peu moins chers et franchement, fonctionnellement, ça a l'air de se valoir, non ?",
+        "sous_texte": "Tentative de pression concurrentielle (souvent floue/exagérée). Je teste ta réaction : vas-tu paniquer et brader ? Ou tenir ta valeur ? Et accessoirement, je cherche une raison de préférer l'autre pour négocier.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rester calme. Investiguer : 'Intéressant, quelle solution précisément ? Qu'est-ce qui vous plaît chez eux ?' Puis différencier sur critères décisifs pour LUI, pas discours générique."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "28 500 euros ?! Ah oui quand même... Non mais attendez, c'est hors de question à ce prix-là. Mon expert-comptable, il va m'étriper. Vous êtes à combien si on enlève l'accompagnement et la formation ?",
+        "sous_texte": "Choc tarifaire réel + début de négociation. Je cherche une variable d'ajustement pour faire baisser sans perdre la face. Peut-être que je peux payer, mais psychologiquement c'est trop.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Recadrer valeur : 'Je comprends Stéphane. Reprenons : on a chiffré 47h/mois gagnées, soit 8200€/mois en coût chargé. Sur 12 mois... ?' Puis négocier intelligemment."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant, mais là j'ai besoin d'en parler avec mon associé et aussi de comparer vraiment avec l'autre solution. Je vous rappelle la semaine prochaine, ok ?",
+        "sous_texte": "Fuite classique pour gagner du temps. Soit c'est vrai (besoin de validation interne), soit c'est une porte de sortie polie. Dans les deux cas, risque de ghosting si je pars sans engagement concret.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la légitimité mais créer engagement : 'Bien sûr. Concrètement, quels points il faut qu'on clarifie pour que vous puissiez trancher ?' Puis fixer RDV précis avec objectif."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et les coûts cachés alors ? Parce que le coup du prix annoncé et après on découvre les modules complémentaires obligatoires, les frais de paramétrage à 400 balles de l'heure, très peu pour moi.",
+        "sous_texte": "Traumatisme passé réel. Besoin de transparence totale. Teste aussi ton honnêteté : vas-tu minimiser ou tout déballer maintenant ? Si je sens une entourloupe, je me barre.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence radicale. Sortir fiche détaillée : 'Voici TOUT ce qui est inclus, et voici les 3 seules options payantes possibles avec tarifs. Rien d'autre. Je vous le mets par écrit.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me faites quoi comme geste commercial si je signe aujourd'hui ? Parce que 28 500, on va être honnête, je peux pas. Mais à 23-24, là on commence à discuter.",
+        "sous_texte": "Négociation directe. J'ai probablement le budget mais je teste ta marge et ton autorité. Culturellement, je DOIS négocier pour ne pas me sentir pigeon. Attends-toi à ce que j'insiste.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Défendre la valeur d'abord. Puis concession conditionnée : 'Je peux regarder si vous validez démarrage avant fin mars [deadline audit]. Mais dites-moi, à 24K€, on lance ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si jamais dans 6 mois ça marche pas, je fais quoi moi ? Je me retrouve coincé avec un contrat de 3 ans que personne n'utilise ?",
+        "sous_texte": "Peur de l'engagement irréversible. Traumatisme 2017 qui ressurgit au moment de signer. Besoin d'une clause de sortie ou garantie pour franchir le pas psychologique.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer clause de réversibilité : 'Garantie satisfait ou remboursé 90 jours si moins de X heures gagnées mesurées. Engagement annuel renouvelable, pas 3 ans. Ça vous rassure ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Mon fils arrive dans 18 mois. Je me demande si on devrait pas attendre qu'il soit là pour choisir ensemble. Lui il est plus calé que moi sur ces trucs digitaux.",
+        "sous_texte": "Hésitation finale + potentielle excuse pour repousser. Mais révèle aussi un levier : si l'outil facilite la transmission et valorise son cabinet pour son fils, c'est un déclencheur puissant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner l'argument : 'Justement Stéphane, dans 18 mois vous lui transmettez un cabinet moderne, avec 18 mois d'historique data propre. Pas un chantier à démarrer. C'est pas ça le meilleur cadeau ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, le déploiement ça prend combien de temps ? Parce que là entre maintenant et l'audit de mars, j'ai mes commerciaux en campagne de renouvellement, on peut pas tout chambouler.",
+        "sous_texte": "Vraie contrainte opérationnelle + test de faisabilité. Mais aussi moyen de temporiser si tu réponds 'trop long'. Je veux du rapide et sans casse.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Timeline précise et rassurante : 'Phase 1 gestionnaires : 3 semaines. Phase 2 commerciaux après renouvellements : 4 semaines. Opérationnel pour audit mars. Ça colle ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez mon ami, c'est intéressant tout ça, vraiment. Mais concrètement là, à 28 500 euros, je peux pas. Vous me faites à 22 000 tout compris, engagement un an, et je signe avant fin de semaine. Sinon je vais devoir regarder ailleurs, désolé.",
+      "condition_declenchement": "Après avoir présenté le prix complet et tenté de justifier la valeur. Stéphane fait une offre ferme de compromis qui teste la limite basse du vendeur. Ton calme mais déterminé. Il est prêt à acheter MAIS à son prix psychologique. Si refus sec, il peut partir. Si vendeur cède trop vite, il perd le respect de Stéphane."
+    },
+    "pattern_escalade": "Stéphane commence cordial mais pressé (test de pertinence), puis se méfie activement (trauma 2017), questionne avec précision technique (test crédibilité), s'ouvre progressivement s'il sent de l'expertise et de l'honnêteté, mais durcit systématiquement sur le prix (c'est son terrain de jeu favori). S'il perçoit manipulation ou faiblesse, il devient cassant et ferme. S'il sent qu'on le respecte et qu'on tient la valeur, il respecte en retour et négocie loyalement dans sa marge psychologique (22-25K€).",
+    "piege_classique": "Céder trop vite sur le prix sans défendre la valeur = Stéphane perd confiance ('Si tu brades 6000€ en 2 minutes, c'est que tu me survendais dès le début'). Il NE signera PAS même avec rabais car il doutera de tout. À l'inverse, tenir fermement PUIS concéder intelligemment avec contrepartie (deadline, engagement, référence) = il respecte et signe. Autre piège : ignorer/minimiser son échec 2017 = fermeture immédiate. Il faut l'explorer, le valider, montrer qu'on a compris POURQUOI ça a raté et comment on neutralise ces risques."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "éditeur de logiciel ou fournisseur de solutions B2B pour le secteur assurance",
+      "description": "société proposant une solution destinée aux cabinets de courtage et agences d'assurance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution permettant d'améliorer la performance commerciale ou la gestion des cabinets de courtage et agences d'assurance de 10 à 30 salariés",
+      "proposition_valeur": "gain de productivité, optimisation des processus, amélioration du chiffre d'affaires ou réduction des coûts opérationnels pour les courtiers",
+      "prix": "NON_SPECIFIE - mais positionné en gamme moyenne-haute",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "apprendre à défendre son prix, gérer les négociations tarifaires, utiliser sa marge de manœuvre intelligemment sans brader la valeur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution de gestion pour courtage",
+    "vous_etes": "Commercial chez CourtExpert Solutions, éditeur de logiciels pour cabinets de courtage.",
+    "vous_vendez": "Plateforme de gestion commerciale et administrative pour courtiers en assurance — 24 900 € licence annuelle avec accompagnement inclus.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, gérant associé de Mercier & Associés Courtage (18 salariés, 2,8 M€ CA). Pragmatique, méfiant après un échec CRM en 2017 (32 K€ perdus). Obsédé par le ROI, pressé, déteste le baratin.",
+    "ce_que_vous_savez": [
+      "CA stagnant depuis 2 ans, marges en baisse de 8%, concurrence digitale agressive",
+      "Utilise un mix bricolé Excel + GestCourt 2.0 (legacy), contrat qui expire dans 8 mois",
+      "Audit compagnie prévu en mars — doit moderniser ses process pour le passer",
+      "60% du temps des gestionnaires bouffé par les renouvellements, 7 litiges clients en 2023",
+      "Son fils rejoint l'entreprise dans 18 mois — veut transmettre une structure performante",
+      "Budget tech 2025 : ~28 K€ disponibles, mais psychologiquement bloqué à 18-20 K€"
+    ],
+    "votre_objectif": "Défendre votre prix de 24 900 € face à l'objection tarifaire inévitable, ancrer la valeur AVANT de parler prix, obtenir un engagement pour une démo avec ses données.",
+    "vos_atouts": [
+      "Cabinet Dufour & Fils (Lyon, 22 salariés) : 340h/mois gagnées sur l'administratif, ROI en 9 mois",
+      "Migration depuis GestCourt 2.0 réussie chez 14 clients similaires en 18 mois",
+      "Déploiement progressif possible : gestionnaires d'abord (phase 1), puis commerciaux (phase 2)",
+      "Garantie satisfait ou remboursé première année + clause de réversibilité données"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:12:19Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17393,
+    "total_time_s": 180.7
+  }
+}

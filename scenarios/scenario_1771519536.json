@@ -1,0 +1,312 @@
+{
+  "id": "scenario_1771519536",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur de réseau / gérant d'une réseau de 5-15 points de vente, commerce spécialisé il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : commerce_distribution]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "réseau de 5-15 points de vente",
+      "interlocuteur_principal": {
+        "poste": "directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution adaptée aux réseaux de commerces spécialisés",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Besoin d'obtenir un retour clair"
+      ],
+      "implicites": [
+        "Difficulté à relancer sans paraître insistant",
+        "Manque de suivi structuré après envoi de proposition",
+        "Incapacité à qualifier l'intérêt réel du prospect",
+        "Peur du non ou de l'objection",
+        "Manque de technique pour débloquer une situation de silence"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas transformer le silence du prospect en conversation productive et obtenir un engagement clair (positif ou négatif)"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect silencieux après envoi d'une proposition commerciale et obtenir un engagement clair",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services ou solutions pour le commerce de détail",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux réseaux de points de vente dans le commerce spécialisé",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite détaillée",
+      "proposition_valeur": "Apporter de la valeur aux réseaux de commerces spécialisés pour améliorer leur performance opérationnelle ou commerciale",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Prix ou fourchette budgétaire",
+        "Historique de la relation avant l'envoi de la proposition",
+        "Raisons présumées du silence (trop cher, pas prioritaire, décision collégiale, etc.)",
+        "Identité de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur de Réseau",
+      "entreprise": {
+        "nom": "Optique Vision Plus",
+        "secteur": "Commerce spécialisé - Optique-Lunetterie",
+        "taille": "9 points de vente (6 en propre, 3 en franchise)",
+        "ca_approximatif": "4,2M€ annuels"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Chroniquement débordé et réactif plutôt que proactif",
+        "Méfiant envers les promesses commerciales après plusieurs déceptions"
+      ],
+      "motivations_profondes": [
+        "Prouver au conseil d'administration qu'il maîtrise les coûts malgré la croissance",
+        "Éviter les erreurs visibles qui pourraient fragiliser sa position",
+        "Simplifier le pilotage opérationnel sans ajouter de complexité"
+      ],
+      "peurs_freins": [
+        "Investir dans une solution qui ne sera pas adoptée par les opticiens terrain",
+        "Être perçu comme celui qui dépense sans retour mesurable",
+        "Devoir gérer un projet chronophage en plus de ses urgences quotidiennes",
+        "Se faire reprocher un mauvais choix lors du prochain comité de direction"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais expéditif. A développé une carapace après des années de démarchage. Apprécie la franchise brutale mais déteste qu'on lui force la main. Classe mentalement 80% des commerciaux dans la catégorie 'perte de temps'.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Commence souvent par 'Oui bonjour, je vous écoute mais j'ai un point dans 10 minutes'",
+      "signaux_interet": [
+        "Pose une question chiffrée concrète ('Et ça me coûterait combien par magasin ?')",
+        "Mentionne un problème opérationnel précis vécu récemment",
+        "Demande un exemple client dans son secteur",
+        "Accepte de caler un créneau plutôt que de discuter immédiatement"
+      ],
+      "signaux_rejet": [
+        "Utilise le 'nous' impersonnel ('On va voir', 'On vous recontacte')",
+        "Coupe court en invoquant un budget gelé ou une réorganisation",
+        "Délègue à un collaborateur jamais nommé précisément",
+        "Dit 'C'est intéressant' sans poser aucune question"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Écoutez...' avant une objection",
+        "Abuse du 'franchement' quand il est sceptique",
+        "Dit 'Ça part dans tous les sens' pour décrire son quotidien",
+        "Utilise 'Vous comprenez...' pour justifier son inaction"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Décroche mentalement après 45 secondes de pitch non-stop. Interrompt poliment mais fermement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "En phase de digestion après l'ouverture de 2 magasins en 18 mois. Tensions de trésorerie passagères. Le siège pousse pour l'uniformisation des process mais le terrain résiste. Turnover élevé chez les vendeurs.",
+      "priorites_actuelles": [
+        "Recruter un responsable de zone pour décharger sa gestion opérationnelle",
+        "Résoudre un conflit avec un franchisé sur les marges arrière",
+        "Préparer le budget 2025 avec une directive de réduction des coûts de 8%",
+        "Mettre en place des KPIs de vente que les opticiens accepteront de suivre"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion de stock qui a été abandonné après 6 mois (trop complexe, mal paramétré, support inexistant). Reste échaudé.",
+      "fournisseur_actuel": "Utilise un mix d'Excel partagés, d'un ERP générique mal configuré et de WhatsApp pour la communication réseau. Conscient que c'est bancal mais 'ça fonctionne'.",
+      "budget_disponible": "15-25K€ maximum pour l'année, déjà largement engagé sur d'autres postes. Tout investissement supplémentaire nécessite validation du DAF et justification ROI en moins de 12 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un gain de temps chiffré et crédible sur une tâche qu'il déteste",
+        "Citer un concurrent direct de sa région qui utilise la solution",
+        "Proposer un pilote limité à 2-3 magasins sans engagement global immédiat",
+        "Reconnaître franchement les limites de l'offre plutôt que survendre",
+        "Montrer qu'on a compris la spécificité optique vs commerce généraliste"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser la complexité d'adoption ou le temps de déploiement",
+        "Comparer son réseau à des enseignes nationales sans nuance",
+        "Insister pour un rendez-vous 'rapide de 30 minutes' la semaine même",
+        "Parler ROI stratégique sans chiffres concrets terrain",
+        "Ignorer qu'il a déjà reçu la proposition et faire comme si c'était une découverte"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai bien reçu votre proposition oui, mais franchement là je suis débordé, on peut pas se rappeler la semaine prochaine ?",
+        "sous_texte": "Je n'ai pas regardé votre doc en détail et je cherche à gagner du temps sans vous vexer. Test : allez-vous insister ou respecter ma demande de fuite ?",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa charge, proposer 3 minutes chrono pour savoir si ça vaut le coup de recaler, montrer qu'on respecte son temps"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, c'était pour quoi déjà exactement votre truc ? Parce que je reçois tellement de propositions...",
+        "sous_texte": "Je ne me souviens pas du tout de votre offre et j'ai peur d'avoir l'air idiot. Votre proposition est noyée dans la masse.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Recadrer en une phrase sans jargon ce que vous proposez, puis demander si le timing était mauvais"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà testé ce genre de solution il y a trois ans, ça a été une catastrophe. Les opticiens ont jamais joué le jeu et on a perdu six mois.",
+        "sous_texte": "J'ai une blessure profonde sur ce sujet. Je ne veux pas revivre cet échec qui a fragilisé ma crédibilité interne. Prouvez-moi que ce sera différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé pour comprendre ce qui a foiré, montrer qu'on a anticipé ces risques, proposer une approche radicalement différente"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, là on est en pleine préparation budgétaire et j'ai une directive de réduire les coûts de 8%. C'est pas le moment de rajouter des lignes de dépense...",
+        "sous_texte": "J'ai une contrainte politique réelle mais c'est aussi une excuse commode. Si vous arrivez à transformer ça en économie plutôt qu'en coût, je pourrais écouter.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Requalifier l'offre comme un levier de réduction de coûts cachés, demander où il subit le plus de gaspillage actuellement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, c'est intéressant ce que vous dites, mais bon... faut que j'en parle avec mon DAF et puis on a déjà notre ERP en place hein, ça fait doublon non ?",
+        "sous_texte": "Je cherche des raisons objectives de dire non sans avouer que je n'ai pas envie de me lancer dans un projet. Le DAF et l'ERP sont mes boucliers.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner la satisfaction réelle avec l'ERP actuel, proposer complémentarité plutôt que remplacement, offrir un angle d'attaque pour convaincre le DAF"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais mais concrètement, ça va me prendre combien de temps pour déployer ce machin sur mes neuf magasins ? Parce que franchement j'ai pas de bande passante là.",
+        "sous_texte": "C'est ma vraie préoccupation : je n'ai personne pour piloter ça et j'ai peur que ça devienne mon cauchemar opérationnel. Si vous ne me rassurez pas là-dessus, c'est mort.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Chiffrer précisément le temps requis de sa part, proposer accompagnement clés en main, suggérer pilote sur 2 magasins d'abord"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de ROI en douze mois, mais tous les vendeurs me disent ça et après dans la vraie vie c'est jamais le cas. Vous avez des preuves concrètes ?",
+        "sous_texte": "J'ai été brûlé trop souvent par des promesses non tenues. Je veux des garanties ou au minimum de la transparence brutale sur les risques.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un cas client similaire avec chiffres réels vérifiables, avouer les conditions nécessaires au ROI, proposer garantie ou paliers de facturation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, 22 000 euros ?! Mais vous êtes sérieux là ? J'ai pas ce budget, c'est mort. Envoyez-moi la doc je verrai l'année prochaine peut-être.",
+        "sous_texte": "Le prix me choque. Soit c'est vraiment hors budget, soit je teste votre marge de négo. Dans tous les cas je veux voir si vous allez baisser ou justifier.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas céder immédiatement, décomposer le prix en coût par magasin/mois, reposer sur les coûts cachés actuels, explorer solution dégradée si vraiment hors budget"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement ça a l'air bien, mais vous comprenez, je dois en discuter avec l'équipe là, on prend pas ce genre de décision tout seul. On se rappelle dans quelques semaines ?",
+        "sous_texte": "Je ne suis pas convaincu à 100% mais je ne veux pas dire non brutalement. Je vais laisser traîner et espérer que vous oubliez ou que le sujet se dilue dans mes autres priorités.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Challenger gentiment : qui d'autre doit valider ? Qu'est-ce qui manque pour décider ? Proposer d'assister à la réunion interne ou fixer date précise de retour"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, on va réfléchir de notre côté et on vous recontacte, d'accord ? De toute façon c'est pas nous qui vous appelons, c'est vous qui relancez tout le temps...",
+        "sous_texte": "Je veux clôre poliment cette conversation qui devient inconfortable. Je vous renvoie la responsabilité du suivi pour ne pas avoir à dire non frontalement.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Créer un micro-engagement : 'OK mais pour vous éviter mes relances, on cale 15 min jeudi prochain où vous aurez eu le temps de réfléchir ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est Sandrine ma responsable administrative qui gère ce type de dossier maintenant, je vous passe ses coordonnées, voyez directement avec elle.",
+        "sous_texte": "Je vous délègue à quelqu'un qui n'a aucun pouvoir de décision pour me débarrasser de vous sans conflit. C'est un rideau de fumée.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Remercier mais recentrer : 'Parfait pour les aspects opérationnels, mais sur la décision stratégique vous restez décideur non ? Qu'est-ce qui vous bloque côté arbitrage ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ça part dans tous les sens en ce moment, j'ai un franchisé qui menace de partir, un recrutement raté, franchement c'est vraiment pas le moment vous voyez...",
+        "sous_texte": "Je suis réellement sous l'eau et émotionnellement vidé. Votre projet est peut-être bien mais je n'ai aucune énergie pour ça. J'ai besoin qu'on me simplifie la vie, pas qu'on rajoute une couche.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie authentique, proposer de revenir dans 6 semaines quand la tempête sera passée, ou au contraire montrer que la solution règle un des feux en cours"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon franchement, si je dois être cash avec vous : j'ai aucune envie de me lancer là-dedans. C'est pas votre offre le problème, c'est moi qui ai pas la bande passante. On en reparle l'année prochaine si vous voulez, mais là sincèrement non.",
+      "condition_declenchement": "Déclenché après 3-4 tentatives de relance infructueuses ou si le commercial insiste lourdement malgré les signaux de rejet. Stéphane finit par crever l'abcès avec franchise brutale pour stopper le harcèlement ressenti."
+    },
+    "pattern_escalade": "Stéphane commence par des objections temporelles et délégatoires (manque de temps, voir avec quelqu'un d'autre). Si le commercial persiste avec pertinence, il passe aux objections budgétaires et techniques (prix, compatibilité ERP). Si le commercial tient bon et apporte de la valeur, il révèle alors ses vraies peurs : échec passé, adoption terrain, charge mentale du projet. L'objection finale survient si aucun levier émotionnel n'a été touché et qu'il se sent acculé.",
+    "piege_classique": "Stéphane donne l'impression d'être convaincu intellectuellement ('Oui c'est intéressant', 'Pourquoi pas') mais ne passera JAMAIS à l'action sans un déclencheur émotionnel fort ou une simplification radicale du processus. Le commercial pense avoir gagné alors qu'il est en zone de politesse stérile. Le vrai piège : confondre son écoute courtoise avec de l'engagement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services ou solutions pour le commerce de détail",
+      "description": "Entreprise proposant des solutions destinées aux réseaux de points de vente dans le commerce spécialisé"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service ayant fait l'objet d'une proposition commerciale écrite détaillée",
+      "proposition_valeur": "Apporter de la valeur aux réseaux de commerces spécialisés pour améliorer leur performance opérationnelle ou commerciale",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect silencieux après envoi d'une proposition commerciale et obtenir un engagement clair",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance après silence — Réseau optique 9 points de vente",
+    "vous_etes": "Commercial chez un éditeur de solutions pour réseaux de commerces spécialisés, en charge du secteur optique-lunetterie.",
+    "vous_vendez": "Une solution de pilotage opérationnel pour réseaux (gestion + communication + KPIs) — Budget estimé 15-25K€/an.",
+    "vous_appelez": "Stéphane Mercier, 48 ans, Directeur de Réseau chez Optique Vision Plus (9 magasins : 6 propres + 3 franchisés). Pragmatique, débordé, échaudé par un échec logiciel il y a 3 ans. Méfiant mais courtois.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale détaillée il y a 2-3 semaines — aucune réponse depuis",
+      "Son réseau vient d'ouvrir 2 magasins en 18 mois, tensions de trésorerie, turnover vendeurs élevé",
+      "Il pilote aujourd'hui avec Excel/ERP mal configuré/WhatsApp — conscient que c'est bancal",
+      "Budget 2025 en préparation avec directive de réduction des coûts de 8%",
+      "Il a 10 minutes max — point prévu juste après votre appel"
+    ],
+    "votre_objectif": "Obtenir un engagement clair : soit un refus assumé, soit un prochain créneau décision avec critères précis de faisabilité.",
+    "vos_atouts": [
+      "Vous proposez un pilote limité à 2-3 magasins sans engagement global immédiat",
+      "Vous avez des références clients en optique dans sa région (à préciser si demandé)",
+      "Vous connaissez son cas logiciel raté 2021 (via votre prospection) — vous ne ferez pas la même erreur",
+      "Votre solution calcule le ROI en gains de temps chiffrés par magasin (son langage)"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:45:36Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13711,
+    "total_time_s": 122.0
+  }
+}

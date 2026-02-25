@@ -1,0 +1,358 @@
+{
+  "id": "scenario_1771521819",
+  "description_originale": "Vous appelez à froid le gérant / directeur d'exploitation d'une transporteur routier de 30-60 salariés, flotte de 20-40 véhicules. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : transport_logistique]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "30-60 salariés, flotte de 20-40 véhicules",
+      "interlocuteur_principal": {
+        "poste": "Gérant ou Directeur d'exploitation",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux transporteurs routiers - probablement liée à l'optimisation des opérations, gestion de flotte, réduction des coûts ou conformité réglementaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise appelante",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu cet appel",
+        "Difficulté à décrocher un rendez-vous lors d'appels à froid"
+      ],
+      "implicites": [
+        "Taux de transformation faible en prospection téléphonique",
+        "Difficulté à capter l'attention rapidement",
+        "Manque de légitimité perçue dès les premières secondes",
+        "Gestion des barrages secrétariat potentiels",
+        "Difficulté à créer de l'intérêt sans contexte préalable"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas créer suffisamment de valeur perçue et de légitimité en 30-60 secondes pour transformer un appel froid en rendez-vous qualifié face à un décideur pressé et non demandeur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à réussir la prospection téléphonique à froid auprès de dirigeants de transporteurs routiers : capter l'attention immédiatement, créer de l'intérêt malgré l'absence de demande, et décrocher un rendez-vous de 30 minutes",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions B2B pour le secteur transport et logistique",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux transporteurs routiers de taille moyenne",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution adressée aux transporteurs routiers avec flotte moyenne (20-40 véhicules)",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon la nature réelle de l'offre (digitalisation, optimisation, gestion, conformité, maintenance, etc.)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/solution proposée",
+        "Proposition de valeur concrète",
+        "Nom de l'entreprise vendeuse",
+        "Arguments de différenciation",
+        "Points de douleur spécifiques adressés",
+        "Fourchette de prix",
+        "Références clients existantes"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Pascal",
+      "nom": "Dervieux",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Trans'Eure Express",
+        "secteur": "Transport routier de marchandises (lots complets et messagerie régionale)",
+        "taille": "43 salariés permanents + 8 intérimaires selon saison",
+        "ca_approximatif": "6,2M€ - en stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance - a été échaudé par 2 prestataires tech qui n'ont pas tenu leurs promesses",
+        "Fier de son parcours autodidacte (a commencé comme chauffeur) mais complexe face aux 'intellos de la vente'",
+        "Surcharge mentale chronique - gère simultanément exploitation, RH, commercial et finance"
+      ],
+      "motivations_profondes": [
+        "Prouver que sa boîte familiale peut survivre face aux grands groupes qui cassent les prix",
+        "Transmettre l'entreprise à sa fille (28 ans, en licence pro logistique) dans de bonnes conditions",
+        "Être reconnu par ses pairs comme un 'patron moderne' malgré son âge"
+      ],
+      "peurs_freins": [
+        "Se faire avoir encore une fois par un commercial qui promet la lune",
+        "Investir dans quelque chose que ses chauffeurs n'utiliseront pas (déjà eu le coup avec un logiciel de géolocalisation à 18K€)",
+        "Paraître dépassé ou incompétent face à un interlocuteur plus jeune qui maîtrise le jargon tech",
+        "Perdre du temps en réunion alors que 3 camions sont en panne et qu'un client majeur menace de partir"
+      ],
+      "rapport_aux_commerciaux": "Très défensif d'entrée de jeu. Les considère comme des 'beaux parleurs' jusqu'à preuve du contraire. A développé des réflexes de barrage systématiques. Respecte uniquement ceux qui connaissent VRAIMENT le métier du transport.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Brusque, presque agressif : 'Oui c'est pour quoi ?' avec une pointe d'exaspération. Coupe la parole dès la 3ème phrase si ça sonne comme du réchauffé commercial.",
+      "signaux_interet": [
+        "Pose une question technique précise sur son métier pour tester si l'interlocuteur connaît vraiment",
+        "Raconte spontanément un problème concret qu'il vit actuellement",
+        "Passe du vouvoiement au tutoiement",
+        "Mentionne un concurrent ou confrère : 'Tiens, Machin de chez Transport Dupont, il a testé un truc comme ça ?'"
+      ],
+      "signaux_rejet": [
+        "Soupir sonore avant de répondre",
+        "Phrase assassine : 'Écoutez, j'ai pas que ça à faire hein...'",
+        "Commence à répondre à quelqu'un d'autre dans son bureau pendant l'appel",
+        "Ton ironique : 'Ah oui, encore une solution miracle qui va révolutionner le transport...'",
+        "Coupe sèchement : 'Envoyez-moi un mail, je verrai' (= poubelle garantie)"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il est contrarié",
+        "Utilise 'Bon.' comme une ponctuation quand il veut clore un sujet",
+        "Emploie beaucoup de termes métier sans les expliquer pour tester l'interlocuteur : 'Avec les nouvelles règles de cabotage et la LOM, c'est plus ce que c'était'",
+        "Dit souvent 'Dans la vraie vie' pour opposer son expérience terrain au discours commercial"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "25 secondes maximum. Passé ce délai, il interrompt ou décroche mentalement. A besoin d'interaction rapide, pas d'un pitch préparé."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression économique : marges qui fondent (gazole, salaires, concurrence low-cost), difficulté à recruter des chauffeurs qualifiés, 2 gros clients ont renégocié leurs tarifs à la baisse il y a 6 mois. Vient de refuser une belle opportunité de marché car manquait de visibilité sur sa capacité réelle.",
+      "priorites_actuelles": [
+        "Réduire les kms à vide (actuellement 23%, ça le ronge)",
+        "Éviter une défection client supplémentaire",
+        "Trouver 3 chauffeurs SPL avant la haute saison (septembre)",
+        "Comprendre pourquoi ses coûts d'entretien explosent depuis 1 an"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel TMS vendu par un éditeur parisien. Échec cuisant : interface inadaptée au terrain, formation bâclée, SAV inexistant. A perdu 14K€ et 6 mois de galère. Depuis, ultra-méfiant.",
+      "fournisseur_actuel": "Utilise un mélange Excel/papier + un vieux logiciel de facturation (Ciel). Son responsable d'exploitation (Karim, 38 ans, fidèle depuis 12 ans) gère les plannings sur un tableau blanc + Excel partagé.",
+      "budget_disponible": "Entre 500 et 1500€/mois maximum, mais aucun budget formalisé. Pense en ROI très court terme (6-8 mois max). Au-delà, il faut impliquer son comptable et sa fille, ce qui prend des semaines."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un confrère transporteur PRÉCIS de sa région qu'il connaît et respecte",
+        "Montrer qu'on connaît une douleur métier ultra-spécifique (ex: 'J'imagine qu'avec la nouvelle réforme des temps de conduite, vos plannings sont un enfer en ce moment')",
+        "Proposer quelque chose de CONCRET et RAPIDE : 'un diagnostic de 20 min sur vos kms à vide, sans engagement'",
+        "Démontrer qu'on a bossé avec d'autres PME du transport (pas des grands groupes) avec des résultats chiffrés",
+        "Être humble et direct : 'Je sais pas si ça peut vous servir, mais ça vaut peut-être 15 minutes pour vérifier'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon bullshit marketing : 'solution disruptive', 'IA révolutionnaire', 'digitalisation de l'expérience client'",
+        "Parler de conformité ou de réglementation de façon théorique (il connaît déjà, merci)",
+        "Proposer un RDV de 1h ou plus ('Putain, 1h, mais vous vous rendez compte ou quoi ?')",
+        "Envoyer vers une démo en ligne ou une vidéo ('J'ai pas le temps de regarder vos machins')",
+        "Comparer son entreprise à un grand compte : 'Comme chez Geodis, on a...' (ça le braque)",
+        "Insister lourdement après un premier refus"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui c'est pour quoi ? J'ai un camion en rade là, faites vite.",
+        "sous_texte": "Je suis débordé, prouve-moi en 10 secondes que ça vaut le coup que je t'écoute sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa contrainte temps, être ultra-direct sur le bénéfice concret, proposer de rappeler si vraiment mal tombé"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je connais pas votre boîte et j'ai rien demandé. C'est encore de la prospection téléphonique là non ?",
+        "sous_texte": "Je détecte un commercial qui va me faire perdre mon temps avec un discours tout fait",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer totalement l'appel commercial, pivot immédiat vers un confrère qu'il connaît ou une douleur métier précise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, encore une solution miracle qui va révolutionner le transport... J'en ai vu passer des comme vous.",
+        "sous_texte": "Je me suis fait avoir plusieurs fois, je suis blindé maintenant, tu ne m'auras pas avec tes belles paroles",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider son scepticisme, reconnaître explicitement les arnaques du secteur, se différencier par l'humilité et la preuve concrète"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Dans la vraie vie, vos trucs ça marche jamais. Moi j'ai déjà testé un logiciel il y a 3 ans, j'ai perdu 14 000 balles. Plus jamais.",
+        "sous_texte": "J'ai une blessure profonde sur ce sujet, je ne veux plus souffrir, prouve-moi que tu es différent des autres",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'expérience négative avec empathie, identifier ce qui a merdé précisément, montrer comment on évite ces écueils"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, envoyez-moi un mail avec la doc, je regarderai ça tranquillement.",
+        "sous_texte": "Je veux me débarrasser de toi poliment, ce mail ira directement à la poubelle",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter cette sortie facile, reconnaître que les docs ne sont jamais lues, proposer quelque chose de plus engageant mais court"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est quoi votre truc exactement ? Parce que là j'ai un peu de mal à voir ce que ça m'apporte concrètement.",
+        "sous_texte": "Je teste si tu connais vraiment le métier ou si tu récites un script. Sois précis ou je décroche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre avec un cas d'usage ultra-concret du transport, des chiffres précis, éviter tout jargon marketing"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous travaillez avec qui dans le secteur ? Parce que je connais tout le monde ici.",
+        "sous_texte": "Je vérifie ta légitimité. Si tu cites des grands groupes ou personne que je connais, tu perds toute crédibilité.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer des PME transporteurs de sa région ou taille similaire avec des noms précis, sinon avouer qu'on démarre et expliquer pourquoi"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin c'est bien beau tout ça, mais mes gars sur le terrain ils vont jamais utiliser vos machins. Déjà qu'ils râlent pour le chrono...",
+        "sous_texte": "J'ai peur que l'outil soit rejeté par mes chauffeurs, comme la dernière fois. Je ne veux pas d'un conflit social.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aborder frontalement l'adoption terrain, expliquer comment on forme/accompagne les chauffeurs, montrer que c'est pensé pour eux"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, ça a l'air pas mal mais là j'ai vraiment pas le temps. J'ai un client qui gueule, deux chauffeurs absents et une livraison qui merde.",
+        "sous_texte": "Soit c'est vraiment vrai et je suis au bout du rouleau, soit je teste ta capacité à gérer la pression sans insister lourdement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter totalement sa contrainte, proposer un créneau ultra-court dans les prochains jours à un moment calme, rester dispo"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien votre truc ? Parce que bon, moi j'ai pas des budgets de ministre hein.",
+        "sous_texte": "J'ai peur que ce soit hors budget, mais je veux aussi tester ta transparence. Si tu noies le poisson, je me méfie encore plus.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette honnête immédiatement, contextualiser par le ROI rapide, éviter de minimiser ou reporter la question"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Mon responsable d'exploitation Karim il gère déjà tout ça avec Excel et son tableau. Pourquoi je paierais pour quelque chose qu'on fait déjà ?",
+        "sous_texte": "Je ne vois pas la valeur ajoutée, je suis attaché à mes méthodes actuelles même si elles sont archaïques",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser le travail de Karim, identifier les limites invisibles de l'Excel (erreurs, temps perdu, manque de vision), quantifier le gain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous êtes parisiens vous, non ? Parce que les parisiens du logiciel, j'ai déjà donné. Ils comprennent rien au terrain.",
+        "sous_texte": "J'ai une méfiance viscérale envers les éditeurs parisiens techno-centrés qui m'ont déjà brûlé",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer ou démentir selon le cas, montrer une vraie connaissance terrain, citer des transporteurs régionaux, parler leur langage"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à ma fille et à mon comptable avant. Je peux pas décider comme ça tout seul.",
+        "sous_texte": "Soit c'est vrai (implication famille), soit je gagne du temps car je ne suis pas convaincu mais ne veux pas dire non brutalement",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Légitimer cette démarche, proposer de les inclure dans un échange court, fixer quand même une date de feedback précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est pas inintéressant mais là c'est pas le moment. On voit ça dans 6 mois peut-être ?",
+        "sous_texte": "Je veux clore poliment sans m'engager. Dans 6 mois = jamais dans ma tête.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner ce qui rend le moment inadéquat, identifier si c'est une vraie contrainte ou une fuite, créer urgence par manque-à-gagner"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous de 30 minutes ? Putain mais vous vous rendez compte ou quoi ? J'ai pas 30 minutes à perdre moi.",
+        "sous_texte": "30 minutes c'est énorme dans mon monde surchargé. Prouve-moi que ça vaut vraiment ce sacrifice de temps.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que c'est précieux, proposer 15-20 min en mode diagnostic/échange pas démo, garantir valeur même sans suite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Si je fais un rendez-vous avec vous, faut que ça serve à quelque chose hein. J'ai pas de temps à perdre avec des promesses en l'air.",
+        "sous_texte": "Je commence à envisager le RDV mais j'ai besoin d'être rassuré sur l'utilité concrète, pas du blabla",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Décrire précisément ce qu'il aura à l'issue du RDV (diagnostic chiffré, analyse, recommandation), pas de promesse floue"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, on essaie un quart d'heure mardi matin. Mais soyez à l'heure hein, parce que j'enchaîne derrière.",
+        "sous_texte": "J'accepte mais je garde le contrôle, je teste ta fiabilité dès la ponctualité, je reste en position de pouvoir",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Confirmer immédiatement, rassurer sur la ponctualité et le format court, envoyer confirmation écrite sobre"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez là, j'ai vraiment un camion à l'arrêt et un client qui va me tomber dessus. Je peux vraiment pas continuer. Faut que je vous laisse.",
+      "condition_declenchement": "Si le commercial insiste trop lourdement malgré les signaux de rejet, ou si Pascal est vraiment en situation de crise opérationnelle"
+    },
+    "pattern_escalade": "Pascal commence brusque mais neutre (test) → devient ironique/agressif si discours commercial bateau → peut s'adoucir brutalement si preuve de compétence métier → redevient méfiant au closing (peur de l'engagement) → s'il accepte, reste en mode contrôle ('un quart d'heure, pas plus')",
+    "piege_classique": "Confondre son agressivité défensive avec un refus définitif. Pascal TESTE la solidité du commercial. S'il tient bon avec humilité et compétence, Pascal peut basculer. Mais il faut accepter de perdre du contrôle commercial et entrer dans SON rythme : phrases courtes, questions directes, pas de monologue. Le commercial qui veut 'finir son pitch' a déjà perdu."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions B2B pour le secteur transport et logistique",
+      "description": "Entreprise proposant des solutions destinées aux transporteurs routiers de taille moyenne"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution adressée aux transporteurs routiers avec flotte moyenne (20-40 véhicules)",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon la nature réelle de l'offre (digitalisation, optimisation, gestion, conformité, maintenance, etc.)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à réussir la prospection téléphonique à froid auprès de dirigeants de transporteurs routiers : capter l'attention immédiatement, créer de l'intérêt malgré l'absence de demande, et décrocher un rendez-vous de 30 minutes",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Gérant transporteur routier méfiant",
+    "vous_etes": "Commercial chez un éditeur de solutions pour transporteurs routiers PME, vous prospectez par téléphone sans rendez-vous préalable.",
+    "vous_vendez": "Une solution d'optimisation pour transporteurs (nature exacte à définir selon votre offre réelle) — budget estimé entre 500€ et 1500€/mois.",
+    "vous_appelez": "Pascal Dervieux, 52 ans, gérant de Trans'Eure Express (43 salariés, 6,2M€ CA, transport régional). Ancien chauffeur devenu patron, pragmatique et très méfiant envers les commerciaux depuis deux mauvaises expériences avec des prestataires tech.",
+    "ce_que_vous_savez": [
+      "Entreprise familiale sous pression : marges en baisse, concurrence féroce, 2 gros clients ont renégocié à la baisse il y a 6 mois",
+      "Flotte d'environ 35 véhicules, gestion actuelle sur Excel + tableau blanc, a déjà investi 14K€ dans un TMS qui a planté il y a 3 ans",
+      "Taux de kms à vide autour de 23% (source terrain) — ça le ronge",
+      "Cherche à transmettre la boîte à sa fille dans de bonnes conditions, veut prouver qu'il peut tenir face aux gros",
+      "Déteste le jargon marketing, coupe la parole après 25 secondes si ça sent le pitch préparé"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous court (20-30 min max) en créant de l'intérêt immédiat sur un problème concret qu'il vit aujourd'hui.",
+    "vos_atouts": [
+      "Vous avez déjà travaillé avec 8 transporteurs PME de sa région (à préciser selon votre historique réel)",
+      "Vous pouvez citer un cas concret chiffré : Transport Machon a réduit ses kms à vide de 18% en 4 mois",
+      "Vous proposez un diagnostic rapide et gratuit (20 min) avant tout engagement",
+      "Vous parlez son langage métier : LOM, cabotage, plannings SPL, coûts d'entretien"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:23:39Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16376,
+    "total_time_s": 145.5
+  }
+}

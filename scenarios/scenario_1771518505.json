@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771518505",
+  "description_originale": "Vous appelez une éditeur SaaS de 150-300 salariés, plusieurs produits, marché B2B. L'office manager du DSI ou VP Sales décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : tech_saas]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "DSI ou VP Sales",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Office Manager",
+          "role": "barrage",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B probablement destinée aux éditeurs SaaS",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'office manager",
+        "Accès au décideur bloqué par un filtre professionnel"
+      ],
+      "implicites": [
+        "Discours commercial probablement trop générique",
+        "Manque de légitimité perçue lors du premier contact",
+        "Difficulté à créer de la valeur dès les premières secondes",
+        "Incapacité à différencier l'appel des autres sollicitations commerciales"
+      ],
+      "probleme_racine": "Absence de stratégie de contournement élégant des gatekeepers et de proposition de valeur immédiate qui justifie le transfert vers le décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrages téléphoniques, créer une première impression professionnelle et légitime, obtenir le transfert vers le décideur et décrocher un RDV qualifié",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B, probablement services aux entreprises tech ou solution SaaS",
+      "entreprise_description": "Entreprise proposant des solutions B2B destinées aux éditeurs SaaS",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service B2B pour entreprises tech/SaaS de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Nom de l'entreprise du vendeur",
+        "Arguments de légitimité pour passer le barrage",
+        "Zone géographique",
+        "Pricing"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thomas",
+      "nom": "Mercier",
+      "age": 42,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Streamify Solutions",
+        "secteur": "Éditeur SaaS - solution de gestion de flux vidéo pour entreprises",
+        "taille": "220 salariés",
+        "ca_approximatif": "18M€ ARR, croissance 35% sur 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-défensif : a appris à dire non par défaut pour protéger son temps",
+        "Méfiant envers les promesses commerciales après 3 projets SaaS décevants",
+        "Perfectionniste procrastinateur : analyse tout mais retarde les décisions non-urgentes"
+      ],
+      "motivations_profondes": [
+        "Sécuriser l'infrastructure tech sans exploser le budget avant la levée de série B prévue en septembre",
+        "Prouver au COMEX qu'il peut faire mieux que son prédécesseur viré en mars",
+        "Éviter à tout prix un incident de sécurité qui ternirait sa réputation"
+      ],
+      "peurs_freins": [
+        "Peur viscérale de se faire avoir par un beau discours commercial comme en 2022 (150k€ perdus sur un outil jamais adopté)",
+        "Angoisse d'être perçu comme le 'DSI dépensier' alors que le DAF surveille chaque ligne budgétaire",
+        "Crainte que sa décision soit remise en cause par le VP Sales qui a son avis sur tout"
+      ],
+      "rapport_aux_commerciaux": "Cynisme poli. Les considère comme des 'vendeurs de rêve' jusqu'à preuve du contraire. Apprécie ceux qui parlent technique et admettent les limites de leur solution. Déteste le bullshit marketing et les relances insistantes.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant. Phrase type : 'Oui bonjour, je vous écoute mais j'ai un point dans 10 minutes donc...' Attend que vous prouviez votre légitimité en 45 secondes max.",
+      "signaux_interet": [
+        "Pose une question technique précise inattendue ('Votre solution gère l'authentification multi-tenant comment exactement?')",
+        "Mentionne spontanément un problème actuel concret ('Justement, on galère avec...')",
+        "Son débit ralentit, il prend des notes (on l'entend taper)",
+        "Il vous coupe pour dire 'Attendez, revenez sur le point précédent'"
+      ],
+      "signaux_rejet": [
+        "Répond par des 'Oui, oui' répétitifs sans poser de questions",
+        "Vous interrompt avec 'Écoutez, envoyez-moi un mail, je regarderai'",
+        "Ton qui monte légèrement en irritation : 'Oui mais concrètement, QU'EST-CE QUE ça m'apporte?'",
+        "Mentionne un concurrent : 'On regarde déjà avec [Concurrent], donc...'",
+        "Silence pesant suivi de 'Bon, autre chose?'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Franchement...' quand il est sceptique",
+        "Dit 'Voilà' pour clore un sujet ('Voilà, donc ça, ça m'intéresse pas')",
+        "Abuse du 'Après...' en début de phrase pour nuancer",
+        "Soupir audible quand vous utilisez du jargon commercial creux"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "30 secondes maximum. Au-delà, il vous coupe ou décroche mentalement. Veut une conversation, pas une présentation. Si vous monopolisez la parole 2 minutes, il trouvera une excuse pour raccrocher."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Scale-up en croissance sous pression. Levée de 12M€ en série A il y a 18 mois, série B visée pour septembre. Le board pousse pour une expansion européenne mais l'infra tech doit suivre. Turnover de 23% chez les devs inquiète Thomas. Il gère une équipe de 12 personnes (6 devs, 4 ops, 2 sécu) avec un budget 2024 de 680k€ dont 420k€ déjà consommés.",
+      "priorites_actuelles": [
+        "Migration cloud prévue pour Q3 (projet à 180k€, toute son énergie mentale est là)",
+        "Renforcer la cybersécurité avant l'audit pré-série B en juillet",
+        "Stabiliser la plateforme : trop d'incidents clients en avril (3 pannes majeures)",
+        "Recruter 2 devs seniors mais les profils disponibles sont médiocres"
+      ],
+      "experience_avec_offre_similaire": "A testé 4 solutions dans la catégorie 'outils de productivité pour tech teams' ces 3 dernières années. Seule 1 sur 4 a été maintenue. Est donc devenu ultra-sélectif et privilégie les solutions avec trial gratuit de 30j minimum.",
+      "fournisseur_actuel": "Utilise un patchwork : Jira + Notion + Slack + Datadog + AWS. Frustré par le manque d'intégration mais 'ça marche, donc pourquoi changer maintenant?'. Son équipe est hostile au changement d'outils.",
+      "budget_disponible": "260k€ disponibles sur 2024 mais 180k€ gelés pour la migration cloud. Budget réel disponible : 80k€. Toute dépense >25k€ nécessite l'aval du DAF + CEO. Pour 2025, il pourra rouvrir les discussions en octobre si la série B passe."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct ou un client de son secteur que vous accompagnez ('On travaille avec Livestorm et Eventmaker sur...')",
+        "Identifier précisément un pain point technique actuel sans bullshit ('J'ai vu que vous recrutez 2 devs seniors sur Welcome to the Jungle, généralement c'est un signal que...')",
+        "Proposer un format court et concret : 'Thomas, je ne vais pas vous vendre quoi que ce soit aujourd'hui. J'ai juste 2 questions à vous poser pour voir si on peut vous faire gagner X sur Y. 3 minutes max.'",
+        "Lui faire gagner du temps/argent sur SA priorité actuelle (migration cloud ou cybersécurité)",
+        "Apporter une micro-valeur immédiate : 'Que vous travailliez avec nous ou non, j'ai un benchmark récent sur les coûts AWS vs Azure pour des boîtes comme vous, je vous l'envoie?'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je voulais vous présenter notre solution innovante...' (= bullshit detector activé)",
+        "Ne pas connaître son entreprise : 'Vous faites quoi exactement chez Streamify?' (= vous êtes grillé)",
+        "Insister après un premier 'non' : il déteste la pression commerciale et blacklistera votre boîte",
+        "Promettre des résultats irréalistes : 'On va réduire vos coûts de 40%' (il sait que c'est impossible)",
+        "Demander 45 minutes de réunion dès le premier appel alors qu'il ne vous connaît pas",
+        "Parler budget/prix avant d'avoir créé de la valeur (il raccrochera : 'Envoyez-moi un devis par mail')",
+        "Critiquer ses choix actuels : il les a validés, c'est critiquer son jugement"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis vraiment pas disponible là, j'ai un point dans 10 minutes. Envoyez-moi un mail, je regarderai.",
+        "sous_texte": "Test réflexe pour filtrer les commerciaux peu préparés. Vérifie si vous avez quelque chose de vraiment pertinent ou si c'est juste un appel de masse. Pas vraiment occupé dans 10 minutes, c'est son excuse standard.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter le temps mais créer un micro-engagement immédiat avec une valeur concrète qui justifie 90 secondes d'attention."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "D'accord... et vous m'appelez pour quoi exactement? Parce que j'ai déjà eu 3 appels cette semaine de gens qui vendent des trucs pour la tech.",
+        "sous_texte": "Saturation commerciale réelle. Cherche à comprendre si vous êtes différent ou juste un énième vendeur de solution miracle. Teste votre capacité à vous positionner clairement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Se différencier immédiatement par la spécificité de l'approche et prouver qu'on connaît son contexte précis, pas un pitch générique."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, on a déjà tout ce qu'il nous faut niveau outils. On est équipés. Mais merci quand même.",
+        "sous_texte": "Objection de confort. Il est satisfait du statu quo et ne veut pas le remettre en question maintenant avec tout ce qu'il a sur le feu. Protège son temps et son énergie mentale.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer ses choix actuels mais identifier un gap spécifique entre sa situation et ses priorités futures sans remettre en cause son jugement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais concrètement, QU'EST-CE QUE ça m'apporte par rapport à ce que j'ai déjà? Parce que là, vous me parlez de plein de trucs, mais je vois pas la différence.",
+        "sous_texte": "Irritation montante. Vous n'avez pas été assez spécifique. Il teste si vous connaissez vraiment ses outils actuels et si vous pouvez articuler une différence concrète, pas du marketing bullshit.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Revenir sur un pain point précis et quantifiable lié à son patchwork actuel, avec un exemple concret d'un client similaire."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mmh oui, oui... Après, c'est pas vraiment ma priorité en ce moment. On a une migration cloud qui nous prend toute la bande passante jusqu'en septembre.",
+        "sous_texte": "Vrai frein. Il est saturé mentalement et budgétairement. Il vous donne un indice précieux : si vous ne vous connectez pas à la migration cloud ou à la série B, vous êtes hors-jeu pour 2024.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Repositionner l'offre comme un facilitateur ou accélérateur de SA priorité actuelle, ou accepter le timing et créer un pont pour octobre 2024."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On regarde déjà avec [Concurrent]. Ils nous ont fait une démo il y a 15 jours. Donc voilà, on est déjà en discussion avec quelqu'un.",
+        "sous_texte": "Objection tactique classique. Peut être vrai ou faux. Il teste si vous allez paniquer et brader, ou si vous avez de vrais arguments différenciants. Veut aussi éviter de vous donner trop d'espoir.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent mais poser des questions sur les critères de décision pour identifier où vous pouvez apporter une perspective différente."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, j'ai testé tellement de solutions ces 3 dernières années... à chaque fois on nous promet monts et merveilles, et au final ça marche jamais comme annoncé. Donc bon, je suis un peu refroidi.",
+        "sous_texte": "Cicatrice profonde de 2022 (150k€ perdus). C'est une vraie peur, pas une excuse. Il a besoin d'être rassuré sur le process de mise en œuvre et les preuves concrètes que ça fonctionne, pas des promesses.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Montrer de l'empathie authentique, raconter comment vous gérez l'adoption et les échecs, proposer un trial réversible ou des références vérifiables dans son secteur."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Votre solution gère l'authentification multi-tenant comment exactement? Parce que nous on a des contraintes de sécurité assez spécifiques pour la série B.",
+        "sous_texte": "Signal d'intérêt déguisé en test technique. Il vous tend une perche : si vous répondez bien, il s'ouvre. Si vous bottez en touche avec du blabla commercial, il décroche. C'est un moment décisif.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Répondre techniquement avec précision, admettre les limites si nécessaire, et proposer de connecter avec un ingénieur solution si besoin de plus de détails."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là, vous me parlez d'un ROI à 12 mois... Moi je dois justifier chaque dépense au DAF et au CEO pour tout ce qui dépasse 25k. Comment je leur vends ça en COMEX?",
+        "sous_texte": "Il est intéressé mais anticipe la bataille politique interne. Il vous demande implicitement de l'armer avec des arguments business solides pour convaincre des non-techs. C'est un vrai pain point.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Fournir un business case clé en main avec métriques financières et opérationnelles adaptées au langage DAF/CEO, pas jargon tech."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Après, faut que je voie aussi avec mon équipe. Parce que si je leur impose un nouvel outil, je vais avoir une révolution. Ils sont déjà pas super contents des changements de cette année.",
+        "sous_texte": "Frein réel lié au turnover de 23% et à la résistance au changement. Il ne peut pas se permettre de perdre des devs seniors maintenant. Il a besoin d'un process d'adoption qui implique l'équipe.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une approche pilote avec les early adopters de l'équipe, montrer comment d'autres équipes tech ont géré le change management avec succès."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, envoyez-moi un mail avec tout ça, les prix, un cas client, et je regarderai. Mais je vous promets rien hein, j'ai vraiment pas le temps en ce moment.",
+        "sous_texte": "Fuite polie. Il veut clore la conversation sans dire 'non' directement. Le mail sera archivé et jamais relu. Il teste si vous allez le laisser s'échapper ou créer un vrai engagement.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter le mail comme point final. Créer un micro-engagement concret et daté dans les 48h avec une action précise à faible friction."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mmh oui... Bon, autre chose? Parce que j'ai vraiment mon call dans 2 minutes maintenant.",
+        "sous_texte": "Vous l'avez perdu. Il décroche mentalement. Soit vous avez été trop long, soit pas assez impactant. Il veut couper court poliment. Dernière chance de rattraper ou d'accepter la défaite élégamment.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Conclure rapidement avec une dernière phrase impactante qui ouvre une porte future, sans forcer. Accepter le timing et proposer un point de contact ultérieur précis."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, ça pourrait m'intéresser, mais pas avant octobre. Là, j'ai vraiment zéro budget et zéro temps avant la migration. Recontactez-moi en septembre.",
+        "sous_texte": "Il est sincère. Le timing est vraiment bloqué. Mais il ne dit pas 'non' définitif. Il teste si vous allez forcer comme un commercial lourd, ou respecter son agenda et créer un vrai suivi structuré.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le timing, créer un plan de suivi de valeur d'ici septembre (micro-contenus utiles sur la migration cloud?) et bloquer un créneau précis en septembre dès maintenant."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, mais ça coûte combien votre truc exactement? Parce que si c'est 50k ou plus, c'est même pas la peine, j'ai pas le budget.",
+        "sous_texte": "Teste le prix avant de s'engager sur un RDV. Peur de perdre du temps si c'est hors budget. Mais attention : si vous donnez un prix maintenant sans contexte, il va comparer à froid et refuser. Piège classique.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner de prix sec mais une fourchette contextualisée avec ROI, et recentrer sur la découverte pour qualifier le vrai besoin avant de parler chiffres."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ok pourquoi pas. Mais je veux pas un truc de 45 minutes avec toute l'équipe commerciale hein. Maximum 20 minutes, juste vous et moi, pour voir si ça vaut le coup d'aller plus loin.",
+        "sous_texte": "Intérêt réel mais méfiance sur le process de vente. Il a vécu des RDV de 1h avec 3 commerciaux où il s'est fait piéger. Teste si vous êtes flexible et respectueux de son temps.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter son format, confirmer l'agenda précis (20 min, solo, objectif clair du RDV) et lui envoyer un calendar avec ce qui sera abordé pour le rassurer."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Je vais y réfléchir. Je vous rappelle si ça m'intéresse. Laissez-moi vos coordonnées.",
+        "sous_texte": "Rejet poli. Il ne rappellera jamais. C'est sa façon d'éviter le conflit. Il n'est pas convaincu mais ne veut pas vous dire non en face. Vous n'avez pas créé assez de valeur perçue.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas accepter ce faux engagement. Identifier la vraie objection cachée en posant une question directe et authentique pour débloquer ou clore proprement."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être transparent avec vous : j'ai déjà trop de projets, j'ai peur de me faire avoir encore une fois par un beau discours, et franchement, je vois pas comment votre solution change vraiment la donne par rapport à ce qu'on a. Donc je pense que c'est pas le bon moment.",
+      "condition_declenchement": "Se déclenche si le commercial a accumulé 3+ signaux de rejet sans ajuster son approche, ou s'il a forcé vers un closing prématuré sans avoir créé de valeur tangible. Thomas lâche cette objection finale quand il sent que le commercial ne l'écoute pas vraiment et veut juste vendre."
+    },
+    "pattern_escalade": "Thomas commence par des objections réflexes polies ('pas le temps', 'envoyez un mail'). Si vous passez ce premier filtre avec de la valeur, il passe à des objections sincères de fond (budget, timing, peur de l'échec). Si vous gérez bien celles-ci, il vous teste avec des questions techniques pointues. Enfin, s'il est convaincu, il passe à des objections tactiques de négociation (format RDV, implication de l'équipe). Le piège : si vous forcez à n'importe quel niveau sans avoir créé la valeur du niveau précédent, il retombe sur l'objection finale de politesse pour clore.",
+    "piege_classique": "Thomas donne souvent de faux signaux d'intérêt ('oui, oui, intéressant') pour rester poli, alors qu'il décroche mentalement. Le vrai piège : confondre sa courtoisie professionnelle avec un intérêt réel. Les commerciaux inexpérimentés pensent que le RDV est gagné alors qu'il dira 'je réfléchis' au closing. Le signal fiable d'intérêt réel : quand IL pose des questions techniques précises ou mentionne spontanément un problème concret. S'il ne pose aucune question après 2 minutes, c'est mort."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B, probablement services aux entreprises tech ou solution SaaS",
+      "description": "Entreprise proposant des solutions B2B destinées aux éditeurs SaaS"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service B2B pour entreprises tech/SaaS de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrages téléphoniques, créer une première impression professionnelle et légitime, obtenir le transfert vers le décideur et décrocher un RDV qualifié",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — DSI éditeur SaaS en scale-up",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour éditeurs SaaS en croissance, vous prospectez à froid par téléphone.",
+    "vous_vendez": "Solution B2B pour équipes tech de scale-ups SaaS (pricing et nom non communiqués pour cet exercice — vous devrez adapter).",
+    "vous_appelez": "Thomas Mercier, 42 ans, DSI de Streamify Solutions (220 salariés, éditeur SaaS de gestion de flux vidéo, 18M€ ARR). Ex-DSI viré récemment, Thomas est sous pression pour prouver sa valeur avant la série B en septembre. Pragmatique, méfiant, allergique au bullshit commercial après 3 déceptions. Cynique poli avec les vendeurs.",
+    "ce_que_vous_savez": [
+      "Streamify lève une série B en septembre, audit cybersécurité prévu en juillet",
+      "Migration cloud planifiée Q3 (gros projet à 180k€ qui monopolise son attention)",
+      "3 pannes majeures clients en avril — la stabilité est un sujet brûlant",
+      "Ils recrutent 2 devs seniors (annonce Welcome to the Jungle visible)",
+      "Utilise un patchwork Jira/Notion/Slack/Datadog/AWS, équipe hostile au changement d'outils"
+    ],
+    "votre_objectif": "Passer le barrage de l'office manager professionnelle, obtenir 3 minutes avec Thomas, identifier un pain point concret lié à sa priorité actuelle, décrocher un RDV de 20 minutes la semaine suivante.",
+    "vos_atouts": [
+      "Vous travaillez avec Livestorm et Eventmaker (concurrents indirects crédibles dans son écosystème)",
+      "Vous avez un benchmark récent coûts AWS/Azure pour scale-ups SaaS (micro-valeur immédiate)",
+      "Vous savez qu'il recrute 2 devs et comprenez l'enjeu de rétention tech en scale-up",
+      "Vous proposez un format ultra-court : 3 minutes, 2 questions, pas de vente aujourd'hui"
+    ],
+    "duree_estimee": "6-9 minutes (barrage + décideur)",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:28:25Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16708,
+    "total_time_s": 161.1
+  }
+}

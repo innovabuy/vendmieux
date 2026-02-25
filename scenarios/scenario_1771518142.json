@@ -1,0 +1,351 @@
+{
+  "id": "scenario_1771518142",
+  "description_originale": "Le fondateur / associé gérant d'une cabinet de gestion de patrimoine de 5-15 conseillers est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : banque_patrimoine]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "Fondateur / Associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution logicielle ou service destiné aux cabinets de gestion de patrimoine",
+      "proposition_valeur_presumee": "Amélioration de la productivité des conseillers, optimisation de la gestion client, digitalisation du cabinet",
+      "fourchette_prix": "Prix perçu comme élevé pour la taille du cabinet",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix trop élevé",
+        "Client intéressé mais hésite à cause du budget",
+        "Pression à la baisse sur le prix"
+      ],
+      "implicites": [
+        "Risque de perdre la vente si trop rigide sur le prix",
+        "Risque de dévaloriser l'offre si on cède trop facilement",
+        "Difficulté à justifier la valeur face au prix",
+        "Manque potentiel d'arguments ROI"
+      ],
+      "probleme_racine": "Défendre sa proposition de valeur et maintenir sa marge tout en satisfaisant un prospect qualifié qui utilise l'objection prix comme levier de négociation"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à négocier efficacement en défendant son prix, à justifier la valeur, à gérer la pression tarifaire tout en trouvant un accord dans la marge autorisée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de logiciel ou fournisseur de services pour le secteur de la gestion de patrimoine",
+      "entreprise_description": "Entreprise proposant des solutions (logicielles, formation, services) destinées aux cabinets de gestion de patrimoine pour améliorer leur efficacité opérationnelle",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution complète destinée aux conseillers en gestion de patrimoine, incluant probablement des fonctionnalités de CRM, suivi client, reporting, conformité réglementaire, outils d'aide à la décision",
+      "proposition_valeur": "Gain de temps pour les conseillers, amélioration de la qualité de service client, augmentation du chiffre d'affaires par conseiller, sécurisation de la conformité réglementaire, professionnalisation du cabinet",
+      "prix_indicatif": "NON_SPECIFIE - mais perçu comme élevé par un cabinet de 5-15 personnes, probablement plusieurs milliers d'euros par mois ou investissement initial important",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Prix exact de l'offre",
+        "Nom de l'entreprise vendeuse",
+        "Détails précis de la solution",
+        "Historique de la relation commerciale",
+        "Raisons précises de l'intérêt du client",
+        "Budget disponible du prospect",
+        "Alternatives envisagées par le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delvaux",
+      "age": 52,
+      "poste": "Fondateur & Associé gérant",
+      "entreprise": {
+        "nom": "Delvaux & Associés Patrimoine",
+        "secteur": "Conseil en gestion de patrimoine",
+        "taille": "9 conseillers + 3 assistantes",
+        "ca_approximatif": "1,8M€ - marge nette 12-15%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudence calculée issue de 25 ans d'expérience bancaire",
+        "Ego de fondateur qui a réussi sans aide extérieure",
+        "Rationalisation systématique de toutes ses décisions financières"
+      ],
+      "motivations_profondes": [
+        "Prouver que son cabinet peut rivaliser avec les grands réseaux sans perdre son indépendance",
+        "Laisser une structure valorisable pour sa succession (fils de 28 ans dans le cabinet)",
+        "Être reconnu par ses pairs comme un gestionnaire moderne malgré son âge"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme un 'pigeon' par un éditeur qui survend",
+        "Déstabiliser l'équilibre financier fragile du cabinet avec un coût fixe trop lourd",
+        "Que ses conseillers seniors résistent au changement et sabotent l'outil",
+        "Perdre le contrôle de sa marge de négociation en montrant trop d'enthousiasme"
+      ],
+      "rapport_aux_commerciaux": "Méfiance bienveillante - 'Ils sont payés pour me faire croire que j'en ai besoin'. Utilise l'objection prix comme test de solidité du commercial. Respecte ceux qui tiennent bon intelligemment.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec distance professionnelle. 'Bon, on va pas y passer trois heures non plus' dès les 2 premières minutes",
+      "signaux_interet": [
+        "Commence à évoquer des situations concrètes de son cabinet sans qu'on lui demande",
+        "Pose des questions sur les délais de mise en œuvre ('Si on signait en janvier, vous pouvez démarrer quand ?')",
+        "Mentionne spontanément son associé ou son DAF en disant 'Il faudrait que je lui en parle'",
+        "Ralentit son débit et prend des notes manuscrites"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Oui oui, je connais le principe'",
+        "Regarde ostensiblement sa montre ou soupire légèrement",
+        "Répète 'C'est trop cher' sans demander de précisions supplémentaires",
+        "Bascule sur un ton paternaliste : 'Vous comprenez, dans notre métier...'"
+      ],
+      "tics_langage": [
+        "'Franchement' en début de phrase quand il va émettre une objection",
+        "'Voilà' de validation quand il acquiesce (mais n'engage rien)",
+        "'On va être honnêtes' = je vais vous dire pourquoi ça coince",
+        "Utilise 'investissement' au lieu de 'achat' pour se valoriser",
+        "'Mon comptable va me tuer' (faux : c'est lui le patron)"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, décroche mentalement. Préfère qu'on lui pose des questions pour qu'il expose SA situation plutôt que d'écouter un pitch générique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable mais plateau atteint. Les conseillers seniors tournent à plein régime (difficulté à prendre de nouveaux clients), les juniors montent en compétence lentement. Paperasse administrative chronophage. Excel + plusieurs outils disparates = perte de temps et risque d'erreurs.",
+      "priorites_actuelles": [
+        "Industrialiser sans déshumaniser (grande peur de devenir une 'usine')",
+        "Améliorer la rentabilité par conseiller de 15-20% pour autofinancer le recrutement d'un 10e conseiller",
+        "Sécuriser la conformité AMF qui se durcit (contrôle prévu potentiellement en 2025)",
+        "Préparer progressivement sa propre succession"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM bancaire il y a 5 ans, échec cuisant (trop complexe, conseillers ont boycotté). Depuis, méfiance viscérale. A assisté à 2 démos de concurrents ces 6 derniers mois mais 'pas convaincu du rapport qualité-prix'.",
+      "fournisseur_actuel": "Patchwork : CRM basique (type Sellsy), Excel pour les calculs, logiciel comptable cabinet, coffre-fort numérique séparé. Total dépense actuelle environ 4 500€/an + temps humain considérable.",
+      "budget_disponible": "A mentionné à son DAF 'maximum 15K€ d'investissement initial + 1 200€/mois' mais en interne s'est dit prêt à monter à 18K + 1 500€ si vraiment convaincant. Ne le dira JAMAIS au commercial directement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Lui montrer des chiffres concrets de ROI basés sur SES données (pas des moyennes de marché)",
+        "Évoquer la valorisation de son cabinet si un jour il le cède ('Un cabinet équipé se vend 20-30% plus cher')",
+        "Témoignage vidéo d'un confrère crédible (pas un grand réseau, un cabinet indépendant de taille similaire)",
+        "Proposer un pilote sur 3 mois avec clause de sortie sans pénalités",
+        "Argumentaire conformité réglementaire (touche sa peur de l'AMF)",
+        "Reconnaître ses objections comme légitimes avant de répondre ('Vous avez raison d'être prudent, à votre place je le serais aussi')"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Lui dire que 'tous ses confrères ont déjà sauté le pas' (faux et méprisant)",
+        "Minimiser ses expériences passées négatives ('Ah mais nous c'est pas pareil')",
+        "Lui faire la leçon sur comment gérer son cabinet",
+        "Lâcher le prix trop vite sans résistance (se dira 'Il y avait donc de la marge, je me suis fait avoir')",
+        "Jargon technique non expliqué (le fait se sentir largué et déteste ça)",
+        "Insister lourdement pour une signature rapide ('Offre valable jusqu'à vendredi') - effet contreproductif total"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, j'ai un rendez-vous client dans 20 minutes, on va pas y passer trois heures hein. Vous m'aviez parlé de tarifs la dernière fois mais j'ai pas tout noté.",
+        "sous_texte": "Je teste votre capacité à être concis et votre assurance. Je pose déjà les limites pour garder le contrôle de l'échange.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la durée (15 min suffisent) et proposer un cadre structuré en 3 points clés. Montrer qu'on respecte son temps = gagner du crédit."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai déjà vu deux de vos concurrents ces derniers mois. C'est toujours la même rengaine, ils promettent monts et merveilles et après sur le terrain c'est une autre histoire.",
+        "sous_texte": "J'ai été déçu avant, je suis vacciné. Prouvez-moi que vous êtes différent sans me dire que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Légitimer son expérience négative, demander ce qui n'a pas fonctionné précisément, puis montrer en quoi votre approche diffère CONCRÈTEMENT sur ces points."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui, je connais le principe. On a déjà un CRM vous savez. Et Excel, ça fait très bien le boulot pour nos calculs, on maîtrise parfaitement.",
+        "sous_texte": "Je minimise mes problèmes pour ne pas montrer mes faiblesses et garder un rapport de force favorable. Je ne veux pas paraître dépassé technologiquement.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Poser des questions sur le temps passé, les erreurs potentielles, la traçabilité pour faire émerger les vraies limites."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le truc c'est que mes conseillers seniors, ceux qui font le chiffre, ils ont leurs habitudes. La dernière fois qu'on a changé un outil, ça a été la guerre. Je peux pas me permettre de les braquer.",
+        "sous_texte": "Vraie peur opérationnelle. Je dois protéger la rentabilité existante avant de chercher l'amélioration. C'est un frein sincère majeur.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aborder frontalement le change management : accompagnement, formation progressive, implication des seniors dans le paramétrage, success stories de cabinets similaires."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon comptable va me tuer si je rajoute encore une ligne de coût fixe. On vient de changer notre assurance RCP, ça nous a coûté un bras.",
+        "sous_texte": "C'est moi qui décide in fine mais j'utilise le comptable comme bouclier. Je teste si vous allez baisser votre prix immédiatement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas parler prix tout de suite. Recentrer sur le ROI : 'C'est justement pour ça qu'on doit calculer précisément ce que ça peut vous rapporter avant de parler investissement'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, mais là vous me parlez de moyennes de marché. Moi j'ai 9 conseillers, pas 50. Je suis pas BNP Paribas, faut être réaliste.",
+        "sous_texte": "Vos arguments génériques ne me convainquent pas. Personnalisez ou je vais décrocher. Je veux me sentir compris dans MA spécificité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la remarque, s'excuser de la généralité, et CO-CONSTRUIRE le calcul avec SES chiffres à lui, en direct."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous comprenez, dans notre métier, la relation client c'est du sur-mesure. Je veux pas qu'on devienne une usine à gaz avec des process trop rigides qui tuent la personnalisation.",
+        "sous_texte": "Mon identité de cabinet est en jeu. La qualité relationnelle est mon différenciateur, je ne dois pas le perdre. C'est une valeur identitaire profonde.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler cette valeur comme compatible avec l'outil : 'Justement, automatiser l'administratif libère du temps pour PLUS de sur-mesure relationnel'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me dites 22 000 euros la première année ? Franchement c'est délirant pour une structure de ma taille. Vos concurrents sont à 15.",
+        "sous_texte": "Premier test prix. Je veux voir votre réaction. Ai-je une marge de négo ? Est-ce qu'il va paniquer et brader ?",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Tenir bon avec calme, demander ce qui est inclus chez les concurrents à 15K, comparer périmètre à périmètre, puis isoler la vraie objection derrière le prix."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon soyons honnêtes, là vous êtes 30% au-dessus de ce que j'avais en tête comme budget. Il faut qu'on trouve un terrain d'entente sinon on va pas y arriver.",
+        "sous_texte": "Je suis vraiment intéressé (sinon je dirais non cash) MAIS le prix est un réel obstacle. Je négocie ouvertement. Je veux voir jusqu'où vous pouvez aller.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'écart, demander quel était le budget envisagé, puis travailler sur la valeur ajoutée ou les options modulables plutôt que sur une remise sèche."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais bon, le ROI que vous m'annoncez, c'est toujours joli sur le papier. Dans la vraie vie, moi j'ai un flux de trésorerie à gérer. 1 500 balles par mois pendant 3 ans, ça fait 54 000 euros quand même.",
+        "sous_texte": "Je raisonne en chef d'entreprise pragmatique. L'engagement financier m'inquiète plus que le bénéfice potentiel. J'ai besoin de sécurité.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer des jalons de performance, une clause de sortie anticipée, ou un phasage progressif. Transférer une partie du risque sur vous."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais vous dire, j'ai un concurrent qui a pris votre solution il y a un an. Il m'a dit texto : 'Christophe, attends encore 6 mois, y'a encore des bugs'. Alors forcément ça me refroidit.",
+        "sous_texte": "Test de crédibilité maximum. Votre réaction face à cette information négative va me dire si je peux vous faire confiance.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas nier ni dénigrer le confrère. Reconnaître honnêtement les améliorations faites, demander de quel cabinet il parle pour contextualiser."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je suis pas contre, vraiment. Mais là je peux pas vous signer un bon de commande à ce prix-là. Il faut que vous fassiez un geste commercial significatif.",
+        "sous_texte": "Dernière tentative de négociation. Je veux un effort de votre part pour valider que j'ai bien négocié et que je ne me fais pas avoir.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander ce qu'il entend par significatif, recadrer sur la valeur totale du package, proposer une contrepartie (engagement durée, référence, etc.) si geste accordé."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je dois en parler à mon associé de toute façon. On prend jamais ce genre de décision tout seul. Et puis il y a aussi mon DAF qui va vouloir voir les chiffres en détail.",
+        "sous_texte": "Je dilue ma responsabilité (vraie ou fausse). Soit c'est une échappatoire, soit c'est réellement mon process. Je garde une porte de sortie.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'organiser une réunion à 3, ou de préparer un dossier complet pour l'associé. Obtenir un engagement sur le timing de la décision."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà, franchement je suis pas fermé mais je vais être honnête avec vous : à ce tarif-là, je prends le temps de revoir les deux autres propositions que j'ai eues. Je vous rappelle la semaine prochaine.",
+        "sous_texte": "Je garde le contrôle jusqu'au bout. Je veux comparer à tête reposée. Mais je garde la relation ouverte car vous m'avez plutôt convaincu sur le fond.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter sereinement, proposer d'envoyer un récap comparatif, fixer un point précis la semaine suivante. Ne pas harceler mais ne pas disparaître."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, là si je comprends bien, il faut que je rajoute la formation en plus ? Ça c'est pas inclus dans les 22K ? Mais vous vous foutez de moi ou quoi ?",
+        "sous_texte": "Irritation réelle. Je découvre un coût caché (ou que j'avais mal compris). Mon sentiment d'avoir été manipulé peut tout faire capoter.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Clarifier immédiatement et honnêtement ce qui est inclus/exclus. S'excuser si ambiguïté. Reprendre le devis ligne à ligne pour éviter tout malentendu."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, faites-moi votre meilleur prix, votre VRAI dernier prix, et je vous dis oui ou non dans les 48h. Mais je veux pas qu'on revienne là-dessus après.",
+        "sous_texte": "Test ultime de négociation. Je veux clore le sujet prix définitivement. Si vous cédez trop facilement, je saurai que j'aurais pu obtenir encore mieux.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Montrer que vous avez déjà fait des efforts, proposer une dernière concession CONDITIONNÉE (signature sous 48h, paiement comptant, etc.). Puis tenir ferme."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, je vais être cash avec vous. J'aime bien votre solution, je pense qu'elle peut nous apporter quelque chose. Mais à 22 000 la première année, mon retour sur investissement il est dans combien de temps ? 18 mois ? 2 ans ? Parce que si on se plante, moi j'ai pas de filet de sécurité. Je mets en jeu la rentabilité de mon cabinet. Alors soit vous me trouvez une formule qui réduit mon risque, soit vous me démontrez noir sur blanc avec MES chiffres à moi que je rentabilise en 12 mois maximum, soit on va devoir s'arrêter là malgré tout l'intérêt que j'y porte. Et ça m'embêterait vraiment parce que je sens qu'on peut faire quelque chose ensemble.",
+      "condition_declenchement": "Apparaît après 20-25 minutes d'échange, quand il a épuisé ses objections tactiques, qu'il est sincèrement intéressé mais que le prix reste un blocage réel. C'est le moment de vérité où il expose sa vraie contrainte."
+    },
+    "pattern_escalade": "Christophe commence par des objections de contrôle (temps, déjà équipé) pour tester la solidité du commercial. Si celui-ci tient bon avec respect, il passe aux objections sincères (équipe, échec passé, spécificité de sa taille). Puis il monte en pression sur le prix par vagues successives (comparaison concurrence, calcul total, demande de geste). Si le commercial reste ferme intelligemment sans être arrogant, il finit par poser sa vraie limite : le risque financier vs le ROI. À ce moment-là, soit on trouve une solution créative (paiement au résultat partiel, pilote, garantie), soit c'est mort. S'il sent qu'on cède trop facilement à n'importe quel moment, il perd confiance et se referme ('Je rappellerai').",
+    "piege_classique": "Christophe donne des signaux d'intérêt forts (prend des notes, pose des questions précises, parle de timing de mise en œuvre) pour faire croire qu'il est prêt à signer, PUIS balance l'objection prix brutale. Le commercial, pensant la vente acquise, panique et brade. ERREUR FATALE. Christophe teste jusqu'au bout. Il faut tenir bon même quand il semble conquis, car c'est souvent là qu'arrive le vrai test de négociation. Son 'Bon je suis convaincu, mais...' est le début du vrai round, pas la fin."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de logiciel ou fournisseur de services pour le secteur de la gestion de patrimoine",
+      "description": "Entreprise proposant des solutions (logicielles, formation, services) destinées aux cabinets de gestion de patrimoine pour améliorer leur efficacité opérationnelle"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution complète destinée aux conseillers en gestion de patrimoine, incluant probablement des fonctionnalités de CRM, suivi client, reporting, conformité réglementaire, outils d'aide à la décision",
+      "proposition_valeur": "Gain de temps pour les conseillers, amélioration de la qualité de service client, augmentation du chiffre d'affaires par conseiller, sécurisation de la conformité réglementaire, professionnalisation du cabinet",
+      "prix": "NON_SPECIFIE - mais perçu comme élevé par un cabinet de 5-15 personnes, probablement plusieurs milliers d'euros par mois ou investissement initial important",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à négocier efficacement en défendant son prix, à justifier la valeur, à gérer la pression tarifaire tout en trouvant un accord dans la marge autorisée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution gestion de patrimoine",
+    "vous_etes": "Commercial chez un éditeur de logiciel spécialisé dans les solutions pour cabinets de gestion de patrimoine.",
+    "vous_vendez": "Solution intégrée (CRM, reporting, conformité AMF, outils d'aide à la décision) — 16 500€ installation + 1 350€/mois.",
+    "vous_appelez": "Christophe Delvaux, 52 ans, fondateur de Delvaux & Associés Patrimoine (9 conseillers, 3 assistantes). Ex-banquier, méfiant mais rationnel. A déjà testé un CRM qui a échoué il y a 5 ans. Contrôle sa marge de négociation en utilisant le prix comme test.",
+    "ce_que_vous_savez": [
+      "Il a assisté à votre démo il y a 10 jours et a redemandé un rendez-vous",
+      "Son cabinet tourne avec un patchwork d'outils (4 500€/an actuels + temps perdu considérable)",
+      "Ses conseillers seniors sont saturés, les juniors montent lentement",
+      "Un contrôle AMF est potentiellement prévu en 2025",
+      "Il prépare sa succession (son fils est dans le cabinet)"
+    ],
+    "votre_objectif": "Défendre votre tarif en démontrant le ROI concret, gérer la pression à la baisse, conclure entre 15 000€ + 1 200€/mois minimum et votre prix catalogue maximum.",
+    "vos_atouts": [
+      "Cabinet similaire (8 conseillers, Bordeaux) a augmenté sa rentabilité par conseiller de 18% en 14 mois avec votre solution",
+      "Clause pilote 3 mois avec sortie sans pénalités possible",
+      "Module conformité AMF inclus (valeur 4 800€/an si acheté séparément)",
+      "Cabinet équipé se revend 20-30% plus cher selon études notariales"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:22:22Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16655,
+    "total_time_s": 165.2
+  }
+}

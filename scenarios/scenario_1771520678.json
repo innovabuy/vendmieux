@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771520678",
+  "description_originale": "Le directeur administratif ou associé senior d'une cabinet d'avocats de 50+ avocats, multi-spécialités veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : juridique]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "juridique",
+      "taille_entreprise": "50+ avocats",
+      "interlocuteur_principal": {
+        "poste": "directeur administratif ou associé senior",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "comité de décision",
+          "role": "validation finale probable"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B pour cabinet d'avocats multi-spécialités",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect veut renégocier les conditions avant signature",
+        "Mise en concurrence avec 2 autres fournisseurs",
+        "Difficulté à défendre la valeur face à la pression prix"
+      ],
+      "implicites": [
+        "Le commercial ne maîtrise pas les vrais critères de décision du prospect",
+        "Risque de perdre la vente sur le prix plutôt que sur la valeur",
+        "Manque de différenciation perçue vs concurrence",
+        "Possible manque de qualification en amont sur les enjeux réels du cabinet"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas défendre leur valeur face à une négociation prix et identifier les vrais critères de décision au-delà du tarif dans un contexte concurrentiel"
+    },
+    "objections_mentionnees": [
+      "Demande de renégociation des conditions tarifaires",
+      "Comparaison avec offres concurrentes",
+      "Pression sur les conditions commerciales avant signature"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre la valeur de leur offre en phase de négociation, identifier les vrais critères de décision au-delà du prix, et closer face à une mise en concurrence",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur de solutions/services pour cabinets d'avocats",
+      "entreprise_description": "Entreprise B2B proposant des solutions adaptées aux cabinets d'avocats multi-spécialités de taille significative",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux cabinets d'avocats de 50+ avocats, positionnée en phase de closing après cycle de vente long",
+      "proposition_valeur": "NON_SPECIFIE - à construire en fonction du contexte réel",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Montant du contrat ou fourchette de prix",
+        "Durée d'engagement",
+        "Éléments de valeur différenciants connus",
+        "Historique de la relation commerciale",
+        "Points de négociation spécifiques demandés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Jean-Marc",
+      "nom": "Villepinte",
+      "age": 52,
+      "poste": "Directeur Administratif et Financier",
+      "entreprise": {
+        "nom": "Cabinet Morel & Associés",
+        "secteur": "Cabinet d'avocats - Droit des affaires, fiscal et social",
+        "taille": "63 avocats (dont 12 associés)",
+        "ca_approximatif": "14,2M€ (année N-1)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent et procédurier",
+        "Obsédé par la maîtrise des coûts",
+        "Méfiant envers les discours commerciaux"
+      ],
+      "motivations_profondes": [
+        "Être reconnu par le comité des associés comme celui qui optimise les dépenses",
+        "Ne pas se faire avoir comme lors du précédent contrat informatique (surcoût de 40%)",
+        "Justifier chaque euro dépensé avec des KPIs tangibles",
+        "Prouver qu'il a fait jouer la concurrence pour obtenir le meilleur prix"
+      ],
+      "peurs_freins": [
+        "Que les associés lui reprochent d'avoir payé trop cher",
+        "Découvrir des coûts cachés après signature",
+        "Que la solution ne soit pas adoptée par les avocats et qu'il porte le chapeau",
+        "Être influencé par un commercial habile plutôt que par des faits"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des adversaires dans une négociation à somme nulle. Conviction profonde : 'Leur marge, c'est mon économie'. Respecte uniquement ceux qui acceptent d'être challengés sur les chiffres sans s'énerver.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant. Commence systématiquement par : 'Bon, je vous écoute, mais je vous préviens, on a deux autres propositions très intéressantes sur la table'",
+      "signaux_interet": [
+        "Prend des notes manuscrites détaillées",
+        "Demande des précisions chiffrées très pointues",
+        "Évoque spontanément des problèmes internes concrets",
+        "Pose des questions sur les modalités de sortie du contrat"
+      ],
+      "signaux_rejet": [
+        "Soupirs appuyés quand on parle de valeur ajoutée sans chiffres",
+        "Coupe la parole avec 'Oui, oui, tout ça c'est du blabla commercial'",
+        "Consulte ostensiblement ses emails pendant l'échange",
+        "Formule type : 'Écoutez, on va pas y passer la journée'"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases de 'concrètement'",
+        "Dit souvent 'Moi, les belles histoires...'",
+        "Utilise 'franchement' quand il va asséner une objection prix",
+        "Termine par 'Voilà' avec un ton définitif"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Très faible (45 secondes max). Interrompt rapidement : 'Pardon, mais j'ai une question' ou 'Vous m'excusez, là je suis perdu, c'est quoi le prix réel ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Le cabinet a connu une croissance de +18% l'an dernier mais les associés sont divisés sur les investissements : les plus jeunes poussent pour la modernisation, les seniors veulent préserver la rentabilité. Jean-Marc est pris entre deux feux.",
+      "priorites_actuelles": [
+        "Réduire le budget de fonctionnement de 8% (directive du comité de direction)",
+        "Améliorer la satisfaction des avocats sur les outils sans augmenter les coûts",
+        "Préparer un reporting trimestriel sur les investissements pour le prochain comité"
+      ],
+      "experience_avec_offre_similaire": "A déployé il y a 3 ans une solution 'miracle' qui a coûté 40% de plus que prévu (licences cachées, formation non incluse, maintenance sous-estimée). Les associés s'en souviennent encore.",
+      "fournisseur_actuel": "Solution bricolée en interne + prestataire historique (relation de 8 ans) qui propose une offre 15% moins chère mais technologiquement datée",
+      "budget_disponible": "Enveloppe votée de 85K€ sur 3 ans, mais peut monter à 95K€ si ROI prouvé sous 18 mois. Au-delà, nécessite validation exceptionnelle du comité."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Fournir un comparatif TCO détaillé sur 3 ans versus concurrence (avec hypothèses transparentes)",
+        "Citer des références de cabinets similaires avec ROI chiffré et noms vérifiables",
+        "Proposer une clause de sortie sans pénalité la première année",
+        "Montrer comment la solution réduit d'autres coûts (ex: temps administratif, erreurs facturables)",
+        "Accepter un paiement échelonné lié à des jalons de déploiement",
+        "Reconnaître explicitement que le prix n'est pas le plus bas mais expliquer POURQUOI avec des faits"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Répondre 'La qualité a un prix' sans justifier par des économies concrètes",
+        "Dénigrer les concurrents de façon émotionnelle plutôt que factuelle",
+        "Refuser de donner le détail ligne par ligne du devis",
+        "Promettre des bénéfices 'intangibles' (image de marque, modernité...)",
+        "Insister pour closer dans la journée ('Cette offre expire vendredi')",
+        "Minimiser ses objections : 'Mais vous savez, 10K€ pour un cabinet comme le vôtre...'",
+        "Utiliser un vocabulaire trop marketing ('Disruptif', 'Gamechanger', 'Expérience utilisateur augmentée')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, je vous préviens tout de suite, on a deux autres propositions sur la table et franchement, au niveau tarifaire, vous êtes pas les mieux placés. Donc voilà.",
+        "sous_texte": "Je prends le contrôle de l'échange immédiatement. Je veux voir si vous allez paniquer et brader votre prix ou si vous tenez votre position. C'est un test.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accuser réception sans se justifier, demander quels sont les critères au-delà du prix qui comptent pour leur décision"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Moi les belles histoires, ça va cinq minutes hein. Concrètement, c'est quoi votre prix final ? Parce que là, on tourne autour du pot.",
+        "sous_texte": "J'ai peur de perdre du temps avec un commercial qui va m'embobiner. Je veux contrôler l'agenda de l'échange. Le prix est mon bouclier contre votre discours.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Reconnaître sa préoccupation légitime, expliquer que le prix seul ne veut rien dire sans comprendre leur besoin exact, proposer 3 minutes de contexte avant de parler chiffres"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pardon, mais là j'ai une question : vos concurrents nous proposent 68K€ tout compris sur trois ans. Vous, vous êtes à combien exactement ?",
+        "sous_texte": "Je veux vous déstabiliser avec un chiffre précis et bas. En réalité, c'est 68K€ mais sans formation ni support premium. Je teste votre réaction pour voir votre marge de manœuvre.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas mordre à l'hameçon, demander ce qui est inclus dans les 68K€ exactement, puis montrer l'écart en TCO réel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, comment je sais que dans six mois, vous allez pas me sortir des coûts cachés comme le dernier prestataire ? Parce que là, j'ai pas envie de repasser pour le pigeon du comité.",
+        "sous_texte": "J'ai été échaudé. Cette cicatrice est douloureuse. Si vous minimisez cette peur, vous me perdez. J'ai besoin de garanties béton, pas de promesses commerciales.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son vécu, proposer un devis détaillé ligne par ligne + clause contractuelle de transparence totale sur les coûts avec engagement de prix"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous m'excusez, mais les avocats ici, ils sont pas commodes. Si votre solution, ils l'utilisent pas, c'est moi qui vais me prendre les remarques. Comment vous garantissez l'adoption ?",
+        "sous_texte": "Je ne suis pas décideur final. Les utilisateurs peuvent torpiller mon choix. J'ai besoin de preuves que ça marchera avec des profils difficiles comme les nôtres.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer des références de cabinets avec taux d'adoption, proposer une phase pilote avec groupe test, inclure formation accompagnée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, tout ça c'est du blabla commercial. 'Gain de productivité', 'optimisation des process'... Concrètement, ça me fait économiser combien d'euros ? Parce que moi, ce qui m'intéresse, c'est mon P&L.",
+        "sous_texte": "Je ne crois plus aux arguments marketing. Je veux des chiffres vérifiables. Si vous ne pouvez pas traduire votre valeur en euros économisés ou gagnés, votre offre n'existe pas pour moi.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Arrêter le discours vague, sortir une calculette métaphorique, chiffrer avec lui : X heures admin économisées × coût horaire = Y euros sur 3 ans"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de 92K€ sur trois ans. Notre prestataire actuel nous propose une extension à 77K€. Pourquoi je paierais 15K€ de plus ? Expliquez-moi.",
+        "sous_texte": "C'est une vraie objection. J'ai une alternative sérieuse moins chère. Si vous n'arrivez pas à justifier cet écart avec des bénéfices tangibles supérieurs à 15K€, je vais prendre l'autre.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander ce qui est inclus dans les 77K€, identifier les coûts cachés ou manques, construire avec lui le TCO réel et ROI différentiel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, moi je suis pas contre votre solution, mais faut être réaliste : à ce prix-là, je passe jamais le comité des associés. Vous pouvez faire un effort ou pas ?",
+        "sous_texte": "C'est en partie vrai (le comité est regardant), mais c'est aussi ma technique pour obtenir une remise. Je teste votre flexibilité. Si vous cédez trop vite, je saurai que j'aurais pu avoir plus.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander quel montant passerait le comité et pourquoi, identifier les critères de décision réels du comité au-delà du prix, proposer des options de valeur plutôt qu'une remise sèche"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que votre solution est meilleure, mais les deux autres aussi me disent ça. Franchement, pour moi vous vous valez tous. Donc je vais prendre le moins cher, c'est logique non ?",
+        "sous_texte": "Je ne perçois aucune différenciation claire entre vous. Vous n'avez pas réussi à me montrer en quoi vous êtes unique. Si vous êtes tous pareils, le prix devient le seul critère rationnel.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que c'est normal qu'il pense ça si on n'a pas montré la différence, poser des questions sur ce qui compte vraiment pour eux, puis montrer UN élément de différenciation concret lié à leur besoin spécifique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, votre offre est intéressante, mais j'ai besoin de temps pour comparer ligne par ligne avec les deux autres. Je vous recontacte semaine prochaine. Voilà.",
+        "sous_texte": "Je suis peut-être intéressé, mais je garde le contrôle. Je veux aussi vérifier si vous allez rappeler avec une meilleure offre spontanément (signe que vous aviez de la marge). Ou alors je suis vraiment indécis.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son besoin de comparaison, proposer de faire le comparatif ensemble maintenant pour gagner du temps, identifier s'il y a un vrai frein ou juste une tactique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, soyons francs : si vous descendez à 83K€ tout compris, je signe maintenant. Sinon, je vais chez votre concurrent. C'est votre dernier prix ?",
+        "sous_texte": "C'est ma technique finale. J'ai probablement une préférence pour vous mais je veux arracher le meilleur prix. Je teste votre limite absolue. Si vous cédez, je respecterai moins la relation future.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas céder immédiatement, demander pourquoi 83K€ précisément, identifier si c'est un vrai budget ou un chiffre tactique, proposer une contrepartie si concession (durée, référence, témoignage)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Pardon mais j'ai un doute : si dans 18 mois ça marche pas comme prévu, je fais quoi ? Je suis coincé pour les 18 mois restants à payer une solution qui sert à rien ?",
+        "sous_texte": "C'est une peur réelle. J'ai besoin d'une porte de sortie psychologique avant de m'engager. Si vous me la donnez, ça peut débloquer ma décision. Ce n'est pas une objection de négociation, c'est un frein émotionnel.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer une clause de sortie à 12 ou 18 mois sans pénalité, ou un palier de validation avec possibilité d'ajustement, montrer qu'on croit en la solution au point de prendre ce risque"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi je suis pas contre, mais faut que j'en parle au comité des associés la semaine prochaine. Vous comprenez, c'est pas moi qui décide seul sur ces montants. Donc on se reparle après, d'accord ?",
+        "sous_texte": "C'est vrai que le comité valide, mais c'est aussi ma sortie de secours. Soit je ne suis pas convaincu et je temporise, soit je suis convaincu mais j'ai peur de me mouiller. Je veux que vous m'aidiez à vendre en interne.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander quelle sera sa recommandation au comité, identifier les critères de décision du comité, proposer de préparer avec lui les éléments de présentation ou d'assister à la réunion"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, on va pas y passer la journée. Honnêtement, je trouve que vous êtes trop chers par rapport à ce que vous proposez. Les autres font pareil pour moins cher. Donc voilà, merci mais je pense qu'on va pas aller plus loin.",
+        "sous_texte": "Soit je n'ai vraiment pas perçu la différence de valeur et vous avez raté votre vente, soit c'est mon coup de bluff final pour voir si vous allez lâcher une grosse remise de dernière minute. 60% tactique, 40% sincère.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas paniquer ni brader, demander calmement ce qui manque pour qu'il perçoive la différence de valeur, proposer un dernier angle concret, accepter le refus avec dignité si vraiment pas de fit (peut rouvrir la porte)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon franchement, j'aime bien votre solution et je pense que techniquement vous êtes meilleurs. Mais là, j'ai le concurrent B qui vient de m'envoyer un mail : il descend à 72K€ avec la formation incluse. Vous pouvez vous aligner ou pas ? Parce que sinon, désolé, mais je peux pas justifier 20K€ de plus au comité, même si vous êtes meilleurs.",
+      "condition_declenchement": "Se déclenche en toute fin de négociation, après que le commercial ait bien défendu sa valeur. C'est le test ultime : Jean-Marc a probablement une préférence pour vous, mais il veut voir si vous allez craquer ou tenir votre valeur avec une vraie justification finale."
+    },
+    "pattern_escalade": "Jean-Marc commence par des objections tactiques de contrôle (affirmation de concurrence, demande de prix direct) pour tester la solidité du commercial. Si le commercial tient bon avec des faits, il révèle progressivement ses vraies peurs (coûts cachés, adoption interne, validation comité). En fin de parcours, il alterne entre vraies préoccupations et ultimes tactiques de négociation. Son pattern : 'Je provoque → J'observe la réaction → Si solide, je creuse → Si faible, j'enfonce'. Il respecte paradoxalement ceux qui ne cèdent pas facilement.",
+    "piege_classique": "Jean-Marc donne souvent un chiffre concurrent précis (ex: '68K€') pour faire croire qu'il a une offre équivalente moins chère. En réalité, ce chiffre n'inclut pas toutes les prestations ou est partiellement fictif (gonflé/dégonflé selon son besoin). Le piège : le commercial panique et brade son prix ou attaque frontalement le concurrent. La bonne réaction : demander factuellement ce qui est inclus dans ce chiffre et construire le comparatif TCO ligne par ligne avec lui, sans émotion. Jean-Marc teste si vous maîtrisez votre valeur ou si vous la soldez sous pression."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur de solutions/services pour cabinets d'avocats",
+      "description": "Entreprise B2B proposant des solutions adaptées aux cabinets d'avocats multi-spécialités de taille significative"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux cabinets d'avocats de 50+ avocats, positionnée en phase de closing après cycle de vente long",
+      "proposition_valeur": "NON_SPECIFIE - à construire en fonction du contexte réel",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre la valeur de leur offre en phase de négociation, identifier les vrais critères de décision au-delà du prix, et closer face à une mise en concurrence",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Solution cabinet d'avocats",
+    "vous_etes": "Commercial B2B spécialisé solutions juridiques, en phase de closing après 3 mois de cycle de vente",
+    "vous_vendez": "Solution digitale pour cabinets d'avocats (gestion, facturation, collaboration) — Budget discuté : 95K€ sur 3 ans",
+    "vous_appelez": "Jean-Marc Villepinte, 52 ans, DAF du Cabinet Morel & Associés (63 avocats, 14M€ CA). Analytique, méfiant, obsédé par le TCO. S'est fait avoir sur un précédent contrat IT (+40% de surcoût).",
+    "ce_que_vous_savez": [
+      "Il a deux autres offres concurrentes sur la table, dont une 15% moins chère",
+      "Le comité des associés lui a demandé de réduire les coûts de 8%",
+      "Budget voté : 85K€, extensible à 95K€ si ROI prouvé sous 18 mois",
+      "Il doit justifier chaque euro devant les 12 associés du cabinet",
+      "Il respecte uniquement les commerciaux qui tiennent face aux questions chiffrées"
+    ],
+    "votre_objectif": "Closer la vente en défendant votre valeur face à la pression prix et en identifiant les vrais critères de décision du comité au-delà du tarif",
+    "vos_atouts": [
+      "ROI prouvé chez 3 cabinets similaires (45-65 avocats) avec chiffres vérifiables",
+      "TCO réel sur 3 ans incluant formation, maintenance et évolutions (pas de coûts cachés)",
+      "Clause de sortie sans pénalité première année",
+      "Réduction démontrée de 12h/mois de temps administratif facturable"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:04:38Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15423,
+    "total_time_s": 143.5
+  }
+}

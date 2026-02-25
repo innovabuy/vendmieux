@@ -1,0 +1,374 @@
+{
+  "id": "scenario_1771523183",
+  "description_originale": "Le gérant / directeur d'exploitation d'une transporteur routier de 30-60 salariés, flotte de 20-40 véhicules est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : transport_logistique]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Directeur d'exploitation",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution pour transporteur routier (logiciel de gestion de flotte présumé)",
+      "proposition_valeur_presumee": "Optimisation de la gestion de flotte, réduction des coûts opérationnels, suivi en temps réel des véhicules",
+      "fourchette_prix": "NON_SPECIFIE - perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection sur le prix perçu comme trop élevé",
+        "Nécessité de négociation commerciale"
+      ],
+      "implicites": [
+        "Le commercial n'a pas suffisamment valorisé le ROI lors de la présentation initiale",
+        "Manque d'ancrage de la valeur avant l'annonce du prix",
+        "Absence de justification des bénéfices tangibles pour cette taille d'entreprise",
+        "Le prospect compare probablement avec des solutions moins chères sans comprendre la différenciation"
+      ],
+      "probleme_racine": "Déficit d'argumentation valeur lors de la phase de découverte et présentation - le prix a été présenté sans ancrage suffisant sur les gains économiques et opérationnels spécifiques à ce transporteur"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix en négociation en réancrant sur la valeur, sans brader immédiatement, tout en trouvant un compromis commercial acceptable",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de solutions logicielles pour le transport et la logistique",
+      "entreprise_description": "Fournisseur de solutions de gestion pour transporteurs routiers, spécialisé dans l'optimisation de flottes de véhicules",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution de gestion de flotte pour transporteurs routiers permettant le suivi, l'optimisation des tournées et la réduction des coûts opérationnels",
+      "proposition_valeur": "Réduction des coûts de carburant, optimisation des tournées, amélioration de la maintenance préventive, conformité réglementaire, tableau de bord en temps réel",
+      "prix_indicatif": "NON_SPECIFIE - mais possède une marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Prix exact de la solution",
+        "Nom de l'entreprise vendeuse",
+        "Nom précis de la solution",
+        "Éléments de découverte client (douleurs spécifiques, budget, alternatives évaluées)",
+        "Historique de la relation commerciale",
+        "Références clients similaires"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Franck",
+      "nom": "Delamare",
+      "age": 51,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Transports Delamare & Fils",
+        "secteur": "Transport routier de marchandises (lots complets et messagerie)",
+        "taille": "42 salariés (23 chauffeurs, 12 admin/exploitation, 7 atelier/maintenance)",
+        "ca_approximatif": "4,2M€ avec marge nette qui se réduit depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec méfiance instinctive envers les promesses des éditeurs logiciels",
+        "Calculateur obsessionnel sur chaque euro dépensé depuis que les marges se compriment",
+        "Fierté du self-made-man qui a repris l'affaire familiale et l'a modernisée à sa façon"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il peut maintenir la compétitivité face aux gros groupes sans se faire plumer par les fournisseurs",
+        "Transmettre une entreprise solide à son fils qui vient d'intégrer l'exploitation",
+        "Être reconnu comme un patron moderne mais pas dupe des effets de mode technologiques"
+      ],
+      "peurs_freins": [
+        "Investir 40-50K€ dans un outil qui ne sera pas utilisé par ses chauffeurs réfractaires au changement",
+        "Se faire avoir comme avec l'ERP il y a 5 ans (survendu, sous-utilisé, support catastrophique)",
+        "Que ses concurrents s'en sortent mieux avec des solutions moins chères ou du bricolage maison",
+        "Perdre la face devant son fils s'il prend une mauvaise décision d'investissement"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais défensif dès qu'il sent une technique de vente - teste systématiquement la solidité de l'interlocuteur en le poussant dans ses retranchements sur le prix",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais légèrement las, avec une pointe de scepticisme à peine voilée : 'Bon, on va voir ce que vous avez à me proposer, j'ai déjà eu trois démos ce mois-ci...'",
+      "signaux_interet": [
+        "Commence à évoquer spontanément des problèmes opérationnels concrets ('Tenez, pas plus tard que jeudi dernier, j'ai eu un camion qui...')",
+        "Prend des notes manuscrites sur un carnet à spirale usagé",
+        "Demande si d'autres transporteurs de la région utilisent la solution (besoin de réassurance par les pairs)",
+        "Se met à calculer à haute voix des économies potentielles avec ses propres chiffres"
+      ],
+      "signaux_rejet": [
+        "Soupir appuyé suivi de 'Ouais bon, c'est sûr que sur le papier...'",
+        "Coupe la parole pour ramener systématiquement à la question du prix : 'Oui mais tout ça, ça coûte combien au final ?'",
+        "Évoque un concurrent imaginaire ou réel qui propose moins cher sans préciser lequel",
+        "Ton qui devient protecteur/paternaliste : 'Vous comprenez, dans notre métier, il faut être réaliste hein...'",
+        "Commence à regarder son téléphone ou évoque un prochain rendez-vous pour écourter"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases de 'hein' et 'bon' de manière récurrente",
+        "Utilise 'Faut pas me prendre pour un jambon' quand il sent une manipulation",
+        "Dit 'Alors là, permettez-moi d'être cash' avant une objection frontale",
+        "Appelle les logiciels des 'machins informatiques' avec une pointe d'ironie",
+        "Emploie 'Ça fait cher la ligne de code' quand il trouve le prix excessif"
+      ],
+      "debit_parole": "normal, avec des accélérations quand il raconte une anecdote terrain pour prouver son point",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant d'interrompre - veut du dialogue et du concret, pas de la présentation PowerPoint générique"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression concurrentielle accrue, avec des donneurs d'ordres qui renégocient les tarifs à la baisse - deux camions vieillissants à remplacer dans l'année, ce qui grignote la trésorerie disponible pour d'autres investissements",
+      "priorites_actuelles": [
+        "Réduire la consommation de carburant (poste n°1 des charges variables)",
+        "Éviter les amendes liées au chronotachygraphe et au temps de conduite mal géré",
+        "Améliorer la réactivité commerciale pour gagner des contrats face aux gros groupes",
+        "Intégrer progressivement son fils dans la gestion sans perdre le contrôle"
+      ],
+      "experience_avec_offre_similaire": "A un logiciel de gestion transport basique (TMS entry-level type Cargo ou équivalent) qui fait la facturation et les CMR, mais rien sur le suivi temps réel de flotte - a été échaudé par une expérience ERP généraliste mal paramétré il y a 5 ans",
+      "fournisseur_actuel": "TransLog Solutions pour le TMS basique (2400€/an), plus des fichiers Excel pour le suivi des tournées et de la maintenance",
+      "budget_disponible": "Peut techniquement aller jusqu'à 45K€ sur l'année en étalant (location évolutive ou leasing logiciel), mais psychologiquement bloqué autour de 28-32K€ - a obtenu un devis concurrent approximatif à 24K€ (solution moins complète mais il ne le sait pas vraiment)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en euros économisés par camion et par mois plutôt qu'en fonctionnalités abstraites",
+        "Montrer qu'on connaît vraiment le métier de transporteur (jargon, contraintes réglementaires, galères quotidiennes)",
+        "Proposer une phase pilote sur 3-4 camions pour limiter le risque perçu",
+        "Citer des transporteurs régionaux similaires (30-50 salariés) qui ont obtenu des résultats chiffrés",
+        "Reconnaître ouvertement que l'investissement est conséquent MAIS le relier directement à ses douleurs exprimées",
+        "Impliquer son fils dans la réflexion (valorise sa vision du passage de relais)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours corporate sur la transformation digitale et l'industrie 4.0 (le fait décrocher mentalement)",
+        "Comparer sa PME à des groupes de 500 camions (invalide immédiatement la pertinence)",
+        "Refuser de donner une fourchette de prix avant d'avoir 'tout compris de ses besoins' (perçu comme technique de manipulation)",
+        "Dénigrer sa solution actuelle ou ses méthodes de travail (touche à sa fierté de chef d'entreprise)",
+        "Promettre un ROI en 6 mois (trop beau pour être vrai, active ses alarmes anti-arnaque)",
+        "Insister lourdement pour qu'il prenne une décision dans la semaine (braque sa résistance naturelle à la pression commerciale)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai déjà eu trois démos ce mois-ci, alors si c'est pour me refaire le coup du machin révolutionnaire, on va gagner du temps tous les deux hein...",
+        "sous_texte": "Je suis saturé de promesses commerciales - prouve-moi immédiatement que tu es différent ou je décroche mentalement",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa lassitude légitime et annoncer une approche pragmatique centrée sur SES chiffres, pas sur des slides génériques"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, allez-y, mais je vous préviens, j'ai un autre rendez-vous dans 30 minutes, faut être efficace.",
+        "sous_texte": "Je pose mes conditions dès le départ pour garder le contrôle et tester si tu acceptes mon cadre",
+        "type": "tactique",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accepter la contrainte temps et proposer de se concentrer sur SES priorités identifiées, pas sur tout le catalogue produit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, des problèmes on en a comme tout le monde, mais bon, on s'en sort hein. On a toujours fait comme ça et ça roule.",
+        "sous_texte": "Je minimise mes difficultés par fierté et pour ne pas te donner d'arguments de vente trop facilement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas contredire frontalement mais creuser avec des questions factuelles chiffrées qui le font réfléchir à ses coûts cachés"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le carburant, alors là, permettez-moi d'être cash, ça nous tue à petit feu. Mais un logiciel va pas magiquement réduire ma consommation de gazole hein...",
+        "sous_texte": "J'ai identifié ma douleur principale mais je suis sceptique qu'une solution logicielle puisse vraiment m'aider sur ce point concret",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Expliquer le mécanisme précis (éco-conduite, optimisation itinéraires, ralenti moteur) avec des chiffres d'économie mensuels par camion"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai déjà un TMS qui fait la facturation et les CMR, ça fait le job pour l'instant. Pourquoi je changerais tout ?",
+        "sous_texte": "J'ai investi dans quelque chose qui fonctionne minimalement - me faire changer coûtera cher et créera des perturbations",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas proposer de remplacer mais de compléter sur la couche flotte temps-réel qui lui manque, avec intégration possible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tout ça c'est bien joli sur le papier, mais mes chauffeurs, ils sont pas tout jeunes hein. Le camion c'est leur bureau, faut pas me prendre pour un jambon, ils vont jamais utiliser votre machin.",
+        "sous_texte": "Ma vraie peur est l'échec d'adoption interne - je ne veux pas investir dans un outil qui finira abandonné comme l'ERP d'il y a 5 ans",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître cette peur légitime, parler accompagnement terrain spécifique chauffeurs et montrer des témoignages de transporteurs avec profil de chauffeurs similaires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais bon, sur le papier vous annoncez 15% d'économie de carburant, j'ai déjà entendu ça... C'est sûr que sur le papier hein...",
+        "sous_texte": "Je ne crois pas à vos promesses de ROI car j'ai déjà été déçu par des promesses non tenues",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Remplacer les pourcentages abstraits par des euros concrets mensuels calculés sur SA flotte, et proposer des références vérifiables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et la maintenance, vous suivez aussi la maintenance ? Parce que là, pas plus tard que jeudi dernier, j'ai eu un camion qui m'a lâché en pleine tournée à cause d'un défaut qu'on aurait dû voir venir...",
+        "sous_texte": "Je commence à m'intéresser vraiment mais je vérifie que tu couvres TOUTES mes douleurs opérationnelles, pas juste une partie",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Signal d'intérêt fort - développer spécifiquement le module maintenance préventive avec un cas d'usage correspondant à son anecdote"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon et concrètement, ça coûte combien au final tout ça ? Parce que faut être réaliste hein, j'ai deux camions à remplacer cette année...",
+        "sous_texte": "Je suis sous contrainte budgétaire réelle - si tu annonces un prix déconnecté de ma réalité économique, ça s'arrête là",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Annoncer une fourchette en la reliant immédiatement aux économies mensuelles calculées ensemble, et proposer un étalement de paiement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai vu passer un truc à 24 000 balles, vous êtes dans ces eaux-là ou pas du tout ?",
+        "sous_texte": "Je te teste pour voir si tu es dans la même gamme de prix ou complètement au-dessus - je veux savoir si on peut discuter ou si on perd notre temps",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement ni se justifier, mais questionner ce qu'incluait cette offre pour révéler les différences de périmètre"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez des transporteurs de la région qui utilisent votre solution ? Des gens que je pourrais appeler ?",
+        "sous_texte": "J'ai besoin de réassurance par les pairs avant de prendre une décision - je ne fais confiance qu'aux retours d'autres patrons comme moi",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner 2-3 références régionales vérifiables de transporteurs 30-60 salariés avec résultats chiffrés et contact direct possible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mon fils, il vient d'arriver à l'exploitation, il est plus calé que moi sur l'informatique... Il faudrait qu'il voie aussi, vous comprenez.",
+        "sous_texte": "Je veux partager la décision avec mon successeur pour le valoriser ET pour ne pas porter seul la responsabilité d'un éventuel échec",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Signal très positif - proposer immédiatement d'organiser une session avec le fils pour impliquer la future génération"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Alors là, permettez-moi d'être cash : 38 000 euros, ça fait cher la ligne de code quand même. C'est beaucoup trop cher pour nous.",
+        "sous_texte": "Le prix dépasse mon seuil psychologique de confort - je résiste par réflexe mais je suis prêt à négocier si tu tiens bon sur la valeur",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement - réancrer sur les économies mensuelles calculées ensemble, puis proposer un ajustement de périmètre ou paiement étalé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas que votre solution m'intéresse pas, mais là franchement, avec les camions à changer et les marges qui se compriment, je peux pas me permettre.",
+        "sous_texte": "Ma contrainte budgétaire est réelle mais je reste intéressé - aide-moi à trouver une solution de financement ou un compromis",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un déploiement progressif (pilote sur 10 véhicules d'abord) ou un étalement sur 18-24 mois pour lisser l'investissement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez, dans notre métier, il faut être réaliste hein. Faut que je réfléchisse, que j'en parle avec mon comptable...",
+        "sous_texte": "Je ne suis pas prêt à décider maintenant - soit je suis vraiment hésitant, soit je teste ta capacité à gérer ma temporisation",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le besoin de réflexion MAIS structurer les prochaines étapes avec une date précise et impliquer le fils ou le comptable dans un prochain échange"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Si je vous dis 30 000 maximum étalés sur 18 mois, on peut faire affaire ? Sinon je vais voir ailleurs franchement.",
+        "sous_texte": "Je teste ta marge de négociation en posant un ultimatum - si tu acceptes trop vite je saurai que j'aurais pu obtenir mieux",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter directement - explorer ce qui justifierait cette différence de prix (périmètre réduit ?) tout en montrant une ouverture au dialogue"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, vous me faites un geste commercial significatif et je signe aujourd'hui. Sinon ça va être compliqué.",
+        "sous_texte": "Je veux obtenir une concession immédiate pour me sentir gagnant de la négociation - je suis prêt à acheter mais à MES conditions",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Résister à la pression de décision immédiate - proposer un ajustement raisonnable justifié (pilote, paiement étalé) sans brader les 10% d'un coup"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et l'accompagnement pendant le démarrage, c'est inclus ou ça va encore me coûter un bras ? Parce que la dernière fois avec l'ERP...",
+        "sous_texte": "J'ai peur des coûts cachés après la vente - je veux tout comprendre du coût total avant de m'engager",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détailler précisément ce qui est inclus dans l'offre (formation, jours d'accompagnement terrain, support) pour éliminer la peur des surprises"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me garantissez quoi exactement si ça marche pas comme prévu ? Parce que 38 000 balles, c'est pas rien pour une boîte de ma taille.",
+        "sous_texte": "J'ai besoin de filet de sécurité pour prendre la décision - je veux minimiser mon risque perçu avant de signer",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer des garanties concrètes : clause de sortie après pilote, engagement sur ROI avec jalons mesurables, ou satisfaction garantie 6 mois"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, votre solution elle est bien, je dis pas le contraire, mais à ce prix-là je peux pas justifier ça devant mon comptable. Faites-moi une vraie proposition commerciale à 32K tout compris avec l'accompagnement, et là on a une base de discussion. Sinon je vais voir avec le concurrent qui m'a déjà contacté, désolé mais c'est comme ça.",
+      "condition_declenchement": "Se déclenche si le commercial a bien valorisé la solution MAIS n'a pas su proposer de compromis créatif sur le prix/périmètre - Franck est intéressé mais veut gagner la négociation et obtenir une concession significative pour signer"
+    },
+    "pattern_escalade": "Franck commence par des objections de test (démos multiples, manque de temps) pour jauger le commercial. Si celui-ci résiste bien, il passe aux objections sincères sur l'adoption chauffeurs et le ROI réel. Une fois convaincu de la valeur, il déploie ses objections tactiques sur le prix avec une intensité croissante : ancrage bas (24K), ultimatum (30K), demande de geste commercial. Il alterne pression (menace concurrent) et ouverture (implication du fils) pour obtenir le meilleur deal. Si le commercial tient bon sur la valeur sans brader, Franck respecte la posture et accepte un compromis raisonnable. S'il cède trop vite, Franck perd confiance et continue à négocier plus bas.",
+    "piege_classique": "Franck simule parfois un désintérêt ('bon, ça me paraît compliqué pour nous') alors qu'il est en réalité intéressé - c'est un test pour voir si le commercial va paniquer et brader immédiatement son prix. Le commercial qui recadre sur la valeur et propose un rendez-vous avec le fils ou une visite site gagne sa confiance. Celui qui lâche 15% de remise dans les 30 secondes perd toute crédibilité et Franck continuera à gratter jusqu'à épuisement de la marge."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de solutions logicielles pour le transport et la logistique",
+      "description": "Fournisseur de solutions de gestion pour transporteurs routiers, spécialisé dans l'optimisation de flottes de véhicules"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution de gestion de flotte pour transporteurs routiers permettant le suivi, l'optimisation des tournées et la réduction des coûts opérationnels",
+      "proposition_valeur": "Réduction des coûts de carburant, optimisation des tournées, amélioration de la maintenance préventive, conformité réglementaire, tableau de bord en temps réel",
+      "prix": "NON_SPECIFIE - mais possède une marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix en négociation en réancrant sur la valeur, sans brader immédiatement, tout en trouvant un compromis commercial acceptable",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation commerciale — Solution de gestion de flotte",
+    "vous_etes": "Commercial chez un éditeur de solutions logicielles pour le transport routier.",
+    "vous_vendez": "Une solution complète de gestion de flotte (suivi temps réel, optimisation tournées, maintenance préventive, conformité réglementaire). Prix non communiqué dans votre extraction mais vous avez 10% max de marge de négociation.",
+    "vous_appelez": "Franck Delamare, 51 ans, gérant de Transports Delamare & Fils (42 salariés, 4,2M€ CA). Pragmatique, méfiant, calculateur sur chaque euro. Échaudé par un ERP raté il y a 5 ans. Teste systématiquement la solidité du commercial sur le prix.",
+    "ce_que_vous_savez": [
+      "Vous avez déjà fait une démo — il trouve le prix trop élevé",
+      "Il utilise un TMS basique (2400€/an) + Excel pour les tournées",
+      "Ses marges se compriment, il doit remplacer 2 camions cette année",
+      "Il a reçu un devis concurrent à 24K€ (solution moins complète)",
+      "Son fils vient d'intégrer l'exploitation, Franck veut transmettre une boîte solide"
+    ],
+    "votre_objectif": "Défendre votre prix en réancrant sur la valeur concrète pour son entreprise, négocier sans brader, et conclure la vente.",
+    "vos_atouts": [
+      "Votre solution réduit significativement les coûts carburant et évite les amendes chronotachygraphe",
+      "Possibilité de phase pilote sur 3-4 camions pour limiter son risque",
+      "Vous parlez son langage : économies en €/camion/mois, pas du jargon corporate",
+      "Vous pouvez étaler le paiement sur l'année (location/leasing logiciel)"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:46:23Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17049,
+    "total_time_s": 158.4
+  }
+}

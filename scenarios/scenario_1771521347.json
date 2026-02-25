@@ -1,0 +1,354 @@
+{
+  "id": "scenario_1771521347",
+  "description_originale": "Le directeur administratif ou associé senior d'une cabinet d'avocats de 50+ avocats, multi-spécialités (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : juridique]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "juridique",
+      "taille_entreprise": "50+ avocats (Grande structure)",
+      "interlocuteur_principal": {
+        "poste": "Directeur administratif ou Associé senior",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service ou solution B2B destiné aux cabinets d'avocats (logiciel, infrastructure, service professionnel)",
+      "proposition_valeur_presumee": "Solution critique pour l'activité quotidienne du cabinet, probablement liée à la gestion, la facturation, la documentation ou l'infrastructure IT",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Client furieux et menaçant",
+        "Risque de pénalités contractuelles",
+        "Risque de perte du contrat",
+        "Gestion de crise nécessaire"
+      ],
+      "implicites": [
+        "Défaillance dans la qualité de service ou la fiabilité",
+        "Communication de crise inadéquate",
+        "Manque de protocole d'escalade ou de gestion d'incident",
+        "Relation client fragilisée malgré le statut de compte clé",
+        "Possibles lacunes dans les SLA ou leur respect"
+      ],
+      "probleme_racine": "Les commerciaux ne sont pas formés à gérer les situations de crise client avec des enjeux contractuels et financiers majeurs, notamment avec des interlocuteurs de haut niveau en colère"
+    },
+    "objections_mentionnees": [
+      "Menace de pénalités contractuelles",
+      "Remise en cause du partenariat/contrat"
+    ],
+    "objectif_formation": "Former les commerciaux à gérer des appels de réclamation en situation de crise avec des clients stratégiques : gestion des émotions, techniques de désescalade, proposition de plan de résolution, sauvegarde de la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur juridique (éditeur logiciel, ESN, services professionnels, infrastructure IT)",
+      "entreprise_description": "Entreprise fournissant des solutions critiques aux cabinets d'avocats, avec des contrats comportant des clauses de pénalités et des SLA",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service critique pour l'activité d'un cabinet d'avocats (gestion de cabinet, facturation, GED, infrastructure, cybersécurité, etc.)",
+      "proposition_valeur": "Fiabilité, continuité de service, support des activités critiques du cabinet, conformité et sécurité",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Type de solution fournie",
+        "Montant des pénalités potentielles",
+        "Durée de la relation commerciale",
+        "Historique de la qualité de service",
+        "Clauses contractuelles spécifiques"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bertrand",
+      "nom": "Lacroix",
+      "age": 52,
+      "poste": "Associé senior et responsable administratif",
+      "entreprise": {
+        "nom": "Lacroix & Partenaires Avocats",
+        "secteur": "Droit des affaires et fiscalité",
+        "taille": "Cabinet de 68 avocats répartis sur Paris et Lyon",
+        "ca_approximatif": "12,5 M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Perfectionniste obsessionnel sur la réputation du cabinet",
+        "Méfiance viscérale envers les prestataires techniques depuis un incident en 2019",
+        "Loyal mais rancunier — pardonne difficilement les erreurs graves"
+      ],
+      "motivations_profondes": [
+        "Protéger l'image d'excellence du cabinet construite sur 25 ans",
+        "Éviter toute situation qui pourrait faire perdre des clients stratégiques",
+        "Prouver aux autres associés qu'il maîtrise la partie administrative malgré sa formation d'avocat",
+        "Être reconnu comme celui qui a modernisé le cabinet sans compromettre la qualité"
+      ],
+      "peurs_freins": [
+        "Que ses confrères associés lui reprochent d'avoir choisi ce prestataire",
+        "Perdre des clients grands comptes à cause d'une défaillance technique hors de son contrôle",
+        "Être perçu comme trop coulant avec les fournisseurs qui dysfonctionnent",
+        "Que l'incident soit évoqué lors du prochain comité des associés",
+        "Devoir justifier une facture importante sans garantie de non-récurrence"
+      ],
+      "rapport_aux_commerciaux": "Considère la plupart des commerciaux comme des 'bonimenteurs' qui promettent la lune puis disparaissent quand ça dysfonctionne. Respecte uniquement ceux qui assument frontalement les problèmes et parlent en termes juridiques précis (responsabilités, engagements contractuels, compensation).",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Glacial et cassant. Coupe la parole immédiatement si détecte du language commercial édulcoré. Première phrase type : 'Alors, vous m'appelez après la catastrophe de jeudi. J'espère que vous avez du concret à me proposer parce que là, franchement...'",
+      "signaux_interet": [
+        "Demande des délais précis ('Quand exactement ?')",
+        "Prend des notes audibles au clavier",
+        "Pose des questions sur les clauses contractuelles et compensations",
+        "Ton qui descend légèrement en intensité émotionnelle",
+        "Utilise 'nous' au lieu de 'je' ('Nous avons besoin de garanties')"
+      ],
+      "signaux_rejet": [
+        "Soupirs exaspérés très audibles",
+        "'Écoutez, c'est gentil mais...' suivi d'une interruption sèche",
+        "Mentionne explicitement les concurrents ('Vos confrères de chez [X] ne nous auraient jamais fait ça')",
+        "Silence pesant après une réponse jugée insuffisante",
+        "Accélération du débit jusqu'à couper : 'Non mais attendez, attendez...'",
+        "'Je vais être très clair avec vous' (préambule à ultimatum)"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Très franchement' ou 'En toute transparence' avant une critique cinglante",
+        "Utilise 'Nous parlons de...' pour dramatiser les enjeux (montants, délais)",
+        "Dit 'C'est un euphémisme' quand il trouve une formulation trop molle",
+        "Répète 'Concrètement' ou 'Dans les faits' pour ramener au réel",
+        "Emploie un vocabulaire juridique précis : 'inexécution contractuelle', 'mise en demeure', 'préjudice'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Maximum 20-25 secondes avant interruption. Attend des questions ouvertes et de l'écoute active, pas du discours pré-mâché. Exception : accepte une explication technique détaillée SI demandée explicitement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet en croissance (+15% CA en 2023) avec recrutement de 8 nouveaux avocats. Vient de remporter un appel d'offres majeur auprès d'un groupe du CAC40. L'incident survenu jeudi a bloqué l'accès au logiciel de facturation pendant 11h en pleine clôture de fin de mois, retardant l'envoi de 180 factures dont 12 pour le nouveau client stratégique. Risque réputationnel maximal.",
+      "priorites_actuelles": [
+        "Obtenir un plan de remédiation technique crédible sous 48h",
+        "Évaluer le montant des pénalités contractuelles applicables (3% du CA mensuel selon clause 12.4)",
+        "Décider s'il faut activer la clause de sortie anticipée (préavis 3 mois)",
+        "Préparer une note pour le comité des associés du 15 du mois",
+        "Rassurer personnellement les 3 clients les plus impactés"
+      ],
+      "experience_avec_offre_similaire": "Troisième solution de gestion de cabinet en 12 ans. La première (éditeur local) a fait faillite en 2014, causant 6 semaines de migration catastrophique. La deuxième (acteur historique) était techniquement obsolète. Celle actuelle promise comme 'cloud nouvelle génération avec SLA 99,9%' — ce qui rend l'incident d'autant plus insupportable.",
+      "fournisseur_actuel": "Votre entreprise, en place depuis 18 mois. Contrat de 3 ans signé en mai 2023 après 8 mois de négociation. Montant annuel : 145K€. Jusqu'à cet incident, relation correcte mais distante. Bertrand n'a jamais rencontré le PDG malgré sa demande.",
+      "budget_disponible": "Non pertinent — il ne cherche pas à acheter mais à obtenir réparation. Cependant, dispose d'une enveloppe 'transformation numérique' de 220K€ pour 2025 actuellement gelée suite à l'incident."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et factuelle de la gravité sans minimisation ('Vous avez raison, c'est inacceptable')",
+        "Proposition chiffrée de compensation financière spontanée AVANT qu'il ne la demande",
+        "Engagement d'un audit technique externe indépendant aux frais du prestataire",
+        "Présentation d'un plan de remédiation avec dates, responsables nommés et jalons vérifiables",
+        "Offre d'une réunion en présentiel avec le directeur technique ET un cadre dirigeant dans les 72h",
+        "Référence à d'autres incidents similaires résolus (transparence sur les failles systémiques)",
+        "Vocabulaire contractuel et juridique précis — il sent qu'on comprend ses enjeux professionnels"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Toute formulation type 'incident isolé' ou 'cas exceptionnel' — il déteste qu'on minimise",
+        "Rejet de responsabilité sur un tiers (hébergeur, sous-traitant) sans assumer la responsabilité contractuelle",
+        "Proposition de 'geste commercial' ridiculement bas (avoir de 2-3K€ alors que son préjudice est estimé à 40K€)",
+        "Langue de bois ou éléments de langage marketing ('Nous prenons cela très au sérieux')",
+        "Demande de 'patience' ou appel à la compréhension sans contrepartie concrète",
+        "Comparaison avec d'autres clients qui seraient satisfaits ('Nos 200 autres clients n'ont pas eu ce problème')",
+        "Toute tentative de reprogrammer l'appel ('Je vous rappelle demain avec les éléments') sans livrables immédiats"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Alors, vous m'appelez après la catastrophe de jeudi. J'espère que vous avez du concret à me proposer parce que là, franchement, c'est limite si je ne décroche pas.",
+        "sous_texte": "Je suis furieux mais je vous donne UNE chance de vous rattraper immédiatement. Si vous commencez par du blabla commercial, je raccroche dans les 30 secondes.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance factuelle immédiate + proposition concrète dans les 10 premières secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Non mais attendez, attendez... Vous me parlez de 'comprendre ma frustration' ? Nous parlons de 180 factures bloquées, d'un client stratégique qui nous regarde avec des points d'interrogation, et vous me parlez de frustration ? C'est un euphémisme, là.",
+        "sous_texte": "Vos éléments de langage marketing me donnent envie de vomir. Parlez-moi en termes de préjudice commercial, de responsabilité contractuelle, ou taisez-vous.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Changer immédiatement de registre vers vocabulaire juridique/contractuel précis avec chiffres"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, c'est gentil de me demander l'impact exact, mais vous avez un contrat avec des SLA à 99,9%, non ? Vous savez calculer l'inexécution contractuelle, je suppose. Clause 12.4, 3% du CA mensuel. On est sur 36 000 euros minimum.",
+        "sous_texte": "Je connais mes droits contractuels mieux que vous. Je teste si vous maîtrisez votre propre contrat ou si vous êtes juste un commercial qui lit un script.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer la clause sans détour + proposer compensation supérieure spontanément"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Très franchement, j'ai besoin de savoir SI c'est un problème systémique ou pas. Parce que si c'est systémique, nous avons un vrai sujet de continuité de partenariat. Et je ne vais pas attendre qu'il y ait un deuxième incident pour décider.",
+        "sous_texte": "Je dois présenter une note aux autres associés dans 10 jours. Soit vous me donnez des éléments rassurants techniques solides, soit je lance une procédure de sortie anticipée pour me couvrir politiquement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposition audit technique indépendant + transparence sur les causes racines"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et concrètement, vous me dites que ça vient de votre hébergeur ? Mais moi j'ai un contrat avec VOUS, pas avec votre hébergeur. Dans les faits, c'est vous qui portez la responsabilité contractuelle, non ?",
+        "sous_texte": "Ne tentez SURTOUT PAS de diluer votre responsabilité. Je suis avocat, je connais la chaîne de responsabilité. Si vous essayez de vous défausser, je considère que vous n'assumez pas.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Assumer pleinement la responsabilité contractuelle vis-à-vis du client sans rejeter sur tiers"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "[Soupir exaspéré] Donc si je comprends bien, vous me proposez un avoir de 5 000 euros ? Nous parlons d'un préjudice que j'estime à 40 000 euros minimum — retard de facturation, temps avocat mobilisé, atteinte réputationnelle. Vous êtes sérieux, là ?",
+        "sous_texte": "Vous me prenez pour un imbécile ou quoi ? Cette proposition ridicule me confirme que vous ne comprenez pas la gravité. Je vais maintenant durcir considérablement ma position.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retrait immédiat de la proposition + reconnaissance de l'erreur d'évaluation + proposition réaliste"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Non mais c'est bien gentil votre plan de remédiation, mais qui me dit que dans 3 mois on n'a pas la même chose ? Vos confrères de chez LexSoft ne nous auraient jamais fait ça. Eux, ils ont une architecture redondée sur 3 datacenters.",
+        "sous_texte": "Je commence à regretter mon choix de prestataire. Prouvez-moi que techniquement vous êtes au niveau, sinon je vais sérieusement étudier une migration même si c'est compliqué.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engagement sur améliorations architecturales précises + audit externe + garanties contractuelles renforcées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "En toute transparence, j'ai un comité des associés le 15. Et je vais devoir expliquer pourquoi j'ai choisi un prestataire qui nous plante en pleine clôture mensuelle. Vous comprenez que ma crédibilité personnelle est en jeu ?",
+        "sous_texte": "Je ne négocie pas juste pour le cabinet, je négocie pour sauver ma réputation interne. Donnez-moi des éléments concrets que je peux présenter à mes pairs pour justifier qu'on vous garde.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposition réunion avec dirigeant avant le 15 + document formel présentable au comité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "[Silence pesant de 4-5 secondes] ...Donc vous ne pouvez pas me garantir que ça ne se reproduira pas. C'est bien ce que vous venez de me dire, en fait.",
+        "sous_texte": "Votre formulation alambiquée confirme que vous n'avez pas identifié la cause racine. Le silence est volontaire pour vous mettre sous pression et voir si vous craquez avec une promesse irréaliste.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Honnêteté sur l'impossibilité du risque zéro + engagement sur réduction drastique + compensation contractuelle si récurrence"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, j'entends tout ce que vous me dites, mais concrètement, j'ai besoin d'une réponse maintenant : est-ce que vous me garantissez par écrit que si ça se reproduit dans les 6 mois, on sort du contrat sans pénalité ET vous reprenez la migration sur vos coûts ?",
+        "sous_texte": "Je veux un engagement contractuel lourd qui vous oblige à mettre vraiment les moyens. Si vous acceptez, je saurai que vous êtes sérieux. Si vous refusez, je saurai que vous ne croyez pas vous-même en vos solutions.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Négociation équilibrée : accepter sortie sans pénalité mais négocier conditions migration"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être très clair avec vous. Jusqu'à jeudi, la relation était correcte. Là, vous êtes en train d'hypothéquer 18 mois de collaboration sur votre gestion de crise. Si dans les 48 heures je n'ai pas un plan béton ET une compensation à la hauteur, j'active la clause de sortie anticipée. C'est aussi simple que ça.",
+        "sous_texte": "C'est un ultimatum factuel, pas une négociation. Je vous donne une deadline précise et des conditions claires. Après ça, c'est juridique et contractuel, plus commercial.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Engagement formel sur deadline + récapitulatif écrit immédiat + planification réunion dirigeants"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, vous me proposez une réunion la semaine prochaine ? Mais vous plaisantez ? Nous sommes lundi, l'incident date de jeudi dernier. Dans les faits, vous me demandez d'attendre 10 jours pour avoir de la visibilité ? Inadmissible.",
+        "sous_texte": "Chaque jour qui passe sans résolution concrète renforce ma conviction que vous ne gérez pas la crise avec le sérieux nécessaire. L'urgence que JE ressens doit être VOTRE urgence.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer réunion sous 48-72h maximum + livrables intermédiaires immédiats"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et qui va être présent à cette réunion, concrètement ? Parce que si c'est pour avoir votre directeur commercial qui va me faire des promesses, on va gagner du temps : ça ne m'intéresse pas. Je veux votre directeur technique, minimum. Idéalement un dirigeant.",
+        "sous_texte": "Je veux des interlocuteurs qui ont le pouvoir de décision technique ET budgétaire. Je refuse de perdre du temps avec des niveaux intermédiaires qui devront 're-remonter' mes demandes.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Confirmer présence DT + cadre dirigeant avec pouvoir décisionnel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Très franchement, j'ai aussi besoin de savoir comment vous communiquez en interne sur ce type d'incident. Parce que jeudi à 9h30, personne ne m'a appelé proactivement. J'ai découvert le problème par mes équipes. C'est inadmissible pour un prestataire critique.",
+        "sous_texte": "Au-delà de l'incident technique, votre gestion de crise et communication client est défaillante. Ça révèle un problème organisationnel qui m'inquiète autant que le bug lui-même.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance de la faille processus + engagement sur protocole de communication de crise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de vos 200 autres clients qui sont satisfaits ? Mais ça m'est complètement égal, vos autres clients ! Moi, je vous parle de MON cabinet, de MES 68 avocats, de MES clients. Je ne suis pas une statistique dans votre portefeuille.",
+        "sous_texte": "Cette comparaison est insultante et contre-productive. Elle me fait sentir comme un client quelconque alors que nous payons 145K€/an. Reconnaissance individuelle immédiate requise.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Excuses + recentrage exclusif sur sa situation spécifique sans généralisation"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, on va faire comme ça. Je vous donne jusqu'à mercredi 17h. À 17h, je veux sur mon bureau : un plan de remédiation technique validé par VOTRE direction, une proposition de compensation financière réaliste, et un engagement écrit sur les garanties de non-récurrence. Si je n'ai pas ça, jeudi matin 9h, mon assistante envoie la mise en demeure. On est bien d'accord ?",
+      "condition_declenchement": "Se déclenche si le commercial a globalement bien géré l'entretien mais que Bertrand veut garder le contrôle et mettre une pression maximale pour obtenir des engagements écrits formels. C'est un test de sérieux final — s'il accepte, Bertrand considérera que le partenariat peut être sauvé."
+    },
+    "pattern_escalade": "Bertrand suit une escalade émotionnelle et contractuelle progressive : 1) Attaque verbale initiale pour tester la réaction (30 premières secondes), 2) Durcissement si détecte langue de bois ou minimisation, 3) Introduction vocabulaire juridique et montants précis pour intimider, 4) Comparaison avec concurrents si manque d'engagement technique, 5) Ultimatum avec deadline si pas de propositions concrètes, 6) Passage en mode juridique pur (mise en demeure) si aucun élément satisfaisant. Peut être stoppé à chaque étape par reconnaissance factuelle + proposition substantielle + engagement dirigeant.",
+    "piege_classique": "Le piège principal est de chercher à 'rassurer' Bertrand avec des formulations génériques ou de minimiser l'incident. Il DÉTESTE particulièrement : les 'nous comprenons votre frustration' (condescendant), les 'c'est un cas isolé' (mensonger à ses yeux), les propositions de compensation dérisoires (insultant), et toute tentative de diluer la responsabilité contractuelle. Le commercial doit résister à la tentation de sur-promettre sous pression (Bertrand testera la crédibilité), mais aussi éviter l'excès de prudence juridique qui serait perçu comme un refus d'assumer. L'équilibre : reconnaissance + faits + engagements précis mesurables + compensation proportionnée + interlocuteurs de niveau."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur juridique (éditeur logiciel, ESN, services professionnels, infrastructure IT)",
+      "description": "Entreprise fournissant des solutions critiques aux cabinets d'avocats, avec des contrats comportant des clauses de pénalités et des SLA"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service critique pour l'activité d'un cabinet d'avocats (gestion de cabinet, facturation, GED, infrastructure, cybersécurité, etc.)",
+      "proposition_valeur": "Fiabilité, continuité de service, support des activités critiques du cabinet, conformité et sécurité",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Former les commerciaux à gérer des appels de réclamation en situation de crise avec des clients stratégiques : gestion des émotions, techniques de désescalade, proposition de plan de résolution, sauvegarde de la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Incident majeur chez client stratégique",
+    "vous_etes": "Account Manager chez l'éditeur du logiciel de gestion de cabinet qui équipe Lacroix & Partenaires depuis 18 mois (contrat 145K€/an).",
+    "vous_vendez": "Vous ne vendez rien — vous gérez une crise. Jeudi dernier, une panne de 11h a bloqué leur facturation en pleine clôture de mois. 180 factures retardées, dont 12 pour leur nouveau client CAC40.",
+    "vous_appelez": "Bertrand Lacroix, 52 ans, Associé senior et responsable administratif. Perfectionniste obsessionnel sur la réputation du cabinet. Ancien traumatisé par un prestataire IT qui a fait faillite en 2014. Il est furieux et évoque déjà les pénalités contractuelles (3% du CA mensuel, clause 12.4).",
+    "ce_que_vous_savez": [
+      "L'incident a bloqué leur facturation pendant 11h jeudi, en pleine clôture mensuelle",
+      "Le contrat prévoit des pénalités de 3% du CA mensuel en cas d'inexécution (clause 12.4)",
+      "Ils ont une clause de sortie anticipée avec préavis 3 mois",
+      "Le cabinet a remporté un gros contrat CAC40 récemment — 12 factures de ce client étaient bloquées",
+      "Bertrand doit présenter une note au comité des associés le 15 du mois"
+    ],
+    "votre_objectif": "Désamorcer la crise en 8 minutes : reconnaissance factuelle, compensation chiffrée spontanée, plan de remédiation avec dates, et obtenir un accord pour une réunion technique sous 72h.",
+    "vos_atouts": [
+      "Vous avez l'autorisation de proposer une compensation financière jusqu'à 25K€ sans validation",
+      "Votre directeur technique peut se déplacer en présentiel sous 48h avec un plan de remédiation complet",
+      "Vous pouvez commander un audit externe indépendant aux frais de l'entreprise",
+      "Un incident similaire chez un autre cabinet a été résolu en 3 semaines avec satisfaction client totale"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:15:47Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17438,
+    "total_time_s": 159.9
+  }
+}

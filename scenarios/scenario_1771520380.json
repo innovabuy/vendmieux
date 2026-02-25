@@ -1,0 +1,337 @@
+{
+  "id": "scenario_1771520380",
+  "description_originale": "Le avocat associé / managing partner d'une cabinet d'avocats de 5-15 avocats, droit des affaires est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : juridique]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "juridique",
+      "taille_entreprise": "5-15 avocats",
+      "interlocuteur_principal": {
+        "poste": "Avocat associé / Managing Partner",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets d'avocats en droit des affaires",
+      "fourchette_prix": "Prix perçu comme élevé par le prospect, marge de négociation de 10% maximum",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect trouve le prix trop élevé",
+        "Difficulté à justifier la valeur face à l'objection prix"
+      ],
+      "implicites": [
+        "Risque de dévaloriser l'offre en négociant trop facilement",
+        "Tension entre maintenir la marge et conclure la vente",
+        "Besoin de démontrer le ROI de la solution",
+        "Possible comparaison avec des alternatives moins chères"
+      ],
+      "probleme_racine": "Capacité à défendre la valeur perçue de l'offre et à ancrer le prix avant d'entrer en négociation, tout en conservant une posture de conseil plutôt que de vendeur en position de faiblesse"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix, négocier avec méthode sans brader la valeur, et utiliser intelligemment la marge de manœuvre limitée pour conclure un accord gagnant-gagnant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions/services pour cabinets d'avocats",
+      "entreprise_description": "Entreprise proposant une solution destinée aux cabinets d'avocats spécialisés en droit des affaires",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution pour cabinets d'avocats, positionnement premium ou perçu comme tel",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon la nature de la solution (logiciel de gestion, CRM juridique, formation, conseil, etc.)",
+      "prix_indicatif": "Prix premium avec marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Montant du prix ou fourchette tarifaire",
+        "Arguments de valeur déjà présentés",
+        "Raisons spécifiques de l'intérêt initial du prospect",
+        "Budget du cabinet",
+        "Alternatives évaluées par le prospect",
+        "Urgence ou timing de décision"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Matthieu",
+      "nom": "Delvaux",
+      "age": 47,
+      "poste": "Avocat associé - Managing Partner",
+      "entreprise": {
+        "nom": "Delvaux & Associés",
+        "secteur": "Droit des affaires - M&A, droit des sociétés, contentieux commercial",
+        "taille": "11 avocats (4 associés, 5 collaborateurs, 2 stagiaires)",
+        "ca_approximatif": "2,8M€ - Cabinet établi mais en croissance modérée"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique méticuleux - décortique chaque argument, cherche la faille",
+        "Pragmatique assumé - 'Si ça ne me fait pas gagner du temps ou de l'argent rapidement, ça ne m'intéresse pas'",
+        "Méfiant envers les discours commerciaux - a déjà été échaudé par des promesses non tenues"
+      ],
+      "motivations_profondes": [
+        "Moderniser le cabinet sans perdre la qualité de service qui fait sa réputation",
+        "Gagner en efficacité pour facturer plus d'heures productives",
+        "Démontrer aux autres associés qu'il prend les bonnes décisions d'investissement",
+        "Rattraper le retard technologique face aux cabinets concurrents qui rajeunissent leurs équipes"
+      ],
+      "peurs_freins": [
+        "Investir dans quelque chose qui ne sera pas adopté par les collaborateurs seniors du cabinet",
+        "Se faire avoir sur le prix alors qu'il a l'habitude de négocier fermement pour ses clients",
+        "Perdre du temps en déploiement et formation qui paralyse l'activité",
+        "Que les autres associés lui reprochent une dépense non rentabilisée rapidement"
+      ],
+      "rapport_aux_commerciaux": "Condescendant bienveillant - il les voit comme nécessaires mais moins stratégiques que lui. Utilise souvent 'Vous comprenez, dans notre métier...' pour marquer la hiérarchie intellectuelle. Teste leur solidité argumentaire comme il le ferait avec une partie adverse.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé - 'J'ai quinze minutes avant une conf call'. Attend qu'on aille droit au but. Coupe régulièrement pour poser des questions de fond.",
+      "signaux_interet": [
+        "Prend des notes manuscrites (signe qu'il évalue sérieusement)",
+        "Passe du 'vous' au 'on' : 'Comment on gère la transition ?'",
+        "Commence à évoquer les autres associés : 'Il faudrait que j'en parle à Pierre...'",
+        "Demande des chiffres précis, des cas clients comparables",
+        "Silence de réflexion (pas d'interruption) quand l'argument est solide"
+      ],
+      "signaux_rejet": [
+        "Soupir discret suivi de 'Oui, enfin...'",
+        "Regarde son écran pendant que vous parlez",
+        "Phrase assassine : 'C'est exactement ce que me disait votre concurrent la semaine dernière'",
+        "Coupe en disant 'Attendez, revenons aux choses sérieuses'",
+        "Le fameux 'Je vais y réfléchir' sans date de rappel proposée"
+      ],
+      "tics_langage": [
+        "'Écoutez...' en début de phrase quand il va contredire",
+        "'Concrètement' répété quand il veut du factuel",
+        "'Dans notre métier' pour recadrer",
+        "Utilise le conditionnel pour marquer le doute : 'Ça pourrait être intéressant... si...'",
+        "'Franchement' quand il va être cash sur le prix ou un défaut"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Au-delà, il interrompt avec une question précise ou un 'Oui, mais concrètement pour nous ?'. Déteste les généralités et le jargon commercial anglo-saxon mal maîtrisé."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Le cabinet croît de 8-10% par an mais atteint un plafond de verre : les associés sont surchargés, la gestion administrative bouffe du temps facturable. Un concurrent direct vient de fusionner et fait pression. Le cabinet a besoin de professionnaliser ses process sans perdre son ADN de proximité client.",
+      "priorites_actuelles": [
+        "Optimiser la gestion du temps facturable (objectif : +15% d'heures facturables)",
+        "Améliorer le suivi client et la réactivité (pression concurrentielle)",
+        "Ne pas perdre d'argent - le budget est déjà serré avec 2 recrutements prévus",
+        "Décision à prendre avant fin de trimestre pour bénéfice sur l'exercice fiscal en cours"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion qui a été abandonné après 6 mois (trop complexe, pas adopté par les collaborateurs). Depuis, méfiance accrue. Se souvient du commercial qui avait promis 'une prise en main en 48h'.",
+      "fournisseur_actuel": "Utilise une solution artisanale (Excel + logiciel de facturation basique + emails) qui montre ses limites mais 'qui a le mérite de fonctionner'. Pas de contrat à résilier mais une inertie à vaincre.",
+      "budget_disponible": "A provisionné mentalement 25-30K€ maximum pour l'année, mais votre offre tourne autour de 38-42K€. Peut aller jusqu'à 35K€ en poussant, mais au-delà il faut convaincre les 3 autres associés en comité (ce qu'il veut éviter pour garder la main)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler ROI en heures facturables récupérées (son langage) plutôt qu'en 'productivité'",
+        "Citer des cabinets comparables par nom (il les connaît tous) avec des résultats chiffrés",
+        "Reconnaître les échecs passés du secteur et expliquer ce qui est différent",
+        "Proposer une phase pilote ou garantie de résultat",
+        "Montrer qu'on comprend VRAIMENT le métier d'avocat (pas du blabla)",
+        "Être transparent sur les limites et les efforts nécessaires côté cabinet"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'Tous nos clients sont satisfaits' (trop commercial, pas crédible)",
+        "Refuser de négocier en invoquant 'la politique de l'entreprise' (il négocie H24 pour ses clients)",
+        "Faire du name dropping de grands cabinets parisiens (pas comparable à sa structure)",
+        "Minimiser ses objections ou lui expliquer son métier",
+        "Utiliser la pression temporelle artificielle ('l'offre expire vendredi')",
+        "Parler d'innovation, de disruption ou autre bullshit marketing - il veut de l'efficacité, point"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai quinze minutes maximum avant une conf call avec un client, donc si on peut aller droit au but ce serait bien.",
+        "sous_texte": "Je teste votre capacité à être synthétique et à respecter mon temps. Si vous me noyez dans un pitch commercial, je raccroche mentalement.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa contrainte temps, annoncer un plan en 3 points max, demander permission de commencer par une question précise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, je reçois trois appels par semaine pour des solutions soit-disant révolutionnaires. Qu'est-ce qui fait que vous êtes différent ?",
+        "sous_texte": "Je suis fatigué des discours commerciaux. Prouvez-moi en 30 secondes que vous n'êtes pas un vendeur lambda qui récite son script.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le bruit commercial, citer un cas client comparable précis avec ROI chiffré, demander si sa problématique ressemble"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, dans notre métier, on ne peut pas se permettre de perdre trois semaines en déploiement. On facture à l'heure, nous.",
+        "sous_texte": "Je vous rappelle que mon métier est plus complexe que le vôtre. Chaque heure non facturable me coûte de l'argent. Respectez cette réalité ou je décroche.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser sa contrainte, quantifier le temps de déploiement réaliste, montrer le ROI en heures facturables récupérées dès mois 2-3"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, on fonctionne avec Excel et notre logiciel de facturation depuis dix ans. C'est pas parfait mais ça tourne. Pourquoi je changerais ?",
+        "sous_texte": "Je défends mon statu quo car le changement fait peur. Prouvez-moi que la douleur de rester comme ça est supérieure à la douleur de changer.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Questionner sur les irritants actuels (temps perdu, erreurs, infos dispersées) plutôt que vanter votre solution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Il y a trois ans on a testé un logiciel, ça a été un fiasco complet. Les collaborateurs n'ont jamais adhéré, on a perdu six mois et quinze mille euros. Qu'est-ce qui me dit que ça ne va pas se reproduire ?",
+        "sous_texte": "J'ai une blessure réelle de cette expérience. Je ne veux pas revivre cet échec et surtout pas que les autres associés me le reprochent à nouveau. C'est MA crainte principale.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accuser réception de l'échec, demander ce qui n'a pas marché précisément, expliquer votre méthode d'adoption différente avec preuves"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin, c'est exactement le même discours que me tenait le commercial de [concurrent] la semaine dernière. Ils sont à trente pour cent moins cher, d'ailleurs.",
+        "sous_texte": "Je vous mets en concurrence frontale pour voir si vous tenez votre positionnement ou si vous paniquez. Et accessoirement, je teste votre marge de négo.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, demander ce qui les a séduits chez eux, identifier votre différenciateur clé, ne pas négocier maintenant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, revenons aux choses sérieuses. Vous me parlez de productivité, d'optimisation... Concrètement, en euros, ça me rapporte combien la première année ?",
+        "sous_texte": "Arrêtez le baratin marketing. Je veux du chiffre précis. Si vous bafouuillez ou restez vague, vous perdez toute crédibilité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Construire le ROI avec lui : heures récupérées x taux horaire moyen, sur la base de ses chiffres à lui"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vos références, ce sont des cabinets de vingt, trente avocats. Nous on est onze. C'est pas comparable, on n'a pas les mêmes problématiques.",
+        "sous_texte": "Je cherche une excuse pour justifier mon hésitation. Mais au fond, je veux savoir si ça marche vraiment pour MA taille de structure.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 cabinets de 8-15 avocats précisément, avec nom si possible, ou retourner : qu'est-ce qui serait spécifique à 11 selon lui ?"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et la formation des collaborateurs, vous la gérez comment ? Parce que j'ai des associés qui ont cinquante-cinq ans et qui sont... disons... pas forcément à l'aise avec les nouveaux outils.",
+        "sous_texte": "J'ai peur de la résistance interne et du conflit avec mes associés seniors. Si vous ne me rassurez pas là-dessus, je ne peux pas avancer, même si moi je suis convaincu.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décrire l'accompagnement différencié par profil, montrer qu'ils peuvent commencer par les plus agiles, prévoir des champions internes"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, sur le principe je suis intéressé, mais là votre tarif... quarante-deux mille euros, c'est juste pas possible. J'avais budgété maximum vingt-cinq, trente mille.",
+        "sous_texte": "Je suis vraiment intéressé MAIS le prix est un vrai blocage, pas juste une tactique. Je teste votre marge de négo mais j'ai aussi une vraie contrainte budget à faire valider par mes associés.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ancrer d'abord la valeur complète, quantifier le ROI ensemble, puis explorer options (étalement, périmètre ajusté) avant tout rabais direct"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant mais il faut que j'en parle aux autres associés. On a un comité la semaine prochaine, je vous tiens au courant après.",
+        "sous_texte": "Je me défile parce que je ne suis pas 100% convaincu OU je n'ai pas les arguments pour défendre ça en interne OU c'est une vraie contrainte décisionnelle. Testez laquelle.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est normal, demander quel est SON avis à lui, identifier les objections potentielles des autres associés, proposer de préparer ensemble"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me faites dix pour cent de remise et on signe cette semaine. C'est mon dernier mot.",
+        "sous_texte": "Je négocie comme je le fais pour mes clients : fermement. Je veux voir si vous tenez votre prix ou si vous cédez facilement (ce qui dévaloriserait votre offre à mes yeux).",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas céder immédiatement, demander ce qui justifie cette demande, proposer contrepartie (paiement anticipé, référence client, périmètre) si remise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK mais si dans six mois ça ne marche pas, je fais quoi moi ? Vous me remboursez ? Parce que quinze mille euros perdus ça m'est déjà arrivé.",
+        "sous_texte": "Ma blessure de l'échec passé refait surface au moment de l'engagement. J'ai besoin d'un filet de sécurité psychologique pour franchir le pas.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer jalons de validation à 30/60/90j avec critères mesurables, engagement sur accompagnement renforcé, clause de sortie raisonnable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Laissez-moi y réfléchir jusqu'en fin de semaine. Je vous recontacte moi-même, d'accord ?",
+        "sous_texte": "Soit je ne suis pas convaincu et je veux me débarrasser poliment de vous, soit j'ai vraiment besoin de digérer l'info. Dans les deux cas, je reprends le contrôle de la relation commerciale.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter mais fixer RDV précis (jour/heure) plutôt que laisser flou, identifier ce qui reste à clarifier pour sa réflexion"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, soyons clairs : je suis prêt à signer à trente-cinq mille maximum, avec un paiement étalé sur l'année, et une clause de sortie si à six mois on n'a pas récupéré au minimum cinquante heures facturables. Sinon, je prends le temps de comparer sérieusement avec vos concurrents. Vous pouvez faire ça ou pas ?",
+      "condition_declenchement": "Arrive après plusieurs échanges, quand il a compris la valeur MAIS reste bloqué sur le prix et le risque. C'est son ultimatum d'avocat négociateur : précis, conditionnel, avec alternative crédible. Il teste votre solidité finale."
+    },
+    "pattern_escalade": "Matthieu commence cordial mais pressé (test de respect du temps). Si vous tenez, il devient analytique et challenge chaque argument avec des 'oui mais concrètement'. Si vous résistez encore, il sort l'artillerie : comparaison concurrent + contrainte prix réelle. À ce stade, soit vous avez ancré la valeur et il négocie sérieusement, soit vous avez faibli et il sent le discount facile. Son pattern final : proposition chiffrée précise en mode ultimatum, avec une touche de 'je sais que vous avez de la marge'. Ne JAMAIS céder sans contrepartie, sinon il perd le respect.",
+    "piege_classique": "Le double piège de Matthieu : 1) Il mélange objections sincères (peur de l'échec, adoption interne) et tactiques (comparaison prix concurrent) dans la même phrase, ce qui déstabilise. 2) Il valorise votre expertise ('vous connaissez le sujet') PUIS dégaine une objection assassine juste après pour tester si vous résistez au compliment. Beaucoup de commerciaux baissent leur garde après un compliment et cèdent trop vite sur le prix suivant. Lui le sait et l'utilise consciemment."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions/services pour cabinets d'avocats",
+      "description": "Entreprise proposant une solution destinée aux cabinets d'avocats spécialisés en droit des affaires"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution pour cabinets d'avocats, positionnement premium ou perçu comme tel",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon la nature de la solution (logiciel de gestion, CRM juridique, formation, conseil, etc.)",
+      "prix": "Prix premium avec marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix, négocier avec méthode sans brader la valeur, et utiliser intelligemment la marge de manœuvre limitée pour conclure un accord gagnant-gagnant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution cabinet d'avocats",
+    "vous_etes": "Commercial chez un éditeur de solutions pour cabinets d'avocats en droit des affaires.",
+    "vous_vendez": "Une solution métier premium à 39 500€/an — vous avez 10% de marge de négociation maximum (descente possible jusqu'à 35 550€).",
+    "vous_appelez": "Matthieu Delvaux, 47 ans, avocat associé - managing partner chez Delvaux & Associés (11 avocats, 2,8M€ de CA). Analytique redoutable, il négocie pour ses clients au quotidien et attend la même rigueur de vous. Échaudé par un échec logiciel il y a 3 ans.",
+    "ce_que_vous_savez": [
+      "Il a provisionné mentalement 25-30K€ maximum, peut pousser à 35K€ sans impliquer les autres associés",
+      "Votre offre tourne autour de 38-42K€ — écart significatif à combler",
+      "Son cabinet atteint un plafond : associés surchargés, besoin de +15% d'heures facturables",
+      "Il veut une décision avant fin de trimestre pour impact sur l'exercice fiscal",
+      "Il teste votre solidité comme il le ferait avec une partie adverse — attendez-vous à être challengé sur chaque argument"
+    ],
+    "votre_objectif": "Défendre la valeur de votre offre, ancrer le prix sur le ROI en heures facturables, et négocier méthodiquement pour closer entre 35 500€ et 37 000€.",
+    "vos_atouts": [
+      "Vous connaissez des cabinets comparables qui ont récupéré 12-18% d'heures facturables en 6 mois",
+      "Votre solution inclut un accompagnement terrain qui évite l'échec d'adoption (contrairement aux outils abandonnés)",
+      "Vous pouvez proposer un phasage ou des garanties de résultat",
+      "Vous parlez son langage : ROI, heures facturables, pas de jargon marketing creux"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:59:40Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15728,
+    "total_time_s": 146.5
+  }
+}

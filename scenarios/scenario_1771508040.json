@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771508040",
+  "description_originale": "Le gérant / dirigeant d'une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : batiment]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "BTP",
+      "taille_entreprise": "PME 20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant / Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Fournitures, matériaux ou services pour le BTP (travaux tous corps d'état / gros œuvre)",
+      "proposition_valeur_presumee": "Fiabilité des livraisons, qualité des produits/services, support client",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Oui, menace explicite de changement de fournisseur"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Client mécontent suite à problème de livraison/service/qualité",
+        "Menace de partir à la concurrence",
+        "Risque de perte d'un client existant"
+      ],
+      "implicites": [
+        "Processus qualité ou logistique défaillant",
+        "Communication insuffisante en cas de problème",
+        "Potentiel manque de suivi client",
+        "Gestion de crise client non maîtrisée par les commerciaux"
+      ],
+      "probleme_racine": "Incapacité des commerciaux à gérer les situations de crise client et transformer une réclamation en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "Problème de livraison/service/qualité",
+      "Menace de partir à la concurrence"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion des réclamations clients : désamorcer les tensions, pratiquer l'écoute active, proposer des solutions adaptées et transformer une crise en opportunité de fidélisation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur pour le secteur BTP (négoce de matériaux, loueur de matériel, prestataire de services BTP)",
+      "entreprise_description": "Entreprise fournissant des produits ou services aux entreprises de BTP, avec une base de clients existants dans le secteur du bâtiment",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produits, matériaux ou services destinés aux entreprises de BTP réalisant des travaux tous corps d'état ou gros œuvre",
+      "proposition_valeur": "Fiabilité, qualité, réactivité et accompagnement des professionnels du BTP",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client existant (entreprise BTP 20-40 salariés mentionnée)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "Gestion de réclamation - désamorcer la crise, trouver une solution satisfaisante, préserver et renforcer la relation client",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème (livraison/service/qualité)",
+        "Type de produit/service fourni",
+        "Historique de la relation commerciale",
+        "Valeur du client (CA annuel)",
+        "Solutions possibles à disposition du commercial"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Ferrand",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Ferrand Bâtiment",
+        "secteur": "BTP - Entreprise générale du bâtiment (TCE + gros œuvre)",
+        "taille": "28 salariés (dont 22 ouvriers, 4 chefs d'équipe, 1 comptable, lui-même)",
+        "ca_approximatif": "3,2M€ annuels"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par expérience - a été échaudé plusieurs fois par des promesses non tenues",
+        "Loyal jusqu'à la rupture - mais rancunier quand la confiance est trahie",
+        "Orienté résultat concret - déteste le baratin commercial"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation auprès de ses clients finaux (maîtres d'ouvrage, promoteurs)",
+        "Ne pas perdre de temps ni d'argent - chaque retard de chantier lui coûte cher",
+        "Être respecté en tant que chef d'entreprise qui sait ce qu'il fait depuis 28 ans",
+        "Passer le relais à son fils dans 5-7 ans avec une entreprise saine"
+      ],
+      "peurs_freins": [
+        "Que ses équipes soient bloquées sur chantier faute de matériel - ça lui est déjà arrivé 3 fois cette année",
+        "Perdre un gros contrat à cause d'un fournisseur défaillant",
+        "Passer pour un pigeon qui se fait avoir par les commerciaux",
+        "Devoir gérer encore une crise alors qu'il croule déjà sous les problèmes opérationnels"
+      ],
+      "rapport_aux_commerciaux": "Cordial mais direct. Il sait faire la différence entre ceux qui connaissent le métier et les autres. Apprécie qu'on lui parle franchement, déteste qu'on tourne autour du pot ou qu'on minimise les problèmes. A ses habitudes avec 2-3 commerciaux de confiance qu'il tutoie.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, irrité mais professionnel. Voix fatiguée d'un homme qui a déjà eu 4 coups de fil de chantier ce matin. Commence par 'Ouais je t'écoute' ou 'Vas-y mais fais vite, j'suis sur un chantier là'",
+      "signaux_interet": [
+        "Pose des questions précises sur les délais et solutions concrètes",
+        "Mentionne l'historique de la relation ('Ça fait quand même 6 ans qu'on bosse ensemble')",
+        "Demande à parler au responsable ou au patron si nécessaire",
+        "Soupire longuement mais reste en ligne"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole sèchement : 'Attends, attends, tu me refais pas le coup du bla-bla'",
+        "Mentionne la concurrence explicitement : 'Leroy, lui au moins il livre sous 48h'",
+        "Menace de façon concrète : 'Là j'ai Dubois Matériaux qui me propose...'",
+        "Utilise le passé : 'Avant ça marchait, maintenant...'",
+        "Dit 'Écoute, on verra' sur un ton définitif"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...' ou 'Bon...'",
+        "Utilise 'hein' en fin de phrase pour appuyer",
+        "Dit 'voilà' pour ponctuer, surtout quand il est agacé",
+        "Expression typique : 'Moi je veux bien, mais...'",
+        "Tutoie rapidement si la relation est ancienne"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - maximum 45 secondes sans interruption. Attend des réponses concrètes, pas des explications à rallonge. Si le commercial parle trop, il coupe : 'Ouais OK mais concrètement, qu'est-ce que tu me proposes ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes bien rempli (6 chantiers en cours dont 2 gros). Problème de trésorerie passager à cause de retards de paiement clients. Stress élevé car 2 ouvriers en arrêt maladie simultanés. Vient de perdre un appel d'offres important la semaine dernière.",
+      "priorites_actuelles": [
+        "Finir le chantier de la résidence Les Érables avant les pénalités de retard (dans 12 jours)",
+        "Trouver 2 intérimaires qualifiés rapidement",
+        "Récupérer 87 000€ de factures impayées d'un client",
+        "Ne surtout pas avoir de nouveaux problèmes d'approvisionnement"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 6 ans, commandes régulières (entre 15 000€ et 30 000€ par mois selon les chantiers). A toujours été satisfait jusqu'à cet incident. A déjà changé de fournisseur il y a 8 ans après une série de problèmes similaires.",
+      "fournisseur_actuel": "Votre entreprise (en relation depuis 6 ans) + 2 fournisseurs secondaires pour certains produits spécifiques",
+      "budget_disponible": "Trésorerie tendue ce mois-ci mais pas de problème structurel. Peut continuer à commander aux mêmes volumes SI la confiance est restaurée. Sinon, ira voir ailleurs même si ça lui coûte un peu plus cher."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître l'erreur sans détour et sans excuse bidon ('Christophe, on a merdé, point.')",
+        "Proposer une solution immédiate et chiffrée, pas des promesses vagues",
+        "Montrer qu'on connaît son historique et qu'on valorise la relation ('6 ans de collaboration, je vais pas te lâcher comme ça')",
+        "Lui donner un contact direct pour éviter que ça se reproduise (numéro de portable, ligne prioritaire)",
+        "Parler chiffres, délais, compensation concrète (pas de 'geste commercial' flou)",
+        "Lui demander ce QUI lui permettrait de passer à autre chose"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou rejeter la faute ailleurs ('C'est le transporteur', 'Vous savez, en ce moment...')",
+        "Promettre sans s'engager formellement ('On va faire au mieux')",
+        "Lui faire la leçon ou contester sa version des faits",
+        "Parler de procédure, de politique interne, de process - il s'en fout",
+        "Mettre trop de temps à proposer du concret (plus de 3 minutes de discussion)",
+        "Lui dire de patienter ou de rappeler plus tard - il appellera la concurrence entre-temps",
+        "Prendre un ton condescendant ou trop commercial ('Monsieur Ferrand, je comprends votre émotion...')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais écoute, t'es gentil de rappeler mais franchement là c'est un peu tard non ? Ça fait trois jours que j'attends tes palettes, j'ai eu ton collègue hier qui m'a sorti les mêmes salades, donc vas-y mais fais vite parce que moi j'ai un chantier qui attend hein.",
+        "sous_texte": "Tu n'es pas le premier à m'appeler, je n'ai plus confiance dans vos paroles, et je suis déjà en train de regarder ailleurs. Prouve-moi MAINTENANT que cet appel sera différent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'erreur immédiatement, ne pas se justifier, annoncer une solution concrète dans les 30 premières secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoute, j'suis sur le chantier là, j'ai mes gars qui attendent, donc si c'est pour me dire que ça va arriver 'bientôt' ou 'dans les prochains jours', tu peux raccrocher tout de suite, j'appelle Dubois Matériaux.",
+        "sous_texte": "Je n'ai plus de temps à perdre en palabres. Soit tu m'annonces quelque chose de concret dans les 10 secondes, soit je passe à l'action avec ton concurrent.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un horaire précis de livraison + une compensation immédiate, sans préambule"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, tu vas pas me refaire le coup du 'qu'est-ce qui s'est passé exactement' là... Ce qui s'est passé ? Bah rien, justement ! Mes palettes elles sont pas arrivées, mes mecs sont restés les bras croisés mardi matin, j'ai un chef de chantier qui m'engueule et un client qui me menace de pénalités. Voilà ce qui s'est passé.",
+        "sous_texte": "Tu connais très bien le problème, ne fais pas semblant de découvrir. Cette fausse naïveté m'irrite profondément. Je veux des solutions, pas une enquête.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider immédiatement sa version, ne pas poser de questions supplémentaires sauf sur ce qu'il attend concrètement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien comprendre hein, mais comprendre ça me redonne pas mes trois jours de perdus. Tu sais combien ça me coûte trois jours de retard ? Entre la location de la grue, les gars payés à rien faire et les pénalités qui arrivent... On est à 4 500 balles là, facile.",
+        "sous_texte": "Ton explication ne m'intéresse pas si elle ne s'accompagne pas d'une compensation à la hauteur du préjudice réel. Chiffre contre chiffre.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le préjudice chiffré, proposer une compensation équivalente ou supérieure, documentée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Six ans qu'on bosse ensemble, six ans ! Et c'est pas la première fois cette année que j'ai des soucis hein. En mars déjà, vous m'aviez livré des agglos qui tenaient pas debout. En juin, un camion qui arrive avec deux jours de retard... Là franchement, j'commence à me demander si vous avez pas un problème de fond chez vous.",
+        "sous_texte": "Ma patience est épuisée. Ce n'est pas un incident isolé dans ma perception, c'est une tendance. Si tu ne me prouves pas que quelque chose va structurellement changer, je pars.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'historique précis, expliquer les changements structurels mis en place, offrir des garanties contractuelles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais OK, tu me proposes un geste commercial de 15%, c'est sympa mais... Leroy il m'a rappelé ce matin, lui il me fait -20% sur les trois prochaines commandes PLUS une livraison prioritaire garantie sous 24h. Alors explique-moi pourquoi je resterais chez vous ?",
+        "sous_texte": "J'ai une offre concrète ailleurs et je vais te mettre en concurrence directe. Soit tu surenchéris, soit tu me donnes une vraie raison de rester au-delà du prix.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas surenchérir bêtement, valoriser la relation historique avec des engagements concrets + avantages qualitatifs chiffrés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi je veux bien te croire, mais qu'est-ce qui me garantit que dans trois semaines j'me retrouve pas dans la même merde ? Parce que là, des promesses j'en ai eu plein, mais concrètement, CONCRÈTEMENT, qu'est-ce qui va changer ?",
+        "sous_texte": "Je ne crois plus aux paroles. J'ai besoin de preuves tangibles, de mécanismes de garantie, d'engagements vérifiables. Sinon c'est du vent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un engagement écrit, un numéro d'urgence direct, un process de compensation automatique en cas de retard"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, tu me parles de votre nouveau logiciel de gestion des commandes, de votre plateforme ci et ça... Mais moi j'en ai rien à foutre de votre plateforme ! Ce que je veux c'est recevoir mes palettes quand vous dites que je vais les recevoir, point barre.",
+        "sous_texte": "Tu me perds dans des détails techniques qui ne m'intéressent pas. Reviens à l'essentiel : la fiabilité opérationnelle. Stop le baratin.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Traduire immédiatement tout argument technique en bénéfice concret et mesurable pour lui"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoute, c'est gentil tout ça, mais là j'ai mon comptable qui me dit qu'on a 12 000 euros bloqués en commande chez vous. Si je continue à commander et que vous me refaites le même coup, j'me retrouve avec 30 000 boules immobilisés et des chantiers à l'arrêt. C'est trop risqué pour moi là.",
+        "sous_texte": "Le problème n'est pas que relationnel, il devient financier. Je prends un risque économique réel en continuant avec vous. Trouve-moi une sécurisation financière.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer des conditions de paiement sécurisées, fractionnement, garantie de livraison sous peine de clause résolutoire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais attends, même si tu m'arranges le coup là, mon fils il est en train de reprendre progressivement la boîte avec moi... Et lui, il voit bien que j'passe mon temps à gérer des problèmes avec mes fournisseurs au lieu de gérer le business. Il me pousse déjà à rationaliser tout ça. Donc voilà, faut que ça change vraiment hein.",
+        "sous_texte": "Il y a un enjeu de transmission d'entreprise. Si mon fils perçoit que tu es un fournisseur problématique, il te dégagera dès qu'il prendra les rênes. C'est maintenant que tu dois faire tes preuves.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une rencontre avec le fils, créer un partenariat modernisé, montrer l'adaptabilité pour la nouvelle génération"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... Moi je veux bien qu'on retente le coup, mais là franchement j'ai besoin de réfléchir. Laisse-moi 48h, je vais voir avec mon chef de chantier et mon fils ce qu'ils en pensent, et je te rappelle, OK ?",
+        "sous_texte": "Je ne veux pas m'engager maintenant sous pression. J'ai besoin de valider avec mes proches de confiance. Mais c'est aussi une porte de sortie polie - si tu acceptes, je ne rappellerai peut-être jamais.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le besoin de réflexion mais fixer un point précis à valider ensemble maintenant, prendre RDV ferme pour rappel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, sur le papier ça a l'air bien ce que tu me proposes, mais j'te cache pas que j'ai déjà un devis de Dubois sur mon bureau là... Et eux au moins, je sais qu'ils livrent. Donc je vais voir, hein.",
+        "sous_texte": "J'ai une alternative crédible et je suis à deux doigts de l'activer. Si tu ne me donnes pas une raison émotionnelle forte de rester (loyauté, confiance retrouvée), le rationnel me fera partir.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rappeler la valeur de 6 ans de relation, demander une dernière chance avec un test concret à court terme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, admettons que je te dise oui là... Mais tu comprends que je vais commander en petites quantités au début hein ? Je vais pas te refiler une commande de 25 000 balles tout de suite et prendre le risque de me faire avoir une deuxième fois.",
+        "sous_texte": "J'accepte de te donner une seconde chance mais avec une défiance assumée. Tu es en période probatoire. Accepte cette condition ou je pars définitivement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter cette logique, la formaliser comme un parcours de reconquête avec paliers progressifs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, bon... C'est OK pour cette fois. Mais je te préviens hein, à la première connerie, je change. Et je rigole pas. J'ai 52 ans, j'ai pas le temps de me faire chier avec des fournisseurs qui tiennent pas leurs promesses. On est d'accord ?",
+        "sous_texte": "J'accepte, mais c'est un accord conditionnel avec une épée de Damoclès. Tu n'as droit à AUCUNE erreur. Cette phrase est autant un engagement qu'une menace.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter solennellement, reformuler l'engagement, donner une garantie concrète supplémentaire non demandée"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute, je vais être franc avec toi... J'ai vraiment essayé de t'écouter là, mais en fait pendant qu'on parlait j'ai reçu un SMS de Dubois qui me confirme une livraison demain matin 8h avec les 15% qu'il m'avait promis. Donc voilà. Désolé mais là, c'est trop tard. J'aurais aimé que vous réagissiez comme ça y'a trois jours, pas maintenant. Allez salut.",
+      "condition_declenchement": "Si le commercial n'a pas proposé de solution concrète dans les 2 premières minutes OU s'il a minimisé le problème OU s'il a fait des promesses floues OU s'il n'a pas proposé de compensation chiffrée égale ou supérieure à la concurrence"
+    },
+    "pattern_escalade": "Christophe commence irrité mais professionnel. Si le commercial reconnaît l'erreur franchement et rapidement, son ton s'adoucit légèrement ('Bon, OK...'). Si le commercial tourne autour du pot, il devient cassant et mentionne la concurrence dans les 90 secondes. Si le commercial continue à décevoir, il passe en mode définitif ('Écoute, on va arrêter là') et l'objection finale tombe. La fenêtre de reconquête se ferme progressivement : 100% ouverte pendant 1 minute, 60% entre 1 et 3 minutes, 30% après 3 minutes, 10% après 5 minutes.",
+    "piege_classique": "Christophe peut donner l'impression d'accepter ('Bon OK, on va dire que...') alors qu'il n'est pas convaincu, juste fatigué de la discussion. Le commercial doit détecter si l'accord est sincère (questions sur les prochaines étapes, confirmation d'un volume de commande) ou de façade (formules évasives, 'on verra', pas de date précise). S'il ne sécurise pas un engagement tangible (prochain rendez-vous, commande de test, date de livraison validée), Christophe appellera la concurrence dès que le téléphone sera raccroché."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur pour le secteur BTP (négoce de matériaux, loueur de matériel, prestataire de services BTP)",
+      "description": "Entreprise fournissant des produits ou services aux entreprises de BTP, avec une base de clients existants dans le secteur du bâtiment"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produits, matériaux ou services destinés aux entreprises de BTP réalisant des travaux tous corps d'état ou gros œuvre",
+      "proposition_valeur": "Fiabilité, qualité, réactivité et accompagnement des professionnels du BTP",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client existant (entreprise BTP 20-40 salariés mentionnée)"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "Gestion de réclamation - désamorcer la crise, trouver une solution satisfaisante, préserver et renforcer la relation client",
+      "description": "Former les commerciaux à la gestion des réclamations clients : désamorcer les tensions, pratiquer l'écoute active, proposer des solutions adaptées et transformer une crise en opportunité de fidélisation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client mécontent — Gestion de crise BTP",
+    "vous_etes": "Commercial chez un négociant de matériaux BTP, en relation avec Christophe Ferrand depuis 6 ans.",
+    "vous_vendez": "Fourniture de matériaux pour chantiers BTP (commandes mensuelles entre 15 000€ et 30 000€).",
+    "vous_appelez": "Christophe Ferrand, 52 ans, gérant de Ferrand Bâtiment (28 salariés, 3,2M€ CA). Direct, méfiant, loyale jusqu'à la rupture. Actuellement sous pression : 6 chantiers en cours, 2 ouvriers absents, trésorerie tendue, et il vient de subir un problème de livraison de votre part.",
+    "ce_que_vous_savez": [
+      "Client fidèle depuis 6 ans, jamais eu de souci majeur avant",
+      "Il est furieux suite à un incident récent (livraison défaillante)",
+      "Il a déjà menacé d'aller voir la concurrence (notamment Dubois Matériaux)",
+      "Il a un gros chantier (résidence Les Érables) à finir sous 12 jours avec pénalités de retard",
+      "Il a déjà changé de fournisseur il y a 8 ans pour des raisons similaires"
+    ],
+    "votre_objectif": "Désamorcer la crise, reconnaître l'erreur, proposer une solution immédiate et concrète pour sauver la relation.",
+    "vos_atouts": [
+      "Historique de 6 ans de collaboration sans accroc",
+      "Connaissance de ses chantiers et de son rythme de commandes",
+      "Capacité à proposer une compensation chiffrée (remise, livraison express gratuite, priorité garantie)",
+      "Accès direct à votre responsable logistique pour éviter que ça se reproduise"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:34:00Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16685,
+    "total_time_s": 153.1
+  }
+}

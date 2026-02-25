@@ -1,0 +1,331 @@
+{
+  "id": "scenario_1771520365",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : services_entreprises]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme non spécifié lié au secteur nettoyage/sécurité/maintenance",
+      "proposition_valeur_presumee": "Amélioration ou complément des services actuels pour un client déjà satisfait",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "Obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "Éviter que le client reste sur sa solution actuelle par confort",
+        "Justifier un investissement supplémentaire alors que le client est déjà satisfait",
+        "Surmonter l'inertie décisionnelle d'un client en zone de confort"
+      ],
+      "probleme_racine": "Transformer la satisfaction client en opportunité de développement commercial sans créer de résistance au changement"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upselling auprès de clients satisfaits en démontrant une valeur ajoutée tangible",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_entreprises",
+      "entreprise_description": "Entreprise fournissant des services de nettoyage, sécurité et/ou maintenance aux entreprises",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou montée en gamme par rapport à l'offre actuelle souscrite par le client depuis 1 an",
+      "proposition_valeur": "Extension ou amélioration des services actuels pour optimiser la performance, réduire les risques ou générer des économies",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client existant satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie du client, relation de confiance établie, continuité de service avec un prestataire connu",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service complémentaire ou montée en gamme proposé",
+        "Positionnement tarifaire",
+        "Service actuellement souscrit par le client",
+        "Zone géographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe",
+      "nom": "Marchetti",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Techni-Prod Services",
+        "secteur": "Fabrication de composants électroniques pour l'automobile",
+        "taille": "38 salariés",
+        "ca_approximatif": "4,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-terre-à-terre",
+        "Méfiant vis-à-vis des vendeurs trop enthousiastes",
+        "Loyal envers les prestataires qui font le job"
+      ],
+      "motivations_profondes": [
+        "Protéger sa rentabilité durement acquise après 15 ans de galère",
+        "Éviter tout dérapage budgétaire qui remettrait en cause sa crédibilité auprès des actionnaires familiaux",
+        "Maintenir sa réputation de gestionnaire prudent mais efficace"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur qui profite de la relation établie",
+        "Découvrir que le service complémentaire était en fait indispensable et qu'il aurait dû le prendre avant",
+        "Que ses équipes trouvent le changement perturbant alors que tout roule",
+        "Perdre du temps en réunions inutiles"
+      ],
+      "rapport_aux_commerciaux": "Respectueux mais distant. Apprécie la franchise brutale, déteste le baratin. Se souvient des promesses non tenues même 5 ans après.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je suis en réunion dans 10 minutes, on fait vite'",
+      "signaux_interet": [
+        "Arrête de regarder son écran et prend un stylo",
+        "Demande des chiffres précis : 'Combien exactement ?'",
+        "Évoque un problème concret non résolu : 'Tiens justement...'",
+        "Parle au futur : 'Si on met ça en place, ça se passe comment ?'"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre",
+        "Répète 'Oui oui' sans écouter vraiment",
+        "Coupe pour dire 'On est très contents de ce qu'on a déjà'",
+        "Balaie d'un 'Écoute, on verra ça l'année prochaine peut-être'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Franchement...'",
+        "Utilise 'Bon' pour clore un sujet",
+        "Dit 'C'est pas faux' quand il est d'accord mais ne veut pas le montrer",
+        "Emploie 'Faut qu'on se comprenne bien' quand il sent venir une entourloupe"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35 secondes maximum avant interruption. Apprécie les phrases courtes et les silences qu'il peut remplir."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable +8% cette année. Gros contrat automobile renouvelé jusqu'en 2026. Embauche de 3 personnes prévue T1 2025. Pression pour obtenir certification ISO 45001 d'ici fin 2025 (client l'exige).",
+      "priorites_actuelles": [
+        "Réussir l'audit ISO 45001 sans surcoût",
+        "Intégrer les nouvelles recrues sans ralentir la prod",
+        "Renégocier le bail des locaux (échéance juin 2025)",
+        "Réduire l'absentéisme qui a grimpé à 6,2%"
+      ],
+      "experience_avec_offre_similaire": "A déjà eu 3 prestataires nettoyage en 10 ans. Les deux premiers décevants (qualité irrégulière, turnover personnel). Très satisfait du prestataire actuel car 'ils font le job, pas de chichi, tarif correct'.",
+      "fournisseur_actuel": "Votre entreprise (nettoyage bureaux + ateliers 3x/semaine depuis février 2024)",
+      "budget_disponible": "Peut débloquer jusqu'à 15-18K€/an si ROI démontré, mais devra rogner ailleurs. Au-delà, nécessite validation associés (processus lourd = 6 semaines)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Lier la proposition à l'ISO 45001 qu'il DOIT obtenir",
+        "Mentionner la réduction de l'absentéisme avec exemples chiffrés d'autres clients",
+        "Rappeler un petit couac du mois dernier qu'il a signalé (prouve que vous écoutez)",
+        "Proposer un test gratuit 3 semaines : il adore 'essayer avant d'acheter'",
+        "Dire 'Franchement Philippe, je vous appelle pas pour vendre mais parce que j'ai pensé à vous en voyant...'",
+        "Présenter le coût en 'économie potentielle' plutôt qu'en dépense additionnelle"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Sous-entendre que le service actuel est insuffisant (attaque sa décision passée)",
+        "Jargon marketing : 'solution innovante', 'paradigme', 'expérience client augmentée'",
+        "Demander un rendez-vous long : 'Juste 45 minutes pour vous présenter...'",
+        "Faire du name-dropping avec des grosses boîtes (il déteste les donneurs de leçons)",
+        "Présenter un catalogue : il veut UNE chose précise pour SON problème",
+        "Insister après un premier 'non' : il respecte la ténacité, pas l'acharnement"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, écoutez je suis en réunion dans 10 minutes là, on fait vite hein",
+        "sous_texte": "Je suis ouvert à écouter 2 minutes parce que vous êtes mon prestataire actuel, mais prouvez-moi vite que ça vaut le coup sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Respecter sa contrainte temps et annoncer la durée exacte + bénéfice immédiat pour lui"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement on est très contents de ce que vous faites déjà, pourquoi vous m'appelez ?",
+        "sous_texte": "J'ai peur que vous cherchiez à me vendre un truc dont je n'ai pas besoin juste parce que la relation est bonne. Rassurez-moi sur vos intentions",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa satisfaction, mentionner un élément spécifique qui vous a fait penser à lui (ISO 45001 ou absentéisme)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est pas faux tout ça, mais bon on a déjà ce qu'il faut niveau nettoyage, vous voyez",
+        "sous_texte": "Votre idée est peut-être bonne mais je ne vois pas encore clairement la différence avec ce qu'on a déjà. Soyez plus précis",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Poser une question sur l'ISO 45001 ou l'absentéisme pour identifier un besoin latent qu'il n'associe pas encore au nettoyage"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais attendez, ça coûte combien votre truc là ? Parce que faut qu'on se comprenne bien, j'ai pas un budget illimité",
+        "sous_texte": "Je sens venir une dépense que je n'ai pas budgétée. Donnez-moi un ordre de grandeur maintenant pour que je décide si ça vaut le coup de continuer la conversation",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Recadrer sur la valeur avant le prix, puis donner une fourchette en la positionnant comme économie ou investissement ISO"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez c'est intéressant mais là j'ai trois nouvelles recrues qui arrivent en janvier, c'est vraiment pas le moment de bousculer les équipes",
+        "sous_texte": "J'ai peur que le changement crée de la perturbation alors que j'ai déjà beaucoup à gérer. Convainquez-moi que ça facilite mon quotidien au lieu de le compliquer",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer l'objection en argument : l'arrivée de nouvelles recrues est justement le bon moment pour améliorer l'hygiène/sécurité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais je sais pas... On avait déjà eu un prestataire qui nous avait promis monts et merveilles, au final c'était de la daube. Faut qu'on se comprenne bien",
+        "sous_texte": "J'ai été échaudé dans le passé et je ne veux pas revivre ça. Votre entreprise est bonne sur le service actuel, mais comment je sais que vous tiendrez vos promesses sur ce nouveau service ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un test gratuit 3 semaines pour éliminer le risque, c'est son déclencheur préféré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, mais concrètement combien exactement ? Parce que vous me parlez d'économies mais moi je vois surtout une ligne de dépense en plus",
+        "sous_texte": "Arrêtez de tourner autour du pot avec vos bénéfices théoriques. Donnez-moi le prix net et prouvez-moi le ROI avec des chiffres précis d'autres clients",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner le prix ferme puis immédiatement le ROI chiffré avec exemple d'un client similaire (réduction absentéisme = économie)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement j'ai pas le temps de gérer ça en ce moment, on verra ça l'année prochaine peut-être",
+        "sous_texte": "Je procrastine parce que je ne vois pas l'urgence ou parce que ça me semble compliqué à mettre en place. Montrez-moi que c'est simple et qu'il y a une deadline réelle",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ancrer sur l'audit ISO 45001 fin 2025 : il DOIT être prêt, reporter = risque de non-conformité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous êtes en train de me dire que ce qu'on fait depuis un an c'est pas suffisant ? C'est ça ?",
+        "sous_texte": "Vous remettez en question ma décision passée et ça m'agace. Je me sens piégé : soit j'admets que j'aurais dû prendre ça avant, soit je refuse par principe",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Désamorcer immédiatement : le service actuel est parfait POUR ce à quoi il sert, mais le contexte a changé (ISO, recrues)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon c'est bien gentil tout ça mais j'ai des devis à valider moi là. Envoyez-moi un mail avec les infos, je regarderai",
+        "sous_texte": "Je fuis poliment parce que soit je ne suis pas convaincu, soit j'ai besoin de temps pour réfléchir, soit vous m'avez perdu avec trop de blabla",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas accepter le mail comme porte de sortie. Proposer une micro-action immédiate : 'Ok, juste une dernière question : l'ISO vous inquiète ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, mais faut que j'en parle aux associés avant. Vous comprenez, au-dessus de 15K je peux pas décider seul",
+        "sous_texte": "Soit c'est vrai et je veux vraiment leur avis, soit c'est une échappatoire parce que je ne suis pas 100% convaincu mais je ne veux pas vous vexer",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier : si budget <15K€, pas besoin des associés selon lui-même. Sinon, proposer de préparer le dossier avec lui pour les associés"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement Philippe, je sais pas... Si ça se trouve dans 3 mois je me rends compte que j'ai dépensé pour rien. C'est ça qui me bloque",
+        "sous_texte": "J'ai peur de regretter ma décision et qu'on me reproche d'avoir gaspillé l'argent. J'ai besoin d'une garantie ou d'une sécurité pour avancer",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer clause de sortie ou période d'essai courte avec indicateurs de succès mesurables dès le départ"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais attendez, si on met ça en place, ça se passe comment concrètement ? Parce que j'ai pas envie que mes équipes perdent 3 jours en formations et tout le bazar",
+        "sous_texte": "Je suis intéressé (il parle au futur) mais j'ai besoin d'être rassuré sur l'implémentation. Si c'est trop lourd en temps, je refuse",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détailler le process d'implémentation simple et rapide : continuité avec équipe actuelle, formation minimale, pas de perturbation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, faites-moi un devis précis et on en reparle tranquillement début février",
+        "sous_texte": "Je repousse la décision pour gagner du temps, soit parce que je veux réfléchir, soit parce que je ne veux pas dire non directement, soit parce que j'ai vraiment besoin de voir les chiffres écrits",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le devis MAIS verrouiller un RDV téléphonique précis (date/heure) pour en parler 48h après envoi du devis"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez franchement j'entends bien tout ce que vous me dites, mais là concrètement je peux pas m'engager sur un truc pareil. C'est pas le bon timing, on a trop de choses en cours. On se reparle mi-2025 quand ce sera plus calme, d'accord ?",
+      "condition_declenchement": "Apparaît si le vendeur : 1) N'a pas ancré sur l'urgence ISO 45001, 2) A trop parlé sans laisser Philippe exprimer ses vrais freins, 3) N'a pas proposé de test gratuit pour éliminer le risque, 4) A donné un prix sans démontrer le ROI chiffré"
+    },
+    "pattern_escalade": "Philippe commence cordial mais pressé (objections réflexes douces). Si le vendeur ne respecte pas son temps ou fait du baratin, il devient plus directif et tranchant ('Bon...', 'Franchement...'). Si le vendeur persiste sans créer de valeur tangible, il fuit poliment mais fermement vers le mail/report. L'escalade est évitable en restant factuel, bref, et en créant micro-engagements successifs. Philippe respecte la ténacité factuelle mais ferme la porte à l'insistance creuse.",
+    "piege_classique": "Philippe dit 'C'est intéressant' ou 'C'est pas faux' : 80% des vendeurs pensent que c'est gagné et poussent vers la signature. ERREUR. Chez Philippe, ces expressions signifient 'Je vous écoute encore mais je ne suis pas convaincu'. Le piège : se satisfaire de ces signaux faibles au lieu de creuser le vrai frein restant. Il faut TOUJOURS demander : 'Qu'est-ce qui vous empêche de tester ça dès maintenant ?' après un 'c'est intéressant'. Sinon il dira oui mollement puis disparaîtra."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_entreprises",
+      "description": "Entreprise fournissant des services de nettoyage, sécurité et/ou maintenance aux entreprises"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou montée en gamme par rapport à l'offre actuelle souscrite par le client depuis 1 an",
+      "proposition_valeur": "Extension ou amélioration des services actuels pour optimiser la performance, réduire les risques ou générer des économies",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client existant satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie du client, relation de confiance établie, continuité de service avec un prestataire connu"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser les techniques d'upselling auprès de clients satisfaits en démontrant une valeur ajoutée tangible",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Proposition service hygiène renforcée",
+    "vous_etes": "Commercial chez votre entreprise de nettoyage professionnel, en charge du compte Techni-Prod Services depuis février 2024.",
+    "vous_vendez": "Un service complémentaire d'hygiène et désinfection renforcée pour ateliers de production (prix : environ 850€/mois, soit 10 200€/an).",
+    "vous_appelez": "Philippe Marchetti, 52 ans, gérant de Techni-Prod Services (38 salariés, fabrication composants électroniques automobile). Pragmatique, méfiant du baratin commercial, fidèle aux prestataires qui font le job sans chichi.",
+    "ce_que_vous_savez": [
+      "Client satisfait de votre prestation nettoyage bureaux + ateliers 3x/semaine depuis février 2024",
+      "Doit obtenir certification ISO 45001 d'ici fin 2025 (exigence client automobile)",
+      "Absentéisme en hausse à 6,2% — préoccupation récente",
+      "3 nouvelles recrues prévues T1 2025",
+      "Petit couac signalé le mois dernier sur une zone atelier (vous avez corrigé)"
+    ],
+    "votre_objectif": "Obtenir son accord de principe pour un devis sur le service hygiène renforcée, en liant la proposition à l'ISO 45001 et la réduction de l'absentéisme.",
+    "vos_atouts": [
+      "Vous connaissez déjà ses locaux et ses contraintes opérationnelles",
+      "Relation de confiance établie depuis 11 mois",
+      "Référence client similaire : réduction absentéisme de 18% après mise en place du service",
+      "Proposition de test gratuit 3 semaines avant engagement"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:59:25Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14171,
+    "total_time_s": 123.8
+  }
+}

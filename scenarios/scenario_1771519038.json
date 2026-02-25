@@ -1,0 +1,366 @@
+{
+  "id": "scenario_1771519038",
+  "description_originale": "Vous appelez une clinique privée, laboratoire d'analyses ou cabinet de groupe de 20-50 personnes. C'est l'secrétaire médicale qui décroche. Vous devez passer le barrage pour parler au directeur de clinique / médecin directeur. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : sante_medical]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "20-50 personnes",
+      "interlocuteur_principal": {
+        "poste": "directeur de clinique / médecin directeur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "secrétaire médicale",
+          "role": "barrage_filtrage",
+          "attitude": "protectrice"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux établissements de santé privés",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de la secrétaire médicale",
+        "Assistante qui filtre et protège le décideur",
+        "Accès difficile au directeur de clinique"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel",
+        "Absence de stratégie de contournement du barrage",
+        "Difficulté à créer l'urgence ou l'intérêt auprès du filtrage",
+        "Positionnement inadéquat face à la secrétaire",
+        "Manque de préparation sur les codes du secteur médical"
+      ],
+      "probleme_racine": "Incapacité à établir la crédibilité et la valeur de l'appel dès le premier contact avec le barrage secrétariat, menant à un blocage systématique avant d'atteindre le décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à franchir le barrage secrétariat dans le secteur médical et décrocher des rendez-vous avec les décideurs de cliniques privées, laboratoires et cabinets médicaux",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B secteur santé/médical",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux établissements de santé privés de taille moyenne",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service professionnel destiné aux cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Prix ou budget indicatif",
+        "Nom et description de l'entreprise vendeuse",
+        "Zone géographique ciblée",
+        "Objections habituellement rencontrées",
+        "Arguments de différenciation concurrentielle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Didier",
+      "nom": "Marconnet",
+      "age": 54,
+      "poste": "Directeur médical et associé majoritaire",
+      "entreprise": {
+        "nom": "Clinique Saint-Augustin",
+        "secteur": "Établissement de santé privé - chirurgie orthopédique et digestive",
+        "taille": "32 personnes (8 médecins, 12 infirmières, 6 aides-soignants, 6 administratifs)",
+        "ca_approximatif": "3,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les sollicitations commerciales par réflexe corporatiste",
+        "Perfectionniste sur tout ce qui touche aux protocoles médicaux",
+        "Débordé chronique avec sentiment de manquer de temps"
+      ],
+      "motivations_profondes": [
+        "Préserver la réputation médicale de son établissement (son nom est dessus)",
+        "Éviter les emmerdements administratifs et les surcharges bureaucratiques",
+        "Maintenir la rentabilité sans compromettre la qualité des soins",
+        "Être reconnu par ses pairs comme un gestionnaire sérieux"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui ne comprend rien au médical",
+        "Investir dans quelque chose qui va créer plus de problèmes que de solutions",
+        "Perdre du temps en réunions inutiles alors qu'il a des patients",
+        "Que son équipe le juge s'il impose un nouvel outil mal fichu",
+        "Les changements qui désorganisent les protocoles établis"
+      ],
+      "rapport_aux_commerciaux": "Fondamentalement sceptique. Considère que 90% des commerciaux ne connaissent rien au secteur de la santé et vendent du vent. A été échaudé 2-3 fois par des solutions 'révolutionnaires' qui ont foiré. Respecte uniquement ceux qui parlent son langage et vont droit au but.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, avec un 'Oui bonjour' légèrement interrogatif qui signifie 'vous avez 30 secondes pour justifier cet appel'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'implémentation",
+        "Demande des chiffres concrets ou des références dans le secteur",
+        "Mentionne un problème spécifique qu'il rencontre actuellement",
+        "Son débit ralentit et il prend des notes",
+        "Dit 'Attendez, là vous m'intéressez' quand ça touche un vrai pain point"
+      ],
+      "signaux_rejet": [
+        "Coupe avec 'Écoutez je n'ai vraiment pas le temps là'",
+        "Répond par des 'Oui oui' distraits en mode pilote automatique",
+        "Soupir audible suivi de 'Envoyez-moi un mail' (= poubelle assurée)",
+        "Devient cassant : 'On a déjà un fournisseur qui nous convient'",
+        "Délègue immédiatement : 'Voyez ça avec Madame Perrin, mon assistante'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...'",
+        "Utilise 'Concrètement' quand il veut du factuel",
+        "Dit 'Ça c'est votre discours commercial' quand il flaire l'argument bateau",
+        "Ponctue de 'Bon.' sec quand il veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant qu'il ne coupe ou décroche mentalement. Exige un échange, pas une présentation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Clinique stable mais sous pression : concurrence d'un nouvel établissement à 12km, obligations réglementaires en hausse (HAS, RGPD, traçabilité), turnover du personnel soignant qui complique le recrutement. Vient de renouveler une certification HAS avec des points de vigilance sur la gestion documentaire.",
+      "priorites_actuelles": [
+        "Réduire la charge administrative du personnel soignant (ils râlent)",
+        "Améliorer les délais de facturation (trésorerie tendue depuis 4 mois)",
+        "Digitaliser sans perdre les médecins seniors réfractaires au changement",
+        "Garder les bons éléments de l'équipe face aux offres concurrentes"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion qui a été un fiasco : formation insuffisante, bugs récurrents, SAV inexistant. L'équipe en parle encore avec amertume. Depuis, il est 3 fois plus exigeant.",
+      "fournisseur_actuel": "Utilise un mélange de solutions : logiciel métier médical historique (15 ans d'ancienneté, lourd mais fiable), tableur Excel pour le planning, prestataire comptable externe, fournisseurs médicaux classiques avec relations personnelles établies",
+      "budget_disponible": "Peut débloquer 15-25K€ si ROI démontrable sous 18 mois et validation par son comptable et l'associé minoritaire (chirurgien digestif, encore plus méfiant que lui). Au-delà, nécessite conseil d'administration."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une clinique concurrente ou similaire qui a obtenu des résultats chiffrés (il est compétitif)",
+        "Parler en temps gagné plutôt qu'en fonctionnalités ('3h/semaine économisées sur la saisie administrative')",
+        "Montrer qu'on connaît ses contraintes réglementaires spécifiques (HAS, ARS, traçabilité)",
+        "Proposer un test pilote limité ou une démo sur site avec son équipe",
+        "Être recommandé par un confrère qu'il respecte (réseau médical très fermé)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Appeler pendant les plages opératoires (mardi/jeudi matin) ou les consultations",
+        "Utiliser un jargon marketing creux ('solution disruptive', 'paradigme innovant')",
+        "Ne pas pouvoir répondre à une question technique précise",
+        "Insister après un premier refus (il déteste qu'on le pousse)",
+        "Critiquer son organisation actuelle sans connaître son contexte",
+        "Proposer un RDV de 2h ('Je n'ai même pas 2h pour mes enfants')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en consultation là, c'est pour quoi exactement ?",
+        "sous_texte": "Vous me dérangez, prouvez-moi en 15 secondes que ça vaut le coup que je vous écoute, sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer que vous respectez son temps et aller directement au bénéfice chiffré sans tourner autour du pot"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec votre documentation, je regarderai.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Ce mail ira directement à la poubelle sans que je l'ouvre",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'email comme outil mais créer un micro-engagement avant (1 question qualifiante qui révèle si c'est pertinent pour lui)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, encore un commercial. Vous êtes le troisième cette semaine qui m'appelle pour me vendre un truc révolutionnaire.",
+        "sous_texte": "Je suis saturé de sollicitations, vous êtes dans le même sac que tous les autres incompétents qui ne connaissent rien au médical",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Se différencier immédiatement en parlant son langage (contraintes HAS, charge administrative, délais facturation) plutôt que votre solution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà tout ce qu'il nous faut niveau fournisseurs, ça fait 15 ans qu'on travaille avec eux.",
+        "sous_texte": "J'ai des relations établies, pourquoi je prendrais le risque de tout chambouler ? Prouvez-moi qu'il y a un vrai problème à résoudre",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer son choix actuel, mais explorer les évolutions récentes de ses contraintes (HAS, trésorerie, charge administrative) que l'ancien système ne couvre peut-être plus"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous travaillez avec qui dans le secteur ? Parce que des beaux discours j'en entends toute la journée.",
+        "sous_texte": "Je teste votre crédibilité. Si vous n'avez pas de références médicales solides, vous êtes grillé",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer des établissements comparables avec des résultats chiffrés précis, ou admettre honnêtement si vous démarrez dans le secteur mais avec quelle expertise transférable"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est qu'on a déjà testé un logiciel il y a 3 ans, ça a été une catastrophe. L'équipe en parle encore.",
+        "sous_texte": "J'ai été échaudé sévèrement, je ne veux plus revivre ça. Ma crédibilité de dirigeant est en jeu auprès de mon équipe",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Explorer cette expérience négative en détail (qu'est-ce qui a foiré ?), montrer que vous comprenez l'impact humain, et expliquer votre approche différente sur ces points précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, ça c'est votre discours commercial tout ça. Dans les faits, combien de temps ça prend vraiment à mettre en place ?",
+        "sous_texte": "J'ai repéré l'argument marketing. Donnez-moi du factuel pur, sans bullshit, sinon je ne vous crois pas",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des chiffres réalistes précis (en jours, en heures de formation) avec les contraintes, pas la version idéale. L'honnêteté crée la confiance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, c'est intéressant, mais écoutez je n'ai vraiment pas le temps là, j'ai des patients qui attendent.",
+        "sous_texte": "Vous m'avez perdu, soit parce que vous êtes trop long, soit parce que je ne vois pas le rapport avec MES problèmes concrets",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Respecter immédiatement sa contrainte temps, résumer en une phrase le bénéfice direct, proposer un format ultra-court (15 min sur site avec démo concrète)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau formation pour l'équipe ? Parce que mes médecins seniors, ils sont réfractaires à tout changement d'outil.",
+        "sous_texte": "J'ai peur de la résistance interne. Si mon équipe ne suit pas, je serai en échec et ils me le reprocheront pendant des mois",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aborder frontalement la gestion du changement avec des exemples de profils similaires convertis, formation adaptée par génération, accompagnement personnalisé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais ça, ça va encore rajouter de la charge administrative. On croule déjà sous la paperasse.",
+        "sous_texte": "Je ne vois pas comment votre solution diminue la charge, j'ai l'impression que ça va en créer plus. Prouvez-moi le contraire avec du concret",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer le avant/après sur un processus précis qu'il fait aujourd'hui (exemple : circuit de facturation ou traçabilité) avec le temps gagné chiffré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça plante en pleine activité ? Vous assurez quoi niveau maintenance et support ?",
+        "sous_texte": "J'ai une vraie peur du risque opérationnel. Un bug pendant une période d'activité peut coûter cher en réputation et en chiffre d'affaires",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler le SLA précis, les engagements contractuels, le support (horaires, délai réponse), idéalement avec exemple de gestion de crise chez un client médical"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de ROI, mais sur quelles bases de calcul ? Parce que moi les promesses dans le vent...",
+        "sous_texte": "Je suis gestionnaire, je veux des chiffres validables, pas des projections marketing optimistes. Mon comptable va me demander des comptes",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de construire le ROI ensemble à partir de SES chiffres réels (temps actuel passé, coût horaire équipe, volume traité) plutôt que des moyennes théoriques"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant mais là c'est pas le moment. On a la visite HAS dans 2 mois, on se concentre là-dessus.",
+        "sous_texte": "C'est peut-être un vrai frein timing, ou peut-être une excuse pratique. Je ne veux pas ajouter du stress à une période déjà tendue",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la priorité HAS, puis montrer en quoi votre solution pourrait justement aider sur les points de vigilance HAS (traçabilité, gestion documentaire), avec timing post-visite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faudrait que j'en parle à mon associé et au comptable de toute façon, je ne décide pas tout seul sur ce budget.",
+        "sous_texte": "C'est vrai que je dois valider, mais c'est aussi une façon de temporiser parce que je ne suis pas encore convaincu à 100%",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'inclure ces décideurs dans le processus (RDV à 3, ou éléments spécifiques pour le comptable), transformer la contrainte en opportunité de multi-threading"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, un rendez-vous de combien de temps ? Parce que moi les réunions de 2 heures, je n'ai même pas 2 heures pour mes enfants.",
+        "sous_texte": "Je suis intéressé mais ultra-sensible au temps. Si vous proposez quelque chose de lourd, je vais me défiler. Montrez que vous respectez ma contrainte",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un format court ultra-ciblé (30 min max, sur site, avec démo concrète sur UN processus qui le concerne), avec possibilité d'approfondir après si pertinent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je vais être honnête avec vous, je ne suis pas sûr que ce soit pour nous. Notre fonctionnement est très spécifique.",
+        "sous_texte": "Soit je ne vois vraiment pas l'adéquation, soit je cherche à clore poliment parce que vous n'avez pas réussi à me convaincre de la valeur",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter son objection, creuser en 2 questions ce qui est 'très spécifique' selon lui, et soit confirmer que ce n'est pas pour lui (respect), soit montrer l'adéquation qu'il n'a pas vue"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voyez ça avec Madame Perrin, mon assistante, elle gère mon planning. Si elle valide, on pourra caler quelque chose.",
+        "sous_texte": "Je vous renvoie au barrage. Soit je ne suis vraiment pas intéressé et je délègue le 'non', soit je teste si vous êtes capable de gérer l'assistante correctement",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Vérifier avant de raccrocher s'il est d'accord sur le principe du RDV (engagement), obtenir son parrainage auprès de Mme Perrin, et une fenêtre de timing qui lui convient"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est gentil mais vraiment on n'est pas intéressés pour le moment. On verra ça plus tard peut-être.",
+      "condition_declenchement": "Déclenchée si le commercial a accumulé 3+ erreurs majeures : pitch trop long sans respiration, jargon marketing creux sans chiffres concrets, méconnaissance du secteur médical, insistance après signaux de rejet, incapacité à répondre à une question technique, ou proposition de RDV trop lourd (>1h) sans avoir démontré de valeur claire. C'est le 'non' définitif poli qui termine l'appel."
+    },
+    "pattern_escalade": "Didier suit un pattern d'escalade en 4 phases : 1) Scepticisme initial cordial mais distant (teste la crédibilité), 2) Impatience croissante si le commercial tourne autour du pot ou utilise du jargon vide (coupe, soupire, 'Oui oui'), 3) Test direct avec questions techniques précises ou demande de preuves concrètes (références, chiffres, ROI), 4) Fermeture brutale si les réponses ne sont pas satisfaisantes ('On n'est pas intéressés') OU ouverture progressive s'il obtient des réponses factuelles qui touchent ses vrais pain points (trésorerie, charge administrative, certification HAS). Le moment de bascule est quand il dit 'Attendez, là vous m'intéressez' ou 'Concrètement, comment ça marche chez vous ?' - là il devient décideur engagé plutôt que gardien défensif.",
+    "piege_classique": "Le piège majeur avec Didier est de confondre son 'Envoyez-moi un mail' ou 'Voyez avec mon assistante' avec de l'intérêt. Ce sont des stratégies de sortie polie. Le vrai piège est de ne pas avoir créé d'engagement ferme de SA part AVANT de raccrocher. L'autre piège : croire que parler fonctionnalités produit va le convaincre, alors qu'il raisonne en temps gagné, emmerdements évités, et risque d'échec (traumatisme du logiciel foireux d'il y a 3 ans). Il faut parler ses problèmes à lui (trésorerie tendue depuis 4 mois, charge administrative qui fait râler l'équipe, points de vigilance HAS sur la gestion documentaire) AVANT de parler solution. Dernier piège : ne pas avoir de références médicales solides quand il demande 'Vous travaillez avec qui dans le secteur ?' - c'est le test de crédibilité éliminatoire."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B secteur santé/médical",
+      "description": "Entreprise proposant des solutions ou services destinés aux établissements de santé privés de taille moyenne"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service professionnel destiné aux cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à franchir le barrage secrétariat dans le secteur médical et décrocher des rendez-vous avec les décideurs de cliniques privées, laboratoires et cabinets médicaux",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Clinique privée Saint-Augustin",
+    "vous_etes": "Commercial B2B spécialisé santé, vous prospectez des cliniques privées de 20-50 personnes pour décrocher des rendez-vous physiques avec les directeurs médicaux.",
+    "vous_vendez": "Solution professionnelle pour établissements de santé privés (cliniques, labos, cabinets de groupe) — tarif et nature volontairement flous pour ce scénario.",
+    "vous_appelez": "Didier Marconnet, 54 ans, directeur médical et associé majoritaire de la Clinique Saint-Augustin (32 personnes, chirurgie orthopédique et digestive). Méfiant, débordé, allergique au bullshit commercial.",
+    "ce_que_vous_savez": [
+      "Clinique stable de 3,2M€ de CA, certifiée HAS récemment avec points de vigilance sur la gestion documentaire",
+      "Sous pression : concurrent à 12km, turnover du personnel, charge administrative lourde",
+      "A vécu un fiasco logiciel il y a 3 ans, depuis il est ultra-exigeant",
+      "Utilise un mix de solutions vieillissantes (logiciel métier 15 ans, Excel, compta externe)",
+      "Budget possible 15-25K€ si ROI sous 18 mois et validation associé + comptable"
+    ],
+    "votre_objectif": "Passer le barrage de la secrétaire protectrice, obtenir Didier en ligne, et décrocher un rendez-vous physique de 30-45 min sur site.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes réglementaires du secteur (HAS, ARS, traçabilité)",
+      "Vous parlez en temps gagné, pas en fonctionnalités",
+      "Vous avez des références cliniques similaires avec résultats chiffrés",
+      "Vous pouvez proposer un pilote ou une démo terrain rapide"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:37:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15954,
+    "total_time_s": 146.6
+  }
+}

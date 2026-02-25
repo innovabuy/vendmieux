@@ -1,0 +1,336 @@
+{
+  "id": "scenario_1771518082",
+  "description_originale": "Le directeur commercial ou DSI d'une ESN ou opérateur télécom de 200+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : telecoms_it]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur commercial ou DSI",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Responsable technique",
+        "Direction générale",
+        "Service juridique"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Services télécoms ou infrastructure IT",
+      "proposition_valeur_presumee": "Continuité de service, fiabilité, support technique, SLA garantis",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Client en colère",
+        "Menace de pénalités contractuelles",
+        "Risque de perte du contrat"
+      ],
+      "implicites": [
+        "Confiance client détériorée",
+        "Réputation du fournisseur en jeu",
+        "Possible escalade vers la direction générale",
+        "Risque de bad buzz ou perte de références",
+        "Non-respect présumé des SLA",
+        "Communication de crise mal gérée ou absente"
+      ],
+      "probleme_racine": "Défaillance opérationnelle majeure ayant rompu la confiance du client avec menace contractuelle et financière immédiate"
+    },
+    "objections_mentionnees": [
+      "Pénalités contractuelles exigées",
+      "Impact sur l'activité business du client",
+      "Remise en question de la fiabilité du prestataire",
+      "Possibilité de résiliation du contrat"
+    ],
+    "objectif_formation": "Apprendre à gérer une situation de crise commerciale avec un client compte clé : désamorcer la colère, assumer la responsabilité, proposer un plan de résolution crédible, préserver la relation commerciale et éviter la rupture contractuelle",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "ESN ou opérateur télécom",
+      "entreprise_description": "Fournisseur de services télécoms ou IT pour entreprises, avec contrats incluant des SLA et clauses de pénalités",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Services d'infrastructure télécom ou IT critiques pour l'activité du client, incluant garanties de disponibilité et support",
+      "proposition_valeur": "Continuité de service garantie, expertise technique, support réactif, conformité aux SLA contractuels",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Durée de l'interruption de service",
+        "Impact chiffré sur l'activité client",
+        "Montant des pénalités contractuelles",
+        "Historique de la relation client",
+        "Causes techniques de l'incident",
+        "Actions déjà mises en œuvre"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Axolink Solutions",
+        "secteur": "Services financiers B2B (solutions de paiement)",
+        "taille": "280 salariés",
+        "ca_approximatif": "42 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Perfectionniste technique obsessionnel",
+        "Loyal mais cassant quand trahi",
+        "Extrêmement sensible à sa réputation interne"
+      ],
+      "motivations_profondes": [
+        "Être perçu comme le DSI qui protège l'entreprise des incidents",
+        "Maintenir son statut d'expert technique auprès du CODIR",
+        "Ne jamais revivre l'humiliation d'un incident majeur",
+        "Prouver qu'il avait raison de vous avoir choisi contre l'avis du DAF"
+      ],
+      "peurs_freins": [
+        "Que la DG apprenne l'ampleur réelle de l'incident avant qu'il ne le présente",
+        "Perdre la face devant le Directeur Général qui lui fait confiance depuis 8 ans",
+        "Que le Service Juridique monte un dossier sans qu'il maîtrise le narratif",
+        "Être celui par qui le scandale arrive dans un secteur ultra-régulé"
+      ],
+      "rapport_aux_commerciaux": "Je déteste qu'on me prenne pour un pigeon. J'ai défendu votre boîte en interne, j'ai signé en connaissance de cause, mais là vous m'avez mis dans la merde. Les beaux discours, c'est terminé.",
+      "style_communication": "analytique_virant_directif_sous_stress"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, débit saccadé. Coupe court aux formules de politesse avec un 'Bon, on va pas y passer trois heures'. Utilise le vouvoiement distant même après 2 ans de relation.",
+      "signaux_interet": [
+        "Commence à parler technique précis (signe qu'il réévalue votre crédibilité)",
+        "Demande des délais chiffrés au jour près",
+        "Évoque spontanément comment présenter ça au CODIR",
+        "Silence prolongé pendant qu'il prend des notes (il construit son plan B)"
+      ],
+      "signaux_rejet": [
+        "Soupir théâtral suivi de 'Écoutez...'",
+        "Commence à utiliser le jargon juridique du contrat",
+        "Mentionne un concurrent par son nom pour la première fois",
+        "Phrase type: 'Je vais devoir en référer à la Direction Générale et notre avocat'"
+      ],
+      "tics_langage": [
+        "Répète 'Concrètement' en début de phrase quand il perd patience",
+        "'C'est pas compliqué pourtant' (signe d'agacement maximal)",
+        "Utilise 'On avait dit' pour rappeler les engagements non tenus",
+        "'Vous comprenez bien que...' suivi d'une menace voilée"
+      ],
+      "debit_parole": "normal_accelerant_avec_contrariété",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum avant interruption. Déteste viscéralement les formules commerciales type 'Je comprends votre frustration'. Attend des faits, des dates, des noms de responsables techniques."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Axolink traite 12 000 transactions/jour pour des clients grands comptes. L'incident de 6h47 du mardi 14 a bloqué la plateforme pendant 3h20 en pleine ouverture des marchés. Trois clients majeurs ont appelé directement le DG. Le Responsable Exploitation de Laurent a craqué nerveusement et est en arrêt. La Direction Juridique a été saisie jeudi.",
+      "priorites_actuelles": [
+        "Obtenir un rapport technique béton pour le CODIR de lundi 9h",
+        "Faire accepter un plan de remédiation crédible AVANT que le juridique ne prenne la main",
+        "Éviter que le DAF (qui voulait un autre prestataire) ne dise 'Je vous l'avais bien dit'",
+        "Sécuriser ses arrières pour la réunion CA du 28 où il présente sa roadmap IT"
+      ],
+      "experience_avec_offre_similaire": "13 ans d'expérience en infra critique. A connu 2 changements de prestataires majeurs dans sa carrière (dont un très douloureux chez son ancien employeur). Connaît parfaitement les SLA standards du marché. Sait exactement où sont les failles de votre offre.",
+      "fournisseur_actuel": "Vous, depuis 27 mois. Contrat de 380K€/an renouvelable dans 9 mois. Avant vous: Netinium (rompu après incident similaire il y a 3 ans - Laurent ne veut PAS revivre ça).",
+      "budget_disponible": "Pas la question. Clause pénalité prévoit 15K€/jour d'indisponibilité = 50K€ réclamés. Mais le vrai enjeu est le renouvellement à 380K€ + extension projet fibre (240K€ budgétés) dont vous étiez en pole position."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Arriver avec LE nom de l'ingénieur système qui a merdé + la séquence technique exacte (Laurent veut des coupables, pas des process)",
+        "Proposer un audit externe indépendant que VOUS payez (ça le protège vis-à-vis du CODIR)",
+        "Impliquer VOTRE DG ou VP Technique dans l'appel (Laurent veut sentir que vous avez aussi la pression en interne)",
+        "Montrer que vous avez viré ou sanctionné quelqu'un (preuve que vous prenez ça au sérieux)",
+        "Lui donner des éléments factuels qu'il pourra présenter en CODIR pour redorer son blason"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou comparer avec 'des situations pires ailleurs'",
+        "Invoquer des causes externes (météo, sous-traitant, etc.) sans assumer",
+        "Proposer un geste commercial dérisoire (une ristourne de 5% sera insultante)",
+        "Parler de 'partenariat' ou 'confiance' sans plan d'action chiffré sous 48h",
+        "Demander 'un peu de temps' alors que le CODIR est LUNDI",
+        "Faire intervenir un commercial qui ne connaît pas le dossier technique"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on va pas y passer trois heures. J'ai le CODIR lundi matin et je dois expliquer comment vous avez planté notre plateforme pendant 3h20 en pleine ouverture des marchés. Donc on va aller droit au but.",
+        "sous_texte": "Je suis sous pression énorme, je n'ai pas de temps pour les salamalecs commerciaux, et je vous en veux. Prouvez-moi immédiatement que cet appel va m'apporter quelque chose d'utile pour sauver ma peau lundi.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Abandonner immédiatement toute formule de politesse, annoncer que vous avez préparé le rapport technique détaillé pour son CODIR, et donner la séquence exacte de l'incident avec le nom du responsable."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous comprenez bien que mes trois clients les plus importants ont appelé DIRECTEMENT le DG ? Il m'a convoqué dans son bureau. Moi. Après 8 ans sans incident majeur. Vous mesurez ce que ça veut dire ?",
+        "sous_texte": "Vous avez détruit ma réputation et ma crédibilité interne. Le DG qui me faisait confiance aveuglément me met maintenant sous surveillance. C'est potentiellement ma carrière qui est en jeu. Vous me devez une réparation à la hauteur.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reconnaître explicitement l'impact sur sa position, proposer que VOTRE DG appelle le sien pour assumer la responsabilité, décharger Laurent de la faute devant sa direction."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Non mais attendez, là vous me demandez de vous expliquer MON analyse de VOTRE incident ? C'est pas compliqué pourtant : vous aviez un SLA de 99,9%, vous étiez censés avoir de la redondance, et tout est tombé pendant 3h20. Point. C'est à VOUS de m'expliquer comment c'est possible.",
+        "sous_texte": "Ne renversez pas les rôles. Je ne suis pas votre consultant gratuit. Vous êtes en position d'accusé, pas moi. Si vous ne savez même pas ce qui s'est passé techniquement, c'est encore pire que je pensais.",
+        "type": "test",
+        "difficulte": 8,
+        "reponse_efficace_indice": "S'excuser immédiatement, confirmer que vous avez identifié la cause racine (défaillance du système de bascule automatique suite à une mise à jour mal testée), donner le nom de l'ingénieur responsable et les sanctions prises."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, mon Responsable Exploitation a craqué. Il est en arrêt maladie depuis jeudi. Un mec qui n'avait jamais pris un jour d'arrêt en 6 ans. Ça aussi c'est dans votre bilan ?",
+        "sous_texte": "Vos défaillances ont des conséquences humaines graves dans mon équipe. Je perds mes ressources clés à cause de vous. Vous êtes responsables non seulement de l'incident technique mais aussi d'un drame humain en interne.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Exprimer de l'empathie authentique, proposer qu'un de vos experts techniques vienne en support temporaire GRATUITEMENT pour soulager son équipe, montrer que vous assumez toutes les dimensions de l'impact."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis franchement, j'ai eu Netinium au téléphone hier. Ils m'ont dit qu'ils pouvaient reprendre le dossier sous 45 jours avec une migration progressive. Donc vous voyez, j'ai des options.",
+        "sous_texte": "Je teste votre réaction pour voir si vous prenez vraiment la mesure de la situation. Je vous mets en concurrence frontale pour vous forcer à proposer quelque chose d'exceptionnel. Et accessoirement, c'est peut-être vrai.",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne pas paniquer ni dénigrer Netinium. Reconnaître que c'est son droit, puis rappeler pourquoi il vous avait choisis il y a 27 mois (vous connaissez son infrastructure par cœur, migration = 4-6 mois de risque supplémentaire, et Netinium = l'ancien prestataire avec qui il a eu un incident similaire il y a 3 ans)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan de remédiation ? Mais j'en ai rien à faire de vos process internes ! Ce que je veux savoir c'est : est-ce que ça peut se reproduire OUI ou NON ? Parce que si vous me dites 'on va renforcer la supervision', c'est du vent.",
+        "sous_texte": "Je suis un expert technique, pas un acheteur naïf. Les discours process et qualité ne me rassurent pas. Je veux des garanties techniques concrètes, auditables, vérifiables. Sinon vous me prenez pour un idiot.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Répondre en technicien, pas en commercial : 'Avec l'architecture actuelle, oui ça peut se reproduire. C'est pourquoi nous proposons une refonte complète du mécanisme de bascule avec double redondance active-active, audit de code systématique avant toute mise en production, et tests de charge hebdomadaires. Livrable sous 21 jours, audit externe à nos frais pour validation.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de geste commercial, mais concrètement on parle de quoi ? Parce que j'ai le juridique qui a calculé 50 000 euros de pénalités contractuelles. C'est pas avec une petite remise de 10% que vous allez arranger les choses.",
+        "sous_texte": "Ne m'insultez pas avec un geste symbolique. Le juridique est déjà dans la boucle, ils ont sorti les calculettes. Si votre proposition n'est pas à la hauteur du préjudice, vous confirmez que vous ne prenez pas ça au sérieux.",
+        "type": "test",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas négocier les pénalités (elles sont dues). Proposer EN PLUS : audit externe payé par vous (25K€), extension gratuite de la garantie de 12 à 24 mois, mise à disposition d'un ingénieur senior dédié 2j/semaine pendant 3 mois (60K€ de valeur), accès prioritaire à votre nouveau datacenter."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On avait dit redondance totale. On avait dit bascule automatique en moins de 30 secondes. On avait dit supervision H24. Tout ça c'était dans votre réponse à l'appel d'offres il y a 27 mois. Donc soit vous avez menti, soit vous êtes incompétents. Dans les deux cas, expliquez-moi pourquoi je devrais vous faire confiance maintenant ?",
+        "sous_texte": "Vous avez rompu le contrat moral et légal. Ma confiance est détruite. Je ne vois plus de différence entre ce que vous promettez et ce que vous livrez. Vous avez perdu votre crédibilité, comment est-ce que je peux défendre la poursuite de notre collaboration devant mon DG ?",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Assumer sans détour : 'Vous avez raison, nous n'avons pas tenu nos engagements. La bascule automatique a échoué à cause d'une mise à jour non testée en conditions réelles. L'ingénieur responsable ne fait plus partie de l'équipe. Nous avons changé notre processus de validation. Mais je comprends que des mots ne suffisent pas. C'est pourquoi nous proposons un audit indépendant par [cabinet reconnu] à nos frais complets, avec droit de résiliation immédiate si une seule non-conformité est identifiée.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que le DAF, lui, il m'a dit dès le début que vous étiez trop chers et pas assez solides. Je l'ai défendu CONTRE lui votre dossier. J'ai mis ma crédibilité dans la balance. Et maintenant, il va me sortir 'Je te l'avais bien dit' pendant les 10 prochaines années.",
+        "sous_texte": "Vous m'avez fait perdre un combat politique interne majeur. Mon jugement professionnel est remis en question. Le DAF va utiliser cet incident pour affaiblir ma position au CODIR. Vous devez m'aider à retourner la situation politiquement, pas juste techniquement.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposer de produire une analyse comparative avec 3 concurrents montrant que 100% d'entre eux ont eu des incidents similaires dans les 24 derniers mois, avec des durées d'interruption supérieures. Fournir des références clients acceptant de témoigner. Donner des arguments factuels pour qu'il puisse défendre son choix initial comme rationnel."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais être transparent avec vous : je vais devoir en référer à la Direction Générale et notre avocat. Le juridique a ouvert un dossier jeudi. Donc même si vous et moi on trouve un terrain d'entente, je ne suis plus seul décisionnaire sur ce dossier.",
+        "sous_texte": "La situation a dépassé ma capacité de décision. Le juridique et la DG sont maintenant impliqués, ce qui veut dire que même si je VEUX vous garder, ce n'est peut-être plus possible. Vous devez maintenant convaincre des gens qui ne vous connaissent pas et qui veulent votre peau.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Proposer immédiatement une réunion tripartite (vous + votre DG/VP, lui + son DG, présence optionnelle du juridique) sous 48h maximum. Préparer un dossier complet incluant reconnaissance de responsabilité, plan de remédiation auditable, compensation financière et extra-contractuelle, engagement personnel du top management."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement, même si on signe un plan de remédiation, qu'est-ce qui me garantit que dans 6 mois vous allez pas me refaire le coup ? Parce que moi, je peux pas me permettre un deuxième incident. Je serai viré. Point final.",
+        "sous_texte": "Ma carrière est maintenant liée à votre fiabilité. Un deuxième incident me coûtera mon poste. Je ne peux pas prendre ce risque, peu importe ce que vous proposez. Il me faut une garantie absolue, or je sais qu'elle n'existe pas. C'est peut-être déjà fini entre nous.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Proposer une clause de sortie sans pénalité avec préavis de 30 jours au lieu de 6 mois, pendant 12 mois. Mettre en place un reporting hebdomadaire direct entre votre CTO et lui. Donner accès complet à vos systèmes de monitoring en temps réel. Garantie de remplacement sous 4h de tout composant critique. Assurance RC Pro augmentée avec vous comme bénéficiaire."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis il y a le projet fibre à 240K dont on devait reparler en février. Vous vous doutez bien que c'est plus d'actualité. J'ai déjà trois autres prestataires qui me relancent depuis lundi.",
+        "sous_texte": "Vous ne perdez pas seulement le contrat actuel, mais aussi toute la croissance future. Les 240K€ de projet extension que vous aviez en pole position sont maintenant en jeu. Vos concurrents sentent le sang et attaquent. Vous êtes en train de tout perdre.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas essayer de sauver le projet fibre maintenant, ça ferait opportuniste. Focus 100% sur la résolution de la crise actuelle. Dire : 'Le projet fibre n'est pas le sujet aujourd'hui Laurent. Notre priorité absolue c'est de rétablir votre confiance et sécuriser votre position en interne. Le reste viendra après, si on le mérite.' (montre que vous avez les priorités justes)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Soupir... Bon. Vous m'envoyez tout ça par écrit avant ce soir 18h. Le rapport technique complet, le plan de remédiation avec les dates, les engagements chiffrés, et la proposition commerciale. Je veux tout. Et on se reparle lundi matin 7h30, avant mon CODIR de 9h. Si c'est pas béton, je lance la procédure de résiliation lundi après-midi.",
+        "sous_texte": "Je vous donne UNE dernière chance parce que changer de prestataire serait aussi risqué pour moi. Mais c'est votre dernière cartouche. Le délai est volontairement court pour tester votre réactivité et votre mobilisation. Si vous livrez du médiocre ou en retard, c'est terminé définitivement.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Accepter le délai, confirmer l'appel 7h30 lundi. Mobiliser immédiatement votre CTO, votre juriste, votre DG. Livrer à 17h30 (pas 17h59) un dossier irréprochable. Envoyer un SMS à 17h35 : 'Dossier envoyé. Nos équipes restent mobilisées tout le week-end si besoin d'ajustements. Nous serons à la hauteur lundi.' (montre engagement exceptionnel)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi ? J'ai réfléchi ce week-end. J'ai relu le contrat avec notre juriste. On a une clause de résiliation pour manquement grave. Et là, clairement, il y a manquement grave. Donc je crois que le plus simple c'est qu'on arrête les frais. Vous avez 60 jours pour préparer la transition. Je vais relancer Netinium. Ça me fait chier parce que ça va être la galère, mais j'ai plus le choix. Ma direction ne me laissera pas continuer avec vous de toute façon.",
+      "condition_declenchement": "Se déclenche si : (1) le plan de remédiation manque de précision technique, (2) la compensation financière est jugée insuffisante, (3) aucun engagement top management côté fournisseur, (4) le commercial minimise l'incident ou ne l'assume pas pleinement, (5) Laurent sent qu'il ne pourra pas défendre la poursuite du contrat devant son DG lundi. C'est l'objection de rupture définitive, déclenchée par épuisement de la confiance et impossibilité politique interne de maintenir la relation."
+    },
+    "pattern_escalade": "Laurent suit un pattern émotionnel prévisible : (1) FROID ACCUSATEUR en ouverture pour tester votre posture, (2) TECHNIQUE POINTILLEUX pour évaluer si vous maîtrisez vraiment le sujet, (3) POLITIQUE DÉSABUSÉ quand il évoque sa situation interne (c'est là qu'il est le plus sincère et vulnérable), (4) ULTIMATUM CALCULÉ en closing pour obtenir des engagements maximaux. Si vous le rassurez à chaque étape avec des FAITS (pas des promesses), il se radoucit progressivement. Mais un seul faux pas commercial (minimisation, langue de bois, promesse creuse) et il passe en mode rupture définitive irréversible.",
+    "piege_classique": "Le piège mortel est de vouloir 'sauver la relation commerciale' en mode commercial classique (empathie, reformulation, geste commercial standard). Laurent est un EXPERT TECHNIQUE en situation de SURVIE POLITIQUE. Il attend : (1) des COUPABLES identifiés et sanctionnés (il veut du sang), (2) une ANALYSE TECHNIQUE forensique détaillée (pas un PowerPoint marketing), (3) une MOBILISATION EXCEPTIONNELLE de votre top management (pour équilibrer politiquement sa propre exposition), (4) des GARANTIES AUDITABLES par un tiers (pas vos propres promesses). Tout discours 'partenariat de confiance' sans ces 4 éléments déclenchera la rupture immédiate. Vous n'êtes plus en négociation commerciale, vous êtes en gestion de crise avec un client expert qui a déjà un pied dehors."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "ESN ou opérateur télécom",
+      "description": "Fournisseur de services télécoms ou IT pour entreprises, avec contrats incluant des SLA et clauses de pénalités"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Services d'infrastructure télécom ou IT critiques pour l'activité du client, incluant garanties de disponibilité et support",
+      "proposition_valeur": "Continuité de service garantie, expertise technique, support réactif, conformité aux SLA contractuels",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à gérer une situation de crise commerciale avec un client compte clé : désamorcer la colère, assumer la responsabilité, proposer un plan de résolution crédible, préserver la relation commerciale et éviter la rupture contractuelle",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Incident majeur infrastructure IT",
+    "vous_etes": "Account Manager chez un opérateur télécom/IT, en charge du compte Axolink Solutions depuis 27 mois (contrat 380K€/an).",
+    "vous_vendez": "Services d'infrastructure télécom/IT critiques avec SLA garantis — contrat actuel 380K€/an, extension fibre 240K€ en discussion.",
+    "vous_appelez": "Laurent Mercier, 47 ans, DSI d'Axolink Solutions (services financiers B2B, 280 salariés). Perfectionniste technique, loyal mais cassant quand trahi. Sous pression maximale : l'incident a remonté jusqu'au DG, le juridique est saisi, son adjoint est en arrêt, et il présente son plan au CODIR lundi 9h.",
+    "ce_que_vous_savez": [
+      "Mardi 14, 6h47 : votre plateforme a planté 3h20 en pleine ouverture des marchés, bloquant 12 000 transactions/jour",
+      "Trois clients majeurs d'Axolink ont appelé directement leur DG — Laurent a perdu la face",
+      "Clause pénalité : 15K€/jour soit 50K€ réclamés + risque de non-renouvellement dans 9 mois",
+      "Laurent vous avait défendu en interne contre l'avis du DAF — il se sent trahi personnellement",
+      "Le juridique monte un dossier, le CODIR est lundi matin, Laurent doit présenter SA solution"
+    ],
+    "votre_objectif": "Éviter la rupture contractuelle en assumant pleinement, proposant un plan de remédiation béton avec dates/noms/responsables avant lundi, et redonnant à Laurent les munitions pour sauver sa crédibilité en CODIR.",
+    "vos_atouts": [
+      "Vous connaissez techniquement le dossier depuis 27 mois",
+      "Vous pouvez impliquer votre DG/VP Technique dans la résolution",
+      "Vous avez identifié la séquence technique exacte et les responsabilités internes",
+      "Vous pouvez proposer un audit externe indépendant à vos frais"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:21:22Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16942,
+    "total_time_s": 177.8
+  }
+}

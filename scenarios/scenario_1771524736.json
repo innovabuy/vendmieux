@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771524736",
+  "description_originale": "Le directeur commercial ou directeur du développement d'une groupe immobilier multi-agences de 100+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : immobilier]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "groupe multi-agences 100+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur du développement",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "direction générale potentielle",
+        "services juridiques"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution ou service B2B pour secteur immobilier",
+      "proposition_valeur_presumee": "optimisation de l'activité immobilière, efficacité opérationnelle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "incident majeur ayant impacté l'activité du client",
+        "menace de pénalités contractuelles",
+        "client furieux, relation dégradée",
+        "risque de rupture de contrat"
+      ],
+      "implicites": [
+        "manque de processus de gestion de crise",
+        "commerciaux non formés à la gestion de réclamations complexes",
+        "défaillance du service ou produit livré",
+        "communication de crise inadéquate",
+        "pas de plan d'escalade défini"
+      ],
+      "probleme_racine": "incapacité des commerciaux à gérer des situations de crise avec des comptes stratégiques où la relation commerciale et la crédibilité de l'entreprise sont en jeu"
+    },
+    "objections_mentionnees": [
+      "incident majeur non résolu",
+      "impact sur l'activité du client",
+      "pénalités contractuelles",
+      "remise en cause de la fiabilité du fournisseur"
+    ],
+    "objectif_formation": "former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la proposition de plans de résolution structurés et à la sauvegarde de contrats stratégiques en situation tendue",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services ou solutions B2B pour l'immobilier",
+      "entreprise_description": "fournisseur de solutions pour groupes immobiliers multi-agences",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service ayant connu une défaillance majeure impactant l'activité du client",
+      "proposition_valeur": "fiabilité, performance, support des opérations immobilières",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "compte clé de 100+ salariés à préserver"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature précise de l'incident",
+        "type de solution/service fourni",
+        "montant du contrat",
+        "durée de la relation commerciale",
+        "détails des pénalités contractuelles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur Commercial & Développement",
+      "entreprise": {
+        "nom": "Hexagone Immobilier Réseau",
+        "secteur": "Immobilier résidentiel et commercial",
+        "taille": "137 salariés répartis sur 23 agences (Île-de-France, Normandie, Hauts-de-France)",
+        "ca_approximatif": "18,4M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Perfectionniste anxieux sous pression",
+        "Loyauté conditionnelle aux résultats"
+      ],
+      "motivations_profondes": [
+        "Prouver sa légitimité face à un COMEX qui le juge sur le CA trimestriel",
+        "Éviter l'humiliation publique après l'incident devant les directeurs d'agence",
+        "Protéger son équipe commerciale tout en leur faisant porter une partie de la responsabilité",
+        "Sauver sa prime annuelle (30% de son package) liée aux objectifs non atteints à cause de l'incident"
+      ],
+      "peurs_freins": [
+        "Que la DG découvre l'ampleur réelle des dysfonctionnements avant qu'il ait trouvé une solution",
+        "Perdre la face devant ses pairs lors du prochain CODIR",
+        "Que le fournisseur actuel diffuse l'incident dans le réseau professionnel",
+        "Engager des frais supplémentaires sans garantie de résultat measurable",
+        "Faire confiance à nouveau après avoir été 'trahi' par un prestataire"
+      ],
+      "rapport_aux_commerciaux": "Méfiance instinctive post-incident. Les voit comme des 'parleurs' tant qu'ils n'ont pas prouvé leur valeur opérationnelle. Apprécie la franchise brutale plus que le discours lisse.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, professionnel, légèrement agressif défensif. Coupe la parole pour 'gagner du temps'. Soupirs audibles si introduction trop longue.",
+      "signaux_interet": [
+        "Silence soudain (arrête de taper sur son clavier)",
+        "Questions très précises sur la méthodologie: 'Concrètement, sur le terrain, ça donne quoi?'",
+        "Évoque spontanément des situations réelles vécues",
+        "Demande des références vérifiables: 'Donnez-moi un nom et un numéro, je veux appeler moi-même'",
+        "Passe du vouvoiement distant au tutoiement pragmatique"
+      ],
+      "signaux_rejet": [
+        "Répète 'Oui, oui, oui...' de manière mécanique sans écouter",
+        "Utilise le jargon corporate creux: 'On va voir pour aligner nos synergies'",
+        "Regarde ostensiblement ses emails pendant l'échange (bruit de clavier audible)",
+        "Phrase assassine: 'Écoutez, on a déjà essayé ce genre de trucs...'",
+        "Reporte indéfiniment: 'Rappelez-moi dans 3 semaines, là c'est compliqué'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Franchement...' avant une critique",
+        "Abuse du 'Voilà voilà' pour clore un sujet qui l'ennuie",
+        "'On va pas se mentir...' avant d'exprimer un doute",
+        "'C'est du vécu' pour valider une situation",
+        "Coupe avec 'Attendez, attendez...' quand il n'est pas convaincu"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant interruption. Exige de la concision militaire. Déteste les 'contextualisations' trop longues."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "En pleine transformation digitale forcée. L'incident a bloqué le CRM pendant 4 jours en pleine saison (mars), causant la perte de 23 mandats exclusifs et l'impossibilité de suivre 140+ leads qualifiés. Pénalités contractuelles de 45K€ négociées à 28K€. Le PDG a menacé de 'revoir l'organigramme' lors du dernier CODIR.",
+      "priorites_actuelles": [
+        "Restaurer la confiance de la direction générale d'ici fin T2",
+        "Récupérer les 18 points de CA perdus sur le trimestre",
+        "Former les 34 commerciaux terrain à 'ne plus jamais être pris au dépourvu'",
+        "Préparer l'arrivée de 12 nouveaux agents juniors (septembre) avec un socle de compétences solide",
+        "Trouver un plan B crédible si le fournisseur actuel déconne à nouveau"
+      ],
+      "experience_avec_offre_similaire": "Formation commerciale classique il y a 3 ans (2 jours en salle avec un formateur 'sympa mais hors-sol'). Bilan: 'Powerpoints inutiles, zéro impact terrain'. Un coaching individuel pour 3 directeurs d'agence en 2022 (efficace mais trop cher pour généraliser).",
+      "fournisseur_actuel": "TechProp Solutions (CRM + gestion de biens). Contrat jusqu'en décembre 2025. Relation toxique mais exit coûteux (clause de sortie anticipée à 85K€). Support technique 'catastrophique' selon lui.",
+      "budget_disponible": "Entre 18K€ et 35K€ extractibles de la ligne 'Formation & Développement RH' (reste 42K€ sur l'année). Au-delà, nécessite validation DG (process lourd, délai 6-8 semaines). Préfère un paiement échelonné ou lié à des livrables concrets."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner explicitement la gestion de crise client sans bullshit marketing",
+        "Proposer un diagnostic gratuit de 60min avec 2-3 commerciaux pour prouver la valeur",
+        "Partager un cas client similaire (immobilier ou secteur avec enjeu relationnel fort) avec chiffres avant/après",
+        "Comprendre et verbaliser sa douleur: 'Vous avez dû gérer l'urgence ET protéger votre équipe ET justifier à la DG, c'est épuisant'",
+        "Offrir de la flexibilité: formation modulaire, par petits groupes, sur site, avec suivi terrain",
+        "Garantie satisfait ou remboursé partiel (montre que le formateur assume le risque)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident: 'Ces choses arrivent, c'est normal...'",
+        "Discours générique sur 'l'excellence commerciale' ou 'la posture gagnante'",
+        "Proposer une formation e-learning ou théorique en salle sans cas pratiques",
+        "Ne pas avoir de références vérifiables dans l'immobilier ou secteurs à crise fréquente",
+        "Demander un engagement budgétaire immédiat sans preuve de concept",
+        "Critiquer ouvertement son fournisseur actuel (le met en position de défendre sa décision initiale)",
+        "Sous-entendre que ses commerciaux sont 'nuls' (loyauté tribale même s'il les critique en interne)",
+        "Jargon RH/coaching à la mode: 'intelligence émotionnelle', 'soft skills', 'empowerment'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite... on a déjà essayé les formations commerciales, ça nous a coûté un bras et franchement, sur le terrain, zéro impact. Donc là, j'ai pas trop le temps pour ça.",
+        "sous_texte": "Je suis échaudé par une expérience passée médiocre et je protège mon temps précieux. Prouvez-moi immédiatement que vous êtes différent ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son expérience négative, se différencier par le concret et proposer une micro-preuve de valeur immédiate"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, attendez... Vous me parlez de formation commerciale, mais vous savez ce qui s'est passé ici ? On a eu un incident majeur il y a deux mois, notre CRM planté en pleine saison. Voilà la réalité. Vos PowerPoints, là, franchement...",
+        "sous_texte": "Je suis traumatisé par l'incident et méfiant. Si vous ne comprenez pas la gravité de ce que j'ai vécu, vous n'avez rien à m'apporter.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer que vous comprenez la gravité, verbaliser sa douleur spécifique, et connecter votre offre à la gestion de crise, pas à la formation classique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On va pas se mentir, mes commerciaux, ils sont pas nuls hein. Le problème c'était le système qui nous a lâchés. Former les gens, OK, mais si la techno déconne à nouveau, ça sert à rien, non ?",
+        "sous_texte": "Je protège mon équipe et je cherche à externaliser la responsabilité. Je veux qu'on valide que ce n'est pas leur faute avant d'investir dans leur formation.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la qualité de son équipe, puis montrer que même avec une bonne équipe, la gestion de crise clients nécessite des compétences spécifiques que personne ne leur a enseignées"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, le vrai problème c'est qu'on s'est fait entuber par notre prestataire. Vous, vous vendez quoi exactement ? Parce que si c'est encore un truc où on dépend d'un fournisseur externe qui va nous lâcher au pire moment...",
+        "sous_texte": "J'ai une peur viscérale de refaire confiance. Je cherche à vous mettre dans la même case que celui qui m'a trahi. Prouvez-moi que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas défendre votre catégorie, mais reconnaître sa méfiance légitime. Expliquer comment votre approche transfère l'autonomie aux équipes au lieu de créer une dépendance"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà... Et donc, concrètement, sur le terrain, ça donne quoi ? Parce que moi j'ai 34 commerciaux répartis sur 23 agences. Vous allez faire quoi, un webinaire ? Une journée de théorie en salle ?",
+        "sous_texte": "Je teste votre connaissance du terrain et votre capacité d'adaptation logistique. Les formations théoriques me font fuir.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer une approche modulaire, sur site, par petits groupes avec des cas pratiques immobilier réels, pas de théorie en salle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK, mais attendez... vous me parlez de gestion de crise client, de désescalade émotionnelle, tout ça... C'est quoi ces mots-là ? Moi j'ai besoin que mes gars sachent quoi dire quand un client furieux les appelle parce qu'on a perdu son dossier. Pas de l'intelligence émotionnelle hein, du concret.",
+        "sous_texte": "Votre jargon RH me fait peur et m'énerve. Traduisez en langage terrain immédiat ou je décroche mentalement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Abandonner immédiatement le jargon, reformuler en situations concrètes immobilier avec des phrases types et des scripts de réponse"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, ça a l'air intéressant ce que vous me dites, mais là, j'ai la DG sur le dos, je dois récupérer 18 points de CA d'ici fin T2... C'est pas le moment de mobiliser mes équipes sur deux jours de formation. Faut qu'ils vendent, là, maintenant.",
+        "sous_texte": "Je suis sous pression extrême de résultats court terme. Toute initiative qui mobilise mes commerciaux me fait peur, même si c'est bon pour le long terme.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer comment la formation peut ACCÉLÉRER la récupération du CA en donnant des outils pour sauver les comptes à risque et transformer les situations de crise en opportunités de vente"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui, oui, oui... Vous avez des références dans l'immobilier ? Parce que c'est du vécu ici, on a des spécificités. Un client immo en crise, c'est pas pareil qu'un client dans l'IT ou je sais pas quoi. Donnez-moi un nom et un numéro, je veux appeler moi-même.",
+        "sous_texte": "Je ne fais plus confiance aux belles promesses. Je veux vérifier par moi-même auprès d'un pair que vous avez vraiment livré dans mon univers.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner immédiatement 2-3 références vérifiables dans l'immobilier ou secteurs similaires avec contexte précis de la mission et résultats chiffrés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, attendez... Vous me dites que vos formations sont efficaces, que vous avez des résultats mesurables... Mais comment vous mesurez ça, vous ? Parce que moi, la dernière fois, le formateur nous a fait remplir des questionnaires de satisfaction, et tout le monde a mis 4/5. Résultat : rien n'a changé sur le terrain.",
+        "sous_texte": "Je ne crois plus aux métriques de satisfaction. Je veux des preuves d'impact business réel et mesurable post-formation.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer des KPIs terrain concrets : taux de rétention clients en crise, délai moyen de résolution, nombre de contrats sauvés, pas des questionnaires de satisfaction"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant tout ça, vraiment. Mais là, j'ai pas le budget. On a déjà explosé la ligne formation avec l'incident, les pénalités à payer, le juriste qu'on a dû prendre... Rappelez-moi en septembre, on verra pour 2025.",
+        "sous_texte": "J'aime bien votre offre mais je cherche une excuse pour reporter la décision et éviter de me mouiller maintenant. Je teste aussi votre flexibilité financière.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner le vrai frein (budget ou priorité ?), montrer le coût d'opportunité d'attendre 6 mois, proposer un phasage ou paiement échelonné sur 2 exercices"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, votre offre, elle est chère. Pour ce prix-là, je peux avoir deux jours avec [concurrent] et il m'a dit qu'il pouvait intervenir la semaine prochaine. Vous, vous me proposez quoi de plus qui justifie l'écart ?",
+        "sous_texte": "Je négocie tactiquement OU j'ai vraiment une offre concurrente. Je veux que vous me valuiez précisément votre différence ou que vous baissiez votre prix.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas baisser le prix immédiatement. Investiguer l'offre concurrente, puis re-cadrer sur votre valeur différenciante : spécialisation crise, méthodologie éprouvée, suivi post-formation, garantie résultats"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis convaincu par ce que vous me racontez. Le problème c'est que je peux pas décider tout seul. Faut que je passe par la DG, et avec ce qui s'est passé, ils vont me demander 3 devis, un dossier complet, une justification... C'est 6 à 8 semaines minimum. Et encore, si ça passe.",
+        "sous_texte": "Je me protège derrière une pseudo-contrainte hiérarchique. Soit c'est vrai et j'ai peur de porter le projet, soit c'est une excuse pour temporiser car je ne suis pas 100% convaincu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Vérifier si c'est un vrai frein ou une excuse. Si vrai : proposer de co-construire le dossier DG avec ROI chiffré et argumentaire clé en main. Si excuse : identifier l'objection réelle cachée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà, écoutez, c'est bon, vous m'avez convaincu. Envoyez-moi tout ça par mail avec un devis, je regarde et je vous rappelle dans la semaine.",
+        "sous_texte": "Je veux vous faire partir poliment. Je ne suis pas vraiment convaincu OU je vais comparer avec d'autres OU je vais oublier. Probabilité de rappel : 15%.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter cette porte de sortie. Fixer un prochain point précis avec agenda partagé, ou proposer une micro-action immédiate (diagnostic gratuit de 60min) pour maintenir l'engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, une dernière chose... Si jamais on se lance là-dedans et que ça foire, qu'est-ce qui se passe ? Parce que moi, me refaire avoir une deuxième fois, devant la DG, devant mes équipes... Je peux pas me le permettre. C'est du vécu.",
+        "sous_texte": "Ma peur de l'échec et de l'humiliation est plus forte que mon désir de réussir. J'ai besoin d'être rassuré sur le risque et d'avoir une porte de sortie honorable.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître sa peur légitime, proposer une garantie satisfait ou remboursé partiel, structurer un pilote sur 3-5 commerciaux avant généralisation, partager le risque avec lui"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, tout ce que vous me dites, ça a du sens. Mais je vais être honnête avec vous : j'ai plus la force de me battre en interne pour faire passer un nouveau projet. L'incident m'a épuisé, la DG me surveille, mes commerciaux sont sous pression... Je peux pas leur demander un effort supplémentaire maintenant. Même si c'est pour leur bien. Comprenez-moi...",
+      "condition_declenchement": "Lorsque le vendeur a répondu efficacement aux objections rationnelles (budget, ROI, références) mais que Stéphane sent qu'on lui demande de prendre une décision et d'assumer un nouveau risque alors qu'il est émotionnellement épuisé"
+    },
+    "pattern_escalade": "Stéphane commence par des objections-réflexes pour filtrer rapidement (temps, expérience passée négative). S'il sent du concret, il passe en mode TEST (références, méthodologie terrain). Une fois rassuré sur la crédibilité, il révèle ses objections SINCÈRES profondes : peur de refaire confiance, pression de résultats court terme, épuisement émotionnel. En closing, il alternera entre objections TACTIQUES de négociation (prix, concurrence) et retour à ses peurs existentielles (échec public, humiliation). Le vrai verrou final n'est pas rationnel mais émotionnel : il a peur de reprendre un risque après un traumatisme récent.",
+    "piege_classique": "Penser qu'on l'a convaincu quand il dit 'C'est intéressant' ou 'Envoyez-moi un mail'. C'est un réflexe pour clore poliment sans engagement. Autre piège : argumenter sur les bénéfices de la formation alors que son vrai frein est la peur de l'échec et l'épuisement décisionnel. Enfin, critiquer son fournisseur actuel ou minimiser l'incident provoque une défense loyale immédiate et tue la vente."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services ou solutions B2B pour l'immobilier",
+      "description": "fournisseur de solutions pour groupes immobiliers multi-agences"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service ayant connu une défaillance majeure impactant l'activité du client",
+      "proposition_valeur": "fiabilité, performance, support des opérations immobilières",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "compte clé de 100+ salariés à préserver"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "former les commerciaux à la gestion de crise client, à la désescalade émotionnelle, à la proposition de plans de résolution structurés et à la sauvegarde de contrats stratégiques en situation tendue",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation de crise — Formation gestion de réclamations stratégiques",
+    "vous_etes": "Commercial senior d'un organisme de formation spécialisé en techniques de vente et gestion de crise client B2B.",
+    "vous_vendez": "Formation terrain 'Sauver un contrat en crise' : 2 jours + 3 sessions de coaching individuel sur 3 mois, 24 500€ HT pour un groupe de 12 commerciaux.",
+    "vous_appelez": "Stéphane Mercier, 48 ans, Directeur Commercial d'Hexagone Immobilier Réseau (137 salariés, 23 agences). Pragmatique brutal, sous pression hiérarchique, méfiant envers les prestataires depuis l'incident.",
+    "ce_que_vous_savez": [
+      "Un incident CRM majeur en mars a bloqué l'activité 4 jours : 23 mandats perdus, 28K€ de pénalités payées",
+      "Son PDG a menacé de 'revoir l'organigramme' lors du dernier CODIR — Stéphane doit prouver sa capacité à redresser la barre",
+      "Il doit former 34 commerciaux terrain + préparer 12 juniors pour septembre, mais déteste les formations 'PowerPoint hors-sol'",
+      "Budget formation disponible : 18-35K€ sans validation DG, préfère paiement échelonné",
+      "Relation toxique avec son fournisseur actuel TechProp Solutions, mais clause de sortie à 85K€"
+    ],
+    "votre_objectif": "Obtenir son accord pour un diagnostic gratuit de 60 minutes avec 2-3 de ses commerciaux d'ici 10 jours.",
+    "vos_atouts": [
+      "Cas client : réseau immobilier 19 agences (Aquitaine) — taux de rétention contrats en crise passé de 34% à 78% en 6 mois",
+      "Formateur ex-directeur commercial immobilier, 15 ans terrain, pas de profil 'consultant RH'",
+      "Méthodologie : jeux de rôle filmés sur incidents réels + débriefing individuel + hotline SOS pendant 3 mois",
+      "Garantie : remboursement de 40% si moins de 60% de satisfaction mesurée à J+30"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:12:16Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16711,
+    "total_time_s": 167.0
+  }
+}

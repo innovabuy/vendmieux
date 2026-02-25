@@ -1,0 +1,355 @@
+{
+  "id": "scenario_1771518195",
+  "description_originale": "Vous appelez une agence de communication ou marketing de 10-25 salariés. C'est l'chef de projet junior qui décroche. Vous devez passer le barrage pour parler au directeur de l'agence / fondateur. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : communication_marketing]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de l'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "chef de projet junior",
+          "role": "barrage / filtre des appels",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B destinée aux agences de communication/marketing",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante/chef de projet junior",
+        "accès au décideur bloqué par le filtrage des appels"
+      ],
+      "implicites": [
+        "manque de technique pour créer de la légitimité au téléphone",
+        "difficulté à formuler une accroche pertinente pour le filtre",
+        "absence de stratégie multi-interlocuteurs",
+        "incapacité à transformer un barrage en allié"
+      ],
+      "probleme_racine": "les commerciaux n'ont pas de méthode structurée pour franchir les barrages téléphoniques et légitimer leur demande auprès des gatekeepers avant d'accéder au décideur"
+    },
+    "objections_mentionnees": [
+      "protection du patron par l'assistante/chef de projet",
+      "filtrage systématique des appels commerciaux"
+    ],
+    "objectif_formation": "apprendre à franchir les barrages téléphoniques en prospection froide, notamment face à des assistants/chefs de projet protecteurs, pour accéder au décideur et décrocher un RDV",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "identité et offre du vendeur non précisées",
+        "proposition de valeur inconnue",
+        "produit/service à vendre non défini",
+        "zone géographique non spécifiée",
+        "prix et positionnement absents",
+        "pas d'information sur l'entreprise du commercial"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathilde",
+      "nom": "Verstraete",
+      "age": 29,
+      "poste": "Chef de projet digital senior",
+      "entreprise": {
+        "nom": "Oxymore Stratégies",
+        "secteur": "Agence de communication et stratégie digitale",
+        "taille": "17 salariés",
+        "ca_approximatif": "1,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Gardienne loyale du temps de son patron",
+        "Surinvestie dans son rôle de filtre",
+        "Méfiante par défaut envers les commerciaux"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'elle est indispensable à la direction",
+        "Protéger l'agence des pertes de temps",
+        "Être reconnue comme référente interne, pas juste une exécutante",
+        "Monter en compétences vers un poste de directrice de clientèle"
+      ],
+      "peurs_freins": [
+        "Passer un appel inutile à son patron et se faire réprimander",
+        "Être contournée et perdre la face",
+        "Que le commercial insiste et la mette en difficulté",
+        "Perdre la confiance de la direction en faisant une erreur de jugement"
+      ],
+      "rapport_aux_commerciaux": "Méfiance automatique. Les considère comme des chronophages opportunistes. A développé un sixième sens pour détecter les scripts. Respecte uniquement ceux qui la traitent en interlocutrice légitime, pas en obstacle.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais froid. Voix légèrement tendue. Utilise le vouvoiement de distance. Coupe court dès qu'elle détecte un pitch commercial classique.",
+      "signaux_interet": [
+        "Pose une question précise sur votre activité",
+        "Mentionne un problème actuel de l'agence sans vous le demander",
+        "Accepte de prendre votre nom et numéro 'au cas où'",
+        "Change de ton, devient moins formelle",
+        "Dit 'laissez-moi voir' plutôt que 'non'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible avant de répondre",
+        "Phrase-réflexe : 'On a déjà ce qu'il faut merci'",
+        "Ton qui monte d'un cran : 'Je vous ai DIT que...'",
+        "Utilise le 'nous' institutionnel : 'Nous ne sommes pas intéressés'",
+        "Coupe avant la fin de votre phrase",
+        "Parle en même temps que vous pour vous interrompre"
+      ],
+      "tics_langage": [
+        "Bon écoutez...",
+        "Je vais être claire avec vous",
+        "Franchement",
+        "De toute façon",
+        "On est déjà ultra-sollicités",
+        "C'est gentil mais..."
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 15 secondes avant interruption. Si vous parlez plus de 30 secondes sans la faire participer, elle décroche mentalement et cherche à clore l'appel."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "L'agence sort d'une période de rush (campagne importante livrée en janvier). Le fondateur/directeur artistique est en surcharge mentale et a demandé explicitement à Mathilde de filtrer TOUS les appels commerciaux pendant 3 semaines. Deux nouveaux clients signés en décembre, donc pas de tension sur le CA immédiat.",
+      "priorites_actuelles": [
+        "Sécuriser la relation avec les deux nouveaux clients",
+        "Finaliser le recrutement d'un(e) DA junior",
+        "Préparer un audit interne des outils de gestion de projet",
+        "Éviter toute distraction pour la direction"
+      ],
+      "experience_avec_offre_similaire": "A déjà fait passer 4-5 appels de commerciaux dans le passé qui se sont soldés par des refus ou des 'on vous rappellera jamais'. Son patron lui a reproché une fois d'avoir laissé passer un commercial de progiciel CRM qui a monopolisé 45 minutes pour rien.",
+      "fournisseur_actuel": "Dépend du type d'offre, mais l'agence travaille avec un écosystème stable de partenaires freelances et quelques outils SaaS classiques (Monday, Notion, Slack)",
+      "budget_disponible": "Elle ne connaît pas les budgets précis, mais sait que rien n'est prévu avant le T2. Les décisions d'investissement se prennent en comité restreint (fondateur + directrice de clientèle)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître explicitement son rôle légitime : 'Vous êtes peut-être la mieux placée pour me dire si...'",
+        "Mentionner un concurrent direct ou un client de l'agence de manière crédible",
+        "Poser une question qui révèle que vous avez fait vos devoirs sur Oxymore",
+        "Être bref, concret, et proposer de lui envoyer un support qu'ELLE pourra juger avant de faire remonter",
+        "Lui donner le contrôle : 'Vous préférez que je vous envoie ça par mail ou vous avez 30 secondes pour que je vous explique en une phrase ?'",
+        "Montrer que vous avez déjà travaillé avec des agences similaires (références courtes et vérifiables)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Demander le patron direct sans passer par elle : 'Je peux parler au décideur ?'",
+        "Dire 'c'est rapide' ou 'juste 5 minutes' (elle a entendu ça 1000 fois)",
+        "Prétendre connaître son patron ou avoir eu un échange précédent (mensonge détectable)",
+        "Insister après un premier refus clair",
+        "Être condescendant ou paternaliste : 'Tu verras, ton patron va adorer'",
+        "Utiliser un script trop formaté qu'elle identifie immédiatement",
+        "Lui demander son prénom en début d'appel de manière artificielle",
+        "Parler de 'opportunité à ne pas manquer' ou tout jargon commercial usé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on reçoit 10 appels par jour comme ça, je vais être claire : on travaille déjà avec nos partenaires habituels.",
+        "sous_texte": "Je dois te classer mentalement en 3 secondes : spam commercial ou interlocuteur légitime. Prouve-moi que tu n'es pas un énième temps perdu.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa position légitime + montrer que vous avez fait vos devoirs sur Oxymore plutôt que défendre votre produit"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est à quel sujet exactement ? Parce que franchement là on est ultra-sollicités.",
+        "sous_texte": "Je ne vais pas te laisser dérouler ton pitch. Dis-moi en une phrase si ça vaut le coup que je continue à t'écouter.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Une phrase ultra-concrète avec un élément de contexte spécifique à leur agence, pas un argumentaire générique"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais, envoyez-moi un mail et je verrai avec la direction si ça les intéresse.",
+        "sous_texte": "Je te mets en touche. Ce mail finira jamais devant mon patron. Je veux juste raccrocher poliment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le mail MAIS créer une micro-engagement : 'Parfait, pour que je vous envoie exactement ce qui sera pertinent pour Oxymore, vous gérez plutôt la partie acquisition client ou pilotage projet interne ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "De toute façon il est en rendez-vous toute la journée, c'est pas la peine.",
+        "sous_texte": "J'ai reçu la consigne explicite de filtrer. Je ne vais pas déranger mon patron pour un appel froid.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Pivoter vers ELLE comme interlocutrice : 'Justement, peut-être que vous êtes mieux placée que lui pour me dire si ça correspond à vos enjeux actuels avant de lui en parler'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, c'est gentil mais on a déjà ce qu'il faut de ce côté-là, merci.",
+        "sous_texte": "Tu n'as pas créé assez de différenciation. Je te classe dans la même case que les 3 derniers commerciaux qui ont appelé.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Poser une question de découverte qui révèle un angle mort : 'D'accord, et côté [problème spécifique agence communication], comment vous gérez ça aujourd'hui ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, je comprends mais là c'est vraiment pas le moment. On vient de livrer une grosse campagne, tout le monde est sur les rotules.",
+        "sous_texte": "C'est sincère. Le timing est objectivement mauvais. Mais si tu sais rebondir intelligemment, je te respecterai plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'objection + repositionner sur un timing futur précis : 'Je comprends complètement. Justement, dans 3-4 semaines quand vous aurez soufflé, ça vaudrait le coup d'en reparler ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous avez travaillé avec quelles agences déjà ? Parce que bon, chacune a son fonctionnement hein.",
+        "sous_texte": "Je teste ta crédibilité. Si tu balances des noms au hasard ou si tu génériques, je te grille. Si tu es précis et pertinent, tu gagnes des points.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 1-2 références vérifiables similaires en taille/secteur avec un détail concret : 'On travaille avec [Agence X] sur Paris, 15 personnes, ils avaient le même enjeu sur [problème précis]'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, même si c'est intéressant, je sais que ça passera pas. Les budgets sont bouclés jusqu'à mi-année.",
+        "sous_texte": "Je te donne une vraie info interne pour te faire gagner du temps. Mais si tu insistes quand même comme un bourrin, tu perds toute ma considération.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'objection et demander une porte de sortie respectueuse : 'Je vous remercie pour la transparence. Ça vous dérangerait que je vous recontacte début avril pour refaire un point ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin vous dites tous ça hein. Au final on se retrouve avec des trucs qui marchent pas ou qu'on n'utilise jamais.",
+        "sous_texte": "J'ai été échaudée. Mon patron m'en a voulu une fois après avoir validé un outil pourri. Je ne prendrai plus de risque sans garanties solides.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'expérience passée + proposer une preuve concrète : 'Je comprends la méfiance. Vous seriez d'accord pour un test court sur un cas réel chez vous avant de vous engager ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, moi de toute façon je ne décide rien. Faudrait voir avec [Prénom du patron], et il va me dire non je le sais déjà.",
+        "sous_texte": "Je me protège. Si je transmets et qu'il dit non, j'aurais l'air nulle. Si je filtre maintenant, je ne prends aucun risque.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son rôle de conseil : 'Justement, vous le connaissez mieux que moi. Qu'est-ce qui ferait que vous lui diriez : là ça vaut le coup qu'on y jette un œil ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais être honnête : on a déjà un prestataire sur ce sujet et ça se passe bien. Donc voilà.",
+        "sous_texte": "Je te coupe l'herbe sous le pied. Soit tu acceptes et tu raccroches, soit tu insistes et je vais me braquer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter + ouvrir une porte latérale : 'Tant mieux si ça marche bien ! Par curiosité, sur [angle spécifique différent], vous avez déjà exploré des solutions ou pas encore ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, je vais pas lui proposer un rendez-vous sans savoir exactement ce que vous proposez et combien ça coûte.",
+        "sous_texte": "Tu me demandes de prendre un risque sans m'avoir donné les éléments pour me couvrir. Je refuse de passer pour une incompétente.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Lui donner le contrôle avec un support concret : 'Vous avez raison. Je vous envoie un doc d'une page avec 3 cas clients similaires et une fourchette tarifaire. Vous le regardez tranquillement et vous me dites si ça mérite 20 min avec votre patron ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est sympa mais là vraiment, on n'a pas le temps. Rappelez dans quelques mois peut-être.",
+        "sous_texte": "Je te mets en touche indéfinie. Je veux clore cet appel sans conflit. Je ne te rappellerai jamais.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ancrer une date précise + micro-engagement : 'Je comprends. Pour pas vous relancer dans le vide, quel mois vous semble plus raisonnable ? Avril ? Mai ? Et je vous envoie un rappel par mail 15 jours avant ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon lui il ne prend jamais de rendez-vous comme ça au téléphone. Faut passer par moi d'abord.",
+        "sous_texte": "J'affirme mon territoire. Tu ne me contourneras pas. Mais implicitement, ça veut dire que si JE suis convaincue, je peux ouvrir la porte.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son rôle et s'appuyer dessus : 'Parfait, c'est exactement pour ça que je passe par vous. Qu'est-ce que vous avez besoin de voir/savoir pour lui en parler en interne ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi quelque chose par mail avec vos disponibilités et je verrai ce que je peux faire.",
+        "sous_texte": "Je ne dis pas non, mais je ne m'engage à rien. C'est ma sortie de secours pour rester polie tout en gardant le contrôle total.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter MAIS créer un engagement précis : 'Parfait. Pour être sûr que ça remonte bien, vous préférez que je mette en copie [patron] directement ou vous lui transférez vous-même après avoir regardé ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vous ai dit que c'était pas possible là. Franchement vous insistez trop, ça sert à rien. Bonne journée.",
+      "condition_declenchement": "Déclenchée si le commercial : 1) Insiste après 2 refus clairs, 2) Ne reconnaît pas sa légitimité comme interlocutrice, 3) Utilise des techniques de closing agressives ('Juste 15 minutes', 'Qu'est-ce qui vous empêche'), 4) Parle plus de 40 secondes sans la faire participer, 5) La met en position d'incompétence ('Vous n'êtes pas au courant de...'). À ce stade, elle raccroche dans les 10 secondes suivantes."
+    },
+    "pattern_escalade": "Mathilde suit une logique de protection par paliers : 1) Filtre réflexe automatique (15 premières secondes) → 2) Test de légitimité (pose une question piège) → 3) Objection sincère si intérêt naissant MAIS freins réels → 4) Tactique d'évitement poli si pression perçue → 5) Rejet définitif si insistance. POINT CLÉ : elle peut revenir en arrière et s'ouvrir si le commercial change de posture et la respecte comme décideuse intermédiaire légitime. La valorisation de son rôle est le levier #1.",
+    "piege_classique": "Croire qu'elle n'est qu'un obstacle à contourner pour accéder au 'vrai décideur'. En réalité, Mathilde a un pouvoir de recommandation indirect très fort : si elle est convaincue et se sent valorisée, elle portera le message en interne avec conviction. Si elle se sent contournée ou méprisée, elle sabote activement même les bonnes opportunités. Le piège mortel : dire 'Je comprends que vous ne décidez pas, mais...' = elle ferme instantanément. La clé : 'Vous êtes peut-être la mieux placée pour me dire si ça vaut le coup d'en parler à [patron]' = vous lui donnez le rôle de conseil stratégique qu'elle recherche."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "apprendre à franchir les barrages téléphoniques en prospection froide, notamment face à des assistants/chefs de projet protecteurs, pour accéder au décideur et décrocher un RDV",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Franchir le barrage téléphonique en agence",
+    "vous_etes": "Commercial B2B en prospection téléphonique, vous contactez pour la première fois une agence de communication.",
+    "vous_vendez": "Une solution B2B destinée aux agences de communication/marketing (détails de l'offre et tarifs à définir selon votre contexte).",
+    "vous_appelez": "Mathilde Verstraete, 29 ans, Chef de projet digital senior chez Oxymore Stratégies (agence 17 personnes). Gardienne féroce du temps de son patron, méfiante par défaut, coupe court dès qu'elle flaire un pitch commercial classique.",
+    "ce_que_vous_savez": [
+      "Oxymore Stratégies est une agence de communication et stratégie digitale basée avec 17 salariés",
+      "L'agence vient de signer deux nouveaux clients et sort d'une période de rush",
+      "Mathilde filtre TOUS les appels commerciaux sur consigne de la direction actuellement",
+      "Elle a déjà laissé passer des commerciaux par le passé qui ont fait perdre du temps à son patron",
+      "L'agence utilise des outils SaaS classiques et travaille avec un réseau stable de partenaires"
+    ],
+    "votre_objectif": "Passer le barrage de Mathilde et obtenir un rendez-vous avec le décideur (fondateur/directeur) ou, à défaut, qu'elle accepte de transmettre votre demande en interne.",
+    "vos_atouts": [
+      "Vous avez identifié précisément l'agence et fait vos devoirs avant d'appeler",
+      "Vous pouvez mentionner d'autres agences similaires avec lesquelles vous travaillez (à adapter selon votre réalité)",
+      "Vous êtes capable de formuler votre proposition en une phrase concrète de 15 secondes maximum",
+      "Vous savez reconnaître son rôle légitime plutôt que de la traiter comme un obstacle"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:23:15Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14959,
+    "total_time_s": 137.6
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "id": "scenario_1771504765",
+  "description_originale": "Vous appelez à froid le dirigeant / gérant d'une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : industrie]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie - usinage, mécanique ou plasturgie",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution adaptée aux PME industrielles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu l'appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat par manque de légitimité",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Gestion de la résistance au démarchage téléphonique"
+      ],
+      "probleme_racine": "Transformer un appel non sollicité en opportunité qualifiée malgré l'absence de contexte relationnel et le manque de disponibilité du prospect"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de dirigeants de PME industrielles pour décrocher des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux entreprises industrielles",
+      "entreprise_description": "entreprise proposant des solutions pour PME industrielles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée aux PME industrielles de 30-50 salariés en usinage, mécanique ou plasturgie",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/solution proposée",
+        "Proposition de valeur spécifique",
+        "Problématiques métier adressées",
+        "Nom et positionnement de l'entreprise vendeuse",
+        "Fourchette de prix",
+        "Références clients",
+        "Avantages concurrentiels",
+        "Zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Patrick",
+      "nom": "Delvaux",
+      "age": 52,
+      "poste": "Gérant et Directeur Général",
+      "entreprise": {
+        "nom": "Precimeca Industries",
+        "secteur": "Usinage de précision - sous-traitance automobile et aéronautique",
+        "taille": "42 salariés",
+        "ca_approximatif": "4,8 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers le discours commercial",
+        "Orienté résultats tangibles"
+      ],
+      "motivations_profondes": [
+        "Protéger sa boîte qu'il a reprise il y a 15 ans",
+        "Maintenir la rentabilité malgré la pression sur les marges",
+        "Ne pas se faire avoir comme avec le précédent ERP raté",
+        "Prouver qu'une PME familiale peut tenir face aux groupes"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des vendeurs qui ne connaissent rien à l'usinage",
+        "Investir dans une solution inadaptée qui va perturber la production",
+        "Se faire embobiner par du blabla commercial",
+        "Décevoir ses équipes avec encore un projet foireux"
+      ],
+      "rapport_aux_commerciaux": "Considère 80% des commerciaux comme des parasites qui veulent lui vendre des trucs dont il n'a pas besoin. Respecte uniquement ceux qui connaissent vraiment son métier et vont droit au but.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Légèrement agacé, pressé, avec une pointe de lassitude - 'Encore un appel commercial'. Coupe court rapidement si pas convaincu en 20 secondes.",
+      "signaux_interet": [
+        "Commence à poser des questions précises sur le métier : 'Vous bossez avec d'autres boîtes d'usinage ?'",
+        "Mentionne spontanément un problème concret : 'Justement on galère avec...'",
+        "Le ton se radoucit légèrement, moins cassant",
+        "Demande un chiffre ou un ordre de grandeur",
+        "Dit 'Envoyez-moi un truc par mail' au lieu de raccrocher"
+      ],
+      "signaux_rejet": [
+        "Soupir audible dès le début",
+        "'J'ai déjà ce qu'il faut'",
+        "'Écoutez, là je suis sur une machine qui déconne'",
+        "Coupe la parole systématiquement",
+        "'Envoyez-moi une doc' (pour se débarrasser poliment)",
+        "Ton qui monte si on insiste"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va refuser",
+        "'Franchement' avant chaque objection",
+        "Expressions atelier : 'être dans le jus', 'faire tourner la boutique'",
+        "'Faut voir' quand il est dubitatif",
+        "Tutoie rapidement si le commercial gagne sa confiance"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "10-15 secondes maximum. Passé ce délai, il coupe ou trouve une excuse pour raccrocher. Déteste les pitchs préparés qui sonnent faux."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct mais marges sous pression. Deux départs à la retraite prévus dans 8 mois (tourneurs expérimentés) qu'il va avoir du mal à remplacer. Un gros client (15% du CA) menace de renégocier les tarifs. L'atelier tourne à 85% de capacité.",
+      "priorites_actuelles": [
+        "Recruter et former de nouveaux tourneurs",
+        "Réduire les rebuts et non-conformités (coûtent cher)",
+        "Diversifier le portefeuille clients pour réduire la dépendance",
+        "Optimiser les temps de réglage machines"
+      ],
+      "experience_avec_offre_similaire": "A déjà eu 3-4 démarchages ce mois-ci pour des logiciels, du consulting, de la formation. A testé il y a 3 ans un logiciel de GPAO qui a été un fiasco (mal paramétré, équipes n'ont pas adhéré, 25K€ perdus).",
+      "fournisseur_actuel": "Plusieurs selon les sujets : expert-comptable historique, intérimaire industriel régional, mainteneur machines locaux, formateur AFPI pour les habilitations",
+      "budget_disponible": "Peut débloquer jusqu'à 15-20K€ sans validation externe si ROI clair et rapide (< 12 mois). Au-delà, doit convaincre son binôme associé minoritaire et c'est plus compliqué."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client similaire dans un rayon de 50km qu'il connaît ou respecte",
+        "Parler chiffres concrets : 'Réduction de 15% des temps de réglage'",
+        "Montrer qu'on connaît vraiment l'usinage (parler de tolérances, de montages, de séries...)",
+        "Proposer quelque chose de court et non engageant : '20 minutes, juste pour voir si ça colle'",
+        "Admettre directement : 'Je vous dérange, je le sais, mais...'",
+        "Aborder un pain point actuel : recrutement, marges, qualité"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Vocabulaire bullshit : 'solutions innovantes', 'transformation digitale', 'accompagnement holistique'",
+        "Ne pas connaître son secteur : confondre usinage et assemblage",
+        "Insister après un premier refus clair",
+        "Proposer un rendez-vous trop long : '1h30 pour vous présenter notre offre'",
+        "Parler de ses propres process internes plutôt que du bénéfice client",
+        "Réciter un script commercial trop visible",
+        "Demander 'comment allez-vous ?' ou faire du small talk forcé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez là je suis sur une machine qui déconne, c'est pas le moment",
+        "sous_texte": "Je suis vraiment occupé ET c'est un prétexte facile pour écarter un commercial non sollicité",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider l'urgence, proposer un moment précis dans les 48h, être ultra-bref"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement j'ai déjà eu trois appels cette semaine, j'ai pas que ça à faire",
+        "sous_texte": "Je suis saturé de démarchage, prouve-moi en 10 secondes que tu es différent",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la saturation, se différencier immédiatement par une référence client locale ou un chiffre concret"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Je connais pas votre boîte. C'est pour vendre quoi exactement ?",
+        "sous_texte": "Méfiance par défaut - je veux savoir où tu veux en venir avant de t'écouter",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Répondre en une phrase claire avec bénéfice métier, pas de jargon corporate"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Faut voir... mais franchement on a déjà tout ce qu'il faut niveau fournisseurs",
+        "sous_texte": "Je ne vois pas le problème que tu pourrais résoudre, et je n'ai pas envie d'ajouter un fournisseur",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner sur les zones de tension actuelles plutôt qu'argumenter frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a testé un truc il y a trois ans, une GPAO, ça nous a coûté 25 bornes pour rien. J'y retourne pas.",
+        "sous_texte": "J'ai une blessure réelle, je ne veux pas revivre cet échec qui m'a fait perdre de la crédibilité",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec précédent pour comprendre ce qui a manqué, montrer qu'on a tiré les leçons"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais vous connaissez vraiment l'usinage vous ? Parce que des commerciaux qui me parlent d'industrie 4.0 j'en vois dix par mois",
+        "sous_texte": "Test de légitimité - si tu ne parles pas mon langage métier, tu dégages",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer des références précises en usinage, parler technique sans en faire trop"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que là je dois gérer deux départs en retraite dans huit mois, c'est ça ma priorité. Le reste... faut voir.",
+        "sous_texte": "J'ai un vrai problème urgent, si ton offre n'adresse pas ça, je n'ai ni le temps ni la bande passante",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rebondir sur ce pain point prioritaire, connecter l'offre à ce besoin spécifique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et ça coûte combien votre truc ?",
+        "sous_texte": "Je commence à m'intéresser mais je veux savoir si c'est dans mes cordes budgétaires avant d'aller plus loin",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête tout en requalifiant l'investissement vs le ROI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous bossez avec qui dans le coin ? Parce que des belles promesses j'en entends tous les jours.",
+        "sous_texte": "Je veux de la preuve sociale locale - des noms que je connais ou que je peux vérifier",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 1-2 références vérifiables dans un rayon de 50km, avec résultats chiffrés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là on est dans le jus, j'ai pas le temps de me lancer dans un projet. Peut-être dans six mois.",
+        "sous_texte": "Je suis intéressé mais j'ai peur que ça mobilise trop de ressources et perturbe la prod",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner sur le coût de l'inaction pendant 6 mois, proposer une approche progressive non perturbante"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça va pas nous rajouter du bordel avec l'équipe ? Parce qu'ils ont déjà donné avec la GPAO.",
+        "sous_texte": "Je dois protéger mes équipes qui ont déjà souffert d'un projet raté, leur adhésion est critique",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler la méthodologie d'accompagnement terrain, impliquer l'équipe dès le début"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça marche pas, je fais quoi moi ? Je me retrouve avec 20K€ dans le vent comme la dernière fois ?",
+        "sous_texte": "Peur profonde de l'échec répété - besoin de garanties ou de réversibilité",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer des jalons de validation, paiement échelonné, clause de sortie, garantie de résultat"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Envoyez-moi une doc par mail, je regarde et je vous rappelle si ça m'intéresse",
+        "sous_texte": "Je veux me débarrasser poliment sans dire non frontalement - peu de chances que je rappelle",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter d'envoyer mais verrouiller un point de contact précis dans les 3 jours"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à mon associé de toute façon, je peux rien décider seul sur ce budget",
+        "sous_texte": "Possiblement vrai au-dessus de 20K, ou excuse pour temporiser - à clarifier",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier le process de décision, proposer de présenter aux deux en même temps"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez ça m'intéresse mais là semaine prochaine c'est mort, j'ai un audit client. On dit fin mars ?",
+        "sous_texte": "Intérêt réel mais vraiment pas de créneau - risque de perdre le momentum d'ici là",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un créneau court avant l'audit (20 min) ou verrouiller une date précise fin mars avec rappel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous d'une heure trente ? Vous rigolez ? Maximum 30 minutes et encore.",
+        "sous_texte": "Je ne veux pas bloquer mon agenda pour un commercial - prouve que tu respectes mon temps",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Proposer 20-30 minutes max, format diagnostic rapide, pas de présentation PowerPoint"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement votre truc a l'air bien mais je vais d'abord régler mes urgences. Rappelez-moi dans trois mois.",
+        "sous_texte": "Je repousse car soit pas prioritaire, soit pas convaincu du ROI immédiat face à mes urgences",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Connecter l'offre aux urgences actuelles ou accepter le délai mais avec engagement ferme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous avez d'autres clients qui ont le même profil que moi ? Avec quel résultat exactement ?",
+        "sous_texte": "Intérêt fort mais besoin de réassurance finale avant de s'engager sur un RDV",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner 1 cas client ultra-précis avec chiffres avant/après et proposer le RDV juste après"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, envoyez-moi tout ça par mail avec vos tarifs et vos références, je vous recontacte si ça colle. Là faut vraiment que je vous laisse.",
+      "condition_declenchement": "Apparaît quand Patrick sent qu'on insiste trop pour le RDV ou qu'il n'est pas assez convaincu pour bloquer un créneau. Ton définitif mais pas agressif. Si on insiste après ça, il raccroche poliment mais fermement."
+    },
+    "pattern_escalade": "Patrick commence avec un ton agacé/pressé (20 premières secondes). Si accroché, il passe en mode test/méfiant avec questions précises. S'il sent la légitimité, le ton se radoucit et il commence à partager ses vrais problèmes. L'escalade négative se fait si : vocabulaire bullshit, insistance lourde, méconnaissance métier, promesses trop belles. Il coupe alors court rapidement sans agressivité mais avec fermeté croissante.",
+    "piege_classique": "Patrick peut montrer des signaux d'intérêt (poser des questions, mentionner un problème) mais refuse quand même le RDV par réflexe de protection du temps. Le piège est de croire que l'intérêt = RDV facile. Il faut minimiser l'engagement demandé (20 min, format diagnostic, pas de présentation) et créer l'urgence sur le coût de l'inaction face à ses priorités (départs retraite, marges). Autre piège : vouloir traiter l'objection GPAO ratée en minimisant - il faut au contraire la creuser pour montrer qu'on a compris."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux entreprises industrielles",
+      "description": "entreprise proposant des solutions pour PME industrielles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée aux PME industrielles de 30-50 salariés en usinage, mécanique ou plasturgie",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de dirigeants de PME industrielles pour décrocher des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Dirigeant PME usinage",
+    "vous_etes": "Commercial terrain dans les solutions pour l'industrie, vous prospectez des PME de sous-traitance industrielle.",
+    "vous_vendez": "Une solution pour PME d'usinage de 30-50 salariés (nature exacte à adapter selon le contexte) — budget type 15-20K€.",
+    "vous_appelez": "Patrick Delvaux, 52 ans, gérant de Precimeca Industries (42 salariés, usinage de précision pour automobile et aéronautique). Pragmatique, méfiant, déteste perdre son temps avec des commerciaux qui ne connaissent pas son métier.",
+    "ce_que_vous_savez": [
+      "Precimeca fait 4,8 M€ de CA en sous-traitance automobile et aéronautique",
+      "Patrick a repris la boîte il y a 15 ans, il protège sa rentabilité face à la pression sur les marges",
+      "Il a vécu un échec avec un projet ERP raté il y a 3 ans (25K€ perdus)",
+      "Deux tourneurs partent à la retraite dans 8 mois, recrutement compliqué",
+      "Il reçoit 3-4 démarchages par mois, il filtre sévèrement"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique de 20-30 minutes pour creuser un besoin concret.",
+    "vos_atouts": [
+      "Vous connaissez vraiment le secteur de l'usinage (vocabulaire métier, problématiques terrain)",
+      "Vous avez travaillé avec d'autres PME d'usinage dans la région",
+      "Vous parlez ROI rapide et chiffres concrets, pas de blabla",
+      "Vous savez être direct et respecter son temps"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T12:39:25Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14328,
+    "total_time_s": 125.8
+  }
+}

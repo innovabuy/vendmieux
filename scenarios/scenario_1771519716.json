@@ -1,0 +1,373 @@
+{
+  "id": "scenario_1771519716",
+  "description_originale": "Vous avez envoyé une proposition commerciale au propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : hotellerie_restauration]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "hotel_restaurant_independant_ou_petit_groupe_2_5_etablissements",
+      "interlocuteur_principal": {
+        "poste": "proprietaire_directeur_hotel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_ou_service_pour_secteur_hotellerie_restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "absence_de_reponse_suite_proposition_commerciale",
+        "necessite_obtenir_retour_clair"
+      ],
+      "implicites": [
+        "difficulte_a_engager_decideur_hotelier",
+        "risque_proposition_perdue_dans_masse_sollicitations",
+        "manque_de_suivi_systematique_post_envoi",
+        "incapacite_a_creer_urgence_ou_differenciation"
+      ],
+      "probleme_racine": "absence_de_processus_de_relance_structure_et_de_techniques_pour_reactiver_prospects_silencieux_dans_secteur_sature"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "former_commerciaux_a_techniques_relance_efficaces_pour_obtenir_reponse_claire_et_faire_avancer_pipeline_sans_paraitre_insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_solutions_ou_services_secteur_hotellerie_restauration",
+      "entreprise_description": "entreprise_proposant_produits_ou_services_destines_aux_hotels_restaurants_independants_ou_petits_groupes",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_ou_service_ayant_fait_objet_proposition_commerciale_ecrite_envoyee_il_y_a_10_jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "obtenir_retour_clair_oui_non_ou_prochaine_etape",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature_exacte_produit_service_propose",
+        "contenu_proposition_commerciale_envoyee",
+        "contexte_relation_anterieure_avec_prospect",
+        "fourchette_prix_investissement",
+        "proposition_valeur_differenciante",
+        "raisons_potentielles_non_reponse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Bertrand",
+      "age": 52,
+      "poste": "Propriétaire-Gérant",
+      "entreprise": {
+        "nom": "Hôtel-Restaurant Le Manoir des Cèdres",
+        "secteur": "Hôtellerie-restauration indépendante",
+        "taille": "3 établissements (1 hôtel 3 étoiles 28 chambres, 1 restaurant gastronomique, 1 brasserie)",
+        "ca_approximatif": "2,8 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux depuis 30 ans de sollicitations",
+        "Pragmatique obsessionnel : ne croit que ce qu'il voit fonctionner",
+        "Surchargé mental permanent, tendance à procrastiner sur tout ce qui n'est pas opérationnel immédiat"
+      ],
+      "motivations_profondes": [
+        "Préserver la réputation familiale bâtie sur 2 générations",
+        "Prouver qu'un indépendant peut rivaliser avec les chaînes sans perdre son âme",
+        "Transmettre une affaire rentable à sa fille qui termine son école hôtelière",
+        "Réduire sa charge mentale quotidienne devenue insoutenable"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme en 2019 avec un logiciel de réservation qui a planté en pleine saison",
+        "Que ses équipes (déjà fragiles) rejettent un nouvel outil ou changement",
+        "Investir dans quelque chose qui sera obsolète dans 2 ans",
+        "Paraître vieux jeu face à sa fille très digitale, mais aussi paraître naïf en suivant toutes les modes tech"
+      ],
+      "rapport_aux_commerciaux": "Évitement actif. Classe mentalement 95% des appels comme 'perte de temps'. A développé des stratégies de fuite : ne décroche plus les numéros inconnus, fait filtrer par l'accueil, répond 'envoyez-moi un mail' pour clore rapidement. Respecte uniquement ceux qui prouvent qu'ils connaissent VRAIMENT son métier et ses contraintes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe de lassitude résignée. Commence souvent par 'Écoutez je vous donne 5 minutes parce que j'ai le chef qui m'attend pour la carte du soir'",
+      "signaux_interet": [
+        "Pose une question très spécifique sur UN point technique (signe qu'il a vraiment lu)",
+        "Mentionne spontanément un problème concret actuel : 'Tiens justement hier on a eu...'",
+        "Dit 'Attendez' et va chercher un document ou un chiffre",
+        "Baisse légèrement le débit, prend le temps de reformuler pour vérifier qu'il a compris"
+      ],
+      "signaux_rejet": [
+        "Coupe avec 'Oui oui je vois' de manière répétitive sans poser de question",
+        "Regarde ostensiblement son téléphone ou son écran d'ordinateur",
+        "Utilise le 'nous' impersonnel : 'On va réfléchir', 'On vous recontactera'",
+        "Invoque un tiers absent : 'De toute façon faut que j'en parle à ma comptable / ma fille / mon associé'"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' en début de phrase pour reprendre la main",
+        "Ponctue de 'Hein ?' à la fin des phrases (tic auvergnat)",
+        "Dit 'C'est pas faux' au lieu de 'Oui' quand il est moyennement convaincu",
+        "Utilise 'Vous comprenez' comme bouclier : 'Vous comprenez, dans l'hôtellerie, on n'a pas le droit à l'erreur'",
+        "Expressions culinaires appliquées au business : 'Faut pas mettre la charrue avant les bœufs', 'C'est la cerise sur le gâteau mais moi j'ai besoin du gâteau d'abord'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant qu'il ne coupe. Seuil de tolérance dramatiquement réduit au téléphone (20 secondes). Attend qu'on lui POSE DES QUESTIONS sur sa situation, déteste qu'on lui EXPLIQUE sa situation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sortie de crise COVID difficile, retour à l'équilibre fragile. Problème récurrent de recrutement en cuisine et service. Taux d'occupation hôtel correct (68%) mais marge érodée par l'inflation des coûts (énergie, alimentaire). Pression concurrentielle d'un Ibis Budget ouvert à 3km. Sa fille pousse pour digitaliser mais lui voit d'abord les coûts.",
+      "priorites_actuelles": [
+        "Tenir la marge jusqu'à fin d'année sans augmenter les prix carte/chambres",
+        "Finaliser les travaux de mise aux normes accessibilité (deadline septembre)",
+        "Préparer la saison des mariages (30% du CA restaurant) sans son ancien chef parti en mars",
+        "Gérer le conflit larvé entre son fils (chef actuel, 28 ans) et sa fille (qui veut moderniser le marketing)"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 solutions ces 5 dernières années : un logiciel de gestion qui n'a jamais été adopté par les équipes (5000€ perdus), un système de commande tablette au restaurant (abandonné au bout de 2 mois, clients âgés perdus), un prestataire de linge qui a fait faillite en pleine saison (cauchemar logistique). Bilan : échaude, hypersensible au rapport qualité/prix et à la FIABILITÉ.",
+      "fournisseur_actuel": "Mix de solutions : Logiciel de réservation Hotelio (satisfait mais basique), comptabilité sur Excel + expert-comptable externe, linge par Elis, fournisseurs alimentaires locaux historiques, présence web bricolée par un prestataire local (site vitrine + page Facebook gérée par sa fille)",
+      "budget_disponible": "Capacité d'investissement réelle : 8000-12000€ si ROI démontrable sous 18 mois. Mais réflexe premier : 'C'est trop cher'. Besoin de fractionner mentalement (coût/chambre/mois) pour accepter. Trésorerie tendue de mai à septembre, plus souple octobre-février."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer un confrère de sa zone qu'il respecte (validation par les pairs)",
+        "Chiffrer un gaspillage actuel précis plutôt que vanter un gain futur ('Vous perdez probablement 180€/semaine sur...')",
+        "Reconnaître explicitement ses contraintes avant de proposer : 'Je sais que vous n'avez ni le temps ni l'envie de former vos équipes pendant 3 jours'",
+        "Proposer un test limité, réversible, sans engagement ('On teste sur 10 chambres pendant 1 mois')",
+        "Parler APRÈS sa saison de pointe : 'Je vous rappelle mi-octobre quand vous aurez plus de visibilité'",
+        "Montrer qu'on a compris sa transmission familiale : 'Votre fille pourra gérer ça en autonomie'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Utiliser le jargon tech sans traduction opérationnelle ('Avec notre IA vous optimisez le yield management')",
+        "Critiquer frontalement ses choix actuels ou ses outils ('Franchement Excel c'est plus possible en 2024')",
+        "Minimiser la complexité de mise en œuvre ('C'est très simple, ça prend 2 heures')",
+        "Ignorer sa temporalité : proposer une démo la semaine prochaine quand il est en rush",
+        "Comparer son établissement aux chaînes ('Comme au Mercure' = insulte pour son positionnement indépendant)",
+        "Insister lourdement après un premier refus poli (braquer définitivement)",
+        "Envoyer des relances emails génériques automatisées (preuve qu'on ne le considère pas)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai la tête dans le guidon là, c'est pas le moment, vous comprenez. Envoyez-moi un mail je regarderai.",
+        "sous_texte": "Je me souviens vaguement de votre proposition mais je l'ai rangée mentalement dans 'à traiter plus tard jamais'. Je vous donne la porte de sortie polie standard.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa charge puis ancrer sur l'objet précis envoyé pour créer micro-engagement : 'Justement c'est pour ça que je vous appelle - vous avez reçu ma proposition sur [élément précis] il y a 10 jours, je voulais juste savoir si ça méritait 3 minutes d'échange ou si je classe le dossier.'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui j'ai vu passer ça... Mais franchement là on a d'autres priorités, c'est pas le bon moment.",
+        "sous_texte": "J'ai effectivement ouvert votre mail (ou pas) mais ça ne m'a pas semblé urgent. Je teste si vous allez insister ou lâcher prise.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider son priorisation puis créer un pont vers SES priorités : 'Je comprends totalement. Justement, c'est quoi vos priorités côté [restaurant/hôtel] en ce moment ?' Puis rebondir si lien possible, sinon proposer timing meilleur."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi exactement ? Parce que j'en reçois quinze par semaine des trucs comme ça.",
+        "sous_texte": "Je suis fatigué d'être sollicité. Prouvez-moi en 10 secondes que vous êtes différent ou je raccroche poliment.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Différenciation immédiate par personnalisation : 'Stéphane, je vous ai envoyé une proposition spécifique sur [élément précis lié à son établissement]. Je vous appelle pas pour vendre mais pour savoir si les 3 points que j'avais détaillés ont du sens pour le Manoir ou pas du tout.'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, votre truc a l'air bien sur le papier, mais moi j'ai déjà donné avec des belles promesses. En 2019 on a eu un logiciel qui nous a planté en pleine saison, hein.",
+        "sous_texte": "Je suis échaudé et cette cicatrice me fait rejeter par défaut toute nouvelle solution. Je protège mon établissement et ma réputation.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accuser réception de la blessure + renverser en critère de choix : 'Je comprends, un plantage en saison c'est le cauchemar. Du coup c'est quoi pour vous les garanties non négociables aujourd'hui pour éviter de revivre ça ?' Puis construire sur SES critères de sécurité."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est pas votre solution, c'est mes équipes. Ils sont déjà débordés, si je leur rajoute un truc à apprendre, ils vont me tomber dessus.",
+        "sous_texte": "J'ai peur du rejet interne et d'aggraver la tension avec mes équipes déjà fragiles. C'est ma vraie barrière, pas le prix.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valider la contrainte réelle + investiguer degré de complexité acceptable : 'C'est vrai que rajouter de la charge c'est impossible. Concrètement, pour que ça passe, faut que ce soit utilisable sans formation ou avec quoi comme accompagnement ?' Puis explorer si solution compatible."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais c'est pas faux ce que vous dites... Mais bon faut que j'en parle à ma fille, elle gère plus le côté digital maintenant.",
+        "sous_texte": "Je suis intéressé mais je ne veux pas décider seul (peur de me tromper + dynamique familiale complexe). J'utilise le tiers absent pour gagner du temps.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le décideur collectif + organiser inclusion : 'Excellent, ça tombe bien qu'elle soit impliquée. Pour pas lui faire perdre de temps, vous voulez que je vous envoie 3 slides de synthèse que vous regardez ensemble, ou on cale 15min à trois au tel ?' Cadrer la suite concrètement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui je vois... Mouais. Mais bon, vous comprenez, dans l'hôtellerie on n'a pas le droit à l'erreur, hein. Faut que je sois sûr que ça marche vraiment.",
+        "sous_texte": "Vous ne m'avez pas encore rassuré sur la fiabilité. Je commence à décrocher, je répète des généralités. Donnez-moi de la preuve concrète ou je vais clore poliment.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Stopper l'argumentation + passer en mode preuve : 'Vous avez raison d'être exigeant. Qu'est-ce qui vous rassurerait concrètement ? Un échange avec [confrère référence], un test sur une partie seulement, une garantie résultat ?' Lui donner le contrôle de la validation."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de ROI 18 mois, mais moi ma trésorerie elle est tendue jusqu'en septembre. Je peux pas me permettre de sortir [montant] comme ça.",
+        "sous_texte": "Le prix me bloque réellement à cause de mon calendrier de trésorerie. Si vous ne fractionnez pas ou ne décalez pas, je ne peux physiquement pas, même si je suis intéressé.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la contrainte cash + explorer options : 'Je comprends la saisonnalité de tréso. Si on démarre en octobre avec un paiement étalé ou un premier palier réduit, ça change la donne ou c'est autre chose qui coince ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais concrètement ça va me prendre combien de temps à moi de mettre en place ? Parce que j'ai déjà 50 trucs à gérer.",
+        "sous_texte": "Votre discours me semble sous-estimer MA charge de travail dans le déploiement. Je veux un chiffre horaire réaliste, pas du pipeau commercial.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence radicale sur son investissement temps : 'Honnêtement, côté gérant comme vous : 2h de cadrage initial, puis 30min/semaine les 3 premières semaines pour ajuster. Si c'est trop, on peut pas travailler ensemble. C'est jouable ou pas dans votre planning ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin vous me dites ça, mais l'Ibis Budget à 3km ils ont pas besoin de votre truc eux, et ils tournent bien, hein.",
+        "sous_texte": "Je me compare (mal) à la concurrence pour tester votre argumentaire. En vrai je déteste être comparé aux chaînes mais j'ai le réflexe.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recentrer sur SON modèle différencié : 'Justement, l'Ibis c'est un modèle industriel standardisé. Vous au Manoir vous jouez la carte [cachet/gastronomie/service], c'est un autre combat. La question c'est : est-ce que [solution] vous aide sur VOS points forts ou pas ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, on va réfléchir de notre côté et on vous recontacte.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Soit je ne suis pas convaincu, soit j'ai besoin de digérer, soit je n'ose pas dire non. Il y a 90% de chances que je ne recontacte jamais.",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Forcer la clarification avec douceur : 'Stéphane, je préfère qu'on soit cash tous les deux - quand vous dites réfléchir, c'est que vous avez encore une vraie question en suspens, ou c'est que ça vous intéresse pas et vous voulez pas me vexer ?' Puis investiguer la vraie raison."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est trop cher pour nous. On n'a pas ce budget-là, surtout en ce moment.",
+        "sous_texte": "Soit c'est vraiment trop cher et je ne vois pas le ROI, soit je négocie, soit je me réfugie derrière le prix car je n'ose pas dire l'autre frein (équipes, timing, conviction).",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Isoler l'objection prix : 'OK, imaginons que le prix soit divisé par deux demain matin - vous signez direct ou il y a autre chose qui vous retient ?' Si autre chose apparaît = vrai frein. Sinon négocier valeur/prix."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, envoyez-moi tout ça par mail, je regarde avec ma comptable et je vous redis.",
+        "sous_texte": "Je délègue mentalement la décision pour gagner du temps. J'invoque la comptable (qui ne sera jamais consultée vraiment) pour ne pas m'engager.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Cadrer l'après-envoi : 'Pas de souci, je vous envoie ça. Par contre pour pas que ça traîne, vous la voyez quand votre comptable ? Je vous rappelle 2 jours après pour avoir votre retour à tous les deux, ça marche ?' Ancrer date de relance précise."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le timing c'est vraiment pas bon, là on est en plein dans les mariages, faut qu'on en reparle à l'automne.",
+        "sous_texure": "C'est peut-être vrai (saisonnalité réelle) ou peut-être une excuse pour repousser indéfiniment. Je teste si vous allez lâcher l'affaire.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider si c'est timing pur ou intérêt faible : 'Je comprends la saison mariages. Question bête : si on acte ensemble qu'on en reparle mi-octobre, c'est parce que le sujet vous intéresse vraiment ou c'est pour me dire non gentiment ?' Puis caler vraie date si sincère."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai besoin d'y réfléchir encore un peu, vous comprenez, c'est quand même un investissement. Rappelez-moi dans 15 jours.",
+        "sous_texte": "Je suis en surcharge mentale, je n'arrive pas à prendre la décision maintenant. Je gagne du temps mais sans méchanceté - par contre il y a un risque que je retombe dans l'inertie.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Aider à structurer la réflexion : 'Bien sûr. Pour que ces 15 jours soient utiles, qu'est-ce que vous avez besoin de clarifier exactement ? [pause] On peut travailler ça ensemble maintenant en 5min ou vous préférez vraiment prendre du recul ?' Puis noter engagement mutuel."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... Je vois pas trop en quoi c'est différent de ce qu'on a déjà. Vous faites pas la même chose que [concurrent] ?",
+        "sous_texte": "Je ne comprends pas votre différenciation, ou je teste si vous connaissez le marché. Peut-être que je me renseigne en parallèle et je compare.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner la question d'abord : 'Qu'est-ce que vous connaissez de [concurrent] ?' puis différencier sur CRITÈRES PROSPECT : 'La différence clé pour un établissement comme le vôtre c'est [élément précis pertinent pour lui], [concurrent] c'est plus orienté [segment différent]'."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et si dans 2 ans votre boîte existe plus, ou vous arrêtez le produit, je fais quoi moi ?",
+        "sous_texte": "Peur de dépendance à un fournisseur fragile. Échaudé par faillite de prestataire de linge. Besoin de réassurance sur pérennité.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner preuves de solidité + réversibilité : 'Question légitime. On équipe [X établissements] depuis [X ans], [indication solidité financière]. Et dans le contrat il y a [clause réversibilité/récupération données]. Vous voulez voir ça noir sur blanc ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais bon, mes clients ils sont plutôt âgés, ils aiment pas trop les trucs compliqués. Faut que ça reste simple pour eux aussi.",
+        "sous_texte": "Je projette peut-être ma propre réticence au digital sur ma clientèle. Ou c'est un vrai sujet de positionnement haut de gamme traditionnel.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Investiguer si c'est lui ou vraiment les clients : 'C'est intéressant - concrètement vous avez eu des retours clients négatifs sur du digital, ou c'est une intuition ?' Puis montrer exemples établissements similaires/clientèle similaire si pertinent."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous qui m'avez envoyé le mail ? Oui oui... Attendez c'était sur quoi déjà exactement ?",
+        "sous_texte": "Je n'ai aucun souvenir précis de votre proposition (noyée dans la masse). Je teste si vous allez juste répéter votre pitch ou si vous avez vraiment personnalisé.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rappel ultra-précis personnalisé : 'Oui, je vous avais envoyé une analyse sur [élément spécifique établissement] avec 3 pistes sur [problème détecté]. Vous aviez 2 minutes pour que je vous resitue ou c'est mort ?' Court et précis."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est très bien tout ça, mais là franchement j'ai mon chef qui m'attend, on a la carte du soir à valider. Je vous laisse, on se rappelle.",
+      "condition_declenchement": "Déclenchée si le vendeur : 1) a monopolisé la parole trop longtemps sans poser de questions, 2) n'a pas créé de valeur perçue dans les 3 premières minutes, 3) a ignoré les signaux de décrochage (réponses courtes, 'oui oui'), 4) n'a pas proposé de cadre temps clair en début d'appel. Stéphane utilise son opérationnel comme bouclier légitime pour fuir."
+    },
+    "pattern_escalade": "Stéphane commence courtois mais pressé (réflexe d'évitement poli). Si le vendeur ne crée pas rapidement de la valeur spécifique, il passe en mode 'oui oui je vois' répétitif (décrochage passif). Si on insiste malgré les signaux, il sort les objections boucliers (comptable, fille, timing). Si on force encore, il devient plus sec et direct : 'Écoutez je vous ai dit que...'. Ultime étape : il invoque l'urgence opérationnelle et coupe court. Pour inverser le pattern : poser des questions sur SA situation dès la minute 2, montrer qu'on a compris son métier, proposer un cadre court et tenir parole.",
+    "piege_classique": "Le piège majeur avec Stéphane c'est de confondre ses objections réflexes ('envoyez un mail', 'pas le moment') avec du désintérêt réel. En fait, il TESTE si le commercial va le respecter ou le harceler comme les autres. S'il sent qu'on comprend ses contraintes (saisonnalité, équipes, échaudé par le passé) ET qu'on propose quelque chose de concret/personnalisé, il peut s'ouvrir. Autre piège : vouloir closer trop vite. Stéphane a besoin de DIGÉRER, de se projeter avec ses équipes/sa fille. Forcer un 'oui' immédiat le braque. Mieux vaut ancrer une vraie prochaine étape cadrée (date/objectif précis) que d'arracher un accord mou qui ne débouchera jamais. Enfin : ne JAMAIS critiquer ses choix actuels ou minimiser la complexité - il le vit comme un mépris de son expérience de 30 ans."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_solutions_ou_services_secteur_hotellerie_restauration",
+      "description": "entreprise_proposant_produits_ou_services_destines_aux_hotels_restaurants_independants_ou_petits_groupes"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_ou_service_ayant_fait_objet_proposition_commerciale_ecrite_envoyee_il_y_a_10_jours",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "obtenir_retour_clair_oui_non_ou_prochaine_etape",
+      "description": "former_commerciaux_a_techniques_relance_efficaces_pour_obtenir_reponse_claire_et_faire_avancer_pipeline_sans_paraitre_insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance téléphonique — Hôtellerie indépendante",
+    "vous_etes": "Commercial spécialisé hôtellerie-restauration, vous relancez une proposition envoyée il y a 10 jours.",
+    "vous_vendez": "Une solution pour l'hôtellerie indépendante (nature et prix à définir selon votre offre habituelle).",
+    "vous_appelez": "Stéphane Bertrand, 52 ans, propriétaire-gérant de l'Hôtel-Restaurant Le Manoir des Cèdres (3 établissements, 28 chambres). Hôtelier de terrain, méfiant, surchargé, échaudé par des investissements ratés.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale écrite il y a 10 jours",
+      "Il ne décroche plus les numéros inconnus et fait filtrer par l'accueil",
+      "Il a testé 3 solutions ces 5 dernières années, toutes abandonnées ou ratées",
+      "Il sort d'une période COVID difficile, marge fragile, tensions de trésorerie mai-septembre",
+      "Sa fille termine une école hôtelière et pousse pour digitaliser"
+    ],
+    "votre_objectif": "Obtenir un retour clair : oui, non, ou prochaine étape concrète — sans paraître insistant.",
+    "vos_atouts": [
+      "Vous connaissez vraiment les contraintes opérationnelles de l'hôtellerie indépendante",
+      "Vous pouvez citer des confrères de sa zone qui utilisent votre solution",
+      "Vous proposez un test limité, réversible, sans engagement lourd",
+      "Vous respectez sa temporalité : vous savez qu'il est en rush et que l'automne sera plus propice"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:48:36Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18395,
+    "total_time_s": 194.0
+  }
+}

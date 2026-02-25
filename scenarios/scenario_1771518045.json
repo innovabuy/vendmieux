@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771518045",
+  "description_originale": "Vous appelez une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale. C'est l'office manager qui décroche. Vous devez passer le barrage pour parler au CEO / CTO. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : tech_saas]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "startup ou PME de 15 à 40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO ou CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Office Manager / Assistante",
+          "role": "barrage",
+          "comportement": "filtre les appels et protège le décideur"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution ou service B2B destiné aux dirigeants tech",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de l'assistante",
+        "accès au décideur bloqué par le filtrage"
+      ],
+      "implicites": [
+        "manque de technique de contournement du barrage",
+        "discours commercial non adapté au niveau intermédiaire",
+        "absence de légitimité perçue dans l'approche",
+        "difficulté à créer l'urgence ou l'intérêt auprès du filtre"
+      ],
+      "probleme_racine": "incapacité à construire un argumentaire crédible et persuasif pour franchir les barrages décisionnels en prospection froide B2B tech"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de franchissement de barrage et décrocher des RDV avec des décideurs tech en prospection téléphonique froide",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B destinés au secteur tech/SaaS",
+      "entreprise_description": "entreprise proposant des solutions ou services aux startups et PME tech",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service B2B nécessitant l'intervention du CEO ou CTO pour la décision",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre commerciale",
+        "proposition de valeur spécifique",
+        "positionnement prix",
+        "identité de l'entreprise vendeuse",
+        "objections prévisibles du décideur",
+        "éléments de différenciation concurrentielle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Matthieu",
+      "nom": "Delcourt",
+      "age": 38,
+      "poste": "CTO & Co-fondateur",
+      "entreprise": {
+        "nom": "Nexaflow",
+        "secteur": "SaaS RH - solution de gestion des plannings pour PME",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ ARR, croissance +45% YoY"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Hyper-sollicité et méfiant envers les démarchages",
+        "Obsédé par l'efficacité opérationnelle et le ROI mesurable",
+        "Syndrome de l'imposteur latent malgré la réussite"
+      ],
+      "motivations_profondes": [
+        "Prouver que sa boîte peut passer à l'échelle sans lever trop de fonds",
+        "Protéger son temps pour le produit et l'équipe tech",
+        "Être reconnu comme un leader tech crédible dans l'écosystème français",
+        "Éviter les erreurs coûteuses qui ralentiraient la croissance"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions gadget ou mal adaptées",
+        "Se faire entuber par un vendeur trop lisse qui survend",
+        "Prendre une décision précipitée sous pression commerciale",
+        "Que son associé CEO lui reproche un mauvais achat"
+      ],
+      "rapport_aux_commerciaux": "Présume que 80% des commerciaux ne comprennent rien à la tech et cherchent juste à closer. Respecte ceux qui parlent son langage, sont directs et apportent de la valeur dès le premier échange. Déteste le bullshit corporate et les slides PowerPoint interminables.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, limite blasé. Commence souvent par 'J'ai 15 minutes maximum' même quand c'est faux. Multitâche probable (regarde son second écran).",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'implémentation",
+        "Demande des use cases concrets dans son secteur",
+        "Mentionne spontanément un pain point actuel",
+        "Arrête de taper sur son clavier et regarde la caméra",
+        "Dit 'Attends, c'est intéressant ça' en se penchant en avant"
+      ],
+      "signaux_rejet": [
+        "Répond par monosyllabes 'Ouais', 'OK', 'Mouais'",
+        "Regarde ostensiblement ailleurs ou continue de scroller",
+        "Coupe avec 'Écoute, envoie-moi un doc par mail'",
+        "Mentionne immédiatement le budget comme excuse",
+        "Devient sarcastique : 'Ah oui, révolutionnaire, jamais vu ça avant'"
+      ],
+      "tics_langage": [
+        "Abuse de 'En vrai', 'Concrètement', 'Dans les faits'",
+        "Dit 'Voilà voilà' quand il veut clore un sujet",
+        "Utilise des anglicismes tech : 'notre stack', 'le onboarding', 'scaler'",
+        "Soupire audiblement quand quelque chose l'agace"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant qu'il coupe ou décroche mentalement. Attend des échanges ping-pong, pas un pitch unilatéral."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance solide mais chaotique. Vient de recruter 8 personnes en 4 mois, infrastructure tech sous tension. Pression du CEO pour industrialiser les process et préparer une Série A dans 12-18 mois. Matthieu dort mal, fait trop d'heures, sent qu'il doit déléguer mais n'a pas le temps de structurer.",
+      "priorites_actuelles": [
+        "Stabiliser la plateforme produit (bugs récurrents clients)",
+        "Recruter un lead dev senior pour le décharger",
+        "Mettre en place des outils de monitoring et d'astreinte",
+        "Réduire le temps passé en réunions commerciales et RH"
+      ],
+      "experience_avec_offre_similaire": "A testé 2-3 solutions de sa catégorie ces 18 derniers mois. Une était trop chère pour le ROI, une autre mal foutue ergonomiquement. Conserve un Google Sheet custom pour certains process parce que 'au moins ça marche'.",
+      "fournisseur_actuel": null,
+      "budget_disponible": "Dispose d'une enveloppe outils/services de ~40K€ annuels non totalement allouée, mais doit justifier chaque dépense au-dessus de 500€/mois auprès du CEO. Sensible au pricing transparent et aux trials gratuits."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème spécifique qu'il vit VRAIMENT (ex: 'J'ai vu que vous recrutez beaucoup, comment vous gérez l'onboarding tech?')",
+        "Citer une boîte similaire qui utilise la solution avec des résultats mesurables",
+        "Proposer un quick win tangible en moins de 30 jours",
+        "Être transparent sur les limites du produit ('Ça ne fait pas X, par contre pour Y c'est redoutable')",
+        "Utiliser son jargon : intégrations API, webhooks, SSO, RGPD-compliant",
+        "Obtenir une recommandation tiède de son Office Manager : 'Il a eu l'air sérieux, pas comme les autres'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Pitcher pendant 5 minutes sans lui poser une seule question",
+        "Utiliser des buzzwords creux : 'solution disruptive', 'ROI de 300%', 'IA de nouvelle génération'",
+        "Insister lourdement après un premier refus poli",
+        "Critiquer ouvertement ses choix actuels sans les comprendre",
+        "Mentir ou exagérer sur les capacités du produit",
+        "Demander un RDV d'une heure 'pour bien comprendre vos enjeux'",
+        "Passer par LinkedIn avec un message copié-collé manifestement automatisé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en plein sprint de dev là, c'est vraiment pas le moment...",
+        "sous_texte": "Je suis effectivement occupé mais surtout je ne vous connais pas et je présume que vous allez me faire perdre mon temps",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa contrainte temps et proposer un format ultra-court avec bénéfice immédiat"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais non mais attendez, c'est pour me vendre un truc c'est ça ? Julie devait filtrer ces appels normalement...",
+        "sous_texte": "Je suis agacé que vous ayez contourné mon barrage et je signale que je ne suis pas censé recevoir ces appels",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer le côté commercial mais recentrer sur un pain point qu'il vit vraiment pour créer l'ouverture"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "En vrai je reçois 15 appels comme ça par semaine, qu'est-ce qui fait que vous vous êtes différent ?",
+        "sous_texte": "Prouvez-moi immédiatement que vous n'êtes pas un énième commercial qui va me faire du bullshit - c'est un test",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance de sa situation, référence concrète et question de découverte pointue qui montre votre expertise"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais, on a déjà testé un truc dans ce genre y'a 6 mois, ça nous a pas convaincu du tout...",
+        "sous_texte": "J'ai été déçu par le passé et je ne veux pas revivre cette expérience, prouvez-moi que c'est différent",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser l'expérience passée pour comprendre l'échec et positionner différemment votre approche"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "OK mais concrètement, ça s'intègre comment dans notre stack actuelle ? Parce que si c'est encore un truc isolé qui demande du double-saisie...",
+        "sous_texte": "Je veux des détails techniques maintenant - si vous ne savez pas répondre précisément vous n'êtes pas crédible",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse technique précise avec exemples d'intégrations, puis retour sur le bénéfice métier"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà... Écoutez franchement on a des priorités plus critiques là, c'est pas le bon timing",
+        "sous_texte": "Je cherche une porte de sortie polie car vous ne m'avez pas encore convaincu de l'urgence",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner les priorités pour identifier si c'est un vrai frein ou une excuse et créer l'urgence"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et attends, question bête : vous avez combien de clients dans le SaaS qui sont en hyper-croissance comme nous ?",
+        "sous_texte": "Je veux être rassuré que vous comprenez mon contexte spécifique et que d'autres comme moi vous font confiance",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Références précises avec métriques et contextes similaires, puis creuser son enjeu de croissance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais là vous me parlez de ROI, de gains de temps... Dans les faits c'est basé sur quoi ces chiffres ?",
+        "sous_texte": "Je suis un analytique, les promesses vagues ne me suffisent pas, montrez-moi la méthodologie derrière vos affirmations",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence sur la méthodologie, cas client documenté avec métriques avant/après"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... J'ai quand même l'impression que vous me vendez la solution miracle là, ça fait un peu too good to be true non ?",
+        "sous_texte": "Vous survendre et je sens le piège commercial classique - je veux que vous reconnaissiez les limites",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale sur ce que ça ne fait PAS, renforcer crédibilité en assumant les limites"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et en vrai, le onboarding ça prend combien de temps ? Parce que personne dans mon équipe a la bande passante pour se taper 3 semaines de setup...",
+        "sous_texte": "J'ai peur de la charge de travail cachée et de l'impact sur mon équipe déjà surchargée",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Chiffrer précisément le temps, détailler l'accompagnement et proposer un démarrage progressif"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais là on parle de combien au juste ? Parce que niveau budget c'est ultra serré en ce moment...",
+        "sous_texte": "Je veux savoir si on est dans mes cordes financières avant d'investir plus de temps mental - et je teste votre transparence",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête puis recentrer sur la valeur créée versus le coût"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, on s'en sort pas mal avec notre système actuel hein, c'est pas parfait mais ça fait le taff...",
+        "sous_texte": "Je rationalise le statu quo pour éviter l'effort du changement - challengez-moi sur les coûts cachés",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner les coûts cachés et les irritants non dits du système actuel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, mais je peux pas décider tout seul sur ce coup. Faut que j'en parle avec mon associé CEO, il va avoir des questions...",
+        "sous_texte": "Je suis potentiellement intéressé mais je me protège derrière le co-décideur - facilitez-moi cette étape",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Comprendre le processus de décision et proposer d'outiller la conversation avec le CEO"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà, envoyez-moi tout ça par mail, je regarde et je vous recontacte si ça m'intéresse vraiment",
+        "sous_texte": "Je veux me débarrasser poliment de vous sans m'engager - le mail c'est souvent une impasse",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'objection réelle cachée derrière la demande de doc, créer un mini-engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, là vous me proposez un RDV d'une heure... Sérieux j'ai vraiment pas ce temps à allouer maintenant",
+        "sous_texte": "Le format proposé ne correspond pas à ma contrainte temps - adaptez votre demande",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un format adapté 20-25min avec agenda précis et objectif clair"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "En vrai c'est pas con, mais là on est en pleine levée de fonds, on va attendre d'avoir la visi claire sur le budget avant de s'engager",
+        "sous_texte": "Excuse semi-sincère qui cache soit un manque d'urgence perçue, soit une vraie contrainte - à qualifier",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner le timing réel et positionner l'impact positif sur la levée elle-même"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais j'sais pas, faut que j'y réfléchisse quoi... C'est pas un 'non', mais c'est pas un 'oui' non plus là",
+        "sous_texte": "Je suis dans le flou, pas assez convaincu pour m'engager mais pas assez certain pour refuser - clarifiez",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier précisément ce qui bloque la décision et traiter les zones de flou"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "OK bon écoutez, c'est intéressant mais concrètement là j'ai déjà 3 autres boîtes qui me proposent des trucs similaires, pourquoi je choisirai vous plutôt qu'eux ? Et soyez honnête hein, pas de speech commercial...",
+      "condition_declenchement": "Se déclenche après 12-15 minutes d'échange si vous avez créé de l'intérêt mais pas encore différencié clairement votre offre. C'est le moment de vérité où il teste votre authenticité et votre capacité à vous positionner sans bullshit."
+    },
+    "pattern_escalade": "Matthieu commence courtois mais distant (objections réflexes courtes). Si vous tenez bon et montrez de la substance, il passe en mode 'test' avec des questions techniques pointues et des challengs sur votre crédibilité. Si vous passez ces tests, il devient plus sincère et révèle ses vraies préoccupations (équipe surchargée, pression CEO, expériences passées). En fin de parcours, soit il trouve une excuse tactique pour sortir, soit il engage vraiment mais demande des garanties concrètes. Le seuil critique : les 3 premières minutes - s'il ne perçoit pas de valeur immédiate, il ferme.",
+    "piege_classique": "Le piège avec Matthieu c'est qu'il VEUT être convaincu (il a réellement des problèmes à résoudre) mais il a tellement été déçu par les commerciaux qu'il teste votre solidité en permanence. Si vous répondez aux objections de manière trop lisse ou commerciale, il se braque. La clé : assumer les limites de votre solution, poser des questions qui montrent que vous comprenez son quotidien, et surtout NE PAS pitcher pendant 5 minutes d'affilée. Il veut un échange entre pairs, pas un vendeur face à un acheteur."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B destinés au secteur tech/SaaS",
+      "description": "entreprise proposant des solutions ou services aux startups et PME tech"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service B2B nécessitant l'intervention du CEO ou CTO pour la décision",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de franchissement de barrage et décrocher des RDV avec des décideurs tech en prospection téléphonique froide",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Franchir le barrage vers un CTO de scale-up SaaS",
+    "vous_etes": "Business Developer chez une société de services B2B tech, en phase de prospection téléphonique froide.",
+    "vous_vendez": "Une solution B2B destinée aux décideurs tech de startups et PME SaaS en croissance (nature et tarif à préciser lors de l'appel).",
+    "vous_appelez": "Matthieu Delcourt, CTO et co-fondateur de Nexaflow (SaaS RH, 28 personnes, 2,1M€ ARR). Profil hyper-sollicité, méfiant, obsédé par l'efficacité et allergique au bullshit commercial.",
+    "ce_que_vous_savez": [
+      "Nexaflow est en forte croissance (+45% YoY) avec 8 recrutements récents en 4 mois",
+      "Préparation probable d'une levée Série A dans 12-18 mois",
+      "Matthieu est surchargé, cherche à industrialiser les process tech et RH",
+      "Il a testé des solutions similaires par le passé avec des résultats mitigés",
+      "Un Office Manager filtre ses appels et protège son agenda"
+    ],
+    "votre_objectif": "Franchir le barrage, accrocher Matthieu en 90 secondes max, et décrocher un RDV de 15 minutes pour creuser un pain point concret.",
+    "vos_atouts": [
+      "Vous parlez le langage tech (stack, API, onboarding, scalabilité)",
+      "Vous avez des use cases mesurables dans des boîtes SaaS similaires",
+      "Vous êtes direct, transparent sur les limites, et proposez un quick win en moins de 30 jours",
+      "Vous savez contourner les barrages sans être intrusif ni manipulateur"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:20:45Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14573,
+    "total_time_s": 128.2
+  }
+}

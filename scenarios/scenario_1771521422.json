@@ -1,0 +1,345 @@
+{
+  "id": "scenario_1771521422",
+  "description_originale": "Vous appelez une groupe de services multi-sites de 200+ salariés. L'assistante commerciale du directeur des opérations ou directeur commercial décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : services_entreprises]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "200+ salariés, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "Directeur des opérations ou Directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante commerciale",
+          "role": "Filtrage et barrage téléphonique",
+          "caracteristiques": "Professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux directions opérationnelles ou commerciales de groupes de services",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Barrage systématique par l'assistante commerciale",
+        "Difficulté à accéder au décideur"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors du premier contact",
+        "Approche commerciale trop directe ou standardisée",
+        "Incapacité à créer de l'intérêt rapidement auprès du filtre",
+        "Difficulté à se différencier des autres commerciaux"
+      ],
+      "probleme_racine": "Absence de stratégie structurée pour franchir le barrage assistante avec élégance et créer suffisamment de valeur perçue pour justifier un transfert vers le décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Développer les compétences pour passer le barrage assistante avec élégance, accéder au décideur et décrocher un RDV qualifié dans un contexte de prospection froide multi-interlocuteurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux groupes de services multi-sites",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B ciblant les directions opérationnelles ou commerciales de groupes de services",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Entreprise du vendeur et son secteur",
+        "Proposition de valeur concrète",
+        "Fourchette de prix",
+        "Zone géographique",
+        "Références clients",
+        "Positionnement concurrentiel",
+        "Nom de l'offre commerciale"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Proxiservices France",
+        "secteur": "Services aux entreprises (maintenance multi-techniques)",
+        "taille": "340 salariés répartis sur 12 agences régionales",
+        "ca_approximatif": "28M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et résultats-oriented",
+        "Méfiant vis-à-vis des promesses commerciales",
+        "Perfectionniste avec ses process internes"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il maîtrise la croissance multi-sites sans perdre en qualité",
+        "Être reconnu par le COMEX comme celui qui professionnalise les opérations",
+        "Ne pas répéter l'échec du déploiement CRM de 2022 qui lui a coûté cher politiquement"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions qui ne marchent qu'en théorie",
+        "Se faire imposer un projet par un commercial trop insistant",
+        "Déstabiliser ses équipes terrain avec un énième changement d'outil",
+        "Être court-circuité par un commercial qui irait voir directement le DG"
+      ],
+      "rapport_aux_commerciaux": "Fatigué des discours formatés. Apprécie les gens qui comprennent VRAIMENT son métier avant de vendre. Déteste qu'on lui fasse perdre son temps. Respecte la franchise mais la confond parfois avec de l'agressivité commerciale.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Phrases courtes. Regarde sa montre ou son écran. 'Oui, je vous écoute, allez-y.' Attaque direct : 'Vous vendez quoi exactement ?'",
+      "signaux_interet": [
+        "Se cale dans son fauteuil et croise les bras (posture d'écoute active chez lui)",
+        "Pose des questions précises sur les délais de déploiement",
+        "Mentionne spontanément un problème opérationnel concret : 'Tiens, justement on galère avec...'",
+        "Demande si vous connaissez tel concurrent ou tel client de son secteur"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Écoutez, je vais être transparent avec vous...'",
+        "Commence à pianoter ostensiblement sur son clavier",
+        "Sort la phrase : 'C'est intéressant mais c'est pas le moment'",
+        "Délègue immédiatement : 'Voyez ça avec mon adjoint' (= poubelle polie)"
+      ],
+      "tics_langage": [
+        "Abuse du 'concrètement' : 'Oui mais concrètement, ça change quoi pour moi ?'",
+        "Dit souvent 'Mouais...' en début de phrase quand il est sceptique",
+        "'On a déjà testé ce genre de trucs' (même si c'est faux)",
+        "Utilise 'terrain' à toutes les sauces : 'Mes gars sur le terrain', 'la réalité du terrain'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe après 45 secondes max si vous ne posez pas de questions. Déteste les présentations PowerPoint de plus de 5 slides. Veut du factuel, des chiffres, des noms de clients."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance soutenue (+18% CA 2023) mais tensions opérationnelles : turnover techniciens 23%, hétérogénéité des pratiques entre agences, pression du COMEX pour industrialiser sans déshumaniser. Projet stratégique 2024 : harmonisation des process inter-agences.",
+      "priorites_actuelles": [
+        "Réduire le taux d'erreur dans les interventions (actuellement 8,2%)",
+        "Uniformiser le reporting entre les 12 agences avant l'audit ISO en juin",
+        "Recruter et fidéliser les techniciens (guerre des talents)",
+        "Convaincre le DG de valider son budget 2024 (+320K€)"
+      ],
+      "experience_avec_offre_similaire": "Échec cuisant avec un logiciel de planification en 2022 (180K€ investis, abandonné après 7 mois). Depuis, ultra-prudent. A aussi testé 3 outils en freemium qui n'ont jamais été adoptés par les équipes.",
+      "fournisseur_actuel": "Patchwork de solutions : Excel pour le planning, Salesforce mal configuré, WhatsApp pour la communication terrain (ce qu'il déteste), logiciel métier maison développé en 2015 (obsolète mais fonctionnel).",
+      "budget_disponible": "Dispose théoriquement de 80K€ en ligne budgétaire 'Transformation digitale' mais doit justifier chaque euro au DAF qui est son principal frein interne. Peut débloquer jusqu'à 150K€ si ROI démontrable en moins de 18 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client concurrent qu'il connaît/respecte : 'Ah vous bossez avec Normatel ? Comment ils ont géré le déploiement multi-sites ?'",
+        "Parler en termes de ROI chiffré et rapide : 'Combien de temps avant de rentabiliser ?'",
+        "Montrer que vous comprenez ses contraintes terrain AVANT de vendre",
+        "Proposer un pilote limité sur 2 agences : 'On teste avant de généraliser'",
+        "Être transparent sur les limites de votre solution : gagne instantanément en crédibilité"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Lui dire que 'plein de directeurs ops comme vous' utilisent votre solution (il déteste être mis dans une case)",
+        "Insister pour avoir un RDV en face-à-face alors qu'il demande d'abord de la doc",
+        "Critiquer ses outils actuels sans connaître son historique",
+        "Promettre une mise en œuvre 'simple et rapide' : signe amateur pour lui",
+        "Passer par-dessus sa tête pour contacter le DG (faute impardonnable)",
+        "Envoyer des relances quotidiennes type 'Avez-vous eu le temps de regarder ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, envoyez-moi un mail, on verra.",
+        "sous_texte": "Réflexe de protection du temps. Test pour voir si vous insistez mollement (= commercial lambda) ou si vous avez vraiment quelque chose d'urgent/pertinent à dire.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le mail MAIS créer un micro-engagement : obtenir 30 secondes pour qualifier s'il y a match avant d'envoyer un pavé inutile"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous vendez quoi exactement ? Parce que franchement on croule sous les démarchages en ce moment.",
+        "sous_texte": "Fatigue commerciale sincère + test d'efficacité : êtes-vous capable de pitcher en 15 secondes sans jargon ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse ultra-concrète avec bénéfice métier mesurable, pas de présentation entreprise. Empathie sur la sur-sollicitation."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... on a déjà testé ce genre de trucs. Ça marche jamais en vrai sur le terrain.",
+        "sous_texte": "Blessure du projet 2022. Vraie objection sincère basée sur expérience négative. Besoin de réassurance avant d'ouvrir.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner sur l'échec passé (empathie + compréhension), identifier les causes profondes, montrer ce qui serait différent cette fois SANS minimiser son vécu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça change quoi pour moi par rapport à ce qu'on a déjà ? Parce qu'on a Salesforce hein.",
+        "sous_texte": "Demande de différenciation précise. Veut des faits, pas du marketing. Teste si vous connaissez vraiment Salesforce et ses limites.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS critiquer Salesforce. Reconnaître sa valeur, puis poser des questions sur ses usages/limites actuelles plutôt que d'argumenter frontalement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes équipes terrain sont déjà surchargées, je vais pas leur imposer un nouvel outil à apprendre. Ils vont me détester.",
+        "sous_texte": "Peur sincère de la résistance au changement + crainte de perdre la confiance péniblement construite avec ses équipes. Frein émotionnel majeur.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider cette peur comme légitime, questionner sur leur process d'adoption actuel, proposer une approche participative avec les équipes plutôt qu'imposée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Combien ça coûte votre truc ? Parce que là je vais être transparent, j'ai pas un budget extensible.",
+        "sous_texte": "Peut être sincère (vraie contrainte budgétaire) OU tactique (veut qualifier si ça vaut le coup d'écouter plus). Le DAF est son frein interne réel.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reporter le prix après avoir établi la valeur, mais donner un ordre de grandeur si insistance. Questionner sur le coût de l'inaction."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais tout ça c'est de la théorie. En pratique, le déploiement sur 12 agences, c'est l'enfer. Vous avez déjà fait ça ?",
+        "sous_texte": "Test de crédibilité. Cherche une preuve sociale précise (référence client similaire). Son trauma 2022 parle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Raconter un cas client similaire (multi-sites, même secteur si possible) avec chiffres précis et obstacles rencontrés + surmontés. Ou reconnaître honnêtement les limites si pas de ref exacte."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est intéressant ce que vous me montrez, mais franchement là c'est pas le moment. On a l'audit ISO en juin, je peux pas rajouter un projet.",
+        "sous_texte": "Vraie contrainte de timing + possiblement excuse polie pour sortir de la conversation sans dire non frontalement.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recadrer sur la temporalité : l'audit ISO pourrait JUSTEMENT être facilité par X. Ou accepter le timing et ancrer un suivi post-audit plutôt que de forcer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est pas moi qui décide in fine. Faut que je valide avec le DAF et le DG. Envoyez-moi une proposition, je verrai.",
+        "sous_texte": "Fuite polie OU réelle structure de décision complexe. Peut être les deux. Teste si vous allez tenter de court-circuiter (ce qu'il déteste).",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter la complexité, proposer de co-construire l'argumentaire pour le DAF/DG plutôt que d'envoyer une prop générique. Engager sur un process, pas sur un livrable."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais si je comprends bien, ça va me prendre combien de temps à mettre en place ? Parce que moi j'ai pas 6 mois à perdre.",
+        "sous_texte": "Impatience sincère + besoin de résultats rapides pour justifier son investissement auprès du COMEX. Frein opérationnel légitime.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un timeline réaliste avec jalons concrets. Proposer un pilote court plutôt qu'un déploiement massif immédiat."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... je sais pas. Faut que je réfléchisse. Je vous rappelle si ça m'intéresse.",
+        "sous_texte": "Hésitation sincère mêlée de fatigue décisionnelle. Moyen poli de dire 'pas convaincu' sans claquer la porte. Risque fort d'oubli/ghosting.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier précisément ce qui coince (budget ? timing ? conviction ?). Proposer un micro-engagement (démo 15min, appel avec un client référence) plutôt que d'attendre passivement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, voyez ça avec mon adjoint Laurent d'abord. S'il valide, on pourra en reparler.",
+        "sous_texte": "Délégation = rejet poli dans 80% des cas. Vraie structure de décision dans 20%. Teste si vous allez accepter d'être relégué.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Clarifier le rôle de l'adjoint (conseil vs décision). Proposer un appel à 3 plutôt qu'être redirigé. Si refus, qualifier précisément ce que l'adjoint doit valider."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que j'ai déjà claqué 180K€ dans un truc qui a foiré y'a deux ans. Faut que je sois VRAIMENT sûr avant de me lancer.",
+        "sous_texte": "Trauma financier et politique du projet 2022. Peur sincère et profonde de répéter l'erreur. Besoin de réassurance massive avant engagement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider cette peur comme la plus légitime du monde. Proposer une approche progressive (pilote réversible, paiement par étapes) plutôt que de minimiser le risque."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, je vais être transparent : j'ai déjà trois fournisseurs qui me sollicitent sur le même sujet. Pourquoi je choisirais vous ?",
+        "sous_texte": "Vraie concurrence OU tactique pour obtenir des concessions. Dans tous les cas, besoin de différenciation claire et factuelle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS dénigrer la concurrence. Questionner sur ce qui est important pour LUI dans le choix, puis positionner en fonction. Différenciation par l'approche, pas que par le produit."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK mais concrètement, le ROI il est où ? Parce que le DAF va me demander de justifier chaque euro, je vous le dis cash.",
+        "sous_texte": "Besoin d'argumentaire chiffré pour convaincre en interne. Sincère. Le DAF est un vrai obstacle politique.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Co-construire le calcul de ROI avec lui, sur SES indicateurs métier (réduction erreurs, gain temps, fidélisation). Proposer d'aider à préparer l'argumentaire pour le DAF."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être honnête avec vous : j'ai pas envie de me planter une deuxième fois. Si je relance un projet et que ça foire, je perds toute crédibilité auprès du COMEX. Donc à moins que vous me garantissiez que ça va marcher... je préfère rester sur ce qu'on a, même si c'est pas optimal.",
+      "condition_declenchement": "Apparaît quand il est intellectuellement convaincu MAIS que le risque émotionnel/politique n'a pas été suffisamment adressé. Généralement après avoir parlé budget/ROI. C'est l'objection de cœur après les objections de raison."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes/tactiques (temps, mail, prix) pour filtrer. Si vous passez ce premier filtre avec pertinence, il ouvre sur ses objections sincères liées à son vécu (échec 2022, équipes terrain, complexité multi-sites). L'escalade finale arrive quand la solution est techniquement validée mais que le risque politique/émotionnel prend le dessus. Il peut alors soit déléguer (fuite), soit exiger des garanties impossibles, soit bloquer sur le timing. Le vrai combat final n'est jamais technique mais émotionnel : sa peur de répéter l'erreur de 2022.",
+    "piege_classique": "Penser qu'en répondant brillamment aux objections rationnelles (ROI, fonctionnalités, références) on a gagné. Erreur : Stéphane peut être intellectuellement convaincu ET quand même dire non par peur de l'échec politique. Le piège est de négliger la dimension émotionnelle et politique (relation au COMEX, trauma 2022, fierté professionnelle). Un commercial qui sur-argumente sur le produit sans adresser 'Comment je me protège si ça foire ?' perd la vente. Autre piège : vouloir closer trop vite sans avoir co-construit un plan de déploiement sécurisé avec lui."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise proposant des solutions destinées aux groupes de services multi-sites"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B ciblant les directions opérationnelles ou commerciales de groupes de services",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Développer les compétences pour passer le barrage assistante avec élégance, accéder au décideur et décrocher un RDV qualifié dans un contexte de prospection froide multi-interlocuteurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Directeur Ops multi-sites",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour entreprises de services multi-sites.",
+    "vous_vendez": "Une solution de gestion opérationnelle pour groupes de services (prix et détails à adapter selon le besoin détecté).",
+    "vous_appelez": "Stéphane Mercier, Directeur des Opérations chez Proxiservices France (maintenance multi-techniques, 340 salariés, 12 agences). Pragmatique, pressé, échaudé par un échec logiciel en 2022.",
+    "ce_que_vous_savez": [
+      "Proxiservices connaît une forte croissance (+18% en 2023) mais souffre de tensions opérationnelles : turnover à 23%, pratiques hétérogènes entre agences",
+      "Priorité 2024 : harmoniser les process inter-agences avant un audit ISO en juin",
+      "Stéphane gère un patchwork d'outils (Excel, Salesforce mal configuré, WhatsApp, logiciel maison obsolète)",
+      "Il dispose d'une ligne budgétaire 'Transformation digitale' mais doit justifier chaque euro au DAF",
+      "Il déteste les discours commerciaux formatés et les promesses non tenues"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante, accrocher Stéphane en 60 secondes et décrocher un RDV physique pour approfondir.",
+    "vos_atouts": [
+      "Vous comprenez les enjeux opérationnels des structures multi-sites en croissance",
+      "Vous proposez des pilotes limités avant généralisation (réduit le risque perçu)",
+      "Vous pouvez parler ROI chiffré et délais de rentabilisation",
+      "Vous êtes transparent sur ce qui marche et ce qui nécessite adaptation"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:17:02Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15103,
+    "total_time_s": 134.6
+  }
+}

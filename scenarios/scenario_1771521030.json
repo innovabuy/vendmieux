@@ -1,0 +1,353 @@
+{
+  "id": "scenario_1771521030",
+  "description_originale": "Vous appelez une société de nettoyage/sécurité/maintenance de 25-50 salariés. C'est l'assistante commerciale qui décroche. Vous devez passer le barrage pour parler au gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : services_entreprises]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "PME 25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante commerciale",
+          "role": "barrage",
+          "comportement": "filtre les appels et protège le gérant"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux entreprises de services (nettoyage/sécurité/maintenance)",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'assistante commerciale",
+        "Accès limité au décideur (gérant)"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel",
+        "Absence de technique de contournement ou d'engagement du barrage",
+        "Difficulté à créer de la valeur dès les premières secondes",
+        "Discours commercial trop générique ou non différenciant"
+      ],
+      "probleme_racine": "Incapacité à transformer l'assistante en alliée plutôt qu'en obstacle, en ne lui donnant pas de raison valable de transférer l'appel"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à franchir le barrage secrétariat/assistanat et décrocher un rendez-vous avec le décideur final",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise proposant des solutions ou services B2B destinés aux sociétés de services (nettoyage, sécurité, maintenance)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service vendu",
+        "Proposition de valeur du vendeur",
+        "Caractéristiques de l'entreprise du vendeur",
+        "Prix ou budget type",
+        "Objections classiques rencontrées",
+        "Arguments commerciaux existants"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Dalmas",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Netpro Services",
+        "secteur": "Nettoyage industriel et tertiaire",
+        "taille": "37 salariés",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Débordé chronique",
+        "Attachement viscéral à l'opérationnel"
+      ],
+      "motivations_profondes": [
+        "Protéger sa marge dans un secteur ultra-concurrentiel",
+        "Éviter les emmerdes administratives et les vendeurs chronophages",
+        "Prouver qu'il a bien fait de reprendre la boîte de son beau-père il y a 12 ans"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau parleur parisien",
+        "Investir dans quelque chose qui ne sert à rien sur le terrain",
+        "Perdre du temps en réunions alors que deux chantiers posent problème cette semaine",
+        "Que ses équipes pensent qu'il dépense l'argent n'importe comment"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. A été échaudé trois fois : un logiciel jamais utilisé (12k€), une formation management bidon, un prestataire marketing qui n'a rien compris au métier. Dit souvent : 'Les commerciaux, ils veulent tous ma peau'",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, frontal, avec une pointe d'agressivité défensive. Premier réflexe : 'C'est pour quoi ?' sur un ton qui signifie 'j'ai pas que ça à foutre'",
+      "signaux_interet": [
+        "Demande un chiffre concret immédiatement",
+        "Parle d'un problème opérationnel précis sans qu'on lui demande",
+        "Mentionne un concurrent ou un confrère : 'Machin, lui, il a pris quoi ?'",
+        "Ralentit son débit et pose des questions factuelles"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole : 'Ouais, bon, écoutez...'",
+        "Phrases assassines : 'C'est pas pour nous', 'On a déjà', 'Envoyez un mail'",
+        "Mentionne Valérie (son assistante) : 'Faut voir avec Valérie, elle gère ça'",
+        "Bruits de clavier en fond = il fait autre chose"
+      ],
+      "tics_langage": [
+        "Bon, voilà",
+        "Franchement",
+        "Vous me faites gagner quoi, concrètement ?",
+        "J'ai pas le temps là",
+        "C'est combien ?"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, il coupe ou décroche mentalement. Déteste les introductions fleuries et le storytelling corporate"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+8% CA l'an dernier) mais tensions trésorerie à cause de deux gros clients qui paient à 75 jours. Turnover des agents de nettoyage problématique (45% l'an dernier). Vient de perdre un appel d'offres pour une résidence de 300 logements face à un concurrent low-cost",
+      "priorites_actuelles": [
+        "Recruter et garder du personnel qualifié",
+        "Améliorer la rentabilité des chantiers existants",
+        "Ne pas perdre le contrat Carrefour qui se renouvelle dans 4 mois",
+        "Gérer le conflit avec un chef d'équipe qui menace de partir"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM il y a 3 ans, jamais déployé ('trop compliqué pour mes gars'). A fait une formation OPCO obligatoire l'an dernier ('du pipeau')). Méfiant envers tout ce qui ressemble à du conseil ou de la formation",
+      "fournisseur_actuel": "Travaille avec son comptable depuis 15 ans, un assureur local, un fournisseur de produits d'entretien historique (négocié au centime), pas de solution RH ou commerciale structurée",
+      "budget_disponible": "Utilise systématiquement ses budgets formation OPCO (sinon 'c'est perdu') mais refuse d'investir son propre cash sans ROI démontrable en 6 mois. Seuil psychologique : 5000€ = validation solo / au-delà = doit en parler à sa femme (qui est aussi associée minoritaire)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct ou un confrère qu'il connaît ('J'ai vu que vous étiez à la CCI avec Dubois de Hygianet')",
+        "Parler chiffres et ROI dès la 10ème seconde",
+        "Montrer qu'on connaît vraiment le secteur (parler d'un problème métier précis : turnover, marges chantiers, CARSAT)",
+        "Proposer quelque chose de rapide, concret, sans bullshit : '15 minutes mardi ou jeudi ?'",
+        "Mentionner l'OPCO ou un financement externe"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours généraliste sur 'l'optimisation' ou 'la transformation digitale'",
+        "Phrases bateau : 'Nous accompagnons les dirigeants dans leur croissance'",
+        "Demander 1h de RDV",
+        "Vouloir parler à d'autres personnes ('Votre DRH' alors qu'il n'en a pas)",
+        "Insister après un premier refus",
+        "Tutoiement ou fausse familiarité",
+        "Ne pas donner de prix même approximatif"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour quoi ? J'ai trois chantiers qui merdent là, je peux pas vous parler.",
+        "sous_texte": "Je suis débordé ET je présume que vous allez me faire perdre mon temps. Prouvez-moi le contraire en 5 secondes ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement qu'il est débordé, proposer 2 minutes chrono, mentionner un bénéfice opérationnel concret lié aux chantiers"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, les commerciaux j'en ai trois par jour. Vous me vendez quoi exactement ?",
+        "sous_texte": "J'en ai marre d'être harcelé. Si vous êtes comme les autres, je vais vous virer direct. Soyez différent MAINTENANT.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître qu'il est sollicité, se différencier immédiatement avec un cas client du secteur, parler problème avant solution"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez un mail à Valérie, elle regarde ça.",
+        "sous_texte": "Je vous envoie au cimetière des emails non lus. C'est ma stratégie d'évitement polie. Si vous insistez, je vais devenir désagréable.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander poliment si c'est vraiment pour Valérie ou si c'est une façon de dire non. Proposer une alternative concrète immédiate"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà tout ce qu'il faut. On s'en sort très bien comme ça.",
+        "sous_texte": "Je n'ai pas identifié de problème assez douloureux pour justifier un changement. OU j'ai peur de me planter encore une fois en investissant dans du vent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Poser une question sur un problème métier spécifique (turnover, marges, renouvellement contrats) pour révéler une faille"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me faites gagner quoi concrètement ? Parce que des belles promesses j'en ai déjà entendu.",
+        "sous_texte": "J'ai été échaudé. Je veux du chiffré, du factuel, pas du marketing. Prouvez-moi que vous êtes différent des trois arnaqueurs précédents.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un exemple chiffré précis d'un cas client similaire, avec délai de ROI court (moins de 6 mois)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça, mais mes gars sur le terrain ils vont jamais utiliser votre truc.",
+        "sous_texte": "J'ai peur que ce soit trop compliqué, comme le CRM que j'ai payé 12k€ et qui sert à rien. Je ne veux pas passer pour un con devant mes équipes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer sur la simplicité, montrer un déploiement terrain rapide, mentionner des agents de nettoyage qui l'utilisent déjà ailleurs"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai pas le temps de m'occuper de ça là. On en reparle dans six mois peut-être.",
+        "sous_texte": "Je remets à plus tard parce que je ne vois pas l'urgence OU je cherche à me débarrasser de vous poliment OU j'ai vraiment la tête dans le guidon.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence en liant à une priorité actuelle (contrat Carrefour à renouveler, turnover, concurrent) ou accepter le timing en fixant une date précise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, c'est combien votre machin ? Parce que si c'est hors de prix, on perd notre temps tous les deux.",
+        "sous_texte": "Je veux jauger si vous êtes dans ma fourchette avant de m'engager émotionnellement. Je déteste perdre du temps. Et j'ai peur de me faire avoir sur le prix.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette, contextualiser le ROI, mentionner l'OPCO si applicable, proposer plusieurs options"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça a l'air intéressant mais franchement là j'ai pas le budget. Peut-être l'année prochaine.",
+        "sous_texte": "Soit je n'ai vraiment pas de budget, soit je ne vois pas assez de valeur pour prioriser cette dépense, soit je négocie le prix, soit je me débarrasse de vous.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner sur les budgets formation OPCO, proposer phasage, challenger l'impact de ne rien faire maintenant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai testé un truc comme ça il y a trois ans, ça nous a coûté 12 000 balles et personne l'a utilisé. Jamais plus.",
+        "sous_texte": "Je suis traumatisé par cet échec. Je ne veux pas refaire la même erreur. Si vous voulez avancer, il faut me rassurer VRAIMENT sur le déploiement et l'utilisation.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché (complexité ? accompagnement ? inadaptation ?), montrer en quoi votre approche est différente, garanties de déploiement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dubois de Hygianet, il a pris quoi lui ? Ça marche vraiment chez lui ?",
+        "sous_texte": "Je commence à être intéressé mais j'ai besoin d'une preuve sociale. Je veux savoir si un confrère que je respecte a validé avant moi. Je ne veux pas être le cobaye.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner des détails factuels sur ce cas client (avec autorisation), résultats chiffrés, proposer un contact ou témoignage"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, je sais pas. Il faut que j'en parle à ma femme, elle est associée. Je peux pas décider ça tout seul.",
+        "sous_texte": "Vous êtes au-dessus de mon seuil de décision solo (5k€) OU je cherche une excuse pour temporiser OU je veux vraiment son avis parce qu'elle est plus prudente que moi.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider si c'est une vraie contrainte ou un prétexte, proposer RDV à trois, fournir éléments pour qu'il présente bien le dossier"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, ça peut être intéressant mais faut que je réfléchisse quand même. Laissez-moi une semaine.",
+        "sous_texte": "Je suis tenté mais j'ai peur de me décider trop vite. J'ai besoin de digérer. OU je veux comparer avec d'autres. OU c'est une façon de vous dire non en douceur.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Identifier ce qui bloque vraiment (peur ? besoin de comparer ? besoin d'avis ?), fixer une date de rappel précise avec agenda partagé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mardi 14h ? Non, j'ai un chantier. Jeudi impossible aussi. Franchement je sais pas quand je peux vous caser.",
+        "sous_texte": "Soit je suis vraiment débordé et désorganisé, soit je ne priorise pas ce RDV parce que la valeur n'est pas assez claire, soit je cherche à vous éviter poliment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer des créneaux très tôt (7h30) ou tard (18h30), proposer format court (15min café), recréer l'urgence"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est pas pour nous finalement. On va rester sur notre organisation actuelle.",
+        "sous_texte": "Soit je ne vois vraiment pas l'intérêt, soit vous n'avez pas réussi à créer assez de désir, soit j'ai peur du changement, soit un conseiller externe m'a dit non.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser le vrai motif de refus sans insister lourdement, laisser porte ouverte avec élément de réflexion concret"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, gardez mes coordonnées, je vous rappelle si j'ai besoin. Mais là c'est non.",
+        "sous_texte": "Je veux clore la conversation sans être désagréable. C'est un non définitif mais je vous laisse une porte de sortie honorable. N'insistez pas.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter avec élégance, demander autorisation de recontacter dans 3-6 mois, laisser sur une note professionnelle et respectueuse"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, voilà, je vais être honnête avec vous : j'ai été échaudé trois fois. Un logiciel à 12 000 balles jamais utilisé, une formation management bidon, un prestataire marketing qui a rien compris à mon métier. Les commerciaux, ils veulent tous ma peau. Alors pourquoi vous, vous seriez différent ?",
+      "condition_declenchement": "Se déclenche si le commercial a bien tenu jusque-là, a montré de la valeur, mais que Christophe hésite encore à franchir le pas. C'est l'objection de la dernière chance : soit le commercial la traite avec authenticité et empathie, soit il perd définitivement."
+    },
+    "pattern_escalade": "Christophe commence par des objections réflexes agressives (barrage verbal). Si le commercial tient et apporte de la valeur concrète, il passe en mode 'test' (prix, budget, timing). S'il voit de l'intérêt, il bascule en objections sincères (peur de l'échec, besoin de réassurance). Le pattern s'inverse si le commercial fait du bullshit : retour immédiat à l'hostilité et fermeture brutale.",
+    "piege_classique": "Christophe dit 'Envoyez-moi un mail' ou 'On verra plus tard' très tôt. 90% des commerciaux acceptent et envoient un mail qui ne sera jamais lu. Le piège : prendre ça pour de l'intérêt alors que c'est une stratégie d'évitement. La bonne réponse : challenger poliment cette objection en proposant 2 minutes de conversation immédiate ou un micro-RDV à date fixe."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise proposant des solutions ou services B2B destinés aux sociétés de services (nettoyage, sécurité, maintenance)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Apprendre à franchir le barrage secrétariat/assistanat et décrocher un rendez-vous avec le décideur final",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Franchir le barrage assistante",
+    "vous_etes": "Commercial B2B prospectant par téléphone à froid des PME du secteur nettoyage/sécurité/maintenance.",
+    "vous_vendez": "Une solution ou un service pour entreprises de services (nature et prix à définir selon votre discours).",
+    "vous_appelez": "Christophe Dalmas, 52 ans, gérant de Netpro Services (nettoyage industriel, 37 salariés, 1,8M€ CA). Pragmatique, méfiant, débordé, hostile aux commerciaux par défaut. Protégé par Valérie, son assistante commerciale qui filtre tous les appels.",
+    "ce_que_vous_savez": [
+      "L'entreprise a 37 salariés et fait du nettoyage industriel et tertiaire",
+      "Christophe a repris la boîte de son beau-père il y a 12 ans",
+      "Le secteur est ultra-concurrentiel avec des marges serrées",
+      "Il s'est fait avoir plusieurs fois par des vendeurs (logiciel jamais utilisé à 12k€, formation bidon)",
+      "Valérie, l'assistante, protège farouchement son agenda"
+    ],
+    "votre_objectif": "Passer le barrage de Valérie et obtenir 15 minutes au téléphone avec Christophe pour décrocher un rendez-vous physique.",
+    "vos_atouts": [
+      "Vous connaissez vraiment le secteur du nettoyage et ses problèmes métier",
+      "Vous pouvez parler ROI et chiffres concrets dès les premières secondes",
+      "Vous savez que les budgets formation OPCO sont un levier",
+      "Vous avez déjà travaillé avec des sociétés similaires"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:10:30Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14500,
+    "total_time_s": 131.7
+  }
+}

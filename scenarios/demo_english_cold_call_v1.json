@@ -1,0 +1,253 @@
+{
+  "id": "demo_english_cold_call_v1",
+  "scenario_type": "appel_telephonique",
+  "metadata": {
+    "titre_court": "Cold Call — Predictive Maintenance IoT",
+    "type_appel": "Cold call",
+    "secteur": "Industrial Equipment Manufacturing",
+    "taille_entreprise": "SME — 60 employees",
+    "difficulte": 3,
+    "duree_cible": "3 to 5 minutes",
+    "langue": "en",
+    "competences_force3d_prioritaires": {
+      "accroche": 1.5,
+      "objections": 1.5,
+      "engagement": 1.2
+    },
+    "version": "V1",
+    "template": "FORCE 3D®"
+  },
+  "extraction": {
+    "secteur": "Industrial Equipment Manufacturing",
+    "type_simulation": "Cold call",
+    "difficulte": 3,
+    "tags": ["industry", "maintenance", "IoT", "MD", "SME", "cold call", "DISC-D", "demo", "english"]
+  },
+  "persona": {
+    "identite": {
+      "prenom": "James",
+      "nom": "Hargreaves",
+      "genre": "M",
+      "age": 50,
+      "poste": "Managing Director",
+      "entreprise": {
+        "nom": "Hartwell Engineering",
+        "secteur": "Industrial equipment manufacturing — CNC machining, subcontracting",
+        "taille": "60 employees",
+        "ca_approximatif": "£6M",
+        "localisation": "Birmingham, UK"
+      }
+    },
+    "psychologie": {
+      "profil_disc": {
+        "principal": "D",
+        "secondaire": "D",
+        "description": "Direct and results-driven. No time for small talk. Needs facts, not feelings."
+      },
+      "traits_dominants": [
+        "direct",
+        "impatient",
+        "results-driven",
+        "suspicious of salespeople"
+      ],
+      "motivations_profondes": [
+        "Reduce unplanned machine downtime that costs a fortune",
+        "Modernise maintenance without operational risk"
+      ],
+      "peurs_freins": [
+        "Wasting time with yet another solution salesman",
+        "Technology dependency on a single supplier",
+        "His team won't know how to use the tech"
+      ],
+      "rapport_aux_commerciaux": "Tolerates them only if they're concrete and quick. Hates waffle, PowerPoint decks and generic pitches. Respects a salesperson who knows his industry.",
+      "style_communication": "directif",
+      "registre_langage": "Direct, brief, no frills. Short sentences. No excessive politeness.",
+      "sensibilite_emotionnelle": "Low — relationship arguments annoy him. Facts only.",
+      "patience": "Very low — hangs up if no value in the first 60 seconds."
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Neutral-cold. Not hostile but not welcoming. He's between meetings and short on time.",
+      "signaux_interet": [
+        "Asks precise technical questions about the solution",
+        "Mentions his own breakdown or delay problems",
+        "Asks for references in CNC machining or engineering",
+        "Pauses after a striking figure"
+      ],
+      "signaux_rejet": [
+        "Sighs",
+        "Answers in monosyllables",
+        "Says 'Right, look...' or 'Send me an email'",
+        "Cuts the salesperson mid-sentence"
+      ],
+      "tics_langage": [
+        "Right...",
+        "And your point is?",
+        "Go on.",
+        "Look...",
+        "Get to the point."
+      ],
+      "debit_parole": "Fast and blunt. Cuts the salesperson off if they ramble.",
+      "tolerance_monologue_vendeur": "Cuts off after 15 seconds of monologue"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "3 unplanned machine stoppages last quarter. The worst one: the maintenance contractor took 8 hours to arrive — a full day of production lost. Order book is full but margins are shrinking due to late deliveries.",
+      "priorites_actuelles": [
+        "Reduce unplanned machine downtime",
+        "Deliver current orders on time"
+      ],
+      "experience_avec_offre_similaire": "A sensor company came in 6 months ago, did a nice demo but never followed up. Bad memory.",
+      "fournisseur_actuel": "Local reactive maintenance contractor for 12 years (Midlands Maintenance Ltd). Decent on breakdowns but no predictive capability. Response times getting worse.",
+      "budget_disponible": "No innovation budget earmarked, but could unlock funds if ROI is demonstrated quickly"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mention a specific figure on the hourly cost of unplanned downtime in precision engineering (£1,200 to £3,500)",
+        "Cite a concrete case in CNC machining or subcontracting",
+        "Propose a no-commitment 20-30 min on-site visit"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Generic pitch 'our revolutionary solution'",
+        "Not knowing his industry (precision engineering)",
+        "Talking about AI or digital transformation in the abstract",
+        "Pushing after a clear refusal",
+        "Visible manipulation techniques"
+      ]
+    },
+    "informations_revelables": [
+      {
+        "question_qui_debloque": "What's your current response time when you have a critical breakdown?",
+        "information_revelee": "Last month we waited 8 hours. Lost a full day of production."
+      },
+      {
+        "question_qui_debloque": "What does an hour of downtime cost you on your machines?",
+        "information_revelee": "On our 5-axis mill... it's hard to put a number on it but it's significant."
+      },
+      {
+        "question_qui_debloque": "Do you have any connected equipment on your shop floor currently?",
+        "information_revelee": "We put sensors on 2 machines but don't really know what to do with the data."
+      },
+      {
+        "question_qui_debloque": "What's your maintenance priority this year?",
+        "information_revelee": "Reducing unplanned stoppages. We had 3 last quarter alone."
+      }
+    ]
+  },
+  "objections": {
+    "objections": [
+      {
+        "numero": 1,
+        "moment": "accroche",
+        "nom": "Existing contractor",
+        "verbatim": "We've already got someone for that.",
+        "sous_texte": "Automatic filter, testing if the salesperson gives up easily. Loyal to current contractor but latent dissatisfaction with response times.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "seuil_bascule": "The salesperson mentions a specific figure on the hourly cost of unplanned downtime (e.g. 'In precision engineering, an hour of unplanned downtime typically costs £1,200 to £3,500. Is that roughly your situation?'). Hargreaves pauses, responds with a question or acknowledges the problem.",
+        "fermeture_definitive": "The salesperson repeats the same point twice without adding value. Hargreaves: 'Look, I really haven't got time for this. Cheers.'",
+        "reponse_efficace_indice": "Don't attack the contractor. Anchor a concrete figure that creates curiosity about the cost of inaction."
+      },
+      {
+        "numero": 2,
+        "moment": "decouverte",
+        "nom": "Response times (hidden pain)",
+        "verbatim": "Our contractor responds... well, they do their best.",
+        "sous_texte": "Slight hesitation betraying real dissatisfaction. Hidden pain signal to dig into.",
+        "type": "sincere",
+        "difficulte": 8,
+        "seuil_bascule": "The salesperson digs in: 'What's the average response time when you have a critical breakdown?' Hargreaves reveals the recent 8-hour incident. This is the tipping point.",
+        "fermeture_definitive": "The salesperson ignores the pain signal and goes back to a generic pitch instead of digging deeper.",
+        "reponse_efficace_indice": "Ask specifically about response time. Don't pitch. Let Hargreaves talk about his pain."
+      },
+      {
+        "numero": 3,
+        "moment": "closing",
+        "nom": "Not the right time",
+        "verbatim": "It's not the right time, we're flat out with production.",
+        "sous_texte": "Classic deferral. But he's not completely closed if objections 1 and 2 were handled well.",
+        "type": "tactique",
+        "difficulte": 6,
+        "seuil_bascule": "The salesperson proposes a micro-commitment: '20 minutes on site next week, no more. I'll show you how it works on one machine. If you don't see value, we stop there.' Hargreaves accepts if objections 1 and 2 were handled well.",
+        "fermeture_definitive": "The salesperson pushes without proposing a specific date. Hargreaves: 'Send me an email.' (end of call signal).",
+        "reponse_efficace_indice": "Propose a specific date and a risk-free micro-commitment. Show that it's precisely during the rush that breakdowns cost the most."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Right, look, I've got a meeting. Send me something concrete with numbers, not sales fluff.",
+      "condition_declenchement": "If the salesperson hasn't created urgency after 3 minutes"
+    },
+    "pattern_escalade": "Existing contractor → Hidden pain (response times) → Not the right time → Email/hang up",
+    "regle_absolue": "The prospect never repeats the same objection more than twice. If the salesperson responds well, the stance must evolve. If the salesperson responds poorly, the objection hardens or the conversation closes."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "IoT Predict",
+      "secteur": "Industrial predictive maintenance",
+      "description": "UK-based company specialising in predictive maintenance sensors for manufacturing"
+    },
+    "offre": {
+      "nom": "PredictSense",
+      "description": "IoT sensors that detect machine anomalies before breakdown. Installation in 2 hours, no production stoppage. Real-time alerts on smartphone.",
+      "proposition_valeur": "60% reduction in unplanned machine downtime",
+      "prix": "From £450/month for 5 machines",
+      "references": [
+        "Midlands Foundries (-62% stoppages in 4 months)",
+        "Precision Parts Birmingham — ROI in 3 months"
+      ],
+      "avantages_vs_concurrence": "Installation without production stoppage, free 30-day pilot on 2 machines"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Secure a 20-30 minute on-site appointment for a demo on one machine.",
+      "criteres_succes": [
+        "Get a specific date and time slot",
+        "20-30 minutes on site, no more",
+        "Demo on an actual machine"
+      ]
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "First contact. No prior exchange.",
+      "infos_connues": "SME manufacturer Birmingham, 60 employees, precision engineering, 3 unplanned stoppages recently"
+    }
+  },
+  "brief_commercial": {
+    "titre": "Cold Call — Predictive Maintenance IoT",
+    "vous_etes": "Sales representative at IoT Predict, a UK company specialising in predictive maintenance sensors for manufacturing.",
+    "vous_vendez": "IoT sensors that detect machine anomalies before breakdown. 2-hour installation, no production stoppage. Real-time smartphone alerts.",
+    "vous_appelez": "James Hargreaves, Managing Director of Hartwell Engineering (60 employees, precision engineering, Birmingham). First call, cold contact.",
+    "ce_que_vous_savez": [
+      "The company had 3 unplanned machine stoppages last quarter",
+      "Their current maintenance contractor is reactive only, no predictive capability",
+      "A sensor company visited 6 months ago without convincing them",
+      "The order book is full — delays are costly"
+    ],
+    "votre_objectif": "Secure a 20-30 minute on-site appointment for a demo on one machine.",
+    "vos_atouts": [
+      "Client reference: Midlands Foundries (-62% stoppages in 4 months)",
+      "Free 30-day pilot on 2 machines",
+      "Installation without production stoppage",
+      "Demonstrable ROI in 3 months"
+    ],
+    "conseils": "Don't pitch upfront. Ask about recent breakdowns and their impact on deliveries. Quantify the cost of inaction. Propose a 20-minute no-commitment visit with a specific date.",
+    "duree_estimee": "3-5 minutes",
+    "attention": "Dominant D profile — direct, impatient. He hangs up if no value in the first 60 seconds. Never push after a clear refusal."
+  },
+  "scenarios_de_fin": {
+    "rdv_obtenu": {
+      "conditions": "The salesperson mentioned a specific figure + dug into the response time pain + proposed a 20 min no-commitment visit with a specific date. Objections 1 and 2 were handled well.",
+      "replique": "Right. Thursday late morning, 30 minutes. Show me how it works on one machine. But if it's just a sales pitch, we stop there."
+    },
+    "email_demande": {
+      "conditions": "The salesperson started well but didn't dig into the pain or didn't propose a specific date.",
+      "replique": "Send me what you've got by email. If it's interesting I'll get back to you."
+    },
+    "refus_poli": {
+      "conditions": "The salesperson missed the opening or didn't provide value in the first 90 seconds.",
+      "replique": "Look, we've got a contractor that suits us. Cheers."
+    },
+    "raccrochage": {
+      "conditions": "The salesperson pushed after a clear refusal, or used a visible manipulation technique.",
+      "replique": "[Hangs up without a word]"
+    }
+  }
+}

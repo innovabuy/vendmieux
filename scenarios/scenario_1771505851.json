@@ -1,0 +1,357 @@
+{
+  "id": "scenario_1771505851",
+  "description_originale": "Vous avez présenté votre offre au directeur des achats ou directeur industriel d'une ETI industrielle de 200-400 salariés, production en série, plusieurs sites il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : industrie]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Direction générale",
+          "role": "validation finale probable"
+        },
+        {
+          "poste": "Responsable production",
+          "role": "utilisateur final potentiel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution industrielle non précisée",
+      "proposition_valeur_presumee": "Optimisation de la production industrielle en série",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation",
+        "Délai de 2 semaines sans nouvelle",
+        "Manque de visibilité sur l'avancement de la décision"
+      ],
+      "implicites": [
+        "Probable circuit de décision complexe dans une ETI multi-sites",
+        "Possibilité de priorisation d'autres projets",
+        "Risque de validation budgétaire bloquée",
+        "Commercial potentiellement perçu comme pushy s'il relance mal",
+        "Manque de plan d'action clair défini lors du RDV initial",
+        "Absence de next steps et timeline formalisés en fin de RDV"
+      ],
+      "probleme_racine": "Absence de cadrage du processus de décision et des étapes de validation lors du RDV initial, conduisant à une zone d'incertitude totale"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect sans être intrusif, comprendre le processus de décision interne, débloquer une situation de silence radio et repositionner la vente",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur solutions industrielles",
+      "entreprise_description": "Entreprise proposant des solutions pour l'industrie manufacturière en production série",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux ETI industrielles avec production en série et organisation multi-sites",
+      "proposition_valeur": "Optimisation des processus de production industrielle pour entreprises en série",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre présentée",
+        "Contenu du RDV initial et niveau d'intérêt manifesté",
+        "Budget évoqué ou enveloppe discutée",
+        "Concurrents en lice",
+        "Raison du silence (délibéré, oubli, blocage interne)",
+        "Historique relationnel avec le prospect"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Frédéric",
+      "nom": "Moreaux",
+      "age": 52,
+      "poste": "Directeur Industriel",
+      "entreprise": {
+        "nom": "Techméca Industries",
+        "secteur": "Sous-traitance automobile (pièces de précision)",
+        "taille": "ETI 280 salariés, 3 sites de production",
+        "ca_approximatif": "45M€, en stagnation depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à l'excès - veut du concret, du mesurable, des preuves",
+        "Surchargé chronique - jongle entre urgences opérationnelles et projets stratégiques",
+        "Méfiant envers les promesses commerciales après plusieurs déceptions avec des intégrateurs"
+      ],
+      "motivations_profondes": [
+        "Prouver à la DG qu'il peut moderniser l'outil industriel sans explosion budgétaire",
+        "Rattraper le retard technologique face aux concurrents polonais et tchèques",
+        "Sécuriser sa position en évitant un échec visible sur un projet d'envergure",
+        "Transmettre une organisation performante avant son départ en retraite dans 5 ans"
+      ],
+      "peurs_freins": [
+        "Investir dans une solution qui ne tiendra pas ses promesses de ROI",
+        "Se retrouver coincé avec un fournisseur qui disparaît ou ne suit pas",
+        "Perturber la production pendant la phase de déploiement",
+        "Que la DG lui coupe les vivres si le projet dérape en coûts ou délais",
+        "Passer pour le dinosaure qui a raté le virage de l'Industrie 4.0"
+      ],
+      "rapport_aux_commerciaux": "Profondément ambivalent. Respecte ceux qui comprennent vraiment son métier mais déteste le bagou, les relances insistantes et les PowerPoint creux. A tendance à ghosté ceux qui le harcèlent. Apprécie la transparence mais teste systématiquement la solidité du discours.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Phrases courtes. Regarde sa montre ou son téléphone. 'Bon, alors, on fait comment concrètement ?'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'intégration avec son ERP existant",
+        "Demande des références clients dans son secteur avec coordonnées vérifiables",
+        "Prend des notes manuscrites sur un carnet usé",
+        "Évoque spontanément ses contraintes budgétaires et calendaires",
+        "Utilise 'nous' en parlant du projet ('Si nous partons là-dessus...')"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Écoutez, je vais réfléchir et je vous rappelle'",
+        "Délègue soudainement à un subordonné ('Voyez ça avec Christophe de la prod')",
+        "Devient évasif sur les timings ('C'est compliqué en ce moment')",
+        "Répète mécaniquement 'Oui, oui' sans développer",
+        "Commence à évoquer d'autres priorités urgentes"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Concrètement' ou 'Dans les faits' pour ramener au pragmatisme",
+        "Dit 'Attendez, attendez...' quand il sent qu'on survend",
+        "Utilise l'expression 'Moi, ce que je vois' pour recadrer sur sa réalité terrain",
+        "'Ça c'est la théorie, mais...' quand il est sceptique",
+        "Soupirs audibles quand frustré ou dubitatif"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Faible. Maximum 90 secondes avant de couper. Préfère un dialogue structuré avec des étapes claires. Déteste qu'on lui refasse le pitch s'il l'a déjà entendu."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression forte des donneurs d'ordres automobiles sur les prix et délais. Deux lignes de production vieillissantes sur le site principal de Beauvais nécessitent modernisation. Récente perte d'un contrat au profit d'un concurrent plus réactif. La DG a validé principe d'investissement mais pas de montant précis. Climat social tendu après plan départs volontaires l'an dernier.",
+      "priorites_actuelles": [
+        "Finaliser certification IATF 16949 sur site de Lyon (audit dans 6 semaines)",
+        "Négocier renouvellement contrat majeur avec Stellantis (70% du CA)",
+        "Arbitrer entre modernisation interne ou externalisation d'une ligne secondaire",
+        "Gérer tensions avec son Responsable Qualité qui menace de partir"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé il y a 3 ans un logiciel MES qui a foiré à l'implémentation (éditeur sous-estimé complexité de leurs process spécifiques). Traumatisme encore présent. Depuis, exige POC ou phase pilote systématique.",
+      "fournisseur_actuel": "Utilise des solutions disparates : ERP maison vieillissant, GMAO sous-exploitée, suivi production sur Excel. Pas de solution intégrée. Consultant externe (cabinet lyonnais) pressenti pour audit préalable.",
+      "budget_disponible": "Enveloppe de 180-220K€ évoquée en CODIR mais non formellement validée. Nécessite construction business case solide. Possibilité échelonnement sur 2 exercices. CFO très regardant sur ROI (<24 mois exigé)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Références ultra-crédibles dans la sous-traitance automobile avec résultats chiffrés",
+        "Proposition de POC limité et réversible sur une ligne pilote",
+        "Méthodologie de déploiement progressive qui minimise risque opérationnel",
+        "Transparence totale sur les écueils potentiels et plan B",
+        "Implication d'un expert technique (ingénieur, pas seulement commercial) dans les échanges",
+        "Démonstration concrète sur cas d'usage réel de Techméca",
+        "Aide à construire le business case pour convaincre la DG et le DAF"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Relances téléphoniques répétées sans apport de valeur ('Alors, vous avez avancé ?')",
+        "Pression commerciale type 'offre limitée dans le temps'",
+        "Absence de compréhension des contraintes automobiles (traçabilité, AMDEC, PPAP...)",
+        "Discours généraliste sur l'Industrie 4.0 sans ancrage dans SA réalité",
+        "Minimisation des difficultés d'intégration avec son legacy IT",
+        "Tentative de contournement pour aller directement voir la DG",
+        "Propositions commerciales opaques sans détail des coûts cachés (maintenance, formation, upgrades)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en plein audit IATF là, c'est vraiment pas le moment... Rappelez-moi dans un mois.",
+        "sous_texte": "Je suis réellement surchargé ET j'utilise ça comme filtre pour voir si vous allez insister lourdement ou si vous comprenez mes priorités",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Légitimer sa priorité immédiate tout en créant un micro-engagement concret (date précise, documentation utile pour l'audit)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors concrètement, vous m'appelez pourquoi ? Je vous avais dit que je vous rappellerais si ça avançait de mon côté.",
+        "sous_texte": "Vous me dérangez sans raison valable. Prouvez-moi en 15 secondes que cet appel a du sens, sinon je raccroche poliment",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Apporter un élément nouveau de valeur (insight sectoriel, retour d'expérience client similaire) plutôt que simplement 'suivre'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà testé un MES il y a trois ans, ça a été un fiasco complet. L'éditeur avait sous-estimé la complexité, on a perdu six mois et 80K€. Donc bon, les belles promesses...",
+        "sous_texte": "J'ai une cicatrice profonde sur ce sujet. Je teste votre réaction : allez-vous minimiser mon échec passé ou le prendre au sérieux ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé sans jugement pour comprendre ce qui a foiré, montrer qu'on apprend de ces situations plutôt que promettre que 'ça sera différent'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi ce que je vois, c'est qu'on a trois sites avec trois organisations différentes, un ERP maison qui tient avec du scotch, et vous me parlez d'intégration fluide... Dans les faits, ça se passe comment ?",
+        "sous_texte": "Je teste votre niveau de compréhension réel de MA complexité. Les généralistes vont noyer le poisson, les bons vont poser des questions techniques précises",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la complexité spécifique et basculer en mode diagnostic plutôt qu'affirmatif ('Justement, comment fonctionne actuellement votre ERP maison ?')"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, attendez... Vous me parlez ROI 18 mois, optimisation 25%, tout ça c'est bien joli, mais vous avez des références précises dans la sous-traitance auto ? Parce que c'est pas la même chose que faire des robinets.",
+        "sous_texte": "Je détecte du discours marketing trop lisse. Montrez-moi du concret sectoriellement pertinent ou je décroche mentalement",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Avoir des références ultra-précises avec noms, contextes, résultats mesurables et possibilité de contact direct"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que j'ai la DG qui veut du résultat rapide, le DAF qui surveille chaque euro, et moi je dois garantir qu'on perturbe pas la prod. Alors avant de s'engager sur quoi que ce soit...",
+        "sous_texte": "J'expose ma vraie contrainte politique interne. Je cherche à comprendre si vous pouvez m'aider à naviguer cette complexité ou si vous allez juste pousser votre produit",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une approche par étapes qui désrisque (pilote, business case co-construit, jalons validés avec chaque partie prenante)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là vous me parlez d'un déploiement sur 6 mois... On a le renouvellement Stellantis qui se joue, je peux pas me permettre le moindre raté sur les lignes en ce moment.",
+        "sous_texte": "Objection calendaire réelle. Je teste si vous êtes flexible sur le timing ou si vous avez un process rigide qui ne s'adapte pas à mes contraintes business",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Explorer les fenêtres de tir possibles, proposer un phasage qui respecte ses pics d'activité critiques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "180K€ HT... Donc en réalité avec la maintenance, les formations, les upgrades, on est plutôt à combien sur 3 ans ? Parce que j'ai déjà donné avec les coûts cachés.",
+        "sous_texte": "Je teste votre transparence financière. Les commerciaux malhonnêtes vont rester flous, les bons vont détailler le TCO complet",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Transparence totale sur TCO avec grille détaillée des coûts sur 3-5 ans, y compris les éléments optionnels"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, si ça foire en phase de déploiement, quel est votre plan B ? Parce que moi je peux pas me retrouver coincé avec une ligne à l'arrêt.",
+        "sous_texte": "Question de survie professionnelle pour moi. Je veux voir si vous avez anticipé les scénarios d'échec ou si vous me vendez du rêve sans filet",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler les mécanismes de rollback, garanties contractuelles, plan de continuité d'activité pendant transition"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça c'est la théorie, mais dans les faits, votre équipe technique elle est dimensionnée comment ? Parce que si je suis coincé trois semaines pour un bug critique...",
+        "sous_texte": "J'ai besoin de réassurance sur votre capacité de support. Je teste la solidité de votre organisation derrière le discours commercial",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détails concrets sur l'équipe support (taille, localisation, SLA, hotline, ingénieurs dédiés secteur auto)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... De toute façon il faut que j'en parle avec le consultant qu'on a missionné pour l'audit. Lui il connaît vraiment nos process de fond en comble.",
+        "sous_texte": "Je dilue la responsabilité de décision. Soit c'est une vraie contrainte, soit je teste si vous allez paniquer ou proposer d'impliquer ce consultant intelligemment",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'associer le consultant dès maintenant, en faire un allié plutôt qu'un obstacle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais là j'ai vraiment besoin de poser tout ça à tête reposée. Je vais réfléchir et je vous rappelle, OK ?",
+        "sous_texte": "Fuite polie classique. Soit je suis réellement noyé et j'ai besoin d'air, soit je ne suis pas convaincu mais je n'ose pas dire non frontalement",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Obtenir précision sur les éléments qui manquent pour décider, proposer next step ultra-concret et mini-engageant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le truc c'est que pour construire le business case qui tiendra devant le DAF, j'ai besoin de données beaucoup plus précises sur les gains attendus chez nous, pas des moyennes de marché.",
+        "sous_texte": "Objection réelle et légitime. Je vous tends une perche : si vous m'aidez sur ce point concret, on avance. Sinon on reste bloqués",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer atelier conjoint de construction du business case avec données de son exploitation réelle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, soyons clairs : j'ai deux autres solutions en évaluation, dont une qui est déjà déployée chez un de nos concurrents directs. Donc faut que je compare sérieusement.",
+        "sous_texte": "Je mets la pression pour voir votre réaction. Soit vous paniquez et bradez, soit vous restez pro et vous m'aidez à structurer ma comparaison",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aider à définir grille de comparaison objective, proposer ses propres critères de différenciation sans dénigrer concurrents"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le souci c'est les délais de validation internes chez nous... Entre le CODIR de décembre, les congés, le budget qui se finalise en février, franchement avant mars je peux rien vous garantir.",
+        "sous_texte": "Objection calendaire que je grossis peut-être. Je teste si vous allez accepter ce timing long ou proposer des micro-étapes intermédiaires utiles",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Structurer le chemin critique avec jalons intermédiaires qui font avancer même pendant cette période (POC limité, specs détaillées, rencontres équipes techniques)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai bien compris votre proposition, c'est clair. Mais franchement là avec tout ce qu'on a sur le feu, je peux pas m'engager sur un timing. Je garde vos coordonnées, et si ça mûrit de notre côté, je vous recontacte. Mais me relancez pas toutes les semaines hein, ça sert à rien.",
+      "condition_declenchement": "Après 2-3 relances sans que le commercial n'ait apporté de valeur nouvelle, ou si pression commerciale perçue comme trop insistante, ou si le commercial n'a pas réussi à coconstruire un chemin de décision clair avec jalons"
+    },
+    "pattern_escalade": "Frédéric teste d'abord par objections légères (timing, besoin de réfléchir). Si le commercial insiste sans apporter de valeur, il durcit avec objections financières et techniques précises. Si la pression continue sans écoute réelle, il ferme définitivement avec politesse froide ('je vous rappelle') mais ne rappellera jamais. Son pattern : cordialité → scepticisme → test de compétence → fermeture définitive si déception.",
+    "piege_classique": "Frédéric donne parfois l'impression d'être presque convaincu ('Oui c'est intéressant...') pour ensuite disparaître totalement. C'est un réflexe de manager surchargé qui ne veut pas blesser mais qui n'a pas le courage de dire non. Le piège : croire qu'il est chaud alors qu'il ghostera. Seul antidote : obtenir des engagements concrets micro (envoyer un doc précis, impliquer un collègue, fixer RDV avec date) plutôt que des 'oui' de principe."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur solutions industrielles",
+      "description": "Entreprise proposant des solutions pour l'industrie manufacturière en production série"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux ETI industrielles avec production en série et organisation multi-sites",
+      "proposition_valeur": "Optimisation des processus de production industrielle pour entreprises en série",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect sans être intrusif, comprendre le processus de décision interne, débloquer une situation de silence radio et repositionner la vente",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-RDV — Solution d'optimisation production automobile",
+    "vous_etes": "Commercial solutions industrielles spécialisé sous-traitance automobile, en charge du compte Techméca Industries depuis votre premier RDV il y a 2 semaines.",
+    "vous_vendez": "Solution d'optimisation de production pour ETI manufacturières multi-sites (budget projet typique 180-250K€, ROI visé sous 24 mois).",
+    "vous_appelez": "Frédéric Moreaux, 52 ans, Directeur Industriel chez Techméca Industries (sous-traitance auto, 280 salariés, 3 sites). Pragmatique, surchargé, échaudé par un projet MES raté il y a 3 ans. Teste systématiquement la solidité du discours.",
+    "ce_que_vous_savez": [
+      "Il a assisté à votre présentation il y a 2 semaines mais n'a plus donné signe de vie depuis",
+      "Techméca a 2 lignes vieillissantes à moderniser sur Beauvais, pression prix des donneurs d'ordres",
+      "Enveloppe 180-220K€ évoquée en CODIR mais business case à construire pour convaincre DG et DAF",
+      "Certification IATF dans 6 semaines + négociation contrat Stellantis en cours = agenda surchargé",
+      "Traumatisme d'un MES foiré il y a 3 ans, exige maintenant POC/pilote systématique"
+    ],
+    "votre_objectif": "Comprendre où en est réellement le projet, identifier les blocages internes sans être intrusif, et proposer une prochaine étape concrète qui le fasse avancer.",
+    "vos_atouts": [
+      "Vous avez 2 références solides en sous-traitance auto avec ROI documenté <18 mois",
+      "Votre approche standard inclut POC réversible sur ligne pilote pour limiter le risque",
+      "Vous pouvez impliquer votre ingénieur d'application dans les échanges techniques",
+      "Vous aidez vos clients à construire leur business case interne (template éprouvé)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T12:57:31Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15732,
+    "total_time_s": 143.4
+  }
+}

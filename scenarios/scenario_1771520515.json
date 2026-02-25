@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771520515",
+  "description_originale": "Le directeur d'agence / fondateur d'une agence de recrutement ou cabinet RH de 10-25 consultants est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : rh_recrutement]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "10-25 consultants",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme pour cabinet RH/recrutement",
+      "proposition_valeur_presumee": "amélioration de la performance du cabinet, optimisation des process de recrutement ou services additionnels",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire à un client satisfait"
+      ],
+      "implicites": [
+        "risque de complaisance du client (déjà satisfait = pas de besoin perçu)",
+        "justifier un investissement supplémentaire sans insatisfaction préalable",
+        "éviter de paraître opportuniste ou pousseur de produit",
+        "transformer une satisfaction passive en engagement actif"
+      ],
+      "probleme_racine": "créer un besoin chez un client déjà satisfait sans créer de friction ni dégrader la relation existante"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser la technique de l'upsell en contexte de satisfaction client pour faire percevoir une valeur ajoutée incrémentale et obtenir un accord de principe",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux professionnels RH/recrutement (éditeur logiciel, formation, outils, conseil)",
+      "entreprise_description": "fournisseur de solutions pour cabinets de recrutement et agences RH, relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou offre premium par rapport à la solution actuelle déjà utilisée par le client",
+      "proposition_valeur": "augmentation de la performance du cabinet, gain de temps consultants, amélioration qualité placements, différenciation marché",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "relation client établie depuis 1 an avec satisfaction confirmée"
+      ],
+      "avantages_vs_concurrence": "relation de confiance déjà établie, connaissance fine du contexte client",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du service initial",
+        "nature du service complémentaire proposé",
+        "fourchette de prix",
+        "signaux déclencheurs justifiant l'upsell",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 44,
+      "poste": "Directeur associé et fondateur",
+      "entreprise": {
+        "nom": "TalentLink Conseil",
+        "secteur": "Recrutement cadres et middle management",
+        "taille": "14 consultants permanents + 3 administratifs",
+        "ca_approximatif": "1,8M€, en croissance de 12% sur l'année"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Orienté ROI court terme",
+        "Loyauté conditionnelle aux résultats"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa réputation de cabinet sérieux et fiable",
+        "Préserver ses marges dans un marché concurrentiel",
+        "Éviter toute complexification inutile des process",
+        "Prouver aux actionnaires minoritaires qu'il pilote avec rigueur"
+      ],
+      "peurs_freins": [
+        "Se faire « avoir » par un vendeur qui profite de la relation établie",
+        "Investir dans un service qui ne sera pas utilisé par les consultants",
+        "Créer de la complexité administrative pour un gain marginal",
+        "Perdre du temps en réunions commerciales non productives"
+      ],
+      "rapport_aux_commerciaux": "Transactionnel et direct. Apprécie qu'on aille droit au but. Déteste le bullshit corporate et les PowerPoint à rallonge. Respecte ceux qui connaissent vraiment son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, vas-y je t'écoute mais j'ai un call dans 15 minutes'",
+      "signaux_interet": [
+        "Pose des questions précises sur les chiffres et délais",
+        "Mentionne spontanément un problème opérationnel concret",
+        "Demande 'Combien ça coûte exactement?' avant même la démo",
+        "Évoque un concurrent ou client qui utilise déjà"
+      ],
+      "signaux_rejet": [
+        "Commence à taper sur son clavier pendant l'explication",
+        "Dit 'Ouais ouais' de façon répétée sans poser de question",
+        "Coupe court avec 'Écoute là franchement on a pas le budget'",
+        "Répond aux mails sur son téléphone en faisant 'hm-hm'",
+        "Formule finale: 'Envoie-moi un mail, je regarderai'"
+      ],
+      "tics_langage": [
+        "Utilise 'concrètement' ou 'dans les faits' toutes les 3 phrases",
+        "Dit 'Ouais mais attends' quand il n'est pas convaincu",
+        "Abrège systématiquement: 'les CVs', 'les clients', 'mes ops'",
+        "Termine par 'Voilà voilà' quand il veut clore"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Maximum 45 secondes avant qu'il interrompe ou décroche mentalement. Veut dialoguer, pas assister à une présentation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable mais marges sous pression. Deux gros clients perdus ce trimestre (départs en interne). Recrutement difficile de consultants seniors. Pression accrue sur la rapidité de placement.",
+      "priorites_actuelles": [
+        "Signer 3 nouveaux clients entreprise d'ici fin trimestre",
+        "Réduire le time-to-fill moyen de 38 à 28 jours",
+        "Former les juniors pour qu'ils soient autonomes plus vite",
+        "Convaincre un consultant concurrent expérimenté de les rejoindre"
+      ],
+      "experience_avec_offre_similaire": "Utilise déjà votre solution de base depuis 13 mois, plutôt content ('ça fait le job'). A testé 2 concurrents avant, déçu par le support. Sceptique sur les offres premium en général.",
+      "fournisseur_actuel": "Votre entreprise pour l'offre standard + un ATS historique qu'il garde 'au cas où' + LinkedIn Recruiter (qu'il trouve cher)",
+      "budget_disponible": "Difficile à débloquer hors cycle budgétaire annuel (bouclé en novembre). Peut sortir max 8-10K€ en one-shot si ROI démontrable sous 6 mois. Au-delà, doit valider avec son associé technique."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet similaire qui a réduit son time-to-fill de X jours grâce à cette fonctionnalité",
+        "Partir d'un irritant quotidien précis qu'il a déjà mentionné lors d'échanges antérieurs",
+        "Proposer un test limité dans le temps ou sur un consultant pilote",
+        "Chiffrer le coût de l'inaction (ex: poste non pourvu = X€ de marge perdue)",
+        "Reconnaissance explicite: 'Je sais que vous êtes déjà satisfait de l'offre actuelle'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'J'ai une super nouvelle offre à te présenter'",
+        "Laisser entendre que l'offre actuelle est insuffisante (orgueil blessé)",
+        "Parler de 'transformation digitale' ou jargon marketing creux",
+        "Ne pas connaître l'historique de la relation commerciale",
+        "Proposer une démo de 45 minutes sans avoir qualifié le besoin",
+        "Insister après un premier 'non' clair"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute là franchement, on est déjà bien équipés. Votre solution de base fait le job, donc concrètement j'ai pas de besoin particulier.",
+        "sous_texte": "Je suis satisfait et je me méfie qu'on essaie de me vendre quelque chose dont je n'ai pas besoin juste pour augmenter votre CA",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa satisfaction puis pivoter sur un irritant quotidien concret qu'il a déjà mentionné précédemment"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais mais attends, tu m'appelles pour me vendre un truc en plus alors qu'on bosse déjà ensemble ? C'est un peu l'upsell classique non ?",
+        "sous_texte": "Je détecte la technique commerciale et ça m'agace qu'on me prenne pour un pigeon. Prouve-moi que c'est pas opportuniste",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur l'intention + ancrer sur UN problème métier spécifique observé chez lui ou ses pairs"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "J'ai un call dans 15 minutes là. C'est pour quoi exactement ? Vas-y direct.",
+        "sous_texte": "Je suis pressé, si tu tournes autour du pot je raccroche. Prouve en 30 secondes que ça vaut mon temps",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Pitch de 20 secondes maximum centré sur un chiffre clé métier (time-to-fill, marge, taux de transformation)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais, c'est un sujet... mais dans les faits mes consultants sont déjà surbookés. Rajouter un outil de plus ça va juste les emmerder.",
+        "sous_texte": "Même si c'est pertinent, j'ai peur que ce soit compliqué à adopter et que ça crée de la résistance en interne. J'ai pas le temps de gérer ça",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un pilote ultra-limité sur 1 consultant volontaire avec accompagnement rapproché pour prouver la simplicité"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le time-to-fill ouais... mais concrètement ça dépend surtout de la qualité des briefs clients et de l'expérience de mes ops, pas d'un outil.",
+        "sous_texte": "Je rationalise pour éviter de reconnaître qu'un outil pourrait résoudre ce que je vois comme un problème humain. Ça protège mon ego de dirigeant",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que l'humain est clé + montrer comment l'outil amplifie l'expertise au lieu de la remplacer, avec données chiffrées d'un pair"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, combien ça coûte exactement ton truc ? Parce que là on sort du cycle budgétaire, c'est bouclé jusqu'en novembre.",
+        "sous_texte": "Si c'est cher, je vais pouvoir clore la conversation facilement. Mais si c'est raisonnable, va falloir que je me positionne vraiment",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reporter la question prix après avoir quantifié le coût de l'inaction (postes non pourvus = marge perdue mesurable)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais les cas clients que tu me cites, c'est des cabinets parisiens avec 50 consultants. Nous on est 14, c'est pas comparable.",
+        "sous_texte": "Je cherche des différences pour me protéger de la décision. Si c'est pas exactement ma situation, je peux dire non sans remettre en cause mon jugement",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un exemple de cabinet de taille similaire (12-18 consultants) avec métriques précises avant/après"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, mes consultants vont me dire qu'on rajoute encore de la complexité. J'ai déjà eu le coup avec l'ATS qu'on a mis en place y'a deux ans.",
+        "sous_texte": "J'ai peur de l'échec d'adoption et que ça me fasse perdre en crédibilité auprès de mon équipe. C'est une vraie cicatrice",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec ATS pour comprendre ce qui n'a pas marché + montrer en quoi votre approche d'onboarding est radicalement différente"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans les faits, la vraie différenciation elle est dans la relation client et l'expertise sectorielle, pas dans les outils. On est pas une usine.",
+        "sous_texte": "Je défends mon identité métier. Si j'accepte que l'outil est décisif, je minimise mon expertise et celle de mes équipes",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Repositionner l'outil comme amplificateur de l'expertise humaine qui permet de consacrer plus de temps à la relation client justement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais attends, LinkedIn Recruiter on l'a déjà et franchement on l'utilise même pas à fond. Pourquoi j'ajouterais un autre truc ?",
+        "sous_texte": "J'ai déjà investi et je sous-utilise. Si je rajoute, ça prouve que je gère mal. Aussi : vraie question de ROI sur l'existant",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le sous-investissement LinkedIn + montrer que votre offre s'intègre/complète au lieu de remplacer, avec workflow concret"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est marrant que tu me proposes ça maintenant. T'as un objectif trimestriel à boucler ou quoi ? Voilà voilà.",
+        "sous_texte": "Je teste ta sincérité. Si tu mens ou bafouilles, je te classe comme commercial opportuniste et je ferme",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale et humour : 'Oui j'ai des objectifs, mais je t'appelle parce que [raison métier précise liée à son contexte]'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute franchement c'est intéressant mais là j'ai pas le temps. Envoie-moi un mail avec tout ça, je regarderai tranquillement.",
+        "sous_texte": "Je veux clore poliment sans m'engager. Dans les faits je ne lirai probablement pas le mail ou le survolerai en diagonale",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Bloquer un créneau précis de 15min dans les 48h au lieu d'envoyer un mail qui sera archivé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais bon, 8K€ c'est pas rien quand même. Va falloir que j'en parle à mon associé et concrètement ça prendra du temps.",
+        "sous_texte": "Le prix me refroidit vraiment OU je me cherche une porte de sortie en invoquant un tiers décisionnaire. Peut-être les deux",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier le coût mensuel (divisé par 12) + proposer d'inclure l'associé dans un call court de validation sous 3 jours"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Dans les faits, même si c'est bien, mes priorités c'est signer des clients et recruter un senior, pas déployer des outils. Timing pas bon.",
+        "sous_texte": "Vraie objection de priorité. Je suis en mode pompier et je ne vois pas comment ajouter ce chantier maintenant, même si c'est pertinent",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer comment l'outil aide DIRECTEMENT sur ses priorités (ex: signer clients = meilleur time-to-fill = argument commercial)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, ça m'intéresse mais je veux voir une démo complète avec mes consultants avant. On peut caler ça dans 3 semaines ?",
+        "sous_texte": "Je dilue le processus pour gagner du temps et éventuellement oublier. OU je suis vraiment prudent et veux valider avec l'équipe (50/50)",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter mais proposer un format plus court (démo de 20min cette semaine) pour maintenir l'élan et éviter que ça s'évapore"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais écoute c'est pas con, mais j'ai besoin de voir ça fonctionner en vrai sur un cas concret à nous. Vous faites des pilots ?",
+        "sous_texte": "Je suis intéressé mais pas assez pour acheter à l'aveugle. Vraie demande de preuve de concept pour lever le risque perçu",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Proposer un pilot de 30 jours sur 1-2 consultants avec métriques de succès définies à l'avance + engagement réciproque"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement tu m'as convaincu sur le principe, mais dans les faits on vient de perdre deux gros clients ce trimestre et là je peux pas me permettre de sortir 8K€. C'est juste une question de cash-flow, pas de conviction. Rappelle-moi en septembre quand on aura rebouclé le budget.",
+      "condition_declenchement": "Après une argumentation efficace qui l'a intellectuellement convaincu mais où le timing financier reste un vrai frein. Teste si le vendeur va forcer ou respecter le contexte"
+    },
+    "pattern_escalade": "Stéphane commence par des objections-réflexes rapides (satisfait/pas le temps) pour filtrer. Si le vendeur résiste avec pertinence, il passe à des objections plus sincères et profondes sur l'adoption interne et le ROI. Si ces objections sont bien traitées avec données et empathie, il révèle ses vraies contraintes (budget, timing, associé). Le pattern montre une escalade de la confiance : plus il objecte sincèrement, plus il est engagé. Un vendeur qui répond aux objections de surface sans creuser ne percera jamais la carapace.",
+    "piege_classique": "Stéphane dit souvent 'Envoie-moi un mail' ou 'On en reparle dans quelques semaines' alors qu'il est en réalité intéressé mais veut garder le contrôle du processus. Le piège est de le prendre au mot et de lâcher la pression. Il respecte les commerciaux qui challengent poliment ce type de réponse en proposant un engagement minimal concret (15min de démo, pilot limité) plutôt que d'accepter un vague 'on se rappelle'. Autre piège : argumenter sur l'insuffisance de son offre actuelle, ce qui le braque immédiatement par orgueil. Il faut au contraire valider sa satisfaction puis ouvrir sur un niveau supérieur de performance."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux professionnels RH/recrutement (éditeur logiciel, formation, outils, conseil)",
+      "description": "fournisseur de solutions pour cabinets de recrutement et agences RH, relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou offre premium par rapport à la solution actuelle déjà utilisée par le client",
+      "proposition_valeur": "augmentation de la performance du cabinet, gain de temps consultants, amélioration qualité placements, différenciation marché",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "relation client établie depuis 1 an avec satisfaction confirmée"
+      ],
+      "avantages_vs_concurrence": "relation de confiance déjà établie, connaissance fine du contexte client"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser la technique de l'upsell en contexte de satisfaction client pour faire percevoir une valeur ajoutée incrémentale et obtenir un accord de principe",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Module premium cabinets recrutement",
+    "vous_etes": "Account Manager chez un éditeur de solutions pour cabinets RH, en relation depuis 13 mois avec TalentLink Conseil.",
+    "vous_vendez": "Module premium de votre plateforme actuelle : automatisation avancée du sourcing + scoring IA des candidats. Prix : 650€/mois (7800€/an).",
+    "vous_appelez": "Stéphane Mercier, 44 ans, fondateur et directeur associé de TalentLink Conseil — 14 consultants, 1,8M€ de CA. Pragmatique, méfiant face aux offres commerciales, obsédé par le ROI court terme. Va droit au but, déteste le bullshit. Satisfait de votre offre standard mais sceptique sur les options premium.",
+    "ce_que_vous_savez": [
+      "Client depuis 13 mois, retours positifs sur l'offre de base ('ça fait le job')",
+      "Priorité actuelle : réduire le time-to-fill de 38 à 28 jours d'ici fin trimestre",
+      "A perdu 2 gros clients ce trimestre, marges sous pression",
+      "Budget limité hors cycle annuel : 8-10K€ max en one-shot si ROI démontré sous 6 mois",
+      "Vous a mentionné il y a 3 semaines la difficulté à former rapidement ses consultants juniors"
+    ],
+    "votre_objectif": "Obtenir son accord de principe pour tester le module premium sur 2 consultants pendant 60 jours, avec mesure d'impact sur le time-to-fill.",
+    "vos_atouts": [
+      "Cabinet similaire (12 consultants, Lille) a réduit son time-to-fill de 11 jours en 4 mois avec ce module",
+      "Calcul prêt : 10 jours gagnés par placement = 14K€ de marge annuelle supplémentaire pour TalentLink",
+      "Relation de confiance établie, vous connaissez son contexte opérationnel précis",
+      "Offre de test limité dans le temps, sans engagement long terme"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:01:55Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14537,
+    "total_time_s": 135.2
+  }
+}

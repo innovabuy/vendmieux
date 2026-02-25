@@ -1,0 +1,368 @@
+{
+  "id": "scenario_1771520343",
+  "description_originale": "Vous appelez une concession automobile ou équipementier local de 20-50 salariés. C'est l'secrétaire commerciale qui décroche. Vous devez passer le barrage pour parler au directeur de concession / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : automobile]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur de concession / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Secrétaire commerciale",
+          "role": "barrage_filtre",
+          "comportement": "protecteur"
+        }
+      ],
+      "zone_geo": "local"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage secrétaire",
+        "Assistante filtre et protège le décideur",
+        "Accès limité au directeur de concession"
+      ],
+      "implicites": [
+        "Commerciaux manquent de technique de franchissement de barrage",
+        "Discours non adapté au double niveau d'interlocuteurs",
+        "Manque de légitimité perçue lors de l'appel froid",
+        "Difficulté à créer de l'intérêt rapidement au téléphone"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur et de légitimité lors du premier contact téléphonique pour convaincre le barrage secrétaire de donner accès au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrage secrétaire et décrocher des RDV avec les décideurs dans le secteur automobile",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commerciale",
+        "Identité de l'entreprise vendeuse",
+        "Proposition de valeur",
+        "Tarification",
+        "Arguments de différenciation"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Directeur de concession automobile",
+      "entreprise": {
+        "nom": "Autosphere Marchand",
+        "secteur": "Distribution automobile - véhicules neufs et occasion",
+        "taille": "32 salariés",
+        "ca_approximatif": "18M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrain - valorise le résultat commercial immédiat",
+        "Méfiant face aux 'vendeurs de rêve' - a été échaudé plusieurs fois",
+        "Paternaliste avec son équipe - protège son temps et celui de ses collaborateurs"
+      ],
+      "motivations_profondes": [
+        "Protéger ses marges dans un secteur sous pression",
+        "Maintenir sa réputation locale construite sur 25 ans",
+        "Prouver qu'il reste performant malgré la digitalisation du secteur",
+        "Garder le contrôle de son organisation sans ingérence externe"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions inadaptées à la réalité terrain",
+        "Être jugé 'vieux jeu' par les constructeurs ou sa hiérarchie",
+        "S'engager sur un investissement qui ne rapporte pas rapidement",
+        "Que son équipe soit perturbée par des changements mal ficelés"
+      ],
+      "rapport_aux_commerciaux": "Très ambivalent - il en est un au fond, donc respecte le métier, mais déteste qu'on lui 'fasse le coup'. Attend qu'on soit cash, rapide, et qu'on prouve la valeur. Aime les gens qui comprennent SON métier avant de vendre le leur.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, qu'est-ce que je peux faire pour vous ?' avec un léger soupir si ça tombe mal. Regarde sa montre mentalement dès la 30e seconde.",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou un ROI",
+        "Mentionne un problème concret qu'il rencontre actuellement",
+        "Dit 'Attends, là tu m'intéresses' et se recale dans sa chaise",
+        "Demande combien de temps ça prend vraiment"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Écoutez, on a déjà essayé ce genre de trucs'",
+        "Bascule sur un ton faussement poli 'Envoyez-moi un mail, je regarde'",
+        "Mentionne Sylvie sa secrétaire : 'Vous avez parlé à Sylvie ? Elle filtre normalement...'",
+        "Dit 'franchise' comme argument de fermeture : 'En toute franchise, là j'ai pas le temps'"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Bon' au début de phrase quand il veut conclure",
+        "Dit 'Concrètement' quand il veut du factuel",
+        "Utilise 'Franchement' avant d'annoncer un refus",
+        "'On va pas se mentir' quand il est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes max. Au-delà, il interrompt ou décroche mentalement. Veut du ping-pong, pas un pitch."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Concession qui performe correctement (dans le top 30% du réseau) mais subit la pression des objectifs constructeur, la baisse des marges sur le neuf, et la montée de la concurrence digitale. A dû digitaliser à marche forcée pendant le COVID, ça a coûté cher et les résultats ne sont pas à la hauteur de l'investissement.",
+      "priorites_actuelles": [
+        "Augmenter le taux de transformation sur les occasions (objectif +8% cette année)",
+        "Fidéliser la clientèle existante face aux mandataires en ligne",
+        "Rentabiliser l'atelier après-vente qui compense les marges du neuf",
+        "Gérer le turnover commercial (2 vendeurs partis en 6 mois)"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 formations commerciales ces 5 dernières années : une sur la vente digitale (trop théorique), une intra-réseau imposée par le constructeur (générique), une sur la gestion client (bien mais pas d'ancrage). Bilan mitigé : 'Ça motive 2 semaines puis rien ne change'.",
+      "fournisseur_actuel": "Passe par l'offre de formation du constructeur (imposée) + fait parfois appel à un consultant local pour du coaching individuel des vendeurs (3000€/jour, résultats aléatoires)",
+      "budget_disponible": "Entre 5000€ et 12000€ selon ROI démontrable. Préfère l'intra pour toute l'équipe commerciale (7 vendeurs). Doit justifier auprès de sa direction régionale si > 8000€."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un KPI précis du secteur automobile (ex: taux de transformation showroom, panier moyen atelier)",
+        "Parler de gain de temps pour LUI, pas seulement pour l'équipe",
+        "Citer une concession comparable qui a eu des résultats mesurables",
+        "Reconnaître d'emblée les contraintes spécifiques de son métier",
+        "Proposer un format court et opérationnel (il déteste les formations de 3 jours)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je voulais vous présenter notre société...'",
+        "Parler de 'transformation digitale' ou 'mindset' sans ancrage concret",
+        "Ne pas avoir préparé l'appel : montrer qu'on ne connaît rien à l'automobile",
+        "Insister après un premier refus (il blackliste mentalement)",
+        "Critiquer indirectement sa façon de faire actuelle",
+        "Demander plus de 30 minutes de RDV en première prise de contact"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai trois clients qui attendent et un problème avec une livraison là. C'est pour quoi exactement ?",
+        "sous_texte": "Je suis occupé, prouve-moi en 10 secondes que ça vaut le coup que je t'écoute, sinon je raccroche poliment.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître son temps, donner un bénéfice chiffré en une phrase, proposer de rappeler à un meilleur moment SI intérêt identifié"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous avez parlé à Sylvie ma secrétaire ? Normalement elle filtre mes appels.",
+        "sous_texte": "Tu as contourné mon système de protection. Je veux savoir si tu es légitime ou un opportuniste qui a forcé le passage.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser le rôle de Sylvie, expliquer pourquoi vous avez souhaité l'appeler directement (urgence/pertinence), montrer du respect pour son organisation"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail, je regarde ça tranquillement et je vous rappelle si ça m'intéresse.",
+        "sous_texte": "Je veux me débarrasser de toi poliment. Ton mail ira directement à la corbeille et je ne rappellerai jamais.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la légitimité de la demande MAIS créer de la curiosité avec un élément exclusif qu'on ne peut pas mettre par écrit, ou proposer 2 minutes chrono maintenant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà testé des formations commerciales. Franchement, ça motive les gars deux semaines et après ils retournent à leurs vieilles habitudes.",
+        "sous_texte": "J'ai été déçu plusieurs fois, j'ai dépensé de l'argent pour rien. Pourquoi ce serait différent avec vous ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser les expériences passées pour identifier ce qui n'a pas fonctionné, montrer que vous avez prévu les mécanismes d'ancrage dans la durée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous connaissez quoi au secteur automobile vous ? Parce que vendre une voiture c'est pas comme vendre des photocopieuses hein.",
+        "sous_texte": "Je teste ta crédibilité. Si tu ne connais rien à mon métier, tu ne peux pas m'aider. Prouve-moi que tu comprends MA réalité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer des références automobiles précises, utiliser le jargon du secteur naturellement, poser des questions qui montrent qu'on connaît les KPIs spécifiques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le vrai problème c'est pas la formation, c'est que les marges sont de plus en plus serrées. Les gens achètent sur Internet maintenant.",
+        "sous_texte": "Je fuis vers un problème externe pour éviter de reconnaître que mes équipes pourraient être plus performantes. Teste si tu vas me contredire.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la réalité du marché, puis pivoter sur comment les meilleurs dealent avec ces contraintes grâce à de meilleures techniques commerciales"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes vendeurs sont déjà bons. C'est pas eux le problème, c'est le trafic showroom qui baisse.",
+        "sous_texte": "Je protège mon équipe car je suis paternaliste. Si tu les critiques indirectement, je vais te rejeter. Mais au fond, je sais qu'ils pourraient être meilleurs.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser l'équipe existante, parler d'optimisation plutôt que de correction, montrer comment augmenter la transformation sur le trafic existant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon OK mais ça prend combien de temps votre truc ? Parce que je peux pas les sortir du showroom 3 jours, on perd du CA direct.",
+        "sous_texte": "Le format compte autant que le contenu pour moi. Si c'est trop long, c'est mort même si c'est bien. Je calcule le manque à gagner immédiat.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer un format court et opérationnel, proposer des créneaux hors affluence, quantifier le ROI qui compense largement les heures investies"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien ce genre de formation ? Parce que j'ai pas 20 000 balles à claquer non plus.",
+        "sous_texte": "Je teste ta fourchette de prix. Si tu annonces un prix délirant, je coupe court. Mais si c'est raisonnable, je reste ouvert.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Refuser de donner un prix sans avoir bien qualifié le besoin, ou donner une fourchette large en conditionnant par le format et l'accompagnement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On a déjà les formations du constructeur, c'est inclus dans le contrat réseau. Pourquoi je paierais en plus ?",
+        "sous_texte": "J'ai une alternative gratuite. Convaincs-moi que la tienne est supérieure au point de sortir de l'argent de ma poche.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Questionner la pertinence et les résultats des formations constructeur, positionner votre offre en complément personnalisé et actionnable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... J'ai un consultant qui vient déjà faire du coaching individuel. Il connaît bien mes gars.",
+        "sous_texte": "J'ai déjà quelqu'un, je suis loyal. Mais peut-être qu'au fond ça ne donne pas les résultats espérés. À toi de me faire réfléchir.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser l'existant, se positionner en complémentarité ou en alternative plus structurée sur des techniques spécifiques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que là je suis en plein pic d'activité avec les immatriculations de fin de trimestre. C'est pas le moment.",
+        "sous_texte": "Objection timing sincère mais aussi moyen d'évacuer la décision. Si tu ne rebondis pas, je vais reporter sine die.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider le timing, proposer de planifier pour après le pic, prendre un engagement ferme avec une date, ou montrer que c'est justement le bon moment pour préparer l'après"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez fait ça avec qui dans le secteur ? Parce que si c'est avec Toyota et moi je suis Volkswagen, c'est pas pareil.",
+        "sous_texte": "Je veux une preuve sociale dans MON univers précis. Les références génériques ne me rassurent pas.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des références automobiles variées, expliquer les points communs entre réseaux, proposer de parler à un client référence si nécessaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais en parler à mon directeur régional d'abord, je peux pas décider ça tout seul.",
+        "sous_texte": "Fausse objection hiérarchique. Soit je veux me défausser, soit j'ai vraiment besoin de valider le budget, soit je cherche à gagner du temps pour réfléchir.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tester la sincérité en proposant de l'accompagner dans la présentation, ou identifier s'il a vraiment le budget en autonomie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, envoyez-moi un devis détaillé, je regarde avec mon comptable et je vous redis.",
+        "sous_texte": "Je veux clore l'échange sans m'engager. Le devis sera un moyen de comparer ou de ne jamais donner suite.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais conditionner l'envoi du devis à un RDV de restitution programmé, ou demander validation des éléments clés avant envoi"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, j'ai besoin de réfléchir. C'est pas une décision que je prends à la légère.",
+        "sous_texte": "Soit j'ai un doute sincère, soit je veux juste te faire partir gentiment. Ton insistance va déterminer ma réaction.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter le besoin de réflexion, identifier les points précis de doute, fixer un prochain point de contact avec raison valable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, là je viens de perdre deux vendeurs. Former les nouveaux qui arrivent ça a pas de sens.",
+        "sous_texte": "Objection contextuelle réelle qui cache peut-être aussi une peur de l'échec ou un manque de priorité perçue.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Pivoter sur l'intérêt de former maintenant pour fidéliser les nouveaux, ou reporter intelligemment avec engagement ferme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je suis preneur du principe mais j'ai vraiment pas le budget cette année. C'est bouclé côté RH.",
+        "sous_texte": "Budget sincèrement contraint, ou test pour voir si tu baisses ton prix, ou manière polie de dire que ça ne vaut pas le prix pour lui.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Tester la sincérité en explorant d'autres lignes budgétaires possibles, proposer un échelonnement, ou planter une graine pour l'an prochain avec engagement"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai compris votre truc, c'est intéressant sur le papier mais concrètement aujourd'hui c'est pas ma priorité. On en reparle peut-être dans 6 mois.",
+      "condition_declenchement": "Quand le commercial a été bon mais pas excellent, n'a pas créé d'urgence suffisante, ou que Thierry n'a pas perçu le ROI comme immédiat et évident. C'est sa porte de sortie polie qui tue 80% des deals."
+    },
+    "pattern_escalade": "Thierry commence cordial mais pressé (30 sec). Si le commercial ne crée pas d'intérêt rapide, il passe en mode évacuation polie (objection mail). Si accroché, il teste la légitimité (connaissance secteur, références). Si convaincu de l'écoute, il livre ses vraies objections (expériences passées, timing, budget). En closing, il cherche soit à valider en interne, soit à gagner du temps. Son pattern : tester > objection vraie > négociation > décision OU fuite polie définitive.",
+    "piege_classique": "Thierry dit souvent 'Envoyez-moi un mail' ou 'Je vais réfléchir' quand il veut clore poliment. Le piège : le prendre au mot et envoyer le mail sans avoir créé d'engagement. 90% des commerciaux perdent Thierry à ce moment. L'autre piège : insister après son signal 'Bon' de clôture - il devient alors fermé définitivement. Il faut le faire réfléchir PENDANT l'appel, pas après."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrage secrétaire et décrocher des RDV avec les décideurs dans le secteur automobile",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Franchissement de barrage secrétaire",
+    "vous_etes": "Commercial en formation commerciale B2B, spécialisé sur le secteur automobile",
+    "vous_vendez": "Formation commerciale intra-entreprise pour équipes de vente en concession automobile (budget type 5000-12000€)",
+    "vous_appelez": "Thierry Marchand, 52 ans, Directeur de la concession Autosphere Marchand (32 salariés, 18M€ CA). Pragmatique, méfiant envers les vendeurs, protège son temps. Valorise le résultat immédiat et déteste les discours théoriques.",
+    "ce_que_vous_savez": [
+      "La concession performe bien (top 30% du réseau) mais subit la pression sur les marges",
+      "Thierry a testé 3 formations ces 5 dernières années avec des résultats décevants",
+      "2 vendeurs sont partis en 6 mois — problème de turnover commercial",
+      "Priorité actuelle : augmenter le taux de transformation sur les occasions (+8%)",
+      "Sylvie, sa secrétaire, filtre systématiquement les appels entrants"
+    ],
+    "votre_objectif": "Passer le barrage de Sylvie et décrocher 20-30 minutes de RDV physique avec Thierry pour présenter une formation opérationnelle",
+    "vos_atouts": [
+      "Format court et opérationnel (pas de formation de 3 jours)",
+      "Spécialisation secteur automobile — vous parlez son langage métier",
+      "Approche ROI mesurable adaptée aux KPI concession",
+      "Vous comprenez ses contraintes terrain et la réalité du showroom"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:59:03Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14669,
+    "total_time_s": 135.7
+  }
+}

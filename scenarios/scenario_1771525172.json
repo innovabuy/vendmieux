@@ -1,0 +1,353 @@
+{
+  "id": "scenario_1771525172",
+  "description_originale": "Vous appelez une compagnie d'assurance régionale ou société de gestion de 150+ salariés. L'assistante de direction du directeur commercial ou directeur de la distribution décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : finance_assurance]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur commercial ou Directeur de la distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante de direction",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage_filtrant",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux directeurs commerciaux/distribution du secteur assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'assistante de direction",
+        "Besoin de techniques pour accéder au décideur"
+      ],
+      "implicites": [
+        "Taux de transformation faible en phase de prospection téléphonique",
+        "Manque de légitimité perçue lors du premier contact",
+        "Difficulté à créer de la valeur dès les premières secondes",
+        "Gestion de multi-interlocuteurs non maîtrisée",
+        "Approche probablement trop commerciale et pas assez stratégique"
+      ],
+      "probleme_racine": "Incapacité à établir une légitimité et une valeur perçue suffisantes pour contourner professionnellement le barrage décisionnel et accéder aux dirigeants du secteur finance/assurance"
+    },
+    "objections_mentionnees": [
+      "Filtrage systématique par l'assistante",
+      "Refus de passer l'appel au décideur"
+    ],
+    "objectif_formation": "Maîtriser les techniques de franchissement de barrage avec professionnalisme, obtenir l'accès aux décideurs et décrocher des RDV qualifiés dans un contexte multi-interlocuteurs du secteur finance/assurance",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux entreprises du secteur finance/assurance",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux compagnies d'assurance et sociétés de gestion",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service à forte valeur ajoutée nécessitant un contact avec les directeurs commerciaux ou de distribution",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Fourchette de prix",
+        "Nom et description précise de l'entreprise du vendeur",
+        "Références clients",
+        "Arguments de différenciation concurrentielle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mérieux",
+      "age": 52,
+      "poste": "Directeur Commercial et Marketing",
+      "entreprise": {
+        "nom": "Mutuelle Patrimoine Éthique",
+        "secteur": "Assurance de personnes et prévoyance collective",
+        "taille": "280 salariés",
+        "ca_approximatif": "145M€ de cotisations annuelles"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les vendeurs par téléphone",
+        "Exigeant sur la preuve de ROI avant tout engagement",
+        "Protecteur de son temps et de celui de son équipe"
+      ],
+      "motivations_profondes": [
+        "Atteindre ses objectifs de croissance du portefeuille clients entreprises (+12% imposé par le CODIR)",
+        "Moderniser la distribution sans perdre la relation humaine qui fait la différence face aux pure players",
+        "Être reconnu comme celui qui a digitalisé intelligemment le réseau commercial",
+        "Protéger sa position face à un DG qui lorgne sur des profils plus jeunes"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par une énième solution miracle qui ne sera jamais déployée",
+        "Perdre du temps en RDV inutiles qui l'éloignent du terrain",
+        "Que sa hiérarchie apprenne qu'il explore des solutions sans validation préalable",
+        "Déstabiliser un réseau de conseillers déjà sous pression",
+        "Les prestataires qui ne comprennent rien à la spécificité de la mutualité"
+      ],
+      "rapport_aux_commerciaux": "Blasé et sur la défensive. Reçoit 8 à 12 sollicitations par semaine. A appris à dire non en 30 secondes. Respecte uniquement ceux qui parlent son langage métier et arrivent avec de la donnée sectorielle précise.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe d'ironie. Attend qu'on lui prouve rapidement qu'on n'est pas un commercial lambda.",
+      "signaux_interet": [
+        "Pose des questions précises sur les résultats obtenus chez des mutuelles comparables",
+        "Mentionne spontanément ses contraintes actuelles ou objectifs chiffrés",
+        "Demande si vous connaissez untel chez Harmonie Mutuelle ou MAIF",
+        "Allonge le temps prévu initialement pour l'échange",
+        "Évoque l'agenda de son adjoint pour un prochain point"
+      ],
+      "signaux_rejet": [
+        "Coupe rapidement avec 'Écoutez, on a déjà un partenaire sur ce sujet'",
+        "Répète 'je n'ai pas le temps là' même si c'est faux",
+        "Demande d'envoyer une doc par mail (= façon polie de se débarrasser)",
+        "Dit 'c'est intéressant mais ce n'est pas le bon moment' sans préciser quand",
+        "Décroche un autre appel en plein milieu sans s'excuser"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...'",
+        "Dit 'Soyons clairs' quand il veut recadrer",
+        "Utilise 'Concrètement' pour demander de passer aux chiffres",
+        "Ponctue avec 'Voilà' quand il veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Au-delà, décroche mentalement ou coupe explicitement avec 'OK mais concrètement, vous m'apportez quoi?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance ralentie (+2,8% vs +12% prévu), pression du conseil d'administration pour moderniser la distribution. Projet de refonte CRM en cours mais enlisé. 3 départs de commerciaux seniors en 6 mois. Tension sur les marges à cause de la sinistralité post-Covid.",
+      "priorites_actuelles": [
+        "Recruter et rendre opérationnels 5 commerciaux d'ici fin Q2",
+        "Accélérer le cycle de vente moyen (actuellement 4,3 mois)",
+        "Améliorer le taux de transformation prospection à signature (actuellement 11%)",
+        "Défendre son budget formation 2025 qui risque d'être amputé de 30%"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 18 mois une plateforme de social selling qui n'a jamais été adoptée par l'équipe. A participé à 3 formations commerciales 'nouvelles techniques' ces 5 dernières années, bilan mitigé.",
+      "fournisseur_actuel": "Organisme de formation historique (dans le réseau depuis 12 ans) pour formations réglementaires IAS/DDA, mais rien de spécifique sur la prospection moderne",
+      "budget_disponible": "Budget formation 2025 de 180K€ pour 45 commerciaux, mais 70% déjà bloqué sur obligatoire réglementaire. Reste 54K€ de discrétionnaire, mais nécessite validation DRH + DG si >15K€ par action."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer des résultats chiffrés obtenus chez une mutuelle comparable (nom + métriques précises)",
+        "Mentionner une problématique spécifique au secteur mutualiste que les assureurs classiques n'ont pas",
+        "Démontrer une compréhension fine de la pression réglementaire actuelle (DDA, RGPD commercial)",
+        "Arriver avec un benchmark du marché qu'il n'a pas",
+        "Être recommandé par un pair qu'il respecte (réseau AGIPI, ROAM, CSCA)",
+        "Proposer un ROI mesurable sur une durée courte (6 mois max)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Confondre mutuelle et assurance classique dans le discours",
+        "Proposer un RDV sans avoir précisé l'objet concret et le bénéfice attendu",
+        "Utiliser du jargon startup ou des anglicismes à outrance",
+        "Ne pas connaître ses contraintes budgétaires et calendaires (clôture budget en novembre)",
+        "Insister lourdement après un premier refus poli",
+        "Promettre des résultats sans condition ni méthodologie claire",
+        "Dénigrer son fournisseur actuel ou ses méthodes existantes"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je reçois 10 appels par jour de gens qui veulent me vendre des formations commerciales. Là franchement j'ai un CODIR dans 20 minutes.",
+        "sous_texte": "Prouve-moi en 30 secondes que tu n'es pas un commercial lambda, sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rebondir sur le CODIR pour créer de la valeur immédiate : 'Justement, j'ai 2 chiffres sur la prospection en mutuelle qui pourraient vous servir pour votre CODIR, 45 secondes montre en main'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous êtes qui exactement ? Je ne connais pas votre société.",
+        "sous_texte": "Si tu n'as aucune légitimité sectorielle, ça ne sert à rien de continuer",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ancrer immédiatement sur une référence mutualiste : 'Nous accompagnons 3 mutuelles régionales sur leur prospection B2B, notamment la Mutuelle XXX qui a augmenté son taux de transformation de 11% à 18% en 6 mois'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec votre offre, je regarderai.",
+        "sous_texte": "C'est ma façon polie de me débarrasser de toi sans être désagréable",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence + valeur : 'Stéphane, soyons clairs, on sait tous les deux que ces mails finissent rarement en haut de la pile. J'ai juste UNE question métrique à vous poser qui me dira si ça vaut le coup qu'on se parle 15 minutes la semaine prochaine. Quel est votre cycle de vente moyen actuellement ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà un organisme de formation historique qui nous accompagne depuis 12 ans, on est très bien avec eux.",
+        "sous_texte": "Je ne vais pas trahir un partenaire fidèle pour un inconnu, sauf si tu m'apportes quelque chose de vraiment différent",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Complémentarité plutôt que remplacement : 'Parfait, je n'imagine pas une seconde remplacer un partenaire historique sur le réglementaire. Ce dont je parle, c'est les 54K€ de budget discrétionnaire sur la performance commerciale terrain, pas les formations IAS/DDA obligatoires'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous m'apportez quoi de plus que ce qu'on fait déjà en interne ?",
+        "sous_texte": "J'ai besoin de ROI mesurable, pas de concepts marketing flous",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ancrer sur sa métrique d'échec actuelle : 'Vous m'avez dit être à 11% de taux de transformation prospection. On a 3 mutuelles qui sont passées de 9-12% à 16-19% en 5 mois avec notre méthode. Ça représente pour une structure comme la vôtre environ 8 à 12 nouveaux contrats entreprises supplémentaires par trimestre'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, c'est pas le bon moment. On est en pleine refonte CRM, l'équipe est sous l'eau. Rappelez-moi dans 6 mois.",
+        "sous_texte": "J'ai trop de projets en cours, je ne veux pas en ajouter un autre qui va foirer",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner le timing : 'Je comprends totalement. Mais justement, si votre refonte CRM aboutit dans 4-5 mois et que vos commerciaux n'ont pas les méthodes pour l'exploiter efficacement, vous aurez un super outil sous-utilisé. C'est maintenant qu'il faut former, pas après'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, j'ai déjà testé il y a 18 mois une plateforme de social selling soi-disant révolutionnaire. Résultat : personne ne l'a utilisée, 35K€ dans le vent. Donc les promesses miracle...",
+        "sous_texte": "J'ai été échaudé, je ne veux pas reproduire cette erreur et me faire défoncer par ma direction",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie + différenciation méthodologique : 'C'est LA raison pour laquelle on ne propose jamais d'outil sans accompagnement terrain sur 6 mois. Votre échec n'est pas lié à l'outil mais à l'absence de coaching hebdomadaire. On ne vend pas un accès plateforme, on déploie avec vos managers'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais vos exemples c'est des assureurs classiques, pas des mutuelles. On n'a pas les mêmes contraintes, pas la même culture. Vous connaissez vraiment le monde mutualiste ?",
+        "sous_texte": "Si tu confonds mutuelle et assurance, tu ne comprendras jamais mes enjeux spécifiques",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer la connaissance sectorielle : 'Absolument, c'est pour ça que je cite la Mutuelle XXX et pas Generali. Vos contraintes spécifiques : gouvernance paritaire qui allonge les décisions, interdiction de publicité comparative, clients qui attendent une vraie proximité humaine face aux pure players... C'est exactement pour ça que notre approche est différente'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Soyons clairs : je n'ai pas 80 ou 100K€ à mettre sur une formation commerciale. Mon budget discrétionnaire c'est 54K€ grand max, et encore il faut que je justifie le ROI à ma DRH et au DG.",
+        "sous_texte": "Ne me fais pas perdre mon temps si ton prix est hors budget, et prouve-moi que je peux défendre ça en interne",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte + ROI défendable : 'Totalement compris. Notre accompagnement pour 45 commerciaux sur 6 mois c'est 42K€. Et pour le défendre en interne : si vous gagnez 2 contrats entreprises supplémentaires grâce à ça, vous êtes rentable. Le reste c'est du bonus'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Vous me parlez de 6 mois d'accompagnement, mais moi j'ai besoin de résultats MAINTENANT. J'ai le DG sur le dos avec mes +2,8% au lieu des 12% prévus. Dans 6 mois je serai peut-être remplacé.",
+        "sous_texte": "Je suis sous pression hiérarchique, j'ai besoin de quick wins visibles rapidement",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quick win + fond : 'Justement, on ne parle pas de résultats dans 6 mois. Premiers résultats mesurables en 6 à 8 semaines maximum. On commence par vos 5 meilleurs éléments en bootcamp intensif 3 jours, ils appliquent immédiatement, vous voyez les premiers contrats, et après on déploie sur le reste de l'équipe'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, c'est intéressant tout ça, mais je ne peux pas décider tout seul. Il faut que j'en parle à ma DRH, à mon DG, et franchement avec leur agenda...",
+        "sous_texte": "Je ne veux pas être celui qui porte le projet seul si ça foirerait, je veux partager la responsabilité",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Faciliter le processus interne : 'Bien sûr, c'est normal sur 42K€. Voici comment on fait habituellement : je vous envoie un executive summary 2 pages que vous pouvez transférer. Et si ça fait sens après votre discussion interne, je fais une visio 30 minutes avec vous + DRH + DG pour répondre à leurs questions. Vous gagnez du temps'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si on fait tout ça et que mes commerciaux n'appliquent pas, comme la dernière fois ? Vous me garantissez quoi exactement ?",
+        "sous_texte": "J'ai peur d'investir pour rien, je veux un filet de sécurité contractuel",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Engagement mesurable : 'On ne garantit pas un taux de transformation précis car il y a trop de variables externes. Par contre, notre engagement contractuel : si après 3 mois vos commerciaux n'ont pas augmenté leur nombre d'appels qualifiés de 25%, on prolonge l'accompagnement 2 mois gratuits. C'est écrit noir sur blanc'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais réfléchir à tout ça. Laissez-moi digérer et je vous recontacte si ça m'intéresse.",
+        "sous_texte": "Je veux clore poliment l'échange sans m'engager, et je ne te recontacterai probablement jamais",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Forcer la transparence avec respect : 'Stéphane, soyons honnêtes 30 secondes. Quand un directeur commercial me dit ça, dans 80% des cas ça veut dire non mais il ne veut pas le dire. Si c'est non, dites-le moi franchement, je respecterai totalement. Si c'est vraiment une réflexion, ok, mais qu'est-ce qui vous manque concrètement pour décider ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai bien compris votre offre, mais là je dois vraiment filer. On se rappelle, promis.",
+        "sous_texte": "Je suis vraiment pressé et je veux terminer l'appel, même si j'étais intéressé",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Respecter l'urgence + ancrer le next : 'Pas de problème, je ne vous retiens pas. Juste pour pas qu'on se rate : je vous bloque quoi dans votre agenda la semaine prochaine ? Mardi 9h ou jeudi 14h ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, votre truc a l'air bien, mais on doit déjà valider notre budget formation avec le CODIR en novembre. C'est trop tard pour 2025. Reparlez-moi en janvier 2026.",
+        "sous_texte": "Le timing budgétaire est réellement mauvais, ce n'est pas un prétexte",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer l'urgence calendaire : 'Je comprends la contrainte budgétaire 2025. Mais si on se voit 1h en octobre, vous avez encore le temps de défendre une ligne dédiée au CODIR de novembre. En janvier 2026, les budgets seront figés et vous attendrez 2027. Vous perdez 14 mois pendant que vos concurrents avancent'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, très bien. Admettons que je sois convaincu. Mais vous comprenez que je ne peux pas engager 42K€ sans en parler à mon DG et ma DRH. Et avec leur agenda de dingue et les 3 autres priorités qu'ils ont, ça va prendre minimum 6 à 8 semaines avant qu'on puisse se revoir tous. Donc concrètement, même si je veux, je ne peux pas avancer vite.",
+      "condition_declenchement": "Après avoir levé toutes les objections rationnelles, Stéphane utilise la lourdeur organisationnelle réelle de sa structure pour temporiser sans dire non"
+    },
+    "pattern_escalade": "Stéphane commence par des objections-réflexes de protection (pas le temps, envoyez un mail) dans les 60 premières secondes. Si le commercial résiste, il passe à des objections de crédibilité (vous connaissez vraiment le mutualisme ?). Une fois rassuré, il révèle ses vraies contraintes (budget, échec passé, pression hiérarchique). En phase finale, il teste la solidité du commercial avec des objections de processus interne. S'il sent de l'insistance lourde, il se ferme définitivement et redevient poli mais inaccessible.",
+    "piege_classique": "Stéphane donne parfois des signaux d'intérêt (pose des questions, mentionne ses KPI actuels) mais peut refermer brutalement si le commercial : 1) commence à vendre avant d'avoir compris son contexte précis, 2) utilise des arguments génériques non adaptés aux mutuelles, 3) ne respecte pas sa contrainte de temps explicite, 4) promet des résultats irréalistes. Son piège signature : demander un mail détaillé alors qu'il est intéressé, pour tester si le commercial sait closer ou se fait manipuler. S'il envoie le mail, il ne répondra jamais. S'il résiste intelligemment, Stéphane respecte et continue la discussion."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux entreprises du secteur finance/assurance",
+      "description": "Entreprise proposant des solutions ou services destinés aux compagnies d'assurance et sociétés de gestion"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service à forte valeur ajoutée nécessitant un contact avec les directeurs commerciaux ou de distribution",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement de barrage avec professionnalisme, obtenir l'accès aux décideurs et décrocher des RDV qualifiés dans un contexte multi-interlocuteurs du secteur finance/assurance",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Secteur mutualiste sous pression",
+    "vous_etes": "Commercial d'une société de services spécialisée finance/assurance, vous prospectez par téléphone des directeurs commerciaux de mutuelles et compagnies d'assurance.",
+    "vous_vendez": "Une solution ou service à forte valeur ajoutée destinée aux directions commerciales du secteur (nature et tarif à définir selon votre positionnement).",
+    "vous_appelez": "Stéphane Mérieux, 52 ans, Directeur Commercial et Marketing chez Mutuelle Patrimoine Éthique (280 salariés, 145M€ de cotisations). Homme pressé, méfiant, qui reçoit 10+ sollicitations par semaine et sait dire non en 30 secondes.",
+    "ce_que_vous_savez": [
+      "Mutuelle Patrimoine Éthique est en croissance ralentie : +2,8% réalisé vs +12% attendu par le conseil d'administration",
+      "L'entreprise a perdu 3 commerciaux seniors en 6 mois et cherche à recruter 5 nouveaux profils d'ici fin Q2",
+      "Le cycle de vente actuel est de 4,3 mois avec un taux de transformation de seulement 11%",
+      "Budget formation 2025 de 180K€ dont 70% bloqué sur réglementaire, reste 54K€ discrétionnaire avec validation DRH/DG si >15K€"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante de direction, accrocher Stéphane en 45 secondes maximum avec des données sectorielles concrètes, et décrocher un RDV physique en démontrant une compréhension fine de ses enjeux mutualistes.",
+    "vos_atouts": [
+      "Connaissance précise des contraintes du secteur mutualiste (DDA, RGPD commercial, spécificités vs assureurs classiques)",
+      "Capacité à parler chiffres et ROI mesurable sur 6 mois maximum",
+      "Références potentielles dans le réseau mutualiste (AGIPI, ROAM, CSCA)",
+      "Benchmark ou données de marché qu'il n'a probablement pas"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:19:32Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16177,
+    "total_time_s": 154.2
+  }
+}

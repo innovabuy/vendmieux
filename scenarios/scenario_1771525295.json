@@ -1,0 +1,325 @@
+{
+  "id": "scenario_1771525295",
+  "description_originale": "Le gérant / directeur d'exploitation d'une transporteur routier de 30-60 salariés, flotte de 20-40 véhicules (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : transport_logistique]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "30-60 salariés, flotte de 20-40 véhicules",
+      "interlocuteur_principal": {
+        "poste": "gérant / directeur d'exploitation",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service ou produit lié au secteur du transport routier (maintenance, carburant, assurance, pneus, logiciel de gestion de flotte, pièces détachées ou autre service B2B pour transporteurs)",
+      "proposition_valeur_presumee": "Fiabilité, qualité de service, relation de confiance établie avec client existant",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Oui, menace explicite de partir à la concurrence"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité ayant généré l'insatisfaction",
+        "Client mécontent menace de résilier le contrat",
+        "Risque immédiat de perte d'un client existant"
+      ],
+      "implicites": [
+        "Défaillance dans le processus de qualité ou de service client",
+        "Possibles problèmes de communication en amont",
+        "Attentes du client non satisfaites",
+        "Relation commerciale fragilisée malgré un historique client",
+        "Pression concurrentielle sur le marché",
+        "Besoin de renforcer la fidélisation client"
+      ],
+      "probleme_racine": "Défaillance opérationnelle ou qualitative ayant rompu la confiance d'un client établi, révélant une faiblesse dans la gestion de crise et la préservation de la relation commerciale"
+    },
+    "objections_mentionnees": [
+      "Menace de départ à la concurrence",
+      "Insatisfaction sur la qualité/service/livraison"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de réclamation client, au traitement des situations de crise, à la désescalade émotionnelle, à la proposition de solutions correctives rapides et à la préservation de la relation commerciale avec des clients existants mécontents",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B services ou produits pour le secteur transport routier",
+      "entreprise_description": "Entreprise fournissant des produits ou services aux transporteurs routiers, avec une base de clients existants",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service B2B destiné aux entreprises de transport routier avec flottes de véhicules",
+      "proposition_valeur": "Fiabilité, qualité de service, accompagnement des professionnels du transport, relation client de confiance",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client existant depuis durée non spécifiée"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance du client, historique de collaboration",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Nature précise du problème de qualité/livraison",
+        "Nom de l'entreprise vendeuse",
+        "Montant du contrat en jeu",
+        "Durée de la relation commerciale",
+        "Détails de l'offre concurrente"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Transports Marchand & Fils",
+        "secteur": "Transport routier de marchandises (lots complets et messagerie régionale)",
+        "taille": "43 salariés, 28 véhicules (porteurs et semi-remorques)",
+        "ca_approximatif": "4,2 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et terre-à-terre (self-made man issu de la conduite)",
+        "Impulsif sous pression (décisions à chaud qu'il regrette parfois)",
+        "Fidèle mais rancunier (n'oublie jamais une promesse non tenue)"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à son fils qui vient d'intégrer l'exploitation",
+        "Être respecté par ses chauffeurs (anciens collègues pour certains)",
+        "Ne pas passer pour un pigeon face à ses fournisseurs",
+        "Maintenir la réputation de fiabilité de sa boîte auprès des chargeurs"
+      ],
+      "peurs_freins": [
+        "Que ses clients finaux (chargeurs) le lâchent à cause d'un retard ou problème mécanique",
+        "Perdre le contrôle opérationnel maintenant que son fils monte en responsabilité",
+        "Se faire avoir par des commerciaux 'beaux parleurs' comme il dit",
+        "Que les marges continuent de fondre avec les charges qui explosent"
+      ],
+      "rapport_aux_commerciaux": "Méfiant par défaut. Respecte uniquement ceux qui connaissent vraiment le terrain, le métier de transporteur, et tiennent parole. Déteste le baratin et les promesses en l'air. Apprécie la franchise brutale.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cassant, presque agressif. Coupe la parole dès les premières secondes : 'Ouais c'est ça, vous m'appelez maintenant. Trois jours que j'attends et rien.'",
+      "signaux_interet": [
+        "Baisse légèrement le volume de sa voix",
+        "Pose des questions précises techniques ou de délai ('Et concrètement, c'est réglé quand ?')",
+        "Mentionne un problème opérationnel concret ('J'ai deux bahuts immobilisés là')",
+        "Fait référence à l'historique positif ('Bon, faut dire que jusqu'ici...')"
+      ],
+      "signaux_rejet": [
+        "Soupirs exaspérés audibles",
+        "Références immédiates à la concurrence : 'Leclerc Pneus me fait -15% et ils livrent sous 4h'",
+        "Menaces directes : 'Écoutez, j'ai pas de temps à perdre, je change de crèmerie'",
+        "Raccroche sans prévenir si sent qu'on le baratine"
+      ],
+      "tics_langage": [
+        "'Franchement...' (en début de phrase quand il est agacé)",
+        "'Faut pas me prendre pour un jambon' (expression favorite)",
+        "'Sur le terrain' (répété souvent pour insister sur la réalité opérationnelle)",
+        "Tutoiement possible si la relation se détend",
+        "Ponctue de 'hein' ou 'là' en fin de phrase"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi nulle. Coupe au bout de 15-20 secondes maximum si ne sent pas que ça avance concrètement. Dans ce contexte de crise, tolérance encore réduite : veut des solutions, pas des explications."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Période tendue : deux camions immobilisés depuis 3 jours à cause d'un problème de livraison de pièces/pneus/carburant (selon l'offre). Un client chargeur important (Sodiaal) menace de basculer chez un concurrent transporteur. Thierry est sous pression de son fils qui lui dit qu'il faut moderniser les process fournisseurs.",
+      "priorites_actuelles": [
+        "Remettre les deux véhicules en route AVANT le weekend (on est jeudi)",
+        "Garder le contrat Sodiaal (30% du CA)",
+        "Montrer à son fils qu'il gère encore la boîte",
+        "Éviter que les chauffeurs se plaignent au vestiaire"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans. Satisfait jusqu'à présent, mais c'est la deuxième micro-défaillance en 3 mois (la première fois il avait laissé passer). Commence à douter.",
+      "fournisseur_actuel": "Vous (celui qui appelle). Mais a déjà demandé un devis à deux concurrents cette semaine.",
+      "budget_disponible": "Contraint. Pas de marge de manœuvre pour payer plus cher. Si changement de fournisseur, ce sera à prix équivalent ou inférieur."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour du problème : 'Thierry, j'appelle parce qu'on a merdé, c'est clair'",
+        "Solution concrète avec timing précis : 'Livraison demain matin 7h, je viens moi-même si besoin'",
+        "Geste commercial chiffré instantané (pas 'on verra', mais '10% de remise sur cette commande, facturé aujourd'hui')",
+        "Parler en termes d'impact opérationnel : 'Je comprends, deux bahuts à l'arrêt, c'est 800 balles de perdu par jour minimum'",
+        "Engagement personnel : 'Je te donne mon portable perso, tu m'appelles directement si re-problème'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Langue de bois : 'Nous allons étudier la situation...'",
+        "Rejeter la faute : 'En fait c'est votre commande qui était pas claire...'",
+        "Noyer dans la procédure : 'Il faut que je remonte au service qualité...'",
+        "Minimiser : 'Bon c'est pas si grave, ça arrive...'",
+        "Promettre sans pouvoir tenir : 'Je vous livre dans 2h' alors que c'est impossible",
+        "Parler de 'partenariat' ou de 'relation win-win' (jargon qu'il déteste)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais c'est ça, vous m'appelez maintenant. Trois jours que j'attends et rien. Franchement, j'ai deux bahuts à l'arrêt là, vous vous rendez compte ou quoi ?",
+        "sous_texte": "Je suis furieux et je veux que vous le sachiez immédiatement. Je teste votre capacité à encaisser ma colère et à reconnaître votre faute. Si vous cherchez des excuses, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance immédiate sans justification + chiffrage de l'impact que ça représente pour lui"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai pas de temps pour les belles paroles là. J'ai Leclerc Pneus qui me fait -15% et qui livre sous 4h. Alors dites-moi franchement pourquoi je resterais avec vous, hein ?",
+        "sous_texte": "Je vous mets face au mur avec du concret. J'ai déjà une alternative crédible. Prouvez-moi en 30 secondes que vous méritez une dernière chance, sinon je bascule.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence + rappeler l'historique positif + solution immédiate supérieure"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, vous comprenez... Tout le monde comprend. Mais sur le terrain, j'ai Sodiaal qui menace de me larguer. Eux ils comprennent pas, ils veulent des camions qui roulent. Point.",
+        "sous_texte": "Vos paroles empathiques ne valent rien si elles ne se traduisent pas en solutions concrètes. Je suis coincé entre vous et mon client. Montrez-moi que vous mesurez les vrais enjeux financiers.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler l'enjeu chiffré + proposer une solution qui inclut un plan pour sécuriser sa relation avec Sodiaal"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais c'est la deuxième fois en trois mois, là. La première fois j'ai rien dit, mais là franchement... Faut pas me prendre pour un jambon non plus.",
+        "sous_texte": "Je vous ai donné une première chance que vous ne méritez pas forcément. Mon seuil de tolérance est dépassé. Si je ne vois pas un changement structurel, pas juste un pansement, je pars.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître les deux incidents + expliquer LA cause racine + détailler les mesures correctives durables déjà mises en place"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon fils, là, il me dit qu'il faut qu'on modernise nos fournisseurs, qu'on peut plus bosser avec des boîtes qui foirent. Et franchement, il a pas tort, hein.",
+        "sous_texte": "Je suis en train de perdre la face auprès de mon successeur. C'est personnel. Je dois prouver que mon choix de fournisseur était bon, ou admettre qu'il a raison et changer. Mon ego est en jeu.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son fils + positionner la solution comme moderne/professionnelle + impliquer éventuellement le fils dans la solution"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Une remise c'est bien gentil, mais ça me rend pas mes camions disponibles pour vendredi matin. Le geste commercial il sert à quoi si je perds Sodiaal ?",
+        "sous_texte": "Votre geste financier est insuffisant face à l'urgence opérationnelle. Je teste si vous avez vraiment compris mes priorités ou si vous balancez juste une carotte commerciale classique.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier que la remise vient EN PLUS de la solution opérationnelle + détailler le plan de remise en route avec horaires précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Demain 7h... Ouais, comme la dernière fois où on m'a dit 'demain matin' et c'est arrivé à 14h. Vous me garantissez quoi exactement ?",
+        "sous_texte": "Ma confiance est brisée. Les promesses ne suffisent plus. Je veux un engagement vérifiable, avec votre peau sur la table, sinon c'est du vent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engagement personnel ultra-précis + numéro direct + conséquence claire si non-respect (ex: gratuité)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous dites que vous réglez le problème... Mais c'est quoi concrètement le problème au juste ? Parce que là j'ai l'impression que vous savez même pas ce qui a déconcé.",
+        "sous_texte": "Je veux voir si vous maîtrisez vraiment le dossier ou si vous improvisez. Je teste votre compétence technique et votre honnêteté. Si vous bottez en touche, je ne vous fais plus confiance.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explication factuelle précise de la cause + responsabilité assumée + lien avec la solution proposée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons. Mais pourquoi je devrais vous faire confiance maintenant alors que vous avez déjà merdé deux fois ? Qu'est-ce qui change vraiment, là ?",
+        "sous_texte": "Vous m'avez perdu. Vous devez me vendre à nouveau votre crédibilité, pas juste votre produit. Je cherche des preuves tangibles que quelque chose a structurellement changé dans votre organisation.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Actions correctives déjà implémentées (pas futures) + preuve/indicateur vérifiable + engagement de suivi personnalisé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais réfléchir. Je vous rappelle la semaine prochaine, on verra bien.",
+        "sous_texte": "C'est un refus poli déguisé. Je n'ai pas l'intention de rappeler. Je veux clore la conversation sans conflit supplémentaire. Soit vous créez l'urgence maintenant, soit c'est fini.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recadrer sur l'urgence vendredi + créer un point de bascule (si décision reportée, camions encore à l'arrêt lundi)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, même si vous livrez demain, mes gars au vestiaire ils me cassent les couilles avec ça. Ça fout une ambiance de merde dans la boîte, vous comprenez ?",
+        "sous_texte": "L'impact va au-delà du financier. Vous avez abîmé mon autorité et le climat social. Je cherche une reconnaissance de ce préjudice-là aussi, pas juste une solution technique.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'impact humain/managérial + proposer éventuellement un geste qui valorise les chauffeurs ou facilite la communication interne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, on va faire comme ça. Mais je vous préviens hein, à la prochaine embrouille, je zappe direct, j'hésite même plus. C'est clair ?",
+        "sous_texte": "J'accepte à contrecœur, en position de force retrouvée. Je pose des conditions ultra-strictes pour protéger mon ego et garder le contrôle. C'est votre dernière chance, littéralement.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la condition sans négocier + reformuler l'engagement + remercier pour la confiance accordée"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attendez, là vous me sortez un plan sur 3 semaines... J'ai besoin de mes camions DEMAIN. C'est trop tard vos conneries. Je vais signer avec Leclerc cet aprèm, au moins eux ils assurent. Allez, salut.",
+      "condition_declenchement": "Si le commercial propose des solutions à moyen terme sans régler l'urgence immédiate OU s'il n'a pas proposé de geste significatif dans les 2 premières minutes OU s'il a cherché à justifier/minimiser au lieu de reconnaître"
+    },
+    "pattern_escalade": "Thierry démarre en colère contenue (niveau 7/10). Si reconnaissance immédiate + solution concrète : redescend à 4-5/10 et devient pragmatique. Si langue de bois ou justifications : monte à 9/10 avec menaces directes puis 10/10 raccrochage brutal. Point de non-retour atteint si on nie le problème, si on promet sans pouvoir tenir, ou si on dépasse 3 minutes sans solution actionnée.",
+    "piege_classique": "Croire que la relation de 4 ans suffit à le retenir. Thierry est fidèle SAUF si on brise sa confiance. Dans ce cas, l'historique devient un POIDS ('Justement, après 4 ans vous devriez être au point'). Autre piège : vouloir creuser les besoins en mode découverte classique. Il veut des SOLUTIONS maintenant, pas une analyse. Poser trop de questions = perte de temps = énervement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B services ou produits pour le secteur transport routier",
+      "description": "Entreprise fournissant des produits ou services aux transporteurs routiers, avec une base de clients existants"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service B2B destiné aux entreprises de transport routier avec flottes de véhicules",
+      "proposition_valeur": "Fiabilité, qualité de service, accompagnement des professionnels du transport, relation client de confiance",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client existant depuis durée non spécifiée"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance du client, historique de collaboration"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à la gestion de réclamation client, au traitement des situations de crise, à la désescalade émotionnelle, à la proposition de solutions correctives rapides et à la préservation de la relation commerciale avec des clients existants mécontents",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Transporteur mécontent",
+    "vous_etes": "Commercial terrain chez un fournisseur B2B pour le transport routier, en poste depuis 3 ans avec un portefeuille de 40 clients actifs.",
+    "vous_vendez": "Pièces détachées et pneumatiques pour flottes de transport routier, avec livraison express sous 24h en temps normal.",
+    "vous_appelez": "Thierry Marchand, 52 ans, gérant de Transports Marchand & Fils (43 salariés, 28 véhicules). Ancien routier devenu patron, direct et sans filtre. Client depuis 4 ans, jamais eu de problème majeur jusqu'à maintenant.",
+    "ce_que_vous_savez": [
+      "Deux de ses camions sont immobilisés depuis 3 jours à cause d'un retard de livraison de votre part",
+      "Son client principal Sodiaal (30% de son CA) menace de partir chez un concurrent transporteur",
+      "Il a déjà demandé des devis à deux concurrents cette semaine",
+      "C'est jeudi, il DOIT remettre ses bahuts en route avant le weekend",
+      "Il est sous pression de son fils qui pousse pour changer de fournisseurs"
+    ],
+    "votre_objectif": "Sauver le client : désamorcer sa colère, proposer une solution concrète immédiate, et éviter qu'il résilie le contrat.",
+    "vos_atouts": [
+      "4 ans de relation sans accroc majeur jusqu'à cette semaine",
+      "Vous connaissez personnellement son exploitation et ses contraintes",
+      "Vous avez un stock disponible en entrepôt régional pour livraison demain matin",
+      "Vous pouvez débloquer un geste commercial immédiat sans validation hiérarchique"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:21:35Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15245,
+    "total_time_s": 143.2
+  }
+}

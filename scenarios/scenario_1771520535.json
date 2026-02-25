@@ -1,0 +1,357 @@
+{
+  "id": "scenario_1771520535",
+  "description_originale": "Vous appelez une ETI industrielle de 200-400 salariés, production en série, plusieurs sites. L'assistante de direction du directeur des achats ou directeur industriel décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : industrie]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés, production en série, plusieurs sites",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats ou directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante de direction",
+          "role": "filtre/gatekeeping",
+          "profil": "professionnelle, habituée aux commerciaux, exigeante"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B ciblant les achats ou la production industrielle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Barrage systématique par l'assistante de direction",
+        "Difficulté à accéder au décideur"
+      ],
+      "implicites": [
+        "Manque de crédibilité perçue lors de l'appel",
+        "Discours commercial trop générique",
+        "Absence de légitimité démontrée pour justifier le contact direct",
+        "Incapacité à créer de l'urgence ou de l'intérêt immédiat",
+        "Positionnement comme vendeur plutôt que comme apporteur de valeur"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas établir leur crédibilité et leur légitimité auprès des assistantes de direction, qui les perçoivent comme des solliciteurs génériques plutôt que comme des interlocuteurs professionnels apportant une valeur spécifique à l'entreprise"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à franchir le barrage des assistantes de direction avec professionnalisme et élégance, en établissant la crédibilité nécessaire pour accéder aux décideurs et obtenir des RDV qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "B2B industriel",
+      "entreprise_description": "Fournisseur de solutions pour ETI industrielles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ciblant les directions achats ou industrielles d'ETI en production série",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Nom et identité de l'entreprise vendeuse",
+        "Prix ou budget type",
+        "Références clients existantes"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Valérie",
+      "nom": "Montet",
+      "age": 52,
+      "poste": "Assistante de Direction du Directeur des Achats et du Directeur Industriel",
+      "entreprise": {
+        "nom": "Techniplast Industries",
+        "secteur": "Plasturgie industrielle - injection et thermoformage",
+        "taille": "ETI 340 salariés, 3 sites de production (Oyonnax, Bellegarde, Ambérieu)",
+        "ca_approximatif": "78M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Gardienne sourcilleuse du temps de ses directeurs",
+        "Professionnelle aguerrie avec 28 ans d'expérience",
+        "Méfiante envers les commerciaux depuis qu'elle en reçoit 15-20 par semaine"
+      ],
+      "motivations_profondes": [
+        "Protéger l'agenda surchargé de ses deux directeurs qui lui font confiance depuis 11 ans",
+        "Être reconnue comme professionnelle compétente, pas juste un 'standard téléphonique'",
+        "Éviter que ses directeurs lui reprochent d'avoir laissé passer un interlocuteur non pertinent",
+        "Maintenir son statut dans l'entreprise en contrôlant l'accès aux décideurs"
+      ],
+      "peurs_freins": [
+        "Que son directeur perde du temps avec un énième commercial qui promet monts et merveilles",
+        "Être contournée (appels directs via LinkedIn, passages en force) ce qui menace sa légitimité",
+        "Paraître incompétente en laissant passer quelqu'un de non pertinent",
+        "Les commerciaux qui utilisent son prénom trop vite ou font semblant de la connaître"
+      ],
+      "rapport_aux_commerciaux": "Profondément blasée. Entend les mêmes phrases 50 fois par mois. Détecte instantanément les scripts. Respecte uniquement ceux qui la traitent en professionnelle légitime, pas en obstacle. A développé un 'radar à baratin' ultra-efficace.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais froid. Coupe court immédiatement si elle sent le discours commercial classique. Voix posée mais ferme: 'Oui bonjour' sans chaleur particulière.",
+      "signaux_interet": [
+        "Pose une question précise sur votre activité (signe qu'elle évalue la pertinence)",
+        "Dit 'Attendez je note' plutôt que 'Envoyez un mail'",
+        "Mentionne spontanément un contexte interne: 'Justement M. Berger cherche...'",
+        "Demande l'orthographe exacte de votre nom et entreprise",
+        "Propose elle-même un créneau: 'Je peux vous caler mardi en huit, 14h30'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible avant de répondre",
+        "Coupe la parole: 'Oui j'ai compris, envoyez un mail'",
+        "Ton qui durcit: 'Comme je vous l'ai DIT, M. Berger ne prend pas d'appel'",
+        "Utilise le 'nous': 'On ne travaille pas comme ça' (distanciation)",
+        "Demande sarcastiquement: 'Et vous appelez toutes les entreprises de France comme ça?'"
+      ],
+      "tics_langage": [
+        "Répète 'Oui, oui, oui' de manière agacée quand on insiste",
+        "Dit 'Écoutez...' avant de poser une limite ferme",
+        "Utilise 'De toute façon' pour couper court: 'De toute façon il n'est pas disponible'",
+        "Lance un 'Ah mais attendez' quand elle sent qu'on essaie de la manipuler"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "7-10 secondes maximum. Au-delà, coupe avec un 'Oui donc envoyez-nous une documentation par mail'. Si le commercial continue, raccroche poliment mais fermement dans les 30 secondes."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance soutenue mais marges sous pression. Ses deux directeurs (Achats et Industriel) sont débordés avec un projet d'optimisation de la supply chain et une certification ISO 14001 en cours. Ils reçoivent déjà 3-4 commerciaux par semaine sur RDV et en ont marre.",
+      "priorites_actuelles": [
+        "Réduire le coût matière (objectif -8% donné par la direction)",
+        "Améliorer les délais de livraison fournisseurs (tension actuelle)",
+        "Finaliser la certification environnementale d'ici fin Q2"
+      ],
+      "experience_avec_offre_similaire": "Techniplast reçoit en permanence des propositions de consommables, outillage, prestations de conseil, logiciels. La plupart n'apportent rien de neuf. Valérie a appris à repérer en 20 secondes si c'est pertinent.",
+      "fournisseur_actuel": "Panel d'une trentaine de fournisseurs récurrents qu'elle connaît par cœur. Contrats cadres avec les principaux. Peu de place pour les nouveaux entrants sauf réelle innovation.",
+      "budget_disponible": "Elle ne le connaît pas précisément mais sait que M. Berger (Dir. Achats) a de la marge de manœuvre sur les projets validés. En revanche, zéro patience pour les 'gadgets' ou les solutions cherchant un problème."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un contexte précis de l'entreprise montrant qu'on s'est renseigné (pas de ChatGPT générique)",
+        "Référencer une entreprise similaire du secteur qu'elle connaît ou respecte",
+        "Adopter un ton de professionnel à professionnel, pas de vendeur à obstacle",
+        "Demander SON avis sur la pertinence plutôt que d'insister pour passer",
+        "Reconnaître explicitement son rôle de filtre légitime: 'Je comprends que vous protégiez son temps'",
+        "Proposer quelque chose de très concret, mesurable, avec un avant/après clair",
+        "Accepter un 'non' avec élégance et demander le bon timing plutôt que forcer"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre connaître M. Berger alors que c'est faux (elle vérifie systématiquement)",
+        "Dire 'C'est rapide, juste 5 minutes' (mensonge détecté)",
+        "Phrases bateau: 'Nous sommes leader', 'Nous accompagnons les entreprises comme la vôtre'",
+        "Tutoiement ou familiarité déplacée: 'Valérie, vous allez bien?'",
+        "Insister après qu'elle ait dit non: perçu comme du non-respect",
+        "Demander son nom pour 'personnaliser le mail' (elle sait que c'est pour bypasser ensuite)",
+        "Ton condescendant ou qui minimise son rôle: 'Vous pourriez juste me passer...'",
+        "Appeler le vendredi après 16h ou le lundi matin avant 10h (ses pires moments)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, c'est à quel sujet exactement ?",
+        "sous_texte": "Je reçois 20 appels par jour. Prouve-moi en 10 secondes que tu ne vas pas me faire perdre mon temps avec du commercial générique.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Réponse ultra-précise en une phrase courte, avec contexte spécifique à l'entreprise. Pas de blabla commercial."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, on reçoit énormément de sollicitations. Envoyez-nous un mail avec votre documentation, on regardera.",
+        "sous_texte": "Tu es le 12ème commercial cette semaine. Je te classe dans la catégorie 'mail poubelle' pour te faire partir poliment.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître sa légitimité à filtrer + donner UNE raison factuelle précise qui justifie pourquoi un échange vocal de 90 secondes a du sens AVANT le mail."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui, oui, oui... mais vous proposez quoi concrètement ? Parce que là je ne vois pas trop le rapport avec notre activité.",
+        "sous_texte": "Ton accroche est trop floue. Tu parles comme tous les autres. Sois concret ou je raccroche dans 15 secondes.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reformuler en langage métier précis, avec chiffre ou problématique industrielle concrète. Prouver qu'on connaît LEUR réalité."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attendez, vous connaissez Monsieur Berger ? Parce que je ne vois pas de trace d'échange avec votre société.",
+        "sous_texte": "Tu as dit son prénom comme si vous vous connaissiez. Je détecte la technique commerciale classique. Tu viens de perdre toute crédibilité.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transparence totale immédiate. Reconnaître qu'on ne le connaît pas personnellement et expliquer pourquoi on l'appelle lui spécifiquement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "De toute façon Monsieur Berger est en réunion toute la journée, il ne prend pas d'appel.",
+        "sous_texte": "Objection standard pour te faire partir. Je ne sais pas encore si tu mérites que je lui en parle ou non.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contourner. Reconnaître sa surcharge + proposer QUE Valérie évalue d'abord la pertinence elle-même, car c'est son rôle."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on travaille déjà avec des fournisseurs sur ces sujets-là. On n'a pas spécialement de besoin pour le moment.",
+        "sous_texte": "Soit sincère : on est effectivement équipés. Soit test : je vérifie si tu as un vrai différenciateur ou si tu es juste un 'moi aussi'.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter que ça puisse être vrai + poser UNE question précise sur leur situation actuelle qui démontre expertise, sans insister."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous appelez toutes les entreprises comme ça ? Parce que je ne vois pas ce qui vous fait penser qu'on aurait besoin de ça chez nous.",
+        "sous_texte": "Tu prospectes au hasard avec un discours générique. Prouve-moi que ce n'est PAS du spam industriel, sinon je te classe définitivement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Expliquer précisément POURQUOI Techniplast spécifiquement (secteur, taille, contexte) avec élément factuel vérifié, pas du ChatGPT."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Soupir... Bon très bien, mais qu'est-ce que vous attendez de moi exactement ? Parce que c'est Monsieur Berger qui décide de ces choses-là, pas moi.",
+        "sous_texte": "Tu es dans la catégorie 'pas totalement nul'. Mais ne me demande pas de décider à sa place. Dis-moi clairement ce que tu veux que JE fasse.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser explicitement son rôle d'évaluatrice + demander SON avis PRO sur la pertinence avant de solliciter un accès au directeur."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais on me dit tout le temps qu'il y a des économies à la clé. Après c'est rarement aussi simple que ce qu'on nous présente.",
+        "sous_texte": "J'ai entendu ces promesses 500 fois. 90% du temps c'est du vent. Mes directeurs sont devenus méfiants. Prouve que tu es dans les 10%.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence sur les conditions de réussite + référence client similaire VÉRIFIABLE + proposer une approche exploratoire sans engagement."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez je note... Vous dites que vous travaillez avec qui dans le secteur ? Parce que là les noms que vous citez, je ne les connais pas.",
+        "sous_texte": "Je vérifie si tes références sont vraiment crédibles ou si tu inventes. Je connais bien le secteur. Ne me prends pas pour une débutante.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer uniquement des références VRAIES, vérifiables, et accepter de ne pas en avoir si c'est le cas. Zéro bullshit."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin 'optimisation', 'performance', ce sont des grands mots... Qu'est-ce que ça veut dire concrètement pour nous ?",
+        "sous_texte": "Arrête le jargon commercial creux. Parle en opérationnel concret : euros, jours, pourcentages, process. Sinon tu es comme les 18 autres cette semaine.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler en langage métier industriel précis, avec ordre de grandeur chiffré et exemple process concret de leur secteur."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, ça peut éventuellement les intéresser mais là franchement ils sont débordés avec la certification et le projet supply chain. C'est pas le moment.",
+        "sous_texte": "Sincère : ils sont vraiment surchargés. Si tu n'as pas d'urgence ou de lien avec leurs priorités actuelles, tu n'as aucune chance.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le timing + faire un lien légitime avec la supply chain OU proposer un horizon à 2-3 mois avec relance soft."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et ça dure combien de temps votre rendez-vous ? Parce que 'un petit rendez-vous' ça veut tout et rien dire.",
+        "sous_texte": "Je ne les engage PAS sur quelque chose de flou. Dis-moi la durée réelle, pas celle que tu annonces pour faire passer.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer la durée RÉELLE (45-60min si c'est ça) et expliquer pourquoi ça nécessite ce temps. Crédibilité = transparence."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon je vais lui en parler, mais je ne vous promets rien hein. Envoyez-moi quand même un mail avec ce qu'on s'est dit.",
+        "sous_texte": "Tu as passé le premier filtre. Mais je vais évaluer encore. Si ton mail est générique ou trop commercial, je ne transmets pas.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Remercier sincèrement pour son rôle de filtre légitime + confirmer mail ultra-personnalisé + proposer de relancer ELLE dans X jours."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je préfère être honnête avec vous : pour le moment ils ne vont pas recevoir de nouveaux commerciaux. Ils m'ont demandé de freiner les RDV.",
+        "sous_texte": "Sincère : consigne réelle. Mais si tu as VRAIMENT quelque chose d'exceptionnel et que tu respectes ma position, je peux éventuellement faire une exception.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Respecter totalement sa consigne + demander quel serait le BON moment OU quelle condition rendrait une exception légitime. Élégance absolue."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui, oui, oui... De toute façon envoyez votre mail, on vous rappellera si ça les intéresse.",
+        "sous_texte": "Je te pousse vers la sortie poliment. Tu n'as pas assez convaincu. Ce mail finira archivé sans lecture. Dernier test : acceptes-tu ou insistes-tu ?",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Poser UNE question fermée ultime qui démontre que tu as compris LEUR contexte spécifique, pour créer un dernier déclic. Sinon accepter avec classe."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être claire avec vous : je ne pense pas que ça corresponde à ce qu'on cherche actuellement. Mais si vraiment vous pensez que ça a du sens, envoyez votre mail à mon attention, je verrai si je transmets. Bonne journée.",
+      "condition_declenchement": "Après 2-3 tentatives maladroites (insistance, argument faible, manque de crédibilité). Valérie met fin poliment mais fermement. Le 'je verrai si je transmets' signifie 90% de chances que non."
+    },
+    "pattern_escalade": "Valérie commence professionnelle neutre. Si le commercial montre des signaux positifs (précision, respect, légitimité), elle s'ouvre progressivement et teste la solidité. Si signaux négatifs (générique, insistant, script), elle durcit en 3 étapes : 1) Objection réflexe standard, 2) Ton plus sec avec signaux verbaux (soupirs, 'oui oui'), 3) Clôture ferme polie. Le basculement se fait en 30-45 secondes.",
+    "piege_classique": "Le commercial interprète 'envoyez un mail' comme une vraie ouverture alors que c'est une technique de sortie polie. Autre piège : essayer de contourner Valérie (demander le portable direct, appeler sur un autre numéro) détruit instantanément toute chance future. Elle le signale aux directeurs qui blacklistent l'entreprise."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "B2B industriel",
+      "description": "Fournisseur de solutions pour ETI industrielles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ciblant les directions achats ou industrielles d'ETI en production série",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à franchir le barrage des assistantes de direction avec professionnalisme et élégance, en établissant la crédibilité nécessaire pour accéder aux décideurs et obtenir des RDV qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Franchir le barrage assistante de direction",
+    "vous_etes": "Commercial B2B spécialisé en solutions industrielles, vous prospectez des ETI en production série.",
+    "vous_vendez": "Une solution pour optimiser les achats ou la production industrielle (consommables, outillage, conseil ou logiciel) — budget significatif, cycle de vente long.",
+    "vous_appelez": "Valérie Montet, 52 ans, assistante de direction du Directeur des Achats et du Directeur Industriel chez Techniplast Industries (plasturgie, 340 salariés, 3 sites). Professionnelle aguerrie, 28 ans d'expérience. Elle filtre 15-20 appels commerciaux par semaine et détecte instantanément les scripts. Méfiante, protectrice de l'agenda de ses directeurs, elle ne respecte que ceux qui la traitent en professionnelle légitime.",
+    "ce_que_vous_savez": [
+      "Techniplast est une ETI en plasturgie industrielle basée à Oyonnax avec 3 sites de production",
+      "L'entreprise est en croissance mais les marges sont sous pression",
+      "Ses directeurs sont débordés : projet supply chain + certification ISO 14001 en cours",
+      "Priorité achats actuelle : réduire le coût matière de -8% et améliorer les délais fournisseurs",
+      "Valérie reçoit déjà 3-4 commerciaux par semaine en RDV, ses directeurs saturent"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique avec le Directeur des Achats ou le Directeur Industriel en établissant votre crédibilité auprès de Valérie.",
+    "vos_atouts": [
+      "Vous avez travaillé avec des ETI similaires en plasturgie ou production série",
+      "Votre solution apporte un ROI mesurable et concret (gains chiffrés)",
+      "Vous respectez le rôle de filtre de Valérie et ne cherchez pas à la contourner",
+      "Vous êtes capable de justifier la pertinence de votre appel avec du contexte précis"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:02:15Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15891,
+    "total_time_s": 139.6
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "id": "scenario_1771519870",
+  "description_originale": "Le directeur d'agence / fondateur d'une agence de recrutement ou cabinet RH de 10-25 consultants (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : rh_recrutement]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "10-25 consultants",
+      "interlocuteur_principal": {
+        "poste": "Directeur d'agence / Fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution ou service destiné aux cabinets de recrutement et agences RH",
+      "proposition_valeur_presumee": "Amélioration de l'efficacité opérationnelle, qualité de service, ou optimisation des processus de recrutement",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Oui, menace de partir à la concurrence"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison, service ou qualité",
+        "Client mécontent menace de résilier",
+        "Risque de perte d'un client existant"
+      ],
+      "implicites": [
+        "Manque de processus de gestion des réclamations",
+        "Défaillance dans la qualité de service ou le suivi client",
+        "Communication insuffisante avec le client",
+        "Possibilité d'attentes mal alignées ou non clarifiées",
+        "Manque d'anticipation des problèmes potentiels"
+      ],
+      "probleme_racine": "Défaillance opérationnelle ayant entraîné une rupture de confiance avec un client stratégique, révélant probablement des lacunes dans les processus de contrôle qualité et de gestion de la relation client"
+    },
+    "objections_mentionnees": [
+      "Menace de partir à la concurrence",
+      "Insatisfaction sur la qualité/livraison/service"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de crise et à la récupération de clients mécontents, notamment à désamorcer les situations conflictuelles, traiter les réclamations avec empathie, proposer des solutions concrètes et préserver la relation commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions ou services B2B pour le secteur RH/Recrutement",
+      "entreprise_description": "Fournisseur de solutions ou services destinés aux cabinets de recrutement et agences RH, avec un portefeuille de clients existants",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service utilisé par des cabinets de recrutement pour optimiser leurs opérations (potentiellement : logiciel ATS, formation, sourcing, CVthèque, outils d'évaluation, etc.)",
+      "proposition_valeur": "Amélioration de l'efficacité, de la qualité du service ou optimisation des processus métier pour les professionnels du recrutement",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Détails précis du problème de qualité/livraison",
+        "Informations sur l'entreprise vendeuse",
+        "Historique de la relation commerciale",
+        "Valeur du contrat",
+        "Zone géographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Sandrine",
+      "nom": "Mercier",
+      "age": 44,
+      "poste": "Directrice et cofondatrice",
+      "entreprise": {
+        "nom": "Altitude Talents",
+        "secteur": "Cabinet de recrutement spécialisé IT et Digital",
+        "taille": "17 consultants permanents + 3 alternants",
+        "ca_approximatif": "2,1M€ (en baisse de 8% sur l'année)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeante et directe, issue de la vente elle-même",
+        "Protectrice envers son équipe et sa réputation",
+        "Pragmatique: calcule immédiatement le ROI de chaque décision"
+      ],
+      "motivations_profondes": [
+        "Préserver la réputation du cabinet construite en 12 ans",
+        "Ne pas perdre la face devant ses consultants après avoir vanté votre solution",
+        "Maintenir sa croissance malgré un marché IT qui ralentit"
+      ],
+      "peurs_freins": [
+        "Que ses clients finaux apprennent les dysfonctionnements",
+        "Avoir fait le mauvais choix de fournisseur et devoir l'admettre en comité de direction",
+        "Perdre du temps en palabres alors qu'elle a 3 recrutements urgents à clôturer cette semaine"
+      ],
+      "rapport_aux_commerciaux": "Ambivalent: elle était commerciale avant de créer son cabinet donc elle détecte instantanément les techniques et déteste qu'on la prenne pour une novice. Respecte la franchise brutale, méprise la langue de bois.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, avec une pointe d'agressivité contenue. Commence probablement par 'Bon, je vous écoute' ou 'Alors, on fait quoi maintenant?' sans préambule",
+      "signaux_interet": [
+        "Prend des notes manuscrites (signe qu'elle envisage encore une solution)",
+        "Pose des questions précises sur les process internes: 'Qui exactement a validé ça chez vous?'",
+        "Mentionne spontanément un cas d'usage futur si le problème est résolu",
+        "Passe du vouvoiement distant au 'tu' pragmatique"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Coupe la parole avec 'Oui oui j'ai compris' de manière sèche",
+        "Mentionne explicitement le concurrent: 'TalentSoft me relance depuis 3 mois de toute façon'",
+        "Regarde ostensiblement son téléphone ou tape sur son clavier pendant que vous parlez",
+        "Utilise le 'nous' institutionnel: 'NOUS allons devoir prendre une décision'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand elle est agacée",
+        "Abuse du 'concrètement' pour recadrer",
+        "Dit 'voilà' de manière conclusive pour clore un sujet",
+        "Utilise 'c'est pas l'usine à gaz non plus' quand elle trouve quelque chose trop complexe"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, elle interrompt avec une question fermée ou un 'Oui et donc?' impatient. Déteste particulièrement les reformulations de ce qu'elle vient de dire."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet sous pression: marché IT qui ralentit, 2 consultants seniors partis à la concurrence en 6 mois, guerre des prix avec les gros cabinets. A investi lourdement dans votre solution il y a 8 mois pour se différencier, donc l'échec actuel la met en porte-à-faux en interne.",
+      "priorites_actuelles": [
+        "Finaliser 3 recrutements cadres IT avant fin de mois (objectifs trimestriels)",
+        "Préparer l'AG des associés dans 3 semaines où elle doit justifier les investissements tech",
+        "Gérer l'intégration d'une nouvelle consultante junior qui galère"
+      ],
+      "experience_avec_offre_similaire": "A testé 4 solutions en 12 ans. Reste méfiante car a vécu 2 déceptions majeures dont une migration ratée il y a 5 ans qui a paralysé l'activité pendant 10 jours. Attend donc des preuves, pas des promesses.",
+      "fournisseur_actuel": "C'est VOUS, mais elle a reçu 2 démos de TalentSoft et un appel insistant de Beetween la semaine dernière. N'a pas encore résilié mais a demandé à son DAF de vérifier les clauses de sortie du contrat.",
+      "budget_disponible": "Bloqué jusqu'à fin d'année. Tout nouvel investissement tech doit passer en comité (elle + 2 associés). Peut éventuellement réallouer l'enveloppe actuelle mais devra batailler en interne si elle vous garde."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de l'erreur ('On a merdé, je vous le dis cash')",
+        "Preuve que vous avez identifié la cause racine précise, pas un discours générique",
+        "Plan d'action chiffré avec dates et responsable nommé côté fournisseur",
+        "Geste commercial concret SANS qu'elle ait à le demander (montre que vous assumez)",
+        "Référence à un client similaire qui a vécu le même problème et comment vous l'avez récupéré",
+        "Lui donner un levier interne: quelque chose qu'elle peut présenter positivement à ses associés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser le problème ou chercher à partager la responsabilité avec son équipe",
+        "Langue de bois commerciale type 'nous prenons cela très au sérieux' sans acte concret",
+        "Demander un nouveau délai sans garantie ni contrepartie",
+        "Tenter de la 'rassurer' avec des généralités sur votre entreprise ou vos autres clients",
+        "Proposer une réunion à 6 personnes pour 'comprendre' alors qu'elle veut une SOLUTION maintenant",
+        "Montrer que vous n'avez pas préparé l'appel: ne pas connaître l'historique précis de son dossier"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon, je vous écoute. Mais franchement j'ai trois recrutements à boucler avant vendredi donc si c'est pour me refaire le coup du 'on va regarder ça de près', on va gagner du temps tous les deux.",
+        "sous_texte": "Je suis déjà énervée, sous pression, et je ne tolérerai aucune perte de temps. Prouve-moi immédiatement que cet appel vaut le coup ou je raccroche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance cash de l'erreur + annonce d'une solution concrète en 30 secondes max. Pas de préambule relationnel."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, TalentSoft m'a rappelée pas plus tard qu'hier. Ils sont 40% moins chers et ils me garantissent un déploiement en 3 semaines. Donc voilà, je suis pas sûre qu'on ait encore grand-chose à se dire.",
+        "sous_texte": "Je teste ta réaction face à la concurrence. Est-ce que tu vas paniquer et brader ton offre, ou est-ce que tu as vraiment quelque chose d'unique à m'apporter ? Je veux voir si tu assumes.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer TalentSoft ni paniquer sur le prix. Reconnaître leur légitimité mais recentrer sur la relation historique et ce que vous seul pouvez faire pour réparer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui j'ai compris le problème, vous me l'avez déjà expliqué par mail. Moi ce que je veux savoir concrètement, c'est QUI chez vous a validé la mise en prod sans nous prévenir ? Parce que là c'est la deuxième fois en trois mois.",
+        "sous_texte": "Je veux un coupable identifié, pas des explications systémiques. J'ai besoin de savoir que quelqu'un chez vous est responsable et que ça ne se reproduira pas. Je teste ta transparence.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Nommer précisément le responsable côté fournisseur, expliquer ce qui a dysfonctionné dans le process, et annoncer la modification du protocole avec validation client obligatoire."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est pas juste technique. C'est que j'ai vendu votre solution à mes associés en novembre dernier. J'ai un AG dans trois semaines et là je fais quoi ? Je leur dis qu'on a claqué 40K€ pour un truc qui plante tous les deux mois ?",
+        "sous_texte": "Mon vrai problème c'est pas vous, c'est ma crédibilité interne. Si tu ne me donnes pas des munitions pour défendre ce choix devant mes pairs, je suis obligée de partir. Aide-moi à sauver la face.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Fournir un document de synthèse présentable en AG : problèmes + actions correctives + gains réels obtenus malgré les incidents + engagement formel de la direction. Donner des éléments factuels défendables."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez combien ça nous a coûté ce bug la semaine dernière ? Deux placements perdus, un client final qui nous a mis en copie les trois concurrents pour nous mettre la pression. Ma réputation en 12 ans, vous croyez que je vais la risquer pour vous ?",
+        "sous_texte": "Le coût réel dépasse largement votre abonnement. Je dois calculer si réparer avec vous vaut le coup ou si partir à la concurrence est moins risqué, même avec les coûts de migration.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Chiffrer le préjudice reconnu, proposer une compensation financière précise (pas 'un geste'), et surtout présenter le plan pour éviter toute récidive avec garanties contractuelles."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est pas l'usine à gaz non plus de mettre en place un process de validation ! Tous vos concurrents le font. Pourquoi vous me sortez ça maintenant alors que ça aurait dû être en place depuis le début ?",
+        "sous_texte": "Je trouve votre solution trop complexe et mal fichue. Si quelque chose d'aussi basique n'était pas prévu, qu'est-ce qui me garantit que le reste est solide ? Je commence à douter de votre professionnalisme.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer l'erreur de conception initiale, expliquer pourquoi ce n'était pas prévu (pivot produit, évolution usage), et présenter la nouvelle version déjà développée pour les autres clients."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre plan d'action, franchement, il est bien sur le papier. Mais combien de clients vous avez récupérés après ce genre de situation ? Donnez-moi UN exemple concret avec nom et prénom.",
+        "sous_texte": "Je ne crois plus vos belles paroles. Je veux une preuve sociale que vous êtes capables de réparer vos erreurs et que d'autres vous ont fait confiance après un plantage. Sinon c'est du vent.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer un cas client réel similaire (avec accord préalable), détailler le problème vécu, les actions menées, et proposer de mettre Sandrine en contact direct avec ce client pour témoignage."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans deux mois vous me refaites le coup ? Moi pendant ce temps j'aurai refusé TalentSoft, j'aurai fait patienter mes associés, et je me retrouverai comme une conne avec un outil qui marche pas.",
+        "sous_texte": "Mon risque décisionnel est énorme. Si je vous donne une seconde chance et que vous foirez, je perds toute crédibilité. Je dois me couvrir. Quelle garantie réelle peux-tu m'offrir au-delà des promesses ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une clause contractuelle de sortie sans pénalité pendant 6 mois si récidive, avec engagement écrit signé par votre direction. Mettre votre peau en jeu, pas que des mots."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, si je reste avec vous, qu'est-ce que j'obtiens que TalentSoft peut pas me donner ? Parce que là pour l'instant tout ce que je vois c'est qu'ils sont moins chers et qu'ils ont pas fait planter mon système.",
+        "sous_texte": "Prouve-moi ta valeur ajoutée réelle maintenant que tu es en position de faiblesse. Le prix n'est plus ton avantage, la fiabilité non plus. Qu'est-ce qui reste ? Si tu n'as rien, je bascule.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recentrer sur l'historique : données déjà migrées, intégrations spécifiques développées pour elle, connaissance métier de son activité. Chiffrer le coût RÉEL de migration en temps et euros."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, tout ça c'est bien beau, mais je dois en parler à mes associés. Je peux pas décider ça toute seule, surtout après ce qui s'est passé. On se rappelle la semaine prochaine.",
+        "sous_texte": "Je veux me défausser de la responsabilité de la décision. En réalité soit je ne suis pas convaincue et je temporise, soit j'ai besoin d'un élément supplémentaire pour convaincre mes associés. Identifie lequel.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de participer à la réunion des associés pour présenter vous-même le plan, ou fournir un dossier clé en main qu'elle peut présenter. Ne pas accepter le report sans ancrer un engagement minimal."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Votre geste commercial, il est sympa, mais vous croyez vraiment que deux mois offerts ça rattrape deux placements perdus à 15K€ pièce ? Vous vous foutez de ma gueule là.",
+        "sous_texte": "Ton geste commercial est insultant par rapport au préjudice réel. Soit tu ne comprends pas l'ampleur du problème, soit tu me prends pour une débutante qu'on achète avec des miettes. Je suis vexée ET en colère.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître que le préjudice dépasse le geste initial, proposer une compensation chiffrée en % du contrat annuel (ex: 30% de remise sur 6 mois) ou features premium offertes, calculée sur son CA perdu."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon très bien, on va dire que je vous donne une dernière chance. Mais je vous préviens : au moindre pépin, je résilie. Et je veux votre directeur commercial en copie de tous les échanges pour les 6 prochains mois.",
+        "sous_texte": "J'accepte mais je ne te fais plus confiance à toi personnellement. Je veux une garantie hiérarchique que tu ne pourras pas me balader. C'est un test : comment gères-tu cette exigence de contrôle ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter immédiatement et proposer même d'inclure votre directeur dès la prochaine réunion pour co-signer le plan d'action. Montrer que vous n'avez rien à cacher et que toute l'entreprise s'engage."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais. Je vais y réfléchir. De toute façon j'ai mon DAF qui doit vérifier les clauses de sortie du contrat donc on verra bien.",
+        "sous_texte": "Je ne suis pas convaincue et je suis déjà mentalement en train de partir. Le fait que j'ai déjà demandé à mon DAF de vérifier les clauses montre que je suis très avancée dans ma réflexion de départ. C'est presque trop tard.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Créer l'urgence : 'Sandrine, si votre DAF regarde les clauses, c'est que vous êtes déjà partie mentalement. Qu'est-ce qui vous ferait changer d'avis AUJOURD'HUI ?' Aller chercher l'objection finale cachée."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi ? J'ai réfléchi ce week-end. Le problème c'est pas votre solution, c'est la confiance. Vous l'avez cassée. Et moi j'ai pas le temps ni l'énergie de reconstruire ça. Mes associés ont raison : on passe à autre chose. Je vous envoie le courrier de résiliation dans la semaine.",
+      "condition_declenchement": "Se déclenche si : (1) le commercial n'a pas reconnu l'erreur de manière authentique et immédiate, (2) aucun geste commercial significatif ou engagement contractuel fort n'a été proposé, (3) le commercial a cherché à minimiser ou partager la responsabilité, (4) aucun élément défendable en AG n'a été fourni, (5) la conversation a dépassé 8 minutes sans solution concrète actée."
+    },
+    "pattern_escalade": "Sandrine suit un pattern d'escalade émotionnelle rapide si elle sent du faux-semblant. Elle commence froide et factuelle (test), passe à l'agressivité contenue si les réponses sont évasives (pression), puis devient cassante et définitive (rupture). Le point de bascule est vers la 4ème minute : si à ce moment elle n'a pas obtenu (a) reconnaissance authentique + (b) solution chiffrée + (c) engagement hiérarchique, elle décroche mentalement. Après ce point, elle peut encore être dans la conversation physiquement mais a déjà décidé de partir. Indicateur clé : passage du 'vous' au 'on' institutionnel ('ON va devoir prendre une décision') signale qu'elle s'est dissociée émotionnellement.",
+    "piege_classique": "Le piège mortel avec Sandrine est de tomber dans la justification technique ou la défense. Étant ex-commerciale, elle détecte instantanément quand quelqu'un est en posture défensive plutôt qu'en posture de résolution. Autre piège : croire qu'un geste commercial standard suffira. Elle calcule immédiatement le ratio préjudice/compensation, et si c'est déséquilibré elle le vit comme un manque de respect. Enfin, piège subtil : essayer de créer de la complicité commerciale ('entre nous, vous savez comment c'est...') alors qu'elle est justement en train de vous évaluer sur votre capacité à sortir de ce registre et à être dans l'action concrète. Avec elle, moins on parle, plus on acte, mieux c'est."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions ou services B2B pour le secteur RH/Recrutement",
+      "description": "Fournisseur de solutions ou services destinés aux cabinets de recrutement et agences RH, avec un portefeuille de clients existants"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service utilisé par des cabinets de recrutement pour optimiser leurs opérations (potentiellement : logiciel ATS, formation, sourcing, CVthèque, outils d'évaluation, etc.)",
+      "proposition_valeur": "Amélioration de l'efficacité, de la qualité du service ou optimisation des processus métier pour les professionnels du recrutement",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à la gestion de crise et à la récupération de clients mécontents, notamment à désamorcer les situations conflictuelles, traiter les réclamations avec empathie, proposer des solutions concrètes et préserver la relation commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client en crise — Récupération cabinet de recrutement",
+    "vous_etes": "Account Manager chez un éditeur de logiciel ATS/CRM pour cabinets de recrutement",
+    "vous_vendez": "Solution SaaS d'optimisation du recrutement (ATS/CRM), déployée chez Altitude Talents il y a 8 mois",
+    "vous_appelez": "Sandrine Mercier, 44 ans, Directrice et cofondatrice d'Altitude Talents (17 consultants, spécialistes IT/Digital). Ex-commerciale, directe, exigeante, déteste la langue de bois. Actuellement furieuse après un dysfonctionnement majeur de votre solution.",
+    "ce_que_vous_savez": [
+      "Un problème de livraison ou de qualité technique a paralysé leur activité récemment",
+      "Elle a demandé à son DAF de vérifier les clauses de sortie du contrat",
+      "TalentSoft et Beetween la démarchent activement cette semaine",
+      "Elle doit présenter les investissements tech en AG associés dans 3 semaines",
+      "Elle a 3 recrutements urgents à clôturer avant fin de mois et n'a pas de temps à perdre"
+    ],
+    "votre_objectif": "Sauver le contrat en proposant un plan d'action concret avec dates, responsable nommé et geste commercial immédiat",
+    "vos_atouts": [
+      "Vous avez identifié la cause racine précise du problème (et vous la connaissez)",
+      "Vous avez un plan de remédiation technique déjà validé en interne avec ressources dédiées",
+      "Un geste commercial exceptionnel pré-approuvé (3 mois offerts ou upgrade gratuit)",
+      "Un cas client similaire récupéré avec succès il y a 4 mois (cabinet lyonnais, 20 personnes)"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:51:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16113,
+    "total_time_s": 155.3
+  }
+}

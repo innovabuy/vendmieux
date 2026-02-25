@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771525198",
+  "description_originale": "Le directeur de l'agence / fondateur d'une agence de communication ou marketing de 10-25 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : communication_marketing]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur d'agence / Fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution BtoB (type non précisé)",
+      "proposition_valeur_presumee": "Solution à forte valeur ajoutée pour agences de communication/marketing",
+      "fourchette_prix": "Prix perçu comme élevé par le prospect - marge de négociation de 10% maximum",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix systématique",
+        "Difficulté à défendre la valeur face à la pression tarifaire"
+      ],
+      "implicites": [
+        "Manque d'argumentation valeur vs prix",
+        "Risque de bradage commercial par cession trop rapide",
+        "Positionnement prix peut-être mal calibré ou mal justifié",
+        "Nécessité de structurer la négociation avec des contreparties"
+      ],
+      "probleme_racine": "Incapacité à ancrer la valeur perçue avant la négociation prix et à structurer des concessions conditionnelles"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix, structurer une négociation commerciale avec marges de manœuvre limitées, obtenir des contreparties et conclure sans brader",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de solution BtoB pour agences de communication/marketing",
+      "entreprise_description": "Entreprise commercialisant une solution professionnelle destinée aux agences de communication et marketing de taille PME",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution BtoB positionnée premium pour le secteur communication/marketing",
+      "proposition_valeur": "Solution apportant une valeur substantielle justifiant un positionnement prix élevé - à détailler selon ROI, gain de temps, différenciation ou performance",
+      "prix_indicatif": "Positionnement premium avec marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Prix précis et montant de la remise maximale",
+        "Historique de la relation commerciale",
+        "Éléments de valeur concrets à défendre",
+        "Concessions possibles autres que le prix",
+        "Niveau d'intérêt réel du prospect",
+        "Alternatives concurrentielles considérées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Lemercier",
+      "age": 44,
+      "poste": "Directeur Général & Co-fondateur",
+      "entreprise": {
+        "nom": "Pixel & Sense",
+        "secteur": "Agence de communication digitale et stratégie de marque",
+        "taille": "17 salariés",
+        "ca_approximatif": "1,8M€ (en stagnation depuis 18 mois)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique obsessionnel sur les coûts",
+        "Défenseur acharné de son expertise métier",
+        "Négociateur rodé qui teste systématiquement les limites"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité dans un marché ultra-concurrentiel",
+        "Ne pas paraître naïf ou 'pigeon' face aux commerciaux",
+        "Moderniser l'agence mais sans prendre de risque financier inconsidéré",
+        "Prouver qu'il maîtrise encore après 12 ans - le syndrome de l'entrepreneur qui doute"
+      ],
+      "peurs_freins": [
+        "Surinvestir dans un outil qui ne sera pas adopté par l'équipe",
+        "Se faire avoir sur le prix alors que son associé lui reproche déjà ses décisions d'achat précédentes",
+        "Perdre des marges alors que deux commerciaux viennent de partir",
+        "Décevoir ses clients historiques en changeant de process"
+      ],
+      "rapport_aux_commerciaux": "Méfiance cordiale. Les considère comme des adversaires sympathiques dans une partie d'échecs. Respecte ceux qui tiennent tête, méprise ceux qui cèdent trop vite.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais légèrement distant. Commence souvent par : 'Bon alors, on va pas y passer trois heures, hein...'",
+      "signaux_interet": [
+        "Pose des questions très techniques sur l'implémentation concrète",
+        "Mentionne spontanément des situations clients réelles où l'outil pourrait servir",
+        "Demande des références spécifiques dans son secteur",
+        "Son débit ralentit légèrement quand un argument fait mouche",
+        "Utilise le conditionnel projet : 'Si on devait déployer ça...'"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Ouais ouais, ça je connais'",
+        "Regarde ostensiblement son téléphone ou soupire",
+        "Lance des phrases assassines : 'Vous me faites le même pitch que [concurrent] il y a six mois'",
+        "Ramène systématiquement à la dimension prix : 'Tout ça c'est bien joli, mais au final...'",
+        "Termine ses phrases par 'de toute façon' - signe qu'il a déjà décidé"
+      ],
+      "tics_langage": [
+        "Abuse du 'Franchement' en début de phrase",
+        "Dit 'Voilà' pour ponctuer et clore artificiellement un sujet",
+        "Utilise 'On va pas se mentir' avant d'annoncer une objection",
+        "Coupe régulièrement avec 'Attends attends' quand il veut reprendre la main",
+        "Termine par 'après bon' quand il concède un demi-point"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Faible - 45 secondes maximum avant interruption. Déteste les 'pitchs' et le jargon commercial. Veut du concret, du chiffré, du cas d'usage."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stoppée depuis début 2023. Pression sur les marges avec l'inflation salariale. Associé (directeur de création) en désaccord sur les investissements tech vs créatifs. Deux clients majeurs renégocient leurs budgets à la baisse. Pipeline commercial correct mais conversions plus lentes.",
+      "priorites_actuelles": [
+        "Réduire le temps passé sur l'administratif pour remettre les commerciaux sur le terrain",
+        "Industrialiser certains process pour gagner en productivité sans recruter",
+        "Différencier l'offre face aux freelances et micro-agences low-cost",
+        "Rassurer son banquier lors du prochain comité de crédit dans 5 semaines"
+      ],
+      "experience_avec_offre_similaire": "A testé deux solutions concurrentes dont une abandonnée après 4 mois (mauvaise adoption équipe). Croit savoir 'comment ça marche' et les pièges à éviter. A développé un certain cynisme.",
+      "fournisseur_actuel": "Utilise une solution bricolée maison (Google Workspace + Trello + un CRM gratuit). Conscient des limites mais 'au moins ça coûte rien'.",
+      "budget_disponible": "Budget formation/outils 2024 déjà entamé à 60%. Peut débloquer 8-12K€ maximum mais doit justifier le ROI en moins de 12 mois auprès de son associé. Préférerait étaler le paiement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Références ultra-précises dans son secteur avec metrics : 'L'agence X a réduit ses délais de prod de 23% en 6 mois'",
+        "Reconnaissance de ses contraintes spécifiques sans bullshit : 'Je comprends, avec 17 personnes vous êtes dans la zone où c'est ni fait maison ni grosse structure'",
+        "Transparence sur les limites de la solution : paradoxalement, avouer ce que l'outil ne fait PAS renforce la crédibilité",
+        "Approche ROI chiffrée : 'Sur votre volumétrie, ça représente 47h/mois économisées, soit...'",
+        "Ne pas céder immédiatement sur le prix mais proposer une négociation structurée avec contreparties claires"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours générique sur 'l'innovation' ou 'la transformation digitale' - déclenche son réflexe anti-bullshit",
+        "Comparaison avec des grands comptes : 'Des agences comme Publicis utilisent...' - il n'est PAS Publicis",
+        "Lâcher une remise de 10% dès la première objection - il interprétera ça comme une marge cachée énorme donc prix de base arnaque",
+        "Ne pas connaître son métier : confondre stratégie de marque et création graphique = crédibilité zero",
+        "Insister lourdement sur l'urgence ou la deadline de l'offre - tactique usée qu'il repère à 10km",
+        "Manquer de réactivité : s'il demande une info technique et qu'on promet de revenir sous 48h, c'est mort"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors on va pas y passer trois heures hein, parce que franchement j'ai un comité de direction dans 30 minutes et je sais déjà à peu près comment ça se passe ces trucs-là.",
+        "sous_texte": "Je pose immédiatement un cadre de contrôle pour montrer que c'est moi qui gère la temporalité. Je teste aussi si tu vas te laisser intimider ou si tu tiens ta position.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le cadre temporel tout en posant TON propre cadre de valeur : 'Justement Stéphane, pas de souci. J'ai prévu 20 minutes max. Par contre pour que ce soit utile pour vous, j'aurais 2-3 questions précises sur votre situation actuelle. Ça vous va ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attends attends, vous me faites le même pitch que trois autres boîtes le mois dernier. Vous avez quelque chose de vraiment différent ou c'est du réchauffé ?",
+        "sous_texte": "Je suis surinformé et blasé. Prouve-moi tout de suite que tu n'es pas un commercial clone. Je cherche aussi à te déstabiliser pour prendre l'ascendant psychologique.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas se justifier ni dénigrer la concurrence. Pivoter vers SA réalité : 'Peut-être. C'est justement pour ça que je préfère partir de VOS enjeux concrets plutôt que vous réciter un catalogue. Vous m'avez dit au téléphone que vous aviez stoppé votre croissance depuis 18 mois - qu'est-ce qui bloque concrètement ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a déjà un système qui fonctionne. Google Workspace, Trello, un petit CRM gratuit... Ouais c'est bricolé mais au moins ça nous coûte rien. Pourquoi je changerais ?",
+        "sous_texte": "Je défends mon choix passé pour ne pas paraître incompétent. En réalité, je sais que c'est bancal mais je veux d'abord savoir si tu comprends vraiment les limites avant de les avouer moi-même.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Légitimer son choix puis créer l'écart de manière factuelle : 'C'est cohérent pour votre taille à l'époque. Question concrète : quand un de vos commerciaux perd un deal, vous mettez combien de temps à comprendre pourquoi avec votre setup actuel ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a testé [concurrent] il y a 18 mois, ça a duré 4 mois et personne l'utilisait. J'ai perdu 6000 balles et mon associé me le rappelle encore. Voilà. Donc bon, j'ai un peu donné sur ces conneries.",
+        "sous_texte": "J'ai une blessure commerciale non refermée qui crée une méfiance profonde. Je teste si tu vas balayer ça d'un revers de main ou vraiment creuser ce qui s'est passé. C'est aussi une excuse pré-positionnée pour dire non.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec sans défendre ton produit : 'Je comprends. C'est quoi qui a fait que ça n'a pas pris concrètement ? L'outil était trop complexe, pas adapté à vos process, ou problème d'accompagnement au déploiement ?' Identifier les vraies causes pour éviter de reproduire."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, mes équipes croulent déjà sous les outils. Ils passent leur temps à jongler entre quinze plateformes différentes. Rajouter encore un truc, je vous dis pas la résistance que je vais me prendre.",
+        "sous_texte": "Je projette ma propre lassitude sur l'équipe. En réalité, je crains surtout de mal conduire le changement et de revivre l'échec précédent. Je teste aussi si tu vas me vendre 'encore un outil de plus' ou une simplification réelle.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner le problème : 'Combien d'outils vos équipes utilisent aujourd'hui pour gérer un projet client du brief à la facturation ?' Puis démontrer la CONSOLIDATION plutôt que l'ajout."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais, ça je connais, vous allez tous me dire la même chose. 'Gains de productivité', 'ROI rapide', tout ça c'est bien joli sur le papier. Moi j'ai besoin de chiffres concrets, pas de brochure marketing.",
+        "sous_texte": "J'ai développé une immunité aux arguments commerciaux classiques. Je veux du factuel ultra-précis sur MA situation, pas des généralités. Je teste aussi ta capacité à personnaliser vs réciter un pitch.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter l'argumentation générique immédiatement : 'Vous avez raison, les généralités ça ne sert à rien. Prenons VOS chiffres : vous m'avez dit 17 personnes, combien de projets clients actifs en parallèle en moyenne ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, l'agence X que vous me citez en référence, ils ont 45 personnes et trois fois notre budget. On n'est pas dans la même cour. Ça marche pour eux, ça veut pas dire que ça marchera chez nous.",
+        "sous_texte": "Je ne veux pas être comparé à plus gros que moi - syndrome du 'moi c'est différent'. Mais c'est aussi une vraie inquiétude : est-ce que la solution est réellement adaptée à ma taille ou je vais payer pour des fonctionnalités inutiles ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la différence puis donner une référence EXACTE à sa taille : 'Vous avez raison, mauvais exemple. [Agence Y] qui a 15 personnes dans le même secteur a justement utilisé que 3 modules sur 7 disponibles et...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On va pas se mentir, mon associé va me demander pourquoi on investit là-dedans alors qu'on devrait renforcer l'équipe créative. Il faut que je justifie, et c'est pas gagné.",
+        "sous_texte": "Je révèle la vraie dynamique de décision : je ne suis pas seul décideur même si je suis DG. J'ai besoin d'arguments pour convaincre en interne. C'est un signal d'intérêt déguisé en objection - je commence à me projeter.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Saisir l'opportunité : 'Qu'est-ce qui ferait dire OK à votre associé ? Un ROI en combien de temps ? Des garanties de résultat ? Je peux vous préparer des éléments concrets pour votre discussion.'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "De toute façon, tout ça c'est bien mais au final, on parle de combien ? Parce que j'imagine que ça doit pas être donné votre truc.",
+        "sous_texte": "Je ramène au prix pour reprendre le contrôle de la discussion et tester ta réaction. Je présuppose que c'est cher pour me positionner psychologiquement en situation de force pour négocier. Mais si j'aborde le sujet, c'est que je suis intéressé.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS donner le prix immédiatement. Ancrer la valeur d'abord : 'On va y venir Stéphane. Avant ça, sur les éléments qu'on vient de voir, qu'est-ce qui vous paraît le plus impactant pour Pixel & Sense concrètement ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vais être transparent avec vous : mon budget formation et outils 2024 est déjà entamé à 60%. Il me reste pas des masses de marge de manœuvre, après bon...",
+        "sous_texte": "Je commence à négocier en posant mes contraintes budgétaires réelles. Le 'après bon' final signifie que je suis prêt à discuter si tu me donnes des solutions (étalement, phasage, etc.). C'est un signal positif masqué.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Explorer les options sans brader : 'OK, on a plusieurs clients dans cette situation. Deux questions : 1) Combien représente ce budget résiduel en ordre de grandeur ? 2) Y a-t-il une possibilité de décaler une partie sur Q1 2025 ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, votre solution m'intéresse mais là on est à 14 800 euros. C'est 40% au-dessus de ce que j'avais budgété. Il faut qu'on se rapproche sinon je peux pas valider.",
+        "sous_texte": "Je pose une vraie objection prix mais je viens de dire 'ça m'intéresse' donc je suis acheteur. Je teste ta marge de négo en annonçant un écart important. J'observe si tu vas paniquer et lâcher une remise ou structurer une vraie discussion.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas céder, creuser : '14 800€ vs combien exactement que vous aviez budgété ?' Puis explorer les contreparties : durée d'engagement, modules, accompagnement, références, étude de cas... Toute concession doit avoir une contrepartie."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, vos concurrents m'ont proposé 20% de remise direct. Là vous me proposez 8% avec des conditions. On va pas se mentir, je vais aller au moins-disant si vous bougez pas plus.",
+        "sous_texte": "Je bluffe probablement sur les 20% ou je déforme la réalité (prix de base différent, scope différent). Je teste ta solidité et j'utilise une tactique classique de négociation par la pression concurrentielle. Si tu cèdes, je perds confiance.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Tenir ferme avec empathie : 'Je comprends Stéphane. Question directe : est-ce que leur solution répond aussi précisément à [enjeu clé identifié en découverte] ? Parce que si oui, prenez-la. Si non, on parle pas du même investissement.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, je vais réfléchir. Je dois en parler avec mon associé de toute façon. Je vous recontacte la semaine prochaine, voilà.",
+        "sous_texte": "Je fuis la décision par une excuse semi-légitime. Soit je ne suis vraiment pas convaincu du rapport valeur/prix, soit je veux gagner du temps pour faire pression, soit je dois vraiment consulter mais j'ai peur de me faire démonter par mon associé.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Bloquer la fuite sans agresser : 'Stéphane, quand un dirigeant me dit ça c'est soit qu'il n'est pas convaincu, soit qu'il a besoin d'éléments pour convaincre en interne. Vous êtes dans quel cas ?' Puis proposer un plan d'action concret avec deadline."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, vous me mettez la pression avec votre deadline de fin de mois pour l'offre. Ces techniques commerciales ça marche pas avec moi. Si je dois signer, je signe quand je veux.",
+        "sous_texte": "Je déteste qu'on me force la main et je le signale agressivement. Mais je suis aussi possiblement intéressé sinon je dirais juste non. Je teste si ta deadline est réelle ou fictive pour faire pression. J'ai besoin qu'on respecte mon autonomie décisionnelle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent : 'Vous avez raison, c'est pas une technique. Voici pourquoi cette date : [raison objective]. Maintenant, si vous avez besoin de plus de temps pour une vraie décision éclairée, je préfère qu'on décale plutôt que vous vous sentiez forcé.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement je suis à deux doigts de vous dire oui, mais j'ai besoin d'une garantie : si dans 6 mois ça prend pas dans les équipes, qu'est-ce qui se passe ? J'ai déjà donné avec [concurrent], je peux pas me permettre de revivre ça.",
+        "sous_texte": "Je révèle ma vraie peur : l'échec d'adoption qui me ferait perdre argent, crédibilité et confiance de l'associé. Si tu me rassures concrètement sur ce point (pas avec du blabla mais un vrai dispositif), je signe. C'est le dernier verrou.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un dispositif concret : clause de revoyure à 4 mois avec indicateurs d'usage définis, engagement d'accompagnement renforcé les 2 premiers mois, co-construction du plan de déploiement, testimonial d'un client similaire sur l'adoption."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK, mettons que je dis oui. Mais je veux étaler le paiement sur 18 mois et je veux que les deux premiers mois soient gratuits le temps qu'on teste vraiment en conditions réelles. Sinon ça passe pas.",
+        "sous_texte": "Je négocie les derniers centimètres mais je suis fondamentalement acheteur. J'essaie d'obtenir des conditions de paiement pour préserver ma tréso et limiter mon risque. Je teste aussi jusqu'où tu peux aller sur les conditions commerciales.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Négocier avec contreparties : 'Stéphane, écoutez. Sur le paiement 18 mois OK si engagement ferme. Sur les 2 mois gratuits, je peux pas. Par contre je peux vous proposer [alternative concrète]. En échange, je vous demande [contrepartie].'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, franchement j'ai compris votre truc, je vois l'intérêt. Mais j'ai mon banquier dans 5 semaines pour un comité de crédit et je peux pas me permettre de sortir 15K maintenant. Si vous pouviez me faire quelque chose à 9 500€ avec un paiement différé à 60 jours, là je signe aujourd'hui. Sinon de toute façon, je peux pas.",
+      "condition_declenchement": "Se déclenche après que toutes les objections de valeur sont levées et que Stéphane est convaincu de l'intérêt de la solution. C'est l'objection ultime cash/conditions de paiement présentée comme absolue mais en réalité négociable si le commercial structure intelligemment avec contreparties réelles."
+    },
+    "pattern_escalade": "Stéphane suit un pattern prévisible : 1) Prise de contrôle initial par la pression temporelle et la posture de 'j'ai déjà vu', 2) Test de crédibilité par objections métier et références à son échec passé, 3) Ramène systématiquement au prix dès qu'un argument touche pour reprendre l'ascendant, 4) Négocie agressivement avec techniques de pro (ancrage de contraintes, pression concurrentielle, deadline inversée), 5) Révèle ses vraies peurs (associé, échec adoption, trésorerie) quand il sent qu'il va acheter, 6) Demande tout ce qu'il peut obtenir au closing car c'est son dernier moment de pouvoir.",
+    "piege_classique": "Le piège avec Stéphane c'est de céder sur le prix trop tôt pour 'débloquer la situation'. Il TESTE la solidité du commercial. Une remise rapide lui fait penser : 1) Le prix de base était gonflé donc je me fais avoir, 2) Ce commercial est faible donc le produit est peut-être pas si bon, 3) Je peux probablement obtenir encore plus. Paradoxe : tenir ferme avec empathie et structure augmente sa confiance et sa propension à acheter, même à prix plus élevé. Il respecte la résistance intelligente."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de solution BtoB pour agences de communication/marketing",
+      "description": "Entreprise commercialisant une solution professionnelle destinée aux agences de communication et marketing de taille PME"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution BtoB positionnée premium pour le secteur communication/marketing",
+      "proposition_valeur": "Solution apportant une valeur substantielle justifiant un positionnement prix élevé - à détailler selon ROI, gain de temps, différenciation ou performance",
+      "prix": "Positionnement premium avec marge de négociation maximale de 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix, structurer une négociation commerciale avec marges de manœuvre limitées, obtenir des contreparties et conclure sans brader",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution digitale agence",
+    "vous_etes": "Commercial chez un éditeur de solutions BtoB pour agences de communication et marketing.",
+    "vous_vendez": "Une solution premium pour agences digitales, positionnée haut de gamme avec 10% de marge de manœuvre maximum sur le tarif.",
+    "vous_appelez": "Stéphane Lemercier, 44 ans, Directeur Général et co-fondateur de Pixel & Sense, agence de communication digitale de 17 personnes (CA 1,8M€). Négociateur rodé, pragmatique obsessionnel sur les coûts, teste systématiquement vos limites.",
+    "ce_que_vous_savez": [
+      "L'agence stagne depuis 18 mois avec une pression forte sur les marges",
+      "Stéphane a testé deux concurrents dont un abandonné après 4 mois — il croit tout connaître",
+      "Son associé lui reproche ses décisions d'achat précédentes, il doit justifier tout ROI en moins de 12 mois",
+      "Budget formation/outils 2024 entamé à 60%, peut débloquer 8-12K€ max avec justification béton",
+      "Comité de crédit bancaire dans 5 semaines — contexte de pression financière"
+    ],
+    "votre_objectif": "Conclure la vente en défendant votre prix, obtenir des contreparties tangibles si vous négociez, et ne surtout pas brader dès la première objection.",
+    "vos_atouts": [
+      "Références ultra-précises avec métriques chiffrées dans le secteur communication",
+      "Approche ROI documentée sur la typologie 15-20 personnes",
+      "Transparence sur les limites réelles de la solution (crédibilité)",
+      "Structuration de négociation avec contreparties claires : engagement durée, cas client, référencement"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:19:58Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16857,
+    "total_time_s": 181.4
+  }
+}

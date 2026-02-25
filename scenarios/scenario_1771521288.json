@@ -1,0 +1,370 @@
+{
+  "id": "scenario_1771521288",
+  "description_originale": "Vous appelez à froid le directeur commercial ou directeur du développement d'une groupe immobilier multi-agences de 100+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : immobilier]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "100+ salariés - groupe multi-agences",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur du développement",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospection à froid sans introduction",
+        "Prospect n'a rien demandé",
+        "Agenda chargé du décideur",
+        "Process d'achat structurés"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Besoin de légitimité immédiate",
+        "Justification de la valeur du temps demandé (45 min)",
+        "Contournement possible des barrières organisationnelles",
+        "Différenciation face aux nombreuses sollicitations"
+      ],
+      "probleme_racine": "Convertir un contact froid en rendez-vous qualifié malgré l'absence de besoin exprimé et les barrières organisationnelles d'une grande structure"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à décrocher des rendez-vous en prospection à froid auprès de décideurs de grandes structures immobilières ayant des agendas contraints et des process formalisés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - probablement BtoB services pour l'immobilier",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commercialisée",
+        "Proposition de valeur",
+        "Bénéfices concrets pour le prospect",
+        "Références ou légitimité",
+        "Hook d'accroche initial",
+        "Raison d'être de l'appel",
+        "Pain points du secteur immobilier adressés",
+        "Identité de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathieu",
+      "nom": "Derville",
+      "age": 44,
+      "poste": "Directeur Commercial & Développement",
+      "entreprise": {
+        "nom": "Groupe Patrimoine & Habitat",
+        "secteur": "Immobilier - réseau d'agences multi-enseignes",
+        "taille": "187 salariés, 23 agences (Île-de-France, Normandie, Hauts-de-France)",
+        "ca_approximatif": "42M€ (année N-1), objectif 50M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Impatient et orienté résultats immédiats",
+        "Méfiant envers les promesses commerciales (trop sollicité)",
+        "Pragmatique jusqu'à la brutalité"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur au Comex après restructuration interne",
+        "Tenir les objectifs 2025 malgré marché immobilier tendu",
+        "Moderniser l'image du groupe face aux pure players digitaux",
+        "Garder son autonomie décisionnelle face aux actionnaires"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des solutions inadaptées au terrain",
+        "Se faire « avoir » par des consultants hors-sol",
+        "Décevoir la Direction Générale avec un mauvais investissement",
+        "Que ses agents de terrain rejettent une énième nouveauté imposée d'en haut"
+      ],
+      "rapport_aux_commerciaux": "Cynique et blasé. Reçoit 12-15 appels par semaine de fournisseurs divers. Les considère comme des 'extracteurs de budget' sauf preuve contraire. Respecte uniquement ceux qui connaissent VRAIMENT son métier.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec impatience sous-jacente. Coup d'œil fréquent à l'écran (emails). Phrases type : 'Oui alors écoutez, je vous écoute mais j'ai un point dans 20 minutes...'",
+      "signaux_interet": [
+        "Se cale dans son fauteuil et croise les bras (posture d'écoute focalisée)",
+        "Demande un chiffre précis : 'Concrètement, on parle de combien ?'",
+        "Évoque spontanément un problème interne : 'Justement, on galère sur...'",
+        "Interrompt pour poser une question technique terrain : 'Mais vos agents, ils ont testé ça en prospection de quartier ou pas ?'"
+      ],
+      "signaux_rejet": [
+        "Commence ses phrases par 'Écoutez...' (signal de clôture imminente)",
+        "Soupirs audibles quand on parle ROI à long terme",
+        "Regarde ostensiblement son téléphone",
+        "Utilise 'On verra' / 'Je vous recontacte' (= jamais)",
+        "Ramène systématiquement à son expérience : 'Ouais enfin nous on a déjà essayé et...'"
+      ],
+      "tics_langage": [
+        "Abus de 'concrètement' et 'dans les faits'",
+        "Utilise 'franchement' en début de phrase quand il va être cash",
+        "Dit 'Voilà voilà' pour clore un sujet sans débat",
+        "Coupe avec 'Ouais OK' quand il a compris et veut passer à la suite"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45-60 secondes avant coupure. Exige une interaction ping-pong sinon décroche mentalement. Déteste les pitchs PowerPoint linéaires."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance externe récente (rachat 5 agences en 2024) = intégration compliquée. Pression actionnaires pour digitaliser. Turnover élevé chez les agents juniors (32% annuel). Concurrence féroce des mandataires indépendants.",
+      "priorites_actuelles": [
+        "Homogénéiser les process commerciaux entre anciennes et nouvelles agences",
+        "Réduire le time-to-market sur les mandats exclusifs (actuellement 18 jours vs 12 chez concurrents)",
+        "Former 15 nouveaux agents recrutés (démarrage prévu mars 2025)",
+        "Préparer convention commerciale annuelle (juin 2025)"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2 organismes de formation commerciale entre 2019-2022. Résultats mitigés : 'Beaucoup de théorie, peu d'ancrage terrain. Les formateurs ne connaissaient rien à l'immo.' Méfiance installée.",
+      "fournisseur_actuel": "Mix entre formation interne (directeurs d'agence) et modules e-learning génériques RH. Pas de partenaire formation externe actif depuis 18 mois.",
+      "budget_disponible": "Enveloppe formation 2025 = 180K€ (tout confondu). Déjà 60% alloué. Peut débloquer 25-40K€ maximum sur justification ROI solide et validation DG."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct qui a obtenu des résultats chiffrés",
+        "Démontrer une compréhension fine du cycle de vente immobilier (prospection, prise de mandat, négociation acquéreur)",
+        "Proposer un format court et intensif (ses équipes détestent les formations longues hors agence)",
+        "Évoquer la problématique spécifique des agents juniors vs seniors",
+        "Parler retour sur investissement en jours, pas en mois",
+        "Accepter une phase test sur 1-2 agences pilotes avant déploiement"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation culturelle' ou vocabulaire RH corporate",
+        "Proposer un diagnostic/audit préalable long (= perte de temps perçue)",
+        "Annoncer des tarifs sans référence au nombre d'agents formés",
+        "Critiquer frontalement ses pratiques actuelles",
+        "Demander un rendez-vous de 45 min sans avoir précisé l'enjeu business concret au téléphone",
+        "Ne pas connaître la différence entre transaction et gestion locative",
+        "Utiliser des anglicismes marketing ('empowerment', 'upskilling'...)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, vous rappelez quand exactement ?",
+        "sous_texte": "Test réflexe pour filtrer. Si vous insistez mollement, je raccroche. Si vous avez un vrai hook, j'écoute 20 secondes.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le mauvais timing + donner UNE raison business en 10 secondes qui justifie qu'il reste 30 secondes de plus"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement j'ai déjà 12 personnes qui m'appellent par semaine pour me former mes équipes, qu'est-ce que vous avez de différent ?",
+        "sous_texte": "Je suis blasé et je vous mets au défi de me surprendre. Si vous me sortez un pitch générique, je raccroche.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS pitcher. Poser une question sur SON problème spécifique immobilier ou citer un résultat concurrent précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà un organisme de formation, on est équipés merci",
+        "sous_texte": "Objection bouclier automatique. Dans les faits, j'utilise surtout du e-learning RH générique qui ne marche pas, mais je ne vous le dirai pas maintenant.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Valider que c'est normal + demander s'il couvre SPÉCIFIQUEMENT la prise de mandat exclusif ou la prospection quartier"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "45 minutes ? Impossible, j'ai un planning de ministre. Vous m'envoyez un mail, je regarde.",
+        "sous_texte": "Le mail = poubelle directe. Mais si vous proposez 15 min et démontrez de la valeur immédiate, je peux caler ça.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer 15 min chrono + donner un aperçu concret de ce qu'on va aborder (ex: réduire time-to-market mandats)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement vous voulez savoir quoi ? Parce que j'ai pas 2 heures devant moi là",
+        "sous_texte": "Je commence à m'impatienter. Si vos questions sont floues ou RH, je décroche. Allez droit au but business.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer combien de questions (3 max) et pourquoi elles permettront de lui faire gagner du temps/argent"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nos agents se forment entre eux, c'est comme ça qu'on fonctionne depuis toujours. Pourquoi je changerais ?",
+        "sous_texte": "Fierté de la méthode maison + peur de remettre en question le système devant la hiérarchie. Mais en vrai, le turnover à 32% prouve que ça marche moyen.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider que c'est précieux (les seniors) + pointer gentiment l'enjeu des 15 nouveaux juniors qui arrivent en mars"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin le problème c'est pas la formation hein, c'est le marché qui est mort en ce moment",
+        "sous_texte": "Je projette la responsabilité sur l'externe. C'est en partie vrai, mais j'évite de reconnaître mes faiblesses process internes.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que le marché est dur + demander si justement ses meilleurs agents arrivent quand même à sortir des mandats (= c'est donc aussi une affaire de méthode)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On verra, mais franchement 25-40K€ pour former des commerciaux, j'ai du mal à justifier ça en interne",
+        "sous_texte": "Le budget existe, mais je dois me couvrir face à la DG. Si vous ne me donnez pas les arguments chiffrés pour défendre ça en Comex, je ne bouge pas.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Faire calculer ensemble : si 5 agents gagnent 2 mandats de plus/an grâce à la formation, quel CA additionnel ? Lui donner les mots pour son Comex."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vos formateurs ils ont déjà bossé en agence immo ou c'est encore des consultants qui ont jamais vendu un appart de leur vie ?",
+        "sous_texte": "Traumatisme des prestataires précédents hors-sol. Si la réponse est floue ou corporate, je me ferme immédiatement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner parcours PRÉCIS du formateur (ex: '8 ans directeur d'agence Century 21 Lyon') + proposer un appel de ref avec un autre DirCo immo"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais OK mais dans les faits, mes gars ils vont se faire chier en formation pendant 2 jours alors qu'ils pourraient être en agence à closer des mandats",
+        "sous_texte": "Peur du manque à gagner immédiat. C'est une vraie crainte opérationnelle, pas juste une excuse.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer format court (1 journée intensive + 3h de suivi terrain) OU formation un lundi/mardi (jours creux en agence) OU pilote sur agence test"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai déjà testé deux boîtes de formation entre 2019 et 2022, résultat : beaucoup de slides PowerPoint et zéro changement sur le terrain",
+        "sous_texte": "Objection sincère légitime. C'est l'obstacle #1. Si vous ne différenciez pas radicalement vs ces expériences ratées, je ne signe jamais.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander ce qui n'a PAS marché précisément + expliquer votre approche inversée (jeux de rôle terrain, pas de théorie, formateur qui suit en agence)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre méthode elle marche peut-être à Paris, mais nous on est sur des territoires périurbains, c'est pas le même business",
+        "sous_texte": "Réflexe territorial + peur que ce soit inadapté. Teste si vous connaissez les spécificités géographiques du métier.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer une référence client en périurbain/région + demander quelle est SA spécificité principale vs Paris (il adore parler de son terrain)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, envoyez-moi une proposition par mail, je regarde et je vous recontacte",
+        "sous_texte": "Fuite polie. Traduction : 'Je ne suis pas convaincu mais je veux clore la conversation sans conflit.' Mail = poubelle.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS accepter. Demander ce qui bloque encore MAINTENANT (prix ? légitimité ? timing ?) pour traiter la vraie objection"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faut que j'en parle à ma DG d'abord, je peux pas décider ça tout seul",
+        "sous_texte": "Soit vrai (besoin de validation budgétaire >30K€), soit excuse pour gagner du temps. Teste si vous allez insister lourdement.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander : 'OK, pour que vous la convainquiez, quels sont les 2 éléments qu'elle va vouloir voir ?' Puis aider à préparer son argumentaire interne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là en janvier on est en plein intégration des 5 nouvelles agences, c'est mort pour lancer un truc maintenant",
+        "sous_texte": "Objection timing sincère ET excuse. Les deux coexistent. Il est vraiment surchargé mais pourrait dire oui si l'urgence est bien positionnée.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la charge + demander si justement, homogénéiser les pratiques commerciales via une formation commune aiderait l'intégration (reframe)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais si ça marche pas, je me retrouve avec 40K€ partis en fumée et mes agents qui font la gueule",
+        "sous_texte": "Peur de l'échec + peur du jugement interne (Comex + équipes terrain). Besoin de filet de sécurité ou garantie.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer pilote sur 1-2 agences d'abord (investissement réduit) + indicateurs de succès définis avant (ex: +X mandats sous 60j)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement on parle de combien par agent formé ? Parce que si c'est 2000 balles la journée par tête, vous pouvez oublier",
+        "sous_texte": "Vraie question budget. Teste si le pricing est déconnant. Seuil psychologique : >1500€/jour/agent = trop cher sauf si ROI béton.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner structure tarifaire claire (ex: formation groupe 12 agents = X€ soit Y€/agent) + ramener au coût d'UN mandat perdu"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà, on verra, je note vos coordonnées et je reviens vers vous si besoin",
+        "sous_texte": "Signal de fermeture définitive polie. 'Voilà voilà' = porte qui claque. Il n'appellera jamais.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Interrompre avec respect : 'Mathieu, soyons francs 30 secondes : qu'est-ce qui fait que c'est non aujourd'hui ?' Forcer la clarification"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, j'ai un doute sur le fait que vos gars comprennent vraiment notre métier. On a déjà donné avec des formations trop théoriques. Alors à moins que vous me garantissiez que le formateur a vraiment bossé en agence et que mes agents voient des résultats sous 60 jours, je préfère rester sur notre système actuel même s'il est perfectible.",
+      "condition_declenchement": "Apparaît quand le vendeur a bien argumenté mais n'a pas suffisamment traité : 1) la légitimité terrain du formateur, 2) la mesure rapide des résultats, 3) le traumatisme des expériences passées ratées. C'est l'objection de synthèse qui cristallise ses 3 peurs principales."
+    },
+    "pattern_escalade": "Mathieu suit un schéma défensif en 4 phases : 1) Filtrage réflexe initial (objections courtes, test d'élimination rapide), 2) Scepticisme actif si vous passez le filtre (objections sur son expérience passée négative, demande de preuves terrain), 3) Négociation budgétaire/timing si vous tenez bon (objections sincères sur contraintes réelles : budget, charge, validation DG), 4) Dernier barrage émotionnel avant closing (peur de l'échec, besoin de garantie, demand de pilote). Il faut traiter TOUTES les strates sinon il revient à la précédente.",
+    "piege_classique": "Mathieu donne de faux signaux d'achat ('C'est intéressant', 'Pourquoi pas', 'On verra') pour clore poliment la conversation sans dire non frontalement. Le commercial inexpérimenté croit avoir un deal et envoie une proposition qui finit en spam. Le vrai signal d'achat chez lui : il pose des questions logistiques précises ('Vos formateurs sont dispo quand ?', 'Ça se passe où ?', 'Je peux appeler une de vos refs ?') ou il sort son agenda. Tant qu'il ne fait ni l'un ni l'autre, ce n'est PAS gagné, même si le ton est cordial."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - probablement BtoB services pour l'immobilier",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à décrocher des rendez-vous en prospection à froid auprès de décideurs de grandes structures immobilières ayant des agendas contraints et des process formalisés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Commercial immobilier pressé",
+    "vous_etes": "Commercial BtoB, vous prospectez un décideur de grande structure immobilière que vous n'avez jamais eu au téléphone.",
+    "vous_vendez": "Une solution pour le secteur immobilier (nature et prix volontairement flous pour cet exercice de prospection pure).",
+    "vous_appelez": "Mathieu Derville, 44 ans, Directeur Commercial du Groupe Patrimoine & Habitat (187 salariés, 23 agences). Impatient, méfiant, sollicité 12 à 15 fois par semaine. Déteste perdre son temps.",
+    "ce_que_vous_savez": [
+      "Le groupe a racheté 5 agences en 2024, intégration en cours",
+      "15 nouveaux agents arrivent en mars 2025",
+      "Turnover élevé chez les juniors (32% par an)",
+      "Convention commerciale prévue en juin 2025",
+      "Mathieu a testé 2 formations commerciales entre 2019-2022, résultats décevants"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou visio de 30-45 minutes pour présenter votre solution.",
+    "vos_atouts": [
+      "Vous connaissez les spécificités du cycle de vente immobilier (prospection, mandat, négo)",
+      "Vous proposez des formats courts et opérationnels, pas de théorie hors-sol",
+      "Vous pouvez commencer par un pilote sur 1-2 agences test",
+      "Vous parlez ROI en jours, pas en trimestres"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:14:48Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15177,
+    "total_time_s": 149.0
+  }
+}

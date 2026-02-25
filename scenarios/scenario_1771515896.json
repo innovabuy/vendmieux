@@ -1,0 +1,361 @@
+{
+  "id": "scenario_1771515896",
+  "description_originale": "Le directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : services_entreprises]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "groupe multi-sites de 200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des opérations ou directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "direction générale (potentielle escalade)",
+        "service juridique (gestion pénalités contractuelles)"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "services BtoB récurrents avec engagements contractuels de niveau de service",
+      "proposition_valeur_presumee": "continuité de service, fiabilité, respect des SLA contractuels",
+      "fourchette_prix": "contrat annuel ou pluriannuel significatif (compte clé)",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "incident majeur ayant impacté l'activité du client",
+        "client furieux et émotionnellement chargé",
+        "menace de pénalités contractuelles",
+        "risque de perte d'un compte clé"
+      ],
+      "implicites": [
+        "défaillance dans la qualité de service ou livraison",
+        "rupture de confiance client",
+        "potentielle remise en cause du contrat global",
+        "communication de crise insuffisante ou tardive",
+        "pression hiérarchique interne côté client",
+        "risque réputationnel si le compte est perdu"
+      ],
+      "probleme_racine": "incapacité à gérer proactivement une situation de crise relationnelle et opérationnelle mettant en péril un contrat majeur par manque de protocole de gestion de crise et de compétences en négociation sous tension"
+    },
+    "objections_mentionnees": [
+      "pénalités contractuelles",
+      "impact majeur sur l'activité",
+      "colère et insatisfaction extrême"
+    ],
+    "objectif_formation": "former les commerciaux et account managers à la gestion de crise client, à la désescalade émotionnelle, à la proposition de plans de résolution structurés et à la préservation de la relation commerciale dans un contexte de réclamation majeure",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services BtoB avec prestations récurrentes et engagements contractuels",
+      "entreprise_description": "fournisseur de services aux entreprises avec gestion de comptes clés multi-sites, contrats incluant des SLA et clauses de pénalités",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "prestation de services récurrents avec engagements contractuels de performance et disponibilité",
+      "proposition_valeur": "fiabilité opérationnelle, continuité de service, expertise sectorielle, support dédié aux comptes clés",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "gestion de crise, désescalade émotionnelle, proposition de plan de résolution, maintien du contrat",
+      "type_prospection": "reclamation"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de l'incident",
+        "montant des pénalités contractuelles",
+        "historique de la relation client",
+        "détails du contrat et SLA",
+        "causes précises de l'incident",
+        "informations sur l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Hexalog Services",
+        "secteur": "Conseil et services numériques aux PME industrielles",
+        "taille": "Groupe de 280 salariés répartis sur 6 sites (Île-de-France, Lyon, Nantes)",
+        "ca_approximatif": "42M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Orienté résultats et impatient face à l'inefficacité",
+        "Protecteur vis-à-vis de son équipe et de sa direction",
+        "Méfiant après déception - besoin de preuves concrètes"
+      ],
+      "motivations_profondes": [
+        "Préserver sa crédibilité auprès du COMEX après avoir défendu ce fournisseur en interne",
+        "Assurer la continuité opérationnelle coûte que coûte - c'est son mandat",
+        "Éviter d'être celui qui a laissé passer un incident majeur sans conséquences",
+        "Prouver qu'il contrôle la situation et ne se laisse pas marcher sur les pieds"
+      ],
+      "peurs_freins": [
+        "Perdre la face devant sa DG s'il accepte des excuses creuses sans garanties",
+        "Que cet incident se reproduise et qu'on lui reproche sa complaisance",
+        "Être perçu comme un directeur opérationnel faible qui ne sait pas négocier",
+        "Devoir gérer les conséquences politiques internes si les pénalités ne sont pas appliquées"
+      ],
+      "rapport_aux_commerciaux": "Transactionnel et direct - déteste le baratin commercial classique. Respecte ceux qui assument leurs erreurs sans langue de bois. A été commercial terrain il y a 15 ans, donc connaît tous les 'trucs'. Apprécie l'efficacité mais n'oublie jamais une promesse non tenue.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, cassant, volontairement distant. Voix tendue avec débit rapide. Coupe la parole pour recadrer. Utilise le vouvoiement de distance même après 2 ans de relation.",
+      "signaux_interet": [
+        "Ralentit son débit et pose des questions de clarification précises",
+        "Mentionne spontanément des contraintes internes ('Bon, le juridique va pas aimer mais...')",
+        "Passe du 'vous' institutionnel au 'tu' si vraie connexion - rare mais significatif",
+        "Demande des délais concrets ('Quand exactement?') plutôt que de rejeter en bloc",
+        "Soupir suivi d'un 'Écoute...' - signe qu'il envisage une porte de sortie"
+      ],
+      "signaux_rejet": [
+        "Silence glacial après une proposition - ne relance pas, attend que l'autre comble le vide",
+        "'Mouais' suivi d'un changement de sujet brutal",
+        "'On verra' ou 'Je note' dit sur un ton qui signifie clairement 'non'",
+        "Mentionne le concurrent direct ('Chez Synergix ils auraient jamais...')",
+        "Utilise le futur pour parler de la relation ('vous AURIEZ dû') - signe qu'il l'envisage au passé"
+      ],
+      "tics_langage": [
+        "'Bon, là...' en début de phrase pour signaler qu'il perd patience",
+        "'Concrètement' répété pour exiger du factuel",
+        "'Je te / vous dis les choses franchement' avant une critique acerbe",
+        "Expire bruyamment par le nez quand quelque chose l'agace",
+        "'Voilà quoi' en fin de phrase quand il considère que c'est évident"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Coupe après 30-40 secondes maximum. Exige des échanges courts et rythmés. Si vous monopolisez la parole, il décroche mentalement et commence à taper sur son clavier ostensiblement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "En pleine croissance externe (acquisition d'une structure lyonnaise il y a 8 mois). Pression forte sur l'harmonisation des processus et la fiabilité des outils. Le COMEX surveille de près tous les indicateurs opérationnels. L'incident récent est tombé au pire moment : en pleine closing de fin de trimestre, avec une présentation investisseurs prévue la semaine suivante. Laurent a dû expliquer devant le board pourquoi un prestataire externe a planté. Humiliation professionnelle.",
+      "priorites_actuelles": [
+        "Sécuriser absolument les opérations multi-sites avant la prochaine acquisition",
+        "Démontrer au COMEX qu'il maîtrise la chaîne de valeur externalisée",
+        "Renégocier tous les contrats fournisseurs critiques avec des clauses plus punitives",
+        "Reconstruire la confiance de son équipe qui l'a vu se faire démonter en réunion de crise"
+      ],
+      "experience_avec_offre_similaire": "A déjà changé de prestataire il y a 3 ans (ancien fournisseur était moins cher mais trop peu réactif). Connaît bien le marché et les promesses standard. Sait exactement ce qui est réaliste ou non. A participé personnellement à la sélection du fournisseur actuel, d'où son sentiment de trahison personnelle.",
+      "fournisseur_actuel": "Vous - mais relation sous très forte tension. Contrat de 3 ans signé il y a 18 mois (encore 18 mois à courir). Clause de résiliation anticipée possible moyennant 6 mois de préavis et indemnités. Il a déjà fait une demande de chiffrage informelle auprès d'un concurrent.",
+      "budget_disponible": "Le budget n'est pas le sujet - il a les moyens de payer les pénalités contractuelles ET de changer de prestataire si nécessaire. Son vrai budget est politique : il lui reste combien de crédibilité interne pour défendre ce fournisseur ?"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance factuelle et sans détour de l'erreur avec causes techniques précises - pas de langue de bois",
+        "Plan d'action chiffré avec jalons de contrôle externes (audit tiers, reporting hebdo au COMEX)",
+        "Proposition proactive de compensation financière AVANT qu'il ne la réclame - renverse le rapport de force",
+        "Engagement personnel du dirigeant de votre boîte (appel direct, mail officiel) - montre que c'est pris au sérieux",
+        "Clause de sortie facilitée si nouvel incident similaire dans les 6 mois - lui redonne du contrôle",
+        "Démonstration que vous avez tiré des leçons structurelles (process modifié, formation équipe, investissement technique)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ou chercher des excuses externes ('c'était la faute du sous-traitant')",
+        "Proposer une simple réunion de suivi ou un comité de pilotage - il a besoin d'actes, pas de nouvelles instances",
+        "Faire porter le chapeau à un collaborateur bouc-émissaire - il déteste cette lâcheté managériale",
+        "Dire 'ça n'arrivera plus' sans expliciter comment concrètement",
+        "Rappeler les années de bonne collaboration passée pour relativiser - pour lui, une seule erreur critique annule tout",
+        "Tenter de négocier à la baisse les pénalités contractuelles sans contrepartie solide - confirme que vous n'assumez pas"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai quinze minutes maximum et franchement je sais pas si c'est le bon moment pour parler. Vous imaginez bien l'ambiance ici après ce qui s'est passé.",
+        "sous_texte": "Je suis encore furieux et j'hésite entre raccrocher immédiatement et vous laisser une chance de vous expliquer. Prouvez-moi dans les 30 prochaines secondes que cet appel ne sera pas une perte de temps.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Reconnaître immédiatement la gravité sans minimiser, annoncer un objectif concret pour l'appel avec un timing précis respectant ses 15 minutes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon là, on va être clairs : j'ai le juridique qui me pousse à appliquer les pénalités contractuelles. Vous appelez pour quoi exactement ? Parce que si c'est pour me dire que vous êtes désolés, je l'ai déjà lu dans votre mail.",
+        "sous_texte": "Je ne veux pas d'excuses creuses. J'ai besoin de raisons concrètes de ne pas activer immédiatement les clauses punitives. Montrez-moi que vous avez quelque chose de substantiel à proposer.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Confirmer que les excuses ne suffisent pas, annoncer un plan d'action factuel avec des mesures de compensation tangibles que le juridique pourra évaluer"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez combien ça nous a coûté vendredi ? Non, vous savez pas. J'ai dû mobiliser douze personnes en urgence, on a raté deux échéances clients, et j'ai passé mon week-end à faire de la com de crise. Alors votre appel de courtoisie...",
+        "sous_texte": "Je suis épuisé émotionnellement et professionnellement. J'ai besoin que vous mesuriez réellement l'ampleur des dégâts avant qu'on puisse discuter de quoi que ce soit. Si vous n'avez pas fait cet exercice, vous n'êtes pas prêt.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Valider sa souffrance sans chercher à la relativiser, démontrer que vous avez chiffré l'impact côté client et l'intégrez dans votre plan de résolution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi je vous expliquerais nos contraintes internes maintenant ? Vous auriez dû comprendre tout ça AVANT de planter notre infrastructure. Concrètement, qu'est-ce que ça change maintenant ?",
+        "sous_texte": "Je me sens trahi et je ne veux pas faciliter votre travail. Mais je teste aussi si vous avez un vrai plan ou si vous pêchez des infos pour improviser une solution. Montrez-moi que vous avez déjà analysé notre situation.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaître que c'est mérité, mais expliquer précisément comment comprendre les enjeux internes permet de calibrer les garanties et le niveau d'engagement du plan de résolution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le COMEX m'a convoqué lundi matin. Vous savez ce que ça fait de se faire démonter devant la DG parce qu'un prestataire qu'on a défendu a merdé ? J'ai l'air de quoi moi maintenant ?",
+        "sous_texte": "Mon capital politique interne est détruit. Je ne peux pas juste 'régler le problème technique' - je dois aussi restaurer ma crédibilité. Si votre solution ne m'aide pas sur ce plan, elle est inutile.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Valider l'impact sur sa position professionnelle, proposer des éléments de réassurance formels qu'il pourra présenter au COMEX (engagement écrit de la direction, audit externe, clauses protectrices renforcées)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais. Et vous pensez que je vais croire que vous avez soudainement identifié la cause racine en trois jours alors que ça fait 18 mois que vous nous dites que tout roule ? C'est ça votre analyse ?",
+        "sous_texte": "Je suis sceptique sur la profondeur réelle de votre diagnostic. J'ai peur que vous me vendiez une explication de surface pour clore le dossier rapidement. Prouvez-moi que c'est sérieux.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Reconnaître que 3 jours c'est court pour un diagnostic complet, présenter ce que vous avez identifié ET proposer un audit technique approfondi par un tiers de confiance sous 2-3 semaines"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan d'action sur 90 jours ? Vous vous foutez de moi ? J'ai besoin de garanties MAINTENANT, pas dans trois mois. D'ici là on peut avoir deux autres incidents.",
+        "sous_texte": "Votre timing ne correspond pas à mon urgence politique. Je dois montrer des résultats immédiats au COMEX. Si votre plan ne prévoit pas des quick-wins visibles sous 2-3 semaines, je ne peux pas le défendre.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Restructurer le plan avec des jalons courts (J+7, J+15, J+30) incluant des mesures immédiates visibles et un dispositif de monitoring renforcé dès cette semaine"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, là concrètement : vous me proposez quoi sur les pénalités contractuelles ? Parce que moi j'ai un mail du juridique qui me dit qu'on peut réclamer 47 000 euros selon l'article 12.3. Vous assumez ou pas ?",
+        "sous_texte": "C'est le moment de vérité. Si vous cherchez à négocier à la baisse ou à botter en touche, je saurai que vous n'assumez pas vraiment. Je teste votre intégrité et votre marge de manœuvre.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Assumer le principe des pénalités sans discuter, mais proposer de les transformer en crédit de service avec valeur supérieure + geste commercial additionnel - montre que vous assumez ET cherchez une sortie constructive"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais voilà quoi, chez Synergix ils ont eu le même type d'incident l'année dernière chez un client que je connais. Vous savez ce qu'ils ont fait ? Le PDG a appelé dans les 2 heures et ils ont mis un dispositif de surveillance H24 pendant un mois. GRATUITEMENT. Vous, vous me proposez des meetings.",
+        "sous_texte": "J'ai déjà une alternative crédible et je vous compare défavorablement. Je vous pousse à surenchérir ou à vous différencier radicalement. C'est aussi un signal que j'ai déjà des discussions parallèles.",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, reconnaître que c'était une bonne approche, puis proposer votre propre engagement de haut niveau (appel de votre dirigeant, ressources dédiées) avec vos spécificités"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de process améliorés, d'investissements techniques... Mais QUI exactement va porter ça côté chez vous ? Parce que votre account manager, là, franchement après ce vendredi... Vous voyez ce que je veux dire.",
+        "sous_texte": "J'ai perdu confiance dans mon interlocuteur habituel. Si vous ne changez pas la gouvernance de notre relation avec quelqu'un de plus senior, je ne crois pas à vos promesses de transformation.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaître que la gouvernance actuelle a montré ses limites, proposer un binôme renforcé avec intervention d'un directeur de compte senior + sponsorship d'un membre du comex de votre entreprise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre 'plan de résolution structuré' il est bien joli sur le papier. Mais si dans trois mois vous me refaites le même coup, moi j'aurai l'air de quoi ? Je vous dis les choses franchement : j'ai besoin d'une sortie de secours.",
+        "sous_texte": "Je ne peux pas me permettre de rester prisonnier de cette relation si vous échouez à nouveau. Votre plan doit inclure un mécanisme qui me protège et me redonne du pouvoir dans la relation.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Proposer une clause de sortie facilitée sans pénalités si incident similaire dans les 6 mois + clause de réversibilité accélérée - lui redonne le contrôle et montre votre confiance dans votre plan"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, je vous entends. Mais moi là j'ai mon boss qui me met la pression, j'ai le juridique qui veut du sang, j'ai les équipes qui me regardent comme si j'avais choisi le mauvais prestataire... Je fais quoi moi concrètement lundi matin ?",
+        "sous_texte": "Je suis coincé politiquement et émotionnellement épuisé. J'ai besoin que vous me donniez des éléments concrets et immédiatement utilisables pour apaiser mes parties prenantes internes. Aidez-moi à sauver la face.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposer un kit de communication pour lundi : mail officiel de votre direction au COMEX, document synthétique présentant le plan avec jalons contrôlables, proposition de conf call tripartite (vous/lui/sa DG) cette semaine"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais, on verra. Je note tout ça mais je vous garantis rien. Je dois en parler au juridique et à ma DG de toute façon. Je vous rappelle... peut-être.",
+        "sous_texte": "Je ne veux pas m'engager émotionnellement tout de suite. J'ai besoin de temps pour vérifier votre crédibilité et soupeser mes options. Mais ce 'peut-être' signifie que je n'ai pas complètement fermé la porte.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Ne pas forcer, respecter son besoin de temps, mais cadrer un prochain point précis (date et objectif) pour éviter que le dossier ne s'enlise dans un no man's land décisionnel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, j'ai eu deux commerciaux de Synergix au téléphone cette semaine. Ils sont agressifs sur le prix et ils me garantissent une reprise en 45 jours. Pourquoi je devrais prendre le risque de rester avec vous ?",
+        "sous_texte": "Je teste votre résilience et votre capacité à défendre votre valeur sous pression. Je veux aussi voir si vous allez paniquer ou rester professionnel. Mais j'ai effectivement une vraie alternative crédible.",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne pas attaquer le concurrent, reconnaître que c'est une option légitime, rappeler la valeur de la connaissance mutuelle (18 mois de relation), les coûts cachés d'une bascule (formation, reprise données, période de rodage) et votre plan différenciant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... Écoute, je vais être honnête avec toi. Ton plan il me paraît pas déconnant. Mais voilà quoi, j'ai tellement pris cher en interne que je sais pas si j'ai encore l'énergie de défendre ça auprès du board. Tu comprends ?",
+        "sous_texte": "Je suis tenté de vous donner une chance mais je suis épuisé et j'ai peur de me tromper à nouveau. Je suis passé du 'vous' au 'tu' - c'est un signal positif. Je cherche du réconfort et de l'aide pour porter cette décision.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Valider sa fatigue et son courage, proposer de porter une partie du poids (présentation directe au board par votre direction, prise en charge de la communication interne, garanties écrites solides), alléger sa charge mentale"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, je résume : vous me demandez de faire confiance à nouveau, d'expliquer à ma DG qu'on reste avec vous malgré ce carnage, de calmer le juridique qui veut votre peau... Et en échange j'ai quoi comme garantie RÉELLE que dans trois mois je me retrouve pas dans la même merde ?",
+        "sous_texte": "J'ai besoin d'un engagement concret et vérifiable, pas de promesses. Le ratio risque/bénéfice doit clairement pencher en ma faveur pour que je puisse justifier cette décision risquée politiquement.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Récapituler les garanties tangibles et mesurables (audit tiers, pénalités majorées en cas de récidive, clause de sortie facilitée, engagement personnel écrit du top management, compensation financière immédiate, gouvernance renforcée avec reporting au COMEX)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, là je vais vous dire un truc. J'ai un mail de Synergix dans ma boîte avec une offre ferme depuis hier. Prix identique, reprise en 6 semaines, et leur directeur général me propose un déjeuner la semaine prochaine. Franchement, donnez-moi UNE raison valable de ne pas signer avec eux dès lundi. Une seule. Et je vous préviens, si vous me sortez un truc du genre 'pensez à nos années de collaboration', je raccroche.",
+      "condition_declenchement": "Se déclenche en fin d'entretien si le commercial n'a pas proposé de compensation financière proactive ET d'engagement du top management ET de clause de sortie sécurisée. Laurent veut tester si vous avez gardé une dernière cartouche décisive ou si vous avez déjà tout joué."
+    },
+    "pattern_escalade": "Laurent commence froid et cassant (vouvoiement, débit rapide, interruptions). Si vous tenez bon sans vous justifier et proposez du concret, il ralentit légèrement et pose des questions de clarification (test de sérieux). Si vous passez ce cap, il peut mentionner des contraintes internes ('le juridique', 'ma DG') - signe qu'il envisage des solutions. L'escalade émotionnelle se produit si vous minimisez, cherchez des excuses ou proposez du process sans actes : il devient alors glacial, mentionne explicitement les concurrents et termine par des 'on verra' définitifs. Le switch vers le tutoiement est le signal le plus fort d'une ouverture possible - mais fragile et révocable instantanément.",
+    "piege_classique": "Laurent connaît toutes les techniques commerciales (il a été commercial). Il va volontairement vous tendre des pièges pour tester votre authenticité : 1) Silence prolongé après votre proposition pour voir si vous paniquez et surenchérissez ou bradez. 2) Mention d'un concurrent avec détails précis (parfois exagérés) pour voir si vous dénigrerez la concurrence (signe de faiblesse pour lui). 3) Question cash sur les pénalités financières pour tester si vous assumez vraiment. 4) Évocation de sa situation personnelle difficile pour voir si vous compatissez sincèrement ou manipulez. Le vrai piège : il respecte ceux qui restent factuels, assument sans se justifier, et proposent des solutions adultes. Tout excès (sur-promesse, agressivité défensive, apitoiement) le braque définitivement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services BtoB avec prestations récurrentes et engagements contractuels",
+      "description": "fournisseur de services aux entreprises avec gestion de comptes clés multi-sites, contrats incluant des SLA et clauses de pénalités"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "prestation de services récurrents avec engagements contractuels de performance et disponibilité",
+      "proposition_valeur": "fiabilité opérationnelle, continuité de service, expertise sectorielle, support dédié aux comptes clés",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "gestion de crise, désescalade émotionnelle, proposition de plan de résolution, maintien du contrat",
+      "description": "former les commerciaux et account managers à la gestion de crise client, à la désescalade émotionnelle, à la proposition de plans de résolution structurés et à la préservation de la relation commerciale dans un contexte de réclamation majeure",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "reclamation",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Réclamation compte clé après incident majeur",
+    "vous_etes": "Account Manager en charge du compte Hexalog Services, client depuis 18 mois (contrat 3 ans, 6 sites).",
+    "vous_vendez": "Vous êtes leur prestataire actuel de services BtoB récurrents avec SLA contractuels — relation normalement solide jusqu'à l'incident de la semaine dernière.",
+    "vous_appelez": "Laurent Mercier, 48 ans, Directeur des Opérations chez Hexalog Services (conseil numérique, 280 personnes, 42M€). Très remonté : l'incident a planté leurs opérations en plein closing, il a dû s'expliquer devant son COMEX et des investisseurs. Il a personnellement défendu votre choix en interne — il vit ça comme une trahison personnelle. Ancien commercial, il connaît tous les discours. Déteste le baratin.",
+    "ce_que_vous_savez": [
+      "Incident majeur la semaine dernière ayant impacté leurs 6 sites pendant le closing trimestriel",
+      "Laurent s'est fait démonter en réunion de crise devant sa direction",
+      "Il a déjà demandé un chiffrage informel à un concurrent",
+      "Clause de résiliation anticipée possible (6 mois de préavis + indemnités)",
+      "Il réclame l'application des pénalités contractuelles"
+    ],
+    "votre_objectif": "Sauver le contrat en désescaladant la tension, assumer l'erreur sans excuses creuses, et proposer un plan de résolution concret qui lui redonne de la crédibilité auprès de sa direction.",
+    "vos_atouts": [
+      "Vous connaissez bien le dossier et la relation (18 mois de collaboration)",
+      "Vous pouvez proposer compensation financière + audit tiers + reporting COMEX",
+      "Vous avez mandat pour engager votre direction (appel du CEO si nécessaire)",
+      "Clause de sortie facilitée en cas de récidive = lui redonne du contrôle"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:44:56Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18009,
+    "total_time_s": 184.2
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "id": "scenario_1771524037",
+  "description_originale": "Le directeur de clinique / médecin directeur d'une clinique privée, laboratoire d'analyses ou cabinet de groupe de 20-50 personnes est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : sante_medical]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "20-50 personnes",
+      "interlocuteur_principal": {
+        "poste": "directeur de clinique / médecin directeur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour établissement de santé privé (clinique, laboratoire ou cabinet de groupe)",
+      "fourchette_prix": "NON_SPECIFIE - perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix",
+        "Prospect trouve la solution trop chère"
+      ],
+      "implicites": [
+        "Manque de valorisation de l'offre lors de la phase de découverte",
+        "ROI non suffisamment démontré",
+        "Comparaison possible avec des solutions concurrentes moins chères",
+        "Budget contraint dans le secteur médical"
+      ],
+      "probleme_racine": "Difficulté à justifier la valeur perçue face au prix demandé et à ancrer le ROI dès la phase de découverte"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre leur prix, valoriser l'offre face à l'objection tarifaire et négocier dans un cadre contraint (marge de 10% max) tout en préservant la valeur",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions pour le secteur santé/médical",
+      "entreprise_description": "Entreprise proposant une solution destinée aux établissements de santé privés (cliniques, laboratoires d'analyses, cabinets médicaux de groupe)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution pour cliniques privées, laboratoires d'analyses ou cabinets médicaux de groupe de 20-50 personnes",
+      "proposition_valeur": "NON_SPECIFIE - à renforcer pour justifier le prix premium",
+      "prix_indicatif": "NON_SPECIFIE - prix perçu comme élevé, marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Prix de référence",
+        "Proposition de valeur détaillée",
+        "ROI démontrable",
+        "Références clients dans le secteur",
+        "Différenciateurs concurrentiels",
+        "Bénéfices métier spécifiques au secteur santé"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Jean-Marc",
+      "nom": "Valentin",
+      "age": 52,
+      "poste": "Médecin directeur et associé",
+      "entreprise": {
+        "nom": "Clinique Saint-Rémy",
+        "secteur": "Chirurgie ambulatoire et imagerie médicale",
+        "taille": "34 personnes (dont 8 praticiens, 12 IDE, 14 administratif/technique)",
+        "ca_approximatif": "3,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux depuis une mauvaise expérience avec un logiciel métier en 2019",
+        "Hyper-rationnel, orienté chiffres et preuves tangibles",
+        "Protecteur du cash de la clinique comme si c'était son patrimoine personnel"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité de la clinique face à la baisse des tarifs CPAM",
+        "Prouver aux autres associés qu'il prend les bonnes décisions financières",
+        "Éviter absolument un investissement qui serait critiqué en conseil d'associés",
+        "Moderniser l'établissement sans prendre de risque financier excessif"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme en 2019 avec le logiciel jamais utilisé (47k€ perdus)",
+        "Que les autres médecins associés lui reprochent une dépense injustifiée",
+        "Les solutions 'usine à gaz' que personne n'utilise au final",
+        "Payer pour des fonctionnalités dont il n'a pas besoin",
+        "Les contrats avec engagement long terme impossibles à sortir"
+      ],
+      "rapport_aux_commerciaux": "Présume que vous allez enjoliver la réalité et cacher les défauts. Teste votre honnêteté en posant des questions pièges. Apprécie paradoxalement la franchise brutale",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, avec une pointe de lassitude : 'Écoutez, j'ai déjà vu passer beaucoup de propositions, alors soyons efficaces'",
+      "signaux_interet": [
+        "Commence à prendre des notes manuscrites",
+        "Demande des précisions chiffrées très pointues",
+        "Mentionne spontanément les autres associés : 'Il faudrait que je leur montre ça'",
+        "Évoque des situations concrètes de la clinique",
+        "Ralentit son débit de parole et fait des silences de réflexion"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Phrases courtes et sèches : 'Ouais, bon...'",
+        "Coupe la parole pour dire 'Attendez, là vous m'avez perdu'",
+        "Revient systématiquement au prix avant même d'avoir écouté les bénéfices",
+        "Regarde ostensiblement sa montre ou évoque un autre RDV",
+        "Utilise le 'nous' de politesse distancié : 'Nous allons réfléchir de notre côté'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' ou 'Alors là...'",
+        "Utilise 'concrètement' toutes les 3 phrases",
+        "Dit 'Mouais...' quand il n'est pas convaincu",
+        "Expression favorite : 'Faut que ça rentre dans les clous budgétaires'",
+        "Abrège systématiquement : 'les IDE' au lieu de infirmiers, 'la sécu' pour l'Assurance Maladie"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Très faible — coupe après 45 secondes maximum si pas de chiffres concrets. Dit ouvertement : 'Bon, on va gagner du temps, allez à l'essentiel'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Clinique rentable mais sous pression : baisse des remboursements sécu de 8% en 2 ans, besoin de digitaliser pour optimiser les coûts administratifs. Deux associés sur quatre partent à la retraite dans 18 mois, obligation de rendre l'outil attractif pour recruter de nouveaux praticiens",
+      "priorites_actuelles": [
+        "Réduire le temps administratif des praticiens (actuellement 6h/semaine/médecin)",
+        "Améliorer le taux de remplissage du planning bloc (actuellement 73%)",
+        "Éviter l'embauche d'un ETP administratif supplémentaire (coût 38k€/an)",
+        "Préparer la transmission aux futurs associés avec des process modernes"
+      ],
+      "experience_avec_offre_similaire": "Mauvaise expérience en 2019 avec un logiciel de gestion patient 'tout-en-un' jamais adopté par les équipes. Actuellement : mix Excel + logiciel métier basique + beaucoup de papier. Frustration latente",
+      "fournisseur_actuel": "Logiciel Médisoft (7 ans d'ancienneté, 980€/mois, fonctionne mais obsolète et limité)",
+      "budget_disponible": "Entre 15k€ et 22k€ max sur l'année en investissement, avec forte résistance psychologique au-dessus de 18k€. Réflexe mental : 'Avec 20k€ je paie 6 mois de salaire d'une IDE, faut que ça vaille vraiment le coup'"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Montrer des chiffres de ROI avec calcul précis incluant temps médical économisé valorisé en €",
+        "Références vérifiables dans des cliniques similaires (taille, spécialité) avec nom et contact direct",
+        "Proposition d'essai limité ou phase pilote avec sortie possible",
+        "Transparence brutale sur les limites du produit et ce qu'il ne fait PAS",
+        "Démonstration concrète sur un cas réel de la clinique (pas de démo générique)",
+        "Comparaison chiffrée avec le coût de ne rien faire (coût d'opportunité)",
+        "Offre de formation incluse et accompagnement au changement (trauma 2019)",
+        "Paiement étalé ou lissé qui facilite la validation en conseil d'associés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing creux sans chiffres : 'solution innovante, intuitive, révolutionnaire'",
+        "Comparaison avec des CHU ou grandes structures (pas comparable)",
+        "Minimiser ses objections ou lui dire que 'c'est pas cher pour ce que c'est'",
+        "Jargon technique informatique incompréhensible",
+        "Promettre des bénéfices non mesurables : 'amélioration de la satisfaction patient'",
+        "Forcer la vente avec pression temporelle artificielle : 'offre valable jusqu'à vendredi'",
+        "Ne pas connaître les spécificités réglementaires du secteur santé privé",
+        "Parler de fonctionnalités dont il n'a objectivement pas besoin pour gonfler le prix",
+        "Refuser de donner le prix avant d'avoir fini la présentation"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai déjà vu passer beaucoup de propositions comme ça... En 2019 on s'est fait avoir avec un logiciel à 47 000 balles que personne n'utilise. Alors soyez direct : c'est combien votre truc ?",
+        "sous_texte": "Je ne vous fais pas confiance par défaut. Prouvez-moi que vous n'êtes pas comme les autres. Je veux le prix tout de suite pour savoir si je perds mon temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître frontalement l'expérience négative, promettre la transparence sur le prix APRÈS avoir compris ses besoins réels pour éviter de lui vendre des fonctionnalités inutiles comme en 2019"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "J'ai un bloc dans 25 minutes, faut vraiment qu'on soit efficaces là. Vous pouvez me dire en 2 minutes ce que vous faites et si ça nous concerne vraiment ?",
+        "sous_texte": "Je suis débordé et je n'ai pas de temps pour du blabla commercial. Si vous ne captez pas ma réalité terrain, je raccroche.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Respecter la contrainte temps, proposer un format ultra-court avec une question de qualification pour éviter de pitcher quelque chose d'inadapté"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... Concrètement, on a déjà Médisoft qui tourne depuis 7 ans. C'est pas génial mais ça fait le job. Pourquoi je changerais pour me compliquer la vie encore ?",
+        "sous_texte": "Le statu quo me paraît moins risqué qu'un changement. Convainquez-moi que l'effort en vaut la peine. Vous devez me montrer un manque à gagner tangible.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier le coût d'opportunité de Médisoft (temps perdu, inefficacité, impossibilité de certaines optimisations). Ne pas critiquer frontalement leur choix actuel."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nos médecins passent environ 6 heures par semaine en administratif... Alors là, si vous me dites que votre solution va diviser ça par deux, faut m'expliquer comment concrètement. Parce que en 2019 on nous avait promis la même chose.",
+        "sous_texte": "Je vous donne une métrique clé mais je teste votre crédibilité. Si vous me promettez la lune, je décroche. Je veux des preuves, pas des promesses.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un gain réaliste et chiffré (ex: 2h/semaine documentées chez un client similaire), expliquer le mécanisme précis, proposer une référence vérifiable"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, là vous m'avez perdu... C'est quoi exactement la différence entre votre solution et ce qu'on fait déjà avec Excel et Médisoft ? Parce que franchement, mes IDE se débrouillent bien avec.",
+        "sous_texte": "Je ne vois pas la valeur différenciante. Vous me parlez en langage commercial, revenez sur terre avec MA réalité. Justifiez votre existence.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter le pitch, revenir à une question de découverte sur leurs irritants actuels avec Excel/Médisoft, identifier une douleur concrète avant de repositionner"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez, on a déjà parlé 10 minutes là... Allez à l'essentiel : c'est combien ? Parce que faut que ça rentre dans les clous budgétaires, et on a pas des masses de marge de manœuvre.",
+        "sous_texte": "J'ai peur que ce soit trop cher. Je veux savoir maintenant pour ne pas m'attacher émotionnellement à une solution inabordable. Ou alors je teste si vous allez craquer et brader le prix.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette large pour ne pas se couper, mais surtout recadrer : impossible de donner un prix juste sans comprendre ses besoins pour éviter de lui faire payer des fonctions inutiles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Alors là, 24 000 euros ?! Non mais attendez, c'est complètement hors budget. Nous on tablait sur 12-15 000 maximum. Là c'est juste pas possible, on peut pas se permettre ça.",
+        "sous_texte": "Choc du prix, réaction émotionnelle authentique. Mon ancrage mental était beaucoup plus bas. Je dois aussi me protéger face aux autres associés. Mais peut-être négociable si vous justifiez.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS défendre le prix immédiatement. Creuser l'ancrage budgétaire : d'où vient ce 12-15k€ ? Sur quoi se base-t-il ? Puis reconstruire la valeur en ROI, pas en fonctionnalités"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, vous me parlez de ROI sur 18 mois... Concrètement, comment vous calculez ça ? Parce que moi je vois surtout 24 000 qui sortent tout de suite de la tréso. Et avec 24k€, je paie un an de salaire d'une bonne IDE.",
+        "sous_texte": "Votre ROI me semble théorique. Je raisonne en coût d'opportunité réel : personnel = valeur tangible, logiciel = pari incertain. Convainquez-moi avec MES chiffres, pas les vôtres.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reprendre son calcul d'opportunité et le retourner : montrer ce qu'une IDE ne peut PAS faire (optimiser le planning, réduire les no-shows) vs ce que le logiciel fait. Chiffrer en €/mois pour réduire la douleur psychologique"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et j'ai vu que Doctolib propose un truc similaire pour moitié prix... Qu'est-ce qui justifie que vous soyez deux fois plus cher ?",
+        "sous_texte": "Je cherche activement des alternatives moins chères. Soit je bluffe pour vous faire baisser le prix, soit j'ai vraiment regardé et je ne comprends pas votre différenciation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas critiquer Doctolib. Questionner : 'Qu'avez-vous vu exactement chez eux ?' puis clarifier les différences fonctionnelles et le périmètre. Reconnaître qu'ils peuvent être adaptés selon les besoins."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vos références c'est bien, mais une clinique à Lyon de 80 personnes c'est pas comparable avec nous. Vous avez un client qui nous ressemble vraiment ? Une petite structure de 30-40 personnes en chirurgie ambu ?",
+        "sous_texte": "Vos preuves ne me rassurent pas car pas assez proches de ma réalité. Je cherche à me projeter. Si vous n'avez pas de référence proche, c'est que vous n'avez pas fait vos preuves sur mon segment.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Si vraie référence similaire : donner contact direct. Sinon : expliquer honnêtement les différences de taille mais montrer des éléments communs (mêmes problématiques, même contrainte budgétaire)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Alors là non, vous me parlez d'engagement sur 36 mois... Nous on s'est déjà fait avoir avec un contrat dont on pouvait pas sortir. Je signe rien qui nous enferme sur plus d'un an.",
+        "sous_texte": "Trauma 2019 réactivé. L'engagement long = piège commercial pour moi. C'est un deal-breaker absolu si pas de flexibilité. Je dois pouvoir sortir si ça ne marche pas.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une alternative contractuelle : période d'essai, engagement 12 mois puis reconduction, ou clause de sortie sous conditions. Valoriser cette flexibilité comme un gage de confiance dans le produit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, soyons honnêtes 2 minutes... Quels sont les vrais défauts de votre solution ? Qu'est-ce qui marche pas bien ? Parce que le truc 'parfait sur tous les points', j'y crois pas une seconde.",
+        "sous_texte": "Test d'honnêteté brutal. Si vous me vendez du rêve, je vous range dans la case 'commercial bullshit'. Si vous êtes transparent, je commence à vous croire et à vous respecter.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Être brutalement honnête sur 2-3 limites réelles du produit, expliquer les workarounds, et surtout dire clairement ce que ça ne fait PAS. Cela renforce la crédibilité sur tout le reste."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais, bon, je vois... Écoutez, il faut que j'en parle aux autres associés. On a un conseil la semaine prochaine, je leur présenterai ça, et on verra ce qu'ils en pensent. Je vous recontacte après.",
+        "sous_texte": "Fuite polie. Soit je ne suis vraiment pas décideur seul (vrai), soit je botte en touche parce que pas convaincu mais pas envie de dire non en face. Je dilue la responsabilité.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider si c'est une vraie étape process ou un prétexte. Proposer d'être présent au conseil ou de préparer un dossier avec lui. Ancrer un next step concret avec date."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon concrètement, votre meilleur prix c'est quoi ? Parce que là à 24k€, franchement on peut pas. Mais si vous faites un effort commercial, genre 18-19k€, on peut en reparler sérieusement.",
+        "sous_texte": "Négociation directe, je teste votre marge. Je sais que vous avez de la flexibilité. Mon seuil psychologique est à 18k€ environ, c'est là que je peux défendre ça en interne.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement. Recadrer la valeur totale (formation, accompagnement, support). Proposer de retravailler le périmètre fonctionnel pour ajuster le prix, pas une remise sèche. Maximum 10% si contrepartie."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant mais là je suis pas prêt à décider. On a déjà plein de chantiers en cours, deux associés qui partent en retraite à gérer... Je pense qu'on va attendre 6 mois, que la situation se stabilise.",
+        "sous_texte": "Objection de temporisation sincère OU prétexte pour fuir sans dire non. Réelle surcharge cognitive, peur de l'investissement en période d'incertitude. Besoin d'être rassuré sur le timing.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider si c'est un vrai timing issue ou une fuite. Puis retourner : 'Justement, c'est pas le bon moment pour attendre - les nouveaux associés voudront des outils modernes, démarrer maintenant = avantage'. Proposer phasage progressif."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Alors là franchement, j'ai rien compris à votre histoire de module machin et d'interface bidule... C'est beaucoup trop technique pour moi tout ça. Nous on veut juste que ça marche, on est pas des informaticiens.",
+        "sous_texte": "Vous m'avez perdu dans le jargon. Je ne comprends pas donc je ne peux pas prendre de décision. Traduction : vous n'avez pas su vulgariser. Je me sens bête et donc je me braque.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "S'excuser immédiatement, retraduire en bénéfices métiers concrets avec ses mots à lui (temps, €, simplicité). Proposer une démo live sur un cas réel de la clinique pour rendre tangible."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, on va être honnêtes tous les deux : votre solution elle est bien, je dis pas le contraire. Mais là, 24 000 euros, même à 22k€, nous on peut pas aller au-delà de 18 000. C'est vraiment notre maximum absolu. Et encore, faudra que j'explique aux autres pourquoi on met autant. Donc soit vous pouvez faire quelque chose à ce prix-là, soit on va devoir passer notre tour, même si ça me fait chier parce que j'ai bien aimé votre approche.",
+      "condition_declenchement": "Arrive après 20-25 minutes de discussion, quand il a compris la valeur MAIS que le gap de prix reste psychologiquement infranchissable. Moment de vérité où il teste votre dernière marge de manœuvre avec une forme de respect acquis si vous avez bien mené l'entretien. Ton sincère, presque désolé, mais ferme."
+    },
+    "pattern_escalade": "Jean-Marc démarre distant et méfiant (trauma 2019), teste votre honnêteté par petites touches. Si vous passez les tests (transparence, chiffres, références solides), il s'ouvre progressivement et commence à utiliser 'nous' de manière inclusive. L'objection prix arrive tôt ET tard : tôt par réflexe défensif, tard de manière structurée quand il a compris la valeur mais doit défendre son budget. Si vous gérez mal le prix : escalade vers comparaison concurrentielle agressive + temporisation. Si vous gérez bien la valeur MAIS pas le prix : respect mutuel mais blocage financier final sincère autour de 18k€.",
+    "piege_classique": "Le piège majeur est de croire que l'objection prix est une tactique de négociation pure. Chez Jean-Marc, c'est 60% sincère (contrainte budgétaire réelle, peur du jugement des associés, trauma 2019) et 40% tactique (il testera votre marge). Le commercial qui braque directement sur le prix sans avoir construit la valeur OU qui survend sans transparence sur les limites perd immédiatement. Jean-Marc respecte la franchise brutale : lui dire 'À 18k€ je ne peux pas inclure X et Y, on doit choisir' est plus efficace que brader à 18k€ en gardant tout le périmètre (il se dira que vous l'arnaquiez à 24k€). Autre piège : les références cliniques 'non comparables' qui décrédibilisent au lieu de rassurer."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions pour le secteur santé/médical",
+      "description": "Entreprise proposant une solution destinée aux établissements de santé privés (cliniques, laboratoires d'analyses, cabinets médicaux de groupe)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution pour cliniques privées, laboratoires d'analyses ou cabinets médicaux de groupe de 20-50 personnes",
+      "proposition_valeur": "NON_SPECIFIE - à renforcer pour justifier le prix premium",
+      "prix": "NON_SPECIFIE - prix perçu comme élevé, marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre leur prix, valoriser l'offre face à l'objection tarifaire et négocier dans un cadre contraint (marge de 10% max) tout en préservant la valeur",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution digitale santé face à un directeur méfiant",
+    "vous_etes": "Commercial chez un éditeur de solutions digitales pour établissements de santé privés.",
+    "vous_vendez": "Une solution de gestion et d'optimisation pour cliniques privées, tarif 19 800€/an (marge de négociation max 10%).",
+    "vous_appelez": "Jean-Marc Valentin, 52 ans, médecin directeur et associé de la Clinique Saint-Rémy (34 personnes, chirurgie ambulatoire). Hyper-rationnel, échaudé par un investissement raté à 47k€ en 2019, protège le cash comme son patrimoine personnel.",
+    "ce_que_vous_savez": [
+      "La clinique est rentable mais sous pression : -8% de remboursements sécu en 2 ans",
+      "Les médecins passent 6h/semaine sur l'administratif, le taux de remplissage du bloc est à 73%",
+      "Ils utilisent un vieux logiciel Médisoft (980€/mois) + Excel + beaucoup de papier",
+      "Deux associés partent à la retraite dans 18 mois, besoin de moderniser pour recruter",
+      "Jean-Marc doit valider tout investissement avec les autres associés en conseil"
+    ],
+    "votre_objectif": "Conclure la vente en défendant votre prix par un ROI chiffré et concret, sans casser la valeur.",
+    "vos_atouts": [
+      "ROI calculable : économie de temps médical valorisable + évitement d'une embauche administrative (38k€/an)",
+      "Optimisation du planning bloc mesurable en taux de remplissage",
+      "Possibilité de paiement étalé pour faciliter la validation en conseil d'associés",
+      "Accompagnement et formation inclus pour éviter l'échec d'adoption"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:00:37Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16763,
+    "total_time_s": 171.6
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "id": "scenario_1771520245",
+  "description_originale": "Le directeur commercial ou directeur des opérations d'une groupe d'intérim ou cabinet RH de 150+ collaborateurs (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : rh_recrutement]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "reclamation_crise",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud_negatif"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "150+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur_commercial_ou_operations",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "direction_generale",
+        "service_juridique",
+        "responsable_qualite"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution_logicielle_ou_service_pour_secteur_rh",
+      "proposition_valeur_presumee": "optimisation_processus_rh_recrutement_fiabilite",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "incident_majeur_ayant_impacte_activite_client",
+        "risque_penalites_contractuelles",
+        "risque_perte_compte_cle",
+        "client_furieux_crise_relationnelle"
+      ],
+      "implicites": [
+        "defaillance_produit_service_delivre",
+        "non_respect_engagements_contractuels",
+        "image_fournisseur_deterioree",
+        "risque_effet_domino_sur_autres_clients",
+        "pression_hierarchique_interne_forte"
+      ],
+      "probleme_racine": "capacite_a_gerer_crise_relationnelle_majeure_et_retablir_confiance_avec_compte_strategique_sous_pression_contractuelle_et_financiere"
+    },
+    "objections_mentionnees": [
+      "votre_solution_a_cause_un_incident_majeur",
+      "nous_subissons_des_penalites_a_cause_de_vous",
+      "la_confiance_est_rompue",
+      "nous_evaluons_des_alternatives"
+    ],
+    "objectif_formation": "former_commerciaux_a_gestion_crise_relationnelle_retention_compte_cle_negociation_sous_pression_et_plan_remediation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "editeur_logiciel_rh_ou_fournisseur_services_rh",
+      "entreprise_description": "entreprise_fournissant_solutions_logicielles_ou_services_au_secteur_rh_recrutement_interim",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_logicielle_ou_prestation_service_destinee_a_optimiser_gestion_rh_recrutement_ou_interim",
+      "proposition_valeur": "fiabilite_gain_temps_conformite_optimisation_processus_rh",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "gestion_crise_retention_client_preservation_contrat",
+      "type_prospection": "gestion_reclamation_compte_existant"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature_precise_incident",
+        "montant_penalites",
+        "duree_relation_commerciale",
+        "chiffre_affaires_compte",
+        "historique_incidents_precedents",
+        "clauses_contractuelles_specifiques"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "TalentConnect France",
+        "secteur": "Cabinet de recrutement spécialisé IT/Finance",
+        "taille": "180 collaborateurs",
+        "ca_approximatif": "23M€ (en baisse de 8% cette année)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Hyper-réactif sous pression",
+        "Loyauté institutionnelle forte (15 ans d'ancienneté)",
+        "Perfectionniste au bord du burn-out"
+      ],
+      "motivations_profondes": [
+        "Protéger sa réputation interne après avoir défendu ce fournisseur en CODIR",
+        "Éviter que la DG ne lui retire la responsabilité opérationnelle",
+        "Prouver qu'il peut redresser la situation sans changer de prestataire"
+      ],
+      "peurs_freins": [
+        "Être perçu comme celui qui a validé un mauvais choix de solution",
+        "Que le Directeur Juridique documente tout pour se dégager de toute responsabilité",
+        "Perdre la face devant ses équipes qui lui avaient signalé des alertes mineures ignorées",
+        "Que le client final (grand compte bancaire) menace de résilier leur contrat cadre"
+      ],
+      "rapport_aux_commerciaux": "Actuellement dans une défiance agressive. Historiquement appréciait les relations franches mais là, c'est la rupture émotionnelle. Vit cela comme une trahison personnelle car il avait défendu votre offre face à une solution concurrente moins chère.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, coupant, voix tendue. Commence par 'J'ai 10 minutes, pas une de plus' même si c'est faux. Coupe la parole systématiquement les 3 premières minutes.",
+      "signaux_interet": [
+        "Demande soudainement 'Concrètement, vous proposez quoi AUJOURD'HUI ?'",
+        "Mentionne spontanément un chiffre de pénalité ('On en est à 47K€ là')",
+        "Passe du vouvoiement agressif au 'écoute' plus direct",
+        "Soupir suivi d'un long silence = il calcule mentalement si c'est récupérable"
+      ],
+      "signaux_rejet": [
+        "'Vous me prenez pour un con ou quoi ?' (expression littérale quand il sent du bullshit)",
+        "Invoque le Directeur Juridique comme menace ('Maître Blanchard va adorer ce dossier')",
+        "Commence une phrase par 'De toute façon...' = il a déjà décidé mentalement",
+        "Raccroche sans prévenir si on minimise l'incident"
+      ],
+      "tics_langage": [
+        "'Franchement' répété 4-5 fois par conversation",
+        "'On n'est plus en 2015 hein' quand il trouve une excuse caduque",
+        "'Moi je veux bien MAIS' suivi d'une liste de conditions non-négociables",
+        "Utilise 'voilà' comme point final agressif après avoir exposé un fait accablant"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum avant interruption. Zéro tolérance pour les formules corporate type 'nous comprenons votre frustration'. Exige des FAITS, des DATES, des NOMS de responsables."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "L'incident a causé l'envoi de 230 candidats avec des données corrompues chez leur client final (banque), provoquant un retard de 3 semaines sur un projet de transformation RH critique. Le client menace d'activer la clause de pénalités (2000€/jour de retard) et TalentConnect a déjà dû accorder un geste commercial de 15K€ pour éviter la rupture immédiate.",
+      "priorites_actuelles": [
+        "Obtenir un plan de remédiation technique ÉCRIT sous 48h",
+        "Sécuriser une garantie financière pour couvrir les prochaines pénalités potentielles",
+        "Préparer une présentation rassurant la DG prévue vendredi (dans 4 jours)",
+        "Documenter la défaillance fournisseur pour dégager sa responsabilité personnelle"
+      ],
+      "experience_avec_offre_similaire": "A utilisé Jobaffinity pendant 6 ans avant de basculer sur votre solution il y a 18 mois. Migration laborieuse (3 mois de retard sur planning initial) mais était satisfait jusqu'à cet incident. Commence à regretter publiquement le changement.",
+      "fournisseur_actuel": "VOUS (mais il a déjà demandé 2 devis à des concurrents cette semaine)",
+      "budget_disponible": "Paradoxalement AUCUN pour changer de solution (coût migration + formation = 80K€ minimum) mais peut débloquer 20-25K€ pour garanties/prestations correctives SI plan crédible. Le vrai budget c'est le coût d'inaction : 60K€/mois de pénalités potentielles."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance explicite et factuelle de la défaillance SANS jargon juridique minimisant",
+        "Engagement du N+2 de votre commercial (Directeur Général) à appeler dans les 24h",
+        "Plan d'action avec jalons hebdomadaires AUDITABLES par leur DSI",
+        "Proposition d'un gel des facturations pendant 2 mois comme geste commercial symbolique",
+        "Référence client similaire ayant traversé une crise comparable et s'en étant sorti"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Tenter de relativiser l'incident ('ça arrive dans l'IT')",
+        "Invoquer les clauses contractuelles de limitation de responsabilité en ouverture",
+        "Demander un délai supérieur à 72h pour produire le plan correctif",
+        "Laisser entendre que leur utilisation de la solution était peut-être fautive",
+        "Envoyer un junior en premier contact au lieu d'un décisionnaire côté fournisseur",
+        "Proposer une réunion physique avant d'avoir envoyé un document écrit préalable"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous ? J'ai 10 minutes, pas une de plus. Et franchement, j'espère que vous m'appelez avec du CONCRET parce que là, c'est plus le moment des belles paroles.",
+        "sous_texte": "Je suis furieux mais j'accepte encore de parler, ce qui signifie qu'une partie de moi veut que ça se règle. Mais je pose immédiatement le cadre pour reprendre le contrôle de la situation.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temporelle, démontrer que vous venez avec des éléments factuels préparés, pas des excuses génériques"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez quoi ? Maître Blanchard, notre Directeur Juridique, il me demande TOUS LES JOURS où on en est du dossier de responsabilité contractuelle. Alors voilà, c'est plus vraiment une conversation commerciale là.",
+        "sous_texte": "Je vous signale que ça a escaladé au niveau juridique pour vous faire peur, mais aussi pour vous faire comprendre que je ne contrôle plus tout. C'est un appel au secours déguisé en menace.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la gravité sans entrer dans le juridique immédiatement, proposer un niveau d'engagement supérieur de votre côté (DG, CTO)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, je vais être cash avec vous : je vous appelle parce que contractuellement je dois documenter toutes nos interactions. Pas parce que j'ai encore confiance dans votre capacité à réparer ce bordel.",
+        "sous_texte": "Je suis en train de construire un dossier de rupture de contrat, mais je vous laisse une dernière chance de me prouver le contraire. C'est votre dernière balle.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence absolue : 'Je comprends, et je vais vous donner des éléments qui méritent d'être documentés positivement'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez de VOUS expliquer ce qui s'est passé ? Mais vous vous foutez de moi ? C'est VOTRE solution qui a corrompu 230 dossiers candidats ! Vous le savez très bien !",
+        "sous_texte": "Je suis outré que vous me demandiez des détails alors que je considère que vous devriez déjà tout savoir. C'est perçu comme de l'incompétence ou de la manipulation.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer immédiatement que vous connaissez parfaitement les faits précis, puis expliquer que vous avez besoin de SA vision pour construire la réponse adaptée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien MAIS vous comprenez que pendant qu'on discute là, le compteur tourne ? On est à 47 000 euros de pénalités à ce jour. Ça fait 2 000 balles par jour. Voilà.",
+        "sous_texte": "Je vous donne une information chiffrée précise car une partie de moi espère encore que vous allez réagir à la hauteur de l'enjeu financier. C'est un signal d'ouverture déguisé en pression.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Prendre note du chiffre précis, le répéter pour montrer que vous l'intégrez, puis articuler votre proposition autour de cette réalité économique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez ce qui est terrible dans cette histoire ? C'est que MOI, j'avais défendu votre offre en CODIR. Contre l'avis du DAF qui trouvait Jobaffinity moins cher. Et regardez où on en est maintenant.",
+        "sous_texte": "Je vous révèle ma vulnérabilité personnelle et politique. C'est MA crédibilité qui est en jeu. Si vous me lâchez maintenant, c'est ma carrière que vous impactez.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement ce qu'il a risqué personnellement, et construire votre plan de remédiation pour qu'il puisse 'sauver la face' en interne"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On n'est plus en 2015 hein. Les clauses de limitation de responsabilité dans vos CGV, c'est bien joli, mais quand on perd un client qui représente 1,2 million de CA annuel, vous croyez que ça compense vos 15K€ de plafond contractuel ?",
+        "sous_texte": "J'ai étudié le contrat en détail avec le juridique. Je sais que légalement vous êtes protégés, mais moralement et commercialement, vous devez aller au-delà. Je teste votre volonté réelle d'arranger les choses.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas se retrancher derrière le contrat. Proposer un geste commercial volontaire qui dépasse les obligations légales, tout en le documentant proprement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan de remédiation sous 48h ? Franchement, ça fait 8 jours que c'est la crise et c'est MAINTENANT que vous me proposez un plan ? Où étiez-vous la semaine dernière ?",
+        "sous_texte": "Je vous reproche le délai de réaction, mais le fait que je critique le timing signifie que je suis encore dans l'évaluation de votre proposition. Si j'avais vraiment décidé d'arrêter, je ne commenterais même pas.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le délai inadmissible sans justification, expliquer factuellement ce qui a été fait en coulisses, présenter le plan comme l'aboutissement d'un travail déjà engagé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, vous proposez quoi AUJOURD'HUI ? Parce que moi vendredi, j'ai la DG. Et je peux pas arriver avec du vent. Il me faut du tangible.",
+        "sous_texte": "C'est le signal d'intérêt maximum. Je vous donne mon échéance critique et vous ouvre la porte pour me fournir les munitions qui me permettront de vous défendre en interne. Ne me décevez pas.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposition structurée en 3 points max, avec dates précises et livrables documentables qu'il pourra projeter vendredi. Format présentation exécutive prêt à l'emploi."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de garanties financières, mais franchement, vous me prenez pour un con ou quoi ? Vous allez me garantir quoi exactement ? Que la prochaine catastrophe sera remboursée ? C'est ça votre proposition de valeur maintenant ?",
+        "sous_texte": "Je suis sarcastique car je suis déçu et blessé. Mais j'attends en fait une réponse structurée et chiffrée à cette question. C'est un test d'honnêteté intellectuelle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Honnêteté radicale : expliquer précisément ce qui est garanti, dans quelles limites, et surtout les mesures PRÉVENTIVES mises en place pour que ça ne se reproduise jamais"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Gel de facturation pendant 2 mois ? Écoute, c'est sympa le geste symbolique, mais ça représente quoi ? 8000 euros ? Pendant que nous on est à 47K de pertes réelles PLUS les 15K qu'on a déjà lâchés au client. Vous voyez le décalage ?",
+        "sous_texte": "Je fais le calcul à voix haute pour vous montrer que votre geste, bien qu'apprécié, n'est pas à la hauteur. Mais le fait que j'entre dans ce niveau de détail signifie que je négocie encore. C'est bon signe.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que le geste seul est insuffisant, l'intégrer dans un package global (gel + garanties + ressources + engagement direction) qui atteint un seuil psychologique acceptable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'un client similaire qui s'en est sorti ? Franchement, donnez-moi son nom et son numéro direct, que je l'appelle moi-même. Parce que des success stories bullshit, j'en ai eu ma dose.",
+        "sous_texte": "Je teste votre sincérité. Si vous me donnez réellement le contact, ça voudra dire que vous êtes transparent. Si vous bottez en touche, je saurai que c'est du bluff et la confiance sera définitivement rompue.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Soit donner le contact réel (avec accord préalable du client référence), soit expliquer factuellement pourquoi ce n'est pas possible MAIS fournir un témoignage écrit vérifiable à la place"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi je veux bien vous laisser une chance, MAIS j'ai besoin d'un engagement de votre DG. Pas de vous. De votre patron direct. Avec son nom, son mail, et son numéro de mobile. Sinon c'est juste du vent.",
+        "sous_texte": "Je ne vous fais plus confiance à votre niveau. J'ai besoin de garanties hiérarchiques. Mais la formulation 'je veux bien laisser une chance' indique que je suis encore preneur si vous montez le niveau d'engagement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter immédiatement, donner les coordonnées complètes, et si possible organiser un call tripartite DG-vous-lui dans les 24h. Ne jamais résister à cette demande."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon, j'ai deux devis concurrents sur mon bureau. Jobaffinity m'a rappelé bizarrement, et j'ai aussi ContactPro qui me drague depuis 6 mois. Donc voilà, donnez-moi UNE raison de pas basculer.",
+        "sous_texte": "C'est à la fois vrai ET une pression tactique. Les devis existent probablement, mais le coût de migration réel (80K€ + désorganisation) fait que ce n'est pas son premier choix. Il me demande de lui fournir l'argument qui justifiera de rester.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer la concurrence. Reconnaître qu'il DOIT avoir exploré les alternatives. Puis présenter l'équation économique réelle : coût remédiation vs coût migration + risque de nouvelle période instable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, là vous me demandez de signer un avenant au contrat pour acter tout ça ? Mais vous plaisantez ? Vous croyez que j'ai le temps de faire valider un avenant contractuel par le juridique et la DG en 48h ?",
+        "sous_texte": "Objection process réelle. Je suis tenté par votre proposition, mais vous me mettez face à une impossibilité organisationnelle. Soit vous trouvez une solution de contractualisation plus agile, soit je dois refuser même si ça m'intéresse.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un document d'engagement commercial signé niveau DG des deux côtés sous 24h, qui servira de base à l'avenant contractuel formalisé sous 15 jours. Pragmatisme bureaucratique."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et mes équipes dans tout ça ? Parce que franchement, vous savez ce qu'ils me disent en ce moment ? 'Stéphane, tu nous avais vendu cette solution comme la Rolls, et maintenant on se tape la honte devant les clients'. Comment je gère ça humainement ?",
+        "sous_texte": "C'est l'objection émotionnelle finale et la plus profonde. Au-delà du business, c'est mon leadership et ma crédibilité managériale qui sont en jeu. J'ai besoin que votre solution m'aide à restaurer ça, pas juste à colmater la brèche technique.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une session de transparence technique avec ses équipes animée par votre CTO, reconnaître publiquement l'échec, et présenter les correctifs. Lui donner les outils pour restaurer sa légitimité interne."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'entends tout ce que vous me dites. Franchement, sur le papier c'est cohérent. MAIS je peux pas valider ça tout seul. Il faut que j'en parle à la DG et au juridique avant vendredi. Et entre nous, après ce qui s'est passé, s'ils me disent non, je pourrai pas vous défendre une deuxième fois. Donc concrètement, qu'est-ce que vous me donnez MAINTENANT pour que je puisse leur présenter un truc solide ?",
+      "condition_declenchement": "Se déclenche quand le commercial a présenté un plan crédible mais que Stéphane réalise qu'il doit encore convaincre ses propres décisionnaires internes. Il passe de l'opposition agressive à une posture de 'vendeur interne' qui demande des munitions. C'est le moment de vérité : soit vous lui donnez le package complet documenté immédiatement, soit il n'aura pas les armes pour vous défendre et la décision lui échappera."
+    },
+    "pattern_escalade": "Stéphane démarre en mode attaque verbale agressive (3 premières minutes). Si le commercial encaisse sans se défendre mollement ET apporte des faits précis, il passe en mode 'négociation sous pression' avec objections tactiques chiffrées. Si ces objections sont traitées avec transparence, il révèle alors ses vulnérabilités personnelles (crédibilité interne, pression hiérarchique) = signal qu'il cherche une issue. L'escalade finale arrive quand il demande explicitement des outils pour convaincre ses propres décisionnaires : c'est là qu'il faut livrer le package complet documenté (exec summary + plan d'action + engagement DG + garanties). S'il ne reçoit pas ça immédiatement exploitable, il raccrochera poliment mais sera forcé de basculer vers les alternatives par défaut organisationnel.",
+    "piege_classique": "Le piège mortel avec Stéphane est de confondre son agressivité initiale avec un rejet définitif. Les commerciaux juniors raccrochent mentalement dans les 2 premières minutes face à son ton cassant. ERREUR : cette agressivité est un TEST de solidité. S'il ne vous respectait pas du tout, il aurait délégué l'appel ou envoyé un mail sec de rupture. Le fait qu'il prenne le call lui-même signifie qu'une partie de lui VEUT que ça se règle. Le deuxième piège est de proposer une réunion physique avant d'avoir envoyé un document écrit : il le vivra comme une tentative de manipulation émotionnelle et fermera. Il faut TOUJOURS envoyer le plan écrit d'abord, puis proposer le call de validation. Enfin, dernier piège : minimiser l'incident ou se retrancher derrière les clauses contractuelles = rupture immédiate et définitive. Avec lui, seule l'honnêteté radicale + engagement au-dessus des obligations légales + montée hiérarchique rapide peuvent sauver le compte."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "editeur_logiciel_rh_ou_fournisseur_services_rh",
+      "description": "entreprise_fournissant_solutions_logicielles_ou_services_au_secteur_rh_recrutement_interim"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_logicielle_ou_prestation_service_destinee_a_optimiser_gestion_rh_recrutement_ou_interim",
+      "proposition_valeur": "fiabilite_gain_temps_conformite_optimisation_processus_rh",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "gestion_crise_retention_client_preservation_contrat",
+      "description": "former_commerciaux_a_gestion_crise_relationnelle_retention_compte_cle_negociation_sous_pression_et_plan_remediation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "gestion_reclamation_compte_existant",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Rétention compte clé après incident majeur",
+    "vous_etes": "Account Manager senior chez un éditeur de logiciel RH/recrutement, responsable du compte TalentConnect France depuis 18 mois.",
+    "vous_vendez": "Vous ne vendez rien aujourd'hui — vous gérez une crise relationnelle majeure suite à un incident technique qui a corrompu 230 dossiers candidats chez leur client final.",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur des Opérations chez TalentConnect France (cabinet recrutement IT/Finance, 180 collaborateurs). Hyper-réactif, sous pression de sa direction, et furieux — il avait défendu votre solution en CODIR face à la concurrence.",
+    "ce_que_vous_savez": [
+      "L'incident a provoqué 3 semaines de retard sur un projet critique chez leur client bancaire",
+      "TalentConnect subit 2000€/jour de pénalités + a déjà accordé 15K€ de geste commercial",
+      "Stéphane doit présenter un plan rassurant à sa DG vendredi (dans 4 jours)",
+      "Il a demandé 2 devis concurrents cette semaine — la confiance est rompue",
+      "Il vous accorde 10 minutes max, coupe la parole, et déteste le bullshit corporate"
+    ],
+    "votre_objectif": "Éviter la rupture immédiate du contrat en obtenant 48h pour produire un plan de remédiation écrit validé par votre direction générale.",
+    "vos_atouts": [
+      "Vous avez l'engagement de votre DG à appeler Stéphane sous 24h si plan accepté",
+      "Vous pouvez proposer un gel de facturation 2 mois comme geste symbolique",
+      "Vous avez un client similaire (secteur RH) qui a traversé une crise comparable il y a 6 mois",
+      "Votre DSI peut auditer leur infrastructure avec eux sous 72h pour diagnostic partagé"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:57:25Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16732,
+    "total_time_s": 170.4
+  }
+}

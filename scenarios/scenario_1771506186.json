@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771506186",
+  "description_originale": "Le directeur des achats ou directeur industriel d'une ETI industrielle de 200-400 salariés, production en série, plusieurs sites veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : industrie]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution ou produit B2B pour industriel (équipement, services, fournitures industrielles)",
+      "proposition_valeur_presumee": "Solution adaptée à la production en série sur plusieurs sites industriels",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition active"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le client veut renégocier les conditions avant signature",
+        "Mise en concurrence active avec 2 fournisseurs",
+        "Risque de perdre l'affaire sur le prix"
+      ],
+      "implicites": [
+        "Difficulté à justifier la valeur vs concurrence",
+        "Manque de compréhension des vrais critères de décision du client",
+        "Pression sur les marges",
+        "Risque de guerre des prix",
+        "Commercial probablement en position défensive"
+      ],
+      "probleme_racine": "Incapacité à différencier l'offre sur autre chose que le prix et à identifier les vrais leviers de décision de l'acheteur professionnel"
+    },
+    "objections_mentionnees": [
+      "Demande de renégociation des conditions commerciales",
+      "Existence d'offres concurrentes potentiellement moins chères"
+    ],
+    "objectif_formation": "Apprendre à défendre la valeur en phase finale, décrypter les vrais critères d'un acheteur professionnel au-delà du prix, et closer une négociation complexe face à la concurrence",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour l'industrie",
+      "entreprise_description": "Entreprise fournissant des solutions, équipements ou services pour des ETI industrielles en production série multi-sites",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou produit destiné à l'industrie, adaptée à des environnements de production en série sur plusieurs sites",
+      "proposition_valeur": "Offre positionnée en valeur (non low-cost), avec arguments à défendre au-delà du prix : fiabilité, service, accompagnement, TCO, délais, qualité",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE - à découvrir et défendre pendant l'appel",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Montant de la transaction",
+        "Historique de la relation commerciale",
+        "Points précis de négociation souhaités par le client",
+        "Arguments différenciants déjà présentés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Fabrice",
+      "nom": "Delmotte",
+      "age": 51,
+      "poste": "Directeur des Achats et Approvisionnements",
+      "entreprise": {
+        "nom": "Techniplast Composites",
+        "secteur": "Plasturgie industrielle - injection et thermoformage pour l'automobile et l'aéronautique",
+        "taille": "ETI 320 salariés répartis sur 3 sites (Oyonnax, Toulouse, Vitré)",
+        "ca_approximatif": "68M€ avec une pression forte sur les marges depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'au cynisme - 'Les belles histoires je les laisse aux commerciaux du dimanche'",
+        "Méfiant par déformation professionnelle - voit les pièges partout",
+        "Joueur d'échecs mental - aime tester les réactions et garder le contrôle"
+      ],
+      "motivations_profondes": [
+        "Prouver au CODIR qu'il génère 400-600K€ d'économies annuelles sur son périmètre",
+        "Protéger sa réputation de 'requin des achats' acquise en 8 ans dans le groupe",
+        "Éviter absolument une rupture d'approvisionnement qui arrêterait la production",
+        "Montrer qu'il maîtrise parfaitement ses dossiers face à la Direction Industrielle qui empiète sur son territoire"
+      ],
+      "peurs_freins": [
+        "Passer pour un pigeon qui paye trop cher devant ses pairs",
+        "Que le fournisseur low-cost se révèle défaillant 6 mois après signature",
+        "Perdre du temps en réunions inutiles - 'Mon agenda vaut de l'or'",
+        "Être contourné par un commercial qui irait voir directement le DG"
+      ],
+      "rapport_aux_commerciaux": "Relation de prédation inversée - 'Je sais qu'ils veulent me vendre, je veux qu'ils sachent que je veux acheter moins cher'. Respecte secrètement ceux qui tiennent tête avec des arguments chiffrés, méprise ceux qui lâchent 5% dès la première objection. A horreur des vendeurs qui utilisent son prénom trop vite.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial-glacial - 'Oui bonjour, j'ai 20 minutes, je vous écoute sur ce qui a changé depuis votre dernière offre parce que là franchement...'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur les délais de livraison site par site",
+        "Demande des références clients dans son secteur avec contact direct",
+        "Commence ses phrases par 'Concrètement' ou 'Chiffrez-moi'",
+        "Prend des notes manuscrites sur son carnet Moleskine noir",
+        "Évoque spontanément des problèmes précis rencontrés avec le fournisseur actuel"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles quand on parle 'partenariat' ou 'relation long terme'",
+        "Regarde ostensiblement sa montre ou ses mails",
+        "Coupe la parole avec 'Oui oui j'ai compris, venons-en au tarif'",
+        "Mentionne les concurrents par leur nom en insistant sur 'eux au moins ils...'",
+        "Phrase fatale : 'Écoutez, envoyez-moi votre meilleure offre par mail, on verra'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Soyons clairs...'",
+        "Utilise 'Ça se discute' quand il est en fait intéressé",
+        "Dit 'On ne va pas se mentir' avant une offensive négociation",
+        "Ponctue par 'Hein ?' en fin de phrase pour tester l'adhésion",
+        "Abus du conditionnel passé : 'J'aurais aimé voir ça dans l'offre initiale'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum avant interruption. Lève la main physiquement pour stopper si le commercial part en tunnel. Au téléphone, fait du bruit avec son clavier pour signaler l'ennui."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance tendue : +12% de volume sur 2024 mais prix de vente en baisse de 8% imposés par les donneurs d'ordre automobile. Deux lignes de production supplémentaires à lancer sur le site de Vitré d'ici T2 2025. Pression du CODIR pour réduire les coûts d'achat de 7% sur l'ensemble des familles. Audit qualité fournisseurs en cours suite à un incident de livraison non-conforme qui a coûté 80K€ en octobre.",
+      "priorites_actuelles": [
+        "Sécuriser les approvisionnements pour le démarrage Vitré sans surstock",
+        "Renégocier 6 contrats majeurs avant fin Q1 dont celui-ci",
+        "Trouver 180K€ d'économies supplémentaires sur son budget 2025",
+        "Qualifier sérieusement le fournisseur low-cost portugais qui prospecte agressivement"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 3 fournisseurs sur ce type de solution en 5 ans. Deux ont déçu sur la réactivité SAV, un a tenu ses promesses mais a été racheté et la qualité s'est dégradée. Sait précisément quels KPI suivre et quelles clauses contractuelles exiger. Connaît les coûts de revient théoriques mieux que certains vendeurs.",
+      "fournisseur_actuel": "Contrat en cours depuis 14 mois avec votre entreprise, globalement satisfait sur la qualité mais 2 litiges mineurs sur les délais. Relation correcte avec le technico-commercial terrain mais trouve le siège 'rigide' sur les conditions. A obtenu -3% l'an dernier en mettant la pression, compte bien réitérer.",
+      "budget_disponible": "Enveloppe de 340K€ sur 2025 pour cette ligne d'achat, mais stratégie de ne JAMAIS révéler son budget. Prêt à monter à 360K€ si valeur démontrée chiffrée sur TCO ou réduction risques, mais partira sur un concurrent à 295K€ si pas convaincu sur le différentiel de valeur. Le prix n'est pas LE critère mais représente 40% de sa décision finale."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Montrer qu'on a étudié SON entreprise et ses contraintes spécifiques (sites multiples, secteurs automobile/aéro)",
+        "Parler coût total de possession avec tableau comparatif prêt à l'emploi",
+        "Proposer une clause de pénalités réciproques sur les délais (il respecte ceux qui prennent des risques)",
+        "Citer des références clients avec résultats chiffrés dans son secteur sans qu'il les demande",
+        "Reconnaître frontalement que l'offre n'est pas la moins chère mais expliquer POURQUOI en 90 secondes chrono",
+        "Lui faire gagner du temps avec une proposition structurée en 3 scénarios A/B/C comparés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'On est pas les plus chers' sans benchmark chiffré",
+        "Demander 'Quel est votre budget ?' de manière frontale",
+        "Critiquer explicitement les concurrents (il déteste ça, préfère qu'on parle de soi)",
+        "Utiliser des slides PowerPoint de 40 pages avec historique entreprise et vision 2030",
+        "Proposer une remise 'exceptionnelle' dès qu'il pousse (perd tout respect)",
+        "Être flou sur les délais de livraison ou les conditions d'annulation",
+        "Ignorer ses questions techniques pour revenir à son pitch préparé",
+        "Appeler après 17h45 ou un lundi matin sans RDV confirmé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui écoutez, j'ai 20 minutes là, mais avant de partir dans les détails, on ne va pas se mentir : votre dernière offre était 18% au-dessus de ce que me propose le Portugais. Alors si c'est pour me redire la même chose, on va gagner du temps tous les deux, hein ?",
+        "sous_texte": "Je suis intéressé sinon je ne décrocherais pas, mais je veux voir si vous allez craquer sur le prix immédiatement ou si vous avez des arguments solides. Test de résistance initiale.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas justifier le prix maintenant, reconnaître l'écart, et proposer de décortiquer le TCO sur 24 mois pour comprendre où sont les 18% - transformer l'objection prix en discussion valeur"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, c'est la troisième relance ce mois-ci. Vous avez quelque chose de nouveau ou c'est juste pour maintenir le contact ? Parce que moi les calls de courtoisie...",
+        "sous_texte": "J'en ai marre des commerciaux qui tournent autour sans apport de valeur. Prouvez-moi en 30 secondes que vous ne me faites pas perdre mon temps.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement l'élément nouveau concret : ajustement offre basé sur son projet Vitré, benchmark sectoriel automobile/aéro, ou clause spécifique qu'on a préparée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi vous me demandez ça ? Mon budget c'est mon problème, pas le vôtre. Vous avez un prix, vous me le donnez, et moi je compare. C'est comme ça que ça marche dans les achats industriels.",
+        "sous_texte": "Question piège classique. Je veux voir si vous êtes un vendeur professionnel ou un débutant. Je ne révélerai JAMAIS mon budget en premier.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter sa règle du jeu, reformuler qu'on cherche juste à dimensionner l'offre selon ses volumes et contraintes, pas à connaître son budget. Reprendre la main sur la découverte."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Les délais ? Soyons clairs : j'ai besoin de livraisons fractionnées sur trois sites avec des fenêtres de 4h maximum. Le moindre retard me coûte 3 500 euros de l'heure en arrêt ligne. Donc si vous me sortez 'on fait notre possible' ou '72h ouvrées', on arrête là tout de suite.",
+        "sous_texte": "C'est mon critère n°2 après le prix. Je teste votre capacité logistique réelle et votre courage à vous engager contractuellement. Les beaux parleurs reculent ici.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Poser des questions précises sur ses fenêtres, volumes par site, saisonnalité. Puis s'engager chiffré avec clause de pénalités réciproques si vous pouvez tenir - sinon être honnête sur vos limites"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me parlez de partenariat long terme, mais franchement, j'ai entendu ça quinze fois. Le fournisseur qu'on a pris en 2021 avec le même discours, il nous a lâchés en plein rush en juillet dernier. Résultat : 80 000 euros de perte sèche. Alors les grands mots...",
+        "sous_texte": "J'ai été échaudé récemment. Je suis cynique par expérience, pas par nature. Si vous avez des preuves tangibles de fiabilité, c'est le moment.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie sur l'incident, puis références clients similaires contactables directement avec KPI de ponctualité livraison sur 18-24 mois. Proposer clause contractuelle de backup si défaillance."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, la qualité supérieure, le service réactif, tout ça je connais la chanson. Mais concrètement, chiffrez-moi : cette 'qualité supérieure' elle m'économise combien en rebuts ? Votre 'service réactif' il me fait gagner quoi en productivité ? Parce que là, vous me demandez 55 000 euros de plus sur l'année.",
+        "sous_texte": "Vos arguments sont creux tant que vous ne les traduisez pas en euros sonnants et trébuchants. Je veux un business case, pas un argumentaire marketing.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Sortir un tableau TCO comparatif préparé : coûts cachés, taux de rebuts moyen secteur vs vos clients, coût d'un arrêt ligne évité, durée de vie produit. Transformer les 55K€ en investissement rentabilisé."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me dites que vous êtes meilleurs sur le SAV, mais j'ai discuté avec un de vos clients - Mécanix Précision à Angers - ils m'ont dit qu'ils ont attendu 11 jours pour une intervention en septembre. C'est quoi cette histoire ?",
+        "sous_texte": "J'ai fait mes devoirs, je teste votre honnêteté et votre gestion de crise. Votre réaction va m'en dire plus que tous vos arguments commerciaux.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas nier ou minimiser. Reconnaître le cas spécifique si vous le connaissez, expliquer contexte et actions correctives mises en place depuis. Proposer de parler à 3 autres clients pour équilibrer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vos arguments, ils sont intéressants pour un site unique. Mais moi j'ai trois sites avec des contraintes différentes. Oyonnax c'est pas Vitré, et Vitré c'est pas Toulouse. Vous avez déjà géré ça ou je vais être votre cobaye ?",
+        "sous_texte": "Vraie préoccupation logistique. Je veux savoir si vous avez l'expérience multi-sites ou si je vais essuyer les plâtres avec les risques que ça comporte.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Références clients multi-sites avec noms et contacts. Organisation logistique proposée site par site. Éventuellement phase pilote sur un site avant déploiement si c'est une première pour vous."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais Plastiform Solutions me propose exactement le même niveau de service pour 42 000 euros de moins. Ils ont des références Valeo et Safran. Expliquez-moi pourquoi je paierais plus chez vous ?",
+        "sous_texte": "J'ai une vraie alternative crédible, pas du bluff. Soit vous me différenciez clairement maintenant, soit je bascule chez eux. C'est votre dernière chance de me convaincre.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas critiquer Plastiform. Poser des questions sur leur offre précise pour identifier les différences cachées. Puis démontrer votre différenciation sur SES critères prioritaires à lui, pas les vôtres."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça se discute... Mais là j'aurais aimé voir dans votre offre une clause d'indexation plafonnée. Avec la volatilité des matières premières, je ne vais pas signer un contrat où vous pouvez me augmenter de 15% dans six mois sous prétexte que le polypropylène a flambé.",
+        "sous_texte": "Signal d'intérêt masqué - je rentre dans le détail contractuel parce que je me projette. Mais j'ai un vrai besoin de sécurisation prix sur la durée.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une clause d'indexation transparente sur indices publics avec tunnel +/- X%. Montrer que vous avez anticipé ce besoin légitime et que vous êtes prêt à partager le risque."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais je ne peux pas décider seul sur ces montants. Je dois passer en CODIR jeudi prochain avec trois offres comparées. Envoyez-moi votre meilleure proposition finale par mail, on verra après.",
+        "sous_texte": "Tactique de temporisation classique. Soit je veux vraiment comparer à tête reposée, soit je cherche à vous faire lâcher une dernière remise, soit les deux.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le process CODIR comme légitime. Proposer de co-construire la matrice de comparaison pour le CODIR avec lui. Demander quels sont les critères de décision exacts du comité. Ancrer un prochain point avant jeudi."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Soyons clairs : si vous alignez le Portugais à 295 000 sur l'année, je signe demain. Sinon, je ne vois pas comment je justifie l'écart en interne. On ne va pas se mentir, hein, le prix c'est 60% de ma décision.",
+        "sous_texte": "Pression maximale finale. Je veux voir si vous allez craquer. Mais attention : si vous bradez maintenant, vous perdez mon respect et je renégocierai chaque année. Mon chiffre de 60% est faux, c'est plutôt 40%, mais je teste.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas s'aligner. Recadrer sur ses vrais critères (évoqués en découverte : délais, fiabilité, risque). Quantifier le coût du risque à 295K vs sécurité à votre prix. Proposer un scénario intermédiaire avec ajustements périmètre."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai un dernier truc qui me bloque : votre délai de paiement à 45 jours. Nous on travaille à 60 jours fin de mois avec tous nos fournisseurs stratégiques. Si on ne s'aligne pas sur nos standards, ça va coincer au niveau trésorerie, et honnêtement je ne peux pas déroger.",
+        "sous_texte": "Objection finale financière technique. C'est réel et peut bloquer la signature même si tout le reste est ok. Je teste votre flexibilité sur les conditions commerciales annexes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Négocier : proposer 60 jours contre engagement volume ferme sur 18 mois, ou escompte si paiement maintenu à 45j. Montrer que c'est donnant-donnant, pas une concession gratuite."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, franchement, je trouve que vous défendez bien votre offre. Mais là j'ai besoin d'une geste commerciale pour que ça passe. Je vous demande pas la lune : 8% sur le global et on clôture aujourd'hui. C'est donnant-donnant.",
+        "sous_texte": "Tentative finale de négociation. Je suis probablement prêt à signer mais je serais un mauvais acheteur si je ne tentais pas une dernière optimisation. Votre réponse va déterminer si je vous respecte ou si je vous classe en 'vendeur faible'.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Refuser le 8% net. Proposer une contrepartie : 3-4% contre engagement triennal, ou volumes supplémentaires, ou référencement sur une autre famille d'achats. Négocier comme un pro, pas comme un faible."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, j'y pense : est-ce que vous avez une offre de financement ou de leasing sur ce type d'équipement ? Parce que si je peux sortir ça de mon budget achat et le passer en OpEx, ça change complètement la donne pour moi.",
+        "sous_texte": "Vrai signal d'achat - je cherche une solution pour contourner une contrainte budgétaire interne. Si vous avez cette carte dans votre manche, c'est peut-être le closer.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Si oui : présenter immédiatement les options financement/leasing avec simulation. Si non : proposer de connecter avec votre direction financière pour étudier sous 48h. Ne pas laisser passer cette ouverture."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, vous avez été carré, j'apprécie. Mais là concrètement, j'aurais aimé qu'on arrive à 315 000 sur l'année au lieu de vos 337 000. C'est mon plafond réel pour faire passer ça en CODIR sans discussion. Je peux pas aller au-delà. Est-ce qu'on peut se caler là-dessus avec un engagement ferme de ma part sur 24 mois ?",
+      "condition_declenchement": "Se déclenche si le commercial a bien défendu sa valeur, résisté aux pressions tarifaires précédentes, et démontré une réelle différenciation. Fabrice fait alors une vraie proposition finale avec son vrai plafond budgétaire, accompagnée d'un engagement volume en contrepartie. C'est la zone de closing réaliste."
+    },
+    "pattern_escalade": "Fabrice suit un pattern d'escalade des objections en 4 phases : 1) Test de résistance initial brutal sur le prix pour éliminer les vendeurs faibles (accroche), 2) Questionnement sincère sur capacité de livraison et fiabilité suite à son expérience négative (découverte/argumentation), 3) Mise en concurrence active avec chiffres précis et alternatives crédibles (argumentation avancée), 4) Négociation finale serrée sur conditions commerciales et derniers ajustements avant closing. Il devient progressivement plus collaboratif si le vendeur résiste professionnellement sans s'effondrer.",
+    "piege_classique": "Le piège majeur avec Fabrice : céder sur le prix lors des premières objections tactiques. Il TESTE systématiquement la résistance du vendeur dès l'accroche avec des comparaisons agressives. Les commerciaux qui lâchent 5-8% immédiatement pour 'garder la relation' perdent instantanément son respect et se retrouvent en guerre des prix permanente. Paradoxalement, il respecte et achète chez ceux qui tiennent bon avec des arguments chiffrés, même s'il râle. Son vrai critère n'est pas le prix le plus bas (sinon il aurait déjà signé avec le Portugais) mais le meilleur rapport valeur/risque/prix, et il veut un fournisseur solide qui ne bradra pas. Second piège : prendre ses '20 minutes chrono' au pied de la lettre - s'il est intéressé, il prolongera lui-même, mais le vendeur doit structurer son propos comme si c'était vraiment 20 min."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour l'industrie",
+      "description": "Entreprise fournissant des solutions, équipements ou services pour des ETI industrielles en production série multi-sites"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou produit destiné à l'industrie, adaptée à des environnements de production en série sur plusieurs sites",
+      "proposition_valeur": "Offre positionnée en valeur (non low-cost), avec arguments à défendre au-delà du prix : fiabilité, service, accompagnement, TCO, délais, qualité",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE - à découvrir et défendre pendant l'appel"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre la valeur en phase finale, décrypter les vrais critères d'un acheteur professionnel au-delà du prix, et closer une négociation complexe face à la concurrence",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Contrat fournitures industrielles 340K€",
+    "vous_etes": "Commercial B2B expérimenté chez un fournisseur de solutions industrielles positionné en milieu/haut de gamme pour la plasturgie et l'industrie de transformation.",
+    "vous_vendez": "Une solution industrielle (équipements ou fournitures) pour production multi-sites, budget autour de 340K€ annuel, positionnée sur la qualité et le TCO plutôt que sur le prix le plus bas.",
+    "vous_appelez": "Fabrice Delmotte, 51 ans, Directeur des Achats chez Techniplast Composites (ETI 320 personnes, 3 sites, plasturgie auto/aéro). Client actuel depuis 14 mois, globalement satisfait mais 2 litiges mineurs sur délais. Acheteur professionnel redoutable, méfiant, qui joue la montre et la concurrence. Vous a demandé une renégociation avant renouvellement.",
+    "ce_que_vous_savez": [
+      "Il a votre offre et deux concurrents sur la table, dont un low-cost portugais très agressif",
+      "Techniplast ouvre 2 nouvelles lignes de production à Vitré d'ici T2 2025, besoin de sécuriser l'approvisionnement",
+      "Son CODIR lui demande -7% sur les achats 2025, il doit trouver 180K€ d'économies sur son périmètre global",
+      "Il a eu un incident qualité à 80K€ en octobre avec un autre fournisseur, il est sous pression sur la fiabilité",
+      "Il respecte les commerciaux qui tiennent tête avec du chiffré, méprise ceux qui lâchent 5% au premier round"
+    ],
+    "votre_objectif": "Défendre votre valeur sans casser votre prix, identifier ses vrais critères de décision au-delà du tarif, et closer un accord sur ce renouvellement avant qu'il ne bascule sur la concurrence.",
+    "vos_atouts": [
+      "14 mois de relation sans incident majeur, vous connaissez ses sites et ses contraintes opérationnelles",
+      "Votre SAV et vos délais de réactivité sont objectivement supérieurs au low-cost (à chiffrer en coût évité)",
+      "Vous pouvez proposer des clauses de garantie/pénalités que le concurrent portugais ne tiendra jamais",
+      "Vous avez des références clients en plasturgie automobile avec KPI de TCO comparé (à utiliser sans qu'il demande)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:03:06Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17908,
+    "total_time_s": 186.6
+  }
+}

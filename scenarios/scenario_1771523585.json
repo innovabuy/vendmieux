@@ -1,0 +1,349 @@
+{
+  "id": "scenario_1771523585",
+  "description_originale": "Vous appelez à froid le fondateur / associé gérant d'une cabinet de gestion de patrimoine de 5-15 conseillers. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : banque_patrimoine]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "fondateur/associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux cabinets de gestion de patrimoine",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu l'appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat (barrage)",
+        "Nécessité de créer de l'intérêt instantané",
+        "Défi de légitimité face à un dirigeant",
+        "Gestion du timing inapproprié"
+      ],
+      "probleme_racine": "Absence de stratégie d'accroche et de pitch percutant pour transformer un appel froid en opportunité qualifiée malgré une interruption non sollicitée"
+    },
+    "objections_mentionnees": [
+      "Je n'ai pas le temps",
+      "Je ne vous connais pas",
+      "Je n'ai rien demandé",
+      "Ce n'est pas le bon moment"
+    ],
+    "objectif_formation": "Former les commerciaux à réussir des appels de prospection à froid auprès de dirigeants de cabinets de gestion de patrimoine pour décrocher des rendez-vous",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions/Services pour professionnels de la gestion de patrimoine",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux cabinets de gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution BtoB pour cabinets de gestion de patrimoine avec équipes de 5-15 conseillers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature de la solution/produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Entreprise vendeuse (nom, références)",
+        "Tarification",
+        "Avantages concurrentiels",
+        "Pain points spécifiques des cabinets de gestion de patrimoine",
+        "Zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Berthelot",
+      "age": 52,
+      "poste": "Associé fondateur et gérant",
+      "entreprise": {
+        "nom": "Berthelot & Associés Patrimoine",
+        "secteur": "Conseil en gestion de patrimoine",
+        "taille": "9 conseillers + 3 administratifs",
+        "ca_approximatif": "1,8M€ (l'an dernier, cette année c'est plus tendu)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les vendeurs par téléphone",
+        "Pragmatique avec une pointe de cynisme",
+        "Protecteur de son temps et de son équipe"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité du cabinet qu'il a mis 18 ans à construire",
+        "Éviter les erreurs coûteuses (a déjà investi 45K€ dans un CRM jamais utilisé)",
+        "Préserver son autonomie décisionnelle face aux groupes qui veulent le racheter"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau parleur comme en 2019",
+        "Perdre du temps dans des réunions commerciales qui n'aboutissent à rien",
+        "Que son associé lui reproche un nouvel investissement hasardeux",
+        "La surcharge administrative qui détourne ses conseillers de la clientèle"
+      ],
+      "rapport_aux_commerciaux": "Agacé par défaut. A développé des réflexes de défense automatiques. Respecte uniquement ceux qui vont droit au but et prouvent qu'ils connaissent vraiment son métier. Dit souvent 'J'en vois passer quinze par semaine, des comme vous'",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, légèrement irrité, avec une pointe de condescendance professionnelle. Soupir audible quand il décroche",
+      "signaux_interet": [
+        "Arrête de faire autre chose (on l'entend poser un stylo)",
+        "Pose une question précise sur les chiffres ou le ROI",
+        "Mentionne un problème concret actuel ('Tiens, justement...')",
+        "Demande combien de temps ça prend vraiment"
+      ],
+      "signaux_rejet": [
+        "Continue à taper sur son clavier pendant que vous parlez",
+        "Dit 'écoutez' ou 'attendez' sur un ton sec",
+        "Mentionne immédiatement qu'il a déjà un fournisseur",
+        "Utilise le 'vous' générique : 'Vous les commerciaux, vous...'",
+        "Coupe la parole avant la fin de votre phrase"
+      ],
+      "tics_langage": [
+        "'Franchement...' (quand il va vous recadrer)",
+        "'Bon écoutez là...' (signe d'impatience terminale)",
+        "'C'est gentil mais...'",
+        "'Je vais être honnête avec vous...' (suivit d'un refus poli)",
+        "Expire bruyamment avant de parler"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum. Au-delà, coupe la parole ou décroche mentalement. Détecte immédiatement un argumentaire appris par cœur"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance ralentie depuis 2 ans. Pression réglementaire accrue (DDA, RGPD). Un conseiller senior vient de partir, difficile à remplacer. Les jeunes conseillers mettent 18 mois à devenir rentables. Concurrence des néobanques et robo-advisors pour les petits patrimoines",
+      "priorites_actuelles": [
+        "Recruter un conseiller expérimenté avant fin T2",
+        "Digitaliser le parcours client sans perdre la relation humaine",
+        "Réduire le temps administratif des conseillers (actuellement 40% de leur temps)",
+        "Augmenter la valeur moyenne des dossiers traités"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 solutions SaaS ces 5 dernières années. Une seule est encore utilisée (à moitié). Se méfie des promesses de 'gain de temps' qui nécessitent en réalité 6 mois de paramétrage",
+      "fournisseur_actuel": "Utilise un CRM bancaire semi-imposé par un partenaire, un outil de signature électronique, et beaucoup d'Excel. Pas satisfait mais 'ça fait le job'",
+      "budget_disponible": "Peut débloquer jusqu'à 15-20K€ si ROI prouvé sous 12 mois, mais doit convaincre son associé au-delà de 8K€. Préfère l'abonnement mensuel aux gros investissements one-shot"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet concurrent qu'il connaît et qui a obtenu des résultats chiffrés",
+        "Identifier précisément UN problème qu'il vit aujourd'hui (pas demain)",
+        "Prouver qu'on connaît les spécificités réglementaires de son secteur",
+        "Promettre un diagnostic gratuit sans engagement (il adore comparer)",
+        "Respecter son temps : 'Je vous prends 90 secondes maximum'",
+        "Utiliser le vocabulaire métier exact (AUM, taux de transformation, ticket moyen)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Comment allez-vous aujourd'hui ?'",
+        "Dire qu'on travaille avec 'toutes les grandes banques' (trop vague)",
+        "Proposer une démo de 45 minutes dès le premier appel",
+        "Minimiser ses objections ('Je comprends mais...')",
+        "Parler de fonctionnalités avant d'avoir identifié son problème",
+        "Être insistant après un premier refus",
+        "Utiliser un ton trop familier ou décontracté"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en rendez-vous client là, c'est pas le moment du tout",
+        "sous_texte": "Test de détermination + vraie gêne. Veut voir si vous allez insister lourdement ou respecter son temps. Peut être vrai ou tactique.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement, proposer un créneau précis ultra-court dans les 48h, raccrocher en 10 secondes"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement j'en vois passer quinze par semaine des comme vous, qu'est-ce qui vous différencie exactement ?",
+        "sous_texte": "Objection réflexe de protection + vrai ras-le-bol. Challenge direct de votre légitimité. Attend une réponse factuelle, pas du marketing.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer UN résultat chiffré chez un cabinet similaire, puis poser une question de découverte au lieu d'argumenter"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez là, je ne connais même pas votre boîte, vous m'appelez pour quoi concrètement ?",
+        "sous_texte": "Impatience montante. Vous avez 15 secondes pour justifier votre appel avec du concret. Ton sec = vous êtes sur la corde raide.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Une phrase ultra-claire : qui vous êtes, problème résolu, preuve sociale locale, question fermée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà tout ce qu'il nous faut niveau outils, on a un CRM qui marche très bien",
+        "sous_texte": "Mensonge partiel. Le CRM ne 'marche' pas très bien mais il veut éviter de l'admettre. Protège son égo (c'était son choix). Cherche à clore vite.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Creuser avec curiosité sur un aspect précis : 'Super, et côté temps administratif vos conseillers, vous êtes où actuellement ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez c'est gentil mais franchement on n'a pas le budget pour ce genre de chose cette année",
+        "sous_texte": "Objection réflexe de protection + possiblement vraie. Teste si vous allez baisser le prix immédiatement (= perte de crédibilité) ou ignorer la contrainte.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte, déplacer sur le ROI : 'Je comprends. Justement nos clients récupèrent l'investissement en 8-9 mois via... Ça changerait quelque chose ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me proposez quoi exactement ? Parce que là je ne vois pas bien où vous voulez en venir",
+        "sous_texte": "Vous avez été trop vague ou trop long. Perte d'attention. Veut du concret MAINTENANT ou il raccroche. Peut aussi être une feinte pour reprendre le contrôle.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Pitch reformulé en une phrase béton avec exemple chiffré client. Puis question fermée pour reprendre la découverte"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai déjà investi 45 000 euros dans un CRM y'a quatre ans, personne ne l'utilise. Je ne vais pas refaire la même erreur",
+        "sous_texte": "Objection sincère et profonde. Cicatrice douloureuse. Peur de se faire avoir à nouveau + peur du regard de son associé. Forte résistance émotionnelle.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider l'émotion sans minimiser, creuser la vraie cause d'échec, différencier votre approche avec preuve d'adoption terrain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin tout ça c'est bien joli sur le papier, mais dans la vraie vie ça prend combien de temps à mettre en place réellement ?",
+        "sous_texte": "Scepticisme basé sur l'expérience. A déjà vécu des 'implémentations rapides' qui ont pris 6 mois. Veut un chiffre réaliste, pas marketing.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner le vrai délai avec transparence (pire cas inclus), expliquer le pourquoi, comparer à ce que ça coûte de ne rien faire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon je vais être honnête avec vous, mon associé ne voudra jamais, on a d'autres priorités cette année",
+        "sous_texte": "Possiblement vrai mais souvent bouclier tactique. Déplace la responsabilité. Peut aussi signaler qu'il n'est pas convaincu lui-même et utilise l'associé comme sortie de secours.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser les vraies priorités actuelles, positionner votre solution comme accélérateur de ces priorités, proposer d'inclure l'associé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et vous travaillez avec qui exactement dans le secteur ? Parce que des références vagues, j'en ai marre",
+        "sous_texte": "Test de crédibilité dur. Veut des noms précis de cabinets qu'il peut vérifier. Si vous êtes flou = game over. C'est un Go/NoGo mental pour lui.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 cabinets avec taille, localisation et résultat chiffré précis. Proposer mise en relation si besoin. Transparence totale"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que mes conseillers sont déjà surchargés, je ne peux pas leur imposer un nouvel outil à apprendre maintenant",
+        "sous_texte": "Objection sincère et légitime. Vraie préoccupation managériale. Peur de la résistance interne + culpabilité de surcharger son équipe déjà tendue.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte, montrer que votre solution RÉDUIT la charge (avec preuve), proposer pilote sur 1-2 volontaires d'abord"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi déjà un mail avec votre doc, je regarderai ça tranquillement et je vous rappelle si ça m'intéresse",
+        "sous_texte": "Sortie polie pour se débarrasser de vous sans conflit. Probabilité qu'il lise vraiment le mail : 5%. Probabilité qu'il rappelle : 0%. Objection réflexe de fuite.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas accepter. Créer urgence douce ou rareté, proposer slot précis court (diagnostic 15min), qualifier vraiment l'intérêt avant d'envoyer quoi que ce soit"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon pourquoi pas, mais là je suis vraiment chargé, rappelez-moi dans deux mois peut-être",
+        "sous_texte": "Technique dilatoire classique. 'Deux mois' = jamais. Intérêt faible ou moyen mais pas assez d'urgence perçue. Vous met en liste d'attente infinie.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Identifier la vraie raison du report (budget, priorité, décision ?), créer un micro-engagement maintenant (audit rapide, calcul ROI), sinker dans deux mois si vraiment nécessaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement votre truc m'intéresse mais je dois en parler avec mon associé avant, on ne prend jamais ce genre de décision seul",
+        "sous_texte": "Peut être sincère (vraie gouvernance) ou tactique (éviter de dire non). S'il est vraiment intéressé, il proposera une date. Sinon c'est un refus déguisé.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la démarche, proposer session commune avec l'associé, ou équiper Stéphane pour pitcher en interne (ROI one-pager), fixer callback précis"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, vous ne m'avez toujours pas dit combien ça coûte votre machin exactement",
+        "sous_texte": "Impatience + méfiance. Pense que vous cachez le prix car il est élevé. Peut être un Go/NoGo définitif pour lui selon le montant. Veut du concret maintenant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette contextualisée avec ROI immédiatement après, recentrer sur la valeur avant de closer sur RDV découverte approfondie"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est gentil mais là franchement je n'ai vraiment pas le temps pour ça. Je vous souhaite une bonne journée",
+      "condition_declenchement": "Si le commercial est trop insistant après 2 objections non traitées efficacement, ou si l'appel dépasse 3min30 sans valeur perçue claire, ou si ton vendeur trop familier/marketing"
+    },
+    "pattern_escalade": "Stéphane commence avec des objections réflexes froides (test). Si vous résistez avec pertinence et respect, il passe en mode 'sceptique mais curieux' avec objections sincères. Si vous prouvez votre expertise métier + résultats chiffrés, il s'ouvre progressivement. MAIS si vous insistez après un refus, utilisez des tactiques de vente classiques, ou ne respectez pas son temps, il ferme brutalement avec froideur définitive. Son pattern : tester > challenger > écouter > décider VITE (pas de longues réflexions).",
+    "piege_classique": "Stéphane peut sembler intéressé ('Ouais pourquoi pas...') puis utiliser une objection finale glaciale pour clore. Il teste votre capacité à closer sans être lourd. Autre piège : il peut vous laisser parler 45 secondes en faisant autre chose (clavier) puis dire 'Désolé, c'est quoi le sujet déjà ?'. Teste si vous avez capté qu'il décrochait. Évitez de répondre aux objections par de longs argumentaires : il veut du PING-PONG rapide, pas des monologues. Enfin, méfiez-vous du 'envoyez-moi un mail' qui est sa stratégie préférée pour se débarrasser poliment des vendeurs moyens."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions/Services pour professionnels de la gestion de patrimoine",
+      "description": "Entreprise proposant des solutions destinées aux cabinets de gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution BtoB pour cabinets de gestion de patrimoine avec équipes de 5-15 conseillers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à réussir des appels de prospection à froid auprès de dirigeants de cabinets de gestion de patrimoine pour décrocher des rendez-vous",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Dirigeant cabinet gestion patrimoine",
+    "vous_etes": "Commercial chez une entreprise proposant des solutions digitales pour cabinets de gestion de patrimoine",
+    "vous_vendez": "Une solution BtoB destinée aux cabinets avec 5-15 conseillers (prix et détails à adapter selon ses besoins)",
+    "vous_appelez": "Stéphane Berthelot, 52 ans, associé fondateur et gérant de Berthelot & Associés Patrimoine — 9 conseillers, 1,8M€ de CA. Méfiant, protecteur de son temps, échaudé par un CRM à 45K€ jamais utilisé. Reçoit 15 appels commerciaux par semaine.",
+    "ce_que_vous_savez": [
+      "Cabinet en croissance ralentie, un conseiller senior vient de partir",
+      "Ses conseillers passent 40% de leur temps en tâches admin au lieu d'être sur le terrain",
+      "Budget possible de 15-20K€ si ROI prouvé sous 12 mois, mais doit convaincre son associé au-delà de 8K€",
+      "Utilise un CRM bancaire semi-imposé et beaucoup d'Excel — pas satisfait mais 'ça fait le job'",
+      "Les jeunes conseillers mettent 18 mois à devenir rentables"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique ou visio de 30 minutes pour un diagnostic gratuit",
+    "vos_atouts": [
+      "Vous connaissez les contraintes réglementaires DDA/RGPD du secteur",
+      "Vous pouvez citer des cabinets similaires avec résultats chiffrés",
+      "Vous proposez un diagnostic gratuit sans engagement",
+      "Vous maîtrisez le vocabulaire métier (AUM, taux de transformation, ticket moyen)"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:53:05Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14598,
+    "total_time_s": 132.0
+  }
+}

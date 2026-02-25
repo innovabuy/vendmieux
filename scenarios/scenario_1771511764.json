@@ -1,0 +1,354 @@
+{
+  "id": "scenario_1771511764",
+  "description_originale": "Vous avez présenté votre offre au directeur des achats ou directeur industriel d'une ETI industrielle de 200-400 salariés, production en série, plusieurs sites il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : industrie]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Direction générale",
+          "role": "validation finale potentielle"
+        },
+        {
+          "poste": "Opérationnels production",
+          "role": "utilisateurs finaux"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour optimisation industrielle ou production en série",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation",
+        "Perte de contact avec le prospect",
+        "Délai de 2 semaines sans nouvelle"
+      ],
+      "implicites": [
+        "Manque de suivi post-RDV structuré",
+        "Pas d'engagement clair obtenu lors du RDV initial",
+        "Absence de jalons ou d'échéances définies",
+        "Probable présentation en one-shot sans implication du prospect",
+        "Circuit de décision multi-sites et multi-acteurs non mappé",
+        "Proposition possiblement non alignée avec les priorités réelles",
+        "Peur de déranger ou manque de légitimité à relancer"
+      ],
+      "probleme_racine": "Absence de processus de vente structuré avec jalons validés et engagement progressif du client - le commercial présente puis attend passivement au lieu de piloter activement le cycle de décision"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la relance post-présentation en ETI industrielle : débloquer un processus de décision stagnant, identifier les freins réels, repositionner la valeur et relancer la dynamique commerciale sans être perçu comme insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur solutions industrielles",
+      "entreprise_description": "Entreprise proposant des solutions pour l'industrie manufacturière, production en série",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux ETI industrielles avec production en série et organisation multi-sites",
+      "proposition_valeur": "Optimisation de processus industriels ou gains de productivité pour production en série",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre présentée",
+        "Contenu et résultat du RDV initial",
+        "Engagement obtenu lors du RDV",
+        "Budget et timeline évoqués",
+        "Décideurs impliqués identifiés",
+        "Prix et ROI communiqués"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Éric",
+      "nom": "Delmotte",
+      "age": 52,
+      "poste": "Directeur Industriel & Achats Stratégiques",
+      "entreprise": {
+        "nom": "Mécanix Précision SAS",
+        "secteur": "Sous-traitance mécanique de précision pour l'aéronautique et l'automobile",
+        "taille": "320 salariés répartis sur 3 sites (Bourges siège, Vendôme, Châtellerault)",
+        "ca_approximatif": "42M€ dont 68% aéronautique"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre : veut du concret, pas du PowerPoint",
+        "Défensif-prudent : brûlé 2 fois par des promesses non tenues de fournisseurs",
+        "Hyper-sollicité : 12-15 démarchages par semaine, sélectif jusqu'à la méfiance"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX qu'il maîtrise ses coûts de production malgré l'inflation",
+        "Sécuriser sa réputation après un incident qualité l'an dernier qui a failli coûter un gros contrat",
+        "Obtenir la reconnaissance du PDG (relation tendue) en livrant un gain mesurable sans risque opérationnel"
+      ],
+      "peurs_freins": [
+        "Implémenter quelque chose qui perturbe la production et déclenche l'ire des chefs d'atelier",
+        "Se faire avoir sur le ROI : trop de consultants ont vendu du vent",
+        "Perdre du temps en réunions inutiles alors qu'il croule déjà sous les urgences",
+        "Que le projet capote et qu'on lui reproche d'avoir encore dépensé pour rien",
+        "Dépendre d'un fournisseur qui ne tient pas ses délais (vécu traumatisant avec un ERP)"
+      ],
+      "rapport_aux_commerciaux": "Cinquante nuances de lassitude. Les voit comme nécessaires mais chronophages. Respecte ceux qui connaissent vraiment son métier et admettent leurs limites. Déteste le bagout, les relances insistantes style 'alors, vous avez pu réfléchir ?'. Apprécie la franchise brutale.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Bon, j'ai 30 minutes, on va droit au but' prononcé dans les 90 premières secondes. Coupe la parole si ça part en généralités.",
+      "signaux_interet": [
+        "Pose des questions très opérationnelles : 'Et concrètement, ça prend combien de temps à installer sur une ligne ?'",
+        "Mentionne un problème précis : 'Justement on galère sur les temps de changement de série'",
+        "Évoque spontanément budget ou timing : 'De toute façon avant juin prochain c'est mort, on a le renouvellement de la certif EN9100'",
+        "Devient moins directif, laisse le commercial finir ses phrases"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son écran d'ordi",
+        "Répond par monosyllabes : 'Ouais', 'Possible', 'On verra'",
+        "Formule magique du cimetière des projets : 'Écoutez, c'est intéressant, on en reparle au T3'",
+        "Bascule brutalement sur un autre sujet : 'Au fait, vous livrez aussi en Pologne ?'",
+        "Phrase fatale : 'Envoyez-moi un mail de synthèse, je regarde ça'"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Voilà voilà' quand il veut clore un sujet",
+        "Dit 'Franchement' avant d'exprimer un doute : 'Franchement, j'ai du mal à y croire'",
+        "Utilise le conditionnel de politesse française pour dire non : 'Ça pourrait être compliqué à ce stade'",
+        "Soupirs audibles au téléphone quand on lui parle ROI théorique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Faible : 90 secondes max avant qu'il ne coupe avec 'OK mais concrètement' ou 'Attendez, là je comprends pas le lien avec nous'. Veut un dialogue, pas un exposé."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+4% CA) mais marges sous pression. Directeur Général pousse pour industrialiser davantage et réduire le coût de revient de 8% sur 18 mois. Climat social tendu à Vendôme (2 départs de chefs d'équipe en 6 mois). Investissement de 1,2M€ dans une nouvelle machine-outil à Bourges livraison prévue octobre.",
+      "priorites_actuelles": [
+        "Réussir le démarrage de la nouvelle ligne à Bourges sans planter les délais clients",
+        "Harmoniser les pratiques qualité entre les 3 sites avant l'audit de renouvellement EN9100",
+        "Réduire les stocks de sécurité qui plombent le BFR (pression du DAF)",
+        "Recruter un responsable méthodes compétent (3 candidats ratés)"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel d'optimisation de planning promettant -15% de délais. Résultat : usine à gaz, jamais vraiment utilisé, 45k€ dans le vent. Depuis, ultra-prudent sur tout ce qui est 'solutions digitales' ou 'accompagnement transformation'.",
+      "fournisseur_actuel": "Travaille avec un mix de fournisseurs historiques locaux et quelques gros groupes pour l'outillage. Pas de fournisseur exclusif sur le périmètre potentiellement concerné par l'offre. Relation forte avec un bureau d'études lyonnais qui le conseille gratuitement (ancien collègue).",
+      "budget_disponible": "Enveloppe 'amélioration continue' de 80k€ pour l'année en cours, déjà engagée à 55%. Possibilité de défendre un budget additionnel de 100-150k€ au Q4 si ROI démontré sous 24 mois et validation DG. Au-delà, passage obligatoire en COMEX avec bataille politique."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer qu'on a compris SON problème spécifique (pas l'industrie en général) : citer un élément concret de son contexte",
+        "Apporter une référence ultra-pertinente : même secteur, même taille, problème similaire avec KPIs chiffrés",
+        "Proposer un POC limité, rapide, réversible : 'On teste sur une ligne pendant 6 semaines, vous décidez après'",
+        "Impliquer ses équipes dès le début : 'J'aimerais passer 2h avec votre responsable méthodes pour bien cadrer'",
+        "Admettre franchement les limites : 'Ce qu'on fait ne résoudra pas X, par contre sur Y on a des résultats prouvés'",
+        "Montrer qu'on ne va pas lui bouffer son temps : 'Trois points d'étape de 20 minutes suffisent'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Relancer par email générique : 'Je reviens vers vous suite à notre échange...' (= suppression directe)",
+        "Insister en mode vendeur d'aspirateurs : 'Je me permets de rebondir', 'J'imagine que vous êtes très occupé mais...'",
+        "Proposer un nouveau RDV sans raison valable : 'On pourrait se recaler pour approfondir ?'",
+        "Parler budget/signature trop tôt : ça le braque instantanément",
+        "Dénigrer ses choix passés ou fournisseurs actuels : il les a validés, c'est l'attaquer",
+        "Jargon bullshit bingo : 'transformation digitale', 'agilité', 'disruption', 'game-changer'",
+        "Faire le malin avec des théories qu'on a jamais appliquées sur un atelier réel"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoutez, franchement là je suis en plein dedans, c'est pas le bon moment...",
+        "sous_texte": "Je ne vous ai pas rappelé donc je ne veux pas être brusque mais j'espérais que vous lâchiez l'affaire. Test pour voir si vous insistez lourdement.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le timing sans s'excuser platement + apporter une raison légitime de reprendre contact maintenant (pas juste 'pour faire le point')"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui, je me souviens... Bon écoutez, on en reparle au T3, là on est vraiment dans le jus avec le démarrage de la nouvelle ligne",
+        "sous_texte": "Phrase d'évitement classique. Je repousse à un horizon flou pour me débarrasser poliment. Si vous acceptez sans broncher, je saurai que c'est pas prioritaire.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le T3 tel quel. Creuser pourquoi maintenant n'est pas bon (vraie raison opérationnelle ou esquive) et lier la solution au démarrage de ligne en cours"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, c'est quoi l'objectif de votre appel là, concrètement ? Parce qu'on s'était déjà vus, je vous ai écouté, j'ai votre doc...",
+        "sous_texte": "Je suis irrité que vous reveniez sans apporter quelque chose de nouveau. Prouvez-moi que ce coup de fil a une vraie raison d'être ou je raccroche poliment.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être hyper franc sur pourquoi on rappelle (pas 'pour savoir où vous en êtes') et avouer qu'on a sans doute raté quelque chose lors du RDV initial"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, j'ai déjà regardé tout ça avec mon responsable méthodes, et... ouais, c'est pas déconnant, mais c'est pas notre priorité dans l'immédiat",
+        "sous_texte": "Objection sincère mais floue. Soit je n'ai pas compris la valeur réelle, soit vous ne l'avez pas bien positionnée, soit il y a un vrai frein que je ne veux pas exposer de but en blanc.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser 'pas notre priorité' : qu'est-ce qui EST priorité ? Qu'est-ce qui manque pour que ça le devienne ? Quelle serait la condition pour reconsidérer ?"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà... Bon le truc c'est que là on a l'audit EN9100 qui arrive, on a la nouvelle machine qui débarque en octobre, franchement on peut pas se permettre de lancer un autre chantier en parallèle",
+        "sous_texte": "Objection opérationnelle légitime. Je suis vraiment sous l'eau. Mais aussi un test : est-ce que vous allez minimiser ma charge de travail ou reconnaître la réalité ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que c'est effectivement le pire moment pour lancer quelque chose de lourd + explorer si une approche ultra-light post-octobre a du sens, ou si ça peut faciliter l'audit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "OK mais concrètement, ça prend combien de temps à mettre en place votre truc ? Parce que j'ai pas 3 mois à consacrer à un projet de plus...",
+        "sous_texte": "Signal d'intérêt déguisé en objection. Je calcule mentalement si c'est faisable. Si vous me sortez un planning fumeux ou trop lourd, je coupe court.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une réponse chiffrée réaliste (heures d'implication de lui et de ses équipes), différencier phase POC et déploiement complet, proposer un phasage"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, tout ça c'est sur le papier hein... Moi j'ai déjà donné avec des promesses de ROI qui se sont jamais matérialisées",
+        "sous_texte": "Cicatrice encore douloureuse du logiciel à 45k€ qui n'a rien donné. Je ne vous fais pas confiance par défaut. Prouvez-moi que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Faire verbaliser l'expérience passée ratée (qu'est-ce qui n'a pas marché ?), montrer qu'on a compris les pièges, proposer des garanties concrètes ou un pilote sans risque"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien joli vos références, mais ils étaient dans quelle situation eux ? Parce que nous on a trois sites, des productions très différentes, c'est pas comparable avec une boîte qui fait de la série pure...",
+        "sous_texte": "Je cherche activement la faille dans votre discours. Soit vos références sont bidon, soit vous n'avez pas compris ma spécificité. Prouvez-moi la pertinence.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître les différences légitimes, puis montrer en quoi le problème de fond est similaire malgré les différences de surface + idéalement avoir une référence multi-sites"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez là je comprends pas le lien avec nous... Vous me parlez d'optimisation de planning, mais notre vrai problème c'est les temps de changement de série, c'est pas du tout la même chose",
+        "sous_texte": "Vous êtes à côté de la plaque, ou moi j'ai pas compris, mais là ça ne matche pas avec ce que je vis au quotidien. Si vous insistez sur votre logique, je décroche.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Stopper immédiatement l'argumentation, reconnaître qu'on est peut-être pas alignés, creuser le vrai problème évoqué (changement de série) pour voir si l'offre y répond autrement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Et ça implique quoi niveau formation des gars en atelier ? Parce que j'ai déjà le responsable méthodes qui est pas remplacé, si en plus faut former tout le monde...",
+        "sous_texte": "Frein opérationnel réel + test de votre connaissance du terrain. Je veux savoir si vous avez anticipé l'aspect RH et conduite du changement, ou si c'est du PowerPoint déconnecté.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler précisément qui doit être formé, combien de temps, avec quelle méthode (sur site, autonomie, support continu) et montrer qu'on a géré ce point chez d'autres clients"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, c'est intéressant mais j'ai besoin d'en parler avec le DG avant de m'engager là-dessus, et lui il est pas dispo avant 3 semaines...",
+        "sous_texte": "Esquive classique ou vrai frein politique ? Peut-être que je n'ai pas le pouvoir seul, ou peut-être que je veux me donner du temps pour réfléchir/faire jouer la concurrence.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer le circuit de décision : le DG doit valider quoi exactement ? Qu'est-ce qui ferait que Éric recommande d'aller de l'avant ? Peut-on préparer ensemble le dossier pour le DG ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi un mail de synthèse avec les éléments chiffrés, je regarde ça tranquillement et je vous redis",
+        "sous_texte": "Phrase d'évitement définitive dans 85% des cas. Je veux clore l'échange sans dire non frontalement. Si vous acceptez sans contrepartie, vous ne me reverrez jamais.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas accepter tel quel. Demander ce qu'il se passera après lecture du mail, quel serait le OUI ou NON à trancher, proposer un point téléphonique court 48h après envoi"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon voilà, je vous dis pas non, mais là concrètement avant juin prochain je vois pas comment on peut démarrer quoi que ce soit",
+        "sous_texte": "Peut être sincère (vraiment surchargé) ou tactique (repousser à la saint-glinglin). Je laisse la porte entrouverte sans m'engager. Testez si je suis vraiment intéressé.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider que juin n'est pas réaliste, puis verrouiller un processus d'ici là : qu'est-ce qu'on peut préparer maintenant pour être prêt à démarrer en juin (étude, POC, implication équipes) ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais attendez, on n'a même pas parlé de combien ça coûte votre solution... Parce que là je peux pas valider quelque chose sans savoir où je mets les pieds niveau budget",
+        "sous_texte": "Objection réflexe ou vraie barrière budgétaire. Soit je veux un prétexte pour dire non, soit j'ai vraiment besoin de savoir si c'est dans mes clous avant d'avancer.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas balancer le prix à froid. D'abord confirmer qu'il y a intérêt réel (si je vous montre que c'est dans le budget, on avance ?), puis donner fourchette avec ROI associé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà... Bon écoutez, je vais en rediscuter en interne avec les opérationnels et je reviens vers vous",
+        "sous_texte": "Évitement poli niveau 2. Je veux raccrocher sans engagement. Soit je suis vraiment peu convaincu, soit j'ai besoin de valider des choses mais je ne veux pas que vous pilotiez le process.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser avec qui exactement, sur quels points, quand. Proposer d'être présent ou de fournir des éléments précis. Verrouiller une prochaine étape avec date même si c'est lui qui rappelle"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon franchement, j'apprécie votre approche, c'est carré, mais là je vais être honnête avec vous : on a déjà trois projets en cours qui patinent, je peux pas en vendre un quatrième à mes équipes. Elles me tueraient. On en reparle l'année prochaine si vous voulez, mais là, vraiment, c'est mort.",
+      "condition_declenchement": "Si le commercial a bien argumenté, obtenu de l'intérêt réel, mais n'a pas suffisamment dérisqué l'aspect charge de travail et timing, ou n'a pas su phaser/différer intelligemment. Éric lâche enfin la vraie raison après avoir testé plusieurs esquives."
+    },
+    "pattern_escalade": "Éric commence par des objections réflexes floues ('pas le moment', 'je regarde'). Si le commercial tient bon avec pertinence, il passe à des objections de test pour jauger la solidité (références, timing, ROI). Si ces tests sont passés, il révèle progressivement les objections sincères profondes (expérience ratée passée, surcharge opérationnelle, circuit de décision complexe, peur de l'échec visible). La clé est de ne jamais forcer : chaque objection levée doit se mériter par la compréhension et la réassurance, pas par l'insistance.",
+    "piege_classique": "Éric dit souvent 'c'est intéressant' ou 'pourquoi pas' en milieu d'échange, ce qui fait croire au commercial qu'il est chaud. Puis il balance une objection closing brutale qui tue tout. En réalité, ces signaux positifs sont sa politesse de directeur : il n'a jamais vraiment dit OUI à quoi que ce soit de concret. Le piège est de croire qu'on avance alors qu'on n'a jamais obtenu de micro-engagement vérifiable (impliquer quelqu'un de son équipe, bloquer une date de POC, valider un périmètre précis de test). Si à aucun moment il n'a mis de peau dans le jeu, l'affaire est morte même s'il sourit."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur solutions industrielles",
+      "description": "Entreprise proposant des solutions pour l'industrie manufacturière, production en série"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux ETI industrielles avec production en série et organisation multi-sites",
+      "proposition_valeur": "Optimisation de processus industriels ou gains de productivité pour production en série",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser la relance post-présentation en ETI industrielle : débloquer un processus de décision stagnant, identifier les freins réels, repositionner la valeur et relancer la dynamique commerciale sans être perçu comme insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-présentation — Optimisation industrielle Mécanix Précision",
+    "vous_etes": "Commercial solutions industrielles, vous avez présenté votre offre d'optimisation de production il y a 2 semaines à Éric Delmotte, Directeur Industriel chez Mécanix Précision.",
+    "vous_vendez": "Une solution d'optimisation de processus industriels pour production en série multi-sites (prix non communiqué lors du premier RDV).",
+    "vous_appelez": "Éric Delmotte, 52 ans, Directeur Industriel & Achats chez Mécanix Précision SAS (320 salariés, sous-traitance mécanique aéro/auto, 3 sites). Pragmatique et méfiant : brûlé deux fois par des promesses non tenues, ultra-sollicité (12-15 démarchages/semaine), coupe court si ça part en généralités.",
+    "ce_que_vous_savez": [
+      "Aucun retour depuis votre présentation il y a 2 semaines",
+      "Mécanix a 3 sites (Bourges, Vendôme, Châtellerault) avec pression sur les marges",
+      "Direction Générale pousse pour réduire les coûts de 8% sur 18 mois",
+      "Nouvelle machine-outil 1,2M€ en cours d'installation à Bourges",
+      "Éric a vécu un échec cuisant avec un logiciel d'optimisation il y a 3 ans (45k€ perdus)"
+    ],
+    "votre_objectif": "Comprendre pourquoi il n'a pas donné suite, identifier le vrai frein (timing, budget, priorités, doute ?), et obtenir un prochain jalon concret ou une décision claire.",
+    "vos_atouts": [
+      "Votre solution s'adresse précisément aux ETI multi-sites en production série",
+      "Vous pouvez proposer une approche POC limitée et réversible",
+      "Vous êtes capable de parler concret avec les équipes opérationnelles",
+      "Vous savez admettre les limites de votre offre (il respecte la franchise)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T14:36:04Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17265,
+    "total_time_s": 168.6
+  }
+}

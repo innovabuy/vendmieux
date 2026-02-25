@@ -1,0 +1,370 @@
+{
+  "id": "scenario_1771521912",
+  "description_originale": "Le dirigeant / directeur de production d'une PME agroalimentaire de 30-60 salariés, production régionale (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : agroalimentaire]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "production régionale"
+    },
+    "offre": {
+      "produit_service": "service ou produit B2B destiné au secteur agroalimentaire",
+      "proposition_valeur_presumee": "fiabilité, qualité et continuité de service pour l'industrie agroalimentaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "existence de concurrents alternatifs mentionnée par le client"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "problème de livraison, service ou qualité ayant provoqué l'insatisfaction",
+        "menace de départ vers la concurrence",
+        "réclamation client sur un dysfonctionnement"
+      ],
+      "implicites": [
+        "processus de gestion des incidents défaillant",
+        "communication insuffisante en cas de problème",
+        "manque de réactivité ou d'anticipation",
+        "relation commerciale fragilisée malgré le statut de client existant",
+        "absence de procédure de gestion de crise relationnelle"
+      ],
+      "probleme_racine": "incapacité des commerciaux à gérer les situations de crise client et à transformer une réclamation en opportunité de renforcement de la relation"
+    },
+    "objections_mentionnees": [
+      "menace de partir à la concurrence",
+      "insatisfaction liée à un problème de livraison/service/qualité"
+    ],
+    "objectif_formation": "former les commerciaux à la gestion des réclamations clients, au traitement des situations de crise, à la préservation de la relation commerciale et à la transformation d'une situation négative en opportunité de fidélisation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur B2B du secteur agroalimentaire",
+      "entreprise_description": "entreprise fournissant des produits ou services aux PME agroalimentaires régionales, avec un portefeuille de clients existants",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "produit ou service B2B critique pour la production ou l'activité d'entreprises agroalimentaires (logistique, matières premières, équipements, services techniques ou support)",
+      "proposition_valeur": "fiabilité, qualité constante, réactivité et accompagnement pour garantir la continuité d'activité des clients agroalimentaires",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée non précisée"
+      ],
+      "avantages_vs_concurrence": "relation commerciale établie, connaissance du client, historique de collaboration",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature précise du produit/service vendu",
+        "nature exacte du problème (livraison/qualité/service)",
+        "ancienneté de la relation commerciale",
+        "montant du contrat en jeu",
+        "historique des incidents éventuels"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Sylvain",
+      "nom": "Merlot",
+      "age": 52,
+      "poste": "Directeur Général",
+      "entreprise": {
+        "nom": "Conserverie du Val d'Anjou",
+        "secteur": "Transformation agroalimentaire - conserves de légumes",
+        "taille": "42 salariés",
+        "ca_approximatif": "6,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec peu de patience pour les discours commerciaux",
+        "Loyal mais rancunier quand on le déçoit",
+        "Sous pression permanente entre normes sanitaires et marges serrées"
+      ],
+      "motivations_profondes": [
+        "Préserver la réputation de qualité construite sur 30 ans par son père",
+        "Maintenir l'emploi local dans une région en difficulté",
+        "Éviter tout arrêt de production qui lui coûte 12000€ par jour",
+        "Prouver qu'il est à la hauteur de la confiance du conseil de surveillance"
+      ],
+      "peurs_freins": [
+        "Perdre un gros contrat avec la grande distribution à cause d'un défaut qualité",
+        "Être perçu comme celui qui a coulé l'entreprise familiale",
+        "Dépendre d'un seul fournisseur qui le prend pour acquis",
+        "Passer pour un pigeon qui se laisse balader par les commerciaux"
+      ],
+      "rapport_aux_commerciaux": "Méfiance instinctive. A l'impression qu'ils ne comprennent pas les contraintes du terrain. Respecte uniquement ceux qui connaissent vraiment son métier et tiennent parole. Déteste les jeunes commerciaux en costume qui lui font la leçon.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, cassant, immédiatement sur la défensive avec une pointe d'agressivité contenue. Voix légèrement tendue. Coupe court aux politesses : 'Oui bon écoutez, je suis pas là pour papoter'",
+      "signaux_interet": [
+        "Arrête de couper et laisse parler plus de 15 secondes d'affilée",
+        "Pose une question technique précise sur le process",
+        "Mentionne un chiffre ou une date concrète",
+        "Ton qui s'adoucit très légèrement, moins de soupirs",
+        "Dit 'faudrait que j'en parle à Didier' (son directeur de prod)"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles et répétés",
+        "Interruptions systématiques : 'Oui oui bon d'accord'",
+        "Commence ses phrases par 'Écoutez...' ou 'De toute façon...'",
+        "Mention directe de la concurrence : 'Moi j'ai Sotralog qui me fait de l'œil'",
+        "Regarde ostensiblement sa montre ou fait du bruit avec des papiers",
+        "Ton qui monte en fin de phrase avec impatience"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez' ou 'Bon ben écoutez'",
+        "Utilise 'hein' en fin de phrase pour appuyer : 'C'est pas compliqué hein'",
+        "Dit 'voilà' pour clore un sujet qu'il considère terminé",
+        "Emploie 'de toute façon' quand il est contrarié",
+        "Soupire bruyamment avant de répondre quand il est agacé"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe au bout de 20-30 secondes maximum. Si le commercial ne respire pas, il décroche mentalement ou physiquement. Attend qu'on lui POSE DES QUESTIONS plutôt qu'on lui fasse un laïus."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Vendredi dernier, une livraison de palox défectueux a failli bloquer une ligne de conditionnement pendant 4h. Il a dû mobiliser 3 personnes en urgence. La saison des haricots verts bat son plein, c'est le pire moment. Son directeur de prod lui a dit texto : 'Sylvain, faut qu'on trouve un plan B, on peut plus dépendre d'eux'. Le lundi, il a reçu deux mails de commerciaux concurrents, comme par hasard.",
+      "priorites_actuelles": [
+        "Sécuriser l'approvisionnement pour finir la saison sans accroc (encore 6 semaines critiques)",
+        "Obtenir des garanties contractuelles sur les délais et la qualité",
+        "Éviter de perdre la face auprès de son équipe qui commence à critiquer le fournisseur ouvertement",
+        "Préparer le CA de septembre où il devra justifier ses choix stratégiques"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans. Globalement satisfait jusqu'à maintenant, quelques micro-incidents gérés. Mais là c'était la goutte d'eau. A l'impression qu'on le prend pour acquis et qu'on ne fait plus attention. Son prédécesseur lui répétait 'faut toujours avoir deux fournisseurs, jamais dépendre d'un seul'.",
+      "fournisseur_actuel": "Vous (celui qui appelle pour la relance). Contrat annuel renouvelable tacitement dans 4 mois. Montant environ 180K€/an.",
+      "budget_disponible": "Budget existant déjà alloué. Pas de budget additionnel pour doubler les fournisseurs sans rogner ailleurs. Pourrait renégocier 10-15% à la baisse avec la concurrence si vraiment tenté de partir."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître immédiatement l'incident sans langue de bois ni excuse corporative",
+        "Montrer qu'on a compris l'impact FINANCIER concret (12K€/jour de ligne arrêtée)",
+        "Proposer un plan d'action avec des dates et des responsables, pas des promesses vagues",
+        "Prouver qu'on a pris le sujet en main en interne (exemple : réunion avec la prod, audit fournisseur...)",
+        "Poser des questions sur SON besoin précis plutôt que défendre SON produit",
+        "Parler de garanties contractuelles chiffrées et engageantes",
+        "Faire référence à d'autres clients du secteur agro qui ont eu ce problème et comment c'est résolu"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident : 'Oui mais bon ça arrive, c'est exceptionnel'",
+        "Rejeter la faute sur un tiers (le transporteur, le sous-traitant...)",
+        "Langue de bois commerciale : 'On met tout en œuvre pour...'",
+        "Ne pas connaître le dossier et demander de réexpliquer ce qui s'est passé",
+        "Faire un speech produit générique sans rapport avec le problème",
+        "Proposer un rendez-vous 'pour en discuter' sans rien de concret avant",
+        "Tenter de relativiser en parlant des années de collaboration : 'Après 4 ans quand même...'",
+        "Utiliser un ton enjoué ou détendu alors que lui est en colère"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vais pas vous mentir, là je suis pas dans les meilleures dispositions pour discuter avec vous hein. Après ce qui s'est passé vendredi...",
+        "sous_texte": "Je suis en colère et je veux que vous le sachiez. Je ne vais pas faire semblant que tout va bien. Vous devez comprendre la gravité de la situation avant même qu'on commence à parler.",
+        "type": "reflexe",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Validez immédiatement sa colère et montrez que vous connaissez précisément l'incident de vendredi sans lui faire répéter. Ne minimisez RIEN."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon ben écoutez, si c'est pour me refaire le coup du 'on va étudier la situation', vous pouvez raccrocher tout de suite. J'ai deux fournisseurs qui me font de l'œil là, et eux au moins ils sont réactifs.",
+        "sous_texte": "Je teste votre capacité à être concret immédiatement. Je veux voir si vous êtes différent cette fois ou si c'est encore du blabla commercial. Et je vous fais savoir que j'ai des alternatives crédibles.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposez un élément concret immédiat (date, chiffre, action déjà entreprise) dans les 10 prochaines secondes. Pas de formule creuse."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "De toute façon vous allez me dire que c'est exceptionnel, que ça se reproduira plus, tout ça... C'est ce qu'on me dit à chaque fois et regardez où on en est.",
+        "sous_texte": "J'ai déjà entendu tous les discours. Je suis vacciné contre les promesses commerciales. Vous devez me prouver que cette fois c'est différent, avec des faits, pas des mots.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Reconnaissez que les mots ne suffisent plus et proposez des garanties contractuelles chiffrées ou un dispositif de contrôle vérifiable."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez ce dont j'ai besoin ? Mais enfin c'est pas compliqué hein ! J'ai besoin que quand vous me livrez des palox, ils soient conformes, point barre ! C'est quand même pas la mer à boire !",
+        "sous_texte": "Votre question me paraît absurde. Le besoin est évident. J'ai l'impression que vous ne comprenez pas la base de votre métier. Ça m'énerve qu'on me pose des questions alors que le problème est simple.",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Validez que la conformité est la base, PUIS creusez sur les impacts business concrets (délais de détection, process de remplacement, coûts cachés) pour montrer votre compréhension terrain."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez, moi je veux pas rentrer dans les détails techniques de qui a fait quoi. Ce qui m'intéresse c'est : est-ce que vous pouvez m'assurer que ça recommencera pas ou pas ? C'est oui ou non.",
+        "sous_texte": "Je n'ai pas de temps pour les explications complexes. Je veux une réponse binaire et un engagement. Si vous tergiversez, je considère que c'est non et je pars.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Dites 'Oui, et voici comment' avec 2-3 éléments factuels immédiats. Mais ajoutez les conditions de cette garantie pour éviter une promesse intenable. Soyez direct."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez ce que ça m'a coûté vendredi ? 4 heures de ligne arrêtée, 3 gars mobilisés, et j'ai failli perdre un lot complet. On parle de combien là à votre avis ?",
+        "sous_texte": "Je veux voir si vous avez conscience de l'impact financier réel. Si vous ne savez pas répondre ou si vous minimisez, ça prouve que vous ne comprenez rien à mon business et on arrête là.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Calculez avec lui : 4h × 12K€/jour ÷ 16h = 3000€ + coûts main d'œuvre. Montrez que vous parlez son langage (celui de l'argent) et validez la gravité."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon directeur de prod il m'a dit texto lundi matin : 'Sylvain, on peut plus continuer comme ça'. Et vous savez quoi ? Il a raison. Alors vous me dites ce que je lui réponds moi ?",
+        "sous_texte": "Je ne suis pas seul dans cette décision. Mon équipe me pousse à changer de fournisseur. Si je ne fais rien, je perds ma crédibilité en interne. Vous devez me donner des munitions pour défendre le maintien de notre relation.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposez-lui des éléments concrets qu'il pourra présenter à Didier (son directeur prod) : plan d'action, interlocuteur dédié, garantie mesurable. Faites-le briller en interne."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui bon d'accord, vous allez renforcer vos contrôles qualité, c'est ce que vous me dites. Mais moi ce que je vois c'est que Sotralog ils me proposent un contrat avec pénalités automatiques en cas de défaut. Vous faites ça vous ?",
+        "sous_texte": "Je compare activement. La concurrence met la barre haute. Si vous n'alignez pas ou dépassez leur offre, je n'ai aucune raison de rester. Prouvez-moi que vous êtes prêt à vous mouiller autant qu'eux.",
+        "type": "tactique",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Ne dites pas non immédiatement. Explorez les termes du contrat Sotralog pour comprendre les pénalités. Proposez une alternative équivalente ou supérieure adaptée à sa situation (ex: stock tampon dédié, hotline directe, audit trimestriel conjoint)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est bien beau tout ça, mais vous comprenez que là j'ai besoin de garanties, pas de promesses. Après 4 ans de collaboration, je me retrouve avec un problème qu'un nouveau fournisseur pourrait pas me faire pire de toute façon.",
+        "sous_texte": "L'historique ne joue plus en votre faveur, il joue contre vous. Vous avez eu 4 ans pour prouver votre valeur et là vous avez failli. Un inconnu ne peut pas faire pire, donc le risque de changer est faible.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reconnaissez que l'historique n'est plus un argument. Repositionnez sur les 4 ans de connaissance de SES process, de SA saisonnalité, de SES contraintes que la concurrence devra réapprendre (= risque de transition)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon de toute façon moi j'ai un CA en septembre, et je vais devoir expliquer mes choix stratégiques. Si je reste avec vous et qu'il y a un autre couac, je passe pour quoi devant le conseil ?",
+        "sous_texte": "Ma responsabilité personnelle est engagée. Ce n'est pas qu'une question commerciale, c'est ma crédibilité de dirigeant. Si je vous garde et que ça foire encore, je suis grillé. Il me faut des éléments béton pour justifier ma décision.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Proposez-lui un dossier de synthèse présentable au CA : analyse de l'incident, plan correctif, indicateurs de suivi trimestriels, engagement de la direction. Aidez-le à préparer sa défense."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Vous me dites qu'il y aura un référent dédié, un numéro direct, tout ça. Mais c'est exactement ce qu'on m'avait promis il y a 2 ans et au final je tombe toujours sur un standard, hein.",
+        "sous_texte": "J'ai déjà entendu ces promesses. Elles n'ont pas été tenues. Pourquoi cette fois serait différent ? Je ne crois plus aux engagements verbaux de votre entreprise.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaissez l'écart entre promesse passée et réalité. Donnez NOM + PORTABLE + FONCTION de la personne dédiée maintenant, en direct. Proposez qu'il l'appelle sous 24h pour vérifier."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de votre nouveau process de contrôle, mais bon ça c'est chez vous. Moi ce qui m'intéresse c'est qu'est-ce qui change concrètement pour moi, dans mon entrepôt, quand je reçois une livraison ?",
+        "sous_texte": "Arrêtez de me parler de vos solutions internes. Je m'en fiche de votre organisation. Parlez-moi de MON quotidien, de CE QUI CHANGE pour moi. Soyez concret et orienté client.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Traduisez en bénéfices terrain : bon de contrôle qualité signé joint à chaque livraison, double vérification avant départ, possibilité de refus sans pénalité si doute, rappel systématique du chauffeur 2h avant."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, tout ce que vous me dites là c'est très bien, mais j'ai besoin de réfléchir. Je vais en parler à Didier et on voit. Je vous rappelle.",
+        "sous_texte": "Je ne suis pas convaincu mais je ne veux pas vous vexer ou claquer la porte définitivement. En réalité je vais comparer sérieusement avec les offres concurrentes. Si vous ne me donnez pas une raison de décider maintenant, vous perdez la main.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Créez l'urgence légitime : 'Je comprends. Pour tenir les 6 semaines critiques qu'il reste, je dois bloquer un stock dédié et un planning spécifique d'ici jeudi. Qu'est-ce qui vous manque pour décider ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que Sotralog ils me proposent 12% moins cher. Bon ils sont peut-être moins bien, je sais pas, mais 12% sur 180K€ ça fait réfléchir quand même, hein.",
+        "sous_texte": "Le prix devient un argument parce que je ne vois plus assez de différenciation qualité. Si vous êtes équivalent en qualité (puisque vous avez fauté) mais plus cher, pourquoi je reste ? Donnez-moi une raison autre que le prix.",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne baissez pas immédiatement. Quantifiez le coût du changement : transition, risque d'apprentissage de leurs spécificités, perte de réactivité. Proposez un geste commercial ciblé sur les 6 semaines critiques + garantie performance."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà bon écoutez, moi je veux bien vous donner une chance, mais faut pas me prendre pour un pigeon non plus. Si ça repart comme avant et que je me retrouve le bec dans l'eau, je vous préviens, ce sera terminé définitivement.",
+        "sous_texte": "Je suis prêt à continuer MAIS ma confiance est à zéro. Je vous teste sur cette période critique. À la moindre défaillance, je pars sans discussion. C'est votre dernière chance et vous devez le comprendre.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Acceptez la pression. Formalisez cette 'période d'épreuve' avec des KPI clairs et des points hebdomadaires. Proposez une clause de sortie simplifiée pendant 3 mois pour qu'il se sente protégé."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais attendez, concrètement là, vous me proposez quoi ? Parce que pour l'instant on a parlé, c'est bien, mais j'ai rien de concret à me mettre sous la dent moi.",
+        "sous_texte": "J'ai besoin de quelque chose de tangible, d'écrit, de mesurable. Les discussions c'est bien mais je ne peux pas me baser là-dessus. Donnez-moi du concret ou je considère que c'est du vent.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Synthétisez en 3 points actionnables avec dates : 1) Audit complet d'ici [DATE] 2) Nouveau contrat avec pénalités d'ici [DATE] 3) Référent dédié opérationnel dès [DATE]. Envoyez par mail dans l'heure."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon faut que j'en parle au conseil. Je peux pas prendre une décision comme ça tout seul, vous comprenez. C'est pas comme si je dirigeais une startup moi, hein.",
+        "sous_texte": "Je me protège derrière une instance de validation. C'est peut-être vrai, c'est peut-être une tactique. Je veux gagner du temps ou je veux vraiment valider collectivement. Mais sans deadline claire, ça peut traîner indéfiniment.",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Validez la légitimité du conseil. Demandez : 'Quand se réunit-il ?' et 'Quels éléments lui faut-il pour décider ?' Proposez un dossier de synthèse ou même d'intervenir 15min en visio pour rassurer le conseil."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être franc avec vous : j'ai vraiment envie de vous garder parce qu'on se connaît, mais là vous me demandez de faire un acte de foi alors que c'est vous qui avez merdé. Mettez-vous à ma place 2 secondes. Qu'est-ce qui me garantit que dans 3 semaines, en pleine saison, je me retrouve pas dans la merde à cause de vous ? Parce que là, c'est ma boîte qui est en jeu, c'est l'héritage de mon père, c'est 42 familles. Alors soit vous me donnez quelque chose de vraiment solide, genre vraiment, soit je peux pas prendre le risque. C'est aussi simple que ça.",
+      "condition_declenchement": "Moment où le commercial pense avoir répondu à toutes les objections et s'apprête à conclure. Sylvain fait une pause, soupire, et lâche cette objection finale qui résume toute sa tension : entre loyauté relationnelle et responsabilité de dirigeant."
+    },
+    "pattern_escalade": "Sylvain commence agressif défensif (objections réflexe courtes et cassantes). Si le commercial tient bon et montre de la compréhension concrète, il passe à des objections plus sincères et longues, révélant ses vraies peurs (conseil, équipe, héritage). Si le commercial fait du commercial classique, il retourne en mode tactique dur avec mentions concurrence et menaces. L'escalade positive = de l'agressivité vers la vulnérabilité. L'escalade négative = de la méfiance vers le rejet définitif avec formules de clôture sèches.",
+    "piege_classique": "Le piège majeur est de chercher à SE JUSTIFIER plutôt que de VALIDER SA COLÈRE. Sylvain teste si vous allez défendre votre entreprise (= perdant) ou comprendre sa situation (= gagnant). Autre piège : croire qu'il suffit de promettre pour rassurer. Il a entendu 1000 promesses. Il veut des PREUVES, des ENGAGEMENTS CONTRACTUELS, des NOMS, des DATES. Le commercial qui répond avec des généralités ('Nous mettons tout en œuvre', 'Vous êtes un client important') perd immédiatement. Sylvain respecte la franchise brutale, les chiffres précis, et les plans d'action vérifiables. Dernier piège : ne pas créer d'urgence légitime au closing. Si Sylvain dit 'je réfléchis', sans deadline il comparera tranquillement avec Sotralog et la concurrence l'emportera par défaut."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur B2B du secteur agroalimentaire",
+      "description": "entreprise fournissant des produits ou services aux PME agroalimentaires régionales, avec un portefeuille de clients existants"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "produit ou service B2B critique pour la production ou l'activité d'entreprises agroalimentaires (logistique, matières premières, équipements, services techniques ou support)",
+      "proposition_valeur": "fiabilité, qualité constante, réactivité et accompagnement pour garantir la continuité d'activité des clients agroalimentaires",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée non précisée"
+      ],
+      "avantages_vs_concurrence": "relation commerciale établie, connaissance du client, historique de collaboration"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "former les commerciaux à la gestion des réclamations clients, au traitement des situations de crise, à la préservation de la relation commerciale et à la transformation d'une situation négative en opportunité de fidélisation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client en crise — Incident livraison palox",
+    "vous_etes": "Commercial compte-clé chez un fournisseur d'emballages industriels pour l'agroalimentaire",
+    "vous_vendez": "Palox et contenants de conditionnement pour conserveries (contrat annuel 180K€, renouvellement dans 4 mois)",
+    "vous_appelez": "Sylvain Merlot, 52 ans, Directeur Général de la Conserverie du Val d'Anjou (42 salariés, 6,8M€ CA) — pragmatique, peu patient, actuellement en colère",
+    "ce_que_vous_savez": [
+      "Vendredi dernier : livraison de palox défectueux a failli bloquer sa ligne 4h en pleine saison haricots verts",
+      "Son directeur de prod veut un plan B, deux concurrents l'ont déjà démarchée lundi",
+      "Client depuis 4 ans, globalement satisfait jusqu'ici, mais cet incident = point de rupture",
+      "Chaque jour de ligne arrêtée = 12 000€ de perte, il reste 6 semaines critiques de saison",
+      "Il a l'impression qu'on le prend pour acquis"
+    ],
+    "votre_objectif": "Stabiliser la relation, reconnaître l'incident sans excuses vagues, et obtenir 15 minutes pour présenter un plan d'action concret avec garanties",
+    "vos_atouts": [
+      "4 ans de relation, vous connaissez son site et ses contraintes de prod",
+      "Audit express réalisé chez votre fournisseur de palox après l'incident",
+      "Clause de garantie délai renforcée disponible pour la fin de saison",
+      "Référence client similaire (conserverie Bretagne) ayant eu incident résolu en 2023"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:25:12Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17672,
+    "total_time_s": 181.2
+  }
+}

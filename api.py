@@ -16,10 +16,12 @@ import asyncio
 import hashlib as _hashlib_mod
 import json
 import os
+import re
 import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 
+import aiosqlite
 import anthropic
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Depends, Request
@@ -34,7 +36,7 @@ from database import (
     create_entreprise, create_user, get_user_by_email, update_last_login,
     create_session, complete_session, get_user_evaluations, get_user_stats,
     get_evaluation_detail, get_team_members, get_team_stats,
-    COMPETENCE_KEYS, _parse_competences,
+    COMPETENCE_KEYS, _parse_competences, DB_PATH,
     get_all_scenario_templates, get_scenario_from_db, save_scenario_to_db,
 )
 from auth import (
@@ -192,6 +194,78 @@ async def startup():
     await init_db()
     _SCENARIOS_DB = load_scenarios_database()
     (STATIC_DIR / "sounds" / "tts_cache").mkdir(parents=True, exist_ok=True)
+
+
+# --- Helper: auto-categorize scenarios ---
+
+_AUTO_CAT_KEYWORDS = {
+    "barrage_secretaire":     ["secrétaire", "barrage", "standard", "assistante",
+                               "filtrage", "accueil", "passer le barrage",
+                               "secretary", "gatekeeper"],
+    "multi_interlocuteurs":   ["multi-interlocuteurs", "multi interlocuteurs",
+                               "comité", "plusieurs décideurs", "daf et dsi",
+                               "daf", "dsi", "direction générale et",
+                               "binôme", "trinôme", "double interlocuteur"],
+    "rdv_physique":           ["rdv physique", "rendez-vous physique",
+                               "en présentiel", "visite sur site", "visite client",
+                               "entretien physique", "face à face", "face-à-face",
+                               "en face", "bureau du client", "sur place"],
+    "rdv_one_to_one":         ["rendez-vous", "rdv", "premier rdv",
+                               "premier entretien", "découverte",
+                               "rdv de découverte", "rdv commercial",
+                               "entretien de découverte", "meeting",
+                               "appointment", "discovery call"],
+    "negociation":            ["négociation", "négocia", "négocier",
+                               "tarif", "remise", "concession",
+                               "prix", "budget", "devis",
+                               "contrat", "closing", "closer",
+                               "deal", "ristourne", "marge"],
+    "gestion_reclamation":    ["réclamation", "plainte", "mécontent",
+                               "insatisfait", "problème client", "litige",
+                               "crise client", "client furieux", "client en colère",
+                               "complaint", "retard de livraison",
+                               "sav", "gestion de crise", "incident"],
+    "relance_devis":          ["relance", "suivi", "rappel", "follow-up",
+                               "follow up", "relance devis", "relance post",
+                               "relance client", "sans nouvelles",
+                               "recontacter"],
+    "upsell":                 ["upsell", "up-sell", "montée en gamme",
+                               "cross-sell", "cross sell", "fidélisation",
+                               "renouvellement", "vente additionnelle",
+                               "client existant", "client satisfait",
+                               "service complémentaire", "upgrade",
+                               "extension", "option supplémentaire"],
+    "appel_entrant":          ["appel entrant", "entrant", "inbound",
+                               "client appelle", "le client vous appelle",
+                               "demande entrante", "lead entrant"],
+    "prospection_telephonique": ["prospect", "cold call", "appel froid",
+                                 "appel à froid", "prospection",
+                                 "prise de contact", "premier contact",
+                                 "contact froid", "démarchage",
+                                 "outbound", "téléprospection",
+                                 "vendre un", "vendre une", "vendre de",
+                                 "vendre du", "vendre la", "vendre le",
+                                 "convaincre un", "convaincre une",
+                                 "convaincre le", "convaincre la"],
+}
+
+
+def _auto_categorize(titre: str, description: str = "") -> str:
+    """Catégorise un scénario en fonction de son titre et description."""
+    text = (titre + " " + description).lower()
+    for categorie, mots in _AUTO_CAT_KEYWORDS.items():
+        if any(mot in text for mot in mots):
+            return categorie
+    return "prospection_telephonique"
+
+
+async def _get_scenario_types_from_db() -> dict[str, str]:
+    """Retourne un dict {scenario_id: type_simulation} depuis la DB."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        async with db.execute("SELECT id, type_simulation FROM scenarios WHERE type_simulation IS NOT NULL") as cur:
+            rows = await cur.fetchall()
+            return {r["id"]: r["type_simulation"] for r in rows}
 
 
 # --- Helper: load scenario ---
@@ -365,8 +439,93 @@ async def get_scenario_brief(scenario_id: str):
     return brief
 
 
+def _auto_difficulty(type_sim: str, default: int = 2) -> int:
+    """Auto-assign difficulty based on type_simulation when not explicitly set."""
+    hard = {"barrage_secretaire", "multi_interlocuteurs", "negociation"}
+    easy = {"gestion_reclamation", "appel_entrant"}
+    if type_sim in hard:
+        return 3
+    if type_sim in easy:
+        return 1
+    return default
+
+
+def _infer_disc_from_style(style: str, traits: list) -> dict:
+    """Infer a simplified DISC profile from communication style and traits."""
+    profiles = {
+        "directif": {"D": 80, "I": 30, "S": 20, "C": 40},
+        "analytique": {"D": 40, "I": 20, "S": 30, "C": 80},
+        "expressif": {"D": 30, "I": 80, "S": 40, "C": 20},
+        "aimable": {"D": 20, "I": 40, "S": 80, "C": 30},
+    }
+    base = profiles.get(style, profiles["directif"])
+    # Slight variation from traits
+    trait_str = " ".join(traits).lower() if traits else ""
+    if "direct" in trait_str or "pragmatique" in trait_str:
+        base["D"] = min(100, base["D"] + 10)
+    if "chaleureu" in trait_str or "expressif" in trait_str:
+        base["I"] = min(100, base["I"] + 10)
+    if "rigoureu" in trait_str or "méthodique" in trait_str:
+        base["C"] = min(100, base["C"] + 10)
+    return base
+
+
+def _extract_preview_fields(full_data: dict) -> dict:
+    """Extract enriched fields from a full scenario for the list endpoint."""
+    persona = full_data.get("persona", {})
+    identite = persona.get("identite", {})
+    psycho = persona.get("psychologie", {})
+    contexte = persona.get("contexte_actuel", {})
+    objections_data = full_data.get("objections", {})
+    brief = full_data.get("brief_commercial", {})
+    sim = full_data.get("simulation", {})
+
+    # DISC profile
+    style = psycho.get("style_communication", "directif")
+    traits = psycho.get("traits_dominants", [])
+    disc = _infer_disc_from_style(style, traits)
+
+    # Objections preview (first 3 verbatims)
+    obj_list = objections_data.get("objections", [])
+    obj_preview = [o.get("verbatim", "") for o in obj_list[:3] if o.get("verbatim")]
+
+    # Main objection type
+    obj_type_principal = obj_list[0].get("type", "") if obj_list else ""
+
+    # Douleur cachée
+    situation = contexte.get("situation_entreprise", "")
+
+    # Objectif commercial
+    objectif = brief.get("votre_objectif", "")
+
+    # Durée estimée
+    duree = brief.get("duree_estimee", "5-8 minutes")
+
+    # Nb interlocuteurs
+    is_multi = sim.get("type", "") == "multi_interlocuteurs" or "prospect_2" in full_data
+    nb_inter = "multi" if is_multi else "mono"
+
+    # Gender
+    genre = identite.get("genre", "M")
+
+    # Taille entreprise
+    taille = identite.get("entreprise", {}).get("taille", "")
+
+    return {
+        "gender": genre,
+        "taille": taille,
+        "disc": disc,
+        "objections_preview": obj_preview,
+        "objection_type_principal": obj_type_principal,
+        "douleur_cachee": situation,
+        "objectif_commercial": objectif,
+        "duree_estimee": duree,
+        "nb_interlocuteurs": nb_inter,
+    }
+
+
 @app.get("/api/scenarios")
-async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0):
+async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0, interlocuteurs: str = ""):
     scenarios = []
     seen_ids = set()
 
@@ -391,20 +550,45 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0)
                 tags = json.loads(tags)
             except Exception:
                 tags = []
+        objections_json = t.get("objections_json", {})
+        if isinstance(objections_json, str):
+            try:
+                objections_json = json.loads(objections_json)
+            except Exception:
+                objections_json = {}
 
         identite = persona.get("identite", {})
         entreprise = identite.get("entreprise", {})
+        psycho = persona.get("psychologie", {})
+        contexte = persona.get("contexte_actuel", {})
+        style = psycho.get("style_communication", "directif")
+        traits = psycho.get("traits_dominants", [])
+        disc = _infer_disc_from_style(style, traits)
+        obj_list = objections_json.get("objections", []) if isinstance(objections_json, dict) else []
+        obj_preview = [o.get("verbatim", "") for o in obj_list[:3] if o.get("verbatim")]
+        type_sim = t.get("type_simulation") or "prospection_telephonique"
+        is_multi = type_sim == "multi_interlocuteurs"
+
         scenarios.append({
             "id": t["id"],
             "name": f"{identite.get('prenom', '?')} {identite.get('nom', '?')}",
             "poste": identite.get("poste", "?"),
             "entreprise": entreprise.get("nom", "?"),
             "secteur": t.get("secteur", entreprise.get("secteur", "?")),
-            "type_simulation": "prospection_telephonique",
+            "type_simulation": type_sim,
             "titre": brief.get("titre", ""),
-            "difficulty": t.get("difficulty_default", 2),
+            "difficulty": _auto_difficulty(type_sim, t.get("difficulty_default", 2)),
             "tags": tags,
             "source": "template",
+            "gender": identite.get("genre", "M"),
+            "taille": entreprise.get("taille", ""),
+            "disc": disc,
+            "objections_preview": obj_preview,
+            "objection_type_principal": obj_list[0].get("type", "") if obj_list else "",
+            "douleur_cachee": contexte.get("situation_entreprise", ""),
+            "objectif_commercial": brief.get("votre_objectif", ""),
+            "duree_estimee": brief.get("duree_estimee", "5-8 minutes"),
+            "nb_interlocuteurs": "multi" if is_multi else "mono",
         })
         seen_ids.add(t["id"])
 
@@ -414,6 +598,7 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0)
             continue
         persona = data.get("persona", {}).get("identite", {})
         sim = data.get("simulation", {})
+        preview = _extract_preview_fields(data)
         scenarios.append({
             "id": sid,
             "name": f"{persona.get('prenom', '?')} {persona.get('nom', '?')}",
@@ -422,31 +607,65 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0)
             "secteur": sim.get("secteur", persona.get("entreprise", {}).get("secteur", "?")),
             "type_simulation": sim.get("type", "prospection_telephonique"),
             "titre": sim.get("titre", ""),
-            "difficulty": 2,
+            "difficulty": sim.get("difficulte", 2),
             "tags": [],
             "source": "database",
+            **preview,
         })
         seen_ids.add(sid)
 
     # 3. Scénarios générés par les utilisateurs (fichiers JSON)
+    # Pre-load type_simulation from DB for categorized scenarios
+    db_types = await _get_scenario_types_from_db()
     for f in sorted(SCENARIOS_DIR.glob("*.json")):
         if f.stem in seen_ids:
             continue
         try:
             with open(f, "r", encoding="utf-8") as fh:
                 data = json.load(fh)
-                persona = data.get("persona", {}).get("identite", {})
+                persona_data = data.get("persona", {})
+                identite = persona_data.get("identite", {})
+                ent = identite.get("entreprise", {})
+                psycho = persona_data.get("psychologie", {})
+                contexte = persona_data.get("contexte_actuel", {})
+                brief = data.get("brief_commercial", {})
+                titre = brief.get("titre", "Scénario personnalisé")
+                obj_data = data.get("objections", {})
+                obj_list = obj_data.get("objections", []) if isinstance(obj_data, dict) else []
+
+                # Use DB type_simulation if available, else auto-categorize
+                type_sim = db_types.get(f.stem)
+                if not type_sim or type_sim in ("Sur mesure", "custom"):
+                    type_sim = _auto_categorize(
+                        titre,
+                        data.get("metadata", {}).get("description_originale", ""),
+                    )
+
+                style = psycho.get("style_communication", "directif")
+                traits = psycho.get("traits_dominants", [])
+                disc = _infer_disc_from_style(style, traits)
+                is_multi = type_sim == "multi_interlocuteurs"
+
                 scenarios.append({
                     "id": f.stem,
-                    "name": f"{persona.get('prenom', '?')} {persona.get('nom', '?')}",
-                    "poste": persona.get("poste", "?"),
-                    "entreprise": persona.get("entreprise", {}).get("nom", "?"),
-                    "secteur": persona.get("entreprise", {}).get("secteur", "?"),
-                    "type_simulation": "custom",
-                    "titre": data.get("brief_commercial", {}).get("titre", "Scénario personnalisé"),
-                    "difficulty": data.get("metadata", {}).get("difficulte_defaut", 2),
+                    "name": f"{identite.get('prenom', '?')} {identite.get('nom', '?')}",
+                    "poste": identite.get("poste", "?"),
+                    "entreprise": ent.get("nom", "?"),
+                    "secteur": ent.get("secteur", "?"),
+                    "type_simulation": type_sim,
+                    "titre": titre,
+                    "difficulty": _auto_difficulty(type_sim, data.get("metadata", {}).get("difficulte_defaut", 2)),
                     "tags": data.get("metadata", {}).get("tags", []),
                     "source": "user",
+                    "gender": identite.get("genre", "M"),
+                    "taille": ent.get("taille", ""),
+                    "disc": disc,
+                    "objections_preview": [o.get("verbatim", "") for o in obj_list[:3] if o.get("verbatim")],
+                    "objection_type_principal": obj_list[0].get("type", "") if obj_list else "",
+                    "douleur_cachee": contexte.get("situation_entreprise", ""),
+                    "objectif_commercial": brief.get("votre_objectif", ""),
+                    "duree_estimee": brief.get("duree_estimee", "5-8 minutes"),
+                    "nb_interlocuteurs": "multi" if is_multi else "mono",
                 })
         except Exception:
             continue
@@ -458,6 +677,8 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0)
         scenarios = [s for s in scenarios if s["type_simulation"] == type]
     if difficulty > 0:
         scenarios = [s for s in scenarios if s.get("difficulty") == difficulty]
+    if interlocuteurs in ("mono", "multi"):
+        scenarios = [s for s in scenarios if s.get("nb_interlocuteurs") == interlocuteurs]
 
     # Collect all unique secteurs and types from current results + static lists
     all_secteurs = sorted(set(get_sectors() + [s["secteur"] for s in scenarios]))
@@ -604,7 +825,11 @@ Un commercial qui balance des chiffres secs à un profil I perd le lien.
 Un commercial qui pousse à décider vite un profil S le braque.
 Un commercial qui reste vague avec un profil C perd toute crédibilité.
 
-Réponds UNIQUEMENT en JSON valide, sans markdown, sans backticks :
+Réponds UNIQUEMENT avec un objet JSON valide.
+Pas de texte avant. Pas de texte après.
+Pas de balises markdown. Pas de ```json.
+Commence directement par {{ et termine par }}.
+UNIQUEMENT du JSON :
 
 {{
     "score_global": 0.0,
@@ -723,6 +948,66 @@ RÈGLES :
 - score_adaptation (/20) mesure à quel point le commercial a adapté son style au profil DISC détecté."""
 
 
+def _clean_json(text: str) -> str:
+    """Nettoie la réponse Claude pour extraire le JSON valide."""
+    text = re.sub(r'```json\s*', '', text)
+    text = re.sub(r'```\s*', '', text)
+    text = text.strip()
+    # Extraire uniquement la partie JSON si texte parasite
+    match = re.search(r'\{.*\}', text, re.DOTALL)
+    if match:
+        return match.group(0)
+    return text
+
+
+def _repair_truncated_json(text: str) -> str:
+    """Tente de réparer un JSON tronqué en fermant les structures ouvertes."""
+    # Supprimer une éventuelle valeur string tronquée (pas de guillemet fermant)
+    # Ex: ..."pourquoi": "Explication tron
+    text = text.rstrip()
+    # Si on termine sur une valeur string incomplète, couper jusqu'au dernier champ complet
+    last_quote = text.rfind('"')
+    if last_quote > 0:
+        # Vérifier si c'est un guillemet ouvrant non fermé (valeur tronquée)
+        before = text[:last_quote]
+        # Compter les guillemets — si impair, le dernier est ouvrant sans fermeture
+        quote_count = text.count('"')
+        if quote_count % 2 != 0:
+            # Tronquer à la dernière virgule ou accolade/crochet fermant avant ce guillemet
+            cut_pos = max(before.rfind(','), before.rfind('}'), before.rfind(']'))
+            if cut_pos > 0:
+                text = text[:cut_pos + 1]
+
+    # Supprimer les virgules pendantes
+    text = re.sub(r',\s*$', '', text)
+
+    # Fermer les structures ouvertes
+    stack = []
+    in_string = False
+    escape = False
+    for ch in text:
+        if escape:
+            escape = False
+            continue
+        if ch == '\\' and in_string:
+            escape = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch in ('{', '['):
+            stack.append('}' if ch == '{' else ']')
+        elif ch in ('}', ']'):
+            if stack:
+                stack.pop()
+
+    # Fermer tout ce qui est resté ouvert
+    closing = ''.join(reversed(stack))
+    return text + closing
+
+
 @app.post("/api/evaluate")
 async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optional_user)):
     """Évalue un appel commercial via Claude Sonnet (FORCE 3D)."""
@@ -747,17 +1032,20 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
         client = anthropic.Anthropic()
         response = client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=1500,
+            max_tokens=8192,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text.strip()
-
-        # Parse JSON (handle potential markdown wrapping)
-        if raw.startswith("```"):
-            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-        evaluation = json.loads(raw)
+        cleaned = _clean_json(raw)
+        try:
+            evaluation = json.loads(cleaned)
+        except json.JSONDecodeError:
+            print(f"[EVAL] JSON tronqué détecté, tentative de réparation...", flush=True)
+            repaired = _repair_truncated_json(cleaned)
+            evaluation = json.loads(repaired)
 
     except json.JSONDecodeError:
+        print(f"[EVAL ERROR] Réponse brute : {raw[:500]}")
         raise HTTPException(500, "Erreur parsing évaluation (JSON invalide)")
     except Exception as e:
         raise HTTPException(500, f"Erreur évaluation : {str(e)}")
@@ -767,7 +1055,7 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
     transcript_str = transcript_text if isinstance(req.transcript, str) else json.dumps(
         [e.model_dump() for e in req.transcript], ensure_ascii=False
     )
-    await save_evaluation(
+    eval_id = await save_evaluation(
         session_id=req.session_id or f"eval-{uuid.uuid4().hex[:8]}",
         scenario_id=req.scenario_id,
         difficulty=req.difficulty,
@@ -783,6 +1071,7 @@ async def evaluate(req: EvaluateRequest, user: dict | None = Depends(get_optiona
     if req.session_db_id:
         await complete_session(req.session_db_id, req.duration_s)
 
+    evaluation["eval_id"] = eval_id
     return evaluation
 
 
@@ -814,7 +1103,7 @@ async def evaluate_stream(req: EvaluateRequest, user: dict | None = Depends(get_
             client = anthropic.AsyncAnthropic()
             async with client.messages.stream(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=1500,
+                max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}],
             ) as stream:
                 async for text_chunk in stream.text_stream:
@@ -823,16 +1112,26 @@ async def evaluate_stream(req: EvaluateRequest, user: dict | None = Depends(get_
 
             # Stream finished — parse full JSON
             raw = accumulated.strip()
-            if raw.startswith("```"):
-                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-            evaluation = json.loads(raw)
+            print(f"[EVAL RAW] Longueur: {len(raw)} chars", flush=True)
+            print(f"[EVAL RAW] Premiers 500 chars: {raw[:500]}", flush=True)
+            print(f"[EVAL RAW] Derniers 200 chars: {raw[-200:]}", flush=True)
+            cleaned = _clean_json(raw)
+            print(f"[EVAL CLEANED] Longueur: {len(cleaned)} chars", flush=True)
+            print(f"[EVAL CLEANED] Premiers 500 chars: {cleaned[:500]}", flush=True)
+            try:
+                evaluation = json.loads(cleaned)
+            except json.JSONDecodeError:
+                print(f"[EVAL] JSON tronqué détecté, tentative de réparation...", flush=True)
+                repaired = _repair_truncated_json(cleaned)
+                print(f"[EVAL REPAIRED] Derniers 200 chars: ...{repaired[-200:]}", flush=True)
+                evaluation = json.loads(repaired)
 
             # Save to DB
             score = evaluation.get("score_global", 0)
             transcript_str = transcript_text if isinstance(req.transcript, str) else json.dumps(
                 [e.model_dump() for e in req.transcript], ensure_ascii=False
             )
-            await save_evaluation(
+            eval_id = await save_evaluation(
                 session_id=req.session_id or f"eval-{uuid.uuid4().hex[:8]}",
                 scenario_id=req.scenario_id,
                 difficulty=req.difficulty,
@@ -848,9 +1147,20 @@ async def evaluate_stream(req: EvaluateRequest, user: dict | None = Depends(get_
             if req.session_db_id:
                 await complete_session(req.session_db_id, req.duration_s)
 
+            # Include eval_id in done event for debrief link
+            evaluation["eval_id"] = eval_id
             yield f"event: done\ndata: {json.dumps(evaluation, ensure_ascii=False)}\n\n"
 
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as jde:
+            print(f"[EVAL ERROR] JSONDecodeError: {jde}", flush=True)
+            print(f"[EVAL ERROR] Réponse brute streaming ({len(accumulated)} chars): {accumulated[:500]}", flush=True)
+            print(f"[EVAL ERROR] Fin brute: ...{accumulated[-300:]}", flush=True)
+            try:
+                err_cleaned = _clean_json(accumulated.strip())
+                print(f"[EVAL ERROR] Cleaned ({len(err_cleaned)} chars): {err_cleaned[:500]}", flush=True)
+                print(f"[EVAL ERROR] Fin cleaned: ...{err_cleaned[-300:]}", flush=True)
+            except Exception:
+                print("[EVAL ERROR] _clean_json a aussi échoué", flush=True)
             yield f"event: error\ndata: {json.dumps({'error': 'Erreur parsing évaluation (JSON invalide)'})}\n\n"
         except Exception as e:
             yield f"event: error\ndata: {json.dumps({'error': f'Erreur évaluation : {str(e)}'})}\n\n"

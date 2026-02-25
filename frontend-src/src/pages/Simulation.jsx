@@ -11,6 +11,7 @@ import SimPostCall from '../components/simulation/SimPostCall';
 import SimEvaluation from '../components/simulation/SimEvaluation';
 import SimScenarioCreator from '../components/simulation/SimScenarioCreator';
 import SimSignupModal from '../components/simulation/SimSignupModal';
+import AnalysisModal, { ANALYSIS_STEPS } from '../components/simulation/AnalysisModal';
 
 // State machine: loading → briefing → call → postcall → error | creator
 export default function Simulation() {
@@ -34,6 +35,12 @@ export default function Simulation() {
   const [evaluation, setEvaluation] = useState(null);
   const [evalLoading, setEvalLoading] = useState(false);
   const [evalError, setEvalError] = useState('');
+  const [showAnalysis, setShowAnalysis] = useState(false);
+  const [analysisProgress, setAnalysisProgress] = useState(0);
+  const [analysisStep, setAnalysisStep] = useState(0);
+  const [analysisDone, setAnalysisDone] = useState(false);
+  const analysisStartRef = useRef(null);
+  const chunkCountRef = useRef(0);
 
   const ringTone = useRingTone();
   const introSequence = useIntroSequence();
@@ -91,19 +98,22 @@ export default function Simulation() {
     }
   }
 
+  const [conversionModalOpen, setConversionModalOpen] = useState(false);
+
   // Launch simulation
   function handleLaunch() {
-    // Check free-use wall for anonymous users
-    if (!token) {
-      if (localStorage.getItem('vm-free-used') === 'true') {
-        setSignupOpen(true);
-        return;
-      }
-    }
     setPhase('call');
     // Pre-fetch token while user sees the call UI
     prefetchToken();
   }
+
+  // Show conversion modal 8s after debrief for anonymous users
+  useEffect(() => {
+    if (phase === 'postcall' && evaluation && !evalLoading && !token) {
+      const timer = setTimeout(() => setConversionModalOpen(true), 8000);
+      return () => clearTimeout(timer);
+    }
+  }, [phase, evaluation, evalLoading, token]);
 
   // Detect rdv_physique scenario type
   const isRdvPhysique = scenario?.simulation?.type === 'rdv_physique'
@@ -170,18 +180,29 @@ export default function Simulation() {
     }
   }
 
-  // Progressive JSON parse: try to close open braces/brackets and parse
+  // Progressive JSON parse: extract JSON from potentially dirty text
   function tryProgressiveParse(text) {
     try {
-      let s = text.trim();
-      // Strip markdown code fence if present
-      if (s.startsWith('```')) {
-        s = s.replace(/^```(?:json)?\n?/, '');
-        s = s.replace(/```\s*$/, '');
+      // Clean markdown fences and surrounding text
+      let s = text.replace(/```json/g, '').replace(/```/g, '').trim();
+      // Find the first { and last }
+      const start = s.indexOf('{');
+      const end = s.lastIndexOf('}');
+      if (start === -1) return null;
+
+      if (end > start) {
+        // We have a complete-looking JSON block — try direct parse
+        try {
+          const parsed = JSON.parse(s.slice(start, end + 1));
+          if (parsed && typeof parsed.score_global === 'number') return parsed;
+        } catch {
+          // Fall through to progressive close
+        }
       }
-      // Remove trailing comma before closing
+
+      // Progressive close: take from first { and close open braces/brackets
+      s = s.slice(start);
       s = s.replace(/,\s*$/, '');
-      // Count open braces/brackets
       let braces = 0, brackets = 0;
       for (const ch of s) {
         if (ch === '{') braces++;
@@ -189,18 +210,43 @@ export default function Simulation() {
         else if (ch === '[') brackets++;
         else if (ch === ']') brackets--;
       }
-      // Close open brackets then braces
-      // First, remove any trailing comma before we close
       s = s.replace(/,\s*$/, '');
       for (let i = 0; i < brackets; i++) s += ']';
       for (let i = 0; i < braces; i++) s += '}';
       const parsed = JSON.parse(s);
-      // Only return if we have score_global (meaningful partial data)
       if (parsed && typeof parsed.score_global === 'number') return parsed;
       return null;
     } catch {
       return null;
     }
+  }
+
+  // Advance analysis modal step based on elapsed time and chunk count
+  function advanceAnalysis() {
+    chunkCountRef.current++;
+    const elapsed = Date.now() - analysisStartRef.current;
+    // Map elapsed time to steps (each step ~1.5-2.5s, total ~15-25s)
+    const timeStep = Math.min(Math.floor(elapsed / 2000), ANALYSIS_STEPS.length - 1);
+    // Also advance based on chunk count (fallback for fast/slow responses)
+    const chunkStep = Math.min(Math.floor(chunkCountRef.current / 3), ANALYSIS_STEPS.length - 1);
+    const step = Math.max(timeStep, chunkStep);
+    setAnalysisStep(step);
+    setAnalysisProgress(ANALYSIS_STEPS[step].pct);
+  }
+
+  // Finalize analysis modal: show 100% then close after delay
+  function finalizeAnalysis(callback) {
+    setAnalysisDone(true);
+    setAnalysisProgress(100);
+    setAnalysisStep(ANALYSIS_STEPS.length - 1);
+    setTimeout(() => {
+      setShowAnalysis(false);
+      setAnalysisDone(false);
+      setAnalysisProgress(0);
+      setAnalysisStep(0);
+      chunkCountRef.current = 0;
+      if (callback) callback();
+    }, 800);
   }
 
   // Evaluation (SSE streaming)
@@ -214,6 +260,14 @@ export default function Simulation() {
       setEvalError('Appel trop court pour être évalué (minimum 3 échanges requis)');
       return;
     }
+
+    // Start analysis modal
+    setShowAnalysis(true);
+    setAnalysisProgress(0);
+    setAnalysisStep(0);
+    setAnalysisDone(false);
+    analysisStartRef.current = Date.now();
+    chunkCountRef.current = 0;
 
     const transcriptArray = entries.map(e => ({
       role: e.who === 'user' ? 'vendeur' : 'prospect',
@@ -259,7 +313,6 @@ export default function Simulation() {
 
         for (const line of lines) {
           if (line.startsWith('event: done')) {
-            // Next data line contains the final evaluation
             continue;
           }
           if (line.startsWith('event: error')) {
@@ -273,17 +326,21 @@ export default function Simulation() {
 
             if (msg.type === 'chunk') {
               accumulated += msg.text;
+              advanceAnalysis();
               // Try progressive parse
               const partial = tryProgressiveParse(accumulated);
               if (partial) setEvaluation(partial);
             } else if (msg.score_global !== undefined) {
-              // This is the final "done" event payload
-              setEvaluation(msg);
-              setEvalLoading(false);
-              if (!token) localStorage.setItem('vm-free-used', 'true');
+              // Final done event
+              const finalData = msg;
+              finalizeAnalysis(() => {
+                setEvaluation(finalData);
+                setEvalLoading(false);
+                if (!token) localStorage.setItem('vm-free-used', 'true');
+              });
               return;
             } else if (msg.error) {
-              // This is the "error" event payload
+              setShowAnalysis(false);
               setEvalError(msg.error);
               setEvalLoading(false);
               return;
@@ -294,15 +351,24 @@ export default function Simulation() {
         }
       }
 
-      // If we reach here without a done event, use accumulated text
+      // Stream ended without explicit done event
       if (accumulated) {
         const partial = tryProgressiveParse(accumulated);
-        if (partial) setEvaluation(partial);
+        if (partial) {
+          finalizeAnalysis(() => {
+            setEvaluation(partial);
+            setEvalLoading(false);
+            if (!token) localStorage.setItem('vm-free-used', 'true');
+          });
+          return;
+        }
       }
+      setShowAnalysis(false);
       setEvalLoading(false);
       if (!token) localStorage.setItem('vm-free-used', 'true');
 
     } catch (e) {
+      setShowAnalysis(false);
       setEvalLoading(false);
       setEvalError(e.message);
     }
@@ -334,12 +400,21 @@ export default function Simulation() {
   const persona = scenario?.persona?.identite || null;
   const brief = scenario?.brief_commercial || {};
 
+  // Compute elapsed seconds from timer string (MM:SS) for phase indicator
+  const elapsedSeconds = (() => {
+    const parts = liveKit.timer.split(':');
+    if (parts.length !== 2) return 0;
+    return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+  })();
+
   return (
     <div style={{ position: 'relative', zIndex: 1, maxWidth: 860, margin: '0 auto', padding: '32px 24px', minHeight: '100vh' }}>
       {/* Background gradients */}
       <div style={{
         position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0,
-        background: `radial-gradient(ellipse at 15% -10%, ${c.ac}12 0%, transparent 55%), radial-gradient(ellipse at 85% 110%, ${c.bl}0A 0%, transparent 55%)`,
+        background: isRdvPhysique && phase === 'call'
+          ? 'radial-gradient(ellipse at center, rgba(20,30,50,0.8) 0%, #080D1A 70%)'
+          : `radial-gradient(ellipse at 15% -10%, ${c.ac}12 0%, transparent 55%), radial-gradient(ellipse at 85% 110%, ${c.bl}0A 0%, transparent 55%)`,
       }} />
 
       {/* Header */}
@@ -431,6 +506,8 @@ export default function Simulation() {
             onMute={liveKit.toggleMute}
             onStop={handleEndCall}
             isRdvPhysique={isRdvPhysique}
+            scenario={scenario}
+            elapsedSeconds={elapsedSeconds}
           />
         )}
 
@@ -463,15 +540,27 @@ export default function Simulation() {
         )}
       </div>
 
-      {/* New session button (post-call) */}
+      {/* Post-call action buttons */}
       {phase === 'postcall' && (
-        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 28 }}>
+        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginTop: 28 }}>
+          {evaluation && evaluation.eval_id && token && (
+            <a href={'/debrief?session=' + evaluation.eval_id} style={{
+              display: 'inline-flex', alignItems: 'center', gap: 7,
+              padding: '12px 24px', borderRadius: 6, border: 'none',
+              fontSize: 14, fontWeight: 600, cursor: 'pointer', textDecoration: 'none',
+              background: `linear-gradient(135deg, ${c.ac}, ${c.acL})`, color: '#fff',
+              boxShadow: `0 4px 16px ${c.acD}`, fontFamily: 'inherit',
+            }}>📊 Voir le débrief complet</a>
+          )}
           <button onClick={handleRestart} style={{
             display: 'inline-flex', alignItems: 'center', gap: 7,
-            padding: '12px 24px', borderRadius: 6, border: 'none',
+            padding: '12px 24px', borderRadius: 6,
             fontSize: 14, fontWeight: 600, cursor: 'pointer',
-            background: `linear-gradient(135deg, ${c.ac}, ${c.acL})`, color: '#fff',
-            boxShadow: `0 4px 16px ${c.acD}`, fontFamily: 'inherit',
+            background: evaluation && evaluation.eval_id && token ? 'transparent' : `linear-gradient(135deg, ${c.ac}, ${c.acL})`,
+            color: evaluation && evaluation.eval_id && token ? c.mt : '#fff',
+            border: evaluation && evaluation.eval_id && token ? `1px solid ${c.bd}` : 'none',
+            boxShadow: evaluation && evaluation.eval_id && token ? 'none' : `0 4px 16px ${c.acD}`,
+            fontFamily: 'inherit',
           }}>🔄 Nouvelle session</button>
         </div>
       )}
@@ -486,14 +575,20 @@ export default function Simulation() {
         </div>
       </div>
 
+      {/* Analysis modal */}
+      {showAnalysis && (
+        <AnalysisModal
+          progress={analysisProgress}
+          currentStep={analysisStep}
+          done={analysisDone}
+        />
+      )}
+
       {/* Signup modal */}
       <SimSignupModal
-        open={signupOpen}
-        onClose={() => setSignupOpen(false)}
-        onLogin={() => {
-          setSignupOpen(false);
-          navigate('/app/login');
-        }}
+        open={signupOpen || conversionModalOpen}
+        onClose={() => { setSignupOpen(false); setConversionModalOpen(false); }}
+        onLogin={() => { window.location.href = '/login'; }}
       />
     </div>
   );

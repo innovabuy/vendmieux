@@ -1,0 +1,360 @@
+{
+  "id": "scenario_1771521652",
+  "description_originale": "Le propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : hotellerie_restauration]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "1 à 5 établissements (indépendant ou petit groupe)",
+      "interlocuteur_principal": {
+        "poste": "Propriétaire / Directeur d'hôtel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme pour hôtel-restaurant",
+      "proposition_valeur_presumee": "Amélioration de l'offre existante, optimisation des performances, augmentation du chiffre d'affaires ou de la satisfaction client",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'une offre supérieure à un client déjà satisfait"
+      ],
+      "implicites": [
+        "Éviter que le client considère l'appel comme une sollicitation commerciale agressive",
+        "Justifier un investissement supplémentaire alors que le client est déjà content",
+        "Créer le besoin pour quelque chose que le client ne demande pas",
+        "Transformer la satisfaction actuelle en opportunité de croissance"
+      ],
+      "probleme_racine": "Créer un désir d'amélioration chez un client satisfait du statu quo sans remettre en question la relation existante"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à mener des appels d'upselling efficaces auprès de clients existants satisfaits, en créant une perception de valeur ajoutée et en obtenant un accord de principe pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour l'hôtellerie-restauration",
+      "entreprise_description": "Fournisseur de services pour le secteur hôtelier avec une relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou offre premium visant à améliorer les performances de l'établissement hôtelier (possiblement : logiciel de gestion avancé, service de marketing digital, formation du personnel, solution de réservation améliorée, équipements haut de gamme, conseil en optimisation)",
+      "proposition_valeur": "Augmentation de la performance, du chiffre d'affaires ou de la satisfaction client grâce à une offre supérieure s'appuyant sur la relation de confiance déjà établie",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an avec l'offre actuelle"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance approfondie du client et de ses besoins, facilité d'intégration avec les services existants",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du service complémentaire ou montée en gamme proposé",
+        "Fourchette de prix",
+        "Bénéfices quantifiables attendus",
+        "Durée de l'engagement",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Marchand",
+      "age": 52,
+      "poste": "Propriétaire-Gérant",
+      "entreprise": {
+        "nom": "Hôtel-Restaurant Le Bellevue",
+        "secteur": "Hôtellerie-restauration indépendante",
+        "taille": "1 établissement - 18 chambres, restaurant 45 couverts",
+        "ca_approximatif": "850 000 € annuels"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et méfiant face aux discours commerciaux trop léchés",
+        "Fier de son indépendance et de sa réussite autodidacte",
+        "Sceptique naturel qui pense d'abord aux coûts avant les bénéfices"
+      ],
+      "motivations_profondes": [
+        "Transmettre un établissement performant à sa fille qui reprendra dans 5 ans",
+        "Prouver qu'un indépendant peut rivaliser avec les chaînes",
+        "Maintenir sa réputation locale et son taux de fidélisation client",
+        "Ne pas se faire avoir comme son beau-frère qui a investi dans un système inutile"
+      ],
+      "peurs_freins": [
+        "Perdre de l'argent dans des gadgets qui ne servent à rien",
+        "Compliquer des processus qui fonctionnent déjà bien",
+        "Devoir former son personnel à de nouveaux outils (turn-over saisonnier)",
+        "Être perçu comme le pigeon qui dit oui à tout",
+        "Dégrader la relation actuelle avec son fournisseur en refusant"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais sur ses gardes. A tendance à couper court dès qu'il sent une tentative de vente. Respecte les gens directs qui parlent chiffres concrets. Déteste les 'conseillers' qui ne connaissent rien à son métier",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé - Commence souvent par 'Oui bonjour, je vous écoute mais je n'ai que quelques minutes là'",
+      "signaux_interet": [
+        "Demande des chiffres précis ou des exemples concrets d'hôtels similaires",
+        "Mentionne sa fille ou la transmission : 'Faudrait que j'en parle à ma fille'",
+        "Pose des questions sur la compatibilité avec son système actuel",
+        "Évoque spontanément un problème opérationnel précis",
+        "Baisse légèrement le ton et ralentit son débit"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Répète 'Écoutez...' avec un ton descendant",
+        "Coupe la parole pour dire 'Oui mais ça je le fais déjà'",
+        "Demande le prix trop tôt de manière sèche : 'Bon et ça coûte combien tout ça ?'",
+        "Invoque un rendez-vous imminent : 'Faut que je vous laisse là, j'ai un fournisseur qui arrive'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...'",
+        "Dit souvent 'Après...' pour introduire un contre-argument",
+        "Utilise 'Bon...' quand il perd patience",
+        "Ponctue de 'Hein' interrogatif quand il est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 30 secondes maximum avant d'interrompre. Préfère un échange ping-pong court qu'un pitch structuré"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Performance stable depuis 3 ans. Taux d'occupation correct (68% annuel) mais stagne depuis 2 saisons. Concurrence accrue avec l'ouverture d'un Ibis Styles à 8 km. Restaurant en légère baisse le midi, bien rempli le soir et week-ends",
+      "priorites_actuelles": [
+        "Préparer la saison estivale (on est en mars)",
+        "Finaliser les travaux de rénovation de 4 chambres",
+        "Former la nouvelle réceptionniste avant les vacances de Pâques",
+        "Augmenter le panier moyen au restaurant sans perdre la clientèle locale"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 4 ans un logiciel de yield management trop compliqué, abandonné au bout de 6 mois. Mauvais souvenir",
+      "fournisseur_actuel": "Satisfait du service actuel qu'il utilise depuis 1 an - 'Ça fait le job, pas de problème particulier'",
+      "budget_disponible": "Peut débloquer 3 000 à 8 000 € s'il est vraiment convaincu du ROI, mais doit en discuter avec son comptable. Au-delà, nécessite validation de sa fille et sa femme (associée)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un bénéfice chiffré crédible et rapide (sous 6 mois)",
+        "Parler d'autres hôtels indépendants similaires qui ont adopté la solution (avec noms si possible)",
+        "Reconnaître explicitement que son système actuel fonctionne avant de proposer mieux",
+        "Évoquer l'argument transmission/pérennité pour sa fille",
+        "Proposer un test/démo sans engagement qui ne mobilise pas trop de temps",
+        "Aborder l'angle concurrentiel Ibis Styles de manière factuelle"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Critiquer implicitement son système actuel ou ses choix passés",
+        "Utiliser du jargon technique ou marketing ('disruptif', 'ROI exponentiel', 'transformation digitale')",
+        "Promettre des résultats irréalistes ou vagues",
+        "Insister après un premier refus poli",
+        "Minimiser ses contraintes opérationnelles (temps, personnel, saisonnalité)",
+        "Comparer son établissement à des chaînes ou des hôtels haut de gamme"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous écoute mais j'ai vraiment pas beaucoup de temps là, j'ai la livraison des vins qui arrive dans 20 minutes",
+        "sous_texte": "Test de légitimité : si c'est important, tu sauras faire court. Sinon, c'est que c'est du vent commercial",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la brièveté (3 minutes chrono) et annoncer un bénéfice concret immédiat"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attendez, on est déjà clients chez vous depuis un an, tout va bien, pourquoi vous m'appelez ?",
+        "sous_texte": "Méfiance : est-ce qu'il y a un problème que je ne connais pas ? Ou c'est juste pour me vendre autre chose ?",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer sur la relation existante, valoriser sa satisfaction, positionner l'appel comme une opportunité proactive basée sur sa réussite"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais ça je le fais déjà avec mon système actuel, hein. Ça marche très bien là",
+        "sous_texte": "Ne remets pas en question mes choix. Je suis satisfait et je n'ai pas envie qu'on me fasse sentir que j'ai raté quelque chose",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider explicitement que son système fonctionne avant de montrer ce que la nouvelle offre ajoute SANS remplacer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après, vous comprenez, moi j'ai une équipe en place, des process qui tournent... Je vais pas tout chambouler pour tester un truc nouveau",
+        "sous_texte": "J'ai peur de la complexité, de perdre du temps en formation et de déstabiliser mon fonctionnement actuel",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer la simplicité d'intégration, le temps minimal requis, et l'accompagnement inclus"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, il y a 4 ans j'ai testé un logiciel de yield management, vendu par un type très convainquant comme vous... Au final on l'a jamais vraiment utilisé, trop compliqué. J'ai jeté 6 000 € par la fenêtre",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre ça. Prouve-moi que ce n'est pas la même histoire",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître cette expérience négative, différencier clairement votre offre, proposer des garanties ou un test sans risque"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Honnêtement, mon taux d'occupation il est correct, le restaurant tourne bien... Je vois pas trop ce que vous allez m'apporter de plus",
+        "sous_texte": "Je ne vois pas le problème que tu vas résoudre parce que je n'en ai pas de visible. Pourquoi changer une équipe qui gagne ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser les zones de stagnation (taux qui plafonne depuis 2 ans, Ibis Styles concurrent), montrer l'écart entre 'correct' et 'optimal'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon et tout ça, ça me coûterait combien exactement ?",
+        "sous_texte": "Je veux savoir tout de suite si c'est dans mes moyens ou si on perd notre temps. Et j'utilise le prix comme barrière de sortie",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reporter la question de prix en ancrant d'abord la valeur perçue, ou donner une fourchette conditionnée aux bénéfices"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin, tout ça c'est bien beau sur le papier, mais dans les faits, vous me garantissez quoi ? Parce que des promesses j'en entends tous les jours",
+        "sous_texte": "Prouve-moi avec du concret, pas du blabla commercial. Je suis sceptique de nature",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des exemples chiffrés d'hôtels similaires avec nom si possible, proposer des références vérifiables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, là je suis en pleine saison de préparation, les travaux, la nouvelle réceptionniste à former... C'est vraiment pas le moment de rajouter quelque chose en plus",
+        "sous_texte": "Je suis débordé et c'est une vraie contrainte, pas une excuse. Je n'ai ni le temps ni l'énergie mentale pour ça maintenant",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un timing adapté (après Pâques, installation en basse saison), montrer que ça simplifiera justement sa haute saison"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'améliorer mon chiffre, mais concrètement, combien en plus par mois ? Parce que si c'est pour gagner 500 € et dépenser 5 000, hein...",
+        "sous_texte": "Je veux des chiffres précis, pas des pourcentages vagues. Je calcule le ROI dans ma tête et je suis naturellement pessimiste",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner une projection réaliste basée sur ses chiffres actuels (taux d'occupation 68%, panier moyen restaurant), montrer un break-even rapide"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais si je comprends bien, faut que je forme mon personnel là-dessus ? Vous savez, moi en saison j'ai du turn-over, des saisonniers... Ils vont jamais prendre le temps d'apprendre",
+        "sous_texte": "La formation est un vrai point de douleur dans mon métier. Si c'est compliqué à transmettre, ça ne marchera pas",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer la simplicité d'utilisation (intuitive), la formation courte (2h max), ou que ça repose sur lui principalement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Après, vous comprenez, je dois en parler à ma fille quand même. C'est elle qui reprendra dans 5 ans, faut qu'elle soit d'accord aussi",
+        "sous_texte": "Début d'intérêt réel, mais je cherche une porte de sortie honorable pour ne pas décider seul et éviter de me tromper",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser cette dimension transmission, proposer qu'elle soit présente à la démo, transformer l'objection en argument"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis bon, j'ai l'Ibis Styles qui s'est ouvert à 8 km, ils ont des budgets marketing que je peux pas suivre. Vous allez pas m'aligner avec eux non plus hein",
+        "sous_texte": "Je me sens petit face aux chaînes et je doute que votre solution puisse vraiment faire la différence face à ce déséquilibre",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Repositionner sa force d'indépendant (authenticité, service personnalisé) et montrer comment l'offre valorise ses différenciateurs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais là je peux pas vous dire oui comme ça au téléphone. Envoyez-moi un mail avec les infos, je regarderai",
+        "sous_texte": "Je veux me débarrasser de toi poliment sans m'engager. Le mail sera probablement jamais vraiment regardé",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail mais verrouiller un point de contact précis (rappel planifié, démo courte) avant de raccrocher"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, faut que je vous laisse là, j'ai vraiment un rendez-vous qui arrive. On se rappelle, OK ?",
+        "sous_texte": "Je mets fin à la conversation soit parce que je suis vraiment pressé, soit parce que je ne suis pas convaincu et je fuis",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter de raccrocher mais obtenir un engagement micro (meilleur moment pour rappeler, ou un 'si je vous montrais X en 10 min, ça vaudrait le coup ?')"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui enfin bon, faut que j'en parle à mon comptable avant quand même, surtout si ça dépasse les 5 000 €",
+        "sous_texte": "Objection budgétaire réelle mais aussi bouclier pour ne pas décider seul et diluer la responsabilité",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'envoyer les éléments chiffrés pour son comptable et fixer un rappel après leur échange"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je sais pas, j'ai peur de compliquer les choses alors que là ça tourne... Vous êtes sûr que je vais pas me rajouter des soucis ?",
+        "sous_texte": "Peur du changement et aversion au risque. J'ai besoin d'être rassuré sur le pire scénario possible",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer avec des garanties (période d'essai, accompagnement, clause de sortie) et témoignages de pairs ayant eu la même crainte"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'entends bien ce que vous me dites, et c'est vrai que ça pourrait être intéressant... Mais bon, honnêtement, on est en mars, j'ai la tête dans le guidon avec la saison qui arrive, les travaux, tout ça... C'est vraiment pas le bon moment pour moi. Rappelez-moi plutôt en septembre, après l'été, là j'aurai plus de recul. OK ?",
+      "condition_declenchement": "Survient si le vendeur n'a pas su créer d'urgence ou de FOMO suffisant, ou si le ROI n'est pas apparu assez rapide/certain pour justifier l'effort immédiat"
+    },
+    "pattern_escalade": "Thierry empile les objections de manière cumulative plutôt que séquentielle. Il commence par des barrières de temps/disponibilité (tests), puis si le vendeur passe, il attaque sur la satisfaction actuelle et l'expérience négative passée (sincère), ensuite viennent les contraintes opérationnelles réelles (personnel, timing), puis le prix et le ROI concret, et enfin les objections de validation externe (fille, comptable) pour diluer sa responsabilité de décision. Chaque objection non traitée reste en arrière-plan et revient plus tard sous une autre forme",
+    "piege_classique": "Le vendeur prend l'objection 'Envoyez-moi un mail' comme un accord de principe et conclut l'appel trop vite. Ou il essaie de combattre la satisfaction actuelle de Thierry au lieu de la valider d'abord. Autre piège : donner le prix trop tôt sans avoir ancré la valeur, ce qui déclenche un calcul mental négatif immédiat chez Thierry qui pense coûts avant bénéfices"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour l'hôtellerie-restauration",
+      "description": "Fournisseur de services pour le secteur hôtelier avec une relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou offre premium visant à améliorer les performances de l'établissement hôtelier (possiblement : logiciel de gestion avancé, service de marketing digital, formation du personnel, solution de réservation améliorée, équipements haut de gamme, conseil en optimisation)",
+      "proposition_valeur": "Augmentation de la performance, du chiffre d'affaires ou de la satisfaction client grâce à une offre supérieure s'appuyant sur la relation de confiance déjà établie",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Client satisfait depuis 1 an avec l'offre actuelle"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance approfondie du client et de ses besoins, facilité d'intégration avec les services existants"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à mener des appels d'upselling efficaces auprès de clients existants satisfaits, en créant une perception de valeur ajoutée et en obtenant un accord de principe pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Upselling client satisfait — Hôtel-Restaurant Le Bellevue",
+    "vous_etes": "Commercial chez votre entreprise de services B2B pour l'hôtellerie, en charge du compte Le Bellevue depuis 1 an.",
+    "vous_vendez": "Une offre premium complémentaire à votre service actuel — solution avancée pour augmenter le chiffre d'affaires et optimiser les performances de l'établissement (prix et détails à préciser selon découverte).",
+    "vous_appelez": "Thierry Marchand, 52 ans, propriétaire-gérant de l'Hôtel-Restaurant Le Bellevue (18 chambres, 45 couverts, 850K€ CA). Pragmatique, méfiant des discours commerciaux, fier de son indépendance. Va droit au but, déteste le jargon et les promesses en l'air.",
+    "ce_que_vous_savez": [
+      "Client satisfait de votre offre actuelle depuis 1 an — 'ça fait le job, pas de problème'",
+      "Taux d'occupation stable à 68% mais stagne depuis 2 saisons",
+      "Concurrence accrue : Ibis Styles ouvert à 8 km récemment",
+      "Prépare la transmission à sa fille d'ici 5 ans",
+      "A eu une mauvaise expérience il y a 4 ans avec un logiciel trop complexe, abandonné après 6 mois"
+    ],
+    "votre_objectif": "Obtenir un accord de principe pour lui envoyer un devis de l'offre premium, en créant le désir d'amélioration sans braquer un client déjà content.",
+    "vos_atouts": [
+      "Relation de confiance établie depuis 1 an",
+      "Connaissance fine de son établissement et de ses enjeux",
+      "Références d'hôtels indépendants similaires ayant adopté l'offre",
+      "Facilité d'intégration avec votre système actuel déjà en place"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:20:52Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15591,
+    "total_time_s": 136.9
+  }
+}

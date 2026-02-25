@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771522138",
+  "description_originale": "Le directeur commercial ou directeur de la distribution d'une compagnie d'assurance régionale ou société de gestion de 150+ salariés (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : finance_assurance]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés - compte clé",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial ou Directeur de la Distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction Générale potentielle",
+        "Service juridique (pénalités contractuelles)",
+        "Responsable des opérations"
+      ],
+      "zone_geo": "France - régionale"
+    },
+    "offre": {
+      "produit_service": "Service ou solution B2B pour compagnie d'assurance/société de gestion",
+      "proposition_valeur_presumee": "Solution critique pour l'activité de distribution ou commerciale de l'assureur",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité client",
+        "Risque de pénalités contractuelles",
+        "Risque de rupture de contrat",
+        "Client furieux - relation détériorée"
+      ],
+      "implicites": [
+        "Défaillance dans la prestation ou le service fourni",
+        "Manque de communication proactive sur l'incident",
+        "Processus de gestion de crise potentiellement inadéquat",
+        "Risque réputationnel pour le fournisseur",
+        "Perte financière potentielle significative (compte clé)",
+        "Impact sur le chiffre d'affaires de l'assureur"
+      ],
+      "probleme_racine": "Défaillance opérationnelle critique sur un compte stratégique avec gestion de crise insuffisante et risque de rupture contractuelle majeure"
+    },
+    "objections_mentionnees": [
+      "Pénalités contractuelles à appliquer",
+      "Remise en cause de la fiabilité du fournisseur",
+      "Impact business direct sur l'activité",
+      "Rupture de confiance",
+      "Résiliation potentielle du contrat"
+    ],
+    "objectif_formation": "Former les commerciaux et les Key Account Managers à la gestion de crise client, à la désescalade de situations conflictuelles, à la proposition de plans de résolution structurés et à la préservation de relations commerciales stratégiques en contexte de réclamation majeure",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur de l'assurance (possiblement : technologie, outsourcing, plateforme digitale, services de distribution)",
+      "entreprise_description": "Fournisseur de solutions critiques pour compagnies d'assurance et sociétés de gestion, avec contrats incluant clauses de pénalités",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service essentiel à l'activité commerciale ou de distribution d'assureurs, suffisamment critique pour que sa défaillance entraîne des impacts business majeurs",
+      "proposition_valeur": "Fiabilité opérationnelle, continuité de service, support aux activités critiques de distribution et commercialisation d'assurances",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'incident",
+        "Offre/produit spécifique fourni",
+        "Montant des pénalités contractuelles",
+        "Durée de la relation commerciale",
+        "Nom de l'entreprise fournisseur",
+        "Historique de la relation avant incident"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Duvernet",
+      "age": 52,
+      "poste": "Directeur Commercial et de la Distribution",
+      "entreprise": {
+        "nom": "Protelia Assurances",
+        "secteur": "Assurance IARD et prévoyance - distribution multi-canaux",
+        "taille": "280 collaborateurs",
+        "ca_approximatif": "180M€ de primes collectées annuellement"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeant et directif sous pression",
+        "Rancunier quand on le déçoit",
+        "Protecteur envers son équipe et ses résultats"
+      ],
+      "motivations_profondes": [
+        "Protéger son bonus variable (30% de sa rémunération) lié aux objectifs de collecte",
+        "Éviter un savon de son DG devant le CODIR",
+        "Prouver qu'il gère fermement ses prestataires pour asseoir sa crédibilité",
+        "Ne pas montrer de faiblesse après avoir défendu ce fournisseur en interne il y a 8 mois"
+      ],
+      "peurs_freins": [
+        "Que la Direction Générale découvre l'ampleur de l'incident avant qu'il n'ait obtenu des garanties",
+        "Perdre la face auprès de ses chefs d'agences qui lui remontent des plaintes terrain",
+        "Être personnellement tenu responsable du choix de ce prestataire",
+        "Que les pénalités contractuelles soient insuffisantes et qu'il doive justifier le maintien du contrat"
+      ],
+      "rapport_aux_commerciaux": "Méfiance accrue depuis l'incident. A l'impression qu'on lui a vendu du rêve. Pense que 'les commerciaux disparaissent quand ça va mal'. Distingue nettement discours commercial et réalité opérationnelle.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, avec une pointe d'agressivité contrôlée. Coupe la parole si on tourne autour du pot. Commence souvent par 'Bon, on va être clairs...' ou 'Franchement...'",
+      "signaux_interet": [
+        "Demande des précisions chiffrées et des deadlines précises",
+        "Évoque spontanément les conséquences internes s'il n'obtient pas satisfaction",
+        "Mentionne 'ma Direction' ou 'le CODIR' - signe qu'il envisage de défendre une solution",
+        "Passe du vouvoiement distant à un tutoiement professionnel si la proposition tient la route"
+      ],
+      "signaux_rejet": [
+        "Soupirs appuyés pendant les explications",
+        "Phrase type : 'C'est bien joli tout ça mais...'",
+        "Mentionne explicitement les concurrents ou dit 'on a d'autres options'",
+        "Regarde ostensiblement sa montre ou ses emails",
+        "Utilise le conditionnel : 'Ça POURRAIT être intéressant' au lieu de l'affirmatif"
+      ],
+      "tics_langage": [
+        "Bon... (avec un soupir)",
+        "Franchement",
+        "On va pas se mentir",
+        "C'est simple",
+        "J'vous dis les choses"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - maximum 45 secondes avant de couper. Veut des réponses concrètes, pas des slides. Dit ouvertement 'Épargnez-moi le pitch' si on dévie vers le commercial pur."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Protelia Assurances traverse une phase de tension : l'incident du prestataire a bloqué pendant 36 heures la souscription en ligne et l'alimentation du CRM pour 180 agents. Perte estimée : 420 contrats non signés. Laurent a un CODIR dans 10 jours où il doit présenter les actions correctives et justifier le maintien ou non du prestataire. Son directeur des opérations pousse pour changer de fournisseur.",
+      "priorites_actuelles": [
+        "Obtenir des compensations financières concrètes (réduction tarifaire 6 mois minimum ou geste commercial équivalent à 2 mois de facturation)",
+        "Sécuriser un plan de reprise d'activité documenté avec engagements SLA renforcés",
+        "Avoir des arguments factuels pour défendre le maintien du contrat devant le DG",
+        "Éviter que cette histoire ne remonte au Conseil d'Administration"
+      ],
+      "experience_avec_offre_similaire": "Protelia a déjà changé de prestataire il y a 3 ans (problèmes de fiabilité également). Laurent avait alors piloté le changement et défendu le choix du prestataire actuel en interne. Il est donc doublement vexé et exposé.",
+      "fournisseur_actuel": "Le prestataire en question - contrat de 3 ans, en année 2, clause résiliation possible avec préavis 3 mois en cas de manquement grave. Montant annuel du contrat : environ 280K€.",
+      "budget_disponible": "Pas de budget supplémentaire - Laurent veut des compensations SUR le contrat existant. Tout dépassement budgétaire devra être validé par le DAF, ce qu'il veut éviter à tout prix pour ne pas élargir le cercle des gens au courant."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître frontalement la gravité de l'incident SANS chercher à minimiser",
+        "Présenter un plan d'action structuré en 3 volets : compensation immédiate / sécurisation technique / gouvernance renforcée",
+        "Montrer qu'on comprend son exposition personnelle et politique interne",
+        "Proposer une réunion tripartite avec son directeur des opérations pour co-construire les garanties",
+        "Évoquer des précédents clients où une crise similaire a été transformée en renforcement de partenariat",
+        "Mettre sur la table un geste commercial chiffré DÈS le premier échange"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Noyer le poisson ou chercher des excuses techniques ('c'était un cas exceptionnel', 'force majeure'...)",
+        "Renvoyer vers le SAV ou vers un interlocuteur technique - il veut UN décideur face à lui",
+        "Proposer une 'étude' ou un 'audit' sans engagement concret immédiat",
+        "Minimiser l'impact business ('ça n'a duré que 36h')",
+        "Brandir le contrat et les clauses en mode juridique défensif",
+        "Demander un délai de réflexion sans proposition concrète - il considérera que c'est du temps perdu et activera le plan B"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, j'ai pas vraiment le temps là. Vous comprendrez que j'ai d'autres priorités que d'écouter un discours commercial après ce qui s'est passé.",
+        "sous_texte": "Je suis furieux et je veux que vous le sachiez. Je ne vais pas vous faciliter la tâche. Prouvez-moi que cet appel ne sera pas une perte de temps supplémentaire.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa colère légitime, confirmer qu'il ne s'agit PAS d'un appel commercial mais d'une réponse concrète à la crise, annoncer un geste immédiat en 60 secondes chrono"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On va pas se mentir, votre incident nous a coûté cher. Très cher. Et là je dois justifier pourquoi on continue avec vous devant ma Direction dans 10 jours. Donc vos belles paroles...",
+        "sous_texte": "Je suis en danger politique en interne. J'ai défendu votre boîte et vous m'avez mis dans la merde. Je veux des ARMES pour me défendre, pas du blabla.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement son exposition personnelle, proposer un dossier de présentation CODIR clé en main avec données chiffrées et plan d'action pour l'armer politiquement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, j'ai déjà trois concurrents à vous qui me proposent de reprendre le contrat avec une migration accélérée. Donnez-moi une raison de pas signer avec eux dès la semaine prochaine.",
+        "sous_texte": "C'est vrai ET c'est un test. Je veux voir si vous êtes prêt à mettre quelque chose de lourd sur la table immédiatement, sinon je n'ai aucune raison de vous écouter.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas paniquer ni surenchérir bêtement. Reconnaître la légitimité de cette option, puis pivotez sur les risques migration (délais, coûts cachés, période test) vs. compensation immédiate + continuité sécurisée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi je vous donnerais des détails sur notre organisation interne ? Vous avez déjà prouvé que vous étiez pas fiables, je vais pas en plus vous livrer nos processus critiques.",
+        "sous_texte": "Je ne vous fais plus confiance. Chaque information que je partage est un risque. Je protège ma boutique. Vous devez REGAGNER le droit de poser des questions.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider cette méfiance comme légitime, expliquer précisément POURQUOI vous avez besoin de ces infos (pour dimensionner la compensation et les garanties), proposer un échange équilibré (vous partagez d'abord votre plan)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Les 420 contrats non signés ? Épargnez-moi les estimations. On parle de 420 contrats RÉELS, avec des prospects chauds qui sont partis chez la concurrence. Ça c'est du factuel. Le reste c'est votre problème, pas le mien.",
+        "sous_texte": "Je suis dans la rage froide. Je veux que vous compreniez la douleur concrète, pas que vous minimisiez avec des 'estimations'. Reconnaissez les dégâts RÉELS.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répéter ses chiffres exacts, les valider sans contestation, les intégrer dans votre proposition de compensation chiffrée. Montrer que vous avez VRAIMENT entendu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien joli de poser des questions, mais j'aimerais surtout entendre ce QUE vous comptez faire. Concrètement. Parce que là on perd du temps et moi j'en ai pas.",
+        "sous_texte": "Vous êtes en train de me faire une découverte commerciale classique alors qu'on est en gestion de crise. Lisez la pièce. Passez aux propositions ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Pivoter immédiatement vers votre proposition structurée en 3 axes, quitte à affiner ensuite. Dans ce contexte, proposition d'abord, ajustements ensuite"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Un plan de reprise d'activité ? Mais vous êtes sérieux là ? Vous auriez dû l'avoir AVANT l'incident ! Maintenant vous me proposez ce qui aurait dû être la base ?",
+        "sous_texte": "Vous me proposez comme 'solution' ce qui aurait dû être la norme. Je suis insulté. Votre proposition doit être EXCEPTIONNELLE, pas normale.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter frontalement cette critique cinglante, différencier 'PRA standard' vs. 'PRA renforcé post-crise' avec éléments exceptionnels (monitoring 24/7, hotline dédiée, backup redondant, tests mensuels...)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Une réduction tarifaire de 15% pendant 6 mois ? Attendez, on parle de 21K€ de geste commercial pour compenser 420 contrats perdus ? Vous vous foutez de moi ?",
+        "sous_texte": "Votre proposition est dérisoire par rapport au préjudice. Soit vous avez pas compris l'ampleur, soit vous me prenez pour un con. Dans les deux cas, c'est mort.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'écart, retravailler immédiatement le calcul : proposer une formule compensation = X mois gratuits + Y% réduction + enveloppe support dédié. Montrer que vous AJUSTEZ en temps réel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est simple : mon directeur des opérations veut vous dégager. Mon DAF trouve que vous coûtez trop cher pour la fiabilité offerte. Ma DG me demande pourquoi on reste avec vous. Donc votre argumentaire, il est joli, mais il tient pas face à ça.",
+        "sous_texte": "Je suis SEUL à vouloir potentiellement vous garder, et je suis minoritaire. Si vous voulez gagner, il faut m'armer pour convaincre TROIS directions différentes. Une proposition classique ne suffira pas.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une approche tripartite : réunion avec le Dir Ops (arguments techniques + SLA), dossier ROI pour le DAF (coûts migration vs. compensation), synthesis exécutive pour DG (risque vs. continuité)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons. Mais comment je peux être sûr que dans 3 mois vous allez pas me refaire le même coup ? Vos engagements ils valent quoi après ce qui s'est passé ?",
+        "sous_texte": "La confiance est rompue. Les promesses ne suffisent plus. Je veux des GARANTIES contractuelles contraignantes, avec des conséquences lourdes en cas de nouvelle défaillance.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un avenant contractuel avec pénalités RENFORCÉES en cas de nouvel incident (ex: résiliation immédiate sans préavis + indemnité forfaitaire + prise en charge coûts migration). Mettre VOTRE peau en jeu"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de 'partenariat renforcé', de 'relation de confiance'... Franchement, épargnez-moi la novlangue commerciale. On est dans du transactionnel là. Vous avez merdé, vous payez, on voit ensuite.",
+        "sous_texte": "Je ne veux plus de storytelling commercial. Je veux du factuel, du chiffré, du contractuel. Arrêtez de me vendre du rêve, vendez-moi des garanties béton.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Couper immédiatement le vocabulaire marketing, passer en mode 100% factuel : montants, dates, clauses, SLA, pénalités. Adopter SON registre, pas le vôtre"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis j'vous dis les choses : j'ai défendu votre boîte en interne il y a 8 mois quand on a renouvelé. J'ai mis ma crédibilité dans la balance. Et vous m'avez grillé. Donc là, pour que je me remouille, il va falloir quelque chose de vraiment costaud.",
+        "sous_texte": "Vous m'avez fait perdre la face. C'est personnel maintenant. Je veux une proposition qui me permette de REGAGNER de la crédibilité en interne, pas juste de limiter les dégâts. Je veux pouvoir dire 'regardez comment j'ai géré cette crise'.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître explicitement cette dimension personnelle, construire une proposition qui lui donne un 'trophée' à présenter : case study exclusif, innovation en avant-première, statut client VIP avec hotline directe PDG..."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... c'est pas inintéressant. Mais je vais être honnête : je dois consulter mon CODIR avant de m'engager. Je peux pas décider seul sur un truc pareil après ce qui s'est passé.",
+        "sous_texte": "Votre proposition commence à tenir la route, mais je ne veux pas me faire descendre une deuxième fois. Je protège mes arrières. Si je vous dis oui maintenant et que ça foire, je suis mort.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la nécessité de consulter, MAIS proposer de participer au CODIR ou de préparer ensemble la présentation pour contrôler le narratif. Ne pas le laisser seul face aux opposants internes"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, tout ça c'est bien sur le papier. Mais entre nous, qu'est-ce qui me garantit que votre Direction va valider ce que vous m'annoncez ? Parce que j'ai pas envie de me retrouver avec un commercial qui a promis la lune et une boîte qui livre une bougie.",
+        "sous_texte": "Je ne vous fais pas confiance à VOUS personnellement. Êtes-vous vraiment mandaté pour proposer ça ou est-ce que vous vendez du vent pour sauver votre contrat ? Je veux une validation hiérarchique.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer immédiatement un call de validation avec votre N+2 ou Direction dans les 48h, envoyer la proposition par écrit signée par un dirigeant, montrer que vous avez le mandat RÉEL"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est une proposition qui pourrait tenir la route. Mais là j'ai besoin de réfléchir. Je vous rappelle d'ici 2 semaines une fois que j'aurai fait le tour de la question.",
+        "sous_texte": "Je temporise. Soit je veux vraiment prendre du recul, soit je suis en train de négocier avec vos concurrents et je veux voir ce qu'ils proposent. Ou les deux.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence sans pression : 'Cette proposition exceptionnelle nécessite validation Direction d'ici fin de semaine', proposer un point intermédiaire à 3 jours, identifier son vrai frein (besoin info ? attente concurrent ? peur décision ?)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, soyons clairs. Votre proposition est à peu près au niveau. Mais j'ai besoin d'un geste supplémentaire sur le volet financier pour que ça passe en interne. Sinon je peux pas vendre ça au DAF. Vous pouvez faire quoi de plus ?",
+        "sous_texte": "C'est une vraie négociation finale OU un test pour voir si vous avez encore de la marge. Je veux maximiser les gains. Montrez-moi où est votre vraie limite.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander précisément 'quel montant rendrait ce dossier défendable pour vous ?', négocier un trade-off (plus de compensation financière contre durée engagement ou scope étendu), ne pas céder sans contrepartie"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon... j'avoue que vous avez fait le boulot. C'est carré. MAIS. Je vais être très clair avec vous : si dans les 6 prochains mois on a ne serait-ce qu'un incident mineur, je vous dégage sans préavis et je viens personnellement récupérer chaque euro de compensation que je vous ai laissé. On est bien d'accord ? Parce que moi, on me grille pas deux fois.",
+      "condition_declenchement": "Quand le commercial pense avoir gagné et que Laurent est sur le point de valider. C'est son dernier test de dominance et son moyen d'affirmer le nouveau rapport de force."
+    },
+    "pattern_escalade": "Laurent commence froid et agressif (objections réflexe), puis teste la solidité des propositions (objections tactiques), révèle progressivement ses vraies peurs et contraintes internes (objections sincères), négocie âprement sur les compensations, et finit par un ultimatum d'avertissement même s'il accepte. L'escalade émotionnelle suit une courbe : colère froide → scepticisme → intérêt prudent → négociation dure → acceptation conditionnelle menaçante.",
+    "piege_classique": "Croire que Laurent s'adoucit quand il dit 'c'est pas inintéressant' ou 'admettons'. Il reste en mode contrôle et test jusqu'au bout. Le vrai piège : répondre uniquement sur le rationnel (chiffres, technique) sans jamais adresser sa dimension personnelle (perte de crédibilité, exposition politique interne, besoin de regagner la face). Un commercial qui ne traite que la partie 'business' sans traiter la partie 'ego blessé' perdra le deal même avec une bonne proposition technique."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur de l'assurance (possiblement : technologie, outsourcing, plateforme digitale, services de distribution)",
+      "description": "Fournisseur de solutions critiques pour compagnies d'assurance et sociétés de gestion, avec contrats incluant clauses de pénalités"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service essentiel à l'activité commerciale ou de distribution d'assureurs, suffisamment critique pour que sa défaillance entraîne des impacts business majeurs",
+      "proposition_valeur": "Fiabilité opérationnelle, continuité de service, support aux activités critiques de distribution et commercialisation d'assurances",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux et les Key Account Managers à la gestion de crise client, à la désescalade de situations conflictuelles, à la proposition de plans de résolution structurés et à la préservation de relations commerciales stratégiques en contexte de réclamation majeure",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Réclamation majeure après incident technique",
+    "vous_etes": "Key Account Manager chez un fournisseur de plateforme digitale de distribution pour assureurs, en charge du compte Protelia Assurances depuis 18 mois.",
+    "vous_vendez": "Plateforme SaaS de souscription et gestion multi-canaux pour assureurs (contrat annuel 280K€, année 2/3).",
+    "vous_appelez": "Laurent Duvernet, 52 ans, Directeur Commercial et de la Distribution chez Protelia Assurances (280 collaborateurs, 180M€ de primes). Directif, exigeant, rancunier. Protège ses résultats et sa réputation interne. A défendu votre solution il y a 8 mois en interne.",
+    "ce_que_vous_savez": [
+      "Incident majeur il y a 8 jours : plateforme indisponible 36h, bloquant souscription en ligne et alimentation CRM pour 180 agents",
+      "Impact business estimé : 420 contrats perdus, tension interne forte",
+      "Laurent a un CODIR dans 10 jours où il doit justifier le maintien ou la résiliation du contrat (clause possible sous 3 mois)",
+      "Son directeur des opérations pousse pour changer de fournisseur",
+      "Laurent est personnellement exposé : il avait défendu votre choix face à un précédent changement de prestataire il y a 3 ans"
+    ],
+    "votre_objectif": "Sauver la relation et le contrat : présenter un plan de résolution structuré (compensation + sécurisation + gouvernance), obtenir son accord pour une réunion tripartite avec le directeur des opérations avant le CODIR.",
+    "vos_atouts": [
+      "Vous avez déjà géré 2 crises similaires chez d'autres clients assureurs, avec plans de remédiation documentés",
+      "Vous êtes mandaté pour proposer un geste commercial immédiat : réduction tarifaire 6 mois (équivalent 2 mois gratuits, soit ~47K€)",
+      "Votre direction vous autorise à engager des SLA renforcés avec pénalités automatiques",
+      "Vous pouvez mobiliser votre CTO pour co-construire un PRA sous 72h"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:28:58Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17163,
+    "total_time_s": 167.4
+  }
+}

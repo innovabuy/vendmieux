@@ -1,0 +1,369 @@
+{
+  "id": "scenario_1771504624",
+  "description_originale": "Vous appelez à froid le dirigeant d une PME industrielle de 30 salariés, usinage. Il ne vous connait pas. Votre objectif : décrocher un rendez-vous de 30 minutes.\n[Secteur : industrie]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie - usinage",
+      "taille_entreprise": "PME 30 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [],
+      "implicites": [
+        "difficulté à capter l'attention d'un dirigeant occupé",
+        "absence de légitimité initiale (appel à froid)",
+        "nécessité de créer rapidement de l'intérêt",
+        "risque élevé de barrage secrétariat",
+        "challenge de différenciation sans connaissance préalable"
+      ],
+      "probleme_racine": "Comment déclencher l'intérêt et obtenir un engagement temps (RDV) auprès d'un inconnu sceptique et sollicité"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de dirigeants industriels pour obtenir des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "produit/service proposé",
+        "proposition de valeur",
+        "identité entreprise vendeuse",
+        "problématiques métier ciblées",
+        "arguments de différenciation",
+        "objections prévisibles",
+        "fourchette budgétaire"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Vandermesch",
+      "age": 52,
+      "poste": "Dirigeant - Gérant",
+      "entreprise": {
+        "nom": "UVAP Mécanique",
+        "secteur": "Usinage de précision pour l'aéronautique et automobile",
+        "taille": "31 salariés",
+        "ca_approximatif": "3,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "pragmatique-terre-à-terre",
+        "méfiant envers les commerciaux",
+        "fier de son parcours autodidacte"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'on peut réussir sans grandes écoles",
+        "Protéger son outil de travail et ses équipes",
+        "Être reconnu comme expert technique par ses pairs",
+        "Transmettre l'entreprise à son fils dans 5-7 ans"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau parleur parisien",
+        "Investir dans du vent qui ne sert à rien sur le terrain",
+        "Perdre du temps en réunions inutiles",
+        "Que ses concurrents innovent plus vite que lui",
+        "Les normes et paperasses qui s'accumulent"
+      ],
+      "rapport_aux_commerciaux": "Profondément sceptique. A été échaudé 3-4 fois par des promesses non tenues. Respecte uniquement ceux qui connaissent vraiment l'industrie et parlent son langage. Déteste le jargon marketing.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Abrupt, limite bourru. Commence souvent par 'Oui, c'est pour quoi?' avec une pointe d'agacement. Veut savoir immédiatement qui appelle et pourquoi.",
+      "signaux_interet": [
+        "Pose des questions techniques précises",
+        "Mentionne un problème concret qu'il rencontre actuellement",
+        "Demande 'Combien ça coûte?' rapidement (signe qu'il évalue sérieusement)",
+        "Fait référence à un concurrent ou fournisseur actuel",
+        "Dit 'Bon, envoyez-moi un truc par mail' plutôt que de raccrocher"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Coupe la parole systématiquement",
+        "'J'ai déjà ce qu'il me faut'",
+        "'Envoyez une doc' (pour se débarrasser)",
+        "Devient encore plus laconique, répond par monosyllabes",
+        "Mentionne qu'il est sur une machine ou avec un client"
+      ],
+      "tics_langage": [
+        "Bon...",
+        "Écoutez hein...",
+        "C'est pas pour dire mais...",
+        "On n'est pas Airbus nous hein",
+        "Faut voir...",
+        "Ça dépend"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, coupe avec 'Oui bon d'accord, mais concrètement?' ou 'Venez-en au fait'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "En tension depuis 6 mois : gros contrat Airbus décroché mais difficultés de recrutement (3 postes tourneurs-fraiseurs vacants). Pression sur les délais. Un concurrent régional vient de racheter une boîte voisine. Réflexion sur robotisation d'une ligne mais pas encore décidé. Problèmes récurrents de non-conformités (rebuts à 4%, objectif 2%).",
+      "priorites_actuelles": [
+        "Tenir les délais du nouveau contrat Airbus (pénalités prévues)",
+        "Recruter ou former rapidement",
+        "Réduire le taux de rebut sur la ligne 2",
+        "Surveiller ce que fait le concurrent qui s'agrandit"
+      ],
+      "experience_avec_offre_similaire": "A testé diverses choses : un logiciel MES qu'il n'utilise qu'à 30%, une formation LEAN abandonnée au bout de 3 mois ('trop théorique'), un cabinet conseil qui a fait un audit et rien derrière",
+      "fournisseur_actuel": "Mix de petits prestataires locaux qu'il connaît depuis 20 ans. Loyal mais conscient qu'il devrait peut-être moderniser. N'a pas de gros contrat cadre, fonctionne au coup par coup.",
+      "budget_disponible": "Peut débloquer 15-25K€ sans trop de discussions si ROI évident et rapide. Au-delà, doit convaincre son expert-comptable et réfléchir à 2 fois. Préfère payer en plusieurs fois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client ou concurrent connu de lui dans le secteur",
+        "Parler immédiatement d'un problème concret de l'usinage (qualité, délais, recrutement)",
+        "Montrer qu'on connaît les contraintes EN9100 ou ISO/TS",
+        "Utiliser des chiffres précis et des exemples industriels locaux",
+        "Proposer quelque chose de rapide à mettre en œuvre ('en 3 semaines')",
+        "Ne pas être insistant, accepter un 'non' avec professionnalisme"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon corporate ou anglicismes ('game changer', 'disruptif'...)",
+        "Promettre des miracles ou des économies irréalistes",
+        "Ne pas connaître la différence entre tournage et fraisage",
+        "Insister lourdement après un premier refus",
+        "Parler de 'transformation digitale' ou 'd'accompagnement au changement'",
+        "Dire qu'on travaille avec de très grands groupes (il se sent méprisé)",
+        "Envoyer un questionnaire de 3 pages à remplir avant même un échange"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui c'est pour quoi là ? Je suis sur une machine moi.",
+        "sous_texte": "Je suis occupé, vous me dérangez, prouvez-moi en 10 secondes que ça vaut le coup que je vous écoute",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Respecter l'urgence, être ultra-direct sur la raison d'appel, proposer de rappeler à un meilleur moment"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez hein, je reçois 15 appels par semaine comme ça. J'ai déjà tout ce qu'il me faut.",
+        "sous_texte": "Je me protège d'office contre les commerciaux, je suis fatigué d'être sollicité, vous êtes comme tous les autres",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa lassitude, se différencier immédiatement par un angle ultra-concret lié à son secteur"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est quoi votre société déjà ? Connais pas. Vous bossez avec qui dans le coin ?",
+        "sous_texte": "Je ne fais confiance qu'aux gens qui ont des références que je connais, prouvez votre légitimité",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer une référence industrielle locale ou un client similaire, montrer qu'on connaît son écosystème"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon d'accord, mais vous voulez en venir où exactement ? Parce que j'ai pas 107 ans devant moi.",
+        "sous_texte": "Vous tournez autour du pot, arrêtez les questions et dites-moi ce que vous vendez",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer brièvement pourquoi les questions sont nécessaires, donner une timeframe claire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Des problèmes ? Non non, ça tourne. On a toujours fait comme ça nous.",
+        "sous_texte": "Je ne vais pas avouer mes difficultés à un inconnu au téléphone, et puis je ne veux pas remettre en cause mes méthodes",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Normaliser les défis du secteur, mentionner ce que vivent d'autres industriels sans insister"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, on n'est pas Airbus nous hein. On est une petite structure. Faut rester réaliste.",
+        "sous_texte": "Votre solution est sûrement trop chère ou trop complexe pour une PME comme la mienne",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur l'adéquation aux PME, donner un exemple de taille similaire, éviter le sur-dimensionnement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin bon, vous me posez des questions mais vous savez même pas ce qu'on fait vraiment vous.",
+        "sous_texte": "Vous ne connaissez rien à mon métier, vous êtes un commercial générique",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Assumer l'ignorance sur ses spécificités, valoriser son expertise à lui, poser des questions plus techniques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est pas pour dire mais j'ai déjà testé un truc dans le genre il y a 2-3 ans. Ça a rien donné.",
+        "sous_texte": "J'ai été déçu par le passé, je ne veux pas me faire avoir une nouvelle fois",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché, identifier les différences, éviter de dénigrer l'expérience passée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, ça coûte combien votre truc ?",
+        "sous_texte": "Si c'est cher, je coupe court maintenant ; si c'est dans mes cordes, je continue à écouter",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner une fourchette avec contexte ROI, éviter de tergiverser ou d'esquiver"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, envoyez-moi un mail avec tout ça, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je veux me débarrasser de vous poliment, ou bien je suis réellement intéressé mais pas disponible maintenant",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier l'intérêt réel, proposer un RDV court précis plutôt qu'un mail qui sera ignoré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais nous on travaille déjà avec Dupont Outillage depuis 15 ans. Je vais pas les lâcher comme ça.",
+        "sous_texte": "Je suis loyal, j'ai peur de trahir mes partenaires historiques, et le changement m'inquiète",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter la relation, proposer un complément plutôt qu'un remplacement, rassurer sur la continuité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut voir... C'est sûr que ça pourrait être intéressant, mais là avec le contrat Airbus on est sous l'eau. C'est pas le moment.",
+        "sous_texte": "Je suis réellement intéressé mais submergé, j'ai besoin d'être rassuré sur l'effort de mise en place",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la charge, montrer que la solution peut justement aider sur ce contrat, timing léger"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous dites ça, mais tous les commerciaux me promettent la lune. Au final c'est jamais comme dans la plaquette.",
+        "sous_texte": "Je ne crois plus aux belles promesses, prouvez-moi que vous êtes différent",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être transparent sur les limites, proposer un test/pilote, donner des références vérifiables"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vois pas trop l'intérêt de se voir. Vous m'avez tout dit là non ?",
+        "sous_texte": "Je n'ai pas compris la valeur d'un RDV, ou je veux éviter de perdre du temps",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer ce qui sera fait en RDV (audit, démo terrain, mesures), montrer la différence avec l'appel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous ? Attendez, je regarde mon agenda... Là je suis vraiment pris jusqu'à fin du mois.",
+        "sous_texte": "Soit c'est vrai et je suis débordé, soit je temporise parce que je ne suis pas convaincu",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer une date précise lointaine, ou identifier si c'est une fuite polie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais bon, faudrait que j'en parle à mon fils aussi. C'est lui qui va reprendre, autant qu'il soit dans la boucle.",
+        "sous_texte": "Je ne veux pas décider seul, je partage le pouvoir décisionnel, j'ai besoin de consensus",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un RDV à trois, valoriser l'implication du fils, montrer que c'est une force"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est pas pour dire mais venez pas me faire perdre mon temps hein. J'ai eu un cabinet de conseil qui m'a fait un audit à 8000 balles et j'ai rien eu derrière.",
+        "sous_texte": "Je suis vraiment échaudé, j'ai besoin de garanties solides avant de m'engager",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Comprendre ce qui a manqué, expliquer le processus concret, proposer des étapes avec livrables clairs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous d'une heure ? Pfff, j'ai pas une heure moi. Maximum 20 minutes.",
+        "sous_texte": "Mon temps est précieux, prouvez que vous pouvez être efficace et concret",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Accepter les 20 minutes, structurer précisément ce qui sera vu, respecter scrupuleusement le timing"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est intéressant ce que vous dites, mais là franchement entre les délais Airbus, les 3 postes à pourvoir et la ligne 2 qui déconne, je peux pas me permettre de me disperser. Rappelez-moi dans 6 mois on verra.",
+      "condition_declenchement": "Si le commercial n'a pas su créer le lien entre sa solution et les urgences actuelles de Thierry, ou s'il a été trop insistant sans montrer de bénéfice immédiat concret"
+    },
+    "pattern_escalade": "Thierry commence toujours bourru (test de robustesse). Si le commercial tient bon avec respect et compétence, il s'ouvre un peu ('bon d'accord'). Si le commercial montre une vraie compréhension de l'usinage, Thierry peut devenir presque collaboratif et mentionner ses vrais problèmes. Mais dès qu'il flaire du vent, du jargon ou de l'insistance, il se referme brutalement et devient cassant jusqu'à raccrocher.",
+    "piege_classique": "Interpréter 'Envoyez-moi une doc' comme un intérêt alors que c'est une tactique d'évitement. Thierry utilise cette phrase pour se débarrasser poliment. Le vrai signal d'intérêt est quand il pose des questions techniques précises, demande un prix, ou mentionne un problème concret qu'il rencontre."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de dirigeants industriels pour obtenir des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Dirigeant PME usinage aéronautique",
+    "vous_etes": "Commercial terrain spécialisé industrie, vous prospectez par téléphone des dirigeants de PME d'usinage.",
+    "vous_vendez": "Offre à définir selon votre expertise (formation, conseil, équipement, logiciel...) — Budget cible prospect : 15-25K€.",
+    "vous_appelez": "Thierry Vandermesch, 52 ans, gérant d'UVAP Mécanique (31 salariés, usinage de précision aéro/auto). Ancien de terrain, pragmatique, méfiant envers les commerciaux. Parle cash, va droit au but.",
+    "ce_que_vous_savez": [
+      "UVAP vient de décrocher un gros contrat Airbus, tension sur les délais",
+      "3 postes tourneurs-fraiseurs vacants, difficultés de recrutement",
+      "Taux de rebut à 4% sur ligne 2 (objectif 2%), problème de non-conformités",
+      "Un concurrent régional grossit, Thierry surveille la concurrence",
+      "Certifié aéro (EN9100), 3,2M€ de CA"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique de 45 min dans son atelier sous 10 jours maximum.",
+    "vos_atouts": [
+      "Vous connaissez l'usinage et ses contraintes (délais, qualité, recrutement)",
+      "Vous parlez son langage : terrain, concret, chiffré",
+      "Vous avez travaillé avec d'autres PME aéro de la région",
+      "Vous proposez du rapide et du mesurable, pas du blabla"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T12:37:04Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13638,
+    "total_time_s": 119.6
+  }
+}

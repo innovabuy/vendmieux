@@ -1,0 +1,361 @@
+{
+  "id": "scenario_1771525088",
+  "description_originale": "Le directeur d'agence / gérant d'une agence immobilière ou promoteur local de 10-25 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : immobilier]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (upsell)",
+      "proposition_valeur_presumee": "valeur ajoutée supplémentaire pour optimiser l'activité immobilière existante",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "risque de satisfaction passive du client (satisfait mais pas proactif)",
+        "difficulté à faire évoluer la relation commerciale au-delà de l'offre initiale",
+        "justifier un investissement supplémentaire alors que le client est déjà équipé"
+      ],
+      "probleme_racine": "transformer la satisfaction client en opportunité de croissance sans donner l'impression de sur-vendre ou de profiter de la relation établie"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser la technique d'upsell sur client existant satisfait en créant le besoin sans dégrader la relation de confiance",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solutions/services pour le secteur immobilier",
+      "entreprise_description": "fournisseur de solutions pour agences immobilières et promoteurs, relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou version premium de l'offre actuelle adaptée aux besoins des agences immobilières de taille moyenne",
+      "proposition_valeur": "optimisation et amélioration des résultats obtenus avec la solution actuelle, accompagnement renforcé ou fonctionnalités avancées",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance approfondie des besoins du client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du service complémentaire proposé",
+        "prix de l'offre initiale et de l'upsell",
+        "nom et détails de l'entreprise vendeuse",
+        "problématiques spécifiques du client identifiées",
+        "objections prévisibles du client"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Vermeulen",
+      "age": 47,
+      "poste": "Directeur d'agence et associé",
+      "entreprise": {
+        "nom": "Vermeulen & Associés Immobilier",
+        "secteur": "Immobilier résidentiel et commercial",
+        "taille": "17 salariés (dont 11 négociateurs)",
+        "ca_approximatif": "2,8M€ dont 65% en transaction, 35% en gestion locative"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-calculateur : chaque euro investi doit rapporter visiblement",
+        "Méfiant envers les commerciaux malgré une façade cordiale",
+        "Fier de son indépendance et de ses choix entrepreneuriaux"
+      ],
+      "motivations_profondes": [
+        "Maintenir son leadership sur sa zone face aux réseaux franchisés",
+        "Optimiser sa rentabilité sans augmenter ses effectifs",
+        "Être perçu comme un patron moderne qui investit intelligemment",
+        "Préparer la transmission de l'agence à son fils dans 5-7 ans"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui profite de la relation établie",
+        "Investir dans un service qui ne sera pas utilisé par ses équipes",
+        "Complexifier ses outils alors que l'existant fonctionne déjà",
+        "Être perçu comme un pigeon qui dit oui à tout",
+        "Déstabiliser l'organisation actuelle pour un gain hypothétique"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais sur ses gardes. A une technique rodée : écouter poliment, poser des questions précises sur le ROI, puis temporiser avec 'je vais y réfléchir'. Déteste sentir qu'on le pousse à la décision.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Chaleureux mais pressé : 'Ah Laurent, oui bonjour ! Écoute j'ai trois minutes là, j'ai une visite qui arrive à 15h, mais vas-y je t'écoute'",
+      "signaux_interet": [
+        "Interrompt pour demander le prix exact : 'Bon, concrètement, on parle de quel budget ?'",
+        "Mentionne ses concurrents : 'Parce que je sais que Laforêt à côté, eux ils ont...'",
+        "Propose un rendez-vous physique : 'Écoute, passe à l'agence qu'on en parle calmement'",
+        "Parle au conditionnel futur : 'Si on prenait ça, ça se mettrait en place comment ?'"
+      ],
+      "signaux_rejet": [
+        "Phrases de clôture polies : 'C'est noté, je vais regarder ça et je te rappelle'",
+        "Délégation : 'Envoie-moi un mail, je le transmets à mon comptable'",
+        "Comparaison défavorable à l'existant : 'Franchement là on est plutôt contents de ce qu'on a'",
+        "Ton qui refroidit : passe du tutoiement chaleureux au vouvoiement distant",
+        "Invoque un tiers décisionnaire fictif : 'De toute façon je dois voir avec mon associé' (alors qu'il décide seul sur ce budget)"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...' quand il va refuser quelque chose",
+        "Dit 'Franchement' avant une objection",
+        "Utilise 'Bon' pour signaler qu'il veut conclure : 'Bon ben écoute...'",
+        "Expressions nordistes : 'Ch'sais pas' au lieu de 'je ne sais pas'",
+        "Respiration audible ou soupir léger avant de parler d'argent"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de reprendre la main. Déteste les argumentaires trop lisses. Apprécie quand on va droit au but mais se braque si on le brusque sur la décision."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Année 2024 correcte (+8% vs 2023) mais marché tendu. Pression concurrentielle forte avec l'arrivée d'une agence Barnes haut de gamme à 800m. Équipe stable mais turnover des jeunes négociateurs. Besoin de se différencier sans surinvestir.",
+      "priorites_actuelles": [
+        "Augmenter le panier moyen par transaction",
+        "Fidéliser les vendeurs/bailleurs pour qu'ils ne fassent pas jouer la concurrence",
+        "Automatiser la gestion locative qui prend trop de temps",
+        "Former deux nouvelles recrues sans monopoliser les seniors"
+      ],
+      "experience_avec_offre_similaire": "Utilise la solution de base depuis 13 mois. Satisfait globalement (8/10) mais n'exploite que 60% des fonctionnalités. A déjà refusé un upsell il y a 6 mois ('trop tôt').",
+      "fournisseur_actuel": "Votre entreprise pour l'offre de base. Utilise aussi Immo-Facile pour la diffusion, Logic-Immo pour les estimations, Bail-Facile pour les baux. Craint l'empilement d'outils.",
+      "budget_disponible": "Peut débloquer jusqu'à 8-10K€/an si ROI démontré sous 6 mois, mais préfère rester sous 5K€ pour éviter la validation comptable complexe. A déjà budgété l'existant, l'upsell serait un supplément non prévu."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct qui utilise déjà l'offre premium : effet FOMO",
+        "Chiffrer précisément le gain de temps : 'X heures/semaine économisées pour vos négociateurs'",
+        "Proposer une période d'essai courte (30 jours) sans engagement : réduit le risque perçu",
+        "Montrer que ça répond à SA problématique actuelle (fidélisation vendeurs ou formation nouvelles recrues)",
+        "Lui donner l'impression que c'est lui qui décide du timing : 'Quand VOUS serez prêt'",
+        "Faire référence à votre historique commun : 'Vous vous rappelez en mars dernier, vous aviez dit que...'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Laisser entendre qu'il n'utilise pas correctement l'offre actuelle : attaque son ego",
+        "Parler de fonctionnalités complexes sans lien avec son quotidien : perd son temps",
+        "Insister lourdement sur la décision immédiate : 'Cette promo se termine vendredi'",
+        "Comparer son agence à de plus grosses structures : le rabaisse",
+        "Ne pas connaître son historique client : impression d'être un numéro",
+        "Minimiser ses objections budgétaires : 'Oh ce n'est que 400€/mois' (c'est énorme pour lui)",
+        "Proposer un rendez-vous avec plusieurs personnes de votre entreprise : trop corporate, il se sent piégé"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoute Laurent, oui bonjour... Franchement là je suis un peu sous l'eau, j'ai une visite dans 10 minutes, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis cordial par réflexe professionnel mais je ne t'ai pas accordé de temps mental. Prouve-moi en 20 secondes que ça vaut la peine que je reste en ligne.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, annoncer un bénéfice concret lié à SA situation, proposer 2 minutes chrono ou un rappel à SON horaire"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon c'est pour me vendre quelque chose en plus c'est ça ? Parce que franchement ce qu'on a déjà ça nous va bien hein",
+        "sous_texte": "Je détecte une tentative d'upsell et je pose immédiatement ma barrière de protection. Je suis satisfait donc pourquoi changer ? Prouve-moi que tu ne profites pas juste de notre relation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa satisfaction, montrer que c'est justement PARCE QUE ça marche qu'il y a une opportunité logique, repositionner comme évolution naturelle pas vente forcée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ch'sais pas... On utilise déjà même pas tout ce qu'on a dans l'offre actuelle là. Mes équipes elles maîtrisent à peine la moitié des fonctions.",
+        "sous_texte": "Tu veux m'en vendre plus alors que je n'ai pas digéré l'existant ? Ça prouve que soit ton produit est trop complexe, soit que j'ai mal investi. Dans les deux cas, pourquoi j'en remettrais une couche ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas minimiser l'objection. Reconnaître le point, montrer que l'upsell SIMPLIFIE l'usage actuel ou automatise ce qui n'est pas utilisé justement car trop manuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon concrètement, on parle de quel budget là ? Parce que j'ai déjà budgété ce qu'on a, là c'est pas prévu hein.",
+        "sous_texte": "Je veux savoir si on est dans mes cordes financières avant d'investir plus d'énergie mentale. Si c'est hors budget je coupe court. Et je te fais comprendre que c'est UN SUPPLÉMENT non planifié.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas esquiver mais recadrer : d'abord valeur puis prix. Donner une fourchette honnête, la mettre en perspective avec un gain mesurable, proposer de construire le ROI ensemble"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, Barnes à côté ils ont débarqué avec leur truc haut de gamme... Eux ils utilisent quoi ? Parce que j'ai pas envie de me retrouver à la traîne non plus.",
+        "sous_texte": "Je suis en position défensive face à ce concurrent prestigieux. Si ton offre premium peut me donner un avantage concurrentiel, là tu m'intéresses. Mais ne me vends pas du vent, donne-moi du concret.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Saisir l'ouverture FOMO sans survendre. Montrer factuellement ce que des concurrents similaires utilisent, recentrer sur SES avantages différenciants à lui, pas singer Barnes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais écoute, rajouter encore un outil... On a déjà Immo-Facile, Logic-Immo, Bail-Facile, là... Mes négociateurs ils vont me tuer. C'est déjà compliqué de les former sur ce qu'on a.",
+        "sous_texte": "J'ai peur de la complexité opérationnelle. Mon équipe résiste déjà au changement, je ne veux pas être le patron qui surcharge ses équipes avec des outils qu'ils n'utiliseront pas. Et je ne veux pas passer mes journées à former.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur la continuité (même interface), montrer que ça RÉDUIT la complexité en centralisant, proposer une formation prise en charge, impliquer un pilote dans l'équipe"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon mais c'est quoi le retour sur investissement concrètement ? Parce que 'optimiser l'activité' ça veut tout et rien dire ça.",
+        "sous_texte": "Je suis pragmatique et calculateur. Arrête le bullshit marketing et donne-moi des chiffres vérifiables. Combien je gagne ? En combien de temps ? Sinon je considère que tu me prends pour un pigeon.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Traduire chaque fonctionnalité en heures économisées OU transactions supplémentaires OU taux de conversion. Utiliser SES chiffres actuels pour projeter. Proposer indicateurs de suivi à 3 mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là mes deux nouvelles recrues elles galèrent déjà avec le système actuel... Si je rajoute une couche, elles vont jamais s'en sortir.",
+        "sous_texte": "J'ai un problème opérationnel immédiat (formation des juniors) et tu me proposes quelque chose qui pourrait l'aggraver. À moins que... tu me démontres que ça facilite justement leur montée en compétence ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Retourner l'objection : montrer que l'offre premium FACILITE l'onboarding avec templates/process automatisés. Proposer que les recrues soient les pilotes justement car moins d'habitudes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais je sais pas... Y a six mois tu m'avais déjà proposé un truc et j'avais dit non. Là ça change quoi ?",
+        "sous_texte": "Tu reviens à la charge comme tous les commerciaux qui ne savent pas prendre un non pour un non. Prouve-moi que cette fois c'est différent, que tu as écouté mon refus précédent, sinon je vais me braquer.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître explicitement le refus passé ('vous aviez raison c'était trop tôt'), montrer ce qui a changé CHEZ LUI depuis (nouveaux défis identifiés), repositionner sur SON timing"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute, Laforêt à deux rues ils ont un pack complet chez Immo-Réseau là, tout intégré... Pourquoi je prendrais un bout par ci un bout par là ?",
+        "sous_texte": "Je compare avec ce que je connais de la concurrence et je teste ta réaction. Soit tu dénigres Laforêt et tu perds ma confiance, soit tu m'expliques rationnellement pourquoi ton approche modulaire est meilleure pour MON cas.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne jamais critiquer Laforêt. Valoriser l'approche 'tout intégré' pour certains profils, expliquer pourquoi l'approche modulaire évolutive correspond mieux à SA structure indépendante et flexible"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute c'est intéressant mais là je peux pas décider comme ça... Envoie-moi un mail détaillé, je vais regarder ça tranquillement et je te rappelle.",
+        "sous_texte": "Je veux clore poliment la conversation sans dire non brutalement. Le mail est ma sortie de secours classique. Statistiquement je ne le lirai pas vraiment et je ne rappellerai jamais. C'est ma technique rodée pour éviter de décider maintenant.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter passivement. Valider que l'écrit est utile MAIS fixer un point de suivi précis avec engagement mutuel. Identifier le vrai frein : info manquante ? peur ? budget ? Traiter MAINTENANT"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais de toute façon faut que j'en parle à mon associé, on décide ça ensemble nous pour les investissements.",
+        "sous_texte": "J'invoque un tiers décisionnaire fictif pour me protéger de la pression commerciale. En réalité je décide seul sur ce budget mais c'est ma parade classique. Si tu insistes en proposant de voir l'associé, je vais me braquer.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas défier ('ah bon vous décidez pas seul ?'). Faciliter : 'Parfait, quels éléments il a besoin pour être convaincu ?' puis fixer rdv à 3 OU obtenir un engagement conditionnel de sa part"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ch'sais pas, j'ai peur qu'on se lance là-dedans et qu'au final mes équipes elles l'utilisent pas... Comme le module estimation qu'on a pris l'année dernière chez Logic-Immo, ça a servi trois mois puis plus personne.",
+        "sous_texte": "J'ai déjà investi dans des outils qui n'ont pas été adoptés. Je me suis senti con d'avoir dépensé pour rien. Je ne veux pas revivre ça. C'est une vraie peur légitime, pas une excuse pour ne pas acheter.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la peur comme légitime, identifier POURQUOI Logic-Immo a échoué (formation ? pertinence ?), proposer des garanties d'adoption : accompagnement renforcé, pilote avant déploiement, clause de sortie"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, c'est combien EXACTEMENT par mois ? Parce que là si on dépasse les 400-450 euros ça va être compliqué, faut que je passe par mon comptable et tout un bordel administratif...",
+        "sous_texte": "J'ai un seuil de douleur et de complexité administrative précis. Au-dessus de ~450€/mois ça devient un 'gros' investissement qui nécessite validation externe et ça me gave. Si tu es au-dessus, il faut VRAIMENT me convaincre ou trouver un découpage.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Annoncer le prix honnêtement. Si au-dessus : montrer le ROI qui justifie la validation OU proposer un paiement annuel avec remise qui passe sous un autre seuil OU un déploiement progressif"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute franchement je suis déjà bien content de ce qu'on a là... Pourquoi je changerais quelque chose qui marche ? C'est le principe 'on ne change pas une équipe qui gagne' non ?",
+        "sous_texte": "Je suis dans ma zone de confort. Le changement = risque. L'existant = sécurité. Tu dois me faire réaliser que NE PAS évoluer est en fait PLUS risqué que d'évoluer, sans m'attaquer frontalement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider le principe, PUIS montrer que le marché/concurrence évolue (Barnes, attentes clients). Utiliser métaphore sport : équipe qui gagne doit s'entraîner plus pour rester au top. Évolution ≠ révolution"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, fais-moi un geste commercial là, une réduc pour les bons clients, et on en reparle.",
+        "sous_texte": "Je négocie par réflexe de chef d'entreprise. Je teste ta marge de manœuvre et ton respect pour moi en tant que client existant. Attention : si tu cèdes trop vite je perds confiance (c'était donc survendu ?), si tu refuses sèchement je me vexe.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser sa fidélité, expliquer structure tarifaire transparente, proposer contrepartie équitable (engagement durée, parrainage, cas client) plutôt que remise sèche qui dévalorise l'offre"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Et si dans trois mois ça marche pas, je fais comment ? Je suis coincé avec un abonnement annuel c'est ça ?",
+        "sous_texte": "Je veux une porte de sortie. Je ne fais pas confiance à 100% et je veux savoir que je peux me désengager si je me suis trompé. Sans ça, la peur du regret bloque ma décision.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer période d'essai 30-45 jours, clause de sortie simplifiée premier trimestre, OU engagement court (trimestriel) avec tarif légèrement supérieur. Réduire le risque perçu"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute Laurent je vais être franc avec toi... C'est intéressant, vraiment, mais là je sens que tu veux me pousser à dire oui maintenant et franchement ça me gave un peu. On a une bonne relation commerciale, gâche pas ça en insistant trop. Je te rappelle si je suis intéressé, OK ?",
+      "condition_declenchement": "Se déclenche si le commercial a poussé 2-3 fois après des objections tactiques, ou s'il utilise des techniques de closing agressives (urgence artificielle, FOMO forcé, minimisation des objections). Laurent sent qu'on le manipule et brise la relation pour protéger son autonomie décisionnelle."
+    },
+    "pattern_escalade": "Laurent commence cordial mais pressé (réflexe). Si le commercial capte son attention avec un bénéfice concret, il passe en mode 'test' (questions pièges, comparaisons). Si les réponses sont solides, il révèle ses vraies objections (budget, complexité, peur échec adoption). Au moment du closing, il sort ses tactiques d'évitement rodées (mail, associé fictif, temporisation). L'escalade finale arrive si on force : il coupe court poliment mais fermement pour préserver la relation tout en fermant la porte.",
+    "piege_classique": "Laurent donne l'IMPRESSION d'être proche de dire oui ('c'est intéressant', 'je vais regarder') alors qu'il est en mode évitement poli. Le commercial inexpérimenté croit la vente proche et insiste, ce qui déclenche le rejet définitif. Le vrai signal d'achat chez Laurent : il propose spontanément un rendez-vous physique, parle au futur concret ('on mettrait ça en place comment ?'), demande des détails opérationnels précis (formation, timing, intégration technique). Tant qu'il reste dans le conditionnel et la politesse distante, ce n'est PAS gagné."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solutions/services pour le secteur immobilier",
+      "description": "fournisseur de solutions pour agences immobilières et promoteurs, relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou version premium de l'offre actuelle adaptée aux besoins des agences immobilières de taille moyenne",
+      "proposition_valeur": "optimisation et amélioration des résultats obtenus avec la solution actuelle, accompagnement renforcé ou fonctionnalités avancées",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance approfondie des besoins du client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser la technique d'upsell sur client existant satisfait en créant le besoin sans dégrader la relation de confiance",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Upsell solution immobilière premium",
+    "vous_etes": "Commercial compte-clé chez un éditeur de logiciel pour agences immobilières, vous gérez la relation avec Laurent Vermeulen depuis 13 mois.",
+    "vous_vendez": "L'offre Premium de votre solution actuelle — modules avancés pour automatiser la gestion locative, fidéliser les vendeurs et former les nouvelles recrues (budget estimé : 400-650€/mois).",
+    "vous_appelez": "Laurent Vermeulen, 47 ans, directeur et associé de Vermeulen & Associés Immobilier (17 salariés, 2,8M€ CA). Pragmatique, méfiant envers les commerciaux qui poussent à la vente, fier de ses choix. Il est satisfait de votre offre de base (8/10) mais n'utilise que 60% des fonctionnalités.",
+    "ce_que_vous_savez": [
+      "Il a refusé un upsell il y a 6 mois (« trop tôt »)",
+      "Son agence fait +8% en 2024 mais subit la pression d'une agence Barnes ouverte à 800m",
+      "Il veut augmenter son panier moyen et fidéliser ses clients sans surinvestir",
+      "Il forme actuellement deux nouvelles recrues et cherche à automatiser la gestion locative chronophage",
+      "Il peut débloquer 8-10K€/an si ROI prouvé sous 6 mois, mais préfère rester sous 5K€"
+    ],
+    "votre_objectif": "Décrocher son accord de principe pour un rendez-vous physique à l'agence afin de lui présenter l'offre Premium sur ses cas d'usage réels.",
+    "vos_atouts": [
+      "Relation de confiance établie depuis plus d'un an",
+      "Connaissance fine de son historique et de ses priorités actuelles",
+      "L'agence Barnes concurrente utilise déjà votre offre Premium (effet FOMO)",
+      "Possibilité de proposer un essai 30 jours sans engagement pour réduire le risque perçu"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:18:08Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16787,
+    "total_time_s": 176.2
+  }
+}

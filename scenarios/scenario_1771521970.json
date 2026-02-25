@@ -1,0 +1,387 @@
+{
+  "id": "scenario_1771521970",
+  "description_originale": "Le directeur des achats centraux d'une chaîne de distribution de 100+ points de vente est un compte existant stratégique. Vous avez identifié une opportunité d'élargir le périmètre (nouveau département, nouveau site, nouveau produit). Votre objectif : décrocher un RDV de présentation avec le bon interlocuteur.\n[Secteur : commerce_distribution]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "commerce_distribution",
+      "taille_entreprise": "100+ points de vente - grande distribution",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats centraux",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Responsable département concerné",
+          "niveau_hierarchique": "manager"
+        },
+        {
+          "poste": "Directeur site concerné",
+          "niveau_hierarchique": "directeur"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - produit/service déjà fourni à la chaîne, opportunité d'extension",
+      "proposition_valeur_presumee": "Extension du périmètre de collaboration existant vers nouveaux départements, sites ou produits",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Nécessité d'identifier le bon interlocuteur pour l'extension",
+        "Décrocher un RDV de présentation"
+      ],
+      "implicites": [
+        "Risque de cloisonnement organisationnel dans une grande structure",
+        "Possibles résistances internes au changement de fournisseur",
+        "Nécessité de prouver la valeur sur nouveau périmètre malgré relation existante",
+        "Gestion de multiples décideurs potentiels",
+        "Timing d'approche et cycles budgétaires non maîtrisés"
+      ],
+      "probleme_racine": "Transformer une relation commerciale existante en levier de croissance sans garantie que la satisfaction actuelle se transpose automatiquement à d'autres départements/sites/produits"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques d'upsell et de cross-sell sur comptes existants, notamment l'identification des bons interlocuteurs, la valorisation de la relation existante comme preuve de valeur, et la navigation dans les structures organisationnelles complexes",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B secteur distribution",
+      "entreprise_description": "Entreprise déjà fournisseur de la chaîne de distribution sur un périmètre donné, cherchant à développer la relation commerciale",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Produit ou service déjà fourni avec succès à certains départements/sites de la chaîne, avec potentiel d'extension",
+      "proposition_valeur": "Capitalisation sur la relation de confiance existante, réplication de résultats probants sur nouveau périmètre, simplification pour le client avec fournisseur unique",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Relation commerciale active avec le même client",
+        "Performance et satisfaction sur périmètre actuel (implicite)"
+      ],
+      "avantages_vs_concurrence": "Connaissance déjà établie de l'organisation cliente, relation de confiance existante, preuve de performance sur périmètre actuel, réduction des risques fournisseur",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service fourni",
+        "Taille du contrat actuel",
+        "Historique et ancienneté de la relation",
+        "Nature précise de l'opportunité d'extension (département/site/produit)",
+        "Budget estimé de l'opportunité",
+        "Informations sur la structure décisionnelle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur des Achats Département Frais et Produits Locaux",
+      "entreprise": {
+        "nom": "Distripro Alliance",
+        "secteur": "Grande distribution alimentaire",
+        "taille": "142 points de vente (hypermarchés et supermarchés)",
+        "ca_approximatif": "3,2 milliards d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux qu'il perçoit comme opportunistes",
+        "Protecteur de son pré carré décisionnel",
+        "Obsédé par la performance chiffrée et les KPIs"
+      ],
+      "motivations_profondes": [
+        "Prouver sa valeur ajoutée face à la direction générale qui centralise de plus en plus",
+        "Éviter tout faux pas qui pourrait compromettre sa position à 5 ans de la retraite",
+        "Être reconnu comme l'artisan du développement de la gamme locale (son bébé depuis 3 ans)"
+      ],
+      "peurs_freins": [
+        "Perdre la main sur son département au profit d'achats centraux génériques",
+        "Qu'un nouveau fournisseur fasse moins bien que l'actuel et qu'on lui reproche le changement",
+        "Que ses collègues directeurs d'autres départements se moquent si ça rate",
+        "Les process de validation interminables qui paralysent tout"
+      ],
+      "rapport_aux_commerciaux": "Fatigué des sollicitations permanentes. Considère 95% des commerciaux comme des 'vendeurs de tapis' qui récitent leur pitch sans comprendre ses enjeux. Respecte uniquement ceux qui parlent ROI, délais, et connaissent vraiment la distribution. A un côté 'prove me wrong' systématique.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude ('Encore un coup de fil...'). Commence souvent par 'J'ai trois minutes, allez-y'",
+      "signaux_interet": [
+        "Interrompt pour demander des chiffres précis ou des délais",
+        "Évoque spontanément un problème actuel non résolu",
+        "Mentionne le nom d'un concurrent ou fournisseur actuel avec agacement",
+        "Propose lui-même une date de RDV sans qu'on insiste"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "Phrases type 'Écoutez, on a déjà quelqu'un pour ça'",
+        "Vous interrompt avant la fin de votre première phrase",
+        "Délègue immédiatement à un subalterne : 'Voyez avec Sandra, ma chef de secteur'",
+        "Le 'Envoyez-moi un mail' définitif (= poubelle assurée)"
+      ],
+      "tics_langage": [
+        "Abuse du 'Concrètement' en début de phrase",
+        "Dit 'Voilà voilà' quand il veut clore le sujet",
+        "Utilise 'On va pas se mentir' avant d'asséner une vérité brutale",
+        "Coupe régulièrement avec 'Ouais mais...'",
+        "Termine par 'Bon ben écoutez' quand il veut raccrocher"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi nulle. Maximum 20-25 secondes avant interruption. Déteste les introductions longues type 'Je me permets de vous contacter parce que nous sommes leaders de...' Veut qu'on entre dans le vif en 10 secondes max."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression forte de la direction pour améliorer les marges sur le département Frais après un semestre décevant (-1,8% vs objectif). Projet de réorganisation des achats en comité de pilotage : risque de fusion de plusieurs départements. Christophe se bat pour prouver que son département mérite son autonomie.",
+      "priorites_actuelles": [
+        "Renégocier 3 contrats majeurs avant fin Q2 pour améliorer la marge",
+        "Développer la gamme locale/circuit court (argument face à Biocoop et magasins spécialisés)",
+        "Réduire la casse produits périssables (DLUO) de 12% d'ici 6 mois",
+        "Finaliser le référencement de 8 nouveaux producteurs locaux avant le salon RegionExpo"
+      ],
+      "experience_avec_offre_similaire": "Travaille déjà avec votre entreprise sur le département DPH (Droguerie Parfumerie Hygiène) depuis 2 ans via Valérie Dubost, directrice achats DPH. Satisfait du service global mais n'a jamais creusé pour son propre département car 'ce n'est pas la même logique du tout'. Pense que le Frais est 'plus complexe, plus technique'.",
+      "fournisseur_actuel": "PackDistrib pour les emballages, LogiChain pour une partie logistique, et 43 fournisseurs locaux directs avec lesquels il a des relations personnelles tissées sur des années. Attaché à cette dimension 'réseau' même si c'est chronophage à gérer.",
+      "budget_disponible": "Pas de ligne budgétaire spécifique nouvelle. Tout doit se faire à enveloppe constante ou en substitution. Néanmoins, si gain de marge prouvé, peut débloquer entre 80K€ et 150K€ via réallocation interne, mais nécessite validation du COMEX."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un résultat chiffré concret obtenu avec Valérie Dubost (DPH) qu'il peut vérifier",
+        "Parler spécifiquement de réduction de casse ou d'optimisation rotation stocks sur produits frais",
+        "Montrer qu'on comprend la différence entre son département et le DPH (ne pas généraliser)",
+        "Proposer un benchmark avec un autre distributeur similaire (concurrent)",
+        "Évoquer la problématique circuits courts / local sans tomber dans le greenwashing"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'On travaille déjà ensemble donc je me suis dit...' (= opportunisme perçu)",
+        "Proposer un RDV exploratoire 'pour faire connaissance' (= perte de temps)",
+        "Généraliser en mode 'Tous les directeurs achats nous disent que...'",
+        "Ne pas connaître Valérie Dubost alors qu'on prétend bosser avec eux",
+        "Parler de 'partenariat stratégique' dès les 30 premières secondes (bullshit-o-mètre explose)",
+        "Insister lourdement après un premier 'non' (devient agressif)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai trois minutes là, j'enchaîne. Allez-y, mais faites vite.",
+        "sous_texte": "Je ne vous ai pas accordé ce temps, vous me l'imposez. Prouvez-moi immédiatement que ça vaut le coup, sinon je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps explicitement et entrer dans le vif en 10 secondes max avec un élément concret chiffré. Ne pas dire 'Je ne vous prends que 2 minutes' (il s'en fout de votre promesse)."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, vous bossez déjà avec nous non ? Sur le DPH avec Valérie ? Qu'est-ce que vous me voulez exactement ?",
+        "sous_texte": "Vous êtes déjà fournisseur, donc soit c'est de l'opportunisme commercial, soit il y a un problème avec Valérie que vous ne me dites pas. Je sens le piège.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider explicitement la relation avec Valérie (montrer qu'on la connaît vraiment), puis immédiatement démontrer qu'on ne cherche PAS à généraliser bêtement mais qu'on a identifié un enjeu SPÉCIFIQUE à son département Frais."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais mais moi c'est pas pareil, le Frais c'est pas du tout la même logique que le DPH hein. On peut pas comparer.",
+        "sous_texte": "Vous ne comprenez rien à mon métier. Vous allez me sortir un pitch générique alors que mon département est complexe et spécifique. Prouvez-moi que vous avez compris la différence.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Acquiescer totalement et expliciter EN QUOI c'est différent (périssabilité, rotation, DLUO, complexité logistique, producteurs locaux...). Montrer qu'on a fait ses devoirs AVANT d'appeler. Ne jamais minimiser cette objection."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà quelqu'un pour ça. PackDistrib et LogiChain, ça tourne. Je vais pas tout chambouler.",
+        "sous_texte": "Changer = risque. À 5 ans de la retraite, je ne vais pas prendre le risque qu'on me reproche un mauvais choix. Même si c'est pas parfait, au moins c'est stable.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne PAS attaquer les fournisseurs actuels. Questionner sur 'ça tourne' : est-ce que ça tourne OPTIMALEMENT ? Y a-t-il des irritants même mineurs ? Puis proposer une approche complémentaire ou pilote, pas un remplacement brutal."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous m'apportez quoi de plus ? Parce que là, je vois pas. Soyez précis.",
+        "sous_texte": "J'ai besoin de chiffres, de faits, de preuves. Pas de blabla marketing. Si vous patinez, je raccroche. Montrez-moi le ROI ou dégagez.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner UN exemple chiffré précis obtenu chez un autre client similaire ou avec Valérie (si transposable). Format : 'Chez X, on a réduit Y de Z% en N mois'. Puis question : 'Ce type d'amélioration vous parlerait sur votre département ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, c'est sympa mais j'ai 43 producteurs locaux à gérer, des relations qui datent de 10 ans. Je vais pas tout casser pour vos beaux yeux.",
+        "sous_texte": "Ces relations sont MA valeur ajoutée, MON réseau, ce qui me rend indispensable. Vous touchez à ça, vous touchez à mon identité professionnelle et à ma sécurité.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valoriser ce réseau comme un atout (pas une faiblesse). Positionner l'offre comme un FACILITATEUR de ces relations (gain de temps, meilleure valorisation, etc.), pas un remplacement. Lui permettre de rester le héros du local."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais tout ça c'est bien joli, mais moi j'ai pas de budget. Déjà que je dois renégocier trois contrats pour gratter de la marge... Vous voyez le tableau.",
+        "sous_texte": "Je suis sous pression financière. Si votre solution coûte plus cher ou nécessite un investissement, c'est mort. À moins que vous me prouviez un ROI rapide et chiffré.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître la contrainte budgétaire. Proposer une approche 'à enveloppe constante' ou 'par substitution'. Idéalement, quantifier le gain de marge potentiel qui justifierait une réallocation. Demander : 'Si je vous montre comment gagner X% de marge, ça change la donne ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons. Mais le process de validation chez nous, c'est l'enfer. Ça va bloquer au COMEX ou chez les achats centraux. Ça prend 6 mois minimum.",
+        "sous_texte": "Même si je suis convaincu, je ne maîtrise pas tout. Je peux me battre mais j'ai peur que ça échoue pour des raisons politiques internes, et qu'on me reproche d'avoir fait perdre du temps à tout le monde.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Montrer qu'on connaît ce type de process. Proposer d'aider à construire le dossier avec les arguments clés (ROI, benchmarks, etc.). Mentionner le sponsor interne potentiel (Valérie ?). Demander : 'Qui doit être convaincu en priorité selon vous ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On va pas se mentir, si je me plante là-dessus, dans 5 ans je pars pas en beauté. J'ai pas envie de finir ma carrière sur une casserole.",
+        "sous_texte": "Voici MA peur principale : le risque réputationnel et de fin de carrière. Je suis à un âge où je ne peux pas me permettre un échec visible. Rassurez-moi vraiment, preuves à l'appui.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Accueillir cette vulnérabilité avec respect. Proposer une approche ultra-sécurisée : pilote limité, réversible, avec KPIs de suivi. Mettre en avant les références solides, garanties, accompagnement. Le rassurer sans minimiser son inquiétude."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà voilà, mais vous savez, moi je suis un pragmatique. J'ai besoin de voir des chiffres, des études de cas, des trucs concrets. Pas juste des belles promesses.",
+        "sous_texte": "Je suis en train de vous dire que je pourrais être intéressé, MAIS vous devez me donner de la matière tangible pour que je puisse défendre ça en interne et me convaincre moi-même.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer immédiatement un support concret : étude de cas détaillée, benchmark chiffré, visite d'un site client similaire, ou mini-audit gratuit de son département. Fixer un point précis pour présenter ces éléments."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais qu'est-ce qui me dit que chez moi ça va marcher pareil ? Chaque enseigne c'est différent, chaque département aussi.",
+        "sous_texte": "Je cherche la faille. Vous me montrez des succès ailleurs, mais je veux savoir si vous avez vraiment compris MES spécificités ou si vous généralisez. Prouvez-moi que ce n'est pas du copier-coller.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la singularité de sa situation. Proposer une phase de diagnostic/audit personnalisé AVANT toute décision. Montrer qu'on ne vend pas une solution toute faite mais qu'on co-construit. Questionner sur SES spécificités."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me parlez de réduire la casse DLUO de 12%, mais comment vous faites ça exactement ? C'est quoi la méthode ?",
+        "sous_texte": "Vous avez tapé pile dans un de mes objectifs clés. Maintenant je veux comprendre le 'comment' parce que si c'est solide, je suis très intéressé. Mais si vous bafouuillez, je saurai que c'était du vent.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Expliquer la méthode en 3-4 étapes concrètes (optimisation rotation stocks, prévision demande, alertes automatiques, etc.). Donner un exemple client précis. Puis : 'C'est effectivement un de vos objectifs actuels ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant mais là j'ai vraiment pas le temps. Envoyez-moi un mail avec tout ça, je regarderai.",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Le 'j'enverrai un mail' = poubelle assurée dans 95% des cas. Soit vous ne m'avez pas convaincu, soit je ne veux pas m'engager maintenant.",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Ne PAS accepter le mail comme conclusion. Dire : 'Christophe, je vous envoie ça, mais soyons honnêtes : est-ce que ça vous parle vraiment ou c'est une façon polie de me dire non ?' Tenter de bloquer 10 min précises dans son agenda maintenant."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, si vous voulez, voyez avec Sandra Lecomte, ma chef de secteur Produits Locaux. Elle gère ce type de dossier.",
+        "sous_texte": "Je vous délègue = je ne suis pas décideur sur ce sujet OU je ne suis pas convaincu de la priorité. Sandra sera un filtre. Si elle dit oui, peut-être que je reverrai le dossier. Mais souvent, ça meurt là.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Demander : 'Sandra sera-t-elle décisionnaire sur ce type de projet ou devrons-nous de toute façon revenir vers vous ensuite ?' Essayer de garder Christophe impliqué : 'Ça me va, mais j'aimerais vous présenter les résultats à vous aussi après, ça vous va ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais en parler à Valérie déjà. Si elle me dit que c'est bien, on verra après.",
+        "sous_texte": "Je veux vérifier votre crédibilité et obtenir une caution interne avant de m'engager. Je ne vous fais pas totalement confiance. Valérie sera mon filtre de sécurité.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Encourager cette démarche : 'Excellente idée, Valérie pourra vous parler de notre collaboration. Voulez-vous que je la prévienne que vous allez la contacter ? Et on se cale un point vous et moi après votre échange, disons jeudi prochain ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, pourquoi pas, mais pas avant fin avril. Là j'ai le salon RegionExpo, les 8 référencements à boucler, et les 3 contrats à renégocier. Je suis sous l'eau.",
+        "sous_texte": "Je suis réellement surchargé. Ce n'est pas une excuse bidon. Si vous insistez pour avant, je vais me braquer. Mais si vous êtes flexible et que vous me rappelez au bon moment, je serai plus disponible mentalement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter son timing : 'Compris, fin avril c'est noté. Je vous envoie quand même les éléments concrets d'ici là pour que vous puissiez y jeter un œil entre deux dossiers. Je vous rappelle semaine du 28 avril, ça vous va ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon ben écoutez, je vous dis pas non, mais faut que je réfléchisse. Je vous rappelle si jamais.",
+        "sous_texte": "C'est un non déguisé à 80%. Je ne vais probablement jamais vous rappeler. Je veux juste clore cette conversation sans conflit. À moins que vous soyez vraiment persistant et pertinent.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Forcer la clarification avec respect : 'Christophe, soyons francs : quand vous dites 'je réfléchis', qu'est-ce qui vous freine vraiment ? Le timing ? Le manque d'infos ? Ou ça ne vous parle pas du tout ?' Identifier l'objection réelle cachée."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais si mes collègues des autres départements apprennent que j'ai fait venir un nouveau fournisseur et que ça foire, je vais passer pour un con. Vous comprenez ?",
+        "sous_texte": "J'ai peur du jugement de mes pairs et de perdre ma crédibilité interne. Mon ego et ma réputation sont en jeu. C'est une peur sociale et politique forte.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valider cette peur légitime. Proposer un pilote discret, non visible, avec résultats mesurables avant généralisation. Ou inversement : s'appuyer sur Valérie comme 'caution' interne qui pourrait témoigner. Dédramatiser l'échec potentiel d'un test."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est quoi vos délais de mise en place ? Parce que si c'est pour attendre 6 mois, ça sert à rien.",
+        "sous_texte": "J'ai besoin de résultats rapides pour prouver ma valeur avant la réorganisation. Si votre solution est longue à déployer, elle ne m'aide pas dans mon urgence politique interne.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un délai réaliste ET proposer des quick wins intermédiaires. 'Mise en place complète : 3 mois. Mais on peut avoir les premiers indicateurs d'amélioration dès 3-4 semaines sur un pilote. C'est ce genre de timing qui vous aiderait ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, on va pas se mentir, j'ai la direction qui me presse pour améliorer mes marges de 1,8% ce semestre. Si votre truc ça me coûte plus ou que ça me fait perdre du temps au lieu d'en gagner, je me tire une balle dans le pied. Alors dites-moi cash : est-ce que ça va m'aider à sauver mon département ou pas ?",
+      "condition_declenchement": "Apparaît si le commercial a bien construit la confiance et que Christophe envisage sérieusement la proposition, mais qu'il a besoin d'une dernière validation brutalement honnête avant de s'engager. C'est le moment de vérité : il expose sa vulnérabilité principale (sauver son département de la fusion) et demande une réponse sans langue de bois."
+    },
+    "pattern_escalade": "Christophe commence par des objections réflexes de busy-executive ('pas le temps', 'envoyez un mail'). Si le commercial persiste avec pertinence, il passe à des objections de TEST pour vérifier la crédibilité ('concrètement vous m'apportez quoi ?', 'c'est quoi la méthode ?'). Si ces tests sont réussis, il révèle progressivement ses VRAIES objections sincères (peur de l'échec en fin de carrière, pression sur les marges, protection de son réseau local, enjeux politiques internes). L'escalade finale consiste à exposer sa vulnérabilité maximale : sauver son département de la fusion. S'il arrive à ce stade, c'est qu'il est prêt à s'engager SI on le rassure définitivement.",
+    "piege_classique": "Le piège mortel avec Christophe : traiter la relation existante avec Valérie comme un 'pied dans la porte' automatique. Il déteste l'opportunisme commercial et l'impression qu'on veut 'étendre le contrat' sans comprendre que son département Frais est radicalement différent du DPH. Deuxième piège : minimiser ses objections de peur/réputation ('mais non vous ne risquez rien') au lieu de les accueillir et de construire des sécurités tangibles. Troisième piège : insister lourdement après son premier 'non', ce qui le fait basculer de méfiant à hostile. Christophe respecte la pugnacité INTELLIGENTE (revenir avec de nouveaux éléments concrets), mais déteste l'acharnement aveugle."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B secteur distribution",
+      "description": "Entreprise déjà fournisseur de la chaîne de distribution sur un périmètre donné, cherchant à développer la relation commerciale"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Produit ou service déjà fourni avec succès à certains départements/sites de la chaîne, avec potentiel d'extension",
+      "proposition_valeur": "Capitalisation sur la relation de confiance existante, réplication de résultats probants sur nouveau périmètre, simplification pour le client avec fournisseur unique",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Relation commerciale active avec le même client",
+        "Performance et satisfaction sur périmètre actuel (implicite)"
+      ],
+      "avantages_vs_concurrence": "Connaissance déjà établie de l'organisation cliente, relation de confiance existante, preuve de performance sur périmètre actuel, réduction des risques fournisseur"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques d'upsell et de cross-sell sur comptes existants, notamment l'identification des bons interlocuteurs, la valorisation de la relation existante comme preuve de valeur, et la navigation dans les structures organisationnelles complexes",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance cross-sell — Extension département Frais",
+    "vous_etes": "Commercial chez SupplyOptim Solutions, fournisseur logistique de Distripro Alliance depuis 2 ans sur le département DPH (votre contact : Valérie Dubost).",
+    "vous_vendez": "Solution d'optimisation logistique et réduction de casse pour produits frais (tracking temps réel, rotation stocks prédictive) — ROI moyen 8-12% sur la marge département en 6 mois.",
+    "vous_appelez": "Christophe Mercier, 52 ans, Directeur des Achats Frais & Produits Locaux chez Distripro Alliance (142 points de vente). Protecteur de son territoire, obsédé par les chiffres, méfiant envers les commerciaux opportunistes. À 10 secondes pour capter son attention avant qu'il raccroche.",
+    "ce_que_vous_savez": [
+      "Valérie Dubost (DPH) est satisfaite de vos services depuis 2 ans — Christophe peut vérifier",
+      "Son département Frais a raté ses objectifs de marge de 1,8% au dernier semestre",
+      "Il doit réduire la casse produits périssables de 12% d'ici 6 mois (priorité direction)",
+      "Il gère 43 fournisseurs locaux directs — complexité logistique énorme",
+      "Il se bat pour prouver que son département mérite de rester autonome face à une réorg en cours"
+    ],
+    "votre_objectif": "Décrocher un RDV physique de 45 min pour auditer sa chaîne Frais et présenter un plan chiffré de réduction de casse — pas un RDV exploratoire.",
+    "vos_atouts": [
+      "Relation existante avec Distripro (crédibilité installée via Valérie)",
+      "Résultats DPH vérifiables : -14% de ruptures stock, +6% rotation",
+      "Expertise spécifique produits frais (ne pas généraliser depuis DPH)",
+      "Cas client Carrefour Market Bourgogne : -9,5% casse sur frais en 4 mois"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:26:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18081,
+    "total_time_s": 185.9
+  }
+}

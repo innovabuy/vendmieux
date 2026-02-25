@@ -1,0 +1,338 @@
+{
+  "id": "scenario_1771524569",
+  "description_originale": "Vous appelez une groupe agroalimentaire de 200+ salariés, marques nationales. L'assistante de direction du directeur des achats ou directeur qualité décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : agroalimentaire]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des achats ou Directeur qualité",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante de direction",
+          "role": "barrage/filtre",
+          "comportement": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour l'industrie agroalimentaire ciblant les achats ou la qualité",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'assistante de direction",
+        "Filtrage systématique par le secrétariat"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'approche téléphonique",
+        "Difficulté à créer de l'intérêt rapidement",
+        "Absence de stratégie de contournement du barrage",
+        "Discours commercial trop générique ne suscitant pas la curiosité"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur perçue et de légitimité dès les 30 premières secondes pour convaincre le barrage de transférer l'appel"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de passage de barrage secrétariat dans un contexte B2B exigeant, créer de la légitimité instantanée, et obtenir un RDV qualifié avec un décideur de haut niveau",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour l'industrie agroalimentaire",
+      "entreprise_description": "Entreprise proposant des solutions pour les groupes agroalimentaires, ciblant les directions achats et qualité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée aux groupes agroalimentaires de taille moyenne à grande, visant à optimiser les processus d'achats ou de qualité",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Nom et description précise de l'entreprise vendeuse",
+        "Fourchette de prix",
+        "Avantages concurrentiels",
+        "Zone géographique ciblée",
+        "Références clients"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Bourgeois",
+      "age": 52,
+      "poste": "Directeur des Achats et Approvisionnements",
+      "entreprise": {
+        "nom": "Saveurs du Terroir SAS",
+        "secteur": "Agroalimentaire - Plats cuisinés et traiteur industriel",
+        "taille": "340 salariés",
+        "ca_approximatif": "68 millions d'euros"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et méfiant envers les promesses commerciales",
+        "Protecteur de son territoire décisionnel",
+        "Valorise l'expérience terrain sur les discours théoriques"
+      ],
+      "motivations_profondes": [
+        "Être reconnu comme l'architecte de l'optimisation des coûts de l'entreprise",
+        "Éviter tout risque qui pourrait ternir sa réputation durement acquise",
+        "Préparer discrètement sa succession en laissant des processus solides",
+        "Maintenir sa position face à une nouvelle DG qui pousse la transformation digitale"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des commerciaux qui ne comprennent rien à son métier",
+        "Se faire court-circuiter par des vendeurs qui iraient voir la direction générale",
+        "Être perçu comme dépassé par les 'nouvelles solutions innovantes'",
+        "Prendre une décision précipitée qui mettrait en péril les relations fournisseurs actuelles"
+      ],
+      "rapport_aux_commerciaux": "Défensif et sélectif. A développé au fil des années un sixième sens pour détecter le bullshit commercial. Respecte uniquement ceux qui connaissent vraiment son industrie et viennent avec du concret. Déteste être appelé 'Monsieur Bourgeois' de manière obséquieuse.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude. 'Oui, bonjour, je vous écoute mais j'ai un CODIR dans 10 minutes...'",
+      "signaux_interet": [
+        "Interrompt pour poser une question technique précise sur les specs",
+        "Mentionne un problème concret qu'il rencontre actuellement",
+        "Demande des références dans l'agroalimentaire avec des noms d'entreprises",
+        "Passe du vouvoiement distant à un ton plus direct et moins formel"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoutez, je vais être honnête avec vous...'",
+        "Regarde ostensiblement sa montre ou son écran en plein pitch",
+        "Coupe avec 'Oui, oui, tout le monde dit ça' d'un ton désabusé",
+        "Délègue immédiatement à un 'responsable approvisionnement' subalterne"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va être direct",
+        "Dit 'Concrètement' ou 'Dans les faits' pour ramener au pragmatique",
+        "Utilise 'Vous me faites un mail avec tout ça' comme échappatoire polie",
+        "'On a déjà donné' quand il a été déçu par le passé"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum. Au-delà, décroche mentalement et cherche une sortie. A besoin d'être impliqué dans un échange, pas d'assister à une présentation."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "L'entreprise sort d'un audit qualité IFS avec quelques non-conformités mineures. La DG pousse pour moderniser les processus et réduire les coûts de 8% sur 18 mois. Thierry est sous pression pour trouver des gains mais sait que son panel fournisseur est déjà optimisé.",
+      "priorites_actuelles": [
+        "Finaliser la renégociation du contrat avec le fournisseur d'emballages (gros dossier en cours)",
+        "Mettre en place la traçabilité renforcée demandée par les clients de la GMS",
+        "Gérer une rupture d'approvisionnement sur une matière première clé",
+        "Préparer le budget achats 2025 pour mi-novembre"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution SaaS d'optimisation achats qui n'a jamais été vraiment adoptée par les équipes. Échec cuisant qui l'a rendu prudent. A assisté à un webinar sur le sujet il y a 6 mois mais n'a pas donné suite.",
+      "fournisseur_actuel": "Travaille avec un panel de 180 fournisseurs dont 12 stratégiques. Utilise un ERP vieillissant (SAP) et beaucoup d'Excel. Pas de solution dédiée pour la gestion qualité fournisseurs.",
+      "budget_disponible": "Pas de ligne budgétaire spécifique pour de nouveaux outils en 2024. Pourrait débloquer 30-50K€ si ROI démontré sous 12 mois, mais nécessiterait validation DG et DAF. Budget 2025 en construction."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client commun dans l'agroalimentaire (surtout concurrent direct)",
+        "Identifier précisément un pain point actuel (ex: traçabilité, audits qualité, gestion des non-conformités)",
+        "Proposer un format court et concret : '15 minutes pour vous montrer comment X a réduit de 23% ses écarts fournisseurs'",
+        "Être recommandé par quelqu'un qu'il respecte (son réseau CDAF ou un pair)",
+        "Démontrer une expertise pointue de l'agroalimentaire avec du vocabulaire métier"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Pitcher une 'solution innovante disruptive' sans référence sectorielle",
+        "Être trop insistant ou faire du forcing pour obtenir un RDV",
+        "Dénigrer ses fournisseurs actuels ou sous-entendre qu'il fait mal son travail",
+        "Vouloir absolument parler à la direction générale plutôt qu'à lui",
+        "Envoyer des relances mail génériques et impersonnelles tous les 3 jours",
+        "Ne pas connaître les spécificités réglementaires de l'agroalimentaire (IFS, BRC, HACCP)",
+        "Proposer un tunnel de vente trop long (plusieurs démos, POC de 3 mois, etc.)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en pleine négo avec un fournisseur là, c'est pas le moment du tout",
+        "sous_texte": "Je teste votre réaction face à un refus direct. Si vous insistez lourdement, je vais raccrocher. Si vous gérez bien, peut-être que j'écoute 30 secondes.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le timing, proposer un moment précis ultra-court plutôt que de forcer maintenant"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous me faites parvenir votre doc par mail, je regarderai si ça m'intéresse",
+        "sous_texte": "C'est ma technique polie pour me débarrasser de vous sans être désagréable. Je ne lirai jamais ce mail.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer de la curiosité immédiate avec un élément concret impossible à mettre dans un mail, sinon c'est terminé"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah encore un logiciel miracle... On a déjà donné avec ce genre de trucs, ça finit toujours pareil",
+        "sous_texte": "J'ai été échaudé il y a 3 ans. Je ne veux pas revivre cet échec qui a entaché ma crédibilité. Prouvez-moi que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître ouvertement l'échec passé, montrer qu'on comprend pourquoi ça a raté, donner des garanties concrètes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Dans les faits, mon panel fournisseurs est déjà bien optimisé. On a fait le job ces dernières années.",
+        "sous_texte": "Ne remettez pas en cause mon travail. J'ai ma fierté. Mais au fond, je sais qu'il reste des marges de progrès que je ne veux pas avouer.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser son travail actuel tout en ouvrant sur un angle nouveau qu'il n'a peut-être pas exploré"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous avez des références dans l'agroalimentaire au moins ? Parce que notre métier c'est pas comme les autres hein",
+        "sous_texte": "Si vous n'avez pas de références dans mon secteur, vous ne comprenez rien aux contraintes IFS, BRC, traçabilité. Donc inutile de continuer.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Citer des références précises dans l'agroalimentaire avec contexte métier, sinon crédibilité=zéro"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça demande combien de temps de déploiement ? Parce que là on est déjà surchargés",
+        "sous_texte": "Je n'ai ni le temps ni les ressources pour un projet de 6 mois. Si c'est lourd, je ne pourrai pas porter ça en interne.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un timeline réaliste et court avec jalons clairs, ne pas minimiser l'effort requis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui, oui, tout le monde dit ça. 'ROI en 12 mois, réduction des coûts, simplicité'... Dans la vraie vie c'est jamais comme ça",
+        "sous_texte": "Je suis blasé des promesses marketing. J'ai entendu ce discours 100 fois. Donnez-moi du factuel ou arrêtez de me faire perdre mon temps.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Sortir des généralités, donner des chiffres ultra-précis d'un cas client similaire avec contexte complet"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça s'interface avec SAP j'imagine ? Parce que notre ERP il a 15 ans et il est un peu capricieux",
+        "sous_texte": "J'ai peur des complications techniques. Si votre truc plante notre système legacy, je suis mort. Question technique légitime mais aussi excuse potentielle.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer avec expertise technique précise sur l'intégration SAP, cas similaires, plan de dérisquage"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, c'est sûrement intéressant, mais là j'ai vraiment pas de budget pour ce genre d'investissement en 2024",
+        "sous_texte": "C'est peut-être vrai, mais c'est surtout une échappatoire confortable. Si vous me démontrez un ROI béton, je peux peut-être débloquer quelque chose.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le 'pas de budget' tel quel, explorer le coût de l'inaction et budget 2025"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Il faudrait que j'en parle à la DG et à la DAF de toute façon. Je décide pas tout seul sur ce type de montant",
+        "sous_texte": "Je me protège en diluant la responsabilité. Mais c'est aussi sincère : je ne peux pas engager 40K€ sans aval. Testez ma motivation réelle.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer de l'accompagner dans cette présentation interne plutôt que de contourner"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, vous me faites une proposition commerciale détaillée, on verra ça en comité achats le mois prochain",
+        "sous_texte": "Je botte en touche poliment. Le 'comité achats le mois prochain' est souvent un cimetière à projets. Je ne suis pas vraiment convaincu.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier la réalité de ce comité, proposer un point avant pour valider les éléments clés"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ça peut être intéressant effectivement. Faites voir ça avec Sandrine, ma responsable approvisionnement, elle vous fera un retour",
+        "sous_texte": "Je vous délègue à un niveau inférieur = signal que je ne suis pas sponsor du projet. Test pour voir si vous acceptez cette relégation.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter de voir Sandrine MAIS maintenir Thierry comme sponsor, créer un triptyque de travail"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis pas sûr que ce soit le bon moment avec tout ce qu'on a en cours. On en reparle au T1 2025 peut-être",
+        "sous_texte": "Je suis réellement surchargé et pas certain de la priorité de votre solution. Mais c'est aussi un moyen de reporter une décision inconfortable.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser la vraie priorité actuelle et montrer en quoi la solution aide justement sur les urgences en cours"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faut être réaliste, même si je dis oui aujourd'hui, entre la validation, le déploiement... on est parti pour 6-8 mois minimum. C'est long.",
+        "sous_texte": "Je rationalise mon hésitation. Je suis tiraillé entre l'intérêt et la peur de la complexité. Aidez-moi à me projeter concrètement.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Découper en quick-wins rapides plutôt qu'un big-bang, montrer des bénéfices dès J+30"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai été honnête avec vous, ça m'intéresse moyennement pour l'instant. On a d'autres priorités et franchement j'ai pas envie de me lancer dans un truc où je suis pas à 100% convaincu. Vous comprenez.",
+      "condition_declenchement": "Après 8-10 minutes d'échanges si le commercial n'a pas créé suffisamment de valeur perçue, n'a pas identifié de pain point urgent, ou a été trop insistant. Thierry met fin poliment mais fermement. Rattrapage très difficile à ce stade."
+    },
+    "pattern_escalade": "Thierry commence cordial mais pressé (test de légitimité), puis devient plus engagé SI le commercial démontre expertise métier + références agroalimentaire. Si le commercial déçoit, escalade vers objections techniques/budget (tactiques), puis délégation à subalterne, puis refus poli mais ferme. Chemin inverse si valeur démontrée : questions précises > mention problème actuel > ouverture sur calendrier.",
+    "piege_classique": "Thierry peut sembler ouvert et demander 'une proposition détaillée par mail' alors qu'il n'est pas du tout convaincu. C'est sa sortie polie. Le commercial croit avoir avancé alors que c'est un enterrement de première classe. Vrai signal d'intérêt = il pose des questions sur le déploiement interne, demande à impliquer son équipe, ou mentionne son prochain CODIR."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour l'industrie agroalimentaire",
+      "description": "Entreprise proposant des solutions pour les groupes agroalimentaires, ciblant les directions achats et qualité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée aux groupes agroalimentaires de taille moyenne à grande, visant à optimiser les processus d'achats ou de qualité",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de passage de barrage secrétariat dans un contexte B2B exigeant, créer de la légitimité instantanée, et obtenir un RDV qualifié avec un décideur de haut niveau",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Directeur Achats Agroalimentaire",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour l'industrie agroalimentaire, vous prospectez des directions achats et qualité dans des groupes de 200+ salariés.",
+    "vous_vendez": "Une solution d'optimisation des processus achats/qualité pour l'agroalimentaire (prix et détails non communiqués pour cet exercice — vous devrez rester évasif si on vous presse).",
+    "vous_appelez": "Thierry Bourgeois, 52 ans, Directeur des Achats chez Saveurs du Terroir SAS (340 salariés, plats cuisinés industriels). Pragmatique, méfiant, déteste le bullshit commercial et protège férocement son territoire.",
+    "ce_que_vous_savez": [
+      "L'entreprise sort d'un audit IFS avec des non-conformités mineures",
+      "La direction pousse pour 8% de réduction de coûts sur 18 mois",
+      "Thierry gère 180 fournisseurs avec un ERP SAP vieillissant et beaucoup d'Excel",
+      "Il a vécu un échec cuisant avec une solution SaaS achats il y a 3 ans",
+      "Priorité actuelle : traçabilité renforcée demandée par la GMS"
+    ],
+    "votre_objectif": "Passer le barrage de l'assistante, puis obtenir un RDV physique de 30 minutes avec Thierry en créant de la légitimité instantanée.",
+    "vos_atouts": [
+      "Vous avez aidé un concurrent direct dans l'agroalimentaire à réduire ses écarts fournisseurs de 23%",
+      "Vous maîtrisez le vocabulaire réglementaire (IFS, BRC, HACCP)",
+      "Vous proposez un format court : 15 min de démo concrète, pas de tunnel de vente interminable",
+      "Vous comprenez les enjeux de traçabilité post-audit qualité"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:09:29Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14940,
+    "total_time_s": 125.4
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "scenario_1771522112",
+  "description_originale": "Vous appelez à froid le DSI ou VP Sales d'une éditeur SaaS de 150-300 salariés, plusieurs produits, marché B2B. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : tech_saas]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "DSI ou VP Sales",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Équipe achats",
+          "role": "Process d'achat structuré"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service destiné aux éditeurs SaaS B2B pour améliorer leur performance commerciale, technique ou opérationnelle",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à obtenir un rendez-vous lors d'appels à froid",
+        "Prospects avec agenda chargé",
+        "Process d'achat structurés et complexes à naviguer"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors du premier contact",
+        "Absence de déclencheur d'achat identifié",
+        "Difficulté à créer de l'urgence ou de l'intérêt immédiat",
+        "Passage des barrages (assistants, filtres)",
+        "Positionnement de valeur insuffisant en 2-3 minutes",
+        "Manque de personnalisation de l'approche"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur perçue et de différenciation lors des 60 premières secondes d'un appel à froid pour justifier un investissement temps de 45 minutes chez un décideur senior avec process structuré"
+    },
+    "objections_mentionnees": [
+      "Pas le temps / agenda chargé",
+      "On a déjà des solutions en place",
+      "Envoyez-moi de la documentation",
+      "Passez par notre process d'achat formel"
+    ],
+    "objectif_formation": "Former les commerciaux à transformer un appel de prospection à froid en rendez-vous qualifié de 45 minutes avec des décideurs C-level d'éditeurs SaaS",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux éditeurs SaaS B2B",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux éditeurs de logiciels SaaS B2B de taille moyenne",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service BtoB destiné à améliorer la performance des éditeurs SaaS (commercial, technique, data, ops, marketing)",
+      "proposition_valeur": "Aide les éditeurs SaaS à optimiser leur croissance, leur efficacité opérationnelle ou leur performance commerciale",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre du vendeur",
+        "Proposition de valeur spécifique",
+        "Points de douleur métier du prospect",
+        "Éléments de légitimité (références, résultats)",
+        "Prix ou investissement attendu",
+        "Zone géographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Meunier",
+      "age": 42,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Streamflow Solutions",
+        "secteur": "Éditeur SaaS - Gestion de la relation client pour PME industrielles",
+        "taille": "187 salariés",
+        "ca_approximatif": "23M€ ARR, croissance +28% sur l'année"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Orienté résultats et ROI démontrable",
+        "Méfiant envers les promesses commerciales après plusieurs déceptions",
+        "Protecteur de son temps et de celui de son équipe"
+      ],
+      "motivations_profondes": [
+        "Être reconnu comme celui qui a structuré l'infrastructure tech permettant le passage à l'échelle",
+        "Éviter les erreurs techniques coûteuses qui ralentiraient la croissance",
+        "Prouver au COMEX qu'il maîtrise sa roadmap sans se laisser distraire",
+        "Maintenir sa crédibilité en ne cautionnant que des partenaires fiables"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un énième commercial qui ne comprend rien à son métier",
+        "Être perçu comme naïf s'il se fait embobiner par un beau pitch",
+        "Déstabiliser son écosystème tech actuel avec une solution mal intégrée",
+        "Se faire reprocher un budget mal dépensé lors du prochain comité de direction",
+        "Rater une vraie opportunité par excès de prudence et se faire doubler par la concurrence"
+      ],
+      "rapport_aux_commerciaux": "Globalement négatif. A développé un système immunitaire efficace : 'J'en reçois 12 par semaine, ils disent tous la même chose'. Respecte uniquement ceux qui font leurs devoirs et parlent son langage. Déteste qu'on le tutoie sans avoir été présenté.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude préventive. Commence souvent par 'Oui bonjour, je vous écoute mais j'ai un point dans 10 minutes'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'architecture ou l'intégration",
+        "Mentionne spontanément un problème concret qu'il rencontre actuellement",
+        "Demande des références clients dans son secteur ou sa taille d'entreprise",
+        "Dit 'Attendez, laissez-moi prendre une note' ou 'C'est intéressant ça'",
+        "Change de ton, devient plus posé, moins dans la défense"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Oui enfin bref, là je vois pas trop le rapport avec nous'",
+        "Soupir audible quand on cite un concurrent qu'il connaît déjà",
+        "Commence à taper au clavier pendant que vous parlez (répond à un email)",
+        "Utilise des formules assassines : 'C'est gentil mais...', 'Écoutez, franchement...'",
+        "Demande le prix dans les 90 premières secondes pour clore rapidement"
+      ],
+      "tics_langage": [
+        "Abuse du 'Voilà' en fin de phrase",
+        "Commence ses phrases par 'Bon écoutez' quand il veut reprendre la main",
+        "Utilise 'clairement' et 'concrètement' comme marqueurs de sérieux",
+        "Dit 'On va pas se mentir' avant d'énoncer une objection",
+        "Ponctue de 'OK' très secs quand il veut vous faire accélérer"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, il interrompt systématiquement avec une question ou un 'Oui donc concrètement pour nous ça donne quoi ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Phase de forte croissance après une levée de fonds Series B (12M€) il y a 8 mois. Pression pour industrialiser, recruter 60 personnes d'ici fin d'année, ouvrir un bureau à Lyon. Infrastructure tech qui commence à montrer des limites (incidents de performance, dette technique). Laurent est challengé tous les mois sur sa capacité à tenir la charge.",
+      "priorites_actuelles": [
+        "Migration vers une architecture micro-services (en cours, 40% fait)",
+        "Recrutement de 3 développeurs seniors (galère, profils rares)",
+        "Amélioration de l'observabilité et du monitoring (incidents clients en hausse)",
+        "Sécurisation de la conformité RGPD avant audit Q4",
+        "Refonte de la roadmap produit avec le CPO (tensions politiques internes)"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions l'année dernière : une trop complexe abandonnée après 3 mois, une autre sur-vendue qui n'a jamais tenu ses promesses. Est devenu très exigeant sur les POC et les périodes d'essai.",
+      "fournisseur_actuel": "Stack composite : AWS pour l'infra, Datadog pour le monitoring, plusieurs outils maison développés en interne par manque de solutions satisfaisantes sur le marché. 'On se débrouille avec ce qu'on a'.",
+      "budget_disponible": "A consommé 65% de son budget annuel IT. Dispose encore d'une enveloppe de 180K€ mais doit justifier chaque dépense supérieure à 30K€ au DAF. Négocie systématiquement les tarifs et privilégie les modèles au usage plutôt qu'en flat fee."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer une compréhension précise de son secteur (SaaS B2B industriel) dès les 20 premières secondes",
+        "Mentionner un client comparable qui a résolu un problème qu'il rencontre actuellement",
+        "Présenter un ROI chiffré crédible basé sur des métriques qu'il suit (uptime, coût par transaction, time-to-market)",
+        "Proposer un diagnostic gratuit ou un audit de maturité sans engagement (il aime les approches 'conseil')",
+        "Être recommandé par quelqu'un de son réseau (La French Tech, son ancien collègue devenu CTO ailleurs)",
+        "Lui faire gagner du temps en envoyant un document ultra-synthétique AVANT l'appel avec 3 questions précises"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'On est leader sur le marché' ou tout superlatif non sourcé",
+        "Prétendre résoudre tous ses problèmes avec une solution miracle",
+        "Ne pas connaître la différence entre un éditeur SaaS et une ESN",
+        "Insister lourdement après un premier 'non' clair (il blackliste mentalement)",
+        "Critiquer frontalement ses choix techniques actuels sans les comprendre",
+        "Demander un rendez-vous de 45 minutes sans avoir créé de valeur dans l'échange préalable",
+        "Le tutoyer ou utiliser un registre trop familier type 'startup nation'",
+        "Lire un script manifestement standardisé sans personnalisation"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, écoutez là j'ai vraiment un point dans 10 minutes, vous appelez pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas demandé cet appel, prouvez-moi en 30 secondes que ça vaut le coup que je vous écoute, sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la durée (2 minutes max), mentionner immédiatement un problème concret de son secteur ou un client comparable"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attendez, c'est encore de la prospection commerciale là... J'en reçois douze par semaine de ces appels. Envoyez-moi un mail plutôt.",
+        "sous_texte": "Je suis fatigué des commerciaux qui me font perdre mon temps. Si vous êtes comme les autres, je vous mets dans la même case 'poubelle'",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître sa réalité sans s'excuser, se différencier immédiatement par une question de qualification ou une insight métier précise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "OK donc vous vendez quoi concrètement ? Parce que là votre pitch je comprends pas trop le rapport avec nous.",
+        "sous_texte": "Votre accroche est trop vague ou générique. Je teste si vous avez vraiment fait vos devoirs sur ma boîte ou si vous spammez tout le fichier",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler en langage métier DSI, mentionner un élément spécifique à Streamflow (croissance, secteur industriel PME, levée récente)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez, on a déjà pas mal d'outils en place. On se débrouille avec ce qu'on a, ça tourne, voilà.",
+        "sous_texte": "Je ne vais pas bouleverser mon écosystème tech pour vos beaux yeux. Prouvez-moi qu'il y a un GAP significatif qui justifie un changement",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce qui ne tourne PAS parfaitement, identifier les workarounds coûteux, le faire parler de ses irritants actuels sans critiquer ses choix"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Clairement je vois l'intérêt en théorie, mais là concrètement on a trois priorités absolues avant fin d'année. Timing pas top.",
+        "sous_texte": "C'est peut-être intéressant mais je suis déjà surchargé. Vous n'avez pas encore créé assez d'urgence pour que je décale mes priorités",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Connecter votre solution à UNE de ses 3 priorités existantes comme accélérateur, pas comme projet additionnel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous travaillez avec qui dans notre secteur ? Parce que le SaaS B2B industriel c'est quand même assez spécifique.",
+        "sous_texte": "Je teste votre légitimité et votre compréhension de mon métier. Si vous n'avez aucune référence comparable, ça va être compliqué de me convaincre",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer des clients comparables (taille, secteur) ou reconnaître honnêtement et proposer une approche pilote sécurisée"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a testé un truc similaire l'année dernière, franchement ça a été une catastrophe. Trois mois de perdus pour rien.",
+        "sous_texte": "J'ai déjà été déçu et je me suis fait taper sur les doigts. Je ne referai pas la même erreur. Votre solution me rappelle ce mauvais souvenir",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec précédent sans défendre, identifier ce qui a manqué, montrer comment votre approche diffère structurellement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin bon, ça c'est ce que vous dites. ROI de 300% en 6 mois, j'en ai entendu des promesses comme ça...",
+        "sous_texte": "Je ne crois plus aux belles promesses commerciales. J'ai besoin de preuves tangibles, de références vérifiables, pas de slides marketing",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de parler directement à un client existant, partager un cas concret avec métriques réelles, admettre les limites de validité"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, mais ça s'intègre comment dans notre stack actuelle ? On est sur AWS, Datadog, des développements custom... J'ai pas envie de tout casser.",
+        "sous_texte": "Objection technique légitime : je dois protéger mon infrastructure et éviter un projet usine à gaz d'intégration qui mobiliserait mes dev pendant 3 mois",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer l'approche d'intégration progressive, APIs disponibles, compatibilité confirmée avec sa stack, effort tech estimé honnêtement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK et ça coûte combien votre truc ? Parce que là j'ai déjà consommé une bonne partie de mon budget annuel.",
+        "sous_texte": "Objection prix précoce pour tester votre fourchette OU pour clore rapidement si c'est hors budget. Je veux aussi voir si vous êtes transparent ou évasif",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un ordre de grandeur conditionné au périmètre, recentrer sur la valeur, questionner sur le budget disponible et le processus de validation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, mais là je dois valider ça avec mon DAF et probablement le COMEX. On a un process d'achat structuré pour tout ce qui dépasse 30K.",
+        "sous_texte": "C'est pas juste moi qui décide, il y a un circuit de validation complexe. Je veux voir si vous comprenez comment naviguer ce process ou si vous allez me mettre la pression",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le process, proposer de l'accompagner, identifier les critères de décision des autres parties prenantes, créer des alliés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez c'est intéressant mais... envoyez-moi de la doc, un cas client, des specs techniques, je regarde ça tranquillement et je vous redis.",
+        "sous_texte": "Objection d'évitement classique. Soit je suis vraiment débordé et je temporise, soit c'est une façon polie de dire non sans conflit",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engager sur un prochain point précis (date, format court), questionner sur ce qui le fait hésiter vraiment, créer un mini-jalon"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On va pas se mentir, là vous me vendez du rêve mais on sait tous les deux comment ça se passe en réalité. La mise en œuvre c'est toujours plus compliqué.",
+        "sous_texte": "Je suis cynique et expérimenté. J'ai vu l'écart entre les démos et la réalité terrain. Montrez-moi que vous êtes honnête sur les difficultés",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître les challenges réels de mise en œuvre, partager les difficultés rencontrées chez d'autres clients et comment elles ont été surmontées"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà donc là concrètement, 45 minutes de rdv pour approfondir, je suis pas sûr d'en voir l'intérêt direct. Qu'est-ce que ça va m'apporter de plus ?",
+        "sous_texte": "Vous ne m'avez pas encore convaincu que 45 minutes de mon temps vont être bien investies. Quel est l'agenda concret et la valeur pour MOI de ce rendez-vous ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer un agenda précis avec livrables concrets (audit rapide, diagnostic, benchmark), pas juste 'une présentation'. Vendre le RDV, pas le produit"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là c'est compliqué niveau agenda. Je suis overbooké jusqu'à fin du mois avec les recrutements et la migration en cours.",
+        "sous_texte": "Vraie contrainte d'agenda OU échappatoire polie. Si vous insistez lourdement, je vais me braquer. Si vous lâchez trop vite, j'oublie",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un créneau lointain mais ferme (dans 3-4 semaines), envoyer un récap valeur en attendant, rester en radar sans harceler"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK pourquoi pas, mais avant est-ce que vous pouvez me mettre en contact avec deux de vos clients que je puisse les appeler directement ?",
+        "sous_texte": "Je suis intéressé MAIS je veux vérifier par moi-même. C'est un test de votre transparence et de la satisfaction réelle de vos clients",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter immédiatement si possible, proposer des références pertinentes (secteur/taille), préparer les clients référents en amont"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, soyez honnête avec moi : est-ce que ça vaut vraiment le coup pour une boîte de notre taille ? Je veux pas qu'on perde du temps ni vous ni nous.",
+        "sous_texte": "Test d'honnêteté ultime. Je vous donne une porte de sortie. Si vous insistez alors que c'est pas fit, je saurai que vous êtes juste dans le closing agressif",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Répondre avec une honnêteté totale basée sur les éléments découverts. Si pas fit, le dire. Si fit, expliquer précisément pourquoi POUR EUX"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon là clairement je vois pas. Vous m'avez pas convaincu que c'est le bon moment pour nous, on a trop de choses en cours. Je note vos coordonnées et si ça évolue de notre côté je vous recontacte, OK ?",
+      "condition_declenchement": "Apparaît si le commercial : n'a pas créé suffisamment de valeur différenciante, n'a pas connecté à une priorité existante urgente, a été trop insistant sans écouter, n'a pas apporté d'insight nouveau sur son contexte, a utilisé un discours trop générique ou lu un script"
+    },
+    "pattern_escalade": "Laurent commence cordial mais pressé (objections réflexes douces). Si le commercial persiste avec pertinence, il teste la légitimité (questions techniques, références). Si ça passe, il expose ses vraies contraintes (budget, timing, écosystème existant). L'escalade négative survient si on insiste sans écouter : ton qui se durcit, réponses plus sèches, formules assassines type 'Franchement...', puis fermeture brutale.",
+    "piege_classique": "Laurent peut sembler intéressé et dire 'OK envoyez-moi la doc' alors qu'il veut juste clore poliment l'échange. Le piège est de prendre cette demande au premier degré sans qualifier l'intérêt réel ni convenir d'un prochain point concret. Résultat : on envoie, il ne répond plus jamais, fantomise. Il faut forcer la clarification : 'Laurent, soyons honnêtes : si je vous envoie ça, vous allez vraiment le regarder ou c'est une façon de me dire que c'est pas le bon moment ?'"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux éditeurs SaaS B2B",
+      "description": "Entreprise proposant des solutions ou services destinés aux éditeurs de logiciels SaaS B2B de taille moyenne"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service BtoB destiné à améliorer la performance des éditeurs SaaS (commercial, technique, data, ops, marketing)",
+      "proposition_valeur": "Aide les éditeurs SaaS à optimiser leur croissance, leur efficacité opérationnelle ou leur performance commerciale",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à transformer un appel de prospection à froid en rendez-vous qualifié de 45 minutes avec des décideurs C-level d'éditeurs SaaS",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Appel à froid — DSI éditeur SaaS en hypercroissance",
+    "vous_etes": "Commercial BtoB spécialisé dans l'accompagnement des éditeurs SaaS en phase de scaling",
+    "vous_vendez": "Une solution d'optimisation de la performance pour éditeurs SaaS B2B (nature exacte à adapter selon votre approche)",
+    "vous_appelez": "Laurent Meunier, DSI chez Streamflow Solutions (éditeur SaaS CRM industriel, 187 personnes, 23M€ ARR, +28% de croissance). Analytique, protecteur de son temps, échaudé par les promesses commerciales non tenues.",
+    "ce_que_vous_savez": [
+      "Streamflow a levé 12M€ en Series B il y a 8 mois et recrute 60 personnes d'ici fin d'année",
+      "Laurent pilote une migration micro-services en cours (40% réalisé) avec une infrastructure qui montre des limites",
+      "L'entreprise subit des incidents de performance croissants pendant cette phase d'industrialisation",
+      "Il a testé 2 solutions similaires l'an dernier : échecs qui l'ont rendu très exigeant sur les POC",
+      "Il reçoit environ 12 appels commerciaux par semaine et a développé un filtre efficace"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous de 45 minutes en démontrant une compréhension précise de son contexte SaaS B2B industriel",
+    "vos_atouts": [
+      "Vous connaissez les défis spécifiques des éditeurs SaaS en hypercroissance (scaling technique, dette, incidents)",
+      "Vous pouvez parler architecture micro-services, observabilité et métriques de performance dans son langage",
+      "Vous avez une approche conseil (diagnostic/audit) qui correspond à ce qu'il valorise",
+      "Vous savez quantifier le ROI sur des métriques qu'il suit (uptime, coût par transaction, time-to-market)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:28:32Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16653,
+    "total_time_s": 153.4
+  }
+}

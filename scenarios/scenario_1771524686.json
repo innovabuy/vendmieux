@@ -1,0 +1,359 @@
+{
+  "id": "scenario_1771524686",
+  "description_originale": "Vous appelez à froid le directeur des achats ou directeur industriel d'une ETI industrielle de 200-400 salariés, production en série, plusieurs sites. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : industrie]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie",
+      "taille_entreprise": "ETI 200-400 salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur des Achats ou Directeur Industriel",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B destinée à l'industrie manufacturière en série",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel à froid sans connaissance préalable",
+        "Prospect avec agenda chargé",
+        "Process d'achat structurés et formels"
+      ],
+      "implicites": [
+        "Difficulté à passer les barrières (secrétariat, standardiste)",
+        "Risque de rejet immédiat faute de légitimité établie",
+        "Nécessité de créer de l'intérêt en moins de 30 secondes",
+        "Concurrence forte sur l'attention du décideur",
+        "Complexité à justifier 45 minutes d'agenda sans contexte",
+        "Cycle de décision potentiellement long avec multiples intervenants"
+      ],
+      "probleme_racine": "Absence de légitimité perçue et de contexte relationnel pour capter l'attention d'un décideur senior surchargé et obtenir un engagement temps significatif"
+    },
+    "objections_mentionnees": [
+      "Manque de temps / agenda chargé",
+      "Process achat établis / fournisseurs existants",
+      "Absence de besoin immédiat identifié"
+    ],
+    "objectif_formation": "Former les commerciaux à réussir la prospection téléphonique froide auprès de décideurs industriels senior, en obtenant un rendez-vous qualifié malgré les barrières organisationnelles et temporelles",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour l'industrie",
+      "entreprise_description": "Entreprise proposant des solutions à destination des ETI industrielles en production série",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux directions industrielles ou achats d'ETI manufacturières",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Identité de l'entreprise vendeuse",
+        "Arguments de différenciation",
+        "Prix ou budget indicatif",
+        "Références clients comparables",
+        "Pain points industriels ciblés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Vermeulen",
+      "age": 52,
+      "poste": "Directeur Industriel",
+      "entreprise": {
+        "nom": "Mécaprès Industries",
+        "secteur": "Fabrication de composants métalliques pour l'automobile et l'aéronautique",
+        "taille": "320 salariés, 3 sites de production (Haute-Savoie, Vosges, Loire)",
+        "ca_approximatif": "68M€ - croissance ralentie depuis 2 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux externes (trop d'échecs passés)",
+        "Obsédé par le ROI immédiat et la continuité de production",
+        "Loyal envers ses fournisseurs historiques jusqu'à preuve d'incompétence"
+      ],
+      "motivations_profondes": [
+        "Éviter les arrêts de production à tout prix (KPI principal : TRS)",
+        "Protéger son territoire face à la Direction Achats qui centralise de plus en plus",
+        "Prouver qu'il maîtrise encore son périmètre malgré la transformation digitale qu'il comprend mal",
+        "Tenir jusqu'à la retraite (dans 8 ans) sans catastrophe industrielle"
+      ],
+      "peurs_freins": [
+        "Qu'un changement de fournisseur provoque un incident qualité visible du COMEX",
+        "Perdre du temps en réunions inutiles alors que la prod appelle sans cesse",
+        "Se faire court-circuiter par les Achats qui imposent un fournisseur low-cost catastrophique",
+        "Paraître dépassé technologiquement devant des commerciaux de 30 ans avec leur jargon digital"
+      ],
+      "rapport_aux_commerciaux": "Considère 95% des commerciaux comme des parasites qui ne comprennent rien à la réalité du terrain. A été échaudé par 3 projets ratés ces 5 dernières années. N'accorde sa confiance qu'après avoir vu des preuves concrètes chez des pairs du secteur.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, légèrement agacé d'être dérangé. Voix fatiguée en fin de matinée (réunion prod à 7h). Soupir audible si l'accroche est générique.",
+      "signaux_interet": [
+        "Demande spontanément 'Vous travaillez avec qui dans l'auto ou l'aéro ?'",
+        "Mentionne un problème précis actuel (délais, rebuts, pénurie)",
+        "Passe du vouvoiement distant au tutoiement technique",
+        "Accepte de vous passer son chef d'atelier : 'Faut que je demande à Éric ce qu'il en pense'",
+        "Propose lui-même une date lointaine mais ferme"
+      ],
+      "signaux_rejet": [
+        "Coupe immédiatement : 'Envoyez-moi un mail, je regarderai'",
+        "Bascule en mode administratif : 'Faut voir avec les Achats, je ne décide plus de ça'",
+        "Silence radio suivi de 'Écoutez là j'ai la prod qui m'appelle sur l'autre ligne'",
+        "Ton condescendant : 'Vous savez, dans l'industrie c'est pas comme dans les services...'",
+        "Invoque le sacro-saint : 'On a déjà un partenaire historique qui nous suit très bien'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il va refuser",
+        "Abrège systématiquement : TRS, SMED, OEE, VSM",
+        "Dit 'concrètement' toutes les 3 phrases",
+        "Utilise 'Voilà' pour clore un sujet",
+        "Appelle ses équipes 'les gars' même si 40% sont des femmes"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "20 secondes max. Interruption sèche si pitch commercial trop long : 'Oui oui j'ai compris, mais concrètement...'. Déteste les questions de découverte type SPIN jugées 'psy de comptoir'."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Tension forte sur les marges (inflation matières premières +23% en 18 mois). Pression du client principal (équipementier Tier 1) pour baisser les prix de 8%. Usine des Vosges sous-performante (TRS à 68%). Turnover élevé chez les opérateurs (génération Z qui ne reste pas). Projet ERP imposé par la maison-mère en cours = chaos organisationnel.",
+      "priorites_actuelles": [
+        "Remonter le TRS du site des Vosges avant l'audit Q2",
+        "Réduire le taux de rebut de 3,2% à 2% (engagement client)",
+        "Finaliser la migration ERP sans planter la prod (go-live dans 6 semaines = nuits blanches)",
+        "Recruter 2 techniciens de maintenance introuvables sur le marché",
+        "Préparer la certification IATF renouvelée en septembre"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution de maintenance prédictive vendue par un cabinet parisien. Échec cuisant : capteurs incompatibles avec machines anciennes, consultant absent après la vente, 140K€ perdus. Depuis, refuse tout ce qui ressemble à de l'IoT ou du conseil.",
+      "fournisseur_actuel": "Panel historique : SKF pour les roulements, Fuchs pour les lubrifiants, Vinci Energies pour la maintenance électrique, Festo pour la pneumatique. Relations de 12-15 ans minimum. Négociations annuelles tendues mais prévisibles.",
+      "budget_disponible": "Budget 2024 déjà alloué à 87%. Marge de manœuvre de 60-80K€ sur ligne 'études et amélioration continue' si ROI démontré <18 mois. Tout investissement >100K€ doit passer par les Achats et validation DAF."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer un nom connu du secteur qui utilise déjà la solution ('J'ai vu que vous aviez le même problème de TRS que Bosch Mondeville')",
+        "Mentionner un chiffre précis crédible : 'Nos clients gagnent en moyenne 4,7 points de TRS en 6 mois'",
+        "Montrer qu'on connaît SES contraintes spécifiques (multi-sites, parc machines hétérogène, certification IATF)",
+        "Proposer une approche pilote non engageante : 'Test sur 1 ligne, 0€, on mesure ensemble pendant 4 semaines'",
+        "Être recommandé par un pair crédible (ancien collègue, syndicat pro, bureau d'études qu'il respecte)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Pitch marketing générique : 'Nous sommes leaders de la transformation digitale de l'industrie 4.0'",
+        "Prétendre comprendre son métier après 2 minutes : 'Je connais bien vos problématiques'",
+        "Demander 45 min sans justification : 'J'aimerais vous présenter notre offre'",
+        "Jargon bullshit : IA, machine learning, blockchain, disruption",
+        "Ignorer sa hiérarchie décisionnelle : 'Je peux vous envoyer un devis direct ?'",
+        "Insister après un premier refus (blacklisté mentalement)",
+        "Email de relance automatisé avec faute d'orthographe ou mauvais titre"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, c'est pour quoi exactement ? Parce que là j'ai la prod qui tourne et j'ai pas trop le temps...",
+        "sous_texte": "Prouve-moi en 10 secondes que tu ne vas pas me faire perdre mon temps comme les 50 commerciaux avant toi. Si ton accroche est générique, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement un bénéfice chiffré ou citer un pair du secteur connu. Ne pas demander 'si c'est le bon moment' (réponse = toujours non)."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attendez, faut voir ça avec les Achats hein. Moi je gère la prod, les fournisseurs c'est plus de mon ressort maintenant.",
+        "sous_texte": "Je me protège d'une décision. Je teste si tu connais vraiment les circuits de décision industriels ou si tu vas insister bêtement. En vrai, si ça touche MA prod, je garde la main.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le rôle des Achats tout en repositionnant sur l'expertise technique nécessaire côté industriel. 'Justement, nos clients nous disent que la validation technique du Directeur Industriel est indispensable avant que les Achats ne...'."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je veux me débarrasser de toi poliment. Ce mail, je ne le lirai jamais. C'est mon réflexe pavlovien pour tous les commerciaux. Tu n'as pas créé assez d'intérêt.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne JAMAIS accepter cette porte de sortie. Créer de la curiosité immédiate : 'Je comprends totalement. Juste une question rapide avant : votre TRS actuel sur Vosges, il est autour de combien ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous travaillez avec qui dans l'automobile ? Parce que nous on est certifiés IATF, c'est pas n'importe quoi...",
+        "sous_texte": "C'est mon premier test de crédibilité. Si tu ne cites pas des noms que je connais et respecte, tu n'es pas du sérieux. Prouve-moi que tu comprends les exigences de NOTRE secteur.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 références précises du secteur auto/aéro avec lesquelles vous travaillez, idéalement des Tier 1 ou équipementiers reconnus. Mentionner la certification IATF de VOS références."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui, mais vous savez dans l'industrie c'est pas comme dans les services hein. On peut pas se permettre d'expérimenter, nous. Un arrêt de ligne ça coûte 12 000 euros de l'heure.",
+        "sous_texte": "Je te signale que je suis dans le VRAI monde, celui de la prod physique avec ses contraintes. Je teste si tu vas minimiser mes risques ou si tu comprends vraiment l'enjeu de continuité. J'ai peur que ton truc plante ma prod.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa peur comme légitime. Proposer une approche pilote sans risque : 'C'est exactement pour ça que nos clients industriels testent d'abord sur UNE ligne, en doublon, sans toucher au process existant pendant 4 semaines'."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà un partenaire historique pour ça. SKF nous suit depuis 15 ans, on est très bien avec eux.",
+        "sous_texte": "Pourquoi je prendrais un risque avec toi alors que mon fournisseur actuel fait le job ? Tu dois me prouver qu'il y a un GAP significatif, pas juste 'un peu mieux'. Ma loyauté est réelle, pas juste une objection.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne JAMAIS critiquer le fournisseur historique. Positionner en complémentaire ou sur un angle non couvert : 'SKF est excellent sur les roulements. Nos clients les gardent d'ailleurs. Nous on intervient spécifiquement sur...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, vos questions c'est bien gentil, mais concrètement vous proposez quoi ? Parce que j'ai pas 3 heures devant moi là.",
+        "sous_texte": "Tes questions de découverte SPIN me gonflent, j'ai l'impression d'être chez le psy. Je suis un homme de terrain, pas un cas d'étude marketing. Viens-en au fait ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter et pivoter immédiatement sur du concret avec chiffres : 'Totalement. Concrètement : nos 8 clients en usinage gagnent en moyenne 4,7 points de TRS en 6 mois. Sur votre site Vosges à 68%, ça représenterait...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais tout ça c'est du digital, de l'IoT, des capteurs... On a déjà donné il y a 3 ans avec un cabinet parisien. 140 000 balles jetées par les fenêtres. Plus jamais.",
+        "sous_texte": "J'ai une VRAIE cicatrice sur ce sujet. Je ne suis pas fermé par principe, je suis échaudé par une expérience traumatisante. Si tu ne reconnais pas cette douleur et ne me montres pas EN QUOI c'est différent, je me protège.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accuser réception de l'échec passé avec empathie. Demander ce qui n'a pas marché précisément. Montrer comment votre approche évite ces écueils spécifiques (compatibilité machines anciennes, accompagnement post-vente, ROI mesuré dès le pilote)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau budget, ça se situe comment votre truc ? Parce que moi j'ai plus un rond, tout a été alloué en janvier.",
+        "sous_texte": "Soit c'est vrai (budget 2024 figé), soit je teste si tu es dans mes cordes budgétaires avant de m'engager émotionnellement. Si tu annonces 300K€, j'arrête la discussion immédiatement.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier d'abord l'ordre de grandeur sans citer de prix fixe. Mentionner le ROI <18 mois qui justifie la ligne 'amélioration continue'. Proposer d'en discuter au RDV une fois la valeur démontrée."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, sur le papier ça a l'air bien. Mais entre ce que vous vendez et la réalité du terrain, y'a souvent un monde. Faudrait que je demande à Éric, mon chef d'atelier, ce qu'il en pense.",
+        "sous_texte": "Je ne décide jamais seul sur la partie opérationnelle. Éric a 28 ans de boîte, il connaît chaque machine. Si lui dit non, c'est non. C'est aussi ma façon de ralentir sans dire non directement.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "VALIDER cette démarche comme excellente. Proposer d'associer Éric dès le RDV : 'C'est exactement ce que font nos meilleurs clients. On peut prévoir 30 min avec vous et Éric ensemble ? Son regard terrain est indispensable'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre ROI de 18 mois, c'est calculé comment ? Parce qu'on nous a déjà sorti des calculs Excel bidons qui tenaient pas la route une fois en prod.",
+        "sous_texte": "J'ai été brûlé par des promesses chiffrées fantaisistes. Je teste ta rigueur et ton honnêteté intellectuelle. Si tu esquives ou si tes hypothèses sont irréalistes, tu perds toute crédibilité.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler la méthodologie de calcul de manière transparente. Proposer de construire LE calcul avec LUI sur SES données réelles pendant le RDV. 'On prend vos chiffres à vous : TRS actuel, coût horaire ligne, taux rebut...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et la mise en place, ça prend combien de temps ? Parce que là on est en pleine migration ERP, j'ai pas les ressources pour gérer un autre chantier.",
+        "sous_texte": "Je suis VRAIMENT sous l'eau avec le projet ERP (go-live dans 6 semaines = enfer). Ce n'est pas une excuse, c'est une réalité opérationnelle. Si ton projet demande de la bande passante maintenant, c'est mort.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la priorité ERP. Proposer un timing décalé post-stabilisation ERP (septembre/octobre). Positionner le RDV maintenant pour préparer la suite : 'Justement, on programme ça pour après votre go-live. Le RDV c'est pour poser les bases'."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Pourquoi vous voulez absolument un rendez-vous physique ? Faites-moi une visio de 20 minutes, ce sera plus simple non ?",
+        "sous_texte": "Je teste si tu vas négocier ton format de RDV. Une visio me permet de décrocher facilement si ça m'ennuie. Un physique m'engage plus. Mais si ton argumentaire pour le physique est faible, je garde la visio.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Justifier le physique par la nécessité de voir l'atelier/les machines pour personnaliser la recommandation. 'Nos clients nous disent que 30 min sur site évitent 3 allers-retours ultérieurs. Je dois voir votre ligne Vosges pour être pertinent'."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Là je suis débordé jusqu'en juin minimum. Rappelez-moi début juillet, on verra à ce moment-là.",
+        "sous_texte": "Soit c'est vrai (migration ERP + audit), soit c'est une façon polie de dire 'tu ne m'as pas convaincu mais je ne veux pas être désagréable'. Teste si tu vas lâcher l'affaire ou garder le lien intelligemment.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le timing mais bloquer une DATE ferme maintenant : 'Je comprends parfaitement. On bloque dès maintenant le 9 juillet à 10h ? Comme ça c'est calé de votre côté post-ERP et audit.' Envoyer invitation Outlook immédiatement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à mon boss quand même. On prend pas ce genre de décision comme ça chez nous.",
+        "sous_texte": "Vrai besoin de validation hiérarchique (Directeur Général ou Directeur de site). Mais aussi peut-être une protection : si mon boss dit non, je ne suis pas responsable. Teste si tu comprends les circuits de décision.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer d'associer le boss directement au RDV : 'Excellente idée. On peut programmer le RDV directement avec lui et vous ? Comme ça tout le monde a l'info en même temps et on ne perd pas de temps'."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, envoyez-moi votre documentation par mail, je regarde ça avec mon équipe et je vous rappelle si ça nous intéresse.",
+        "sous_texte": "Je te ferme la porte poliment. Tu n'as pas créé assez d'urgence ou de valeur perçue. Ce mail sera archivé sans lecture. Je ne rappellerai jamais. C'est mon réflexe de sortie en fin de conversation.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer de l'urgence ou de la rareté : 'Je comprends. Le souci c'est que notre ingénieur spécialisé aéro/auto n'est dispo que 2 jours ce mois-ci sur votre région. Si on loupe ça, c'est reporté à septembre. Le 17 ou le 23 ?'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voilà, bon ben écoutez merci pour votre appel, c'est intéressant mais là c'est vraiment pas le moment. Je vous souhaite une bonne journée hein. Allez, salut.",
+      "condition_declenchement": "Se déclenche quand Christophe sent que la conversation s'éternise sans valeur ajoutée claire, ou quand il reçoit un appel/message urgent de la prod sur son portable. Ton cordial mais ferme = porte définitivement fermée si le vendeur n'a pas créé d'ancrage fort (référence client, chiffre précis, pilote gratuit)."
+    },
+    "pattern_escalade": "Christophe commence froid mais professionnel (objections réflexes). Si le vendeur tient bon avec de la substance, il passe en mode 'test de crédibilité' (demande références, challenge les chiffres). S'il détecte du bullshit ou du forcing commercial, il bascule en mode 'protection administrative' (renvoie vers Achats, demande email, invoque boss). Si le vendeur réussit les tests ET reconnaît ses contraintes réelles (ERP, budget, échec passé), il s'ouvre progressivement et peut même proposer lui-même une date lointaine mais ferme. L'escalade négative se fait par refroidissement progressif du ton + phrases de clôture ('Voilà', 'De toute façon', 'Écoutez là...').",
+    "piege_classique": "Christophe utilise l'objection 'Faut voir avec les Achats' comme paravent même quand il a encore du pouvoir de décision sur les sujets techniques. C'est un test : le commercial junior abandonne immédiatement. Le commercial expérimenté reconnaît le rôle des Achats mais repositionne sur la validation technique indispensable du Directeur Industriel en amont. ATTENTION : si le vendeur insiste après un premier 'envoyez un mail', Christophe le blackliste mentalement et ne prendra JAMAIS ses appels futurs. La relance doit se faire avec un nouvel élément de valeur fort (référence client nouveau, retour terrain d'un pair, chiffre industrie récent)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour l'industrie",
+      "description": "Entreprise proposant des solutions à destination des ETI industrielles en production série"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux directions industrielles ou achats d'ETI manufacturières",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à réussir la prospection téléphonique froide auprès de décideurs industriels senior, en obtenant un rendez-vous qualifié malgré les barrières organisationnelles et temporelles",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur Industriel ETI automobile",
+    "vous_etes": "Commercial B2B spécialisé solutions industrielles, en prospection terrain auprès d'ETI manufacturières.",
+    "vous_vendez": "Solution d'amélioration de performance industrielle (nature et tarif à préciser selon votre positionnement réel).",
+    "vous_appelez": "Christophe Vermeulen, 52 ans, Directeur Industriel chez Mécaprès Industries (320 salariés, 3 sites de production métal pour auto/aéro). Méfiant, surchargé, échaudé par des projets ratés. Coupe court si vous perdez son temps.",
+    "ce_que_vous_savez": [
+      "Mécaprès fabrique des composants métalliques pour automobile et aéronautique sur 3 sites (Haute-Savoie, Vosges, Loire)",
+      "Secteur sous pression : inflation matières, clients qui exigent des baisses de prix, turnover opérateurs élevé",
+      "Christophe doit tenir ses KPI de production (TRS, taux de rebut) et préparer une certification IATF cette année",
+      "Il a un historique de fournisseurs historiques fidèles (SKF, Fuchs, Vinci, Festo) — très loyal jusqu'à preuve d'échec",
+      "Il a vécu un échec cuisant il y a 3 ans avec une solution IoT vendue par un cabinet parisien (140K€ perdus)"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou visio de 30-45 minutes pour qualifier le besoin et présenter une approche concrète.",
+    "vos_atouts": [
+      "Références clients dans l'automobile ou l'aéronautique (à mobiliser dès l'accroche)",
+      "Approche pilote non engageante possible (test terrain limité, ROI mesuré)",
+      "Connaissance des contraintes multi-sites et certifications IATF",
+      "Chiffres de performance concrets obtenus chez des pairs (gains TRS, réduction rebuts, délais ROI)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:11:26Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17304,
+    "total_time_s": 177.1
+  }
+}

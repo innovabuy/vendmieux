@@ -1,0 +1,357 @@
+{
+  "id": "scenario_1771519414",
+  "description_originale": "Vous appelez une groupe de cliniques ou labo pharma de 200+ salariés. L'secrétaire médicale du directeur des achats hospitaliers ou directeur qualité décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : sante_medical]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur_achats_hospitaliers ou directeur_qualite",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "secretaire_medicale",
+          "role": "barrage_systematique",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour établissements de santé ou laboratoires pharmaceutiques",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "barrage secrétaire systématique",
+        "difficulté à accéder au décideur",
+        "secrétaire filtre professionnellement les appels commerciaux"
+      ],
+      "implicites": [
+        "manque de légitimité perçue lors de l'appel",
+        "discours commercial trop évident détecté par la secrétaire",
+        "absence de stratégie de contournement élégante",
+        "difficulté à créer de la valeur perçue dès les premières secondes"
+      ],
+      "probleme_racine": "incapacité à transformer le barrage secrétaire en allié et à démontrer la valeur/urgence suffisante pour justifier un accès direct au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques de passage de barrage secrétaire avec élégance et professionnalisme pour accéder aux décideurs hospitaliers et décrocher des RDV qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur_secteur_medical_hospitalier",
+      "entreprise_description": "entreprise proposant des solutions destinées aux groupes de cliniques et laboratoires pharmaceutiques",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution B2B destinée au secteur hospitalier et pharmaceutique",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature précise du produit/service vendu",
+        "proposition de valeur concrète",
+        "prix et budget typique",
+        "références clients",
+        "avantages concurrentiels",
+        "nom de l'entreprise du vendeur",
+        "problématiques métier spécifiques des directeurs achats/qualité hospitaliers"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Véronique",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directrice des Achats et de la Logistique",
+      "entreprise": {
+        "nom": "Groupe Clinique Santé Nouvelle",
+        "secteur": "Établissement de santé privé multisites",
+        "taille": "340 salariés (4 cliniques en Île-de-France)",
+        "ca_approximatif": "42M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Hyper-sollicitée et en mode défense permanente",
+        "Méticuleuse sur les process et la conformité réglementaire",
+        "Fatiguée des promesses commerciales non tenues"
+      ],
+      "motivations_profondes": [
+        "Protéger ses équipes de solutions mal adaptées qui créent plus de travail qu'elles n'en économisent",
+        "Faire ses preuves dans un milieu masculin médical qui sous-estime souvent la fonction achats",
+        "Éviter absolument une erreur d'achat qui pourrait impacter la qualité des soins ou la certification HAS"
+      ],
+      "peurs_freins": [
+        "Se faire piéger par un commercial qui ne comprend rien aux contraintes hospitalières",
+        "Perdre du temps avec des solutions inadaptées au secteur sanitaire ultra-réglementé",
+        "Que sa direction lui reproche un investissement qui ne délivre pas les résultats promis",
+        "Les fournisseurs qui disparaissent après la vente laissant des équipes soignantes en galère"
+      ],
+      "rapport_aux_commerciaux": "Défiance par défaut. Elle reçoit 12-15 sollicitations par semaine. Elle a développé un radar ultra-sensible aux discours marketing creux. Respecte uniquement ceux qui connaissent VRAIMENT le secteur hospitalier et ses contraintes spécifiques.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'impatience à peine dissimulée. Ton 'bon, dites-moi vite pourquoi vous m'appelez que je puisse retourner à mes urgences'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur la compatibilité avec leur SIRH ou logiciel métier",
+        "Mentionne spontanément un problème concret qu'elle rencontre actuellement",
+        "Demande des références dans des établissements de santé comparables",
+        "Son débit ralentit et elle prend des notes"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles",
+        "'Écoutez, on a déjà un fournisseur qui...' (prétexte de sortie)",
+        "Coupe la parole avec 'oui, oui, je connais' même si c'est faux",
+        "Ton qui devient monocorde, répond par monosyllabes",
+        "Regarde ostensiblement sa montre (en visio) ou fait autre chose"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand elle est agacée",
+        "Dit 'de toute façon' pour clore un sujet",
+        "Utilise beaucoup 'concrètement' pour ramener à la réalité opérationnelle",
+        "Abrège tout en acronymes sectoriels : HAS, DIM, CPOM, GHT"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "45 secondes maximum avant qu'elle ne décroche mentalement. Si le commercial parle plus de 2 minutes sans poser de question, elle trouve un prétexte pour raccrocher"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Groupe en croissance externe (rachat d'une 5ème clinique prévu d'ici 6 mois). Pression forte sur l'optimisation des coûts tout en maintenant la qualité. Audit HAS prévu dans 11 mois qui stresse toute la direction. Projet de centralisation des achats sur les 4 sites actuels en cours.",
+      "priorites_actuelles": [
+        "Harmoniser les contrats fournisseurs entre les 4 cliniques (actuellement un bordel)",
+        "Réduire de 8% les coûts achats hors-soins d'ici fin d'année (objectif direction générale)",
+        "Préparer l'intégration de la future 5ème clinique",
+        "Négocier le renouvellement de 3 contrats majeurs qui arrivent à échéance",
+        "Former son équipe de 2 acheteurs juniors qui ne connaissent pas assez le secteur santé"
+      ],
+      "experience_avec_offre_similaire": "A testé 2 solutions dans les 18 derniers mois. L'une était un échec cuisant (pas adapté aux spécificités hospitalières, l'éditeur ne connaissait rien au secteur). L'autre fonctionne correctement mais le support client est catastrophique.",
+      "fournisseur_actuel": "Mix de plusieurs fournisseurs selon les sites, ce qui complique la gestion. Pas de solution unifiée.",
+      "budget_disponible": "Budget 2024 quasiment consommé. Pour un nouveau projet, il faudrait soit attendre 2025, soit démontrer un ROI en moins de 6 mois qui permettrait de débloquer une enveloppe exceptionnelle (très difficile)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer une référence dans un groupe de cliniques comparable qu'elle connaît ou respecte",
+        "Démontrer une compréhension fine d'une problématique hospitalière spécifique qu'elle vit actuellement",
+        "Être recommandé par un pair du réseau UNIHA ou RESAH (réseaux achats hospitaliers)",
+        "Proposer une approche par phase pilote sur 1 site avant déploiement (ça limite son risque)",
+        "Montrer qu'on comprend les contraintes réglementaires HAS, RGPD santé, hébergement données de santé",
+        "Avoir un discours ROI chiffré et crédible basé sur des cas similaires documentés"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing générique non adapté au secteur santé",
+        "Prétendre connaître le secteur hospitalier alors que c'est manifestement faux",
+        "Insister lourdement quand elle a dit non",
+        "Critiquer directement ses choix actuels ou ses fournisseurs (elle le vit comme une attaque personnelle)",
+        "Ne pas connaître les contraintes réglementaires de base du secteur",
+        "Promettre des délais irréalistes (elle a trop souvent été déçue)",
+        "Vouloir absolument avoir la direction générale en rdv sans passer par elle (elle déteste être court-circuitée)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, envoyez-moi un mail, je verrai ça plus tard",
+        "sous_texte": "Je n'ai aucune intention de lire votre mail, c'est juste ma stratégie d'évitement polie pour raccrocher rapidement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter l'objection mais créer une micro-urgence ou curiosité qui justifie 45 secondes supplémentaires maintenant"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà tout ce qu'il faut, on travaille avec des fournisseurs depuis des années",
+        "sous_texte": "Je ne veux pas me compliquer la vie avec un nouveau fournisseur. Prouvez-moi que vous apportez vraiment quelque chose de différent",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer ses choix actuels mais évoquer une problématique spécifique que ses fournisseurs actuels ne règlent probablement pas"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous êtes le quatrième cette semaine à m'appeler pour me proposer ce genre de solutions, franchement...",
+        "sous_texte": "Je suis épuisée par les sollicitations commerciales et vous êtes juste un commercial de plus qui me fait perdre mon temps",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître sa réalité, se différencier immédiatement par une référence ou une compréhension sectorielle précise"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "De toute façon je n'ai plus de budget pour 2024, donc ça ne sert à rien qu'on en parle maintenant",
+        "sous_texte": "C'est peut-être vrai, mais c'est surtout un moyen rapide de me débarrasser de vous sans avoir à argumenter davantage",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la contrainte budget 2024 mais proposer de préparer 2025 ou démontrer un ROI rapide qui justifierait une enveloppe exceptionnelle"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez déjà travaillé avec des groupes de cliniques comme nous ou vous venez du CHU? Parce que c'est pas du tout le même fonctionnement",
+        "sous_texte": "Je teste votre connaissance réelle du secteur. Si vous confondez public et privé ou si vous n'avez que des références en CHU, vous perdez toute crédibilité",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Démontrer une compréhension précise des spécificités du privé lucratif vs public, citer des références comparables"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais nous on est dans une démarche de certification HAS, donc tout ce qui touche à nos process achats doit être tracé et documenté. Votre solution est compatible avec ça?",
+        "sous_texte": "C'est une vraie contrainte mais c'est aussi un test. Si vous ne savez pas ce qu'est une certification HAS et ses implications, l'échange s'arrête là",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer qu'on connaît les exigences HAS et expliquer comment la solution facilite la traçabilité et la documentation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que j'ai déjà testé deux solutions dans les 18 derniers mois. L'une était une catastrophe, l'autre fonctionne à moitié. Donc bon, vous comprendrez que je sois un peu échaudée...",
+        "sous_texte": "Je suis sincèrement freinée par mes expériences passées. Vous devez me rassurer de manière très concrète, pas avec du blabla marketing",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché, montrer qu'on comprend ses déceptions, proposer une approche pilote limitée pour limiter le risque"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vos références, c'est bien, mais ils ont quel volume d'achats? Combien de sites? Parce que nous on a 4 cliniques à harmoniser plus une 5ème qui arrive, c'est pas simple",
+        "sous_texte": "Je cherche vraiment à évaluer si vous pouvez gérer ma complexité spécifique. Les petits établissements mono-site, c'est pas comparable",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner des références avec une complexité comparable et expliquer comment la solution gère le multi-sites et l'harmonisation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "8% d'économies vous dites... Oui enfin ça c'est toujours ce que vous promettez vous les commerciaux. Concrètement je vois jamais ces chiffres dans la vraie vie",
+        "sous_texte": "J'ai été trop souvent déçue par des promesses non tenues. Je ne crois plus aux ROI miracles. Prouvez-moi que c'est réaliste et documenté",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Donner un ROI ultra-documenté avec des cas clients vérifiables, proposer qu'elle appelle les références pour confirmer les chiffres"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et votre support client il est comment? Parce que là j'ai un fournisseur, quand on les appelle c'est 48h de délai minimum. Mes équipes deviennent folles",
+        "sous_texte": "C'est un vrai point de douleur actuel. Le support post-vente est critique pour moi. Si vous êtes vagues sur ce point, vous perdez des points",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler le support de manière très concrète : délais, disponibilité, interlocuteurs dédiés, SLA, témoignages clients sur ce point"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui je vois... Écoutez c'est intéressant mais là franchement j'ai trois contrats majeurs à renégocier d'ici fin de mois, je peux pas rajouter un nouveau projet maintenant",
+        "sous_texte": "Je suis réellement surchargée, mais c'est aussi une objection de sortie. Si vous insistez lourdement, je vais me braquer",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Respecter sa charge actuelle, proposer un timing adapté (post-renouvellements) ou montrer que la solution pourrait justement l'aider sur ces renouvellements"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le RGPD santé, l'hébergement des données de santé, tout ça c'est géré comment chez vous? Parce que nous on peut pas se permettre le moindre problème là-dessus",
+        "sous_texte": "C'est une vraie question de conformité critique. Si vous ne maîtrisez pas le sujet, c'est mort. Et je le sens quand quelqu'un improvise",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Réponse ultra-précise sur l'hébergement HDS, certifications, conformité RGPD santé. Avec références documentaires si possible"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, pourquoi pas, mais il faudra de toute façon que j'en parle à mon équipe achats et au directeur général avant de m'engager sur un rdv",
+        "sous_texte": "Je ne décide pas seule, c'est vrai, mais c'est aussi une façon de diluer ma responsabilité et de garder une porte de sortie",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la réalité du processus de décision, proposer un premier rdv exploratoire avec elle pour qu'elle ait de la matière à partager ensuite"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, de toute façon envoyez-moi votre documentation par mail, je regarderai ça tranquillement et je vous rappelle si ça m'intéresse",
+        "sous_texte": "C'est ma stratégie de sortie finale. Je ne vous rappellerai jamais. Je veux juste clore cette conversation poliment",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter d'envoyer la doc mais créer un engagement minimum (date de rappel précise, ou mini-rdv de 15min pour présenter le doc)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous d'une heure ? Vous plaisantez ? J'ai même pas le temps de déjeuner en ce moment. Maximum 20 minutes en visio, et encore...",
+        "sous_texte": "Je suis réellement surchargée et je veux limiter mon engagement temps. Mais c'est aussi un test pour voir si vous respectez mes contraintes",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le format court, proposer 20-25min de visio ultra-ciblée sur SA problématique spécifique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Très bien, mais attention hein, je vous préviens, si vous arrivez avec un PowerPoint de 40 slides de blabla marketing, je coupe après 5 minutes",
+        "sous_texte": "Je teste votre capacité à vous adapter. Et je vous préviens vraiment : j'ai déjà vécu ça et je n'hésiterai pas à mettre fin au rdv",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "S'engager sur un format adapté, orienté échanges et questions plutôt que présentation descendante"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est intéressant ce que vous me dites, vraiment, mais concrètement je préfère attendre janvier 2025 quand j'aurai bouclé mes urgences actuelles et que j'aurai de la visibilité sur mon budget. Rappelez-moi début décembre, on en reparlera",
+      "condition_declenchement": "Si le commercial n'a pas réussi à créer suffisamment d'urgence ou à démontrer que la solution pourrait justement l'aider sur ses urgences actuelles. Objection hybride sincère/tactique qui permet de clore poliment sans dire non définitivement"
+    },
+    "pattern_escalade": "Véronique utilise une escalade en 3 temps : 1) Objections réflexes rapides pour filtrer (mail, pas le temps, déjà équipé) 2) Si le commercial passe cette première barrière : objections de test sur la connaissance sectorielle et la crédibilité 3) Si la crédibilité est établie : objections sincères de fond sur timing, budget, risque, charge de travail. Elle ne passe au niveau suivant que si le commercial a géré le niveau précédent avec professionnalisme et pertinence.",
+    "piege_classique": "Le piège majeur avec Véronique est de prendre ses objections réflexes (mail, pas le temps) pour des fins de non-recevoir définitives et d'abandonner trop vite. Mais le piège inverse est tout aussi fatal : insister lourdement sans apporter de valeur différenciante après qu'elle ait manifesté plusieurs signaux de rejet sincère. Elle respecte la persévérance intelligente qui démontre une vraie compréhension sectorielle, mais déteste l'insistance commerciale agressive qui ignore ses contraintes réelles. Le commercial doit savoir lire si elle teste (voix neutre, elle écoute encore) ou si elle rejette vraiment (soupirs, ton monocorde, répond en faisant autre chose)."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur_secteur_medical_hospitalier",
+      "description": "entreprise proposant des solutions destinées aux groupes de cliniques et laboratoires pharmaceutiques"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution B2B destinée au secteur hospitalier et pharmaceutique",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "maîtriser les techniques de passage de barrage secrétaire avec élégance et professionnalisme pour accéder aux décideurs hospitaliers et décrocher des RDV qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Accès décideur hospitalier",
+    "vous_etes": "Commercial B2B spécialisé secteur santé, vous prospectez des groupes de cliniques privées en Île-de-France.",
+    "vous_vendez": "Solution pour optimiser les achats et la logistique dans les établissements de santé multisites (prix et détails à adapter selon le contexte de l'échange).",
+    "vous_appelez": "Véronique Mercier, 52 ans, Directrice Achats & Logistique du Groupe Clinique Santé Nouvelle (4 cliniques, 340 salariés, 42M€ CA). Hyper-sollicitée, méfiante, n'accepte que les commerciaux qui connaissent vraiment le secteur hospitalier.",
+    "ce_que_vous_savez": [
+      "Le groupe gère 4 cliniques en Île-de-France avec des contrats fournisseurs non harmonisés entre sites",
+      "Direction générale demande -8% sur coûts achats hors-soins d'ici fin d'année",
+      "Audit HAS prévu dans 11 mois, projet d'acquisition d'une 5ème clinique en cours",
+      "Véronique a déjà testé 2 solutions : un échec (inadapté au secteur) et une correcte (mais support catastrophique)",
+      "Elle reçoit 12-15 démarchages par semaine et filtre impitoyablement"
+    ],
+    "votre_objectif": "Passer le barrage de la secrétaire médicale et obtenir Véronique 3 minutes au téléphone pour décrocher un RDV physique.",
+    "vos_atouts": [
+      "Vous connaissez les contraintes réglementaires hospitalières (HAS, hébergement données de santé)",
+      "Vous avez des références dans des groupes de cliniques privées comparables",
+      "Vous proposez une approche par pilote sur 1 site avant déploiement généralisé",
+      "Vous maîtrisez le vocabulaire métier (CPOM, GHT, DIM, UNIHA)"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:43:34Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15369,
+    "total_time_s": 135.1
+  }
+}

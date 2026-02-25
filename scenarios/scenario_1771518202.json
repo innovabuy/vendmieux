@@ -1,0 +1,346 @@
+{
+  "id": "scenario_1771518202",
+  "description_originale": "Le directeur de concession / gérant d'une concession automobile ou équipementier local de 20-50 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : automobile]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de concession / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution pour concession automobile ou équipementier",
+      "proposition_valeur_presumee": "solution professionnelle adaptée au secteur automobile",
+      "fourchette_prix": "perçu comme élevé par le prospect, marge de négociation de 10% maximum",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "objection prix",
+        "le prospect trouve la solution trop chère"
+      ],
+      "implicites": [
+        "difficulté à défendre la valeur face au prix",
+        "risque de céder trop vite sur le prix",
+        "manque d'arguments de valorisation",
+        "besoin de techniques de négociation avancées"
+      ],
+      "probleme_racine": "les commerciaux ne savent pas défendre leur prix et valoriser leur offre face à une objection tarifaire, avec risque de sur-concession"
+    },
+    "objections_mentionnees": [
+      "prix trop élevé"
+    ],
+    "objectif_formation": "apprendre à défendre son prix, négocier avec méthode, valoriser son offre sans brader, et gérer la marge de manœuvre de manière stratégique",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur de solutions pour le secteur automobile",
+      "entreprise_description": "éditeur ou fournisseur de solutions professionnelles destinées aux concessions automobiles et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution professionnelle (logiciel, service, équipement) pour concessions automobiles ou équipementiers locaux",
+      "proposition_valeur": "solution adaptée aux besoins spécifiques du secteur automobile, permettant d'optimiser les performances de la concession",
+      "prix_indicatif": "prix perçu comme premium, avec une marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de la solution vendue",
+        "montant du prix en valeur absolue",
+        "arguments de valeur disponibles",
+        "raisons de l'intérêt initial du prospect",
+        "concurrents en présence",
+        "délai de décision"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Merlier",
+      "age": 52,
+      "poste": "Directeur de concession / Gérant associé",
+      "entreprise": {
+        "nom": "Groupe Merlier Automobiles",
+        "secteur": "Concession multimarques (Peugeot et Citroën)",
+        "taille": "32 salariés (VN, VO, Atelier, ADV)",
+        "ca_approximatif": "18M€ dont 55% VN, 28% VO, 17% après-vente"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les vendeurs de solutions 'miracles'",
+        "Sous pression constante sur les marges"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité dans un secteur sous pression",
+        "Éviter les investissements hasardeux qui ont déjà échoué",
+        "Prouver à son associé qu'il maîtrise les coûts",
+        "Moderniser sans perdre le contrôle opérationnel"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec le DMS précédent (30k€ perdus)",
+        "Que l'outil ne soit pas utilisé par les équipes terrain",
+        "Devoir justifier un surcoût face à son co-gérant plus conservateur",
+        "Perdre du temps en formation alors que l'activité est intense",
+        "Dépendance à un fournisseur qui augmente les prix ensuite"
+      ],
+      "rapport_aux_commerciaux": "Profondément sceptique. Pense que 'tous les commerciaux gonflent leurs prix de 30% pour négocier'. Apprécie la franchise brutale, déteste le jargon marketing",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe de lassitude - 'Bon alors, on va pas y passer trois heures hein, j'ai l'atelier qui déborde'",
+      "signaux_interet": [
+        "Commence à poser des questions très opérationnelles et chiffrées",
+        "Mentionne spontanément des problèmes concrets de sa concession",
+        "Dit 'Attends, répète-moi ça' quand un argument touche juste",
+        "Prend des notes manuscrites (rare chez lui)",
+        "Évoque son associé : 'Faudrait que je lui en parle'"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Ouais fin bon, c'est bien joli tout ça mais...'",
+        "Souffle bruyamment",
+        "Regarde ostensiblement son autre écran",
+        "Sort l'argument massue : 'De toute façon on a déjà un truc qui fait ça'",
+        "Ton qui devient cassant : 'C'est combien, point final ?'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...'",
+        "Utilise 'En vrai' pour introduire une vérité crue",
+        "Dit souvent 'Moi je veux bien MAIS' suivi de l'objection réelle",
+        "Ponctue de 'Voilà voilà' quand il veut conclure rapidement",
+        "Emploie 'Franchement' avant de critiquer"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes. Au-delà, il coupe et recentre brutalement sur ce qui l'intéresse. Déteste les présentations PowerPoint interminables"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Marges VN écrasées par les constructeurs (-40% vs 2019), pression énorme sur la VO et l'après-vente pour compenser. Objectifs trimestriels constructeur de plus en plus intenables. Turnover commercial (2 VN partis en 8 mois). Projet d'acquisition d'un point de vente VO en périphérie dans 18 mois",
+      "priorites_actuelles": [
+        "Améliorer la rotation du stock VO (67 jours actuellement)",
+        "Augmenter le panier moyen atelier",
+        "Réduire les coûts fixes sans toucher à la masse salariale",
+        "Digitaliser le parcours client (pression du constructeur)"
+      ],
+      "experience_avec_offre_similaire": "A déjà investi dans un DMS catastrophique il y a 3 ans (Autologik DMS, revendu après 14 mois d'utilisation chaotique). Utilise actuellement une solution basique qui fonctionne 'pas trop mal' mais manque de fonctionnalités. Sceptique sur les promesses d'intégration",
+      "fournisseur_actuel": "GarageScore (solution basic à 450€/mois, pas de lien CRM-DMS-comptabilité, saisies multiples, tableaux de bord inexistants)",
+      "budget_disponible": "A provisionné 15k€ sur le budget digitisation 2024, mais doit justifier tout dépassement auprès de son associé Gilbert (62 ans, encore plus méfiant). Peut débloquer jusqu'à 20k€ si ROI démontrable sur 18 mois maximum"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler en termes de ROI concret avec chiffres du secteur (jours de rotation VO, taux de transformation atelier)",
+        "Montrer des références de concessions similaires en taille avec témoignages vidéo courts",
+        "Proposer un pilote limité ou phase de test sur périmètre réduit",
+        "Démontrer que la formation est intégrée et rapide (max 2 jours)",
+        "Garantir contractuellement les délais d'intégration",
+        "Transparence totale sur les coûts cachés (maintenance, mises à jour, modules optionnels)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon technique incompréhensible ('IA générative', 'machine learning', 'blockchain'...)",
+        "Comparer son activité à d'autres secteurs (retail, assurance...)",
+        "Minimiser ses objections : 'Mais non c'est pas cher !'",
+        "Promettre une mise en place en 48h (signe d'amateurisme)",
+        "Refuser de donner un prix sans 'étude préalable de 3 semaines'",
+        "Critiquer frontalement son système actuel sans connaître son contexte",
+        "Insister lourdement après un 'non' : il raccroche"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai l'atelier qui déborde là, vous avez 5 minutes pas plus, allez droit au but",
+        "sous_texte": "Je suis sur-sollicité, prouve-moi immédiatement que tu ne vas pas me faire perdre mon temps comme les 10 commerciaux avant toi",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la contrainte temps, annoncer immédiatement l'objectif concret et le bénéfice chiffré, demander si c'est le bon moment ou proposer un créneau ultra-précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais bon, encore un truc digital... On en a déjà un qui fait ça hein, GarageScore, ça marche pas trop mal",
+        "sous_texte": "Je cherche à te décourager d'emblée pour filtrer si tu connais vraiment mon métier et si ton offre apporte vraiment un plus",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer son outil actuel, montrer que vous connaissez GarageScore et ses limites spécifiques (pas de lien CRM-DMS, saisies multiples), proposer de comparer sur 2-3 points précis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En vrai, on a déjà testé Autologik y'a 3 ans, 30 000 balles dans le vent, personne l'utilisait, une catastrophe. Donc bon, les belles promesses...",
+        "sous_texte": "J'ai été échaudé sévèrement, je ne te fais pas confiance par défaut, tu dois me rassurer sur ce risque précis avant qu'on aille plus loin",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître explicitement cette mauvaise expérience, comprendre ce qui a foiré (adoption utilisateur, formation, support ?), montrer ce que VOUS faites différemment avec preuves concrètes (taux d'adoption clients, accompagnement, phase pilote)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi je veux bien MAIS mes équipes, surtout l'atelier, faut pas les emmerder avec des trucs compliqués, ils ont déjà du mal avec le DMS actuel",
+        "sous_texte": "Je protège mes équipes et je sais que si elles n'adhèrent pas, l'investissement sera perdu. Rassure-moi sur la simplicité et l'accompagnement au changement",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Parler adoption terrain, montrer la simplicité interface (démo 30sec sur mobile), expliquer la formation courte et intégrée, donner exemple d'atelier réfractaire qui utilise maintenant quotidiennement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis franchement, les intégrations avec les systèmes constructeur Peugeot et Citroën, à chaque fois c'est la galère, ça fonctionne jamais du premier coup",
+        "sous_texte": "J'ai peur du chantier technique, des incompatibilités, des semaines de mise en route qui paralysent l'activité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer l'expérience spécifique avec PSA (combien de concessions Peugeot/Citroën équipées), délais réalistes d'intégration garantis contractuellement, avoir le nom d'une concession PSA référence à appeler"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais fin bon, c'est bien joli tout ça, mais au final c'est encore un truc de plus à gérer, un abonnement de plus à payer tous les mois",
+        "sous_texte": "Je suis fatigué de l'inflation des coûts fixes, je ne vois pas encore clairement le retour sur investissement pour justifier une dépense supplémentaire",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Sortir de la logique coût pour aller vers ROI chiffré : combien ça rapporte en rotation VO (67j actuellement), en panier atelier, en réduction saisies multiples. Comparer au coût de l'inefficacité actuelle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends, votre truc il fait vraiment le lien automatique entre le CRM et la compta ? Parce que là on saisit trois fois les mêmes infos, c'est un enfer",
+        "sous_texte": "Tu viens de toucher un point douloureux majeur, si tu as vraiment la solution à ce problème concret, je suis très intéressé",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Confirmer avec démo concrète ou capture d'écran du flux, montrer un exemple de saisie unique propagée automatiquement, chiffrer le temps gagné par mois (en heures ADV)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà voilà, mais bon, faudrait que j'en parle à Gilbert, mon associé, et lui il est encore plus dur à convaincre que moi sur ces trucs-là",
+        "sous_texte": "Je ne suis pas décideur seul, j'ai besoin de munitions pour convaincre mon associé conservateur, donne-moi des arguments béton",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer d'inclure Gilbert dans un point de 20min, préparer un document de synthèse ROI pour associés, donner les 3 arguments financiers imparables, proposer témoignage d'un autre duo de co-gérants"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je comprends l'intérêt, mais là franchement votre prix il est trop élevé. Moi j'avais provisionné 15 000, vous m'annoncez 22 000, c'est pas possible",
+        "sous_texte": "Je teste ta capacité à défendre ton prix et je vérifie s'il y a vraiment une marge de négociation. Je m'attends à ce que tu descendes, mais je veux que tu justifies d'abord chaque euro",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder immédiatement, décomposer la valeur des 22k€ en bénéfices chiffrés (économie temps, gain rotation VO, augmentation panier atelier = ROI 18 mois), proposer étalement ou suppression module non critique, négocier sur autre chose que le prix pur"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon, je sais très bien que vous gonflez tous vos prix de 30% pour pouvoir négocier après. Donnez-moi votre dernier prix, le VRAI prix, et on arrête de tourner autour du pot",
+        "sous_texte": "Je suis méfiant par expérience, je pense que tu me manipules, je veux du franc-parler et la certitude que je n'ai pas le prix pigeon",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Jouer la transparence totale : expliquer votre grille tarifaire publique, montrer que la marge de manœuvre existe mais limitée (10%), proposer de comparer avec 2 devis concurrents pour prouver votre positionnement, transformer en question de valeur pas de prix"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis les coûts cachés, parce qu'il y en a toujours hein : les mises à jour, la maintenance, les modules supplémentaires, la formation complémentaire... Ça va me coûter combien de plus au final ?",
+        "sous_texte": "J'ai peur de l'effet iceberg : le prix annoncé n'est que la partie visible, je veux une transparence absolue sur tous les coûts sur 3 ans",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence absolue avec tableau coût total 3 ans (TCO), détailler ce qui est inclus/exclu, garantir contractuellement les coûts, comparer au coût caché de son système actuel (temps perdu, erreurs, opportunités ratées)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi je veux bien, mais là faut que je réfléchisse, c'est quand même un gros morceau. Je vous rappelle la semaine prochaine",
+        "sous_texte": "Je suis intéressé mais pas encore convaincu à 100%, ou j'ai besoin de temps pour convaincre mon associé, ou je veux comparer avec un concurrent, ou je cherche à te mettre en position d'attente pour négocier",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Identifier la vraie raison du délai (doute restant ? validation associé ? comparaison concurrent ?), proposer un prochain point précis avec date/heure/objectif, créer une deadline légitime (tarif, planning, stock limité), laisser un élément à creuser d'ici là"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, j'ai eu AutoPlus Solutions au téléphone hier, eux ils me font la même chose à 17 500, donc bon... Pourquoi je paierais 4 500 de plus chez vous ?",
+        "sous_texte": "Je teste ta réaction face au concurrent, je veux comprendre la différence de valeur, et je veux que tu descendes ton prix en voyant que j'ai une alternative crédible",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne jamais dénigrer le concurrent, poser des questions précises sur leur offre (périmètre fonctionnel, support, intégrations PSA, références concessions), faire une comparaison factuelle sur 5-6 critères différenciants, défendre sa valeur sans baisser le prix"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me parlez de ROI 18 mois, mais en vrai, moi j'ai besoin que ça soit rentable en 6 mois maximum, sinon c'est mort",
+        "sous_texte": "Je suis sous pression financière, je teste la solidité de tes calculs, et je cherche peut-être à te pousser à améliorer l'offre ou à accélérer les gains",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Comprendre pourquoi 6 mois (contrainte associé ? budget serré ?), décomposer les gains : quick wins à 3 mois (temps ADV) vs gains structurels 12-18 mois (rotation VO), proposer un pilote court avec résultats mesurables, ou ajuster le périmètre pour des gains plus rapides"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, j'ai pas le temps de former mes équipes pendant 2 semaines, on a 40 livraisons VN ce mois-ci, c'est la folie",
+        "sous_texte": "La mise en œuvre me fait peur par rapport à l'activité quotidienne, je ne veux pas que ça perturbe les opérations, rassure-moi sur la durée et l'organisation de la formation",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Préciser le format formation réel (2 demi-journées par profil, pas 2 semaines), proposer calendrier adapté (hors période de rush), formation sur site en situation réelle, accompagnement 30j post-démarrage inclus"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est intéressant, vraiment, mais 22 000 euros c'est 22 000 euros. Si vous ne pouvez pas descendre à 18 000, on va en rester là. J'ai d'autres priorités et j'ai un budget à tenir. Vous faites un effort ou pas ?",
+      "condition_declenchement": "Moment de closing après argumentation complète, quand le prospect a compris la valeur MAIS bute sur le prix exact. Ton ferme mais pas agressif, regard direct (au téléphone : silence après la question). Teste la capacité ultime à défendre le prix et la marge de négociation réelle"
+    },
+    "pattern_escalade": "Christophe commence par des objections-réflexes de protection (temps, déjà équipé). Si le commercial résiste et montre qu'il connaît le secteur, il passe à des objections sincères révélant ses vraies peurs (échec Autologik, adoption équipes). S'il sent de la valeur, il bascule en mode tactique avec objections-tests (comparaison concurrent, négociation prix, validation associé) pour optimiser les conditions. Son pattern final : il donnera un chiffre précis en-dessous duquel il n'ira pas, forçant le commercial à choisir entre défendre son prix avec valeur ou céder",
+    "piege_classique": "Christophe donne des signaux d'intérêt sincères (prend des notes, pose questions opérationnelles, mentionne Gilbert) qui peuvent faire croire au commercial que c'est gagné. MAIS il switche brutalement en mode négociateur dur au moment du prix. Le piège : céder trop vite sur le prix en pensant 'conclure' alors qu'il respectera davantage un commercial qui défend sa valeur avec méthode. S'il obtient -20% facilement, il se dira 'je me suis fait avoir, le prix de départ était bidon' et perdra confiance même après signature"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur de solutions pour le secteur automobile",
+      "description": "éditeur ou fournisseur de solutions professionnelles destinées aux concessions automobiles et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution professionnelle (logiciel, service, équipement) pour concessions automobiles ou équipementiers locaux",
+      "proposition_valeur": "solution adaptée aux besoins spécifiques du secteur automobile, permettant d'optimiser les performances de la concession",
+      "prix": "prix perçu comme premium, avec une marge de négociation limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "apprendre à défendre son prix, négocier avec méthode, valoriser son offre sans brader, et gérer la marge de manœuvre de manière stratégique",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution digitale concession automobile",
+    "vous_etes": "Commercial chez un éditeur de solutions digitales pour concessions automobiles, spécialisé secteur auto.",
+    "vous_vendez": "Une solution complète (CRM + DMS + pilotage) pour concessions automobiles à 18 500€ HT (déploiement inclus, maintenance 390€/mois).",
+    "vous_appelez": "Christophe Merlier, 52 ans, Directeur associé du Groupe Merlier Automobiles (concession Peugeot-Citroën, 32 personnes, 18M€ CA). Pragmatique, méfiant, sous pression marges. Parle cash, déteste le baratin.",
+    "ce_que_vous_savez": [
+      "Il a provisionné 15k€ budget digitisation 2024, peut monter à 20k€ si ROI prouvé",
+      "Utilise GarageScore (450€/mois) qui fonctionne 'pas trop mal' mais sans intégration",
+      "Échec cuisant avec Autologik DMS il y a 3 ans (30k€ perdus, revendu après 14 mois)",
+      "Priorité : améliorer rotation stock VO (67j actuellement) + panier moyen atelier",
+      "Doit justifier tout dépassement face à son associé Gilbert, très conservateur"
+    ],
+    "votre_objectif": "Conclure la vente à 18 500€ (max -10% = 16 650€) en valorisant le ROI sans brader face à l'objection prix.",
+    "vos_atouts": [
+      "Intégration complète CRM-DMS-compta (économie 8h/semaine de saisies multiples)",
+      "Module VO : clients similaires ont réduit rotation de 67j à 45j en 6 mois",
+      "Formation terrain incluse : 1,5 jour sur site, équipes opérationnelles immédiatement",
+      "Garantie contractuelle : mise en place en 3 semaines ou remboursement intégral"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:23:22Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15458,
+    "total_time_s": 154.2
+  }
+}

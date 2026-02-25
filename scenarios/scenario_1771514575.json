@@ -1,0 +1,356 @@
+{
+  "id": "scenario_1771514575",
+  "description_originale": "Vous appelez une entreprise de BTP de 20-40 salariés, travaux tous corps d'état ou gros œuvre. C'est l'assistante administrative qui décroche. Vous devez passer le barrage pour parler au gérant / dirigeant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : batiment]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "BTP",
+      "taille_entreprise": "20-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant/Dirigeant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante administrative",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage/filtre"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux dirigeants d'entreprises BTP",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage de l'assistante",
+        "Assistante qui filtre et protège son patron",
+        "Accès au décideur bloqué"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel",
+        "Absence de stratégie de contournement du barrage",
+        "Probable discours commercial trop générique",
+        "Manque de préparation sur l'approche multi-interlocuteurs"
+      ],
+      "probleme_racine": "Incapacité à créer une connexion de confiance avec le filtre (assistante) et à démontrer la valeur/urgence de la conversation pour le dirigeant"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à passer le barrage secrétariat et décrocher des RDV avec les dirigeants d'entreprises BTP",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux entreprises BTP (présumé)",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE - Solution/service destiné aux gérants d'entreprises BTP tous corps d'état ou gros œuvre",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur de l'offre",
+        "Prix ou budget indicatif",
+        "Nom et positionnement de l'entreprise vendeuse",
+        "Zone géographique ciblée",
+        "Objections typiques rencontrées",
+        "Références ou cas clients"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Franck",
+      "nom": "Tessier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Tessier Maçonnerie & Fils",
+        "secteur": "BTP - Maçonnerie gros œuvre",
+        "taille": "28 salariés (dont 2 apprentis)",
+        "ca_approximatif": "2,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant par défaut envers les commerciaux",
+        "Pragmatique terre-à-terre, pas de temps à perdre",
+        "Fierté d'avoir bâti son entreprise à la sueur de son front"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise saine à son fils Kévin qui vient d'entrer dans la boîte",
+        "Ne pas se faire avoir comme en 2019 avec ce logiciel de gestion jamais livré",
+        "Garder le contrôle sur ses marges qui se tassent depuis 2 ans",
+        "Être respecté pour son expertise métier, pas traité comme un pigeon"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec des vendeurs qui ne connaissent rien au BTP",
+        "S'engager sur un truc cher qui ne servira à rien sur le terrain",
+        "Que son assistante Sylvie le dérange pour n'importe quoi alors qu'il est sur chantier",
+        "Passer pour un vieux con qui refuse la modernité devant son fils"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Considère que 90% sont des parasites qui vendent du vent. Respecte uniquement ceux qui comprennent VRAIMENT son métier et ses contraintes. A déjà raccroché au nez de 3 commerciaux ce mois-ci.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, limite agressif. 'Ouais c'est pourquoi ?' dès la première seconde. Veut savoir IMMÉDIATEMENT ce qu'on lui veut. Voix rocailleuse, accent du terroir.",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'application concrète",
+        "Mentionne un problème actuel sans qu'on lui demande",
+        "Dit 'Attends, là tu m'intéresses' et le bruit de fond chantier diminue",
+        "Demande combien ça coûte (signe qu'il calcule déjà le ROI)"
+      ],
+      "signaux_rejet": [
+        "Soupirs exaspérés audibles",
+        "'J'ai pas le temps là, je suis sur chantier'",
+        "Ton encore plus sec : 'Écoutez, envoyez un mail à Sylvie, elle verra'",
+        "Coupe la parole pour dire qu'il a déjà un fournisseur",
+        "Silence pesant pendant que vous parlez (= il fait autre chose)"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...' quand il va dire non",
+        "Dit 'Bon' en soupirant pour conclure rapidement",
+        "Utilise 'Déjà' pour recadrer : 'Déjà, moi les logiciels...'",
+        "'Vous comprenez' en fin de phrase (= explication close)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15 secondes maximum avant de couper. Zéro tolérance pour le blabla marketing. Si pas concret en 30 secondes, il raccroche."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct jusqu'à juin mais marges qui baissent à cause de l'inflation matériaux. Deux chantiers en cours, un qui prend du retard à cause d'un sous-traitant défaillant. Recherche activement 1 maçon qualifié sans succès depuis 4 mois.",
+      "priorites_actuelles": [
+        "Recruter ce putain de maçon qualifié",
+        "Rattraper le retard sur le chantier de la résidence Les Chênes",
+        "Préparer la transmission progressive à son fils",
+        "Comprendre pourquoi ses devis ne passent plus aussi bien qu'avant"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de gestion de chantier en 2019 (Batigest) jamais finalisé, arnaque à 4500€. Depuis, ultra-méfiant sur tout ce qui est digital. Utilise encore Excel et un tableau blanc dans le bureau.",
+      "fournisseur_actuel": "Son comptable Gérard pour la gestion, sinon tout en manuel/Excel. Pas de CRM, pas d'outil moderne. Sylvie gère les plannings sur papier.",
+      "budget_disponible": "Peut débloquer jusqu'à 8-10K€ si ROI démontré en moins d'un an, mais faudra convaincre au lance-flammes. Sous 2K€, peut décider seul rapidement s'il voit l'intérêt concret."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent local qu'il connaît et qui utilise votre solution avec succès",
+        "Parler CHIFFRES concrets : 'Ça vous fait gagner 6h par semaine sur la facturation'",
+        "Montrer qu'on comprend sa douleur spécifique (ex: 'Les clients qui payent à 90 jours pendant que vous avancez la tréso')",
+        "Approche humble : 'Je sais que vous êtes sur chantier, je prends 2 minutes max'",
+        "Faire référence à un problème BTP précis qu'il vit : retards de livraison, sous-traitants fantômes, marges qui fondent"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'J'ai une solution innovante pour transformer votre entreprise'",
+        "Demander 30 minutes de son temps sans avoir prouvé la valeur",
+        "Parler de 'digitalisation' ou 'transformation numérique' (mots bullshit pour lui)",
+        "Insister après un premier 'non'",
+        "Ne pas connaître la différence entre gros œuvre et second œuvre",
+        "Dire 'Tous vos concurrents l'ont' (il déteste qu'on le prenne pour un mouton)",
+        "Passer par des formules marketing : 'Vous méritez le meilleur', 'Solution sur-mesure'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais c'est pour quoi là ? Je suis sur chantier moi.",
+        "sous_texte": "Tu as 10 secondes pour justifier pourquoi tu me déranges, sinon je raccroche. Prouve-moi que tu ne vas pas me faire perdre mon temps.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître qu'il est occupé, annoncer un timing ultra-court (2 min max), et donner IMMÉDIATEMENT la raison concrète de l'appel avec un bénéfice chiffré."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai déjà tout ce qu'il me faut. Envoyez un mail à Sylvie si vous voulez.",
+        "sous_texte": "Je te renvoie vers mon assistante pour me débarrasser de toi poliment. C'est ma stratégie habituelle avec les commerciaux. Si tu insistes bêtement, je raccroche.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le renvoi vers Sylvie. Piquer sa curiosité avec un élément ultra-spécifique à SON entreprise ou un problème qu'il vit actuellement et que vous avez identifié."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Déjà, moi les commerciaux qui appellent comme ça... *soupir* Vous vendez quoi exactement ?",
+        "sous_texte": "Je suis déjà agacé mais tu as réussi à garder mon attention 5 secondes de plus. Maintenant prouve-moi que tu n'es pas comme les autres parasites. Ton pitch a intérêt à être béton.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Éviter absolument le pitch corporate. Parler en langage BTP, mentionner un problème concret (tréso, marges, retards) et comment vous y répondez en 15 secondes max."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai pas le temps de répondre à un interrogatoire là. Allez droit au but, qu'est-ce que vous voulez ?",
+        "sous_texte": "Tes questions de découverte m'emmerdent. Je sens le process commercial à plein nez. Si tu ne me dis pas rapidement ce que tu vends et en quoi ça m'aide, je coupe.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Abandonner temporairement les questions classiques. Faire une micro-présentation ultra-concrète (30 sec) puis poser UNE question stratégique liée à sa douleur probable."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Des problèmes ? Moi j'ai pas de problèmes, mon entreprise tourne très bien vous comprenez.",
+        "sous_texte": "Fierté de chef d'entreprise qui a bâti sa boîte. Je ne vais pas avouer mes faiblesses à un inconnu au téléphone. Mais si tu creuses intelligemment, j'ai plein de merdes en réalité.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Valider sa réussite puis parler des défis NORMAUX que rencontrent même les meilleures boîtes BTP (inflation matériaux, marges, délais). Créer un espace sécurisé pour qu'il s'ouvre."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous connaissez quelque chose au BTP vous ? Parce que moi j'en ai marre des vendeurs qui débarquent sans rien connaître à mon métier.",
+        "sous_texte": "TEST MAJEUR : tu ferais mieux de prouver que tu comprends mon secteur, sinon je te catégorise dans les 90% de commerciaux incompétents et je raccroche. C'est maintenant que tu gagnes ou perds ma confiance.",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Prouver immédiatement votre connaissance du secteur avec des références précises : vocabulaire métier, problématiques actuelles (pénurie maçons, inflation, délais fournisseurs), ou clients similaires sans bluffer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin bon, moi je fais tout sur Excel et ça marche très bien depuis 20 ans hein. Pourquoi je changerais ?",
+        "sous_texte": "Je suis dans ma zone de confort. Changer = risque, effort, formation. J'ai peur de la complexité et du temps perdu. Prouve-moi que ça vaut vraiment le coup de bouger mes habitudes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider qu'Excel a bien fonctionné, puis montrer ce que ça lui COÛTE aujourd'hui (temps, erreurs, opportunités manquées) avec des chiffres. Parler de simplification, pas de révolution."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, ça a l'air bien votre truc mais là j'ai vraiment pas le temps. Rappelez-moi dans 3 mois.",
+        "sous_texte": "Ton offre m'intéresse peut-être un peu, mais pas assez pour que je bouge maintenant. Je te renvoie aux calendes grecques poliment. Dans 3 mois je ne me souviendrai même plus de toi.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer l'urgence avec un coût d'opportunité chiffré : 'Dans 3 mois, ça vous coûtera X€ de plus en temps perdu'. Proposer un micro-engagement (5 min la semaine prochaine) plutôt qu'un RDV complet."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça coûte combien votre machin ? Parce que moi je me suis déjà fait avoir avec Batigest en 2019, 4500 balles pour rien.",
+        "sous_texte": "J'ai été échaudé. Je suis méfiant sur le prix ET sur la livraison réelle. Si tu esquives le prix, je te range dans la case arnaqueur. Si c'est trop cher sans ROI clair, je dis non immédiatement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître sa mauvaise expérience, compatir. Donner une fourchette de prix AVEC le ROI démontré. Expliquer comment vous garantissez la livraison/accompagnement (contrairement à Batigest)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... J'ai déjà Gérard mon comptable qui gère tout ça. Pourquoi j'aurais besoin de vous ?",
+        "sous_texte": "J'ai déjà une solution en place avec quelqu'un de confiance. Prouve-moi que tu apportes quelque chose que Gérard ne fait pas, sans dénigrer Gérard sinon tu attaques ma relation de confiance.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Positionner votre offre en COMPLÉMENT de Gérard, pas en remplacement. Montrer ce que Gérard ne peut pas faire (ex: suivi temps réel chantier) et comment ça facilitera même SON travail."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tous mes concurrents l'ont ? Ah bon ? Parce que moi je connais Dupont Maçonnerie et Martin TP, ils font tout à l'ancienne comme moi.",
+        "sous_texte": "Tu bluffes. Je connais mon marché local. Si tu mens ou exagères, je te grille et je ne te fais plus confiance du tout. Fais gaffe à ce que tu avances comme argument.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne JAMAIS bluffer. Soit citer des références vérifiables, soit reformuler : 'Pas tous, mais des maçons gros œuvre comme Lopez à X qui ont le même profil que vous'. Rester factuel."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... faut que je réfléchisse. Je vais en parler avec mon fils Kévin et je vous rappelle.",
+        "sous_texte": "Je suis tenté mais j'ai besoin de valider avec quelqu'un de confiance (mon fils). C'est pas un faux barrage, c'est sincère. Mais si tu me laisses partir sans rien fixer, je vais oublier ou procrastiner.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider qu'impliquer Kévin est une excellente idée (transmission). Proposer un RDV à 3 dans les 48h pour leur présenter ensemble, sinon fixer date de rappel PRÉCISE avec raison."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi une doc par mail, je regarde ça tranquillement et on s'appelle.",
+        "sous_texte": "Je veux me débarrasser de toi poliment. Statistiquement, si je te dis ça, l'affaire est morte. Je ne lirai probablement jamais ton mail. C'est mon 'non' poli.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Résister. 'Franck, soyons francs : si je vous envoie une doc, vous la lirez vraiment ou c'est pour que je vous lâche ? Bloquons 10 min jeudi, ce sera plus efficace.' Ton cash mais respectueux."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, là vraiment je dois y aller, le chef de chantier m'appelle. On verra ça plus tard.",
+        "sous_texte": "Peut-être sincère (vraiment un imprévu), peut-être tactique (excuse pour fuir). Dans tous les cas, si tu ne fixes rien de concret maintenant, tu as perdu.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Lâcher immédiatement : 'Je comprends, allez-y.' PUIS envoyer SMS dans l'heure : 'Franck, voici 3 créneaux cette semaine : Mardi 17h, Mercredi 8h, Jeudi 18h. Lequel marche ?' Garder la main."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous ? Putain, faut venir à l'agence alors... C'est où votre bureau ? Parce que moi me déplacer pour rien...",
+        "sous_texte": "Je suis intéressé mais la logistique me freine. Je veux pas perdre 2h de route pour rien. J'ai besoin d'être rassuré sur la valeur du RDV et idéalement que ça soit pratique pour moi.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer de venir VOUS chez lui (à son agence/chantier), à l'heure qui l'arrange. Préciser durée courte (30 min) et l'objectif concret du RDV. Retirer toutes les frictions."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, là tu m'intéresses... Mais bon, faut pas me prendre pour un pigeon non plus. Comment je suis sûr que ça marche vraiment votre truc ?",
+        "sous_texte": "SIGNAL D'ACHAT. Je suis proche de dire oui mais j'ai besoin d'une dernière preuve sociale, d'une garantie, d'un témoignage. C'est le moment de sortir vos munitions de réassurance.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Preuves sociales immédiates : témoignage vidéo d'un maçon similaire, visite d'un client à proximité, période d'essai/garantie satisfait ou remboursé. Puis closer directement sur le RDV."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, c'est bien tout ça mais... Comment je dis à Sylvie qu'on change de système alors qu'elle maîtrise son truc depuis 15 ans ? Elle va me faire la gueule pendant 6 mois.",
+      "condition_declenchement": "Apparaît seulement si Franck est VRAIMENT convaincu par l'offre. C'est la dernière résistance avant de signer : la peur du changement organisationnel et de décevoir/perdre son assistante fidèle. Objection de confort, pas de fond."
+    },
+    "pattern_escalade": "Franck commence froid/agressif (test de résistance). Si vous tenez bon avec des arguments concrets BTP, il devient moins hostile mais plus exigeant sur les preuves. À 70% de conviction, il sort l'objection prix/ROI. À 85%, il cherche la validation sociale (références). À 95%, objection finale sur l'implémentation/équipe. Il NE DIRA JAMAIS 'Vous m'avez convaincu' - son OUI ressemble à 'Bon, allez, on peut se voir jeudi 17h, mais je promets rien hein'.",
+    "piege_classique": "Franck teste votre légitimité BTP dans les 30 premières secondes avec une objection brutale ('Vous connaissez quoi au gros œuvre ?'). Si vous vous justifiez nerveusement ou bottez en touche, il vous range dans la case 'commercial bullshit' et devient injoignable. La parade : assumez votre positionnement avec des FAITS (références précises BTP, vocabulaire métier, compréhension de SES problèmes) sans survendre. Autre piège : il mentionne Sylvie pour vous éjecter - si vous acceptez le renvoi, vous avez perdu, car Sylvie a pour consigne de filtrer TOUT. Il faut maintenir le contact avec Franck coûte que coûte avec une accroche ultra-pertinente."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux entreprises BTP (présumé)",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE - Solution/service destiné aux gérants d'entreprises BTP tous corps d'état ou gros œuvre",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Apprendre à passer le barrage secrétariat et décrocher des RDV avec les dirigeants d'entreprises BTP",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Gérant BTP méfiant",
+    "vous_etes": "Commercial pour une solution destinée aux entreprises de maçonnerie et gros œuvre",
+    "vous_vendez": "Une solution pour les artisans BTP (nature et prix à définir selon votre approche)",
+    "vous_appelez": "Franck Tessier, 52 ans, gérant de Tessier Maçonnerie & Fils (28 salariés, 2,8M€ CA) — Pragmatique, ultra-méfiant envers les commerciaux depuis une arnaque à 4500€ en 2019, protégé par son assistante Sylvie",
+    "ce_que_vous_savez": [
+      "Il est souvent sur chantier, joignable mais pressé",
+      "Son assistante Sylvie filtre TOUS ses appels commerciaux",
+      "Il gère encore tout sur Excel et papier, pas d'outils digitaux",
+      "Ses marges baissent depuis 2 ans, il cherche un maçon depuis 4 mois sans succès",
+      "Il prépare la transmission à son fils Kévin qui vient d'arriver dans l'entreprise"
+    ],
+    "votre_objectif": "Passer le barrage de Sylvie ET convaincre Franck de vous accorder 15 minutes pour un RDV physique",
+    "vos_atouts": [
+      "Vous comprenez les contraintes terrain du BTP (marges, trésorerie, retards chantiers)",
+      "Vous parlez en temps gagné et en euros, pas en jargon marketing",
+      "Vous avez aidé d'autres maçons de la région (à préciser si vrai)",
+      "Vous respectez son temps : 2 minutes au téléphone maximum"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:22:55Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15563,
+    "total_time_s": 154.3
+  }
+}

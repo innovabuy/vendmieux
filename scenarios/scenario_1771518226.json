@@ -1,0 +1,353 @@
+{
+  "id": "scenario_1771518226",
+  "description_originale": "Le dirigeant / directeur technique d'une ESN ou intégrateur IT de 20-50 salariés (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : telecoms_it]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "telecoms_it",
+      "taille_entreprise": "ESN ou intégrateur IT de 20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant ou Directeur Technique",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Services IT, intégration ou télécoms (nature exacte non précisée)",
+      "proposition_valeur_presumee": "Solutions IT fiables et service de qualité pour ESN/intégrateurs",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Menace implicite de changement de fournisseur"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité ayant généré une insatisfaction majeure",
+        "Client existant mécontent qui menace de partir à la concurrence",
+        "Situation de réclamation critique"
+      ],
+      "implicites": [
+        "Défaut de gestion de la qualité en interne",
+        "Processus de suivi client probablement défaillant",
+        "Manque de formation à la gestion de crise et réclamations",
+        "Communication proactive insuffisante avec les clients existants",
+        "Absence de process d'escalade ou mal appliqué"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas la gestion de crise et la résolution de réclamations pour préserver la relation client dans des situations conflictuelles"
+    },
+    "objections_mentionnees": [
+      "Menace de départ à la concurrence",
+      "Insatisfaction sur la qualité/livraison/service"
+    ],
+    "objectif_formation": "Former les commerciaux à désamorcer les situations de crise, gérer les réclamations clients, trouver des solutions satisfaisantes et préserver la relation commerciale avec des clients mécontents",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "telecoms_it",
+      "entreprise_description": "Fournisseur de services IT, télécoms ou solutions d'intégration pour ESN et intégrateurs",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Services IT, solutions télécoms ou prestations d'intégration destinés aux ESN et intégrateurs de taille moyenne",
+      "proposition_valeur": "Partenaire fiable pour les besoins IT et télécoms des ESN/intégrateurs",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du problème de livraison/service/qualité",
+        "Historique de la relation commerciale",
+        "Détails de l'offre vendue",
+        "Valeur du contrat en jeu",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Karim",
+      "nom": "Belhadj",
+      "age": 42,
+      "poste": "Directeur Technique et Associé",
+      "entreprise": {
+        "nom": "NextLink Solutions",
+        "secteur": "ESN spécialisée infrastructure et cybersécurité",
+        "taille": "32 collaborateurs",
+        "ca_approximatif": "3,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Exigeant et perfectionniste sur la technique",
+        "Loyal mais cassant quand on le déçoit",
+        "Protecteur envers ses équipes"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation technique de sa boîte qu'il a construite sur 8 ans",
+        "Ne jamais décevoir ses propres clients finaux (son obsession)",
+        "Prouver qu'une PME peut rivaliser avec les grands intégrateurs"
+      ],
+      "peurs_freins": [
+        "Être perçu comme un pigeon qui se fait avoir deux fois",
+        "Perdre la confiance de son associé commercial qui lui reproche déjà ce fournisseur",
+        "Que ses équipes techniques perdent du temps à rattraper les erreurs du prestataire",
+        "Paraître faible s'il ne change pas de crèmerie après un tel plantage"
+      ],
+      "rapport_aux_commerciaux": "Respecte ceux qui connaissent vraiment leur sujet technique, méprise le baratin et les promesses en l'air. A été commercial lui-même pendant 3 ans avant de bifurquer vers la technique, donc il voit venir les tchatches",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, factuel, avec une pointe d'agressivité contenue. Coupe court aux civilités : 'On va pas se mentir, je décroche parce que contractuellement je dois vous laisser une chance, mais c'est mal barré'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur le process de contrôle qualité",
+        "Demande des noms : 'Qui exactement va gérer mon compte si on continue ?'",
+        "Évoque ses clients finaux : 'Parce que moi j'ai un RSSI du CAC40 qui attend, vous comprenez ?'",
+        "Relâche légèrement le débit, prend des notes"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles et longs",
+        "Répète 'Ouais, ouais' sur un ton désabusé",
+        "Commence ses phrases par 'Écoutez...' ou 'Franchement...'",
+        "Évoque explicitement la concurrence : 'J'ai Axians qui me relance depuis 3 mois'",
+        "Regarde ostensiblement sa montre (si visio) ou fait du bruit de clavier"
+      ],
+      "tics_langage": [
+        "'On va pas se mentir'",
+        "'Concrètement'",
+        "'Dans les faits'",
+        "Utilise 'franchement' toutes les 3 phrases quand il est agacé",
+        "Ponctue de 'voilà' en fin de phrase quand il veut clore un sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "20 secondes maximum. Coupe systématiquement après : 'Oui mais concrètement, sur MON problème, vous faites quoi ?'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 28% sur l'année, vient de décrocher deux gros contrats (ministère et banque). Sous pression pour industrialiser et sécuriser la supply chain. Son associé lui met la pression pour changer de fournisseur après l'incident",
+      "priorites_actuelles": [
+        "Finaliser le déploiement infrastructure pour le client bancaire (deadline dans 6 semaines)",
+        "Recruter 2 ingés sécu (marché tendu)",
+        "Ne SURTOUT PAS avoir un nouveau couac qui ternirait la réputation",
+        "Décider avant fin de semaine : on reste ou on change de fournisseur"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 14 mois. Les 10 premiers mois nickel, relation fluide avec l'ancien account manager (parti depuis). Puis il y a 6 semaines : livraison de matériel avec 12 jours de retard + mauvaise config sur 40% des équipements + aucun suivi proactif. A dû mobiliser 2 ingés en interne pour rattraper, soit 8K€ de coût caché. Son client final a failli pénaliser NextLink",
+      "fournisseur_actuel": "Vous (le fournisseur actuel qui a merdé)",
+      "budget_disponible": "Contrat cadre de 180K€/an, renouvelable dans 4 mois. Budget tampon de 15K€ pour changer de fournisseur si nécessaire (coûts de transition)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître frontalement l'erreur sans langue de bois : 'Vous avez raison, on a merdé'",
+        "Montrer qu'on a COMPRIS l'impact business réel (pas juste s'excuser poliment)",
+        "Proposer un plan d'action ULTRA-CONCRET avec noms, dates, process modifié",
+        "Offrir une garantie inhabituelle ou un geste commercial qui montre qu'on assume vraiment",
+        "Lui donner un accès direct (téléphone portable) à un responsable technique senior",
+        "Partager un retour d'expérience similaire où vous avez récupéré un client mécontent"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ou chercher des excuses ('Vous savez avec les fournisseurs chinois...')",
+        "Promettre sans preuves : 'Ça n'arrivera plus, vous inquiétez pas'",
+        "Faire du commercial classique : parler de vos nouveautés produits ou d'upsell",
+        "Être dans l'émotionnel : 'On travaille ensemble depuis plus d'un an quand même...'",
+        "Ne pas connaître son dossier dans le détail",
+        "Proposer une réunion de plus sans plan d'action immédiat",
+        "Parler budget ou négociation tarifaire avant d'avoir restauré la confiance technique"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, je décroche parce que contractuellement je dois vous laisser une chance, mais on va pas se mentir, c'est mal barré. J'ai Axians qui me relance depuis 3 mois.",
+        "sous_texte": "Je suis encore en colère, je veux que vous le sachiez d'entrée. Je teste votre réaction : allez-vous minimiser ou reconnaître vraiment ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaissance frontale de l'erreur sans défense, puis question ciblée sur l'impact réel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais bah écoutez, vous m'appelez pour quoi exactement ? Pour me dire que vous êtes désolés ? Ça fait 6 semaines que j'attends des excuses concrètes.",
+        "sous_texte": "Les excuses verbales ne m'intéressent pas, j'ai besoin d'actions. Prouvez-moi que cet appel est différent.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement l'objectif : présenter un plan d'action concret, pas juste s'excuser"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez combien ça m'a coûté votre merde ? 8 000 euros. Deux ingés mobilisés pendant une semaine pour rattraper VOS erreurs. Et j'ai failli prendre des pénalités avec mon client final, un RSSI du CAC40. Vous comprenez l'impact ou pas ?",
+        "sous_texte": "Je veux voir si vous avez vraiment conscience de la gravité. C'est pas juste du matériel en retard, c'est MA réputation et MON argent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reformuler l'impact chiffré et réputationnel pour montrer qu'on a compris, puis demander s'il y a eu d'autres impacts"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, qu'est-ce qui me dit que ça va pas se reproduire ? Parce que votre ancien account manager aussi me promettait monts et merveilles, et regardez le résultat.",
+        "sous_texte": "J'ai perdu confiance dans vos promesses. Les mots ne suffisent plus, il me faut des preuves systémiques que vous avez changé.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler le process modifié avec noms précis, points de contrôle, et proposer une garantie inhabituelle"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais, ouais... Dans les faits, votre account manager il est où maintenant ? Parti. Et moi je me retrouve avec personne en face. C'est ça aussi le problème.",
+        "sous_texte": "La relation commerciale a été rompue par votre turnover. Je ne connais pas mon nouvel interlocuteur et ça ajoute à mon insécurité.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Présenter précisément qui sera son contact (nom, expérience, numéro direct) et proposer une mise en relation immédiate"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon associé, lui, il me dit que je suis un pigeon si je vous laisse une deuxième chance. Qu'on aurait déjà dû vous virer. Et franchement, sur le principe, il a pas tort.",
+        "sous_texte": "Il y a une pression interne forte. Je dois justifier ma décision auprès d'un autre décideur sceptique. Donnez-moi des arguments solides.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la légitimité de son associé, puis fournir des éléments factuels et mesurables pour justifier une seconde chance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, sur MON problème, vous faites quoi ? Parce que là vous me parlez process, amélioration continue, tout ça... Moi j'ai un déploiement dans 6 semaines pour une banque.",
+        "sous_texte": "Arrêtez le discours corporate, j'ai besoin de solutions concrètes pour MES échéances immédiates. Montrez-moi que vous connaissez mon dossier.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ancrer la réponse sur son projet bancaire précis avec timeline et actions spécifiques à ce dossier"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, pourquoi je prendrais ce risque ? Axians ou Computacenter, eux au moins j'ai des retours terrain de confrères qui sont satisfaits. Vous, vous m'avez déçu.",
+        "sous_texte": "Le biais du statu quo inversé : rester avec vous est maintenant perçu comme plus risqué que changer. Prouvez-moi le contraire.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Partager un cas similaire où vous avez récupéré un client après erreur, avec preuve et contact référent possible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Votre plan d'action il est bien joli sur le papier. Mais qui me dit que dans 2 mois, quand vous aurez signé le renouvellement, ça retombe pas dans vos travers ?",
+        "sous_texte": "Je crains l'effet d'annonce. Une fois le contrat signé, vous allez relâcher l'attention. J'ai besoin de garanties durables.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer des jalons de contrôle qualité contractualisés sur 6 mois avec clause de sortie facilitée si non-respect"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vous me parlez du responsable technique senior qui va me suivre. OK. Mais c'est qui ? Parce que moi j'ai besoin de savoir avec QUI je vais bosser concrètement.",
+        "sous_texte": "Les promesses abstraites ne me rassurent pas. Je veux des noms, des visages, des contacts directs. C'est une condition sine qua non.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner immédiatement le nom, prénom, parcours et mobile direct de la personne + proposer un appel de présentation dans les 48h"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais le problème c'est pas QUE la livraison en retard. C'est aussi que 40% de votre matos était mal configuré. Ça veut dire quoi sur votre contrôle qualité en sortie d'usine ?",
+        "sous_texte": "Je suis technique, je vais au fond des choses. Le retard peut arriver, mais l'erreur de config révèle un problème de process profond.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Expliquer précisément ce qui a merdé dans le process (cause racine technique), ce qui a été modifié et comment c'est testé maintenant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans les faits, même si VOUS vous améliorez, vous dépendez de fournisseurs chinois ou taïwanais. Comment vous contrôlez ça ? Parce que c'est pas vous qui fabriquez.",
+        "sous_texte": "Je creuse pour voir si vous maîtrisez vraiment votre chaîne de valeur ou si vous êtes juste un revendeur qui subit. Montrez-moi votre expertise.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler les contrôles multi-niveaux, certifications fournisseurs et audits qualité que vous menez + avoir un plan B fournisseurs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... Voilà. J'entends ce que vous me dites. Mais franchement je suis pas convaincu. J'ai besoin de réfléchir et d'en parler à mon associé. Je vous rappelle.",
+        "sous_texte": "Vous ne m'avez pas suffisamment rassuré OU je veux garder le contrôle de la décision. Le 'je vous rappelle' est souvent un enterrement poli.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer immédiatement une conf call à 3 avec l'associé sous 48h pour adresser ses objections spécifiques"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK mais concrètement, vous me proposez quoi comme geste commercial ? Parce que mes 8 000 euros de coût caché, ils vont pas se rembourser tout seuls.",
+        "sous_texte": "Je teste votre capacité à assumer financièrement. Mais attention : si le geste est insuffisant ou trop transactionnel, ça confirme que vous ne comprenez pas l'enjeu.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un geste adapté (ex: crédit de 8K sur prochaines commandes) MAIS le positionner comme preuve d'engagement, pas comme compensation pure"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais. Le truc c'est que si je change maintenant, certes j'ai 15K de coûts de transition, mais au moins je dors tranquille. Avec vous, je prends un pari.",
+        "sous_texte": "L'analyse coût/bénéfice penche vers le changement. Vous devez renverser l'équation : montrer que RESTER est moins risqué et plus profitable que partir.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Quantifier les bénéfices de continuité (connaissance dossier, intégration existante, réactivité) + proposer garantie satisfait ou remboursé sur 3 mois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez franchement, on verra. Mais je vous préviens : au moindre couac, au moindre retard, je zappe. Direct. C'est clair ?",
+        "sous_texte": "Je vous donne une chance, mais conditionnelle et sous très haute surveillance. C'est un oui sous tension, pas un oui de confiance retrouvée.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter cette condition explicitement et proposer un suivi hebdomadaire proactif pendant 3 mois pour reconstruire la confiance"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Non mais attendez, j'y pense... Pourquoi vous m'avez pas appelé AVANT ? Pendant 6 semaines j'ai eu PERSONNE en face. Aucun suivi proactif. Et là, pouf, vous débarquez maintenant que je vais résilier. C'est quand même gonflé non ?",
+      "condition_declenchement": "Si le commercial n'a pas abordé de lui-même la question du manque de suivi post-incident dans les premières minutes. Karim sort cette carte maîtresse pour tester la sincérité."
+    },
+    "pattern_escalade": "Karim commence avec une agressivité contenue et factuelle (objections 1-2). Si le commercial tient bon et répond précisément, il passe en mode 'technicien exigeant qui creuse' (objections 7-12) avec des questions de fond sur les process. Si le commercial réussit ce niveau, il bascule en mode 'décideur qui calcule' (objections 13-16) en évaluant le ratio risque/bénéfice. Tout retour en arrière vers du discours commercial ou des promesses vagues le fait revenir instantanément au mode agressif.",
+    "piege_classique": "Karim peut sembler s'adoucir au milieu de l'entretien ('Bon, OK, j'entends ce que vous dites...') pour voir si le commercial se relâche et retombe dans un pitch produit ou une négociation tarifaire prématurée. C'est un test : celui qui mord à l'hameçon et quitte le terrain de la reconstruction de confiance perd immédiatement. L'autre piège majeur : il attend que le commercial évoque spontanément le manque de suivi post-crise. Si le commercial ne le fait pas, il sort l'objection finale qui tue."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "telecoms_it",
+      "description": "Fournisseur de services IT, télécoms ou solutions d'intégration pour ESN et intégrateurs"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Services IT, solutions télécoms ou prestations d'intégration destinés aux ESN et intégrateurs de taille moyenne",
+      "proposition_valeur": "Partenaire fiable pour les besoins IT et télécoms des ESN/intégrateurs",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Former les commerciaux à désamorcer les situations de crise, gérer les réclamations clients, trouver des solutions satisfaisantes et préserver la relation commerciale avec des clients mécontents",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client mécontent — Récupération relation après incident livraison",
+    "vous_etes": "Account Manager chez un fournisseur IT/télécoms qui équipe des ESN et intégrateurs",
+    "vous_vendez": "Services IT et fourniture d'équipements télécoms (contrat cadre 180K€/an en cours, renouvellement dans 4 mois)",
+    "vous_appelez": "Karim Belhadj, 42 ans, Directeur Technique et Associé chez NextLink Solutions (ESN 32 personnes, spécialisée infra et cybersécurité). Ancien commercial devenu technique, exigeant, direct, cassant quand on le déçoit. Protecteur envers ses équipes et obsédé par sa réputation.",
+    "ce_que_vous_savez": [
+      "Client depuis 14 mois, relation fluide jusqu'à il y a 6 semaines",
+      "Incident majeur : livraison avec 12 jours de retard + 40% du matériel mal configuré + aucun suivi proactif de votre part",
+      "NextLink a dû mobiliser 2 ingénieurs en interne pour rattraper (8K€ de coût caché) et a failli être pénalisée par son propre client final",
+      "Son associé lui met la pression pour changer de fournisseur. Axians les relance depuis 3 mois",
+      "Il décroche uniquement par obligation contractuelle. Décision finale avant fin de semaine"
+    ],
+    "votre_objectif": "Désamorcer la crise, restaurer la confiance en reconnaissant frontalement l'erreur et en proposant un plan d'action concret avec garanties, pour éviter la rupture du contrat",
+    "vos_atouts": [
+      "Vous connaissez son dossier dans le détail et l'impact réel de l'incident",
+      "Vous avez préparé un plan d'action précis avec noms, process modifiés et garanties inhabituelles",
+      "Vous pouvez lui donner un accès direct à un responsable technique senior",
+      "Vous avez déjà récupéré des situations similaires avec d'autres clients"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:23:46Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15352,
+    "total_time_s": 144.2
+  }
+}

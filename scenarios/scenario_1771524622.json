@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771524622",
+  "description_originale": "Le directeur de l'agence / fondateur d'une agence de communication ou marketing de 10-25 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : communication_marketing]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (non détaillé)",
+      "proposition_valeur_presumee": "valeur ajoutée par rapport à l'offre actuelle, optimisation ou extension des bénéfices déjà connus",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "éviter que le client reste sur son offre actuelle par confort",
+        "justifier un investissement supplémentaire auprès d'un client déjà satisfait",
+        "identifier un besoin latent ou une opportunité non exploitée"
+      ],
+      "probleme_racine": "difficulté à créer un nouveau besoin perçu chez un client satisfait de l'existant"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "entraîner les commerciaux à l'upselling et cross-selling sur une base installée satisfaite, en valorisant l'évolution et la complémentarité de l'offre",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour agences de communication/marketing",
+      "entreprise_description": "fournisseur de services ou solutions destinés aux agences de communication et marketing, relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou montée en gamme par rapport à l'offre actuelle du client",
+      "proposition_valeur": "extension ou amélioration des bénéfices déjà obtenus, optimisation des résultats, accompagnement dans la croissance ou la transformation de l'agence",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de confiance)"
+      ],
+      "avantages_vs_concurrence": "connaissance profonde du client et de ses besoins, historique positif, continuité relationnelle",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature précise du service complémentaire ou montée en gamme",
+        "fourchette de prix",
+        "besoins spécifiques ou pain points identifiés chez le client",
+        "objections anticipées liées à l'upsell"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 42,
+      "poste": "Directeur associé & Fondateur",
+      "entreprise": {
+        "nom": "Prisme & Cie",
+        "secteur": "Agence de communication 360° (print, digital, événementiel)",
+        "taille": "18 salariés",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique orienté ROI immédiat",
+        "Méfiant vis-à-vis des discours commerciaux trop rodés",
+        "Fidèle aux partenaires qui ont fait leurs preuves"
+      ],
+      "motivations_profondes": [
+        "Protéger sa rentabilité durement acquise après 8 ans d'existence",
+        "Éviter les fausses promesses qui l'ont déçu par le passé",
+        "Garder le contrôle sur chaque euro dépensé",
+        "Prouver que sa structure peut rivaliser avec les plus grosses agences parisiennes"
+      ],
+      "peurs_freins": [
+        "Dépenser pour quelque chose qui fait doublon avec l'existant",
+        "Se faire 'enfumer' par un commercial qui veut juste son chiffre",
+        "Déstabiliser une organisation qui fonctionne déjà bien",
+        "Perdre du temps en réunions inutiles alors qu'il croule sous les dossiers clients"
+      ],
+      "rapport_aux_commerciaux": "Cordial mais toujours sur ses gardes. A développé un radar pour détecter la langue de bois. Apprécie la franchise brutale et les chiffres concrets. Déteste qu'on lui vende du rêve sans substance.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sympa mais pressé : 'Écoute, j'ai 15 minutes entre deux conf calls, vas-y direct'",
+      "signaux_interet": [
+        "Commence à poser des questions sur les chiffres et le pricing",
+        "Mentionne spontanément un problème actuel dans son agence",
+        "Dit 'attends, note ça' et prend lui-même des notes",
+        "Évoque d'autres décideurs : 'Faudrait que j'en parle à Céline notre DAF'"
+      ],
+      "signaux_rejet": [
+        "Ton qui devient monocorde, répond par monosyllabes",
+        "Coupe la parole avec 'Ouais ouais je vois le principe'",
+        "Regarde ostensiblement ses mails pendant que vous parlez",
+        "Sort la phrase fatale : 'Franchement on est très bien comme ça pour l'instant'",
+        "Commence ses phrases par 'Le truc c'est que...' pour justifier pourquoi ça ne l'intéresse pas"
+      ],
+      "tics_langage": [
+        "Utilise beaucoup 'En vrai', 'Concrètement', 'Dans les faits'",
+        "Ponctue de 'Tu vois' et 'Écoute' en début de phrase",
+        "Emploie du jargon métier pour tester si vous connaissez son univers",
+        "Dit 'Après bon' quand il est sceptique"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : 45 secondes max avant qu'il vous interrompe. Préfère les échanges ping-pong. Si vous parlez plus de 2 minutes sans lui laisser la parole, il décroche mentalement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+12% CA sur 2024) mais marges sous pression. Vient de recruter 2 juniors qu'il faut rentabiliser. Hésite à investir dans de nouveaux outils car déjà équipé et craint la complexité.",
+      "priorites_actuelles": [
+        "Fidéliser ses 3 gros comptes qui représentent 60% du CA",
+        "Améliorer la productivité de l'équipe sans recruter",
+        "Se différencier face aux freelances low-cost",
+        "Dégager 30 minutes par jour pour être moins dans l'opérationnel"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 1 an de votre offre de base. Plutôt content mais n'a jamais vraiment exploité toutes les fonctionnalités. Se dit parfois qu'il paie peut-être pour rien.",
+      "fournisseur_actuel": "Vous (offre starter), plus 4-5 autres outils SaaS qu'il trouve déjà trop nombreux",
+      "budget_disponible": "Réticent à dépasser 500€/mois supplémentaires sauf ROI démontré en 6 mois max. Attend fin T1 pour arbitrer tout nouvel investissement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Lui montrer comment 2-3 agences similaires ont gagné du temps facturable grâce à cette évolution",
+        "Chiffrer en heures économisées plutôt qu'en fonctionnalités abstraites",
+        "Reconnaître qu'il utilise déjà bien l'offre actuelle et que ce n'est pas pour tout le monde",
+        "Proposer un test de 30 jours sans engagement ni configuration complexe",
+        "Lui dire exactement ce que ça coûte dès la 3ème minute de conversation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Lui dire que son offre actuelle est limitée ou dépassée (= critiquer son choix initial)",
+        "Utiliser des superlatifs marketing : 'révolutionnaire', 'indispensable', 'game-changer'",
+        "Esquiver la question du prix avec 'ça dépend de vos besoins'",
+        "Dénigrer ses autres outils actuels",
+        "Vouloir programmer un rdv de 1h avec démonstration complète alors qu'il a dit oui pour 15 min",
+        "Lui sortir 'tous vos confrères l'ont déjà adopté' (déteste la pression par mimétisme)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, on est déjà bien équipés là, franchement j'ai pas trop le temps pour rajouter un truc en plus",
+        "sous_texte": "Je suis satisfait de l'existant, prouve-moi rapidement que ça vaut le coup de t'écouter sinon je racccroche poliment",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rebondir sur sa satisfaction actuelle et promettre de la concision"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attends, c'est pas pour me vendre encore un nouveau machin ? On a déjà votre offre et ça nous va très bien",
+        "sous_texte": "Je crains qu'on me fasse payer plus cher pour ce que j'ai déjà, ou qu'on me complexifie la vie",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer que ce n'est pas un remplacement mais une évolution optionnelle pour des besoins spécifiques"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En vrai on utilise même pas tout ce qu'on a déjà avec vous, donc rajouter des trucs... tu vois",
+        "sous_texte": "Je culpabilise de ne pas exploiter l'existant à fond, ça me rend sceptique sur ma capacité à valoriser davantage",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer cette objection en opportunité : explorer pourquoi il n'utilise pas tout et si cette extension résout ça"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le truc c'est que là j'ai déjà genre 5 ou 6 outils SaaS différents, mes équipes en ont marre de jongler entre les plateformes",
+        "sous_texte": "Je souffre déjà de surcharge d'outils, ajouter quelque chose doit simplifier ma vie, pas la complexifier",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer comment cette extension centralise ou élimine le besoin d'un autre outil"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, ça m'apporte quoi de plus que ce que j'ai actuellement ? Parce que là je vois pas trop",
+        "sous_texte": "Tu es trop vague, donne-moi du tangible rapidement ou je décroche",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner 1 exemple chiffré ultra-concret lié à son métier d'agence"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après bon, mes trois gros comptes là, ils me demandent pas forcément ça hein, donc quel intérêt ?",
+        "sous_texte": "Je suis obsédé par mes 3 comptes clés, si ça ne les sert pas directement, je ne vois pas l'urgence",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Relier l'offre à la fidélisation ou au service premium de ces gros comptes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais ça va encore me coûter combien tout ça ? Parce que je commence à avoir pas mal d'abonnements qui s'empilent",
+        "sous_texte": "J'ai peur de l'effet cumulatif des coûts mensuels, besoin de transparence immédiate sur le prix",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner le prix exact tout de suite avec le ROI associé en heures économisées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que j'ai plus trop de budget jusqu'à fin mars, on vient de recruter deux juniors là",
+        "sous_texte": "Objection temporelle sincère mais peut-être aussi tactique pour négocier ou repousser",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un démarrage avril avec préparation gratuite, ou montrer comment ça aide à rentabiliser les juniors"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute je te connais depuis un an maintenant, là tu me sors le speech commercial classique, dans les faits ça donne quoi ?",
+        "sous_texte": "Je détecte du blabla marketing, reviens à des preuves concrètes sinon je perds confiance",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Casser le discours commercial, admettre la validité de l'objection, donner des chiffres clients similaires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tu vois, j'ai un pote qui a une agence à Lyon, il a pris un truc du genre et au final ça leur a juste compliqué la vie",
+        "sous_texte": "Je projette mes peurs à travers une anecdote vraie ou semi-vraie pour tester ta réaction",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Creuser l'histoire pour comprendre ce qui a raté et montrer en quoi votre approche diffère"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement on est très bien comme ça pour l'instant, pourquoi je changerais une équipe qui gagne ?",
+        "sous_texte": "J'ai peur du risque du changement alors que ça fonctionne, prouve-moi que je rate quelque chose",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider son succès actuel mais révéler une opportunité manquée mesurable ou un risque futur"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le truc c'est que mes équipes sont déjà à fond, rajouter un nouvel outil à prendre en main là maintenant... c'est pas le moment",
+        "sous_texex": "Je crains la charge de formation et d'adoption alors que je suis en surcharge, besoin de simplicité",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la simplicité de déploiement et proposer de gérer vous-même l'onboarding"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Faut que j'en parle à Céline notre DAF de toute façon, et elle est pas là avant jeudi prochain",
+        "sous_texte": "Parade classique pour gagner du temps - peut être sincère ou tactique selon le contexte",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider le besoin d'alignement mais obtenir un engagement conditionnel de sa part d'abord"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, envoie-moi tout ça par mail, je regarde tranquillement et je te dis",
+        "sous_texte": "Je veux me débarrasser poliment de toi sans dire non frontalement - risque élevé de ghosting",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais cadrer avec une date de rappel précise et un élément de réflexion concret"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, là tu me parles de 650 balles par mois en plus, faut quand même que je réfléchisse, c'est pas rien",
+        "sous_texte": "Le prix final me fait hésiter maintenant que c'est concret, besoin de réassurance sur la valeur",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Recadrer en coût horaire ou ROI mensuel, proposer un palier intermédiaire ou une période d'essai"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "En vrai j'ai besoin de voir concrètement comment ça marche avant de signer quoi que ce soit, tu comprends",
+        "sous_texte": "Je ne fais plus confiance aux démos théoriques, besoin de toucher du doigt avant d'acheter",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un pilote de 30 jours sur un cas d'usage réel sans engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que je vois pas comment je vais mesurer le ROI de ce truc dans 6 mois, t'as des exemples précis ?",
+        "sous_texte": "Je suis pragmatique et orienté chiffres, donne-moi des KPIs tangibles pour me rassurer",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Définir ensemble 2-3 indicateurs mesurables dès maintenant pour évaluer dans 6 mois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais ouais je vois le principe, c'est bon j'ai compris, mais là j'ai vraiment un autre call qui m'attend",
+        "sous_texte": "Je suis en train de décrocher, je veux clôturer sans m'engager, signal d'ennui avancé",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter la contrainte temps, poser UNE dernière question engageante et fixer une suite précise"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Après bon, je suis content de ce qu'on a ensemble depuis un an, mais là j'ai pas envie de bousculer les choses. On en reparle dans 6 mois peut-être ?",
+      "condition_declenchement": "Si le commercial n'a pas réussi à créer un sentiment d'urgence ou d'opportunité manquée, Stéphane va poliment renvoyer aux calendes grecques en s'appuyant sur sa satisfaction actuelle"
+    },
+    "pattern_escalade": "Stéphane commence cordial mais pressé. Si le commercial reste trop vague ou marketing, il devient monosyllabique ('Ouais', 'OK', 'Je vois'). S'il sent la pression commerciale, il sort l'excuse temporelle (budget, timing, besoin d'en parler à d'autres). En dernier recours, il invoque sa satisfaction actuelle comme bouclier final. Plus le commercial parle longtemps sans laisser respirer, plus Stéphane décroche vite.",
+    "piege_classique": "Stéphane teste la solidité du commercial en simulant parfois un intérêt pour ensuite sortir une objection forte ('Ouais mais...'). Il aime voir comment le commercial gère le retournement. S'il sent que le vendeur panique ou force, il ferme définitivement. Le piège ultime : paraître convaincu puis sortir 'Faut que j'en parle à Céline' pour évaluer si le commercial sait closer sans être lourd."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour agences de communication/marketing",
+      "description": "fournisseur de services ou solutions destinés aux agences de communication et marketing, relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou montée en gamme par rapport à l'offre actuelle du client",
+      "proposition_valeur": "extension ou amélioration des bénéfices déjà obtenus, optimisation des résultats, accompagnement dans la croissance ou la transformation de l'agence",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de confiance)"
+      ],
+      "avantages_vs_concurrence": "connaissance profonde du client et de ses besoins, historique positif, continuité relationnelle"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "entraîner les commerciaux à l'upselling et cross-selling sur une base installée satisfaite, en valorisant l'évolution et la complémentarité de l'offre",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Upsell téléphonique — Client satisfait depuis 1 an",
+    "vous_etes": "Account Manager chez votre entreprise, en charge du portefeuille agences de communication depuis 18 mois.",
+    "vous_vendez": "Une offre Premium complémentaire à celle que Prisme & Cie utilise déjà depuis 1 an, permettant d'automatiser certaines tâches chronophages et de gagner en productivité équipe (prix à annoncer dès la 3ème minute : environ 450€/mois).",
+    "vous_appelez": "Stéphane Mercier, 42 ans, directeur associé et fondateur de Prisme & Cie, agence de comm 18 personnes. Pragmatique, méfiant envers le baratin commercial, orienté ROI immédiat. Parle vite, écoute peu si vous monologuez.",
+    "ce_que_vous_savez": [
+      "Client depuis 1 an sur votre offre de base, plutôt satisfait mais sous-exploite certaines fonctionnalités",
+      "Agence en croissance modérée (+12% en 2024), marges sous tension, vient de recruter 2 juniors à rentabiliser",
+      "3 gros comptes représentent 60% de son CA, il cherche à améliorer la productivité sans recruter davantage",
+      "Déjà équipé de 4-5 outils SaaS, craint la complexité et les doublons",
+      "Budget serré : réticent à dépasser 500€/mois sauf ROI prouvé en 6 mois max"
+    ],
+    "votre_objectif": "Obtenir son accord de principe pour tester l'offre Premium 30 jours, en démontrant le gain temps facturable concret pour son équipe.",
+    "vos_atouts": [
+      "Vous le connaissez depuis 1 an, relation de confiance établie",
+      "2 agences similaires (taille/secteur) ont économisé 15h/semaine en passant au Premium",
+      "Offre test 30 jours sans engagement ni config lourde",
+      "Vous pouvez chiffrer précisément le ROI en heures gagnées vs coût mensuel"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:10:22Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14580,
+    "total_time_s": 125.8
+  }
+}

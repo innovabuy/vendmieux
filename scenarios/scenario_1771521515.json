@@ -1,0 +1,389 @@
+{
+  "id": "scenario_1771521515",
+  "description_originale": "Vous appelez une groupe d'intérim ou cabinet RH de 150+ collaborateurs. L'chargée de recrutement junior du directeur commercial ou directeur des opérations décroche et filtre systématiquement. Elle est professionnelle et habituée aux commerciaux. Votre objectif : passer le barrage avec élégance, obtenir le décideur, et décrocher un RDV qualifié.\n[Secteur : rh_recrutement]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "150+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur des opérations",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "chargée de recrutement junior",
+          "role": "barrage/filtre",
+          "caracteristiques": "professionnelle, habituée aux commerciaux, filtre systématiquement"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution B2B destinée aux groupes d'intérim ou cabinets RH",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "difficulté à passer le barrage de la chargée de recrutement",
+        "filtrage systématique par l'assistante"
+      ],
+      "implicites": [
+        "manque de technique de contournement de barrage",
+        "approche probablement trop commerciale ou peu différenciante",
+        "absence de légitimité perçue pour accéder au décideur",
+        "difficulté à créer de l'urgence ou de l'intérêt en quelques secondes"
+      ],
+      "probleme_racine": "incapacité à se différencier des autres commerciaux et à créer suffisamment de valeur perçue pour justifier le passage au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "apprendre à passer les barrages téléphoniques avec élégance, créer de la légitimité rapidement, et décrocher des RDV qualifiés avec les décideurs malgré les filtres",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "service B2B pour secteur RH/recrutement/intérim",
+      "entreprise_description": "fournisseur de solutions pour groupes d'intérim et cabinets RH",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution B2B destinée aux directeurs commerciaux ou opérationnels de groupes d'intérim et cabinets RH de taille significative",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du produit/service vendu",
+        "proposition de valeur spécifique",
+        "prix ou budget",
+        "nom de l'entreprise vendeuse",
+        "bénéfices concrets pour la cible",
+        "références ou preuves sociales",
+        "zone géographique",
+        "problématiques métier des groupes d'intérim adressées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Meunier",
+      "age": 47,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Flexiwork Intérim",
+        "secteur": "Travail temporaire et recrutement",
+        "taille": "230 collaborateurs permanents, 4200 intérimaires actifs/mois",
+        "ca_approximatif": "42M€ - réseau de 18 agences en Île-de-France et Centre-Val de Loire"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Orienté résultats opérationnels immédiats",
+        "Sceptique par expérience (sollicité 15-20 fois/semaine)"
+      ],
+      "motivations_profondes": [
+        "Tenir ses objectifs de marge opérationnelle dans un secteur sous pression",
+        "Réduire le turn-over des chargés de recrutement (28% l'an dernier)",
+        "Prouver à la direction qu'il maîtrise ses coûts mieux que ses homologues régionaux",
+        "Moderniser sans perdre de temps en déploiements foireux"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par une énième solution miracle qui ne tient pas ses promesses",
+        "Perdre du temps en réunions inutiles qui l'éloignent du terrain",
+        "Déstabiliser ses équipes avec un outil de plus qui ne sera pas adopté",
+        "Que le ROI soit invisible pendant 18 mois (il n'a pas ce délai)",
+        "Passer pour le pigeon qui s'est fait embobiner par un commercial"
+      ],
+      "rapport_aux_commerciaux": "Défensif et blasé. Dit souvent : 'J'ai déjà tout vu, tout testé'. Respecte uniquement ceux qui comprennent son métier mieux que lui et arrivent avec des chiffres concrets. Déteste les power points corporate et le blabla stratégique.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, avec une pointe d'agacement contenu. Commence souvent par 'Oui, rapidement parce que là j'ai un truc à 11h'",
+      "signaux_interet": [
+        "Arrête de pianoter sur son clavier et se cale dans son fauteuil",
+        "Demande 'Concrètement, ça donne quoi chez un groupe de notre taille ?'",
+        "Évoque spontanément un problème opérationnel précis qu'il rencontre",
+        "Dit 'Attends, répète-moi ce chiffre' quand un ROI le percute",
+        "Propose lui-même une date de rappel ou un RDV physique"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles pendant l'argumentaire",
+        "Coupe la parole avec 'Oui mais nous on a déjà...'",
+        "Ton qui devient monocorde : 'Ouais... d'accord... ok...'",
+        "Demande de lui envoyer un mail (= politesse pour se débarrasser)",
+        "Fait référence à sa chargée de recrutement : 'Voyez ça avec Mélanie, elle gère ces sujets'",
+        "Évoque un budget gelé ou une priorité ailleurs"
+      ],
+      "tics_langage": [
+        "Utilise beaucoup 'franchement', 'concrètement', 'dans les faits'",
+        "Dit 'Mouais...' quand sceptique (très fréquent)",
+        "Râle sur les éditeurs de logiciels : 'Ces boîtes qui te vendent du rêve'",
+        "Expressions terrain : 'Mes équipes sont dans le dur', 'On est en sous-régime'",
+        "Coupe les envolées avec : 'Ok, mais ça change quoi sur ma marge ?'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : 45 secondes max avant de couper. Exige de l'interactivité. Si le commercial parle plus de 90 secondes d'affilée, commence à décrocher mentalement"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance du CA (+8% vs N-1) mais érosion de la marge opérationnelle (-1,2 points). Pression du groupe pour industrialiser les process. Deux agences sous-performantes à redresser. Recrutement difficile de bons commerciaux terrain. Digitalisation en cours mais pas de vision claire.",
+      "priorites_actuelles": [
+        "Réduire le délai moyen de placement (actuellement 4,2 jours vs 3,1 jours chez le leader)",
+        "Améliorer la rétention des intérimaires qualifiés (BTP, logistique)",
+        "Former ses chargés de recrutement junior qui manquent de méthode commerciale",
+        "Trouver des leviers de différenciation face aux pure players digitaux",
+        "Automatiser ce qui peut l'être sans déshumaniser la relation client"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 ATS différents en 6 ans. Utilise actuellement un outil qui 'fait le job sans plus'. A eu une démo d'un CRM spécialisé intérim il y a 4 mois mais n'a pas donné suite (trop cher, déploiement trop long). Méfiant des startups qui pivotent tous les 18 mois.",
+      "fournisseur_actuel": "ATS Talents'Up (contrat jusqu'à fin d'année, renégociation en cours). Jobboards classiques. Aucune solution de formation structurée pour les équipes recrutement.",
+      "budget_disponible": "Budget formation 2024 partiellement consommé (reste ~35K€). Budget outils RH/recrutement : 78K€/an mais verrouillé jusqu'à fin Q2. Peut débloquer 15-20K€ en accéléré si ROI démontré sous 4 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un acteur comparable (taille, région) avec qui vous travaillez et un résultat chiffré précis",
+        "Démontrer une compréhension fine de SES problématiques opérationnelles (pas du secteur en général)",
+        "Proposer un quick-win mesurable sous 60-90 jours maximum",
+        "Adopter un ton de pair opérationnel, pas de vendeur de solution",
+        "Reconnaître qu'il est sur-sollicité et aller droit au but : 'Je ne vais pas vous faire perdre 30 minutes'",
+        "Apporter un benchmark ou une étude de cas hyper concrète sur son métier",
+        "Parler marge opérationnelle, taux de transformation, délai de placement (ses KPI)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing générique sur 'la transformation digitale du recrutement'",
+        "Demander 1h de RDV en première approche sans justification",
+        "Ne pas connaître la différence entre intérim et recrutement permanent",
+        "Insister lourdement après un premier refus poli",
+        "Parler de 'révolutionner' ou 'disrupter' son métier (alerte bullshit)",
+        "Proposer une démo produit avant d'avoir compris ses enjeux",
+        "Vouloir absolument rencontrer plusieurs interlocuteurs d'un coup",
+        "Citer des références de grands groupes qui n'ont rien à voir avec sa réalité terrain",
+        "Promettre des résultats sans période d'essai ou garantie"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui écoutez, là franchement je suis débordé, vous pouvez m'envoyer un mail ?",
+        "sous_texte": "Je ne vous connais pas, je n'ai aucune raison de vous accorder du temps maintenant, et je reçois 15 appels comme ça par semaine",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa charge, promettre 90 secondes chrono, et accrocher avec un résultat chiffré d'un pair comparable immédiatement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah encore un éditeur de logiciel... Vous êtes le troisième cette semaine qui m'appelle pour me révolutionner le recrutement.",
+        "sous_texte": "Vous êtes interchangeable avec tous les autres commerciaux qui me démarche, prouvez-moi le contraire en 10 secondes ou je raccroche",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Différenciation immédiate : 'Justement, je ne vends pas de logiciel. Je vous appelle parce que...' + élément ultra-spécifique à son contexte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Mouais... nous on a déjà un ATS, on est équipés, merci.",
+        "sous_texte": "Je suppose que vous vendez la même chose que ce que j'ai déjà, et je n'ai ni l'énergie ni l'envie de changer",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider qu'il a déjà un ATS, pivoter sur un angle complémentaire non couvert (formation équipes, process commercial, performance agences...)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, c'est quoi votre truc ? Parce que là j'ai un point à 11h donc allez à l'essentiel.",
+        "sous_texte": "J'accepte de vous écouter 45 secondes, mais si vous me faites un discours corporate je raccroche. Soyez ultra-concret ou dégagez",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Pitch de 30 secondes maximum avec bénéfice opérationnel mesurable et preuve immédiate (référence client + chiffre clé)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ok mais ça change quoi sur ma marge opérationnelle ? Parce que moi c'est ça qui m'intéresse, pas les power points.",
+        "sous_texte": "Je suis sous pression sur mes marges. Si vous ne parlez pas mon langage de Directeur Ops avec des impacts P&L, on arrête là",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Relier directement votre solution à un levier de marge : réduction délai placement, amélioration taux transformation, baisse turn-over avec chiffrage"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous bossez avec qui dans le secteur ? Parce que j'ai jamais entendu parler de vous...",
+        "sous_texte": "Je veux vérifier que vous êtes légitime et que des pairs me font confiance. Si vous êtes une startup sans références, méfiance maximale",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 1-2 références comparables (taille, région, problématique) avec résultats chiffrés précis. Si pas de références : preuve alternative (expertise reconnue, cas d'usage détaillé)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement on a testé trois trucs en six ans, à chaque fois c'est la même : ça marche en démo, ça plante en production. Je suis échaudé.",
+        "sous_texte": "J'ai été déçu plusieurs fois, j'ai perdu du temps et de l'argent. Je ne peux pas me permettre un nouvel échec, mon crédit interne est limité",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie + différenciation méthodologique : garanties, période pilote, accompagnement déploiement, preuves d'adoption réelle chez clients"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais d'accord, mais mes équipes sont déjà dans le dur, je vais pas leur rajouter un outil à apprendre maintenant.",
+        "sous_texte": "Je protège mes équipes qui sont sous pression. Tout changement = risque de baisse de perf court terme, et je n'ai pas cette marge de manœuvre",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer facilité d'adoption (formation courte, intégration progressive, quick-wins immédiats qui soulagent plutôt que surchargent)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ok mais combien ça coûte votre solution ? Parce que là mon budget outils est verrouillé jusqu'à fin Q2.",
+        "sous_texte": "Soit c'est vraiment verrouillé et je cherche une porte de sortie polie, soit je teste votre réaction au prix pour voir si vous êtes négociable",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas balancer le prix sans contexte. Qualifier le budget formation (35K€ dispo) ou identifier si ROI démontrrable peut débloquer 15-20K€ en accéléré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Dans les faits, le ROI vous le mesurez comment ? Parce que c'est toujours joli en théorie ces trucs-là.",
+        "sous_texte": "Je suis profondément sceptique. Prouvez-moi que ce n'est pas du vent avec une méthodologie de mesure béton, pas des promesses",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Méthodo de mesure concrète avec KPI traçables (avant/après), période pilote avec dashboard de suivi, engagement sur résultats intermédiaires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de formation commerciale, mais mes chargés de recrutement c'est pas des commerciaux, c'est des RH.",
+        "sous_texte": "Vous ne comprenez pas mon métier. Mes équipes ne se voient pas comme des commerciaux, et si votre approche nie cette identité, ça va braquer tout le monde",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider leur identité RH, recadrer sur 'posture conseil client' plutôt que 'vente', montrer des cas où cette posture améliore recrutement ET satisfaction client"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin vous me parlez de délai de placement, mais c'est multifactoriel hein, c'est pas une formation qui va changer ça.",
+        "sous_texte": "Vous simplifiez un problème complexe. Je veux bien vous écouter mais ne me prenez pas pour un imbécile avec des solutions miracles",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la complexité, positionner votre solution comme UN levier (pas LA solution), quantifier la part d'impact raisonnable avec preuves"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez c'est intéressant, mais voyez ça avec Mélanie ma chargée de recrutement senior, elle gère ces sujets-là.",
+        "sous_texte": "Je me défile poliment en vous renvoyant vers quelqu'un qui n'a ni budget ni pouvoir de décision. C'est ma stratégie pour clore sans dire non frontalement",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Bloquer poliment : reconnaître l'intérêt de Mélanie pour la partie opérationnelle, mais recadrer sur l'enjeu stratégique/budget qui nécessite SA validation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là je suis pas contre, mais j'ai deux agences à redresser, je peux pas me permettre de me disperser avant fin Q2.",
+        "sous_texte": "C'est sincère : je suis en mode pompier sur des priorités urgentes. Soit vous m'aidez sur ces agences, soit vous revenez dans 3 mois, soit vous me prouvez que ça ne me dispersera pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Pivoter : soit votre solution peut justement aider au redressement de ces agences (quick-win), soit proposer timeline compatible post-Q2 avec jalons préparatoires"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ok, envoyez-moi un mail avec tout ça, je regarde et je vous redis.",
+        "sous_texte": "Je me débarrasse de vous poliment. Il y a 85% de chances que je ne lise jamais ce mail. Si vous insistez trop, je vais me braquer",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la demande, mais obtenir UN micro-engagement avant (date callback précise, validation d'un élément bloquant, permission de relancer sous X jours)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends, répète-moi ce chiffre sur le taux de transformation... C'est mesuré comment exactement ?",
+        "sous_texte": "SIGNAL D'INTÉRÊT FORT. Un chiffre a percuté mon enjeu marge. Je commence à me projeter mais j'ai besoin de valider la crédibilité avant d'aller plus loin",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Détailler méthodologie de mesure, conditions d'obtention du résultat, profil du client témoin, puis closer sur RDV approfondi"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est combien déjà votre truc ? Parce que si c'est pour me demander 50K€, on arrête là, j'ai pas le budget.",
+        "sous_texte": "Soit c'est une vraie contrainte budget, soit je teste votre marge de négo avant de m'engager. Je veux savoir si on joue dans la même cour ou pas",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier son budget réel (formation 35K€ + accéléré 15-20K€ si ROI), recadrer valeur avant prix, proposer options modulaires si pertinent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute, prends RDV avec mon assistante pour qu'on creuse ça, mais prévois pas trois heures hein, j'ai pas le temps.",
+        "sous_texte": "SIGNAL D'INTÉRÊT VALIDÉ. Je suis prêt à avancer mais je garde le contrôle sur mon temps. Ne décevez pas ce RDV ou c'est terminé",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Valider immédiatement, proposer format court (45min max), confirmer agenda pré-RDV (éléments à préparer de part et d'autre), verrouiller date"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me garantissez quoi si dans 4 mois j'ai rien gagné ? Parce que moi je peux pas me planter encore une fois.",
+        "sous_texte": "Je suis brûlé par le passé. J'ai besoin d'être rassuré sur le risque. Si vous n'avez aucune garantie, je vais rester sur ma position de statu quo",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer mécanisme de garantie réaliste : pilote avec KPI validés, paliers de déploiement, clause de sortie ou remboursement partiel selon résultats intermédiaires"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez franchement c'est intéressant, mais là je préfère attendre la fin de l'année. On renégocie notre ATS, j'ai un COMEX budget en septembre, je veux pas m'engager sur un truc maintenant et me retrouver coincé. On se rappelle en octobre ?",
+      "condition_declenchement": "Apparaît quand Laurent est intellectuellement convaincu MAIS que le timing/contexte ne lui semble pas optimal. Mélange de sincérité (vraies contraintes calendaires) et de tactique (besoin de temps pour réfléchir sans pression). Se déclenche si vous n'avez pas créé d'urgence suffisante ou démontré pourquoi attendre = coût d'opportunité."
+    },
+    "pattern_escalade": "Laurent utilise une escalade en 3 phases : (1) Objections réflexes pour filtrer les commerciaux médiocres (débordé, déjà équipé, mail) → (2) Objections de fond si vous passez le filtre (ROI, marge, références, échecs passés) → (3) Objections de timing/tactiques si vous êtes crédible mais qu'il veut garder contrôle (budget verrouillé, priorités ailleurs, voir avec collaborateur). S'il passe en mode questions précises sur méthodologie/chiffres = signal d'achat.",
+    "piege_classique": "Le piège mortel avec Laurent : prendre son 'envoyez-moi un mail' ou 'voyez avec Mélanie' pour un signal d'intérêt. C'est sa façon polie de clore. Le vendeur qui envoie un mail pavé avec brochure corporate et ne relance jamais est déjà mort. Autre piège : vouloir absolument une réunion longue en première approche - il va fuir. Il faut obtenir un micro-engagement précis (date callback, validation d'un élément, RDV court) sinon c'est un faux closing."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "service B2B pour secteur RH/recrutement/intérim",
+      "description": "fournisseur de solutions pour groupes d'intérim et cabinets RH"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution B2B destinée aux directeurs commerciaux ou opérationnels de groupes d'intérim et cabinets RH de taille significative",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "apprendre à passer les barrages téléphoniques avec élégance, créer de la légitimité rapidement, et décrocher des RDV qualifiés avec les décideurs malgré les filtres",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Barrage secrétaire puis directeur des opérations intérim",
+    "vous_etes": "Commercial B2B spécialisé solutions RH/recrutement pour groupes d'intérim et cabinets de recrutement.",
+    "vous_vendez": "Solution d'accompagnement opérationnel pour réduire les délais de placement et améliorer la marge — prix et détails à adapter selon la discussion.",
+    "vous_appelez": "Flexiwork Intérim, 230 collaborateurs, réseau de 18 agences IDF/Centre. Vous allez d'abord tomber sur Mélanie, chargée de recrutement junior qui filtre systématiquement. Si vous passez : Laurent Meunier, 47 ans, Directeur des Opérations, pragmatique et blindé contre les commerciaux (sollicité 15-20 fois/semaine).",
+    "ce_que_vous_savez": [
+      "Flexiwork a 4200 intérimaires actifs/mois, CA ~42M€, croissance +8% mais marge en baisse",
+      "Laurent gère la pression du groupe pour industrialiser les process et redresser 2 agences sous-performantes",
+      "Il a testé 3 ATS en 6 ans, actuellement sous contrat Talents'Up jusqu'à fin d'année",
+      "Budget formation partiellement dispo (~35K€), budget outils verrouillé jusqu'à fin Q2 sauf quick-win démontré",
+      "Ses KPI qui comptent : délai de placement (actuellement 4,2j vs 3,1j chez le leader), rétention intérimaires qualifiés, marge opérationnelle"
+    ],
+    "votre_objectif": "Passer le barrage de Mélanie avec légitimité, puis décrocher 20-30 minutes de RDV physique ou visio avec Laurent en parlant résultats concrets et quick-win mesurable sous 90 jours.",
+    "vos_atouts": [
+      "Vous connaissez le secteur intérim : vous parlez délai de placement, taux de transformation, marge opérationnelle",
+      "Vous avez travaillé avec des groupes comparables (même taille, même région) et pouvez citer un résultat chiffré précis",
+      "Vous proposez une approche quick-win (ROI visible sous 4 mois max) sans déploiement usine à gaz",
+      "Vous adoptez un ton de pair opérationnel, pas de vendeur — vous reconnaissez qu'il est sur-sollicité"
+    ],
+    "duree_estimee": "6-10 minutes (barrage + décideur)",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:18:35Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17019,
+    "total_time_s": 168.7
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "id": "scenario_1771524593",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur de concession / gérant d'une concession automobile ou équipementier local de 20-50 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : automobile]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de concession / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "local"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de suivi structuré après envoi de proposition",
+        "Possible manque d'engagement du prospect lors de l'envoi initial",
+        "Incertitude sur la qualification réelle du besoin",
+        "Risque de perdre l'opportunité par inaction"
+      ],
+      "probleme_racine": "Difficulté à transformer l'intérêt initial en décision concrète et à gérer efficacement le silence du prospect après proposition"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance téléphonique après envoi de proposition pour obtenir un positionnement clair du prospect (validation, refus ou identification des freins) et éviter l'enlisement des opportunités commerciales",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services ou solutions pour le secteur automobile",
+      "entreprise_description": "Entreprise proposant des produits ou services destinés aux concessions automobiles et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux concessions automobiles et équipementiers, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Contexte de la relation commerciale initiale",
+        "Budget ou fourchette de prix",
+        "Contenu et qualité de la proposition envoyée",
+        "Raison du premier contact"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur de concession",
+      "entreprise": {
+        "nom": "Automobiles Mercier & Fils",
+        "secteur": "Distribution automobile - concession Renault",
+        "taille": "32 salariés",
+        "ca_approximatif": "18M€ (en baisse de 7% vs N-1)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les promesses commerciales après 25 ans de métier",
+        "Pragmatique et orienté résultats immédiats",
+        "Conservateur dans ses choix de fournisseurs"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité malgré la crise du neuf et l'électrification",
+        "Prouver à son père fondateur qu'il gère bien l'entreprise familiale",
+        "Éviter tout investissement qui pourrait être perçu comme un échec devant ses équipes",
+        "Préserver sa réputation locale construite sur 30 ans"
+      ],
+      "peurs_freins": [
+        "Peur de se faire avoir comme avec son ancien prestataire de CRM (30k€ perdus)",
+        "Crainte que son équipe résiste au changement",
+        "Angoisse de ne pas comprendre les nouvelles technologies (le vit comme une faiblesse)",
+        "Peur du regard du constructeur sur ses choix de gestion"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. A développé une carapace après des décennies de démarchage. Catégorise rapidement : 'ceux qui connaissent le métier' vs 'les autres'. Déteste qu'on lui explique son métier. Respecte uniquement ceux qui ont fait leurs preuves ailleurs.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. Commence souvent par 'Oui bonjour, je suis en atelier là, faites vite'. Vouvoiement systématique même après plusieurs échanges.",
+      "signaux_interet": [
+        "Pose des questions très précises sur les délais de mise en œuvre",
+        "Mentionne spontanément un problème concret qu'il rencontre",
+        "Demande si d'autres concessions Renault utilisent la solution",
+        "Évoque son chef des ventes ou son responsable après-vente : 'Faudrait que j'en parle à Stéphane'",
+        "Demande un deuxième rendez-vous : 'Revenez me voir mardi prochain, on aura plus de temps'"
+      ],
+      "signaux_rejet": [
+        "Silence prolongé après votre argument (consulte son téléphone)",
+        "Commence ses phrases par 'Écoutez, soyons clairs...'",
+        "Évoque une priorité concurrente : 'Là j'ai la rénovation du showroom qui me bouffe tout'",
+        "Répète 'Oui oui' de manière mécanique sans poser de questions",
+        "Coupe court : 'Envoyez-moi ça par mail, je regarderai' (= poubelle assurée)"
+      ],
+      "tics_langage": [
+        "Bon, écoutez...",
+        "Soyons clairs hein",
+        "Dans le métier on dit que...",
+        "Moi j'ai toujours fonctionné comme ça",
+        "Faut pas me raconter des salades",
+        "C'est pas moi qui décide tout seul de toute façon"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Coupe après 45 secondes maximum. A besoin d'être acteur de la conversation sinon décroche mentalement. Apprécie les questions directes qui lui permettent de parler de SON expérience."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression : objectifs constructeur non atteints depuis 18 mois, marges VO qui s'effondrent, turnover en augmentation chez les vendeurs. Vient d'investir 120k€ dans des bornes de recharge imposées par Renault. Se sent étranglé entre les exigences du constructeur et la réalité du marché local.",
+      "priorites_actuelles": [
+        "Redresser les marges atelier (seul secteur encore rentable)",
+        "Fidéliser les clients actuels plutôt que d'en chercher des nouveaux",
+        "Éviter tout ce qui n'a pas de ROI visible sous 12 mois",
+        "Gérer le départ annoncé de son meilleur vendeur"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM il y a 3 ans, échec cuisant (équipe ne l'a jamais utilisé, éditeur n'a pas tenu ses promesses d'accompagnement). Depuis, très méfiant sur tout ce qui est 'digital' ou 'transformation'. Se dit 'Moi je gère ma concession à l'instinct, pas avec des tableaux Excel'.",
+      "fournisseur_actuel": "Utilise encore un vieux système maison sur Excel + un logiciel de gestion imposé par Renault qu'il trouve 'usine à gaz'",
+      "budget_disponible": "Bloqué jusqu'à fin d'année fiscale. Pourrait débloquer 15-20k€ maximum SI le ROI est démontré et SI validation de son expert-comptable (son beau-frère). Tout investissement doit passer par une discussion 'familiale'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner une concession concurrente locale qui obtient de meilleurs résultats",
+        "Parler chiffres concrets : économies en heures, en euros, en délais",
+        "Montrer qu'on comprend la pression constructeur sans la juger",
+        "Proposer un test sur périmètre réduit (son obsession du risque limité)",
+        "Citer des références de concessions Renault similaires en taille",
+        "Reconnaître que son expérience du terrain est plus importante que la tech"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Vocabulaire startup/bullshit : 'disruption', 'gamification', 'expérience client augmentée'",
+        "Critiquer ses méthodes actuelles (touche son ego)",
+        "Promettre des résultats rapides sans preuves concrètes",
+        "Insister quand il dit qu'il doit consulter son équipe/comptable",
+        "Minimiser la complexité de mise en œuvre (il SAIT que c'est compliqué)",
+        "Comparer sa concession à des groupes de 200+ salariés",
+        "Forcer une décision : 'Cette offre expire vendredi' (tactique qu'il déteste)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, écoutez je suis en atelier là, j'ai trois clients qui attendent, vous me rappelez quand exactement ?",
+        "sous_texte": "Test de légitimité : est-ce vraiment important ou puis-je m'en débarrasser ? Si vous insistez trop, je vais raccrocher.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte temporelle, donner un timing précis (2 minutes) et créer un micro-enjeu immédiat"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui votre proposition... Bon soyons clairs hein, j'en reçois quinze par semaine des propositions. Qu'est-ce qui fait que je devrais m'intéresser à la vôtre ?",
+        "sous_texte": "Je suis blindé contre les commerciaux. Prouvez-moi que vous n'êtes pas un de plus. J'attends de la différenciation immédiate.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître sa réalité, référencer un élément spécifique de votre échange précédent qui montrait un problème concret chez lui"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, là on est en pleine période de préparation des immatriculations de fin de mois, c'est vraiment pas le moment. Rappelez-moi début du mois prochain.",
+        "sous_texte": "Objection tactique pour se débarrasser poliment. Si vous rappelez le mois prochain, j'aurai un autre prétexte. Testez ma vraie motivation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte mais identifier si c'est un vrai obstacle ou une esquive en proposant un créneau ultra-court maintenant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, j'ai regardé en diagonal votre proposition, mais franchement j'ai pas tout compris. C'est quoi concrètement ce que ça change pour moi au quotidien ?",
+        "sous_texte": "Votre proposition était trop technique ou trop vague. Je n'ai pas pris le temps de vraiment lire. Redonnez-moi l'essentiel en langage terrain.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas défendre la proposition mais poser des questions sur ses enjeux actuels pour reconnecter au concret"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est pas votre solution hein, c'est que moi j'ai déjà testé ce genre de trucs. Y'a trois ans j'ai claqué 30 000 balles dans un CRM, personne ne l'a utilisé. Donc bon...",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre ça. Ma crédibilité en interne en a pris un coup. Vous devez me rassurer sur les risques ET sur l'adoption.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider l'expérience négative, creuser ce qui n'a pas marché, montrer comment vous gérez différemment l'accompagnement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, faut pas me raconter des salades, vous connaissez vraiment le métier de concessionnaire vous ? Parce que dans le métier on dit que les beaux discours ça vend pas des voitures.",
+        "sous_texte": "Test de crédibilité brutal. Je vous mets en position basse pour voir si vous tenez la route. Si vous vous justifiez trop, vous avez perdu.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter humblement, montrer votre connaissance par des références terrain concrètes, pas par un CV"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi j'ai toujours fonctionné à l'instinct, c'est comme ça que j'ai tenu 25 ans. Je vois pas pourquoi je changerais maintenant.",
+        "sous_texte": "Peur du changement déguisée en fierté professionnelle. Remettre en question ma méthode = remettre en question ma légitimité. Besoin de valorisation.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son instinct comme un atout, positionner la solution comme amplificateur de son expérience, pas comme remplacement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien joli tout ça, mais concrètement vous me sortez combien d'heures par semaine avec votre truc ? Parce que des promesses j'en ai entendu...",
+        "sous_texte": "Besoin viscéral de tangibilité. Je suis noyé dans l'opérationnel. Si vous ne me donnez pas de chiffres précis basés sur des cas réels, vous n'êtes qu'un commercial de plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner des chiffres issus de références similaires, mais encadrer avec honnêteté selon l'usage réel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon attendez, là vous m'annoncez un truc à, combien déjà ? Alors que moi je viens de claquer 120 000 euros dans des bornes de recharge que m'impose Renault. Le budget il est verrouillé jusqu'à l'année prochaine.",
+        "sous_texte": "Objection budget classique mais sincère. Je suis vraiment sous contrainte financière. Teste aussi si vous avez des solutions de contournement (échelonnement, ROI rapide).",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte, explorer le budget de l'année suivante, possiblement proposer un pilote à coût réduit pour préparer le terrain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis de toute façon, c'est pas moi qui décide tout seul. Faut que j'en parle à mon expert-comptable, c'est mon beau-frère en plus donc vous imaginez... Et puis y'a Stéphane, mon chef des ventes, si lui est pas partant ça sert à rien.",
+        "sous_texte": "Protection derrière le collectif. Partiellement vrai (le beau-frère est réel) mais aussi tactique pour gagner du temps. Veut éviter de dire non directement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier qui décide vraiment, proposer d'impliquer ces personnes dans un échange, qualifier le niveau d'intérêt personnel de Philippe"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon, vous me dites que ça marche chez Dupont Automobiles à Lyon, mais eux ils ont 5 concessions et 200 salariés ! Moi je suis une petite structure familiale, c'est pas comparable.",
+        "sous_texte": "Peur que la solution soit surdimensionnée. Besoin de se reconnaître dans les références. Aussi un test pour voir si vous avez des références à sa taille.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner des références de concessions 20-50 salariés, montrer l'adaptabilité de la solution aux petites structures"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Soyons clairs hein, l'accompagnement là, vous me dites que c'est inclus. Mon ancien prestataire aussi il me disait ça, et au final y'avait personne quand on avait besoin. Comment je peux être sûr que vous allez pas me faire le même coup ?",
+        "sous_texte": "Traumatisme de l'échec précédent. Besoin de garanties concrètes, de preuves d'engagement. Les mots ne suffiront pas, il veut du contractuel ou du factuel.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler précisément le dispositif d'accompagnement, donner un contact client similaire qu'il peut appeler, proposer des jalons contractuels"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et la mise en place, ça prend combien de temps ? Parce que là entre les objectifs constructeur, le départ de mon meilleur vendeur et la rénovation du showroom, je peux pas me permettre de bloquer l'équipe pendant des semaines.",
+        "sous_texte": "Surcharge cognitive réelle. Peur de l'impact opérationnel. Besoin de visibilité sur le planning et les ressources mobilisées. Teste aussi votre compréhension de ses contraintes.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un planning réaliste, identifier les périodes possibles, proposer une mise en œuvre progressive par étapes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, moi je veux bien, mais faut déjà que je voie avec l'équipe. Vous savez comment c'est hein, si je leur impose un truc ils vont me faire la gueule et de toute façon ils l'utiliseront pas.",
+        "sous_texte": "Peur de la résistance au changement, mais aussi peut-être une excuse pour temporiser. Veut partager la responsabilité de la décision. Besoin de validation collective.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une démonstration impliquant 2-3 membres clés de l'équipe, ou un pilote avec les plus motivés"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais bon, c'est intéressant hein, je dis pas le contraire. Envoyez-moi tout ça par mail avec les références dont vous m'avez parlé, je regarde ça tranquillement et je vous rappelle.",
+        "sous_texte": "Esquive polie classique. 80% de chances que je ne rappelle jamais. Je veux clore la conversation sans dire non. Si vous insistez lourdement, je vais me braquer.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas laisser filer sans date précise, proposer un micro-engagement concret (appel de 10min planifié), qualifier le niveau d'intérêt réel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez là je vais être honnête avec vous, c'est pas une priorité pour moi en ce moment. J'ai d'autres chats à fouetter. On verra peut-être ça en début d'année prochaine.",
+        "sous_texte": "Peut-être sincère, peut-être tactique. Teste si vous allez insister ou respecter sa décision. Veut voir si vous avez un argument massue qui changerait la donne.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter sans se coucher, identifier quelle serait LA priorité qui justifierait d'accélérer, qualifier si c'est un vrai timing ou un non déguisé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis bon, entre nous, j'ai entendu dire que vous travailliez avec Chartier Automobiles, mon concurrent direct. Ça me gêne un peu niveau confidentialité vous voyez...",
+        "sous_texte": "Objection territoire/concurrence. Peut être sincère (petite ville, tout le monde se connaît) ou tactique pour négocier des conditions. Besoin de réassurance sur la confidentialité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier votre politique de confidentialité, expliquer comment vous gérez les concurrents directs, transformer en avantage (benchmark anonyme)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là vous me parlez de démarrer maintenant, mais moi je préférerais attendre après les immatriculations de fin d'année. On est en plein rush, c'est pas le moment de chambouler les habitudes.",
+        "sous_texte": "Objection timing classique du concessionnaire. Partiellement vraie (les fins de mois/année sont intenses) mais aussi une protection contre le changement. Teste votre flexibilité.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte calendaire, proposer de préparer maintenant pour démarrer après la période, bloquer un créneau concret"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, soyons clairs. Vous m'avez fait une belle présentation, mais dans le métier on dit qu'il faut pas confondre discours et résultats. Moi j'ai été échaudé, j'ai plus les moyens de me tromper. Si je vous dis oui, que mon équipe joue pas le jeu ou que ça marche pas comme vous me promettez, c'est moi qui vais avoir l'air con devant mon père et devant Renault. Donc franchement, je préfère rester sur ce que je connais, même si c'est pas parfait, au moins je maîtrise. Voilà, c'est cash mais c'est honnête.",
+      "condition_declenchement": "Se déclenche quand Philippe sent qu'on arrive au moment de décision finale et qu'il doit vraiment choisir. Révèle ses peurs profondes : échec, jugement familial, perte de contrôle. C'est l'objection de vérité qui synthétise tous ses freins."
+    },
+    "pattern_escalade": "Philippe commence cordial mais distant (protection). Si vous le brusquez ou utilisez des techniques de vente agressives, il devient cassant voire méprisant. Si vous le respectez et montrez de la compréhension terrain, il s'ouvre progressivement et révèle ses vraies craintes. L'escalade négative : distance polie → impatience → objections techniques → fermeture brutale 'Écoutez c'est non, merci'. L'escalade positive : test initial → quelques vraies questions → mention de son équipe/contexte → demande de références précises → évocation d'un prochain échange.",
+    "piege_classique": "Philippe donne souvent des signaux mixtes. Il peut dire 'C'est intéressant' tout en consultant son téléphone (= pas intéressé). Son objection 'Je dois en parler à mon beau-frère/mon chef des ventes' est partiellement vraie mais souvent un écran de fumée. Le vrai piège : prendre pour argent comptant ses 'Envoyez-moi ça par mail' sans avoir obtenu un engagement concret de suite. 90% des commerciaux perdent Philippe à ce moment-là. Il faut oser qualifier brutalement son niveau d'intérêt réel avant de le laisser partir."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services ou solutions pour le secteur automobile",
+      "description": "Entreprise proposant des produits ou services destinés aux concessions automobiles et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux concessions automobiles et équipementiers, ayant fait l'objet d'une proposition commerciale écrite",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance téléphonique après envoi de proposition pour obtenir un positionnement clair du prospect (validation, refus ou identification des freins) et éviter l'enlisement des opportunités commerciales",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance téléphonique — Concession automobile après proposition",
+    "vous_etes": "Commercial B2B spécialisé solutions pour concessions automobiles, en poste depuis 2 ans dans votre entreprise.",
+    "vous_vendez": "Une solution destinée aux concessions automobiles (nature exacte à définir selon contexte) — proposition commerciale envoyée il y a 12 jours, montant estimé entre 15-25k€.",
+    "vous_appelez": "Philippe Mercier, 52 ans, Directeur de la concession Automobiles Mercier & Fils (Renault, 32 salariés, 18M€ CA). Homme de terrain, méfiant, pressé, qui a déjà été échaudé par un prestataire CRM il y a 3 ans.",
+    "ce_que_vous_savez": [
+      "Vous avez échangé il y a 3 semaines suite à une prospection initiale, il était courtois mais non engagé",
+      "Vous lui avez envoyé une proposition détaillée il y a 12 jours — aucun retour depuis",
+      "Sa concession est sous pression : objectifs constructeur non atteints, marges VO en baisse, il vient d'investir 120k€ dans des bornes électriques",
+      "Il est très prudent sur tout investissement 'digital' après un échec cuisant avec un CRM mal déployé",
+      "Il doit valider tout achat avec son expert-comptable (son beau-frère) et préfère les tests sur périmètre réduit"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair : validation du projet, identification des freins réels, ou refus assumé — sortir du silence radio.",
+    "vos_atouts": [
+      "Vous avez des références de concessions Renault de taille similaire qui ont déployé votre solution avec succès",
+      "Vous pouvez proposer un pilote sur périmètre limité pour réduire le risque perçu",
+      "Vous maîtrisez les indicateurs métier concession (ROI atelier, taux de transformation VO, fidélisation)",
+      "Votre approche est pragmatique et chiffrée, pas bullshit startup"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:09:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15814,
+    "total_time_s": 156.5
+  }
+}

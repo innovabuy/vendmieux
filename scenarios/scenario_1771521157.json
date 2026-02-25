@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771521157",
+  "description_originale": "Le dirigeant / directeur de production d'une PME agroalimentaire de 30-60 salariés, production régionale est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : agroalimentaire]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "production régionale France"
+    },
+    "offre": {
+      "produit_service": "solution pour l'industrie agroalimentaire",
+      "proposition_valeur_presumee": "optimisation de la production ou amélioration des processus industriels agroalimentaires",
+      "fourchette_prix": "NON_SPECIFIE - mais perçu comme élevé par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "objection prix systématique",
+        "difficulté à défendre la valeur face à la pression tarifaire",
+        "besoin de conclure sans brader"
+      ],
+      "implicites": [
+        "manque d'argumentation valeur vs prix",
+        "difficulté à quantifier le ROI de la solution",
+        "tendance à concéder trop vite sur le prix",
+        "manque de technique de négociation structurée"
+      ],
+      "probleme_racine": "les commerciaux ne savent pas défendre leur prix et justifier la valeur de leur offre face à des acheteurs agroalimentaires sensibles aux marges"
+    },
+    "objections_mentionnees": [
+      "prix trop élevé"
+    ],
+    "objectif_formation": "maîtriser les techniques de défense du prix et de négociation commerciale avec marge de manœuvre limitée",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur de solutions pour l'industrie agroalimentaire",
+      "entreprise_description": "entreprise proposant des solutions techniques ou services à destination des PME agroalimentaires en production régionale",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée à l'industrie agroalimentaire, vraisemblablement liée à la production, la qualité, la traçabilité ou l'optimisation des processus",
+      "proposition_valeur": "amélioration de la performance productive, de la qualité ou de la conformité réglementaire pour les entreprises agroalimentaires",
+      "prix_indicatif": "NON_SPECIFIE - mais positionné premium avec marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte de la solution vendue",
+        "prix de référence",
+        "nom de l'entreprise vendeuse",
+        "arguments valeur concrets",
+        "ROI démontrable",
+        "références clients similaires"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Alain",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur Général",
+      "entreprise": {
+        "nom": "Fromageries du Val d'Othe",
+        "secteur": "Transformation laitière - fromages AOP",
+        "taille": "47 salariés",
+        "ca_approximatif": "8,2 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrien méfiant face aux discours commerciaux",
+        "Protecteur féroce de sa trésorerie",
+        "Fier de son expertise métier acquise sur 30 ans"
+      ],
+      "motivations_profondes": [
+        "Transmettre une entreprise pérenne à son fils qui vient d'intégrer la direction",
+        "Prouver qu'on peut rester compétitif sans devenir un 'industriel sans âme'",
+        "Éviter à tout prix un contrôle DGCCRF problématique",
+        "Maintenir la certification AOP coûte que coûte"
+      ],
+      "peurs_freins": [
+        "Se faire 'avoir' par un commercial parisien qui ne connaît rien au fromage",
+        "Investir dans un équipement qui sera obsolète dans 3 ans",
+        "Perdre le contrôle sur ses processus de fabrication traditionnels",
+        "Que ses fromagers historiques rejettent un changement imposé d'en haut",
+        "Découvrir 6 mois après que 'le concurrent était 30% moins cher'"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Considère que 95% des commerciaux sont des 'parleurs' qui n'ont jamais mis les pieds dans un atelier de production à 4h du matin. Respecte uniquement ceux qui connaissent vraiment son métier et parlent ROI concret, pas PowerPoint",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant, avec une pointe de scepticisme audible. Commence souvent par 'Bon, j'ai 20 minutes, faut que je retourne en production'",
+      "signaux_interet": [
+        "Interrompt pour poser des questions techniques précises sur le fonctionnement",
+        "Demande spontanément 'Combien ça coûte chez Lactalis ou Sodiaal?'",
+        "Mentionne un problème concret récent : 'Justement la semaine dernière on a eu...'",
+        "Passe du vouvoiement distant au tutoiement bourru",
+        "Propose de lui-même : 'Faut que j'en parle à mon fromager chef, il est là cet après-midi'"
+      ],
+      "signaux_rejet": [
+        "Soupir audible suivi de 'Écoutez, on va pas se mentir...'",
+        "Coupe court : 'Ouais enfin bon, c'est pas pour nous tout ça'",
+        "Répète mécaniquement 'Je vais y réfléchir' sans poser de question",
+        "Mentionne ostensiblement un autre fournisseur : 'De toute façon j'ai déjà Machin qui m'a fait un prix'",
+        "Ramène brutalement au prix : 'Tout ça c'est bien joli, mais concrètement, le devis?'"
+      ],
+      "tics_langage": [
+        "Utilise systématiquement 'nous' quand il parle de l'entreprise : 'Nous, en fromagerie...'",
+        "Ponctue de 'Hein?' interrogatif pour vérifier que l'interlocuteur suit",
+        "Dit 'Je suis pas né de la dernière pluie' quand il flaire un argument commercial trop lisse",
+        "Emploie 'Faut voir' comme réponse par défaut = 'probablement non'",
+        "Termine souvent par 'Après, je dis ça, je dis rien' quand il émet une réserve"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : coupe après 90 secondes si pas de question posée ou de connexion avec son quotidien. Déteste les 'belles présentations'. Veut du concret immédiatement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+4% sur 2 ans) mais marges sous pression à cause de la hausse du lait et de l'énergie. Audit AOP prévu dans 5 mois. Son fils de 28 ans, ingénieur agro, le pousse à moderniser. Tension générationnelle latente.",
+      "priorites_actuelles": [
+        "Sécuriser l'audit AOP sans investissement pharaonique",
+        "Réduire les non-conformités en affinage (problème récurrent depuis 8 mois)",
+        "Trouver 15% de gains de productivité sans licencier",
+        "Convaincre la banque de renouveler la ligne de crédit en octobre"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 4 ans un logiciel de traçabilité 'qui a fini au placard parce que trop compliqué pour les gars'. Échaudé. A aussi eu un commercial qui lui a vendu du matériel 'dernier cri' qui est tombé en panne au bout de 18 mois.",
+      "fournisseur_actuel": "Utilise des solutions artisanales maison + un petit logiciel local développé par un prestataire bressan (qui ne répond plus beaucoup). Pas de contrat formel.",
+      "budget_disponible": "Entre 35K€ et 60K€ maximum mobilisables cette année, mais il doit justifier chaque euro auprès de son banquier et de son associé (frère, en retrait). Mentalement, il pense '30K€ max' mais pourrait aller à 50K€ si ROI démontré sous 24 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets immédiatement : temps gagné, défauts évités, économies mesurables",
+        "Citer un client fromagier de taille similaire dans une région voisine avec nom + résultat chiffré",
+        "Montrer qu'on comprend la réalité terrain : 'Je sais que vos fromagers commencent à 4h...'",
+        "Proposer un test limité ou une phase pilote sans engagement total",
+        "Reconnaître explicitement que c'est un investissement conséquent : 'Je sais que c'est pas rien pour une PME'",
+        "Évoquer l'audit AOP ou la DGCCRF comme déclencheur d'urgence"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Comparer sa fromagerie à une 'industrie' ou à Lactalis",
+        "Utiliser du jargon technique non expliqué ou des anglicismes ('dashboard', 'KPI')",
+        "Minimiser l'objection prix : 'Oh c'est rien pour une entreprise de votre taille'",
+        "Promettre des résultats invraisemblables : 'Vous allez doubler votre productivité'",
+        "Ne pas pouvoir répondre précisément à 'Ça fonctionne comment exactement en cas de panne?'",
+        "Refuser de donner un ordre de grandeur de prix avant d'avoir 'analysé les besoins'",
+        "Dénigrer son système actuel : 'Ah oui c'est complètement dépassé ce que vous faites'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai déjà trois fournisseurs qui m'ont appelé ce mois-ci pour me vendre des trucs. Là j'ai pas vraiment le temps, faut que je retourne en production.",
+        "sous_texte": "Prouve-moi que tu n'es pas juste un commercial de plus qui va me faire perdre du temps. Si tu ne m'accroches pas en 30 secondes avec du concret, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître la contrainte temps + donner immédiatement une raison concrète liée à son audit AOP ou ses non-conformités"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais enfin bon, des solutions pour l'agroalimentaire, vous êtes le cinquième à me dire ça. Vous connaissez quelque chose au fromage AOP vous au moins?",
+        "sous_texte": "Je ne veux pas d'un généraliste qui me parle d'agroalimentaire comme si produire du yaourt ou du fromage AOP c'était pareil. Montre-moi que tu connais MON métier.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer immédiatement une référence fromagère précise avec nom, taille similaire et résultat chiffré dans son contexte AOP"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon allez, dites-moi déjà combien ça coûte. Parce que si c'est pour me parler pendant une heure et que c'est hors budget après, on perd notre temps tous les deux.",
+        "sous_texte": "Je veux savoir si on joue dans la même cour avant d'investir du temps. J'ai été échaudé par des commerciaux qui cachent le prix jusqu'au bout. Aussi : je veux te tester sur ta réaction face à l'objection prix.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette réaliste tout en ancrant la discussion sur le ROI et les enjeux chiffrés avant de détailler le prix"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Nous on a déjà un système. C'est pas parfait, mais ça tourne. On a fait sans pendant 30 ans, hein.",
+        "sous_texte": "Rassure-moi sur le fait que changer ne va pas créer plus de problèmes que ça n'en résout. Je déteste le changement pour le changement. Prouve-moi que le statu quo coûte plus cher.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser les coûts cachés de son système actuel via questions sur non-conformités, temps passé, risques audit"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mon fromager chef, il a 58 ans. Si je lui mets un truc compliqué, il va me dire d'aller me faire voir. Et sans lui, je peux fermer boutique.",
+        "sous_texte": "Vraie crainte opérationnelle. Mon équipe terrain est ma colonne vertébrale. Si la solution n'est pas adoptée par eux, je me retrouve avec un investissement mort et une crise sociale.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur simplicité d'usage + formation terrain + phase pilote impliquant le fromager chef dès le départ"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "L'audit AOP c'est dans 5 mois, vous comprenez? Si votre truc plante pendant la mise en place, je suis mort. Je peux pas me permettre.",
+        "sous_texte": "Cette deadline est un couteau sous la gorge. Je suis tenté par une solution mais terrifié par le risque de disruption au pire moment. Besoin de garanties béton sur le timing.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer calendrier sécurisé avec phase pilote post-audit OU garantie accompagnement renforcé pré-audit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tout ça c'est bien joli sur le papier, mais concrètement, en euros, je gagne quoi exactement? Parce que des belles promesses, j'en ai déjà entendu.",
+        "sous_texte": "Je ne crois que ce que je vois. Arrête le blabla marketing et donne-moi des chiffres précis, vérifiables, avec des hypothèses réalistes. Sinon je considère que tu me racontes des salades.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Co-construire un calcul ROI avec SES chiffres : combien de non-conformités par mois, coût unitaire, temps fromager gagné valorisé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez de dashboard et de KPI... Nous on est pas Danone hein. On fait du fromage à l'ancienne. Faut rester simple.",
+        "sous_texte": "Tu perds mon adhésion avec ton jargon. Je ne me reconnais pas dans ce vocabulaire d'ingénieur. Parle-moi dans MA langue ou je décroche mentalement.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "S'excuser, reformuler en français terrain : 'tableau de bord simple' = cahier digital que le fromager peut consulter en 2 clics"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça tombe en panne? Parce que nous, si on peut pas produire pendant 2 jours, on perd le lait. Vous intervenez sous combien de temps concrètement?",
+        "sous_texte": "Expérience traumatique avec matériel tombé en panne sans support. Besoin de garantie opérationnelle béton. Cette question peut être éliminatoire si tu floues.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Réponse précise chiffrée : hotline 24/7, engagement intervention sous X heures, mode dégradé manuel prévu"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai un cousin qui bosse chez un concurrent à vous, il m'a dit qu'ils faisaient pareil pour 40% moins cher. Vous en pensez quoi?",
+        "sous_texte": "Peut-être vrai, peut-être bluff tactique. Je veux voir comment tu réagis sous pression concurrentielle. Est-ce que tu paniques et bradés, ou tu défends ta valeur?",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas dénigrer, creuser ce qui est comparable, recentrer sur sa valeur différenciante concrète sans casser le prix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Il y a 4 ans on avait pris un logiciel de traçabilité. Ça a fini au placard. Trop compliqué. Comment je sais que ça sera pas pareil?",
+        "sous_texte": "Vraie cicatrice commerciale. Je ne veux pas répéter cette erreur qui m'a coûté de l'argent et de la crédibilité interne. Prouve-moi que tu comprends pourquoi ça a foiré et que toi c'est différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser pourquoi ça a échoué, montrer qu'on a appris de ces échecs, proposer approche progressive avec validation terrain"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mon fils, il voudrait qu'on modernise tout. Mais moi je me dis qu'on a toujours fait comme ça et on s'en sort pas si mal, non?",
+        "sous_texte": "Tension générationnelle réelle. Peur de perdre le contrôle, de ne plus reconnaître mon entreprise. Besoin qu'on me rassure que moderniser ne veut pas dire renier 30 ans d'expertise.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser son expertise comme socle, montrer que la solution AMPLIFIE son savoir-faire au lieu de le remplacer"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, c'est cher. Vraiment cher. On arrive pas à 50K€, c'est juste pas possible. Faites un effort, on peut descendre à combien?",
+        "sous_texte": "Objection prix finale classique. Mélange de vraie contrainte budgétaire (banquier, associé) et de réflexe négociation. Je teste ta marge de manœuvre. Si tu cèdes trop vite, je perds confiance dans ta valeur.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'investissement, reancrer valeur/ROI, proposer facilités paiement ou périmètre ajusté plutôt que remise sèche"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant, mais faut que j'en parle à mon associé. Et à mon banquier aussi. Je vous rappelle.",
+        "sous_texte": "Vraie étape nécessaire (associé = frère) mais aussi échappatoire confortable. Si je ne fixe pas de date précise, c'est que je ne suis pas complètement convaincu. Teste si tu oses me challenger.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Obtenir date précise de rappel + proposer d'envoyer éléments pour convaincre associé/banquier + identifier dernières réserves"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me garantissez quoi exactement si ça marche pas? Parce que 50K€, si ça foire, moi je bois la tasse.",
+        "sous_texte": "Dernière peur viscérale avant engagement. Besoin de filet de sécurité psychologique. Vraie entreprise familiale = vraie prise de risque personnelle. Cherche garantie ou clause de sortie.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer garantie satisfait/remboursé partielle, jalons validés, ou phase 1 réduite avec option extension"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je suis pas né de la dernière pluie. Vous me faites un prix à 52K€, mais dans 6 mois je vais apprendre que le voisin l'a eu à 35K€. Ça se passe comment?",
+        "sous_texte": "Méfiance profonde sur équité tarifaire. Besoin de savoir qu'on ne me prend pas pour un pigeon. Teste ta transparence et ton intégrité. Question éliminatoire potentielle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Expliquer grille tarifaire logique liée au périmètre/taille, rassurer sur équité, donner exemple anonymisé comparable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Allez, dernier prix. Vous descendez à 40K€ et on signe aujourd'hui. Sinon faut voir...",
+        "sous_texte": "Négociation finale agressive. Mélange de vraie contrainte et de test de ta solidité. Le 'on signe aujourd'hui' est un levier tactique. Le 'faut voir' signale que je peux partir si tu ne bouges pas.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder frontalement sur prix mais explorer contreparties : périmètre, paiement échelonné, services inclus ajustés"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'avoue que vous m'avez convaincu sur le fond. Mais là, je peux vraiment pas dépasser 42K€, c'est ma limite absolue avec mon banquier. Si vous pouvez faire quelque chose, on lance. Sinon je vais devoir attendre l'année prochaine, et je sais pas si j'aurai le même budget.",
+      "condition_declenchement": "Arrive après avoir validé la valeur, l'urgence (audit AOP) et surmonté les objections techniques. Moment où Alain est intellectuellement convaincu mais bloqué sur le budget. Mélange de vraie contrainte (38-42K€ réellement mobilisable maintenant) et de dernière tentative négociation. Le 'attendre l'année prochaine' est semi-sincère : vrai risque de report mais aussi levier. C'est le moment où le commercial doit choisir entre tenir son prix avec risque de perdre, ou trouver une solution créative (périmètre ajusté, phasage, facilités) sans brader."
+    },
+    "pattern_escalade": "Alain commence par des objections réflexes de barrage (temps, généraliste) pour filtrer. Si le commercial passe ce test, il bascule en objections sincères terrain (équipe, panne, complexité) pour évaluer la faisabilité réelle. En parallèle, il insère des objections tactiques (concurrent, négociation prix) pour tester la solidité du commercial. Plus la confiance s'installe, plus il révèle ses vraies peurs (échec passé, pression familiale, risque audit). L'objection prix revient de manière cyclique à chaque étape, s'intensifiant jusqu'au closing. Le pattern final est : validation technique → validation humaine/relationnelle → négociation budgétaire serrée → demande garantie/sécurisation → décision conditionnée à ajustement final.",
+    "piege_classique": "Le commercial cède trop vite sur le prix (dès 45K€ alors qu'Alain peut aller à 50K€ avec bon ROI) en interprétant mal le 'c'est cher' comme blocage définitif. Résultat : Alain perd confiance dans la valeur réelle de l'offre ('si tu descends si facilement, c'est que tu me survendais') et soit annule, soit achète mais devient client procédurier et insatisfait. L'autre piège : ne pas identifier que derrière 'je dois en parler à mon associé', Alain a encore une réserve non exprimée (souvent peur de disruption opérationnelle ou doute sur adoption équipe). Le commercial qui ne creuse pas perd l'affaire en silent objection. Enfin, minimiser l'objection sur l'échec passé du logiciel est éliminatoire : c'est une cicatrice émotionnelle forte qui doit être traitée avec empathie et solution concrète différenciante."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur de solutions pour l'industrie agroalimentaire",
+      "description": "entreprise proposant des solutions techniques ou services à destination des PME agroalimentaires en production régionale"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée à l'industrie agroalimentaire, vraisemblablement liée à la production, la qualité, la traçabilité ou l'optimisation des processus",
+      "proposition_valeur": "amélioration de la performance productive, de la qualité ou de la conformité réglementaire pour les entreprises agroalimentaires",
+      "prix": "NON_SPECIFIE - mais positionné premium avec marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser les techniques de défense du prix et de négociation commerciale avec marge de manœuvre limitée",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution de traçabilité fromagerie AOP",
+    "vous_etes": "Commercial chez AgroTrace Solutions, spécialiste des solutions de traçabilité et conformité pour PME fromagères.",
+    "vous_vendez": "Système de traçabilité digitale spécifique fromageries AOP : suivi affinage, non-conformités, audits automatisés. Budget présenté : 48 000€ HT (installation + formation + 1 an maintenance).",
+    "vous_appelez": "Alain Mercier, 52 ans, Directeur Général des Fromageries du Val d'Othe (47 salariés, fromages AOP). Pragmatique, méfiant, protège sa trésorerie comme son AOP. Échaudé par un logiciel qui a fini au placard il y a 4 ans.",
+    "ce_que_vous_savez": [
+      "Audit AOP prévu dans 5 mois — enjeu majeur pour lui",
+      "Problèmes récurrents de non-conformités en affinage depuis 8 mois",
+      "Son fils ingénieur agro le pousse à moderniser, tension générationnelle",
+      "Utilise un système artisanal maison + vieux logiciel bressan peu maintenu",
+      "Budget mental autour de 30K€, mais pourrait monter à 50K€ si ROI démontré sous 24 mois"
+    ],
+    "votre_objectif": "Défendre les 48K€ face à son objection prix systématique, démontrer le ROI en 24 mois maximum et obtenir un accord de principe ou une visite terrain.",
+    "vos_atouts": [
+      "Client similaire : Fromagerie Jallet (39 salariés, Jura) — 23% de réduction des non-conformités en 14 mois",
+      "Module spécifique audit AOP qui génère automatiquement 80% des documents requis",
+      "Hotline 6h-20h tenue par d'anciens fromagers, pas des informaticiens",
+      "Garantie reprise sous 6 mois si inadapté (remboursement 70%) — vous êtes le seul du marché à l'offrir"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:12:37Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16701,
+    "total_time_s": 165.2
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "id": "scenario_1771521312",
+  "description_originale": "Vous appelez à froid le propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : hotellerie_restauration]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "hotel_restaurant_independant_ou_petit_groupe_2_5_etablissements",
+      "interlocuteur_principal": {
+        "poste": "proprietaire_directeur_hotel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution_destinee_secteur_hotellerie_restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "prospect_occupe_et_na_pas_prevu_appel",
+        "prospect_ne_connait_pas_entreprise",
+        "aucune_demande_initiale_du_prospect"
+      ],
+      "implicites": [
+        "resistance_initiale_elevee_appel_froid",
+        "besoin_de_capter_attention_rapidement",
+        "necessite_de_creer_interet_sans_relation_prealable",
+        "gestion_du_barrage_secretariat_potentiel",
+        "legitimite_a_etablir_rapidement"
+      ],
+      "probleme_racine": "convertir_appel_froid_en_rendez_vous_qualifie_face_dirigeant_occupe_sans_besoin_exprime"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "former_commerciaux_a_reussir_prospection_telephonique_froide_aupres_dirigeants_hotellerie_restauration_pour_decrocher_rendez_vous",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "editeur_logiciel_ou_service_btob_hotellerie_restauration",
+      "entreprise_description": "entreprise_proposant_solution_destinee_aux_hotels_restaurants_independants_et_petits_groupes",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution_pour_secteur_hotellerie_restauration",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature_exacte_solution_proposee",
+        "proposition_valeur_concrete",
+        "problematiques_clients_ciblees",
+        "references_ou_preuves_sociales",
+        "positionnement_prix",
+        "avantages_concurrentiels",
+        "zone_geographique_intervention",
+        "nom_entreprise_vendeuse",
+        "duree_cycle_vente_typique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Michel",
+      "nom": "Darrieux",
+      "age": 52,
+      "poste": "Propriétaire-Directeur",
+      "entreprise": {
+        "nom": "Hôtel Le Grand Cèdre & Restaurant La Table du Cèdre",
+        "secteur": "Hôtellerie-restauration 3 étoiles",
+        "taille": "Établissement familial, 28 chambres, restaurant 45 couverts, 12 employés fixes + 6 saisonniers",
+        "ca_approximatif": "1,2M€ (dont 60% hébergement, 40% restauration)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les commerciaux (échaudé par un logiciel de réservation défaillant en 2019)",
+        "Pragmatique et orienté résultats immédiats",
+        "Fier de son indépendance et de son parcours self-made"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité face à la concurrence des chaînes et Airbnb",
+        "Protéger l'emploi de son équipe (dont sa belle-fille en réception)",
+        "Transmettre l'établissement à son fils d'ici 5-7 ans dans de bonnes conditions",
+        "Être reconnu par ses pairs (président de l'association locale des hôteliers)"
+      ],
+      "peurs_freins": [
+        "Investir dans une solution qui complexifie le quotidien de l'équipe",
+        "Être dépendant d'un prestataire externe pour son fonctionnement",
+        "Ne pas avoir le temps de former le personnel à un nouvel outil",
+        "Perdre de l'argent sur un engagement long terme sans ROI visible",
+        "Passer pour un pigeon face à un commercial trop lisse"
+      ],
+      "rapport_aux_commerciaux": "Frontalement hostile en première approche. Considère 80% des démarchages comme du temps perdu. Respecte uniquement ceux qui connaissent vraiment son métier et ses contraintes. Déteste les scripts et le bullshit corporate.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, pressé, légèrement agacé. 'Oui allô, c'est pour quoi ?' sans se présenter. Bruit de fond (cuisine, réception) audible.",
+      "signaux_interet": [
+        "Demande spontanément 'Combien ça coûte vraiment ?'",
+        "Mentionne un problème opérationnel précis ('Justement hier on a eu...')",
+        "Passe du vouvoiement au tutoiement",
+        "Baisse le volume ambiant ou s'isole",
+        "Pose des questions techniques pointues sur l'intégration avec son channel manager"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole avec 'Je n'ai pas le temps là'",
+        "Répète 'Envoyez-moi un mail' (esquive polie)",
+        "'On a déjà tout ce qu'il faut'",
+        "Silence prolongé (fait autre chose en même temps)",
+        "'C'est encore un truc qu'il faut payer tous les mois c'est ça ?'"
+      ],
+      "tics_langage": [
+        "'Écoutez...' (pour recadrer)",
+        "'Concrètement' (demande de preuves)",
+        "'Franchement' (avant une objection brutale)",
+        "Soupirs audibles quand on lui parle de 'digitalisation' ou 'transformation'",
+        "'Vous savez, dans notre métier...' (posture d'expert qui teste l'interlocuteur)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, décroche mentalement ou coupe. Attend que le vendeur respire pour reprendre la main."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sortie post-Covid difficile, taux d'occupation remonté à 68% (vs 75% en 2019). Problème récurrent de no-shows. Personnel en tension (turnover en cuisine). Booking.com représente 45% des réservations avec commissions qui grèvent les marges. Réflexion en cours sur refonte du site web (devis reçus entre 8K€ et 15K€).",
+      "priorites_actuelles": [
+        "Optimiser le taux de remplissage hors plateformes (coût d'acquisition)",
+        "Réduire le temps administratif (lui et sa femme comptable)",
+        "Fidéliser la clientèle locale pour le restaurant (baisse de fréquentation -12% vs 2022)",
+        "Préparer la saison estivale (dans 4 mois) sans catastrophe opérationnelle"
+      ],
+      "experience_avec_offre_similaire": "Utilise depuis 2018 un PMS basique (Hôtel Concept V3) qu'il trouve 'daté mais qui fait le job'. Abonné Booking.com et Tripadvisor. A testé une solution de yield management en 2021, abandonnée après 3 mois (trop complexe, pas adaptée à sa taille). Méfiance envers le SaaS depuis un bug qui a bloqué les réservations 48h en plein pont de mai 2019.",
+      "fournisseur_actuel": "PMS Hôtel Concept (320€/mois), channel manager basique inclus. Contrat tacite reconduit. Insatisfait de l'interface mais 'ça marche et l'équipe connaît'.",
+      "budget_disponible": "Peut dégager 400-600€/mois si ROI démontré sous 6 mois. Allergique aux investissements initiaux > 2000€. Négocie systématiquement. A une ligne de crédit bancaire mais ne veut pas la solliciter pour 'un logiciel'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Référence précise à un établissement similaire dans sa région ('Le Mas des Oliviers à Carpentras a réduit ses commissions Booking de 18% avec nous')",
+        "Montrer qu'on connaît ses contraintes sans qu'il les explique ('Avec 28 chambres, vous n'avez pas les moyens de payer un revenue manager')",
+        "Proposer un diagnostic gratuit de 10 min sur sa fiche Booking (trouve ses points faibles)",
+        "Être appelé par un ancien hôtelier reconverti commercial (légitimité métier)",
+        "Timing : appeler en début d'après-midi (14h-15h30) jamais le vendredi après 17h ni le weekend"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale', 'expérience client augmentée', 'IA' ou tout jargon corporate",
+        "Demander 'Quels sont vos enjeux ?' (question bateau qui l'agace)",
+        "Proposer une démo de 45 minutes sans avoir établi un problème concret",
+        "Ne pas connaître la différence entre un PMS et un channel manager",
+        "Insister lourdement après un premier refus",
+        "Dénigrer son outil actuel sans alternative crédible immédiate",
+        "L'appeler en plein service (12h-14h / 19h-22h)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui c'est pour quoi ? Je suis en plein service là.",
+        "sous_texte": "Je n'ai pas demandé cet appel, prouvez-moi en 10 secondes que ça vaut la peine que je vous écoute sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître le mauvais timing, proposer un créneau précis dans 2h, donner une micro-accroche de valeur avant de raccrocher"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je reçois 10 appels par semaine de commerciaux, qu'est-ce qui fait que je devrais vous écouter vous ?",
+        "sous_texte": "Vous êtes le énième parasite qui me fait perdre du temps, différenciez-vous immédiatement ou dégagez",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer connaissance ultra-précise de son établissement et citer un pair comparable qui a eu un résultat chiffré concret"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Je ne vous connais pas, envoyez-moi un mail, je regarderai.",
+        "sous_texte": "Technique d'évitement polie. Le mail finira à la poubelle, je veux juste me débarrasser de vous sans conflit",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Déjouer poliment l'esquive en proposant 2 minutes chrono maintenant pour savoir SI un mail a du sens, sinon on ne le dérange plus jamais"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà tout ce qu'il faut, on est équipés. Notre système fait le job.",
+        "sous_texte": "Je n'ai pas envie de me compliquer la vie avec un changement. Changer = risque, formation, coût caché, emmerdes",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider son système actuel puis investiguer la faille: 'Et niveau commissions Booking, vous êtes à combien actuellement?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, dans notre métier, tous les vendeurs nous promettent la lune et au final c'est toujours la même soupe.",
+        "sous_texte": "J'ai été échaudé. Je teste votre solidité et votre authenticité. Prouvez-moi que vous n'êtes pas comme les autres charlatans",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître ouvertement cette réalité, demander ce qui s'est mal passé précisément, montrer transparence sur limites de sa solution"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, je n'ai pas le temps de former mon équipe à un nouvel outil. Ma réceptionniste, c'est ma belle-fille, elle n'est pas une pro de l'informatique.",
+        "sous_texte": "Peur réelle et légitime. L'adoption interne est un vrai sujet. Si ça plante, c'est ma famille et mes salariés qui morfleront",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Quantifier le temps de formation réel (ex: 45min par personne), proposer accompagnement terrain inclus, montrer simplicité interface avec capture écran"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et concrètement, ça me coûte combien par mois votre truc ?",
+        "sous_texte": "Question piège précoce. Si vous annoncez le prix maintenant sans valeur établie, je vais juger le montant hors contexte et dire non",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Dire qu'on y vient mais que ça dépend de sa config, retourner: 'Aujourd'hui combien vous coûtent vos commissions Booking par mois?' pour ancrer le coût actuel d'abord"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a testé un truc de yield management il y a deux ans, c'était beaucoup trop compliqué. Ça a duré trois mois et on est revenus à l'ancien système.",
+        "sous_texte": "Objection fantôme: expérience négative passée qui pollue la conversation présente. Peur de revivre le même échec",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché exactement, différencier son offre point par point, proposer période test courte sans engagement pour dérisquer"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin tout ça c'est bien beau, mais digitalisation, transformation, IA... j'en ai marre de ces mots. Moi je veux juste quelque chose qui marche.",
+        "sous_texte": "Allergie au bullshit marketing. Parlez-moi comme à un chef d'entreprise pragmatique, pas comme à un DSI de grand groupe",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "S'excuser du jargon, traduire en français concret: 'Vous cliquez 2 fois au lieu de 5, vous gagnez 15min par jour, point final'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est encore un truc qu'il faut payer tous les mois, c'est ça ? Et si j'arrête dans 6 mois, mes données je les récupère comment ?",
+        "sous_texte": "Méfiance envers modèle SaaS = dépendance. Peur d'être prisonnier et de perdre ses données = perte de contrôle totale",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Expliquer clause sortie, export données format standard, engagement initial court (3 mois) puis mensuel, comparatif coût license perpétuelle vs SaaS"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Justement, on a eu un bug avec notre ancien système en plein pont de mai 2019. Ça a bloqué toutes les réservations pendant 48 heures. Plus jamais ça.",
+        "sous_texte": "Traumatisme business réel. Ce n'est pas une objection pour négocier, c'est une cicatrice profonde. Il teste votre fiabilité technique et votre plan B",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Empathie forte, expliquer architecture redondée, SLA, hotline joignable en 5min, mode dégradé papier fourni, garantie compensation si indispo > 4h"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que le Mas des Oliviers utilise votre solution. Mais eux ils ont 40 chambres et un directeur à plein temps, c'est pas la même échelle.",
+        "sous_texte": "Objection intelligente: votre référence n'est pas assez comparable, donc pas crédible. Il veut des preuves pertinentes pour SA taille",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la différence, donner 2 références 25-30 chambres max, indépendants, owner-operated comme lui, avec résultats proportionnés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, si je comprends bien, votre truc se branche sur mon PMS actuel ou faut tout changer ?",
+        "sous_texte": "Peur du grand soir. Si = tout changer, ça veut dire migration complexe, arrêt activité, budget explosé. Deal potentiellement mort",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier: soit module complémentaire qui s'interface (30min install), soit remplacement progressif sans coupure, jamais de big bang"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, pourquoi pas, mais là en ce moment j'ai d'autres priorités. On prépare la saison, j'ai des travaux dans 3 chambres, un cuisinier qui part... Rappelez-moi dans 3-4 mois.",
+        "sous_texte": "Objection vraie mais aussi excuse confortable. Reporte la décision sine die. Peut être sincère (surchargé) ou tactique (test de persévérance)",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider contraintes, puis renverser: 'Justement, si on met ça en place AVANT la saison, vous gagnez 2h/semaine pile quand vous serez débordé. 15min maintenant pour planifier?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais en parler à ma femme, elle s'occupe de toute la partie administrative et compta. Je ne décide pas seul sur ces trucs-là.",
+        "sous_texte": "Peut être vrai (décision partagée réelle) ou excuse pour gagner du temps. Introduit un nouvel interlocuteur = risque de perte de contrôle du cycle",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser la co-décision, proposer appel à 3 court ou démo avec elle présente, demander quels sont SES critères à elle pour avancer"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais... Franchement je ne suis pas convaincu là. Faut que je réfléchisse.",
+        "sous_texte": "Objection floue = il manque quelque chose de fondamental (confiance, valeur, urgence) mais il ne le formule pas clairement. Ou faux prétexte poli",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Technique du 'Qu'est-ce qui vous manque précisément pour vous décider aujourd'hui?' Ne pas lâcher sans identifier l'objection réelle cachée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, 580 euros par mois, c'est cher. Mon PMS actuel c'est 320. Vous pouvez faire un geste commercial ou pas ?",
+        "sous_texte": "Négociation classique. Il est intéressé (sinon il ne négocierait pas) mais teste votre marge et votre solidité. Veut gagner la partie",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas brader immédiatement. Comparer coût total (PMS actuel + commissions perdues). Proposer geste limité conditionné à engagement 12 mois ou parrainage"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si ça ne marche pas ? Si dans 6 mois je ne vois aucun résultat, je fais quoi moi ? J'ai perdu mon temps et mon pognon.",
+        "sous_texte": "Aversion au risque légitime. Demande implicite de garantie ou clause de sortie. Veut un filet de sécurité avant de sauter",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer période d'essai 90 jours satisfait ou remboursé, ou engagement réduction de X% commissions OTA mesurable, sinon pas de renouvellement automatique"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez, je suis président de l'asso des hôteliers du coin. Si je teste votre truc et que c'est la cata, je passe pour un con devant tout le monde.",
+        "sous_texte": "Peur du jugement social. Son statut/réputation est en jeu. Risque réputationnel supérieur au risque financier pour lui",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transformer en levier: 'Justement, si ça marche vous serez le précurseur qui a déniché la bonne solution pour les autres. Testez discrètement 3 mois d'abord.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai besoin d'y réfléchir ce weekend tranquille. Je vous rappelle lundi ou mardi en début de semaine.",
+        "sous_texte": "Classique esquive temporelle. Dans 95% des cas, il ne rappellera jamais. Perte de momentum. Fuite polie.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais bloquer un créneau précis: 'Parfait, je note mardi 10h dans mon agenda, je vous appelle ou vous préférez m'appeler vous? Quoi qu'il arrive on se parle mardi.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est intéressant ce que vous me dites, vraiment, mais là honnêtement ce n'est pas le bon moment. Entre la préparation de saison, les travaux, les problèmes de personnel... Je ne peux pas me permettre de lancer un truc comme ça maintenant. Comprenez-moi, c'est pas contre vous hein, mais faut être réaliste. Rappelez-moi en septembre après la saison, on verra à ce moment-là plus sereinement.",
+      "condition_declenchement": "Apparaît quand le vendeur a bien argumenté, établi un intérêt, mais n'a pas créé d'urgence suffisante ni désamorcé la peur du changement en haute saison. Michel reconnaît la valeur mais reporte sine die par peur opérationnelle légitime."
+    },
+    "pattern_escalade": "Michel commence systématiquement hostile/pressé (test de solidité). Si le vendeur tient le choc et montre expertise métier, il passe à des objections sincères sur ses peurs réelles (fiabilité, temps, équipe). Si ces peurs sont adressées avec preuves concrètes, il négocie prix/conditions (signe d'intérêt). L'objection finale est toujours timing/priorités s'il manque le déclencheur d'urgence. Le piège: il peut sembler convaincu intellectuellement mais bloqué émotionnellement par peur du changement au mauvais moment.",
+    "piege_classique": "Ne pas confondre les objections tactiques de négociation (prix, timing) avec les objections sincères profondes (fiabilité post-traumatisme 2019, peur jugement pairs, capacité équipe familiale). Michel respecte uniquement ceux qui détectent et adressent ses peurs réelles sans bullshit. Il teste en permanence la connaissance métier du vendeur via détails techniques (PMS/channel manager, yield management). S'accrocher à un 'rappelez-moi plus tard' sans date ferme = mort commerciale à 99%."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "editeur_logiciel_ou_service_btob_hotellerie_restauration",
+      "description": "entreprise_proposant_solution_destinee_aux_hotels_restaurants_independants_et_petits_groupes"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution_pour_secteur_hotellerie_restauration",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "former_commerciaux_a_reussir_prospection_telephonique_froide_aupres_dirigeants_hotellerie_restauration_pour_decrocher_rendez_vous",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — Hôtelier indépendant 3 étoiles",
+    "vous_etes": "Commercial chez un éditeur de solutions logicielles pour l'hôtellerie-restauration indépendante.",
+    "vous_vendez": "Une solution SaaS pour hôtels indépendants visant à réduire les commissions des plateformes et optimiser le taux d'occupation (budget type : 400-600€/mois).",
+    "vous_appelez": "Michel Darrieux, 52 ans, propriétaire-directeur de l'Hôtel Le Grand Cèdre (28 chambres, 3 étoiles) et du Restaurant La Table du Cèdre. Ancien de terrain, méfiant envers les commerciaux, président de l'asso locale des hôteliers. Ton direct, pragmatique, pas de temps à perdre.",
+    "ce_que_vous_savez": [
+      "Établissement familial 28 chambres + restaurant 45 couverts, 1,2M€ de CA",
+      "Dépendant à 45% de Booking.com (commissions lourdes)",
+      "Utilise un PMS vieillissant (Hôtel Concept V3) mais fonctionnel depuis 2018",
+      "Échaudé par un bug logiciel en 2019 qui a bloqué les réservations 48h",
+      "Taux d'occupation post-Covid à 68% (vs 75% avant), problème de no-shows récurrents"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique de 30 minutes pour un diagnostic gratuit de sa présence en ligne et de ses coûts d'acquisition.",
+    "vos_atouts": [
+      "Vous avez aidé le Mas des Oliviers à Carpentras (taille similaire) à réduire ses commissions Booking de 18%",
+      "Votre solution s'intègre avec les channel managers existants sans migration brutale",
+      "Vous proposez un ROI visible sous 6 mois sans investissement initial lourd",
+      "Vous connaissez intimement les contraintes des hôtels indépendants 25-35 chambres"
+    ],
+    "duree_estimee": "4-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:15:12Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16587,
+    "total_time_s": 164.1
+  }
+}

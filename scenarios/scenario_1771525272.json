@@ -1,0 +1,355 @@
+{
+  "id": "scenario_1771525272",
+  "description_originale": "Vous avez envoyé une proposition commerciale au directeur de clinique / médecin directeur d'une clinique privée, laboratoire d'analyses ou cabinet de groupe de 20-50 personnes il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : sante_medical]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "20-50 personnes",
+      "interlocuteur_principal": {
+        "poste": "directeur de clinique / médecin directeur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "responsable administratif",
+          "role": "potentiel filtre ou décideur secondaire"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution ou service destiné aux établissements de santé privés",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de suivi structuré post-proposition",
+        "Qualification insuffisante en amont de l'envoi",
+        "Proposition possiblement non adaptée ou non personnalisée",
+        "Difficulté à contourner le silence ou l'évitement",
+        "Absence de rendez-vous de débriefing planifié lors de l'envoi"
+      ],
+      "probleme_racine": "Processus de vente incomplet : envoi de proposition sans engagement préalable du prospect sur une date de retour ou un rendez-vous de débriefing, créant un vide décisionnel"
+    },
+    "objections_mentionnees": [
+      "Pas le temps de lire",
+      "Pas prioritaire actuellement",
+      "Besoin d'en discuter en interne",
+      "Prix trop élevé",
+      "Déjà un prestataire en place"
+    ],
+    "objectif_formation": "Maîtriser les techniques de relance après envoi de proposition pour obtenir un retour clair et faire avancer le cycle de vente sans être intrusif",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur solutions santé / services aux établissements médicaux",
+      "entreprise_description": "Entreprise proposant des solutions ou services aux cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux établissements de santé privés de taille moyenne (20-50 personnes), nécessitant validation directeur",
+      "proposition_valeur": "NON_SPECIFIE - à déduire selon le secteur : optimisation gestion, conformité réglementaire, amélioration parcours patient, digitalisation, ou équipement médical",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "obtenir un retour décisionnel clair (oui, non, ou prochaine étape définie)",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Contexte de la relation avant l'envoi (RDV préalable, appel qualifiant, salon...)",
+        "Contenu et qualité de la proposition envoyée",
+        "Budget/prix indicatif",
+        "Avantages concurrentiels spécifiques",
+        "Historique de la relation commerciale",
+        "Raison pour laquelle le prospect était qualifié initialement"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Étienne",
+      "nom": "Maréchal",
+      "age": 52,
+      "poste": "Directeur médical et associé",
+      "entreprise": {
+        "nom": "Clinique Sainte-Anne",
+        "secteur": "Chirurgie ambulatoire et médecine spécialisée",
+        "taille": "34 personnes (8 praticiens, 12 infirmières, 14 administratifs/support)",
+        "ca_approximatif": "3,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Surchargé chronique - jongle entre casquettes médicale et managériale",
+        "Prudent financièrement - enfance libérale, hantise du gaspillage",
+        "Légèrement cynique envers les commerciaux après 20 ans d'expérience"
+      ],
+      "motivations_profondes": [
+        "Préserver l'autonomie de sa clinique face aux groupes hospitaliers",
+        "Maintenir la qualité médicale sans dégrader les marges",
+        "Prouver aux autres associés qu'il maîtrise le volet gestion",
+        "Éviter les emmerdes administratives et réglementaires"
+      ],
+      "peurs_freins": [
+        "S'engager sur un investissement qui ne servira pas vraiment",
+        "Être perçu comme naïf par ses associés médecins sceptiques",
+        "Perdre du temps dans des réunions commerciales verbeuses",
+        "Découvrir des coûts cachés après signature",
+        "Déstabiliser l'équipe avec un changement mal préparé"
+      ],
+      "rapport_aux_commerciaux": "Méfiance polie. A vécu trop de promesses non tenues sur du matériel médical et des logiciels. Respecte ceux qui vont droit au but et connaissent vraiment son métier. Déteste le tutoiement prématuré et le jargon startup.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant. Commence souvent par 'Oui, bonjour, je suis en consultation là, faites vite' même quand ce n'est pas totalement vrai",
+      "signaux_interet": [
+        "Demande des chiffres précis spontanément",
+        "Mentionne un problème concret récent à la clinique",
+        "Pose des questions sur la mise en œuvre pratique",
+        "Dit 'Il faudrait que j'en parle à Martine' (sa responsable administrative de confiance)"
+      ],
+      "signaux_rejet": [
+        "Répète 'Je vais regarder ça' en boucle sans poser de question",
+        "Coupe la parole pour parler d'autre chose",
+        "Utilise le 'nous' institutionnel : 'Nous n'avons pas identifié ce besoin'",
+        "Mentionne un projet concurrent plus urgent",
+        "Silence long après une question sur le prix"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' pour reprendre la main",
+        "Dit 'Concrètement' quand il perd patience avec du blabla",
+        "Ponctue de 'Voilà' conclusifs même quand rien n'est conclu",
+        "Soupirs audibles quand on lui parle de 'transformation digitale' ou 'd'expérience patient'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Environ 45 secondes maximum. Au-delà, décroche mentalement ou interrompt avec un 'Oui oui, j'ai compris le principe'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Clinique stable mais sous pression : baisse des tarifs CPAM, turnover infirmier élevé, contrôle ARS prévu dans 6 mois. Un des 4 associés part à la retraite l'an prochain, négociations de rachat de parts tendues. Étienne doit montrer qu'il pilote bien avant l'AG de septembre.",
+      "priorites_actuelles": [
+        "Résoudre le problème de planification des blocs (source de conflits entre chirurgiens)",
+        "Réussir le contrôle ARS sans remarque majeure",
+        "Réduire les impayés patients (environ 80K€ en retard)",
+        "Trouver le successeur du Dr Blanchard sans désorganiser l'équipe"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un logiciel de gestion qui a foiré (mauvaise intégration, hotline inexistante après 6 mois). L'éditeur a depuis coulé. Échaudé. A aussi eu un commercial insistant qui a contacté directement son secrétariat sans permission, ce qui l'a agacé.",
+      "fournisseur_actuel": "Logiciel de gestion de cabinet Médisoft (version 2018, pas mis à jour, l'équipe râle mais changement = formation = temps). Labo d'analyses : partenariat historique avec BioPartenaires depuis 12 ans.",
+      "budget_disponible": "Peut débloquer 15-25K€ sur décision directe. Au-delà, besoin d'accord des 3 autres associés (réunion trimestrielle). Budget 2024 déjà serré. Préfère étaler les paiements ou modèle par usage."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Prouver qu'on comprend VRAIMENT son quotidien (citer des problématiques précises du privé)",
+        "Montrer un ROI chiffré et rapide (moins de 18 mois)",
+        "Fournir 2-3 références de cliniques similaires en Île-de-France ou Auvergne-Rhône-Alpes",
+        "Proposer une phase de test limitée ou garantie satisfait/remboursé",
+        "Reconnaître ses contraintes : 'Je sais que vous n'avez pas 3 heures pour une démo'",
+        "Impliquer Martine (responsable admin) dans le process sans la court-circuiter"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ses objections : 'Oh mais c'est très simple à mettre en place'",
+        "Pousser pour un rendez-vous physique sans avoir créé de valeur avant",
+        "Parler de 'disruption' ou 'd'ubérisation de la santé'",
+        "Ne pas connaître les contraintes réglementaires du secteur (HAS, ARS, RGPD santé)",
+        "Insister lourdement après un 'non' clair",
+        "Envoyer 15 relances mail automatiques avec des GIF animés",
+        "Dénigrer ouvertement ses choix actuels ou ses confrères"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui bonjour, écoutez là je suis entre deux consultations, vous m'appelez pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas relu votre proposition, je ne me souviens peut-être même pas de vous, et je n'ai pas le temps maintenant. Prouvez-moi en 20 secondes que ça vaut la peine que je reste en ligne.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Recadrer immédiatement avec contexte précis et durée : 'Étienne Maréchal, clinique Sainte-Anne, je vous ai envoyé une proposition sur [sujet précis] le [date]. J'ai 2 minutes pour un point rapide, c'est bon pour vous ou je vous rappelle à quel moment précis ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, je crois que j'ai vu passer ça... Écoutez, j'ai pas eu le temps de regarder en détail, là on est vraiment sous l'eau avec le contrôle ARS qui arrive.",
+        "sous_texte": "Votre truc n'est pas dans mes priorités. Je vous donne une excuse professionnelle valable pour que vous n'insistiez pas. Je teste aussi votre réaction : allez-vous forcer ou comprendre ?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la priorité réelle, puis créer un lien : 'Je comprends, l'ARS c'est critique. Justement, parmi nos clients, 2 cliniques ont utilisé [votre solution] pour préparer leur contrôle sur [aspect précis]. C'est peut-être une piste pour vous ?' Puis demander 3 minutes."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, je suis pas convaincu qu'on ait vraiment ce besoin-là. On a déjà Médisoft qui fait à peu près le boulot, et changer de système maintenant... pfff, c'est des semaines de formation, l'équipe va encore râler.",
+        "sous_texte": "Le statu quo me semble moins risqué que le changement. Même si ce n'est pas parfait, au moins c'est connu. Vous allez me créer des problèmes avec mon équipe, et je n'ai pas l'énergie pour ça. Prouvez-moi que ça vaut vraiment le coup.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider d'abord la crainte légitime, puis quantifier le coût du statu quo : 'C'est vrai que tout changement a un coût. Question : combien de temps votre équipe perd-elle par semaine avec les limites de Médisoft version 2018 ? Si on parlait de récupérer X heures par mois sans formation lourde, ça changerait la donne ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui, je comprends ce que vous me dites, mais concrètement, vous me parlez de combien là ? Parce qu'on a un budget serré cette année, on vient de renouveler du matériel médical, donc là il reste pas grand-chose.",
+        "sous_texte": "J'ai peur que ce soit trop cher. J'ai besoin de savoir tout de suite si c'est dans mes cordes avant de perdre du temps. Je teste aussi si vous allez être transparent ou me baratiner jusqu'à la fin.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête tout en requalifiant : 'Pour une clinique de votre taille, on est entre 15K€ et 30K€ selon les modules. Avant de parler chiffres précis, 2 questions : quel budget aviez-vous en tête ? Et quels modules vous intéressent vraiment dans la proposition ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Il faudrait que j'en parle à Martine de toute façon, c'est elle qui gère tout l'administratif. Je peux pas décider tout seul sur ce genre de truc.",
+        "sous_texte": "Je cherche à diluer ma responsabilité décisionnelle, ou c'est vraiment vrai et je veux impliquer ma personne de confiance. Peut-être aussi un moyen de gagner du temps ou de vous renvoyer vers quelqu'un d'autre. Testez si je veux avancer ou fuir.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider et proposer immédiatement une organisation : 'Tout à fait, Martine est la bonne personne pour la partie mise en œuvre. On peut faire un point à trois de 20 minutes où je réponds à vos questions respectives, ou préférez-vous que je lui présente d'abord et on en reparle après ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, je vais être franc avec vous : j'ai déjà testé un logiciel il y a trois ans, l'éditeur m'avait promis monts et merveilles, au bout de six mois leur hotline répondait plus, et ils ont coulé. J'ai perdu du temps, de l'argent, et la confiance de mes associés. Donc là, je suis... prudent.",
+        "sous_texte": "Je suis échaudé et je ne vous fais pas confiance par défaut. Toutes les belles promesses commerciales me rappellent cette déception. Vous devez me rassurer sur votre solidité et votre engagement long terme, sinon c'est mort.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accueillir l'émotion sans minimiser, puis rassurer factuellement : 'Je comprends parfaitement, c'est une vraie cicatrice. Légitime question : nous on existe depuis X ans, Y clients santé en France, voici nos indicateurs de support (temps réponse, taux résolution). On peut prévoir une clause de garantie spécifique dans votre cas ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Vous me dites que ça va me faire gagner du temps, mais tous les commerciaux me disent ça. Après, dans la vraie vie, c'est jamais aussi simple. Il y a toujours des bugs, des trucs qui marchent pas comme prévu.",
+        "sous_texte": "Je ne crois plus aux discours marketing lissés. J'ai besoin d'honnêteté sur les limites et les difficultés réelles. Si vous m'avouez les points faibles, je vous croirai sur les points forts. Sinon, vous êtes juste un commercial de plus.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur les limites : 'Vous avez raison, c'est pas magique. Les 3 premières semaines il y a toujours un temps d'adaptation. Là où ça marche vraiment c'est sur [cas précis]. Par contre, si vous cherchez [fonction X], on le fait pas encore. Vous préférez que je vous montre la réalité chez un client ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre truc c'est bien joli, mais moi ce qui m'inquiète c'est la mise en place concrète. Vous me parlez de quoi ? Deux jours ? Une semaine ? Un mois ? Parce que si ça immobilise toute l'équipe pendant trois semaines, c'est juste pas possible là.",
+        "sous_texte": "Je veux savoir si vous êtes réaliste sur l'implémentation. J'ai besoin de chiffres précis pour évaluer la perturbation. Si vous minimisez, je vais le sentir et me méfier. Si vous êtes honnête, je pourrai planifier.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un planning réaliste et structuré : 'Pour une clinique de 34 personnes : J1 paramétrage technique (2h, juste vous et Martine), J2-J3 formation par profil (infirmières / admins / praticiens, sessions de 1h), puis 2 semaines d'accompagnement à distance. Ça vous semble jouable ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "D'accord, mais vous comprenez, là on est quatre associés, je peux pas engager 25 000 euros tout seul comme ça. Il faut que j'en parle en réunion d'associés, et la prochaine c'est pas avant septembre. Donc voilà...",
+        "sous_texte": "J'ai un vrai frein organisationnel, mais je ne sais pas si vous pouvez m'aider à le contourner. Je teste aussi si vous allez abandonner ou trouver une solution créative. Peut-être que je cherche aussi une excuse pour temporiser.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer les options sans forcer : 'Je comprends. Deux questions : 1) En dessous de quel montant vous pouvez décider seul ? 2) Si on montait un dossier solide (ROI, références, phase test), vous pourriez le présenter avant septembre de manière exceptionnelle, ou c'est vraiment bloqué ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de références, mais je connais pas ces cliniques-là. Elles sont peut-être trois fois plus grosses que nous, ou dans une région avec d'autres problématiques. C'est pas vraiment comparable.",
+        "sous_texte": "Je cherche des raisons de me rassurer mais j'ai du mal. Ou alors je cherche activement des failles dans votre argumentation parce que je ne suis pas encore convaincu. Donnez-moi quelque chose de vraiment pertinent pour MOI.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une référence ultra-ciblée : 'Justement, la clinique Saint-Louis à Lyon, 38 personnes, chirurgie ambulatoire comme vous, même problématique de planning bloc. Je peux vous mettre en contact avec leur directeur médical pour un échange de 15 minutes entre pairs ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais regarder tout ça tranquillement, et puis je vous rappelle si ça nous intéresse, d'accord ? Voilà.",
+        "sous_texte": "Je veux mettre fin poliment à l'échange sans m'engager. Je ne vous rappellerai probablement jamais. Je cherche à reprendre le contrôle de la situation et à vous faire sortir de ma ligne de mire.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Doux mais ferme sur le process : 'Je comprends. Expérience faite, quand on se dit ça, ça traîne 6 mois et on n'avance pas. Question directe : c'est vraiment pertinent pour vous ou pas du tout ? Si oui, on cale 15 minutes mardi prochain pour débriefer vos questions. Sinon, je vous embête plus.'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème, c'est que là vous me proposez tout un package, mais moi j'ai peut-être pas besoin de tout ça. Ça me paraît un peu... surdimensionné pour nous. Et forcément, ça fait monter la note.",
+        "sous_texte": "Je trouve ça trop cher par rapport à mon besoin perçu. Je cherche une version allégée, moins chère, ou je négocie. Peut-être aussi que je n'ai pas bien compris la valeur de chaque module. Aidez-moi à prioriser.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décomposer et prioriser avec lui : 'Excellente remarque. Sur les 5 modules proposés, lesquels répondraient vraiment à votre priorité numéro 1 ? On peut commencer par là, faire une phase 1 à [prix], et ajouter le reste dans 6-12 mois si ça vous apporte de la valeur. Ça vous va ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais bon, je suis pas tout seul à décider vous savez. Il y a les autres associés, et puis le Dr Lemoine il est assez... sceptique sur tout ce qui est nouveaux outils. Il va falloir le convaincre lui aussi, et franchement je sais pas comment.",
+        "sous_texte": "J'ai une vraie contrainte politique interne. Je ne sais pas comment vendre ça en interne. Peut-être que je cherche votre aide, ou peut-être que c'est une excuse pour ne pas avancer. Mais c'est un vrai frein.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de l'aide pour convaincre en interne : 'Classique. Question : qu'est-ce qui convaincrait le Dr Lemoine ? Des chiffres ? Un confrère qui témoigne ? Je peux préparer un dossier de 2 pages pour votre réunion d'associés, avec arguments clés et réponses aux objections prévisibles. Ça vous aiderait ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais être honnête avec vous : là on a déjà signé avec un autre prestataire sur un projet prioritaire, et tant qu'on a pas fini de déployer ça, je peux pas lancer un autre chantier. C'est pas possible. Voilà.",
+        "sous_texte": "J'ai une vraie contrainte de capacité de changement. Peut-être que c'est vrai, peut-être que c'est une excuse polie. Si c'est vrai, je ne bougerai pas avant plusieurs mois. Testez si je suis sincère ou si je cherche juste à me débarrasser de vous.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Qualifier la temporalité : 'Je comprends, un seul changement à la fois. Deux questions : 1) Ce projet se termine quand environ ? 2) Si je vous recontacte à ce moment-là avec une offre actualisée, ça a du sens ou c'est vraiment pas votre sujet ?' Puis noter et clôturer proprement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, je crois qu'on va rester sur ce qu'on a pour l'instant. On a d'autres priorités, et puis franchement je suis pas sûr qu'on ait le budget. Merci pour votre proposition en tout cas.",
+        "sous_texte": "Je vous dis non de manière polie mais ferme. Soit je ne suis vraiment pas intéressé, soit vous n'avez pas réussi à créer assez de valeur. J'essaie de clore l'échange sans conflit. Acceptez ce non ou tentez une dernière carte.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter avec élégance et laisser la porte ouverte : 'Très bien, je respecte totalement. Dernière question pour ma compréhension : si ce n'est pas le bon moment, c'est plutôt une question de timing, de budget, ou le sujet ne vous parle vraiment pas ? Ça m'aide pour savoir si je peux vous recontacter dans 6 mois ou pas du tout.'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être cash avec vous : j'ai l'impression qu'on tourne en rond là. Vous êtes sympathique, votre solution a l'air bien, mais concrètement, aujourd'hui, maintenant, je peux pas m'engager. J'ai trop de trucs urgents à gérer, le budget est serré, et je veux pas me planter encore une fois. Donc voilà, je vais réfléchir, et si vraiment ça devient prioritaire, c'est moi qui vous rappellerai. D'accord ?",
+      "condition_declenchement": "Se déclenche si le vendeur a déjà tenté 2-3 relances closes sans créer de valeur nouvelle, ou s'il insiste trop lourdement sur un engagement immédiat alors qu'Étienne a exprimé plusieurs freins non traités. C'est le signal final de fatigue décisionnelle et de besoin de reprendre le contrôle."
+    },
+    "pattern_escalade": "Étienne commence par des objections polies et vagues ('pas eu le temps', 'je vais regarder'). Si le vendeur insiste sans apporter de valeur, il passe à des objections plus spécifiques et techniques (prix, timing, organisation interne). Si le vendeur continue à pousser sans écouter, il devient plus sec, utilise des silences longs, raccourcit ses réponses ('Oui oui', 'Voilà') et finit par un refus poli mais définitif. Patience maximale : 2-3 tentatives de close avant fermeture.",
+    "piege_classique": "Étienne donne souvent de 'fausses sorties' polies ('je vais en parler à Martine', 'je regarde ça tranquillement') qui font croire au vendeur qu'il y a encore de l'intérêt, alors qu'en réalité il cherche juste à clore l'échange sans conflit. Le piège est de prendre ces phrases au pied de la lettre et de le relancer 15 fois sans avoir créé d'engagement concret. Il faut challenger ces objections immédiatement, sinon on entre dans un cycle de relance infini sans décision."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur solutions santé / services aux établissements médicaux",
+      "description": "Entreprise proposant des solutions ou services aux cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux établissements de santé privés de taille moyenne (20-50 personnes), nécessitant validation directeur",
+      "proposition_valeur": "NON_SPECIFIE - à déduire selon le secteur : optimisation gestion, conformité réglementaire, amélioration parcours patient, digitalisation, ou équipement médical",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "obtenir un retour décisionnel clair (oui, non, ou prochaine étape définie)",
+      "description": "Maîtriser les techniques de relance après envoi de proposition pour obtenir un retour clair et faire avancer le cycle de vente sans être intrusif",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Clinique privée Sainte-Anne",
+    "vous_etes": "Commercial chez un fournisseur de solutions pour établissements de santé privés, spécialisé dans les cliniques de 20-50 personnes.",
+    "vous_vendez": "Une solution destinée aux cliniques privées pour optimiser leur gestion, conformité ou parcours patient (détails dans votre proposition envoyée il y a 12 jours).",
+    "vous_appelez": "Dr Étienne Maréchal, 52 ans, directeur médical et associé de la Clinique Sainte-Anne (chirurgie ambulatoire, 34 personnes, 3,2M€ CA). Surchargé, méfiant envers les commerciaux après 20 ans d'expérience ratée, parle vite, coupe au bout de 45 secondes si vous tournez en rond.",
+    "ce_que_vous_savez": [
+      "Vous avez envoyé une proposition commerciale il y a 12 jours — aucun retour depuis",
+      "La clinique est stable mais sous pression : baisse tarifs CPAM, turnover infirmier, contrôle ARS dans 6 mois",
+      "Étienne a vécu un échec logiciel il y a 3 ans (intégration ratée, éditeur disparu) — il est échaudé",
+      "Il peut débloquer 15-25K€ seul, au-delà il faut l'accord des 3 autres associés en réunion trimestrielle",
+      "Il déteste le blabla, le jargon startup, et les commerciaux qui ne connaissent pas le secteur"
+    ],
+    "votre_objectif": "Obtenir un retour décisionnel clair : oui, non, ou prochaine étape précise avec date — sans être intrusif.",
+    "vos_atouts": [
+      "Vous comprenez vraiment les contraintes du privé (ARS, marges serrées, turnover)",
+      "Vous pouvez citer 2-3 références de cliniques similaires en région",
+      "Votre solution propose un ROI chiffré sous 18 mois",
+      "Vous êtes prêt à impliquer Martine, sa responsable administrative de confiance"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:21:12Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17466,
+    "total_time_s": 184.1
+  }
+}

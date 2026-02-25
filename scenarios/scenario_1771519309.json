@@ -1,0 +1,362 @@
+{
+  "id": "scenario_1771519309",
+  "description_originale": "Le directeur du développement ou directeur de réseau d'une banque régionale ou groupe de CGP de 100+ collaborateurs (compte clé) est furieux. Un incident majeur a impacté son activité. Il parle de pénalités contractuelles. Votre objectif : gérer la crise, proposer un plan de résolution, et sauver le contrat.\n[Secteur : banque_patrimoine]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "100+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "Directeur du développement / Directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Directeur des opérations",
+        "Responsable qualité",
+        "Direction juridique"
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "Solution technologique ou service BtoB pour banque/CGP",
+      "proposition_valeur_presumee": "Fiabilité, continuité de service, support critique pour l'activité bancaire",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Incident majeur ayant impacté l'activité du client",
+        "Menace de pénalités contractuelles",
+        "Risque de perte d'un compte clé",
+        "Relation client dégradée avec forte insatisfaction"
+      ],
+      "implicites": [
+        "Défaillance dans la qualité de service ou produit",
+        "Non-respect des engagements contractuels (SLA)",
+        "Communication de crise insuffisante ou absente",
+        "Process internes défaillants ayant généré l'incident",
+        "Possible remise en cause du contrat complet",
+        "Atteinte à la réputation auprès d'autres clients potentiels"
+      ],
+      "probleme_racine": "Incapacité des commerciaux à gérer efficacement une situation de crise avec un client stratégique furieux, tout en préservant la relation commerciale et en proposant des solutions correctives crédibles sous pression"
+    },
+    "objections_mentionnees": [
+      "Vous avez compromis notre activité",
+      "Nous allons appliquer les pénalités contractuelles",
+      "Nous envisageons de changer de prestataire",
+      "Vos engagements n'ont pas été tenus",
+      "Comment pouvons-nous vous faire confiance à l'avenir?"
+    ],
+    "objectif_formation": "Former les commerciaux à gérer les situations de crise client : écoute active sous pression, gestion des émotions, proposition de plan d'action correctif crédible, préservation de la relation commerciale avec compte clé stratégique",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services BtoB pour secteur bancaire et gestion de patrimoine",
+      "entreprise_description": "Fournisseur de solutions technologiques ou de services critiques pour banques régionales et réseaux de conseillers en gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service essentiel au fonctionnement quotidien de l'activité bancaire du client (plateforme, logiciel, service d'infrastructure ou process critique)",
+      "proposition_valeur": "Fiabilité opérationnelle, disponibilité 24/7, support réactif, respect des normes bancaires, sécurité et conformité",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Autres banques régionales",
+        "Groupes de CGP nationaux"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise de l'incident",
+        "Type de solution/service fourni",
+        "Montant des pénalités potentielles",
+        "Durée de la relation commerciale",
+        "Historique des incidents précédents"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur du Développement et du Réseau",
+      "entreprise": {
+        "nom": "Banque Régionale Aquitaine Patrimoine",
+        "secteur": "Banque privée et gestion de patrimoine",
+        "taille": "145 collaborateurs, 18 agences",
+        "ca_approximatif": "43M€ de PNB annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Autoritaire sous pression, paternaliste en temps normal",
+        "Obsédé par la réputation et l'image auprès des clients fortunés",
+        "Méfiant envers les beaux discours après avoir été échaudé"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation de SA banque qu'il considère comme son œuvre personnelle",
+        "Éviter à tout prix un rapport négatif au comité de direction qui remettrait en cause son leadership",
+        "Prouver qu'il a la situation sous contrôle face au Directeur Général qui commence à poser des questions",
+        "Obtenir des têtes ou des compensations tangibles pour justifier sa gestion de crise en interne"
+      ],
+      "peurs_freins": [
+        "Que l'incident remonte aux oreilles du conseil d'administration via un client influent",
+        "Perdre la face devant ses conseillers patrimoniaux qui doutent déjà de ses choix technologiques",
+        "Être personnellement tenu responsable d'une perte de chiffre d'affaires mesurable",
+        "Paraître naïf s'il accorde trop vite sa confiance après s'être fait « avoir »"
+      ],
+      "rapport_aux_commerciaux": "Les traite comme des fournisseurs interchangeables depuis l'incident. Avant, il était cordial mais distancé. Maintenant, il les considère comme des menteurs jusqu'à preuve du contraire. Déteste particulièrement le ton enjoué ou les tentatives de minimisation.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, coupant, avec une pointe de mépris à peine dissimulée. Commence souvent par un silence pesant ou un 'Alors?' abrupt pour mettre en position défensive.",
+      "signaux_interet": [
+        "Pose des questions très précises sur les process techniques : 'Concrètement, QUI a validé cette mise en prod?'",
+        "Demande des noms de responsables et des dates précises : signe qu'il évalue la crédibilité",
+        "Évoque spontanément d'autres incidents mineurs passés qu'il avait 'laissé passer' : teste la transparence",
+        "Mentionne le Directeur Général ou le comité de direction : signale qu'il cherche des éléments pour son reporting interne"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement avec 'Oui, oui, ça je connais'",
+        "Regarde ostensiblement sa montre ou ses emails pendant l'échange",
+        "Utilise le 'vous' collectif accusateur : 'Vous aviez PROMIS', 'Vous vous êtes ENGAGÉS'",
+        "Mentionne un concurrent par son nom : 'Chez DataFinance, ils garantissent...'",
+        "Termine ses phrases par 'De toute façon...' suivi d'un soupir résigné"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' en début de phrase quand il est contrarié",
+        "Dit 'C'est pas possible, là' quand il estime qu'on le prend pour un idiot",
+        "Utilise 'Franchement' de manière ironique : 'Franchement, vous vous foutez de moi?'",
+        "Ponctue de 'Voilà' secs pour clore un sujet qu'il juge clos",
+        "Emploie 'On va pas se mentir' avant d'asséner une vérité brutale"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe après 25-30 secondes maximum de discours commercial. Exige des réponses directes à SES questions dans SON ordre. Toute tentative de reprise de contrôle de l'échange est perçue comme du mépris supplémentaire."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "L'incident a bloqué pendant 6h l'accès aux portefeuilles clients pour 12 conseillers, en pleine période de déclaration fiscale. Trois clients patrimoniaux (dont un élu local influent) ont menacé de partir. Le service juridique a calculé 47K€ de pénalités contractuelles applicables. Le DG a convoqué Stéphane pour un point spécifique. L'équipe commerciale interne murmure que 'Mercier s'est encore fait avoir avec ses choix de presta'.",
+      "priorites_actuelles": [
+        "Obtenir un geste commercial chiffré AVANT la prochaine réunion de direction (dans 8 jours)",
+        "Avoir un document écrit qu'il peut présenter en interne : plan d'action, compensations, garanties",
+        "Comprendre techniquement ce qui s'est passé pour pouvoir l'expliquer de manière crédible au DG",
+        "Évaluer si la rupture de contrat est réaliste ou si elle coûtera plus cher que de continuer",
+        "Restaurer sa crédibilité auprès de ses conseillers patrimoniaux qui doutent de la solution"
+      ],
+      "experience_avec_offre_similaire": "A déjà changé de prestataire il y a 4 ans après un incident similaire (mais moins grave). C'est d'ailleurs ce qui l'a amené chez vous. Se sent doublement trahi car 'on lui avait vendu la fiabilité'. Connaît donc le coût réel d'une migration et les risques associés.",
+      "fournisseur_actuel": "Vous êtes le fournisseur actuel en situation de crise. Contrat de 3 ans, renouvelé il y a 11 mois après négociation difficile. Clause de résiliation anticipée pour manquement grave activable avec préavis de 6 mois.",
+      "budget_disponible": "Aucun budget additionnel prévu. Par contre, dispose d'une enveloppe de 65K€ pour 'ajustements fournisseurs' qui pourrait couvrir une migration si nécessaire. Les pénalités contractuelles de 47K€ sont actées par le juridique et il DOIT les obtenir ou justifier pourquoi il y renonce."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance immédiate et sans détour de la gravité de l'incident : 'Vous avez raison, c'est inacceptable'",
+        "Transparence totale sur les causes techniques avec noms et responsabilités internes assumées",
+        "Proposition concrète de compensation financière AVANT qu'il ne la réclame (geste commercial proactif)",
+        "Plan d'action écrit avec jalons, responsables nommés, dates précises et engagement de la direction générale du prestataire",
+        "Référence à d'autres incidents similaires gérés ailleurs avec preuves de résolution durable",
+        "Offre d'audit indépendant de la plateforme par un tiers de confiance aux frais du prestataire"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimisation de l'incident : 'Ça peut arriver', 'C'est exceptionnel'",
+        "Rejet de responsabilité sur un tiers (sous-traitant, éditeur, etc.) sans assumer la chaîne de responsabilité",
+        "Promesses vagues sans engagement écrit : 'On va tout faire pour...', 'Vous pouvez compter sur nous'",
+        "Tentative de faire payer un renforcement qui aurait dû être inclus : 'Pour éviter ça, il faudrait l'option Premium'",
+        "Comparaison avec d'autres clients : 'Nos autres clients n'ont pas eu ce problème'",
+        "Justification technique trop complexe perçue comme de l'enfumage",
+        "Ton léger, tentative d'humour ou de dédramatisation"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite. Vous m'appelez pour quoi exactement ? Pour me dire que tout va bien maintenant ? Parce que franchement, après ce qui s'est passé, j'ai autre chose à faire que d'écouter vos excuses.",
+        "sous_texte": "Je suis encore furieux et je veux que vous le sentiez immédiatement. Je teste votre capacité à encaisser ma colère et à ne pas fuir. Si vous cherchez à minimiser ou à passer rapidement à autre chose, je raccroche.",
+        "type": "test",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Encaisser frontalement, reconnaître la légitimité de sa colère, annoncer un objectif concret pour l'appel (compensation/plan d'action écrit)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous... Voilà. Bon. Je vous écoute, mais sachez que notre juridique a déjà calculé les pénalités. 47 000 euros. C'est dans le contrat que VOUS avez signé. Donc avant de me parler d'autre chose, on va régler ça.",
+        "sous_texte": "J'ai déjà préparé mon dossier et mes munitions. Je veux voir si vous allez essayer de contester les pénalités ou si vous les assumez. C'est mon test de bonne foi numéro 1. J'ai besoin de ces 47K€ pour justifier en interne que je gère la situation.",
+        "type": "tactique",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Ne pas contester les pénalités, les reconnaître comme légitimes, et proposer immédiatement un geste qui va AU-DELÀ pour montrer la volonté de réparer"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez de vous expliquer l'impact ? Sérieusement ? Vous étiez où pendant six heures ? J'ai eu trois clients patrimoniaux au téléphone, dont un qui siège au conseil départemental, qui m'ont dit texto qu'ils allaient voir ailleurs. TROIS. Vous mesurez ce que ça représente ?",
+        "sous_texte": "Je veux que vous réalisiez la gravité de la situation d'un point de vue business, mais aussi POLITIQUE pour moi en interne. Je teste si vous comprenez vraiment les enjeux ou si vous faites semblant. Si vous passez trop vite sur ce point, c'est que vous ne mesurez pas et que vous recommencerez.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Reformuler l'impact en termes business et réputationnels précis, montrer qu'on a fait le calcul, s'excuser spécifiquement sur ces conséquences"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et mes conseillers, vous croyez qu'ils me font encore confiance ? Ils me regardent en coin depuis une semaine. J'ai l'air de quoi, moi, devant mes équipes ? C'est MOI qui ai poussé pour votre solution il y a un an. C'est pas possible, là.",
+        "sous_texte": "Mon autorité et ma crédibilité internes sont en jeu. C'est presque plus grave pour moi que les aspects techniques. J'ai besoin que vous reconnaissiez que vous m'avez mis en difficulté PERSONNELLEMENT, pas juste 'l'entreprise'. Je cherche à savoir si vous comprenez la dimension humaine.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaître explicitement qu'on l'a mis personnellement en difficulté, s'excuser pour l'atteinte à sa crédibilité, proposer des éléments qui l'aideront à restaurer son image en interne"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, on va pas se mentir. J'ai le Directeur Général qui me convoque mercredi prochain, dans huit jours exactement. Il veut un point complet sur 'l'incident', comme il dit. Qu'est-ce que je lui dis, moi ? Que je vous fais encore confiance ? Vous avez quoi de concret à me proposer ?",
+        "sous_texte": "J'ai une deadline stratégique et je vous la révèle pour voir votre réaction. C'est un signal d'ouverture paradoxal : je vous donne un levier pour m'aider. Mais c'est aussi un ultimatum déguisé. Si vous ne me donnez pas d'éléments tangibles pour cette réunion, je vais devoir trancher contre vous.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Saisir immédiatement l'urgence, proposer de préparer ENSEMBLE les éléments pour sa réunion avec le DG, fournir des documents écrits et engageants dans les 48h maximum"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui, oui, ça je connais. Un 'plan d'action'. Vous m'aviez déjà fait un 'plan d'action' quand on a eu le problème de lenteur en mars. Ça a duré trois semaines. Là, c'est pas pareil. Là, c'est un blocage total. Donc vos plans d'action, franchement...",
+        "sous_texte": "J'ai déjà entendu ces promesses et j'ai été déçu. Je ne crois plus aux procédures standard. Je veux quelque chose d'exceptionnel qui prouve que cette fois c'est différent. Sinon, vous confirmez juste que je dois partir chez un concurrent.",
+        "type": "reflexe",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Distinguer explicitement ce plan d'action des précédents (niveau d'engagement supérieur, implication direction générale, audit externe, etc.)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, QUI chez vous a validé cette mise en prod un vendredi soir ? J'ai besoin de comprendre. Parce que là, soit c'est de l'incompétence, soit c'est de la négligence. Dans les deux cas, comment je peux vous faire confiance pour l'avenir ?",
+        "sous_texte": "Je veux des noms, des responsabilités précises. Je teste votre transparence réelle. Si vous bottez en touche ou restez vague, ça confirme que votre organisation est opaque et non fiable. Je veux aussi savoir s'il y a eu des conséquences internes chez vous, sinon ça veut dire que vous ne prenez pas ça au sérieux.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Donner des informations précises sur les responsabilités, expliquer les mesures prises en interne (sanctions, changements de process), montrer la transparence totale"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de 'renforcer la surveillance'. Mais ça, ça aurait dû être fait AVANT. Là, vous me dites qu'il faut que je paye en plus pour avoir ce que j'aurais dû avoir depuis le début ? C'est ça votre proposition ?",
+        "sous_texte": "Je guette la moindre tentative de me faire payer pour corriger VOTRE erreur. Si c'est le cas, ça confirme que vous êtes de mauvaise foi et que je dois absolument changer de prestataire. C'est un piège classique et je le connais.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Clarifier immédiatement que tous les renforcements seront à VOS frais, que c'est une correction d'un manquement de votre part, pas une option payante"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "J'ai eu DataFinance au téléphone hier. Vous les connaissez ? Ils m'ont dit qu'eux, ils garantissent 99,95% de disponibilité avec pénalités automatiques doublées en cas de manquement. Et ils reprennent les données en trois semaines. Pourquoi je resterais avec vous ?",
+        "sous_texte": "J'ai vraiment été démarché par un concurrent qui a senti l'opportunité. Je vous le dis ouvertement pour deux raisons : 1) vous faire peur pour obtenir plus, 2) tester si vous avez des arguments rationnels contre une migration ou si vous allez juste me supplier de rester. Je veux voir votre réaction sous pression.",
+        "type": "tactique",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, reconnaître la légitimité de l'exploration, pointer les risques objectifs de migration (coûts cachés, délais réels, période de vulnérabilité), proposer des garanties équivalentes ou supérieures"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me proposez un geste commercial de combien, là ? Parce que les pénalités contractuelles, c'est 47K. Si vous me proposez 10K de remise sur l'année prochaine, on va pas aller loin. Je vous le dis cash.",
+        "sous_texte": "J'ai un montant minimum en tête et je teste si vous allez être à la hauteur financièrement. Je signale mes attentes pour voir si vous allez négocier ou proposer directement quelque chose de substantiel. Je cherche aussi à voir si vous avez un mandat de négociation réel ou si vous devez 'voir avec votre direction'.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Proposer une compensation qui égale ou dépasse les 47K€ (abandon des pénalités + geste commercial additionnel), le faire de manière structurée et documentée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, j'entends tout ce que vous me dites. Mais moi, ce qu'il me faut, c'est un papier que je peux présenter mercredi. Un truc signé par votre directeur général, pas par vous. Avec des chiffres, des dates, des noms. Vous pouvez faire ça ?",
+        "sous_texte": "Je révèle exactement ce dont j'ai besoin pour pouvoir défendre le maintien de notre relation en interne. C'est un signal d'ouverture majeur : je vous dis comment me convaincre. Mais c'est aussi un test de votre pouvoir réel dans votre organisation. Si vous ne pouvez pas mobiliser votre DG, c'est que vous n'êtes pas crédible.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "S'engager immédiatement à produire ce document sous 48h, impliquer effectivement la direction générale, proposer même un rendez-vous avec elle si nécessaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon. Admettons. Vous me proposez tout ça. Mais comment je sais que dans trois mois, on se retrouve pas dans la même situation ? Vous m'aviez déjà promis la fiabilité il y a un an quand on a renouvelé. Vos promesses, elles valent quoi maintenant ?",
+        "sous_texte": "C'est ma vraie peur profonde : me refaire avoir, paraître naïf une deuxième fois, et devoir assumer un deuxième incident devant le DG. Je cherche des garanties structurelles, pas des promesses commerciales. Si vous ne me donnez pas de mécanisme de protection crédible, je ne peux pas prendre le risque.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposer des garanties structurelles vérifiables : audit externe, clause de sortie simplifiée, pénalités renforcées automatiques, comité de suivi avec reporting mensuel à son DG"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "De toute façon, mes conseillers me disent qu'on peut pas continuer comme ça. Ils ont pas tort. Peut-être que c'est le moment de couper. Une bonne rupture, ça évite de traîner un boulet. Vous en pensez quoi, vous ?",
+        "sous_texte": "Je teste votre réaction face à un scénario de rupture totale. Est-ce que vous allez paniquer et brader, ou est-ce que vous allez rester digne et reconnaître que c'est une option légitime ? Paradoxalement, si vous acceptez calmement cette possibilité, vous remontez dans mon estime. Je cherche aussi à vous faire dire quelque chose qui pourrait m'aider à justifier mon choix, quel qu'il soit.",
+        "type": "test",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Reconnaître que c'est son droit légitime, ne pas supplier, mais pointer objectivement les coûts et risques d'une rupture, puis recentrer sur les éléments factuels qui militent pour une solution réparatrice"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez combien ça me coûte, une migration ? 65K. J'ai l'enveloppe. Plus les trois semaines d'incertitude. Mais au moins, après, je repars sur des bases saines. Là, avec vous, je repars avec la suspicion. C'est pas tenable.",
+        "sous_texte": "Je vous révèle que j'ai vraiment les moyens de partir, ce n'est pas du bluff. Mais je révèle aussi mon hésitation : je connais le coût réel et ça me freine. Je cherche à ce que vous me donniez une raison rationnelle de ne pas dépenser ces 65K€. C'est ma dernière perche tendue avant de trancher.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reconnaître qu'il a les moyens, comparer objectivement les scénarios (coût/risque/timing), proposer une compensation et des garanties qui rendent le maintien plus avantageux que les 65K€ de migration"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, vous vous foutez de moi ? Vous me proposez un rendez-vous la semaine prochaine pour 'en discuter' ? J'ai ma réunion mercredi. MERCREDI. Vous croyez que je vais dire quoi au DG ? 'On en reparle la semaine prochaine' ? Vous êtes sérieux, là ?",
+        "sous_texte": "Vous venez de démontrer que vous n'avez pas écouté ou pas compris mon urgence. C'est rédhibitoire. Soit vous me proposez quelque chose d'immédiat (aujourd'hui, demain max), soit je considère que vous ne pouvez pas gérer l'urgence et ça confirme tous mes doutes. C'est un test de réactivité critique.",
+        "type": "reflexe",
+        "difficulte": 8,
+        "reponse_efficace_indice": "S'excuser immédiatement, proposer un engagement dans les 24-48h maximum, bloquer immédiatement un créneau très court terme, mobiliser les ressources nécessaires en interne sur le champ"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voilà. Écoutez, je vais être honnête avec vous. J'entends ce que vous me proposez. C'est... c'est mieux que ce que j'attendais, je vous le concède. Mais j'ai quand même un gros problème. C'est que la confiance, elle est cassée. Et ça, les compensations financières, les plans d'action, ça répare pas tout. Mes conseillers me regardent différemment. Le DG me regarde différemment. Et je me regarde différemment dans la glace. Parce que j'ai défendu votre solution, j'y ai cru. Et vous m'avez fait passer pour un con. Alors oui, peut-être que vous allez corriger. Peut-être que ça se reproduira pas. Mais peut-être aussi que si. Et je peux pas me permettre un deuxième peut-être. Vous comprenez ? Donc donnez-moi une vraie raison de pas signer avec DataFinance demain matin. Une vraie. Pas du commercial. Du factuel. Parce que là, honnêtement, je suis à deux doigts d'arrêter les frais.",
+      "condition_declenchement": "Survient après que toutes les objections techniques et financières ont été traitées de manière satisfaisante. C'est l'objection émotionnelle et réputationnelle finale, celle qui révèle que le vrai frein n'est pas rationnel mais personnel. Elle apparaît typiquement au moment où le commercial pense avoir gagné, comme un dernier rempart avant la décision finale. Déclenchée par l'accumulation de la pression interne, la proximité de la deadline (réunion DG) et la présence réelle d'une alternative crédible."
+    },
+    "pattern_escalade": "Stéphane commence par des objections agressives et défensives (accroche), destinées à tester la solidité du commercial et à extérioriser sa colère. Si le commercial tient bon, il passe à des objections plus tactiques et précises (montants, délais, concurrence) pour évaluer le sérieux de la proposition. Puis il révèle progressivement ses vraies contraintes (réunion DG, pression interne) en signaux d'ouverture. Enfin, si tout est satisfaisant rationnellement, il dévoile son objection émotionnelle profonde (confiance brisée, image personnelle). Le pattern inverse si le commercial faiblit : il referme immédiatement et devient cassant, puis clôt brutalement l'échange.",
+    "piege_classique": "Le piège majeur est de croire que Stéphane cherche principalement une compensation financière. En réalité, il a besoin de trois choses dans cet ordre : 1) Des éléments tangibles pour justifier sa décision en interne (document écrit, engagement direction), 2) La restauration de sa crédibilité personnelle (reconnaissance qu'on l'a mis en difficulté), 3) Des garanties structurelles contre la récidive (pas des promesses). La compensation financière n'est que le 4e élément. Le commercial qui se focalise sur l'argent rate les trois premiers besoins et perd la vente. Autre piège : confondre son agressivité verbale avec une fermeture définitive. En réalité, plus il s'énerve et détaille ses problèmes, plus il est encore dans l'échange. Le vrai signal de fermeture est le silence froid ou le 'Bon, on verra' évasif."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services BtoB pour secteur bancaire et gestion de patrimoine",
+      "description": "Fournisseur de solutions technologiques ou de services critiques pour banques régionales et réseaux de conseillers en gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service essentiel au fonctionnement quotidien de l'activité bancaire du client (plateforme, logiciel, service d'infrastructure ou process critique)",
+      "proposition_valeur": "Fiabilité opérationnelle, disponibilité 24/7, support réactif, respect des normes bancaires, sécurité et conformité",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Autres banques régionales",
+        "Groupes de CGP nationaux"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à gérer les situations de crise client : écoute active sous pression, gestion des émotions, proposition de plan d'action correctif crédible, préservation de la relation commerciale avec compte clé stratégique",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise — Relance client furieux après incident majeur",
+    "vous_etes": "Account Manager chez votre entreprise, en charge du compte Banque Régionale Aquitaine Patrimoine depuis 11 mois.",
+    "vous_vendez": "Une plateforme technologique critique pour l'activité bancaire quotidienne (accès portefeuilles clients, outils conseillers). Contrat annuel renouvelé il y a 11 mois.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, Directeur du Développement et du Réseau. Autoritaire, obsédé par sa réputation. Convoqué par son DG suite à l'incident. Vous traite comme un menteur depuis la panne.",
+    "ce_que_vous_savez": [
+      "Incident il y a 8 jours : 6h de coupure totale, 12 conseillers bloqués en pleine période fiscale",
+      "3 clients patrimoniaux ont menacé de partir, dont un élu local influent",
+      "Le service juridique réclame 47K€ de pénalités contractuelles",
+      "Mercier doit rendre des comptes au DG dans 8 jours avec un plan d'action écrit",
+      "Il a déjà changé de prestataire il y a 4 ans pour un incident similaire — c'est comme ça qu'il est arrivé chez vous"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique pour présenter un plan d'action correctif détaillé avant sa réunion de direction.",
+    "vos_atouts": [
+      "Vous avez les causes techniques précises de l'incident et les noms des responsables internes",
+      "Vous pouvez proposer un geste commercial immédiat + audit indépendant gratuit",
+      "Vous avez déjà géré ce type d'incident chez 2 autres banques régionales avec résolution durable",
+      "Vous savez que la migration coûterait plus cher que de réparer la relation (il le sait aussi)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:41:49Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18975,
+    "total_time_s": 188.0
+  }
+}

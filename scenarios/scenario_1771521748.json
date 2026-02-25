@@ -1,0 +1,363 @@
+{
+  "id": "scenario_1771521748",
+  "description_originale": "Le avocat associé / managing partner d'une cabinet d'avocats de 5-15 avocats, droit des affaires est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : juridique]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "juridique - droit des affaires",
+      "taille_entreprise": "cabinet d'avocats 5-15 avocats",
+      "interlocuteur_principal": {
+        "poste": "avocat associé / managing partner",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (nature exacte non précisée)",
+      "proposition_valeur_presumee": "amélioration ou extension du service existant déjà utilisé avec satisfaction",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire"
+      ],
+      "implicites": [
+        "éviter que le client reste sur son niveau actuel par habitude ou frilosité budgétaire",
+        "justifier un investissement supplémentaire alors que le client est satisfait de l'existant",
+        "transformer la satisfaction passive en engagement actif pour une solution premium"
+      ],
+      "probleme_racine": "difficulté à créer un sentiment d'urgence ou de besoin chez un client satisfait de la solution actuelle"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "apprendre à commercialiser une montée en gamme ou un service complémentaire auprès d'un client existant satisfait, en faisant percevoir la valeur ajoutée et en obtenant l'accord pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux professionnels du droit ou services B2B pour cabinets d'avocats",
+      "entreprise_description": "fournisseur de services/solutions pour cabinets d'avocats, avec une relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou version premium du service actuel utilisé par le cabinet",
+      "proposition_valeur": "amélioration de la performance, gain de temps, différenciation concurrentielle ou optimisation des processus du cabinet d'avocats",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de fiabilité)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du cabinet et de ses besoins",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du service initial",
+        "nature du service complémentaire ou de la montée en gamme",
+        "fourchette de prix",
+        "objections potentielles spécifiques au secteur juridique",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Bertrand",
+      "nom": "Lemercier",
+      "age": 52,
+      "poste": "Avocat associé - Managing Partner",
+      "entreprise": {
+        "nom": "Lemercier & Associés",
+        "secteur": "Droit des affaires et droit fiscal",
+        "taille": "9 avocats, 4 juristes, 3 assistantes juridiques",
+        "ca_approximatif": "1,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent-calculateur face aux investissements",
+        "Attaché au rapport qualité-prix et à la rentabilité mesurable",
+        "Sceptique par déformation professionnelle"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité du cabinet dans un secteur sous pression tarifaire",
+        "Se différencier des gros cabinets sans perdre son identité de structure à taille humaine",
+        "Protéger son temps personnel (a réduit son activité opérationnelle pour se concentrer sur le management)"
+      ],
+      "peurs_freins": [
+        "Surinvestir dans des outils dont le ROI sera difficile à mesurer",
+        "Créer de la complexité organisationnelle qui nécessiterait plus de management",
+        "Être perçu par les autres associés comme celui qui dépense sans discernement",
+        "Dépendre excessivement d'un prestataire externe"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Apprécie la précision et déteste le flou commercial. Repère immédiatement les argumentaires préfabriqués. Respecte ceux qui connaissent son métier et parlent concret.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec une pointe de lassitude préventive - 'Oui bonjour, je vous écoute mais j'ai un rendez-vous client dans 20 minutes'",
+      "signaux_interet": [
+        "Pose des questions chiffrées précises sur le ROI",
+        "Mentionne spontanément un problème concret du cabinet",
+        "Demande des références dans des cabinets similaires",
+        "Évoque les autres associés : 'il faudrait que j'en parle à Valérie et Thomas'"
+      ],
+      "signaux_rejet": [
+        "Utilise le nous de majesté distancié : 'Écoutez, nous sommes très satisfaits comme ça'",
+        "Coupe court avec : 'Franchement, là, ce n'est pas le moment'",
+        "Ramène systématiquement à la solution actuelle : 'Ce qu'on a suffit amplement'",
+        "Silence prolongé après une proposition de prix"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Voyez-vous...'",
+        "Dit souvent 'Soyons clairs' avant d'exprimer une réserve",
+        "Utilise 'Concrètement' pour ramener au terre-à-terre",
+        "Finit ses phrases par 'hein' quand il cherche l'assentiment"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Très faible. Coupe après 45 secondes si ça ne l'intéresse pas. Apprécie les échanges structurés en questions-réponses courtes."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable mais sous pression : les clients négocient davantage les honoraires, deux avocats salariés sont partis en 18 mois, difficulté à recruter des profils expérimentés. Réflexion en cours sur la digitalisation pour améliorer la productivité sans recruter.",
+      "priorites_actuelles": [
+        "Améliorer la rentabilité par avocat (actuellement 220k€/an, objectif 240k€)",
+        "Réduire le temps administratif des avocats (facturation, suivi dossiers)",
+        "Fidéliser les clients existants face à la concurrence des Legal Tech et gros cabinaux"
+      ],
+      "experience_avec_offre_similaire": "Utilise depuis 1 an votre solution de base pour la gestion documentaire et en est satisfait - 'Ça fait le job, c'est fiable'. Pas de problème technique majeur. Renouvellement prévu dans 11 mois.",
+      "fournisseur_actuel": "Votre entreprise pour la solution actuelle. Également abonné à Doctrine pour la recherche juridique et utilise un logiciel métier Septeo pour la comptabilité.",
+      "budget_disponible": "Pas de budget formation/outils validé en début d'année. Dispose d'une enveloppe de 8 à 12k€ mobilisable en cours d'année si ROI démontrable à 12 mois. Au-delà, nécessite validation collégiale des 3 associés."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Montrer avec des chiffres comment d'autres cabinets similaires ont gagné X heures/mois par avocat",
+        "Faire le lien avec ses priorités explicites (rentabilité, temps administratif)",
+        "Proposer un essai limité sur 1 ou 2 avocats avant déploiement général",
+        "Mentionner la valorisation du cabinet en cas de future fusion/cession",
+        "Souligner l'avantage commercial face aux clients : 'vous pourrez communiquer sur...'",
+        "Référence à un cabinet concurrent local qui utilise déjà la solution premium"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Commencer par 'Je voulais vous parler d'une opportunité exceptionnelle'",
+        "Proposer une démo de 2h sans avoir qualifié le besoin",
+        "Minimiser la complexité du changement : 'C'est très simple à mettre en place'",
+        "Critiquer implicitement la solution actuelle qu'il utilise déjà (votre solution de base)",
+        "Pousser à la décision immédiate : 'L'offre expire vendredi'",
+        "Utiliser du jargon tech non expliqué ou des superlatifs marketing",
+        "Ne pas avoir préparé l'appel : poser des questions dont les réponses sont sur leur site"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous écoute mais j'ai un rendez-client dans vingt minutes là, hein. Vous pouvez me dire rapidement de quoi il s'agit ?",
+        "sous_texte": "Je ne veux pas m'embarquer dans un long laïus commercial. Prouve-moi que ça vaut mon temps limité.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur la durée (5-7 min max) et annoncer l'objectif concret de l'appel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, nous sommes très satisfaits de la solution actuelle que vous nous fournissez. Ça fait le job, c'est fiable, je ne vois pas bien ce que vous pourriez nous apporter de plus.",
+        "sous_texte": "Je n'ai pas identifié de problème. Pourquoi changerais-je quelque chose qui fonctionne ? Tu risques de me compliquer la vie.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider sa satisfaction puis créer un écart entre situation actuelle et potentiel d'amélioration mesurable"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez, nous sommes un cabinet à taille humaine. On n'a pas les moyens ni les besoins des gros cabinets parisiens. Ce genre de solutions premium, c'est pour des structures avec cinquante avocats, pas pour nous.",
+        "sous_texte": "Je me protège budgétairement en me positionnant comme trop petit. Je ne veux pas payer pour des fonctionnalités surdimensionnées.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Repositionner avec des références de cabinets de taille équivalente et ROI adapté aux TPE/PME"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, on a déjà Septeo pour la compta et Doctrine pour la recherche. On croule sous les outils, vous voyez... Mes avocats passent leur temps à jongler entre quinze interfaces différentes. Vous voulez rajouter une couche ?",
+        "sous_texte": "J'ai peur de la complexité et de la résistance au changement de mon équipe. Prouve-moi que ça simplifie plutôt que ça n'alourdit.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer l'intégration ou la consolidation plutôt que l'ajout, avec gain de temps mesurable"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Soyons clairs : là, ce n'est vraiment pas le moment. On a eu deux départs d'avocats cette année, on est en pleine période de recrutement... Franchement, rajouter un projet comme ça, c'est ingérable pour nous.",
+        "sous_texte": "Objection timing réelle mais aussi protection. Je suis débordé et je n'ai pas l'énergie mentale pour gérer un changement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Repositionner la solution comme facilitateur du problème RH plutôt qu'un projet supplémentaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et ça coûte combien, votre montée en gamme ? Parce que je vous le dis tout de suite, on n'a pas validé de budget formation et outils cette année.",
+        "sous_texte": "Test de qualification. Je veux savoir si c'est dans mes cordes budgétaires avant d'investir plus de temps dans cette conversation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Différer le prix jusqu'à qualification valeur, ou donner fourchette large avec conditionnement ROI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voyez-vous, tout ça c'est très bien sur le papier, mais comment je mesure le retour sur investissement concrètement ? Parce que je ne vais pas dépenser dix ou quinze mille euros sur une promesse de gain de temps hypothétique, hein.",
+        "sous_texte": "Je suis juriste, je veux des preuves tangibles et quantifiables. Tu me vends du vent ou tu as des chiffres solides ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Présenter méthodologie de calcul ROI + études de cas chiffrées de cabinets similaires avec période de retour"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Admettons. Mais qui va former les équipes ? Qui va gérer la migration des données ? Qui va répondre quand ça plante un vendredi soir avant un dépôt de conclusions ? Parce que moi, je n'ai pas le temps, et mes avocats non plus.",
+        "sous_texte": "Peur de la charge cachée d'implémentation et de maintenance. Je veux des garanties sur l'accompagnement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler le plan d'accompagnement clé en main, SLA support, et engagement sur la prise en charge"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me citez des cabinets qui ont gagné du temps, mais lesquels exactement ? Des cabinets comme le nôtre ? Parce que si c'est des références de cabinets de quarante avocats à La Défense, ça ne me parle pas vraiment...",
+        "sous_texte": "Test de crédibilité. Je veux vérifier que tu connais vraiment mon marché et que tu ne me sers pas un pitch générique.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer 2-3 références ultra-qualifiées : taille similaire, géographie proche, spécialité comparable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans six mois on n'est pas satisfaits ? Je me retrouve coincé avec un abonnement annuel et une solution qu'on n'utilise pas ? Parce que ça m'est déjà arrivé avec d'autres prestataires, vous savez...",
+        "sous_texte": "Peur de l'engagement irréversible. J'ai déjà été échaudé et je veux une porte de sortie ou une garantie.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer phase pilote limitée ou clause satisfait/remboursé avec conditions claires"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Mais concrètement, est-ce que vous avez des clients qui sont revenus à la solution de base après avoir testé la premium ? Parce que si personne ne rétrograde, c'est louche, et si beaucoup rétrogradent, c'est que ça ne vaut pas le coup.",
+        "sous_texte": "Question piège de juriste pour tester votre honnêteté et valider la proposition de valeur réelle.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale avec chiffre réel (ex: taux rétention 94%) et raisons des cas de downgrade"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, admettons que je sois intéressé. Il faudrait que j'en parle aux deux autres associés, Valérie et Thomas. Et vous les connaissez pas, mais Thomas est encore plus difficile à convaincre que moi sur ces sujets-là...",
+        "sous_texte": "Signal d'intérêt masqué par une protection de décision collégiale. Teste aussi si tu as un processus pour gérer les décisions multi-stakeholders.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un format de présentation adapté à un comité d'associés avec éléments de décision synthétiques"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui enfin bon, je vais y réfléchir. Envoyez-moi une documentation par mail et on verra. Là, franchement, j'ai mon client qui arrive, il faut vraiment que je vous laisse.",
+        "sous_texte": "Fuite polie. Je n'ai pas assez d'éléments pour décider OU je ne suis pas convaincu mais je ne veux pas te le dire frontalement.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier l'objection réelle avant de lâcher prise : qu'est-ce qui manque précisément pour avancer ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Soyons réalistes : même si je suis convaincu, ça ne se décidera pas avant la prochaine réunion d'associés, et elle n'est pas avant fin mars. Donc à quoi bon se presser ?",
+        "sous_texte": "Objection process légitime mais possiblement utilisée pour temporiser. Teste si tu as une réelle urgence business ou un levier de décision anticipée.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le timing mais sécuriser étapes intermédiaires concrètes (démo, calcul ROI personnalisé, brief Thomas)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, quel est le prix exact maintenant ? Parce qu'il faut que je sache si on est à cinq mille, dix mille ou vingt mille euros. Ça change quand même pas mal la donne pour nous.",
+        "sous_texte": "Moment de vérité. Si le prix est hors budget (>12k), je vais clore. Si c'est dans la fourchette, je continue à évaluer sérieusement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ancrer le prix dans le ROI avant de le donner, puis personnaliser selon configuration réelle du cabinet"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, il y a bien un engagement minimum ? Parce que je ne vais pas me retrouver avec un contrat sur trois ans non résiliable, hein. On a déjà donné avec notre ancien prestataire télécom...",
+        "sous_texte": "Peur de la dépendance contractuelle. Expérience négative passée qui crée une vigilance sur les conditions commerciales.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier engagement (idéalement annuel tacite reconductible) et conditions de résiliation souples"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, pourquoi pas... Mais là, concrètement, qu'est-ce que vous attendez de moi ? Que je signe quelque chose aujourd'hui ? Parce que ce n'est pas comme ça que je fonctionne.",
+        "sous_texte": "Ouverture prudente mais pose ses limites de process. Veut comprendre l'engagement demandé sans pression de closing agressif.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer next step léger et non engageant (démo personnalisée de 30 min, calcul ROI sur leurs données) avec date précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi ? Faites-moi un devis détaillé avec tout : prix, périmètre fonctionnel, accompagnement, conditions contractuelles. Je verrai avec mes associés et je vous redis.",
+        "sous_texte": "Peut être un signal d'achat sérieux OU une manière élégante de se débarrasser de l'appel. Ambiguïté à lever.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais conditionner le devis à un échange préalable de 15 min pour personnaliser (éviter devis générique mort)"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Voyez-vous, j'entends bien tout ce que vous me dites, mais au fond, la vraie question c'est : est-ce qu'on a vraiment besoin de tout ça maintenant ? Parce que franchement, on s'en sort pas mal avec ce qu'on a. C'est peut-être très bien pour plus tard, mais là, tout de suite, je ne suis pas certain que ce soit la priorité du cabinet. Et entre nous, avec la conjoncture actuelle, je préfère garder de la trésorerie plutôt que d'investir dans quelque chose dont on n'a pas l'utilité urgente.",
+      "condition_declenchement": "Apparaît quand le vendeur n'a pas réussi à créer suffisamment d'écart entre situation actuelle et situation désirée, ou n'a pas ancré de problème business urgent et mesurable"
+    },
+    "pattern_escalade": "Bertrand commence cordial mais pressé (barrière temps). Si le vendeur passe cette première barrière, il pose des questions de qualification budget et timing pour protéger son temps. Si le vendeur crée de l'intérêt, il passe en mode analytique avec objections ROI et preuves. Une fois semi-convaincu, il invoque le processus décisionnel collégial et les contraintes organisationnelles. Son pattern final est de demander un devis détaillé pour 'y réfléchir' si la pression de closing est trop forte, ou de proposer un next step concret (démo, essai pilote) si le vendeur a créé suffisamment de confiance et d'urgence mesurable.",
+    "piege_classique": "Bertrand teste systématiquement la connaissance sectorielle du vendeur par des questions précises sur des références comparables. Il utilise aussi des silences calculés après les propositions de prix pour mettre le vendeur mal à l'aise et obtenir des concessions. Son piège favori : accepter gentiment d'avancer ('Oui pourquoi pas, envoyez-moi ça par mail') sans engagement réel, ce qui crée de faux espoirs commerciaux. Pour détecter son intérêt réel, il faut observer s'il pose spontanément des questions sur l'implémentation concrète et s'il mentionne ses associés de manière constructive ('Il faudrait leur montrer') plutôt que défensive ('Ils ne seront jamais d'accord')."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux professionnels du droit ou services B2B pour cabinets d'avocats",
+      "description": "fournisseur de services/solutions pour cabinets d'avocats, avec une relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou version premium du service actuel utilisé par le cabinet",
+      "proposition_valeur": "amélioration de la performance, gain de temps, différenciation concurrentielle ou optimisation des processus du cabinet d'avocats",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de fiabilité)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du cabinet et de ses besoins"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "apprendre à commercialiser une montée en gamme ou un service complémentaire auprès d'un client existant satisfait, en faisant percevoir la valeur ajoutée et en obtenant l'accord pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Montée en gamme solution juridique",
+    "vous_etes": "Commercial Account Manager chez un éditeur de solutions de gestion pour cabinets d'avocats.",
+    "vous_vendez": "La version Premium de votre solution de gestion documentaire et workflow, incluant automatisation facturation, tableaux de bord rentabilité et modules de collaboration client. Budget estimé 10-12k€/an.",
+    "vous_appelez": "Bertrand Lemercier, 52 ans, Avocat associé et Managing Partner de Lemercier & Associés — cabinet de 9 avocats en droit des affaires. Prudent, analytique, déteste le flou commercial. Peu de temps à vous accorder.",
+    "ce_que_vous_savez": [
+      "Client satisfait depuis 1 an de votre solution de base pour la gestion documentaire",
+      "Renouvellement prévu dans 11 mois, pas de problème technique majeur",
+      "Cabinet sous pression rentabilité : objectif passer de 220k€ à 240k€ par avocat/an",
+      "Priorité affichée : réduire le temps administratif des avocats (facturation, suivi dossiers)",
+      "Difficulté à recruter, deux départs d'avocats en 18 mois"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé de la version Premium, en démontrant le ROI sur la rentabilité par avocat et le gain de temps administratif.",
+    "vos_atouts": [
+      "Relation de confiance établie — vous connaissez son infrastructure et ses enjeux",
+      "Cabinet similaire (8 avocats, Lyon) a gagné 4h/semaine/avocat après migration Premium",
+      "Module de facturation automatique permet de réduire de 60% les erreurs et litiges clients",
+      "Possibilité de test sur 2 avocats avant déploiement général, sans engagement long"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:22:28Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15447,
+    "total_time_s": 154.8
+  }
+}

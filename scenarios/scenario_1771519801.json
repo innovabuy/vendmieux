@@ -1,0 +1,366 @@
+{
+  "id": "scenario_1771519801",
+  "description_originale": "Vous appelez à froid le dirigeant / directeur de production d'une PME agroalimentaire de 30-60 salariés, production régionale. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : agroalimentaire]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "agroalimentaire",
+      "taille_entreprise": "PME 30-60 salariés",
+      "interlocuteur_principal": {
+        "poste": "dirigeant ou directeur de production",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "régionale (France)"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée à la production ou à l'optimisation de processus agroalimentaires",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise appelante",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé et n'a pas prévu l'appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque élevé de refus immédiat ou de barrage",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Absence de légitimité ou de point d'ancrage relationnel",
+        "Challenge de différenciation sans connaissance préalable"
+      ],
+      "probleme_racine": "Absence totale de relation préexistante et interruption non sollicitée nécessitant une accroche percutante et une proposition de valeur immédiate pour justifier la poursuite de l'échange"
+    },
+    "objections_mentionnees": [
+      "Je n'ai pas le temps",
+      "Je ne vous connais pas",
+      "Nous n'avons pas besoin",
+      "Envoyez-moi un mail",
+      "Rappelez plus tard"
+    ],
+    "objectif_formation": "Maîtriser les techniques de prospection téléphonique à froid pour transformer un appel interruptif en rendez-vous qualifié de 30 minutes",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions pour l'industrie agroalimentaire (présumé)",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux PME agroalimentaires, vraisemblablement liées à la production, l'optimisation ou la conformité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution adressant un besoin potentiel en production, efficacité, qualité, traçabilité ou conformité pour l'agroalimentaire",
+      "proposition_valeur": "NON_SPECIFIE - À construire autour des enjeux typiques du secteur : gains de productivité, conformité réglementaire, réduction des coûts, traçabilité, qualité",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution proposée",
+        "Proposition de valeur concrète",
+        "Positionnement prix",
+        "Identité de l'entreprise vendeuse",
+        "Arguments de différenciation",
+        "Références ou preuves sociales",
+        "Pain points spécifiques adressés"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Delmotte",
+      "age": 52,
+      "poste": "Directeur de production et co-gérant",
+      "entreprise": {
+        "nom": "Salaisons Delmotte & Fils",
+        "secteur": "Transformation de viandes - Charcuterie artisanale",
+        "taille": "43 salariés (production + commercial + administratif)",
+        "ca_approximatif": "8,2M€ - en stagnation depuis 3 ans"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec une méfiance envers le 'pipeau commercial'",
+        "Protecteur de son temps et de son attention - considère les appels non sollicités comme des vols",
+        "Fierté familiale - l'entreprise porte son nom, donc très sensible à la réputation"
+      ],
+      "motivations_profondes": [
+        "Transmettre l'entreprise à son fils dans de meilleures conditions que celles héritées",
+        "Prouver qu'une PME familiale peut tenir face aux industriels sans brader la qualité",
+        "Éviter l'accident réglementaire qui pourrait tout faire basculer (hantise des contrôles DDPP)",
+        "Garder la main sur les décisions - ne veut pas être dépendant de consultants ou fournisseurs"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur qui promet monts et merveilles sans comprendre le terrain",
+        "Investir dans une solution qui immobilise de la trésorerie sans ROI rapide",
+        "Perdre le contrôle opérationnel en introduisant des processus ou outils complexes",
+        "Que ses équipes rejettent une nouveauté 'imposée d'en haut' par quelqu'un qui ne connaît rien à la charcuterie"
+      ],
+      "rapport_aux_commerciaux": "Réflexe de défense immédiat. A vécu trop d'expériences décevantes avec des 'costards-cravates' qui parlaient bien mais ne comprenaient rien à son métier. Respecte uniquement ceux qui posent des questions intelligentes et admettent leurs limites.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, pressé, légèrement agacé. 'Oui ?' plutôt que 'Bonjour'. Décroche souvent entre deux ateliers avec du bruit de fond.",
+      "signaux_interet": [
+        "Pose une question technique précise sur son process actuel ('Et ça marche comment avec les cycles de maturation ?')",
+        "Mentionne spontanément un problème concret actuel ('Justement on a eu un pépin la semaine dernière avec...')",
+        "Accepte de changer de pièce pour s'isoler du bruit ('Attendez, je vais dans le bureau')",
+        "Demande le prix immédiatement - c'est contre-intuitif mais chez lui c'est qu'il envisage déjà la faisabilité"
+      ],
+      "signaux_rejet": [
+        "Silence pesant pendant que vous parlez - il fait autre chose",
+        "'Écoutez, là je suis sur un truc...' = arrêt imminent",
+        "Ton qui monte légèrement en irritation si vous insistez après un premier refus",
+        "'Envoyez-moi un mail' dit machinalement = poubelle assurée",
+        "Commence à donner des ordres à quelqu'un d'autre = vous avez perdu"
+      ],
+      "tics_langage": [
+        "'Franchement...' (utilisé pour introduire un désaccord ou une objection)",
+        "'C'est-à-dire ?' (= prouvez-moi que vous n'êtes pas un vendeur lambda)",
+        "'Mouais...' (scepticisme de principe)",
+        "'Faut voir...' (= non poli)",
+        "Coupe la parole dès qu'il détecte du discours commercial rodé"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, il interrompt brutalement ou raccroche. Déteste les présentations d'entreprise non sollicitées ('Je m'en fous de votre historique')."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression croissante : marges qui se compriment face aux centrales d'achat, deux départs en retraite non remplacés faute de candidats, audit DDPP prévu dans 4 mois qui stresse toute l'équipe. Le fils (28 ans) pousse pour moderniser mais Thierry freine par peur de l'investissement.",
+      "priorites_actuelles": [
+        "Réussir l'audit DDPP sans observation majeure (obsession numéro 1)",
+        "Réduire le gaspillage matière sans dégrader la qualité perçue",
+        "Trouver un chef d'équipe fiable pour l'atelier découpe",
+        "Éviter de perdre le contrat avec Intermarché (20% du CA) en négociation de renouvellement"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 5 ans un logiciel de gestion de production vendu comme 'la solution miracle' : échec cuisant (trop complexe, jamais utilisé par les équipes, 18K€ perdus). Depuis, méfiance extrême envers l'informatique et les consultants.",
+      "fournisseur_actuel": "Mix d'Excel maison géré par la comptable, fiches papier en atelier, et un vieux logiciel de facturation qui fonctionne. Rien d'intégré. 'C'est pas beau mais ça marche'.",
+      "budget_disponible": "Théoriquement 25-35K€ disponibles en investissement cette année, mais psychologiquement bloqué à 15K€ maximum pour une 'nouveauté'. Au-delà, il faut convaincre son associé (son frère) qui est encore plus réfractaire."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un problème concret du secteur qu'il VIENT de vivre (traçabilité, gestion des DLC, non-conformité)",
+        "Citer une entreprise similaire de la région qu'il respecte et qui utilise votre solution",
+        "Reconnaître explicitement qu'on interrompt et demander 45 secondes chronométrées - le côté 'respect du temps' peut toucher",
+        "Poser une question qui montre que vous connaissez son métier ('Comment gérez-vous actuellement vos plans de nettoyage HACCP ?')",
+        "Parler rentabilité rapide et mesurable : 'retour sur investissement en 8 mois documenté' attire son attention"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours corporate type 'leader sur le marché', 'solutions innovantes' - jargon insupportable pour lui",
+        "Ne pas connaître la différence entre agroalimentaire et industrie manufacturière classique",
+        "Insister après un premier 'non' sans avoir apporté de valeur nouvelle",
+        "Proposer un rendez-vous sans avoir donné la moindre raison concrète ('Pour vous présenter notre offre')",
+        "Minimiser ses objections ('Oui mais justement notre solution règle ça') = arrogance = raccrochage",
+        "Tutoiement ou familiarité déplacée",
+        "Sous-entendre que son système actuel est nul - attaque frontale contre sa gestion = défense agressive"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui, c'est pourquoi ?",
+        "sous_texte": "Je suis occupé, vous avez 3 secondes pour justifier pourquoi je ne devrais pas raccrocher immédiatement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaissance immédiate de l'interruption + raison ultra-concrète de l'appel en 10 secondes maximum"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, là je suis en plein atelier, c'est pas le moment...",
+        "sous_texte": "Vous me dérangez pendant que je travaille vraiment, contrairement à vous qui êtes juste au téléphone",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la légitimité de son occupation + proposer un micro-créneau précis (45 secondes) OU un callback avec heure exacte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi, là ?",
+        "sous_texte": "Je détecte un commercial, prouvez-moi en une phrase que vous n'êtes pas comme les autres",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale sur l'intention + pivot immédiat vers SON problème potentiel, pas votre produit"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, on n'a besoin de rien, tout roule chez nous",
+        "sous_texte": "Réflexe de protection - je ferme la porte avant même de savoir ce que vous voulez, mais je peux être ouvert si vous trouvez la faille",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa situation + question de contrôle sur un point de douleur spécifique (audit DDPP, traçabilité, gaspillage)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous travaillez dans quoi exactement ? Vous connaissez quelque chose à la charcuterie vous ?",
+        "sous_texte": "Je teste votre légitimité - si vous ne comprenez rien à mon métier, cette conversation s'arrête là",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Humilité + preuves de connaissance sectorielle (vocabulaire métier, références clients similaires) + questions intelligentes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... c'est-à-dire concrètement ?",
+        "sous_texte": "Votre discours est trop vague ou trop marketing, descendez au niveau opérationnel ou je décroche",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Exemple concret avec chiffres réels d'une entreprise similaire, pas de généralités"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a déjà testé ce genre de trucs il y a quelques années, ça a été la cata, 18 000 balles dans le vent...",
+        "sous_texte": "J'ai une cicatrice profonde d'un échec passé qui me fait rejeter par défaut toute nouveauté, rassurez-moi vraiment",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Empathie profonde + diagnostic de ce qui a raté AVANT de présenter votre différence + garanties concrètes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je comprends, mais nous on fonctionne différemment, on n'est pas une usine, on est artisanaux",
+        "sous_texte": "Vous mettez tous les agroalimentaires dans le même sac, mais nous on a une identité spécifique que je protège",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser cette spécificité + montrer comment votre solution s'adapte justement aux structures artisanales (pas industrielles)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais ça coûte combien votre machin ?",
+        "sous_texte": "Chez moi, demander le prix tôt = je suis intéressé mais je veux savoir si c'est dans mes moyens avant d'investir plus de temps",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette honnête + recontextualiser avec ROI rapide + seuil psychologique autour de 15K€"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Faut voir... mes gars en atelier vont jamais accepter de changer leurs habitudes, ils ont l'âge de mon père certains",
+        "sous_texte": "Objection réelle sur l'adoption terrain - je ne veux pas créer de conflit social ou d'échec visible devant mes équipes",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Plan d'accompagnement terrain concret + témoignage d'équipe similaire qui a adopté + simplicité d'usage démontrée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, là avec l'audit DDPP dans 4 mois, c'est pas le moment de bouleverser les process...",
+        "sous_texte": "Paradoxe : l'audit est MA priorité mais aussi MA raison de ne rien changer - retournez cet argument ou perdez",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Transformer l'audit en argument POUR : gain de conformité documentée, traçabilité bullet-proof pour l'audit = sécurisation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, votre solution elle est compatible avec notre vieux logiciel de facturation ? Parce qu'on va pas tout refaire hein...",
+        "sous_texte": "Je veux du progrès mais SANS tout casser - l'intégration doit être douce ou c'est mort",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Approche modulaire progressive + interfaçage avec existant OU autonomie complète selon le cas + preuves techniques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, mais vous comprenez, mon frère il est associé aussi, et lui il est encore plus réticent que moi sur ces trucs-là...",
+        "sous_texte": "J'utilise un tiers absent pour tester votre réaction et potentiellement me protéger d'une décision",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Identifier si c'est le vrai décideur + proposer présentation conjointe + arguments financiers rassurants pour associé frileux"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, ça m'intéresse peut-être, mais là c'est trop rapide, envoyez-moi un mail avec les infos et je vous rappelle",
+        "sous_texte": "Version polie de 'non' SAUF si vous sécurisez un vrai engagement derrière - sinon vous allez dans le trou noir des mails",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Valider l'intérêt + accepter l'email MAIS bloquer date/heure de relance concrète MAINTENANT avant de raccrocher"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous de 30 minutes ? Pff, franchement j'ai pas le temps là, entre l'atelier, les commandes, les emmerdes administratives...",
+        "sous_texte": "Le temps est ma ressource la plus précieuse - prouvez que ces 30 minutes valent plus que ce que je ferai à la place",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Quantifier la valeur des 30 minutes (économie potentielle, sécurisation audit) + proposer format court adapté (20 min chrono)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et vous venez d'où vous ? Parce que si c'est pour que vous fassiez 3 heures de route pour me vendre un truc dont je veux pas...",
+        "sous_texte": "Je teste votre sérieux et j'exprime ma culpabilité potentielle de 'faire déplacer quelqu'un pour rien'",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur la logistique (tournée régionale, autre client à côté) + recentrer sur SA valeur à LUI"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais réfléchir, je vous recontacte si ça m'intéresse, d'accord ?",
+        "sous_texte": "Je veux clore poliment sans engagement - vous avez 10 secondes pour créer un vrai next step ou c'est fini",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Technique du choix alternatif sur créneau précis + micro-engagement (envoi document spécifique) qui rouvre la porte"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, je vais être honnête avec vous : j'ai été échaudé y'a 5 ans, j'ai plus envie de me faire avoir. Votre truc a l'air bien sur le papier, mais dans la vraie vie, chez nous, avec nos contraintes, je suis pas sûr que ça marche. Et perdre encore du pognon et du temps, j'ai pas les moyens. Donc voilà, merci quand même mais je préfère laisser tomber.",
+      "condition_declenchement": "Après 4-5 minutes d'échange où le vendeur a montré de l'intérêt mais n'a pas suffisamment rassuré sur les risques d'échec, ou a été trop insistant sans créer de vraie confiance"
+    },
+    "pattern_escalade": "Thierry commence par des objections réflexes sèches (barrages automatiques), puis si vous franchissez ce premier mur, passe à des objections tactiques pour tester votre solidité (prix, timing). Si vous tenez bon avec crédibilité, il révèle alors ses objections sincères profondes (échec passé, équipe, associé), qui sont le vrai terrain de bataille. L'escalade finale arrive si vous n'avez pas traité la cicatrice émotionnelle de l'échec à 18K€ : il se referme complètement par auto-protection.",
+    "piege_classique": "Confondre sa demande de prix précoce avec de la pure objection prix - chez lui c'est au contraire un signal d'intérêt. Le vrai piège est de sur-argumenter après son 'Mouais...' : ce silence sceptique est une INVITATION à poser une question de découverte, pas à parler plus. Autre piège mortel : ignorer la dimension familiale/transmission - l'entreprise porte son nom, touchez à sa réputation perçue et il devient intraitable."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions pour l'industrie agroalimentaire (présumé)",
+      "description": "Entreprise proposant des solutions destinées aux PME agroalimentaires, vraisemblablement liées à la production, l'optimisation ou la conformité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution adressant un besoin potentiel en production, efficacité, qualité, traçabilité ou conformité pour l'agroalimentaire",
+      "proposition_valeur": "NON_SPECIFIE - À construire autour des enjeux typiques du secteur : gains de productivité, conformité réglementaire, réduction des coûts, traçabilité, qualité",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de prospection téléphonique à froid pour transformer un appel interruptif en rendez-vous qualifié de 30 minutes",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Salaisons artisanales sous pression réglementaire",
+    "vous_etes": "Commercial d'une entreprise spécialisée dans les solutions de traçabilité et conformité HACCP pour PME agroalimentaires.",
+    "vous_vendez": "Solution digitale de gestion de production et traçabilité adaptée aux ateliers de transformation viande (12 000 à 28 000€ selon configuration).",
+    "vous_appelez": "Thierry Delmotte, 52 ans, directeur de production et co-gérant de Salaisons Delmotte & Fils — 43 salariés, charcuterie artisanale familiale, CA 8,2M€. Pragmatique, méfiant envers les commerciaux, protecteur de son temps. Décrochera probablement entre deux ateliers, avec du bruit de fond.",
+    "ce_que_vous_savez": [
+      "Audit DDPP prévu dans 4 mois — source de stress majeur pour l'équipe",
+      "A vécu un échec cuisant avec un logiciel à 18K€ il y a 5 ans, jamais adopté par les équipes",
+      "Fonctionne actuellement avec Excel, fiches papier atelier, et un vieux logiciel de facturation non intégré",
+      "Budget psychologique bloqué à 15K€ pour une nouveauté, même si 25-35K€ sont disponibles",
+      "Son fils pousse pour moderniser mais Thierry freine par peur de l'investissement raté"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique de 30 minutes en prouvant dans les 45 premières secondes que vous comprenez son métier et que vous ne vendez pas du vent.",
+    "vos_atouts": [
+      "Vous avez équipé 3 charcuteries artisanales régionales (30-60 salariés) qui ont passé leurs audits DDPP sans observation majeure",
+      "ROI documenté en 8 mois grâce à la réduction du gaspillage matière et gain de temps administratif",
+      "Solution pensée pour des équipes terrain — adoption en 3 semaines sans bloquer la production",
+      "Vous savez poser des questions techniques précises sur les cycles de maturation et plans de nettoyage HACCP"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:50:01Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16237,
+    "total_time_s": 142.4
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "id": "scenario_1771520241",
+  "description_originale": "Vous appelez une cabinet de gestion de patrimoine de 5-15 conseillers. C'est l'assistante de gestion qui décroche. Vous devez passer le barrage pour parler au fondateur / associé gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : banque_patrimoine]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "Fondateur / Associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante de gestion",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage_secretariat"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution ou service à destination de cabinets de gestion de patrimoine",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à passer le barrage secrétariat",
+        "L'assistante filtre et protège l'accès au décideur"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors de l'appel",
+        "Discours commercial non adapté au barrage",
+        "Absence de déclencheur ou d'accroche pour l'assistante",
+        "Difficulté à créer de l'intérêt en phase initiale",
+        "Manque de technique de contournement du barrage"
+      ],
+      "probleme_racine": "Les commerciaux ne maîtrisent pas la stratégie multi-interlocuteurs et n'ont pas de méthode efficace pour transformer l'assistante en alliée plutôt qu'en obstacle"
+    },
+    "objections_mentionnees": [
+      "Filtrage actif par l'assistante",
+      "Protection du temps du décideur"
+    ],
+    "objectif_formation": "Maîtriser les techniques de franchissement du barrage secrétariat et développer une approche multi-interlocuteurs efficace",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B à destination du secteur financier / gestion de patrimoine",
+      "entreprise_description": "Entreprise proposant des solutions ou services aux cabinets de gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée à améliorer l'activité ou la performance des cabinets de conseil en gestion de patrimoine",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon l'offre réelle",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature précise de l'offre commerciale",
+        "Proposition de valeur concrète",
+        "Problématiques métier du cabinet de patrimoine visé",
+        "Nom et description de l'entreprise vendeuse",
+        "Arguments de légitimation pour le barrage",
+        "Prix et positionnement concurrentiel"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Malherbe",
+      "age": 52,
+      "poste": "Fondateur - Associé gérant",
+      "entreprise": {
+        "nom": "Malherbe & Associés Conseil Patrimoine",
+        "secteur": "Conseil en gestion de patrimoine",
+        "taille": "9 conseillers CGP + 2 administratifs",
+        "ca_approximatif": "1,8M€ (dont 65% en honoraires, 35% en rétrocommissions)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers tout ce qui ressemble à de la vente",
+        "Hyper-protecteur de son temps (agenda surchargé)",
+        "Besoin de contrôle et d'être celui qui décide"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité du cabinet (marge nette 18-22%)",
+        "Protéger sa réputation dans le microcosme patrimonial lyonnais",
+        "Ne pas se faire avoir comme en 2019 avec un CRM surdimensionné à 28K€",
+        "Optimiser sans casser ce qui fonctionne déjà"
+      ],
+      "peurs_freins": [
+        "Perdre du temps en rdv inutiles avec des commerciaux qui ne comprennent rien au métier",
+        "Se faire refourguer une solution inadaptée par quelqu'un de 15 ans son cadet",
+        "Que ses conseillers perdent en productivité à cause d'un changement d'outil",
+        "Être perçu comme un pigeon par ses pairs de la CNCGP"
+      ],
+      "rapport_aux_commerciaux": "Distant et sceptique. Les considère comme des vendeurs de rêve qui connaissent mal le secteur patrimoine. A tendance à tester leur légitimité dès les 30 premières secondes. Préfère les recommandations de confrères aux démarchages.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé. 'Oui bonjour, je vous écoute mais je n'ai que quelques minutes'. Teste immédiatement la valeur ajoutée.",
+      "signaux_interet": [
+        "Pose des questions précises sur le ROI chiffré",
+        "Mentionne un problème opérationnel concret ('Tiens, justement on galère sur...')",
+        "Demande des références dans le patrimoine",
+        "Accepte de parler de sa situation actuelle"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole après 45 secondes : 'Écoutez, là ça ne m'intéresse pas'",
+        "Soupir audible quand il entend un argument bateau",
+        "Phrase assassine : 'Vous me rappelez tous les commerciaux qui passent'",
+        "Délègue immédiatement : 'Voyez ça avec Valérie, mon assistante'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' avant de refuser",
+        "Dit 'concrètement' quand il veut du factuel",
+        "Utilise 'franchement' quand il va être cash",
+        "Répète 'je n'ai pas le temps' comme mantra"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : maximum 30-40 secondes avant décrochage mental. Veut de l'interactivité et du concret immédiat, pas un pitch PowerPoint"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable (+8% CA 2023) mais tensions sur la charge administrative. Un conseiller senior part à la retraite en juin, recrute un junior. Pression réglementaire ACPR croissante. Réflexion sur digitalisation de la relation client.",
+      "priorites_actuelles": [
+        "Former le nouveau conseiller junior sans perdre en qualité",
+        "Automatiser la production des reportings clients (chronophage)",
+        "Maintenir la conformité ACPR sans exploser les coûts",
+        "Développer l'acquisition client digital (70% du CA vient du bouche-à-oreille)"
+      ],
+      "experience_avec_offre_similaire": "A testé 3 CRM entre 2017 et 2020. Garde un CRM basique (Effisio) mais sous-exploité. Brûlé par une solution de marketing automation en 2021 (20K€, jamais vraiment utilisée). Méfiance installée.",
+      "fournisseur_actuel": "Effisio pour le CRM, Excel pour la gestion, prestataire comptable externe, aucune solution marketing digitale active",
+      "budget_disponible": "Entre 8K€ et 15K€ annuel pour un outil réellement utile, mais demande du ROI mesurable sous 12 mois. Budget décision en solo jusqu'à 10K€, au-delà consultation des 2 autres associés."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mention d'un confrère CGP qu'il connaît et respecte",
+        "Chiffrage précis d'un gain de temps opérationnel ('23h/mois économisées en moyenne')",
+        "Compréhension fine d'une douleur spécifique au patrimoine (ex: traçabilité conseils DDA)",
+        "Approche humble : 'Je ne sais pas si c'est pertinent pour vous, mais...'",
+        "Proposition d'un diagnostic gratuit de 20 min, pas d'un rdv de vente"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Appel du type 'J'ai une solution révolutionnaire pour votre cabinet'",
+        "Ne pas connaître la différence entre CGPI et family office",
+        "Insister lourdement après un premier refus",
+        "Parler de 'transformation digitale' ou autre buzzword creux",
+        "Proposer un rdv de 1h sans avoir créé de valeur en amont",
+        "Comparaison avec d'autres secteurs ('Comme dans l'immobilier, vous voyez')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en rdv client dans 8 minutes, là c'est vraiment pas le moment",
+        "sous_texte": "Je veux voir si vous allez insister lourdement ou si vous êtes capable de respecter mon temps. Test de votre intelligence situationnelle.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer que vous valorisez son temps plus que votre pitch. Proposer un créneau précis ultérieur."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, on reçoit 4 à 5 appels par semaine de commerciaux qui veulent nous vendre des trucs... franchement, qu'est-ce que vous avez de différent?",
+        "sous_texte": "Vous ressemblez à tous les autres. Prouvez-moi en 15 secondes que vous n'êtes pas un vendeur lambda qui ne connaît rien au patrimoine.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer une connaissance sectorielle précise immédiate. Citer un pain point ultra-spécifique au CGPI."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Valérie, mon assistante, gère tous ces sujets-là. Envoyez-lui un mail, elle verra si ça nous intéresse",
+        "sous_texte": "Je vous renvoie au barrage. Si vous n'avez pas d'argument solide pour rester avec moi, vous ne méritez pas mon temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Créer un micro-déclencheur d'intérêt avant d'accepter la redirection. Ne pas supplier de rester."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous bossez avec qui dans le patrimoine? Parce que si vous me sortez des noms de courtiers en assurance, c'est pas du tout le même métier hein",
+        "sous_texte": "Je teste votre légitimité sectorielle. Les CGPI détestent être confondus avec des courtiers ou des banquiers. Connaissez-vous vraiment mon univers?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer des cabinets CGPI précis, pas des banques. Montrer que vous connaissez la différence et les enjeux spécifiques."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On a déjà Effisio pour le CRM, ça fait le job. Et puis franchement, on n'a pas besoin d'un nouvel outil de plus, on en a déjà trop",
+        "sous_texte": "Je suis fatigué des solutions gadget. J'ai déjà investi et je ne vois pas pourquoi je changerais. Prouvez-moi que ce n'est pas juste un énième outil.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas attaquer Effisio. Questionner sur ce qui n'est PAS couvert aujourd'hui plutôt que remplacer l'existant."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le digital, l'automatisation... tout ça c'est bien joli, mais nous on fait du conseil patrimonial haut de gamme. Nos clients paient pour de l'humain, pas pour des robots",
+        "sous_texte": "Je protège mon positionnement premium et j'ai peur que la technologie déshumanise ma relation client. Je ne veux pas devenir une banque en ligne.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recadrer : la techno libère du temps pour PLUS d'humain sur le conseil à valeur. Pas moins."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me rappelez exactement le commercial qui nous a vendu une solution de marketing automation en 2021. 20 000 euros dans le vent, jamais utilisée. Franchement, j'ai donné",
+        "sous_texte": "Je me suis fait avoir et je refuse de revivre ça. Ma méfiance est légitime et basée sur une expérience concrète. Vous allez devoir la désamorcer.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser ce qui n'a pas marché. Montrer que vous comprenez l'échec et que votre approche intègre ces learnings."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "23 heures par mois économisées... oui enfin ça c'est ce que vous dites. Concrètement, avec le temps de formation, de paramétrage, de migration des données, on perd 6 mois avant de gagner quoi que ce soit",
+        "sous_texte": "Je suis pragmatique et j'ai déjà vécu des implémentations catastrophiques. Votre ROI théorique ne tient pas compte de la réalité opérationnelle.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le coût de mise en œuvre. Chiffrer le break-even réaliste. Proposer un pilote limité."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et vos conseillers, ils sont formés aux spécificités du patrimoine? Parce que si c'est pour qu'on leur explique pendant 3 mois comment fonctionne un démembrement de propriété...",
+        "sous_texte": "Je crains que votre équipe technique ne comprenne rien à mon métier et que mes conseillers perdent un temps fou en support inutile.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Prouver l'expertise sectorielle de votre équipe. Citer des cas d'usage patrimoniaux précis déjà traités."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, entre 8 et 15K par an... pour ce prix-là, je préfère embaucher une alternante qui fait le boulot et qui apporte aussi autre chose au cabinet",
+        "sous_texte": "J'arbitre entre votre solution et d'autres investissements. L'humain me semble plus flexible et polyvalent que votre outil.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer que ce n'est pas un arbitrage OU mais ET. Chiffrer le coût réel complet d'une alternante vs scalabilité techno."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, ça a l'air intéressant, mais là on est en pleine saison fiscale, on croule sous les déclarations IFI. Rappelez-moi en septembre, on verra ça plus calmement",
+        "sous_texte": "Je vous mets en parking. Peut-être sincère, peut-être tactique pour me débarrasser de vous poliment. Difficile à distinguer.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la vraie intention. Si sincère, verrouiller septembre maintenant. Si tactique, créer urgence douce."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je dois en parler avec mes deux associés de toute façon. On prend jamais ce genre de décision seul, vous comprenez",
+        "sous_texte": "Soit vrai (décision collégiale), soit je me cache derrière eux pour ne pas dire non directement. Je teste si vous allez pousser ou accepter le process.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier : décision collégiale réelle ou échappatoire. Proposer une présentation aux 3 associés ensemble."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant mais j'ai besoin de réfléchir. Laissez-moi vos coordonnées, je vous rappelle si ça m'intéresse vraiment",
+        "sous_texte": "Je veux clore cette conversation sans m'engager. Probabilité que je rappelle : 5%. C'est un non poli.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Identifier ce qui bloque vraiment. Qu'est-ce qui manque pour prendre une décision maintenant?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Un rendez-vous d'une heure? Franchement je n'ai pas le temps. Si vous pouvez me faire une démo en 15 minutes en visio à la limite, mais pas plus",
+        "sous_texte": "Votre proposition de rdv ne respecte pas ma contrainte temps. Je suis prêt à vous donner une chance mais pas au prix que vous demandez.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le format court. Mieux vaut 15 min maintenant que 1h jamais. Adapter votre format."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez, j'ai un copain qui travaille chez [concurrent]. Il m'a déjà parlé de leur solution, je dois le rappeler d'ailleurs. Qu'est-ce que vous avez de mieux qu'eux?",
+        "sous_texte": "Je vous mets en compétition. Peut-être vrai, peut-être bluff pour obtenir un meilleur deal ou me débarrasser de vous.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas démonter le concurrent. Recentrer sur SES critères de décision à lui. Qu'est-ce qui compte vraiment?"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, sincèrement, je ne pense pas que ce soit le bon moment pour nous. On a déjà beaucoup de chantiers, le départ de Jean-Marc en juin, le recrutement du junior... Là je n'ai ni le temps ni la bande passante mentale pour me lancer dans un projet comme ça. C'est pas contre vous hein, c'est juste que le timing est mauvais",
+      "condition_declenchement": "Après 4-5 minutes d'échange si aucun pain point aigu n'a émergé ou si le commercial a été trop insistant sur le closing"
+    },
+    "pattern_escalade": "Christophe commence courtois mais pressé (test de respect du temps) → Si vous passez ce test, il devient légèrement plus ouvert mais lance des tests de légitimité sectorielle → Si vous prouvez votre connaissance, il partage un problème réel mais minimise son importance → Si vous creusez bien, il révèle la vraie douleur (ex: la catastrophe CRM 2019) → À ce moment précis, soit il s'ouvre vraiment, soit il se referme par protection si vous gérez mal sa vulnérabilité → Fermeture brutale si vous ne respectez pas un signal de rejet",
+    "piege_classique": "Christophe dit 'Envoyez-moi une doc par mail, je regarde et je vous rappelle'. 90% des commerciaux envoient le mail et attendent. PIÈGE : il ne rappellera JAMAIS. Le bon move : questionner ce qui l'intéresse précisément dans la doc pour envoyer du sur-mesure ET verrouiller un court slot de rappel 48h après. Autre piège : il semble très intéressé pendant 3 minutes puis dit 'Faut que je file, on se rappelle'. Si vous n'avez pas ancré un next step précis à ce moment, vous l'avez perdu."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B à destination du secteur financier / gestion de patrimoine",
+      "description": "Entreprise proposant des solutions ou services aux cabinets de gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée à améliorer l'activité ou la performance des cabinets de conseil en gestion de patrimoine",
+      "proposition_valeur": "NON_SPECIFIE - à définir selon l'offre réelle",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de franchissement du barrage secrétariat et développer une approche multi-interlocuteurs efficace",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Barrage secrétariat cabinet patrimoine",
+    "vous_etes": "Commercial B2B prospectant des cabinets de gestion de patrimoine pour leur proposer une solution d'optimisation opérationnelle.",
+    "vous_vendez": "Une solution destinée aux CGP pour améliorer leur efficacité (nature et prix non précisés dans ce scénario — vous improvisez selon les questions).",
+    "vous_appelez": "Christophe Malherbe, 52 ans, fondateur-gérant de Malherbe & Associés Conseil Patrimoine (Lyon, 9 conseillers). Homme pressé, méfiant, qui déteste perdre son temps avec des commerciaux qui ne comprennent pas son métier.",
+    "ce_que_vous_savez": [
+      "Cabinet stable, 1,8M€ de CA, en croissance modérée",
+      "Utilise Effisio (CRM sous-exploité) et beaucoup d'Excel",
+      "A été échaudé par des solutions surdimensionnées (CRM à 28K€ en 2019, marketing automation 20K€ en 2021)",
+      "Un conseiller senior part en juin, embauche un junior — tensions sur la charge administrative",
+      "Christophe décide seul jusqu'à 10K€, au-delà consulte ses associés"
+    ],
+    "votre_objectif": "Franchir le barrage de Valérie (l'assistante) et obtenir 3-4 minutes avec Christophe pour décrocher un diagnostic gratuit de 20 minutes, pas un rdv de vente.",
+    "vos_atouts": [
+      "Connaissance du secteur CGP (vous savez ce qu'est la DDA, ACPR, différence CGPI/family office)",
+      "Approche humble et consultative, pas agressive",
+      "Vous avez des références dans le patrimoine (à improviser si demandées)",
+      "Vous proposez un diagnostic court, pas un pitch commercial d'1h"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:57:21Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14742,
+    "total_time_s": 133.2
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "id": "scenario_1771518978",
+  "description_originale": "Le directeur de concession / gérant d'une concession automobile ou équipementier local de 20-50 salariés (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : automobile]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de concession / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "équipements automobiles et/ou services associés à une concession",
+      "proposition_valeur_presumee": "fiabilité des livraisons, qualité des produits/services, support client pour concessions automobiles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "concurrents du secteur automobile mentionnés comme alternative par le client"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "problème de livraison, service ou qualité ayant causé l'insatisfaction client",
+        "menace de départ du client vers la concurrence",
+        "relation commerciale compromise"
+      ],
+      "implicites": [
+        "défaillance dans les processus opérationnels ou logistiques",
+        "communication insuffisante en cas de problème",
+        "manque d'anticipation ou de suivi proactif du compte client",
+        "perte potentielle de revenus récurrents",
+        "risque de réputation si le client communique son insatisfaction"
+      ],
+      "probleme_racine": "gestion de crise client existant : incapacité à maintenir le niveau de service promis et à gérer efficacement les réclamations avant qu'elles n'escaladent"
+    },
+    "objections_mentionnees": [
+      "menace de partir à la concurrence",
+      "insatisfaction sur la livraison/service/qualité"
+    ],
+    "objectif_formation": "former les commerciaux à la gestion de réclamations clients en situation de crise, techniques de désescalade, résolution de problèmes et préservation de la relation commerciale avec clients existants",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "fournisseur/équipementier pour le secteur automobile",
+      "entreprise_description": "entreprise fournissant des équipements, pièces ou services aux concessions automobiles",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "fourniture d'équipements automobiles et/ou services associés (livraison, maintenance, support) destinés aux concessions",
+      "proposition_valeur": "partenaire fiable pour les concessions automobiles avec engagement sur la qualité, les délais de livraison et le service client",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée non spécifiée"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du problème (livraison/service/qualité)",
+        "historique de la relation commerciale",
+        "valeur du compte client",
+        "détails sur l'entreprise vendeuse",
+        "marge de manœuvre pour proposer des solutions",
+        "existence de procédures de gestion de réclamations"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Directeur de concession / Gérant associé",
+      "entreprise": {
+        "nom": "Concession Mercier Automobiles",
+        "secteur": "Distribution automobile multimarques (Renault, Dacia)",
+        "taille": "32 salariés",
+        "ca_approximatif": "18M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et orienté résultats immédiats",
+        "Loyal mais rancunier quand trahi",
+        "Sous pression permanente (objectifs constructeur + rentabilité)"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa réputation locale intacte - la concession porte son nom de famille",
+        "Prouver au constructeur qu'il tient ses objectifs malgré les difficultés",
+        "Protéger ses équipes de l'instabilité - 3 mécaniciens avec 15+ ans d'ancienneté",
+        "Ne pas perdre la face devant son associé minoritaire qui critique déjà sa gestion"
+      ],
+      "peurs_freins": [
+        "Que le problème de livraison se reproduise pendant la période de rush (salon auto dans 3 semaines)",
+        "Paraître faible ou manipulable s'il pardonne trop vite",
+        "Découvrir que d'autres concurrents connaissent ses déboires",
+        "Devoir expliquer à un client final pourquoi sa voiture n'est pas prête"
+      ],
+      "rapport_aux_commerciaux": "Transactionnel et méfiant. A été échaudé 2-3 fois par des promesses non tenues. Déteste qu'on lui fasse perdre du temps. Respecte ceux qui vont droit au but et assument leurs erreurs.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Froid, cassant, avec une pointe d'agressivité contrôlée. Laisse planer le silence après vos phrases pour vous mettre mal à l'aise. Coupe court aux formules de politesse.",
+      "signaux_interet": [
+        "Pose des questions précises sur les mesures correctives ('Concrètement, qu'est-ce qui a changé dans votre process ?')",
+        "Mentionne un problème futur spécifique ('J'ai une grosse commande qui arrive mi-mars...')",
+        "Baisse légèrement le ton agressif, commence à parler de 'nous' au lieu de 'vous'"
+      ],
+      "signaux_rejet": [
+        "Soupir ostensible suivi de 'Écoutez, je vais pas vous mentir...'",
+        "Évoque explicitement les concurrents par leur nom ('Chez AutoPro, au moins...')",
+        "Regarde ostensiblement sa montre ou dit 'Bon, j'ai mon chef d'atelier qui m'attend'",
+        "Utilise l'ironie mordante ('Ah oui, comme la dernière fois où c'était censé arriver le mardi...')"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Franchement' ou 'Sincèrement' quand il est contrarié",
+        "Dit 'Voilà quoi' en fin de phrase pour clore un sujet",
+        "Utilise 'Mes gars' pour parler de son équipe atelier",
+        "Ponctue de 'Hein ?' agressif quand il veut une confirmation"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible (30-40 secondes max). Vous coupe si vous dérivez. Attend des réponses courtes et factuelles. Devient sarcastique si vous faites du 'remplissage'."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Concession en performance mitigée : bon CA mais marges sous pression. A investi 180K€ dans la rénovation du showroom l'an dernier. Le constructeur impose des objectifs de vente +12% cette année. L'atelier tourne bien mais manque de pièces régulièrement à cause des ruptures fournisseurs.",
+      "priorites_actuelles": [
+        "Tenir les objectifs Q1 pour toucher la prime constructeur (environ 35K€)",
+        "Préparer le salon automobile régional (stand à 8K€ déjà payé)",
+        "Gérer une inspection qualité du constructeur prévue en avril",
+        "Résoudre les tensions avec son chef d'atelier qui menace de partir à cause des pièces manquantes"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 4 ans environ. Satisfait globalement jusqu'à cet incident majeur il y a 3 semaines : livraison partielle avec 40% des pièces manquantes, aucune communication proactive, hotline injoignable. A dû refuser 2 véhicules clients.",
+      "fournisseur_actuel": "Votre entreprise (en risque de rupture) + un fournisseur secondaire local moins cher mais qualité inférieure",
+      "budget_disponible": "Achats récurrents entre 8K€ et 15K€/mois selon saison. Peut monter à 25K€ en période haute. Pas de budget supplémentaire disponible - surveille sa trésorerie de près."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaissance franche et sans langue de bois de l'erreur commise ('On a merdé, point.')",
+        "Détails précis sur ce qui a dysfonctionné techniquement - il veut comprendre",
+        "Engagement avec date butoir et pénalité claire en cas de nouveau problème",
+        "Proposition de compensation concrète (pas un geste commercial ridicule de 200€)",
+        "Prouver que d'autres clients dans sa situation vous ont redonné leur confiance",
+        "Lui donner un contact direct qui court-circuite le SAV standard"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser la gravité du problème ou chercher des excuses externes",
+        "Promettre que 'ça n'arrivera plus' sans expliquer comment",
+        "Faire l'autruche sur la menace de partir à la concurrence",
+        "Lui parler de 'partenariat' alors que vous venez de faillir",
+        "Proposer un rdv physique 'pour en discuter' sans solution immédiate",
+        "Utiliser un discours commercial formaté alors qu'il est en colère",
+        "Dire 'Je comprends votre frustration' avec un ton détaché"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah c'est vous... Écoutez, franchement, je sais pas si j'ai envie de discuter là. Vous m'avez mis dans une merde noire y'a trois semaines, hein ?",
+        "sous_texte": "Je suis encore en colère mais je décroche quand même - preuve que je vous laisse une chance microscopique de vous expliquer. Ne la gâchez pas avec des platitudes.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaissance immédiate et franche sans détour ni excuse. Dire 'on a merdé' avec des faits précis."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon j'ai trois minutes, pas plus. Mon chef d'atelier m'attend et j'ai déjà perdu assez de temps avec vos histoires.",
+        "sous_texte": "Je veux voir si vous avez changé d'approche. Si vous commencez par du blabla commercial, je raccroche. Allez droit au but ou dégagez.",
+        "type": "test",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Annoncer immédiatement l'objet de l'appel et la solution concrète en 20 secondes maximum."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez combien ça m'a coûté votre merde ? Deux clients que j'ai dû refuser, ma réputation dans le secteur... Franchement vous avez du culot de rappeler.",
+        "sous_texte": "Je veux entendre que vous mesurez réellement l'impact. Pas juste des excuses de principe. Je teste votre conscience du dégât causé.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Chiffrer l'impact reconnu, nommer les conséquences spécifiques sans minimiser, puis enchaîner sur la réparation."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi je vous ferais confiance maintenant ? Vous m'aviez déjà promis la fiabilité y'a quatre ans quand j'ai signé, et regardez où on en est.",
+        "sous_texte": "Toute la relation commerciale est remise en question. Je veux du factuel, pas du relationnel. Qu'est-ce qui a CONCRÈTEMENT changé dans votre organisation ?",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Expliquer la modification process précise avec date de mise en œuvre, responsable identifié, et preuve mesurable."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous savez quoi ? AutoPro m'a appelé la semaine dernière. Eux au moins, quand ils disent mardi, c'est mardi. Et 15% moins cher en plus.",
+        "sous_texte": "Je ne bluffe pas complètement - ils m'ont vraiment contacté. Je veux voir si vous paniquez ou si vous avez de vrais arguments. La concurrence est une option réelle maintenant.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, reconnaître qu'il a raison d'explorer, puis différencier sur la qualité prouvée et l'historique (hors incident)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et concrètement, qu'est-ce qui a changé dans votre process ? Parce que votre hotline, elle était toujours injoignable. J'ai appelé sept fois, SEPT FOIS, sans réponse.",
+        "sous_texte": "Je veux du technique, du process, du factuel. Si vous restez vague ou si vous bottez en touche, c'est terminé. Prouvez-moi que c'est structurellement résolu.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Détailler la modification organisationnelle : nouvel outil, nouvelles ressources, SLA défini, contact dédié avec nom et ligne directe."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes gars à l'atelier, ils vous font plus confiance. Et franchement, moi non plus. Vous comprenez que c'est pas juste commercial là ? C'est humain.",
+        "sous_texte": "L'équipe entière vous en veut. Je suis pas seul dans cette décision. Si je reviens vers vous, je dois les convaincre aussi. Donnez-moi des arguments pour eux.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Proposer une rencontre avec le chef d'atelier et votre responsable logistique pour expliquer les mesures. Reconnaître l'impact humain."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais, OK, vous dites ça... Mais comment je sais que dans trois semaines, au moment du salon, vous allez pas me refaire le coup ? Voilà quoi.",
+        "sous_texte": "J'ai un événement majeur qui arrive. Si vous me plantez là-dessus, je suis mort. Je veux une garantie béton, pas des promesses en l'air.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposition d'un stock tampon sécurisé pour le salon, engagement écrit avec pénalité financière si défaillance, suivi dédié avec point quotidien."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau prix ? Parce que là, en plus de m'avoir fait chier, faudrait que je paie la même chose ? Sincèrement, c'est se foutre de ma gueule.",
+        "sous_texte": "Je veux une compensation financière tangible. Pas symbolique - je parle de plusieurs milliers d'euros sur les prochains mois. Sinon pourquoi je resterais ?",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Proposer compensation chiffrée (remise ou crédit), limitée dans le temps, liée à un volume. Ne pas brader mais reconnaître le préjudice."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez de qualité, mais la qualité sans la livraison ça sert à rien, hein ? J'ai pas un stock infini moi. Mes clients, ils attendent pas.",
+        "sous_texte": "Vous cherchez à dévier sur vos points forts mais vous évitez le vrai sujet. Revenez sur la fiabilité logistique, c'est ÇA mon problème principal.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Recentrer sur le sujet : la fiabilité logistique. Donner le taux de ponctualité livraison post-correction avec chiffres réels."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... J'ai l'impression que vous me racontez ce que je veux entendre. Vous avez d'autres clients qui étaient dans ma situation et qui vous ont redonné leur chance ?",
+        "sous_texte": "Je veux une preuve sociale. Des vrais noms, des vraies situations similaires. Si vous inventez, je vais le sentir et ce sera terminé définitivement.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Donner 1-2 références vérifiables de clients ayant vécu une crise similaire, avec leur accord pour contact. Être factuel sur leur retour d'expérience."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que j'ai déjà commencé à tester chez un concurrent local. Pour l'instant ça se passe bien. Pourquoi je reviendrais en arrière ?",
+        "sous_texte": "Je ne bluffe pas - j'ai réellement diversifié mes sources. Vous n'êtes plus incontournable. Prouvez-moi que vous apportez quelque chose d'unique que l'autre n'a pas.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas attaquer le concurrent, demander ce qui fonctionne chez lui, puis différencier sur l'expertise technique, la disponibilité pièces rares, le SAV spécialisé."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai besoin de réfléchir. Franchement, je suis pas convaincu à 100%. Je vais en parler à mon associé aussi, c'est pas que ma décision.",
+        "sous_texte": "Je suis ébranlé mais pas prêt à dire oui. J'ai besoin d'un dernier élément concret ou d'un délai pour digérer. Ne me brusquez pas ou vous perdez tout.",
+        "type": "reflexe",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Respecter le besoin de réflexion, proposer un point de suivi dans 48-72h avec un élément concret à envoyer d'ici là (plan d'action écrit, références)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK, mettons que je vous redonne une chance. Mais à la PREMIÈRE merde, je vous préviens, c'est terminé définitivement. Pas de deuxième chance cette fois.",
+        "sous_texte": "Je suis en train de céder mais je veux garder le contrôle et la face. Je pose mes conditions pour ne pas paraître faible. C'est presque gagné si vous gérez bien cette phase.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter la condition, la reformuler pour montrer qu'elle est entendue, proposer un engagement écrit avec numéro direct et procédure d'escalade immédiate."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Sincèrement, j'ai envie de vous croire... Mais j'ai eu tellement de promesses dans ma vie. Donnez-moi une raison concrète de pas aller voir ailleurs.",
+        "sous_texte": "Je suis fatigué, sous pression, et j'ai peur de faire le mauvais choix. Je veux une dernière conviction forte, quelque chose qui me rassure émotionnellement autant que rationnellement.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Synthétiser en 3 points factuels + engagement personnel direct. Humaniser la relation : donner VOTRE ligne directe, VOTRE engagement personnel à suivre le compte."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si je dis oui, vous me garantissez quoi exactement ? Parce que je veux du noir sur blanc, pas des discussions de couloir.",
+        "sous_texte": "Je vais accepter mais je veux sécuriser juridiquement/contractuellement la relation. Je ne me fie plus à la confiance aveugle. Donnez-moi du tangible.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer un avenant contractuel avec SLA précis, pénalités définies, contact dédié nominatif. Envoyer le document sous 24h pour signature."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi ? J'ai réfléchi pendant que vous parliez... Je crois que c'est trop tard. Vous m'avez perdu. Mes gars vous font plus confiance, mon associé veut couper les ponts, et moi franchement j'ai plus l'énergie de gérer ça. Je vais tenter avec AutoPro, on verra bien. Désolé mais voilà quoi.",
+      "condition_declenchement": "Se déclenche si : (1) le commercial minimise l'incident ou cherche des excuses, (2) aucune compensation concrète n'est proposée, (3) les réponses restent vagues sur les mesures correctives, (4) le ton est trop commercial/détaché face à sa colère, (5) aucun engagement personnalisé/direct n'est donné, (6) la durée de l'échange dépasse 8-10 minutes sans avancée concrète"
+    },
+    "pattern_escalade": "Stéphane commence froid et cassant (test initial). Si vous tenez bon avec franchise, il s'ouvre légèrement et pose des questions techniques précises. Si vos réponses sont solides, il passe en mode 'négociation dure' (compensation, garanties). Si vous cédez intelligemment avec des engagements concrets, il devient presque collaboratif ('bon, on va essayer'). MAIS : toute tentative de langue de bois, de minimisation ou de promesse creuse le fait revenir à la case départ en pire. Il peut sortir l'objection finale brutalement si vous perdez sa confiance une deuxième fois pendant l'appel.",
+    "piege_classique": "Stéphane donne l'impression d'être uniquement focalisé sur le prix/la compensation financière ('Et niveau prix ?'). Le piège : céder massivement sur le prix sans avoir d'abord restauré la confiance sur la FIABILITÉ. Si vous bradez sans prouver que le problème ne se reproduira pas, il prendra la remise ET partira quand même chez le concurrent ('Vous me prenez pour un con ? Une ristourne ça répare pas la confiance'). L'ordre est crucial : 1) Reconnaissance + explication technique de la correction, 2) Engagement avec garantie, 3) PUIS compensation financière raisonnable. Inverser cet ordre = échec garanti."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "fournisseur/équipementier pour le secteur automobile",
+      "description": "entreprise fournissant des équipements, pièces ou services aux concessions automobiles"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "fourniture d'équipements automobiles et/ou services associés (livraison, maintenance, support) destinés aux concessions",
+      "proposition_valeur": "partenaire fiable pour les concessions automobiles avec engagement sur la qualité, les délais de livraison et le service client",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client existant depuis une durée non spécifiée"
+      ],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "former les commerciaux à la gestion de réclamations clients en situation de crise, techniques de désescalade, résolution de problèmes et préservation de la relation commerciale avec clients existants",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client en crise — Fournisseur pièces auto",
+    "vous_etes": "Commercial account manager chez un équipementier automobile qui fournit pièces et équipements aux concessions depuis 4 ans.",
+    "vous_vendez": "Fourniture récurrente de pièces et équipements automobiles pour concessions (8K€ à 25K€/mois selon saison) avec engagement qualité et délais.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, directeur gérant de Concession Mercier Automobiles (32 salariés, 18M€ CA). Pragmatique, direct, rancunier quand on le trahit. Sous pression permanente : objectifs constructeur +12%, salon auto dans 3 semaines, inspection qualité en avril.",
+    "ce_que_vous_savez": [
+      "Client depuis 4 ans, plutôt satisfait jusqu'à il y a 3 semaines",
+      "Incident majeur récent : livraison partielle (40% manquant), aucune com proactive, hotline injoignable",
+      "Conséquence directe : il a dû refuser 2 véhicules clients et son chef atelier menace de partir",
+      "Il menace ouvertement de partir chez AutoPro et d'autres concurrents",
+      "Prime constructeur de 35K€ en jeu sur Q1, salon à 8K€ déjà payé qui approche"
+    ],
+    "votre_objectif": "Reconquérir sa confiance avant qu'il ne bascule définitivement chez un concurrent et obtenir qu'il maintienne sa prochaine commande.",
+    "vos_atouts": [
+      "Historique positif de 4 ans avant l'incident",
+      "Vous avez identifié précisément la cause du dysfonctionnement (à expliquer factuellement)",
+      "Mesures correctives concrètes déjà mises en place (process + hotline dédiée prioritaire)",
+      "Compensation substantielle prête à proposer (pas symbolique)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:36:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15718,
+    "total_time_s": 153.1
+  }
+}

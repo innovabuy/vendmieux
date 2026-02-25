@@ -1,0 +1,365 @@
+{
+  "id": "scenario_1771517273",
+  "description_originale": "Test rapide: vente de logiciel CRM à un directeur commercial PME\n[Secteur : informatique]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "NON_SPECIFIE",
+      "taille_entreprise": "PME",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Logiciel CRM",
+      "proposition_valeur_presumee": "Amélioration de la gestion de la relation client, suivi des opportunités commerciales, augmentation du taux de conversion",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [],
+      "implicites": [
+        "Difficulté à capter l'attention d'un directeur commercial sollicité",
+        "Positionnement face à une forte concurrence sur le marché CRM",
+        "Dépassement du barrage secrétariat",
+        "Argumentation différenciante face aux solutions existantes"
+      ],
+      "probleme_racine": "Capter l'attention et créer de l'intérêt en prospection froide auprès d'un décideur expérimenté saturé de sollicitations commerciales"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique froide pour vendre un logiciel CRM à des directeurs commerciaux de PME",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Informatique - Édition de logiciels CRM",
+      "entreprise_description": "Éditeur de solution CRM destinée aux PME",
+      "offre_nom": "Logiciel CRM",
+      "offre_description": "Solution de gestion de la relation client permettant de centraliser les contacts, suivre les opportunités commerciales, automatiser les processus de vente et analyser les performances commerciales",
+      "proposition_valeur": "Optimisation de la performance commerciale grâce à une meilleure organisation, un suivi rigoureux des prospects et clients, et une vision claire du pipeline",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_visio",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Secteur d'activité des prospects cibles",
+        "Taille précise des PME visées (CA, effectif)",
+        "Positionnement prix du CRM",
+        "Différenciation vs concurrence",
+        "Problèmes commerciaux réels rencontrés",
+        "Objections typiques",
+        "Nom de l'entreprise vendeuse",
+        "Références clients",
+        "Fonctionnalités clés du CRM"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Moreau",
+      "age": 47,
+      "poste": "Directeur Commercial",
+      "entreprise": {
+        "nom": "Sogeprest Équipements",
+        "secteur": "Distribution de matériel industriel et outillage professionnel",
+        "taille": "85 salariés dont 22 commerciaux terrain",
+        "ca_approximatif": "14,5M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre avec fort ego professionnel",
+        "Méfiant envers les promesses technologiques après plusieurs déceptions",
+        "Autoritaire paternaliste avec son équipe commerciale"
+      ],
+      "motivations_profondes": [
+        "Prouver au COMEX qu'il maîtrise ses chiffres sans outils complexes",
+        "Protéger son équipe de changements qui pourraient les déstabiliser",
+        "Garder le contrôle total sur l'information commerciale",
+        "Éviter d'être perçu comme dépassé technologiquement par la DG"
+      ],
+      "peurs_freins": [
+        "Perdre la main sur son équipe si les données sont transparentes",
+        "Que le système révèle les faiblesses de certains commerciaux historiques qu'il protège",
+        "Investir du temps dans un projet qui échoue comme le précédent CRM abandonné en 2019",
+        "Paraître incompétent s'il ne maîtrise pas l'outil devant son équipe",
+        "Que la Direction utilise les données pour lui mettre la pression"
+      ],
+      "rapport_aux_commerciaux": "Condescendant protecteur - il pense connaître toutes les ficelles et considère que les jeunes commerciaux au téléphone lisent des scripts sans comprendre son métier réel",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Impatient courtois - répond mais fait sentir qu'il a mieux à faire, utilise beaucoup le vouvoiement distant même après plusieurs échanges",
+      "signaux_interet": [
+        "Commence à tutoyer subitement quand un argument résonne",
+        "Pose des questions très précises sur les délais de déploiement",
+        "Mentionne spontanément le nom d'un commercial de son équipe en difficulté",
+        "Demande si on peut faire une démo uniquement pour lui d'abord",
+        "Évoque le budget en disant 'faudrait voir avec la finance mais...'"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles pendant les explications",
+        "Phrases type 'oui enfin bon, dans la théorie hein...'",
+        "Coupe la parole pour ramener à du concret terre-à-terre",
+        "Mentionne l'échec du CRM précédent de manière agressive",
+        "Regarde ostensiblement ses mails pendant l'échange visio",
+        "Dit 'je vous arrête là' ou 'écoutez franchement...'"
+      ],
+      "tics_langage": [
+        "Abuse du 'bon' en début de phrase quand il est sceptique",
+        "Utilise 'dans le monde réel' pour décrédibiliser les promesses",
+        "Dit 'mes gars' pour parler de son équipe commerciale",
+        "Ponctue de 'hein' interrogatif pour tester si l'interlocuteur suit",
+        "Emploie 'franchement' avant chaque objection",
+        "Utilise 'on a déjà donné' pour parler des solutions passées"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper - déteste les discours marketings, veut des chiffres précis et des cas concrets immédiats"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais pression du COMEX sur l'amélioration du taux de transformation (actuellement 18% vs objectif 25%). Deux commerciaux seniors partent à la retraite dans 8 mois, nécessité d'intégrer 3 juniors rapidement. Rachat d'un concurrent en discussion, ce qui compliquerait la gestion sans outil.",
+      "priorites_actuelles": [
+        "Atteindre les objectifs T2 après un T1 décevant (92% de réalisation)",
+        "Former les nouveaux sans mobiliser trop les seniors",
+        "Justifier son budget de déplacements commerciaux contesté par la Direction",
+        "Préparer la convention commerciale de septembre qui détermine sa prime"
+      ],
+      "experience_avec_offre_similaire": "CRM Salesforce implémenté en 2019 par le précédent DG, abandonné après 7 mois car trop complexe, équipe n'a jamais adhéré. Stéphane en a fait un argument de résistance depuis. Utilise actuellement Excel partagé + tableau blanc dans son bureau.",
+      "fournisseur_actuel": "Fichier Excel maison géré par son assistante commerciale Sylvie (qui résiste aussi au changement) + licences LinkedIn Sales Navigator peu utilisées",
+      "budget_disponible": "Entre 15K€ et 25K€ annuels théoriquement disponibles sur la ligne 'outils commerciaux', mais nécessite validation DAF + DG au-delà de 12K€. Budget T2 déjà entamé à 60%."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client concurrent direct qui a amélioré ses résultats (validation par les pairs)",
+        "Parler d'abord de formation/accompagnement plutôt que d'outil (réduit la menace)",
+        "Évoquer la problématique de transmission de savoir entre seniors et juniors",
+        "Promettre une implémentation rapide (moins de 3 semaines) sans mobiliser toute l'équipe",
+        "Proposer un test sur 3 commerciaux seulement avant généralisation",
+        "Montrer comment il gardera le contrôle et la visibilité totale",
+        "Présenter des ROI chiffrés sur cas similaires avec témoignage vidéo"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Comparer à Salesforce ou dire 'comme Salesforce mais plus simple'",
+        "Utiliser du jargon IT ou parler de 'transformation digitale'",
+        "Suggérer que sa méthode actuelle est obsolète ou mauvaise",
+        "Promettre des résultats rapides sans expliquer le comment concrètement",
+        "Vouloir impliquer toute l'équipe dès le premier rendez-vous",
+        "Insister sur les fonctionnalités plutôt que sur les bénéfices business directs",
+        "Dire qu'il faudra changer les habitudes de l'équipe",
+        "Mentionner une formation longue ou complexe",
+        "Parler de 'conduite du changement' ou de consultant externe"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion là, vous me rappelez quand exactement ?",
+        "sous_texte": "Je n'ai pas envie de vous parler mais je reste poli. Si vous insistez maladroitement, je vais raccrocher.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le refus apparent mais créer une micro-curiosité en 10 secondes max avant de proposer un créneau précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Un CRM ? Bon écoutez franchement, on a déjà tenté le coup en 2019 avec Salesforce, ça a été une catastrophe. Mes gars n'ont jamais accroché, on a jeté 30 000 balles par les fenêtres hein.",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre ça. Je teste votre réaction face à l'échec. Si vous minimisez ou accusez Salesforce, je raccroche.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la douleur de l'échec, montrer que vous avez compris pourquoi ça a raté (complexité, manque d'accompagnement) et différencier votre approche concrètement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon OK, vous avez 2 minutes mais après j'ai vraiment un truc, allez-y",
+        "sous_texte": "Je vous donne une chance minimale. Si vous me faites un pitch marketing, je coupe dans 30 secondes. Prouvez que vous comprenez MON métier.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Poser UNE question de découverte ciblée sur sa problématique actuelle plutôt que de pitcher l'outil"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Notre système actuel ? Bah écoutez, on fonctionne avec Excel, un bon vieux tableau blanc dans mon bureau, et ça marche très bien depuis 10 ans hein. Dans le monde réel, c'est ça qui compte : les résultats, pas les outils.",
+        "sous_texte": "Je me sens attaqué sur ma méthode. Je défends mon territoire. Si vous critiquez Excel, vous me critiquez moi.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider que les résultats prouvent que sa méthode a fonctionné, puis explorer ce qui change (nouveaux arrivants, départs, croissance) qui pourrait compliquer le maintien de ces résultats"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui enfin bon, dans la théorie c'est toujours parfait hein, mais mes gars sur le terrain ils ont pas le temps de remplir des trucs sur un ordinateur entre deux rendez-vous.",
+        "sous_texte": "Je protège mon équipe et je projette ma propre résistance à la saisie. Je teste si vous connaissez vraiment la réalité du commercial terrain.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Montrer des exemples concrets d'adoption facile (appli mobile, saisie vocale, pré-remplissage) avec témoignage de commerciaux terrain similaires"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, j'ai pas le temps de me lancer dans un projet comme ça maintenant. On est en plein dans les objectifs du T2, on a déjà pris du retard au T1, faut que je me concentre sur les chiffres là.",
+        "sous_texte": "C'est partiellement vrai mais c'est aussi un prétexte. Je ne veux pas ajouter une source de stress. Prouvez-moi que ça va m'aider sur le T2, pas dans 6 mois.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la pression du T2 et montrer comment une mise en place rapide (2-3 semaines, 3 pilotes) peut justement aider à rattraper le retard sans perturber l'équipe entière"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis bon, mes deux meilleurs commerciaux partent à la retraite dans 8 mois, ça va être compliqué de leur demander d'apprendre un nouvel outil maintenant, vous voyez ce que je veux dire ?",
+        "sous_texte": "C'est un vrai frein mais aussi un test : allez-vous proposer de les exclure (ce qui affaiblira le projet) ou allez-vous trouver un angle intelligent ?",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Retourner l'objection : justement, capitaliser leur savoir dans le CRM avant leur départ pour former les 3 juniors qui arrivent, faire d'eux des parrains du projet"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais combien ça coûte tout ça ? Parce que bon, on a déjà donné, et là mon budget outils commerciaux il est pas extensible hein.",
+        "sous_texte": "Le prix est un vrai frein mais je le mets en avant prématurément pour éviter de m'engager émotionnellement. Si vous donnez le prix maintenant sans valeur démontrée, je vais dire que c'est trop cher.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reporter la discussion prix après avoir montré la valeur concrète, mais donner un ordre d'idée pour éviter de perdre du temps si c'est vraiment hors budget"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vous arrête là : formation de 3 jours ? Écoutez franchement, je peux pas immobiliser mes commerciaux 3 jours, on va perdre combien de rendez-vous clients vous croyez ?",
+        "sous_texte": "La formation longue me fait très peur : perte de CA immédiate, résistance de l'équipe, et moi qui dois gérer les râleurs. C'est peut-être rédhibitoire.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reformuler votre approche formation : modules courts de 2h étalés, formation par petits groupes en roulement, ou même formation individuelle pour ne jamais immobiliser toute l'équipe"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon et concrètement, vous avez des clients dans notre secteur ? Distribution industrielle, matériel pro, parce que c'est pas la même chose que de vendre du SaaS ou du service hein.",
+        "sous_texte": "Je cherche la validation par les pairs de mon secteur. Si vous n'en avez pas, je vais douter que vous compreniez mes spécificités. Si vous mentez, je vais le sentir.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner un exemple client du même secteur ou très proche avec résultats chiffrés, ou expliquer honnêtement pourquoi les problématiques sont identiques même si secteur différent"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin bon, +30% de taux de transformation vous me dites, mais ça c'est chez eux, dans leur contexte. Comment vous pouvez me garantir que ça va marcher chez nous ?",
+        "sous_texte": "Je suis tenté mais j'ai peur de me faire avoir par des chiffres marketing. Je veux des garanties impossibles pour me rassurer ou pour justifier mon refus.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Admettre qu'on ne peut pas garantir +30% car chaque contexte est différent, mais proposer un test pilote mesurable sur 3 mois avec 3 commerciaux pour mesurer VOTRE progression réelle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et ça va prendre combien de temps à mettre en place tout ça ? Parce que si c'est pour que ce soit opérationnel dans 6 mois, ça sert à rien hein.",
+        "sous_texte": "Je veux du rapide parce que j'ai besoin de résultats maintenant pour le T2. Si c'est long, je vais repousser indéfiniment. Mais si c'est trop rapide, je vais douter de la qualité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler un calendrier réaliste et rapide : 2 semaines paramétrage, 1 semaine formation pilote, opérationnel sous 3 semaines avec gains visibles sous 6 semaines"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon mais qui va s'occuper de tout ça ? Parce que moi j'ai pas le temps de gérer un projet en plus de mes objectifs, et mon assistante Sylvie elle croule déjà sous le boulot.",
+        "sous_texte": "La charge mentale et opérationnelle du projet me fait très peur. Si vous me laissez seul avec ça, je vais saboter inconsciemment le projet par manque de temps.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Rassurer sur l'accompagnement concret : votre équipe gère l'essentiel du paramétrage, un chef de projet dédié, et Stéphane doit juste valider 3 points clés et faire 2h de réunion par semaine pendant 3 semaines"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, ça a l'air intéressant tout ça, mais bon faut que j'en parle à mon DG et à la DAF. Vous me laissez vos coordonnées, je vous rappelle si ça les intéresse.",
+        "sous_texte": "Je me défile poliment. Je ne vais probablement jamais en parler à qui que ce soit. Je veux vous faire partir sans conflit. C'est mon objection de sortie classique.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider qu'il doit effectivement impliquer DG et DAF, mais proposer de l'aider à préparer cette conversation : co-construire l'argumentaire budgétaire, proposer un pré-RDV avec eux, ou d'abord faire une démo juste pour lui"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je suis pas certain que mes gars vont adhérer. Ils sont pas très tech, surtout les anciens, et j'ai pas envie de créer une guerre interne pour un outil.",
+        "sous_texte": "C'est ma peur profonde : perdre l'adhésion de l'équipe et mon autorité. Je projette ma propre résistance sur eux. C'est peut-être le vrai frein final.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer qu'il choisisse LUI-MÊME les 3 pilotes parmi les plus ouverts, faire de lui le héros du projet auprès de l'équipe, et montrer comment ça va renforcer son leadership en modernisant intelligemment"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK bon ben écoutez, faites-moi une proposition chiffrée par mail avec tout ce qu'on a dit, je regarde ça et je vous redis.",
+        "sous_texte": "Je veux gagner du temps et réfléchir seul, mais il y a 70% de chances que je ne lise jamais ce mail en détail. C'est ma sortie de secours confortable.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail mais bloquer immédiatement une visio de 30 min dans 3-4 jours pour le débriefing, en expliquant que les questions viennent toujours après lecture"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais bon, si ça foire comme la dernière fois, c'est moi qui vais me faire allumer par le COMEX hein. J'ai pas envie de retenter le coup et de passer pour un con.",
+        "sous_texte": "Ma vraie peur : l'échec public qui entache ma réputation. Mon ego est en jeu. J'ai besoin d'être rassuré sur les risques, pas juste sur les bénéfices.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître cette peur légitime, proposer un test pilote discret sur 3 commerciaux volontaires pendant 2 mois, sans annonce officielle, pour qu'il puisse valider l'adoption AVANT de s'engager publiquement auprès du COMEX"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est vraiment intéressant tout ce que vous me dites là, mais franchement je pense que c'est pas le bon moment. Avec les départs à la retraite, les nouveaux qui arrivent, les objectifs du T2 à rattraper, je peux pas me permettre de déstabiliser l'équipe maintenant. On reparle de ça en septembre peut-être, après la convention commerciale, là ça sera plus calme. Vous me recontactez fin août OK ?",
+      "condition_declenchement": "Après 25-30 minutes d'échange où Stéphane a montré des signes d'intérêt mais réalise qu'il doit prendre une décision. C'est son dernier rempart avant l'engagement, une objection composite qui mélange timing, peur du changement et report confortable."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes polies (manque de temps, en réunion) pour filtrer. Si vous passez, il sort l'artillerie lourde de l'échec Salesforce pour tester votre solidité. Ensuite viennent les objections rationnelles (prix, timing, formation) qui cachent les vraies peurs émotionnelles (perdre le contrôle, échouer publiquement, résistance de l'équipe). L'escalade finale mélange tout dans une grande objection composite de timing qui semble rationnelle mais masque la peur de s'engager. Si vous gérez cette dernière, il bascule subitement en mode opérationnel concret.",
+    "piege_classique": "Le piège majeur avec Stéphane : traiter ses objections rationnelles (prix, timing, formation) sans adresser ses peurs émotionnelles profondes (ego, peur de l'échec public, perte de contrôle sur l'équipe). Il peut dire OUI rationnellement mais saboter inconsciemment le projet ensuite. Autre piège : vouloir convaincre toute l'équipe dès le début alors qu'il faut d'abord le convaincre LUI qu'il gardera son statut de leader et pourra contrôler le déploiement. Enfin, ne JAMAIS dénigrer sa méthode Excel actuelle, sinon il se braque définitivement."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Informatique - Édition de logiciels CRM",
+      "description": "Éditeur de solution CRM destinée aux PME"
+    },
+    "offre": {
+      "nom": "Logiciel CRM",
+      "description": "Solution de gestion de la relation client permettant de centraliser les contacts, suivre les opportunités commerciales, automatiser les processus de vente et analyser les performances commerciales",
+      "proposition_valeur": "Optimisation de la performance commerciale grâce à une meilleure organisation, un suivi rigoureux des prospects et clients, et une vision claire du pipeline",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_visio",
+      "description": "Maîtriser la prospection téléphonique froide pour vendre un logiciel CRM à des directeurs commerciaux de PME",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection froide — CRM pour PME industrielle",
+    "vous_etes": "Commercial BDR chez un éditeur de CRM spécialisé PME, vous prospectez des directeurs commerciaux en appel froid.",
+    "vous_vendez": "Un logiciel CRM pensé pour les PME, centré sur la simplicité d'adoption et le suivi du pipeline commercial (prix non communiqué à ce stade).",
+    "vous_appelez": "Stéphane Moreau, 47 ans, Directeur Commercial chez Sogeprest Équipements (distribution outillage industriel, 85 salariés, 14,5M€ CA). Pragmatique, méfiant après un échec Salesforce en 2019, protecteur avec ses 22 commerciaux terrain.",
+    "ce_que_vous_savez": [
+      "Il gère son équipe avec Excel et un tableau blanc, pas de CRM actif",
+      "Pression du COMEX pour passer de 18% à 25% de taux de transformation",
+      "Deux seniors partent à la retraite dans 8 mois, 3 juniors à intégrer rapidement",
+      "T1 décevant (92% d'objectif), besoin de résultats rapides sur T2",
+      "Un CRM Salesforce abandonné après 7 mois en 2019, traumatisme d'équipe"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous visio de 20 minutes pour lui montrer comment d'autres Dirco ont résolu le transfert de savoir seniors/juniors avec un CRM léger.",
+    "vos_atouts": [
+      "Implémentation en moins de 3 semaines sans mobiliser toute l'équipe",
+      "Possibilité de tester sur 3 commerciaux seulement avant généralisation",
+      "Cas client dans la distribution industrielle ayant gagné 6 points de transformation en 5 mois",
+      "Approche centrée accompagnement terrain, pas transformation digitale"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:07:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16016,
+    "total_time_s": 157.3
+  }
+}

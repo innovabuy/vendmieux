@@ -1,0 +1,376 @@
+{
+  "id": "scenario_1771522858",
+  "description_originale": "Vous avez présenté votre offre au directeur supply chain ou directeur des opérations d'une groupe logistique de 200+ salariés, plusieurs entrepôts il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : transport_logistique]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "200+ salariés, plusieurs entrepôts",
+      "interlocuteur_principal": {
+        "poste": "Directeur Supply Chain / Directeur des Opérations",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Directeur Général ou Comité de Direction (validation probable)",
+        "Directeur Financier (si investissement conséquent)",
+        "Responsables d'entrepôts (utilisateurs finaux potentiels)"
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE - solution liée à la supply chain/opérations logistiques",
+      "proposition_valeur_presumee": "Optimisation de la supply chain, amélioration des opérations logistiques, efficacité opérationnelle des entrepôts",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour malgré engagement du prospect",
+        "Silence radio depuis 2 semaines post-présentation",
+        "Incapacité à avancer dans le cycle de vente"
+      ],
+      "implicites": [
+        "Manque de suivi structuré après la présentation",
+        "Absence probable de next steps clairs définis lors du RDV initial",
+        "Méconnaissance du circuit de décision réel",
+        "Risque de perte de momentum commercial",
+        "Possibilité que le projet ne soit plus prioritaire côté client",
+        "Possible multiplication des interlocuteurs décisionnaires non identifiés"
+      ],
+      "probleme_racine": "Absence de jalons de suivi et d'engagement mutuel établis lors de la première rencontre, conduisant à une perte de contrôle du processus commercial"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance après présentation, comprendre comment débloquer un processus de décision stagnant, apprendre à qualifier le niveau d'intérêt réel et identifier les freins non exprimés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions/services pour la supply chain et la logistique",
+      "entreprise_description": "Fournisseur de solutions destinées à optimiser les opérations logistiques et la supply chain des entreprises du secteur transport-logistique",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution d'optimisation supply chain et opérations logistiques pour groupes multi-sites",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, optimisation des flux logistiques, réduction des coûts opérationnels, meilleure coordination multi-entrepôts",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/solution proposée",
+        "Éléments précis discutés lors du RDV initial",
+        "Montant de l'investissement",
+        "Next steps convenus lors du premier RDV (s'il y en avait)",
+        "Raison du RDV initial (prospection froide, salon, recommandation)",
+        "Signaux d'intérêt observés lors de la présentation",
+        "Concurrents en lice",
+        "Circuit de validation identifié"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur Supply Chain & Excellence Opérationnelle",
+      "entreprise": {
+        "nom": "LogiTransit France",
+        "secteur": "Transport routier et logistique contractuelle",
+        "taille": "280 salariés répartis sur 6 entrepôts (Lille, Paris, Lyon, Marseille, Bordeaux, Nantes)",
+        "ca_approximatif": "45M€, croissance +12% sur 2 ans mais marges en compression"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique jusqu'à la paralysie décisionnelle",
+        "Défensif sur son périmètre (a survécu à 3 restructurations)",
+        "Surchargé et en mode pompier permanent"
+      ],
+      "motivations_profondes": [
+        "Éviter l'erreur qui coûterait sa crédibilité auprès du DG",
+        "Prouver qu'il maîtrise la transformation digitale (sujet du dernier CODIR)",
+        "Réduire le turnover des chefs d'entrepôt qui le fatigue",
+        "Tenir ses promesses de réduction des coûts de 8% sur 2024"
+      ],
+      "peurs_freins": [
+        "Investir dans un outil qui ne serait pas adopté par les entrepôts (déjà eu le coup avec un WMS en 2021)",
+        "Être perçu comme celui qui dépense sans ROI rapide",
+        "Déstabiliser l'opérationnel pendant le Q4 (période critique)",
+        "Devoir arbitrer entre plusieurs priorités concurrentes sans budget supplémentaire",
+        "Que le DAF lui demande un business case en béton armé qu'il n'a pas le temps de monter"
+      ],
+      "rapport_aux_commerciaux": "Cordial mais méfiant. A été échaudé par des promesses non tenues. Déteste qu'on lui force la main. Apprécie l'honnêteté mais ne la récompense pas forcément par un achat rapide.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais légèrement distant, avec un 'Alors, qu'est-ce que vous avez pour moi?' qui signifie 'convainquez-moi vite'",
+      "signaux_interet": [
+        "Commence à poser des questions techniques précises sur l'intégration",
+        "Mentionne spontanément un problème actuel concret ('Tiens, justement on a eu un souci à Lyon la semaine dernière...')",
+        "Demande des références clients dans le transport",
+        "Évoque le timing ('Bon, de toute façon avant janvier on fait rien')",
+        "Prend des notes sur son iPad"
+      ],
+      "signaux_rejet": [
+        "Regarde son téléphone, répond à un SMS",
+        "Coupe court avec 'Oui, c'est intéressant, on va réfléchir'",
+        "Lance un 'De toute façon faut que j'en parle au DG' sans fixer de date",
+        "Devient vague sur le budget ('Ça dépend du ROI')",
+        "Soupire discrètement quand on parle d'implémentation longue"
+      ],
+      "tics_langage": [
+        "Bon... (en début de phrase pour temporiser)",
+        "C'est-à-dire que... (quand il hésite à se mouiller)",
+        "Écoutez... (quand il va dire non poliment)",
+        "On a déjà regardé ce type de solutions (pour montrer qu'il n'est pas naïf)",
+        "Faut que je challenge ça en interne (traduction: je ne décide pas seul)"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Faible après 3 minutes. Coupe poliment mais fermement: 'Pardon, juste une question avant que vous continuiez...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance du CA mais marges en baisse à cause de l'inflation des coûts (carburant, salaires). Le DG pousse pour industrialiser les process. Projet de rachat d'un concurrent en discussion (confidentiel, crée de l'incertitude). SAP récemment déployé, donc grosse fatigue sur les projets IT.",
+      "priorites_actuelles": [
+        "Harmoniser les pratiques entre les 6 entrepôts (chacun fonctionne différemment)",
+        "Réduire les erreurs de préparation qui génèrent des litiges clients",
+        "Améliorer la visibilité en temps réel pour le service client",
+        "Tenir le budget 2024 sans dérapage"
+      ],
+      "experience_avec_offre_similaire": "A testé un outil de pilotage de la performance en 2021 chez un éditeur français, qui n'a jamais été vraiment utilisé (trop complexe, formation insuffisante). En garde un goût amer et une méfiance sur les promesses de 'facilité d'usage'.",
+      "fournisseur_actuel": "Un mélange hétérogène: SAP pour la gestion, Excel pour le pilotage opérationnel (ce qu'il n'avoue pas facilement), un WMS différent sur 3 sites, et beaucoup de process manuels. Pas de solution globale de pilotage supply chain.",
+      "budget_disponible": "Budget 2024 bouclé, possibilité de débloquer 80-120K€ si ROI démontré sous 18 mois ET validation DG + DAF. Sinon report sur budget 2025 (décision en novembre 2024)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Montrer qu'on comprend VRAIMENT ses contraintes opérationnelles (pas de blabla marketing)",
+        "Présenter un cas client dans le transport avec ROI chiffré et vérifiable",
+        "Proposer une phase pilote sur 1 entrepôt pour limiter le risque",
+        "Être transparent sur les prérequis d'intégration avec SAP",
+        "Faciliter la construction du business case avec des outils prêts à l'emploi",
+        "Respecter son timing (ne pas forcer une décision avant qu'il soit prêt)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser la complexité d'implémentation ('C'est plug & play!')",
+        "Critiquer ses choix passés ou son organisation actuelle",
+        "Faire pression avec des deadlines artificielles ('L'offre expire fin du mois')",
+        "Ne pas pouvoir répondre précisément à une question technique",
+        "Vendre trop cher sans justification claire du delta vs solutions moins chères",
+        "Ignorer qu'il doit embarquer d'autres parties prenantes (DG, DAF, chefs d'entrepôt)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en plein dedans là, c'est pas le meilleur moment... Vous pouvez me rappeler ce que vous proposiez déjà ?",
+        "sous_texte": "Je ne me souviens plus précisément de votre solution parmi toutes celles qu'on me présente, et j'ai 10 urgences opérationnelles en cours",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reformuler en 15 secondes max la valeur vue ensemble + reconnaître qu'il est surchargé + proposer un créneau précis"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon alors oui, c'était intéressant votre truc, mais vous savez on a eu un déploiement SAP qui nous a bouffé toute l'énergie, là on a besoin de souffler sur les projets IT...",
+        "sous_texte": "On est épuisés par les projets de transformation, je n'ai plus de bande passante ni de crédit auprès des équipes pour lancer autre chose",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la fatigue IT + repositionner comme accélérateur du ROI de SAP plutôt que nouveau projet + phase pilote légère"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire que... faut que je vous dise, on a déjà regardé ce type de solutions y'a 2-3 ans. On a testé un truc, ça a pas pris. Les gars sur le terrain ont pas adhéré, c'était trop compliqué pour eux.",
+        "sous_texte": "J'ai déjà échoué avec ce genre d'outil, j'ai peur de revivre le même échec et de perdre ma crédibilité. Prouvez-moi que ce sera différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie + identifier les causes racines + montrer comment votre approche diffère (formation, pilote, adoption)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon... et ça s'intègre comment avec SAP exactement ? Parce qu'on vient de le déployer, hein, donc s'il faut refaire tout un chantier d'intégration...",
+        "sous_texte": "Je ne veux absolument pas rouvrir le dossier SAP qui vient à peine d'être refermé. Si c'est complexe techniquement, c'est mort",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer avec des prérequis techniques clairs + exemples clients post-SAP + évaluer la complexité réelle de leur architecture"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Alors là vous comprenez, c'est pas moi qui décide seul sur ce genre de montant. Faut que je challenge ça en interne avec le DG et surtout le DAF. Et le DAF, il va me demander un business case béton armé...",
+        "sous_texte": "Je manque d'arguments chiffrés pour convaincre en interne, et je n'ai pas le temps de construire ce business case tout seul. Aidez-moi ou je vais procrastiner",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de co-construire le business case + fournir template et benchmarks + identifier le timing du prochain CODIR"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est quoi vos références clients dans le transport routier ? Parce que bon, chaque secteur a ses spécificités, vous voyez ce que je veux dire...",
+        "sous_texte": "Je veux être sûr que vous connaissez vraiment mon métier et que je ne vais pas servir de cobaye. Donnez-moi de la réassurance sociale",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 clients transport précis avec taille comparable + proposer mise en relation + partager ROI constatés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais attendez, vous me parlez d'harmonisation des pratiques, mais vous connaissez pas mes entrepôts... Chacun a son historique, sa culture, son type de flux. Lyon c'est pas Bordeaux, vous voyez. C'est pas si simple d'uniformiser.",
+        "sous_texte": "Mon organisation est complexe et unique, je doute que votre solution standard fonctionne chez moi sans customisation lourde",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la complexité + montrer comment d'autres multi-sites ont géré l'hétérogénéité + standard paramétrable vs customisation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et l'adoption par les chefs d'entrepôt, vous la gérez comment ? Parce que moi j'ai déjà du mal à les aligner sur les process de base, alors leur rajouter un nouvel outil...",
+        "sous_texte": "Je crains la résistance au changement de mes équipes terrain, qui sont déjà sous pression et sceptiques sur les initiatives siège",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Impliquer les chefs d'entrepôt dans le pilote + formation terrain adaptée + quick wins visibles pour eux + champions internes"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoutez, c'est intéressant tout ça, mais concrètement le ROI il est de combien et sur quelle durée ? Parce que le DAF il va pas me laisser investir 100 bornes sans visibilité sur le retour...",
+        "sous_texte": "Je veux des chiffres précis pour me couvrir en interne, mais j'ai peur que le ROI soit trop long ou trop incertain pour passer la rampe du DAF",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "ROI détaillé et réaliste (pas survendre) + hypothèses transparentes + ROI sous 18 mois démontré + quick wins à 6 mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "On a déjà regardé ce type de solutions, vous êtes pas les seuls sur le marché. Y'en a qui sont moins chers aussi, hein. Comment vous justifiez votre prix par rapport à la concurrence ?",
+        "sous_texte": "Je compare plusieurs solutions et je teste votre capacité à défendre votre positionnement prix. Peut-être aussi pour négocier",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier quelles solutions comparées + valeur différenciante claire + TCO vs prix d'achat + éviter défense défensive"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que c'est 'facile à utiliser', mais excusez-moi, on m'a déjà fait le coup. En 2021 on a pris un outil soit-disant intuitif, résultat personne l'utilisait au bout de 3 mois.",
+        "sous_texte": "Je ne crois plus aux promesses de facilité, j'ai été échaudé. Prouvez-moi concrètement que c'est différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer démo avec leurs vraies données + test utilisateur avec un chef d'entrepôt + transparence sur courbe d'apprentissage réelle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est-à-dire que là, de toute façon, on attaque le Q4. Vous connaissez le secteur, c'est notre période de bourre. On peut rien démarrer avant janvier, ça c'est sûr.",
+        "sous_texte": "J'ai besoin d'une excuse temporelle légitime pour retarder la décision car je ne suis pas encore convaincu ou prêt à m'engager",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte Q4 + utiliser ce temps pour préparer (business case, validation interne, cadrage) + jalons précis jusqu'à janvier"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... oui, pourquoi pas. Mais faut que j'en parle au DG d'abord, vous comprenez. On a un CODIR le mois prochain, je verrai si je peux caler ça à l'ordre du jour.",
+        "sous_texte": "Je veux clore poliment l'échange sans m'engager, et je me cache derrière la hiérarchie pour gagner du temps ou éviter de dire non directement",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier si vraiment besoin d'accord DG ou excuse + proposer de préparer le pitch CODIR ensemble + fixer rendez-vous post-CODIR maintenant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est vraiment intéressant mais là franchement avec tout ce qu'on a sur le feu... J'ai pas la bande passante pour lancer ça maintenant. On se reparle début 2025 peut-être ?",
+        "sous_texte": "Je suis sincèrement surchargé ET pas totalement convaincu que ça vaille la peine de me rajouter cette charge mentale. Aidez-moi à voir comment ça me simplifie la vie plutôt que l'inverse",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la surcharge + repositionner comme solution qui VA réduire sa charge (pas l'augmenter) + pilote léger vs big bang + lui proposer de porter une partie du travail"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon alors concrètement, si on part sur un truc comme ça, c'est quoi le délai de mise en place ? Parce que si c'est pour démarrer dans 6 mois et avoir des résultats dans 18 mois, ça me fait 2026 quoi...",
+        "sous_texte": "J'ai besoin de résultats rapides pour tenir mes engagements 2024-2025. Si c'est trop long, ça ne m'aide pas dans mon timing de pression interne",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Timeline réaliste avec jalons précis + quick wins identifiés à 3-6 mois + phase pilote accélérée sur 1 site"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et vous avez des facilités de paiement ? Parce que sortir 100K d'un coup sur 2024, le DAF va bondir. Si je peux étaler sur 2024-2025, ça aide.",
+        "sous_texte": "Le budget est une vraie contrainte mais pas forcément bloquante si on trouve une solution de paiement qui lisse l'impact comptable",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Options de paiement claires (étalé, SaaS mensuel) + impact sur budget 2024 vs 2025 + valoriser flexibilité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là vous me mettez la pression mais j'ai besoin de temps pour réfléchir, comparer les options, monter le dossier en interne. C'est pas un achat de stylos, là.",
+        "sous_texte": "Je me sens bousculé dans le rythme décisionnel, respectez mon processus sinon je vais vous fuir. Je suis aussi peut-être en discussion avec vos concurrents",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ralentir, s'excuser si pression ressentie + proposer un process décisionnel structuré avec lui + identifier les vraies étapes et acteurs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Alors attendez, faut que je vérifie un truc... On a pas un projet de rachat en discussion en ce moment ? Parce que si c'est le cas, on va attendre de voir comment ça se structure avant de lancer de nouveaux projets.",
+        "sous_texte": "Il y a une incertitude stratégique majeure (rachat) dont je ne peux pas parler ouvertement, qui peut bloquer toute décision pendant des mois",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Qualifier discrètement le timing et l'impact réel + proposer un cadrage light qui reste pertinent post-rachat + solution évolutive multi-entités"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, je vais être honnête avec vous : c'est intéressant, on voit la valeur, mais là tout de suite j'ai pas la capacité à embarquer le DG et le DAF sur ce sujet. On a trop de trucs prioritaires, le budget 2024 est bouclé, et franchement je veux pas me planter une deuxième fois sur ce genre de projet. On se reparle début 2025, on verra à ce moment-là où on en est. D'ici là, envoyez-moi votre doc, je regarderai.",
+      "condition_declenchement": "Si le commercial n'a pas réussi à : 1) Co-construire un business case solide, 2) Identifier les vraies priorités et montrer l'alignement, 3) Proposer une approche pilote pour réduire le risque, 4) Créer de l'urgence légitime (pas artificielle), 5) Impliquer les autres parties prenantes. Stéphane se réfugie alors dans une excuse composite (timing + budget + peur) qui sonne sincère mais est aussi une porte de sortie confortable."
+    },
+    "pattern_escalade": "Stéphane commence par des objections polies et génériques (timing, budget) pour tester le commercial. Si celui-ci résiste bien, il révèle progressivement les vraies peurs : l'échec passé, la complexité de son organisation, la résistance des équipes. L'escalade ultime est l'aveu d'impuissance : 'Je n'arrive pas à embarquer mes parties prenantes'. À ce stade, soit le commercial devient un facilitateur interne (et gagne), soit il pousse à la vente (et perd définitivement).",
+    "piege_classique": "Stéphane donne des signaux d'intérêt sincères (prend des notes, pose des questions techniques) qui font croire au commercial que c'est gagné. Mais entre l'intérêt intellectuel et la décision d'achat, il y a un gouffre : la peur de l'échec, la charge mentale, la complexité politique interne. Le piège est de croire qu'on vend à Stéphane seul, alors qu'on vend à un système (DG + DAF + chefs d'entrepôt + fantôme de l'échec 2021). Si le commercial ne cartographie pas ce système et n'aide pas Stéphane à naviguer dedans, la vente meurt dans le silence radio post-présentation."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions/services pour la supply chain et la logistique",
+      "description": "Fournisseur de solutions destinées à optimiser les opérations logistiques et la supply chain des entreprises du secteur transport-logistique"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution d'optimisation supply chain et opérations logistiques pour groupes multi-sites",
+      "proposition_valeur": "Amélioration de l'efficacité opérationnelle, optimisation des flux logistiques, réduction des coûts opérationnels, meilleure coordination multi-entrepôts",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance après présentation, comprendre comment débloquer un processus de décision stagnant, apprendre à qualifier le niveau d'intérêt réel et identifier les freins non exprimés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-présentation — Déblocage cycle Supply Chain",
+    "vous_etes": "Commercial chez un éditeur de solutions de pilotage supply chain pour groupes logistiques multi-sites.",
+    "vous_vendez": "Une plateforme d'optimisation des opérations logistiques et de coordination multi-entrepôts (budget estimé prospect : 80-120K€).",
+    "vous_appelez": "Stéphane Mercier, Directeur Supply Chain chez LogiTransit France (280 salariés, 6 entrepôts). Analytique, surchargé, échaudé par un projet IT raté en 2021. Ne décroche pas facilement.",
+    "ce_que_vous_savez": [
+      "Vous avez présenté votre solution il y a 2 semaines, il semblait intéressé mais n'a pas donné suite malgré sa promesse de revenir vers vous",
+      "LogiTransit croît (+12%) mais les marges se compriment. Le DG pousse l'industrialisation des process",
+      "Stéphane doit harmoniser 6 entrepôts qui fonctionnent différemment, réduire les erreurs de prépa et tenir un objectif de -8% de coûts en 2024",
+      "Il a déjà vécu un échec avec un outil de pilotage non adopté, donc il est hyper prudent sur les promesses de ROI",
+      "Budget 2024 bouclé. Décision possible cette année uniquement si ROI sous 18 mois + validation DG et DAF"
+    ],
+    "votre_objectif": "Comprendre pourquoi il n'a pas recontacté, identifier le vrai frein (budget, priorité, validation interne, doute technique) et obtenir un prochain jalon concret ou clore proprement.",
+    "vos_atouts": [
+      "Vous pouvez proposer un pilote sur 1 entrepôt pour limiter le risque",
+      "Vous avez des outils prêts pour l'aider à construire le business case DG/DAF",
+      "Votre solution s'intègre à SAP (qu'ils viennent de déployer)",
+      "Vous avez des références vérifiables dans le transport avec ROI chiffré"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:40:58Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16967,
+    "total_time_s": 164.6
+  }
+}

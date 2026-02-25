@@ -1,0 +1,362 @@
+{
+  "id": "scenario_1771519611",
+  "description_originale": "Le fondateur / associé gérant d'une cabinet de gestion de patrimoine de 5-15 conseillers est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : banque_patrimoine]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "Fondateur / Associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Service complémentaire ou montée en gamme pour cabinet de gestion de patrimoine",
+      "proposition_valeur_presumee": "Amélioration ou extension du service actuel utilisé depuis 1 an",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Faire percevoir la valeur ajoutée d'un service complémentaire ou premium",
+        "Obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "Risque de satisfaction passive (client content mais pas proactif)",
+        "Difficulté à justifier un investissement supplémentaire sans besoin exprimé",
+        "Nécessité de créer l'urgence ou le désir chez un client déjà satisfait",
+        "Challenge de passer d'une relation transactionnelle à consultative"
+      ],
+      "probleme_racine": "Transformer la satisfaction client en opportunité de croissance sans créer de friction ni perception de sur-vente"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la technique d'upsell en contexte B2B relationnel : identifier les signaux d'opportunité, créer le besoin sans forcer, articuler la valeur incrémentale et obtenir l'engagement pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux professionnels de la gestion de patrimoine",
+      "entreprise_description": "Fournisseur de solutions/services pour cabinets de gestion de patrimoine, relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Service complémentaire ou version premium du service actuel utilisé par le client",
+      "proposition_valeur": "Extension ou amélioration des bénéfices déjà perçus par le client, création de valeur supplémentaire pour optimiser l'activité du cabinet",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Relation client satisfaisante de 1 an avec le prospect"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance du contexte client, continuité de service",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise du service actuel",
+        "Nature du service complémentaire/montée en gamme proposé",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Objections probables du client",
+        "Zone géographique"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercadier",
+      "age": 52,
+      "poste": "Fondateur & Associé Gérant",
+      "entreprise": {
+        "nom": "Mercadier Patrimoine Conseil",
+        "secteur": "Gestion de patrimoine & conseil financier",
+        "taille": "9 conseillers + 2 assistantes",
+        "ca_approximatif": "1,8M€ - rentable mais croissance modérée"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-calculateur (ROI immédiat exigé)",
+        "Méfiant envers le 'bullshit commercial'",
+        "Loyal mais pas naïf - teste la solidité des arguments"
+      ],
+      "motivations_profondes": [
+        "Protéger la rentabilité durement acquise après 15 ans d'entrepreneuriat",
+        "Conserver son autonomie décisionnelle (refuse d'être 'vendu')",
+        "Valoriser son image d'expert rigoureux auprès de ses clients patrimoniaux"
+      ],
+      "peurs_freins": [
+        "Investir dans du 'gadget' sans retour mesurable",
+        "Complexifier l'organisation pour un bénéfice marginal",
+        "Se faire avoir comme 'vache à lait' d'un fournisseur opportuniste",
+        "Perdre du temps en déploiement chronophage"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Respecte ceux qui connaissent son métier et parlent chiffres concrets. Déteste le forcing et les 'offres limitées dans le temps'. Apprécie la franchise brutale.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial-professionnel avec distance polie. 'Oui bonjour, j'ai quelques minutes'. Écoute mais garde le contrôle du temps.",
+      "signaux_interet": [
+        "Pose des questions précises sur la mécanique ('Concrètement, ça change quoi au quotidien ?')",
+        "Commence à calculer mentalement ('Sur 9 conseillers, ça ferait combien par tête ?')",
+        "Mentionne un irritant actuel ('Tiens, justement on a eu un souci la semaine dernière...')",
+        "Demande des références clients comparables ('Vous avez des cabinets de ma taille qui l'ont pris ?')"
+      ],
+      "signaux_rejet": [
+        "Ton qui refroidit brutalement : 'Écoutez, on verra ça plus tard'",
+        "Commence à parler de budget inexistant : 'Là on a tout verrouillé jusqu'à fin d'année'",
+        "Coupe et reformule : 'Oui mais en fait ce que vous proposez, on le fait déjà autrement'",
+        "Silence pesant après un argument commercial trop marketé"
+      ],
+      "tics_langage": [
+        "'Concrètement' (répété 4-5 fois par conversation)",
+        "'On va pas se mentir' (quand il sent du flan)",
+        "'C'est-à-dire ?' (pour tester la solidité d'un argument)",
+        "Soupir discret quand argument jugé faible"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "45 secondes max. Au-delà, coupe poliment mais fermement : 'Oui oui, j'ai compris le principe. Maintenant...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stabilisé, rentable mais stagnant. Deux conseillers seniors qui menacent discrètement de partir créer leur structure. Pression réglementaire MIF2 qui alourdit les process. Clients patrimoniaux exigeants, peu de marge d'erreur.",
+      "priorites_actuelles": [
+        "Différenciation face aux banques privées qui agressent ses clients",
+        "Fidélisation de ses deux meilleurs conseillers (enjeu RH critique)",
+        "Amélioration de l'image 'premium' du cabinet sans exploser les coûts"
+      ],
+      "experience_avec_offre_similaire": "Utilise le service de base depuis 1 an. Satisfait globalement ('Ça fait le job') mais n'a jamais creusé les fonctionnalités avancées. Relation correcte avec le fournisseur, sans enthousiasme débordant.",
+      "fournisseur_actuel": "Vous (depuis 1 an, contrat annuel à renouveler dans 4 mois)",
+      "budget_disponible": "Dispose d'une enveloppe 'investissements tech & formation' de ~25K€ non consommée, mais la garde jalousement. Prêt à débloquer 5-8K€ si ROI démontré sous 6 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cas client similaire avec gain mesurable précis ('Cabinet de Bordeaux, 8 conseillers, +12% de rétention client en 7 mois')",
+        "Relier l'offre à son enjeu RH invisible ('Vos conseillers seniors gagnent 3h/semaine, ça change leur quotidien')",
+        "Parler réglementation/conformité ('Ça vous met en conformité ACPR automatique')",
+        "Proposer test gratuit 30 jours sur 2 conseillers seulement (réduit le risque perçu)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing creux ('solution innovante de nouvelle génération')",
+        "Forcing commercial ('cette offre expire vendredi')",
+        "Comparer son cabinet à des mastodontes ('comme chez Rothschild & Co')",
+        "Ignorer sa satisfaction actuelle et critiquer le service de base qu'il utilise",
+        "Proposer d'emblée un engagement long (3 ans) sans période d'essai"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, là on est calé jusqu'à fin d'année. On a déjà notre planning et nos budgets verrouillés.",
+        "sous_texte": "Je veux tester si vous allez forcer ou respecter mon rythme. Je me protège d'une éventuelle pression commerciale.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le timing sans insister, proposer une conversation exploratoire sans engagement pour préparer 2025"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Honnêtement, le service actuel, ça fait le job. On n'a pas vraiment eu de souci particulier.",
+        "sous_texte": "Pourquoi changer une solution qui fonctionne ? Prouve-moi qu'il y a un vrai problème que je ne vois pas.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa satisfaction, puis explorer les irritants invisibles ou opportunités manquées plutôt que problèmes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est-à-dire concrètement ? Parce que 'optimiser l'activité', ça veut tout et rien dire.",
+        "sous_texte": "Je teste si tu connais vraiment ton sujet ou si tu récites un pitch marketing. Montre-moi des faits, pas du flan.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un exemple concret chiffré avec un cas client similaire, éviter le jargon"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais attendez... en fait ce que vous me décrivez là, on le fait déjà autrement. Nos assistantes s'en chargent.",
+        "sous_texte": "Je ne vois pas la différence avec mon process actuel. Pourquoi payer pour quelque chose que je fais déjà ?",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas contredire, mais quantifier le coût caché (temps, erreurs, expertise mobilisée) versus automatisation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Sur 9 conseillers... ça me ferait combien par tête exactement ? Parce que là je calcule et ça commence à chiffrer.",
+        "sous_texte": "Je suis en train de calculer le ROI mentalement. Attention, si le ratio me semble mauvais, je coupe court.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Présenter le coût par conseiller mais surtout le gain par conseiller (temps, CA, rétention client)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez des cabinets de ma taille, dans le patrimoine, qui ont pris cette option ? Je veux dire des vrais retours, pas des témoignages LinkedIn.",
+        "sous_texte": "Je veux des preuves sociales concrètes de mes pairs. Je ne veux pas être le cobaye.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 références précises avec nom (si accord), taille similaire, et résultats mesurables"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais concrètement, le déploiement, ça prend combien de temps ? Parce que là mes équipes sont déjà sous l'eau.",
+        "sous_texte": "J'ai peur de la complexité et du temps perdu en formation. Prouve-moi que ce n'est pas un usine à gaz.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Annoncer timeline réaliste courte, proposer déploiement progressif sur 2 conseillers pilotes d'abord"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... *soupir discret* Tout ça c'est bien joli sur le papier, mais dans la vraie vie, je suis pas sûr que ça change grand-chose.",
+        "sous_texte": "Je reste sceptique. Ton argumentaire sonne trop beau pour être vrai. Peut-être du marketing déguisé.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le scepticisme légitime, proposer preuve par l'usage (test limité), être transparent sur les limites"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si ça marche pas, je fais quoi ? Je suis coincé avec un abonnement de 3 ans ?",
+        "sous_texte": "J'ai besoin de réversibilité. Je ne veux pas être piégé dans un engagement long.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer engagement court (mois par mois ou trimestriel) ou clause de sortie claire après période d'essai"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, pourquoi pas, mais là j'ai pas le temps de regarder ça dans le détail. On se recontacte dans quelques semaines ?",
+        "sous_texte": "Je procrastine pour éviter la décision. Soit je ne suis pas convaincu, soit j'évite la confrontation au prix.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer action micro-engagement (test court, démo sur 1 conseiller) plutôt que grand déploiement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, là notre enveloppe investissements tech, elle est déjà allouée. J'ai vraiment pas de budget mobile avant l'année prochaine.",
+        "sous_texte": "Objection budget classique. Peut être vraie OU tactique pour éviter la décision. Je teste si tu vas négocier ou respecter.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas négocier le prix, mais le timing : préparer pour 2025, ou trouver budget différent (RH/formation)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais en parler à mon associé et je vous redis. Il faut qu'on en discute nous deux d'abord.",
+        "sous_texte": "Je dilue la responsabilité de la décision. Peut être sincère OU excuse polie pour gagner du temps sans dire non.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer RDV commun avec l'associé, ou clarifier le processus décision (qui décide quoi, quand)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, là vous essayez de me vendre quelque chose que j'ai pas demandé. Moi je suis satisfait du service de base.",
+        "sous_texte": "Je ressens une tentative de sur-vente. Je me sens manipulé ou poussé à consommer plus. Je me braque.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Faire machine arrière, valider sa satisfaction, reposer la question du besoin réel plutôt qu'imposer la solution"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, tout ça c'est bien, mais mes conseillers, ils ont déjà leurs habitudes. Là vous allez me créer des résistances en interne.",
+        "sous_texte": "J'ai peur de la conduite du changement et de démotiver mes équipes. Mon enjeu RH est critique, je ne veux pas le fragiliser.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Positionner l'outil comme facilitateur pour les conseillers (gain temps), impliquer un conseiller senior dans pilote"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Justement, la semaine dernière on a eu un pépin avec un dossier ACPR... C'est pas passé loin. Vous me dites que votre truc couvre ça ?",
+        "sous_texte": "Signal d'intérêt fort : je viens de vivre un irritant concret. Si tu résous ça, je suis preneur. Mais prouve-le.",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Creuser le problème vécu, montrer comment la fonctionnalité aurait évité cette situation précise"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, je comprends pas bien... Vous me dites que ça va me faire gagner du temps, mais en même temps faut former les équipes, paramétrer, etc. Ça se mord la queue, non ?",
+        "sous_texte": "J'ai besoin de clarification sur l'équation temps investi vs temps gagné. Je sens une incohérence dans votre discours.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Séparer temps d'investissement initial (quantifiable, court) et gains récurrents (mesurables, durables)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, OK, admettons. Mais là vous me parlez de devis... Déjà combien on parle ? Parce que si c'est pour me dire 20K€, on arrête tout de suite.",
+        "sous_texte": "J'ai besoin du prix pour décider si je continue la conversation. Je fixe une limite haute pour tester votre réaction.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner ordre de grandeur réaliste, contextualiser versus gains, proposer plusieurs options/paliers"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant ce que vous me dites, vraiment. Mais là, très franchement, je me vois pas rajouter un truc en plus. On a déjà tellement de choses à gérer...",
+        "sous_texte": "Je suis en surcharge cognitive et décisionnelle. Même si c'est bien, je n'ai plus de bande passante mentale pour un nouveau projet.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de prendre en charge la complexité (déploiement clé en main), ou reporter sans perdre le lien"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, merci pour le temps que vous m'avez consacré, c'est intéressant vraiment. Mais là, franchement, je préfère qu'on en reste au service actuel. Ça me va très bien comme ça. On se recontacte si besoin.",
+      "condition_declenchement": "Se déclenche si : (1) le vendeur a été trop insistant / forcing, (2) le ROI n'a pas été démontré factuellement, (3) Stéphane a senti du bullshit marketing, (4) le prix a été annoncé sans contexte de valeur, (5) aucun micro-engagement n'a été proposé. C'est une fermeture polie mais définitive qui signe l'échec commercial tout en préservant la relation client existante."
+    },
+    "pattern_escalade": "Stéphane commence cordial et ouvert (phase 1). Si les réponses sont vagues ou marketées, il devient analytique-challengeant avec questions précises 'C'est-à-dire ?' (phase 2). Si le vendeur persiste dans le flou ou force, il refroidit brutalement avec objections budget/timing (phase 3). Dernière phase : politesse froide et fermeture définitive. L'escalade est rapide (3-4 minutes) si mauvaise lecture des signaux. Seule la transparence, les faits chiffrés et l'absence de pression peuvent inverser la tendance.",
+    "piege_classique": "Stéphane dit 'Oui c'est intéressant' avec un ton neutre au milieu de la conversation. Le vendeur junior interprète ça comme un feu vert et accélère vers le closing. ERREUR : c'est un signal de politesse, pas d'adhésion. Stéphane teste si vous allez respecter son rythme ou forcer. La bonne réaction : approfondir la découverte ('Qu'est-ce qui vous semble intéressant précisément ?') plutôt que conclure prématurément."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux professionnels de la gestion de patrimoine",
+      "description": "Fournisseur de solutions/services pour cabinets de gestion de patrimoine, relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Service complémentaire ou version premium du service actuel utilisé par le client",
+      "proposition_valeur": "Extension ou amélioration des bénéfices déjà perçus par le client, création de valeur supplémentaire pour optimiser l'activité du cabinet",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Relation client satisfaisante de 1 an avec le prospect"
+      ],
+      "avantages_vs_concurrence": "Relation de confiance établie, connaissance du contexte client, continuité de service"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Maîtriser la technique d'upsell en contexte B2B relationnel : identifier les signaux d'opportunité, créer le besoin sans forcer, articuler la valeur incrémentale et obtenir l'engagement pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Cabinet de gestion de patrimoine",
+    "vous_etes": "Account Manager chez votre éditeur de solutions pour cabinets patrimoniaux, en relation avec Mercadier Patrimoine Conseil depuis 1 an.",
+    "vous_vendez": "Module premium complémentaire à la solution de base qu'ils utilisent actuellement. Prix : entre 5 000€ et 8 000€ selon configuration.",
+    "vous_appelez": "Stéphane Mercadier, 52 ans, fondateur et associé gérant. Cabinet de 9 conseillers, pragmatique et calculateur, exige du ROI mesurable immédiat. Déteste le baratin commercial.",
+    "ce_que_vous_savez": [
+      "Utilise votre offre de base depuis 1 an, globalement satisfait mais n'a jamais exploré les fonctionnalités avancées",
+      "Son contrat arrive à renouvellement dans 4 mois",
+      "Deux conseillers seniors menacent discrètement de partir créer leur structure — enjeu RH critique",
+      "Subit la pression concurrentielle des banques privées qui démarchent ses clients patrimoniaux",
+      "Dispose d'une enveloppe investissements tech non consommée d'environ 25K€, mais la garde précieusement"
+    ],
+    "votre_objectif": "Obtenir son accord pour recevoir un devis chiffré du module premium, en démontrant un ROI concret sous 6 mois.",
+    "vos_atouts": [
+      "Relation de confiance établie depuis 1 an — vous connaissez son contexte",
+      "Cas client comparable : cabinet de Bordeaux (8 conseillers) a gagné +12% de rétention client en 7 mois avec le module premium",
+      "Le module fait gagner 3h/semaine par conseiller — argument RH massif pour fidéliser ses seniors",
+      "Conformité ACPR automatisée incluse — sécurise face à la pression réglementaire MIF2"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:46:51Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14827,
+    "total_time_s": 134.6
+  }
+}

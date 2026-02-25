@@ -1,0 +1,387 @@
+{
+  "id": "scenario_1771520395",
+  "description_originale": "Le propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : hotellerie_restauration]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "independant ou petit groupe de 2 a 5 etablissements",
+      "interlocuteur_principal": {
+        "poste": "proprietaire directeur d'hotel",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "solution logicielle ou service pour l'hotellerie-restauration",
+      "proposition_valeur_presumee": "optimisation de la gestion hoteliere, augmentation du chiffre d'affaires ou reduction des couts operationnels",
+      "fourchette_prix": "NON_SPECIFIE mais percu comme eleve par le prospect",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "le prospect trouve le prix trop eleve",
+        "necessite de defendre la valeur tout en negociant"
+      ],
+      "implicites": [
+        "le commercial a probablement mal ancre la valeur lors de la presentation initiale",
+        "risque de ceder trop vite sur le prix sans contrepartie",
+        "difficulte a justifier le ROI de la solution",
+        "manque de techniques de negociation structurees"
+      ],
+      "probleme_racine": "absence de valorisation suffisante du ROI et de la proposition de valeur avant l'annonce du prix, entrainant une objection prix predictible"
+    },
+    "objections_mentionnees": [
+      "prix trop eleve"
+    ],
+    "objectif_formation": "apprendre a defendre son prix avec conviction, maitriser les techniques de negociation, savoir utiliser les contreparties, maintenir la valeur percue tout en trouvant un accord gagnant-gagnant dans une marge de manoeuvre limitee",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "editeur de logiciel ou fournisseur de services pour l'hotellerie-restauration",
+      "entreprise_description": "entreprise proposant des solutions innovantes pour optimiser la gestion des hotels-restaurants independants et petits groupes",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinee aux hotels-restaurants independants ou petits groupes, visant a ameliorer leur performance operationnelle et commerciale",
+      "proposition_valeur": "augmentation du taux d'occupation, optimisation de la gestion des reservations, amelioration de l'experience client, reduction des taches administratives, augmentation du revenu par chambre disponible",
+      "prix_indicatif": "NON_SPECIFIE mais positionne en premium",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "prix exact de la solution",
+        "nom de l'entreprise vendeuse",
+        "nom de la solution",
+        "arguments de valeur specifiques prepares",
+        "references clients dans le secteur",
+        "duree du contrat",
+        "services inclus vs optionnels"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Vendramin",
+      "age": 52,
+      "poste": "Propriétaire-Directeur",
+      "entreprise": {
+        "nom": "Hôtels Les Tilleuls",
+        "secteur": "Hôtellerie indépendante",
+        "taille": "3 établissements (2★ et 3★) - 87 chambres au total",
+        "ca_approximatif": "2,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les vendeurs de 'solutions miracle'",
+        "Pragmatique obsessionnel - veut du concret, pas du powerpoint",
+        "Fier de son indépendance mais conscient d'être dépassé technologiquement"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'un indépendant peut battre les chaînes sur son territoire",
+        "Transmettre un patrimoine rentable à ses enfants d'ici 5-7 ans",
+        "Ne pas passer pour le dinosaure qui refuse la modernisation",
+        "Récupérer du temps pour la stratégie au lieu d'éteindre des incendies"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec l'agence web en 2019 (12k€ perdus)",
+        "Dépendre d'un prestataire qui le prend en otage",
+        "Que ses équipes (âge moyen 48 ans) ne suivent pas techniquement",
+        "Immobiliser de la trésorerie alors que la banque surveille ses ratios",
+        "Découvrir des coûts cachés après signature"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais sur ses gardes. Les teste en posant des questions pièges. Respecte ceux qui admettent les limites de leur solution. Déteste le bullshit marketing et les 'comme je vous comprends' automatiques.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'J'ai 30 minutes, on a Booking qui plante et une inspection hygiène jeudi.' Sous-entendu : prouve-moi vite que tu vaux mon temps.",
+      "signaux_interet": [
+        "Commence à noter des chiffres sur un papier",
+        "Demande 'Et concrètement, ça me prend combien de temps par jour ?'",
+        "Mentionne spontanément un problème précis : 'Là j'ai 18% de no-show sur Juillet'",
+        "Interrompt pour dire 'Attendez, revenez là-dessus' sur un point technique",
+        "Pose des questions sur les autres clients dans l'hôtellerie indépendante"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement son téléphone en soupirant",
+        "Coupe avec 'Oui oui, ça je connais' d'un ton agacé",
+        "Sort le classique 'Écoutez, envoyez-moi ça par mail, je regarderai'",
+        "Commence ses phrases par 'Le problème c'est que...' sans écouter la réponse",
+        "Utilise le prix comme porte de sortie : 'De toute façon, c'est pas dans mes moyens'"
+      ],
+      "tics_langage": [
+        "Ponctue par 'Voilà' en fin de phrase pour marquer son scepticisme",
+        "Dit 'On va pas se mentir' quand il veut revenir au prix",
+        "Commence par 'Moi ce qui m'embête' avant chaque objection",
+        "Utilise 'Franchement' quand il est proche de dire non",
+        "Répète 'C'est bien beau mais' devant les arguments qu'il juge théoriques"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Moins de 90 secondes. Au-delà, décroche mentalement ou coupe. Veut un échange, pas un pitch. Apprécie les questions avant les affirmations."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Taux d'occupation 2024 à 68% (vs 72% en 2019). Marges squeezées par l'inflation salariale (+22% depuis 2021) et énergie. Commissions OTA qui explosent (23% du CA online). Booking menace de déréférencer un établissement pour non-conformité API. Recrute mal, turnover à 40%.",
+      "priorites_actuelles": [
+        "Réduire la dépendance à Booking.com (objectif : passer de 48% à 35% des nuitées)",
+        "Augmenter le revenu par chambre de 8€ sans perdre de volume",
+        "Automatiser la paperasse administrative (20h/semaine actuellement)",
+        "Professionnaliser l'accueil sans recruter (impossible à trouver)"
+      ],
+      "experience_avec_offre_similaire": "A testé un PMS cloud en 2021, abandonné après 4 mois (trop complexe, support inexistant, l'équipe a sabordé). Utilise encore un vieux système DOS pour la compta + Excel pour le yield. A été démarché 6 fois cette année par des 'révolutions digitales'.",
+      "fournisseur_actuel": "Logiciel de réservation Hôtelgest (éditeur local, version 2014, maintenance 340€/mois, ne parle plus aux nouvelles API). Contrat reconductible avec préavis 3 mois.",
+      "budget_disponible": "A mentalement prévu 15-18k€ pour 'la digitalisation' sur 2025, mais le comptable l'incite à étaler sur 24 mois pour l'impact trésorerie. Refuse catégoriquement tout crédit fournisseur. Capacité réelle : peut aller jusqu'à 25k€ annuel SI le ROI est démontré sur 14-16 mois max."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer des chiffres précis issus de clients similaires : 'Hôtel 3★ Bretagne, 42 chambres, a réduit les no-show de 18% à 7% en 5 mois'",
+        "Admettre les limites : 'Ça ne fera pas de miracle sur votre turnover RH, par contre sur la productivité administrative...'",
+        "Proposer un pilote sur UN seul établissement avec clause de sortie 60 jours",
+        "Montrer qu'on comprend sa réalité : 'Vous avez raison, avec une équipe qui a ses habitudes depuis 15 ans, le changement c'est risqué'",
+        "Parler marge nette, pas CA : 'Concrètement, ça vous met 2300€/mois de plus en bas de bilan'",
+        "Évoquer l'indépendance retrouvée vs Booking : touche sa fierté"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ses objections : 'Oh mais c'est pas grand-chose 25k€ pour vous'",
+        "Comparer aux grandes chaînes : 'Accor utilise notre solution' (il s'en fout, ce n'est pas son monde)",
+        "Jargon technique non traduit : 'Channel manager API REST avec middleware'",
+        "Promettre des résultats sans condition : 'Vous allez doubler votre taux de conversion'",
+        "Presser pour signer : 'L'offre expire vendredi' (trop vu, trop entendu)",
+        "Ne pas répondre directement sur le prix : 'Ça dépend de vos besoins' (vécu comme de la manipulation)",
+        "Dénigrer son système actuel : 'Comment vous faites pour travailler avec ça ?!' (attaque son choix passé)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je vous arrête tout de suite, j'ai déjà été démarché trois fois ce mois-ci pour des trucs soit-disant révolutionnaires. Là j'ai vraiment pas le temps, on a un souci avec Booking qui plante.",
+        "sous_texte": "Je suis saturé de démarchages commerciaux et j'ai besoin de preuves immédiates que tu ne vas pas me faire perdre mon temps. Prouve-moi en 30 secondes que c'est différent ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa réalité, faire preuve d'empathie authentique, proposer 3 minutes chrono avec une question précise sur SON problème Booking au lieu d'un pitch."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi ça par mail, je regarderai quand j'aurai deux minutes. Là c'est vraiment pas le moment.",
+        "sous_texte": "Je cherche une porte de sortie polie. Le mail = poubelle directe. Je teste si tu vas insister ou capituler comme un débutant.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le mail comme solution de facilité. Proposer un créneau précis dans 48h ou poser UNE question diagnostic qui l'oblige à réfléchir à son problème maintenant."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Moi ce qui m'embête, c'est que j'ai déjà testé un truc cloud en 2021. Ça a été une catastrophe. L'équipe a rien compris, le support répondait jamais, on a perdu 4 mois et quelques milliers d'euros pour rien.",
+        "sous_texte": "J'ai une blessure commerciale non cicatrisée. Je ne referai pas la même erreur. Prouve-moi que tu es différent et que tu comprends pourquoi ça a échoué avant de me vendre quoi que ce soit.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'échec passé avec curiosité authentique, identifier les vraies causes, reconnaître les risques similaires PUIS différencier précisément votre approche d'implémentation et support."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça, mais concrètement, mes équipes ont un âge moyen de 48 ans. La réceptionniste utilise encore un cahier papier pour les notes clients. Comment vous voulez que ça marche avec eux ?",
+        "sous_texte": "J'ai peur que mes employés refusent le changement ou ne suivent pas. Je ne peux pas me permettre de les perdre avec le turnover actuel. Rassure-moi sur l'accompagnement humain, pas sur les fonctionnalités.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître la légitimité de la crainte, donner un exemple précis de client avec profil d'équipe similaire, détailler le processus d'accompagnement pas-à-pas et la formation terrain."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me parlez de réduire la dépendance à Booking, mais franchement, ils m'amènent 48% de mon chiffre. Si je les vexe ou que votre truc marche pas, je fais comment moi ?",
+        "sous_texte": "Tu touches à mon nerf vital. Booking c'est mon assurance-vie même si je les déteste. Je ne prendrai AUCUN risque sur ce sujet sans garanties blindées et plan de repli.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Recadrer : l'objectif n'est pas de rompre avec Booking mais de rééquilibrer progressivement. Montrer comment garder Booking TOUT EN développant le direct avec un calendrier prudent sur 12-18 mois."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui, ça je connais, on va pas refaire le monde. Moi mon vrai problème c'est la trésorerie. Dites-moi franchement : ça coûte combien votre machin ?",
+        "sous_texte": "J'accélère vers le prix pour soit disqualifier rapidement, soit prendre le contrôle de la conversation. Je n'ai pas encore vu assez de valeur, donc je vais probablement trouver ça cher.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS donner le prix sans avoir ancré la valeur. Répondre par une question de clarification sur ses critères de décision et ses priorités budgétaires avant de chiffrer."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, vous me parlez d'augmenter le revenu par chambre de 12€, mais ça sort d'où ce chiffre ? Parce que moi j'ai déjà essayé d'augmenter mes tarifs l'an dernier, j'ai perdu 8% d'occupation. C'est pas si simple.",
+        "sous_texte": "Je teste ta crédibilité. Si tu me sors des moyennes généralistes, je ne te croirai pas. J'ai besoin de comprendre la mécanique précise et les conditions de réussite pour MON contexte.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être hyper-précis sur la source du chiffre, expliquer la mécanique (yield dynamique, réduction OTA, upsell), donner un exemple client comparable avec avant/après détaillé."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que vous me dites que ça va me faire gagner 20h par semaine sur l'administratif, mais ça veut dire quoi concrètement ? Parce que franchement, j'y crois pas trop.",
+        "sous_texte": "Je suis sceptique sur les promesses d'efficacité. J'ai entendu ça 100 fois. Décompose-moi tâche par tâche ce qui change dans mon quotidien réel, sinon c'est du vent.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Lister très concrètement 5-6 tâches précises avec le temps actuel vs nouveau (ex: rapprochement bancaire, déclarations fiscales, reporting Booking, facturation groupe). Demander validation de sa réalité."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau mais moi j'ai encore 18 mois de contrat avec Hôtelgest. Ils me coûtent 340 par mois, ça fait 6 000 balles à perdre si je résilie maintenant. Vous prenez ça en compte ou pas ?",
+        "sous_texte": "J'ai un coût de sortie que tu n'as pas anticipé. Je teste si tu vas l'ignorer, me dire que ce n'est rien, ou intégrer ça intelligemment dans ta proposition commerciale.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Prendre en compte ce coût réel, calculer le ROI net en l'intégrant, éventuellement proposer un démarrage progressif ou négocier une prise en charge partielle SI valeur démontrée."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, mais admettons que ça plante en plein mois d'août, moi je fais comment ? J'ai pas d'équipe technique. Si votre support est aux abonnés absents comme la dernière fois, je coule.",
+        "sous_texte": "Ma vraie peur : la dépendance technique. J'ai besoin de garanties contractuelles précises sur la disponibilité, les délais de réponse, et un plan B documenté. Sinon c'est un risque inacceptable.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler le SLA précis, les horaires de support, le temps de réponse garanti, la procédure d'escalade, et surtout le mode dégradé/manuel en cas de panne critique."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me parlez d'API, de channel manager, de middleware... Écoutez, moi je suis pas informaticien. Expliquez-moi en français ce que ça change pour moi au quotidien.",
+        "sous_texte": "Tu me perds avec ton jargon. Soit tu le fais exprès pour m'impressionner (ce qui m'agace), soit tu ne sais pas vulgariser (ce qui m'inquiète). Redescends sur terre.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "S'excuser pour le jargon, reformuler en bénéfices concrets clients avec des verbes d'action : 'Concrètement, au lieu de saisir 4 fois la même résa, vous la saisissez une fois et elle se propage partout automatiquement'."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et les autres hôtels indépendants dans ma zone, ils utilisent quoi eux ? Parce que je connais bien Martine du Relais des Cèdres, si elle avait un truc qui marche, elle m'en aurait parlé.",
+        "sous_texte": "Je teste ta connaissance du marché local et cherche de la réassurance sociale. Si tu as des références dans mon réseau, ça change tout. Sinon, pourquoi serais-je le premier cobaye ?",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Si référence locale : la mentionner et proposer mise en relation. Si pas de référence locale : expliquer la stratégie de déploiement géographique et proposer d'être le pionnier avec conditions avantageuses."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, là vous m'annoncez 24 500 euros sur l'année. Franchement, c'est beaucoup trop cher pour moi. C'est pas dans mes moyens. Mon comptable va me tuer.",
+        "sous_texte": "Premier réflexe de protection face au prix. Je ne dis pas non catégoriquement mais je teste ta réaction. Vas-tu défendre ton prix ou casser immédiatement ? Combien de marge as-tu vraiment ?",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "NE PAS CASSER LE PRIX immédiatement. Isoler l'objection, revaloriser le ROI en termes de marge nette récupérée, décomposer en coût journalier, PUIS explorer les options de paiement échelonné."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, j'ai besoin d'en parler avec mon comptable et ma femme qui gère l'administratif avec moi. Je peux pas décider ça tout seul, vous comprenez.",
+        "sous_texte": "Tactique de temporisation. Soit c'est vrai et je décide rarement seul, soit c'est une excuse polie pour réfléchir ou fuir. Tu vas devoir qualifier si c'est un vrai processus ou une sortie.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider la légitimité, demander qui décide quoi, proposer une conf call à trois pour répondre directement aux questions compta, fixer date précise, identifier les critères de validation."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Moi ce qui m'embête, c'est que vous me proposez 24 500 sur un an, mais j'ai pas cette visibilité tréso. Je peux pas bloquer autant d'un coup. C'est rédhibitoire pour moi.",
+        "sous_texte": "Objection sincère sur la trésorerie. J'ai probablement les moyens annualisés mais pas en one-shot. Si tu proposes un étalement intelligent sans surcoût usuraire, on peut discuter.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer paiement mensuel ou trimestriel (attention au discours : pas 'facilités de paiement' mais 'adaptation au cycle de tréso hôtelier'). Explorer pilote sur un établissement pour réduire l'exposition initiale."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, mais admettons que je me lance, qu'est-ce qui me garantit que dans 6 mois vous allez pas multiplier vos tarifs par deux ou me rajouter des options payantes obligatoires ? J'ai déjà vu le coup.",
+        "sous_texte": "Peur de l'effet tunnel et des coûts cachés. J'ai besoin d'une visibilité contractuelle sur 24-36 mois minimum avec gel tarifaire écrit. Sinon je me sens piégé dès la signature.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Engagement contractuel écrit sur gel tarifaire (ex: indexation plafonnée à inflation INSEE), transparence totale sur options incluses vs payantes, clause de réversibilité détaillée."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, je trouve que vous défendez pas assez votre prix. Vous êtes sûr que c'est pas négociable ? Parce que là, si vous faites un effort, on signe aujourd'hui.",
+        "sous_texte": "Test tactique classique. Je pousse pour voir si tu as de la marge. Attention : si tu cèdes trop vite, je perds confiance dans ta valeur. Négocie intelligemment avec contreparties.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Défendre le prix avec conviction, valoriser les raisons du positionnement, PUIS si nécessaire céder 5-8% CONTRE contrepartie précise (engagement durée, paiement anticipé, témoignage, parrainage)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est que j'ai eu une proposition d'un concurrent à vous à 16 000 par an. C'est quand même 8 500 de différence. Pourquoi je payerais plus chez vous ?",
+        "sous_texte": "Je te mets en compétition. Soit c'est vrai et je veux comprendre l'écart de valeur, soit c'est du bluff pour te faire baisser. Tu dois qualifier sans paranoïa et différencier clairement.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Qualifier l'offre concurrente précisément (périmètre, services inclus), comparer objectivement sans dénigrer, valoriser les différenciateurs factuels, demander sur quels critères il choisira au-delà du prix."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, j'ai besoin de voir ça tourner avant de signer. Vous pouvez pas me faire un essai gratuit sur un établissement pendant 2-3 mois ? Si ça marche, je prends pour les trois.",
+        "sous_texte": "Je cherche à réduire le risque perçu. C'est légitime mais attention à ce que je ne teste pas gratuitement pour ensuite reconstruire en interne ou aller chez un concurrent moins cher.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer pilote PAYANT mais à tarif réduit avec conditions strictes (durée, objectifs mesurables, engagement si objectifs atteints). Éviter le gratuit qui dévalue et attire les tire-au-flanc."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là vous me mettez la pression pour que je décide maintenant, mais moi je décide jamais à chaud. C'est comme ça. Je vais réfléchir et je vous rappelle la semaine prochaine.",
+        "sous_texte": "Je me protège d'une décision impulsive que je pourrais regretter. C'est un trait de personnalité réel chez moi. Respecte-le mais cadre le processus de décision pour éviter le ghosting.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter son processus de décision, clarifier ce qu'il va évaluer pendant la réflexion, identifier les freins résiduels, fixer RDV précis (pas 'vous me rappelez') avec ordre du jour."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, j'ai bien compris votre offre, c'est intéressant, mais là franchement, entre les travaux de rénovation de l'établissement de Chartres, la négo avec le banquier pour renégocier mon prêt, et tout le reste... Je peux pas me lancer là-dedans maintenant. On en reparle dans 6 mois quand j'aurai digéré tout ça. Voilà.",
+      "condition_declenchement": "Apparaît quand Thierry est intellectuellement convaincu mais émotionnellement saturé. Le timing est mauvais, son contexte opérationnel est surchargé. L'objection est sincère mais contournable si on l'aide à prioriser et à déléguer la charge mentale du projet."
+    },
+    "pattern_escalade": "Thierry commence par des objections réflexes polies pour protéger son temps (mail, pas le moment). Si vous passez cette barrière, il teste votre crédibilité avec des objections techniques et des demandes de preuve (équipe âgée, échec passé, chiffres précis). Une fois rassuré, il bascule sur les objections financières structurelles (trésorerie, contrat actuel, ROI). En closing, il alterne entre tactiques de négociation (concurrent, pression prix) et peurs résiduelles sincères (support, coûts cachés, dépendance). Son pattern final : quand tous les arguments rationnels sont épuisés, il se réfugie dans le timing ou le processus de décision collégial pour temporiser.",
+    "piege_classique": "Thierry donne l'impression d'être convaincu intellectuellement ('Oui c'est intéressant, je vois bien') mais trouve toujours UNE raison contextuelle pour ne pas avancer (timing, trésorerie, autre priorité). Le piège est d'accepter ces raisons sans les challenger. En réalité, si la valeur est suffisamment démontrée et le risque maîtrisé, il PEUT décider maintenant. Son vrai test : est-ce que vous allez le rassurer sur les peurs profondes (dépendance, échec répété, équipe) ou juste répondre aux objections de surface ? S'il sent que vous comprenez vraiment sa situation d'indépendant acculé par les chaînes et les OTA, il peut basculer émotionnellement et signer dans la foulée."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "editeur de logiciel ou fournisseur de services pour l'hotellerie-restauration",
+      "description": "entreprise proposant des solutions innovantes pour optimiser la gestion des hotels-restaurants independants et petits groupes"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinee aux hotels-restaurants independants ou petits groupes, visant a ameliorer leur performance operationnelle et commerciale",
+      "proposition_valeur": "augmentation du taux d'occupation, optimisation de la gestion des reservations, amelioration de l'experience client, reduction des taches administratives, augmentation du revenu par chambre disponible",
+      "prix": "NON_SPECIFIE mais positionne en premium",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "apprendre a defendre son prix avec conviction, maitriser les techniques de negociation, savoir utiliser les contreparties, maintenir la valeur percue tout en trouvant un accord gagnant-gagnant dans une marge de manoeuvre limitee",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution digitale hôtellerie indépendante",
+    "vous_etes": "Commercial pour un éditeur de solutions digitales spécialisé hôtellerie-restauration, en négociation après présentation initiale.",
+    "vous_vendez": "Solution complète de gestion hôtelière (PMS + channel manager + outils yield) à 28 500€/an pour les 3 établissements, soit 2 375€/mois.",
+    "vous_appelez": "Thierry Vendramin, 52 ans, propriétaire-directeur d'Hôtels Les Tilleuls (3 établissements indépendants, 87 chambres). Pragmatique méfiant, échaudé par un projet digital raté en 2019. Pressé, direct, déteste le bullshit.",
+    "ce_que_vous_savez": [
+      "Il trouve votre prix trop élevé — a probablement budgété 15-18k€ max",
+      "Taux d'occupation en baisse (68% vs 72% en 2019), marges sous pression",
+      "Veut réduire sa dépendance à Booking.com (48% de ses nuitées actuellement)",
+      "Paie 340€/mois pour un vieux logiciel Hôtelgest (DOS) qui ne parle plus aux API modernes",
+      "Projet de transmission à ses enfants dans 5-7 ans — besoin de rentabilité démontrée"
+    ],
+    "votre_objectif": "Défendre la valeur sans casser le prix, négocier des contreparties intelligentes (durée d'engagement, périmètre, services) et conclure entre 24-26k€ sur 18-24 mois.",
+    "vos_atouts": [
+      "Hôtel 3★ Bretagne, 42 chambres : no-show réduits de 18% à 7% en 5 mois, +2 100€/mois de marge nette",
+      "Déploiement progressif possible sur 1 établissement pilote avec clause de sortie 60 jours",
+      "Formation équipe incluse + hotline 7j/7 (vs abandon vécu avec son ancien prestataire)",
+      "ROI calculé à 14 mois basé sur réduction commissions OTA de 23% à 17% + gain productivité admin 12h/semaine"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:59:55Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18344,
+    "total_time_s": 196.9
+  }
+}

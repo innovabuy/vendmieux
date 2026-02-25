@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771524235",
+  "description_originale": "Vous avez envoyé une proposition commerciale au fondateur / associé gérant d'une cabinet de gestion de patrimoine de 5-15 conseillers il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : banque_patrimoine]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "5-15 conseillers",
+      "interlocuteur_principal": {
+        "poste": "fondateur / associé gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution/service pour cabinet de gestion de patrimoine",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair"
+      ],
+      "implicites": [
+        "Manque de technique de relance efficace",
+        "Incapacité à créer l'urgence ou l'intérêt",
+        "Possible peur de déranger ou manque de posture",
+        "Absence de stratégie de suivi structurée"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas comment relancer efficacement après une proposition sans réponse pour obtenir un positionnement clair (oui/non/prochaine étape) sans être intrusif"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance post-proposition pour obtenir un retour décisif et faire avancer le cycle de vente",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions/services pour le secteur banque et gestion de patrimoine",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux cabinets de gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service adressé aux cabinets de gestion de patrimoine avec 5 à 15 conseillers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre/produit/service proposé",
+        "Contenu de la proposition commerciale envoyée",
+        "Contexte de la relation antérieure (premier contact, déjà client, recommandation)",
+        "Prix et investissement demandé",
+        "Proposition de valeur spécifique",
+        "Identité de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Varenne",
+      "age": 52,
+      "poste": "Fondateur & Associé Gérant",
+      "entreprise": {
+        "nom": "Varenne & Associés Conseil Patrimonial",
+        "secteur": "Gestion de patrimoine indépendante",
+        "taille": "9 conseillers en gestion de patrimoine + 3 assistantes",
+        "ca_approximatif": "1,8 M€ dont 65% en honoraires de conseil"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant vis-à-vis des promesses commerciales après 25 ans de métier",
+        "Protecteur de son temps et celui de son équipe",
+        "Pragmatique terre-à-terre : 'Si ça coûte plus cher que ce que ça rapporte, on ne fait pas'"
+      ],
+      "motivations_profondes": [
+        "Ne pas se faire distancer par les gros réseaux qui digitalisent à tout-va",
+        "Préserver la rentabilité du cabinet sans alourdir les charges fixes",
+        "Garder l'ADN boutique premium : 'On n'est pas une usine à clients'",
+        "Préparer discrètement la transmission du cabinet d'ici 5-7 ans"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un beau discours et une démo PowerPoint qui ne tient pas ses promesses en production",
+        "Imposer un changement d'outil à l'équipe qui grogne déjà avec l'existant",
+        "Perdre 3 mois à former tout le monde pour un gain hypothétique",
+        "Le ROI flou : 'Combien ça coûte vraiment, tout compris, formation incluse ?'",
+        "Être coincé dans un contrat 36 mois avec une boîte qui fera faillite dans 2 ans"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. A tendance à dire 'Je regarde et je vous rappelle' pour clore poliment. Déteste qu'on le relance trop vite : 'J'ai dit que je vous rappelle, laissez-moi respirer'. Apprécie les commerciaux qui connaissent vraiment le métier de CGP et ne récitent pas un script.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec une pointe de lassitude : 'Écoutez, je reçois 4-5 propositions par semaine, alors soyez direct'",
+      "signaux_interet": [
+        "Commence à poser des questions précises sur les conditions de sortie du contrat",
+        "Demande des références vérifiables : 'Vous avez des clients dans ma région que je peux appeler ?'",
+        "Évoque spontanément un problème précis : 'Justement on galère avec...'",
+        "Propose de faire tester à un conseiller pilote avant de généraliser"
+      ],
+      "signaux_rejet": [
+        "Soupir avant de répondre",
+        "Phrases barrières : 'Pour l'instant on n'a pas le budget', 'On verra ça au prochain exercice'",
+        "Regarde ostensiblement sa montre ou son téléphone",
+        "Coupe court : 'Écoutez, envoyez-moi un récap mail, je verrai avec mon associé'",
+        "Devient évasif sur les dates : 'Je vous rappelle dans 2-3 semaines'"
+      ],
+      "tics_langage": [
+        "Ponctue avec 'Vous voyez ce que je veux dire'",
+        "Utilise beaucoup 'Concrètement' en début de phrase",
+        "Dit 'franchement' avant de formuler une objection",
+        "Expression favorite : 'C'est bien joli sur le papier, mais dans la vraie vie...'"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Faible : coupe après 45 secondes max avec une question ou un 'Oui mais concrètement dans mon cas...'. Décroche mentalement si le commercial n'adapte pas son discours au contexte spécifique de son cabinet"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable mais sous pression concurrentielle. Les 2 jeunes conseillers (30-35 ans) poussent pour digitaliser. L'associé historique (58 ans) freine. Stéphane est entre les deux. Chiffre stable mais pas de croissance depuis 3 ans. Marge qui se réduit avec l'inflation des charges.",
+      "priorites_actuelles": [
+        "Automatiser le reporting client pour libérer du temps commercial (sujet chaud)",
+        "Recruter un 10e conseiller si l'activité repart en Q2",
+        "Moderniser l'image sans perdre le côté 'confiance et proximité'",
+        "Réduire la paperasse administrative côté conformité AMF"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans une solution de CRM spécialisé CGP qui a été un fiasco : mal configurée, assistance inexistante, abandon après 18 mois et perte sèche de 15 K€. Depuis, très prudent. Se méfie des 'solutions tout-en-un miracles'.",
+      "fournisseur_actuel": "Mix bancal : Excel pour le suivi commercial, un vieux logiciel métier (Harvest) pour la gestion patrimoine, et WhatsApp pour communiquer avec les clients VIP. Sait que c'est artisanal mais 'ça marche et on maîtrise'.",
+      "budget_disponible": "Entre 8 et 15 K€/an envisageable si ROI démontré en moins de 12 mois. Pas de tréso pour claquer 30 K€ d'un coup. Préfère payer mensuellement. Négociera âprement : 'Votre concurrent me fait 20% moins cher'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet similaire en taille qui a obtenu un résultat mesurable précis (ex: '12% de CA en plus sans recruter')",
+        "Proposer une phase de test courte (30-60j) sans engagement lourd",
+        "Démontrer qu'on comprend la réglementation AMF et les contraintes spécifiques CGP",
+        "Avoir un discours ROI chiffré : 'X heures économisées par conseiller par semaine = Y RDV clients supplémentaires'",
+        "Être recommandé par un confrère qu'il respecte (réseaux CNCGP, ANACOFI)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'Tous vos concurrents l'ont déjà adopté' (il déteste le suivisme)",
+        "Minimiser ses objections : 'Mais non, c'est très simple à prendre en main'",
+        "Ne pas connaître la différence entre CGPI et conseiller bancaire",
+        "Insister lourdement après un 'Non merci' : déclenche un blocage définitif",
+        "Proposer un RDV de 2h en présentiel sans avoir démontré l'intérêt avant",
+        "Faire du name-dropping avec des grands réseaux (Générale Privée, etc.) : 'Nous on est pas structurés comme eux'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai bien reçu votre proposition il y a 15 jours, mais franchement j'ai pas eu le temps de regarder en détail... Vous savez, en ce moment c'est la période des bilans clients",
+        "sous_texte": "Je l'ai peut-être survolée 30 secondes, mais elle ne m'a pas suffisamment accroché pour que je creuse. Je cherche une sortie polie.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte temporelle, puis recentrer sur UN point précis de la proposition pour obtenir un premier retour qualifié"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, je reçois 4 à 5 propositions par semaine... Qu'est-ce qui fait que je devrais regarder la vôtre en priorité ?",
+        "sous_texte": "Prouvez-moi que vous n'êtes pas un commercial de plus avec un copier-coller. Vous avez 30 secondes pour me convaincre que ça vaut mon temps.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Répondre avec un élément spécifique à SON cabinet mentionné dans la proposition, pas un argument générique"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui... Votre truc là. Écoutez, j'en ai parlé vaguement avec mon associé, il faut qu'on en rediscute entre nous d'abord",
+        "sous_texte": "Je ne veux pas prendre la décision seul OU je n'ai pas du tout parlé avec lui mais c'est une excuse pratique pour gagner du temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier si c'est un vrai process décisionnel ou une esquive, puis proposer un échange à trois ou clarifier les rôles"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pour l'instant, on n'a pas vraiment le budget pour ce genre de chose. On va attendre le prochain exercice, vous voyez ce que je veux dire",
+        "sous_texte": "Je ne suis pas convaincu que ça vaut l'investissement MAINTENANT. Si c'était critique, je trouverais le budget. C'est un 'non' déguisé en 'plus tard'.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser le coût de l'inaction : combien lui coûte le statu quo ? Reframer en coût d'opportunité plutôt qu'en dépense"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, dans mon cas précis, avec mes 9 conseillers et notre organisation actuelle, ça changerait quoi exactement ? Parce que c'est bien joli sur le papier...",
+        "sous_texte": "J'ai besoin de concret, pas de slides marketing. Prouvez-moi que vous comprenez VRAIMENT ma réalité opérationnelle quotidienne.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Passer en mode découverte approfondie de SON process actuel avant de projeter la solution. Questions > arguments"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, on a déjà testé un CRM spécialisé CGP il y a 3 ans... Ça a été un fiasco complet. 15 000 euros perdus, l'équipe a détesté, et au final on est revenus à nos vieilles méthodes",
+        "sous_texte": "Je suis échaudé. Vous allez devoir me rassurer énormément pour que je retente l'expérience. J'ai peur de revivre le même cauchemar.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec passé pour comprendre les causes, puis différencier explicitement votre approche. Proposer des garanties."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes deux jeunes conseillers me poussent pour digitaliser, mais mon associé historique freine des quatre fers... Comment vous gérez ça vous, ce genre de situation ?",
+        "sous_texte": "J'ai un problème politique interne. Si je ne le règle pas d'abord, votre solution ne passera jamais. Aidez-moi à construire le consensus.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'enjeu de conduite du changement, proposer une approche progressive avec pilote, impliquer l'associé dans le process"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Combien ça coûte VRAIMENT, tout compris ? Parce que votre proposition parle de 'à partir de', mais moi je veux le prix réel avec la formation, l'intégration, le support, tout le package",
+        "sous_texte": "Je me suis fait avoir avec les prix d'appel. Je veux la transparence totale pour pouvoir vraiment arbitrer. Les surprises, c'est terminé.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence totale sur le TCO, détailler ligne par ligne, anticiper les coûts cachés potentiels, proposer un forfait all-in"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre concurrent, là, MaPat Solutions, ils me font exactement la même chose 20% moins cher... Vous avez quoi de plus pour justifier l'écart ?",
+        "sous_texte": "Soit c'est vrai et je négocie, soit c'est faux et je teste votre réaction. Dans tous les cas, je veux comprendre votre valeur ajoutée différenciante.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent, creuser ce qui est vraiment comparable, recentrer sur la valeur et le ROI plutôt que le prix"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans 2 ans votre boîte fait faillite ou se fait racheter, je deviens quoi moi avec mes données clients dedans ? Vous avez combien d'années d'existence ?",
+        "sous_texte": "J'ai besoin de pérennité et de sécurité. Je ne peux pas me permettre de changer d'outil tous les 3 ans. Rassurez-moi sur votre solidité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence sur l'entreprise, garanties contractuelles de réversibilité des données, références longue durée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que ça va faire gagner 3 heures par semaine à chaque conseiller... Mais concrètement, comment vous calculez ça ? Parce que moi les promesses dans le vent...",
+        "sous_texte": "Je veux des preuves tangibles, pas des estimations marketing. Donnez-moi une méthode de calcul que JE puisse vérifier avec MES chiffres.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler la méthodologie de calcul, proposer de co-construire une simulation avec SES données, cas client mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est la formation... Mes conseillers sont déjà surbookés, je vais pas leur bloquer 2 jours pour apprendre un nouvel outil. Et les assistantes, elles vont râler",
+        "sous_texte": "Le changement va créer de la friction dans l'équipe. Je dois gérer le quotidien et je n'ai pas de marge de manœuvre pour absorber une baisse de productivité temporaire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une approche de formation progressive, en petits modules, avec un accompagnement terrain, déploiement par phase"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous avez des clients dans ma région, des cabinets de ma taille, que je peux appeler directement pour avoir leur retour ? Pas des témoignages sur votre site hein, de vrais contacts",
+        "sous_texte": "Je veux vérifier par moi-même avec des pairs. Je fais confiance aux confrères, pas aux plaquettes commerciales.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter immédiatement, fournir 2-3 contacts vérifiables avec accord préalable, facilitant les échanges directs"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi tout ça par mail avec un récap, je vais en reparler avec mon associé et je vous rappelle dans... 2-3 semaines",
+        "sous_texte": "Je veux clore la conversation maintenant. Je ne suis pas prêt à m'engager et je me donne une marge confortable. Statistiquement, je ne rappellerai pas.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas laisser partir sans prochaine étape concrète. Proposer une date précise de rappel et un objectif clair pour cet échange"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On n'est vraiment pas structurés comme les gros réseaux que vous mentionnez... Nous on est une boutique, on a notre façon de fonctionner, je sais pas si ça colle avec votre logique",
+        "sous_texte": "Je ne me reconnais pas dans vos références et j'ai peur que la solution soit trop 'industrielle' pour notre ADN artisanal. Je cherche une raison de dire non.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser cette spécificité comme un atout, montrer des références de cabinets boutique, adapter le discours à la logique artisanale"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai dit que je vous rappelle, laissez-moi respirer un peu... Vous êtes le troisième cette semaine qui me relance",
+        "sous_texte": "Je me sens harcelé et ça me braque. Vous risquez de tout faire capoter en poussant trop fort. Je reprends le contrôle de la relation.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "S'excuser, lâcher prise immédiatement, proposer qu'il fixe LUI le prochain point de contact, respecter son rythme"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous voyez, le vrai problème c'est que ça m'engage sur 36 mois minimum d'après ce que je lis... Moi les contrats longs, ça me bloque direct",
+        "sous_texte": "Je veux garder ma flexibilité et pouvoir sortir si ça ne marche pas. Les engagements longs me font peur après mon expérience passée.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Négocier des clauses de sortie raisonnables, proposer une période d'essai avec engagement progressif, rassurer sur la flexibilité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, votre solution elle a l'air bien, mais là on sort de 2 années compliquées, on verra plutôt ça quand l'activité sera vraiment repartie",
+        "sous_texte": "Je suis en mode prudence financière. Tant que je ne vois pas de croissance claire, je ne me lance pas dans des investissements non critiques.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retourner la logique : c'est justement maintenant qu'il faut s'équiper pour relancer la croissance. L'outil comme levier, pas comme récompense."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, vous m'avez convaincu que c'est intéressant, mais soyons honnêtes : aujourd'hui c'est pas le bon moment pour nous. Entre la charge de travail, l'associé qui freine, et la tréso qui est tendue... Je préfère être transparent avec vous plutôt que de vous faire perdre votre temps. On se recontacte dans 6 mois si vous voulez, quand on y verra plus clair",
+      "condition_declenchement": "Apparaît quand le commercial a répondu correctement aux objections précédentes mais n'a pas créé d'urgence suffisante ni adressé les freins politiques internes. C'est une objection sincère de timing qui peut être un vrai 'non' déguisé ou une vraie contrainte selon le contexte."
+    },
+    "pattern_escalade": "Stéphane commence courtois mais évasif ('j'ai pas eu le temps'), puis teste la compétence du commercial avec des questions précises. Si le commercial tient, il révèle progressivement ses vraies préoccupations (échec passé, consensus interne, ROI). Si le commercial pousse trop ou semble réciter un script, il se ferme brutalement avec des phrases barrières définitives. L'escalade positive nécessite d'alterner entre empathie sur ses contraintes et challengement factuel sur le coût de l'inaction.",
+    "piege_classique": "Stéphane peut sembler convaincu intellectuellement ('oui c'est intéressant') sans pour autant être prêt à décider. Le piège est de confondre intérêt poli et intention d'achat. Il faut aller chercher l'engagement concret (date de décision, prochaine étape, test pilote) sinon il disparaîtra dans un 'je vous rappelle' éternel. Sa plus grande objection n'est pas le prix ou le produit, c'est SA capacité à gérer le changement dans SON contexte actuel."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions/services pour le secteur banque et gestion de patrimoine",
+      "description": "Entreprise proposant des solutions ou services destinés aux cabinets de gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service adressé aux cabinets de gestion de patrimoine avec 5 à 15 conseillers",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance post-proposition pour obtenir un retour décisif et faire avancer le cycle de vente",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Cabinet gestion de patrimoine",
+    "vous_etes": "Commercial chez un éditeur de solutions pour cabinets de gestion de patrimoine indépendants.",
+    "vous_vendez": "Une solution digitale pour cabinets CGP (automatisation reporting, CRM métier) — budget indicatif 8-15 K€/an.",
+    "vous_appelez": "Stéphane Varenne, 52 ans, fondateur et associé gérant de Varenne & Associés Conseil Patrimonial (9 conseillers CGP). Pragmatique, méfiant après un échec CRM il y a 3 ans, protège son temps et celui de son équipe.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale il y a 10 jours — aucun retour depuis",
+      "Cabinet stable mais sous pression : pas de croissance depuis 3 ans, jeunes conseillers poussent pour digitaliser",
+      "Priorité actuelle : automatiser le reporting client pour libérer du temps commercial",
+      "Budget estimé disponible : 8-15 K€/an si ROI démontré en moins de 12 mois",
+      "Fiasco CRM il y a 3 ans (15 K€ perdus) — très prudent depuis"
+    ],
+    "votre_objectif": "Obtenir un positionnement clair (oui/non/prochaine étape) et débloquer la situation sans être intrusif.",
+    "vos_atouts": [
+      "Phase de test 60 jours sans engagement lourd disponible",
+      "ROI mesurable : clients similaires gagnent 4-6h/conseiller/semaine",
+      "Références vérifiables de cabinets 8-12 conseillers dans sa région",
+      "Conformité AMF intégrée — vous connaissez les contraintes réglementaires CGP"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:03:55Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15929,
+    "total_time_s": 151.8
+  }
+}

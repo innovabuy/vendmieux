@@ -957,6 +957,7 @@ let pendingSegments = {};
 let currentSessionDbId = null;
 let selectedLanguage = 'fr';
 let selectedDifficulty = 2;
+let ringTone = null;
 
 function selectLang(btn) {
     document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('selected'));
@@ -1132,9 +1133,27 @@ async function launchSim() {
 }
 
 // === CALL ===
+function stopRingTone() {
+    if (ringTone) {
+        ringTone.pause();
+        ringTone.currentTime = 0;
+        ringTone = null;
+    }
+}
+
 async function startCall() {
     const st = document.getElementById('c-status');
-    st.textContent = 'Obtention du token...';
+    st.textContent = 'Appel en cours...';
+
+    // Jouer la tonalité téléphonique pendant la connexion
+    try {
+        ringTone = new Audio('/static/sounds/phone-ring.mp3');
+        ringTone.loop = true;
+        ringTone.volume = 0.4;
+        await ringTone.play();
+    } catch (e) {
+        console.warn('Ring tone failed:', e);
+    }
 
     try {
         const authToken = localStorage.getItem('vm-token');
@@ -1155,11 +1174,12 @@ async function startCall() {
         localIdentity = tk.identity;
         currentSessionDbId = tk.session_db_id || null;
 
-        st.textContent = 'Connexion à la room...';
         room = new LivekitClient.Room({ adaptiveStream: true, dynacast: true });
 
         room.on(LivekitClient.RoomEvent.TrackSubscribed, (track) => {
             if (track.kind === 'audio') {
+                // Le prospect "décroche" — couper la sonnerie
+                stopRingTone();
                 document.body.appendChild(track.attach());
                 document.getElementById('viz').classList.add('on');
             }
@@ -1174,7 +1194,7 @@ async function startCall() {
         st.textContent = 'Activation du micro...';
         await room.localParticipant.setMicrophoneEnabled(true);
 
-        st.textContent = 'En attente du prospect...';
+        st.textContent = 'Ça sonne...';
 
         const hasAgent = Array.from(room.remoteParticipants.values()).length > 0;
         if (hasAgent) {
@@ -1196,12 +1216,14 @@ async function startCall() {
         tmr = setInterval(tick, 1000);
 
     } catch (e) {
+        stopRingTone();
         st.textContent = 'Erreur : ' + e.message;
         st.className = 'call-status err';
     }
 }
 
 function endCall() {
+    stopRingTone();
     const duration = t0 ? Date.now() - t0 : 0;
     const hadTranscript = transcriptEntries.length > 0;
     const longEnough = duration > 3000;

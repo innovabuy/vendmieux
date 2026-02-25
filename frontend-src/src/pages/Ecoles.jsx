@@ -57,7 +57,18 @@ function SchoolProblem(){
 
 /* ======== SOLUTION 3 PILIERS ======== */
 function Solution(){
-  const C = useColors(); const pillars=[
+  const C = useColors();
+  const [simTimer,setSimTimer]=useState(145);
+  const [simMsgIdx,setSimMsgIdx]=useState(0);
+  const simMessages=["On a déjà un fournisseur...","C'est trop cher pour nous...","Envoyez-moi une plaquette...","Je n'ai pas le temps là...","Il faudrait voir avec mon responsable..."];
+  useEffect(()=>{ const iv=setInterval(()=>setSimTimer(t=>t+1),1000);return()=>clearInterval(iv); },[]);
+  useEffect(()=>{ const iv=setInterval(()=>setSimMsgIdx(i=>(i+1)%simMessages.length),4000);return()=>clearInterval(iv); },[]);
+  const [evalTick,setEvalTick]=useState(0);
+  useEffect(()=>{ const iv=setInterval(()=>setEvalTick(t=>t+1),2000);return()=>clearInterval(iv); },[]);
+  const [dashTick,setDashTick]=useState(0);
+  useEffect(()=>{ const iv=setInterval(()=>setDashTick(t=>t+1),3000);return()=>clearInterval(iv); },[]);
+  const fmtT=s=>`${Math.floor(s/60)}:${(s%60).toString().padStart(2,"0")}`;
+  const pillars=[
     { icon:"🗣️",color:C.ac,title:"Simulation vocale réaliste",desc:"Chaque étudiant parle à un prospect IA avec sa propre personnalité, ses objections, ses réactions. 12 scénarios dans 12 secteurs. Pas de script, pas de chatbot.",features:["Conversation vocale temps réel","Prospect qui peut être convaincu","8 voix françaises différentes"] },
     { icon:"📋",color:C.ok,title:"Évaluation automatique FORCE 3D",desc:"6 compétences évaluées sur 3 dimensions (technique, relationnel, stratégique). Score sur 20, radar visuel, verbatims, conseil prioritaire. La même grille pour tout le monde.",features:["Score reproductible et objectif","6 compétences commerciales","Feedback immédiat post-appel"] },
     { icon:"📊",color:C.bl,title:"Dashboard professeur",desc:"Suivez toute la promotion en temps réel. Classement, progression, alertes. Exportez les notes en CSV pour intégration dans votre système de notation.",features:["Vue par promotion / groupe","Export CSV des notes","Comparaison entre groupes"] },
@@ -91,49 +102,59 @@ function Solution(){
                 <div style={ { display:"flex",alignItems:"center",justifyContent:"center",gap:6,marginBottom:12 } }>
                   <div style={ { width:6,height:6,borderRadius:"50%",background:C.ac,animation:"pulse 1.5s infinite" } }/>
                   <span style={ { fontSize:11,fontWeight:600,color:C.ac } }>Simulation en cours</span>
+                  <span style={ { fontSize:11,color:C.dm,fontVariantNumeric:"tabular-nums",marginLeft:4 } }>{ fmtT(simTimer) }</span>
                 </div>
                 <Avatar name="Marie Leclerc" gender="F" size={ 48 }/>
                 <div style={ { fontSize:13,fontWeight:600,marginTop:8 } }>Marie Leclerc</div>
                 <div style={ { fontSize:11,color:C.dm } }>M2 Marketing · Groupe B</div>
-                <div style={ { marginTop:10,fontSize:12,color:C.mt,fontStyle:"italic",background:C.bgC,borderRadius:8,padding:"8px 10px" } }>
-                  "On a déjà un fournisseur..."
+                <div style={ { marginTop:10,fontSize:12,color:C.mt,fontStyle:"italic",background:C.bgC,borderRadius:8,padding:"8px 10px",transition:"opacity 0.3s" } }>
+                  "{ simMessages[simMsgIdx] }"
                 </div>
               </div>
             ) }
             { i===1&&(
               <div style={ { background:C.bgE,borderRadius:14,padding:18 } }>
                 <div style={ { textAlign:"center",marginBottom:12 } }>
-                  <span style={ { fontSize:32,fontWeight:200 } }>15.4</span>
-                  <span style={ { fontSize:14,color:C.dm } }>/20</span>
+                  { (()=>{ const evalBars=[{ l:"Découverte",s:17 },{ l:"Argumentation",s:16 },{ l:"Engagement",s:15 },{ l:"Objections",s:14 },{ l:"Accroche",s:12 }];
+                    const animated=evalBars.map((x,j)=>({...x,s:Math.round((x.s+Math.sin(evalTick*0.7+j)*0.6)*10)/10}));
+                    const avg=(animated.reduce((a,x)=>a+x.s,0)/animated.length).toFixed(1);
+                    const sc=s=>s>=15?C.ok:s>=12?C.wr:C.dn;
+                    return(<>
+                      <span style={ { fontSize:32,fontWeight:200 } }>{ avg }</span>
+                      <span style={ { fontSize:14,color:C.dm } }>/20</span>
+                      { animated.map((x,j)=>(
+                        <div key={ j } style={ { display:"flex",alignItems:"center",gap:8,marginBottom:5,marginTop:j===0?12:0 } }>
+                          <span style={ { fontSize:10,color:C.mt,width:80,textAlign:"right" } }>{ x.l }</span>
+                          <div style={ { flex:1,height:4,background:C.bd,borderRadius:2,overflow:"hidden" } }>
+                            <div style={ { width:`${ (x.s/20)*100 }%`,height:"100%",background:sc(x.s),borderRadius:2,transition:"width 1.5s ease" } }/>
+                          </div>
+                          <span style={ { fontSize:11,fontWeight:600,color:sc(x.s),width:24,transition:"color 0.5s" } }>{ x.s.toFixed(1) }</span>
+                        </div>
+                      )) }
+                    </>); })() }
                 </div>
-                { [{ l:"Découverte",s:17,c:C.ok },{ l:"Argumentation",s:16,c:C.ok },{ l:"Engagement",s:15,c:C.ok },{ l:"Objections",s:14,c:C.ac },{ l:"Accroche",s:12,c:C.wr }].map((x,j)=>(
-                  <div key={ j } style={ { display:"flex",alignItems:"center",gap:8,marginBottom:5 } }>
-                    <span style={ { fontSize:10,color:C.mt,width:80,textAlign:"right" } }>{ x.l }</span>
-                    <div style={ { flex:1,height:4,background:C.bd,borderRadius:2,overflow:"hidden" } }>
-                      <div style={ { width:`${ (x.s/20)*100 }%`,height:"100%",background:x.c,borderRadius:2 } }/>
-                    </div>
-                    <span style={ { fontSize:11,fontWeight:600,color:x.c,width:20 } }>{ x.s }</span>
-                  </div>
-                )) }
               </div>
             ) }
             { i===2&&(
               <div style={ { background:C.bgE,borderRadius:14,padding:18 } }>
                 <div style={ { fontSize:10,fontWeight:700,letterSpacing:0.8,textTransform:"uppercase",color:C.dm,marginBottom:10 } }>Promotion M2 2026</div>
-                { [
-                  { name:"Groupe A",avg:14.8,n:15,c:C.ok },
-                  { name:"Groupe B",avg:13.2,n:14,c:C.ac },
-                  { name:"Groupe C",avg:15.6,n:16,c:C.ok },
-                ].map((g,j)=>(
-                  <div key={ j } style={ { display:"flex",alignItems:"center",gap:8,marginBottom:8 } }>
-                    <span style={ { fontSize:11,fontWeight:600,width:66 } }>{ g.name }</span>
-                    <div style={ { flex:1,height:5,background:C.bd,borderRadius:3,overflow:"hidden" } }>
-                      <div style={ { width:`${ (g.avg/20)*100 }%`,height:"100%",background:g.c,borderRadius:3 } }/>
+                { (()=>{ const groups=[
+                    { name:"Groupe A",avg:14.8,n:15 },
+                    { name:"Groupe B",avg:13.2,n:14 },
+                    { name:"Groupe C",avg:15.6,n:16 },
+                  ].map((g,j)=>({...g,avg:Math.round((g.avg+Math.sin(dashTick*0.6+j*1.5)*0.5)*10)/10}));
+                  return groups.map((g,j)=>{
+                    const gc=g.avg>=15?C.ok:g.avg>=12?C.ac:C.wr;
+                    return(
+                    <div key={ j } style={ { display:"flex",alignItems:"center",gap:8,marginBottom:8 } }>
+                      <span style={ { fontSize:11,fontWeight:600,width:66 } }>{ g.name }</span>
+                      <div style={ { flex:1,height:5,background:C.bd,borderRadius:3,overflow:"hidden" } }>
+                        <div style={ { width:`${ (g.avg/20)*100 }%`,height:"100%",background:gc,borderRadius:3,transition:"width 1.5s ease" } }/>
+                      </div>
+                      <span style={ { fontSize:11,fontWeight:600,color:gc,width:30,transition:"color 0.5s" } }>{ g.avg.toFixed(1) }</span>
+                      <span style={ { fontSize:9,color:C.dm } }>({ g.n })</span>
                     </div>
-                    <span style={ { fontSize:11,fontWeight:600,color:g.c,width:30 } }>{ g.avg }</span>
-                    <span style={ { fontSize:9,color:C.dm } }>({ g.n })</span>
-                  </div>
-                )) }
+                  ); }); })() }
                 <div style={ { marginTop:10,padding:"8px 12px",background:C.bgC,borderRadius:8,display:"flex",alignItems:"center",gap:8 } }>
                   <span style={ { fontSize:12 } }>📥</span>
                   <span style={ { fontSize:11,color:C.mt } }>Export CSV — Notes par étudiant</span>

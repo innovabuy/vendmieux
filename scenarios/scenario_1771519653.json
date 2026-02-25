@@ -1,0 +1,367 @@
+{
+  "id": "scenario_1771519653",
+  "description_originale": "Le directeur de concession / gérant d'une concession automobile ou équipementier local de 20-50 salariés est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : automobile]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "automobile",
+      "taille_entreprise": "20-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur de concession / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (nature exacte non spécifiée)",
+      "proposition_valeur_presumee": "valeur ajoutée supplémentaire pour optimiser l'activité de la concession",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire"
+      ],
+      "implicites": [
+        "éviter que le client reste sur son offre actuelle par confort",
+        "justifier un investissement supplémentaire alors que le client est déjà satisfait",
+        "transformer la satisfaction passive en engagement actif pour plus de services"
+      ],
+      "probleme_racine": "difficulté à créer un nouveau besoin perçu chez un client déjà satisfait de l'offre initiale"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser la technique d'upselling en créant de la valeur perçue et en obtenant l'engagement pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour le secteur automobile",
+      "entreprise_description": "entreprise fournissant des services aux concessions automobiles et équipementiers",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service initial déjà en place depuis 1 an + service complémentaire ou montée en gamme à proposer",
+      "proposition_valeur": "amélioration de la performance, optimisation des processus ou augmentation du chiffre d'affaires de la concession",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an, relation de confiance établie"
+      ],
+      "avantages_vs_concurrence": "relation client existante, connaissance du contexte, confiance établie",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du service initial",
+        "nature du service complémentaire/montée en gamme proposé",
+        "budget ou fourchette de prix",
+        "problématiques spécifiques du secteur automobile concerné",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Verlaine",
+      "age": 52,
+      "poste": "Directeur de concession",
+      "entreprise": {
+        "nom": "Automobiles Verlaine & Associés",
+        "secteur": "Distribution automobile multimarques (Peugeot, Citroën)",
+        "taille": "32 salariés",
+        "ca_approximatif": "18M€ (avec VO et après-vente)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "pragmatique terre-à-terre",
+        "méfiant envers les 'bonimenteurs'",
+        "fidèle mais calculateur"
+      ],
+      "motivations_profondes": [
+        "maintenir sa marge nette dans un secteur sous pression",
+        "éviter les emmerdements administratifs et les usines à gaz",
+        "prouver à son associé passif qu'il gère bien la boîte",
+        "tenir ses objectifs constructeur sans sacrifier la rentabilité"
+      ],
+      "peurs_freins": [
+        "perdre du temps avec des outils qui ne servent à rien",
+        "se faire enfumer par du marketing qui promet monts et merveilles",
+        "déstabiliser une organisation qui tourne correctement",
+        "que ses équipes rechignent à utiliser un nouveau service"
+      ],
+      "rapport_aux_commerciaux": "tolère ceux qui connaissent son métier, déteste les juniors qui récitent un script, apprécie la franchise brutale",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "cordial mais pressé, coupe court aux préliminaires : 'Ouais salut, écoute je suis dans le jus là, tu me disais quoi ?'",
+      "signaux_interet": [
+        "pose des questions sur le ROI chiffré",
+        "raconte un problème concret qu'il vit actuellement",
+        "demande 'combien de temps ça prend à mettre en place'",
+        "compare mentalement avec son concurrent d'en face : 'Durand il a ça chez lui ?'"
+      ],
+      "signaux_rejet": [
+        "soupirs audibles",
+        "répond en même temps qu'il fait autre chose (clavier en fond)",
+        "dit 'ouais ouais' de manière mécanique",
+        "sort le 'écoute on en reparlera, là je dois y aller' avant 3 minutes",
+        "coupe avec 'franchement là on est bien comme on est'"
+      ],
+      "tics_langage": [
+        "commence ses phrases par 'Écoute...'",
+        "utilise 'franchement' toutes les deux phrases",
+        "dit 'tu vois' ou 'tu comprends' en fin de phrase",
+        "emploie 'usine à gaz' pour tout ce qui semble complexe",
+        "appelle son interlocuteur 'mon gars' quand il est détendu"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "90 secondes maximum avant interruption, déteste les tunnels de vente préformatés, veut du ping-pong conversationnel"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "année correcte malgré pénurie VO, après-vente qui compense, pression du constructeur sur les ventes VN, concurrence d'un gros dealer Renault à 12km",
+      "priorites_actuelles": [
+        "optimiser le taux de transformation atelier",
+        "réduire le coût d'acquisition client VO",
+        "former son nouveau chef des ventes qui vient de l'extérieur",
+        "gérer la réticence de son chef atelier (45 ans de boîte) aux nouveautés"
+      ],
+      "experience_avec_offre_similaire": "utilise le service initial depuis 1 an, plutôt content même si 'ça pourrait être mieux sur 2-3 trucs', a déjà eu 3 prestataires différents avant sur des services adjacents, tous arrêtés faute de résultats tangibles",
+      "fournisseur_actuel": "satisfait du service actuel, équipe habituée, 'ça tourne', pas de raison de changer",
+      "budget_disponible": "entre 800 et 2000€/mois si ROI démontré sous 4-5 mois, mais doit justifier auprès de son expert-comptable et de son associé pour tout ce qui dépasse 1200€/mois"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "parler en marge brute réelle, pas en CA",
+        "montrer ce que fait concrètement son concurrent direct",
+        "évoquer un gain de temps mesurable pour lui personnellement",
+        "citer un confrère de sa région qui utilise déjà",
+        "proposer un test rapide sans engagement administratif lourd",
+        "reconnaître que son organisation actuelle fonctionne déjà bien"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "parler de 'transformation digitale' ou jargon corporate",
+        "présenter un tunnel de slides PowerPoint",
+        "ignorer qu'il a déjà le service de base et faire comme si on repartait de zéro",
+        "promettre des miracles sans preuve chiffrée",
+        "critiquer son organisation actuelle",
+        "lui demander de 'prendre 30 minutes pour une démo' sans contexte",
+        "être condescendant sur le secteur automobile"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute là je suis dans le jus, tu me disais quoi déjà ?",
+        "sous_texte": "Je n'ai pas vraiment préparé cet appel, prouve-moi en 15 secondes que ça vaut le coup que je t'écoute",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement un bénéfice chiffré concret lié à sa situation actuelle"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais mais franchement là on est bien comme on est, ton service actuel il tourne correctement",
+        "sous_texte": "Pourquoi je prendrais le risque de changer quelque chose qui fonctionne ? Ça va me créer des emmerdes",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser d'abord ce qui marche, puis montrer le manque à gagner mesurable sans modifier l'existant"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Tu vas encore me parler de transformation digitale et tout le tralala c'est ça ?",
+        "sous_texte": "Je catégorise déjà ton discours comme du bullshit marketing, prouve-moi le contraire vite fait",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Parler cash en termes métier automobile, marge brute, taux de transformation atelier"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement c'est quoi le problème que t'essaies de me résoudre là ? Parce que moi j'en ai pas vraiment",
+        "sous_texte": "Tu essaies de créer un besoin artificiel, je ne suis pas dupe, je veux savoir où tu veux en venir",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Poser des questions sur ses objectifs constructeur, sa marge atelier, son acquisition client VO plutôt qu'affirmer un problème"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais... *bruit de clavier* vas-y continue",
+        "sous_texte": "Tu ne captes pas mon attention, je fais autre chose en même temps, tu es en train de perdre la vente",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Interrompre le discours, poser une question directe qui nécessite sa réflexion active"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoute mon gars, j'ai déjà eu trois prestataires sur ce genre de trucs, à chaque fois ça finit aux oubliettes",
+        "sous_texte": "J'ai déjà été déçu plusieurs fois, pourquoi tu serais différent ? Ça me coûte de l'énergie mentale pour rien",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Comprendre pourquoi ça n'a pas marché avant, montrer la différence tangible de process/accompagnement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Tu comprends, mes équipes là elles sont habituées, tu vois. Si je leur rajoute un truc elles vont râler",
+        "sous_texte": "J'ai peur de la résistance au changement, surtout de mon chef atelier qui a 45 ans de boîte et déteste les nouveautés",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur la simplicité de déploiement, proposer de tester avec une seule personne d'abord"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais c'est combien tout ça ? Parce que si c'est pour me rajouter 2000 balles par mois pour gratter 3 clients de plus...",
+        "sous_texte": "Je calcule mentalement le ROI, je veux être sûr que c'est rentable rapidement, et je dois justifier ça à mon expert-comptable",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Présenter le ROI en marge brute générée sur 4-5 mois, pas en nombre de clients"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement là tu me parles de gains potentiels, mais moi j'ai besoin de trucs concrets. Durand en face il a ça chez lui ?",
+        "sous_texte": "Je veux une preuve sociale locale, je veux savoir si mon concurrent direct a déjà cet avantage sur moi",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer un confrère de sa région (sans nommer Durand directement si non-client) avec résultats chiffrés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoute c'est pas que ça m'intéresse pas, mais là ça me paraît être une usine à gaz ton truc",
+        "sous_texte": "Je perçois de la complexité administrative ou technique, j'ai peur que ce soit lourd à gérer au quotidien",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Décrire le process en 3 étapes maximum, expliquer ce qui est automatisé, combien de temps/semaine ça prend vraiment"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais attends, combien de temps ça prend à mettre en place ce bordel ? Parce que moi j'ai pas 3 semaines à perdre",
+        "sous_texte": "Je mesure le coût d'opportunité et le temps d'immobilisation de mes équipes, je veux un déploiement rapide",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un délai précis et réaliste, expliquer qui fait quoi (lui vs vous), rassurer sur l'accompagnement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tu me garantis quoi là concrètement ? Parce que des promesses j'en ai entendu des caisses",
+        "sous_texte": "J'ai besoin d'un engagement ferme ou d'une clause de sortie, je veux limiter mon risque",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer une période d'essai avec objectifs mesurables, engagement sans durée contraignante"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute franchement ça a l'air pas mal, on en reparlera, là je dois y aller j'ai un client",
+        "sous_texte": "Je fuis la décision maintenant, soit je ne suis pas convaincu, soit je veux réfléchir sans pression",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Bloquer un créneau précis dans les 48h, résumer les 2 bénéfices clés qui le concernent"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais là faut que j'en parle à mon associé, tu comprends, je décide pas tout seul sur ce genre de budget",
+        "sous_texte": "Vraie contrainte : au-dessus de 1200€/mois je dois justifier, mais aussi possiblement une excuse pour temporiser",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de préparer les éléments chiffrés pour sa conversation, ou d'inclure l'associé dans un point rapide"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement je te fais confiance hein, mais faut que je vois avec mon expert-comptable si ça rentre dans le budget",
+        "sous_texte": "Je commence à dire oui mais je me crée une porte de sortie par précaution, ou vraiment je dois valider la dépense",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Fournir immédiatement les éléments comptables nécessaires (devis, ROI projeté), simplifier sa conversation avec l'expert-comptable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute on fait comme ça : tu m'envoies tout ça par mail et je regarde tranquillement",
+        "sous_texte": "Je veux me débarrasser de l'appel sans dire non, mais il y a 80% de chances que je ne lise jamais ce mail",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Résister poliment, proposer 5 minutes pour cadrer ensemble ce qui sera dans le mail + relance programmée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends mais si ça marche pas, je suis coincé combien de temps ? Parce que moi les engagements de 12 mois...",
+        "sous_texte": "Peur de l'engagement long, besoin de flexibilité, vécu d'expériences passées où il était coincé avec un prestataire inefficace",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier les conditions de sortie, engagement 3-6 mois ou mensuel, montrer la clause de résiliation"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Tu vois mon nouveau chef des ventes là, il débarque, faut déjà que je le forme. Si en plus je lui mets ton truc...",
+        "sous_texte": "Timing pas idéal, je gère déjà une transition interne, j'ai peur de surcharger mon organisation en période fragile",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer que le service aide justement à structurer la montée en compétence du nouveau, ou décaler de 3-4 semaines"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement écoute, ton truc il a l'air bien hein, mais là très honnêtement je vais rester sur ce qu'on a déjà. Ça tourne correctement, mes équipes sont habituées, je vais pas tout chambouler. On en reparlera peut-être dans 6 mois tu vois.",
+      "condition_declenchement": "Si le commercial n'a pas réussi à créer un écart perçu suffisant entre la situation actuelle 'satisfaisante' et le gain tangible apporté par la montée en gamme. Christophe reste dans sa zone de confort."
+    },
+    "pattern_escalade": "Christophe commence cordial mais pressé ('je suis dans le jus') → Si le discours est trop générique, il décroche mentalement (bruit clavier, 'ouais ouais') → Si on insiste sans valeur, il devient plus sec ('c'est quoi le problème que t'essaies de résoudre ?') → Si on ne comprend pas ses vraies contraintes (équipes, budget, temps), il sort l'excuse polie de sortie ('on en reparlera') → Si on le pousse trop, il ferme brutalement ('franchement là on est bien comme on est, je dois y aller')",
+    "piege_classique": "Christophe donne des signaux d'intérêt apparents ('ouais ça a l'air pas mal', 'je te fais confiance') mais utilise ensuite une cascade d'objections techniques (associé, expert-comptable, timing) pour éviter la décision. Le piège est de croire qu'il est convaincu alors qu'il cherche juste à sortir poliment de l'appel. Il faut verrouiller un engagement concret (date/action) dès le premier signal d'intérêt, sinon il disparaît dans le 'on en reparlera'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour le secteur automobile",
+      "description": "entreprise fournissant des services aux concessions automobiles et équipementiers"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service initial déjà en place depuis 1 an + service complémentaire ou montée en gamme à proposer",
+      "proposition_valeur": "amélioration de la performance, optimisation des processus ou augmentation du chiffre d'affaires de la concession",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an, relation de confiance établie"
+      ],
+      "avantages_vs_concurrence": "relation client existante, connaissance du contexte, confiance établie"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser la technique d'upselling en créant de la valeur perçue et en obtenant l'engagement pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client — Upselling service complémentaire concession auto",
+    "vous_etes": "Commercial compte chez un fournisseur de services pour concessions automobiles, en relation depuis 1 an avec ce client.",
+    "vous_vendez": "Un service complémentaire ou montée en gamme de l'offre actuelle déjà utilisée par le client (prix à définir selon configuration, budget estimé client 800-2000€/mois).",
+    "vous_appelez": "Christophe Verlaine, 52 ans, Directeur de la concession Automobiles Verlaine & Associés (Peugeot/Citroën, 32 salariés, 18M€ CA). Pragmatique, méfiant envers le bullshit commercial, parle cash et veut du concret chiffré.",
+    "ce_que_vous_savez": [
+      "Il utilise votre service de base depuis 1 an et en est globalement satisfait",
+      "Année correcte malgré tensions VO, après-vente qui compense, pression constructeur sur VN",
+      "Concurrent Renault à 12km qui lui met la pression",
+      "Chef atelier résistant aux nouveautés, nouveau chef des ventes à former",
+      "A déjà arrêté 3 prestataires par le passé faute de résultats tangibles"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé sur le service complémentaire en démontrant un ROI mesurable sous 4-5 mois.",
+    "vos_atouts": [
+      "Relation établie depuis 1 an, vous connaissez son contexte et son organisation",
+      "Il vous fait déjà confiance sur le service actuel",
+      "Références d'autres concessionnaires de sa région utilisant ce service",
+      "Capacité à parler en marge brute réelle, pas en jargon marketing"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:47:33Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13768,
+    "total_time_s": 123.7
+  }
+}

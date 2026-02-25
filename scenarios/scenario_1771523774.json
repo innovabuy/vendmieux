@@ -1,0 +1,397 @@
+{
+  "id": "scenario_1771523774",
+  "description_originale": "Vous appelez une agence immobilière ou promoteur local de 10-25 salariés. C'est l'assistante commerciale qui décroche. Vous devez passer le barrage pour parler au directeur d'agence / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : immobilier]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "assistante commerciale",
+          "role": "barrage téléphonique",
+          "niveau_hierarchique": "operationnel"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution adaptée aux besoins des agences immobilières et promoteurs locaux",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "franchir le barrage de l'assistante commerciale",
+        "obtenir le passage au décideur",
+        "convaincre dans un contexte d'appel à froid multi-interlocuteurs"
+      ],
+      "implicites": [
+        "légitimité insuffisante perçue par le barrage",
+        "discours commercial détecté immédiatement",
+        "manque de techniques de contournement du barrage",
+        "incapacité à créer de la curiosité en quelques secondes",
+        "absence de stratégie différenciée selon l'interlocuteur"
+      ],
+      "probleme_racine": "les commerciaux ne maîtrisent pas l'art du franchissement de barrage et n'adaptent pas leur discours selon qu'ils parlent à l'assistante ou au décideur"
+    },
+    "objections_mentionnees": [
+      "il est en réunion",
+      "envoyez un mail",
+      "il ne prend pas ce genre d'appels",
+      "c'est à quel sujet précisément"
+    ],
+    "objectif_formation": "former les commerciaux à franchir efficacement le barrage téléphonique des assistantes et obtenir systématiquement le passage au décideur pour décrocher un RDV",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - probablement services B2B pour professionnels de l'immobilier",
+      "entreprise_description": "entreprise proposant une solution ou service destiné aux agences immobilières et promoteurs immobiliers locaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution ou service visant à améliorer l'activité ou la performance des agences immobilières",
+      "proposition_valeur": "amélioration de l'efficacité commerciale ou opérationnelle des professionnels de l'immobilier",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte du produit/service proposé",
+        "entreprise du vendeur et son positionnement",
+        "arguments de valeur spécifiques pour le secteur immobilier",
+        "fourchette de prix",
+        "références clients dans le secteur",
+        "zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur d'agence / Gérant",
+      "entreprise": {
+        "nom": "Mercier Immobilier & Transactions",
+        "secteur": "Immobilier résidentiel et commercial",
+        "taille": "17 salariés (12 agents commerciaux, 3 assistantes, 1 comptable, lui-même)",
+        "ca_approximatif": "2,8M€ dont 65% transactions, 35% gestion locative"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la défiance - évalue tout selon le ROI immédiat",
+        "Orgueilleux de sa réussite locale - résistant aux 'parisiens qui donnent des leçons'",
+        "Débordé chronique - vit dans l'urgence permanente du closing"
+      ],
+      "motivations_profondes": [
+        "Maintenir son statut de leader local face à l'arrivée des réseaux nationaux low-cost",
+        "Protéger ses marges qui s'érodent (pression concurrentielle + mandats moins exclusifs)",
+        "Prouver qu'il réussit 'à l'ancienne' sans tous ces trucs digitaux à la con",
+        "Garder le contrôle total - délègue peu, fait confiance difficilement"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme en 2019 avec ce CRM jamais implémenté (12k€ perdus)",
+        "Perdre du temps en formations théoriques pendant que les concurrents mangent ses parts de marché",
+        "Être pris pour un pigeon par ses agents s'il ramène encore 'un truc inutile'",
+        "Que ses assistantes en sachent plus que lui sur les nouveaux outils"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut - 'ils ne connaissent pas mon métier' - les voit comme des sangsues qui veulent profiter de sa réussite. Respecte uniquement ceux qui ont eux-mêmes vendu ou géré une PME. Déteste le jargon marketing anglo-saxon.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtoisie froide teintée d'agacement contenu - 'Oui, alors j'ai 5 minutes, Marion m'a dit que c'était important mais franchement j'ai trois signatures cet après-midi donc...'",
+      "signaux_interet": [
+        "Demande le prix brutalement ('Combien?' sans préambule)",
+        "Coupe pour poser des questions techniques précises",
+        "Mentionne un concurrent ou une mauvaise expérience ('J'ai testé X, c'était nul parce que...')",
+        "Parle de SES problèmes concrets sans filtre ('Mes agents ils savent pas qualifier, je perds un temps fou')"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre ou son écran en même temps",
+        "Répond 'oui, oui' de façon mécanique sans poser de questions",
+        "Utilise l'excuse COVID persistante : 'Là c'est compliqué, on sort à peine de deux années difficiles'",
+        "Délègue brutalement : 'Écoutez, voyez avec Marion si ça l'intéresse pour son équipe administrative'",
+        "Le classique : 'Envoyez-moi un mail, je regarde et je vous dis'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' (ton professoral)",
+        "Dit 'Ça dépend' à presque toute affirmation générale",
+        "Utilise 'Concrètement' quand il perd patience",
+        "Vocabulaire métier : 'mandats', 'exclus', 'DPE', 'offres d'achat', 'double mandat'",
+        "Râle systématiquement sur 'les charges', 'l'URSSAF', 'les nouvelles normes'",
+        "Expression signature : 'Dans l'immobilier, faut pas rêver hein'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant interruption agacée. Zéro tolérance pour le storytelling ou les analogies. Veut des CHIFFRES, des EXEMPLES de son secteur, et un PRIX. Apprécie les phrases courtes et les silences qu'il peut remplir."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance du CA (+8% sur 2023) mais baisse de rentabilité (-3 points de marge). Deux gros promoteurs locaux ont changé de mandataire. L'agence Laforêt a ouvert à 300m. Turnover élevé chez les agents juniors (3 départs en 18 mois). Marion, son assistante principale, menace de partir si pas d'augmentation.",
+      "priorites_actuelles": [
+        "Signer le mandat exclusif de la résidence Les Érables (128 lots) - négo en cours",
+        "Former ses agents à mieux closer (trop de visites sans offres)",
+        "Automatiser le suivi locataire pour dégager du temps Marion",
+        "Trouver un remplaçant pour Ludovic (agent parti chez Nexity)"
+      ],
+      "experience_avec_offre_similaire": "A acheté en 2019 un CRM SaaS (Efficy) jamais déployé car trop complexe et agents résistants. A testé en 2021 une formation closing (2 jours, 3500€) jugée 'trop généraliste, pas adaptée à l'immo'. Utilise encore Excel pour le pipe commercial.",
+      "fournisseur_actuel": "Panneaux 4murs pour la com extérieure, Figaro Immobilier + Leboncoin pour les annonces, logiciel de gestion Opéra 3. Aucune solution de prospection téléphonique structurée - chaque agent se débrouille.",
+      "budget_disponible": "Peut débloquer 5-8k€ sans conseil d'administration (seul décideur). Au-delà, doit justifier auprès de son expert-comptable et ça le saoule. Budget formation annuel théorique : 15k€, consommé à 40% (obligations légales type loi Alur)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent LOCAL qu'il connaît et qui a réussi quelque chose (jalousie productive)",
+        "Parler CA ou marge, jamais en % mais en € nets ('18k€ de CA en plus par agent')",
+        "Citer un problème précis qu'il VIT AUJOURD'HUI sans qu'il l'ait dit (ex: 'beaucoup de gérants perdent des mandats promo car les assistantes sont débordées et les relances partent en retard')",
+        "Avouer une limite ou un défaut de la solution ('ça marche pas si vos agents sont pas un minimum volontaires')",
+        "Proposer un test rapide/gratuit avec un SEUL agent sur un VRAI mandat en cours",
+        "Être recommandé par Marion (son assistante) ou un agent qu'il respecte"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'digital', 'disruption', 'intelligence artificielle', 'gamification'",
+        "Comparer l'immobilier à d'autres secteurs ('Dans l'automobile ils font comme ça')",
+        "Sous-entendre qu'il ne connaît pas son métier ou qu'il est 'old school'",
+        "Demander à parler à toute l'équipe d'un coup (il protège son leadership)",
+        "Proposer un abonnement mensuel sans limite de durée (traumatisme CRM)",
+        "Arriver avec un PowerPoint de 30 slides",
+        "Parler trop longtemps sans lui laisser le contrôle de la conversation",
+        "Être trop jeune et trop enthousiaste sans PREUVES concrètes (le prend de haut)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, Marion filtre mes appels normalement, c'est à quel sujet exactement ? Parce que là j'ai vraiment pas le temps.",
+        "sous_texte": "Vous avez contourné mon système de protection, je suis sur la défensive et je teste votre légitimité immédiatement",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître Marion explicitement et donner une raison ULTRA-concrète en 10 secondes max"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah d'accord, encore un commercial. Non mais franchement, j'en reçois dix par semaine. Envoyez-moi un mail, je regarderai si j'ai le temps.",
+        "sous_texte": "Je vous catégorise comme 'spam humain'. Prouvez-moi en 5 secondes que vous êtes différent sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Casser le pattern commercial immédiatement avec une phrase qui ne ressemble à RIEN de ce qu'il entend d'habitude"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous êtes d'où vous ? De Paris ? Parce que bon, l'immobilier ici c'est pas comme à Paris hein, faut connaître le terrain.",
+        "sous_texte": "Test de légitimité géographique et professionnelle. Si vous ne connaissez pas MES réalités locales, vous n'avez aucune crédibilité",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer une connaissance précise de SON marché local ou admettre franchement qu'on vient apprendre de lui"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes agents ils se débrouillent très bien pour prospecter. On fait 2,8 millions de CA, donc bon, on doit pas être si nuls que ça.",
+        "sous_texte": "Mon ego est en jeu. Si j'admets un problème, j'admets une faiblesse. Vous devez me permettre de sauver la face",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser ce qui marche déjà avant de pointer l'opportunité manquée en termes de CA supplémentaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ça dépend. Parce que la prospection téléphonique dans l'immobilier ça marche plus comme avant. Les gens ils répondent plus, y'a le démarchage téléphonique interdit maintenant.",
+        "sous_texte": "J'ai des croyances limitantes que je présente comme des faits. Convainquez-moi avec de la preuve récente et locale",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Distinguer prospection B2B (légale) vs B2C (Bloctel) et donner exemple secteur immo de cette année"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai déjà testé une formation closing en 2021, 3500 balles, mes agents ont rien appliqué. Trop théorique. Dans l'immobilier faut du concret.",
+        "sous_texte": "J'ai une blessure commerciale récente. Je vous teste : allez-vous nier mon expérience ou la valider avant de différencier ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider son expérience négative, demander CE qui n'a pas marché précisément, expliquer la différence de méthode"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais concrètement, vos clients dans l'immobilier, ils ont fait combien de CA en plus ? Parce que les belles promesses j'en ai soupé.",
+        "sous_texte": "Montrez-moi des PREUVES chiffrées ou je décroche mentalement. Je veux des noms, des chiffres, du vérifiable",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner UN exemple ultra-précis avec chiffres et contexte similaire plutôt que des généralités"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, faut que je comprenne là... Vous me proposez une formation pour mes agents, mais ils sont déjà débordés. Comment je fais moi ? Je les bloque deux jours et je perds des mandats ?",
+        "sous_texte": "Objection logistique sincère + test pour voir si vous comprenez les contraintes opérationnelles d'une PME",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer format fractionné adapté au rythme immobilier ou formation d'un pilote puis démultiplication interne"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, ça a l'air bien sur le papier. Mais moi en 2019 j'ai acheté un CRM à 12000 euros, jamais déployé. Mes agents ont résisté, c'était trop compliqué. Comment je sais que ça va pas refaire pareil ?",
+        "sous_texte": "Traumatisme d'achat majeur. Je ne vous fais pas confiance ET je crains le ridicule devant mes équipes. Besoin de réassurance forte",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Ne JAMAIS minimiser ce trauma. Demander ce qui a foiré précisément, montrer les garde-fous prévus dans VOTRE process"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et c'est quoi le prix de votre truc ? Parce que bon, entre nous, je sors de deux années COVID difficiles, les marges elles sont pas folles.",
+        "sous_texte": "Je veux le prix MAINTENANT pour décider si je continue à écouter. L'excuse COVID est un réflexe mais la vraie question est le ROI",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette si on l'a ou recentrer sur la valeur : 'Ça dépend de combien d'agents, mais parlons ROI d'abord'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Dans l'immobilier, faut pas rêver hein. On est sur des cycles longs, des mandats qui mettent 6 mois à se signer. Vos résultats rapides, j'y crois moyen.",
+        "sous_texte": "Je protège mes croyances sectorielles. Prouvez que vous connaissez ces cycles ET que ça marche quand même",
+        "type": "test",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la spécificité du cycle immo puis recadrer sur l'amélioration du TAUX de conversion, pas la vitesse"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous savez, mes agents ils ont leur propre méthode. Y'en a qui cartonnent. Je vais pas leur imposer un truc qui va les braquer, j'ai déjà perdu trois agents juniors cette année.",
+        "sous_texte": "Peur de perdre le contrôle et de créer des tensions. Les performers actuels sont mon capital, je les protège",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer d'équiper les juniors/moyens D'ABORD ou que les tops partagent leurs méthodes en les structurant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Laforêt ils ont ouvert à 300 mètres. Ils ont des outils de ouf, des pubs partout. Comment votre formation va m'aider face à ça ?",
+        "sous_texte": "Pression concurrentielle réelle. Je cherche un avantage compétitif IMMÉDIAT et VISIBLE",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Repositionner : les réseaux ont la com, VOUS avez l'humain et le local. La prosp téléphonique valorise ÇA"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais là j'ai la négo des Érables qui est en cours, 128 lots. Si je loupe ça, c'est 180k€ qui partent. Rappelez-moi dans deux mois.",
+        "sous_texte": "Excuse rationnelle MAIS sincère. Je suis vraiment débordé. Si vous insistez bêtement, je vous classe mentalement en 'relou'",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Valider la priorité, proposer un micro-engagement (envoi doc, appel Marion) et ancrer date précise post-négo"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais non mais faut que j'en parle à Marion déjà. Et puis à Jean-Marc aussi, mon meilleur agent. Si eux ils adhèrent pas, ça sert à rien.",
+        "sous_texte": "Je délègue la décision pour ne pas prendre de risque seul. Tactique de fuite OU vraie crainte de résistance interne",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer qu'il les implique EN SA PRÉSENCE dans un échange court, pas de RDV séparé où il perd le contrôle"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon alors concrètement là, je dois sortir 8000 euros c'est ça ? Pour combien d'agents ? Et y'a des résultats garantis ou c'est du vent ?",
+        "sous_texte": "Moment de vérité financière. Je suis intéressé MAIS très anxieux sur le ROI. Je veux des garanties impossibles",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Clarifier l'investissement par agent, parler en termes de mandats supplémentaires nécessaires pour rentabiliser, proposer clause si non-satisfait"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous me faites un geste sur le prix si je prends pour toute l'équipe ? Parce que là, 8000 balles, faut que je justifie auprès de mon comptable.",
+        "sous_texte": "Négociation tarifaire par réflexe de gérant. Teste votre marge ET votre solidité (si vous cédez trop vite, louche)",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un petit bonus valeur (suivi sup, place offerte) plutôt que casser le prix brut qui décrédibilise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, envoyez-moi tout ça par mail avec les témoignages clients, les chiffres, le prix détaillé. Je regarde tranquille et je vous dis.",
+        "sous_texte": "Fuite polie classique. 80% de chance que le mail finisse non lu. Je veux juste clore la conversation sans conflit",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi MAIS ancrer un micro-engagement : 'Je vous l'envoie ce soir, on se reparle vendredi 10h, 2 minutes ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non mais attendez, moi j'ai besoin de voir un truc concret avant. Vous pouvez me montrer un exemple de script, un enregistrement, je sais pas, quelque chose de réel ?",
+        "sous_texte": "Demande légitime de preuve tangible. Je suis INTÉRESSÉ mais méfiant. Si vous refusez, je me barre",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Dire oui immédiatement et proposer un extrait audio anonymisé ou un script adapté immo à recevoir sous 24h"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et si dans trois mois ça marche pas, je fais quoi moi ? Je perds mon argent c'est tout ? Y'a une garantie satisfaction ou un truc comme ça ?",
+        "sous_texte": "Peur de la perte financière liée au trauma CRM. Besoin d'une porte de sortie psychologique même s'il ne l'utilisera jamais",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer clause de satisfaction mesurable (ex: si moins de X RDV générés après formation complète suivie) ou phase pilote"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, c'est intéressant vraiment, mais là en ce moment c'est compliqué. Entre la pression de Laforêt, Marion qui veut une augmentation, la négo des Érables... J'ai pas la bande passante pour lancer un truc comme ça. On en reparle au T2, quand j'aurai signé les Érables et recruté le remplaçant de Ludovic. Là je peux pas, désolé.",
+      "condition_declenchement": "Se déclenche quand toutes les objections rationnelles ont été levées MAIS que la peur du changement et le timing perçu comme mauvais restent. C'est l'excuse ultime multi-facteurs qui sonne sincère car elle l'EST partiellement."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes de barrage (pas le temps, envoyez mail). Si vous passez ce filtre, il passe en mode TEST (légitimité, preuves chiffrées, connaissance secteur). Une fois rassuré, les objections SINCÈRES émergent (trauma CRM, peur équipe, logistique, timing). Au closing, retour tactique (prix, garantie) avant l'objection finale émotionnelle (peur globale du changement masquée par des excuses rationnelles empilées).",
+    "piege_classique": "Stéphane peut sembler TRÈS intéressé pendant l'argumentation, poser plein de questions précises, puis se dérober au closing avec l'excuse temporelle ('mauvais moment'). Le piège : prendre son intérêt verbal pour un engagement alors qu'il collecte juste de l'info. Il faut tester l'engagement PENDANT la découverte ('Si on trouve une solution à X, vous êtes prêt à tester quand ?') sinon il vous fera perdre 45 minutes pour finir sur 'rappelez-moi dans 3 mois'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - probablement services B2B pour professionnels de l'immobilier",
+      "description": "entreprise proposant une solution ou service destiné aux agences immobilières et promoteurs immobiliers locaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution ou service visant à améliorer l'activité ou la performance des agences immobilières",
+      "proposition_valeur": "amélioration de l'efficacité commerciale ou opérationnelle des professionnels de l'immobilier",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "former les commerciaux à franchir efficacement le barrage téléphonique des assistantes et obtenir systématiquement le passage au décideur pour décrocher un RDV",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Passer le barrage assistante immobilier",
+    "vous_etes": "Commercial B2B spécialisé solutions pour professionnels de l'immobilier, en prospection à froid sur le secteur.",
+    "vous_vendez": "Une solution d'efficacité commerciale pour agences immobilières (nature et prix à définir selon votre discours).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, gérant de Mercier Immobilier & Transactions (17 salariés, 2,8M€ CA). Pragmatique, méfiant, débordé. A été échaudé par un CRM jamais utilisé (12k€ perdus en 2019). Déteste le jargon et les vendeurs qui ne connaissent pas son métier. Respecte uniquement les preuves concrètes et le ROI immédiat en euros, pas en pourcentages.",
+    "ce_que_vous_savez": [
+      "Son agence fait +8% de CA mais perd 3 points de marge",
+      "Une Laforêt a ouvert à 300m, deux gros promoteurs l'ont quitté",
+      "Ses agents juniors closent mal (trop de visites sans offres)",
+      "Marion, son assistante clé, menace de partir",
+      "Il cherche à signer le mandat exclusif Les Érables (128 lots)"
+    ],
+    "votre_objectif": "Franchir le barrage de Marion (l'assistante) puis obtenir 5 minutes de Stéphane pour décrocher un RDV physique de 30 minutes.",
+    "vos_atouts": [
+      "Vous connaissez précisément ses problèmes actuels (marge, turnover, closing)",
+      "Vous parlez en euros nets, pas en jargon marketing",
+      "Vous pouvez citer des gérants locaux dans son secteur (à préparer)",
+      "Vous assumez les limites de votre solution (ça marche pas si les agents résistent)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:56:14Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 17468,
+    "total_time_s": 176.0
+  }
+}

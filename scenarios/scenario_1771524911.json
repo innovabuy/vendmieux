@@ -1,0 +1,351 @@
+{
+  "id": "scenario_1771524911",
+  "description_originale": "Vous appelez à froid le directeur des achats hospitaliers ou directeur qualité d'une groupe de cliniques ou labo pharma de 200+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : sante_medical]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "200+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur des achats hospitaliers ou directeur qualité",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "directeur général",
+          "role": "validateur final potentiel"
+        },
+        {
+          "poste": "responsable service concerné",
+          "role": "utilisateur final"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B destinée aux établissements de santé (cliniques, laboratoires pharmaceutiques)",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à obtenir un rendez-vous avec des décideurs à agenda chargé",
+        "Prospection à froid sans demande initiale du prospect",
+        "Process d'achat structurés et complexes à naviguer"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors du premier contact",
+        "Difficulté à créer de l'intérêt rapidement",
+        "Risque de filtrage par assistante/secrétariat",
+        "Nécessité de démontrer une valeur immédiate pour justifier 45 minutes d'agenda",
+        "Concurrence probable avec des fournisseurs déjà en place",
+        "Cycles de décision longs dans le secteur médical (conformité, validation)"
+      ],
+      "probleme_racine": "Incapacité à créer suffisamment de valeur perçue en quelques secondes pour transformer un appel froid en engagement de 45 minutes avec un décideur senior surchargé dans un secteur hautement réglementé"
+    },
+    "objections_mentionnees": [
+      "Je n'ai pas le temps",
+      "Nous avons déjà des fournisseurs",
+      "Envoyez-moi une documentation par mail",
+      "Nous ne sommes pas intéressés",
+      "Ce n'est pas le bon moment",
+      "Il faut passer par notre procédure d'appel d'offres"
+    ],
+    "objectif_formation": "Maîtriser les techniques de prospection à froid pour obtenir des rendez-vous qualifiés auprès de décideurs senior du secteur médical malgré des agendas chargés et des process structurés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour le secteur santé/médical",
+      "entreprise_description": "Entreprise proposant des solutions destinées aux établissements de santé (groupes de cliniques, laboratoires pharmaceutiques)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service B2B destiné aux directeurs achats/qualité du secteur hospitalier et pharmaceutique",
+      "proposition_valeur": "NON_SPECIFIE - À définir selon l'offre réelle (ex: optimisation achats, conformité qualité, efficacité opérationnelle)",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique ou rdv_visio de 45 minutes",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur spécifique",
+        "Prix ou fourchette budgétaire",
+        "Références clients existantes",
+        "Différenciation concurrentielle",
+        "Zone géographique de prospection",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Valérie",
+      "nom": "Deschamps",
+      "age": 52,
+      "poste": "Directrice des Achats et de la Logistique",
+      "entreprise": {
+        "nom": "Groupe Clinique Val de Loire",
+        "secteur": "Établissements de santé privés (MCO + SSR)",
+        "taille": "4 établissements, 680 salariés, 285 lits",
+        "ca_approximatif": "87M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiante par expérience (15 ans aux achats hospitaliers)",
+        "Procédurière et attachée au cadre réglementaire",
+        "Protectrice de son temps comme d'un trésor"
+      ],
+      "motivations_profondes": [
+        "Éviter l'erreur d'achat qui pourrait compromettre la certification HAS",
+        "Optimiser les coûts sans jamais rogner sur la sécurité patient",
+        "Prouver sa valeur ajoutée face à une direction générale qui la considère comme un 'centre de coût'",
+        "Maintenir de bonnes relations avec ses fournisseurs historiques (certains depuis 12 ans)"
+      ],
+      "peurs_freins": [
+        "Perdre du temps avec un énième commercial qui 'ne connaît rien au médical'",
+        "Déstabiliser des process d'achat qui fonctionnent, même imparfaitement",
+        "Se faire reprocher un changement de fournisseur si ça tourne mal",
+        "Être court-circuitée par un commercial qui irait voir directement le DG"
+      ],
+      "rapport_aux_commerciaux": "Glacial par défaut. Les considère comme des chronophages jusqu'à preuve du contraire. A développé un sixième sens pour détecter le baratin et les promesses en l'air. Respecte uniquement ceux qui connaissent vraiment le secteur et ses contraintes GDPR/HAS/ISO.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais froid, avec une pointe d'impatience audible. 'Oui bonjour, je vous écoute mais je n'ai que quelques minutes'",
+      "signaux_interet": [
+        "Pose une question précise sur un chiffre ou une méthodologie",
+        "Mentionne spontanément un problème actuel ('Tiens, justement on a un souci avec...')",
+        "Demande un exemple concret chez un confrère qu'elle connaît",
+        "Son débit ralentit légèrement, elle prend des notes"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole après 20 secondes : 'Oui donc concrètement vous proposez quoi ?'",
+        "'Écoutez envoyez-moi ça par mail, je regarderai' (alors qu'elle ne regardera jamais)",
+        "Mentionne immédiatement le process appel d'offres pour créer une distance",
+        "'On a déjà ce qu'il faut merci' - ton définitif",
+        "Soupir audible, bruit de clavier en fond (multitâche = désintérêt)"
+      ],
+      "tics_langage": [
+        "Commence beaucoup de phrases par 'Écoutez...'",
+        "Dit 'Concrètement' ou 'En pratique' pour forcer à aller à l'essentiel",
+        "'Ça fait partie de nos procédures' (argument massue)",
+        "'Je vous arrête tout de suite' quand quelque chose ne va pas"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "20-30 secondes maximum. Au-delà, elle considère que vous ne respectez pas son temps. Exige un dialogue, pas un pitch."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pression budgétaire accrue post-COVID. Le groupe doit réduire ses coûts d'achat de 4% cette année tout en préparant la visite HAS de certification (dans 8 mois). La direction générale pousse pour digitaliser les process mais sans débloquer de vrais budgets.",
+      "priorites_actuelles": [
+        "Renégocier 3 gros contrats qui arrivent à échéance (dispositifs médicaux, restauration, lingerie)",
+        "Mettre en place un tableau de bord achats pour la direction (demande depuis 6 mois)",
+        "Gérer une rupture d'approvisionnement sur des consommables critiques",
+        "Préparer les documents achats pour la certification HAS"
+      ],
+      "experience_avec_offre_similaire": "A testé 2-3 solutions digitales d'optimisation achats ces 5 dernières années. Bilan mitigé : implémentation compliquée, promesses non tenues, SAV inexistant après signature. Reste sur sa faim.",
+      "fournisseur_actuel": "Mix de fournisseurs historiques (groupement Uniha pour les dispositifs médicaux, contrats directs pour services) + quelques PME locales. Globalement satisfaite mais consciente qu'elle pourrait mieux faire.",
+      "budget_disponible": "Très limité pour 'tester des nouveautés'. Tout investissement >15K€ nécessite validation DG + ROI démontré en <18 mois. Budget achats global : ~32M€ mais déjà fléché à 94%."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un confrère du réseau (ex: 'J'ai travaillé avec le Groupe Médipôle à Lyon sur...')",
+        "Quantifier rapidement un gain concret : 'Nos clients gagnent en moyenne 180h/an sur la gestion administrative des appels d'offres'",
+        "Montrer qu'on connaît ses contraintes réglementaires sans qu'elle ait à les expliquer",
+        "Proposer un format court et sans engagement : 'Pas de démo interminable, juste 20 minutes pour voir si ça colle à votre contexte'",
+        "Reconnaissance de sa légitimité : 'J'imagine que vous croûlez sous les sollicitations, je serai bref'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre révolutionner le secteur hospitalier ('On va transformer votre façon d'acheter')",
+        "Ne pas connaître la différence entre MCO/SSR ou parler de 'patients' comme de 'clients'",
+        "Insister lourdement après un premier refus poli",
+        "Minimiser l'importance des process d'appel d'offres",
+        "Promettre des économies 'de 30-40%' (irréaliste = perte de crédibilité immédiate)",
+        "Vouloir parler au DG en contournant sa fonction ('Le mieux serait que je présente ça à votre direction générale')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis vraiment prise là, vous tombez mal. Envoyez-moi un mail, je regarderai quand j'aurai le temps.",
+        "sous_texte": "Je ne vous connais pas, je n'ai aucune raison de vous accorder mon attention maintenant. Prouvez-moi en 10 secondes que vous méritez que je reste en ligne.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître son agenda chargé + donner une raison spécifique de rester 30 secondes (référence, résultat chiffré, problème qu'elle a probablement)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Vous savez, je reçois 15 appels comme ça par semaine. Concrètement, vous proposez quoi qui soit différent ?",
+        "sous_texte": "J'en ai marre des commerciaux qui se ressemblent tous. Si vous êtes comme les autres, raccrochez maintenant et arrêtez de me faire perdre mon temps.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être ultra-spécifique sur SON contexte (MCO/SSR, certification HAS, contraintes achats hospitaliers) plutôt que parler de votre solution"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Je vous arrête tout de suite, nous avons déjà tout ce qu'il faut. On travaille avec Uniha et d'autres partenaires depuis des années, on est très bien comme ça.",
+        "sous_texte": "Mes fournisseurs actuels fonctionnent correctement. Je n'ai pas envie de prendre le risque d'un changement, surtout avec la certification HAS qui arrive.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne PAS attaquer ses fournisseurs actuels. Positionner en complémentarité ou sur un angle mort qu'ils ne couvrent pas. Montrer qu'on connaît Uniha."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En pratique, combien ça coûte votre truc ? Parce que je vous préviens, on n'a pas de budget pour des fantaisies cette année.",
+        "sous_texte": "Je veux éliminer rapidement si c'est hors budget. J'ai peur que ce soit trop cher et que vous me fassiez perdre mon temps. Prouvez-moi le ROI avant de parler prix.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Éviter de donner un prix tout de suite. Creuser d'abord ce qu'elle entend par 'pas de budget', quel ROI elle exige (<18 mois), puis recadrer sur la valeur"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, on a des process d'appel d'offres très stricts. Je ne peux pas décider comme ça, même si votre solution m'intéresse. Il faudrait monter tout un dossier, passer par le comité achats, ça prend des mois...",
+        "sous_texte": "Je me protège derrière la procédure pour ne pas m'engager. Mais c'est aussi sincère : je n'ai pas le pouvoir de décider seule, et je ne veux pas me mouiller sans validation de la direction.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Accepter la réalité du process mais proposer une étape préalable : audit/diagnostic/POC pour construire ENSEMBLE le dossier de l'appel d'offres"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Soyons honnêtes, j'ai déjà testé deux solutions dans ce genre il y a quelques années. Beaucoup de promesses, une implémentation compliquée, et au final ça ne marchait pas comme prévu. Qu'est-ce qui me dit que ce sera différent avec vous ?",
+        "sous_texte": "J'ai été échaudée. Je ne crois plus aux belles promesses des commerciaux. Si vous êtes comme les autres, je m'en rendrai compte de toute façon, alors pourquoi perdre du temps maintenant ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser ses expériences passées (qu'est-ce qui n'a pas marché précisément ?), montrer qu'on comprend, puis démontrer en quoi votre approche d'implémentation est différente. Témoignages clients essentiels."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "180 heures gagnées par an, OK, mais comment vous calculez ça exactement ? Parce que moi je vois bien que chaque établissement est différent, je ne vois pas comment vous pouvez garantir ce genre de chiffres.",
+        "sous_texte": "Je teste votre solidité. Est-ce que vous balancez des chiffres marketing ou vous avez de vrais cas concrets qui ressemblent à ma situation ? Les promesses en l'air, j'en ai soupé.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Décortiquer la méthodologie de calcul. Donner un exemple concret chez un client similaire (taille, MCO/SSR) avec avant/après. Reconnaître que ça dépend du contexte."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous dites que vous travaillez avec le Groupe Médipôle, mais concrètement, qui là-bas ? Parce que j'ai des contacts chez eux, je peux facilement vérifier.",
+        "sous_texte": "Je vérifie si vous mentez ou si vous enjolivez. Je connais le réseau, et si vous bluffez, je le saurai et vous perdrez toute crédibilité. C'est un test de confiance.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner le nom précis du contact, son poste, et proposer même de faciliter la mise en relation. Transparence totale = crédibilité."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, ça a l'air intéressant, mais franchement ce n'est pas le bon moment. On est en pleine préparation de la certification HAS dans 8 mois, on renégocie 3 gros contrats, j'ai une rupture d'appro à gérer... Je ne peux pas me permettre de lancer un nouveau projet maintenant.",
+        "sous_texte": "C'est sincère : je suis vraiment débordée et stressée. Mais c'est aussi une protection : si je dis oui, ça va rajouter de la charge mentale et du risque. Convaincquez-moi que ça vaut quand même le coup MAINTENANT.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reformuler ses priorités pour montrer qu'on comprend. Puis repositionner : comment votre solution peut justement l'AIDER sur la certification HAS ou les renégociations (pas ajouter de la charge)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais qui chez nous va gérer ça au quotidien ? Parce que moi je n'ai pas le temps de piloter un projet supplémentaire, mon équipe est déjà à flux tendu, et je ne vois pas qui pourrait prendre ça en charge.",
+        "sous_texte": "L'implémentation me fait peur. J'ai déjà vécu des projets qui ont échoué car on n'avait pas les ressources internes. Si ça nécessite beaucoup d'implication de mon côté, c'est mort d'avance.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Détailler le niveau d'accompagnement fourni. Montrer que VOUS prenez en charge la conduite du changement. Quantifier le temps requis de son équipe (ex: 2h/semaine pendant 6 semaines)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi une documentation complète par mail avec des cas clients similaires, je regarderai ça tranquillement et je vous rappelle si ça m'intéresse. Mais ne m'attendez pas trop vite, hein, je suis vraiment surchargée.",
+        "sous_texte": "Je veux me débarrasser de vous poliment sans dire non définitif. Je ne regarderai probablement jamais votre mail, mais ça me permet de clore la conversation sans conflit. C'est mon échappatoire par défaut.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne PAS accepter sans engager un next step concret. Proposer une date précise pour un point de 15 minutes après envoi du mail. 'Quand pourriez-vous y jeter un œil ? Mardi ou jeudi prochain ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je suis intéressée sur le principe, mais il faut vraiment que j'en parle à ma direction générale avant de m'engager sur un rendez-vous de 45 minutes. Je ne peux pas prendre cette décision toute seule.",
+        "sous_texte": "Soit c'est sincère (elle a vraiment besoin de valider avec le DG), soit c'est une excuse pour gagner du temps. Dans tous les cas, elle teste si vous allez pousser pour rencontrer le DG directement (ce qui la vexerait).",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Respecter sa hiérarchie. Proposer un premier rdv de cadrage court (20 min) avec ELLE pour qu'elle puisse ensuite pitcher en interne avec les bons éléments. Ne JAMAIS demander à court-circuiter."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "45 minutes, c'est vraiment long. Je n'ai pas ce temps-là à vous accorder pour l'instant. Si vous avez quelque chose de plus court, à la limite... Mais 45 minutes, franchement, c'est trop.",
+        "sous_texte": "Je négocie l'engagement. Soit je ne suis pas assez convaincue de la valeur pour investir 45 minutes, soit c'est vrai que mon agenda est saturé. Testez ma vraie motivation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter de réduire à 20-25 minutes SI elle s'engage sur une date précise maintenant. Sinon, défendre les 45 min en expliquant pourquoi (découverte de SON contexte = personnalisation)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK, mais je veux être claire : je ne promets rien. Je vous accorde ce rendez-vous, mais ça ne veut pas dire qu'on va travailler ensemble. Il y a encore tout le process d'appel d'offres derrière, et je ne peux rien court-circuiter.",
+        "sous_texte": "Je me protège juridiquement et hiérarchiquement. Je ne veux pas que vous pensiez que c'est gagné, parce que j'ai encore beaucoup de barrières internes. Mais j'accepte de vous écouter.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter totalement et rassurer : 'Absolument, l'objectif est juste de voir SI et COMMENT on pourrait vous aider. Aucune pression.' Transparence et respect du process."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Vous savez quoi, j'apprécie votre approche et vous avez l'air de connaître le secteur, mais honnêtement, je ne me sens pas prête à m'engager même sur un rendez-vous maintenant. On a trop de choses en cours. Recontactez-moi plutôt après la certification HAS, d'ici 8-9 mois, on verra à ce moment-là si ça colle toujours.",
+      "condition_declenchement": "Si vous avez bien argumenté mais qu'elle reste sur ses priorités actuelles. C'est un refus poli mais sincère, basé sur un timing réellement mauvais. Teste votre capacité à créer de l'urgence OU à accepter un pipeline long."
+    },
+    "pattern_escalade": "Valérie commence par des objections réflexes de protection ('pas le temps', 'envoyez un mail'). Si vous passez ce premier filtre, elle teste votre crédibilité (références, chiffres, connaissance du secteur). Si vous êtes crédible, elle expose ses vraies contraintes (budget, process, timing, échecs passés). À ce stade, ses objections deviennent sincères et détaillées. En closing, elle peut redevenir tactique pour négocier l'engagement (durée du rdv, validation DG) ou poser une objection finale temporelle si elle n'est vraiment pas prête.",
+    "piege_classique": "Accepter trop vite l'objection 'envoyez-moi un mail' sans créer d'engagement. Avec Valérie, le mail sera noyé dans sa boîte et jamais lu. Le piège est de croire qu'elle est intéressée alors qu'elle cherche juste à clore la conversation poliment. Autre piège : minimiser l'importance de ses process d'appel d'offres ou suggérer de contourner sa fonction en allant voir le DG → perte de crédibilité instantanée et fermeture définitive."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour le secteur santé/médical",
+      "description": "Entreprise proposant des solutions destinées aux établissements de santé (groupes de cliniques, laboratoires pharmaceutiques)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service B2B destiné aux directeurs achats/qualité du secteur hospitalier et pharmaceutique",
+      "proposition_valeur": "NON_SPECIFIE - À définir selon l'offre réelle (ex: optimisation achats, conformité qualité, efficacité opérationnelle)",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique ou rdv_visio de 45 minutes",
+      "description": "Maîtriser les techniques de prospection à froid pour obtenir des rendez-vous qualifiés auprès de décideurs senior du secteur médical malgré des agendas chargés et des process structurés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directrice Achats Hospitaliers",
+    "vous_etes": "Commercial B2B spécialisé santé, vous prospectez les établissements de soins privés pour optimiser leurs achats et process.",
+    "vous_vendez": "Solution d'optimisation des achats hospitaliers (digital + accompagnement) — Budget indicatif 25-40K€/an selon périmètre.",
+    "vous_appelez": "Valérie Deschamps, 52 ans, Directrice Achats & Logistique du Groupe Clinique Val de Loire (4 établissements, 680 salariés, 87M€ CA). Ancienne de la fonction (15 ans), méfiante, pressée, allergique au baratin commercial.",
+    "ce_que_vous_savez": [
+      "Son groupe doit réduire les coûts achats de 4% cette année sous pression post-COVID",
+      "Certification HAS prévue dans 8 mois, elle prépare les dossiers achats",
+      "Elle gère 32M€ d'achats avec process structurés (groupement Uniha, appels d'offres)",
+      "A déjà testé 2-3 solutions digitales par le passé avec résultats décevants",
+      "Budget serré : tout investissement >15K€ nécessite validation DG + ROI <18 mois"
+    ],
+    "votre_objectif": "Décrocher un RDV de 45 minutes (visio ou physique) pour creuser ses enjeux et qualifier l'opportunité.",
+    "vos_atouts": [
+      "Vous avez accompagné 12 groupes de cliniques privées similaires (MCO/SSR)",
+      "Vos clients gagnent en moyenne 180h/an sur la gestion administrative des appels d'offres",
+      "Vous connaissez les contraintes HAS, GDPR et les spécificités achats hospitaliers",
+      "Références vérifiables dans son réseau (groupements régionaux)"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:15:11Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16659,
+    "total_time_s": 157.5
+  }
+}

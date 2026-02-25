@@ -1,0 +1,360 @@
+{
+  "id": "scenario_1771520958",
+  "description_originale": "Vous appelez à froid le directeur d'agence / gérant d'une agence immobilière ou promoteur local de 10-25 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : immobilier]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "immobilier",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / gérant / promoteur local",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution destinée aux professionnels de l'immobilier",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect ne connaît pas l'entreprise",
+        "Le prospect n'a rien demandé",
+        "Le prospect est occupé",
+        "Le prospect n'a pas prévu cet appel"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de refus immédiat ou de barrage secrétaire",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Besoin de légitimer l'appel sans être intrusif",
+        "Gérer les objections de temps et de besoin"
+      ],
+      "probleme_racine": "Transformer un appel non sollicité en opportunité qualifiée en créant rapidement de la valeur perçue malgré l'absence de demande initiale"
+    },
+    "objections_mentionnees": [
+      "Je n'ai pas le temps",
+      "Je n'ai pas besoin",
+      "Envoyez-moi une documentation"
+    ],
+    "objectif_formation": "Former les commerciaux à décrocher des rendez-vous qualifiés lors d'appels de prospection à froid auprès de décideurs du secteur immobilier",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solutions/services pour le secteur immobilier",
+      "entreprise_description": "Entreprise proposant une solution pour les agences immobilières et promoteurs locaux",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée à optimiser l'activité des agences immobilières et promoteurs",
+      "proposition_valeur": "amélioration de la performance, digitalisation, optimisation des processus métier ou génération de leads pour les professionnels de l'immobilier",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète",
+        "Prix et modèle commercial",
+        "Nom de l'entreprise vendeuse",
+        "Zone géographique ciblée",
+        "Références clients",
+        "Avantages concurrentiels",
+        "Problématiques métier spécifiques du secteur immobilier adressées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Bernadin",
+      "age": 52,
+      "poste": "Gérant et agent immobilier titulaire de la carte T",
+      "entreprise": {
+        "nom": "Bernadin Immobilier & Associés",
+        "secteur": "Transaction immobilière résidentiel et petits commerces",
+        "taille": "17 salariés (12 agents + 4 assistantes + 1 comptable)",
+        "ca_approximatif": "1,8M€ de CA, marge nette 8-10%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Méfiant envers les \"vendeurs de rêve\" après 3 déceptions avec des prestataires tech",
+        "Pragmatique à l'extrême : veut du concret, des chiffres, pas de blabla",
+        "Protecteur de son temps comme de l'or : chaque minute = argent perdu en visites/négo"
+      ],
+      "motivations_profondes": [
+        "Garder son indépendance face aux réseaux nationaux qui phagocytent le marché local",
+        "Prouver que la proximité et le conseil personnalisé battent la tech froide",
+        "Transmettre son agence à son fils dans 5-7 ans avec une valorisation correcte",
+        "Maintenir sa réputation locale bâtie sur 23 ans de présence"
+      ],
+      "peurs_freins": [
+        "Se faire avoir comme avec ce CRM jamais paramétré qui a coûté 18K€ pour rien",
+        "Déstabiliser ses agents seniors (moyenne d'âge 47 ans) avec des outils compliqués",
+        "Perdre du temps en formation/paramétrage au lieu de faire tourner le business",
+        "Dépendre d'un abonnement mensuel qui plombe la tréso les mois creux",
+        "Que ses concurrents pensent qu'il galère s'il adopte une solution externe"
+      ],
+      "rapport_aux_commerciaux": "Épidermique. Les détecte à la première seconde. A développé une carapace après 15 ans de harcèlement commercial. Respecte uniquement ceux qui connaissent VRAIMENT son métier et ses contraintes réglementaires (loi Alur, RGPD, etc.)",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais pressé, voix qui trahit l'agacement dès qu'il devine un appel commercial. Souffle audible. Coupe la parole si ça part en généralités.",
+      "signaux_interet": [
+        "Demande un chiffre précis : 'Concrètement, ça me fait gagner combien d'heures par semaine ?'",
+        "Cite un problème actuel : 'Justement, on galère avec...'",
+        "Évoque un concurrent : 'Laforet à côté a pris un truc du genre, ça a l'air de marcher'",
+        "Ralentit son débit, prend des notes (on entend le stylo)"
+      ],
+      "signaux_rejet": [
+        "Coupe avec 'Écoutez, là vraiment...'",
+        "Demande à envoyer un mail (= poubelle assurée)",
+        "Répond au téléphone pendant que vous parlez",
+        "Dit 'Oui oui c'est intéressant' sur un ton totalement plat",
+        "Utilise le tutoiement condescendant : 'Écoute mon grand...'"
+      ],
+      "tics_langage": [
+        "Bon... (expiration longue)",
+        "Franchement là...",
+        "Vous comprenez, dans notre métier...",
+        "J'ai trois visites cet aprèm, donc...",
+        "On n'est pas SeLoger nous hein"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "12 secondes maximum. Au-delà, il coupe ou raccroche. Attend une question ou une phrase qui prouve qu'on connaît SON contexte spécifique."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Agence stable mais sous pression concurrentielle. Marché local saturé avec 9 agences dans un rayon de 3km. Mandats en baisse de 18% sur l'année. Deux agents sont partis chez un réseau national il y a 6 mois. Cherche à digitaliser sans perdre l'ADN 'humain' de la boîte.",
+      "priorites_actuelles": [
+        "Générer plus de mandats exclusifs (actuellement 42%, objectif 60%)",
+        "Réduire le temps admin des agents (estimation : 35% de leur temps)",
+        "Améliorer le référencement local face aux réseaux",
+        "Fidéliser ses meilleurs agents avec de meilleurs outils"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM en 2019 (Efficity Manager) : échec cuisant, trop complexe, jamais adopté par les agents. A un site web fait par le neveu en 2017, moche mais référencé. Utilise les portails classiques (Leboncoin, SeLoger) qui coûtent une blinde.",
+      "fournisseur_actuel": "Pas de solution intégrée. Patchwork : Dropbox pour les docs, WhatsApp pour les échanges internes, Excel pour le suivi, abonnements portails 2400€/mois",
+      "budget_disponible": "Accepterait 400-600€/mois SI ROI prouvé en 3 mois max. Refuse catégoriquement les engagements > 12 mois. Peut débloquer un one-shot de 3-4K€ pour du setup si c'est justifié."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer une agence locale similaire qui a eu des résultats mesurables (mais vérifier, il connaît tout le monde)",
+        "Mentionner un chiffre précis : 'Les agences comme la vôtre gagnent en moyenne 6h/semaine par agent'",
+        "Montrer qu'on comprend la loi Alur, les DPE, la pression des portails",
+        "Proposer un test gratuit COURT (15 jours max) sans engagement",
+        "Parler de ce que font ses concurrents directs (ça le pique au vif)",
+        "Évoquer la transmission/valorisation de l'agence (sujet sensible = il écoute)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Parler de 'transformation digitale' ou 'révolution du secteur'",
+        "Comparer l'immobilier à un autre secteur qu'on ne connaît pas",
+        "Proposer un RDV de 45min-1h (trop long)",
+        "Dire qu'on travaille avec 'toutes les grandes agences de France' (= bullshit detector activé)",
+        "Ne pas connaître la différence entre mandat simple et exclusif",
+        "Demander à parler à 'la personne en charge du digital' (c'est lui, et ça l'énerve)",
+        "Utiliser un pitch standardisé qu'il a déjà entendu 20 fois"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez là franchement j'ai trois visites cet après-midi, c'est pour quoi exactement ?",
+        "sous_texte": "Je détecte un commercial, je suis en mode défense automatique, prouve-moi en 10 secondes que ça vaut le coup sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, donner UN chiffre concret pertinent pour son quotidien, demander 45 secondes chrono"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais attendez, je n'ai rien demandé moi. Comment vous avez eu mes coordonnées d'ailleurs ?",
+        "sous_texte": "Réflexe de protection + test de légitimité. Je veux voir si tu es un démarcheur lambda ou si tu as une vraie raison de m'appeler",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Légitimer l'appel par un élément factuel local ou sectoriel, pas par 'je tombe sur vous par hasard'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre un truc là ? Parce que vraiment j'ai pas le temps pour ça...",
+        "sous_texte": "J'ai reconnu le pattern commercial. Fatigue profonde face au harcèlement. Envie de raccrocher mais reste poli par réflexe professionnel",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Casser le pattern attendu, montrer qu'on connaît son secteur avec un fait précis, pas un discours commercial"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez on a déjà tout ce qu'il faut niveau outils. On tourne avec nos portails, ça fait le job.",
+        "sous_texte": "Je minimise mes problèmes pour te décourager. En vrai je galère avec le patchwork actuel mais je ne vais pas l'avouer à un inconnu",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Question ouverte sur le temps admin ou la gestion des mandats exclusifs, pas frontale, qui le fait réfléchir à sa situation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin nous on n'est pas SeLoger hein, on est une agence de proximité. Je ne sais pas si votre solution c'est pour nous...",
+        "sous_texte": "Fierté de son positionnement + peur que la solution soit calibrée pour les gros et inadaptée à sa réalité terrain",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser son positionnement proximité, citer une agence locale similaire en taille, montrer que c'est justement pour ça"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon... franchement on a déjà testé un CRM il y a quelques années. Ça a été la cata totale, 18 000 balles dans le vent. Mes agents n'ont jamais réussi à s'en servir.",
+        "sous_texte": "Blessure encore vive. Peur viscérale de revivre l'échec. Besoin d'être rassuré sur la simplicité et l'adoption, pas sur les fonctionnalités",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître l'échec passé, questionner sur les causes précises, montrer en quoi l'approche est différente avec preuve concrète"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez, dans notre métier on passe déjà 35% du temps sur de l'administratif débile. Si c'est pour rajouter une couche...",
+        "sous_texte": "J'ai un vrai problème que je viens d'admettre. Attention, je teste si tu comprends vraiment ou si tu vas me vendre plus de complexité",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rebondir sur le chiffre précis qu'il donne, creuser quelles tâches admin spécifiquement, promettre réduction pas ajout"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui c'est intéressant tout ça... Bon écoutez envoyez-moi une doc par mail, je regarde et je vous rappelle.",
+        "sous_texte": "Je veux me débarrasser de toi poliment. Ce mail ira direct à la poubelle. Je n'ai pas vu de valeur suffisante pour continuer",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne jamais accepter. Pointer gentiment que ça ne sert à rien. Proposer alternative courte et concrète immédiate"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez mais concrètement là, ça me fait gagner combien d'heures par semaine sur mes agents ? J'ai besoin d'un chiffre précis.",
+        "sous_texte": "Je suis en train de basculer dans l'intérêt réel. Je passe en mode calcul ROI. Si ta réponse est floue, tu perds la vente",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner un chiffre basé sur des agences similaires, détailler sur quelles tâches précises, proposer de vérifier ensemble"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... et niveau formation de mes équipes ? Parce que j'ai des agents qui ont 55 ans hein, pas des digital natives.",
+        "sous_texte": "Vraie inquiétude sur l'adoption. Peur du rejet interne. Il protège ses équipes. Point bloquant potentiel s'il n'est pas rassuré",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer avec process d'onboarding simple, exemple d'agence avec profil senior, montrer interface, proposer test sans engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous travaillez avec qui dans le coin ? Parce que si vous me sortez des références à Paris, ça ne me parle pas.",
+        "sous_texte": "Test de crédibilité locale. Je vais vérifier. Si tu bluffes ou cites des concurrents que je n'aime pas, c'est mort",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer une référence locale vérifiable ou admettre qu'on démarre le territoire mais avec succès ailleurs similaire. Transparence"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez pourquoi pas, mais là vraiment cette semaine c'est compliqué. Rappelez-moi le mois prochain.",
+        "sous_texte": "Technique d'évitement soft. Intérêt réel faible OU vrai problème d'agenda mais sans priorisation. Je teste ta ténacité",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Créer urgence douce (places limitées, offre test) et proposer créneau ultra court dans 2-3 jours, pas un mois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement ça peut être intéressant mais j'ai besoin d'en parler avec mon comptable et mon fils. On se fait un point dans 15 jours ?",
+        "sous_texte": "Intérêt réel mais besoin de validation interne légitime. Attention danger : sans structure, ça va mourir. Il faut cadrer le process",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la légitimité de consulter, proposer présentation groupée courte pour tout le monde, ou fixer date ferme de débrief"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais mais attendez, niveau prix on est sur quoi ? Parce que les abonnements qui explosent tous les ans, très peu pour moi.",
+        "sous_texte": "Peur du piège tarifaire après déception passée. Besoin de transparence totale. Point de blocage possible selon la réponse",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Transparence totale avec fourchette, expliquer modèle, garantie prix, ROI attendu vs coût, comparer au coût actuel caché"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'entends bien, mais on va commencer par un essai gratuit alors. 15 jours, si ça marche pas je coupe, pas d'engagement.",
+        "sous_texte": "Intérêt fort mais peur encore présente. Besoin de contrôle total. Négocie ses conditions. Si tu acceptes sans cadre = danger relation",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le principe mais cadrer : durée suffisante pour voir résultats, critères de succès définis ensemble, engagement réciproque"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute mon grand, là tu me saoules un peu. J'ai dit que j'allais réfléchir, c'est pas suffisant ?",
+        "sous_texte": "Agacement réel. Tu as trop poussé ou répété des arguments. Ton insistance devient contre-productive. Risque de tout perdre",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "S'excuser sincèrement, reconnaître la pression, proposer de laisser respirer avec juste une question de clarification finale"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon franchement ça m'intéresse, mais là vous arrivez au mauvais moment. On a un gros dossier de promotion qui se finalise, mon meilleur agent est en arrêt maladie, et en plus le comptable me saoule avec la fin de trimestre. Je ne peux pas me permettre de lancer un truc maintenant. Rappelez-moi en septembre, là ce sera plus calme.",
+      "condition_declenchement": "Apparaît quand l'intérêt est réel MAIS que le timing crée une échappatoire confortable. Plus crédible qu'un refus net. Test ultime de la capacité du vendeur à créer une urgence ou accepter le timing."
+    },
+    "pattern_escalade": "Christophe passe de la défense réflexe (objections courtes, ton sec) à l'écoute critique (questions précises, chiffres) puis à la négociation prudente (conditions, tests). Si le vendeur force trop vite, il revient brutalement en mode défense avec agacement. L'escalade positive nécessite de gagner sa confiance par paliers : prouver qu'on connaît le métier → montrer un bénéfice mesurable → rassurer sur les risques passés → accepter ses conditions de contrôle.",
+    "piege_classique": "Christophe donne parfois des signaux d'intérêt ('Oui pourquoi pas', 'Ça peut être intéressant') pour clore poliment la conversation sans intention réelle. Le vendeur doit distinguer l'intérêt poli de l'intérêt commercial en testant par des questions engageantes ('Qu'est-ce qui vous ferait dire dans 3 mois que c'était la bonne décision ?'). S'il répond vaguement = faux intérêt. S'il devient précis = vrai intérêt à structurer."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solutions/services pour le secteur immobilier",
+      "description": "Entreprise proposant une solution pour les agences immobilières et promoteurs locaux"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée à optimiser l'activité des agences immobilières et promoteurs",
+      "proposition_valeur": "amélioration de la performance, digitalisation, optimisation des processus métier ou génération de leads pour les professionnels de l'immobilier",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à décrocher des rendez-vous qualifiés lors d'appels de prospection à froid auprès de décideurs du secteur immobilier",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Agence immobilière indépendante",
+    "vous_etes": "Commercial chez un éditeur de solutions digitales pour agences immobilières indépendantes.",
+    "vous_vendez": "Une solution d'optimisation de l'activité des agences (gestion, génération de mandats, réduction du temps admin) — tarif entre 400-600€/mois.",
+    "vous_appelez": "Christophe Bernadin, 52 ans, gérant de Bernadin Immobilier & Associés (17 salariés, 1,8M€ de CA). Ancien de la profession, méfiant, protège son temps comme de l'or, déteste les vendeurs de rêve.",
+    "ce_que_vous_savez": [
+      "Agence indépendante sous pression : mandats en baisse de 18%, concurrence de 9 agences dans 3km",
+      "A déjà testé un CRM en 2019 (échec total, 18K€ perdus), depuis il se méfie comme de la peste",
+      "Ses agents passent 35% de leur temps en admin, il cherche à gagner en efficacité sans les braquer",
+      "Veut passer de 42% à 60% de mandats exclusifs pour tenir face aux réseaux nationaux",
+      "Paie 2400€/mois d'abonnements portails + bricolage Dropbox/Excel/WhatsApp"
+    ],
+    "votre_objectif": "Décrocher un RDV physique de 20-25 minutes maximum en prouvant que vous connaissez son métier et ses contraintes.",
+    "vos_atouts": [
+      "Vous connaissez la réalité du terrain : loi Alur, DPE, pression des portails, différence mandat simple/exclusif",
+      "Vous pouvez citer des chiffres concrets : temps gagné par agent, taux de mandats exclusifs chez clients similaires",
+      "Vous proposez un test court (15 jours max) sans engagement longue durée",
+      "Vous comprenez son enjeu de transmission d'entreprise dans 5-7 ans"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:09:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15669,
+    "total_time_s": 145.4
+  }
+}

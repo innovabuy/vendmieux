@@ -1,0 +1,335 @@
+{
+  "id": "scenario_1771523598",
+  "description_originale": "Le expert-comptable associé / gérant d'une cabinet comptable de 10-25 collaborateurs est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : comptabilite]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "comptabilite",
+      "taille_entreprise": "10-25 collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "expert-comptable associé / gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme pour cabinet comptable",
+      "proposition_valeur_presumee": "optimisation des services existants, gain de productivité ou nouveaux services à valeur ajoutée pour un cabinet comptable",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'un service complémentaire à un client déjà satisfait"
+      ],
+      "implicites": [
+        "risque de satisfaction passive sans recherche d'amélioration",
+        "difficulté à justifier un investissement supplémentaire",
+        "potentielle réticence au changement malgré la satisfaction",
+        "nécessité de démontrer un ROI clair pour convaincre un expert-comptable analytique"
+      ],
+      "probleme_racine": "transformer une satisfaction client en opportunité de développement commercial sans créer de friction ni perception de vente forcée"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "former les commerciaux à réussir des appels d'upsell sur clients satisfaits, en particulier savoir présenter la valeur ajoutée et obtenir l'accord pour un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services aux cabinets comptables",
+      "entreprise_description": "fournisseur de services ou solutions pour cabinets d'expertise comptable, avec relation client établie depuis 1 an",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou montée en gamme destiné aux cabinets comptables de 10-25 collaborateurs",
+      "proposition_valeur": "amélioration de la performance du cabinet, gain de temps, optimisation des processus ou nouveaux revenus pour le cabinet",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de fiabilité)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du cabinet et de ses besoins, crédibilité acquise",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature précise du service complémentaire proposé",
+        "prix ou fourchette tarifaire",
+        "nom de l'entreprise vendeuse",
+        "zone géographique",
+        "objections typiques rencontrées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Expert-comptable associé gérant",
+      "entreprise": {
+        "nom": "Cabinet Mercier & Associés",
+        "secteur": "Expertise comptable et conseil aux PME",
+        "taille": "18 collaborateurs (3 associés, 12 collaborateurs comptables, 3 administratifs)",
+        "ca_approximatif": "1,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique calculateur - chaque décision passe par le prisme ROI/temps investi",
+        "Loyauté conditionnelle - fidèle tant que le rapport qualité-prix reste optimal",
+        "Scepticisme courtois - écoute poliment mais détecte instantanément les arguments creux"
+      ],
+      "motivations_profondes": [
+        "Maintenir la rentabilité du cabinet sans augmenter la charge de travail personnelle",
+        "Être reconnu comme un cabinet moderne par ses confrères et clients",
+        "Éviter à tout prix les erreurs qui engageraient sa responsabilité professionnelle",
+        "Garder ses collaborateurs motivés sans exploser la masse salariale"
+      ],
+      "peurs_freins": [
+        "Acheter un service qui finira inutilisé comme 'ce truc de dématérialisation qu'on a pris en 2019'",
+        "Créer une complexité supplémentaire pour les équipes déjà surchargées en période de clôture",
+        "Se faire avoir par un commercial qui surpromet et sous-délivre",
+        "Devoir justifier un investissement supplémentaire aux deux autres associés lors du comité de direction"
+      ],
+      "rapport_aux_commerciaux": "Tolérant avec ceux qui ont déjà fait leurs preuves, mais garde une distance professionnelle. Apprécie la transparence sur les limites du produit plus que les promesses mirobolantes. Déteste sentir qu'on lui force la main.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais orienté efficacité - 'Bonjour, oui je vous écoute, j'ai un quart d'heure avant ma prochaine visio'",
+      "signaux_interet": [
+        "Pose des questions très précises sur l'implémentation concrète",
+        "Demande des références chiffrées ou des cas clients similaires",
+        "Évoque spontanément un problème opérationnel précis du cabinet",
+        "Utilise le 'nous' - 'ça pourrait nous intéresser si...'",
+        "Consulte son agenda en direct - 'Attends, je regarde quand on pourrait...'"
+      ],
+      "signaux_rejet": [
+        "Répond par des formules évasives - 'On verra ça plus tard, là c'est pas le moment'",
+        "Coupe court avec des objections génériques - 'Écoutez, on a déjà beaucoup d'outils'",
+        "Ton légèrement agacé - 'Oui mais concrètement, ça m'apporte quoi de plus ?'",
+        "Regarde ostensiblement son écran pendant l'échange",
+        "Répète 'envoie-moi un mail' sans poser de question"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va poser une objection",
+        "Dit 'Bon.' avec un point final quand il veut conclure rapidement",
+        "Utilise 'franchement' quand il doute - 'Franchement, je vois pas trop l'intérêt'",
+        "Ponctue de 'voilà' de manière répétitive",
+        "Dit 'après' au sens de 'cela dit' - 'Après, faut voir aussi le temps que ça prend'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes avant de couper avec une question ou un 'oui oui mais...' - veut du dialogue, pas un pitch unidirectionnel"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Cabinet stable en croissance modérée (+8% CA l'an dernier). Période chargée avec les clôtures du S1 qui approchent. Deux collaborateurs seniors partent à la retraite dans 18 mois, difficultés à recruter des profils qualifiés. Pression concurrentielle des néo-cabinets digitaux sur les jeunes entrepreneurs.",
+      "priorites_actuelles": [
+        "Automatiser les tâches à faible valeur ajoutée pour compenser le manque de bras",
+        "Développer l'offre conseil (plus rémunératrice) vs comptabilité pure",
+        "Fidéliser les clients actuels face à l'agressivité commerciale des concurrents",
+        "Ne pas perdre de temps en réunions ou projets non essentiels avant fin juillet"
+      ],
+      "experience_avec_offre_similaire": "A testé plusieurs outils ces 5 dernières années avec des résultats mitigés - un logiciel de signature électronique qui a mis 6 mois à être adopté, un CRM jamais utilisé, mais une solution de révision comptable qui fonctionne bien",
+      "fournisseur_actuel": "Satisfait du service initial fourni depuis 1 an - 'ça marche bien, pas de souci' - mais n'a jamais vraiment exploré les options supplémentaires proposées lors du déploiement",
+      "budget_disponible": "Peut débloquer 3000-8000€ HT sans consulter les associés si ROI démontrable sous 12 mois. Au-delà, nécessite validation en comité (réunion mensuelle, prochaine dans 3 semaines)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un bénéfice chiffré précis lié à SES problématiques actuelles (gain de temps collaborateurs, réduction erreurs, nouveaux revenus)",
+        "Citer un confrère qu'il connaît ou respecte qui utilise déjà la solution",
+        "Proposer un test limité ou une démonstration sur UN de ses dossiers clients réels",
+        "Reconnaître ouvertement les limites ou prérequis du service - la transparence le rassure",
+        "Faire le lien entre le service complémentaire et sa volonté de monter en gamme vers plus de conseil"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ses objections avec des 'oui mais tous nos clients disent ça au début'",
+        "Promettre une mise en place 'simple et rapide' sans évoquer les contraintes réelles",
+        "Insister lourdement pour un rendez-vous physique alors qu'une visio suffit",
+        "Utiliser du jargon marketing corporate au lieu de parler métier comptable",
+        "Faire pression sur l'urgence artificielle - 'cette offre expire vendredi' le braque immédiatement",
+        "Ne pas avoir préparé l'appel - poser des questions dont les réponses sont dans son dossier client"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, là je suis en pleine préparation de clôtures, c'est pas vraiment le moment pour regarder de nouveaux trucs.",
+        "sous_texte": "Je suis réellement occupé ET je teste ta réactivité - si tu insistes lourdement, je vais raccrocher. Si tu comprends mon contexte, on peut peut-être parler 5 minutes.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte temps, proposer un créneau ultra-court (10min) avec un bénéfice précis lié aux clôtures, ou reporter intelligemment après mi-juillet"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On est déjà très contents de votre solution actuelle, franchement on n'a pas de problème particulier.",
+        "sous_texte": "Pourquoi tu me déranges si tout va bien ? Prouve-moi que ce n'est pas juste une tentative opportuniste de vendre plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Confirmer la satisfaction, puis pivoter sur 'justement parce que ça marche bien, certains clients ont souhaité aller plus loin sur [problématique spécifique non couverte]'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Après, faut voir aussi... on a déjà beaucoup d'outils, les collaborateurs sont saturés. Rajouter une couche de complexité, c'est pas forcément le bon timing.",
+        "sous_texte": "J'ai peur que ça crée plus de problèmes que ça n'en résout - déjà qu'on galère à faire adopter les outils existants. Si c'est compliqué, mes équipes vont râler.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser le vrai problème d'adoption, montrer comment ça s'intègre aux process existants, proposer accompagnement formation, citer temps réel de prise en main"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui oui mais concrètement, qu'est-ce que ça m'apporte de plus par rapport à ce qu'on a déjà ? Parce que vous nous avez déjà vendu un service qui marche bien.",
+        "sous_texte": "Je suis un expert-comptable, je raisonne en incrémental. Démontre-moi la valeur ADDITIONNELLE claire, pas du blabla marketing générique.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Différencier clairement service actuel vs nouveau, quantifier le gap de valeur avec exemples chiffrés sur SES problématiques, éviter discours générique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, envoie-moi un mail avec les détails, je regarderai ça tranquillement et je te rappelle si ça nous intéresse.",
+        "sous_texte": "Je veux mettre fin poliment à la conversation sans m'engager. En réalité, je ne lirai probablement pas le mail en détail et ne rappellerai jamais.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail MAIS ancrer une prochaine action précise maintenant (rdv, question spécifique), sinon tu as perdu"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, je vois pas trop l'intérêt... On a testé pas mal de trucs ces dernières années et souvent ça finit au placard. Vous vous souvenez du CRM qu'on avait regardé ensemble en 2022 ? Jamais servi.",
+        "sous_texte": "J'ai été échaudé par des investissements inutiles. Je me protège contre un nouvel achat impulsif qui serait un gaspillage. Rassure-moi que ce ne sera pas pareil.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'échec passé, identifier POURQUOI ça n'a pas marché (adoption, pertinence, formation), montrer en quoi cette fois c'est différent avec preuves"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais là vous me parlez de gains de temps, d'optimisation... Tous les commerciaux disent ça. Concrètement, sur un cabinet comme le nôtre, ça représente quoi en heures gagnées par mois ?",
+        "sous_texte": "Arrête les promesses floues, donne-moi du chiffre précis et réaliste. Je suis comptable, je veux du quantitatif, pas du qualitatif marketing.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette réaliste basée sur cas clients similaires (10-25 collab.), assumer la variabilité, proposer de calculer ensemble sur un process précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau tarif, on parle de combien ? Parce que si c'est pour me rajouter 500 balles par mois, autant je te le dis tout de suite, ça va être compliqué.",
+        "sous_texte": "Je veux qualifier si on est dans le même ordre de grandeur budgétaire avant d'investir plus de temps. Si c'est hors budget, autant arrêter maintenant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête rapidement, puis recentrer sur la valeur avant de détailler le prix, proposer calcul ROI ensemble"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà... mais après, faut aussi que j'en parle avec mes deux associés. On prend ce genre de décisions ensemble en comité de direction, c'est pas moi tout seul qui décide.",
+        "sous_texte": "C'est en partie vrai (validation >8k€), mais aussi une échappatoire confortable. Je veux éviter de m'engager seul et partager la responsabilité de la décision.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Qualifier le vrai processus de décision, identifier si lui est prescripteur, proposer des éléments pour qu'il défende le projet en comité, fixer deadline réaliste"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, pourquoi pas, mais là je peux pas m'engager. Faites-moi un devis détaillé, je verrai ça avec l'équipe et on avisera. Voilà.",
+        "sous_texte": "Je ne dis pas non pour rester poli et garder la relation, mais je n'ai pas l'intention ferme d'aller plus loin. Le 'on avisera' est un non déguisé.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas envoyer de devis dans le vide. Poser LA question qui détermine l'intérêt réel, proposer étape intermédiaire (démo, test), ancrer engagement mutuel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, le problème c'est surtout le timing. Avec les deux départs en retraite qui arrivent l'année prochaine, j'ai pas envie de lancer un nouveau projet maintenant. On en reparle dans 6 mois ?",
+        "sous_texte": "C'est une vraie contrainte organisationnelle, mais aussi une manière de repousser indéfiniment. Dans 6 mois, il y aura une autre raison.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Challenger gentiment : est-ce que justement ça pourrait aider la transition ? Sinon, ancrer vraiment rdv dans 6 mois avec contexte clair, mais risque de perdre momentum"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais si je comprends bien, pour que ça marche vraiment, faut former les collaborateurs, adapter nos process, faire un paramétrage... Franchement, ça représente combien de temps de ma part ? Parce que là je croule déjà.",
+        "sous_texte": "Le ROI c'est bien, mais le coût caché en temps de déploiement me fait peur. Si ça mobilise 2 jours de mon temps, le calcul économique change.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Être transparent sur le temps réel requis, proposer accompagnement pour décharger, fractionner déploiement, montrer planning réaliste"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Après, j'ai aussi un confrère qui bossait avec un de vos concurrents et il a galéré pendant des mois à faire fonctionner le truc. Vous, vous êtes sûrs que côté support technique on sera pas lâchés en pleine nature ?",
+        "sous_texte": "J'ai entendu des histoires d'horreur et ça me rend méfiant. Je veux être rassuré sur votre fiabilité au-delà de la vente initiale.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître que ça arrive dans le secteur, expliquer votre process d'accompagnement concret, donner contact support dédié, proposer référence client pour vérification"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, très bien. On fait comme ça : tu m'envoies le devis, je regarde ça sérieusement et je te recontacte la semaine prochaine si on veut avancer. D'accord ?",
+        "sous_texte": "Je veux clore poliment la conversation et garder le contrôle. Le 'je te recontacte' signifie souvent 'ne me relance pas, c'est moi qui décide'.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Négocier un engagement réciproque : 'J'envoie le devis aujourd'hui, on cale 15min mardi prochain pour que je réponde à tes questions dessus ?' - sinon c'est mort"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, c'est intéressant mais franchement là avec tout ce qu'on a en cours, les clôtures, les départs prévus, je préfère qu'on se concentre sur ce qui marche déjà. On garde ça sous le coude et on en reparle en septembre quand ce sera plus calme, d'accord ? Envoyez-moi quand même votre doc par mail, voilà.",
+      "condition_declenchement": "Se déclenche si le commercial n'a pas créé d'urgence réelle ou de différenciation suffisante, ou si Stéphane sent une pression de closing trop forte. C'est sa sortie de secours polie mais ferme pour terminer sans s'engager."
+    },
+    "pattern_escalade": "Stéphane commence cordial et ouvert (relation établie), puis devient progressivement plus analytique et questionnant. Si la valeur n'est pas démontrée concrètement à mi-parcours, il passe en mode 'échappatoire polie' avec objections dilatatoires (timing, associés, mail). Plus le vendeur insiste sans apporter de preuves tangibles, plus il se ferme. Le point de bascule : autour de la 3e minute si aucun bénéfice quantifié n'est évoqué ou si le vendeur utilise du jargon creux.",
+    "piege_classique": "Stéphane semble acquiescer et dit 'oui, je comprends' ou 'pourquoi pas' pendant l'argumentation, ce qui donne l'impression d'un intérêt fort. MAIS il teste en réalité la solidité du commercial. Sa vraie opinion se révèle lors du closing où il sort des objections différantes ('je dois voir avec les associés', 'envoie un mail', 'on verra plus tard'). Le commercial non formé croit avoir gagné pendant 80% de l'appel, puis se fait surprendre par un refus poli au moment de conclure. La clé : obtenir des micro-engagements concrets tout au long de l'échange, pas juste des 'oui' de validation passive."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services aux cabinets comptables",
+      "description": "fournisseur de services ou solutions pour cabinets d'expertise comptable, avec relation client établie depuis 1 an"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou montée en gamme destiné aux cabinets comptables de 10-25 collaborateurs",
+      "proposition_valeur": "amélioration de la performance du cabinet, gain de temps, optimisation des processus ou nouveaux revenus pour le cabinet",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de fiabilité)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du cabinet et de ses besoins, crédibilité acquise"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "former les commerciaux à réussir des appels d'upsell sur clients satisfaits, en particulier savoir présenter la valeur ajoutée et obtenir l'accord pour un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance client satisfait — Montée en gamme cabinet comptable",
+    "vous_etes": "Commercial chez votre fournisseur de services pour cabinets comptables, vous gérez le compte Cabinet Mercier & Associés depuis 1 an.",
+    "vous_vendez": "Un service complémentaire qui améliore la performance du cabinet : gain de temps collaborateurs, optimisation des processus ou nouveaux revenus (prix non communiqué au prospect à ce stade).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, expert-comptable associé gérant du Cabinet Mercier & Associés (18 collaborateurs, 1,2M€ CA). Pragmatique, calculateur, sceptique mais loyal. Détecte instantanément les arguments creux.",
+    "ce_que_vous_savez": [
+      "Client satisfait depuis 1 an avec votre service initial — « ça marche bien, pas de souci »",
+      "Cabinet stable (+8% CA) mais sous pression : deux seniors partent en retraite dans 18 mois, difficultés de recrutement",
+      "Période chargée : clôtures S1 à venir, Stéphane veut éviter les projets non essentiels avant fin juillet",
+      "A déjà testé plusieurs outils avec résultats mitigés (CRM jamais utilisé, signature électronique adoptée après 6 mois)",
+      "Veut automatiser les tâches à faible valeur et développer l'offre conseil plus rémunératrice"
+    ],
+    "votre_objectif": "Obtenir son accord pour envoyer un devis sur le service complémentaire en démontrant un ROI clair sous 12 mois.",
+    "vos_atouts": [
+      "Relation de confiance établie depuis 1 an — vous connaissez déjà son cabinet et ses besoins",
+      "Crédibilité acquise : le service initial fonctionne sans accroc",
+      "Vous pouvez proposer un test limité sur un de ses dossiers clients réels pour lever le doute",
+      "Vous avez des références chiffrées de cabinets similaires (mentionner un confrère qu'il pourrait connaître serait un plus)"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:53:18Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15503,
+    "total_time_s": 144.5
+  }
+}

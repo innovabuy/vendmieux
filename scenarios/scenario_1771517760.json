@@ -1,0 +1,352 @@
+{
+  "id": "scenario_1771517760",
+  "description_originale": "Vous avez présenté votre offre au directeur du développement ou directeur de réseau d'une banque régionale ou groupe de CGP de 100+ collaborateurs il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : banque_patrimoine]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "banque_patrimoine",
+      "taille_entreprise": "100+ collaborateurs",
+      "interlocuteur_principal": {
+        "poste": "directeur du développement / directeur de réseau",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "comité de direction",
+        "directeur financier",
+        "directeur commercial"
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "solution pour le développement commercial ou la gestion de réseau bancaire/CGP",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "absence de retour après présentation",
+        "relance nécessaire après 2 semaines de silence"
+      ],
+      "implicites": [
+        "manque de suivi structuré post-rendez-vous",
+        "absence de jalons de décision définis lors du RDV initial",
+        "difficulté à identifier les freins à la décision",
+        "processus décisionnel complexe non cartographié",
+        "crainte de paraître trop insistant lors de la relance"
+      ],
+      "probleme_racine": "absence de cadrage du processus décisionnel et des prochaines étapes lors du RDV initial, laissant le commercial dans l'incertitude et en position réactive"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "apprendre à relancer efficacement un prospect après un RDV sans retour, débloquer le processus décisionnel, identifier les freins réels et repositionner la discussion sans paraître insistant",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour le secteur bancaire et patrimonial",
+      "entreprise_description": "entreprise proposant des solutions pour les banques régionales et groupes de conseillers en gestion de patrimoine",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "solution destinée aux directeurs de développement ou de réseau bancaire, probablement liée à la performance commerciale, la formation ou l'organisation du réseau",
+      "proposition_valeur": "amélioration de la performance du réseau commercial bancaire ou CGP",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "nature exacte de l'offre présentée",
+        "éléments de valeur concrets partagés lors du RDV initial",
+        "prix ou investissement évoqué",
+        "engagements pris lors du RDV (timeline, prochaines étapes)",
+        "signaux d'intérêt ou objections exprimés lors du RDV",
+        "décideurs impliqués dans le processus"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Delcourt",
+      "age": 51,
+      "poste": "Directeur du Développement Commercial Régional",
+      "entreprise": {
+        "nom": "Banque Mutuelle du Centre-Ouest",
+        "secteur": "Banque de proximité et gestion de patrimoine",
+        "taille": "135 collaborateurs (23 conseillers patrimoniaux, 18 chargés de clientèle professionnelle)",
+        "ca_approximatif": "42M€ de PNB annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent et méthodique : ne prend jamais de décision seul sur les investissements structurants",
+        "Surinvesti dans l'opérationnel : submergé par la gestion quotidienne du réseau",
+        "Sceptique envers les prestataires externes : a connu 2 déceptions majeures ces 3 dernières années"
+      ],
+      "motivations_profondes": [
+        "Protéger sa position : éviter une erreur qui entacherait sa réputation auprès du CODIR",
+        "Prouver sa valeur ajoutée : cherche LA solution qui fera vraiment décoller les résultats de ses équipes",
+        "Obtenir une reconnaissance de la direction générale avant son départ en retraite dans 4 ans"
+      ],
+      "peurs_freins": [
+        "Faire perdre du temps à ses conseillers avec une énième formation inutile",
+        "Que le budget engagé ne produise aucun ROI mesurable",
+        "Devoir justifier un échec devant le Directeur Général et le DAF",
+        "Choisir un prestataire qui ne comprend rien aux spécificités du modèle mutualiste",
+        "S'engager alors que la fusion avec une autre caisse régionale est dans les tuyaux (rumeur persistante)"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. Considère 80% des commerciaux comme des 'vendeurs de poudre de perlimpinpin'. Apprécie ceux qui connaissent vraiment son métier et posent des questions intelligentes. Déteste qu'on le pousse à décider.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais en mode écoute passive. Regarde souvent son téléphone. Phrases courtes au début : 'D'accord', 'Je vois', 'Intéressant'. Ne s'ouvre vraiment qu'après 15 minutes si pertinence démontrée.",
+      "signaux_interet": [
+        "Commence à prendre des notes manuscrites sur son carnet Moleskine noir",
+        "Évoque spontanément des problématiques précises de ses équipes avec prénoms",
+        "Demande 'Et ça, vous l'avez déjà fait dans une banque mutualiste ?'",
+        "Mentionne des membres du CODIR : 'Ça, ça pourrait intéresser Martine au contrôle de gestion'",
+        "Passe d'un 'vous' distant à un 'tu' occasionnel en fin d'échange"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Écoutez, je vais en parler en interne et je vous rappelle'",
+        "Invoque systématiquement le budget : 'De toute façon, tout est bouclé jusqu'en N+1'",
+        "Devient vague : 'Oui, c'est intéressant, on verra ça dans quelques mois'",
+        "Délègue immédiatement : 'Voyez plutôt avec Sophie, ma RRH'",
+        "Soupir discret quand on insiste sur un point"
+      ],
+      "tics_langage": [
+        "'Franchement' (utilisé 4-5 fois par conversation)",
+        "'Là, concrètement' quand il veut du factuel",
+        "'Bon...' en début de phrase quand il veut clore un sujet",
+        "'On va pas se mentir' quand il exprime un doute",
+        "Abus de 'voilà' en fin de phrase"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant de décrocher mentalement. Signe visible : commence à pianoter sur son bureau ou à ranger des papiers. Besoin d'interaction tous les 2 minutes maximum."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Sous pression. La banque n'a pas atteint ses objectifs de collecte patrimoniale en 2024 (-12% vs objectif). Le Directeur Général a demandé un plan d'action pour 2025. Climat interne tendu : 3 conseillers patrimoniaux ont quitté la structure en 18 mois. Rumeurs insistantes de rapprochement avec la Caisse de Touraine.",
+      "priorites_actuelles": [
+        "Recruter 2 conseillers patrimoniaux seniors (urgent, poste ouvert depuis 4 mois)",
+        "Améliorer le taux de transformation RDV patrimoniaux (actuellement 31%, objectif 45%)",
+        "Réduire le turnover des équipes commerciales",
+        "Préparer la présentation de son budget 2026 (échéance mars 2025)",
+        "Gérer le conflit larvé entre l'équipe patrimoine et l'équipe clientèle pro"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2 solutions : un organisme de formation en 2021 (résultats jugés 'médiocres, trop généralistes'), et un cabinet de conseil en 2023 (bon diagnostic mais préconisations jamais appliquées, trop théoriques). Reste marqué par ces échecs. Dit souvent : 'J'ai déjà donné'.",
+      "fournisseur_actuel": "Formation interne assurée par Christelle, la responsable RH (formations produits uniquement). Pas de prestataire externe récurrent. Coaching individuel ponctuel par un ancien banquier indépendant (budget 8K€/an, contrat qui se termine en juin 2025).",
+      "budget_disponible": "Enveloppe formation 2025 : 67K€ dont 48K€ déjà engagés. Reste théorique : 19K€ mais nécessite validation DAF + DG pour tout engagement >10K€. Possibilité de débloquer 25-30K€ supplémentaires si ROI démontrable et soutien du DG obtenu. Processus validation budget : 4 à 6 semaines minimum."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Démontrer une compréhension intime des enjeux mutualistes (gouvernance, actionnariat sociétaire, territoire)",
+        "Partager un cas client précis dans une banque régionale similaire avec chiffres de ROI vérifiables",
+        "Proposer une phase pilote sur 3-4 conseillers avant généralisation",
+        "Impliquer le DG dès le début : 'Est-ce que ça a du sens que je présente ça directement à votre Direction Générale ?'",
+        "Évoquer la problématique turnover (son talon d'Achille actuel)",
+        "Proposer un accompagnement sur la durée, pas une formation one-shot",
+        "Mentionner des références bancaires qu'il connaît ou respecte"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Présenter un tarif sans avoir établi la valeur et obtenu son adhésion émotionnelle",
+        "Généraliser : 'Tous nos clients bancaires...' (il déteste les généralités)",
+        "Le pousser à décider seul : 'Vous pouvez signer aujourd'hui ?'",
+        "Critiquer frontalement ses choix passés ou ses équipes",
+        "Proposer une solution 100% digitale (il est old school, valorise l'humain)",
+        "Ignorer la dimension territoriale et mutualiste de son modèle",
+        "Parler uniquement performance commerciale sans aborder la fidélisation collaborateurs",
+        "Mentionner les grandes banques nationales comme références (il les déteste)",
+        "Utiliser du jargon anglo-saxon à outrance : 'onboarding', 'learning experience', etc."
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis en réunion dans 10 minutes là, c'est pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas le temps et je ne me souviens pas précisément de votre RDV. Prouvez-moi rapidement que ça vaut le coup que je vous consacre 5 minutes.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rappeler un élément précis et marquant du RDV précédent qui a suscité son intérêt, montrer qu'on respecte son temps en proposant un créneau précis ultérieur."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui, votre truc... Franchement j'ai pas encore eu le temps d'en parler en interne, là on est débordés.",
+        "sous_texte": "Je ne vous ai pas rappelé parce que ce n'est pas ma priorité immédiate. Je me protège derrière l'opérationnel pour ne pas m'engager.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la charge de travail, puis recentrer sur SON enjeu personnel (turnover, objectifs non atteints) plutôt que sur votre solution."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, là concrètement, j'ai déjà donné avec des formations qui nous ont rien apporté. En 2021 on a claqué 25K€ pour que dalle.",
+        "sous_texte": "J'ai peur de refaire la même erreur. Je suis échaudé et je vais vous tester pour voir si vous êtes différent des autres charlatans.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser cette expérience négative avec empathie, identifier ce qui n'a pas marché spécifiquement, et montrer en quoi votre approche diffère structurellement (pilote, ROI mesurable, accompagnement vs one-shot)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà, mais vous comprenez, nous on est une mutuelle, pas une banque commerciale classique. C'est pas du tout le même état d'esprit.",
+        "sous_texte": "Je teste si vous comprenez vraiment mon univers ou si vous récitez un discours générique. C'est un test de crédibilité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Démontrer une connaissance fine du modèle mutualiste (gouvernance sociétaire, ancrage territorial, temps long) et poser des questions sur LEUR spécificité mutualiste plutôt que d'affirmer."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On va pas se mentir, de toute façon tout est bouclé niveau budget jusqu'à fin 2025. Y'a plus rien.",
+        "sous_texte": "Objection tactique pour vous décourager. En réalité, il peut débloquer du budget si la valeur est démontrée et validée par le DG, mais je veux voir si vous allez baisser les bras.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter ce frein. Explorer les possibilités de déblocage budgétaire en cas de ROI démontré, proposer de travailler sur le budget 2026 avec jalons 2025, ou suggérer un pilote à faible engagement."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, mes conseillers ils ont déjà tellement de choses à faire... je peux pas leur imposer encore un truc chronophage.",
+        "sous_texte": "Je protège mes équipes et je veux éviter qu'elles me reprochent d'ajouter de la charge. C'est aussi un frein sincère : je ne veux pas dégrader davantage le climat.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la charge, puis recentrer sur le fait que le turnover et les sous-performances CRÉENT de la charge. Proposer une approche légère et progressive qui allège à moyen terme."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais ça c'est la théorie. Dans la pratique, avec NOS clients, sur NOTRE territoire, je suis pas sûr que ça marche pareil.",
+        "sous_texte": "Je cherche des preuves tangibles et contextualisées. Je ne crois pas aux promesses génériques. Montrez-moi du concret dans mon univers.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Partager un cas client ultra-précis dans une banque régionale similaire, avec contexte, problématique, mise en œuvre et résultats chiffrés vérifiables. Proposer de les mettre en contact avec le référent."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "D'accord, mais là il faudrait que j'en parle à Martine au contrôle de gestion, à Jean-François notre DG... ça va prendre du temps tout ça.",
+        "sous_texte": "Je ne déciderai jamais seul. J'ai besoin de couvrir mes arrières. C'est à la fois une réalité ET une façon de gagner du temps pour ne pas m'engager maintenant.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accompagner ce processus plutôt que de le combattre. Proposer de co-construire le dossier pour le CODIR, offrir de présenter directement au DG, établir un calendrier de validation précis."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà, mais vous savez, là on est dans une période un peu floue... y'a des discussions en cours sur un potentiel rapprochement avec une autre caisse.",
+        "sous_texte": "Objection vraie mais aussi utilisée tactiquement. L'incertitude me fait peur, mais je teste aussi si vous allez abandonner ou si vous allez me montrer en quoi c'est justement le bon moment.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'incertitude, puis recentrer sur le fait que ses enjeux immédiats (objectifs 2025, turnover) restent urgents quelle que soit l'issue. Proposer une approche modulaire adaptable."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, et ça coûte combien votre truc ? Parce que là concrètement, faut que je sache où on va.",
+        "sous_texte": "Demande de prix prématurée pour me protéger. Si le prix est élevé, je vais pouvoir clore la discussion facilement. Je n'ai pas encore assez de valeur perçue pour évaluer correctement.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas donner de prix sans contexte. Poser 2-3 questions de cadrage (périmètre, nombre de personnes, ambition de résultats) avant de donner une fourchette avec contreparties de valeur."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, j'ai l'impression que c'est encore une solution qui marche pour les grandes banques nationales mais pas pour nous.",
+        "sous_texte": "Je teste votre capacité à vous adapter. Je cherche à me rassurer sur le fait que vous ne vendez pas du prêt-à-porter inadapté à ma réalité.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Inverser la charge de la preuve : demander ce qui, spécifiquement dans son contexte mutualiste, nécessite une adaptation. Co-construire la personnalisation avec lui plutôt que d'affirmer."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, je vais en parler en interne et je vous rappelle dans les 15 jours.",
+        "sous_texte": "Stratégie d'évitement classique. Je ne vous rappellerai probablement pas. Je veux clore la conversation sans dire non frontalement. Je n'ai pas assez de conviction pour agir.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter ce flou. Identifier le vrai frein : 'Thierry, soyons francs, qu'est-ce qui vous empêche concrètement de vous projeter là-dedans ?' Fixer une prochaine étape concrète AVEC lui (date/heure/ordre du jour)."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, là j'ai trois conseillers à recruter d'urgence, c'est vraiment pas le moment de lancer un projet comme ça.",
+        "sous_texte": "Frein sincère : je suis débordé par l'urgence opérationnelle. Mais aussi une façon de masquer ma peur de m'engager. Je ne vois pas comment votre solution pourrait m'aider sur mon urgence recrutement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Faire le lien entre turnover/difficulté de recrutement et performance/fidélisation des équipes existantes. Montrer que ne rien faire aggrave le problème. Proposer un accompagnement qui réduit la charge à terme."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà, mais moi je peux pas m'engager seul sur un truc comme ça. Faut que le DG valide, et franchement lui il est très prudent en ce moment.",
+        "sous_texte": "Protection hiérarchique. C'est vrai, mais c'est aussi une façon de diluer ma responsabilité. Je ne veux pas porter seul le risque de la décision.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de rencontrer le DG directement avec lui, ou de co-construire le dossier de présentation au CODIR. Transformer l'obstacle en opportunité de qualifier plus haut."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon, envoyez-moi tout ça par mail avec les tarifs et je regarde ça tranquillement.",
+        "sous_texte": "Technique de clôture polie. Je veux vous faire partir sans conflit. Le mail ira directement dans un dossier que je ne rouvrirai jamais. Je n'ai pas assez de conviction.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Refuser poliment l'envoi d'un mail 'à l'aveugle'. Identifier d'abord ce qui manque pour qu'il soit convaincu, puis proposer un mail de synthèse APRÈS avoir clarifié les freins et fixé la prochaine étape."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Franchement, je vais être honnête avec vous : j'ai peur de me planter encore une fois. En 2023, j'ai fait confiance à un cabinet qui m'a vendu du rêve, et au final mes équipes m'ont reproché de leur avoir fait perdre leur temps. Là, si je me trompe encore, ça va être compliqué pour moi en interne. Vous comprenez ?",
+      "condition_declenchement": "Apparaît quand Thierry sent qu'on arrive au moment de la décision et qu'il doit s'engager personnellement. C'est l'objection de vérité, celle qui révèle sa peur profonde de l'échec et de l'impact sur sa réputation. Elle émerge après 20-25 minutes d'échange, quand la relation est suffisamment établie pour qu'il ose exprimer sa vulnérabilité."
+    },
+    "pattern_escalade": "Thierry commence par des objections réflexes professionnelles (temps, budget, priorités). Si on insiste sans créer de valeur, il passe en mode défensif avec des objections tactiques de blocage (budget verrouillé, fusion en cours). Si on le pousse trop, il devient évasif et promet un retour qu'il ne fera jamais. EN REVANCHE : si on démontre une vraie compréhension de son univers et qu'on pose des questions intelligentes, il s'ouvre progressivement et révèle ses vraies peurs (échecs passés, peur de se tromper, protection de sa réputation). À ce stade, les objections deviennent sincères et constituent des opportunités de créer une vraie connexion. Le piège est de traiter ses objections tactiques comme sincères, ou ses objections sincères comme tactiques.",
+    "piege_classique": "Accepter son 'je vais en parler en interne et je vous rappelle' sans creuser. Thierry utilise systématiquement cette formule pour clore poliment les échanges qui ne l'ont pas convaincu. 90% des commerciaux envoient alors un mail de synthèse et attendent un retour qui ne viendra jamais. Le vrai piège : ne pas identifier que derrière ce 'je vous rappelle' se cache soit un manque de conviction (valeur insuffisante), soit une peur de décider seul (processus décisionnel non adressé), soit une objection inavouée (prix, doute sur l'adaptation à son contexte). Il faut TOUJOURS challenger cette phrase avec bienveillance mais fermeté : 'Thierry, soyons francs 30 secondes : qu'est-ce qui vous empêche vraiment de vous projeter concrètement là-dedans aujourd'hui ?' Seule cette confrontation respectueuse permet de débloquer la vraie objection et d'avancer."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour le secteur bancaire et patrimonial",
+      "description": "entreprise proposant des solutions pour les banques régionales et groupes de conseillers en gestion de patrimoine"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "solution destinée aux directeurs de développement ou de réseau bancaire, probablement liée à la performance commerciale, la formation ou l'organisation du réseau",
+      "proposition_valeur": "amélioration de la performance du réseau commercial bancaire ou CGP",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "apprendre à relancer efficacement un prospect après un RDV sans retour, débloquer le processus décisionnel, identifier les freins réels et repositionner la discussion sans paraître insistant",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance après RDV — Banque régionale mutualiste",
+    "vous_etes": "Commercial B2B spécialisé dans l'accompagnement des réseaux bancaires régionaux sur la performance commerciale et la fidélisation des équipes.",
+    "vous_vendez": "Programme d'accompagnement sur-mesure pour améliorer le taux de transformation des conseillers patrimoniaux et réduire le turnover (prix et format à définir avec le client, budget formation disponible estimé entre 15K€ et 30K€).",
+    "vous_appelez": "Thierry Delcourt, 51 ans, Directeur du Développement Commercial de la Banque Mutuelle du Centre-Ouest (135 collaborateurs). Prudent, analytique, échaudé par deux expériences ratées avec des prestataires externes. Sous pression : ses objectifs 2024 ne sont pas atteints (-12% sur la collecte patrimoniale).",
+    "ce_que_vous_savez": [
+      "Vous l'avez rencontré il y a 2 semaines, le RDV s'est bien passé, il a pris des notes",
+      "Il était intéressé par votre approche terrain et vos références en banque régionale",
+      "Il devait en parler en interne et revenir vers vous — mais silence radio depuis",
+      "Son urgence : recruter 2 conseillers seniors et faire passer son taux de transfo de 31% à 45%",
+      "Il ne décide jamais seul, doit valider avec son DG et son DAF pour tout budget >10K€"
+    ],
+    "votre_objectif": "Comprendre où en est son process décisionnel, identifier les freins réels (budget ? priorité ? doute ?), et fixer une prochaine étape concrète sans le brusquer.",
+    "vos_atouts": [
+      "Vous avez accompagné 3 banques mutualistes régionales avec des ROI mesurables (dont une qui a réduit son turnover de 40% en 18 mois)",
+      "Vous proposez systématiquement une phase pilote sur 3-4 conseillers avant généralisation",
+      "Vous maîtrisez les spécificités du modèle mutualiste et de la gouvernance territoriale",
+      "Vous pouvez impliquer directement son DG dans la discussion pour accélérer la décision"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:16:00Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16871,
+    "total_time_s": 158.2
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "id": "scenario_1771519142",
+  "description_originale": "Le directeur d'agence / fondateur d'une agence de recrutement ou cabinet RH de 10-25 consultants est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : rh_recrutement]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "10-25 consultants",
+      "interlocuteur_principal": {
+        "poste": "Directeur d'agence / Fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution logicielle ou service pour cabinet RH/recrutement",
+      "proposition_valeur_presumee": "Optimisation des processus de recrutement, gain de temps, amélioration de la qualité des placements",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix trop élevé",
+        "Difficulté à défendre la valeur face à la négociation",
+        "Gestion de la marge de manœuvre limitée"
+      ],
+      "implicites": [
+        "Manque d'arguments pour justifier le ROI",
+        "Difficulté à ancrer la valeur avant de parler prix",
+        "Risque de brader la solution sans contrepartie",
+        "Absence de technique de négociation structurée"
+      ],
+      "probleme_racine": "Les commerciaux cèdent trop facilement sur le prix sans avoir solidifié la valeur perçue et sans obtenir de contreparties en négociation"
+    },
+    "objections_mentionnees": [
+      "Le prix est trop élevé"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre leur prix, négocier avec méthode en utilisant la marge de manœuvre stratégiquement, et obtenir des contreparties",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solutions/services pour cabinets RH et recrutement",
+      "entreprise_description": "Éditeur de solutions ou prestataire de services destinés aux agences de recrutement et cabinets RH pour optimiser leur activité",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution technologique ou service permettant d'améliorer l'efficacité opérationnelle des cabinets de recrutement",
+      "proposition_valeur": "Gain de productivité pour les consultants, amélioration du taux de placement, réduction du time-to-hire, meilleure gestion de la relation candidats/clients",
+      "prix_indicatif": "NON_SPECIFIE - marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Prix exact et détails de l'offre",
+        "Nom de l'entreprise vendeuse",
+        "Arguments ROI concrets",
+        "Références clients",
+        "Nature précise de la solution (SaaS, conseil, formation, ATS, etc.)",
+        "Durée d'engagement contractuel",
+        "Éléments de différenciation concurrentielle"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 47,
+      "poste": "Directeur Associé",
+      "entreprise": {
+        "nom": "Mercier & Associés Recrutement",
+        "secteur": "Cabinet de recrutement spécialisé Ingénierie & IT",
+        "taille": "17 consultants permanents",
+        "ca_approximatif": "2,1M€ (année N-1)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrain avec forte aversion au bullshit commercial",
+        "Obsédé par la rentabilité immédiate et le ROI quantifiable",
+        "Méfiant envers les promesses technologiques après 2 échecs logiciels coûteux"
+      ],
+      "motivations_profondes": [
+        "Protéger sa trésorerie durement gagnée dans un marché cyclique",
+        "Ne pas paraître naïf face à ses associés qui scrutent chaque investissement",
+        "Maintenir sa réputation de négociateur redoutable auprès de ses pairs du secteur"
+      ],
+      "peurs_freins": [
+        "S'engager sur 3 ans et voir l'outil non adopté par ses consultants seniors résistants au changement",
+        "Que ses concurrents directs aient négocié 20-30% moins cher pour la même solution",
+        "Perdre du temps en réunions commerciales alors que ses KPI recrutement sont sous tension"
+      ],
+      "rapport_aux_commerciaux": "Les considère comme des adversaires à battre en négociation - respecte uniquement ceux qui tiennent tête avec des arguments chiffrés solides. Déteste la flagornerie et les relances insistantes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'ironie sur 'encore un éditeur qui va révolutionner le recrutement'",
+      "signaux_interet": [
+        "Demande des benchmarks précis avec noms de cabinets concurrents clients",
+        "Calcule à voix haute le ROI pendant que vous parlez",
+        "Pose des questions techniques pointues sur l'intégration avec son CRM actuel",
+        "Mentionne spontanément une deadline budgétaire ('Si on signe, faut que ce soit avant fin mars')"
+      ],
+      "signaux_rejet": [
+        "Coupe court avec 'Écoutez, envoyez-moi tout ça par mail, je verrai avec mes associés'",
+        "Commence à parler d'un concurrent en disant 'Eux au moins ils proposent X% de remise dès le départ'",
+        "Regarde ostensiblement sa montre ou répond à un SMS",
+        "Lance un 'C'est pas dans mes prix' avant même que vous ayez fini d'argumenter"
+      ],
+      "tics_langage": [
+        "Ponctue ses phrases de 'Concrètement' et 'Dans les faits' pour recentrer sur le pragmatique",
+        "Utilise 'Franchement' en début de phrase quand il va asséner une objection",
+        "Dit souvent 'Moi je veux bien, mais mes associés vont me tuer' pour créer un tiers absent",
+        "Répète 'Ça fait cher la ligne de code' avec un petit rire pour déstabiliser"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 90 secondes avant d'interrompre avec une question cash ou une objection. Déteste les slides PowerPoint - préfère une démo directe ou un tableur Excel avec calculs ROI."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 15% en N-1 mais marge opérationnelle en baisse de 3 points à cause de l'augmentation des salaires consultants. Tension sur 2 gros clients qui renégocient leurs contrats cadres à la baisse. Un associé junior vient d'être promu et pousse pour moderniser les outils.",
+      "priorites_actuelles": [
+        "Réduire le time-to-fill de 38 à 28 jours pour tenir les SLA clients",
+        "Automatiser les tâches chronophages des consultants pour augmenter leur capacité de 4 à 6 postes gérés simultanément",
+        "Sécuriser le renouvellement des 2 contrats cadres majeurs (650K€ de CA cumulé)"
+      ],
+      "experience_avec_offre_similaire": "A testé un ATS il y a 18 mois (28K€ sur 3 ans) - abandon après 7 mois car les consultants seniors ne l'utilisaient pas et préféraient leurs fichiers Excel. Échaudé également par un outil de sourcing automatique 'miracle' qui générait 80% de profils hors cible.",
+      "fournisseur_actuel": "Mix bricolé : Bullhorn en ATS de base (licence minimale), LinkedIn Recruiter pour sourcing, Excel pour reporting. Total ~18K€/an. Fonctionne mais chronophage.",
+      "budget_disponible": "35-40K€ maximum pour l'année, déjà validé en comité associés sous réserve de ROI démontré sous 12 mois. Dispose d'une enveloppe 'innovation' de 8K€ supplémentaire mobilisable si argumentaire béton."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer nommément 2-3 cabinets concurrents directs qui utilisent votre solution avec métriques précises (ex: 'Talent Partners Lyon a réduit son time-to-fill de 34% en 4 mois')",
+        "Proposer une phase pilote sur 3 mois avec 5 consultants et clause de sortie sans pénalité - ça désarme sa méfiance",
+        "Montrer un calcul ROI personnalisé à sa structure : 'Avec 17 consultants à 4,5 placements/mois, si on gagne 6 jours par placement, ça fait X placements supplémentaires/an à marge moyenne de Y€'",
+        "Accepter un paiement échelonné sur 18 mois au lieu de 12 mois - ça fluidifie sa tréso",
+        "Démontrer une intégration fluide avec Bullhorn pour ne pas tout casser"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Refuser catégoriquement toute négociation avec un 'Nos prix sont nos prix' hautain - il raccroche mentalement",
+        "Être incapable de citer des références clients dans son secteur exact (recrutement ingé/IT) - prouve que vous ne connaissez pas son métier",
+        "Proposer un engagement 36 mois ferme sans clause de sortie - dealbreaker absolu",
+        "Noyer la discussion dans des fonctionnalités gadgets (IA générative de posts LinkedIn, etc.) alors qu'il veut juste gagner du temps opérationnel",
+        "Ne pas avoir de réponse claire sur 'Qu'est-ce qui se passe si dans 6 mois mes consultants ne l'utilisent pas ?' - réveille son traumatisme du précédent échec",
+        "Lui demander de prendre une décision immédiate 'aujourd'hui pour bénéficier de la remise' - technique de vente agressive qu'il exècre"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai 10 minutes top chrono avant une conf call. Encore un éditeur qui va révolutionner le recrutement, c'est ça ? Parce que franchement, j'en ai testé deux ces deux dernières années et ça m'a coûté bonbon pour finir au placard.",
+        "sous_texte": "Je suis échaudé par des échecs précédents coûteux. Prouve-moi que tu n'es pas un commercial bullshit de plus. Si tu ne me convaincs pas en 2 minutes, je vais écourter.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître explicitement ces échecs passés et montrer qu'on comprend sa méfiance. Citer immédiatement 2-3 cabinets concurrents IT/Ingé qui utilisent la solution avec des métriques terrain."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Moi je veux bien vous écouter, mais mes associés vont me tuer si je perds encore du temps en démos qui mènent nulle part. Qu'est-ce qui fait que je devrais pas juste lire votre brochure et vous rappeler si ça m'intéresse ?",
+        "sous_texte": "J'utilise le 'tiers absent' (mes associés) pour créer une pression et tester si tu as vraiment quelque chose d'unique. Je veux aussi voir si tu respectes mon temps ou si tu vas insister lourdement.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un format ultra-court (15 min max) centré sur UN calcul ROI personnalisé à sa structure. Montrer qu'on valorise son temps en proposant une démo ciblée, pas un pitch générique."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez combien de cabinets de recrutement spécialisés IT qui utilisent votre solution ? Parce que moi je me fous des références dans la pharma ou la banque, c'est pas du tout le même métier.",
+        "sous_texte": "Je teste ta crédibilité sectorielle. Si tu n'as pas de références dans MON univers précis, ça prouve que tu ne connais pas les spécificités du recrutement IT/Ingénierie et je vais te disqualifier.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Avoir préparé 3-4 références PRÉCISES de cabinets IT/Ingé avec taille comparable, métriques concrètes et permission de citer. Si on n'en a pas, reconnaître honnêtement et proposer un pilote à risque partagé."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me dites que ça va améliorer la productivité de mes consultants... Mais dans les faits, qu'est-ce qui se passe si dans 6 mois ils ne l'utilisent pas ? Parce que j'ai déjà eu un ATS à 28K€ qui a fini au placard, mes seniors préféraient leurs Excel.",
+        "sous_texte": "Voilà ma vraie peur : le risque d'adoption. C'est mon traumatisme principal. Si tu n'as pas de réponse solide sur l'accompagnement au changement et une clause de sortie, c'est mort.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer une phase pilote 3 mois avec 5 consultants volontaires et clause de sortie sans pénalité. Détailler un plan d'accompagnement au changement avec métriques d'adoption hebdomadaires. Montrer qu'on partage le risque."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK admettons que ça marche. Mais franchement, ça fait cher la ligne de code votre truc. J'ai vu passer des concurrents à vous qui proposent quasiment la même chose 30% moins cher. Comment vous justifiez cet écart ?",
+        "sous_texte": "Je commence la négociation en créant une ancre basse. Je veux voir si tu vas paniquer et brader immédiatement, ou si tu as des arguments solides pour défendre ta valeur. Je teste aussi si tu connais vraiment tes concurrents.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Demander quel concurrent précisément pour comprendre la comparaison. Creuser sur ce qui est réellement inclus (support, formation, intégrations). Puis démontrer la valeur différentielle CHIFFRÉE."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, je calcule... Si je prends vos chiffres, ça me ferait un ROI à 14 mois. Moi je peux pas attendre 14 mois, j'ai besoin de rentabilité sous 12 mois max, sinon mes associés ne valideront jamais. Qu'est-ce que vous avez comme levier là-dessus ?",
+        "sous_texte": "Je suis en train de calculer sérieusement - c'est un signal d'intérêt. Mais j'ai une vraie contrainte budgétaire. Je te tends une perche pour que tu me proposes soit une personnalisation du package, soit une remise ciblée avec justification.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reprendre les hypothèses de calcul ensemble pour optimiser le ROI (ex: démarrage plus rapide, focus sur les consultants les plus productifs d'abord). Ensuite, proposer un ajustement tarifaire limité EN ÉCHANGE d'une contrepartie (durée, témoignage, référence)."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Votre histoire d'intégration avec Bullhorn, concrètement c'est quoi le délai de mise en œuvre ? Parce que si c'est 3 mois de paramétrage avec mes consultants qui perdent du temps en formation, ça va me coûter plus cher en productivité perdue que ce que je vais gagner.",
+        "sous_texte": "Je suis dans les détails opérationnels - signe que je projette. Mais j'ai une vraie inquiétude sur le coût caché de l'implémentation et la courbe d'apprentissage. Si tu minimises ça, je vais me méfier.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner un planning réaliste et détaillé (ex: 2 semaines paramétrage + 3 sessions formation de 2h). Chiffrer le temps consultant impacté. Proposer un accompagnement sur-mesure pour limiter la disruption. Transparence totale."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, moi je suis convaincu sur le principe. Mais là on parle de combien exactement ? Parce que j'ai maximum 35-40K€ de budget pour l'année, et encore faut que je valide avec les associés. Si on dépasse ça, c'est même pas la peine de continuer.",
+        "sous_texte": "Je pose mon budget plafond pour créer une ancre. Je teste si tu vas immédiatement dire 'Pas de problème on rentre dedans' (ce qui prouverait que tu avais de la marge) ou si tu vas défendre un prix supérieur avec des arguments.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas confirmer immédiatement qu'on rentre dans le budget. D'abord présenter le prix en lien avec la valeur démontrée. Si supérieur, proposer des options de personnalisation ou de paiement échelonné. Toujours demander des contreparties."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, votre offre m'intéresse mais le prix me bloque. Qu'est-ce que vous pouvez faire comme geste commercial ? Parce que dans les faits, j'ai eu des propositions à 20% de moins pour des solutions comparables. Faut qu'on trouve un terrain d'entente.",
+        "sous_texte": "J'entre en négociation pure. Je veux voir jusqu'où tu peux descendre. Je joue la carte de la concurrence pour créer de la pression. Mais le fait que je négocie plutôt que de fuir signifie que je suis vraiment intéressé.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser son intérêt sincère. Creuser sur les 'solutions comparables' pour comprendre si c'est vraiment comparable. Proposer une négociation à contreparties : si remise X%, alors engagement Y ou référence client ou étude de cas."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le problème c'est l'engagement sur 3 ans. Moi je peux pas signer ça les yeux fermés après l'échec d'il y a 18 mois. Vous avez quoi comme clause de sortie anticipée si ça ne marche pas ? Parce que sinon, je prends un risque énorme.",
+        "sous_texte": "Voilà mon vrai dealbreaker : l'engagement long sans filet de sécurité. C'est une objection sincère liée à mon traumatisme. Si tu proposes une solution créative ici (pilote, clause, échelonnement), tu débloques la vente.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer soit un pilote 3 mois avant engagement, soit une clause de sortie à 12 mois avec préavis, soit un engagement progressif (12 mois + renouvellement conditionnel). Montrer qu'on partage le risque et qu'on a confiance dans la solution."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attendez, je dois en parler avec mes deux associés avant de me positionner. On a un comité mardi prochain. Envoyez-moi tout par mail, je leur transmets et on vous recontacte si ça les intéresse. C'est la procédure chez nous.",
+        "sous_texte": "Je crée une échappatoire pour réfléchir ou pour faire pression. Soit je suis vraiment sincère (comité réel), soit je teste si tu vas paniquer et lâcher une remise 'spéciale si vous signez aujourd'hui'. Je veux aussi voir si tu sais closer sans être lourd.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le processus mais cadrer la suite : proposer de préparer ensemble le dossier pour ses associés, anticiper leurs objections probables, fixer un créneau post-comité précis. Rester en position haute sans pression commerciale agressive."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement, si je vous dis oui aujourd'hui, qu'est-ce qui se passe ? Vous me demandez un chèque de combien, quand, et je suis engagé sur quelle durée ? Parce que moi j'ai besoin de voir un contrat avant de valider quoi que ce soit avec mes associés.",
+        "sous_texte": "Je suis en phase de décision finale mais j'ai besoin de clarté absolue sur les modalités pratiques. Je déteste les surprises cachées dans les contrats. Ma question est aussi un test de transparence : si tu es flou ici, je me méfie.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Transparence totale : détailler le calendrier de paiement, l'échéancier, les clauses importantes, les conditions de sortie. Proposer d'envoyer un draft de contrat avant signature. Rassurer sur l'absence de frais cachés."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "OK écoutez, on va faire comme ça : vous me faites une dernière proposition avec votre meilleur prix, un engagement maximum 24 mois avec clause de sortie à 12 mois, et un paiement échelonné sur 18 mois. Si on arrive à ça, je défends le dossier en comité vendredi. Sinon franchement, je vais aller voir vos concurrents qui me proposent déjà des conditions plus souples.",
+      "condition_declenchement": "Se déclenche après plusieurs échanges de négociation si le commercial a bien défendu la valeur mais reste ferme sur les conditions. Stéphane fait une dernière tentative de négociation globale en mettant tous ses leviers sur la table + menace concurrentielle."
+    },
+    "pattern_escalade": "Stéphane commence par des objections réflexes (scepticisme, manque de temps) pour filtrer les commerciaux peu crédibles. Si le commercial tient bon avec des arguments chiffrés et des références sectorielles, il passe à des objections sincères (peur de l'échec adoption, ROI sous 12 mois, engagement long). En parallèle, il teste régulièrement avec des objections tactiques (comparaison concurrence, ancrage budget bas). Sa dernière ligne de défense est une négociation globale où il demande plusieurs concessions simultanées. Si le commercial cède trop facilement sans contreparties, il perd le respect de Stéphane qui se demande alors combien de marge il y avait vraiment.",
+    "piege_classique": "Céder immédiatement sur le prix dès la première objection tarifaire en pensant qu'on débloque la vente. Chez Stéphane, c'est l'inverse : une remise trop rapide le fait douter de la valeur réelle de la solution et il se dit 'S'il lâche 15% en 30 secondes, c'était surcoté de combien au départ ?'. Il perd confiance et va chercher à négocier encore plus ou pire, va demander un délai pour comparer avec la concurrence. La bonne approche : défendre fermement la valeur avec calculs ROI, puis négocier progressivement EN ÉCHANGE de contreparties claires (durée, référence, démarrage rapide, étude de cas). Stéphane respecte les commerciaux qui tiennent tête intelligemment."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solutions/services pour cabinets RH et recrutement",
+      "description": "Éditeur de solutions ou prestataire de services destinés aux agences de recrutement et cabinets RH pour optimiser leur activité"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution technologique ou service permettant d'améliorer l'efficacité opérationnelle des cabinets de recrutement",
+      "proposition_valeur": "Gain de productivité pour les consultants, amélioration du taux de placement, réduction du time-to-hire, meilleure gestion de la relation candidats/clients",
+      "prix": "NON_SPECIFIE - marge de négociation de 10% maximum",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre leur prix, négocier avec méthode en utilisant la marge de manœuvre stratégiquement, et obtenir des contreparties",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution recrutement face à directeur associé expérimenté",
+    "vous_etes": "Account Executive chez un éditeur de solutions pour cabinets de recrutement, en poste depuis 18 mois avec 7 signatures cette année.",
+    "vous_vendez": "Une solution d'optimisation des processus de recrutement pour cabinets spécialisés — tarif proposé 42 000€ sur 18 mois (vous avez une marge de manœuvre de 10% maximum).",
+    "vous_appelez": "Stéphane Mercier, 47 ans, Directeur Associé de Mercier & Associés Recrutement — cabinet de 17 consultants spécialisé Ingénierie & IT. Négociateur redoutable, pragmatique pur, échaudé par deux échecs logiciels coûteux.",
+    "ce_que_vous_savez": [
+      "Il a validé un budget 35-40K€ en comité associés, avec 8K€ supplémentaire mobilisable si ROI béton sous 12 mois",
+      "Son time-to-fill actuel est de 38 jours, objectif 28 jours — ses consultants gèrent 4 postes simultanés, il vise 6",
+      "Il utilise Bullhorn (ATS basique) + LinkedIn Recruiter + Excel — environ 18K€/an — ça fonctionne mais c'est chronophage",
+      "Échec cuisant il y a 18 mois avec un ATS à 28K€ abandonné après 7 mois car non adopté par les seniors",
+      "Deux gros clients renégocient leurs contrats cadres à la baisse (650K€ de CA en jeu) — pression sur sa rentabilité"
+    ],
+    "votre_objectif": "Signer à 38 000€ minimum en obtenant des contreparties (durée, périmètre, référence client) et en ancrant la valeur AVANT de négocier le prix.",
+    "vos_atouts": [
+      "Talent Partners Lyon (concurrent direct) a réduit son time-to-fill de 34% en 4 mois avec votre solution",
+      "Vous proposez une phase pilote 3 mois avec 5 consultants et clause de sortie sans pénalité",
+      "Votre solution s'intègre nativement avec Bullhorn sans tout casser",
+      "Calcul ROI prêt : avec ses 17 consultants et 6 jours gagnés par placement, ça fait 23 placements supplémentaires/an à marge moyenne cabinet"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:39:02Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16534,
+    "total_time_s": 164.0
+  }
+}

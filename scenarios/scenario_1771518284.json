@@ -1,0 +1,341 @@
+{
+  "id": "scenario_1771518284",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : services_entreprises]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "PME 25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution B2B destinée aux entreprises de services multi-techniques",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après envoi de proposition",
+        "Silence radio depuis 10 jours",
+        "Besoin d'obtenir un engagement clair"
+      ],
+      "implicites": [
+        "Proposition possiblement noyée dans les priorités opérationnelles",
+        "Manque de suivi structuré post-proposition",
+        "Difficulté à créer l'urgence ou la valeur perçue",
+        "Proposition peut-être envoyée sans validation préalable des besoins",
+        "Risque que le gérant ne soit pas le bon décisionnaire ou qu'il nécessite validation interne"
+      ],
+      "probleme_racine": "Absence de processus de relance structuré et manque de création de valeur/urgence lors de l'envoi initial de la proposition, conduisant à une déperdition dans le pipe commercial"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance post-proposition pour sortir du silence radio et obtenir des engagements clairs (oui/non/prochaine étape) sans être intrusif",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise B2B vendant aux sociétés de services multi-techniques (nettoyage, sécurité, maintenance)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution/service destiné aux entreprises de services avec une proposition commerciale formalisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service vendu",
+        "Contenu et qualité de la proposition envoyée",
+        "Contexte de l'envoi initial (suite à quoi : appel découverte, salon, demande spontanée ?)",
+        "Historique relationnel avec ce prospect",
+        "Niveau d'engagement du prospect avant l'envoi",
+        "Prix et budget du prospect",
+        "Concurrents potentiels en lice",
+        "Raisons business du prospect pour s'équiper"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "SécuriClean Services",
+        "secteur": "Services multi-techniques (nettoyage industriel + agents de sécurité)",
+        "taille": "38 salariés",
+        "ca_approximatif": "2,8M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terrain avant tout",
+        "Méfiant envers les promesses commerciales",
+        "Débordé chronique mais fier de sa réactivité client"
+      ],
+      "motivations_profondes": [
+        "Garder la main sur toutes les décisions importantes",
+        "Ne pas se faire avoir comme avec son ancien éditeur de logiciel",
+        "Prouver que sa boîte peut rivaliser avec les gros du secteur"
+      ],
+      "peurs_freins": [
+        "Investir dans un truc qui ne sera pas utilisé par les équipes",
+        "Se retrouver coincé avec un contrat trop long",
+        "Perdre du temps en déploiement qui perturbe l'opérationnel",
+        "Paraître naïf ou influençable devant son associé minoritaire"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. A développé un réflexe pavlovien : 'Envoyez-moi ça par mail' pour couper court. Respecte ceux qui connaissent vraiment son métier, méprise le bla-bla",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je vous écoute mais j'ai un chantier qui m'attend dans 20 minutes'",
+      "signaux_interet": [
+        "Pose des questions très concrètes sur les délais",
+        "Mentionne spontanément un problème récent qu'il a eu",
+        "Demande si d'autres boîtes de nettoyage utilisent votre solution",
+        "Son débit ralentit, il prend des notes"
+      ],
+      "signaux_rejet": [
+        "Répète 'Ouais ouais' en boucle sans relancer",
+        "Coupe la parole pour parler de SES problèmes sans lien",
+        "Dit 'Je vais en parler avec mon associé' (= mort du dossier)",
+        "Commence ses phrases par 'Le souci c'est que...' sans jamais revenir sur les bénéfices"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il va dire non",
+        "Utilise 'Concrètement' avant de demander quelque chose de précis",
+        "Dit 'ça me parle' quand vraiment intéressé",
+        "Emploie 'Franchement' en début de phrase quand il va être cash"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Maximum 45 secondes. Après, il décroche mentalement ou coupe avec une objection. A besoin d'interaction tous les 2-3 arguments maximum"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée (+12% CA l'an dernier) mais turnover élevé chez les agents. Vient de perdre un gros contrat Carrefour au profit d'un concurrent. Sous pression pour professionnaliser sans perdre l'agilité. Son associé le pousse à 'digitaliser' mais Stéphane pense surtout Excel et WhatsApp",
+      "priorites_actuelles": [
+        "Recruter 5 nouveaux agents avant fin de mois",
+        "Répondre à un appel d'offres mairie pour septembre",
+        "Gérer un conflit social larvé avec un délégué syndical",
+        "Renégocier les tarifs avec son fournisseur de produits d'entretien"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de planning il y a 3 ans (Timmi ou équivalent). L'a abandonné au bout de 8 mois : trop compliqué, les chefs d'équipe ne l'utilisaient pas. Depuis, retour aux tableaux Excel partagés",
+      "fournisseur_actuel": "Utilise un patchwork : Excel pour planning, Pennylane pour compta, WhatsApp Pro pour communication terrain, papier pour pointages chantiers",
+      "budget_disponible": "Entre 5000€ et 15000€ première année si vraiment convaincu du ROI. Au-delà, il faut impliquer l'expert-comptable et l'associé (= rallonge de 6 semaines minimum)"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets : 'X heures gagnées par semaine' plutôt que 'optimisation'",
+        "Citer un concurrent ou confrère qu'il respecte qui utilise la solution",
+        "Montrer qu'on comprend ses emmerdes terrain (ex: agent qui ne se pointe pas, client qui appelle à 19h pour le lendemain)",
+        "Proposer un test court et réversible (pilote 30 jours, pas d'engagement)",
+        "Rassurer sur l'accompagnement : 'On forme vos chefs d'équipe, pas juste vous'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Vocabulaire bullshit : 'transformation digitale', 'synergie', 'disruption'",
+        "Minimiser ses objections ou lui expliquer qu'il a tort",
+        "Proposer un tunnel de vente avec 3 RDV supplémentaires : il veut décider MAINTENANT ou jamais",
+        "Comparer sa boîte à un grand groupe : il est fier d'être une PME familiale",
+        "Insister après un 'non' clair : il respecte la ténacité mais déteste qu'on le prenne pour un con",
+        "Ne pas connaître son secteur : confondre nettoyage et gardiennage = game over"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai bien reçu votre proposition mais là je suis sur un chantier, je peux pas vous parler maintenant",
+        "sous_texte": "Test de votre réactivité et de votre capacité à rebondir. Vérifie aussi si vous allez insister lourdement ou respecter son rythme. Pas forcément vrai, c'est un réflexe de défense",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Proposer un créneau précis dans les 48h plutôt que demander 'quand êtes-vous disponible'. Montrer que vous comprenez son rythme terrain"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais je l'ai regardée en diagonale votre proposition, mais franchement ça me semble cher pour ce que c'est",
+        "sous_texte": "Objection réflexe typique du gérant PME. N'a probablement pas vraiment étudié les détails. Teste votre solidité sur le prix et cherche inconsciemment une remise avant même de s'engager",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas défendre le prix immédiatement. Poser des questions sur ce qu'il a retenu de la proposition pour vérifier s'il l'a vraiment lue. Ramener au ROI concret"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est qu'on a déjà testé un truc dans le genre il y a deux-trois ans, et au final personne ne s'en servait",
+        "sous_texte": "Objection sincère basée sur une vraie déception. C'est son principal frein psychologique. Il ne veut pas revivre l'échec et la frustration de l'investissement raté. Besoin de réassurance forte",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser cette expérience passée : qu'est-ce qui n'a pas marché exactement ? Qui était censé l'utiliser ? Montrer en quoi votre approche d'accompagnement est différente"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, vous avez d'autres boîtes de nettoyage qui utilisent votre solution ? Parce que nous on est pas une grosse structure hein",
+        "sous_texte": "Vraie question de fond. Il a besoin de preuve sociale dans son secteur pour se rassurer. Il craint que la solution soit trop complexe pour sa taille. C'est un signal d'intérêt déguisé",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Citer 2-3 références précises de PME similaires (20-50 personnes, services multi-techniques). Proposer un contact avec l'une d'elles si possible"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais nous on fonctionne beaucoup avec Excel et WhatsApp, les gars sont habitués comme ça, je vois pas l'intérêt de tout chambouler",
+        "sous_texte": "Résistance au changement classique. Peur de perdre le contrôle, peur de la courbe d'apprentissage. Teste aussi si vous allez dénigrer ses méthodes actuelles (ce qui le braque immédiatement)",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser ce qui marche dans son système actuel. Identifier UN problème concret qu'Excel ne résout pas (ex: erreurs de saisie, doublons, temps perdu). Proposer une approche progressive"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je vais être cash avec vous : mon associé me pousse à digitaliser mais moi je suis pas convaincu que ça change grand-chose au quotidien",
+        "sous_texte": "Moment de vulnérabilité rare chez lui. C'est presque un appel à l'aide. Il a une pression interne mais doute de la valeur réelle. S'il partage ça, c'est qu'il teste votre honnêteté intellectuelle",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas survendre. Reconnaître que tout digitaliser pour digitaliser n'a aucun sens. Identifier ensemble UN cas d'usage où le digital apporte une vraie valeur mesurable"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais ouais ça me parle, mais là j'ai trois priorités qui passent avant : recruter, l'appel d'offres de la mairie, et mon conflit avec le délégué syndical",
+        "sous_texte": "Objection vraie ET tactique. Les priorités sont réelles mais il les utilise aussi pour temporiser. Il cherche une excuse socialement acceptable pour ne pas décider maintenant. Teste votre capacité à créer l'urgence",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Lier votre solution à l'une de ces priorités (ex: faciliter le recrutement avec meilleure organisation). Proposer un démarrage différé mais engagement maintenant. Quantifier le coût de l'inaction"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le souci c'est que si je me retrouve engagé sur 24 ou 36 mois, je me tire une balle dans le pied. J'ai déjà donné avec mon ancien éditeur",
+        "sous_texte": "Peur viscérale de l'enfermement contractuel suite à une mauvaise expérience. C'est un frein dur. Il ne signera JAMAIS un contrat long sans clause de sortie claire. Besoin de garder le contrôle",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Être transparent sur la durée d'engagement. Proposer des options de sortie anticipée ou un pilote court. Ne JAMAIS minimiser cette inquiétude sous peine de perdre toute confiance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est bien beau tout ça, mais qui va former mes chefs d'équipe ? Parce que moi j'ai pas le temps de jouer les formateurs",
+        "sous_texte": "Objection opérationnelle concrète. Il projette mentalement la mise en œuvre et voit les obstacles. C'est paradoxalement un signal d'achat : il se pose les questions du 'comment' pas du 'si'",
+        "type": "sincere",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Détailler précisément le plan d'accompagnement : qui, quand, combien de temps. Proposer de former directement les chefs d'équipe sur site si besoin"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, ça veut dire que pendant la mise en place, mes gars vont devoir faire double saisie Excel ET votre machin ? Ça va être la révolution",
+        "sous_texte": "Peur du chaos organisationnel pendant la transition. Souvenir traumatique du projet précédent qui a créé plus de problèmes que de solutions. Besoin d'un plan de transition clair et rassurant",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer une transition progressive : un seul chantier pilote d'abord, puis extension. Montrer comment minimiser la double saisie. Quantifier la durée de la période transitoire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je vais en parler avec mon associé et je vous tiens au courant, OK ?",
+        "sous_texte": "Objection classique de fuite. L'associé est un prétexte commode. En réalité soit il n'est pas convaincu, soit il veut réfléchir seul, soit il attend une dernière concession. Attention : insister = mort du dossier",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas insister lourdement. Qualifier : 'Qu'est-ce que votre associé doit valider exactement ?' Proposer d'être présent à cet échange. Fixer une date de feedback précise"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "C'est pas que je dis non hein, mais entre 5 et 15K€ quand même, faut que j'en parle à mon expert-comptable avant de me lancer",
+        "sous_texte": "Objection financière réelle. Le budget existe mais il a besoin de validation tierce pour déresponsabiliser la décision. L'expert-comptable = 4-6 semaines de délai minimum. Teste aussi si vous allez baisser le prix",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer de préparer un dossier chiffré pour l'expert-comptable (ROI, économies, amortissement). Fixer un RDV à trois si possible. Ne pas brader le prix par réflexe"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, si vous pouvez faire un geste sur le prix, là je signe direct. Mais à ce tarif-là, ça passe pas",
+        "sous_texte": "Objection tactique classique de négociation finale. Il teste votre marge de manœuvre. Attention : céder trop vite décrédibilise votre prix initial. Mais ne pas négocier du tout peut tuer le deal",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas céder immédiatement. Demander : 'À quel montant exactement ça devient évident pour vous ?' Négocier sur autre chose que le prix si possible (services, durée, échéancier)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez-moi tout ça par mail, je regarde ça tranquillement et je vous rappelle la semaine prochaine",
+        "sous_texte": "Fuite polie. 'Par mail' = cimetière des deals chez lui. Il ne rappellera jamais spontanément. Il cherche à clore l'interaction sans vous vexer. Vous avez raté quelque chose ou il n'est vraiment pas prêt",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Identifier ce qui bloque AVANT d'envoyer le mail. 'Stéphane, j'ai l'impression que quelque chose coince. C'est le prix ? Le timing ? La confiance dans la solution ?' Obtenir la vraie objection"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Concrètement, si je dis oui aujourd'hui, je suis engagé sur quoi exactement ? Parce que j'ai besoin de savoir où je mets les pieds",
+        "sous_texte": "Question très positive déguisée en objection. Il est en train de calculer son risque. Il projette l'achat. C'est le moment de closer proprement avec clarté et transparence totale",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Détailler point par point : durée, montant, jalons, conditions de sortie, livrables, support. Être ultra transparent. C'est presque gagné s'il pose cette question"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vais être honnête avec vous : j'aime bien votre solution, je pense qu'elle pourrait nous aider, mais là tout de suite je peux pas me permettre de me disperser. On en reparle dans 3-4 mois quand j'aurai dégagé du temps ?",
+      "condition_declenchement": "Se déclenche quand le vendeur a bien travaillé la valeur et les objections techniques, mais n'a pas créé d'urgence ou de coût de l'inaction suffisant. Stéphane est convaincu intellectuellement mais pas émotionnellement. Il repousse à plus tard"
+    },
+    "pattern_escalade": "Stéphane commence toujours cordial ('Oui bonjour'). Si vous monopolisez la parole ou utilisez du jargon, il devient distant et monosyllabique ('Ouais ouais'). Si vous insistez malgré un refus poli, il devient cash voire cassant ('Écoutez, j'ai été clair'). Si vous démontrez expertise terrain et respect de son rythme, il s'ouvre progressivement et partage ses vraies peurs. Le point de bascule : quand il dit 'Concrètement...' suivi d'une question précise = vous avez gagné sa curiosité",
+    "piege_classique": "Stéphane donne facilement un 'Envoyez-moi ça par mail' qui semble être un feu vert mais est en réalité un cimetière. 80% des vendeurs s'arrêtent là et espèrent un retour qui ne viendra jamais. Le vrai piège : il est tellement poli et professionnel qu'on ne détecte pas qu'il a déjà décidé de ne pas donner suite. Seule parade : qualifier AVANT d'envoyer quoi que ce soit ('Si je vous envoie ça, qu'est-ce qui se passe concrètement après ?')"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise B2B vendant aux sociétés de services multi-techniques (nettoyage, sécurité, maintenance)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution/service destiné aux entreprises de services avec une proposition commerciale formalisée",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance post-proposition pour sortir du silence radio et obtenir des engagements clairs (oui/non/prochaine étape) sans être intrusif",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — SécuriClean Services",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour entreprises de services multi-techniques (nettoyage, sécurité, maintenance).",
+    "vous_vendez": "Une solution destinée aux sociétés comme SécuriClean pour optimiser leur gestion opérationnelle (planning, équipes, chantiers). Prix à confirmer selon configuration.",
+    "vous_appelez": "Stéphane Mercier, 52 ans, gérant de SécuriClean Services (38 salariés, nettoyage industriel + agents de sécurité, 2,8M€ de CA). Patron terrain, pragmatique, méfiant envers les promesses commerciales, débordé mais fier de sa réactivité. Utilise actuellement Excel, WhatsApp Pro et papier.",
+    "ce_que_vous_savez": [
+      "Vous lui avez envoyé une proposition commerciale il y a 10 jours",
+      "Aucun retour depuis : silence radio complet",
+      "Il a déjà testé un logiciel de planning il y a 3 ans (abandonné au bout de 8 mois : trop compliqué, équipes ne l'utilisaient pas)",
+      "Actuellement en croissance (+12% l'an dernier) mais vient de perdre un gros contrat Carrefour",
+      "Priorités : recruter 5 agents, appel d'offres mairie, tensions sociales internes"
+    ],
+    "votre_objectif": "Obtenir un engagement clair : oui avec prochaine étape concrète, non définitif, ou nouvelle date de décision précise.",
+    "vos_atouts": [
+      "Solution conçue spécifiquement pour les PME de services multi-techniques",
+      "Formation incluse pour les chefs d'équipe, pas seulement le dirigeant",
+      "Possibilité de pilote court (30 jours) sans engagement pour rassurer",
+      "ROI chiffrable : heures gagnées par semaine sur la gestion planning/pointages"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:24:44Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15013,
+    "total_time_s": 141.6
+  }
+}

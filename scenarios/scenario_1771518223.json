@@ -1,0 +1,398 @@
+{
+  "id": "scenario_1771518223",
+  "description_originale": "Vous appelez une transporteur routier de 30-60 salariés, flotte de 20-40 véhicules. C'est l'assistante d'exploitation qui décroche. Vous devez passer le barrage pour parler au gérant / directeur d'exploitation. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : transport_logistique]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "30-60 salariés, flotte de 20-40 véhicules",
+      "interlocuteur_principal": {
+        "poste": "Gérant ou Directeur d'exploitation",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante d'exploitation",
+          "role": "Barrage téléphonique / Gatekeeper",
+          "comportement": "Filtre les appels, protège son patron"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour optimiser l'exploitation transport ou réduire les coûts opérationnels",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Difficulté à franchir le barrage de l'assistante d'exploitation",
+        "Nécessité de convaincre un interlocuteur non-décideur avant d'accéder au décideur"
+      ],
+      "implicites": [
+        "Manque de crédibilité perçue lors de l'appel froid",
+        "Difficulté à créer de l'intérêt sans révéler toute l'offre au gatekeeper",
+        "Gestion de la légitimité face à un prospect qui reçoit probablement beaucoup d'appels commerciaux",
+        "Manque de techniques de contournement ou d'influence pour les assistantes protectrices"
+      ],
+      "probleme_racine": "Incapacité à établir rapidement la légitimité et la valeur de l'appel auprès du gatekeeper pour obtenir l'accès au décideur"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à franchir efficacement les barrages téléphoniques en contexte B2B transport-logistique, puis décrocher des rendez-vous avec les décideurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services B2B pour le secteur transport-logistique",
+      "entreprise_description": "Fournisseur de solutions pour entreprises de transport routier",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution présumée d'optimisation pour transporteurs routiers (gestion de flotte, réduction coûts, conformité réglementaire, ou autre service à valeur ajoutée)",
+      "proposition_valeur": "Aide les transporteurs à améliorer leur rentabilité, optimiser leur exploitation ou résoudre des problématiques opérationnelles spécifiques au secteur",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service proposé",
+        "Proposition de valeur concrète à communiquer",
+        "Arguments spécifiques pour convaincre le gatekeeper",
+        "Bénéfices mesurables de l'offre",
+        "Références clients dans le transport",
+        "Zone géographique de prospection",
+        "Positionnement prix"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Sandrine",
+      "nom": "Merlot",
+      "age": 42,
+      "poste": "Assistante d'exploitation",
+      "entreprise": {
+        "nom": "Transports Mercier & Fils",
+        "secteur": "Transport routier de marchandises (lots complets et messagerie)",
+        "taille": "47 salariés, 28 véhicules",
+        "ca_approximatif": "6,2M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Protectrice territoriale du temps de son patron",
+        "Méfiante envers les commerciaux depuis 15 ans d'expérience",
+        "Fière de son rôle de filtre et de sa connaissance métier"
+      ],
+      "motivations_profondes": [
+        "Être reconnue comme indispensable par son patron qui lui fait confiance aveuglément",
+        "Éviter que Didier (le gérant) perde son temps avec 'encore un vendeur de vent'",
+        "Maintenir son statut d'experte qui connaît l'exploitation mieux que certains commerciaux"
+      ],
+      "peurs_freins": [
+        "Que Didier lui reproche d'avoir laissé passer un appel inutile alors qu'il est débordé",
+        "Perdre sa crédibilité en transférant des appels non qualifiés",
+        "Être manipulée par des techniques commerciales qu'elle croit connaître par cœur",
+        "Que le commercial se plaigne à son patron qu'elle fait mal son travail"
+      ],
+      "rapport_aux_commerciaux": "Défensive et condescendante. Elle les a catalogués en 30 secondes. Dit souvent 'On a déjà tout ce qu'il faut' par réflexe avant même d'avoir compris l'offre. Considère 90% des appels comme des pertes de temps mais garde une micro-ouverture pour les 10% qui 'connaissent vraiment le métier'.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais froid, avec une légère impatience audible ('Transports Mercier bonjour'). Soupir imperceptible si elle devine que c'est un commercial. Tempo accéléré pour signaler qu'elle n'a pas de temps.",
+      "signaux_interet": [
+        "Ralentit légèrement son débit de parole",
+        "Pose une question de clarification ('Ah ? Et ça concerne quel aspect précisément ?')",
+        "Mentionne spontanément un problème actuel de l'entreprise ('Justement on a eu des soucis avec...')",
+        "Dit 'Attendez je note' ou 'Vous êtes de quelle société déjà ?'",
+        "Remplace le 'on a déjà' par 'on travaille avec X mais...'",
+        "Change de registre vers le tutoiement involontaire quand elle s'implique"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole systématiquement après 15 secondes de pitch",
+        "'Écoutez on ne cherche rien pour le moment'",
+        "'Envoyez-moi un mail' (code pour 'je vais le supprimer')",
+        "'Il est en rendez-vous' (vrai ou faux, peu importe)",
+        "Ton qui devient maternel-condescendant : 'Oui c'est gentil mais...'",
+        "Triple 'merci' accéléré : 'Merci merci merci au revoir'",
+        "Raccroche pendant que le commercial parle encore"
+      ],
+      "tics_langage": [
+        "'Écoutez...' (pour prendre le contrôle)",
+        "'Franchement...' (annonce un refus poli)",
+        "'On a déjà tout ce qu'il faut niveau...'",
+        "'Le souci c'est que...'",
+        "Soupirs audibles quand elle sent le pitch arriver",
+        "'Ouais... non mais...' (contradiction douce)",
+        "'Je connais, on a déjà eu des propositions'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "12 secondes maximum avant interruption. Si le commercial ne reprend pas sa respiration, elle coupe. Déteste les scripts lus. Apprécie paradoxalement les silences maîtrisés qui lui redonnent la main."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais tensions sur les marges. Didier Mercier (gérant, 58 ans) cumule direction commerciale et exploitation. Il est sur le terrain 60% du temps, stressé, dort mal à cause des contraintes gazole et réglementation. Sandrine gère planning chauffeurs, litiges clients, et fait barrage aux 12-15 appels commerciaux par semaine. Un chauffeur vient de partir, ambiance tendue.",
+      "priorites_actuelles": [
+        "Recruter un chauffeur PL (urgence)",
+        "Gérer les retards de livraison d'un client difficile",
+        "Préparer le contrôle DREAL dans 3 semaines",
+        "Ne PAS ajouter de charge mentale à Didier sauf si vraiment prioritaire"
+      ],
+      "experience_avec_offre_similaire": "A déjà vu passer : télématique embarquée (a un fournisseur), assurances, cartes carburant, places de marché transport, formations chauffeurs, logiciels TMS (utilisent encore Excel et un vieux truc DOS), pneus rechapés. Dit toujours 'on gère très bien comme ça'.",
+      "fournisseur_actuel": "Mix de solutions : un petit télématicien local (relation personnelle de Didier), Total pour le carburant (carte + ristourne), courtier en assurance. Pas de TMS moderne. Sandrine utilise Excel pour le planning et connaît tous les chauffeurs par prénom.",
+      "budget_disponible": "Didier ne confie jamais les enveloppes budgets à Sandrine mais elle sait qu'il regarde d'abord le ROI. Il peut débloquer 15-25K€ si c'est justifié et amorti sous 18 mois. Tout ce qui touche à la conformité règlementaire passe mieux que le 'confort'."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un nom de client commun dans le transport ('Je travaille déjà avec Transports Dubois à Villefranche')",
+        "Identifier précisément un problème actuel sans avoir été deviné ('Les gérants que j'accompagne perdent en moyenne 4h/semaine sur la gestion des plannings chauffeurs')",
+        "Respecter son expertise : 'Vous connaissez mieux que moi le terrain, c'est justement pour ça que...'",
+        "Être cash et court : 'Sandrine, 30 secondes : je bosse avec des transporteurs de votre taille, j'ai peut-être quelque chose pour Didier ou pas. Vous préférez que je vous explique en 2 phrases ou vous voulez que j'envoie un truc écrit d'abord ?'",
+        "Mentionner la conformité réglementaire (loi Macron, temps de conduite, archivage) si l'offre s'y prête",
+        "Proposer un échange court avec Didier à un moment stratégique ('Vous pensez qu'un mardi matin 8h ou un vendredi après 17h il est plus disponible ?')"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Dire 'je ne vends rien' (elle sait que c'est faux)",
+        "Demander 'comment allez-vous aujourd'hui ?' (hypocrisie détectée)",
+        "Insister après un premier refus ('Oui mais laissez-moi juste...')",
+        "Prétendre avoir déjà échangé avec Didier alors que c'est faux",
+        "Dénigrer leur organisation actuelle ('Vous n'avez pas de TMS ?! En 2025 ?!')",
+        "Demander 'qui s'occupe de [fonction]' comme si elle ne comptait pas",
+        "Appeler après 17h30 ou avant 8h15",
+        "Être condescendant sur le fait qu'elle soit 'l'assistante' et pas la décideuse",
+        "Lire un script sans respirer",
+        "Dire 'tous vos concurrents ont déjà signé' (elle déteste la pression)",
+        "Proposer un rendez-vous de 2h (Didier n'a jamais 2h)"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, Monsieur Mercier est en rendez-vous là, vous voulez quoi exactement ?",
+        "sous_texte": "Je sais que tu es commercial, je vais te filtrer avant même que tu aies fini ta phrase. Prouve-moi en 10 secondes que tu mérites mon attention.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter le filtrage, valoriser son rôle, être ultra-concis sur la valeur métier sans demander Didier tout de suite"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais non mais on a déjà tout ce qu'il faut niveau fournisseurs, on est très bien équipés merci",
+        "sous_texte": "C'est mon objection réflexe n°1 depuis 15 ans. Je ne sais même pas ce que tu vends mais je dis ça pour te décourager. Si tu insistes bêtement, je raccroche.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ne pas contredire frontalement. Reconnaître que beaucoup sont équipés ET identifier un angle mort spécifique qu'elle n'avait pas anticipé"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement là c'est pas le moment, on a un chauffeur qui vient de partir, on est débordés",
+        "sous_texte": "Là c'est sincère. On est vraiment sous l'eau. Mais si tu identifies que ton offre aide justement dans ce contexte, j'écoute 20 secondes de plus.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Empathie vraie + repositionner l'offre comme solution à cette problématique précise (gain de temps, optimisation avec un chauffeur de moins)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail avec vos infos, je transmettrai à Monsieur Mercier",
+        "sous_texte": "Je veux te faire partir poliment. Ce mail finira à la poubelle dans 90% des cas sauf si tu arrives à créer de l'engagement avant que je raccroche.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander un mini-engagement avant (1 question qualifiante) OU accepter le mail mais obtenir une date de rappel précise avec elle"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui d'accord... et vous travaillez avec qui d'autre dans le secteur ? Parce qu'on en voit passer hein...",
+        "sous_texte": "Je te teste. Si tu cites des noms que je connais, tu gagnes 30 secondes de crédibilité. Si tu évasives ou si tu cites des grosses structures qui n'ont rien à voir avec nous, tu perds.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 1-2 références précises de taille similaire dans la région si possible, sans en faire des tonnes. Transparence si démarrage."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le souci c'est que Didier il prend plus de rendez-vous comme ça, faut vraiment un truc béton. Il a pas le temps pour les démos de 2 heures vous voyez",
+        "sous_texte": "Je protège son agenda. Mais je t'ouvre une porte : si tu proposes un format court et concret, je peux faire passer. Prouve-moi que tu respectes son temps.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer format court (30min max), sur son site ou à un moment stratégique (tôt matin/fin journée), avec bénéfice mesurable annoncé"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attendez, vous me posez plein de questions là, mais c'est pour vendre quoi au juste ? Parce que moi je fais juste le filtrage hein",
+        "sous_texte": "Tu creuses trop, je commence à me sentir manipulée. Soit tu es flou sur ton offre (suspect), soit tu me prends pour la décideuse (je ne suis pas dupe). Recadre ou je coupe.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transparence immédiate sur l'offre + valoriser son rôle de conseil auprès de Didier sans la manipuler"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais nous on travaille déjà avec [fournisseur actuel], Didier les connaît depuis 10 ans, il va pas changer comme ça",
+        "sous_texte": "Relation installée = sécurité pour nous. Je ne vais pas créer une rupture sauf si tu m'apportes quelque chose que notre fournisseur actuel ne fait PAS. L'ancienneté compte ici.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer le fournisseur actuel. Identifier l'angle complémentaire ou la problématique non couverte. Approche 'en plus de' plutôt que 'à la place de'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je connais, on a déjà eu des propositions pour ce genre de trucs. Ça a jamais vraiment marché chez nous.",
+        "sous_texte": "J'ai une expérience négative (vraie ou présumée) qui me rend sceptique. Si tu ne creuses pas POURQUOI ça n'a pas marché, tu vas reproduire la même erreur de positionnement.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser l'expérience passée avec curiosité sincère (Qu'est-ce qui avait coincé précisément ?) et différencier son approche"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous me demandez le nombre de véhicules, le CA... mais c'est confidentiel tout ça, je peux pas donner ces infos comme ça au téléphone",
+        "sous_texte": "Test de confiance OU vraie prudence. Si tu forces, tu passes pour un indiscret. Si tu lâches prise intelligemment, tu gagnes du respect.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter la limite, proposer une fourchette approximative pour qualifier sans forcer, ou reporter au RDV avec Didier"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais non mais Didier il regarde d'abord le prix hein. Si c'est hors de prix ça sert à rien qu'il perde son temps",
+        "sous_texte": "Je veux te qualifier sur le budget avant de transférer. C'est une objection économique sincère mais aussi un test : es-tu capable de parler ROI sans bafouiller ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette honnête ET surtout parler en ROI / économies mesurables. Montrer que Didier récupère son investissement sous 18 mois max"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement on gère très bien avec notre système actuel, Excel et tout. On n'a jamais eu de problème majeur",
+        "sous_texte": "On est dans notre zone de confort. Le changement = risque et effort. Tu dois me faire réaliser les coûts cachés de notre système actuel sans me braquer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Technique des coûts invisibles : quantifier le temps passé, les erreurs évitées, les opportunités manquées. Pas de jugement, juste des faits."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attendez, là vous me vendez du rêve mais concrètement, vous avez des clients qui ont vraiment eu ces résultats ? Parce qu'entre la théorie et la pratique hein...",
+        "sous_texte": "Je suis sceptique sur tes promesses. Donne-moi de la preuve sociale concrète ou je vais considérer que tu survends. Je protège Didier des vendeurs de vent.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Cas client précis, chiffré, dans le même secteur et taille. Proposer un contact référence si possible. Humilité sur les limites aussi."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est qu'on a le contrôle DREAL dans 3 semaines, c'est vraiment pas le moment de lancer un nouveau truc",
+        "sous_texte": "C'est sincère. On est en période de stress réglementaire. SAUF si ton offre aide justement sur la conformité DREAL, auquel cas ça devient urgent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Si l'offre aide sur la conformité : c'est LE moment. Sinon : proposer un RDV exploratoire post-contrôle avec date précise (engagement)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez c'est gentil tout ça mais Didier il a déjà 15 choses dans la tête, il va me dire 'on verra plus tard' de toute façon",
+        "sous_texte": "Je projette son refus avant même de lui avoir parlé. Soit tu arrives à créer l'urgence, soit tu proposes un format tellement simple qu'il ne peut pas refuser.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer l'urgence rationnelle (coût de l'inaction) OU proposer un premier pas micro-engagement (15min, échange téléphonique, pas de démo)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais lui en parler et on vous rappelle si ça l'intéresse, d'accord ?",
+        "sous_texte": "Je veux clôturer poliment sans engagement. Dans 80% des cas, il n'y aura pas de rappel. Dernière chance de créer un point de contact concret ou c'est mort.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander QUAND elle lui en parle (moment précis) et proposer de rappeler soi-même à J+2 pour 'voir ce qu'il en pense'. Garder le contrôle du follow-up."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez votre doc par mail à son attention, comme ça il regarde quand il a 5 minutes",
+        "sous_texte": "Je délègue vers un support écrit qui risque de ne jamais être lu. Je veux raccrocher maintenant. Dernière tentative pour verrouiller un point de contact direct.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter l'envoi ET verrouiller un rappel avec elle (pas lui) dans 48h pour 'vérifier s'il a eu 2 minutes pour y jeter un œil'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais un rendez-vous de 30 minutes, faut quand même que je lui demande, je peux pas bloquer son agenda comme ça moi",
+        "sous_texte": "Je ne veux pas prendre la responsabilité de décider. Mais si tu me donnes des arguments béton à lui transmettre, je peux plaider ta cause. Aide-moi à le convaincre.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Lui donner 2-3 bullets à transmettre à Didier (bénéfices chiffrés) + proposer 2 créneaux précis pour faciliter + offrir de le rappeler directement si plus simple"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, vu comment c'est tendu en ce moment, je préfère être honnête avec vous : c'est pas le bon timing. Rappelez dans 2-3 mois peut-être",
+        "sous_texte": "C'est sincère. On est vraiment sous l'eau. Mais 'dans 2-3 mois' = langue de bois pour se débarrasser. Si tu ne crées pas un rappel structuré, je t'oublierai.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Respecter la situation MAIS proposer un 'pré-échange' très court (15min) pour préparer le terrain quand ce sera moins tendu. Ou verrouiller date précise dans l'agenda"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Merci merci merci, bonne journée à vous, au revoir !",
+        "sous_texte": "Triple merci accéléré = je raccroche MAINTENANT. Tu as perdu. Soit tu as été trop long, soit pas assez percutant, soit je n'ai jamais cru en ton offre. Fin de l'échange.",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Trop tard. Analyser ce qui a merdé en amont. Possible relance mail très courte 48h après sur un angle différent, mais ne pas rappeler dans la foulée."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, je vous ai laissé le temps de m'expliquer, j'ai été correcte, mais là sincèrement je vois pas en quoi ça nous aiderait concrètement. Didier il a pas besoin de ça en ce moment, donc merci mais on va passer notre tour.",
+      "condition_declenchement": "Le commercial n'a pas réussi à connecter son offre à un problème concret et urgent de l'entreprise. Sandrine a écouté par politesse mais n'a jamais vu la valeur ajoutée tangible. Elle clôture avec fermeté mais sans agressivité."
+    },
+    "pattern_escalade": "Sandrine suit une escalade en 4 niveaux : 1) Objection réflexe polie (filtrage automatique), 2) Test de crédibilité (références, connaissance métier), 3) Objections sincères si intérêt naissant (timing, budget, organisation), 4) Objection finale définitive si le commercial n'a pas prouvé la valeur OU ouverture contrôlée vers Didier si les 3 premiers niveaux sont franchis avec finesse. Elle ne donne JAMAIS Didier directement au premier appel sauf exception rarissime (recommandation chaude d'un pair).",
+    "piege_classique": "Le piège mortel avec Sandrine est de la traiter comme un simple barrage à contourner. Les commerciaux qui demandent Didier frontalement ('Je peux lui parler directement ?') ou qui minimisent son rôle ('Vous pourriez juste me le passer 2 minutes ?') déclenchent un blocage définitif. Elle a une mémoire d'éléphant et note mentalement les entreprises qui l'ont mal traitée. Le paradoxe : plus vous la respectez comme experte terrain, plus elle vous ouvre la porte vers Didier. Elle veut être CONVAINCUE avant de transférer, pas contournée. Le commercial doit 'vendre' à Sandrine d'abord, pas essayer de la 'hacker'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services B2B pour le secteur transport-logistique",
+      "description": "Fournisseur de solutions pour entreprises de transport routier"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution présumée d'optimisation pour transporteurs routiers (gestion de flotte, réduction coûts, conformité réglementaire, ou autre service à valeur ajoutée)",
+      "proposition_valeur": "Aide les transporteurs à améliorer leur rentabilité, optimiser leur exploitation ou résoudre des problématiques opérationnelles spécifiques au secteur",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à franchir efficacement les barrages téléphoniques en contexte B2B transport-logistique, puis décrocher des rendez-vous avec les décideurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Franchir le barrage assistante",
+    "vous_etes": "Commercial B2B spécialisé transport routier, vous prospectez des TPE/PME de transport pour décrocher des rendez-vous avec les gérants.",
+    "vous_vendez": "Solution d'optimisation pour transporteurs routiers (nature non précisée dans ce scénario — adaptez selon votre offre réelle). Budget décision : 15-25K€.",
+    "vous_appelez": "Sandrine Merlot, 42 ans, Assistante d'exploitation chez Transports Mercier & Fils (47 salariés, 28 véhicules, messagerie). Expérimentée, protectrice, méfiante envers les commerciaux.",
+    "ce_que_vous_savez": [
+      "Transports Mercier & Fils : transport routier lots complets et messagerie, 6,2M€ CA, croissance modérée mais marges sous pression",
+      "Didier Mercier (gérant, 58 ans) est sur le terrain 60% du temps, débordé, cumule direction commerciale et exploitation",
+      "Sandrine filtre 12-15 appels commerciaux/semaine, gère planning chauffeurs et litiges clients",
+      "Ils utilisent encore Excel pour le planning, un vieux logiciel DOS, ont un télématicien local et cherchent à recruter un chauffeur PL en urgence",
+      "Contrôle DREAL prévu dans 3 semaines — contexte tendu"
+    ],
+    "votre_objectif": "Passer le barrage de Sandrine et obtenir un créneau de rendez-vous avec Didier Mercier (20-30 min max).",
+    "vos_atouts": [
+      "Vous travaillez déjà avec 8 transporteurs régionaux de même taille (noms à citer si nécessaire)",
+      "Vous connaissez les vrais problèmes terrain : marges, conformité réglementaire, gestion planning, turn-over chauffeurs",
+      "Vous respectez le rôle de Sandrine et ne cherchez pas à forcer — vous qualifiez avant de solliciter Didier",
+      "Votre approche : ROI mesurable sous 18 mois, adapté aux PME transport"
+    ],
+    "duree_estimee": "3-6 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:23:43Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 18239,
+    "total_time_s": 178.3
+  }
+}

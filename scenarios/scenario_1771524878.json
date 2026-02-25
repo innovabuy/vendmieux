@@ -1,0 +1,329 @@
+{
+  "id": "scenario_1771524878",
+  "description_originale": "Le propriétaire / directeur d'hôtel d'une hôtel-restaurant indépendant ou petit groupe de 2-5 établissements (client existant) vous appelle, mécontent. Il y a eu un problème de livraison/service/qualité. Il menace de partir à la concurrence. Votre objectif : désamorcer la situation, trouver une solution, et préserver la relation commerciale.\n[Secteur : hotellerie_restauration]\n[Type d'appel : reclamation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "hotellerie_restauration",
+      "taille_entreprise": "PME - 2 à 5 établissements hôtel-restaurant indépendants",
+      "interlocuteur_principal": {
+        "poste": "Propriétaire-Directeur d'hôtel-restaurant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Fourniture/service B2B pour hôtellerie-restauration (produits alimentaires, équipements, linge, services ou consommables)",
+      "proposition_valeur_presumee": "Fiabilité, qualité, service de livraison régulier adapté aux besoins de l'hôtellerie-restauration",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "Concurrents dans le secteur des fournisseurs hôtellerie-restauration"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Problème de livraison/service/qualité ayant généré l'insatisfaction client",
+        "Client existant menaçant de partir à la concurrence",
+        "Réclamation en cours nécessitant gestion de crise"
+      ],
+      "implicites": [
+        "Défaillance dans le processus opérationnel (logistique, qualité, service client)",
+        "Risque de rupture de confiance avec un client fidèle",
+        "Possibles lacunes dans la gestion des attentes client",
+        "Probable manque de processus de prévention ou d'escalade des problèmes",
+        "Communication défaillante entre opérations et commercial"
+      ],
+      "probleme_racine": "Incapacité à gérer les situations de crise client et à transformer une réclamation en opportunité de renforcement de la relation commerciale par une résolution efficace et empathique"
+    },
+    "objections_mentionnees": [
+      "Menace de départ vers la concurrence",
+      "Mécontentement sur la qualité du service/produit/livraison"
+    ],
+    "objectif_formation": "Former les commerciaux à la gestion de réclamations clients en situation de crise : écoute active, empathie, résolution de problème, négociation de solution et préservation de la relation commerciale sur le long terme",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur B2B pour le secteur hôtellerie-restauration",
+      "entreprise_description": "Entreprise fournissant des produits ou services aux hôtels-restaurants (fournitures alimentaires, équipements, linge, consommables ou services associés)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Fourniture régulière de produits/services essentiels au fonctionnement quotidien d'établissements hôteliers et de restauration",
+      "proposition_valeur": "Partenaire fiable garantissant la continuité de service, la qualité constante et la réactivité pour permettre aux hôteliers-restaurateurs de se concentrer sur leur cœur de métier",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Autres clients dans l'hôtellerie-restauration (impliqué par le statut de client existant)"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance du client, historique de collaboration, possibilité de personnalisation du service",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service fourni",
+        "Type précis de problème (livraison/qualité/service)",
+        "Ancienneté de la relation commerciale",
+        "Volume d'affaires du client",
+        "Nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Beaumont",
+      "age": 52,
+      "poste": "Propriétaire-Directeur",
+      "entreprise": {
+        "nom": "Hôtel-Restaurant Le Relais des Cèdres",
+        "secteur": "Hôtellerie-Restauration traditionnelle",
+        "taille": "3 établissements (2 hôtels-restaurants + 1 brasserie), 42 employés",
+        "ca_approximatif": "2,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique et exigeant sur l'opérationnel",
+        "Loyal mais rancunier si trahi",
+        "Sensible à la reconnaissance de son statut"
+      ],
+      "motivations_profondes": [
+        "Protéger la réputation familiale bâtie en 30 ans",
+        "Maintenir un service irréprochable malgré la pénurie de main-d'œuvre",
+        "Être considéré comme un professionnel d'excellence, pas un client lambda",
+        "Transmettre une affaire saine à son fils qui rejoint la direction"
+      ],
+      "peurs_freins": [
+        "Décevoir sa clientèle fidèle (notamment les habitués du dimanche)",
+        "Se faire avoir par un fournisseur qui promet et ne tient pas",
+        "Perdre du temps en réunions inutiles alors qu'il gère 3 sites",
+        "Dépendre d'un seul fournisseur qui le prend pour acquis"
+      ],
+      "rapport_aux_commerciaux": "Apprécie ceux qui connaissent vraiment le métier de la restauration et déteste les donneurs de leçons qui n'ont jamais géré un coup de feu en cuisine. Respecte la franchise brutale plus que le baratin commercial",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec et légèrement agressif, avec une pointe d'ironie amère : 'Ah, vous vous souvenez que j'existe maintenant ?'",
+      "signaux_interet": [
+        "Commence à donner des détails concrets sur son fonctionnement ('Le samedi soir, je sers 85 couverts')",
+        "Pose des questions sur les process internes du fournisseur",
+        "Mentionne ses projets futurs ('Avec mon fils qui arrive...')",
+        "Baisse légèrement le ton et ralentit le débit",
+        "Utilise 'nous' au lieu de 'je' ('On pourrait peut-être...')"
+      ],
+      "signaux_rejet": [
+        "Soupirs audibles et longs silences pesants",
+        "Phrases coupées : 'Écoutez, là franchement...'",
+        "Invoque un autre appel : 'Attendez, j'ai mon chef de cuisine sur l'autre ligne'",
+        "Généralise : 'Vous êtes tous pareils dans votre boîte'",
+        "Ton définitif : 'Bon, on verra. Envoyez-moi un mail.' (= je ne lirai pas)"
+      ],
+      "tics_langage": [
+        "'Franchement' (répété 3-4 fois par conversation)",
+        "'Dans la vraie vie' (opposé à la théorie commerciale)",
+        "'Vous comprenez' (affirmatif, pas interrogatif)",
+        "'C'est simple' (avant d'exposer quelque chose de complexe)",
+        "Expressions métiers : 'en coup de feu', 'chambres retournées', 'rupture en plein service'"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Coupe la parole si le commercial récite un argumentaire. Phrase-réflexe : 'Oui, bon, là je vous arrête...'"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Pleine saison touristique, taux d'occupation à 78%, équipes en tension. Vient d'investir 45K€ dans la rénovation de 8 chambres. Son fils Thomas (28 ans) intègre la direction dans 3 mois après un MBA.",
+      "priorites_actuelles": [
+        "Assurer la continuité de service pendant la haute saison (juillet-août critiques)",
+        "Préparer la transmission progressive à son fils avec des process fiables",
+        "Réduire la dépendance aux fournisseurs peu fiables",
+        "Maintenir ses marges face à l'inflation (+18% sur les produits alimentaires)",
+        "Obtenir/conserver son Logis de France 3 cheminées"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 6 ans. Relation historiquement bonne avec Sandrine (ancienne commerciale), mais dégradée depuis qu'elle est partie il y a 8 mois. Le nouveau commercial ne passe jamais. Incident majeur il y a 3 semaines : livraison incomplète un samedi matin (manquait 40% de la commande), personne joignable, a dû envoyer son sous-chef chez Promocash en urgence.",
+      "fournisseur_actuel": "Vous (mais consultation active en cours avec Transgourmet et un grossiste régional recommandé par un confrère)",
+      "budget_disponible": "275K€/an tous achats confondus. Prêt à payer 8-12% plus cher qu'ailleurs pour la fiabilité absolue et un vrai service"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Reconnaître explicitement la faute sans excuse bidon ('On a merdé, Thierry, je le dis cash')",
+        "Prouver qu'on a compris la gravité pour LUI ('Un samedi matin, avec 78 chambres... j'imagine la panique')",
+        "Proposer un système de compensation CONCRET qui évite la récidive, pas juste un geste commercial",
+        "Montrer qu'on a fait ses devoirs (connaître ses établissements, sa réputation locale)",
+        "Parler succession/pérennité ('Avec Thomas qui arrive, vous avez besoin de partenaires solides')",
+        "Impliquer la direction ou un responsable senior dans la conversation (ça flatte son statut)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser l'incident ('C'est vrai que c'est embêtant, mais...')",
+        "Rejeter la faute sur la logistique/un collègue/le système informatique",
+        "Proposer un bon d'achat de 150€ comme si ça réglait tout",
+        "Parler de 'process qualité' et de 'démarche d'amélioration continue' (= blabla corporate)",
+        "Ne pas avoir préparé l'appel (redemander ce qui s'est passé)",
+        "Utiliser son prénom dès la première phrase ('Alors Thierry, comment ça va ?')",
+        "Proposer un RDV long ('Je passe vous voir, on prend 1h pour faire le point')",
+        "Mentionner que 'd'autres clients sont très satisfaits' (= 'tu fais chier toi')"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah, vous vous souvenez que j'existe maintenant ? Parce que ça fait trois semaines que j'attends qu'on me rappelle, hein.",
+        "sous_texte": "Je suis blessé qu'on m'ait négligé. Je teste si vous allez reconnaître la faute ou botter en touche comme les autres.",
+        "type": "test",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Reconnaissance immédiate et cash de la faute, sans excuse corporatiste. Montrer que vous savez exactement ce qui s'est passé."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement, là je suis en plein coup de feu. Vous appelez maintenant ? Il est midi quinze un vendredi.",
+        "sous_texte": "Vous ne connaissez même pas mon métier, comment vous voulez être un bon fournisseur ? Mais je décroche quand même parce que j'attends des réponses.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "S'excuser, proposer un horaire précis où on le rappelle (15h30 ou après 14h30). Montrer qu'on connaît les rythmes de la restauration."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Vous comprenez ce que ça veut dire, vous, un samedi matin sans la moitié de ma commande ? J'ai 78 chambres ce jour-là, le brunch du dimanche prévu avec 45 couverts déjà réservés, et personne au bout du fil. Personne.",
+        "sous_texte": "Je veux que vous ressentiez mon stress, mon humiliation. Si vous minimisez, je raccroche. Prouvez-moi que vous mesurez la gravité.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Reformulation empathique qui montre qu'on visualise concrètement la situation. Éviter absolument de justifier ou d'expliquer pourquoi c'est arrivé à ce stade."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et puis franchement, depuis que Sandrine est partie, c'est plus pareil. Le nouveau là, je l'ai vu une fois en six mois. Une fois. Dans la vraie vie, ça marche pas comme ça les relations commerciales.",
+        "sous_texte": "J'étais loyal parce qu'il y avait une relation humaine. Sans ça, vous êtes juste un fournisseur parmi d'autres. Je vous signale que je me sens abandonné.",
+        "type": "sincere",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Valider son ressenti, reconnaître que la transition a été mal gérée. Proposer un plan de relation concret et régulier, avec engagement de fréquence."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, j'ai déjà pris contact avec Transgourmet et un grossiste du coin que Ferrand m'a recommandé. Ils sont venus me voir, eux. Deux fois même.",
+        "sous_texte": "Je ne bluff pas, j'ai vraiment des alternatives. Mais si j'en parle, c'est que je vous laisse une chance. Donnez-moi une raison de rester, vite.",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne pas dénigrer la concurrence. Reconnaître que c'est normal qu'il cherche ailleurs vu ce qui s'est passé. Recentrer sur ce qu'on peut offrir d'unique, notamment l'historique."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui bon, un geste commercial, un bon d'achat... C'est sympa mais ça règle pas le problème de fond. Comment je sais que ça va pas se reproduire dans trois mois ?",
+        "sous_texte": "Votre argent ne m'achète pas. Je veux des garanties structurelles. Si vous n'avez que du financier à proposer, vous n'avez rien compris.",
+        "type": "sincere",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Présenter un dispositif préventif concret : astreinte dédiée, double-vérification avant livraison, numéro direct, process d'alerte. Du tangible, pas du discours."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Vous me parlez de process qualité, de démarche d'amélioration continue. J'en ai entendu des belles comme ça. Dans les faits, ça donne quoi ?",
+        "sous_texte": "Arrêtez le blabla corporate. Je veux du concret, du terrain, du mesurable. Parlez-moi comme à un professionnel, pas comme à un client qu'on endort avec des slides.",
+        "type": "test",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Traduire immédiatement en actions concrètes chiffrées : 'Concrètement, Thierry, ça veut dire que...' + exemples terrain d'autres clients similaires qui ont eu le même souci."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que j'ai plus confiance, vous comprenez. Six ans de relation, et là pouf, plus personne. Comment vous voulez que je me repose sur vous pour les trois prochaines années ?",
+        "sous_texte": "La confiance est rompue. C'est émotionnel, pas rationnel. Votre solution technique ne suffira pas si vous ne réparez pas la relation humaine d'abord.",
+        "type": "sincere",
+        "difficulte": 10,
+        "reponse_efficace_indice": "Reconnaître explicitement la rupture de confiance. Proposer une phase de reconstruction progressive avec jalons mesurables. Impliquer quelqu'un de senior pour montrer l'importance."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et puis là, avec Thomas qui arrive dans trois mois, je veux lui laisser des partenaires solides, fiables. Je vais pas lui refiler un fournisseur qui déconne. Ça fait pas sérieux.",
+        "sous_texte": "Mon héritage et ma crédibilité de père sont en jeu. Si je garde un fournisseur défaillant, je démarre mal la transmission. C'est un enjeu identitaire pour moi.",
+        "type": "sincere",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Valoriser cette vision long terme. Proposer de rencontrer Thomas aussi, montrer qu'on se projette dans la nouvelle ère de l'entreprise. Parler pérennité, pas dépannage."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, c'est pas une question de prix. Je peux payer un peu plus cher si c'est carré. Mais là, c'est la fiabilité qui me manque. Vous me garantissez quoi, concrètement ?",
+        "sous_texte": "Je suis prêt à rester si vous me rassurez vraiment. Mais j'ai besoin d'engagements précis, pas de promesses floues. Dernier test avant ma décision.",
+        "type": "test",
+        "difficulte": 9,
+        "reponse_efficace_indice": "Proposer des engagements contractuels précis avec compensation automatique en cas de défaillance. Transparence totale sur les limites aussi. Montrer qu'on met notre peau dans le jeu."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, là franchement je vais devoir vous laisser, j'ai mon chef en cuisine qui a un souci. On verra. Envoyez-moi un mail avec tout ça.",
+        "sous_texte": "Je ne suis pas convaincu mais je ne veux pas dire non brutalement. Si vous me laissez partir comme ça, c'est mort. Si vous trouvez un angle pour me retenir 30 secondes, peut-être...",
+        "type": "tactique",
+        "difficulte": 8,
+        "reponse_efficace_indice": "Ne PAS accepter le mail comme conclusion. Bloquer 20 secondes : 'Thierry, juste 20 secondes' + proposition d'un élément immédiat (visite du directeur ops, test sur 2 semaines, etc.) qui le retient."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je dis pas non, mais faut que j'en parle avec Thomas aussi. Il a des idées, lui, sur comment moderniser tout ça. Peut-être qu'il voudra d'autres fournisseurs, plus digitalisés.",
+        "sous_texte": "J'utilise mon fils comme excuse pour garder une porte de sortie. Mais c'est aussi une vraie préoccupation : est-ce que vous serez au niveau de la nouvelle génération ?",
+        "type": "tactique",
+        "difficulte": 7,
+        "reponse_efficace_indice": "Proposer de rencontrer Thomas, montrer votre capacité d'innovation (appli de commande, suivi temps réel, etc.). Transformer l'objection en opportunité de démontrer votre modernité."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon, vous savez quoi ? Je vais être cash avec vous : Transgourmet m'a fait une offre à 11% moins cher avec livraison garantie sous 24h même le samedi. Vous faites quoi de mieux, vous ?",
+      "condition_declenchement": "Déclenchée si le commercial n'a pas suffisamment reconstruit la confiance émotionnelle et tente de closer trop vite sur du rationnel/prix sans avoir réparé la relation humaine et proposé des garanties structurelles solides"
+    },
+    "pattern_escalade": "Thierry commence par l'agressivité défensive (attaque pour se protéger), puis passe à l'exposition de sa souffrance (vulnérabilité contrôlée) si le commercial encaisse sans se justifier. Si la reconnaissance est authentique, il teste la solidité des solutions (phase rationnelle). Enfin, il cherche la réassurance émotionnelle sur le long terme (transmission, pérennité). S'il sent une faille à n'importe quel moment, il revient en mode défensif et sort l'artillerie lourde (concurrence, menace de rupture).",
+    "piege_classique": "Le commercial croit avoir gagné quand Thierry se calme et devient moins agressif, donc il accélère vers le closing. ERREUR : le calme de Thierry signifie qu'il écoute, pas qu'il est convaincu. Il faut continuer à construire, à rassurer, à impliquer. S'il dit 'on verra', ce n'est PAS un accord mou, c'est un rejet poli. Le vrai signal d'achat : quand il commence à projeter concrètement ('Donc si on reprend en septembre...', 'Thomas voudra sûrement vous rencontrer', 'Pour les commandes du week-end, comment on fait ?'). Tant qu'il ne projette pas, il n'achète pas."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur B2B pour le secteur hôtellerie-restauration",
+      "description": "Entreprise fournissant des produits ou services aux hôtels-restaurants (fournitures alimentaires, équipements, linge, consommables ou services associés)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Fourniture régulière de produits/services essentiels au fonctionnement quotidien d'établissements hôteliers et de restauration",
+      "proposition_valeur": "Partenaire fiable garantissant la continuité de service, la qualité constante et la réactivité pour permettre aux hôteliers-restaurateurs de se concentrer sur leur cœur de métier",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Autres clients dans l'hôtellerie-restauration (impliqué par le statut de client existant)"
+      ],
+      "avantages_vs_concurrence": "Relation établie, connaissance du client, historique de collaboration, possibilité de personnalisation du service"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Former les commerciaux à la gestion de réclamations clients en situation de crise : écoute active, empathie, résolution de problème, négociation de solution et préservation de la relation commerciale sur le long terme",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Gestion de crise client — Relance après incident majeur de livraison",
+    "vous_etes": "Commercial B2B chez un grossiste alimentaire/équipementier pour l'hôtellerie-restauration, en poste depuis 8 mois après le départ de Sandrine, l'ancienne commerciale.",
+    "vous_vendez": "Fournitures régulières pour hôtels-restaurants (alimentaire, équipements ou consommables) — Budget client : 275K€/an.",
+    "vous_appelez": "Thierry Beaumont, 52 ans, propriétaire-directeur du Relais des Cèdres (3 établissements, 42 employés). Client depuis 6 ans, historiquement fidèle mais actuellement furieux et en consultation active avec vos concurrents.",
+    "ce_que_vous_savez": [
+      "Incident grave il y a 3 semaines : livraison incomplète (40% manquant) un samedi matin en pleine saison, personne joignable côté fournisseur",
+      "Il a dû envoyer son sous-chef chez Promocash en urgence pendant un coup de feu",
+      "Depuis le départ de Sandrine il y a 8 mois, la relation s'est dégradée (vous ne passez jamais)",
+      "Il compare actuellement vos offres avec Transgourmet et un grossiste régional",
+      "Son fils Thomas intègre la direction dans 3 mois — période charnière pour la succession"
+    ],
+    "votre_objectif": "Reconnaître la faute franchement, prouver que vous avez compris la gravité pour son business, et proposer un plan concret anti-récidive qui justifie qu'il vous garde comme fournisseur.",
+    "vos_atouts": [
+      "6 ans d'historique commun, vous connaissez ses 3 établissements et son fonctionnement",
+      "Possibilité d'impliquer votre directeur régional dans la conversation (statut)",
+      "Capacité à proposer un système de backup dédié pour ses livraisons critiques",
+      "Budget à disposition pour geste commercial substantiel + garanties opérationnelles"
+    ],
+    "duree_estimee": "6-10 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:14:38Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16166,
+    "total_time_s": 146.3
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "id": "scenario_1771517892",
+  "description_originale": "Vous appelez à froid le directeur des opérations ou directeur commercial d'une groupe de services multi-sites de 200+ salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : obtenir un rendez-vous physique ou visio de 45 minutes. Le prospect a un agenda chargé et des process d'achat structurés.\n[Secteur : services_entreprises]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "200+ salariés, multi-sites",
+      "interlocuteur_principal": {
+        "poste": "directeur des opérations ou directeur commercial",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "NON_SPECIFIE",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospection à froid sans connaissance préalable",
+        "Prospect avec agenda chargé",
+        "Process d'achat structurés à contourner"
+      ],
+      "implicites": [
+        "Difficulté à créer l'intérêt immédiat",
+        "Risque de barrage secrétariat",
+        "Besoin de crédibilité instantanée",
+        "Concurrence forte sur ce type de cible",
+        "Durée de rendez-vous ambitieuse (45 min) pour un appel froid"
+      ],
+      "probleme_racine": "Créer suffisamment de valeur perçue en quelques secondes pour qu'un décideur occupé accepte de bloquer 45 minutes d'agenda sans connaissance préalable ni demande initiale"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de décideurs B2B senior dans des organisations structurées, avec obtention de rendez-vous qualifié",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "NON_SPECIFIE",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique ou rdv_visio",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature de l'offre commerciale",
+        "Proposition de valeur",
+        "Identité de l'entreprise vendeuse",
+        "Problématiques business du prospect",
+        "Arguments de valeur",
+        "Pricing",
+        "Références clients"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Mercier",
+      "age": 48,
+      "poste": "Directeur des Opérations",
+      "entreprise": {
+        "nom": "Axione Services",
+        "secteur": "Facility management et services aux entreprises",
+        "taille": "340 salariés répartis sur 8 agences régionales",
+        "ca_approximatif": "28M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Territorial sur son périmètre décisionnel",
+        "Fatigué des sollicitations commerciales"
+      ],
+      "motivations_profondes": [
+        "Prouver son ROI au COMEX tous les trimestres",
+        "Éviter les projets qui plantent et entachent sa réputation",
+        "Obtenir de la reconnaissance en interne plus que des médailles externes",
+        "Ne pas perdre de temps avec des interlocuteurs incompétents"
+      ],
+      "peurs_freins": [
+        "Être perçu comme celui qui dépense sans résultats mesurables",
+        "Se faire avoir par un beau discours commercial puis galérer en post-vente",
+        "Que sa N+1 (DG) lui impose un fournisseur qui ne convient pas au terrain",
+        "Manquer un virage stratégique par conservatisme"
+      ],
+      "rapport_aux_commerciaux": "Sceptique par défaut. A vécu 3 mauvaises expériences récentes avec des promesses non tenues. Apprécie l'efficacité et déteste le bullshit. Teste systématiquement la crédibilité dans les 30 premières secondes.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Courtois mais distant, avec une pointe d'agacement si l'accroche est maladroite. Commence souvent par 'Écoutez, je suis un peu pris là...' même quand c'est faux",
+      "signaux_interet": [
+        "Pause dans son multitâche (on entend qu'il arrête de taper sur son clavier)",
+        "Pose une question précise sur un chiffre ou un process",
+        "Mentionne spontanément un problème opérationnel actuel",
+        "Demande 'Vous travaillez avec qui dans le secteur?'"
+      ],
+      "signaux_rejet": [
+        "Respiration exaspérée audible",
+        "Répond par monosyllabes: 'Oui... non... peut-être...'",
+        "Coupe avec 'Envoyez-moi un mail, je regarderai'",
+        "Commence à parler de son fournisseur actuel de manière élogieuse (souvent faux)",
+        "Ton qui devient condescendant: 'Vous comprenez, dans MA réalité opérationnelle...'"
+      ],
+      "tics_langage": [
+        "Utilise 'Concrètement' avant chaque demande de précision",
+        "Dit 'Hein' en fin de phrase quand il attend confirmation",
+        "Emploie 'Franchement' quand il est sceptique",
+        "Ponctue de 'Voilà voilà' quand il veut clore le sujet"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum. Au-delà, décroche mentalement ou interrompt. Attend qu'on lui POSE DES QUESTIONS sur sa réalité plutôt qu'on lui SERVE un discours."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 12% sur l'année mais tensions sur les marges. Pression du COMEX pour optimiser les coûts sans dégrader la qualité de service. Ouverture d'un nouveau site à Lyon prévue T3. Turnover élevé (23%) sur les équipes terrain.",
+      "priorites_actuelles": [
+        "Harmoniser les process entre agences (actuellement chacune fonctionne différemment)",
+        "Réduire le taux d'absentéisme des équipes terrain",
+        "Améliorer le suivi de la performance opérationnelle en temps réel",
+        "Préparer l'expansion géographique sans exploser les coûts de structure"
+      ],
+      "experience_avec_offre_similaire": "A testé une solution il y a 18 mois qui a été un échec cuisant (mauvaise adoption terrain, support client inexistant, surcoût à l'usage). Depuis, méfiance renforcée.",
+      "fournisseur_actuel": "Mix de solutions : ERP maison vieillissant + Excel + un logiciel métier dont il n'est pas satisfait mais qui 'fait le job'",
+      "budget_disponible": "Enveloppe de 80-120K€ pour projets d'optimisation opérationnelle sur l'année, mais déjà engagée à 60%. Doit justifier tout investissement >15K€ au COMEX avec business case solide."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un client similaire (taille/secteur) avec résultat chiffré précis",
+        "Démontrer qu'on COMPREND ses contraintes terrain (pas juste la théorie)",
+        "Proposer une approche progressive/pilote plutôt qu'un big bang",
+        "Poser des questions intelligentes qui révèlent une vraie expertise sectorielle",
+        "Reconnaître d'emblée que ce n'est peut-être pas le bon moment (reverse psychology efficace sur lui)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing générique type 'leader du marché', 'solution innovante'",
+        "Insister lourdement quand il dit qu'il n'a pas le temps",
+        "Promettre des résultats rapides sans connaître sa réalité",
+        "Critiquer frontalement son organisation actuelle",
+        "Ne pas être capable de donner un ordre de grandeur tarifaire quand il le demande",
+        "Vouloir parler au DG ou contourner son autorité"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis vraiment pris là, c'est pour quoi exactement ?",
+        "sous_texte": "Je ne vous connais pas, vous me dérangez, prouvez-moi en 10 secondes que ça vaut le coup que je vous écoute sinon je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement la contrainte temps + donner UNE raison précise et chiffrée liée à son secteur"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "On a déjà tout ce qu'il nous faut niveau outils, franchement",
+        "sous_texte": "J'ai eu 3 mauvaises expériences récentes, je ne veux pas me relancer dans un projet qui va foirer, et en plus j'ai déjà investi",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contester frontalement. Demander ce qui fonctionne bien actuellement et ce qui pourrait être amélioré à la marge"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Envoyez-moi un mail, je regarderai avec mon équipe",
+        "sous_texte": "Je veux me débarrasser de vous poliment. Ce mail ira directement à la corbeille",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail MAIS obtenir une micro-information ou poser UNE question qualifiante avant de raccrocher"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais vous comprenez, dans MA réalité opérationnelle, avec 8 agences, c'est pas si simple hein",
+        "sous_texte": "Vous me sortez de la théorie de consultant, mais vous ne connaissez rien à mes contraintes terrain. Prouvez-moi que vous captez vraiment",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rebondir avec une question sur SA spécificité multi-sites et citer un exemple client similaire avec contrainte identique"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et concrètement, ça coûte combien votre truc ?",
+        "sous_texte": "J'ai un budget serré et déjà engagé. Si c'est hors budget je coupe court maintenant. Aussi : je teste si vous êtes transparent ou si vous bottez en touche",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette réaliste tout en la contextualisant par rapport aux bénéfices. Ne JAMAIS esquiver cette question"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà, mais là j'ai vraiment pas le temps de me lancer dans un projet de ce type, on a l'ouverture de Lyon qui arrive",
+        "sous_texte": "C'est vrai que je suis surchargé, mais c'est aussi une échappatoire facile. Si vous me montrez que ça peut AIDER pour Lyon, je réévalue",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer l'objection en opportunité : comment une solution pourrait justement faciliter l'ouverture de Lyon plutôt que d'être un projet concurrent"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On avait testé un truc similaire il y a 2 ans, ça a été la catastrophe. Les équipes terrain n'ont jamais adhéré",
+        "sous_texte": "J'ai un traumatisme d'échec qui a taché ma réputation en interne. Je ne veux SURTOUT PAS revivre ça. Convainquez-moi que cette fois c'est différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'échec passé avec empathie pour comprendre les causes, puis montrer EN QUOI votre approche évite ces écueils précis"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais enfin 'leader du marché', 'solution innovante', tout ça, tous les commerciaux me disent la même chose hein",
+        "sous_texte": "Votre discours marketing me gave. Donnez-moi du concret, des chiffres, des noms de clients, sinon vous êtes comme tous les autres",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Arrêter immédiatement tout jargon marketing. Passer aux cas clients chiffrés et vérifiables dans son secteur"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous travaillez avec qui exactement dans le facility management ?",
+        "sous_texte": "Signal d'intérêt déguisé. Je veux vérifier votre crédibilité sectorielle et potentiellement appeler ces références en douce",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Citer 2-3 références précises avec taille/problématique similaire. Si possible proposer mise en relation"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que mon fournisseur actuel, bon, il est pas parfait, mais au moins lui il connaît nos process, on a nos habitudes",
+        "sous_texte": "Peur du changement + coût de switching perçu comme élevé. Mais en vrai je ne suis pas satisfait, sinon je ne continuerais pas à vous écouter",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valoriser ce qui fonctionne + quantifier l'écart de valeur potentiel + proposer transition progressive pour limiter risque"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, sauf que moi je dois présenter un business case béton au COMEX pour tout ce qui dépasse 15K€, et franchement j'ai pas le temps de monter ça",
+        "sous_texte": "Je suis intéressé MAIS vous me demandez un effort administratif que je n'ai pas envie de fournir. Facilitez-moi la vie ou oubliez",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer de co-construire le business case avec lui, voire fournir un template avec ses données déjà pré-remplies"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et le support client, c'est comment ? Parce que la dernière fois on s'est retrouvés avec un 0800 où personne connaissait notre dossier",
+        "sous_texte": "Traumatisme de la solution précédente. Le support post-vente est un critère MAJEUR, peut-être même plus que le produit lui-même",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler précisément l'organisation support (interlocuteur dédié, SLA, processus d'escalade) avec preuve tangible"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, mais là je préfère qu'on se rappelle dans 2-3 mois, après l'ouverture de Lyon, voilà",
+        "sous_texte": "Je reporte pour ne pas décider maintenant. Peut être sincère (vraiment débordé) ou tactique (gagner du temps pour comparer ou oublier)",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter le timing MAIS caler un point intermédiaire concret (date précise) et obtenir un micro-engagement (ex: présentation équipe)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faudrait que j'en parle à la DG avant, c'est elle qui valide ce type d'investissement",
+        "sous_texte": "Soit vrai (besoin validation hiérarchique) soit faux (échappatoire). Je teste aussi si vous allez essayer de court-circuiter pour parler à ma N+1",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Respecter la hiérarchie. Proposer de l'armer pour pitcher en interne OU rdv à 3 en le positionnant comme sponsor du projet"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "45 minutes de rendez-vous, franchement, j'ai pas ça à vous donner. Maximum 20 minutes en visio",
+        "sous_texte": "Votre demande est perçue comme excessive pour quelqu'un qui ne me connaît pas. Je négocie à la baisse pour garder le contrôle",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter 20-30 min en expliquant précisément ce qui sera couvert. Promettre d'arrêter pile à l'heure même si inachevé"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, faites-moi une démo rapide là maintenant au téléphone, si ça me parle on calera un truc après",
+        "sous_texte": "Je veux évaluer MAINTENANT sans m'engager sur un créneau agenda. Test de votre réactivité et de la simplicité réelle de votre solution",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Teaser de 2 minutes max sur 1 fonctionnalité clé liée à SON problème + frustrer volontairement pour donner envie de voir plus en rdv formel"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous comprenez, avec le turnover qu'on a, si je lance un truc et que les équipes adhèrent pas, je me tire une balle dans le pied",
+        "sous_texte": "Ma vraie peur = échec visible en interne qui entache ma crédibilité. J'ai besoin de garanties sur l'adoption terrain, pas juste sur le produit",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer pilote limité sur 1 agence + mesure adoption + accompagnement change management inclus. Droit d'arrêt sans pénalité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "J'ai déjà 3 autres fournisseurs qui me sollicitent sur le sujet, pourquoi vous plutôt qu'eux ?",
+        "sous_texte": "Peut être vrai ou faux. Je veux voir si vous savez vous différencier clairement OU je cherche à négocier en créant de la compétition",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer concurrence. Recentrer sur SA problématique unique et comment VOUS y répondez spécifiquement. Pivot vers ce qui compte pour LUI"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est pas inintéressant, mais concrètement là tout de suite j'ai pas la bande passante mentale pour me projeter. Franchement. Rappelez-moi plutôt en septembre, après les congés, on verra à ce moment-là, hein",
+      "condition_declenchement": "Apparaît quand le vendeur a globalement bien géré mais n'a pas créé d'urgence suffisante ou de coût de l'inaction. Stéphane trouve une excuse temporelle pour repousser sans dire non. Vraie si surchargé, fausse si pas convaincu du ROI"
+    },
+    "pattern_escalade": "Stéphane commence toujours courtois mais distant. S'il sent du bullshit commercial ou de l'insistance lourde, il passe en mode 'condescendant-professoral' ('Vous comprenez, dans MA réalité...'). Si ça continue, il devient directif et cassant ('Bon, on va arrêter là'). L'escalade est rapide (30-45 sec entre chaque niveau). Inversement, si le vendeur démontre expertise + respect du temps + questions intelligentes, il s'ouvre progressivement et peut même devenir collaboratif ('Tiens, ça c'est une bonne question, laissez-moi réfléchir').",
+    "piege_classique": "Stéphane dit souvent 'Envoyez-moi un mail' ou 'On verra ça plus tard' alors qu'il est en fait moyennement intéressé. Le vendeur qui lâche à ce moment perd. L'autre piège : il peut mentionner un fournisseur actuel 'satisfaisant' alors qu'il ne l'est pas vraiment - c'est un test de persévérance. Enfin, il pose parfois des questions très précises sur le prix ou la technicité pour TESTER la crédibilité, pas forcément parce que c'est bloquant. Le vendeur qui panique ou botte en touche perd instantanément sa confiance."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "NON_SPECIFIE",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique ou rdv_visio",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de décideurs B2B senior dans des organisations structurées, avec obtention de rendez-vous qualifié",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — Directeur Opérations Facility Management",
+    "vous_etes": "Commercial B2B spécialisé dans l'optimisation opérationnelle pour les entreprises de services multi-sites.",
+    "vous_vendez": "Une solution d'optimisation des opérations pour entreprises de services (nature et prix à adapter selon votre offre réelle).",
+    "vous_appelez": "Stéphane Mercier, 48 ans, Directeur des Opérations chez Axione Services — 340 personnes, 8 agences, secteur facility management. Pragmatique, territorial, saturé de sollicitations commerciales. Teste votre crédibilité dans les 30 premières secondes.",
+    "ce_que_vous_savez": [
+      "Axione Services : 340 salariés sur 8 agences régionales, CA ~28M€, croissance 12% mais pression sur les marges",
+      "Ouverture d'un nouveau site à Lyon prévue T3, turnover élevé (23%) sur les équipes terrain",
+      "Process non harmonisés entre agences, mix de solutions vieillissantes (ERP maison + Excel + logiciel métier insatisfaisant)",
+      "Stéphane a vécu un échec cuisant il y a 18 mois avec une solution similaire — méfiance renforcée depuis"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique ou visio de 45 minutes pour approfondir ses enjeux d'harmonisation et d'optimisation opérationnelle.",
+    "vos_atouts": [
+      "Expertise sectorielle services multi-sites avec résultats chiffrés",
+      "Approche progressive par pilote (pas de big bang)",
+      "Compréhension des contraintes terrain vs théorie",
+      "Capacité à justifier le ROI avec business case solide"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:18:12Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14472,
+    "total_time_s": 135.2
+  }
+}

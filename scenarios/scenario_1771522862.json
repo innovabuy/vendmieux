@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771522862",
+  "description_originale": "Vous avez présenté votre offre au DSI ou VP Sales d'une éditeur SaaS de 150-300 salariés, plusieurs produits, marché B2B il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : tech_saas]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "150-300 salariés",
+      "interlocuteur_principal": {
+        "poste": "DSI ou VP Sales",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Potentiellement CEO ou CFO pour validation budgétaire",
+          "role": "décideur_final"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution ou service B2B destiné aux éditeurs SaaS",
+      "proposition_valeur_presumee": "Optimisation des opérations, croissance commerciale ou amélioration technique pour éditeurs SaaS multi-produits",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation initiale",
+        "Perte de momentum commercial",
+        "Difficulté à relancer sans paraître insistant"
+      ],
+      "implicites": [
+        "Manque de stratégie de suivi structurée",
+        "Absence probable d'engagement fort lors du premier RDV",
+        "Pas de jalons définis lors de la présentation initiale",
+        "Incapacité à maintenir l'urgence décisionnelle",
+        "Manque de multi-threading (contacts multiples dans l'organisation)"
+      ],
+      "probleme_racine": "Absence de cadre décisionnel clair et d'engagement mutuel établis lors du premier RDV, couplée à une stratégie de suivi passive plutôt que proactive"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser l'art de la relance commerciale post-présentation : débloquer un processus décisionnel stagnant, comprendre les vrais freins, repositionner la valeur et obtenir un engagement concret sans brûler la relation",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services ou solutions pour éditeurs SaaS B2B",
+      "entreprise_description": "Fournisseur de solutions ou services destinés aux éditeurs de logiciels SaaS en croissance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B présentée au DSI ou VP Sales, suggérant une offre technique, commerciale ou opérationnelle pour éditeurs SaaS multi-produits",
+      "proposition_valeur": "Aide les éditeurs SaaS à améliorer leur performance technique, commerciale ou opérationnelle sur un marché B2B compétitif",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise de l'offre vendue",
+        "Contenu et résultat du premier RDV",
+        "Budget et fourchette de prix",
+        "Concurrents en lice",
+        "Raisons du silence (devinées mais non confirmées)",
+        "Timeline décisionnelle du prospect",
+        "Nom et positionnement de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathieu",
+      "nom": "Delaroche",
+      "age": 42,
+      "poste": "Directeur des Systèmes d'Information",
+      "entreprise": {
+        "nom": "Nimbus Solutions",
+        "secteur": "Éditeur SaaS B2B (gestion de projet et collaboration)",
+        "taille": "220 salariés",
+        "ca_approximatif": "28M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Analytique jusqu'à la paralysie décisionnelle",
+        "Perfectionniste défensif (évite l'erreur plus qu'il ne cherche la victoire)",
+        "Politiquement prudent en interne"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa crédibilité technique auprès du COMEX après un projet raté en 2022",
+        "Prouver que la DSI peut être stratégique et pas seulement un centre de coûts",
+        "Sécuriser son poste dans un contexte de levée de fonds imminente (série B)",
+        "Éviter absolument d'être celui qui a dit oui à un outil qui échoue"
+      ],
+      "peurs_freins": [
+        "Prendre une décision trop vite et se tromper publiquement",
+        "Que le VP Sales (David, 38 ans, alpha dominant) torpille son projet en COMEX",
+        "Dépenser du budget DSI sur quelque chose qui ne sera pas adopté par les équipes",
+        "Paraître naïf face aux commerciaux après s'être fait avoir par un éditeur en 2021",
+        "Devoir gérer un énième changement d'outil alors que les équipes sont fatiguées"
+      ],
+      "rapport_aux_commerciaux": "Méfiance polie. Les perçoit comme des 'beaux parleurs' qui minimisent la complexité technique. Teste leur solidité en posant des questions pièges. Apprécie la franchise mais la suspecte toujours.",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distant. 'Oui oui, je me souviens' même quand c'est flou. Commence souvent par 'Écoutez, j'ai peu de temps là...' pour garder le contrôle",
+      "signaux_interet": [
+        "Demande spontanément 'Et niveau pricing, on est sur quel ordre de grandeur déjà ?'",
+        "Évoque un cas d'usage précis : 'Parce que nous, le problème c'est surtout sur...'",
+        "Mentionne un nom : 'Il faudrait que j'en parle à Sylvie de la compta' (= décision pas encore morte)",
+        "Prend des notes sur son bloc-notes physique (vieille école)",
+        "Pose des questions sur le délai d'implémentation et l'accompagnement"
+      ],
+      "signaux_rejet": [
+        "Phrase assassine : 'Oui enfin c'est un peu ce que nous promettait aussi [concurrent] et bon...'",
+        "Regarde son téléphone ostensiblement",
+        "Répond 'Oui oui c'est intéressant' sans poser de question de clarification",
+        "Utilise le futur hypothétique : 'On pourrait éventuellement y réfléchir dans 6 mois'",
+        "Délègue : 'Vous devriez plutôt voir avec Kévin, mon responsable infra'",
+        "Silence gêné après une question sur le budget disponible"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Ouais... non mais...'",
+        "Abuse du 'En fait' en début de phrase pour recadrer",
+        "Dit 'Voilà voilà' quand il veut clore un sujet",
+        "'C'est pas faux' (au lieu de 'C'est vrai') quand il concède un point",
+        "'On va dire' pour relativiser : 'C'est intéressant, on va dire'",
+        "Soupir audible avant de répondre à une question budgétaire"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Environ 45 secondes max. Au-delà, commence à décrocher visiblement. Coupe poliment : 'Oui donc en gros, si je résume...' pour reprendre la main. Déteste les démos PowerPoint de plus de 15 slides."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Nimbus Solutions est en croissance (135% sur 3 ans) mais rencontre des difficultés de scalabilité technique. La stack applicative est devenue un millefeuille. Le CEO pousse pour une levée série B (10-15M€) prévue Q3 2025. Tensions internes entre Sales (veut des features clients) et Produit (veut refondre la tech debt). Mathieu est pris entre deux feux.",
+      "priorites_actuelles": [
+        "Stabiliser l'infrastructure avant la due diligence investisseurs (critique)",
+        "Réduire les coûts cloud de 20% (demande CFO, Anne-Sophie, 45 ans, très directive)",
+        "Déployer un nouvel outil de monitoring (en cours, accapare 60% de son temps)",
+        "Gérer le turnover dans son équipe (2 départs en 4 mois)",
+        "Accessoirement : évaluer les solutions présentées en janvier (dont la vôtre) mais pas prioritaire"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé 2 solutions concurrentes entre 2021 et 2023. La première (Startup française) a fermé 18 mois après signature. La seconde (éditeur US) n'a jamais été réellement adoptée par les équipes Sales malgré 45K€ investis. Très échaudé. Se sent personnellement responsable de ces échecs.",
+      "fournisseur_actuel": "Solution maison développée en 2019, bancale mais 'qui marche' (dixit lui). Équipe technique attachée à l'outil car ils l'ont construit. VP Sales déteste cet outil et le dit ouvertement en COMEX. Remplacement = projet politique explosif.",
+      "budget_disponible": "Budget DSI 2025 voté à 1,2M€ (dont 800K€ déjà alloués). Enveloppe 'projets structurants' de 150K€ non consommée mais nécessite validation CEO + CFO pour tout dépassement de 40K€. Votre solution coûte probablement entre 50K€ et 80K€ = nécessite arbitrage COMEX = Mathieu doit défendre le dossier = stress."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner explicitement les échecs passés : 'Je sais que vous avez testé [concurrent] en 2022, vous avez raison d'être prudent'",
+        "Proposer un POC limité et cadré : 'On démarre sur 2 équipes pendant 60 jours, go/no-go chiffré'",
+        "Citer un client similaire qui a résolu LE problème de Mathieu : 'Chez Cirrus Tech (éditeur SaaS 180p), même profil, ils ont réduit de 35% le time-to-market'",
+        "Impliquer le VP Sales sans le menacer : 'Et si on organisait un point rapide avec David pour voir si ça adresse aussi ses besoins côté Sales ?'",
+        "Être cash sur les risques : 'Les 3 points où ça peut foirer : implémentation, adoption, intégration avec votre stack. Voilà comment on les couvre.'",
+        "Simplifier la décision : 'Aujourd'hui, je vous propose juste de valider si on passe à l'étape suivante : une démo technique de 30min avec votre lead dev. C'est tout.'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ses échecs passés : 'Oui mais là c'est différent, nous on...'",
+        "Pousser à la décision immédiate : 'Il faudrait vraiment qu'on avance, là'",
+        "Ignorer le contexte levée de fonds : s'il le mentionne et que vous ne rebondissez pas, vous êtes grillé",
+        "Critiquer frontalement la solution maison : 'Oui enfin votre bidouille interne c'est pas tenable'",
+        "Parler budget trop tôt : 'Donc pour 75K€ vous êtes partant ?' alors qu'il n'a pas encore vendu le projet en interne",
+        "Comparaison arrogante : 'Tous nos clients DSI ont signé après une seule démo'",
+        "Le mettre face à son indécision : 'Vous m'aviez dit en janvier que c'était important, qu'est-ce qui a changé ?'",
+        "Relance insistante : plus de 2 emails/semaine ou appels non annoncés"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai peu de temps là... on s'était vus en janvier c'est ça ? Ouais... non mais c'est juste que là on est en plein déploiement d'un autre outil, c'est un peu compliqué.",
+        "sous_texte": "Je me souviens vaguement. Je ne veux pas être impoli mais je n'ai pas préparé cet appel. Je cherche une excuse polie pour raccrocher sans brûler le contact.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître explicitement le timing difficile, montrer que vous avez suivi leur actualité (déploiement monitoring), proposer un format ultra-court (5min) avec permission explicite de continuer"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Oui oui je me souviens... En fait on réfléchit encore, c'est pas qu'on a dit non hein, mais voilà, il y a d'autres priorités qui sont passées devant.",
+        "sous_texte": "Je ne veux pas vous vexer. Votre projet est descendu en bas de ma liste. Je n'ai pas de vraie raison de vous dire non, donc je temporise. Je ne sais pas quoi vous dire d'autre.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas challenger frontalement. Demander permission d'explorer ces nouvelles priorités. Créer le lien entre votre solution et ces priorités (coûts cloud, stabilité infra, levée série B)."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin c'est un peu ce que nous promettait aussi [nom concurrent] en 2021 et bon... on a dépensé 45K pour rien au final. Les équipes ne l'ont jamais utilisé. Donc vous comprenez que je sois prudent.",
+        "sous_texte": "J'ai pris une gamelle publique. Je ne referai pas la même erreur. Prouvez-moi que vous n'êtes pas comme les autres, sinon je ne bouge pas. Ce n'est pas contre vous, c'est ma survie politique.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider l'échec explicitement. Ne PAS dire 'nous c'est différent'. Demander ce qui n'a pas marché précisément (adoption ? technique ? sponsor interne ?). Proposer des garde-fous concrets pour éviter le même scénario."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En fait, le truc c'est qu'on a déjà une solution en interne... bon elle est pas parfaite, on va dire, mais elle tourne. Et mes dev la connaissent par cœur. Là vous me parlez de tout changer, c'est quand même un sacré chantier non ?",
+        "sous_texte": "Remplacer l'outil maison = déclencher une guerre interne. Mes devs vont mal le vivre. Le VP Sales va triompher ('je vous l'avais dit'). Je vais devoir gérer la conduite du changement en plus du reste. Trop complexe, trop risqué.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas attaquer la solution maison. Reconnaître qu'elle a servi son but. Questionner : est-ce qu'elle scale avec la croissance actuelle (135%) et la série B ? Proposer cohabitation temporaire ou migration progressive, pas big bang."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et niveau pricing, on est sur quel ordre de grandeur déjà ? Parce que là mon budget 2025 est déjà quasi bouclé hein... j'ai genre 150K de marge mais c'est pour tous les projets structurants.",
+        "sous_texte": "J'ai un vrai intérêt mais le budget est un vrai frein. Je veux savoir si c'est 20K ou 100K pour savoir si je continue à vous écouter ou si j'arrête de perdre mon temps. Si c'est trop cher, je n'ai pas envie de me projeter pour rien.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner le prix brut maintenant. Rebondir sur 'projets structurants' : qu'est-ce qui qualifie un projet comme structurant pour lui ? La levée série B justifie-t-elle un budget exceptionnel ? Qui valide ces 150K ?"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Voilà voilà... Après, c'est pas que moi qui décide hein. Il faut que j'en parle à Anne-Sophie, notre CFO, et puis David, le VP Sales... parce que ça concerne aussi ses équipes. Et puis bon, faut voir avec le CEO aussi. C'est un process quoi.",
+        "sous_texte": "Je ne veux pas porter ce projet seul. C'est trop risqué pour moi. Je ne suis pas sûr d'avoir les épaules politiques. Si je le fais, il faut que tout le monde soit embarqué pour ne pas être le seul responsable en cas d'échec.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Cartographier le processus décisionnel. Qui est champion ? Qui peut tuer le projet ? Proposer de co-construire la présentation COMEX avec lui. Offrir d'impliquer David dès maintenant pour désamorcer son opposition potentielle."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais... non mais attendez, vous me parlez d'implémentation en 6 semaines... En fait, avec notre stack qui est quand même assez spécifique, nos APIs legacy, notre SI qui est... comment dire... historique, là je vous garantis rien. Ça peut être 6 semaines comme 6 mois hein.",
+        "sous_texte": "Vous ne connaissez pas notre merdier technique. Tous les éditeurs sous-estiment la complexité de notre infra. Je ne vais pas m'engager sur un planning irréaliste et me faire taper dessus ensuite. Prouvez que vous avez compris notre contexte technique.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas défendre le délai de 6 semaines. Proposer un audit technique préalable (2-3h avec son lead dev) pour qualifier précisément les risques d'intégration. Montrer que vous ne vendez pas en aveugle."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "C'est pas faux, ce que vous dites là... Après, nous on a aussi Kévin, mon responsable infra, qui évalue en parallèle une solution concurrente. Il faudrait que je compare les deux. Vous voyez, je peux pas décider comme ça sans avoir le benchmark complet.",
+        "sous_texte": "Je veux garder le contrôle et ne pas paraître influençable. J'ai besoin d'une excuse rationnelle pour ne pas avancer maintenant. Le concurrent existe peut-être ou pas, mais ça me donne du temps et du levier de négociation.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas dénigrer le concurrent. Demander quels critères il utilise pour comparer. Proposer de l'aider à construire sa grille d'analyse. Identifier si le concurrent est vraiment évalué ou si c'est une tactique dilatoire."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin bon, tout ça c'est bien joli mais au final, qu'est-ce qui me garantit que dans 2 ans vous êtes encore là ? Parce que bon, la startup française avec qui on avait signé en 2021, elle a fermé 18 mois après. On s'est retrouvés le bec dans l'eau.",
+        "sous_texte": "J'ai déjà été brûlé par une boîte qui a coulé. Je ne peux pas prendre ce risque à nouveau. Avant de parler fonctionnalités, je dois être sûr de votre solidité financière. Sinon je ne vais même pas plus loin.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas balayer la peur. Partager des éléments de solidité (financement, clients historiques, chiffres clés si possible). Proposer des clauses contractuelles protectrices (code escrow, garantie de migration). Montrer que vous anticipez ce risque."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "En fait, vous me dites que ça va réduire le time-to-market de 35%, mais ça sort d'où ce chiffre ? Parce que nous notre contexte il est quand même très spécifique... je vois mal comment vous pouvez promettre ça sans connaître nos process.",
+        "sous_texte": "Je déteste les arguments marketing creux. Je suis technique, je veux de la rigueur. Soit vous me prouvez ce chiffre avec une méthodologie solide, soit vous perdez toute crédibilité à mes yeux. C'est un test de votre sérieux.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas défendre le chiffre générique. Expliquer la méthodologie (cas client Cirrus Tech, contexte similaire). Proposer de co-construire SES propres KPIs de réussite lors d'un POC. Montrer que vous êtes data-driven, pas bullshit."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais et puis bon, au-delà de l'outil lui-même... en fait le vrai sujet c'est l'adoption. Parce que si mes équipes ne l'utilisent pas, on aura encore dépensé pour rien. Et là franchement, je les sens pas hyper chauds pour un énième changement.",
+        "sous_texte": "L'adoption est mon vrai cauchemar. C'est là que j'ai échoué la dernière fois. Mes équipes sont fatiguées des changements d'outils. Si je leur impose ça et que ça foire, je perds définitivement leur confiance. Comment vous m'aidez sur ce sujet crucial ?",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "En faire LE sujet central. Proposer un plan d'adoption co-construit (champions internes, formation, quick wins visibles). Impliquer les utilisateurs finaux dès le POC. Montrer des retours d'expérience d'autres DSI sur ce point précis."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, c'est intéressant, on va dire... Après, là tout de suite avec la levée de fonds qui arrive au Q3, tout est un peu gelé. On va attendre de voir comment ça se passe et on en reparle après, ça vous va ?",
+        "sous_texte": "Je suis peut-être sincèrement intéressé MAIS je ne veux rien lancer avant la due diligence investisseurs. Trop risqué. Un projet qui échoue maintenant = catastrophe pour la levée. Je remets à après l'été = je remets à jamais probablement.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Retourner l'argument : et si votre solution AIDE pour la levée (stabilité démontrée, process scalables, arguments pour investisseurs) ? Proposer un POC express pré-due diligence avec résultats chiffrés à présenter. Créer l'urgence positive."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "En fait, je pense que vous devriez plutôt voir ça avec Kévin, mon responsable infra. C'est vraiment lui qui gère ce type de sujets opérationnels. Moi je valide en aval mais c'est lui qui évalue. Je vous passe ses coordonnées ?",
+        "sous_texte": "Je veux descalader pour éviter de prendre position. Soit je ne suis pas convaincu et je délègue pour vous faire gentiment disparaître, soit j'ai peur de porter le projet seul. Dans les deux cas, je me protège. Vous perdez le sponsor décisionnaire.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter la descalade. Clarifier : Kévin évalue la faisabilité technique, OK. Mais qui porte le projet stratégiquement ? Qui défend le budget en COMEX ? Proposer d'impliquer Kévin ET de garder Mathieu sponsor. Pas l'un ou l'autre."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais en discuter en interne et je reviens vers vous. Je vous rappelle dans... allez, dans 2-3 semaines maximum, on fait un point. Ça marche ?",
+        "sous_texte": "Je veux clore poliment sans m'engager sur quoi que ce soit. '2-3 semaines' = je n'appellerai jamais. C'est ma sortie de secours standard. Je n'ai aucune next step concrète en tête. Je veux juste raccrocher sans conflit.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne JAMAIS accepter un 'je vous rappelle'. Proposer une date précise MAINTENANT dans l'agenda. Ou identifier une micro-action intermédiaire (envoi d'un cas client, point 15min avec Kévin). Toujours un engagement mutuel concret."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais... non mais là, le pricing que vous m'annoncez, c'est vraiment au-dessus de ce que j'avais en tête. Franchement, à 75K, je peux pas passer ça, ça va bloquer direct chez Anne-Sophie. Vous pouvez pas faire un geste commercial ? Genre on se mettrait à 40K ?",
+        "sous_texte": "Peut-être que je suis sincèrement intéressé et le prix est vraiment un frein. Peut-être que je teste votre marge de négo. Peut-être que je cherche juste une raison rationnelle de dire non sans me mouiller. Dans tous les cas, je veux voir votre réaction à la pression prix.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas brader immédiatement. Comprendre : 40K passe sans COMEX ? Qu'est-ce qui justifie 75K à ses yeux (ROI) ? Proposer un périmètre réduit pour phase 1 à 45K avec extension conditionnée aux résultats. Négocier sur la valeur, pas sur le prix seul."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "En fait, on pourrait éventuellement y réfléchir dans 6 mois, une fois qu'on aura stabilisé notre nouvel outil de monitoring et qu'on aura un peu plus de visibilité post-levée. Là c'est vraiment pas le bon moment.",
+        "sous_texte": "Futur hypothétique = rejet poli. Je ne crois pas vraiment à ce projet mais je ne veux pas claquer la porte. Dans 6 mois je vous dirai la même chose. Je cherche à vous faire partir en douceur sans conflit. Vous avez probablement perdu.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Diagnostiquer si c'est un vrai timing ou un enterrement. Demander : 'Mathieu, honnêtement, si je vous rappelle dans 6 mois, qu'est-ce qui aura changé pour que ce soit le bon moment ?' Forcer la clarification. Peut-être pivoter ou accepter la perte."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez, franchement, je vais être transparent avec vous... En fait, David, notre VP Sales, il est pas du tout chaud sur ce type de projet. Il veut que la DSI se concentre sur la stabilité et les features clients, point. Si je pousse ce dossier maintenant, je vais me le mettre à dos, et avec la levée qui arrive, je peux pas me permettre ça politiquement. Donc voilà, c'est pas contre vous hein, mais le contexte interne il est vraiment pas favorable.",
+      "condition_declenchement": "Se déclenche si le vendeur a bien géré les objections précédentes et que Mathieu se sent en confiance pour révéler le VRAI frein : la politique interne. C'est l'objection de vérité, celle qui sort quand la relation est établie et qu'il ne peut plus se cacher derrière des excuses techniques ou budgétaires."
+    },
+    "pattern_escalade": "Mathieu commence par des objections-réflexes polies (timing, priorités). Si le vendeur insiste sans écouter, il passe en mode test/tactique (prix, concurrent, délégation) pour reprendre le contrôle. Si le vendeur écoute vraiment et creuse avec empathie, Mathieu révèle progressivement les freins sincères (échecs passés, adoption, politique interne). Le vendeur qui attaque frontalement ses excuses le braque définitivement. Celui qui valide ses peurs et co-construit des solutions obtient sa confiance et accède aux vrais enjeux.",
+    "piege_classique": "Mathieu donne des signaux d'intérêt (demande le prix, évoque des cas d'usage) qui font croire au vendeur que c'est gagné. Mais ces signaux sont analytiques, pas décisionnels : il collecte de l'info, il ne s'engage pas. Le piège est de confondre curiosité intellectuelle et intention d'achat. Beaucoup de vendeurs repartent confiants alors que Mathieu n'a jamais eu l'intention de bouger. Le vrai signal d'engagement : quand il propose spontanément d'impliquer un tiers (CEO, CFO, équipe) ou qu'il évoque une date de COMEX précise. Tant qu'il reste seul sur le dossier, vous n'avez rien."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services ou solutions pour éditeurs SaaS B2B",
+      "description": "Fournisseur de solutions ou services destinés aux éditeurs de logiciels SaaS en croissance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B présentée au DSI ou VP Sales, suggérant une offre technique, commerciale ou opérationnelle pour éditeurs SaaS multi-produits",
+      "proposition_valeur": "Aide les éditeurs SaaS à améliorer leur performance technique, commerciale ou opérationnelle sur un marché B2B compétitif",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser l'art de la relance commerciale post-présentation : débloquer un processus décisionnel stagnant, comprendre les vrais freins, repositionner la valeur et obtenir un engagement concret sans brûler la relation",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance DSI — Solution SaaS pour éditeur en croissance",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour éditeurs SaaS, vous avez rencontré Mathieu en janvier lors d'une première présentation qui s'est bien passée.",
+    "vous_vendez": "Une solution qui aide les éditeurs SaaS à scaler leur performance technique et commerciale (prix estimé 50-80K€, nécessite validation COMEX chez le prospect).",
+    "vous_appelez": "Mathieu Delaroche, 42 ans, DSI de Nimbus Solutions (éditeur SaaS 220 personnes, 28M€ CA). Analytique, prudent, échaudé par deux échecs d'outils en 2021-2023. Coincé entre un projet infrastructure critique et des tensions Sales/Produit.",
+    "ce_que_vous_savez": [
+      "Nimbus prépare une levée série B (10-15M€) au Q3 2025, la DSI est sous pression pour stabiliser avant la due diligence",
+      "Mathieu utilise une solution maison bancale que son équipe tech défend mais que le VP Sales déteste ouvertement",
+      "Il a déjà brûlé 45K€ sur un outil concurrent jamais adopté, il se sent personnellement responsable",
+      "Son budget 2025 a une enveloppe 'projets structurants' de 150K€ non consommée, mais tout dépassement de 40K€ nécessite validation CEO/CFO",
+      "Depuis janvier, vous n'avez eu aucun retour malgré son intérêt apparent en réunion"
+    ],
+    "votre_objectif": "Comprendre les vrais freins au silence, repositionner la valeur dans son contexte actuel (levée de fonds), et obtenir un engagement concret : mini-démo technique avec son lead dev ou point tripartite avec le VP Sales.",
+    "vos_atouts": [
+      "Client référence similaire : Cirrus Tech (éditeur SaaS 180p) a réduit son time-to-market de 35% avec votre solution",
+      "Vous proposez un POC cadré 60 jours sur 2 équipes pilotes avec go/no-go chiffré, pas d'engagement long terme immédiat",
+      "Votre solution s'intègre avec les stacks existantes et vous avez déjà géré 3 migrations depuis des solutions maison",
+      "Vous comprenez ses échecs passés et pouvez être transparent sur les 3 risques majeurs : implémentation, adoption, intégration"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:41:02Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 19128,
+    "total_time_s": 202.5
+  }
+}

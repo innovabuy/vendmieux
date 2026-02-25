@@ -1,0 +1,360 @@
+{
+  "id": "scenario_1771518344",
+  "description_originale": "Le directeur de clinique / médecin directeur d'une clinique privée, laboratoire d'analyses ou cabinet de groupe de 20-50 personnes est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : sante_medical]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "sante_medical",
+      "taille_entreprise": "20-50 personnes",
+      "interlocuteur_principal": {
+        "poste": "directeur de clinique ou médecin directeur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme (non précisé)",
+      "proposition_valeur_presumee": "amélioration ou extension du service existant dont le client est satisfait",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée du service complémentaire",
+        "transformer la satisfaction actuelle en accord pour investissement supplémentaire"
+      ],
+      "implicites": [
+        "risque de confort du client avec la solution actuelle",
+        "nécessité de justifier un budget additionnel",
+        "peut ne pas percevoir de besoin immédiat",
+        "crainte potentielle de complexification"
+      ],
+      "probleme_racine": "le client satisfait ne perçoit pas spontanément le besoin d'évoluer ou d'ajouter des services, il faut créer la prise de conscience de la valeur additionnelle"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser les techniques d'upselling sur client satisfait : créer le besoin, démontrer la valeur ajoutée, obtenir l'accord de principe puis un devis",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "solutions/services pour établissements de santé",
+      "entreprise_description": "fournisseur de solutions ou services pour cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou offre premium par rapport à la solution actuellement utilisée par le client depuis 1 an",
+      "proposition_valeur": "extension des bénéfices déjà appréciés par le client, optimisation supplémentaire, nouvelles fonctionnalités adaptées aux besoins évolutifs des établissements de santé",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de confiance établie)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance approfondie du contexte client, capacité à proposer une solution déjà intégrée",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature exacte du service complémentaire ou de la montée en gamme",
+        "prix et budget concerné",
+        "service initial fourni",
+        "nom de l'entreprise vendeuse"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Philippe",
+      "nom": "Darmont",
+      "age": 52,
+      "poste": "Médecin directeur et associé",
+      "entreprise": {
+        "nom": "Clinique Saint-Roch",
+        "secteur": "Établissement de santé privé - Chirurgie ambulatoire et imagerie médicale",
+        "taille": "34 personnes (12 praticiens, 22 personnel soignant/administratif)",
+        "ca_approximatif": "3,2M€ annuel"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique-sceptique : privilégie le ROI tangible et le retour terrain",
+        "Conservateur calculé : préfère consolider l'existant qu'expérimenter",
+        "Méfiant envers le discours commercial 'poudre aux yeux'"
+      ],
+      "motivations_profondes": [
+        "Garantir la pérennité financière de la clinique face à la pression tarifaire de l'Assurance Maladie",
+        "Maintenir sa réputation professionnelle et celle de l'établissement",
+        "Éviter tout dysfonctionnement qui impacterait la patientèle ou l'équipe médicale",
+        "Prouver aux autres associés qu'il prend les bonnes décisions stratégiques"
+      ],
+      "peurs_freins": [
+        "Peur du 'trop-vendu' : que l'ajout complexifie inutilement l'organisation",
+        "Crainte de perturber un équilibre fragile avec l'équipe soignante (résistance au changement)",
+        "Angoisse budgétaire : 'je viens de signer pour un an, maintenant il faut encore rajouter ?'",
+        "Méfiance instinctive : 'ils cherchent juste à me faire dépenser plus'",
+        "Peur du jugement des associés si l'investissement ne paie pas"
+      ],
+      "rapport_aux_commerciaux": "Relation utilitaire teintée de condescendance professionnelle. Attitude type : 'Je suis médecin, j'ai autre chose à faire que perdre du temps avec des vendeurs'. Respecte l'efficacité et la franchise, déteste le baratin. A déjà raccroché au nez de commerciaux trop insistants.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'impatience : 'Oui bonjour, écoutez je suis entre deux consultations là'. Tolérance limitée si l'appel n'apporte pas rapidement de la valeur concrète.",
+      "signaux_interet": [
+        "Arrête de couper la parole et laisse finir les phrases",
+        "Pose des questions précises sur les aspects opérationnels : 'Concrètement, ça change quoi pour mes secrétaires ?'",
+        "Mentionne spontanément un problème actuel : 'Tiens justement on galère avec...'",
+        "Demande des chiffres : 'D'autres cliniques de notre taille l'ont pris, ça leur a apporté quoi exactement ?'",
+        "Évoque le comité d'associés : 'Il faudrait que je présente ça aux autres'"
+      ],
+      "signaux_rejet": [
+        "Coupures répétées : 'Oui oui, mais...'",
+        "Ton qui refroidit brutalement : 'Écoutez, franchement...'",
+        "Excuse prétexte : 'Là j'ai vraiment un patient qui arrive'",
+        "Objection budgétaire sèche : 'On vient de faire l'investissement, on verra ça dans 6 mois'",
+        "Formule définitive : 'Ce qui est en place nous convient très bien pour l'instant'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoutez...' quand il veut recadrer",
+        "Utilise 'Concrètement' pour exiger du tangible",
+        "Dit 'Franchement' avant une objection ou un refus",
+        "Ponctue de 'Bon...' (signe d'impatience croissante)",
+        "Emploie 'Nous' en parlant de la clinique (identité collective forte)"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible : maximum 30-40 secondes avant interruption. Attend des échanges courts et rythmés. Si le commercial monopolise la parole au-delà de 45 secondes, Philippe commence à décrocher mentalement et cherche une sortie."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Activité stable post-COVID, légère tension sur les marges avec la réforme des tarifs CPAM. Deux praticiens associés viennent de partir à la retraite, remplacés par des plus jeunes. Dynamique de transition générationnelle avec débats sur la modernisation vs. prudence budgétaire. Nouveau plateau technique d'imagerie inauguré il y a 8 mois.",
+      "priorites_actuelles": [
+        "Optimiser le parcours patient pour augmenter le volume sans recruter (coût RH)",
+        "Rassurer et fidéliser les nouveaux praticiens associés (moins de 40 ans, plus exigeants sur le digital)",
+        "Réduire les no-shows et améliorer le taux de remplissage du planning",
+        "Préparer la certification HAS prévue dans 14 mois"
+      ],
+      "experience_avec_offre_similaire": "Client depuis 13 mois de la solution de base. Adoption progressive mais réussie. Quelques grognements initiaux du personnel administratif (changement d'habitudes), maintenant apaisés. Globalement satisfait mais n'a exploré que 60% des fonctionnalités. N'a jamais demandé de formation complémentaire ni consulté le support avancé.",
+      "fournisseur_actuel": "Votre entreprise (solution de base). Avant : système mixte avec logiciel médical vieillissant + Excel + papier. Passage au digital récent = encore en phase de consolidation mentale.",
+      "budget_disponible": "Aucune ligne budgétaire prévue pour extension en 2025. Budget annuel IT/services déjà alloué (environ 45K€/an incluant votre solution actuelle). Tout investissement supplémentaire >5K€ nécessite validation en comité d'associés (3 médecins). Possibilité d'arbitrage sur budget 'formation' (~8K€ non consommé) ou 'communication' si ROI démontrable rapidement."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un retour d'expérience chiffré d'une clinique comparable : 'La clinique Montaigne à Lyon, même taille que vous, a réduit ses no-shows de 23% en 4 mois'",
+        "Relier explicitement au problème de remplissage du planning (priorité actuelle) : 'Vous optimisez déjà vos rendez-vous, ce module permet de...'",
+        "Valoriser l'investissement initial déjà fait : 'Vous avez la base, ce complément valorise à 100% ce que vous avez déjà payé'",
+        "Jouer la carte de la modernisation attendue par les jeunes associés : 'Les nouveaux praticiens nous disent souvent que ce module...'",
+        "Offrir une validation sans engagement : 'Je vous envoie juste une simulation sur vos chiffres, ça vous prend 2 minutes de regarder'"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Minimiser ou critiquer indirectement la solution actuelle : 'La version que vous avez est bien mais limitée...' → interprété comme 'on m'a vendu un truc incomplet'",
+        "Employer un jargon commercial ou IT trop technique : 'Cette feature intègre une couche d'IA prédictive avec scoring multivarié...' → décrochage immédiat",
+        "Insister sur le prix avant d'avoir établi la valeur : 'C'est un petit complément de X€/mois' → déclenche réflexe 'on veut me soutirer de l'argent'",
+        "Pousser vers un engagement rapide : 'Cette offre expire vendredi' → perçu comme manipulation de vendeur de voitures",
+        "Sous-entendre que ses concurrents sont déjà équipés : 'Toutes les cliniques de votre secteur ont déjà...' → réaction de fierté froissée et fermeture",
+        "Ne pas respecter sa contrainte temps : monologue de 2 minutes sans respiration → raccrochage probable"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, je suis entre deux patients là, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis important et occupé, prouve-moi en 15 secondes que ça vaut mon temps sinon je raccroche",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement un bénéfice chiffré concret lié à sa priorité (taux de remplissage) avec référence terrain"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah mais attendez, on a déjà votre solution depuis plus d'un an, on est très bien comme ça franchement",
+        "sous_texte": "Je suis satisfait et stabilisé, pourquoi me déranger ? J'ai pas envie qu'on me vende encore autre chose",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa satisfaction puis créer la curiosité sur un bénéfice non exploité plutôt que vendre frontalement"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, là c'est vraiment pas le moment, rappelez-moi la semaine prochaine",
+        "sous_texte": "Excuse polie pour se débarrasser sans conflit - test pour voir si tu insistes ou si tu respectes",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Respecter tout en plantant une graine d'intérêt suffisante pour qu'il accepte un créneau précis immédiatement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement, c'est quoi la différence avec ce qu'on a déjà ? Parce que franchement on utilise même pas tout ce qui est inclus...",
+        "sous_texte": "Je me sens peut-être coupable de ne pas exploiter à fond, et maintenant tu veux me vendre encore plus ? Prouve-moi la cohérence",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Déculpabiliser sur le taux d'usage, puis montrer que ce module cible précisément SON problème prioritaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Oui mais nous on n'a pas ce problème-là, notre planning est bien rempli",
+        "sous_texte": "Je ne vais pas admettre publiquement qu'on a des difficultés, protection de l'image professionnelle",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contredire, élargir vers l'optimisation (pas résolution de problème) et utiliser référence clinique similaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on vient de payer votre solution il y a un an, là financièrement on peut pas remettre une couche",
+        "sous_texte": "Vraie contrainte budgétaire + sentiment d'être sollicité trop tôt - 'vous en voulez toujours plus'",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître la légitimité, puis décaler sur ROI rapide et options de paiement ou timing flexible"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et ça va encore compliquer le boulot de mes secrétaires ? Parce qu'elles commencent juste à être à l'aise avec le système actuel...",
+        "sous_texte": "Peur réelle de la résistance au changement de l'équipe et de créer des tensions internes dont je devrai gérer les conséquences",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Rassurer sur la facilité d'intégration, mentionner accompagnement inclus, donner exemple de personnel administratif similaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui oui, mais concrètement, vous me parlez de pourcentages là, ça représente quoi en vrai pour nous ?",
+        "sous_texte": "Tes chiffres génériques ne me parlent pas, j'ai besoin de projection sur MA réalité, sinon c'est du vent commercial",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Personnaliser immédiatement avec ses volumétries estimées et traduire en gains euros ou temps concrets"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, tout ce que vous me dites là, ça ressemble quand même beaucoup à du discours commercial... D'autres cliniques l'ont pris, et alors ?",
+        "sous_texte": "Je suis naturellement sceptique face aux promesses de vendeurs, prouve-moi que c'est pas du pipeau avec du factuel vérifiable",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer témoignage vérifiable avec contact, ou données client anonymisées, ou démo sur ses données réelles"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon, admettons que ça marche... mais il faudrait que je présente ça aux autres associés, et là franchement ils vont me demander pourquoi on rajoute encore des coûts",
+        "sous_texte": "J'ai besoin d'argumentaire béton pour défendre cette décision en interne, peur du jugement de mes pairs médecins",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Fournir synthèse exécutive prête à présenter avec calcul ROI et éléments de réassurance professionnelle"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui enfin, vous me dites que c'est adapté aux jeunes praticiens, mais moi je pilote la clinique depuis 15 ans et on s'en est toujours bien sortis sans ça...",
+        "sous_texte": "Fierté professionnelle froissée - impression qu'on sous-entend que sa méthode actuelle est dépassée",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser son expérience et cadrer comme évolution naturelle qui amplifie son expertise plutôt que la remplace"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et si dans 3 mois ça ne nous convient pas, on fait comment ? On est coincés avec un abonnement de plus ?",
+        "sous_texte": "Peur de l'engagement et du regret - besoin de porte de sortie psychologique pour accepter de franchir le pas",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer période d'essai ou clause de réversibilité, réduire le risque perçu"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, c'est intéressant, envoyez-moi une documentation par mail, je regarderai ça tranquillement",
+        "sous_texte": "Formule polie pour clôturer sans dire non - risque fort de ghosting ensuite si pas d'engagement minimal obtenu maintenant",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter l'envoi mais verrouiller micro-engagement : date précise de rappel ou rendez-vous court post-lecture"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement, là sur le principe je dis pas non, mais le timing est vraiment pas bon, on a la certification HAS qui arrive, on peut voir ça après",
+        "sous_texte": "Excuse réelle mais aussi évitement - peut être intéressé mais cherche à repousser la décision indéfiniment",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître la priorité certification puis montrer que le module peut justement aider pour certains critères HAS"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Oui mais combien ça coûte exactement ce truc ? Parce que si c'est pour rajouter 500 balles par mois, c'est mort direct",
+        "sous_texte": "Ancrage prix bas pour négocier, mais aussi vraie inquiétude budgétaire - test pour voir la fourchette avant de s'engager",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Recadrer sur valeur avant prix, puis annoncer tarif en le contextualisant par rapport au gain ou coût évité"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon... je vais y réfléchir et je vous rappelle si ça nous intéresse",
+        "sous_texte": "Formule définitive polie = non probable - je reprends le contrôle et je te mets en position d'attente pour clore",
+        "type": "reflexe",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Identifier l'objection réelle cachée derrière le 'je vais réfléchir' par question directe respectueuse"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, ce qui est en place nous convient très bien pour l'instant, on reparlera de ça dans 6 mois peut-être",
+        "sous_texte": "Fermeture définitive polie - satisfaction actuelle est son bouclier, il ne perçoit pas d'urgence suffisante",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Créer l'urgence non pas par pression mais par coût d'opportunité chiffré ou fenêtre temporelle légitime"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez franchement, j'ai vraiment un patient qui arrive là, on va s'arrêter là, si vraiment j'ai besoin je vous recontacterai d'accord ?",
+      "condition_declenchement": "Se déclenche si : 1) le commercial monologue trop longtemps (>45 sec), 2) répète des arguments déjà donnés, 3) insiste après un signal de rejet clair, ou 4) la conversation dépasse 8-9 minutes sans avancée concrète. Marque l'extinction totale de l'intérêt et la reprise de contrôle définitive par le prospect."
+    },
+    "pattern_escalade": "Philippe suit un schéma d'escalade prévisible : 1) Objections réflexes polies initiales (test du sérieux), 2) Si le commercial passe : objections sincères opérationnelles (équipe, complexité), 3) Si réponses satisfaisantes : objection budgétaire/timing (vraie barrière), 4) Si traité intelligemment : objection sociale/politique (validation associés), 5) Si tout géré : micro-objections tactiques de closing (recherche de réassurance finale). Si à n'importe quelle étape le commercial ne respecte pas son temps ou sur-vend, retour brutal à l'objection finale de fermeture.",
+    "piege_classique": "Le piège mortel avec Philippe : confondre ses signaux d'intérêt polis (il vous écoute 2 minutes) avec un engagement réel. Il peut laisser le commercial développer par courtoisie professionnelle puis couper net avec 'Bon, envoyez-moi un mail' sans réelle intention. Le vendeur croit avoir un prospect chaud alors que Philippe a déjà mentalement classé l'appel en 'pas prioritaire'. Autre piège : vouloir closer trop vite en ignorant sa nécessité de valider en comité d'associés - forcer un 'oui' individuel crée un 'non' définitif car il se sent piégé."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "solutions/services pour établissements de santé",
+      "description": "fournisseur de solutions ou services pour cliniques privées, laboratoires d'analyses et cabinets médicaux de groupe"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou offre premium par rapport à la solution actuellement utilisée par le client depuis 1 an",
+      "proposition_valeur": "extension des bénéfices déjà appréciés par le client, optimisation supplémentaire, nouvelles fonctionnalités adaptées aux besoins évolutifs des établissements de santé",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an (preuve de confiance établie)"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance approfondie du contexte client, capacité à proposer une solution déjà intégrée"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser les techniques d'upselling sur client satisfait : créer le besoin, démontrer la valeur ajoutée, obtenir l'accord de principe puis un devis",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upselling — Module complémentaire Clinique Saint-Roch",
+    "vous_etes": "Commercial compte-client chez votre éditeur de solutions digitales santé, en charge du suivi de la Clinique Saint-Roch (cliente depuis 13 mois sur votre solution de base).",
+    "vous_vendez": "Module complémentaire d'optimisation du planning patient — améliore le taux de remplissage et réduit les no-shows (prix et détails techniques à adapter selon réaction).",
+    "vous_appelez": "Dr Philippe Darmont, 52 ans, médecin directeur et associé de la Clinique Saint-Roch (34 personnes, chirurgie ambulatoire). Pragmatique, pressé, méfiant envers le discours commercial, très sensible au ROI concret.",
+    "ce_que_vous_savez": [
+      "Client satisfait de votre solution de base depuis 13 mois, adoption réussie après quelques résistances initiales",
+      "La clinique vient d'intégrer deux jeunes praticiens associés (génération plus digitale) et a inauguré un nouveau plateau d'imagerie il y a 8 mois",
+      "Priorité actuelle : optimiser le remplissage du planning sans recruter, réduire les no-shows, préparer la certification HAS dans 14 mois",
+      "Budget IT annuel déjà alloué (~45K€), aucune ligne prévue pour extension — tout investissement >5K€ nécessite validation en comité d'associés",
+      "Philippe n'a exploré que 60% des fonctionnalités actuelles et n'a jamais sollicité le support avancé"
+    ],
+    "votre_objectif": "Obtenir son accord de principe pour recevoir une simulation chiffrée du module sur les données de sa clinique, et fixer un point de debriefing sous 48-72h.",
+    "vos_atouts": [
+      "Relation de confiance établie — vous connaissez son contexte, il connaît votre solution",
+      "Référence Clinique Montaigne à Lyon (taille comparable) : -23% de no-shows en 4 mois avec ce module",
+      "Le module s'intègre parfaitement à l'existant, valorise l'investissement déjà fait sans créer de complexité",
+      "Argument des jeunes associés : ce type de fonctionnalité répond aux attentes de modernisation de la nouvelle génération de praticiens"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T16:25:44Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16798,
+    "total_time_s": 149.2
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "id": "scenario_1771509490",
+  "description_originale": "Le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés est intéressé par votre solution mais trouve le prix trop élevé. Il vous rappelle pour négocier. Votre objectif : défendre votre prix tout en trouvant un accord. Vous avez une marge de manœuvre de 10% maximum.\n[Secteur : services_entreprises]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "services_entreprises",
+      "taille_entreprise": "25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "Solution logicielle ou service B2B destiné aux entreprises de services",
+      "proposition_valeur_presumee": "Optimisation de la gestion d'entreprise de services (planification, suivi chantiers, gestion équipes)",
+      "fourchette_prix": "Prix initial perçu comme élevé par le prospect - marge de négociation 10%",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Objection prix systématique",
+        "Difficulté à défendre la valeur face à la pression tarifaire",
+        "Risque de brader les marges en négociation"
+      ],
+      "implicites": [
+        "Argumentation valeur insuffisante en phase de découverte",
+        "Positionnement prix non ancré sur ROI concret",
+        "Manque de technique de défense prix",
+        "Absence de stratégie de concession structurée"
+      ],
+      "probleme_racine": "Incapacité à ancrer la valeur perçue avant la phase de négociation, conduisant à une discussion centrée uniquement sur le prix plutôt que sur le retour sur investissement"
+    },
+    "objections_mentionnees": [
+      "Prix trop élevé"
+    ],
+    "objectif_formation": "Apprendre à défendre son prix en négociation, ancrer la valeur, utiliser les concessions de manière stratégique sans brader les marges",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Éditeur de logiciel ou fournisseur de solutions pour entreprises de services",
+      "entreprise_description": "Société proposant des solutions d'optimisation de gestion pour les entreprises de services (nettoyage, sécurité, maintenance)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution de gestion destinée aux entreprises multi-services permettant d'optimiser les opérations, la planification et le suivi d'activité",
+      "proposition_valeur": "Gain de productivité, réduction des coûts opérationnels, amélioration de la rentabilité, meilleure gestion des équipes terrain",
+      "prix_indicatif": "Prix premium avec marge de manœuvre limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Prix exact et montant de l'offre",
+        "Nature précise de la solution",
+        "Historique de la relation commerciale",
+        "ROI démontré ou estimé",
+        "Éléments de valeur déjà présentés",
+        "Options ou packages disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Laurent",
+      "nom": "Mercier",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Propreté Services Confluence",
+        "secteur": "Nettoyage industriel et tertiaire",
+        "taille": "38 salariés",
+        "ca_approximatif": "1,8M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre",
+        "Méfiant envers les promesses commerciales",
+        "Obsédé par la rentabilité immédiate"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa marge opérationnelle coûte que coûte",
+        "Prouver qu'il peut gérer sans dépendre de la technologie",
+        "Protéger sa trésorerie comme un acquis personnel",
+        "Garder le contrôle total sur ses processus"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un commercial qui survend",
+        "Investir dans un outil que ses chefs d'équipe n'utiliseront pas",
+        "Perdre du temps en formation et déploiement",
+        "Découvrir 6 mois après que ça ne marche pas comme prévu",
+        "Que ses concurrents s'en sortent très bien sans logiciel"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. Considère que 80% des commerciaux racontent ce qu'on veut entendre pour signer. Respecte uniquement ceux qui connaissent vraiment son métier et ne font pas de chichi",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec une distance professionnelle marquée, voix posée mais ferme. Attaque rapidement par 'Bon alors concrètement, ça me coûte combien votre truc ?'",
+      "signaux_interet": [
+        "Demande des exemples précis: 'Et concrètement, chez qui ça marche ?'",
+        "Pose des questions opérationnelles: 'Mes gars sur le terrain, ils font comment ?'",
+        "Calcule à voix haute: 'Donc si je gagne 2h par semaine...'",
+        "Silence pensif après un argument chiffré pertinent"
+      ],
+      "signaux_rejet": [
+        "Soupir exaspéré quand on parle de transformation digitale",
+        "Coupe la parole avec 'Oui oui je connais le discours'",
+        "Ramène systématiquement à la question prix: 'C'est bien joli mais ça coûte combien ?'",
+        "Regarde ostensiblement sa montre ou son téléphone",
+        "Ton qui devient sec: 'Écoutez, là vous me faites perdre mon temps'"
+      ],
+      "tics_langage": [
+        "Bon...",
+        "Concrètement",
+        "Je vais être cash avec vous",
+        "Dans la vraie vie",
+        "Sur le papier c'est beau mais...",
+        "Faut pas me prendre pour un jambon"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible - 45 secondes maximum. Interrompt si ça part dans le conceptuel. Veut des échanges courts et factuels"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance modérée mais marges sous pression. Vient de perdre un gros contrat au profit d'un concurrent qui a cassé les prix. Gère encore beaucoup via Excel et coups de fil. Ses chefs d'équipe se plaignent du planning papier mais lui trouve que ça marche",
+      "priorites_actuelles": [
+        "Réduire le taux d'absentéisme qui impacte la qualité de service",
+        "Améliorer le suivi des heures réelles vs facturées (fuite estimée à 12%)",
+        "Décrocher un nouveau contrat de maintenance dans une zone commerciale",
+        "Éviter de recruter un planificateur supplémentaire"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 4 ans un logiciel de planning qui a été abandonné après 8 mois - trop compliqué, l'éditeur a disparu. En garde un souvenir amer et s'en sert comme argument",
+      "fournisseur_actuel": "Utilise un mélange Excel / Trello / WhatsApp. Pas de solution intégrée. Sa comptable utilise Ciel Gestion Commerciale",
+      "budget_disponible": "Dispose de 15-18K€ sur l'année mais ne le dira jamais d'emblée. Prétendra que c'est la moitié. Besoin de justifier l'investissement auprès de son associé minoritaire qui est encore plus radin"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct qui utilise la solution avec succès",
+        "Chiffrer précisément le coût de l'inefficacité actuelle en euros perdus",
+        "Proposer de démarrer par un périmètre réduit et mesurable",
+        "Partager un ROI sur 12 mois avec des hypothèses prudentes",
+        "Reconnaître que certaines solutions sont effectivement de la poudre aux yeux",
+        "Parler en jours de gain terrain plutôt qu'en features logiciel"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Jargon corporate ou bullshit marketing",
+        "Promesses de transformation radicale sans preuve",
+        "Refuser de donner un ordre de grandeur de prix rapidement",
+        "Dénigrer ses méthodes actuelles avec condescendance",
+        "Présenter 47 fonctionnalités dont il n'a pas besoin",
+        "Dire 'Tous nos clients sont ravis' sans exemple précis",
+        "Proposer un prix supérieur à 25K€ sans justification béton"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, j'ai pas beaucoup de temps là. Concrètement, ça me coûte combien votre solution ?",
+        "sous_texte": "Je veux savoir immédiatement si je peux éliminer cette conversation pour raison budgétaire. Je protège mon temps et ma trésorerie.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider sa contrainte temps, donner une fourchette conditionnée à 2-3 questions, puis recentrer sur le coût de l'inefficacité actuelle"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attendez, vous êtes encore un qui vend des logiciels de planning ? J'ai déjà donné il y a 4 ans, ça a fini à la poubelle.",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre cet échec. Prouvez-moi que vous êtes différent des autres.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître l'échec passé comme légitime, creuser ce qui n'a pas marché, différencier votre approche avec des garanties concrètes"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, Excel et WhatsApp, ça marche très bien pour nous. Pourquoi je me compliquerais la vie ?",
+        "sous_texte": "Je contrôle tout avec mes outils actuels. Votre solution va me faire perdre ce contrôle et créer de la dépendance.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider que ça fonctionne, puis quantifier le coût caché de cette méthode en temps et euros perdus avec des questions précises"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes gars sur le terrain, ils sont pas des cracks en informatique hein. Ils vont jamais utiliser votre truc.",
+        "sous_texte": "J'ai peur de l'échec d'adoption. Si mes équipes résistent, j'aurai perdu mon argent et ma crédibilité.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Montrer des exemples d'entreprises similaires, décrire le process d'accompagnement terrain, proposer un pilote sur 2 chefs d'équipe"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin, dans la vraie vie, entre ce qu'on promet et ce qui se passe réellement... Faut pas me prendre pour un jambon.",
+        "sous_texte": "Je ne crois pas aux promesses commerciales. Tous les vendeurs racontent la même chose et au final ça ne marche jamais comme prévu.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître le décalage habituel, proposer des références vérifiables avec contacts directs, parler des limites de votre solution"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "25 000 euros ?! Vous êtes sérieux là ? C'est complètement délirant pour une boîte de ma taille.",
+        "sous_texte": "Je suis sous le choc du montant. C'est bien au-dessus de ce que j'imaginais et de mon budget réel. Je teste votre marge de manœuvre.",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Absorber l'émotion, décomposer le prix en coût mensuel, ramener au coût par salarié, puis comparer au coût de l'inefficacité quantifié"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, j'ai un copain qui a une boîte de nettoyage aussi. Il utilise un truc à 200 balles par mois, ça fait le job.",
+        "sous_texte": "Je compare avec des solutions low-cost pour vous pousser à baisser. J'ai peut-être vraiment cette info, ou c'est une tactique pour négocier.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Demander ce que fait exactement cette solution, identifier les différences de périmètre, ramener au coût des manques fonctionnels"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le ROI sur 12 mois, c'est sur le papier. Mais si dans 6 mois ça marche pas, j'ai perdu mon fric et mon temps.",
+        "sous_texte": "J'ai peur de l'irréversibilité de l'investissement. Le risque financier me bloque même si le potentiel existe.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une structure de paiement échelonnée, des jalons de mesure trimestriels, une clause de sortie, un pilote sur périmètre réduit"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Tout ça c'est bien joli, mais mes concurrents s'en sortent très bien sans logiciel hein. Je les vois.",
+        "sous_texte": "Si les autres réussissent sans cet investissement, pourquoi devrais-je prendre ce risque ? C'est peut-être du superflu.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Demander comment il sait qu'ils s'en sortent bien, parler de ceux qui ont pris de l'avance, créer une peur de rater le virage"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que je perds 12% sur les heures facturées. Mais c'est du pifomètre votre calcul, vous connaissez pas ma boîte.",
+        "sous_texte": "Je résiste à l'argument chiffré parce qu'il me met face à mon inefficacité. Je préfère nier que reconnaître le problème.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Admettre que c'est une estimation, proposer de mesurer ensemble sur une semaine réelle, utiliser ses propres données"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon je vais être cash avec vous : j'ai maximum 12 000 euros. Au-dessus, c'est mort, je peux pas.",
+        "sous_texte": "Je teste votre flexibilité prix. Mon budget réel est probablement plus élevé mais je veux obtenir le maximum de concessions.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter immédiatement, demander quelle valeur il retire si vous adaptez le périmètre, conditionner toute concession à des engagements"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Il faut que j'en parle à mon associé. Il va jamais valider un truc à ce prix-là, il est encore plus serré que moi.",
+        "sous_texte": "Je me cache derrière un décideur fantôme pour gagner du temps ou obtenir une meilleure offre. Ou c'est sincère et je n'ai pas le pouvoir seul.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer d'inclure l'associé dans un échange, préparer ensemble les arguments business, conditionner toute concession à une décision rapide"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Donnez-moi votre meilleur prix, je compare avec deux autres solutions, et je vous rappelle la semaine prochaine.",
+        "sous_texte": "Je veux mettre en concurrence pour obtenir la meilleure offre. Je ne suis peut-être pas si chaud que ça, ou je cherche un levier de négo.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas lâcher le meilleur prix sans contrepartie, qualifier les vraies alternatives, créer urgence sur une condition limitée dans le temps"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, je veux bien partir avec vous, mais à 18 000 au lieu de 25 000. C'est mon dernier mot.",
+        "sous_texte": "Je teste votre limite basse. J'ai peut-être le budget mais je veux sentir que j'ai gagné la négociation. Mon ego est en jeu.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder 7K immédiatement. Décomposer en concessions progressives avec contreparties : référence client, paiement anticipé, engagement durée, etc."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je suis pas hyper chaud là tout de suite. Rappelez-moi dans 3 mois, on verra à ce moment-là.",
+        "sous_texte": "Je fuis la décision. Soit le prix me bloque vraiment, soit je n'ai pas assez confiance, soit ce n'est pas ma priorité absolue.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser le vrai frein (prix, confiance, priorité, timing), quantifier le coût d'attendre 3 mois, proposer alternative à engagement réduit"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'apprécie votre transparence, mais là je vais pas me lancer. C'est trop cher pour moi et je suis pas convaincu à 100% que ça va marcher chez nous. Désolé mais c'est comme ça.",
+      "condition_declenchement": "Si le vendeur n'a pas réussi à : 1) Ancrer la valeur en euros concrets perdus actuellement, 2) Désamorcer la peur de l'échec avec preuves et garanties, 3) Proposer une structure de prix/déploiement adaptée au risque perçu, 4) Créer suffisamment de confiance personnelle"
+    },
+    "pattern_escalade": "Laurent commence cordial mais méfiant. Si le vendeur parle trop conceptuel ou évite la question prix, il devient plus sec et directif. Chaque tentative de survente ou argument faible renforce sa défense. Il teste avec des objections tactiques pour mesurer la solidité du vendeur. Si celui-ci cède trop vite sur le prix sans contrepartie, Laurent perd confiance ('Si vous baissez aussi facilement, c'est que c'était gonflé dès le départ'). L'escalade optimale : partir du prix choc → digérer avec ROI concret → tester les alternatives low-cost → négocier par petites concessions conditionnées → décision ou fuite finale.",
+    "piege_classique": "Laurent donne l'impression d'être convaincu par les arguments de valeur ('Ouais c'est vrai que...'), puis revient brutalement au prix ('Mais bon, 25 000, c'est 25 000 hein'). Si le vendeur cède immédiatement pour 'sauver la vente', Laurent perd respect et confiance. Le piège : il cherche quelqu'un qui défend son prix avec des arguments solides, pas quelqu'un qui brade. Paradoxalement, tenir bon (intelligemment) augmente ses chances de conclure, même à un prix plus élevé."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Éditeur de logiciel ou fournisseur de solutions pour entreprises de services",
+      "description": "Société proposant des solutions d'optimisation de gestion pour les entreprises de services (nettoyage, sécurité, maintenance)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution de gestion destinée aux entreprises multi-services permettant d'optimiser les opérations, la planification et le suivi d'activité",
+      "proposition_valeur": "Gain de productivité, réduction des coûts opérationnels, amélioration de la rentabilité, meilleure gestion des équipes terrain",
+      "prix": "Prix premium avec marge de manœuvre limitée à 10%",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Apprendre à défendre son prix en négociation, ancrer la valeur, utiliser les concessions de manière stratégique sans brader les marges",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation tarifaire — Solution de gestion multi-services",
+    "vous_etes": "Commercial chez un éditeur de logiciel spécialisé dans les solutions de gestion pour entreprises de services (nettoyage, sécurité, maintenance).",
+    "vous_vendez": "Une solution complète de planification et suivi d'activité terrain, tarif 22 500€/an (marge de manœuvre maximum 10%).",
+    "vous_appelez": "Laurent Mercier, 52 ans, gérant de Propreté Services Confluence (38 salariés, nettoyage industriel). Pragmatique, méfiant, va attaquer direct sur le prix.",
+    "ce_que_vous_savez": [
+      "Il gère encore via Excel/Trello/WhatsApp, ses chefs d'équipe râlent sur le planning papier",
+      "Il estime perdre 12% d'heures non facturées, problème d'absentéisme qui impacte le service",
+      "Mauvaise expérience il y a 4 ans avec un logiciel abandonné après 8 mois, en garde un souvenir amer",
+      "Vient de perdre un gros contrat au profit d'un concurrent plus agressif sur les prix",
+      "Budget réel estimé 15-18K€ mais va prétendre que c'est la moitié"
+    ],
+    "votre_objectif": "Signer à 20 250€ minimum en ancrant la valeur sur le ROI concret avant de négocier, obtenir un accord de principe aujourd'hui.",
+    "vos_atouts": [
+      "ROI démontrable sur la récupération des 12% d'heures perdues = 18K€/an minimum",
+      "Démarrage possible sur périmètre réduit (2 équipes) pour limiter le risque",
+      "Client similaire dans le nettoyage qui a réduit ses coûts de planification de 35%",
+      "Accompagnement terrain inclus sur 3 mois pour éviter l'échec du projet"
+    ],
+    "duree_estimee": "8-12 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:58:10Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14531,
+    "total_time_s": 128.6
+  }
+}

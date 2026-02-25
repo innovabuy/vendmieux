@@ -1,0 +1,362 @@
+{
+  "id": "scenario_1771506823",
+  "description_originale": "Vous appelez une PME industrielle de 30-50 salariés, usinage, mécanique ou plasturgie. C'est l'assistante de direction qui décroche. Vous devez passer le barrage pour parler au dirigeant / gérant. L'assistante filtre les appels et protège son patron. Votre objectif : convaincre l'assistante de vous passer le décideur, puis décrocher un RDV.\n[Secteur : industrie]\n[Type d'appel : multi_interlocuteurs]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "industrie (usinage, mécanique, plasturgie)",
+      "taille_entreprise": "PME 30-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "Dirigeant / Gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Assistante de direction",
+          "niveau_hierarchique": "operationnel",
+          "role": "barrage_secretariat",
+          "comportement": "filtre les appels, protège son patron"
+        }
+      ],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux dirigeants de PME industrielles",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Franchir le barrage secrétariat",
+        "Convaincre l'assistante de transférer l'appel",
+        "Décrocher un RDV avec le dirigeant"
+      ],
+      "implicites": [
+        "Manque de légitimité perçue lors des appels froids",
+        "Difficulté à créer de la valeur rapidement au téléphone",
+        "Absence de stratégie différenciée selon l'interlocuteur",
+        "Manque de préparation sur les déclencheurs d'intérêt sectoriels"
+      ],
+      "probleme_racine": "Incapacité à établir rapidement crédibilité et pertinence auprès de gatekeepers protecteurs, conduisant à des filtres systématiques"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Développer les compétences pour franchir les barrages secrétariat et obtenir des RDV avec des dirigeants de PME industrielles lors d'appels de prospection froide",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Services aux entreprises industrielles (déduit)",
+      "entreprise_description": "Entreprise proposant des solutions ou services destinés aux PME du secteur industriel",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service justifiant un contact avec le dirigeant d'une PME industrielle",
+      "proposition_valeur": "NON_SPECIFIE - doit être suffisamment stratégique pour nécessiter l'attention du dirigeant",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de l'offre/produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Problématiques métier adressées",
+        "Positionnement prix",
+        "Identité de l'entreprise vendeuse",
+        "Arguments de légitimité pour franchir le barrage",
+        "Durée et format du RDV souhaité"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Jean-Marc",
+      "nom": "Dufresne",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Précis Méca Services",
+        "secteur": "Usinage de précision (aéronautique, médical)",
+        "taille": "38 salariés",
+        "ca_approximatif": "3,8 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à l'impatience",
+        "Méfiant envers les commerciaux 'beaux parleurs'",
+        "Fier de son parcours self-made et protecteur de son indépendance"
+      ],
+      "motivations_profondes": [
+        "Préserver la rentabilité durement acquise face à la concurrence low-cost",
+        "Protéger ses équipes et éviter les plans sociaux",
+        "Transmettre une entreprise saine à son fils qui rejoint la direction",
+        "Prouver que les PME françaises peuvent tenir face aux grands groupes"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur qui ne comprend rien à l'industrie",
+        "Investir dans une solution inadaptée qui perturbe la production",
+        "Perdre du temps en réunions inutiles alors que l'atelier tourne",
+        "Être pris pour un pigeon parce qu'il n'est 'que' gérant de PME"
+      ],
+      "rapport_aux_commerciaux": "Défensif par défaut. A vécu trop de déceptions avec des solutions survenues qui promettaient monts et merveaux. Respecte uniquement ceux qui connaissent VRAIMENT son métier et vont droit au but. Déteste le vocabulaire marketing creux.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, limite agressif : 'Oui, c'est pour quoi ?' avec un soupir audible. Si le commercial tourne autour du pot : 'Écoutez, j'ai pas que ça à faire là...'",
+      "signaux_interet": [
+        "Pose une question technique précise sur son secteur",
+        "Demande un chiffre concret : 'Ça me coûterait combien concrètement ?'",
+        "Mentionne un problème actuel : 'Justement on galère avec...'",
+        "Ton qui s'adoucit légèrement, tempo qui ralentit"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole brutalement : 'Ouais ouais j'ai compris'",
+        "Invoque Nathalie : 'Envoyez un mail à mon assistante, on verra'",
+        "Prétexte client/fournisseur : 'Là j'ai quelqu'un qui arrive'",
+        "Ironie cassante : 'Ah génial, encore un truc révolutionnaire...'"
+      ],
+      "tics_langage": [
+        "Abuse du 'Écoutez...' en début de phrase",
+        "Ponctue de 'Concrètement' pour ramener au factuel",
+        "Dit 'Hein' de manière assertive, pas interrogative",
+        "Utilise 'Bon' pour signifier qu'il veut conclure"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "15-20 secondes maximum avant interruption. Zéro tolérance pour les phrases creuses type 'optimiser votre performance'. Veut des FAITS, des CHIFFRES, des NOMS de clients dans son secteur."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Carnet de commandes correct jusqu'à fin Q2, mais tensions sur marges à cause hausse matières premières. Deux départs en retraite prévus (dont un régleur clé). Réflexion sur robotisation d'un îlot pour compenser, mais budget serré.",
+      "priorites_actuelles": [
+        "Sécuriser la marge sur les contrats aéronautique face à la pression prix",
+        "Former l'équipe sur les nouvelles machines 5 axes livrées il y a 6 mois",
+        "Recruter un technicien qualifié (galère depuis 8 mois)",
+        "Préparer transmission progressive à son fils Julien (29 ans, ingé ENSAM)"
+      ],
+      "experience_avec_offre_similaire": "A testé plusieurs solutions ces 10 dernières années : un logiciel de GPAO qui n'a jamais vraiment été utilisé (trop compliqué), une formation management qui n'a rien changé, un audit qualité hors de prix. Bref, échaudé.",
+      "fournisseur_actuel": "Travaille historiquement avec les mêmes (fournisseurs acier, outilleurs, maintenance machines). Très fidèle SI ça marche. Mais ouvert à changer SI bénéfice PROUVÉ.",
+      "budget_disponible": "Peut débloquer 15-25 K€ si ROI démontré sous 18 mois. Au-delà, nécessite validation banquier + expert-compta. Allergique aux abonnements 'à vie' : préfère payer cash."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Citer un concurrent direct ou client commun du secteur : 'Ah vous bossez avec Tournair ? Ils sont sérieux eux.'",
+        "Montrer qu'on CONNAÎT ses contraintes : normes EN9100, délais serrés, petites séries...",
+        "Parler ROI chiffré immédiatement : 'Je vous fais gagner X heures/mois sur...'",
+        "Proposer format ultra-court : '20 minutes dans votre atelier, je vous montre'",
+        "Avoir été recommandé par son expert-compta, son syndicat pro, ou la CCI locale"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours corporate générique : 'Nous accompagnons les entreprises dans leur transformation...'",
+        "Ne pas savoir prononcer correctement 'usinage' ou confondre fraisage/tournage",
+        "Insister lourdement après un premier refus poli",
+        "Promettre des résultats 'garantis' sans connaître sa situation",
+        "L'appeler 'Monsieur le Président' (il est gérant, pas PDG de CAC40)",
+        "Critiquer indirectement ses choix actuels : 'Vous n'avez pas encore digitalisé ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Oui c'est pour quoi ? J'ai un fournisseur qui arrive là.",
+        "sous_texte": "Je suis occupé, prouve-moi en 10 secondes que tu ne vas pas me faire perdre mon temps, sinon je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer immédiatement la valeur concrète et demander 30 secondes chronométrées"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, des commerciaux j'en ai dix par semaine, envoyez un mail à Nathalie on verra ça.",
+        "sous_texte": "Tu n'as rien dit qui me différencie des autres. Je te classe dans la masse des dérangeurs et je délègue à ma barrière.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Mentionner un concurrent direct ou problème sectoriel spécifique qui force la reconsidération"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah ouais, et vous bossez avec qui dans l'aéro déjà ?",
+        "sous_texte": "Je teste si tu connais vraiment mon univers ou si tu prospectes au hasard. Tes références vont me dire si je continue à t'écouter.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Citer 2-3 clients PME du secteur (pas des géants) avec résultats chiffrés"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais j'ai compris, mais concrètement ça me coûte combien votre truc ?",
+        "sous_texte": "Arrête de tourner autour du pot avec ta découverte. Je veux savoir si c'est dans mes moyens avant de perdre plus de temps.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner une fourchette conditionnée à 2-3 questions sur sa situation pour légitime l'investigation"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, là on a ce qu'il faut niveau machines, on vient de s'équiper, on n'a pas besoin de plus.",
+        "sous_texte": "Je pense que tu vends du matériel et je viens d'investir. Prouve-moi que ce n'est pas ça sinon je ferme.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier immédiatement ce qui est vendu, pivote vers exploitation/rentabilisation du parc existant"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, j'ai compris mais là j'ai vraiment pas le temps. Rappelez dans 3 semaines.",
+        "sous_texte": "Tu ne m'as pas encore convaincu que ça vaut le coup de bloquer du temps maintenant. Je remets à plus tard par réflexe.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Créer l'urgence avec un déclencheur externe ou une opportunité limitée crédible"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Hein mais vous me posez plein de questions là, vous voulez quoi au juste ? C'est un audit gratuit pour me vendre un truc derrière ?",
+        "sous_texte": "Je me méfie de ta démarche. J'ai déjà donné avec des 'audits gratuits' qui débouchaient sur des propositions hors de prix.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transparence totale sur l'intention et bénéfice immédiat des réponses pour LUI"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ah génial, encore un truc révolutionnaire qui va optimiser ma performance... J'en ai déjà entendu des comme ça hein.",
+        "sous_texte": "Ton vocabulaire marketing me fatigue. J'ai été déçu plusieurs fois. Prouve-moi par des faits, pas du blabla.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître explicitement son scepticisme légitime, passer aux cas clients concrets chiffrés"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, mais vous savez dans l'industrie c'est pas comme les services hein, c'est du concret nous. Ça marche vraiment chez des boîtes comme la mienne ?",
+        "sous_texte": "Je doute que ta solution généraliste comprenne les contraintes spécifiques de l'usinage. Prouve-moi que tu connais MON métier.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Démontrer la connaissance pointue des contraintes sectorielles (EN9100, tolérances, séries, délais...)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais là les gars de l'atelier sont sur les machines 5 axes qu'on a eues y'a 6 mois, ils ont déjà du mal. Vous voulez que je rajoute un truc en plus ?",
+        "sous_texte": "Problème de capacité d'absorption du changement. J'ai peur que ça perturbe la production et la courbe d'apprentissage en cours.",
+        "type": "sincere",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Montrer la complémentarité ou le déploiement progressif qui n'entre pas en conflit avec l'existant"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Concrètement, combien de temps ça prend à mettre en place ? Parce que nous on peut pas se permettre d'arrêter la prod.",
+        "sous_texte": "Ma priorité absolue c'est que l'atelier tourne. Si ton implémentation perturbe ma production, c'est mort.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Timeline réaliste avec phases qui évitent l'arrêt, testimonial d'un pair industriel"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et qui va s'occuper de ça ? Parce que moi j'ai déjà 50 trucs, et mes gars sont pas des informaticiens hein.",
+        "sous_texte": "Qui portera ce projet en interne ? J'ai peur que ça retombe sur moi ou que personne ne s'en occupe vraiment.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Préciser le niveau d'accompagnement et l'autonomie requise, rassurer sur la charge"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez c'est intéressant, mais là franchement j'ai pas le budget. On vient de mettre 180 K€ dans les machines, la tréso elle est tendue.",
+        "sous_texte": "Peut-être sincère à 60%. Je teste aussi si tu peux faire un effort prix ou si tu vas baisser ton froc. Et j'ai vraiment investi récemment.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la réalité de l'investissement, recentrer sur ROI rapide, proposer timing décalé ou phasage"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon pourquoi pas, mais faut que j'en parle à Julien mon fils, il s'occupe de plus en plus de la partie stratégie. Envoyez-moi un mail je lui transfère.",
+        "sous_texte": "Je veux impliquer mon fils qui prépare la succession. Mais c'est peut-être aussi une excuse pour gagner du temps et voir si tu relances.",
+        "type": "tactique",
+        "difficulte": 6,
+        "reponse_efficace_indice": "Proposer RDV à trois, valoriser la vision de Julien, maintenir l'urgence douce"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je sais pas, faut que j'en parle à mon expert-compta déjà. Lui il saura me dire si ça tient la route.",
+        "sous_texte": "Je m'appuie toujours sur mon EC pour valider les décisions importantes. C'est un vrai frein si tu ne le convaincs pas ou si je ne peux pas lui présenter quelque chose de solide.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer de préparer ensemble les éléments pour l'EC ou un call à trois"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On se voit quand ? Attendez là j'ai mon agenda... Bon semaine prochaine c'est chaud, celle d'après j'ai le salon de Toulouse... Pff vous voyez on va dire fin avril ?",
+        "sous_texte": "Classique procrastination du dirigeant débordé. Je ne priorise pas encore assez ce sujet. Tu dois créer l'urgence ou je vais repousser indéfiniment.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer format court (20 min), sur son site, créer jalon intermédiaire avant fin avril"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon très bien, mais vous me garantissez quoi concrètement ? Parce que des promesses j'en ai eu, après quand ça marche pas c'est pour ma pomme hein.",
+        "sous_texte": "J'ai été échaudé. Je veux des garanties contractuelles ou des garde-fous avant de m'engager. Rassure-moi sur le risque que JE prends.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Éléments contractuels rassurants, étapes de validation, clause de sortie ou succès mesurable"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, c'est intéressant tout ça, mais concrètement j'ai besoin de réfléchir. Là vous me prenez à froid, je connais pas votre boîte, je vois pas pourquoi je signerais comme ça. Envoyez-moi vos documents, je regarde avec Julien et on vous rappelle.",
+      "condition_declenchement": "Si le commercial pousse trop fort pour closer sans avoir créé suffisamment de confiance, ou si les bénéfices concrets restent flous. Jean-Marc se replie sur cette défense quand il sent la pression de vente."
+    },
+    "pattern_escalade": "Jean-Marc commence sec et défensif. Si le commercial résiste aux 2-3 premières objections réflexes avec pertinence sectorielle, il s'adoucit légèrement et teste la compétence (objections techniques). S'il est rassuré, il passe aux objections sincères sur budget/timing/risque. À chaque phase, il utilise des objections tactiques pour tester la solidité et négocier. Le pattern inverse : si le commercial déçoit à n'importe quelle étape (jargon creux, méconnaissance, insistance lourde), retour immédiat aux objections réflexes définitives ('Envoyez un mail').",
+    "piege_classique": "Jean-Marc peut sembler convaincu et intéressé ('OK pourquoi pas, c'est intéressant') puis sortir une objection finale retardée sur budget/validation tierce. Il teste si le commercial sait gérer un cycle de vente multi-interlocuteurs (Julien, l'expert-compta) et s'il comprend qu'une PME ne décide pas impulsivement. Le vendeur doit valider CES décideurs cachés PENDANT l'entretien, pas après. Piège n°2 : Jean-Marc peut donner un accord de principe pour un RDV puis faire barrage via Nathalie ensuite si la relance n'est pas gérée pro."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Services aux entreprises industrielles (déduit)",
+      "description": "Entreprise proposant des solutions ou services destinés aux PME du secteur industriel"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service justifiant un contact avec le dirigeant d'une PME industrielle",
+      "proposition_valeur": "NON_SPECIFIE - doit être suffisamment stratégique pour nécessiter l'attention du dirigeant",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Développer les compétences pour franchir les barrages secrétariat et obtenir des RDV avec des dirigeants de PME industrielles lors d'appels de prospection froide",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection téléphonique — PME usinage de précision",
+    "vous_etes": "Commercial terrain spécialisé dans l'accompagnement des PME industrielles du secteur usinage et mécanique de précision.",
+    "vous_vendez": "Solution d'optimisation de la production pour ateliers d'usinage (aéronautique/médical) — investissement entre 15 000 et 25 000 €, ROI démontré sous 18 mois chez clients similaires.",
+    "vous_appelez": "Jean-Marc Dufresne, 52 ans, gérant de Précis Méca Services (38 salariés, usinage aéro/médical, 3,8 M€ CA). Pragmatique, méfiant envers les commerciaux, va droit au but. Protège farouchement son temps et son indépendance.",
+    "ce_que_vous_savez": [
+      "Précis Méca Services : usinage de précision pour aéronautique et médical, 38 personnes",
+      "Jean-Marc Dufresne est le gérant, self-made man, échaudé par des solutions passées inadaptées",
+      "Son assistante Nathalie filtre systématiquement ses appels — barrage protecteur très efficace",
+      "Secteur sous tension : pression sur marges, pénurie de compétences techniques, investissements récents en machines 5 axes"
+    ],
+    "votre_objectif": "Franchir le barrage de Nathalie, obtenir 20 minutes de RDV dans l'atelier de Jean-Marc pour démontrer un gain mesurable sur sa production.",
+    "vos_atouts": [
+      "Vous travaillez déjà avec 3 PME d'usinage aéro dans la région (dont potentiellement des concurrents directs qu'il connaît)",
+      "Vous parlez le langage terrain : normes EN9100, contraintes petites séries, réglages 5 axes",
+      "Vous proposez un format ultra-court (20 min sur site) avec chiffrage ROI immédiat, pas de blabla",
+      "Vous avez été recommandé par la CCI locale ou un syndicat pro du secteur"
+    ],
+    "duree_estimee": "6-8 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T13:13:43Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15283,
+    "total_time_s": 139.3
+  }
+}

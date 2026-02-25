@@ -1,0 +1,333 @@
+{
+  "id": "scenario_1771522524",
+  "description_originale": "Vous avez envoyé une proposition commerciale au gérant / directeur d'exploitation d'une transporteur routier de 30-60 salariés, flotte de 20-40 véhicules il y a 10 jours. Pas de réponse. Vous le rappelez pour faire le point. Votre objectif : obtenir un retour clair (oui, non, ou prochaine étape).\n[Secteur : transport_logistique]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "transport_logistique",
+      "taille_entreprise": "30-60 salariés, flotte de 20-40 véhicules",
+      "interlocuteur_principal": {
+        "poste": "gérant ou directeur d'exploitation",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour le secteur du transport routier",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de réponse après envoi de proposition commerciale",
+        "Difficulté à obtenir un retour clair du prospect"
+      ],
+      "implicites": [
+        "Manque de relance structurée post-proposition",
+        "Processus de suivi commercial possiblement faible",
+        "Difficulté à gérer le silence radio des prospects",
+        "Manque de qualification en amont (niveau d'intérêt réel)"
+      ],
+      "probleme_racine": "Absence de processus de suivi post-proposition : les commerciaux envoient des propositions sans créer d'engagement préalable ni planifier de point de suivi, ce qui génère du silence radio et nécessite des relances inconfortables"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de relance post-proposition pour obtenir des réponses claires (engagement ou désengagement) et éviter les zones grises commerciales",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "service_b2b_transport_logistique",
+      "entreprise_description": "Entreprise proposant des solutions pour le secteur du transport routier",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution ou service destiné aux transporteurs routiers avec flotte de véhicules",
+      "proposition_valeur": "NON_SPECIFIE - probablement liée à l'optimisation, la gestion de flotte, la conformité ou la réduction de coûts dans le transport",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre/produit/service",
+        "Contenu et montant de la proposition envoyée",
+        "Contexte de la relation antérieure (premier contact, suite à RDV, etc.)",
+        "Objections ou freins exprimés lors d'échanges précédents",
+        "Budget ou fourchette de prix"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Thierry",
+      "nom": "Bonnefoy",
+      "age": 51,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "Transports Bonnefoy & Fils",
+        "secteur": "Transport routier de marchandises (lots complets et messagerie)",
+        "taille": "42 salariés, 28 véhicules (porteurs et semi-remorques)",
+        "ca_approximatif": "4,2 M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique terre-à-terre (méfiant envers le 'bla-bla commercial')",
+        "Surchargé et dispersé (gère tout : exploitation, commercial, paie, litiges clients)",
+        "Attaché à l'artisanat familial (fierté de 'faire tourner la boîte' malgré les difficultés)"
+      ],
+      "motivations_profondes": [
+        "Pérenniser l'entreprise familiale pour la transmettre à son fils",
+        "Réduire la pression administrative et réglementaire qui l'épuise",
+        "Prouver qu'il peut moderniser sans perdre son identité de 'patron-routier'",
+        "Ne pas passer pour un pigeon face aux vendeurs et aux grands comptes"
+      ],
+      "peurs_freins": [
+        "Investir dans quelque chose qui ne sert à rien ('on a toujours fait sans')",
+        "Être dépendant d'un prestataire qui le lâche en pleine saison",
+        "Perdre du temps en formation/déploiement alors que les chauffeurs manquent déjà",
+        "Se faire arnaquer par un beau discours sans ROI concret",
+        "Devoir justifier un nouvel investissement à son associé (son frère) qui est encore plus réfractaire"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais distant. A l'impression qu'ils ne connaissent rien au terrain. Apprécie ceux qui parlent chiffres, délais, et comprennent ses contraintes métier. Déteste les relances 'alors, vous avez pu regarder ?' qu'il vit comme une pression malvenue.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé. 'Oui bonjour, je vous écoute mais j'ai pas énormément de temps là'. Coupe court aux formules de politesse prolongées.",
+      "signaux_interet": [
+        "Demande des détails précis sur les délais de mise en œuvre",
+        "Évoque spontanément un problème concret récent (amende DREAL, retard client, panne)",
+        "Parle de son fils ou de l'avenir de la boîte",
+        "Propose de fixer un créneau précis pour approfondir ('Rappelez-moi mardi matin, là je suis sur un dossier urgent')"
+      ],
+      "signaux_rejet": [
+        "Respiration agacée audible",
+        "Phrases du type : 'Écoutez, on verra ça plus tard', 'J'ai bien reçu votre doc, je vous recontacte si besoin'",
+        "Comparaison défavorable immédiate : 'Mon garagiste/comptable/logisticien actuel me coûte déjà assez cher'",
+        "Ton qui devient monocorde, réponses en mode pilote automatique ('Oui oui, très bien')"
+      ],
+      "tics_langage": [
+        "'Bon écoutez...' (pour recadrer ou clore)",
+        "'Sur le papier c'est joli, mais dans la vraie vie...'",
+        "'Moi je suis un pragmatique'",
+        "'Faut que je vois avec mon frère'",
+        "Utilise 'bahut' pour camion, 'les gars' pour chauffeurs"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible (30-40 secondes max). Interrompt poliment mais fermement si le discours part en généralités. Préfère les échanges ping-pong courts."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Rentabilité fragile (marges compressées, fuel, salaires chauffeurs). Forte pression réglementaire (chronotachygraphes, CSR, normes Euro). Un concurrent local vient de racheter deux PME du secteur, ce qui l'inquiète. Turnover modéré sur les chauffeurs. Informatisation partielle (TMS vieillissant).",
+      "priorites_actuelles": [
+        "Réduire les coûts cachés (surconsommation carburant, amendes, temps administratif)",
+        "Garder ses gros clients (2 grands comptes = 60% du CA)",
+        "Trouver et fidéliser des chauffeurs compétents",
+        "Éviter de se faire distancer par la concurrence qui digitalise"
+      ],
+      "experience_avec_offre_similaire": "A déjà testé deux solutions il y a 3-4 ans (télématique embarquée et logiciel de gestion) : l'une n'a jamais été adoptée par les chauffeurs, l'autre avait un support client inexistant. Reste échaudé.",
+      "fournisseur_actuel": "TMS historique (Masternaut ou équivalent), garagiste de confiance, expert-comptable local. Relations de longue date = inertie forte.",
+      "budget_disponible": "Pas de ligne budgétaire dédiée. Pourrait débloquer 8-15 k€ si ROI démontré sous 12-18 mois et validation de son frère-associé. Préfère étaler/louer que payer cash."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cas client similaire (transporteur régional, même taille) avec chiffres concrets de gain",
+        "Proposer un audit gratuit ou diagnostic rapide de ses coûts cachés",
+        "Reconnaître explicitement ses contraintes métier sans enjoliver",
+        "Offrir un essai pilote sur 2-3 véhicules sans engagement",
+        "Être disponible et réactif (il déteste attendre des semaines une réponse technique)",
+        "Parler réglementaire, conformité, sécurité (leviers d'urgence pour lui)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Insister lourdement après un 'je vous rappelle'",
+        "Jargon techno-commercial incompréhensible ('solution SaaS cloud-native agile')",
+        "Minimiser ses objections ('Ah mais c'est rien ça, ça se met en place en 2 jours')",
+        "Ne pas connaître les spécificités du transport routier",
+        "Proposer des formations longues ou des déploiements qui immobilisent ses équipes",
+        "Dire du mal de ses outils actuels sans preuve ('Votre TMS est obsolète') = attaque loyauté",
+        "Promettre des gains mirobolants sans étayer"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, j'ai bien reçu votre proposition mais là franchement j'ai pas le temps, on est en pleine période de rush",
+        "sous_texte": "Je n'ai pas vraiment regardé votre doc et je cherche à couper court poliment. Peut-être que je l'ai même pas ouvert.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valider la contrainte temps, proposer un créneau ultra-précis (5 min chrono) et ancrer sur un élément concret de la proposition pour vérifier s'il l'a vraiment lue"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui je vois... Bon écoutez, j'ai pas eu le temps de regarder ça en détail avec mon frère, on vous recontacte quand on aura fait le point",
+        "sous_texte": "Je me défausse sur mon associé pour gagner du temps. En réalité je ne sais pas trop quoi en penser et je veux éviter de m'engager dans une discussion.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas accepter le flou. Questionner ce qui manque spécifiquement pour prendre la décision, proposer d'être présent lors de leur échange interne"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Votre truc c'est bien joli sur le papier mais bon, on a déjà testé des solutions comme ça il y a quelques années, ça a jamais vraiment marché chez nous",
+        "sous_texte": "J'ai été échaudé et je projette mes mauvaises expériences passées. Je protège mon ego aussi : j'ai peut-être mal piloté ces projets et je ne veux pas revivre un échec.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer l'échec passé avec empathie (qu'est-ce qui n'a pas marché concrètement?), différencier votre approche, montrer ce qui a changé depuis"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon, c'est quoi exactement le retour sur investissement là-dessus ? Parce que moi je suis pragmatique hein, si c'est pour claquer 10 ou 15 000 balles pour rien...",
+        "sous_texte": "Je teste votre crédibilité. Si vous me sortez des chiffres en l'air sans comprendre ma situation, je vais décrocher. Mais si vous me montrez que vous maîtrisez les ordres de grandeur de MON métier, je vous écoute.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner de chiffres génériques. Retourner en questions pour comprendre SES coûts cachés actuels avant de projeter des gains réalistes et contextualisés"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Le problème c'est que mes gars sur la route, ils sont pas hyper à l'aise avec les outils informatiques hein. Faut être réaliste.",
+        "sous_texte": "J'ai peur que mes chauffeurs résistent et que ça crée des tensions. C'est aussi une excuse commode pour ne pas me remettre en question MOI sur ma capacité à piloter le changement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider la contrainte terrain, montrer des exemples de transporteurs avec profils similaires, détailler concrètement l'accompagnement terrain prévu"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et le support technique là-dedans ? Parce qu'on a eu des galères avec notre ancien prestataire, personne pour répondre quand ça plante un samedi matin",
+        "sous_texte": "C'est une vraie cicatrice. Je ne veux plus être abandonné. Si vous minimisez ce point, je vais vous ranger dans la même case que les autres.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Prendre très au sérieux, détailler précisément les modalités de support (horaires, délais, interlocuteur dédié), proposer de parler avec un client référence sur ce point"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... On va dire que ça m'intéresse, mais là concrètement j'ai pas le budget pour ça dans l'immédiat",
+        "sous_texte": "Je suis moyennement convaincu de la valeur. Le prix devient l'excuse facile pour temporiser. Soit je n'ai vraiment pas le budget, soit je ne vois pas assez la valeur pour le débloquer.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Clarifier si c'est un problème de timing (décalage possible) ou de valeur perçue (retravailler le ROI). Proposer des modalités de paiement étalé si valeur confirmée"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Oui mais nous on travaille déjà avec [fournisseur actuel] depuis des années, ils nous connaissent bien, on a nos habitudes",
+        "sous_texte": "Changer me fait peur : risque de perdre la relation de confiance, période d'adaptation, possibilité que le nouveau soit pire. La loyauté est aussi une question d'identité pour moi.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Respecter la relation existante, ne pas l'attaquer. Explorer ce qui manque actuellement malgré cette relation de confiance, proposer une approche complémentaire plutôt que substitutive si possible"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Sur le papier c'est séduisant, mais dans la vraie vie avec nos contraintes à nous, je suis pas sûr que ça colle. Nos tournées c'est particulier.",
+        "sous_texte": "Je doute que vous compreniez vraiment mes spécificités. C'est aussi une façon de dire 'prouvez-moi que vous connaissez MON métier, pas juste le transport en général'.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser ces spécificités concrètes sans défensive. Montrer des exemples de contraintes similaires gérées. Proposer une phase découverte terrain si nécessaire"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Combien de temps ça prend à mettre en place tout ça ? Parce que là on manque déjà de chauffeurs, je peux pas me permettre de les immobiliser pour des formations",
+        "sous_texte": "Vraie contrainte opérationnelle. Si vous me dites 3 jours de formation obligatoire, c'est mort. Je vis au jour le jour niveau planning.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Détailler un planning de déploiement réaliste avec impact minimal sur l'exploitation (formation courte, par vagues, intégration progressive)"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, je vais en reparler avec mon frère et on vous fait un retour. Laissez-moi un peu de temps pour digérer tout ça",
+        "sous_texte": "Je cherche à clore poliment sans m'engager. Soit je suis vraiment indécis, soit je veux juste me débarrasser de vous. Dans 80% des cas, ce 'je vous rappelle' = ghosting.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne jamais accepter un flou sans échéance. Proposer un point de suivi précis (date + heure), identifier ce qui doit être clarifié d'ici là, obtenir l'engagement de rappel OU proposer vous-même de rappeler"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là tout de suite je peux pas vous dire oui. C'est pas que ça m'intéresse pas, mais faut que je voie si je peux dégager le budget",
+        "sous_texte": "Vraie hésitation entre intérêt et contrainte financière. Je suis peut-être à 60-70% convaincu mais le passage à l'acte est bloqué par la réalité comptable ou la peur de me tromper.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider l'intérêt, quantifier ensemble le coût de l'inaction (combien coûte la situation actuelle), explorer les options de financement, fixer une deadline de décision"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez, avec la situation économique actuelle, le prix du gasoil qui flambe, les salaires qui augmentent... c'est pas le moment de se lancer dans des dépenses en plus",
+        "sous_texte": "J'utilise le contexte macro pour justifier mon immobilisme. En réalité j'ai peur de prendre une mauvaise décision dans un contexte déjà tendu. C'est peut-être justement LE moment d'optimiser, mais je ne le vois pas.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Retourner l'argument : dans un contexte de marges compressées, c'est justement le moment de réduire les coûts cachés. Chiffrer le coût de l'attente, proposer une approche progressive"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez, envoyez-moi un mail de synthèse avec tout ça, je vais étudier ça tranquillement et je vous redis",
+        "sous_texte": "Stratégie de sortie classique. Je veux me débarrasser de la pression de l'appel. Le mail finira probablement non lu dans ma boîte de réception surchargée.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter d'envoyer le mail MAIS conditionner à un engagement précis de sa part (point téléphonique fixé, éléments spécifiques qu'il veut voir dans le mail). Créer une obligation réciproque"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez honnêtement, je vais vous dire les choses franchement : c'est intéressant ce que vous proposez, mais là aujourd'hui je suis pas prêt à me lancer. Y'a trop de trucs en cours, on verra ça peut-être l'année prochaine quand on aura plus de visibilité",
+      "condition_declenchement": "Se déclenche quand Thierry sent que le commercial insiste trop pour closer alors qu'il n'est pas convaincu à 100% ou que toutes ses peurs n'ont pas été adressées. C'est son bouclier final pour se protéger sans froisser."
+    },
+    "pattern_escalade": "Thierry commence cordial mais pressé. Si le commercial monopolise la parole ou reste en surface, il devient de plus en plus monosyllabique ('Oui oui', 'Mmh mmh'). Les objections s'enchaînent alors en cascade : d'abord le timing, puis le budget, puis les outils existants, puis l'associé à consulter. S'il se sent acculé, il sort l'objection finale de repli stratégique ('on verra l'année prochaine'). Le point de bascule : soit le commercial repart en questions de fond pour comprendre les vraies priorités, soit il perd définitivement l'opportunité.",
+    "piege_classique": "Accepter son 'je vous rappelle' ou 'envoyez-moi un mail' sans créer d'engagement précis. Thierry ne rappellera jamais de lui-même sauf urgence. Le commercial doit obtenir soit une date/heure ferme de prochain contact, soit identifier précisément ce qui bloque pour le traiter immédiatement. Autre piège : argumenter sur les fonctionnalités produit sans avoir compris SES priorités spécifiques à lui (réglementaire? coûts? clients? chauffeurs?). Il décrochera mentalement en 45 secondes."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "service_b2b_transport_logistique",
+      "description": "Entreprise proposant des solutions pour le secteur du transport routier"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution ou service destiné aux transporteurs routiers avec flotte de véhicules",
+      "proposition_valeur": "NON_SPECIFIE - probablement liée à l'optimisation, la gestion de flotte, la conformité ou la réduction de coûts dans le transport",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Maîtriser les techniques de relance post-proposition pour obtenir des réponses claires (engagement ou désengagement) et éviter les zones grises commerciales",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance post-proposition — Transports Bonnefoy & Fils",
+    "vous_etes": "Commercial dans une entreprise qui propose des solutions pour le transport routier de marchandises.",
+    "vous_vendez": "Une solution pour optimiser la gestion de flotte et réduire les coûts d'exploitation (prix et détails non communiqués dans la proposition envoyée il y a 2 semaines).",
+    "vous_appelez": "Thierry Bonnefoy, 51 ans, gérant de Transports Bonnefoy & Fils — 42 salariés, 28 véhicules. Patron-routier pragmatique, surchargé, méfiant face aux commerciaux qui ne connaissent pas le terrain.",
+    "ce_que_vous_savez": [
+      "Il n'a pas répondu à votre proposition commerciale envoyée il y a 2 semaines",
+      "Son entreprise familiale est sous pression : marges serrées, réglementation lourde, concurrence locale agressive",
+      "Il a déjà été échaudé par deux solutions mal déployées il y a 3-4 ans (télématique et logiciel jamais adoptés)",
+      "Il déteste les relances vides type 'alors, vous avez pu regarder ?' qu'il vit comme une pression malvenue",
+      "Il coupe court au bla-bla et n'écoute pas plus de 30-40 secondes sans interaction"
+    ],
+    "votre_objectif": "Obtenir une réponse claire — engagement (RDV, essai pilote) ou désengagement (on arrête) — et sortir de la zone grise du silence radio.",
+    "vos_atouts": [
+      "Vous connaissez son profil : patron terrain qui veut du concret, des chiffres, pas de jargon",
+      "Vous pouvez proposer un diagnostic gratuit ou un essai pilote sur 2-3 véhicules sans engagement",
+      "Vous savez qu'il réagit aux leviers réglementaires et aux cas clients similaires avec ROI chiffré",
+      "Vous êtes prêt à accepter un 'non' clair plutôt que de le relancer dans le vide"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:35:24Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15336,
+    "total_time_s": 143.9
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "id": "scenario_1771521446",
+  "description_originale": "Le directeur commercial ou directeur de la distribution d'une compagnie d'assurance régionale ou société de gestion de 150+ salariés veut renégocier les conditions avant de signer. Il met en concurrence 2 autres fournisseurs. Votre objectif : défendre la valeur de votre offre, comprendre ses vrais critères de décision, et closer.\n[Secteur : finance_assurance]\n[Type d'appel : negociation]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "negociation",
+      "canal": "telephone",
+      "cycle_vente": "long",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial / Directeur de la Distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        "Direction Générale (validation finale probable)",
+        "Direction Financière (validation budgétaire)",
+        "Direction des Achats (process concurrentiel)"
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "Solution B2B pour compagnies d'assurance ou sociétés de gestion",
+      "proposition_valeur_presumee": "Optimisation de la distribution, performance commerciale, ou outils de gestion pour le secteur assurantiel",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "2 autres fournisseurs en compétition"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect met en concurrence 2 autres fournisseurs",
+        "Demande de renégociation des conditions avant signature",
+        "Pression sur les prix et conditions commerciales"
+      ],
+      "implicites": [
+        "Le commercial pourrait céder trop vite sur le prix par peur de perdre l'affaire",
+        "Difficulté à identifier les vrais critères de décision au-delà du prix",
+        "Manque de différenciation perçue par rapport à la concurrence",
+        "Possible utilisation tactique de la concurrence pour obtenir des concessions",
+        "Incertitude sur le pouvoir de décision réel de l'interlocuteur"
+      ],
+      "probleme_racine": "Les commerciaux ne savent pas défendre leur valeur face à la pression concurrentielle et cèdent sur le prix sans comprendre les vrais critères de décision du prospect"
+    },
+    "objections_mentionnees": [
+      "Vos concurrents proposent des conditions plus avantageuses",
+      "Votre prix est trop élevé par rapport au marché",
+      "Je dois justifier ce choix auprès de ma direction",
+      "Sans amélioration des conditions, je vais devoir choisir un autre fournisseur"
+    ],
+    "objectif_formation": "Former les commerciaux à défendre la valeur de leur offre en phase de négociation, identifier les vrais critères de décision au-delà du prix, et closer efficacement malgré la concurrence",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Fournisseur de solutions pour le secteur finance_assurance",
+      "entreprise_description": "Éditeur de solutions ou prestataire de services spécialisé dans l'accompagnement des compagnies d'assurance et sociétés de gestion",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution destinée à optimiser la distribution, la performance commerciale ou la gestion opérationnelle des compagnies d'assurance régionales et sociétés de gestion",
+      "proposition_valeur": "ROI mesurable, expertise sectorielle spécifique assurance, accompagnement au déploiement, fiabilité et pérennité de la solution, références dans le secteur",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Compagnies d'assurance de taille similaire",
+        "Sociétés de gestion comparables"
+      ],
+      "avantages_vs_concurrence": "Expertise métier assurance, qualité de l'accompagnement, pérennité de l'éditeur, fonctionnalités spécifiques au secteur, ROI documenté",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre vendue",
+        "Montant du contrat",
+        "Durée d'engagement",
+        "Historique de la relation commerciale",
+        "Éléments de différenciation concrets vs concurrence",
+        "Étapes précédentes du cycle de vente"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Delcroix",
+      "age": 51,
+      "poste": "Directeur Commercial & Distribution",
+      "entreprise": {
+        "nom": "Mutuelle Prévoir Auvergne",
+        "secteur": "Assurance santé et prévoyance régionale",
+        "taille": "220 salariés",
+        "ca_approximatif": "78M€ de cotisations collectées"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la méfiance",
+        "Orgueilleux sur ses compétences de négociateur",
+        "Anxieux sur sa légitimité face au COMEX"
+      ],
+      "motivations_profondes": [
+        "Prouver qu'il a évité un surcoût à l'entreprise",
+        "Justifier son choix devant la DG avec un dossier béton",
+        "Maintenir son image de dur négociateur auprès de ses équipes",
+        "Obtenir une victoire symbolique sur le vendeur pour compenser sa frustration de devoir justifier chaque ligne budgétaire"
+      ],
+      "peurs_freins": [
+        "Que la Direction Générale remette en question son choix",
+        "Passer pour un pigeon qui s'est fait avoir sur le prix",
+        "Que le DAF découvre qu'un concurrent était 15% moins cher",
+        "Se tromper de fournisseur et devoir l'assumer pendant 3 ans de contrat",
+        "Perdre la face devant son réseau de 45 commerciaux s'il choisit mal"
+      ],
+      "rapport_aux_commerciaux": "Relation de défiance cordiale. Il respecte le métier mais déteste se sentir manipulé. A tendance à tester la solidité du vendeur en poussant les limites. Apprécie paradoxalement ceux qui tiennent bon face à lui.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Professionnel mais froid, avec une pointe de lassitude calculée. Commence souvent par : 'Bon, on va pas y passer trois heures hein...'",
+      "signaux_interet": [
+        "Pose des questions techniques précises sur l'implémentation",
+        "Demande spontanément des références clients dans la région Auvergne-Rhône-Alpes",
+        "Évoque des situations concrètes de son réseau commercial",
+        "Passe du vouvoiement distant à un tutoiement mi-complice",
+        "Dit 'Attends, répète-moi ça' quand un argument touche juste"
+      ],
+      "signaux_rejet": [
+        "Soupirs appuyés et silences pesants",
+        "Regarde ostensiblement sa montre ou son écran",
+        "Coupe la parole avec 'Ouais ouais, ça je connais'",
+        "Mentionne les concurrents de façon insistante et floue",
+        "Phrase assassine : 'Écoutez, je vais être transparent avec vous...' suivie d'une demande de remise"
+      ],
+      "tics_langage": [
+        "Bon...",
+        "Soyons clairs hein",
+        "Je vais être cash avec vous",
+        "Moi, les beaux discours...",
+        "Dans le dur, concrètement",
+        "Termine ses phrases par 'hein' quand il veut imposer son point de vue"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Très faible. Coupe après 45 secondes maximum. Déteste les présentations PowerPoint commerciales. Veut aller 'droit au but' mais ne sait pas toujours définir quel est ce but."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Fusion récente avec une petite mutuelle locale (18 mois). Pression du COMEX pour industrialiser la distribution et rattraper le retard digital. Le CA stagne depuis 2 ans. Turnover élevé chez les conseillers (28%). Climat social tendu.",
+      "priorites_actuelles": [
+        "Réduire le time-to-market des nouveaux produits de 6 à 3 mois",
+        "Équiper les 45 commerciaux d'outils modernes sans perdre 3 mois en formation",
+        "Prouver au COMEX qu'il maîtrise ses budgets",
+        "Éviter un nouvel échec après le déploiement raté d'un CRM il y a 2 ans"
+      ],
+      "experience_avec_offre_similaire": "Échec cuisant avec un éditeur SaaS en 2022. Projet abandonné après 8 mois, 120K€ perdus, équipes démotivées. En garde une méfiance viscérale envers les 'promesses de ROI en 6 mois'. Ne le dit pas spontanément mais ça transparaît dans ses objections.",
+      "fournisseur_actuel": "Mix de solutions disparates : un vieux CRM on-premise (10 ans), Excel pour le pilotage, et un outil maison développé par l'IT qui ne fait plus les mises à jour",
+      "budget_disponible": "Entre 180K€ et 250K€ sur 3 ans selon ses dires, mais doit passer devant le DAF pour validation au-delà de 200K€. A déjà négocié âprement en interne pour obtenir cette enveloppe."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Parler chiffres concrets et mesurables : taux d'adoption, délai de ROI documenté chez des pairs",
+        "Montrer qu'on comprend l'échec de 2022 sans qu'il ait besoin de le raconter",
+        "Proposer un pilote limité ou une phase 1 sécurisée",
+        "Citer des références d'autres mutuelles régionales (pas les grands groupes nationaux qui ne sont pas comparables)",
+        "Lui donner des munitions argumentaires pour le COMEX : tableau comparatif, grille ROI, matrice de risques",
+        "Reconnaître la légitimité de sa pression sur les prix MAIS expliquer pourquoi céder dessus serait contre-productif pour LUI"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours marketing générique sur la 'transformation digitale'",
+        "Minimiser ses craintes ou lui dire que 'ça va bien se passer'",
+        "Céder immédiatement sur le prix sans contrepartie (il perdra tout respect)",
+        "Comparer sa mutuelle à des mastodontes nationaux",
+        "Lui faire sentir qu'on le prend pour un ignare en assurance",
+        "Insister pour rencontrer la DG alors qu'il ne l'a pas proposé",
+        "Éluder ses questions sur les concurrents ou prétendre qu'ils n'existent pas"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoutez, on va pas y passer trois heures hein... J'ai déjà deux autres fournisseurs sur le coup et franchement, vos tarifs sont pas dans la fourchette. On va aller droit au but.",
+        "sous_texte": "Je veux te montrer d'entrée que je suis en position de force. Je teste ta réaction face à la pression. Si tu paniques, je saurai que je peux te faire plier.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas se justifier sur le prix immédiatement. Recadrer sur l'objectif de l'échange et montrer qu'on comprend ses enjeux COMEX."
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Soyons clairs : je reçois trois appels par semaine de vos concurrents. Pourquoi je devrais vous écouter vous plutôt qu'eux ?",
+        "sous_texte": "Prouve-moi que tu n'es pas un commercial lambda. J'ai besoin de sentir que tu comprends vraiment mon secteur, sinon je vais raccrocher mentalement.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Démontrer une connaissance fine des enjeux mutuelles régionales et citer une référence comparable sans être générique."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais, les enjeux de distribution je connais merci... Moi ce qui m'intéresse c'est : ça coûte combien et ça me fait gagner quoi concrètement. Le reste c'est du blabla.",
+        "sous_texte": "Je coupe court parce que j'ai peur que tu me fasses perdre du temps avec des questions inutiles. En vrai, j'ai besoin qu'on creuse mais je ne veux pas paraître vulnérable.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Valider son besoin de concret PUIS expliquer pourquoi 2-3 questions permettront de donner une réponse chiffrée précise plutôt qu'approximative."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Écoutez, on a déjà testé un truc dans ce genre-là il y a deux ans. Ça nous a coûté bonbon et au final on a rien gardé. Donc bon, les belles promesses...",
+        "sous_texte": "J'ai été échaudé et je ne veux pas revivre ça. Je porte encore la cicatrice de cet échec devant ma direction. Si tu me refais le même coup, je suis mort.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Creuser l'échec passé sans jugement pour comprendre ce qui n'a pas marché, puis montrer en quoi l'approche sera différente avec des garanties concrètes."
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Attends, pourquoi tu me poses toutes ces questions ? Les deux autres m'ont fait un chiffrage direct. T'es pas capable de me sortir un prix ou quoi ?",
+        "sous_texte": "Je me demande si tu ne cherches pas à gagner du temps ou à compliquer les choses. Ça me rend méfiant. Mais en vrai, je suis curieux de savoir pourquoi tu procèdes différemment.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Expliquer la différence entre un prix standardisé et un chiffrage adapté qui évite les mauvaises surprises en cours de projet."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon OK, mais concrètement, chez Mutuelle Prévoir Auvergne, avec NOS contraintes, ça donne quoi ? Parce que vos exemples là, c'est bien gentil mais c'est pas nous hein.",
+        "sous_texte": "Je veux être sûr que ta solution marche vraiment dans mon contexte. J'ai peur de découvrir après signature que 'ah non, pour votre cas spécifique il faudra un développement custom à 40K€'.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Contextualiser avec des références de mutuelles régionales similaires et poser des questions précises sur ses spécificités pour personnaliser la réponse."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Soyons cash : vos concurrents me proposent sensiblement la même chose à 30% moins cher. Alors soit vous êtes hors marché, soit il y a un truc que je comprends pas.",
+        "sous_texte": "C'est peut-être du bluff, peut-être vrai. Je veux voir comment tu réagis. Si tu baisses immédiatement ton prix, je saurai que tu me mentais sur la valeur. Si tu tiens bon, il faut que tu m'expliques POURQUOI.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas contester le chiffre mais creuser ce qui est réellement comparable dans les offres (périmètre, accompagnement, garanties) et valoriser les différences."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais le ROI en 12 mois, ça c'est de la théorie. Dans le dur, avec mes équipes qui sont déjà au taquet, la formation, le déploiement, tout ça... Je vais perdre 6 mois minimum.",
+        "sous_texte": "Je ne crois pas à tes chiffres parce que j'ai l'expérience du terrain. Prouve-moi que tu as anticipé la vraie vie avec ses imprévus et sa résistance au changement.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la réalité du déploiement et détailler le plan d'accompagnement concret avec jalons et indicateurs de suivi pour sécuriser la montée en charge."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi les beaux discours sur l'innovation et tout ça... Mon problème c'est que je dois justifier ça devant le COMEX dans 3 semaines. Si je peux pas leur montrer un truc béton, je suis mal.",
+        "sous_texte": "J'ai besoin d'aide pour construire mon argumentaire interne. Je ne te le demande pas directement parce que ça ferait faible, mais si tu me tends une perche...",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer des livrables concrets pour sa présentation COMEX : business case chiffré, comparatif, matrice de risques, références vérifiables."
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends répète-moi ça... Tu dis que chez la Mutuelle Limousin ils ont réduit leur time-to-market de 5 à 2 mois ? Comment ils ont fait concrètement ?",
+        "sous_texte": "Là tu as capté mon attention. C'est exactement mon problème. Mais j'ai besoin de détails tangibles, pas de la comm'. Si tu me balades, je vais te griller.",
+        "type": "test",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Donner des détails factuels précis sur le cas client avec métriques avant/après et proposer une mise en relation si besoin."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoutez, votre solution m'intéresse. Mais à ce prix-là, je peux pas passer. Il faut me faire un effort de 20% minimum sinon je vais devoir partir sur le concurrent, même si je préférerais bosser avec vous.",
+        "sous_texte": "Je suis presque convaincu mais je dois absolument obtenir une victoire sur le prix pour justifier mon choix en interne et garder ma crédibilité de négociateur. C'est aussi une question d'égo.",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas céder frontalement mais proposer un trade-off : ajustement de périmètre, phasage différent, ou contrepartie qui ne casse pas la marge tout en lui donnant sa victoire."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Je vais être transparent avec vous : le DAF va me demander pourquoi j'ai pas pris l'offre la moins chère. Donnez-moi des munitions pour lui répondre.",
+        "sous_texte": "C'est ma vraie préoccupation. Je suis déjà convaincu mais j'ai peur de ne pas pouvoir défendre mon choix en interne face aux financiers qui ne regardent que le prix.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Co-construire l'argumentaire DAF en intégrant TCO, risques projet, coût d'un échec, et valeur des garanties d'accompagnement."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Soyons clairs hein : si je signe avec vous et que ça plante comme en 2022, ma tête va tomber. Qu'est-ce qui me garantit que ça va pas merder ?",
+        "sous_texte": "C'est ma peur numéro 1. Je ne peux pas me permettre un deuxième échec. J'ai besoin de garde-fous contractuels et d'être rassuré sur les risques.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Proposer des clauses de garantie (pilote, jalons de validation, réversibilité) et des engagements contractuels sur les livrables critiques."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK mais là on parle de quoi, d'un contrat sur 3 ans ? Et si au bout de 6 mois je me rends compte que ça marche pas ? Je suis coincé c'est ça ?",
+        "sous_texte": "J'ai besoin de flexibilité et de points de sortie. L'engagement long terme me terrorise après mon échec précédent. Je veux des filets de sécurité.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Structurer le contrat en phases avec points de validation et conditions de réversibilité claires pour sécuriser sans casser la rentabilité."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon là on tourne en rond... Faites-moi une dernière proposition chiffrée pour lundi, je mets ça en face des deux autres et je vous dis quoi mardi. Ça vous va ?",
+        "sous_texte": "Je veux clore la discussion parce que je suis fatigué de négocier. Je vais vraiment comparer ou c'est juste pour te mettre la pression une dernière fois ? Même moi je ne sais pas encore.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter cette posture passive. Recentrer sur les critères de décision au-delà du prix et obtenir un engagement sur le process de décision."
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez, j'ai réfléchi... Votre solution est bonne, on est d'accord. Mais mon concurrent me propose exactement la même chose 25% moins cher avec 6 mois d'accompagnement offerts en plus. Donc soit vous vous alignez, soit je suis obligé de partir avec eux. Je vous laisse jusqu'à vendredi 17h pour me dire si vous pouvez faire quelque chose. Après c'est trop tard, je dois donner ma réponse au COMEX lundi matin.",
+      "condition_declenchement": "Après avoir épuisé les autres objections et senti que le commercial était solide. Ultime test pour voir s'il va craquer sous la pression du deadline et de la menace concurrentielle. Stéphane joue son va-tout."
+    },
+    "pattern_escalade": "Stéphane commence par des objections tactiques génériques (prix, concurrence) pour tester la solidité du vendeur. Si le vendeur tient bon et démontre une vraie compréhension, il passe progressivement à des objections plus sincères liées à ses peurs (échec 2022, COMEX, DAF). Plus le vendeur creuse et rassure, plus Stéphane s'ouvre. Mais au moment du closing, il réactive systématiquement une dernière objection tactique sur le prix pour obtenir une victoire symbolique avant de signer.",
+    "piege_classique": "Céder sur le prix dès la première demande de remise. Stéphane perdra immédiatement tout respect pour le vendeur et se demandera : 'S'il lâche 20% si facilement, c'est qu'il me volait de 20% depuis le début'. Cela confirmera sa méfiance viscérale envers les commerciaux et le confortera dans l'idée de pousser encore plus loin. Le paradoxe : il VEUT qu'on résiste pour pouvoir faire confiance."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Fournisseur de solutions pour le secteur finance_assurance",
+      "description": "Éditeur de solutions ou prestataire de services spécialisé dans l'accompagnement des compagnies d'assurance et sociétés de gestion"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution destinée à optimiser la distribution, la performance commerciale ou la gestion opérationnelle des compagnies d'assurance régionales et sociétés de gestion",
+      "proposition_valeur": "ROI mesurable, expertise sectorielle spécifique assurance, accompagnement au déploiement, fiabilité et pérennité de la solution, références dans le secteur",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Compagnies d'assurance de taille similaire",
+        "Sociétés de gestion comparables"
+      ],
+      "avantages_vs_concurrence": "Expertise métier assurance, qualité de l'accompagnement, pérennité de l'éditeur, fonctionnalités spécifiques au secteur, ROI documenté"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "Former les commerciaux à défendre la valeur de leur offre en phase de négociation, identifier les vrais critères de décision au-delà du prix, et closer efficacement malgré la concurrence",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Négociation finale — Solution distribution assurance",
+    "vous_etes": "Commercial senior chez un éditeur de solutions pour mutuelles et compagnies d'assurance régionales.",
+    "vous_vendez": "Une plateforme de pilotage commercial et distribution pour mutuelle régionale, budget négocié autour de 220K€ sur 3 ans.",
+    "vous_appelez": "Stéphane Delcroix, 51 ans, Directeur Commercial de Mutuelle Prévoir Auvergne (220 salariés, 78M€). Négociateur chevronné, méfiant, sous pression de son COMEX. A vécu un échec projet il y a 2 ans (120K€ perdus).",
+    "ce_que_vous_savez": [
+      "Il vous a rappelé après 3 semaines : vous êtes dans les 3 finalistes",
+      "Il a un budget validé entre 180K€ et 250K€, mais doit justifier devant le DAF au-delà de 200K€",
+      "Ses 45 commerciaux utilisent un vieux CRM et Excel — turnover à 28%, climat tendu",
+      "Il met en concurrence 2 autres fournisseurs et commence par demander une renégociation des conditions",
+      "Fusion récente, pression pour industrialiser, besoin de prouver qu'il maîtrise ses coûts"
+    ],
+    "votre_objectif": "Tenir votre prix, comprendre ses vrais critères de choix au-delà du tarif, closer sans concession injustifiée.",
+    "vos_atouts": [
+      "Référence Mutuelle Solidaire Rhône-Alpes : -40% time-to-market produits, ROI en 11 mois",
+      "Module pilote 90 jours pour limiter les risques (contrairement aux concurrents en big bang)",
+      "Accompagnement post-déploiement inclus : équipe dédiée mutuelles pendant 18 mois",
+      "Grille ROI détaillée + matrice de risques prête pour son COMEX"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:17:26Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16666,
+    "total_time_s": 154.3
+  }
+}

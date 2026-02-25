@@ -1,0 +1,361 @@
+{
+  "id": "scenario_1771522830",
+  "description_originale": "Le directeur commercial ou directeur de la distribution d'une compagnie d'assurance régionale ou société de gestion de 150+ salariés est un compte existant stratégique. Vous avez identifié une opportunité d'élargir le périmètre (nouveau département, nouveau site, nouveau produit). Votre objectif : décrocher un RDV de présentation avec le bon interlocuteur.\n[Secteur : finance_assurance]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés",
+      "interlocuteur_principal": {
+        "poste": "Directeur Commercial ou Directeur de la Distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [
+        {
+          "poste": "Directeur de département concerné",
+          "niveau_hierarchique": "directeur"
+        },
+        {
+          "poste": "Responsable de site",
+          "niveau_hierarchique": "manager"
+        }
+      ],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "Extension de périmètre : nouveau département, nouveau site ou nouveau produit",
+      "proposition_valeur_presumee": "Élargissement de la collaboration existante pour accompagner la croissance ou diversification du client",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Identifier le bon interlocuteur pour l'extension de périmètre",
+        "Décrocher un RDV de présentation"
+      ],
+      "implicites": [
+        "Sortir du statu quo d'une relation commerciale établie",
+        "Convaincre de la pertinence d'élargir la collaboration",
+        "Naviguer dans l'organisation pour toucher le décideur approprié",
+        "Éviter d'être perçu comme opportuniste sur un compte existant"
+      ],
+      "probleme_racine": "Transformer une relation commerciale stable en moteur de croissance mutuelle sans perturber l'équilibre existant"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à conduire des appels d'upsell stratégiques sur comptes existants pour élargir le périmètre de collaboration et décrocher des RDV de présentation avec les bons interlocuteurs",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_b2b_pour_assurance",
+      "entreprise_description": "Fournisseur établi de solutions ou services pour compagnies d'assurance et sociétés de gestion",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solutions ou services permettant d'étendre la collaboration : déploiement sur nouveaux départements, nouveaux sites géographiques ou nouveaux produits/services",
+      "proposition_valeur": "Capitaliser sur la relation de confiance existante pour accompagner l'expansion ou la diversification du client avec des solutions éprouvées",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "Collaboration existante réussie avec le client"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie du client, relation établie, historique de succès, réduction du risque perçu",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "bonne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "Nature précise du produit/service vendu",
+        "Fourchette de prix",
+        "Nom de l'entreprise vendeuse",
+        "Objections anticipées spécifiques"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Sylvain",
+      "nom": "Herbault",
+      "age": 52,
+      "poste": "Directeur Commercial Régional",
+      "entreprise": {
+        "nom": "Mutuelle Solidarité Prévoyance",
+        "secteur": "Assurance de personnes et prévoyance collective",
+        "taille": "280 salariés",
+        "ca_approximatif": "175M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique conservateur - préfère consolider l'existant avant d'innover",
+        "Territorial - protège farouchement ses prérogatives et son périmètre",
+        "Calculateur relationnel - valorise énormément la loyauté et la stabilité"
+      ],
+      "motivations_profondes": [
+        "Maintenir sa position dominante face à la nouvelle Directrice des Opérations qui empiète sur son territoire",
+        "Démontrer que sa région est un pilier de stabilité dans un groupe en transformation digitale",
+        "Préparer discrètement sa succession dans 3-4 ans sans perdre la face",
+        "Obtenir des résultats sans prendre de risques qui terniraient son bilan de carrière"
+      ],
+      "peurs_freins": [
+        "Que l'extension proposée révèle des failles dans son organisation actuelle",
+        "Perdre le contrôle en impliquant d'autres départements ou sites",
+        "Se faire court-circuiter par des fournisseurs qui iraient directement voir la Direction Générale",
+        "Que le projet capote et qu'on lui reproche d'avoir accepté une extension mal calibrée",
+        "Devoir justifier un nouveau budget alors que son N+1 lui demande de l'austérité"
+      ],
+      "rapport_aux_commerciaux": "Cordial mais condescendant. Respecte ceux qui ont fait leurs preuves mais considère que 80% des commerciaux ne comprennent rien aux enjeux internes d'une mutuelle. Déteste qu'on lui force la main ou qu'on essaie de contourner son autorité.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Apparemment chaleureux mais teste immédiatement la légitimité de l'appel : 'Ah oui bonjour... bon écoutez je suis en plein truc là, mais vas-y dis-moi rapidement'",
+      "signaux_interet": [
+        "Pose des questions sur QUI exactement serait impliqué côté MSP",
+        "Demande si d'autres mutuelles de taille similaire ont déjà fait ce type d'extension",
+        "Mentionne spontanément un problème opérationnel qui pourrait être lié",
+        "Change de ton et ralentit le débit : 'Attends attends, redis-moi ça comment vous faites exactement ?'"
+      ],
+      "signaux_rejet": [
+        "Coupe avec un 'Ouais ouais je vois' répété qui signifie qu'il n'écoute plus",
+        "Invoque sa hiérarchie comme bouclier : 'Faut voir ça avec le Directeur Général de toute façon'",
+        "Regarde ostensiblement ses mails en parlant (en présentiel)",
+        "Termine ses phrases par 'On en reparle' sans proposer de date concrète",
+        "Délègue immédiatement : 'Envoie-moi un mail, je transfère à mon adjoint'"
+      ],
+      "tics_langage": [
+        "Commence souvent par 'Écoute...' ou 'Bon écoute...'",
+        "Utilise 'Nous au niveau de la région' pour marquer son territoire",
+        "Dit 'Clairement' avant chaque affirmation importante",
+        "Termine par des 'Voilà voilà' qui signalent la fin de la conversation",
+        "Emploie 'mon N+1' plutôt que le nom de son supérieur"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "Quasi-nulle. Coupe après 45 secondes maximum s'il n'a pas compris où vous voulez en venir. Attend qu'on aille droit au but et qu'on respecte son agenda surchargé."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "MSP vient d'absorber une petite mutuelle locale (45 salariés) et doit intégrer leurs processus d'ici 6 mois. Pression du siège pour harmoniser les outils et digitaliser. Sylvain gère cette intégration pour sa région, ce qui s'ajoute à ses objectifs commerciaux habituels.",
+      "priorites_actuelles": [
+        "Réussir l'intégration de la mutuelle rachetée sans perdre de clients",
+        "Atteindre ses objectifs de production (+8% vs N-1) malgré un marché atone",
+        "Défendre son budget formation 2025 qui risque d'être amputé de 15%",
+        "Préparer la convention annuelle des commerciaux région (dans 7 semaines)"
+      ],
+      "experience_avec_offre_similaire": "A déjà travaillé avec vous sur le périmètre initial (satisfaction correcte, quelques couacs sur la mise en œuvre mais rien de rédhibitoire). A refusé une extension il y a 18 mois proposée par votre prédécesseur car 'le timing n'était pas bon'.",
+      "fournisseur_actuel": "Vous, sur le périmètre historique. Utilise aussi Prévia Conseil pour l'audit réglementaire et FormAssur pour la formation produits.",
+      "budget_disponible": "Budget 2025 en cours de finalisation. Possède une enveloppe 'projets spécifiques région' d'environ 80K€ dont 40% déjà alloués. Pourrait débloquer 20-25K€ si ROI démontrable et validation implicite de son N+1."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner explicitement que d'autres régions de mutuelles comparables ont réussi cette extension (preuve sociale intra-sectorielle)",
+        "Faire le lien avec l'intégration en cours de la mutuelle rachetée - proposer l'extension comme facilitateur",
+        "Valoriser son statut de pilote régional : 'Vous seriez le premier Directeur Régional MSP à déployer ça'",
+        "Proposer un format ultra-cadré : durée, périmètre, interlocuteurs définis - rassure son besoin de contrôle",
+        "Impliquer son adjoint dès le départ pour qu'il ne se sente pas seul décideur"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Suggérer d'aller voir directement son N+1 ou un autre département",
+        "Minimiser la complexité de son contexte actuel : 'Ça se met en place facilement'",
+        "Critiquer même subtilement l'existant : 'Pour améliorer ce que vous faites actuellement...'",
+        "Proposer un RDV trop lointain (au-delà de 3 semaines) ou trop proche (moins de 5 jours)",
+        "Parler prix ou engagement budgétaire avant d'avoir posé le diagnostic",
+        "Utiliser un jargon techno ou startup incompatible avec la culture mutualiste",
+        "Ne pas connaître le nom de son adjoint ou de ses principaux managers"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute là je suis en plein truc, t'as 2 minutes pas plus hein, vas-y dis-moi rapidement",
+        "sous_texte": "Je vais évaluer en 30 secondes si tu mérites mon attention ou si je te rembare poliment. Prouve ta légitimité immédiatement.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter la contrainte temps, annoncer l'objet précis en 20 secondes max avec bénéfice concret lié à son contexte actuel"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais mais attends, on travaille déjà ensemble non? C'est pour quoi exactement là?",
+        "sous_texte": "Pourquoi tu me relances alors qu'on a déjà un contrat? Tu veux me vendre autre chose ou il y a un problème avec l'existant?",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rassurer sur l'existant, positionner l'extension comme évolution naturelle pas comme correction, lien avec nouveau contexte"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Bon écoute tu sais qu'on est en pleine intégration de la mutuelle qu'on a rachetée là, franchement c'est pas le moment de rajouter des trucs",
+        "sous_texte": "Je suis débordé et stressé. Je ne veux PAS d'une complication supplémentaire. Convaincs-moi que ça simplifie plutôt que ça complexifie.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer l'objection en opportunité : l'extension peut justement faciliter l'intégration, référence à cas similaire"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Pourquoi tu me parles de ça maintenant? Ton prédécesseur m'avait déjà proposé un truc dans le genre il y a... 18 mois je crois, j'avais dit non",
+        "sous_texte": "J'ai déjà évalué et refusé. Tu crois être plus malin que ton collègue? Qu'est-ce qui a changé qui justifie que je réévalue?",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître la décision passée, identifier ce qui a changé depuis (rachat, nouveaux enjeux), ne pas critiquer le prédécesseur"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais ouais je vois... mais bon tu comprends nous au niveau de la région on a nos process hein, je vais pas bouleverser tout ça",
+        "sous_texte": "Je protège mon territoire et mon organisation. Je ne veux pas qu'un fournisseur me dicte comment gérer ma région.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer : adaptation aux process existants, pas de bouleversement, lui laisser le contrôle total du déploiement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et concrètement ça impliquerait qui chez nous? Parce que moi je gère le commercial, mais si tu parles de nouveau site ou nouveau département, c'est pas forcément mon périmètre ça",
+        "sous_texte": "Je veux savoir si ça va m'obliger à impliquer d'autres directeurs, ce qui diluerait mon contrôle et créerait des complications politiques internes.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier le périmètre précis, lui laisser décider qui impliquer, proposer qu'il reste pilote/coordinateur"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoute clairement là on finalise les budgets 2025, mon N+1 me demande de l'austérité, c'est compliqué de rajouter des lignes tu vois",
+        "sous_texte": "Objection budgétaire vraie MAIS aussi test pour voir si tu vas baisser ton prix ou si tu peux justifier un ROI solide.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas parler prix maintenant, parler ROI et gains opérationnels, proposer de cadrer ensemble pour présenter au N+1"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends mais vous avez déjà fait ça chez d'autres mutuelles de notre taille? Parce que nous on a des spécificités hein",
+        "sous_texte": "J'ai besoin de preuves sociales sectorielles pour réduire mon risque perçu. Je ne veux pas être cobaye.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Donner exemples concrets de mutuelles comparables (taille, enjeux), sans trahir confidentialité, montrer maîtrise des spécificités"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais bon moi je connais mes équipes, elles ont déjà la tête dans le guidon avec l'intégration, rajouter une formation ou un nouvel outil là...",
+        "sous_texte": "Je crains la résistance au changement de mes équipes et que ça me fasse perdre du temps de management. Rassure-moi sur la charge.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Minimiser la charge de déploiement, proposer accompagnement, phaser éventuellement, transformer en facilitateur pour leurs enjeux"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et faut voir ça avec qui au juste? Parce que si ça touche les opérations, c'est la nouvelle Directrice des Ops qui va vouloir mettre son nez dedans",
+        "sous_texte": "Enjeu politique interne majeur : je suis en lutte de territoire avec elle. Je ne veux PAS qu'elle devienne décideur sur ce sujet.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Le positionner lui comme pilote légitime, proposer que les Ops soient consultées mais que lui garde la main sur la décision"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon écoute c'est intéressant ton truc mais clairement faut que j'en parle à mon adjoint déjà, lui il connaît mieux le terrain, et puis faut voir le timing",
+        "sous_texte": "Tentative de dilution/temporisation. Pas totalement fermé mais pas assez convaincu pour s'engager seul. Veut partager la responsabilité.",
+        "type": "tactique",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Valoriser l'idée d'impliquer l'adjoint (montrer que vous le connaissez), proposer RDV à 3 rapidement avec agenda structuré"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Attends mais là tu me parles de nouveau département ou nouveau site, mais nous on a pas de nouveau site prévu hein, on est en consolidation pas en expansion",
+        "sous_texte": "Je ne vois pas l'adéquation entre ton offre et MA réalité. Prouve-moi que ça s'applique à mon contexte actuel.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Élargir la définition : extension = aussi nouveaux produits, nouvelles populations, mutuelle rachetée à intégrer, etc."
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais pourquoi pas mais bon là j'ai la convention des commerciaux dans 7 semaines, je suis à fond dessus, on en reparle après si tu veux",
+        "sous_texte": "Temporisation polie. Pas assez urgent à ses yeux. Va falloir créer de l'urgence ou accepter le délai mais l'encadrer.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Soit lier l'extension à la convention (contenu, annonce), soit accepter le délai MAIS fixer date précise post-convention dès maintenant"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon écoute envoie-moi un mail avec tout ça, je regarde et je te redis, voilà voilà",
+        "sous_texte": "Tentative de clôture polie de la conversation sans engagement. Le mail finira probablement non lu. Ultime échappatoire.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter le mail MAIS verrouiller RDV dans la foulée : 'Je t'envoie ça, on se cale 30min mardi prochain pour en discuter?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement ça me paraît compliqué de caler un RDV là-dessus, on voit déjà pas mal de prestataires, faut que je priorise",
+        "sous_texte": "Saturation décisionnelle. Je ne veux pas perdre de temps en RDV sauf si valeur ultra-claire. Prouve que ce RDV vaut le coup.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valoriser son temps : RDV court, agenda défini, livrable concret à la clé, focus sur SES priorités actuelles"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Et puis bon faut que je voie ça avec mon N+1 de toute façon, ça se décide pas comme ça à mon niveau",
+        "sous_texte": "Bouclier hiérarchique. Peut être sincère (besoin validation) ou tactique (fuir la décision). Teste si vous allez essayer de court-circuiter.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne JAMAIS proposer d'aller voir le N+1. Proposer de l'aider à préparer les éléments pour convaincre son N+1 lors du RDV"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoute moi je suis pas fermé hein, mais clairement là avec tout ce qu'on a sur le feu, l'intégration de la mutuelle, les budgets qui se bouclent, la convention à préparer... franchement je vois pas comment je case ça avant début d'année prochaine. On s'en reparle courant janvier si tu veux, voilà. Allez, je te laisse là j'ai un conf call dans 3 minutes.",
+      "condition_declenchement": "Apparaît si le commercial n'a pas su créer d'urgence, ni lier l'extension aux enjeux actuels (intégration), ni proposer un format rassurant et peu chronophage. Combinaison fatale : timing mal calibré + valeur floue + format trop lourd perçu."
+    },
+    "pattern_escalade": "Sylvain commence cordial mais distant (test légitimité) → Si le commercial survit aux 2 premières minutes, il devient plus attentif et pose des questions de fond → Si les réponses sont solides, il révèle ses vrais freins (politique interne, budget, timing) → À ce stade, soit il s'engage sur un RDV structuré, soit il temporise avec des excuses légitimes → L'objection finale arrive si accumulation de doutes non levés + absence d'ancrage dans SES priorités urgentes.",
+    "piege_classique": "Sylvain donne l'impression d'être ouvert ('Pourquoi pas', 'C'est intéressant') mais glisse systématiquement vers la temporisation ('On en reparle', 'Je regarde'). Le commercial junior croit avoir semé des graines alors qu'il s'est fait poliment éconduire. Piège mortel : proposer d'aller voir son N+1 ou la Dir. Ops → fermeture immédiate et définitive, perçu comme contournement d'autorité. Autre piège : ne pas connaître le nom de son adjoint ou les détails de l'intégration en cours = disqualification instantanée pour manque de préparation."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_b2b_pour_assurance",
+      "description": "Fournisseur établi de solutions ou services pour compagnies d'assurance et sociétés de gestion"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solutions ou services permettant d'étendre la collaboration : déploiement sur nouveaux départements, nouveaux sites géographiques ou nouveaux produits/services",
+      "proposition_valeur": "Capitaliser sur la relation de confiance existante pour accompagner l'expansion ou la diversification du client avec des solutions éprouvées",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "Collaboration existante réussie avec le client"
+      ],
+      "avantages_vs_concurrence": "Connaissance approfondie du client, relation établie, historique de succès, réduction du risque perçu"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à conduire des appels d'upsell stratégiques sur comptes existants pour élargir le périmètre de collaboration et décrocher des RDV de présentation avec les bons interlocuteurs",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance upsell — Extension périmètre Mutuelle MSP",
+    "vous_etes": "Commercial compte-clé chez votre entreprise, en charge de la région depuis 14 mois après le départ de votre prédécesseur.",
+    "vous_vendez": "Extension de votre solution actuelle à de nouveaux départements ou sites de MSP — budget estimé 20-25K€ pour un déploiement pilote.",
+    "vous_appelez": "Sylvain Herbault, 52 ans, Directeur Commercial Régional chez Mutuelle Solidarité Prévoyance (280 salariés). Client existant satisfait sur le périmètre historique. Territorial, pragmatique, allergique au temps perdu.",
+    "ce_que_vous_savez": [
+      "MSP intègre actuellement une mutuelle rachetée (45 salariés) — deadline 6 mois",
+      "Sylvain a refusé une extension il y a 18 mois proposée par votre prédécesseur ('timing pas bon')",
+      "Il gère à la fois l'intégration ET ses objectifs commerciaux (+8%) avec un budget formation menacé",
+      "Son adjoint et son N+1 sont des acteurs-clés — ne jamais les contourner",
+      "Il valorise énormément la preuve sociale intra-sectorielle (autres mutuelles similaires)"
+    ],
+    "votre_objectif": "Décrocher un RDV physique de 45 min avec Sylvain et son adjoint dans les 2-3 prochaines semaines pour présenter l'extension comme facilitateur de l'intégration en cours.",
+    "vos_atouts": [
+      "Relation établie et historique de succès sur le périmètre actuel",
+      "3 mutuelles régionales comparables ont déployé cette extension en 2024 avec succès",
+      "Votre solution peut accélérer l'harmonisation des process de la mutuelle rachetée",
+      "Format ultra-cadré : durée, périmètre et interlocuteurs définis dès le départ"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:40:30Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16049,
+    "total_time_s": 148.9
+  }
+}

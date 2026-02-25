@@ -1,0 +1,364 @@
+{
+  "id": "scenario_1771521731",
+  "description_originale": "Vous appelez à froid le directeur d'agence / fondateur d'une agence de recrutement ou cabinet RH de 10-25 consultants. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : rh_recrutement]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "rh_recrutement",
+      "taille_entreprise": "10-25 consultants",
+      "interlocuteur_principal": {
+        "poste": "directeur d'agence / fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux agences de recrutement et cabinets RH",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Appel à froid sans demande préalable",
+        "Prospect occupé et n'a pas prévu l'appel",
+        "Absence de notoriété (ne vous connaît pas)"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat",
+        "Nécessité de créer de l'intérêt en quelques secondes",
+        "Besoin de légitimité instantanée",
+        "Gestion des barrages et objections préliminaires"
+      ],
+      "probleme_racine": "Transformer un interlocuteur non-réceptif en prospect engagé acceptant un rendez-vous, sans référence ni contexte préalable"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser la prospection téléphonique à froid auprès de dirigeants d'agences RH pour décrocher des rendez-vous qualifiés",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "Solution B2B pour agences de recrutement",
+      "entreprise_description": "Entreprise proposant une solution destinée aux agences de recrutement et cabinets RH",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution B2B ciblant les agences de recrutement et cabinets RH de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de la solution vendue",
+        "Proposition de valeur spécifique",
+        "Prix ou budget indicatif",
+        "Problématiques métier adressées",
+        "Différenciation concurrentielle",
+        "Nom de l'entreprise vendeuse",
+        "Références ou preuves sociales disponibles"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Stéphane",
+      "nom": "Berthelot",
+      "age": 47,
+      "poste": "Directeur Général & Co-fondateur",
+      "entreprise": {
+        "nom": "Experteo Recrutement",
+        "secteur": "Cabinet de recrutement spécialisé secteur tertiaire",
+        "taille": "17 consultants permanents",
+        "ca_approximatif": "2,1M€ - marge opérationnelle sous pression depuis 18 mois"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique impatient - déteste perdre du temps",
+        "Méfiant envers les commerciaux depuis un échec logiciel coûteux en 2022",
+        "Fier de son expertise métier - besoin de reconnaissance"
+      ],
+      "motivations_profondes": [
+        "Prouver que sa boîte peut rivaliser avec les gros cabinets sans perdre son ADN",
+        "Protéger sa rentabilité dans un marché tendu",
+        "Ne pas paraître dépassé technologiquement devant ses consultants plus jeunes"
+      ],
+      "peurs_freins": [
+        "Se faire avoir par un vendeur de vent comme en 2022 (ATS jamais utilisé, 18k€ perdus)",
+        "Changer un process qui fonctionne à peu près et créer le chaos en interne",
+        "Manquer une vraie innovation par excès de prudence et se faire distancer"
+      ],
+      "rapport_aux_commerciaux": "Hostilité de façade masquant une curiosité contrôlée. Teste systématiquement la compétence métier de l'interlocuteur dans les 90 premières secondes. Respecte uniquement ceux qui comprennent vraiment le recrutement.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais pressé, avec une pointe d'agacement contrôlé. 'Oui bonjour, je vous écoute mais je suis en plein brief candidat là...'",
+      "signaux_interet": [
+        "Silence soudain - arrête de taper sur son clavier",
+        "Question précise sur un chiffre ou un bénéfice concret",
+        "Mentionne spontanément un problème actuel : 'Tiens, justement on galère en ce moment sur...'",
+        "Passe du vouvoiement distant au tutoiement professionnel"
+      ],
+      "signaux_rejet": [
+        "Coupe la parole en citant un concurrent : 'Ah mais c'est comme [autre solution] que j'ai déjà...'",
+        "'Écoutez c'est gentil mais on a déjà tout ce qu'il faut' - ton définitif",
+        "Délègue immédiatement : 'Voyez ça avec Marion ma Directrice Ops'",
+        "Respiration agacée audible + 'Bon écoutez je vais devoir vous laisser'"
+      ],
+      "tics_langage": [
+        "'Concrètement' - exige du factuel immédiatement",
+        "'On est carré chez nous' - fierté défensive",
+        "'Moi je veux bien mais...' - introduction systématique d'une objection",
+        "Utilise 'mes consultants' jamais 'mes collaborateurs' - proximité paternaliste"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "35 secondes maximum avant interruption. Zéro tolérance pour le jargon commercial générique. Accepte un discours structuré SI ancré dans la réalité terrain du recrutement."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance du CA stoppée (+2% seulement en 2024 vs +18% en 2022). Pression sur les marges à cause de l'inflation salariale des consultants. Deux départs récents de seniors partis chez un concurrent plus gros. Stéphane compense en bossant 60h/semaine et gère encore lui-même 6 mandats clients.",
+      "priorites_actuelles": [
+        "Réduire le temps passé sur l'administratif pour se concentrer sur la production",
+        "Améliorer la rétention des consultants sans exploser la masse salariale",
+        "Trouver 3-4 mandats exclusifs premium pour compenser la baisse du volume",
+        "Automatiser ce qui peut l'être SANS perdre la qualité relationnelle qui fait leur différence"
+      ],
+      "experience_avec_offre_similaire": "ATS acheté en 2022 (TalentView, 18k€) jamais adopté par l'équipe - trop complexe, mal paramétré, abandonné après 4 mois. Depuis, Excel + LinkedIn Recruiter + un CRM de base (Pipedrive). Ça marche mais c'est artisanal.",
+      "fournisseur_actuel": "Pipedrive (CRM basique), LinkedIn Recruiter (4 licences), Job boards classiques (APEC, Indeed), fichiers Excel partagés via Dropbox",
+      "budget_disponible": "Réticent à dépasser 800€/mois pour un nouvel outil. Pourrait monter à 15-20k€/an SI ROI démontrable en 6 mois maximum. Budget décision unilatérale jusqu'à 10k€, au-delà besoin validation de son associé Gilles (plus frileux)."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un cabinet concurrent qu'il respecte ET qui utilise votre solution",
+        "Parler en 'heures gagnées par consultant par semaine' plutôt qu'en features",
+        "Démontrer que vous comprenez la différence entre un placement CDI et une mission intérim (crédibilité métier)",
+        "Offrir un benchmark rapide de ses process vs marché SANS vendre - posture conseil",
+        "Reconnaître explicitement l'échec de 2022 si mentionné : 'Je comprends, on a justement conçu notre approche pour éviter exactement ce problème'",
+        "Proposer un test sur 1 seul consultant pendant 30 jours - faible risque"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre révolutionner le recrutement - il a 20 ans de métier",
+        "Citer des références de cabinets 10x plus gros - pas comparable",
+        "Demander un RDV de 'découverte' de 45 min sans justification de valeur",
+        "Parler IA, automation, disruption sans expliquer concrètement ce que ça change lundi matin",
+        "Insister après un 'non' clair - il blackliste mentalement",
+        "Ne pas connaître les spécificités du recrutement tertiaire vs industrie ou IT"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ah écoutez là je suis en plein brief avec un candidat, c'est pour quoi exactement ?",
+        "sous_texte": "Je n'ai pas prévu cet appel, vous me dérangez. Prouvez-moi en 10 secondes que ça vaut le coup ou je raccroche.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître immédiatement le mauvais timing + donner une raison ultra-concrète de rappeler ou 1 phrase valeur choc"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Encore un commercial... Franchement on croule déjà sous les sollicitations, là. Je vous connais pas, vous vendez quoi ?",
+        "sous_texte": "Je suis blindé d'appels inutiles. Vous êtes le énième aujourd'hui. Différenciez-vous TOUT DE SUITE ou vous rejoignez la poubelle mentale.",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Briser le pattern commercial classique - reconnaître sa lassitude + parler son langage métier immédiatement avec un élément de preuve sociale"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez c'est gentil mais on a déjà ce qu'il faut niveau outils, on est carré chez nous.",
+        "sous_texte": "Je protège mon territoire. Je ne veux pas admettre qu'on pourrait avoir des lacunes. Mais si vous insistez intelligemment, je peux être curieux.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas contredire frontalement - valider sa situation + pivoter sur un angle qu'il n'a pas envisagé (benchmark, évolution marché, retour terrain)"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Moi je veux bien vous écouter 30 secondes mais après je dois vraiment y aller, donc allez-y faites vite.",
+        "sous_texte": "Test de compétence. Si vous me noie sous le blabla commercial, je raccroche. Si vous êtes percutant et pertinent, je reste.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Prendre l'invitation au sérieux - 1 insight métier + 1 bénéfice chiffré + 1 question d'engagement en moins de 30 secondes réelles"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Concrètement votre truc ça ressemble à quoi ? Parce que moi les promesses j'en ai soupé, hein. En 2022 on s'est fait avoir avec un ATS hors de prix qu'on utilise même pas.",
+        "sous_texte": "J'ai été échaudé et j'ai honte de cet échec. Je teste si vous comprenez vraiment mon métier ou si vous êtes un autre vendeur de vent. Prouvez-moi que c'est différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaissance empathique de l'échec + expliquer POURQUOI ça a échoué (adoption, paramétrage) + montrer votre approche différente avec preuve concrète"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mais attendez, vous bossez avec quels cabinets vous ? Parce que si c'est des gros machins avec 200 consultants, ça n'a rien à voir avec notre réalité.",
+        "sous_texte": "Je veux des références comparables. Si vous me sortez des géants du CAC40, je vais me braquer car ça prouve que vous ne comprenez pas ma taille et mes contraintes.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Anticiper cette objection - avoir 2-3 références de cabinets 10-30 consultants avec résultats chiffrés + nommer éventuellement un concurrent local qu'il respecte"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais enfin nous on est très relationnels, c'est notre force. Tout automatiser c'est bien joli mais on va perdre notre ADN, c'est pas ce qu'on veut.",
+        "sous_texte": "J'ai peur de devenir une boîte impersonnelle comme les gros. Mon identité et ma fierté sont liées à la proximité. Rassurez-moi que l'outil amplifie l'humain au lieu de le remplacer.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider cette force + recadrer : l'outil libère du temps admin pour PLUS de relationnel stratégique (chiffrer les heures gagnées pour renforcer candidats/clients)"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Je comprends l'idée mais mes consultants ils sont déjà débordés, rajouter un outil à apprendre ça va être la révolution. J'ai pas envie de gérer ça maintenant.",
+        "sous_texte": "J'ai peur du chaos opérationnel, surtout après les deux départs récents. L'équipe est fragile. Un changement mal géré pourrait déclencher d'autres départs.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Adresser le risque opérationnel + proposer adoption progressive (1 consultant pilote) + prouver la simplicité (temps formation, intégration avec existant) + anticiper l'accompagnement"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez c'est Marion ma Directrice des Ops qui gère tout ça, voyez directement avec elle. Je vous passe ses coordonnées.",
+        "sous_texte": "Je me débarrasse de vous poliment OU je teste si vous êtes capable de défendre l'idée que je sois impliqué (selon comment vous réagissez).",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter la délégation aveuglément - repositionner l'enjeu stratégique pour lui (rentabilité, rétention, mandats premium) puis proposer impliquer Marion AVEC lui"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais mais attends, votre tarif il est à combien ? Parce que si c'est pour me claquer 20 ou 30k comme la dernière fois, c'est mort direct.",
+        "sous_texte": "Le prix est ma protection. Si c'est trop cher, j'ai une excuse facile pour dire non. Mais si le ROI est béton, je peux monter à ce budget - je teste votre solidité.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas donner de prix brut sans contexte - ancrer d'abord la valeur (heures gagnées, placements supplémentaires) puis présenter investissement vs retour sur 6-12 mois"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, ça ressemble quand même vachement à [TalentView / Bullhorn / autre concurrent]. Quelle est la vraie différence vous ?",
+        "sous_texte": "Tous les vendeurs me disent qu'ils sont différents. Prouvez-le avec du factuel et du spécifique, pas du marketing générique, sinon je vous range dans la même case.",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le concurrent (crédibilité) + donner 1-2 différences CONCRÈTES ET VÉRIFIABLES avec exemple client + éviter le dénigrement + recentrer sur SES besoins spécifiques"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK admettons, mais le ROI en 6 mois comme vous dites, faut que je le vois pour le croire. Vous avez des preuves ou c'est juste une projection PowerPoint ?",
+        "sous_texte": "Je suis brûlé par les promesses non tenues. Je demande des PREUVES tangibles (témoignages, chiffres clients, garanties) sinon je ne croirai jamais.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Sortir étude de cas comparable (cabinet similaire, résultats chiffrés avant/après) + proposer période test mesurable OU garantie engagement + être transparent sur les limites"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Moi je veux bien mais faut que j'en parle à Gilles mon associé, parce que là sur ce budget c'est pas tout seul que je décide.",
+        "sous_texte": "Protection vraie ou tactique (selon le montant). Soit je partage vraiment la décision au-dessus de 10k, soit j'utilise Gilles comme bouclier pour gagner du temps de réflexion.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Qualifier la réalité décisionnelle - proposer rencontre à trois OU armer Stéphane avec un dossier béton pour convaincre Gilles (anticiper ses objections probables)"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et niveau intégration avec notre existant ? Parce que si je dois tout foutre en l'air et repartir de zéro, c'est juste pas possible.",
+        "sous_texte": "J'ai peur du chaos technique. L'échec de 2022 était lié à une mauvaise intégration. Je veux être rassuré sur la compatibilité et la migration sans casse.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Détailler compatibilité avec Pipedrive/LinkedIn/Excel + expliquer process d'intégration + proposer audit technique rapide + prouver que migration est progressive et sécurisée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez je vais réfléchir et je vous rappelle si ça m'intéresse, OK ? Laissez-moi vos coordonnées.",
+        "sous_texte": "Fuite polie. Je ne vous rappellerai probablement jamais. Soit je ne suis pas convaincu, soit je veux éviter la pression commerciale, soit j'ai vraiment besoin de digérer.",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas accepter la fuite - créer urgence douce (places limitées test pilote, timing saisonnier) + proposer date précise de suivi avec raison valable + résumer valeur"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement c'est pas le bon moment pour nous là. Avec les deux départs récents, on est en mode pompier. Peut-être dans 6 mois...",
+        "sous_texte": "C'est peut-être vrai OU c'est une excuse commode. Mais il y a un paradoxe : si je suis débordé, c'est peut-être JUSTEMENT le moment d'un outil qui soulage.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la difficulté + retourner l'objection : l'outil peut justement atténuer la surcharge liée aux départs + proposer accompagnement renforcé + créer perspective calendaire"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon OK pour un RDV mais rapide hein, genre 30 minutes max. Et j'emmène Marion, elle validera mieux que moi les aspects techniques.",
+        "sous_texte": "Acceptation conditionnelle. Je garde le contrôle (durée, présence tiers). Je teste votre capacité à être efficace. C'est un OUI fragile qui peut basculer.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Accepter les conditions + valoriser présence Marion + confirmer immédiatement date/heure précise + envoyer agenda structuré pour optimiser les 30 min + préparer démo ultra-ciblée"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Vous savez quoi, envoyez-moi déjà un mail avec votre doc et vos tarifs, je regarde ça tranquillement et on s'organise après si ça colle.",
+        "sous_texte": "Je veux reprendre le contrôle et sortir de la pression du direct. Je vais peut-être lire en diagonale ou archiver direct selon mon intérêt réel.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter l'envoi MAIS conditionner à un engagement précis (date de relecture, créneau call court post-lecture) + personnaliser le mail avec ses enjeux + bloquer date provisoire"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez j'ai bien compris votre truc mais là franchement je me vois pas me lancer. C'est pas contre vous mais c'est pas pour nous, on fonctionne différemment. Bonne continuation.",
+      "condition_declenchement": "Si le vendeur a accumulé trop d'erreurs : jargon commercial vide, références non pertinentes, prix sans ROI, incompréhension du métier recrutement, insistance lourde après signaux de rejet. OU si Stéphane est vraiment sous l'eau et n'arrive pas à projeter de bande passante mentale pour un changement, même justifié."
+    },
+    "pattern_escalade": "Stéphane commence cordial-pressé (objections réflexes courtes). Si le vendeur résiste avec pertinence métier, il passe en mode test (objections plus pointues sur différenciation/ROI). Si le vendeur tient, il révèle ses vraies craintes (échec 2022, chaos équipe). Point de bascule : soit il se ferme définitivement (objections tactiques de fuite), soit il accepte un RDV conditionnel avec garde-fous. Jamais d'enthousiasme débordant - au mieux un 'OK montrez-moi mais rapidement'.",
+    "piege_classique": "Accepter trop vite la délégation vers Marion (Ops) sans repositionner l'enjeu stratégique pour Stéphane. Il teste si le vendeur a compris que la vraie décision c'est lui, même s'il prétend que Marion gère. Autre piège : croire que son 'on est carré chez nous' est définitif alors que c'est souvent une protection qui peut être levée avec benchmark et preuves."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "Solution B2B pour agences de recrutement",
+      "description": "Entreprise proposant une solution destinée aux agences de recrutement et cabinets RH"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution B2B ciblant les agences de recrutement et cabinets RH de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser la prospection téléphonique à froid auprès de dirigeants d'agences RH pour décrocher des rendez-vous qualifiés",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur cabinet recrutement tertiaire",
+    "vous_etes": "Commercial B2B spécialisé solutions pour agences de recrutement, vous prospectez des cabinets de taille moyenne (10-25 consultants).",
+    "vous_vendez": "Une solution destinée aux cabinets de recrutement pour optimiser leurs process — budget type 800-1500€/mois.",
+    "vous_appelez": "Stéphane Berthelot, 47 ans, Directeur Général et co-fondateur d'Experteo Recrutement, cabinet de 17 consultants spécialisé secteur tertiaire (CA 2,1M€). Pragmatique, impatient, méfiant envers les commerciaux depuis un échec logiciel coûteux en 2022.",
+    "ce_que_vous_savez": [
+      "Cabinet en croissance ralentie (+2% en 2024 vs +18% en 2022), pression sur les marges",
+      "A acheté un ATS en 2022 (18k€) jamais adopté par l'équipe, abandonné après 4 mois",
+      "Utilise actuellement Excel + LinkedIn Recruiter + Pipedrive — artisanal mais fonctionnel",
+      "Stéphane gère encore 6 mandats clients lui-même, besoin de libérer du temps",
+      "Teste la compétence métier de tout commercial dans les 90 premières secondes"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous physique ou visio de 30 minutes pour un diagnostic de ses process versus marché.",
+    "vos_atouts": [
+      "Vous connaissez la différence entre placement CDI et mission intérim",
+      "Vous parlez en 'heures gagnées par consultant' plutôt qu'en fonctionnalités",
+      "Vous pouvez proposer un test sans risque sur 1 consultant pendant 30 jours",
+      "Vous avez une approche conseil — benchmark rapide avant toute vente"
+    ],
+    "duree_estimee": "5-7 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:22:11Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15759,
+    "total_time_s": 154.6
+  }
+}

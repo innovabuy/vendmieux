@@ -1,0 +1,399 @@
+{
+  "id": "scenario_1771521909",
+  "description_originale": "Vous appelez à froid le directeur de l'agence / fondateur d'une agence de communication ou marketing de 10-25 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : communication_marketing]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "communication_marketing",
+      "taille_entreprise": "10-25 salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur_agence_fondateur",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux agences de communication et marketing",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Prospect occupé et non disponible mentalement",
+        "Aucune relation préexistante",
+        "Appel non sollicité"
+      ],
+      "implicites": [
+        "Difficulté à capter l'attention rapidement",
+        "Risque de rejet immédiat",
+        "Manque de légitimité perçue",
+        "Difficulté à différencier l'offre sans contexte",
+        "Barrière de la secrétaire ou gatekeepers potentiels"
+      ],
+      "probleme_racine": "Créer de la valeur perçue et de l'intérêt en moins de 30 secondes auprès d'un interlocuteur qui n'a pas demandé cet échange et dont l'attention est limitée"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Maîtriser les techniques de prospection téléphonique à froid pour transformer un interlocuteur pressé et non demandeur en prospect intéressé acceptant un rendez-vous qualifié",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE",
+      "entreprise_description": "Entreprise proposant une solution B2B destinée aux agences de communication et marketing",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution non précisée destinée aux agences de communication/marketing de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature de la solution vendue",
+        "Proposition de valeur spécifique",
+        "Problématiques métier adressées",
+        "Informations sur l'entreprise vendeuse",
+        "Pricing et modèle économique",
+        "Références clients ou success stories",
+        "Objections typiques rencontrées",
+        "Durée et format du rendez-vous souhaité (30 min mentionné)"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathieu",
+      "nom": "Derouet",
+      "age": 42,
+      "poste": "Directeur et co-fondateur",
+      "entreprise": {
+        "nom": "Tangente Communication",
+        "secteur": "Agence de communication digitale et branding",
+        "taille": "17 salariés",
+        "ca_approximatif": "1,8M€ (2023)"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique jusqu'à la brutalité",
+        "Méfiant envers les commerciaux depuis 15 ans d'arnaques",
+        "Protecteur féroce de son temps et de celui de ses équipes"
+      ],
+      "motivations_profondes": [
+        "Garder le contrôle total de son agenda et de ses décisions",
+        "Prouver qu'il peut faire grandir sa boîte sans dépendre de prestataires externes",
+        "Maintenir la qualité créative coûte que coûte, même si ça ralentit la croissance",
+        "Ne jamais revivre l'échec d'un investissement logiciel raté en 2019 (38K€ perdus)"
+      ],
+      "peurs_freins": [
+        "Perdre du temps dans des démos qui n'aboutissent jamais",
+        "Se faire enfumer par un beau discours commercial puis décevoir ses équipes",
+        "Déstabiliser l'organisation actuelle qui fonctionne 'suffisamment bien'",
+        "Que ses DA seniors le voient comme un 'pigeon' s'il se fait avoir"
+      ],
+      "rapport_aux_commerciaux": "Présume systématiquement qu'ils mentent ou survendent. Dit souvent 'J'ai déjà donné' avec un micro-sourire désabusé. Respecte uniquement ceux qui encaissent ses piques sans se démonter et qui parlent ROI concret, pas vision.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais avec une fatigue audible. Coupe court dès la 15e seconde si ça sent le pitch générique. Utilise 'Écoute' en début de phrase pour signaler son impatience.",
+      "signaux_interet": [
+        "Pose une question chiffrée précise ('Ça représente combien d'heures gagnées par semaine, concrètement ?')",
+        "Mentionne un pain point actuel sans qu'on le sollicite ('Justement, on galère avec...')",
+        "Demande si d'autres agences de sa taille utilisent la solution",
+        "Silence de 2-3 secondes = il réfléchit vraiment, ne pas le remplir"
+      ],
+      "signaux_rejet": [
+        "'Ouais, écoute, envoie-moi un mail' dit machinalement = poubelle assurée",
+        "Commence à répondre à un Slack en parallèle (on l'entend taper)",
+        "'C'est pas la priorité là' sans justifier = politesse de sortie",
+        "Respiration courte et fréquente = agacement maximal"
+      ],
+      "tics_langage": [
+        "'Franchement' (utilisé 5 fois par conversation)",
+        "'Voilà' en fin de phrase pour clore un sujet",
+        "'On verra' = non définitif déguisé",
+        "Tutoiement direct après 30 secondes s'il sent un commercial junior (pour dominer)",
+        "Vouvoiement maintenu si interlocuteur expérimenté = respect tacite"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "12 secondes maximum. Au-delà, coupe avec 'Ouais OK mais concrètement pour nous ça change quoi ?'. Déteste les analogies marketing ('Imaginez que...')."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance stable mais plateau depuis 18 mois. Deux gros clients (40% du CA) renouvellent en mars. Embauche d'un chef de projet junior en janvier pour décharger les séniors. Mathieu passe 60% de son temps en commercial/admin au lieu de piloter la stratégie, ce qui le frustre.",
+      "priorites_actuelles": [
+        "Signer 3 nouveaux comptes moyens (50-80K€/an) pour diluer la dépendance aux gros clients",
+        "Réduire le temps passé en reporting client (Excel artisanal chronophage)",
+        "Garder ses 2 DA stars qui ont des offres concurrentes sur LinkedIn",
+        "Éviter tout projet qui mobiliserait l'équipe plus de 2 jours de formation"
+      ],
+      "experience_avec_offre_similaire": "A testé un CRM en 2020 (Sellsy), abandonné après 4 mois car 'personne ne le remplissait'. A acheté un outil de gestion de projet (Monday) en 2021, utilisé à 30% de ses capacités. Conclusion : 'Les outils, c'est bien sur le papier'.",
+      "fournisseur_actuel": "Suite Google Workspace + Notion (gratuit) + Trello (version free). Comptabilité externalisée chez ACD Compta. Aucun outil de prospection structuré.",
+      "budget_disponible": "Entre 500€ et 1200€/mois max pour un outil récurrent, mais doit le justifier à son associée (profil finance, encore plus méfiante). Peut débloquer 5-8K€ one-shot si ROI démontré en 6 mois."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent direct ou une agence qu'il connaît ET qui a obtenu un résultat chiffré précis",
+        "Montrer qu'on a compris son quotidien ('Vous devez passer un temps fou à relancer les devis qui dorment')",
+        "Proposer un format court et non intrusif : '15 min en visio, je vous montre 2 écrans, vous me dites si ça colle'",
+        "Admettre d'emblée que 'C'est peut-être pas le bon moment' = reverse psychology qui le désarme",
+        "Parler pénurie de talents ou turnover (son angoisse cachée)"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Prétendre qu'on révolutionne le secteur",
+        "Dire 'Tous nos clients sont ravis' sans preuve",
+        "Demander 'Quels sont vos défis actuels ?' de façon trop générique",
+        "Insister après un premier refus poli",
+        "Ne pas connaître la différence entre une agence de comm et une agence média (insulte professionnelle)",
+        "Proposer un rendez-vous de 45 minutes dès le premier appel"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, je suis en plein brief client là, c'est pas le moment franchement",
+        "sous_texte": "Test de solidité : si tu insistes lourdement, je raccroche. Si tu proposes intelligemment de rappeler, je note mentalement que t'es pas un boulet",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Proposer un créneau précis sous 48h en montrant qu'on respecte son agenda, pas un vague 'je vous rappelle'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais écoute, on est déjà équipés, on a nos outils, voilà",
+        "sous_texte": "Barrage automatique. Je ne sais même pas encore ce que tu vends, mais je présume que j'ai déjà la solution. Prouve-moi que je me trompe en 10 secondes",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Rebondir sur 'équipés' en questionnant l'usage réel : 'Justement, la plupart des agences ont des outils... que personne ne remplit'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "J'ai déjà trois commerciaux qui m'ont appelé cette semaine pour ce genre de trucs, franchement j'en peux plus",
+        "sous_texte": "Saturation réelle + test : es-tu capable de te différencier ou tu vas me sortir le même pitch ?",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Valider sa frustration et créer une rupture de pattern : 'Je comprends totalement. C'est peut-être pas le bon moment, je peux juste vous poser UNE question avant de vous laisser ?'"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "C'est pour me vendre quoi exactement ?",
+        "sous_texte": "Je veux savoir si je peux te catégoriser et rejeter rapidement. Pas d'intérêt réel, juste un réflexe de tri",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ne pas pitcher le produit mais la problématique : 'On aide les agences comme la vôtre à arrêter de perdre du temps sur...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On fonctionne très bien comme ça depuis 8 ans, pourquoi on changerait ?",
+        "sous_texte": "Fierté + peur du changement. J'ai construit cette boîte à la main, me dire que j'ai besoin d'aide = remettre en question mon modèle",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider son succès puis introduire le coût d'opportunité : 'C'est justement parce que ça marche que... combien d'heures vous passez par semaine à...?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "J'ai déjà testé un CRM en 2020, personne ne l'utilisait. Les outils, c'est bien sur le papier mais dans la vraie vie...",
+        "sous_texte": "Cicatrice profonde. J'ai perdu du temps, de l'argent, de la crédibilité auprès de mes équipes. Prouve-moi que cette fois c'est différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Reconnaître l'échec passé comme légitime et creuser : 'Qu'est-ce qui a bloqué concrètement ? Trop compliqué, pas adapté, manque de formation ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, mes DA ils ont déjà Notion et Trello, ils vont pas s'emmerder avec un nouvel outil",
+        "sous_texte": "Peur de la résistance interne. Je ne veux pas imposer quelque chose qui va créer des tensions ou me faire passer pour un dirigeant déconnecté",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Transformer l'objection en question : 'Justement, est-ce qu'ils remplissent vraiment Notion ? Parce que la plupart des agences...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais concrètement ça me fait gagner combien d'heures par semaine ?",
+        "sous_texte": "Signal d'intérêt masqué en scepticisme. Je commence à calculer mentalement le ROI. Si tu me sors un chiffre bullshit, je décroche",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Répondre par une fourchette réaliste avec condition : 'Nos clients agences gagnent entre 4 et 7h/semaine, mais ça dépend de...'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et ça coûte combien ce truc ?",
+        "sous_texte": "Question piège précoce. Si tu donnes le prix maintenant sans valeur démontrée, je vais le trouver cher. Si tu esquives, je pense que c'est hors budget",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Bracketing + recentrer sur la valeur : 'Entre 500 et 1200€/mois selon la config, mais avant de parler prix, est-ce que le principe vous parle ?'"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mouais... je sais pas, faudrait que j'en parle à mon associée, elle gère la finance",
+        "sous_texte": "Fuite tactique OU vraie contrainte. Je ne veux pas m'engager seul sur un budget, mais je ne veux pas non plus avouer que je ne décide pas tout",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Légitimer le besoin d'alignement et proposer de l'inclure : 'Tout à fait normal. Vous voulez qu'on fasse un point à trois ou vous préférez...?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Vous me dites que tous vos clients sont ravis, mais franchement j'ai déjà entendu ça 100 fois",
+        "sous_texte": "Je teste ta sincérité. Si tu persistes dans le discours marketing lisse, je te range dans la case 'bullshit'. Montre-moi des failles ou du concret",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Casser le discours marketing : 'Ravis, non. Certains ont galéré les 2 premiers mois. Mais ceux qui ont tenu ont vu...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ça a l'air bien votre truc, mais là c'est vraiment pas la priorité. On a déjà 3 chantiers en cours",
+        "sous_texte": "Vrai ou faux prétexte. Soit je suis réellement surchargé, soit c'est une sortie élégante. Dans les deux cas, je n'ai pas senti l'urgence",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Creuser pour distinguer 'pas la priorité' de 'pas pertinent' : 'Je comprends. Ces 3 chantiers, ils vous bouffent combien de temps admin ?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Le problème c'est que mes équipes ont pas 2 jours à perdre en formation, on est sous l'eau",
+        "sous_texte": "Peur réelle de l'investissement temps. J'ai déjà vécu le coup du 'formation rapide' qui a planté 3 projets clients",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un déploiement progressif ou minimaliste : '2 jours si vous déployez tout d'un coup. Et si on commençait juste par...?'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je connais pas d'agence qui utilise votre solution. Vous avez des références dans la comm ?",
+        "sous_texte": "Besoin de preuve sociale dans mon écosystème. Si tu n'as pas de références crédibles, je ne serai pas le cobaye",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Nommer 1-2 agences comparables avec permission ou résultat anonymisé : 'On bosse avec [Agence X] à Lyon, 20 personnes, qui a réduit de...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement, je vais être honnête : j'ai peur qu'on paie et que personne ne s'en serve, comme d'hab",
+        "sous_texte": "Vulnérabilité rare. Je baisse ma garde. Si tu balances cette peur avec un argumentaire commercial classique, je me referme",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Valider la peur et proposer un mécanisme de sécurité : 'C'est LA bonne question. C'est pour ça qu'on propose un accompagnement de...'"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais, OK, mais comment je suis sûr que ça marche pour une agence de notre taille ? Vous bossez surtout avec des plus grosses structures non ?",
+        "sous_texte": "Insécurité sur la taille. Je ne veux pas d'un outil sur-dimensionné qui va me faire payer des features inutiles",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Préciser le sweet spot et montrer des cas similaires : 'Justement, 70% de nos clients agences font entre 10 et 25 personnes, comme vous'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute, envoie-moi un mail avec tout ça, je regarde et je te redis",
+        "sous_texte": "Politesse de sortie. Probabilité 95% que le mail finisse dans un dossier 'À voir'. Je n'ai pas assez d'urgence ou de conviction",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Forcer gentiment la clarification : 'Pas de souci. Par contre, pour être franc, 'je regarde' ça veut dire oui mais pas maintenant, ou...?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement c'est intéressant, mais là je peux pas m'engager. On se reparle en mars après les renouvellements ?",
+        "sous_texte": "Vraie contrainte timing liée aux 2 gros clients. Mais aussi une échappatoire commode. Mars = dans 8 semaines, tu m'auras oublié",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider le timing et créer un point intermédiaire : 'Je comprends. Et si d'ici là on faisait juste un test avec 2 personnes pour...?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Le prix c'est 1200 par mois c'est ça ? Franchement c'est chaud, je pensais pas que ça montait aussi haut",
+        "sous_texte": "Négociation réflexe + vraie surprise. Je compare mentalement avec mes autres abonnements SaaS. Je cherche si tu peux baisser",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Recontextualiser par le coût horaire évité : 'C'est 60€/jour. Si ça vous fait gagner 1h/jour à 80€ de l'heure, vous êtes gagnant au bout de...'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "OK admettons qu'on teste. Mais si dans 3 mois ça marche pas, je peux arrêter sans prendre cher ?",
+        "sous_texte": "Signal d'achat masqué ! Je me projette déjà dans l'usage. Mais ma cicatrice 2019 me force à sécuriser la sortie",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer sur l'engagement : 'Engagement 3 mois mini, après c'est mensuel. Et on fait un point à 6 semaines pour...'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Laisse-moi 48h pour réfléchir et en parler en interne, je te redis vendredi",
+        "sous_texte": "Peut être sincère (besoin d'alignement équipe) ou tactique (gagner du temps pour comparer ou fuir). Impossible à distinguer par téléphone",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Accepter mais verrouiller le follow-up : 'Aucun souci. Je te bloque 15 min vendredi 14h dans mon agenda, ça te va ?'"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement j'ai peur que mes DA seniors me voient comme un pigeon si je me fais avoir encore une fois",
+        "sous_texte": "Vulnérabilité maximale. Enjeu d'ego et de leadership interne. Si tu minimises cette peur, je ne signerai jamais",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Proposer de les impliquer : 'Et si on faisait la démo avec eux ? Comme ça c'est leur décision autant que la vôtre'"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute, c'est cool ce que tu proposes, mais voilà, on verra ça plus tard. On se rappelle, allez salut",
+      "condition_declenchement": "Apparaît quand le vendeur n'a pas créé d'urgence ou de différenciation suffisante. Mathieu a écouté poliment mais n'a jamais basculé en mode 'problème activé'. Il range mentalement dans 'intéressant mais pas vital'"
+    },
+    "pattern_escalade": "Mathieu commence par des objections réflexes courtes et cassantes (15-30 premières secondes). Si le vendeur tient le choc sans être servile ni agressif, il passe en mode test avec des questions pièges ('Ça coûte combien ?', 'Tous vos clients sont ravis ?'). Si le vendeur répond avec nuance et preuves, Mathieu peut lâcher 1-2 objections sincères révélant ses vraies peurs (échec 2019, résistance équipe). La séquence critique : réflexe → test de solidité → tactique de fuite → sincère (rare, signe d'ouverture) → closing conditionnel",
+    "piege_classique": "Mathieu dira 'Écoute c'est intéressant, envoie-moi un mail' avec un ton cordial qui sonne comme une ouverture. 90% des vendeurs envoient le mail et n'ont plus de nouvelles. En réalité, cette phrase = 'Je veux clore l'échange sans conflit'. Le piège : prendre cette phrase au premier degré au lieu de forcer gentiment la clarification ('Mail ça veut dire oui mais plus tard, ou c'est une façon polie de me dire non ?'). Mathieu respecte secrètement ceux qui osent challenger cette fuite"
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE",
+      "description": "Entreprise proposant une solution B2B destinée aux agences de communication et marketing"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution non précisée destinée aux agences de communication/marketing de taille moyenne",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Maîtriser les techniques de prospection téléphonique à froid pour transformer un interlocuteur pressé et non demandeur en prospect intéressé acceptant un rendez-vous qualifié",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Directeur d'agence de communication",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour agences de communication et marketing.",
+    "vous_vendez": "Une solution destinée aux agences de communication de 10-25 salariés (prix et nature non communiqués dans ce brief — à adapter selon votre argumentaire).",
+    "vous_appelez": "Mathieu Derouet, 42 ans, co-fondateur et directeur de Tangente Communication, agence digitale de 17 personnes (1,8M€ de CA). Pragmatique, méfiant, protège son temps comme un pit-bull. 15 ans d'expérience = 15 ans de pitchs commerciaux entendus.",
+    "ce_que_vous_savez": [
+      "L'agence est stable mais plafonne depuis 18 mois",
+      "Mathieu passe 60% de son temps en admin/commercial au lieu de piloter la stratégie",
+      "Il a déjà testé plusieurs outils (CRM, gestion de projet) avec des résultats mitigés",
+      "Deux gros clients représentent 40% du CA et renouvellent en mars",
+      "Budget estimé : 500-1200€/mois récurrent ou 5-8K€ one-shot si ROI prouvé en 6 mois"
+    ],
+    "votre_objectif": "Décrocher un rendez-vous visio de 15 minutes maximum pour une démo ciblée.",
+    "vos_atouts": [
+      "Vous connaissez le quotidien des agences de cette taille",
+      "Vous avez des cas clients dans le secteur (à préciser selon votre argumentaire)",
+      "Vous proposez un format court et non intrusif",
+      "Vous parlez ROI concret, pas vision marketing"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:25:09Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 16120,
+    "total_time_s": 160.9
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "id": "scenario_1771520740",
+  "description_originale": "Vous avez présenté votre offre au directeur commercial ou directeur de la distribution d'une compagnie d'assurance régionale ou société de gestion de 150+ salariés il y a 2 semaines lors d'un RDV. Vous deviez avoir un retour qui n'est jamais venu. Votre objectif : comprendre où en est la décision et relancer le process.\n[Secteur : finance_assurance]\n[Type d'appel : relance]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "tiede"
+    },
+    "cible": {
+      "secteur": "finance_assurance",
+      "taille_entreprise": "150+ salariés",
+      "interlocuteur_principal": {
+        "poste": "directeur commercial ou directeur de la distribution",
+        "niveau_hierarchique": "directeur"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "régionale"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution pour améliorer la performance commerciale ou la distribution de produits d'assurance",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Absence de retour après présentation",
+        "Perte de contact avec le prospect",
+        "Difficulté à obtenir un feedback sur la décision"
+      ],
+      "implicites": [
+        "Manque de relance structurée post-RDV",
+        "Absence de prochaine étape définie lors du RDV initial",
+        "Possible perte d'intérêt du prospect",
+        "Concurrent peut-être entré dans la danse",
+        "Processus de décision interne non clarifié en amont"
+      ],
+      "probleme_racine": "Absence de cadrage du processus décisionnel et des prochaines étapes lors du RDV initial, entraînant une perte de momentum commercial"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Apprendre à relancer efficacement un prospect sans être insistant, comprendre où en est le processus de décision, identifier les blocages et relancer la dynamique commerciale",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services_aux_entreprises_assurance",
+      "entreprise_description": "Fournisseur de solutions pour le secteur de l'assurance et de la finance",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution présentée il y a 2 semaines destinée à une compagnie d'assurance régionale ou société de gestion",
+      "proposition_valeur": "Amélioration de la performance commerciale, de la distribution ou de la gestion pour les assureurs",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "qualification",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte de l'offre présentée",
+        "Décideurs impliqués dans le processus",
+        "Budget et timing évoqués lors du RDV initial",
+        "Prochaines étapes convenues lors du RDV",
+        "Raisons potentielles du silence"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Christophe",
+      "nom": "Delorme",
+      "age": 51,
+      "poste": "Directeur Commercial et Distribution",
+      "entreprise": {
+        "nom": "Mutuelle Provence Santé",
+        "secteur": "Assurance santé et prévoyance",
+        "taille": "230 salariés",
+        "ca_approximatif": "85M€"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Prudent et attentiste",
+        "Surchargé et débordé",
+        "Loyal envers ses prestataires actuels"
+      ],
+      "motivations_profondes": [
+        "Ne pas se tromper devant le COMEX - sa crédibilité est en jeu",
+        "Prouver que la transformation digitale avance (pression du DG)",
+        "Protéger son équipe commerciale de 45 personnes d'un changement trop brutal"
+      ],
+      "peurs_freins": [
+        "Peur de déstabiliser une organisation qui fonctionne 'pas si mal'",
+        "Crainte du coût caché et de l'accompagnement au changement sous-estimé",
+        "Méfiance envers les promesses des éditeurs après deux déceptions passées",
+        "Peur de perdre du temps en formation alors que les objectifs T1 sont tendus"
+      ],
+      "rapport_aux_commerciaux": "Courtois mais évasif. Il écoute par politesse mais ne s'engage jamais à chaud. Déteste qu'on le relance trop vite. A tendance à ghoster quand il n'a pas tranché plutôt que de dire non.",
+      "style_communication": "aimable"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Cordial mais distrait. Répond souvent 'Oui, oui...' sans vraiment écouter. Regarde ses mails pendant les visios.",
+      "signaux_interet": [
+        "Pose des questions sur le délai de déploiement",
+        "Demande si d'autres mutuelles utilisent la solution",
+        "Évoque spontanément ses problématiques terrain ('mes gars galèrent avec...')"
+      ],
+      "signaux_rejet": [
+        "Regarde ostensiblement sa montre",
+        "Coupe la parole pour dire 'Écoutez, je vais y réfléchir'",
+        "Devient vague sur le timing : 'On verra ça au T2, peut-être T3'",
+        "Sort la phrase fatale : 'Je dois en parler avec la DSI'"
+      ],
+      "tics_langage": [
+        "Commence ses phrases par 'Écoutez...'",
+        "Dit souvent 'Franchement' quand il est sceptique",
+        "Abuse du 'Voilà voilà' pour clore un sujet",
+        "Utilise 'On va pas se mentir' quand il va formuler une objection"
+      ],
+      "debit_parole": "normal",
+      "tolerance_monologue_vendeur": "Faible. Au-delà de 90 secondes sans interaction, il décroche mentalement. Préfère qu'on aille droit au but."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Mutuelle régionale sous pression concurrentielle des grands groupes nationaux. Plan stratégique 2024-2026 axé sur la digitalisation du parcours adhérent et l'efficacité commerciale. Turnover récent : le DSI est parti il y a 3 mois, remplacé par un profil plus junior.",
+      "priorites_actuelles": [
+        "Atteindre les objectifs Q1 2024 (retard de 8% sur N-1)",
+        "Recruter 6 commerciaux terrain d'ici avril",
+        "Finaliser le déploiement du nouveau CRM (projet qui traîne depuis 18 mois)",
+        "Préparer la convention annuelle des agents généraux en juin"
+      ],
+      "experience_avec_offre_similaire": "A testé il y a 3 ans un outil de pilotage commercial qui n'a jamais été adopté par les équipes. Échaudé par un éditeur qui a survvendu puis sous-livré. Depuis, il valide tout avec le terrain avant d'engager.",
+      "fournisseur_actuel": "Salesforce (imposé par le groupe) pour le CRM, plus des tableaux Excel maison pour le pilotage. Une grosse partie de l'activité passe encore par des outils artisanaux développés en interne.",
+      "budget_disponible": "Budget 2024 déjà engagé à 80%. Reste une enveloppe 'innovation commerciale' de 45-60K€ non allouée, mais elle nécessite une validation COMEX. Possibilité de débloquer plus si ROI démontré pour 2025."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Référence précise d'une mutuelle comparable qui a réussi",
+        "Approche progressive : 'Et si on testait sur une région pilote ?'",
+        "Reconnaissance de sa surcharge : 'Je sais que vous êtes pris, je veux juste 10 minutes'",
+        "Démonstration chiffrée d'un gain de temps pour ses équipes",
+        "Proposition de parler directement avec ses managers terrain",
+        "Timing : éviter les fins de mois et les périodes de bilan"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Faire pression : 'Il faut décider rapidement pour profiter de l'offre'",
+        "Critiquer frontalement ses outils actuels",
+        "Ignorer ses contraintes DSI/COMEX : 'C'est simple, vous signez et on lance'",
+        "Jargon techno ou slides PowerPoint à rallonge",
+        "Relancer par mail tous les 3 jours sans valeur ajoutée",
+        "Sous-entendre qu'il n'est pas décideur : 'Qui valide chez vous ?'"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoutez, c'est gentil de rappeler mais là franchement je suis sous l'eau... On peut pas se caler ça dans 15 jours plutôt ?",
+        "sous_texte": "Je n'ai pas préparé cette conversation, je ne me souviens plus exactement de votre offre, et j'ai 3 urgences devant moi. Je teste si vous allez insister ou me lâcher.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître sa surcharge, proposer 3 minutes chrono uniquement pour savoir où il en est, pas pour vendre"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah oui oui, votre truc... Ouais j'ai regardé mais on a pas encore eu le temps d'en reparler en interne, voilà voilà",
+        "sous_texte": "En réalité je n'ai rien regardé depuis notre RDV. Soit j'ai oublié, soit ce n'était pas prioritaire. Je botte en touche poliment.",
+        "type": "reflexe",
+        "difficulte": 1,
+        "reponse_efficace_indice": "Ne pas confronter le mensonge. Demander simplement ce qui l'empêche d'avancer : budget, validation, autre priorité ?"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement, votre présentation était intéressante hein, mais là on est en plein dans les objectifs Q1 et on a pris du retard... C'est vraiment pas le moment de lancer un truc comme ça",
+        "sous_texte": "Je suis stressé par mes résultats actuels. Vous me proposez un changement alors que j'ai besoin de stabilité. Prouvez-moi que ça ne va pas rajouter du chaos.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Aligner sur son urgence : comment la solution peut aider à rattraper le retard Q1, pas dans 6 mois"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "On va pas se mentir, j'ai déjà eu un éditeur qui m'a vendu la lune il y a 3 ans, résultat personne ne l'utilise... Mes commerciaux ils ont pas le temps pour des usines à gaz",
+        "sous_texte": "Je suis échaudé. Je ne vous fais pas confiance par défaut. Vous ressemblez peut-être à celui qui m'a déçu. Prouvez que vous êtes différent.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Demander ce qui a foiré précisément, montrer qu'on a compris la leçon, proposer approche pilote réversible"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "C'est bien beau tout ça mais faut que j'en parle avec la DSI... Et depuis que Jean-Marc est parti, c'est un peu le bordel de ce côté-là, le nouveau il a déjà 15 projets sur le feu",
+        "sous_texte": "Je me cache derrière la DSI pour gagner du temps. Mais c'est aussi vrai que c'est un vrai frein organisationnel. Je ne sais pas si j'ai envie de me battre en interne pour votre solution.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de préparer avec lui les éléments pour la DSI, voire de les rencontrer ensemble. Ne pas accepter passivement ce transfert"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Et d'autres mutuelles comme nous, vous avez ça en portefeuille ? Parce que je veux pas être le cobaye hein...",
+        "sous_texte": "Je ne veux pas prendre de risque seul. J'ai besoin de social proof pour me rassurer et rassurer mon COMEX. Si vous n'avez pas de référence comparable, c'est mort.",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Citer des références précises avec taille et secteur similaires, proposer de les contacter directement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Mais concrètement, le déploiement ça prend combien de temps ? Parce qu'entre le CRM qui traîne depuis 18 mois et la convention en juin, j'ai pas de bande passante",
+        "sous_texte": "Je suis intéressé mais terrorisé par la charge de travail. Si vous me dites 6 mois de projet, je vais fuir. Proposez-moi quelque chose de rapide ou progressif.",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Rassurer avec timeline réaliste courte, proposer déploiement par étapes, assumer le pilotage projet"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Écoutez, vos chiffres sur le ROI c'est joli sur le papier, mais dans la vraie vie avec mes équipes qui sont déjà à fond... Je suis pas convaincu qu'on y arrive",
+        "sous_texte": "Vos promesses me semblent trop belles. Je protège mes équipes. Je doute que mes commerciaux terrain de 50 ans adoptent votre outil. Prouvez-moi le contraire.",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître le risque adoption, proposer pilote avec les plus motivés d'abord, impliquer managers terrain dans la conception"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Bon et puis franchement, niveau budget... On est déjà à 80% d'engagé sur l'année. Il me reste un peu de marge mais ça passe par le COMEX, et avec eux c'est jamais gagné",
+        "sous_texte": "L'argent est un vrai sujet mais pas insurmontable. Par contre je veux pas me battre seul devant le COMEX. Aidez-moi à construire le dossier ou je vais laisser tomber.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer de co-construire le dossier COMEX avec ROI chiffré, case studies, plan de déploiement sécurisé"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Et vous connaissez le marché mutualiste vous ? Parce que c'est pas comme l'assurance classique hein, on a nos spécificités...",
+        "sous_texte": "Je teste votre expertise. Si vous parlez générique, je vais vous classer comme un vendeur de plus. Si vous connaissez mes vrais enjeux métier, je vous écouterai.",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Démontrer connaissance fine du secteur mutualiste : gouvernance, agents généraux, spécificités réglementaires"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà voilà, c'est intéressant tout ça... Bon écoutez je vais y réfléchir tranquillement et je vous redis, OK ?",
+        "sous_texte": "Je veux mettre fin à la conversation sans dire non. Je n'ai pas décidé. Je vais probablement ne rien faire et vous ghoster parce que c'est ma stratégie d'évitement habituelle.",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Ne pas accepter le flou. Demander ce qui manque pour décider, proposer date précise de rappel avec engagement"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement là je peux pas me positionner, faut que j'en parle avec mes managers terrain d'abord... Ils ont leur mot à dire",
+        "sous_texte": "Je ne veux pas imposer un outil à mon équipe comme la dernière fois. C'est sincère mais c'est aussi une façon de différer. Je n'ai pas préparé le terrain en interne.",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer une session découverte avec 2-3 managers terrain volontaires, impliquer l'équipe dans la décision"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoutez, on va peut-être regarder ça au T2... Voire au T3 franchement, là c'est compliqué avec tout ce qu'on a sur le feu",
+        "sous_texte": "Je repousse à plus tard parce que je n'ai pas envie de décider maintenant. Je teste si vous allez accepter ce délai ou me challenger. Au fond, je ne sais pas si c'est vraiment prioritaire.",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Challenger respectueusement : que se passe-t-il en T2/T3 qui change la donne ? Que perd-il à attendre ? Peut-on préparer d'ici là ?"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "On va pas se mentir, si je dois mobiliser mes équipes sur un nouveau projet alors qu'on galère déjà sur les objectifs, ils vont me lyncher... Je peux pas me permettre ça",
+        "sous_texte": "Ma vraie peur : perdre la confiance de mes équipes. Je suis coincé entre la pression du DG pour digitaliser et la réalité terrain. Je cherche une issue qui ne me fasse pas perdre la face.",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Transformer la menace en opportunité : positionner l'outil comme aide pour atteindre les objectifs, pas une charge en plus"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoutez franchement, votre solution elle est bien, je dis pas le contraire... Mais je me pose quand même la question de savoir si c'est le bon timing pour nous. On a tellement de chantiers, et mes commerciaux ils sont déjà sous pression avec les objectifs... Je vais pas leur rajouter une couche. Faut que je sois honnête avec vous : là maintenant, je peux pas me projeter. Je préfère être franc plutôt que de vous faire croire que c'est pour dans 3 semaines et qu'au final ça traîne pendant 6 mois. Voilà voilà, c'est comme ça.",
+      "condition_declenchement": "Se déclenche quand le vendeur pousse trop vers la signature sans avoir résolu les freins réels : timing, adoption équipes, validation interne. Christophe ferme alors poliment mais définitivement."
+    },
+    "pattern_escalade": "Christophe suit un schéma prévisible : 1) Objections réflexes polies ('je suis occupé') → 2) Si poussé, objections organisationnelles ('faut voir avec la DSI') → 3) Si encore poussé, objections émotionnelles sincères (peur de l'échec, protection équipe) → 4) Si ignoré, fermeture définitive avec ghosting ou refus poli mais ferme. Pour inverser : valider chaque niveau, ne jamais forcer, proposer solutions concrètes.",
+    "piege_classique": "Christophe dit souvent 'oui oui' et semble acquiescer pendant la conversation, ce qui fait croire au vendeur qu'il est convaincu. Mais ce 'oui' signifie juste 'je t'écoute' pas 'je suis d'accord'. Le vendeur termine l'appel rassuré, puis Christophe disparaît. Pour éviter : tester la conviction réelle avec questions ouvertes, demander objections cachées, cadrer prochaine étape précise avec engagement mutuel."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services_aux_entreprises_assurance",
+      "description": "Fournisseur de solutions pour le secteur de l'assurance et de la finance"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution présentée il y a 2 semaines destinée à une compagnie d'assurance régionale ou société de gestion",
+      "proposition_valeur": "Amélioration de la performance commerciale, de la distribution ou de la gestion pour les assureurs",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "qualification",
+      "description": "Apprendre à relancer efficacement un prospect sans être insistant, comprendre où en est le processus de décision, identifier les blocages et relancer la dynamique commerciale",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Relance commerciale — Solution performance commerciale assurance",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour le secteur de l'assurance et de la mutualité.",
+    "vous_vendez": "Une solution d'amélioration de la performance commerciale et de la distribution pour les assureurs (prix et détails techniques non communiqués à ce stade).",
+    "vous_appelez": "Christophe Delorme, 51 ans, Directeur Commercial et Distribution chez Mutuelle Provence Santé (230 salariés, 85M€ CA). Profil prudent et surchargé, courtois mais évasif, déteste qu'on le presse.",
+    "ce_que_vous_savez": [
+      "Vous lui avez présenté votre solution il y a 2 semaines lors d'un RDV",
+      "Depuis cette présentation, aucun retour de sa part malgré des signaux d'intérêt pendant l'échange",
+      "Sa mutuelle est sous pression digitale, avec un retard de 8% sur les objectifs Q1 et un déploiement CRM qui traîne depuis 18 mois",
+      "Il a vécu une mauvaise expérience il y a 3 ans avec un éditeur qui a survvendu, il est donc méfiant",
+      "Il doit valider tout investissement avec le COMEX et a besoin de l'avis du terrain avant de s'engager"
+    ],
+    "votre_objectif": "Comprendre où il en est dans sa réflexion, identifier les freins éventuels, et convenir d'une prochaine étape concrète sans le brusquer.",
+    "vos_atouts": [
+      "Vous avez déjà une première présentation faite — vous n'êtes pas un inconnu",
+      "Votre solution répond à sa priorité stratégique : digitalisation et efficacité commerciale",
+      "Vous pouvez proposer une approche pilote progressive pour limiter le risque",
+      "Vous comprenez les contraintes mutualistes (budget, validation COMEX, implication terrain)"
+    ],
+    "duree_estimee": "5-8 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T17:05:40Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 14200,
+    "total_time_s": 131.5
+  }
+}

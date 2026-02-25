@@ -1,0 +1,316 @@
+{
+  "id": "scenario_1771524509",
+  "description_originale": "Le CEO / CTO d'une startup ou PME tech de 15-40 salariés, éditeur de logiciel ou agence digitale est client depuis 1 an et satisfait. Vous l'appelez pour lui proposer un service complémentaire ou une montée en gamme. Votre objectif : lui faire percevoir la valeur ajoutée et obtenir son accord pour un devis.\n[Secteur : tech_saas]\n[Type d'appel : upsell]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "relance",
+      "canal": "telephone",
+      "cycle_vente": "court",
+      "temperature_prospect": "chaud"
+    },
+    "cible": {
+      "secteur": "tech_saas",
+      "taille_entreprise": "15-40 salariés",
+      "interlocuteur_principal": {
+        "poste": "CEO / CTO",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "service complémentaire ou montée en gamme d'un service existant",
+      "proposition_valeur_presumee": "valeur ajoutée par rapport au service actuel",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "faire percevoir la valeur ajoutée d'une offre complémentaire",
+        "obtenir l'accord pour un devis"
+      ],
+      "implicites": [
+        "risque de satisfaction passive du client (content mais pas proactif)",
+        "justifier un investissement supplémentaire alors que le service actuel fonctionne",
+        "éviter de paraître opportuniste ou trop commercial avec un client existant",
+        "identifier le bon timing pour proposer l'upsell sans brusquer"
+      ],
+      "probleme_racine": "transformer une relation client satisfaite en opportunité de croissance sans nuire à la confiance établie"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "maîtriser la technique d'upsell sur client existant en faisant percevoir la valeur ajoutée et en obtenant un engagement commercial concret",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "services B2B pour le secteur tech (éditeurs logiciels, agences digitales)",
+      "entreprise_description": "fournisseur de services aux startups et PME tech, avec une offre modulaire permettant l'upsell",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "service complémentaire ou version premium d'un service déjà fourni au client depuis 1 an",
+      "proposition_valeur": "valeur ajoutée permettant d'aller plus loin que le service actuel",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du contexte client, historique positif",
+      "objectif_appel": "vente_directe",
+      "type_prospection": "relance"
+    },
+    "metadata": {
+      "completude_input": "moyenne",
+      "confiance_deductions": "haute",
+      "elements_manquants_critiques": [
+        "nature précise du service initial",
+        "nature du service complémentaire proposé",
+        "fourchette de prix",
+        "nom de l'entreprise vendeuse",
+        "objections typiques rencontrées"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Mathieu",
+      "nom": "Delorme",
+      "age": 38,
+      "poste": "CEO & Co-fondateur",
+      "entreprise": {
+        "nom": "Skillbridge",
+        "secteur": "SaaS RH - plateforme de gestion des compétences",
+        "taille": "28 salariés",
+        "ca_approximatif": "2,1M€ ARR"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "pragmatique-ROIste",
+        "loyal mais méfiant des discours commerciaux",
+        "surinvesti dans l'opérationnel"
+      ],
+      "motivations_profondes": [
+        "prouver la viabilité du modèle avant la série A",
+        "protéger sa trésorerie comme un trésor de guerre",
+        "ne pas décevoir ses associés et son board",
+        "garder le contrôle sur les décisions stratégiques"
+      ],
+      "peurs_freins": [
+        "se faire avoir par un vendeur qui abuse de la relation établie",
+        "investir dans du 'nice to have' plutôt que du 'must have'",
+        "alourdir le run rate sans impact mesurable sur la croissance",
+        "paraître naïf auprès de son CTO qui critique souvent les achats précipités"
+      ],
+      "rapport_aux_commerciaux": "cordial mais distant - attitude 'je-t-aime-bien-mais-je-sais-que-tu-veux-me-vendre-un-truc'",
+      "style_communication": "analytique"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "amical mais pressé, avec une pointe de défense préventive type 'j'imagine que tu veux me vendre quelque chose, vas-y je t'écoute mais j'ai 15 minutes max'",
+      "signaux_interet": [
+        "pose des questions précises sur les métriques et le ROI",
+        "mentionne spontanément un problème actuel que l'offre pourrait résoudre",
+        "demande des exemples clients comparables en taille",
+        "dit 'attends je note' ou 'redis-moi ça'"
+      ],
+      "signaux_rejet": [
+        "regarde son téléphone, répond à un Slack en parallèle",
+        "coupe court avec 'franchement là on n'a pas le budget'",
+        "devient évasif : 'ouais pourquoi pas, envoie-moi un truc par mail'",
+        "sort l'argument ultime : 'faut que j'en parle à mon associé d'abord'"
+      ],
+      "tics_langage": [
+        "commence souvent par 'écoute...'",
+        "abuse du 'franchement' quand il veut être honnête",
+        "dit 'voilà' en fin de phrase pour conclure",
+        "utilise 'en vrai' pour marquer une nuance"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "30 secondes maximum avant de couper ou de décrocher mentalement, déteste les pitchs préparés qui ignorent son contexte"
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "croissance +40% YoY mais tension sur le cash - vient de recruter 6 personnes en 4 mois, négocie actuellement une levée seed extension de 800K€ qui traîne, pressure du board pour accélérer l'acquisition",
+      "priorites_actuelles": [
+        "closer la levée pour tenir 18 mois de runway",
+        "automatiser l'onboarding client pour scaler sans recruter",
+        "améliorer le NRR qui stagne à 95%",
+        "structurer l'équipe produit qui part dans tous les sens"
+      ],
+      "experience_avec_offre_similaire": "client satisfait depuis 13 mois du service de base, n'a jamais eu de problème majeur, paye régulièrement, a même recommandé le service à 2 autres CEOs lors d'événements startup",
+      "fournisseur_actuel": "votre entreprise pour le service de base + 2-3 autres outils SaaS qu'il essaie de rationaliser",
+      "budget_disponible": "flou - officiellement serré mais peut débloquer 800-1500€/mois s'il voit un ROI clair sous 3-6 mois, surtout si ça touche à l'acquisition ou la rétention client"
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "mentionner un résultat concret obtenu par un client similaire (chiffres précis)",
+        "faire référence à sa situation actuelle sans qu'il ait besoin de l'expliquer (preuve d'écoute)",
+        "proposer un pilote court avec KPIs clairs avant engagement long terme",
+        "lier l'offre à ses priorités board (NRR, CAC, churn)",
+        "reconnaître explicitement qu'il est déjà client et que ça change la conversation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "ignorer qu'il est déjà client et dérouler un pitch générique",
+        "présenter l'offre comme 'indispensable' alors qu'il s'en passe depuis 1 an",
+        "parler de fonctionnalités au lieu d'impact business",
+        "mettre la pression avec des fausses urgences (offre limitée, promo expire)",
+        "minimiser ses objections budgétaires avec un 'c'est juste X€ par jour'",
+        "demander un engagement annuel d'entrée de jeu"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Écoute, je t'arrête tout de suite, j'imagine que tu veux me vendre un truc en plus ? Franchement là on est hyper serrés niveau budget, on négocie une levée qui traîne et je peux rien engager de nouveau pour l'instant.",
+        "sous_texte": "Je t'aime bien mais je sais où tu veux en venir, je pose ma défense préventive pour ne pas perdre de temps si c'est juste du commercial opportuniste",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Reconnaître explicitement qu'il est client, préciser que c'est justement pour ça que vous appelez (contexte connu), et demander 5 min pour voir si ça a du sens dans SA situation actuelle"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Attends, on a déjà votre service de base et ça tourne bien, pourquoi tu me relances ? Y'a un problème ou quoi ?",
+        "sous_texte": "Méfiance : soit il y a un souci qu'on ne me dit pas, soit c'est du démarchage déguisé alors qu'on est déjà clients - je veux comprendre le vrai motif de l'appel",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rassurer immédiatement : aucun problème, au contraire. Expliquer que depuis 13 mois vous voyez comment il utilise le service, et que vous avez identifié une opportunité spécifique pour son contexte actuel"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "En vrai je suis content de ce qu'on a déjà, ça fait le job. Pourquoi j'irais dépenser plus pour un truc dont je me passe depuis plus d'un an ?",
+        "sous_texte": "Objection de fond : je suis dans ma zone de confort, le service actuel suffit, tu dois me prouver que je PERDS quelque chose en ne passant pas à la version supérieure",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Ne pas attaquer sa satisfaction actuelle. Questionner sur ses nouvelles priorités (croissance, levée, NRR) et révéler l'écart entre ce que le service de base permet et ce que ses objectifs 2024 nécessitent"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais là on est à 28 personnes, on scale vite, tu comprends... J'ai recruté 6 personnes en 4 mois, j'ai pas le temps de déployer un nouveau service en interne, même si c'est bien sur le papier.",
+        "sous_texte": "Objection capacitaire réelle : je suis débordé, mon équipe aussi, je n'ai pas de bande passante pour gérer un changement même bénéfique - démontre-moi que c'est simple",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Rebondir sur le scaling comme déclencheur justement : le service complémentaire automatise ce qui bouffe du temps aujourd'hui. Proposer une prise en charge totale du déploiement + pilote court sans engagement"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Franchement tes chiffres sont sympas mais comment je sais que c'est pas du bullshit ? T'as des clients de ma taille dans le SaaS qui ont vraiment ces résultats-là ?",
+        "sous_texte": "Méfiance envers les promesses commerciales, besoin de preuve sociale concrète et comparable pour croire que ça s'applique à MOI",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Donner 1-2 exemples ultra-précis de clients SaaS 20-40 personnes avec métriques avant/après, proposer même de le mettre en contact si besoin de référence directe"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "OK mais concrètement, en combien de temps je vois un retour ? Parce que là on négocie une levée, mon board regarde chaque ligne de dépense, je peux pas leur expliquer que je rajoute 1000 balles par mois sans ROI rapide.",
+        "sous_texte": "Pression board + trésorerie tendue = besoin d'un ROI démontrable sous 3-6 mois max, sinon c'est injustifiable en interne même si j'y crois personnellement",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Chiffrer le payback period précisément, lier à ses KPIs board (NRR, CAC), proposer un pilote de 3 mois avec objectifs mesurables avant de pitcher au board"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Voilà mais attends, là tu me parles de fonctionnalités en plus... En quoi ça résout MES problèmes à moi concrètement ? Parce que chaque éditeur me vend que son outil est indispensable.",
+        "sous_texte": "Fatigue des pitchs génériques, besoin que tu me prouves que tu connais MA boîte, MES enjeux, que c'est pas un discours copié-collé",
+        "type": "test",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Stopper le pitch produit, revenir sur SES priorités mentionnées en début d'appel (NRR à 95%, onboarding à automatiser) et faire le lien direct avec comment le service répond spécifiquement à ça"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je comprends l'intérêt mais franchement là timing c'est pas bon, on est en pleine négo de levée, je préfère attendre qu'on ait closé pour prendre ce genre de décision.",
+        "sous_texte": "Objection timing sincère + tactique pour gagner du temps : je veux éviter de dire non frontalement mais je repousse pour voir si tu insistes ou si tu respectes ma situation",
+        "type": "tactique",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Valider le timing comme contrainte légitime, mais questionner : est-ce que justement améliorer le NRR ou l'acquisition AVANT la levée ne renforcerait pas sa position face aux investisseurs ? Proposer un pilote qui délivre des résultats présentables au board"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Écoute c'est intéressant mais je dois en parler à mon CTO avant, il critique souvent mes achats, il va me demander pourquoi on a besoin de ça maintenant. Envoie-moi un truc par mail que je lui transfère.",
+        "sous_texte": "Objection cache-sexe classique : soit vraiment besoin de validation interne, soit excuse polie pour temporiser sans engagement, teste si tu vas accepter ou challenger",
+        "type": "tactique",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Ne pas envoyer le mail générique qui finira aux oubliettes. Proposer un call à 3 court (15 min) avec le CTO pour répondre à SES questions techniques directement, ou préparer AVEC Mathieu les arguments pour convaincre le CTO"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Franchement je suis tenté mais là je peux vraiment pas engager un budget annuel, c'est mort. Si c'était du mois par mois peut-être, mais un an c'est trop risqué vu notre situation de tréso.",
+        "sous_texte": "Peur de l'engagement long terme en période d'incertitude financière, besoin de flexibilité et de porte de sortie si ça ne marche pas ou si la situation se dégrade",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Proposer un pilote 3 mois avec objectifs chiffrés, puis passage en mensuel si pilote concluant, ou engagement trimestriel renouvelable. Montrer la flexibilité adaptée à sa phase startup"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends je comprends la valeur mais là entre nous, combien ça coûte exactement ? Parce que si c'est plus de 800-1000€ par mois, je peux même pas présenter ça en interne en ce moment.",
+        "sous_texte": "Besoin de transparence prix immédiate pour évaluer la faisabilité, tester aussi si tu vas être honnête ou esquiver la question comme beaucoup de commerciaux",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Être transparent sur la fourchette de prix (si dans son budget annoncé), la justifier par le ROI attendu, et proposer de construire un business case ensemble pour faciliter la validation interne"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Voilà c'est cool mais là honnêtement j'ai 3 autres priorités qui passent avant : finir la levée, recruter un Head of Sales et refondre notre onboarding produit. Ton truc c'est du nice to have, pas du must have pour nous maintenant.",
+        "sous_texte": "Hiérarchisation sincère des priorités : ton offre est perçue comme secondaire face à des enjeux plus critiques, tu dois soit accepter, soit prouver que c'est justement un accélérateur de ses 3 priorités",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Lier le service complémentaire directement à ses 3 priorités : meilleur NRR = meilleure valorisation levée, automatisation = moins de pression sur le futur Head of Sales, données exploitables pour refonte onboarding"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Écoute franchement je suis convaincu de l'intérêt, mais en vrai là je peux pas. On est trop justes sur la tréso tant qu'on a pas signé la levée, et je veux pas prendre de risque. On en reparle dans 2-3 mois une fois qu'on aura closé ?",
+      "condition_declenchement": "Si tous les arguments rationnels sont épuisés mais que la peur du risque financier immédiat domine, ou si le vendeur n'a pas su transformer l'intérêt intellectuel en urgence business concrète"
+    },
+    "pattern_escalade": "Mathieu commence par une défense préventive cordiale ('écoute je t'arrête'), puis teste la légitimité de l'appel (pourquoi maintenant ?), ensuite creuse l'intérêt SI le vendeur prouve sa connaissance du contexte, mais revient systématiquement aux objections budget/timing/validation interne dès qu'on approche du closing. Il utilise 'franchement' quand il est sincère, devient évasif ('on verra', 'envoie-moi un truc') quand il veut fuir poliment. L'escalade finale = admet l'intérêt mais se réfugie derrière la contrainte tréso incontournable.",
+    "piege_classique": "Mathieu peut sembler convaincu intellectuellement ('ouais c'est intéressant', 'je vois la valeur') mais reste en mode passif et attend que LE vendeur fasse tout le boulot : construire le business case, convaincre le CTO, attendre le bon timing. Le piège est de confondre son intérêt poli avec un vrai engagement d'achat. S'il ne pose pas de questions précises sur le déploiement, les métriques ou le pricing, c'est qu'il n'est pas réellement dans l'achat mais dans l'écoute de confort. Le vrai signal d'achat = quand il dit 'attends je note' ou 'comment on fait concrètement pour tester ça rapidement'."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "services B2B pour le secteur tech (éditeurs logiciels, agences digitales)",
+      "description": "fournisseur de services aux startups et PME tech, avec une offre modulaire permettant l'upsell"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "service complémentaire ou version premium d'un service déjà fourni au client depuis 1 an",
+      "proposition_valeur": "valeur ajoutée permettant d'aller plus loin que le service actuel",
+      "prix": "NON_SPECIFIE",
+      "references": [
+        "client satisfait depuis 1 an"
+      ],
+      "avantages_vs_concurrence": "relation de confiance établie, connaissance du contexte client, historique positif"
+    },
+    "objectif_appel": {
+      "type": "vente_directe",
+      "description": "maîtriser la technique d'upsell sur client existant en faisant percevoir la valeur ajoutée et en obtenant un engagement commercial concret",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "relance",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Upsell client existant — Service premium SaaS",
+    "vous_etes": "Account Manager chez un fournisseur de services B2B tech, en charge du portefeuille clients PME.",
+    "vous_vendez": "Un service premium qui complète l'offre de base que le client utilise depuis 13 mois — tarif entre 800 et 1500€/mois.",
+    "vous_appelez": "Mathieu Delorme, CEO de Skillbridge (SaaS RH, 28 personnes, 2,1M€ ARR). Pragmatique, obsédé par le ROI, méfiant des discours commerciaux. Pressé, analytique, protège sa tréso comme un pit-bull.",
+    "ce_que_vous_savez": [
+      "Client satisfait depuis 13 mois, paye régulièrement, vous a recommandé à 2 autres CEOs",
+      "Croissance +40% mais tension cash — 6 recrutements récents, levée seed extension en cours (800K€)",
+      "Priorités board : améliorer le NRR (95%), automatiser l'onboarding, booster l'acquisition",
+      "A déjà 2-3 outils SaaS qu'il essaie de rationaliser — veut pas empiler"
+    ],
+    "votre_objectif": "Obtenir son accord pour un devis détaillé avec pilote court (3 mois) sur KPIs liés au NRR ou à l'acquisition.",
+    "vos_atouts": [
+      "Relation établie — vous connaissez son contexte, pas besoin de tout réexpliquer",
+      "Historique positif : zéro problème en 13 mois, il vous fait confiance",
+      "Cas client similaire : startup SaaS 30 pers qui a boosté son NRR de 95% à 108% en 5 mois avec le service premium",
+      "Approche pilote : vous proposez un test 3 mois avec sortie libre, pas d'engagement annuel d'entrée"
+    ],
+    "duree_estimee": "6-9 minutes",
+    "niveau_difficulte": "Intermédiaire"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T18:08:29Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 13856,
+    "total_time_s": 134.5
+  }
+}

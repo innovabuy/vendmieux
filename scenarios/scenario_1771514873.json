@@ -1,0 +1,359 @@
+{
+  "id": "scenario_1771514873",
+  "description_originale": "Vous appelez à froid le gérant d'une société de nettoyage/sécurité/maintenance de 25-50 salariés. Il ne vous connaît pas et n'a rien demandé. Votre objectif : décrocher un rendez-vous de 30 minutes pour présenter votre solution. Le prospect est occupé et n'a pas prévu cet appel.\n[Secteur : services_entreprises]\n[Type d'appel : prospection]",
+  "extraction": {
+    "contexte": {
+      "type_vente": "prospection_telephonique",
+      "canal": "telephone",
+      "cycle_vente": "moyen",
+      "temperature_prospect": "froid"
+    },
+    "cible": {
+      "secteur": "services aux entreprises - nettoyage/sécurité/maintenance",
+      "taille_entreprise": "PME 25-50 salariés",
+      "interlocuteur_principal": {
+        "poste": "gérant",
+        "niveau_hierarchique": "dirigeant"
+      },
+      "interlocuteurs_secondaires": [],
+      "zone_geo": "NON_SPECIFIE"
+    },
+    "offre": {
+      "produit_service": "NON_SPECIFIE",
+      "proposition_valeur_presumee": "Solution destinée aux sociétés de services aux entreprises",
+      "fourchette_prix": "NON_SPECIFIE",
+      "concurrence_mentionnee": "NON_SPECIFIE"
+    },
+    "problemes_commerciaux": {
+      "explicites": [
+        "Le prospect est occupé et n'a pas prévu cet appel",
+        "Appel à froid sans demande préalable",
+        "Le prospect ne connaît pas l'entreprise"
+      ],
+      "implicites": [
+        "Risque de rejet immédiat dû à l'interruption",
+        "Manque de légitimité perçue",
+        "Difficulté à capter l'attention rapidement",
+        "Besoin de créer de l'intérêt en quelques secondes",
+        "Gestion du barrage secrétariat potentiel"
+      ],
+      "probleme_racine": "Créer de la valeur perçue et de la confiance en moins de 60 secondes avec un décideur qui n'attend rien, pour transformer une interruption en opportunité"
+    },
+    "objections_mentionnees": [],
+    "objectif_formation": "Former les commerciaux à la prospection téléphonique à froid auprès de dirigeants de PME occupés, pour obtenir un rendez-vous qualifié",
+    "vendeur": {
+      "entreprise_nom": "NON_SPECIFIE",
+      "entreprise_secteur": "NON_SPECIFIE - probablement fournisseur de solutions B2B pour sociétés de services",
+      "entreprise_description": "Entreprise proposant des solutions pour les sociétés de services aux entreprises (nettoyage, sécurité, maintenance)",
+      "offre_nom": "NON_SPECIFIE",
+      "offre_description": "Solution non précisée destinée à améliorer l'activité ou la gestion des sociétés de services",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix_indicatif": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE",
+      "objectif_appel": "rdv_physique",
+      "type_prospection": "appel_froid"
+    },
+    "metadata": {
+      "completude_input": "faible",
+      "confiance_deductions": "moyenne",
+      "elements_manquants_critiques": [
+        "Nature exacte du produit/service vendu",
+        "Proposition de valeur spécifique",
+        "Problématiques métier des cibles",
+        "Arguments de légitimité/références",
+        "Fourchette budgétaire",
+        "Nom et secteur de l'entreprise vendeuse",
+        "Zone géographique ciblée"
+      ]
+    }
+  },
+  "persona": {
+    "identite": {
+      "prenom": "Rachid",
+      "nom": "Benkhaled",
+      "age": 52,
+      "poste": "Gérant",
+      "entreprise": {
+        "nom": "RB Services Propreté",
+        "secteur": "Nettoyage industriel et tertiaire",
+        "taille": "38 salariés (dont 32 agents de nettoyage, 4 chefs d'équipe, 2 administratifs)",
+        "ca_approximatif": "1,8M€ - marges serrées à 4-6%"
+      }
+    },
+    "psychologie": {
+      "traits_dominants": [
+        "Pragmatique cash - déteste le baratin commercial",
+        "Méfiant par expérience - a été échaudé plusieurs fois",
+        "Fier de son parcours self-made man"
+      ],
+      "motivations_profondes": [
+        "Protéger sa rentabilité dans un secteur à marges faibles",
+        "Ne pas perdre de clients à cause de problèmes opérationnels",
+        "Prouver qu'il peut rivaliser avec les grands groupes",
+        "Préparer une éventuelle transmission dans 5-7 ans"
+      ],
+      "peurs_freins": [
+        "Se faire arnaquer par des vendeurs de vent",
+        "Investir dans quelque chose qui ne sera pas utilisé par les équipes terrain",
+        "Complexifier son organisation déjà tendue",
+        "Perdre du temps en rdv inutiles alors qu'il gère 15 urgences par jour"
+      ],
+      "rapport_aux_commerciaux": "Hostile par défaut. Pense que 90% des commerciaux ne connaissent rien à son métier et veulent juste placer leur came. Respecte uniquement ceux qui parlent ROI concret et comprennent ses contraintes terrain.",
+      "style_communication": "directif"
+    },
+    "comportement_en_rdv": {
+      "ton_initial": "Sec, pressé, légèrement agacé. Commence souvent par 'C'est pourquoi?' ou 'Vous m'appelez pour quoi exactement?'",
+      "signaux_interet": [
+        "Arrête de taper sur son clavier si vous dites quelque chose qui résonne",
+        "Pose une question précise sur un chiffre ou un délai",
+        "Mentionne un problème concret qu'il vit actuellement",
+        "Dit 'Attends, répète-moi ça' sur un bénéfice tangible"
+      ],
+      "signaux_rejet": [
+        "Continue à faire autre chose en vous parlant",
+        "Répète 'Oui, oui...' sans écouter",
+        "Coupe en disant 'Écoutez, envoyez-moi un mail'",
+        "Souffle bruyamment ou fait des commentaires sarcastiques"
+      ],
+      "tics_langage": [
+        "Ponctue de 'Ouais, ouais' quand il n'écoute plus",
+        "Dit souvent 'franchement' quand il veut être direct",
+        "Utilise 'Bon, écoutez...' pour clore la conversation",
+        "Tutoie rapidement s'il est à l'aise mais vouvoie froidement sinon"
+      ],
+      "debit_parole": "rapide",
+      "tolerance_monologue_vendeur": "20-30 secondes maximum. Au-delà, il coupe ou décroche mentalement. Veut être impliqué dans l'échange, pas subir un pitch."
+    },
+    "contexte_actuel": {
+      "situation_entreprise": "Croissance de 12% l'an dernier mais marges en baisse. Vient de perdre un gros contrat (centre commercial) au profit d'un concurrent moins cher. Galère de recrutement - a 3 postes non pourvus. Pression sur les délais de paiement clients (60-90 jours) alors que salaires tombent le 30.",
+      "priorites_actuelles": [
+        "Trouver 2-3 nouveaux contrats pour compenser la perte",
+        "Réduire le turnover des agents (55% l'an dernier)",
+        "Digitaliser la gestion des plannings et pointages (actuellement Excel + papier)",
+        "Se différencier sur la qualité, pas juste le prix"
+      ],
+      "experience_avec_offre_similaire": "A testé un logiciel de gestion il y a 3 ans - désastre. Trop complexe, les chefs d'équipe ne l'ont jamais utilisé, 4500€ perdus. A aussi eu des commerciaux qui promettaient de lui trouver des clients (leads) - arnaque totale.",
+      "fournisseur_actuel": "Utilise un expert-comptable classique, un courtier en assurance, loue ses machines chez Loca-Clean. Pas de solution digitale opérationnelle.",
+      "budget_disponible": "Très limité. Maximum 3000-5000€ d'investissement si ROI prouvé sous 6-12 mois. Préfère des abonnements mensuels faibles (150-300€/mois max) aux gros montants one-shot."
+    },
+    "declencheurs": {
+      "ce_qui_ouvre_la_porte": [
+        "Mentionner un concurrent local ou client qu'il connaît (preuve sociale de proximité)",
+        "Parler d'un problème concret qu'il vit AUJOURD'HUI (ex: gestion planning, turnover)",
+        "Donner un chiffre précis d'économie ou de gain de temps en heures/semaine",
+        "Montrer qu'on comprend ses contraintes terrain (marges, horaires décalés, profils agents)",
+        "Proposer un échange de 15 min sur RENDEZ-VOUS, pas maintenant",
+        "Dire qu'on a quelque chose de SIMPLE qui ne bouleverse pas son organisation"
+      ],
+      "ce_qui_ferme_instantanement": [
+        "Discours générique sur 'la transformation digitale' ou 'l'innovation'",
+        "Demander 'Comment ça va?' ou faire du small talk forcé",
+        "Parler de fonctionnalités techniques sans lien avec ses problèmes",
+        "Insister pour avoir un rdv TOUT DE SUITE dans son agenda",
+        "Comparer son entreprise aux grands groupes de manière condescendante",
+        "Mentionner un prix élevé avant d'avoir établi la valeur",
+        "Dire 'Je ne vous prends que 5 minutes' alors qu'on va clairement en prendre 20"
+      ]
+    }
+  },
+  "objections": {
+    "objections": [
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais écoutez là je suis en plein chantier, c'est pour quoi exactement ?",
+        "sous_texte": "Je suis vraiment occupé + je veux savoir en 10 secondes si ça vaut le coup de continuer cette conversation ou si je raccroche poliment",
+        "type": "reflexe",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Annoncer l'objet ultra-précisément en 15 secondes max avec un bénéfice terrain concret, puis proposer de rappeler"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Franchement j'ai pas le temps là, envoyez-moi un mail on verra",
+        "sous_texte": "Je me débarrasse de vous poliment sans dire non direct. Le mail finira à la poubelle mais au moins vous me lâcherez",
+        "type": "reflexe",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Reconnaître qu'il est occupé, donner UNE info qui pique sa curiosité sur un problème qu'il vit, proposer 2 créneaux précis de rappel courts"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ah non mais je connais pas votre boîte moi, vous vendez quoi au juste ?",
+        "sous_texte": "Je suis méfiant car je ne vous connais pas + j'ai besoin de vous catégoriser rapidement pour savoir si je vous écoute ou pas",
+        "type": "sincere",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Présenter en une phrase qui on est + mentionner un client/concurrent local qu'il connaît comme référence de proximité"
+      },
+      {
+        "moment": "accroche",
+        "verbatim": "Ouais ouais... *bruit de clavier* Oui allez-y je vous écoute",
+        "sous_texte": "Je fais semblant d'écouter tout en continuant ce que je fais. Vous avez 20 secondes avant que je décroche complètement",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Stopper net le pitch, lui faire remarquer poliment qu'on sent qu'il est occupé, offrir de rappeler quand il sera dispo - test de respect de son temps"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Bon écoutez je vois très bien ce que vous vendez, on a déjà essayé ce genre de trucs ça marche jamais",
+        "sous_texte": "J'ai été échaudé avant (logiciel à 4500€) et je généralise pour me protéger. Prouvez-moi que vous êtes différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Creuser l'expérience passée spécifiquement (qu'est-ce qui n'a pas marché ?), montrer qu'on comprend pourquoi ça a foiré, différencier son approche"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Mes gars ils ont la moyenne d'âge de 48 ans, ils comprennent rien aux ordinateurs, votre truc ça restera dans un tiroir",
+        "sous_texte": "J'ai peur d'investir dans quelque chose que mes équipes terrain n'utiliseront pas - problème réel d'adoption et je ne veux pas me planter encore",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Reconnaître la réalité du terrain, donner exemple concret d'entreprise similaire avec profil agents identique qui a réussi l'adoption, expliquer accompagnement simple"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Franchement là j'ai trois postes à pourvoir, j'ai perdu un gros contrat le mois dernier, c'est vraiment pas le moment de dépenser",
+        "sous_texte": "Je vous donne des vraies infos sur mes difficultés - je suis partagé entre l'envie de trouver des solutions et la peur d'investir en période tendue",
+        "type": "sincere",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Faire le lien entre ses problèmes et la solution (ex: turnover réduit par meilleure organisation), parler ROI rapide et budget mensuel faible, pas investissement lourd"
+      },
+      {
+        "moment": "decouverte",
+        "verbatim": "Ouais mais vous me dites combien ça coûte votre machin ? Parce que moi je tourne à 5% de marge hein",
+        "sous_texte": "Test pour voir si vous allez esquiver le prix ou être transparent. Je veux savoir si je perds mon temps avec un truc hors budget",
+        "type": "test",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Donner une fourchette honnête immédiatement + la mettre en perspective de gain/économie concrète en euros ou heures - montrer qu'on connaît ses marges serrées"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ouais non mais moi j'ai déjà Excel pour les plannings, ça me coûte rien et ça marche très bien",
+        "sous_texte": "Je me rassure avec le statu quo. En vrai Excel c'est le bordel mais au moins je le maîtrise et c'est gratuit",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Questionner le 'très bien' gentiment : combien d'heures/semaine pour les faire ? combien d'erreurs de planning le mois dernier ? Faire émerger le coût caché"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Je vois, mais là je sais même pas comment je vais gérer les plannings de septembre, faudrait que je règle ça d'abord",
+        "sous_texte": "J'ai tellement de problèmes urgents que même si votre solution m'intéresse, je n'ai pas la bande passante mentale pour un projet de plus",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Montrer que la solution RÈGLE justement ce problème de septembre (si pertinent), ou proposer de l'accompagner sur ce sujet précis pour créer alliance"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Mouais... Vous me dites ça mais franchement tous les commerciaux me promettent la lune, après dans la vraie vie c'est jamais comme ils disent",
+        "sous_texte": "Je vous mets dans le même sac que tous les vendeurs qui m'ont déçu. Prouvez-moi avec du concret que vous êtes différent",
+        "type": "sincere",
+        "difficulte": 5,
+        "reponse_efficace_indice": "Sortir une preuve sociale ultra-précise (nom entreprise locale + résultat chiffré vérifiable), proposer de parler à ce client directement, ou offrir garantie/test"
+      },
+      {
+        "moment": "argumentation",
+        "verbatim": "Ah mais attends, faut que je forme mes chefs d'équipe, que je change les process... non mais c'est trop compliqué ton truc",
+        "sous_texte": "Je me projette dans la mise en place et ça me paraît insurmontable avec mon organisation déjà tendue - j'ai peur du chantier",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Décortiquer les étapes simplement, donner timeline réaliste, préciser qui fait quoi (vous vs lui), montrer que c'est progressif pas big bang"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Ouais écoutez c'est intéressant mais bon là je peux pas me décider comme ça, faut que j'en parle à mon comptable déjà",
+        "sous_texte": "Je suis peut-être intéressé mais je veux sortir de la pression de décision. Mon comptable est une excuse - je veux réfléchir seul ou j'hésite encore",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Comprendre ce que le comptable valide exactement (budget ? ROI ?), proposer de préparer des éléments pour faciliter sa discussion, fixer RDV de débrief post-comptable"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Bon allez envoyez-moi votre doc par mail, je regarde ça tranquillement et je vous rappelle",
+        "sous_texte": "Je veux clore poliment sans engagement. Je ne vous rappellerai jamais - c'est ma sortie de secours classique",
+        "type": "reflexe",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Accepter d'envoyer le doc MAIS bloquer un créneau précis dans 3-4 jours pour en reparler 10min - garder la main sur le process commercial"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Non franchement je vous dis cash : j'ai pas 3000 balles à mettre là-dedans, même si c'est bien",
+        "sous_texte": "Objection budgétaire vraie. Je suis intéressé sur le principe mais le prix me bloque réellement compte tenu de ma trésorerie",
+        "type": "sincere",
+        "difficulte": 4,
+        "reponse_efficace_indice": "Explorer formule mensuelle faible, phasage du déploiement, ou étalement paiement. Calculer ensemble combien il perd actuellement chaque mois sans la solution"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Attends mais si ça marche pas au bout de 3 mois, je suis coincé avec un abonnement, c'est ça ?",
+        "sous_texte": "Je suis proche de dire oui mais j'ai peur de me faire avoir. J'ai besoin d'une porte de sortie pour me rassurer",
+        "type": "test",
+        "difficulte": 2,
+        "reponse_efficace_indice": "Clarifier les conditions de résiliation, proposer période d'essai ou garantie satisfait/remboursé si possible, montrer qu'on assume le risque avec lui"
+      },
+      {
+        "moment": "closing",
+        "verbatim": "Mouais je sais pas, faut que je voie... Tu peux pas me faire un prix en fait ? Parce que là c'est chaud quand même",
+        "sous_texte": "Je teste si vous avez de la marge de négo. Peut-être intéressé mais je veux le meilleur deal - réflexe de gérant avec marges serrées",
+        "type": "tactique",
+        "difficulte": 3,
+        "reponse_efficace_indice": "Ne pas brader immédiatement. Comprendre ce qui coince vraiment (prix absolu ? timing ? fonctionnalités inutiles ?). Négocier sur valeur pas sur peur de perdre"
+      }
+    ],
+    "objection_finale": {
+      "verbatim": "Bon écoutez franchement c'est sympa mais là entre le contrat que j'ai perdu, les recrutements, tout ça... je peux vraiment pas me lancer là-dedans maintenant. Rappelez-moi dans 6 mois on verra",
+      "condition_declenchement": "Quand le commercial n'a pas réussi à créer suffisamment d'urgence ou à montrer que la solution AIDE à résoudre les problèmes actuels au lieu d'en ajouter. Rachid se replie sur ses priorités visibles court-terme."
+    },
+    "pattern_escalade": "Rachid commence agressif/méfiant par réflexe (30 premières secondes). Si le commercial tient bon sans être insistant, montre qu'il comprend le métier et cite du concret, Rachid s'ouvre progressivement et partage ses vraies problématiques. Mais au moindre argument bateau, promesse vague ou insistance commerciale classique, il se referme brutalement et cherche à clore ('Bon envoyez un mail'). L'escalade n'est pas linéaire : il peut redevenir méfiant même après 10 minutes positives si on le brusque sur le closing.",
+    "piege_classique": "Rachid donne parfois de FAUX signaux d'accord ('Ouais c'est pas bête', 'Ça pourrait m'intéresser') alors qu'il n'est pas convaincu - c'est pour abréger la conversation poliment. Le commercial junior se réjouit trop vite et force le closing, ce qui provoque un rejet. Il faut CREUSER chaque 'Oui' de Rachid avec une question de confirmation concrète (Ex: 'OK, donc concrètement si on règle votre problème de planning, ça vous ferait gagner combien d'heures par semaine selon vous ?'). Le vrai signal d'intérêt c'est quand Rachid POSE UNE QUESTION PRÉCISE ou MENTIONNE UN PROBLÈME ACTUEL sans qu'on le lui demande."
+  },
+  "vendeur": {
+    "entreprise": {
+      "nom": "NON_SPECIFIE",
+      "secteur": "NON_SPECIFIE - probablement fournisseur de solutions B2B pour sociétés de services",
+      "description": "Entreprise proposant des solutions pour les sociétés de services aux entreprises (nettoyage, sécurité, maintenance)"
+    },
+    "offre": {
+      "nom": "NON_SPECIFIE",
+      "description": "Solution non précisée destinée à améliorer l'activité ou la gestion des sociétés de services",
+      "proposition_valeur": "NON_SPECIFIE",
+      "prix": "NON_SPECIFIE",
+      "references": [],
+      "avantages_vs_concurrence": "NON_SPECIFIE"
+    },
+    "objectif_appel": {
+      "type": "rdv_physique",
+      "description": "Former les commerciaux à la prospection téléphonique à froid auprès de dirigeants de PME occupés, pour obtenir un rendez-vous qualifié",
+      "criteres_succes": []
+    },
+    "contexte_appel": {
+      "type": "appel_froid",
+      "historique": "Premier contact",
+      "infos_connues": ""
+    }
+  },
+  "brief_commercial": {
+    "titre": "Prospection à froid — Gérant société de nettoyage",
+    "vous_etes": "Commercial B2B spécialisé dans les solutions pour sociétés de services (nettoyage, sécurité, maintenance)",
+    "vous_vendez": "Une solution digitale pour optimiser la gestion opérationnelle des entreprises de nettoyage (plannings, pointages, suivi chantiers) — Prix et modalités à discuter selon besoins",
+    "vous_appelez": "Rachid Benkhaled, 52 ans, gérant de RB Services Propreté (38 salariés, nettoyage industriel/tertiaire). Pragmatique, méfiant envers les commerciaux, ultra-direct. Déteste le baratin et ne supporte pas qu'on lui fasse perdre son temps.",
+    "ce_que_vous_savez": [
+      "Son entreprise a grandi de 12% l'an dernier mais les marges sont serrées (4-6%)",
+      "Il a environ 30 agents de nettoyage sur le terrain et galère avec la gestion des plannings",
+      "Il a déjà testé un logiciel il y a 3 ans — échec complet, jamais utilisé par les équipes",
+      "Il vient de perdre un gros contrat face à un concurrent moins cher",
+      "Il cherche à se différencier sur la qualité, pas le prix"
+    ],
+    "votre_objectif": "Obtenir un rendez-vous physique de 15-20 minutes pour présenter votre solution en détail avec des chiffres concrets",
+    "vos_atouts": [
+      "Vous avez 4 clients dans le nettoyage industriel en région qui économisent 6-8h/semaine sur la gestion administrative",
+      "Votre solution est pensée pour des équipes terrain peu digitalisées — interface ultra-simple",
+      "Modèle en abonnement mensuel accessible (pas de gros investissement initial)",
+      "Vous pouvez citer un concurrent local de Rachid qui utilise votre outil"
+    ],
+    "duree_estimee": "3-5 minutes",
+    "niveau_difficulte": "Expert"
+  },
+  "metadata": {
+    "generated_at": "2026-02-19T15:27:53Z",
+    "model": "claude-sonnet-4-5-20250929",
+    "total_tokens": 15082,
+    "total_time_s": 143.2
+  }
+}

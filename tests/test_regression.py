@@ -1,6 +1,7 @@
 """
 VendMieux — Regression tests
-Tests for: anonymous simulation flow, marketing copy, CTA buttons, signup modal, API endpoints.
+Tests for: anonymous simulation flow, marketing copy, CTA buttons, signup modal, API endpoints,
+latency optimizations (pre-scripted greetings, phone ring tone).
 """
 
 import os
@@ -700,3 +701,326 @@ class TestHeadComponent:
         content = main_path.read_text(encoding="utf-8")
         assert 'import Head from' in content, "main.jsx should import Head"
         assert "<Head/>" in content, "main.jsx should render <Head/>"
+
+
+# ========== LATENCY OPTIMIZATION: PRE-SCRIPTED GREETINGS ==========
+
+class TestPreScriptedGreetings:
+    """Tests for the pre-scripted greeting system (bypass LLM for first reply)."""
+
+    def test_greetings_dict_has_all_languages(self):
+        """GREETINGS should have entries for all supported languages."""
+        from agent import GREETINGS
+        for lang in ["fr", "en", "es", "de", "it"]:
+            assert lang in GREETINGS, f"Missing language '{lang}' in GREETINGS"
+            assert len(GREETINGS[lang]) >= 2, f"Language '{lang}' needs at least 2 greeting variants"
+
+    def test_get_greeting_returns_string(self):
+        """get_greeting should return a non-empty string."""
+        from agent import get_greeting
+        persona = {
+            "identite": {
+                "prenom": "Olivier",
+                "nom": "Bertrand",
+                "entreprise": {"nom": "MécaPress"},
+            }
+        }
+        for lang in ["fr", "en", "es", "de", "it"]:
+            greeting = get_greeting(lang, persona)
+            assert isinstance(greeting, str), f"Greeting for '{lang}' is not a string"
+            assert len(greeting) > 0, f"Greeting for '{lang}' is empty"
+
+    def test_get_greeting_substitutes_persona(self):
+        """get_greeting should substitute {prenom}, {nom}, {entreprise} placeholders."""
+        from agent import get_greeting, GREETINGS
+        persona = {
+            "identite": {
+                "prenom": "Jean",
+                "nom": "Dupont",
+                "entreprise": {"nom": "AcmeCorp"},
+            }
+        }
+        # Run many times to hit templates with placeholders
+        results = set()
+        for _ in range(100):
+            results.add(get_greeting("fr", persona))
+        # At least one result should contain persona info
+        has_persona = any(
+            "Jean" in g or "Dupont" in g or "AcmeCorp" in g
+            for g in results
+        )
+        assert has_persona, f"No greeting contains persona info. Got: {results}"
+
+    def test_get_greeting_no_raw_placeholders(self):
+        """get_greeting should not leave {prenom}/{nom}/{entreprise} unsubstituted."""
+        from agent import get_greeting
+        persona = {
+            "identite": {
+                "prenom": "Marie",
+                "nom": "Curie",
+                "entreprise": {"nom": "CNRS"},
+            }
+        }
+        for lang in ["fr", "en", "es", "de", "it"]:
+            for _ in range(50):
+                greeting = get_greeting(lang, persona)
+                assert "{" not in greeting, f"Raw placeholder in greeting: {greeting}"
+
+    def test_get_greeting_unknown_language_falls_back_to_fr(self):
+        """get_greeting with unknown language should fallback to French."""
+        from agent import get_greeting, GREETINGS
+        persona = {
+            "identite": {
+                "prenom": "Test",
+                "nom": "User",
+                "entreprise": {"nom": "TestCo"},
+            }
+        }
+        greeting = get_greeting("xx", persona)
+        assert isinstance(greeting, str) and len(greeting) > 0
+
+    def test_get_greeting_empty_persona(self):
+        """get_greeting should work with empty persona (no crash)."""
+        from agent import get_greeting
+        persona = {"identite": {}}
+        for lang in ["fr", "en", "es", "de", "it"]:
+            greeting = get_greeting(lang, persona)
+            assert isinstance(greeting, str), f"Crash with empty persona for '{lang}'"
+
+    def test_system_prompt_no_longer_says_decroche(self):
+        """System prompt should say 'Tu as déjà décroché' (not 'Tu décroches')."""
+        from agent import build_system_prompt, DEFAULT_SCENARIO
+        prompt = build_system_prompt(DEFAULT_SCENARIO, difficulty=2, language="fr")
+        assert "Tu as déjà décroché" in prompt, "System prompt should say 'Tu as déjà décroché'"
+        assert "Tu décroches" not in prompt, "System prompt should NOT say 'Tu décroches'"
+
+
+# ========== LATENCY OPTIMIZATION: PHONE RING TONE ==========
+
+class TestPhoneRingTone:
+    """Tests for the phone ring tone latency masking feature."""
+
+    def test_ring_tone_file_exists(self):
+        """phone-ring.mp3 should exist in static/sounds/."""
+        ring_path = STATIC_DIR / "sounds" / "phone-ring.mp3"
+        assert ring_path.exists(), "phone-ring.mp3 not found"
+        assert ring_path.stat().st_size > 1000, "phone-ring.mp3 seems too small"
+
+    def test_demo_html_has_ring_tone_logic(self, demo_html_content):
+        """demo.html should play and stop ring tone."""
+        assert "ringTone" in demo_html_content, "ringTone variable missing"
+        assert "stopRingTone" in demo_html_content, "stopRingTone function missing"
+        assert "phone-ring.mp3" in demo_html_content, "phone-ring.mp3 reference missing"
+
+    def test_demo_html_stops_ring_on_track(self, demo_html_content):
+        """Ring tone should be stopped when TrackSubscribed fires."""
+        # The stopRingTone call should be near TrackSubscribed
+        assert "stopRingTone()" in demo_html_content, "stopRingTone() call missing"
+
+    def test_demo_html_stops_ring_on_endcall(self, demo_html_content):
+        """Ring tone should be stopped in endCall()."""
+        # Find endCall and check stopRingTone is there
+        idx_endcall = demo_html_content.find("function endCall()")
+        assert idx_endcall > 0, "endCall function not found"
+        endcall_chunk = demo_html_content[idx_endcall:idx_endcall + 300]
+        assert "stopRingTone" in endcall_chunk, "stopRingTone not called in endCall()"
+
+    def test_demo_html_stops_ring_on_error(self, demo_html_content):
+        """Ring tone should be stopped on error in startCall()."""
+        idx_start = demo_html_content.find("async function startCall()")
+        assert idx_start > 0
+        start_chunk = demo_html_content[idx_start:idx_start + 3000]
+        # Should have stopRingTone in catch block
+        assert start_chunk.count("stopRingTone") >= 1, "stopRingTone not called on error"
+
+
+# ========== AGENT LATENCY TIMESTAMPS ==========
+
+class TestAgentLatencyTimestamps:
+    """Tests for latency measurement timestamps in agent.py."""
+
+    def test_agent_has_timing_logs(self):
+        """agent.py should have timing logs for latency measurement."""
+        agent_path = PROJECT_ROOT / "agent.py"
+        content = agent_path.read_text(encoding="utf-8")
+        assert "[latency] connect:" in content, "Missing connect timing log"
+        assert "[latency] scenario loaded:" in content, "Missing scenario timing log"
+        assert "[latency] agent created:" in content, "Missing agent creation timing log"
+        assert "[latency] session started:" in content, "Missing session started timing log"
+        assert "[latency] greeting sent to TTS:" in content, "Missing greeting TTS timing log"
+
+    def test_agent_uses_say_not_generate_reply(self):
+        """agent.py should use session.say() instead of generate_reply() for greeting."""
+        agent_path = PROJECT_ROOT / "agent.py"
+        content = agent_path.read_text(encoding="utf-8")
+        assert "session.say(greeting" in content, "Should use session.say() for greeting"
+        assert "generate_reply" not in content, "Should NOT use generate_reply anymore"
+
+    def test_agent_still_uses_haiku(self):
+        """agent.py should use Haiku for real-time conversation."""
+        agent_path = PROJECT_ROOT / "agent.py"
+        content = agent_path.read_text(encoding="utf-8")
+        assert "claude-haiku" in content, "Should use Haiku model for conversation"
+
+
+# ========== LATENCY OPTIMIZATION: PARALLEL IMPORT + PREFETCH ==========
+
+class TestLatencyOptimizations:
+    """Tests for latency optimizations in the simulation startup flow."""
+
+    def test_livekit_module_preload(self):
+        """useLiveKit.js should preload livekit-client on module import."""
+        path = PROJECT_ROOT / "frontend-src" / "src" / "components" / "simulation" / "useLiveKit.js"
+        content = path.read_text(encoding="utf-8")
+        assert "livekitPreload" in content, "Missing LiveKit module preload"
+        assert "import('livekit-client')" in content, "Missing dynamic import for preload"
+
+    def test_parallel_token_and_import(self):
+        """useLiveKit.js should fetch token and import LiveKit in parallel."""
+        path = PROJECT_ROOT / "frontend-src" / "src" / "components" / "simulation" / "useLiveKit.js"
+        content = path.read_text(encoding="utf-8")
+        assert "Promise.all" in content, "Missing Promise.all for parallel fetch"
+        assert "prefetchedToken" in content, "Missing prefetchedToken support"
+
+    def test_token_prefetch_in_simulation(self):
+        """Simulation.jsx should pre-fetch token when entering call phase."""
+        path = PROJECT_ROOT / "frontend-src" / "src" / "pages" / "Simulation.jsx"
+        content = path.read_text(encoding="utf-8")
+        assert "prefetchToken" in content, "Missing prefetchToken function"
+        assert "prefetchedTokenRef" in content, "Missing prefetchedTokenRef"
+        # prefetchToken should be called in handleLaunch
+        launch_idx = content.find("function handleLaunch")
+        assert launch_idx > 0, "handleLaunch function not found"
+        launch_body = content[launch_idx:launch_idx + 500]
+        assert "prefetchToken()" in launch_body, "handleLaunch should call prefetchToken()"
+
+    def test_agent_scenario_cache(self):
+        """agent.py should cache scenarios in memory."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "_scenarios_cache" in agent_content, "Missing _scenarios_cache in agent.py"
+        assert "_ensure_scenarios_db" in agent_content, "Missing _ensure_scenarios_db in agent.py"
+
+    def test_agent_prewarm_loads_scenarios(self):
+        """prewarm() should pre-load scenario cache."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        prewarm_idx = agent_content.find("def prewarm(")
+        assert prewarm_idx > 0, "prewarm function not found"
+        prewarm_body = agent_content[prewarm_idx:prewarm_idx + 300]
+        assert "_ensure_scenarios_db()" in prewarm_body, "prewarm should call _ensure_scenarios_db()"
+
+    def test_scenario_cache_works(self):
+        """Scenario cache should load and return scenarios correctly."""
+        from agent import _ensure_scenarios_db, _scenarios_cache, load_scenario
+        _ensure_scenarios_db()
+        assert len(_scenarios_cache) > 0, "Scenario cache is empty after loading"
+        # Default scenario (IND-01) should be in cache
+        scenario = load_scenario("IND-01")
+        assert scenario is not None, "IND-01 scenario not found in cache"
+        assert "persona" in scenario, "Cached scenario missing persona"
+
+
+# ========== SSG PRE-RENDERING REGRESSION ==========
+
+SSG_ROUTES = ["/produit", "/tarifs", "/scenarios", "/ecoles", "/ecoles-tarifs",
+              "/contact", "/mentions-legales", "/confidentialite"]
+
+
+class TestSSGPreRenderedFiles:
+    """Verify pre-rendered HTML files exist and contain content."""
+
+    def test_prerendered_files_exist(self):
+        """Each SSG route should have a pre-rendered index.html."""
+        for route in SSG_ROUTES:
+            path = STATIC_DIR / route.lstrip("/") / "index.html"
+            assert path.exists(), f"Missing pre-rendered file: {path}"
+            assert path.stat().st_size > 5000, f"Pre-rendered file too small: {path}"
+
+    def test_prerendered_home_has_content(self):
+        """Pre-rendered home page should have visible content."""
+        html = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+        assert "data-prerendered" in html or '<h1' in html, \
+            "Home page index.html should have pre-rendered content"
+
+    def test_prerendered_pages_have_h1(self):
+        """Each pre-rendered page should have at least one <h1> or <h2>."""
+        for route in SSG_ROUTES:
+            html = (STATIC_DIR / route.lstrip("/") / "index.html").read_text(encoding="utf-8")
+            has_heading = '<h1' in html or '<h2' in html
+            assert has_heading, f"Pre-rendered {route} missing heading tags"
+
+    def test_prerendered_pages_have_text_content(self):
+        """Pre-rendered pages should contain meaningful French text."""
+        key_content = {
+            "/produit": "Briefing",
+            "/tarifs": "49",
+            "/scenarios": "scénario",
+            "/ecoles": "étudiant",
+            "/contact": "Contact",
+            "/mentions-legales": "Mentions",
+            "/confidentialite": "confidentialité",
+        }
+        for route, expected in key_content.items():
+            html = (STATIC_DIR / route.lstrip("/") / "index.html").read_text(encoding="utf-8")
+            assert expected.lower() in html.lower(), \
+                f"Pre-rendered {route} missing expected text '{expected}'"
+
+    def test_prerender_script_exists(self):
+        """The prerender build script should exist."""
+        script = PROJECT_ROOT / "frontend-src" / "scripts" / "prerender.mjs"
+        assert script.exists(), "prerender.mjs script not found"
+        content = script.read_text(encoding="utf-8")
+        for route in SSG_ROUTES:
+            assert f"'{route}'" in content, f"prerender.mjs missing route {route}"
+
+    def test_package_json_has_ssg_script(self):
+        """package.json should have build:ssg script."""
+        pkg = PROJECT_ROOT / "frontend-src" / "package.json"
+        content = pkg.read_text(encoding="utf-8")
+        assert "build:ssg" in content, "package.json missing build:ssg script"
+
+
+class TestSSGServedByAPI:
+    """Verify the API serves pre-rendered content (requires running server)."""
+
+    def test_prerendered_produit_has_body_content(self, http_client):
+        """GET /produit should return HTML with visible content (not empty SPA shell)."""
+        try:
+            r = http_client.get("/produit")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert '<h1' in r.text, "/produit should have <h1> in HTML (pre-rendered)"
+        assert 'Briefing' in r.text, "/produit should have 'Briefing' text visible"
+
+    def test_prerendered_tarifs_has_pricing(self, http_client):
+        """GET /tarifs should have pricing content pre-rendered."""
+        try:
+            r = http_client.get("/tarifs")
+        except (httpx.ConnectError, httpx.ReadTimeout):
+            pytest.skip("VendMieux API not running or busy")
+        assert r.status_code == 200
+        assert '49' in r.text, "/tarifs should show pricing"
+
+    def test_prerendered_pages_have_seo_and_content(self, http_client):
+        """All pre-rendered pages should have both SEO tags and body content."""
+        for route in SSG_ROUTES:
+            try:
+                r = http_client.get(route)
+            except (httpx.ConnectError, httpx.ReadTimeout):
+                pytest.skip("VendMieux API not running or busy")
+            assert r.status_code == 200, f"{route} returned {r.status_code}"
+            # SEO tags (injected server-side)
+            assert 'og:title' in r.text, f"{route} missing og:title"
+            assert 'rel="canonical"' in r.text, f"{route} missing canonical"
+            # Body content (pre-rendered)
+            assert '<div id="root"' in r.text, f"{route} missing #root div"
+            # Root should NOT be empty
+            root_idx = r.text.find('<div id="root"')
+            after_root = r.text[root_idx:root_idx + 500]
+            assert '<div' in after_root[20:], f"{route} #root appears to be empty (no SSG content)"
+
+    def test_api_has_prerendered_loader(self):
+        """api.py should have _load_prerendered_or_fallback function."""
+        api_content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert "def _load_prerendered_or_fallback" in api_content, \
+            "api.py missing _load_prerendered_or_fallback function"
