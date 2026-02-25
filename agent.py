@@ -859,6 +859,28 @@ async def entrypoint(ctx: JobContext):
             p2["prenom"]: scenario["_tts_voice_2"],
         }
 
+    # Multi-language voice/STT configuration
+    # Voix par défaut (masculines) — utilisées comme fallback pour les langues non-FR
+    VOICE_MAP = {
+        "fr": {"language_code": "fr-FR"},
+        "en": {"voice": "en-GB-Chirp3-HD-Charon", "language_code": "en-GB"},
+        "es": {"voice": "es-ES-Chirp3-HD-Charon", "language_code": "es-ES"},
+        "de": {"voice": "de-DE-Chirp3-HD-Charon", "language_code": "de-DE"},
+        "it": {"voice": "it-IT-Chirp3-HD-Charon", "language_code": "it-IT"},
+    }
+    STT_LANG_MAP = {
+        "fr": "fr", "en": "en", "es": "es", "de": "de", "it": "it",
+    }
+    voice_cfg = VOICE_MAP.get(meta_language, VOICE_MAP["fr"])
+    stt_lang = STT_LANG_MAP.get(meta_language, "fr")
+
+    # Voix TTS — pré-calculée par scenario_builder.build()
+    gender = scenario.get('persona', {}).get('identite', {}).get('genre', 'M')
+    if meta_language == "fr":
+        tts_voice = scenario.get('_tts_voice_1') or (VOIX_FEMININES[0] if gender == 'F' else VOIX_MASCULINES[0])
+        voice_cfg["voice"] = tts_voice
+    logger.info(f"🎙️ Voix TTS sélectionnée : {voice_cfg['voice']} (genre={gender})")
+
     # Créer l'agent prospect
     prospect = VendMieuxProspect(
         system_prompt=system_prompt,
@@ -936,28 +958,6 @@ async def entrypoint(ctx: JobContext):
         """Sync callback — sauvegarde historique puis lance l'évaluation."""
         _save_room_history(ctx.room.name, session)
         asyncio.create_task(_do_close_evaluation())
-
-    # Multi-language voice/STT configuration
-    # Voix par défaut (masculines) — utilisées comme fallback pour les langues non-FR
-    VOICE_MAP = {
-        "fr": {"language_code": "fr-FR"},
-        "en": {"voice": "en-GB-Chirp3-HD-Charon", "language_code": "en-GB"},
-        "es": {"voice": "es-ES-Chirp3-HD-Charon", "language_code": "es-ES"},
-        "de": {"voice": "de-DE-Chirp3-HD-Charon", "language_code": "de-DE"},
-        "it": {"voice": "it-IT-Chirp3-HD-Charon", "language_code": "it-IT"},
-    }
-    STT_LANG_MAP = {
-        "fr": "fr", "en": "en", "es": "es", "de": "de", "it": "it",
-    }
-    voice_cfg = VOICE_MAP.get(meta_language, VOICE_MAP["fr"])
-    stt_lang = STT_LANG_MAP.get(meta_language, "fr")
-
-    # Voix TTS — pré-calculée par scenario_builder.build()
-    gender = scenario.get('persona', {}).get('identite', {}).get('genre', 'M')
-    if meta_language == "fr":
-        tts_voice = scenario.get('_tts_voice_1') or (VOIX_FEMININES[0] if gender == 'F' else VOIX_MASCULINES[0])
-        voice_cfg["voice"] = tts_voice
-    logger.info(f"🎙️ Voix TTS sélectionnée : {voice_cfg['voice']} (genre={gender})")
 
     # Créer la session avec le pipeline STT → LLM → TTS
     session = AgentSession(
