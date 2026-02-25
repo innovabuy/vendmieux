@@ -503,6 +503,84 @@ def _difficulty_info(level: int) -> dict:
     return {"niveau": level, **info}
 
 
+# Sector normalization mapping (keyword → normalized name)
+_SECTOR_NORMALIZE = {
+    "tech": "Tech / SaaS", "saas": "Tech / SaaS", "telecoms": "Tech / SaaS",
+    "logiciel": "Tech / SaaS", "esn": "Tech / SaaS", "éditeur saas": "Tech / SaaS",
+    "édition de logiciels": "Tech / SaaS", "cybersécurité": "Tech / SaaS",
+    "digital": "Tech / SaaS",
+    "btp": "BTP / Construction", "bâtiment": "BTP / Construction",
+    "maçonnerie": "BTP / Construction", "gros œuvre": "BTP / Construction",
+    "construction": "BTP / Construction",
+    "santé": "Santé / Médical", "médical": "Santé / Médical",
+    "pharmacie": "Santé / Médical", "clinique": "Santé / Médical",
+    "chirurgie": "Santé / Médical", "établissement de santé": "Santé / Médical",
+    "finance": "Finance / Assurance", "banque": "Finance / Assurance",
+    "assurance": "Finance / Assurance", "patrimoine": "Finance / Assurance",
+    "comptab": "Finance / Assurance", "courtage": "Finance / Assurance",
+    "expertise comptable": "Finance / Assurance",
+    "transport": "Transport / Logistique", "logistique": "Transport / Logistique",
+    "hôtellerie": "Hôtellerie / Restauration", "restauration": "Hôtellerie / Restauration",
+    "hotellerie": "Hôtellerie / Restauration",
+    "commerce": "Commerce / Distribution", "distribution": "Commerce / Distribution",
+    "grande distribution": "Commerce / Distribution",
+    "formation": "Formation / RH", "recrutement": "Formation / RH",
+    "intérim": "Formation / RH",
+    "agroalimentaire": "Agroalimentaire", "agriculture": "Agroalimentaire",
+    "viticulture": "Agroalimentaire", "transformation": "Agroalimentaire",
+    "laitière": "Agroalimentaire", "charcuterie": "Agroalimentaire",
+    "conserve": "Agroalimentaire",
+    "immobilier": "Immobilier", "transaction immobilière": "Immobilier",
+    "artisanat": "Artisanat", "menuiserie": "Artisanat",
+    "communication": "Communication / Marketing", "marketing": "Communication / Marketing",
+    "imprimerie": "Communication / Marketing", "signalétique": "Communication / Marketing",
+    "automobile": "Automobile", "concession": "Automobile",
+    "énergie": "Énergie / Environnement", "environnement": "Énergie / Environnement",
+    "photovoltaïque": "Énergie / Environnement", "solaire": "Énergie / Environnement",
+    "valorisation": "Énergie / Environnement",
+    "juridique": "Juridique", "droit": "Juridique", "avocat": "Juridique",
+    "services aux entreprises": "Services aux entreprises",
+    "facility": "Services aux entreprises", "nettoyage": "Services aux entreprises",
+    "sécurité": "Services aux entreprises", "maintenance": "Services aux entreprises",
+    "services multi": "Services aux entreprises", "services généraux": "Services aux entreprises",
+    "services": "Services aux entreprises",
+    "événementiel": "Événementiel / Loisirs", "paysagisme": "Événementiel / Loisirs",
+    "optique": "Commerce de proximité", "boulangerie": "Commerce de proximité",
+    "coiffure": "Commerce de proximité", "pressing": "Commerce de proximité",
+    "crèche": "Commerce de proximité", "beauté": "Commerce de proximité",
+    "industrie": "Industrie", "plasturgie": "Industrie",
+    "composants": "Industrie", "fabrication": "Industrie",
+    "maschinenbau": "Industrie", "mecanizado": "Industrie",
+    "lavorazioni": "Industrie", "manufacturing": "Industrie",
+    "mécanique": "Industrie",
+}
+
+# Canonical sectors (order matters for display)
+CANONICAL_SECTORS = [
+    "Finance / Assurance", "BTP / Construction", "Services aux entreprises",
+    "Tech / SaaS", "Formation / RH", "Santé / Médical",
+    "Hôtellerie / Restauration", "Transport / Logistique", "Immobilier",
+    "Agroalimentaire", "Commerce / Distribution", "Communication / Marketing",
+    "Automobile", "Énergie / Environnement", "Juridique", "Industrie",
+    "Artisanat", "Commerce de proximité", "Événementiel / Loisirs",
+]
+
+
+def _normalize_sector(raw: str) -> str:
+    """Normalize a sector string to one of the canonical categories."""
+    if not raw or raw == "?":
+        return "Services aux entreprises"
+    # Already canonical?
+    if raw in CANONICAL_SECTORS:
+        return raw
+    low = raw.lower()
+    # Try keyword matching (longest match first)
+    for kw, norm in sorted(_SECTOR_NORMALIZE.items(), key=lambda x: -len(x[0])):
+        if kw in low:
+            return norm
+    return "Services aux entreprises"
+
+
 def _infer_disc_from_style(style: str, traits: list) -> dict:
     """Infer a simplified DISC profile from communication style and traits."""
     profiles = {
@@ -582,6 +660,19 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
     scenarios = []
     seen_ids = set()
 
+    # Build DB lookups (normalized sectors + persona data for gender)
+    db_sectors = {}
+    db_persona = {}  # id → persona dict (for gender/name from DB)
+    async with aiosqlite.connect(DB_PATH) as _db:
+        async with _db.execute("SELECT id, secteur, persona_json FROM scenarios") as _cur:
+            async for _row in _cur:
+                db_sectors[_row[0]] = _row[1]
+                if _row[2]:
+                    try:
+                        db_persona[_row[0]] = json.loads(_row[2])
+                    except Exception:
+                        pass
+
     # 1. Scénarios pré-enrichis depuis la table DB
     templates = await get_all_scenario_templates()
     for t in templates:
@@ -650,15 +741,22 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
     for sid, data in _SCENARIOS_DB.items():
         if sid in seen_ids:
             continue
+        # Use DB persona if available (updated gender/name/poste)
+        db_p = db_persona.get(sid, {}).get("identite", {})
         persona = data.get("persona", {}).get("identite", {})
+        eff_prenom = db_p.get("prenom") or persona.get("prenom", "?")
+        eff_nom = db_p.get("nom") or persona.get("nom", "?")
+        eff_poste = db_p.get("poste") or persona.get("poste", "?")
+        eff_genre = db_p.get("genre") or persona.get("genre", "M")
         sim = data.get("simulation", {})
         preview = _extract_preview_fields(data)
+        preview["gender"] = eff_genre  # Override with DB value
         scenarios.append({
             "id": sid,
-            "name": f"{persona.get('prenom', '?')} {persona.get('nom', '?')}",
-            "poste": persona.get("poste", "?"),
+            "name": f"{eff_prenom} {eff_nom}",
+            "poste": eff_poste,
             "entreprise": persona.get("entreprise", {}).get("nom", "?"),
-            "secteur": sim.get("secteur", persona.get("entreprise", {}).get("secteur", "?")),
+            "secteur": db_sectors.get(sid, sim.get("secteur", persona.get("entreprise", {}).get("secteur", "?"))),
             "type_simulation": sim.get("type", "prospection_telephonique"),
             "titre": sim.get("titre", ""),
             "difficulty": sim.get("difficulte", 2),
@@ -701,19 +799,26 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
                 disc = _infer_disc_from_style(style, traits)
                 is_multi = type_sim == "multi_interlocuteurs"
 
+                # Use DB persona if available (has updated gender/name)
+                db_p = db_persona.get(f.stem, {}).get("identite", {})
+                eff_prenom = db_p.get("prenom") or identite.get("prenom", "?")
+                eff_nom = db_p.get("nom") or identite.get("nom", "?")
+                eff_poste = db_p.get("poste") or identite.get("poste", "?")
+                eff_genre = db_p.get("genre") or identite.get("genre", "M")
+
                 scenarios.append({
                     "id": f.stem,
-                    "name": f"{identite.get('prenom', '?')} {identite.get('nom', '?')}",
-                    "poste": identite.get("poste", "?"),
+                    "name": f"{eff_prenom} {eff_nom}",
+                    "poste": eff_poste,
                     "entreprise": ent.get("nom", "?"),
-                    "secteur": ent.get("secteur", "?"),
+                    "secteur": db_sectors.get(f.stem, ent.get("secteur", "?")),
                     "type_simulation": type_sim,
                     "titre": titre,
                     "difficulty": _auto_difficulty(type_sim, data.get("metadata", {}).get("difficulte_defaut", 2)),
                     "difficulty_label": _difficulty_info(_auto_difficulty(type_sim, data.get("metadata", {}).get("difficulte_defaut", 2))),
                     "tags": data.get("metadata", {}).get("tags", []),
                     "source": "user",
-                    "gender": identite.get("genre", "M"),
+                    "gender": eff_genre,
                     "taille": ent.get("taille", ""),
                     "disc": disc,
                     "objections_preview": [o.get("verbatim", "") for o in obj_list[:3] if o.get("verbatim")],
@@ -726,6 +831,10 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
         except Exception:
             continue
 
+    # 3b. Normalize all sectors to canonical categories
+    for s in scenarios:
+        s["secteur"] = _normalize_sector(s["secteur"])
+
     # 4. Filtrage
     if secteur:
         scenarios = [s for s in scenarios if s["secteur"].lower() == secteur.lower()]
@@ -736,8 +845,8 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
     if interlocuteurs in ("mono", "multi"):
         scenarios = [s for s in scenarios if s.get("nb_interlocuteurs") == interlocuteurs]
 
-    # Collect all unique secteurs and types from current results + static lists
-    all_secteurs = sorted(set(get_sectors() + [s["secteur"] for s in scenarios]))
+    # Collect all unique secteurs and types
+    all_secteurs = sorted(set(s["secteur"] for s in scenarios) | set(CANONICAL_SECTORS))
     all_types = sorted(set(get_simulation_types() + [s["type_simulation"] for s in scenarios]))
 
     return {
