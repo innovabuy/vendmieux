@@ -35,10 +35,11 @@ export default function Simulation() {
   const [evaluation, setEvaluation] = useState(null);
   const [evalLoading, setEvalLoading] = useState(false);
   const [evalError, setEvalError] = useState('');
-  const [showAnalysis, setShowAnalysis] = useState(false);
+  const [analysisPhase, setAnalysisPhase] = useState(null); // null | 'analyzing' | 'revealing'
   const [analysisProgress, setAnalysisProgress] = useState(0);
   const [analysisStep, setAnalysisStep] = useState(0);
-  const [analysisDone, setAnalysisDone] = useState(false);
+  const [finalScore, setFinalScore] = useState(null);
+  const [finalEvalId, setFinalEvalId] = useState(null);
   const analysisStartRef = useRef(null);
   const chunkCountRef = useRef(0);
 
@@ -226,35 +227,44 @@ export default function Simulation() {
   function advanceAnalysis() {
     chunkCountRef.current++;
     const elapsed = Date.now() - analysisStartRef.current;
-    // Map elapsed time to steps (each step ~1.5-2.5s, total ~15-25s)
-    const timeStep = Math.min(Math.floor(elapsed / 2000), ANALYSIS_STEPS.length - 1);
+    // Map elapsed time to steps (each step ~850ms, fills 7 steps in ~6s)
+    const timeStep = Math.min(Math.floor(elapsed / 850), ANALYSIS_STEPS.length - 1);
     // Also advance based on chunk count (fallback for fast/slow responses)
     const chunkStep = Math.min(Math.floor(chunkCountRef.current / 3), ANALYSIS_STEPS.length - 1);
     const step = Math.max(timeStep, chunkStep);
     setAnalysisStep(step);
-    setAnalysisProgress(ANALYSIS_STEPS[step].pct);
+    // Progress: map step index to percentage (0→5%, last→95%)
+    const pct = Math.min(5 + (step / (ANALYSIS_STEPS.length - 1)) * 90, 95);
+    setAnalysisProgress(Math.round(pct));
   }
 
-  // Finalize analysis modal: show 100% then close after delay
-  function finalizeAnalysis(callback) {
-    setAnalysisDone(true);
+  // Transition to revealing phase with score
+  function revealScore(evalData) {
+    setEvaluation(evalData);
+    setEvalLoading(false);
+    setFinalScore(evalData.score_global);
+    setFinalEvalId(evalData.eval_id || null);
     setAnalysisProgress(100);
     setAnalysisStep(ANALYSIS_STEPS.length - 1);
-    setTimeout(() => {
-      setShowAnalysis(false);
-      setAnalysisDone(false);
-      setAnalysisProgress(0);
-      setAnalysisStep(0);
-      chunkCountRef.current = 0;
-      if (callback) callback();
-    }, 800);
+    setAnalysisPhase('revealing');
+    if (!token) localStorage.setItem('vm-free-used', 'true');
   }
 
-  // Evaluation (SSE streaming)
+  // Handle debrief navigation from reveal modal
+  function handleViewDebrief() {
+    setAnalysisPhase(null);
+    if (finalEvalId && token) {
+      window.location.href = '/debrief?session=' + finalEvalId;
+    }
+  }
+
+  // Evaluation (SSE streaming) with 6s minimum analysis animation
   async function runEvaluation(duration, entries) {
     setEvalLoading(true);
     setEvalError('');
     setEvaluation(null);
+    setFinalScore(null);
+    setFinalEvalId(null);
 
     if (entries.length < 3) {
       setEvalLoading(false);
@@ -262,11 +272,10 @@ export default function Simulation() {
       return;
     }
 
-    // Start analysis modal
-    setShowAnalysis(true);
+    // Start analysis modal in analyzing phase
+    setAnalysisPhase('analyzing');
     setAnalysisProgress(0);
     setAnalysisStep(0);
-    setAnalysisDone(false);
     analysisStartRef.current = Date.now();
     chunkCountRef.current = 0;
 
@@ -276,100 +285,92 @@ export default function Simulation() {
       timestamp: e.time / 1000,
     }));
 
+    // Minimum 6s for the analysis animation
+    const minDelayPromise = new Promise(r => setTimeout(r, 6000));
+
     try {
       const headers = { 'Content-Type': 'application/json' };
       if (token) headers['Authorization'] = 'Bearer ' + token;
 
-      const r = await fetch('/api/evaluate/stream', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({
-          session_id: 'free-' + scenarioId + '-' + Date.now(),
-          transcript: transcriptArray,
-          scenario_id: scenarioId,
-          difficulty,
-          duration_s: Math.floor(duration / 1000),
-          session_db_id: sessionDbId,
-          language,
-        }),
-      });
+      const fetchPromise = (async () => {
+        const r = await fetch('/api/evaluate/stream', {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({
+            session_id: 'free-' + scenarioId + '-' + Date.now(),
+            transcript: transcriptArray,
+            scenario_id: scenarioId,
+            difficulty,
+            duration_s: Math.floor(duration / 1000),
+            session_db_id: sessionDbId,
+            language,
+          }),
+        });
 
-      if (!r.ok) {
-        const err = await r.json().catch(() => ({}));
-        throw new Error(err.detail || 'Erreur serveur');
-      }
+        if (!r.ok) {
+          const err = await r.json().catch(() => ({}));
+          throw new Error(err.detail || 'Erreur serveur');
+        }
 
-      const reader = r.body.getReader();
-      const decoder = new TextDecoder();
-      let accumulated = '';
-      let buffer = '';
+        const reader = r.body.getReader();
+        const decoder = new TextDecoder();
+        let accumulated = '';
+        let buffer = '';
+        let finalResult = null;
 
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
 
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop(); // Keep incomplete line in buffer
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n');
+          buffer = lines.pop();
 
-        for (const line of lines) {
-          if (line.startsWith('event: done')) {
-            continue;
-          }
-          if (line.startsWith('event: error')) {
-            continue;
-          }
-          if (!line.startsWith('data: ')) continue;
+          for (const line of lines) {
+            if (line.startsWith('event: done') || line.startsWith('event: error')) continue;
+            if (!line.startsWith('data: ')) continue;
 
-          const payload = line.slice(6);
-          try {
-            const msg = JSON.parse(payload);
+            const payload = line.slice(6);
+            try {
+              const msg = JSON.parse(payload);
 
-            if (msg.type === 'chunk') {
-              accumulated += msg.text;
-              advanceAnalysis();
-              // Try progressive parse
-              const partial = tryProgressiveParse(accumulated);
-              if (partial) setEvaluation(partial);
-            } else if (msg.score_global !== undefined) {
-              // Final done event
-              const finalData = msg;
-              finalizeAnalysis(() => {
-                setEvaluation(finalData);
-                setEvalLoading(false);
-                if (!token) localStorage.setItem('vm-free-used', 'true');
-              });
-              return;
-            } else if (msg.error) {
-              setShowAnalysis(false);
-              setEvalError(msg.error);
-              setEvalLoading(false);
-              return;
+              if (msg.type === 'chunk') {
+                accumulated += msg.text;
+                advanceAnalysis();
+              } else if (msg.score_global !== undefined) {
+                finalResult = msg;
+                return finalResult;
+              } else if (msg.error) {
+                throw new Error(msg.error);
+              }
+            } catch (parseErr) {
+              if (parseErr.message && !parseErr.message.includes('JSON')) throw parseErr;
             }
-          } catch {
-            // Ignore unparseable lines
           }
         }
-      }
 
-      // Stream ended without explicit done event
-      if (accumulated) {
-        const partial = tryProgressiveParse(accumulated);
-        if (partial) {
-          finalizeAnalysis(() => {
-            setEvaluation(partial);
-            setEvalLoading(false);
-            if (!token) localStorage.setItem('vm-free-used', 'true');
-          });
-          return;
+        // Stream ended without explicit done — try progressive parse
+        if (!finalResult && accumulated) {
+          const partial = tryProgressiveParse(accumulated);
+          if (partial) return partial;
         }
+        return finalResult;
+      })();
+
+      // Wait for BOTH the API result AND the 6s minimum
+      const [evalResult] = await Promise.all([fetchPromise, minDelayPromise]);
+
+      if (evalResult && typeof evalResult.score_global === 'number') {
+        revealScore(evalResult);
+      } else {
+        // No score — close modal, show postcall
+        setAnalysisPhase(null);
+        setEvalLoading(false);
+        if (!token) localStorage.setItem('vm-free-used', 'true');
       }
-      setShowAnalysis(false);
-      setEvalLoading(false);
-      if (!token) localStorage.setItem('vm-free-used', 'true');
 
     } catch (e) {
-      setShowAnalysis(false);
+      setAnalysisPhase(null);
       setEvalLoading(false);
       setEvalError(e.message);
     }
@@ -577,11 +578,14 @@ export default function Simulation() {
       </div>
 
       {/* Analysis modal */}
-      {showAnalysis && (
+      {analysisPhase && (
         <AnalysisModal
-          progress={analysisProgress}
+          phase={analysisPhase}
           currentStep={analysisStep}
-          done={analysisDone}
+          progress={analysisProgress}
+          score={finalScore}
+          evalId={finalEvalId}
+          onViewDebrief={handleViewDebrief}
         />
       )}
 
