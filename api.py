@@ -396,9 +396,7 @@ async def get_token(req: TokenRequest, request: Request, user: dict | None = Dep
     client_ip = request.client.host if request.client else "unknown"
 
     if is_demo:
-        # Demo mode: rate limit by IP (3 per 24h), no auth required
-        if not _check_demo_rate_limit(client_ip):
-            raise HTTPException(429, "Limite de démos atteinte (3 par 24h). Créez un compte pour continuer.")
+        # Demo mode: no rate limit, no auth required
         user_id = None
     else:
         # Normal mode: anonymous users can only use __default__ scenario
