@@ -1166,7 +1166,8 @@ async function startCall() {
                 scenario_id: demoInfo.scenario_id !== '__default__' ? demoInfo.scenario_id : null,
                 difficulty: demoInfo.difficulty,
                 user_name: IS_FREE_MODE ? 'Commercial' : 'Étudiant',
-                language: selectedLanguage
+                language: selectedLanguage,
+                demo: true
             })
         });
         if (!r.ok) throw new Error('Erreur serveur (token)');
