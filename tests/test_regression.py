@@ -919,10 +919,140 @@ class TestLatencyOptimizations:
         assert "persona" in scenario, "Cached scenario missing persona"
 
 
+# ========== DEMO DIRECT SIMULATION FLOW ==========
+
+DEMO_PHP = Path("/var/www/vendmieux-site/pages/demo.php")
+SIMULATION_JSX = PROJECT_ROOT / "frontend-src" / "src" / "pages" / "Simulation.jsx"
+
+
+class TestDemoDirectSimulation:
+    """Tests for direct demo → /app/simulation flow (skip /app/demo)."""
+
+    def test_demo_php_links_to_app_simulation(self):
+        """demo.php CTA buttons should point to /app/simulation, not /app/demo."""
+        content = DEMO_PHP.read_text(encoding="utf-8")
+        assert '/app/simulation?' in content, "demo.php should link to /app/simulation"
+        assert 'href="/app/demo"' not in content, "demo.php should NOT link to /app/demo anymore"
+
+    def test_demo_php_has_scenario_param(self):
+        """demo.php links should include scenario=demo_bertrand_prospection_froide_v1."""
+        content = DEMO_PHP.read_text(encoding="utf-8")
+        assert 'scenario=demo_bertrand_prospection_froide_v1' in content, \
+            "demo.php should include demo scenario ID in links"
+
+    def test_demo_php_has_demo_true_param(self):
+        """demo.php links should include demo=true."""
+        content = DEMO_PHP.read_text(encoding="utf-8")
+        assert 'demo=true' in content, "demo.php should include demo=true in links"
+
+    def test_demo_php_js_updates_links_to_simulation(self):
+        """demo.php JS updateLinks() should build /app/simulation URLs."""
+        content = DEMO_PHP.read_text(encoding="utf-8")
+        assert "'/app/simulation?" in content, \
+            "JS updateLinks() should build /app/simulation URLs"
+
+    def test_simulation_jsx_reads_demo_param(self):
+        """Simulation.jsx should read demo=true from query params."""
+        content = SIMULATION_JSX.read_text(encoding="utf-8")
+        assert "isDemoMode" in content, "Simulation.jsx should have isDemoMode"
+        assert "searchParams.get('demo')" in content, \
+            "Simulation.jsx should read 'demo' from searchParams"
+
+    def test_simulation_jsx_reads_lang_param(self):
+        """Simulation.jsx should read lang from query params."""
+        content = SIMULATION_JSX.read_text(encoding="utf-8")
+        assert "searchParams.get('lang')" in content, \
+            "Simulation.jsx should read 'lang' from searchParams"
+
+    def test_simulation_jsx_reads_difficulty_param(self):
+        """Simulation.jsx should read difficulty from query params."""
+        content = SIMULATION_JSX.read_text(encoding="utf-8")
+        assert "searchParams.get('difficulty')" in content, \
+            "Simulation.jsx should read 'difficulty' from searchParams"
+
+    def test_simulation_jsx_skips_briefing_in_demo(self):
+        """Simulation.jsx should skip briefing and go to 'call' when demo=true."""
+        content = SIMULATION_JSX.read_text(encoding="utf-8")
+        assert "isDemoMode ? 'call' : 'briefing'" in content, \
+            "Simulation.jsx should skip briefing in demo mode"
+
+    def test_simulation_jsx_passes_demo_to_token(self):
+        """Simulation.jsx should pass demo:true to token requests."""
+        content = SIMULATION_JSX.read_text(encoding="utf-8")
+        assert "isDemoMode ? { demo: true }" in content, \
+            "Simulation.jsx should pass demo flag in token request"
+
+    def test_demo_page_route_still_exists(self):
+        """DemoPage.jsx should still exist for backward compatibility."""
+        demo_page = PROJECT_ROOT / "frontend-src" / "src" / "pages" / "DemoPage.jsx"
+        assert demo_page.exists(), "DemoPage.jsx should still exist for /app/demo route"
+
+
 # ========== SSG PRE-RENDERING REGRESSION ==========
 
 SSG_ROUTES = ["/produit", "/tarifs", "/scenarios", "/ecoles", "/ecoles-tarifs",
               "/contact", "/mentions-legales", "/confidentialite"]
+
+
+class TestPerTurnLatencyTracking:
+    """Tests for per-turn latency tracking via metrics_collected event."""
+
+    def test_metrics_imports_present(self):
+        """agent.py should import STTMetrics, LLMMetrics, TTSMetrics, EOUMetrics."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "from livekit.agents.metrics import" in agent_content, \
+            "Missing metrics import line"
+        for cls in ("STTMetrics", "LLMMetrics", "TTSMetrics", "EOUMetrics"):
+            assert cls in agent_content, f"Missing import for {cls}"
+
+    def test_on_metrics_collected_defined(self):
+        """agent.py should define an on_metrics_collected callback."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "def on_metrics_collected(ev):" in agent_content, \
+            "Missing on_metrics_collected callback definition"
+
+    def test_metrics_collected_event_wired(self):
+        """session.on('metrics_collected', ...) should be wired."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert 'session.on("metrics_collected"' in agent_content, \
+            "metrics_collected event not wired to session"
+
+    def test_turn_latency_markers_for_eou(self):
+        """Callback should log [turn-latency] with eou_delay."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "[turn-latency]" in agent_content, "Missing [turn-latency] log marker"
+        assert "eou_delay=" in agent_content, "Missing eou_delay metric"
+        assert "transcription=" in agent_content, "Missing transcription metric"
+
+    def test_turn_latency_markers_for_llm(self):
+        """Callback should log [turn-latency] with LLM metrics."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "llm_ttft=" in agent_content, "Missing llm_ttft metric"
+        assert "llm_total=" in agent_content, "Missing llm_total metric"
+        assert "tok/s=" in agent_content, "Missing tokens_per_second metric"
+
+    def test_turn_latency_markers_for_tts(self):
+        """Callback should log [turn-latency] with TTS metrics."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "tts_ttfb=" in agent_content, "Missing tts_ttfb metric"
+        assert "tts_total=" in agent_content, "Missing tts_total metric"
+        assert "chars=" in agent_content, "Missing characters_count metric"
+
+    def test_turn_latency_markers_for_stt(self):
+        """Callback should log [turn-latency] with STT metrics."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "stt_duration=" in agent_content, "Missing stt_duration metric"
+
+    def test_turn_counter_increments_on_eou(self):
+        """Turn counter should increment on EOUMetrics (not on other metrics)."""
+        agent_content = (PROJECT_ROOT / "agent.py").read_text(encoding="utf-8")
+        assert "_turn_counter" in agent_content, "Missing _turn_counter variable"
+        # EOUMetrics block should increment the counter
+        eou_idx = agent_content.find("isinstance(m, EOUMetrics)")
+        assert eou_idx > 0, "Missing isinstance check for EOUMetrics"
+        eou_block = agent_content[eou_idx:eou_idx + 200]
+        assert "_turn_counter += 1" in eou_block, \
+            "_turn_counter should be incremented inside EOUMetrics block"
 
 
 class TestSSGPreRenderedFiles:
@@ -1024,3 +1154,200 @@ class TestSSGServedByAPI:
         api_content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
         assert "def _load_prerendered_or_fallback" in api_content, \
             "api.py missing _load_prerendered_or_fallback function"
+
+
+# ========== VISITE CLIENT — STEP 1 REGRESSION ==========
+
+FRONTEND_SRC = PROJECT_ROOT / "frontend-src" / "src"
+SIM_DIR = FRONTEND_SRC / "components" / "simulation"
+
+
+class TestVisiteClientStep1:
+    """Regression tests for Visite Client module — Step 1 (structure + routing)."""
+
+    # --- Routes in main.jsx ---
+
+    def test_main_jsx_has_visite_route(self):
+        """main.jsx must contain /visite route."""
+        content = (FRONTEND_SRC / "main.jsx").read_text(encoding="utf-8")
+        assert '"/visite"' in content, "Missing /visite route in main.jsx"
+
+    def test_main_jsx_has_app_visite_route(self):
+        """main.jsx must contain /app/visite/:scenarioId route."""
+        content = (FRONTEND_SRC / "main.jsx").read_text(encoding="utf-8")
+        assert "/app/visite/:scenarioId" in content, "Missing /app/visite/:scenarioId route"
+
+    def test_main_jsx_lazy_import_visite_client(self):
+        """VisiteClient must be lazy-imported in main.jsx."""
+        content = (FRONTEND_SRC / "main.jsx").read_text(encoding="utf-8")
+        assert 'lazy(() => import("./pages/VisiteClient"))' in content, \
+            "VisiteClient not lazy-imported in main.jsx"
+
+    # --- Data files exist and export expected constants ---
+
+    def test_vc_rooms_exists_and_exports(self):
+        """vc-rooms.js must exist and export ROOMS."""
+        path = SIM_DIR / "vc-rooms.js"
+        assert path.exists(), "vc-rooms.js missing"
+        content = path.read_text(encoding="utf-8")
+        assert "export const ROOMS" in content, "vc-rooms.js missing ROOMS export"
+        for room in ("bureau-pdg", "salle-reunion", "usine"):
+            assert room in content, f"vc-rooms.js missing room '{room}'"
+
+    def test_vc_faces_exists_and_exports(self):
+        """vc-faces.js must exist and export FACE_PRESETS and makeFace."""
+        path = SIM_DIR / "vc-faces.js"
+        assert path.exists(), "vc-faces.js missing"
+        content = path.read_text(encoding="utf-8")
+        assert "export const FACE_PRESETS" in content, "Missing FACE_PRESETS export"
+        assert "export function makeFace" in content, "Missing makeFace export"
+
+    def test_vc_scenarios_exists_and_exports(self):
+        """vc-scenarios.js must exist and export SCENARIOS."""
+        path = SIM_DIR / "vc-scenarios.js"
+        assert path.exists(), "vc-scenarios.js missing"
+        content = path.read_text(encoding="utf-8")
+        assert "export const SCENARIOS" in content, "Missing SCENARIOS export"
+        for sid in ("pdg-solo", "comite-4", "nego-site"):
+            assert sid in content, f"vc-scenarios.js missing scenario '{sid}'"
+
+    def test_vc_layouts_exists_and_exports(self):
+        """vc-layouts.js must exist and export LAYOUTS and BUBBLE_POS."""
+        path = SIM_DIR / "vc-layouts.js"
+        assert path.exists(), "vc-layouts.js missing"
+        content = path.read_text(encoding="utf-8")
+        assert "export const LAYOUTS" in content, "Missing LAYOUTS export"
+        assert "export const BUBBLE_POS" in content, "Missing BUBBLE_POS export"
+
+    # --- 9 stub components exist ---
+
+    @pytest.mark.parametrize("name", [
+        "VCRoomCanvas", "VCPersonStage", "VCPersonAvatar",
+        "VCSpeechBubble", "VCCrossTalkLine", "VCHudLayer",
+        "VCCoachingCard", "VCMicButton", "VCEndScreen",
+    ])
+    def test_stub_component_exists(self, name):
+        """Each VC* stub component file must exist."""
+        path = SIM_DIR / f"{name}.jsx"
+        assert path.exists(), f"{name}.jsx missing in components/simulation/"
+
+    # --- 3 stub hooks exist ---
+
+    @pytest.mark.parametrize("name", [
+        "useVisiteSimulation", "useVoiceIA", "useSpeaker",
+    ])
+    def test_stub_hook_exists(self, name):
+        """Each VC hook file must exist."""
+        path = SIM_DIR / f"{name}.js"
+        assert path.exists(), f"{name}.js missing in components/simulation/"
+
+    # --- VCSplash functional ---
+
+    def test_vcsplash_exists_and_has_onlaunch(self):
+        """VCSplash.jsx must exist and accept onLaunch prop."""
+        path = SIM_DIR / "VCSplash.jsx"
+        assert path.exists(), "VCSplash.jsx missing"
+        content = path.read_text(encoding="utf-8")
+        assert "onLaunch" in content, "VCSplash missing onLaunch prop"
+
+    # --- CSS variables ---
+
+    def test_visite_client_css_has_variables(self):
+        """visite-client.css must exist and contain --ink, --amber variables."""
+        path = SIM_DIR / "visite-client.css"
+        assert path.exists(), "visite-client.css missing"
+        content = path.read_text(encoding="utf-8")
+        assert "--ink:" in content, "visite-client.css missing --ink variable"
+        assert "--amber:" in content, "visite-client.css missing --amber variable"
+
+    # --- VisiteClient page ---
+
+    def test_visite_client_page_exists(self):
+        """VisiteClient.jsx page must exist."""
+        path = FRONTEND_SRC / "pages" / "VisiteClient.jsx"
+        assert path.exists(), "pages/VisiteClient.jsx missing"
+
+    # --- Build output ---
+
+    def test_vite_build_output_exists(self):
+        """Compiled VisiteClient chunk must exist in static/assets/."""
+        assets = list(ASSETS_DIR.glob("VisiteClient-*.js"))
+        assert len(assets) >= 1, "No VisiteClient-*.js found in static/assets/"
+
+    def test_vite_build_css_output_exists(self):
+        """Compiled VisiteClient CSS chunk must exist in static/assets/."""
+        assets = list(ASSETS_DIR.glob("VisiteClient-*.css"))
+        assert len(assets) >= 1, "No VisiteClient-*.css found in static/assets/"
+
+
+# ========== CLASSIFICATION COHERENCE REGRESSION ==========
+
+
+class TestClassificationCoherence:
+    """Ensure api.py listing returns consistent is_multi, is_phone, is_physical, gender fields."""
+
+    def test_scenario_builder_phone_types_has_gestion_reclamation(self):
+        """gestion_reclamation must be in _PHONE_TYPES."""
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from scenario_builder import _PHONE_TYPES
+        assert "gestion_reclamation" in _PHONE_TYPES
+
+    def test_scenario_builder_phone_and_physical_no_overlap(self):
+        """_PHONE_TYPES and _PHYSICAL_TYPES must not overlap."""
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from scenario_builder import _PHONE_TYPES, _PHYSICAL_TYPES
+        overlap = _PHONE_TYPES & _PHYSICAL_TYPES
+        assert not overlap, f"Overlap between PHONE and PHYSICAL types: {overlap}"
+
+    def test_api_imports_type_sets_from_builder(self):
+        """api.py must import _PHONE_TYPES and _PHYSICAL_TYPES from scenario_builder."""
+        content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert "_PHONE_TYPES" in content, "api.py missing _PHONE_TYPES"
+        assert "_PHYSICAL_TYPES" in content, "api.py missing _PHYSICAL_TYPES"
+        assert "from scenario_builder import" in content and "_PHONE_TYPES" in content
+
+    def test_api_listing_has_is_multi_field(self):
+        """api.py list_scenarios must produce is_multi field."""
+        content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert '"is_multi"' in content, "api.py listing missing is_multi field"
+
+    def test_api_listing_has_is_phone_field(self):
+        """api.py list_scenarios must produce is_phone field."""
+        content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert '"is_phone"' in content, "api.py listing missing is_phone field"
+
+    def test_api_listing_has_is_physical_field(self):
+        """api.py list_scenarios must produce is_physical field."""
+        content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        assert '"is_physical"' in content, "api.py listing missing is_physical field"
+
+    def test_multi_detection_uses_persona_2(self):
+        """is_multi must be based on persona_2 presence, not just type_simulation tag."""
+        content = (PROJECT_ROOT / "api.py").read_text(encoding="utf-8")
+        # The old pattern: is_multi = type_sim == "multi_interlocuteurs"
+        # Should NOT appear anymore (except in comments)
+        lines = [l for l in content.split("\n")
+                 if 'is_multi' in l and '== "multi_interlocuteurs"' in l and not l.strip().startswith("#")]
+        assert len(lines) == 0, f"Found old pattern is_multi based on type tag only: {lines}"
+
+    def test_all_db_types_covered(self):
+        """All type_simulation values in DB must be in either _PHONE_TYPES or _PHYSICAL_TYPES."""
+        sys.path.insert(0, str(PROJECT_ROOT))
+        from scenario_builder import _PHONE_TYPES, _PHYSICAL_TYPES
+        import sqlite3 as sql3
+        db = sql3.connect(str(PROJECT_ROOT / "vendmieux.db"))
+        rows = db.execute("SELECT DISTINCT type_simulation FROM scenarios WHERE type_simulation IS NOT NULL").fetchall()
+        db.close()
+        all_types = _PHONE_TYPES | _PHYSICAL_TYPES
+        for (t,) in rows:
+            assert t in all_types, f"type_simulation '{t}' not in PHONE or PHYSICAL types"
+
+    def test_genre_populated_in_all_db_scenarios(self):
+        """All scenarios in DB must have genre in persona_json."""
+        import sqlite3 as sql3
+        db = sql3.connect(str(PROJECT_ROOT / "vendmieux.db"))
+        count = db.execute(
+            "SELECT COUNT(*) FROM scenarios WHERE json_extract(persona_json, '$.identite.genre') IS NULL"
+        ).fetchone()[0]
+        db.close()
+        assert count == 0, f"{count} scenarios missing genre in persona_json"

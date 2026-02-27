@@ -16,6 +16,7 @@ import "@fontsource/dm-sans/latin-800.css";
 const Simulation = lazy(() => import("./pages/Simulation"));
 const DemoPage = lazy(() => import("./pages/DemoPage"));
 const DashboardPreview = lazy(() => import("./pages/DashboardPreview"));
+const VisiteClient = lazy(() => import("./pages/VisiteClient"));
 
 // Redirect helper for /app/session/:id -> /debrief?session=:id
 function SessionRedirect() {
@@ -42,6 +43,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/app/simulation" element={<Simulation/>}/>
             <Route path="/demo" element={<DemoPage/>}/>
             <Route path="/app/demo" element={<DemoPage/>}/>
+            <Route path="/visite" element={<VisiteClient/>}/>
+            <Route path="/app/visite" element={<VisiteClient/>}/>
+            <Route path="/visite/:scenarioId" element={<VisiteClient/>}/>
+            <Route path="/app/visite/:scenarioId" element={<VisiteClient/>}/>
             <Route path="/app/dashboard-preview" element={<DashboardPreview/>}/>
             <Route path="/app" element={<Navigate to="/home" replace/>}/>
             <Route path="/app/login" element={<Navigate to="/login" replace/>}/>

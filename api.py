@@ -43,7 +43,7 @@ from auth import (
     hash_password, verify_password, create_token, get_current_user, get_optional_user,
 )
 from scenarios_database import load_scenarios_database, get_sectors, get_simulation_types
-from scenario_builder import scenario_builder
+from scenario_builder import scenario_builder, _PHONE_TYPES, _PHYSICAL_TYPES
 
 load_dotenv()
 
@@ -642,9 +642,14 @@ def _extract_preview_fields(full_data: dict) -> dict:
     # Durée estimée
     duree = brief.get("duree_estimee", "5-8 minutes")
 
-    # Nb interlocuteurs
-    is_multi = sim.get("type", "") == "multi_interlocuteurs" or "persona_2" in full_data
+    # Nb interlocuteurs — based on REAL persona_2 content, not just tag
+    is_multi = "persona_2" in full_data and full_data["persona_2"] is not None
     nb_inter = "multi" if is_multi else "mono"
+
+    # Phone vs Physical — single source of truth from scenario_builder
+    type_sim = sim.get("type", "")
+    is_phone = type_sim in _PHONE_TYPES
+    is_physical = type_sim in _PHYSICAL_TYPES
 
     # Gender
     genre = identite.get("genre", "M")
@@ -662,6 +667,9 @@ def _extract_preview_fields(full_data: dict) -> dict:
         "objectif_commercial": objectif,
         "duree_estimee": duree,
         "nb_interlocuteurs": nb_inter,
+        "is_multi": is_multi,
+        "is_phone": is_phone,
+        "is_physical": is_physical,
     }
 
 
@@ -721,7 +729,20 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
         obj_list = objections_json.get("objections", []) if isinstance(objections_json, dict) else []
         obj_preview = [o.get("verbatim", "") for o in obj_list[:3] if o.get("verbatim")]
         type_sim = t.get("type_simulation") or "prospection_telephonique"
-        is_multi = type_sim == "multi_interlocuteurs"
+        # Multi: check real persona_2 in persona_json, not just type tag
+        is_multi = "persona_2" in persona and persona["persona_2"] is not None if isinstance(persona, dict) and "persona_2" in persona else False
+        # Also check if the JSON file has persona_2 (DB persona_json may only have persona 1)
+        if not is_multi and t["id"].startswith("sc_multi_"):
+            json_path = SCENARIOS_DIR / f"{t['id']}.json"
+            if json_path.exists():
+                try:
+                    with open(json_path, "r", encoding="utf-8") as _jf:
+                        _jdata = json.load(_jf)
+                        is_multi = "persona_2" in _jdata and _jdata["persona_2"] is not None
+                except Exception:
+                    pass
+        is_phone = type_sim in _PHONE_TYPES
+        is_physical = type_sim in _PHYSICAL_TYPES
 
         scenarios.append({
             "id": t["id"],
@@ -744,6 +765,9 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
             "objectif_commercial": brief.get("votre_objectif", ""),
             "duree_estimee": brief.get("duree_estimee", "5-8 minutes"),
             "nb_interlocuteurs": "multi" if is_multi else "mono",
+            "is_multi": is_multi,
+            "is_phone": is_phone,
+            "is_physical": is_physical,
         })
         seen_ids.add(t["id"])
 
@@ -807,7 +831,10 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
                 style = psycho.get("style_communication", "directif")
                 traits = psycho.get("traits_dominants", [])
                 disc = _infer_disc_from_style(style, traits)
-                is_multi = type_sim == "multi_interlocuteurs"
+                # Multi: check real persona_2 content in JSON file
+                is_multi = "persona_2" in data and data["persona_2"] is not None
+                is_phone = type_sim in _PHONE_TYPES
+                is_physical = type_sim in _PHYSICAL_TYPES
 
                 # Use DB persona if available (has updated gender/name)
                 db_p = db_persona.get(f.stem, {}).get("identite", {})
@@ -837,6 +864,9 @@ async def list_scenarios(secteur: str = "", type: str = "", difficulty: int = 0,
                     "objectif_commercial": brief.get("votre_objectif", ""),
                     "duree_estimee": brief.get("duree_estimee", "5-8 minutes"),
                     "nb_interlocuteurs": "multi" if is_multi else "mono",
+                    "is_multi": is_multi,
+                    "is_phone": is_phone,
+                    "is_physical": is_physical,
                 })
         except Exception:
             continue

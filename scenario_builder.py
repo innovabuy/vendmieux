@@ -113,6 +113,7 @@ _PHONE_TYPES = {
     'relance',
     'appel_entrant',
     'upsell',
+    'gestion_reclamation',
 }
 
 # Types de simulation physiques / présentiel
