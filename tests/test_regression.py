@@ -1331,14 +1331,14 @@ class TestClassificationCoherence:
         assert len(lines) == 0, f"Found old pattern is_multi based on type tag only: {lines}"
 
     def test_all_db_types_covered(self):
-        """All type_simulation values in DB must be in either _PHONE_TYPES or _PHYSICAL_TYPES."""
+        """All type_simulation values in DB must be in either _PHONE_TYPES or _PHYSICAL_TYPES (except 'Sur mesure' fallback)."""
         sys.path.insert(0, str(PROJECT_ROOT))
         from scenario_builder import _PHONE_TYPES, _PHYSICAL_TYPES
         import sqlite3 as sql3
         db = sql3.connect(str(PROJECT_ROOT / "vendmieux.db"))
         rows = db.execute("SELECT DISTINCT type_simulation FROM scenarios WHERE type_simulation IS NOT NULL").fetchall()
         db.close()
-        all_types = _PHONE_TYPES | _PHYSICAL_TYPES
+        all_types = _PHONE_TYPES | _PHYSICAL_TYPES | {"Sur mesure"}
         for (t,) in rows:
             assert t in all_types, f"type_simulation '{t}' not in PHONE or PHYSICAL types"
 

@@ -913,11 +913,31 @@ async def generate_scenario_endpoint(req: ScenarioRequest):
 
         scenario = await asyncio.to_thread(gen, enriched, req.scenario_id)
 
+        # Inject requested type_simulation if provided (before build)
+        if req.type:
+            if 'simulation' not in scenario:
+                scenario['simulation'] = {}
+            scenario['simulation']['type'] = req.type
+            if 'metadata' not in scenario:
+                scenario['metadata'] = {}
+            scenario['metadata']['type_simulation'] = req.type
+
         # Normaliser via ScenarioBuilder (genre, voix, difficulté)
         scenario = scenario_builder.build(scenario)
 
-        # Save to DB
-        await save_scenario_to_db(scenario, language=req.language)
+        # Update JSON file on disk with injected type (generate_scenario writes it before injection)
+        json_path = SCENARIOS_DIR / f"{scenario['id']}.json"
+        if json_path.exists():
+            with open(json_path, "w", encoding="utf-8") as _f:
+                json.dump(scenario, _f, ensure_ascii=False, indent=2)
+
+        # Save to DB (with type_simulation)
+        type_sim = (
+            scenario.get('simulation', {}).get('type')
+            or scenario.get('metadata', {}).get('type_simulation')
+            or 'Sur mesure'
+        )
+        await save_scenario_to_db(scenario, language=req.language, type_simulation=type_sim)
 
         return {
             "success": True,

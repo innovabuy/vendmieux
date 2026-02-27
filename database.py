@@ -526,7 +526,7 @@ async def get_scenario_from_db(scenario_id: str) -> dict | None:
             return d
 
 
-async def save_scenario_to_db(scenario: dict, language: str = "fr") -> str:
+async def save_scenario_to_db(scenario: dict, language: str = "fr", type_simulation: str = "Sur mesure") -> str:
     """Sauvegarde un scénario généré dans la DB et retourne son ID."""
     scenario_id = scenario.get("id", f"custom_{int(datetime.utcnow().timestamp())}")
     extraction = scenario.get("extraction", {})
@@ -540,8 +540,8 @@ async def save_scenario_to_db(scenario: dict, language: str = "fr") -> str:
         await db.execute(
             """INSERT OR REPLACE INTO scenarios
                (id, description_originale, extraction_json, persona_json, objections_json, brief_json,
-                difficulty_default, secteur, is_template, language)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?)""",
+                difficulty_default, secteur, is_template, language, type_simulation)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?)""",
             (
                 scenario_id,
                 description,
@@ -552,6 +552,7 @@ async def save_scenario_to_db(scenario: dict, language: str = "fr") -> str:
                 2,
                 secteur if secteur != "NON_SPECIFIE" else "",
                 language,
+                type_simulation,
             ),
         )
         await db.commit()
